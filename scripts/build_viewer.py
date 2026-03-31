@@ -233,7 +233,7 @@ def _render_day(d, idx):
 
     return f"""
 <div class="day-block" id="day_{idx}">
-  <div class="day-date-header">📅 {date_label}</div>
+  <div class="day-date-header">🗓️ {date_label}</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 핵심 요약</div>
@@ -318,7 +318,7 @@ input[type=radio][name=daytab] {{ display:none; }}
 .container {{ display:flex; min-height:100vh; }}
 
 /* ─ 사이드바 ─ */
-.sidebar {{ width:230px; min-width:230px; background:#2c3e50; color:#ecf0f1;
+.sidebar {{ width:180px; min-width:180px; background:#2c3e50; color:#ecf0f1;
            overflow-y:auto; padding:10px 0; position:sticky; top:0; height:100vh;
            align-self:flex-start; }}
 .nav-link {{ display:block; padding:8px 10px; font-size:12px; font-weight:700;
