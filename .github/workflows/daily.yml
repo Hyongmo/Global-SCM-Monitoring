@@ -85,16 +85,14 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 스테이징 대상:
-          #   - classified CSV  (저작권 문제 없는 분류 결과)
-          #   - JSON report     (LLM 분석 결과)
-          #   - weekly CSV      (주간 누적)
-          #   - HTML viewer     (GitHub Pages 퍼블리시)
+          # 저장 대상:
+          #   - classified CSV  (저작권 문제 없는 분류 결과, weekly 재구성용)
+          #   - JSON report     (build_viewer.py 가 30일치 읽어서 HTML 생성)
+          #   - HTML viewer     (GitHub Pages 게시용)
           git add \
             "monitoring/${DATE_TAG}/gdelt_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/naver_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json" \
-            monitoring/weekly/ \
             docs/daily_viewer.html \
             || true
 

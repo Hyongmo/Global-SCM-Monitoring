@@ -171,7 +171,24 @@ for fname in DAILY_TARGETS:
 print(f"\n  일별 파일: {uploaded}/{len(DAILY_TARGETS)}개 업로드")
 
 
-# ─── 3. daily_viewer.html — 루트 폴더에 덮어쓰기 ─────────────
+# ─── 3. weekly 파일 — 루트 폴더에 덮어쓰기 ──────────────────────
+# 같은 이름으로 매일 덮어씌워짐 (주간 누적 완성본으로 자동 교체)
+
+import glob as _glob
+
+WEEKLY_DIR = os.path.join(MONITOR_DIR, 'weekly')
+weekly_files = _glob.glob(os.path.join(WEEKLY_DIR, '*.csv'))
+
+if weekly_files:
+    weekly_folder_id = _get_or_create_folder('weekly', GDRIVE_FOLDER_ID)
+    for wf in weekly_files:
+        _upload_file(wf, os.path.basename(wf), weekly_folder_id, overwrite=True)
+    print(f"  주간 파일: {len(weekly_files)}개 업로드")
+else:
+    print(f"  ⚠ 주간 파일 없음 — 건너뜀")
+
+
+# ─── 4. daily_viewer.html — 루트 폴더에 덮어쓰기 ─────────────
 
 viewer_path = os.path.join(DOCS_DIR, 'daily_viewer.html')
 if os.path.exists(viewer_path):
@@ -180,7 +197,7 @@ else:
     print(f"  ⚠ daily_viewer.html 없음 ({viewer_path})")
 
 
-# ─── 4. 완료 메시지 ──────────────────────────────────────────
+# ─── 5. 완료 메시지 ──────────────────────────────────────────
 
 print(f"\n✅ Google Drive 업로드 완료")
 print(f"   폴더: https://drive.google.com/drive/folders/{GDRIVE_FOLDER_ID}")
