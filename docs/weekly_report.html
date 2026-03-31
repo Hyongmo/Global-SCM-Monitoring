@@ -97,9 +97,9 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
 @media (max-width: 768px) {
   body { font-size:15px; }
   .container { flex-direction:column; height:auto; min-height:auto; overflow:visible; }
-  /* 탭바: 상단 고정, 가로 스크롤 */
+  /* 탭바: 상단 고정, 가로 스크롤 (position:fixed — iOS sticky+overflow 충돌 회피) */
   .sidebar { width:100%; min-width:0; height:auto;
-    position:sticky; top:0; z-index:100; background:#2c3e50;
+    position:fixed; top:0; left:0; right:0; z-index:100; background:#2c3e50;
     display:flex; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden;
     padding:6px 8px; gap:4px; -webkit-overflow-scrolling:touch; touch-action:pan-x; }
   .sidebar-title { display:none; }
@@ -108,7 +108,7 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
     cursor:pointer; touch-action:pan-x manipulation; -webkit-tap-highlight-color:rgba(52,152,219,0.3); }
   .nav-link { flex:0 0 auto; border-radius:4px; padding:4px 10px; border-bottom:none; white-space:nowrap; font-size:11px; margin-bottom:0; }
   label.menu-item { display:block; }
-  .main { overflow:visible; padding:12px 14px; }
+  .main { overflow:visible; padding:48px 14px 12px; }
   .scenario-block { max-width:100%; }
   .header-top { flex-wrap:wrap; gap:8px; }
   .ind-groups { flex-direction:column; gap:8px; }
