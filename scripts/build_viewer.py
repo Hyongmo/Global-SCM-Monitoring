@@ -321,10 +321,12 @@ input[type=radio][name=daytab] {{ display:none; }}
 .sidebar {{ width:180px; min-width:180px; background:#2c3e50; color:#ecf0f1;
            overflow-y:auto; padding:10px 0; position:sticky; top:0; height:100vh;
            align-self:flex-start; }}
-.nav-link {{ display:block; padding:8px 10px; font-size:12px; font-weight:700;
-            color:#3498db; border-bottom:1px solid #34495e; text-decoration:none;
-            transition:.15s; }}
-.nav-link:hover {{ background:#34495e; }}
+.nav-link {{ display:flex; align-items:center; justify-content:space-between;
+            padding:9px 12px; font-size:12px; font-weight:600; color:#ecf0f1;
+            text-decoration:none; border-radius:6px;
+            background:rgba(52,152,219,0.15); border:1px solid rgba(52,152,219,0.3);
+            margin-bottom:8px; }}
+.nav-link:hover {{ background:#3498db; border-color:#3498db; color:#fff; }}
 .menu-item {{ display:block; padding:8px 10px; cursor:pointer; font-size:12px;
              line-height:1.5; border-bottom:1px solid #34495e; color:#ecf0f1;
              user-select:none; -webkit-user-select:none; transition:.15s; }}
@@ -412,7 +414,7 @@ input[type=radio][name=daytab] {{ display:none; }}
 <div class="container">
 {radio_inputs}
 <div class="sidebar">
-  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">📊 주간 리포트 →</a>
+  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a>
 {menu_items}
 </div>
 <div class="main">
