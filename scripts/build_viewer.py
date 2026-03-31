@@ -390,6 +390,8 @@ input[type=radio][name=daytab] {{ display:none; }}
   .sidebar-title {{ display:none; }}
   .menu-item {{ flex:0 0 auto; border-radius:4px; padding:4px 10px;
     border-bottom:none; white-space:nowrap; font-size:11px; }}
+  .nav-link {{ flex:0 0 auto; border-radius:4px; padding:4px 10px;
+    border-bottom:none; white-space:nowrap; font-size:11px; margin-bottom:0; }}
   .day-content {{ padding:12px; }}
   .header-row {{ flex-direction:column; align-items:flex-start; gap:6px; }}
 }}
