@@ -11,6 +11,8 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 .layout { display: flex; min-height: 100vh; }
 .sidebar { width: 200px; min-width: 200px; background: #1a252f; color: #ecf0f1; overflow-y: auto; position: sticky; top: 0; height: 100vh; align-self: flex-start; flex-shrink: 0; }
 .sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #2c3e50; color: #bdc3c7; line-height: 1.4; }
+.nav-link { display: block; padding: 8px 14px; font-size: 12px; font-weight: 700; color: #3498db; text-decoration: none; border-bottom: 1px solid #2c3e50; margin-bottom: 4px; }
+.nav-link:hover { background: #2c3e50; }
 .menu-item { display: block; padding: 10px 14px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #243342; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
 .menu-item:hover { background: #2c3e50; }
 #tab_0:checked ~ .sidebar label[for="tab_0"] { background:#3498db; }
@@ -73,6 +75,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 <input type="radio" name="daytab" id="tab_4" hidden>
 <div class="sidebar">
   <div class="sidebar-title">📋 AI 데일리<br>모니터링</div>
+  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">📊 주간 리포트 →</a>
 <label class="menu-item" for="tab_0">2026-03-30<br><small style="color:#95a5a6;">HIGH 1188 / MED 2405</small></label>
 <label class="menu-item" for="tab_1">2026-03-29<br><small style="color:#95a5a6;">HIGH 554 / MED 1214</small></label>
 <label class="menu-item" for="tab_2">2026-03-28<br><small style="color:#95a5a6;">HIGH 473 / MED 857</small></label>

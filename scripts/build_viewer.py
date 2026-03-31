@@ -317,6 +317,10 @@ input[type=radio][name=daytab] {{ display:none; }}
            align-self:flex-start; flex-shrink:0; }}
 .sidebar-title {{ padding:14px 14px 10px; font-size:12px; font-weight:700;
                  border-bottom:1px solid #2c3e50; color:#bdc3c7; line-height:1.5; }}
+.nav-link {{ display:block; padding:8px 14px; font-size:12px; font-weight:700;
+            color:#3498db; border-bottom:1px solid #2c3e50; text-decoration:none;
+            transition:.15s; }}
+.nav-link:hover {{ background:#2c3e50; color:#5dade2; }}
 .menu-item {{ display:block; padding:10px 14px; cursor:pointer; font-size:12px;
              line-height:1.5; border-bottom:1px solid #243342; color:#ecf0f1;
              user-select:none; -webkit-user-select:none; transition:.15s; }}
@@ -396,6 +400,7 @@ input[type=radio][name=daytab] {{ display:none; }}
 {radio_inputs}
 <div class="sidebar">
   <div class="sidebar-title">📋 KMI<br>AI 데일리<br>모니터링</div>
+  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">📊 주간 리포트 →</a>
 {menu_items}
 </div>
 <div class="main">
