@@ -9,12 +9,12 @@
 body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; background: #f4f6f9; color: #2c3e50; }
 /* ── 탭 레이아웃 ── */
 .layout { display: flex; min-height: 100vh; }
-.sidebar { width: 200px; min-width: 200px; background: #1a252f; color: #ecf0f1; overflow-y: auto; position: sticky; top: 0; height: 100vh; align-self: flex-start; flex-shrink: 0; }
-.sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #2c3e50; color: #bdc3c7; line-height: 1.4; }
-.nav-link { display: block; padding: 8px 14px; font-size: 12px; font-weight: 700; color: #3498db; text-decoration: none; border-bottom: 1px solid #2c3e50; margin-bottom: 4px; }
-.nav-link:hover { background: #2c3e50; }
-.menu-item { display: block; padding: 10px 14px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #243342; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
-.menu-item:hover { background: #2c3e50; }
+.sidebar { width: 200px; min-width: 200px; background: #2c3e50; color: #ecf0f1; overflow-y: auto; position: sticky; top: 0; height: 100vh; align-self: flex-start; flex-shrink: 0; }
+.sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #34495e; color: #bdc3c7; line-height: 1.4; }
+.nav-link { display: block; padding: 8px 14px; font-size: 12px; font-weight: 700; color: #3498db; text-decoration: none; border-bottom: 1px solid #34495e; margin-bottom: 4px; }
+.nav-link:hover { background: #34495e; }
+.menu-item { display: block; padding: 10px 14px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #34495e; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
+.menu-item:hover { background: #34495e; }
 #tab_0:checked ~ .sidebar label[for="tab_0"] { background:#3498db; }
 #tab_0:checked ~ .main #day_0 { display:block; }
 #tab_1:checked ~ .sidebar label[for="tab_1"] { background:#3498db; }
@@ -29,12 +29,12 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 .main { flex: 1; min-width: 0; }
 .day-block { display: none; }
 /* ── 기존 daily_report_html과 동일한 스타일 ── */
-.day-header { background: #1a252f; color: white; padding: 24px 32px; }
+.day-header { background: #2c3e50; color: white; padding: 24px 32px; }
 .day-header h1 { font-size: 1.4em; font-weight: 700; margin-bottom: 6px; }
 .day-header .meta { font-size: 0.85em; color: #aab; }
 .day-content { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
 .section { background: white; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-.section-title { font-size: 1.05em; font-weight: 700; color: #1a252f; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #eef0f3; }
+.section-title { font-size: 1.05em; font-weight: 700; color: #2c3e50; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #eef0f3; }
 .exec-text { line-height: 1.75; font-size: 0.97em; color: #34495e; }
 .flow-item { margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid #f0f0f0; }
 .flow-item:last-child { border-bottom: none; margin-bottom: 0; }

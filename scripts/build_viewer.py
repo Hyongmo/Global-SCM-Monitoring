@@ -312,19 +312,19 @@ input[type=radio][name=daytab] {{ display:none; }}
 .layout {{ display:flex; min-height:100vh; }}
 
 /* ─ 사이드바 ─ */
-.sidebar {{ width:200px; min-width:200px; background:#1a252f; color:#ecf0f1;
+.sidebar {{ width:200px; min-width:200px; background:#2c3e50; color:#ecf0f1;
            overflow-y:auto; position:sticky; top:0; height:100vh;
            align-self:flex-start; flex-shrink:0; }}
 .sidebar-title {{ padding:14px 14px 10px; font-size:12px; font-weight:700;
-                 border-bottom:1px solid #2c3e50; color:#bdc3c7; line-height:1.5; }}
+                 border-bottom:1px solid #34495e; color:#bdc3c7; line-height:1.5; }}
 .nav-link {{ display:block; padding:8px 14px; font-size:12px; font-weight:700;
-            color:#3498db; border-bottom:1px solid #2c3e50; text-decoration:none;
+            color:#3498db; border-bottom:1px solid #34495e; text-decoration:none;
             transition:.15s; }}
-.nav-link:hover {{ background:#2c3e50; color:#5dade2; }}
+.nav-link:hover {{ background:#34495e; color:#5dade2; }}
 .menu-item {{ display:block; padding:10px 14px; cursor:pointer; font-size:12px;
-             line-height:1.5; border-bottom:1px solid #243342; color:#ecf0f1;
+             line-height:1.5; border-bottom:1px solid #34495e; color:#ecf0f1;
              user-select:none; -webkit-user-select:none; transition:.15s; }}
-.menu-item:hover {{ background:#2c3e50; }}
+.menu-item:hover {{ background:#34495e; }}
 
 /* ─ 탭 활성화 CSS ─ */
 {tab_css}
@@ -334,7 +334,7 @@ input[type=radio][name=daytab] {{ display:none; }}
 .day-block {{ display:none; }}
 
 /* ─ 헤더 ─ */
-.day-header {{ background:#1a252f; color:white; padding:22px 32px; }}
+.day-header {{ background:#2c3e50; color:white; padding:22px 32px; }}
 .header-row {{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:6px; }}
 .day-header h1 {{ font-size:1.3em; font-weight:700; }}
 .day-header .meta {{ font-size:0.82em; color:#aab; }}
@@ -345,7 +345,7 @@ input[type=radio][name=daytab] {{ display:none; }}
 .day-content {{ max-width:960px; margin:0 auto; padding:24px 16px; }}
 .section {{ background:white; border-radius:8px; padding:20px 24px;
            margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); }}
-.section-title {{ font-size:1.03em; font-weight:700; color:#1a252f;
+.section-title {{ font-size:1.03em; font-weight:700; color:#2c3e50;
                  margin-bottom:14px; padding-bottom:8px;
                  border-bottom:2px solid #eef0f3; }}
 .exec-text {{ line-height:1.8; font-size:0.95em; color:#34495e; }}
