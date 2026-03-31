@@ -12,13 +12,13 @@ upload_gdrive.py
         - daily_report_llm_YYYYMMDD.md
         - daily_report_llm_YYYYMMDD.docx
         - daily_report_YYYYMMDD.xlsx
-    docs/daily_viewer.html
+    docs/daily_brief.html
 
 폴더 구조 (Google Drive):
     Hormuz-monitoring/          ← 상위 공유 폴더 (GDRIVE_FOLDER_ID)
         YYYYMMDD/               ← 날짜별 하위 폴더
             *.csv, *.json, *.md, *.docx, *.xlsx
-        daily_viewer.html       ← 최신 HTML 뷰어 (루트에 덮어쓰기)
+        daily_brief.html       ← 최신 HTML 뷰어 (루트에 덮어쓰기)
 
 환경변수:
     GDRIVE_CREDENTIALS   Service Account JSON (문자열 전체)
@@ -188,13 +188,13 @@ else:
     print(f"  ⚠ 주간 파일 없음 — 건너뜀")
 
 
-# ─── 4. daily_viewer.html — 루트 폴더에 덮어쓰기 ─────────────
+# ─── 4. daily_brief.html — 루트 폴더에 덮어쓰기 ─────────────
 
-viewer_path = os.path.join(DOCS_DIR, 'daily_viewer.html')
+viewer_path = os.path.join(DOCS_DIR, 'daily_brief.html')
 if os.path.exists(viewer_path):
-    _upload_file(viewer_path, 'daily_viewer.html', GDRIVE_FOLDER_ID, overwrite=True)
+    _upload_file(viewer_path, 'daily_brief.html', GDRIVE_FOLDER_ID, overwrite=True)
 else:
-    print(f"  ⚠ daily_viewer.html 없음 ({viewer_path})")
+    print(f"  ⚠ daily_brief.html 없음 ({viewer_path})")
 
 
 # ─── 5. 완료 메시지 ──────────────────────────────────────────

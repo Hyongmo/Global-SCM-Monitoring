@@ -3,7 +3,7 @@
 build_viewer.py
 ===============
 monitoring/*/daily_report_llm_*.json 을 읽어
-docs/daily_viewer.html 을 빌드 (GitHub Pages 퍼블리시용)
+docs/daily_brief.html 을 빌드 (GitHub Pages 퍼블리시용)
 
 호출 방식:
     python scripts/build_viewer.py [--days N]   # 기본 최근 30일
@@ -15,7 +15,7 @@ from datetime import datetime
 # ─── 경로 설정 ───────────────────────────────────────────────
 MONITOR_DIR = 'monitoring'
 DOCS_DIR    = 'docs'
-VIEWER_PATH = os.path.join(DOCS_DIR, 'daily_viewer.html')
+VIEWER_PATH = os.path.join(DOCS_DIR, 'daily_brief.html')
 
 # ─── 최대 표시 일수 ───────────────────────────────────────────
 MAX_DAYS = 30
