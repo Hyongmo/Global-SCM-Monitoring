@@ -7,8 +7,10 @@
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size: 16px; background: #f5f6fa; color: #2c3e50; }
+/* ── 탭 레이아웃 ── */
 .container { display: flex; min-height: 100vh; }
 .sidebar { width: 180px; min-width: 180px; background: #2c3e50; color: #ecf0f1; overflow-y: auto; padding: 10px 0; position: sticky; top: 0; height: 100vh; align-self: flex-start; }
+.sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #2c3e50; color: #bdc3c7; line-height: 1.4; }
 .nav-link { display: block; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #3498db; text-decoration: none; border-bottom: 1px solid #34495e; margin-bottom: 4px; }
 .nav-link:hover { background: #34495e; }
 .menu-item { display: block; padding: 8px 10px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #34495e; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
@@ -23,13 +25,13 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 #tab_3:checked ~ .main #day_3 { display:block; }
 #tab_4:checked ~ .sidebar label[for="tab_4"] { background:#3498db; }
 #tab_4:checked ~ .main #day_4 { display:block; }
-/* ── 리포트 헤더 ── */
+/* ── 날짜 블록 ── */
+.main { flex: 1; min-width: 0; overflow-y: visible; padding: 20px 28px; }
+.day-block { display: none; }
+/* ── 기존 daily_report_html과 동일한 스타일 ── */
 .report-header { background: #2c3e50; color: #ecf0f1; padding: 20px 28px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .report-header .rh-title { font-size: 20px; font-weight: 700; white-space: nowrap; }
 .report-header .rh-sub { font-size: 13px; color: #bdc3c7; }
-/* ── 날짜 블록 ── */
-.main { flex: 1; overflow-y: visible; padding: 20px 28px; min-width: 0; }
-.day-block { display: none; }
 .day-date-header { font-size: 22px; font-weight: 700; color: #2c3e50; padding: 14px 0 10px; border-bottom: 2px solid #e0e4ea; margin-bottom: 16px; }
 .day-content { max-width: 960px; }
 .section { background: white; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
@@ -67,12 +69,10 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
     display: flex; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
     padding: 6px 8px; gap: 4px; -webkit-overflow-scrolling: touch; }
   .menu-item { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px;
-    border-bottom: none; border-right: 1px solid #34495e; font-size: 11px; white-space: nowrap;
-    cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: rgba(52,152,219,0.3); }
-  .menu-item { display: block; }
-  .nav-link { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px; border-bottom: none; white-space: nowrap; font-size: 11px; margin-bottom: 0; }
-  .main { overflow: visible; padding: 12px 14px; }
-  .day-content { max-width: 100%; }
+    border-bottom: none; border-right: 1px solid #34495e; font-size: 11px; white-space: nowrap; }
+  .nav-link { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px;
+    border-bottom: none; white-space: nowrap; font-size: 11px; margin-bottom: 0; }
+  .day-content { padding: 12px; }
 }
 </style>
 </head>
@@ -231,5 +231,25 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 </div>
 </div>
 </div>
+<script>
+(function(){
+  var main = document.querySelector(".main");
+  if (!main) return;
+  var startX = 0;
+  main.addEventListener("touchstart", function(e){ startX = e.changedTouches[0].clientX; }, {passive:true});
+  main.addEventListener("touchend", function(e){
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) < 50) return;
+    var radios = Array.from(document.querySelectorAll("input[type=radio][hidden]"));
+    var cur = radios.findIndex(function(r){ return r.checked; });
+    if (cur === -1) return;
+    var next = diff > 0 ? cur + 1 : cur - 1;
+    if (next >= 0 && next < radios.length) {
+      var lbl = document.querySelector("label[for="" + radios[next].id + ""]");
+      if (lbl) { lbl.click(); window.scrollTo(0,0); }
+    }
+  }, {passive:true});
+})();
+</script>
 </body>
 </html>

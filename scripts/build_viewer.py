@@ -425,6 +425,26 @@ input[type=radio][name=daytab] {{ display:none; }}
 {day_blocks}
 </div>
 </div>
+<script>
+(function(){{
+  var main = document.querySelector(".main");
+  if (!main) return;
+  var startX = 0;
+  main.addEventListener("touchstart", function(e){{ startX = e.changedTouches[0].clientX; }}, {{passive:true}});
+  main.addEventListener("touchend", function(e){{
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) < 50) return;
+    var radios = Array.from(document.querySelectorAll("input[type=radio][hidden]"));
+    var cur = radios.findIndex(function(r){{ return r.checked; }});
+    if (cur === -1) return;
+    var next = diff > 0 ? cur + 1 : cur - 1;
+    if (next >= 0 && next < radios.length) {{
+      var lbl = document.querySelector("label[for=\\"" + radios[next].id + "\\"]");
+      if (lbl) {{ lbl.click(); window.scrollTo(0,0); }}
+    }}
+  }}, {{passive:true}});
+}})();
+</script>
 </body>
 </html>"""
 
