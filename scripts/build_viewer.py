@@ -224,17 +224,16 @@ def _render_day(d, idx):
         f'<p class="exec-text">{outlook}</p></div>'
     ) if outlook else ''
 
-    generated_at = datetime.now().strftime('%Y-%m-%d %H:%M KST')
+    WEEKDAYS = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
+    try:
+        _d = datetime.strptime(date_str, '%Y-%m-%d')
+        date_label = f"{_d.year}.{_d.month:02d}.{_d.day:02d} ({WEEKDAYS[_d.weekday()]})"
+    except Exception:
+        date_label = date_str
 
     return f"""
 <div class="day-block" id="day_{idx}">
-  <div class="day-header">
-    <div class="header-row">
-      <h1>🚢 글로벌 공급망 AI 데일리 브리핑 — {date_str}</h1>
-      {_alert_badge(alert_lvl)}
-    </div>
-    <div class="meta">KMI 해양수산 AX 지원단 (hmjeon@kmi.re.kr) &nbsp;|&nbsp; 생성: {generated_at}</div>
-  </div>
+  <div class="day-date-header">{date_label}</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 핵심 요약</div>
@@ -276,6 +275,14 @@ radio_inputs = '\n'.join(
     for i in range(n)
 )
 
+_WDAYS = ['월', '화', '수', '목', '금', '토', '일']
+def _fmt_menu_date(date_str):
+    try:
+        _d = datetime.strptime(date_str, '%Y-%m-%d')
+        return f"{_d.year}.{_d.month:02d}.{_d.day:02d} ({_WDAYS[_d.weekday()]})"
+    except Exception:
+        return date_str
+
 alert_dot = {'CRISIS':'🔴','WARNING':'🟠','CAUTION':'🟡','NORMAL':'🟢'}
 menu_items = ''
 for i, d in enumerate(days):
@@ -283,7 +290,7 @@ for i, d in enumerate(days):
     dot = alert_dot.get(lvl, '⚪')
     menu_items += (
         f'<label class="menu-item" for="tab_{i}">'
-        f'{dot} {d.get("date","?")}'
+        f'{dot} {_fmt_menu_date(d.get("date","?"))}'
         f'<br><small style="color:#95a5a6;">HIGH {d.get("n_high",0)} / MED {d.get("n_med",0)}</small>'
         f'</label>\n'
     )
@@ -302,26 +309,24 @@ html = f"""<!DOCTYPE html>
 <title>글로벌 공급망 AI 데일리 모니터링 | KMI</title>
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-body {{ font-family: 'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
-       background:#f4f6f9; color:#2c3e50; }}
+body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+       font-size:16px; background:#f5f6fa; color:#2c3e50; }}
 
 /* ─ 탭 라디오 버튼 숨기기 ─ */
 input[type=radio][name=daytab] {{ display:none; }}
 
 /* ─ 레이아웃 ─ */
-.layout {{ display:flex; min-height:100vh; }}
+.container {{ display:flex; min-height:100vh; }}
 
 /* ─ 사이드바 ─ */
-.sidebar {{ width:200px; min-width:200px; background:#2c3e50; color:#ecf0f1;
-           overflow-y:auto; position:sticky; top:0; height:100vh;
-           align-self:flex-start; flex-shrink:0; }}
-.sidebar-title {{ padding:14px 14px 10px; font-size:12px; font-weight:700;
-                 border-bottom:1px solid #34495e; color:#bdc3c7; line-height:1.5; }}
+.sidebar {{ width:230px; min-width:230px; background:#2c3e50; color:#ecf0f1;
+           overflow-y:auto; padding:10px 0; position:sticky; top:0; height:100vh;
+           align-self:flex-start; }}
 .nav-link {{ display:block; padding:8px 14px; font-size:12px; font-weight:700;
             color:#3498db; border-bottom:1px solid #34495e; text-decoration:none;
             transition:.15s; }}
-.nav-link:hover {{ background:#34495e; color:#5dade2; }}
-.menu-item {{ display:block; padding:10px 14px; cursor:pointer; font-size:12px;
+.nav-link:hover {{ background:#34495e; }}
+.menu-item {{ display:block; padding:8px 14px; cursor:pointer; font-size:12px;
              line-height:1.5; border-bottom:1px solid #34495e; color:#ecf0f1;
              user-select:none; -webkit-user-select:none; transition:.15s; }}
 .menu-item:hover {{ background:#34495e; }}
@@ -329,20 +334,20 @@ input[type=radio][name=daytab] {{ display:none; }}
 /* ─ 탭 활성화 CSS ─ */
 {tab_css}
 
-/* ─ 본문 ─ */
-.main {{ flex:1; min-width:0; }}
-.day-block {{ display:none; }}
+/* ─ 리포트 헤더 ─ */
+.report-header {{ background:#2c3e50; color:#ecf0f1; padding:20px 28px;
+                display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }}
+.report-header .rh-title {{ font-size:20px; font-weight:700; white-space:nowrap; }}
+.report-header .rh-sub {{ font-size:13px; color:#bdc3c7; }}
 
-/* ─ 헤더 ─ */
-.day-header {{ background:#2c3e50; color:white; padding:22px 32px; }}
-.header-row {{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:6px; }}
-.day-header h1 {{ font-size:1.3em; font-weight:700; }}
-.day-header .meta {{ font-size:0.82em; color:#aab; }}
-.alert-badge {{ font-size:0.82em; font-weight:700; padding:3px 12px;
-               border-radius:20px; white-space:nowrap; }}
+/* ─ 본문 ─ */
+.main {{ flex:1; overflow-y:visible; padding:20px 28px; min-width:0; }}
+.day-block {{ display:none; }}
+.day-date-header {{ font-size:15px; font-weight:700; color:#2c3e50;
+                   padding:14px 0 10px; border-bottom:2px solid #e0e4ea; margin-bottom:16px; }}
 
 /* ─ 콘텐츠 ─ */
-.day-content {{ max-width:960px; margin:0 auto; padding:24px 16px; }}
+.day-content {{ max-width:960px; }}
 .section {{ background:white; border-radius:8px; padding:20px 24px;
            margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); }}
 .section-title {{ font-size:1.03em; font-weight:700; color:#2c3e50;
@@ -384,33 +389,41 @@ input[type=radio][name=daytab] {{ display:none; }}
 
 /* ─ 모바일 ─ */
 @media (max-width:768px) {{
-  .layout {{ flex-direction:column; }}
+  .report-header {{ padding:8px 12px; }}
+  .report-header .rh-title {{ font-size:16px; }}
+  .report-header .rh-sub {{ font-size:12px; }}
+}}
+@media (max-width:768px) {{
+  body {{ font-size:15px; }}
+  .container {{ flex-direction:column; }}
   .sidebar {{ width:100%; min-width:0; height:auto; position:sticky; top:0; z-index:100;
-    display:flex; flex-wrap:nowrap; overflow-x:auto; padding:6px 8px; gap:4px; }}
-  .sidebar-title {{ display:none; }}
+    display:flex; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden;
+    padding:6px 8px; gap:4px; -webkit-overflow-scrolling:touch; }}
   .menu-item {{ flex:0 0 auto; border-radius:4px; padding:4px 10px;
-    border-bottom:none; white-space:nowrap; font-size:11px; }}
+    border-bottom:none; border-right:1px solid #34495e; font-size:11px; white-space:nowrap;
+    cursor:pointer; touch-action:manipulation; -webkit-tap-highlight-color:rgba(52,152,219,0.3); }}
   .nav-link {{ flex:0 0 auto; border-radius:4px; padding:4px 10px;
     border-bottom:none; white-space:nowrap; font-size:11px; margin-bottom:0; }}
-  .day-content {{ padding:12px; }}
-  .header-row {{ flex-direction:column; align-items:flex-start; gap:6px; }}
+  .main {{ overflow:visible; padding:12px 14px; }}
+  .day-content {{ max-width:100%; }}
 }}
 </style>
 </head>
 <body>
-<div class="layout">
+<div class="container">
 {radio_inputs}
 <div class="sidebar">
-  <div class="sidebar-title">📋 KMI<br>AI 데일리<br>모니터링</div>
   <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">📊 주간 리포트 →</a>
 {menu_items}
 </div>
 <div class="main">
-{day_blocks}
-<div class="footer">
-  KMI 해양수산 AX 지원단 &nbsp;|&nbsp; 생성: {generated_ts}<br>
-  본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.
+<div class="report-header">
+  <span class="rh-title">🚢 글로벌 공급망 일일 AI 브리핑</span>
+  <span class="rh-sub">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</span>
 </div>
+<div style="background:#f0f4f8;border-left:4px solid #2980b9;padding:8px 14px;font-size:11px;color:#555;margin:10px 14px 0 14px">
+  본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.</div>
+{day_blocks}
 </div>
 </div>
 </body>

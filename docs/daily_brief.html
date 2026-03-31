@@ -6,14 +6,12 @@
 <title>글로벌 공급망 AI 데일리 모니터링 | KMI</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; background: #f4f6f9; color: #2c3e50; }
-/* ── 탭 레이아웃 ── */
-.layout { display: flex; min-height: 100vh; }
-.sidebar { width: 200px; min-width: 200px; background: #2c3e50; color: #ecf0f1; overflow-y: auto; position: sticky; top: 0; height: 100vh; align-self: flex-start; flex-shrink: 0; }
-.sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #34495e; color: #bdc3c7; line-height: 1.4; }
+body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size: 16px; background: #f5f6fa; color: #2c3e50; }
+.container { display: flex; min-height: 100vh; }
+.sidebar { width: 230px; min-width: 230px; background: #2c3e50; color: #ecf0f1; overflow-y: auto; padding: 10px 0; position: sticky; top: 0; height: 100vh; align-self: flex-start; }
 .nav-link { display: block; padding: 8px 14px; font-size: 12px; font-weight: 700; color: #3498db; text-decoration: none; border-bottom: 1px solid #34495e; margin-bottom: 4px; }
 .nav-link:hover { background: #34495e; }
-.menu-item { display: block; padding: 10px 14px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #34495e; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
+.menu-item { display: block; padding: 8px 14px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #34495e; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
 .menu-item:hover { background: #34495e; }
 #tab_0:checked ~ .sidebar label[for="tab_0"] { background:#3498db; }
 #tab_0:checked ~ .main #day_0 { display:block; }
@@ -25,14 +23,15 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 #tab_3:checked ~ .main #day_3 { display:block; }
 #tab_4:checked ~ .sidebar label[for="tab_4"] { background:#3498db; }
 #tab_4:checked ~ .main #day_4 { display:block; }
+/* ── 리포트 헤더 ── */
+.report-header { background: #2c3e50; color: #ecf0f1; padding: 20px 28px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.report-header .rh-title { font-size: 20px; font-weight: 700; white-space: nowrap; }
+.report-header .rh-sub { font-size: 13px; color: #bdc3c7; }
 /* ── 날짜 블록 ── */
-.main { flex: 1; min-width: 0; }
+.main { flex: 1; overflow-y: visible; padding: 20px 28px; min-width: 0; }
 .day-block { display: none; }
-/* ── 기존 daily_report_html과 동일한 스타일 ── */
-.day-header { background: #2c3e50; color: white; padding: 24px 32px; }
-.day-header h1 { font-size: 1.4em; font-weight: 700; margin-bottom: 6px; }
-.day-header .meta { font-size: 0.85em; color: #aab; }
-.day-content { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+.day-date-header { font-size: 15px; font-weight: 700; color: #2c3e50; padding: 14px 0 10px; border-bottom: 2px solid #e0e4ea; margin-bottom: 16px; }
+.day-content { max-width: 960px; }
 .section { background: white; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
 .section-title { font-size: 1.05em; font-weight: 700; color: #2c3e50; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #eef0f3; }
 .exec-text { line-height: 1.75; font-size: 0.97em; color: #34495e; }
@@ -57,40 +56,52 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 .chg-group li { font-size: 0.9em; line-height: 1.65; color: #444; margin-bottom: 2px; }
 .empty { color: #999; font-size: 0.88em; font-style: italic; }
 @media (max-width: 768px) {
-  .layout { flex-direction: column; }
+  .report-header { padding: 8px 12px; }
+  .report-header .rh-title { font-size: 16px; }
+  .report-header .rh-sub { font-size: 12px; }
+}
+@media (max-width: 768px) {
+  body { font-size: 15px; }
+  .container { flex-direction: column; }
   .sidebar { width: 100%; min-width: 0; height: auto; position: sticky; top: 0; z-index: 100;
-    display: flex; flex-wrap: nowrap; overflow-x: auto; padding: 6px 8px; gap: 4px; }
-  .sidebar-title { display: none; }
-  .menu-item { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px; border-bottom: none; white-space: nowrap; font-size: 11px; }
+    display: flex; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
+    padding: 6px 8px; gap: 4px; -webkit-overflow-scrolling: touch; }
+  .menu-item { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px;
+    border-bottom: none; border-right: 1px solid #34495e; font-size: 11px; white-space: nowrap;
+    cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: rgba(52,152,219,0.3); }
+  .menu-item { display: block; }
   .nav-link { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px; border-bottom: none; white-space: nowrap; font-size: 11px; margin-bottom: 0; }
-  .day-content { padding: 12px; }
+  .main { overflow: visible; padding: 12px 14px; }
+  .day-content { max-width: 100%; }
 }
 </style>
 </head>
 <body>
-<div class="layout">
+<div class="container">
 <input type="radio" name="daytab" id="tab_0" hidden checked>
 <input type="radio" name="daytab" id="tab_1" hidden>
 <input type="radio" name="daytab" id="tab_2" hidden>
 <input type="radio" name="daytab" id="tab_3" hidden>
 <input type="radio" name="daytab" id="tab_4" hidden>
 <div class="sidebar">
-  <div class="sidebar-title">📋 AI 데일리<br>모니터링</div>
   <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">📊 주간 리포트 →</a>
-<label class="menu-item" for="tab_0">2026-03-30<br><small style="color:#95a5a6;">HIGH 1188 / MED 2405</small></label>
-<label class="menu-item" for="tab_1">2026-03-29<br><small style="color:#95a5a6;">HIGH 554 / MED 1214</small></label>
-<label class="menu-item" for="tab_2">2026-03-28<br><small style="color:#95a5a6;">HIGH 473 / MED 857</small></label>
-<label class="menu-item" for="tab_3">2026-03-27<br><small style="color:#95a5a6;">HIGH 963 / MED 1867</small></label>
-<label class="menu-item" for="tab_4">2026-03-26<br><small style="color:#95a5a6;">HIGH 1527 / MED 2545</small></label>
+<label class="menu-item" for="tab_0">2026.03.30 (월)<br><small style="color:#95a5a6;">HIGH 1188 / MED 2405</small></label>
+<label class="menu-item" for="tab_1">2026.03.29 (일)<br><small style="color:#95a5a6;">HIGH 554 / MED 1214</small></label>
+<label class="menu-item" for="tab_2">2026.03.28 (토)<br><small style="color:#95a5a6;">HIGH 473 / MED 857</small></label>
+<label class="menu-item" for="tab_3">2026.03.27 (금)<br><small style="color:#95a5a6;">HIGH 963 / MED 1867</small></label>
+<label class="menu-item" for="tab_4">2026.03.26 (목)<br><small style="color:#95a5a6;">HIGH 1527 / MED 2545</small></label>
 
 </div>
 <div class="main">
+<div class="report-header">
+  <span class="rh-title">🚢 글로벌 공급망 일일 AI 브리핑</span>
+  <span class="rh-sub">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</span>
+</div>
+<div style="background:#f0f4f8;border-left:4px solid #2980b9;padding:8px 14px;font-size:11px;color:#555;margin:10px 14px 0 14px">
+  본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.</div>
 
 <div class="day-block" id="day_0">
-  <div class="day-header">
-    <h1>🚢 글로벌 공급망 일일 AI 브리핑 — 2026-03-30</h1>
-    <div class="meta">KMI 해양수산 AX 지원단(hmjeon@kmi.re.kr) &nbsp;|&nbsp; 생성: 2026-03-31 16:41</div>
-  </div>
+  <div class="day-date-header">2026.03.30 (월요일)</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
@@ -116,10 +127,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 </div>
 
 <div class="day-block" id="day_1">
-  <div class="day-header">
-    <h1>🚢 글로벌 공급망 일일 AI 브리핑 — 2026-03-29</h1>
-    <div class="meta">KMI 해양수산 AX 지원단(hmjeon@kmi.re.kr) &nbsp;|&nbsp; 생성: 2026-03-31 16:41</div>
-  </div>
+  <div class="day-date-header">2026.03.29 (일요일)</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
@@ -145,10 +153,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 </div>
 
 <div class="day-block" id="day_2">
-  <div class="day-header">
-    <h1>🚢 글로벌 공급망 일일 AI 브리핑 — 2026-03-28</h1>
-    <div class="meta">KMI 해양수산 AX 지원단(hmjeon@kmi.re.kr) &nbsp;|&nbsp; 생성: 2026-03-31 16:41</div>
-  </div>
+  <div class="day-date-header">2026.03.28 (토요일)</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
@@ -174,10 +179,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 </div>
 
 <div class="day-block" id="day_3">
-  <div class="day-header">
-    <h1>🚢 글로벌 공급망 일일 AI 브리핑 — 2026-03-27</h1>
-    <div class="meta">KMI 해양수산 AX 지원단(hmjeon@kmi.re.kr) &nbsp;|&nbsp; 생성: 2026-03-31 16:41</div>
-  </div>
+  <div class="day-date-header">2026.03.27 (금요일)</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
@@ -203,10 +205,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
 </div>
 
 <div class="day-block" id="day_4">
-  <div class="day-header">
-    <h1>🚢 글로벌 공급망 일일 AI 브리핑 — 2026-03-26</h1>
-    <div class="meta">KMI 해양수산 AX 지원단(hmjeon@kmi.re.kr) &nbsp;|&nbsp; 생성: 2026-03-31 16:41</div>
-  </div>
+  <div class="day-date-header">2026.03.26 (목요일)</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
@@ -229,9 +228,6 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; backgroun
       <div class="flow-item"><div class="flow-label">안보·군사</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>트럼프 대통령이 이란 에너지시설 공격 시한을 4월 6일로 재연장했으나, 미·이란 양측은 휴전 협상에서 교착 상태를 지속하고 있다. 이란은 호르무즈 해협에 대한 '통행료 체제'를 공식화하는 절차에 착수한 것으로 보이며, 군사 개입 국가에 '부메랑 보복'을 경고했다. 4월 기업심리전망은 중동 전쟁 영향으로 15개월 만에 최대 폭 하락을 기록했다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국 외교장관이 미 국무부 정무차관을 접견해 호르무즈 해협 통항 문제를 논의했으며, 이 대통령은 중동 장기전 대비 '비상 모드'로 전환하고 원유·물가 대응에 총력을 기울이고 있다. 이란 대사는 통항을 통해 공습을 억지할 수 있다고 시사했으며, 한국은 2024년 중동 에너지 수입에 약 1,440억 달러를 지출한 만큼 호르무즈 상황의 직접적 영향권에 있다.</p></div></div><div class="flow-item"><div class="flow-label">해양안전</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>흑해에서 튀르키예 운항 유조선이 무인잠수정(드론) 공격을 받아 손상됐으며 선원은 안전한 것으로 보인다. 러시아 LNG 탱커 Arctic Metagaz가 손상된 채 리비아 서부 해안으로 예인됐으며, 미시시피강 뉴올리언스 인근에서 벌크선 두 척이 충돌하는 사고도 발생했다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>호르무즈 해협에 억류된 일본 선원들이 '배에서 내리게 해달라'고 절규하는 등 해협 내 선원 안전 문제가 심각한 수준으로 보인다. 흑해 및 중동 해역의 선박 피격 사례 증가로 한국 선사 운항 선박의 안전 리스크도 높아지고 있을 가능성이 있다.</p></div></div><div class="flow-item"><div class="flow-label">운임·물류비</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>중동산 원유 탱커 운임이 수십 년 만에 최고치를 기록했으며, 호르무즈 위기로 인한 연료비 상승이 컨테이너 운임 랠리를 연장시키고 있다. 사우디아라비아의 중국·인도 등 아시아 주요 구매국 원유 판매량이 호르무즈 교란으로 감소할 전망이며, 발틱건화물운임지수(BDI)는 2일 연속 상승했다. Hapag-Lloyd는 중동 분쟁으로 주당 4,000만~5,000만 달러의 추가 비용을 부담하고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국 수출기업들은 해상운임 급등으로 유동성·공급망 지원을 긴급 요청하고 있으며, 4월 BSI(기업심리지수)가 85.1로 급락해 중동 리스크가 기업심리를 한 달 만에 꺾었다. '호르무즈 덫'에 걸린 K-물류는 운임 2배, 정보 단절 이중고를 겪고 있으며, 1척당 약 30억 원에 달하는 통행료 부과 우려에 보험료 40배 폭등·인수 거부까지 겹쳐 선박 운항 자체가 위협받고 있다. 4월 유류할증료 3배 인상 전 항공권 막차 발권이 2배 급증하는 등 항공 물류 비용도 함께 상승하고 있다.</p></div></div><div class="flow-item"><div class="flow-label">항만·화물</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>인도 정부는 60일치 석유 비축분과 80만 톤의 LPG를 확보했다고 발표했으며, Indian Oil이 2018년 이후 처음으로 이란산 LPG를 구매했다. 필리핀은 에너지 긴급 상황 속에서 러시아산 원유를 수입하고 있으며, 다수 아시아 국가들이 대체 공급원 확보에 나서고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국 정부는 27일부터 나프타(납사) 수출을 전면 금지하고 전량 내수 전환 조치를 5개월간 시행하며 정유·석화업체에 일일 보고를 의무화했다. 이 대통령이 석유비축기지를 직접 방문해 원유 대체 조달처 확보와 가용한 수단 적극 활용을 지시했으며, 울산항은 중동 리스크 직격탄을 맞아 핵심 액체화물 물동량이 급감하고 있다. 정부는 2차 석유 최고가격을 27일부터 적용해 휘발유 1,934원·경유 1,923원·등유 1,530원으로 상향 조정했다.</p></div></div><div class="flow-item"><div class="flow-label">경제·금융</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>이란 전쟁 여파로 나스닥이 전고점 대비 10% 이상 하락해 조정 국면에 진입했으며, 다우존스는 469포인트 급락해 이란전쟁 개전 이후 최악의 하루를 기록했다. 유가는 5% 급등했고 달러 강세와 미 국채금리 상승이 동시에 나타나는 등 글로벌 금융시장 전반에 전쟁 불확실성이 압박을 가하고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>OECD는 중동전쟁 영향으로 한국 올해 경제성장률 전망을 1.7%로 하향 조정하고 물가는 2.7%로 상승할 것으로 전망했다. 원달러 환율은 1,500원대를 지속하고 있으며 코스피는 5,460선으로 밀렸고, 비트코인도 7만 달러 아래로 붕괴했다. 정부는 유류세 인하 확대와 공공요금 동결 등 중동발 경제 위기에 특단의 대책을 발표했다.</p></div></div><div class="flow-item"><div class="flow-label">수산물</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>태국 어업이 이란전쟁에 따른 연료비 급등으로 사실상 조업 중단 위기에 처해 있다는 보도가 복수 매체에서 나왔다. 글로벌 곡물 시장도 연료·물류비 상승 영향을 받고 있는 것으로 보인다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>인천시가 연근해어선 어업용 면세유 구입 지원에 나섰으며, 울산·경남 어민들은 10배 이상 오른 면세유 선점을 위한 비상 대응에 나서고 있다. '나가면 적자, 안 나가면 빚'이라는 어민들의 호소가 이어지고 있으며, 정부와 당정은 추경안에 농축수산물 할인·에너지 바우처 확대를 반영해 민생 대응에 나섰다.</p></div></div><div class="flow-item"><div class="flow-label">해운</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>Hapag-Lloyd가 중동 분쟁으로 주당 4,000만~5,000만 달러의 손실을 보고 있으며, APM Terminals가 HHIT의 파트너로 합류하는 등 항만 운영 재편도 진행 중이다. Maersk는 주주총회 주요 내용을 발표했다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>HMM은 2030년까지 컨테이너 선대 155만 TEU 확보 계획을 발표하며 톱티어 도약을 선언했고, 한화오션은 LNG·원유 운반선 5척을 1조 3,450억 원에 수주했다. 아시아나항공이 중동발 위기에 비상경영을 선포했으며, 부산항만공사는 북극항로 핵심 거점 도약을 위해 노르웨이를 방문하는 등 대체 항로 개발 가능성을 모색하고 있다.</p></div></div><div class="flow-item"><div class="flow-label">물류</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>이란전쟁이 트럭킹 비용 급등을 유발하고 있으며, 글로벌 물류비 전반이 에너지 및 공급망 차질로 급등하고 있다는 분석이 나왔다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>정부는 중동 물류비 급등에 대응해 수출기업 긴급지원을 강화하고 물류·유동성 해소에 주안점을 두겠다고 밝혔다. 수출기업들은 K자형 양극화가 심화되는 가운데 '재고 두 달이면 끝, 포장재 없어 상품 못 팔 판'이라는 극단적 상황을 호소하고 있으며, 종전 이후에도 가격 정상화까지 L자형 침체가 이어질 수 있다는 우려가 제기되고 있다.</p></div></div><div class="flow-item"><div class="flow-label">기타 산업</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>이란전쟁으로 LNG 가격이 급등해 아시아 구매자들의 수입을 제한하고 있으며, Freeport CEO는 이란전쟁이 신규 미국 LNG 프로젝트를 지연시킬 수 있다고 경고했다. 연료 부족과 식량 공급 우려에 대한 국제 지도자들의 논의가 이어지고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>폴리우레탄 원료값이 60% 올라 가구·건자재·자동차 공급망 쇼크가 현실화되고 있으며, 나프타 수출 통제와 매점매석 금지 조치로 보건의료·핵심산업·생필품 생산에 원료를 최우선 공급하는 체제가 가동됐다. '포장지 없어 공장 세울 판'이라는 K푸드 업계의 위기가 고조되고 있으며, 중동 리스크 장기화에 따른 플라스틱 대체 기대감으로 제지·포장주가 강세를 보이는 등 산업 간 명암이 엇갈리고 있다.</p></div></div>
     </div>
   </div>
-</div>
-<div class="footer" style="text-align:center;padding:20px;font-size:11px;color:#888;border-top:1px solid #e0e0e0;margin-top:8px;">
-  KMI 해양수산 AX 지원단 &nbsp;|&nbsp; 본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.
 </div>
 </div>
 </div>
