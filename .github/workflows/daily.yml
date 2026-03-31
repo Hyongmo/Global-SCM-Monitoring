@@ -1,0 +1,130 @@
+name: KMI 해상공급망 일일 모니터링
+
+on:
+  # ── 매일 06:10 KST (= 21:10 UTC 전날) ──
+  schedule:
+    - cron: '10 21 * * *'
+
+  # ── 수동 실행 (날짜 지정 가능) ──
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: '수집 날짜 (YYYY-MM-DD, 기본: 어제)'
+        required: false
+        default: ''
+
+jobs:
+  daily-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120      # 최대 2시간 (LLM 분류 포함)
+
+    steps:
+      # ────────────────────────────────────────────────────────
+      # 1. 코드 체크아웃 (classified CSV 포함)
+      # ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # 전체 히스토리 (weekly 재구성용)
+
+      # ────────────────────────────────────────────────────────
+      # 2. Python 환경 설정
+      # ────────────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ────────────────────────────────────────────────────────
+      # 3. 날짜 결정 (수동 실행 시 입력값, 자동 실행 시 어제)
+      # ────────────────────────────────────────────────────────
+      - name: Determine target date
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            echo "TARGET_DATE=${{ github.event.inputs.target_date }}" >> $GITHUB_ENV
+          else
+            # UTC 21:10 = KST 다음날 06:10 → '어제' = 전날 KST
+            echo "TARGET_DATE=$(TZ=Asia/Seoul date -d 'yesterday' '+%Y-%m-%d')" >> $GITHUB_ENV
+          fi
+          echo "날짜: $TARGET_DATE"
+
+      # ────────────────────────────────────────────────────────
+      # 4. 일일 파이프라인 실행
+      #    collect_daily.py → build_viewer.py 내부 호출 포함
+      # ────────────────────────────────────────────────────────
+      - name: Run daily pipeline
+        env:
+          ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
+          NAVER_CLIENT_ID:      ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET:  ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: |
+          python scripts/collect_daily.py ${{ env.TARGET_DATE }}
+
+      # ────────────────────────────────────────────────────────
+      # 5. Google Drive 업로드
+      # ────────────────────────────────────────────────────────
+      - name: Upload to Google Drive
+        env:
+          GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
+          GDRIVE_FOLDER_ID:   ${{ secrets.GDRIVE_FOLDER_ID }}
+        run: |
+          python scripts/upload_gdrive.py ${{ env.TARGET_DATE }}
+
+      # ────────────────────────────────────────────────────────
+      # 6. Classified CSV + JSON + HTML 커밋 & 푸시
+      #    (weekly 재구성에 필요한 분류 CSV 보존)
+      # ────────────────────────────────────────────────────────
+      - name: Commit classified CSVs and reports
+        run: |
+          DATE_TAG=$(echo "${{ env.TARGET_DATE }}" | tr -d '-')
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 스테이징 대상:
+          #   - classified CSV  (저작권 문제 없는 분류 결과)
+          #   - JSON report     (LLM 분석 결과)
+          #   - weekly CSV      (주간 누적)
+          #   - HTML viewer     (GitHub Pages 퍼블리시)
+          git add \
+            "monitoring/${DATE_TAG}/gdelt_mon_classified_daily_${DATE_TAG}.csv" \
+            "monitoring/${DATE_TAG}/naver_mon_classified_daily_${DATE_TAG}.csv" \
+            "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json" \
+            monitoring/weekly/ \
+            docs/daily_viewer.html \
+            || true
+
+          # 변경 없으면 커밋 건너뜀
+          git diff --cached --quiet && echo "변경 없음 — 커밋 건너뜀" && exit 0
+
+          git commit -m "daily: ${DATE_TAG} 모니터링 결과 [skip ci]"
+          git push origin HEAD
+
+      # ────────────────────────────────────────────────────────
+      # 7. 실패 시 요약 출력
+      # ────────────────────────────────────────────────────────
+      - name: Pipeline summary
+        if: always()
+        run: |
+          echo "## 파이프라인 실행 결과" >> $GITHUB_STEP_SUMMARY
+          echo "- 날짜: ${{ env.TARGET_DATE }}" >> $GITHUB_STEP_SUMMARY
+          DATE_TAG=$(echo "${{ env.TARGET_DATE }}" | tr -d '-')
+          if [ -f "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json" ]; then
+            ALERT=$(python -c "
+          import json
+          with open('monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json') as f:
+              d = json.load(f)
+          print(d.get('llm_result', {}).get('alert_level', 'N/A'))
+            " 2>/dev/null || echo "N/A")
+            echo "- 경보 수준: ${ALERT}" >> $GITHUB_STEP_SUMMARY
+            echo "- JSON 리포트: ✅ 생성됨" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- JSON 리포트: ❌ 없음" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f "docs/daily_viewer.html" ]; then
+            echo "- HTML 뷰어: ✅ [열기](https://${GITHUB_REPOSITORY_OWNER}.github.io/$(echo ${GITHUB_REPOSITORY} | cut -d/ -f2)/daily_viewer.html)" >> $GITHUB_STEP_SUMMARY
+          fi
