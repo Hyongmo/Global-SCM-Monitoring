@@ -97,18 +97,17 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
 @media (max-width: 768px) {
   body { font-size:15px; }
   .container { flex-direction:column; height:auto; min-height:auto; overflow:visible; }
-  /* 탭바: 상단 고정, 가로 스크롤 (position:fixed — iOS sticky+overflow 충돌 회피) */
+  /* 탭바: 상단 고정, 가로 스크롤 */
   .sidebar { width:100%; min-width:0; height:auto;
-    position:fixed; top:0; left:0; right:0; z-index:100; background:#2c3e50;
+    position:sticky; top:0; z-index:100; background:#2c3e50;
     display:flex; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden;
-    padding:6px 8px; gap:4px; -webkit-overflow-scrolling:touch; touch-action:pan-x; }
+    padding:6px 8px; gap:4px; -webkit-overflow-scrolling:touch; }
   .sidebar-title { display:none; }
   .menu-item { flex:0 0 auto; border-radius:4px; padding:4px 10px;
-    border-bottom:none; border-right:1px solid #34495e; font-size:11px; white-space:nowrap;
-    cursor:pointer; touch-action:pan-x manipulation; -webkit-tap-highlight-color:rgba(52,152,219,0.3); }
+    border-bottom:none; border-right:1px solid #34495e; font-size:11px; white-space:nowrap; }
   .nav-link { flex:0 0 auto; border-radius:4px; padding:4px 10px; border-bottom:none; white-space:nowrap; font-size:11px; margin-bottom:0; }
   label.menu-item { display:block; }
-  .main { overflow:visible; padding:48px 14px 12px; }
+  .main { overflow:visible; padding:12px 14px; }
   .scenario-block { max-width:100%; }
   .header-top { flex-wrap:wrap; gap:8px; }
   .ind-groups { flex-direction:column; gap:8px; }
@@ -118,13 +117,7 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
   th, td { padding:3px 5px; }
   .part { padding:12px 14px; }
   .header-block { padding:14px 16px; }
-  .srch-wrap, .srch-no-result { display:none; }
 }
-.srch-wrap { padding:6px 10px; border-bottom:1px solid #34495e; }
-.srch-box { width:100%; background:#34495e; border:1px solid #4a6278; color:#ecf0f1; border-radius:4px; padding:5px 8px; font-size:12px; outline:none; -webkit-user-select:text; user-select:text; box-sizing:border-box; }
-.srch-box::placeholder { color:#7f8c8d; }
-.srch-box:focus { border-color:#3498db; background:#3d5166; }
-.srch-no-result { padding:8px 10px; color:#7f8c8d; font-size:11px; display:none; }
 
 #tab_sc_0:checked ~ .sidebar label[for="tab_sc_0"] { background:#3498db; }
 #tab_sc_0:checked ~ .main #sc_0 { display:block; }
@@ -638,8 +631,6 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
 <input type="radio" name="sc" id="tab_sc_168" hidden>
   <div class="sidebar">
 <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/daily_brief.html">Go To Daily <span style="font-size:16px;line-height:1">›</span></a>
-<div class="srch-wrap"><input type="text" id="srch" class="srch-box" placeholder="🔍 검색..."></div>
-<div class="srch-no-result" id="srch-no-result">결과 없음</div>
 <label class="menu-item" for="tab_sc_0"><span style="color:#c0392b">●</span> 2026.03.30 (Week 13)</label>
 <label class="menu-item" for="tab_sc_1"><span style="color:#c0392b">●</span> 2026.03.23 (Week 12)</label>
 <label class="menu-item" for="tab_sc_2"><span style="color:#c0392b">●</span> 2026.03.16 (Week 11)</label>
@@ -20124,45 +20115,7 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
     <div id="sc_welcome" style="text-align:center;padding:60px;color:#7f8c8d">← 왼쪽에서 주를 선택하세요</div>
   </div>
 </div>
-<script>
-// 검색 기능 — 주간 사이드바 필터링 (모바일: DOM에서 완전 제거)
-(function(){
-  var isMobile = window.matchMedia("(max-width:768px)").matches;
-  if(isMobile){
-    var el = document.getElementById("srch");
-    var sw = el ? el.parentNode : null;
-    var nr = document.getElementById("srch-no-result");
-    if(sw && sw.parentNode) sw.parentNode.removeChild(sw);
-    if(nr && nr.parentNode) nr.parentNode.removeChild(nr);
-    return;
-  }
-  var inp = document.getElementById("srch");
-  var noRes = document.getElementById("srch-no-result");
-  if(!inp) return;
-  inp.addEventListener("input", function(){
-    var q = inp.value.trim().toLowerCase();
-    var labels = document.querySelectorAll("label.menu-item");
-    var firstMatch = null;
-    var matchCount = 0;
-    labels.forEach(function(lbl){
-      if(!q){ lbl.style.display=""; return; }
-      var forId = lbl.getAttribute("for");
-      var sid = forId ? forId.replace("tab_","") : null;
-      var block = sid ? document.getElementById(sid) : null;
-      var txt = (lbl.textContent + (block ? block.textContent : "")).toLowerCase();
-      var match = txt.indexOf(q) >= 0;
-      lbl.style.display = match ? "" : "none";
-      if(match){ matchCount++; if(!firstMatch) firstMatch = forId; }
-    });
-    if(!q){ labels.forEach(function(l){ l.style.display=""; }); }
-    if(noRes) noRes.style.display = (q && matchCount===0) ? "block" : "none";
-    if(firstMatch && q){
-      var radio = document.getElementById(firstMatch);
-      if(radio && !radio.checked) radio.checked = true;
-    }
-  });
-})();
-</script>
+<script></script>
 <script>(function(){var a=document['querySelector']('.main');if(!a)return;a['style']['touchAction']='pan-y';var b=0x0;a['addEventListener']('touchstart',function(c){b=c['changedTouches'][0x0]['clientX'];},{'passive':!![]}),a['addEventListener']('touchend',function(c){var d=b-c['changedTouches'][0x0]['clientX'];if(Math['abs'](d)<0x32)return;var f=document['querySelector']('input[type=radio][hidden]:checked');if(!f)return;var g=Array['from'](document['querySelectorAll']('input[type=radio][hidden][name=''+f['name']+'']')),h=g['indexOf'](f),i=d>0x0?h+0x1:h-0x1;if(i>=0x0&&i<g['length']){var j=document['querySelector']('label[for="'+g[i]['id']+'"]');j&&(j['click'](),window['scrollTo'](0x0,0x0));}},{'passive':!![]});}());</script>
 <script>document.addEventListener('contextmenu',function(e){e.preventDefault();});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='s'||e.key==='u')){e.preventDefault();}});</script>
 </body>
