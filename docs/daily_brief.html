@@ -247,7 +247,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
     var idx = radios.indexOf(cur);
     var next = diff > 0 ? idx + 1 : idx - 1;
     if (next >= 0 && next < radios.length) {
-      var lbl = document.querySelector("label[for="" + radios[next].id + ""]");
+      var lbl = document.querySelector('label[for="' + radios[next].id + '"]');
       if (lbl) { lbl.click(); window.scrollTo(0,0); }
     }
   }, {passive:true});
