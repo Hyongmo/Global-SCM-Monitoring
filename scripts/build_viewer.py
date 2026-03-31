@@ -233,7 +233,7 @@ def _render_day(d, idx):
 
     return f"""
 <div class="day-block" id="day_{idx}">
-  <div class="day-date-header">{date_label}</div>
+  <div class="day-date-header">📅 {date_label}</div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 핵심 요약</div>
@@ -291,7 +291,6 @@ for i, d in enumerate(days):
     menu_items += (
         f'<label class="menu-item" for="tab_{i}">'
         f'{dot} {_fmt_menu_date(d.get("date","?"))}'
-        f'<br><small style="color:#95a5a6;">HIGH {d.get("n_high",0)} / MED {d.get("n_med",0)}</small>'
         f'</label>\n'
     )
 
@@ -322,11 +321,11 @@ input[type=radio][name=daytab] {{ display:none; }}
 .sidebar {{ width:230px; min-width:230px; background:#2c3e50; color:#ecf0f1;
            overflow-y:auto; padding:10px 0; position:sticky; top:0; height:100vh;
            align-self:flex-start; }}
-.nav-link {{ display:block; padding:8px 14px; font-size:12px; font-weight:700;
+.nav-link {{ display:block; padding:8px 10px; font-size:12px; font-weight:700;
             color:#3498db; border-bottom:1px solid #34495e; text-decoration:none;
             transition:.15s; }}
 .nav-link:hover {{ background:#34495e; }}
-.menu-item {{ display:block; padding:8px 14px; cursor:pointer; font-size:12px;
+.menu-item {{ display:block; padding:8px 10px; cursor:pointer; font-size:12px;
              line-height:1.5; border-bottom:1px solid #34495e; color:#ecf0f1;
              user-select:none; -webkit-user-select:none; transition:.15s; }}
 .menu-item:hover {{ background:#34495e; }}
@@ -343,7 +342,7 @@ input[type=radio][name=daytab] {{ display:none; }}
 /* ─ 본문 ─ */
 .main {{ flex:1; overflow-y:visible; padding:20px 28px; min-width:0; }}
 .day-block {{ display:none; }}
-.day-date-header {{ font-size:15px; font-weight:700; color:#2c3e50;
+.day-date-header {{ font-size:22px; font-weight:700; color:#2c3e50;
                    padding:14px 0 10px; border-bottom:2px solid #e0e4ea; margin-bottom:16px; }}
 
 /* ─ 콘텐츠 ─ */
