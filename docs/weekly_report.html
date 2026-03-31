@@ -118,6 +118,7 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
   th, td { padding:3px 5px; }
   .part { padding:12px 14px; }
   .header-block { padding:14px 16px; }
+  .srch-wrap, .srch-no-result { display:none; }
 }
 .srch-wrap { padding:6px 10px; border-bottom:1px solid #34495e; }
 .srch-box { width:100%; background:#34495e; border:1px solid #4a6278; color:#ecf0f1; border-radius:4px; padding:5px 8px; font-size:12px; outline:none; -webkit-user-select:text; user-select:text; box-sizing:border-box; }
@@ -20128,7 +20129,7 @@ td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-siz
 (function(){
   var inp = document.getElementById("srch");
   var noRes = document.getElementById("srch-no-result");
-  if(!inp) return;
+  if(!inp || inp.offsetParent===null) return;
   inp.addEventListener("input", function(){
     var q = inp.value.trim().toLowerCase();
     var labels = document.querySelectorAll("label.menu-item");
