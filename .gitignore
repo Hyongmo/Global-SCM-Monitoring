@@ -21,6 +21,12 @@ __pycache__/
 *credentials*.json
 *service_account*.json
 
+# ── Drive 전용 파일 (git 제외) ──
+monitoring/*/*.xlsx
+monitoring/*/*.docx
+monitoring/*/*.md
+monitoring/*/*.json
+
 # ── 임시 파일 ──
 *.tmp
 cumulative/
