@@ -428,27 +428,9 @@ input[type=radio][name=daytab] {{ display:none; }}
 </div>
 </div>
 <script>
-(function(){{
-  var main = document.querySelector(".main");
-  if (!main) return;
-  main.style.touchAction = "pan-y";
-  var startX = 0;
-  main.addEventListener("touchstart", function(e){{ startX = e.changedTouches[0].clientX; }}, {{passive:true}});
-  main.addEventListener("touchend", function(e){{
-    var diff = startX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) < 50) return;
-    var cur = document.querySelector("input[type=radio][hidden]:checked");
-    if (!cur) return;
-    var radios = Array.from(document.querySelectorAll("input[type=radio][hidden][name='" + cur.name + "']"));
-    var idx = radios.indexOf(cur);
-    var next = diff > 0 ? idx + 1 : idx - 1;
-    if (next >= 0 && next < radios.length) {{
-      var lbl = document.querySelector("label[for=\\"" + radios[next].id + "\\"]");
-      if (lbl) {{ lbl.click(); window.scrollTo(0,0); }}
-    }}
-  }}, {{passive:true}});
-}})();
+(function(){var a=document['querySelector']('.main');if(!a)return;a['style']['touchAction']='pan-y';var b=0x0;a['addEventListener']('touchstart',function(c){b=c['changedTouches'][0x0]['clientX'];},{'passive':!![]}),a['addEventListener']('touchend',function(c){var d=b-c['changedTouches'][0x0]['clientX'];if(Math['abs'](d)<0x32)return;var f=document['querySelector']('input[type=radio][hidden]:checked');if(!f)return;var g=Array['from'](document['querySelectorAll']('input[type=radio][hidden][name=\x27'+f['name']+'\x27]')),h=g['indexOf'](f),i=d>0x0?h+0x1:h-0x1;if(i>=0x0&&i<g['length']){var j=document['querySelector']('label[for=\x22'+g[i]['id']+'\x22]');j&&(j['click'](),window['scrollTo'](0x0,0x0));}},{'passive':!![]});}());
 </script>
+<script>document.addEventListener('contextmenu',function(e){e.preventDefault();});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='s'||e.key==='u')){e.preventDefault();}});</script>
 </body>
 </html>"""
 
