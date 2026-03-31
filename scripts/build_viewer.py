@@ -348,7 +348,7 @@ input[type=radio][name=daytab] {{ display:none; }}
                    padding:14px 0 10px; border-bottom:2px solid #e0e4ea; margin-bottom:16px; }}
 
 /* ─ 콘텐츠 ─ */
-.day-content {{ max-width:960px; }}
+.day-content {{ }}
 .section {{ background:white; border-radius:8px; padding:20px 24px;
            margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); }}
 .section-title {{ font-size:1.03em; font-weight:700; color:#2c3e50;
