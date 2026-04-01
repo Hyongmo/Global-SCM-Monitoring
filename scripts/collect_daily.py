@@ -664,7 +664,8 @@ else:
         n_new = 0
         start_idx = 1
 
-        while True:
+        max_start = 31 if _test_scale else 1100  # 테스트: 1페이지만
+        while start_idx <= max_start:
             try:
                 params = {'query': keyword, 'display': NAVER_DISPLAY,
                           'start': start_idx, 'sort': 'date'}
@@ -803,8 +804,109 @@ for daily_prefix in ['gdelt_mon_classified', 'naver_mon_classified']:
 
 
 # ══════════════════════════════════════════════════════════════
-# 7. Excel 통계 리포트 (Cell 10b — _generate_xlsx)
+# 7. Excel 통계 리포트 (Cell 10b — _extract_report_data + _generate_xlsx)
 # ══════════════════════════════════════════════════════════════
+
+def _extract_report_data(target_date=None):
+    """분류 CSV에서 리포트에 필요한 모든 데이터를 추출. dict 반환."""
+    if target_date is None:
+        target_date = TARGET_DATE
+    td = str(target_date).replace('-', '')
+    td_fmt = str(target_date)
+
+    # CSV 로드
+    daily_dir = os.path.join(MONITOR_DIR, td)
+    gdelt_csv = os.path.join(daily_dir, f'gdelt_mon_classified_daily_{td}.csv')
+    naver_csv = os.path.join(daily_dir, f'naver_mon_classified_daily_{td}.csv')
+
+    dfs = []
+    sources_loaded = []
+    for csv_path, label in [(gdelt_csv, 'GDELT'), (naver_csv, '네이버')]:
+        if os.path.exists(csv_path):
+            df = pd.read_csv(csv_path, encoding='utf-8-sig')
+            df['_source'] = label
+            dfs.append(df)
+            sources_loaded.append(f"{label}({len(df)})")
+        else:
+            sources_loaded.append(f"{label}(없음)")
+
+    if not dfs:
+        print("❌ 분류 CSV가 없습니다.")
+        return None
+
+    print(f"📂 로드: {', '.join(sources_loaded)}")
+
+    df_all = pd.concat(dfs, ignore_index=True)
+    df_all = df_all.drop_duplicates(subset='url_hash', keep='first').reset_index(drop=True)
+
+    total = len(df_all)
+    rel_counts = df_all['relevance'].value_counts()
+    n_high = int(rel_counts.get('HIGH', 0))
+    n_med  = int(rel_counts.get('MEDIUM', 0))
+    n_low  = int(rel_counts.get('LOW', 0))
+    n_none = int(rel_counts.get('NONE', 0))
+
+    df_all['source_type'] = df_all['sourcecountry'].apply(
+        lambda x: 'domestic' if x == 'South Korea' else 'international'
+    )
+
+    hm = df_all[df_all['relevance'].isin(['HIGH', 'MEDIUM'])].copy()
+    hm_kr = hm[hm['language'] == 'Korean']
+    hm_domestic = hm[hm['source_type'] == 'domestic']
+    hm_intl     = hm[hm['source_type'] == 'international']
+
+    # 카테고리별 통계
+    cat_stats = {}
+    for cat in CAT_ORDER:
+        cat_hm = hm[hm['category'] == cat]
+        h = len(cat_hm[cat_hm['relevance'] == 'HIGH'])
+        m = len(cat_hm[cat_hm['relevance'] == 'MEDIUM'])
+        t = h + m
+        pct = t / len(hm) * 100 if len(hm) > 0 else 0
+        cat_stats[cat] = {'high': h, 'med': m, 'total': t, 'pct': pct}
+
+    # 키워드 빈도
+    kw_results = []
+    for pattern_str, label in TRACKED_KEYWORDS:
+        count = len(hm[hm['title'].str.contains(pattern_str, case=False, na=False)])
+        if count > 0:
+            kw_results.append((label, count, count / len(hm) * 100 if len(hm) > 0 else 0))
+    kw_results.sort(key=lambda x: -x[1])
+
+    # 전일 데이터
+    prev_date = (pd.Timestamp(td_fmt) - pd.Timedelta(days=1)).strftime('%Y%m%d')
+    prev_data = None
+    _prev_dfs = []
+    _prev_dir = os.path.join(MONITOR_DIR, prev_date)
+    for _pcsv in [os.path.join(_prev_dir, f'gdelt_mon_classified_daily_{prev_date}.csv'),
+                  os.path.join(_prev_dir, f'naver_mon_classified_daily_{prev_date}.csv')]:
+        if os.path.exists(_pcsv):
+            _prev_dfs.append(pd.read_csv(_pcsv, encoding='utf-8-sig'))
+    if _prev_dfs:
+        df_prev = pd.concat(_prev_dfs, ignore_index=True)
+        hm_prev = df_prev[df_prev['relevance'].isin(['HIGH', 'MEDIUM'])]
+        prev_cat = {}
+        for cat in CAT_ORDER:
+            prev_cat[cat] = len(hm_prev[hm_prev['category'] == cat])
+        prev_data = {
+            'date': f"{prev_date[:4]}-{prev_date[4:6]}-{prev_date[6:]}",
+            'total': len(df_prev),
+            'hm_total': len(hm_prev),
+            'cat': prev_cat,
+        }
+
+    return {
+        'td': td, 'td_fmt': td_fmt,
+        'total': total, 'n_high': n_high, 'n_med': n_med,
+        'n_low': n_low, 'n_none': n_none,
+        'hm': hm, 'hm_kr': hm_kr,
+        'hm_domestic': hm_domestic, 'hm_intl': hm_intl,
+        'cat_stats': cat_stats,
+        'kw_results': kw_results,
+        'prev_data': prev_data,
+        'df_all': df_all,
+    }
+
 
 def _generate_xlsx(data):
     """openpyxl로 다중 시트 Excel 리포트 생성."""
@@ -1015,105 +1117,6 @@ REPORT_SYSTEM = """당신은 KMI(한국해양수산개발원) 해상 공급망 �
 원칙: 기사 제목 사실 기반으로만 서술. 과장·추론 금지. 불확실하면 '~로 보임', '~가능성' 명시.
 출력: 반드시 유효한 JSON만 출력. 설명 텍스트나 마크다운 코드블록 없이 JSON 객체만."""
 
-def _extract_report_data(target_date=None):
-    """분류 CSV에서 리포트에 필요한 모든 데이터를 추출. dict 반환."""
-    if target_date is None:
-        target_date = TARGET_DATE
-    td = str(target_date).replace('-', '')
-    td_fmt = str(target_date)
-
-    # CSV 로드
-    daily_dir = os.path.join(MONITOR_DIR, td)
-    gdelt_csv = os.path.join(daily_dir, f'gdelt_mon_classified_daily_{td}.csv')
-    naver_csv = os.path.join(daily_dir, f'naver_mon_classified_daily_{td}.csv')
-
-    dfs = []
-    sources_loaded = []
-    for csv_path, label in [(gdelt_csv, 'GDELT'), (naver_csv, '네이버')]:
-        if os.path.exists(csv_path):
-            df = pd.read_csv(csv_path, encoding='utf-8-sig')
-            df['_source'] = label
-            dfs.append(df)
-            sources_loaded.append(f"{label}({len(df)})")
-        else:
-            sources_loaded.append(f"{label}(없음)")
-
-    if not dfs:
-        print("❌ 분류 CSV가 없습니다.")
-        return None
-
-    print(f"📂 로드: {', '.join(sources_loaded)}")
-
-    df_all = pd.concat(dfs, ignore_index=True)
-    df_all = df_all.drop_duplicates(subset='url_hash', keep='first').reset_index(drop=True)
-
-    total = len(df_all)
-    rel_counts = df_all['relevance'].value_counts()
-    n_high = int(rel_counts.get('HIGH', 0))
-    n_med  = int(rel_counts.get('MEDIUM', 0))
-    n_low  = int(rel_counts.get('LOW', 0))
-    n_none = int(rel_counts.get('NONE', 0))
-
-    df_all['source_type'] = df_all['sourcecountry'].apply(
-        lambda x: 'domestic' if x == 'South Korea' else 'international'
-    )
-
-    hm = df_all[df_all['relevance'].isin(['HIGH', 'MEDIUM'])].copy()
-    hm_kr = hm[hm['language'] == 'Korean']
-    hm_domestic = hm[hm['source_type'] == 'domestic']
-    hm_intl     = hm[hm['source_type'] == 'international']
-
-    # 카테고리별 통계
-    cat_stats = {}
-    for cat in CAT_ORDER:
-        cat_hm = hm[hm['category'] == cat]
-        h = len(cat_hm[cat_hm['relevance'] == 'HIGH'])
-        m = len(cat_hm[cat_hm['relevance'] == 'MEDIUM'])
-        t = h + m
-        pct = t / len(hm) * 100 if len(hm) > 0 else 0
-        cat_stats[cat] = {'high': h, 'med': m, 'total': t, 'pct': pct}
-
-    # 키워드 빈도
-    kw_results = []
-    for pattern_str, label in TRACKED_KEYWORDS:
-        count = len(hm[hm['title'].str.contains(pattern_str, case=False, na=False)])
-        if count > 0:
-            kw_results.append((label, count, count / len(hm) * 100 if len(hm) > 0 else 0))
-    kw_results.sort(key=lambda x: -x[1])
-
-    # 전일 데이터
-    prev_date = (pd.Timestamp(td_fmt) - pd.Timedelta(days=1)).strftime('%Y%m%d')
-    prev_data = None
-    _prev_dfs = []
-    _prev_dir = os.path.join(MONITOR_DIR, prev_date)
-    for _pcsv in [os.path.join(_prev_dir, f'gdelt_mon_classified_daily_{prev_date}.csv'),
-                  os.path.join(_prev_dir, f'naver_mon_classified_daily_{prev_date}.csv')]:
-        if os.path.exists(_pcsv):
-            _prev_dfs.append(pd.read_csv(_pcsv, encoding='utf-8-sig'))
-    if _prev_dfs:
-        df_prev = pd.concat(_prev_dfs, ignore_index=True)
-        hm_prev = df_prev[df_prev['relevance'].isin(['HIGH', 'MEDIUM'])]
-        prev_cat = {}
-        for cat in CAT_ORDER:
-            prev_cat[cat] = len(hm_prev[hm_prev['category'] == cat])
-        prev_data = {
-            'date': f"{prev_date[:4]}-{prev_date[4:6]}-{prev_date[6:]}",
-            'total': len(df_prev),
-            'hm_total': len(hm_prev),
-            'cat': prev_cat,
-        }
-
-    return {
-        'td': td, 'td_fmt': td_fmt,
-        'total': total, 'n_high': n_high, 'n_med': n_med,
-        'n_low': n_low, 'n_none': n_none,
-        'hm': hm, 'hm_kr': hm_kr,
-        'hm_domestic': hm_domestic, 'hm_intl': hm_intl,
-        'cat_stats': cat_stats,
-        'kw_results': kw_results,
-        'prev_data': prev_data,
-        'df_all': df_all,
-    }
 
 
 def _build_report_prompt(data):
