@@ -1341,7 +1341,7 @@ else:
     resp = report_client.messages.create(
         model=LLM_REPORT_MODEL,
         max_tokens=16384,
-        temperature=0.3,
+        temperature=0.1,
         system=REPORT_SYSTEM,
         messages=[{"role": "user", "content": report_prompt}]
     )
