@@ -283,14 +283,11 @@ def _fmt_menu_date(date_str):
     except Exception:
         return date_str
 
-alert_dot = {'CRISIS':'🔴','WARNING':'🟠','CAUTION':'🟡','NORMAL':'🟢'}
 menu_items = ''
 for i, d in enumerate(days):
-    lvl = (d.get('llm_result', {}).get('alert_level') or 'NORMAL').upper()
-    dot = alert_dot.get(lvl, '⚪')
     menu_items += (
         f'<label class="menu-item" for="tab_{i}">'
-        f'{dot} {_fmt_menu_date(d.get("date","?"))}'
+        f'{_fmt_menu_date(d.get("date","?"))}'
         f'</label>\n'
     )
 
