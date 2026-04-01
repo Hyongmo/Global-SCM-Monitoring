@@ -848,9 +848,17 @@ if len(gdelt_cls) > 0 or len(naver_cls) > 0:
 
     try:
         report_json = json.loads(raw)
-    except Exception:
-        decoder = json.JSONDecoder()
-        report_json, _ = decoder.raw_decode(raw)
+    except Exception as e1:
+        print(f"⚠ JSON 1차 파싱 실패: {e1}")
+        print(f"  raw 앞 300자: {raw[:300]}")
+        try:
+            from json_repair import repair_json
+            report_json = json.loads(repair_json(raw))
+            print("✅ json-repair로 복구 성공")
+        except Exception as e2:
+            print(f"⚠ json-repair 실패: {e2}")
+            decoder = json.JSONDecoder()
+            report_json, _ = decoder.raw_decode(raw)
 
     # ── 저장 (JSON, MD, DOCX) ──
     json_path = os.path.join(DAILY_DIR, f'daily_report_llm_{DATE_TAG}.json')
