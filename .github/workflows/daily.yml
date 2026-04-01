@@ -103,6 +103,7 @@ jobs:
             "monitoring/${DATE_TAG}/naver_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json" \
             docs/daily_brief.html \
+            monitoring/weekly/ \
             || true
 
           echo "=== staged files ==="
