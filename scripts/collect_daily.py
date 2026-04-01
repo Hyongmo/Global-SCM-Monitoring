@@ -64,7 +64,7 @@ client = anthropic.Anthropic()  # ANTHROPIC_API_KEY 자동 사용
 _test_scale = int(os.environ.get('TEST_SCALE', 0))  # 0=정상, 양수=샘플 수 제한
 
 # ── GDELT 파라미터 ──
-MAX_RECORDS    = 50 if _test_scale else 250
+MAX_RECORDS    = 10 if _test_scale else 250
 SLEEP_SEC      = 0.5
 LANGUAGES      = 'English'
 MIN_KEYWORD_LEN = 5
@@ -85,8 +85,8 @@ MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1500
 MIN_PER_KEYWORD      = 1 if _test_scale else 3
 
 if _test_scale:
-    print(f"⚠ TEST MODE: scale={_test_scale} (GDELT rec={MAX_RECORDS}, "
-          f"sample GDELT={MAX_LLM_SAMPLE_GDELT}/Naver={MAX_LLM_SAMPLE_NAVER})")
+    print(f"⚠ TEST MODE: scale={_test_scale} (rec/kw={MAX_RECORDS}, "
+          f"kw=도메인별2개, sample={MAX_LLM_SAMPLE_GDELT}/{MAX_LLM_SAMPLE_NAVER})")
 
 # ── 카테고리 정의 ──
 CATEGORIES = {
@@ -176,10 +176,15 @@ def load_keywords(query_file, lang='en'):
         config = json.load(f)
     keywords, kw_source = [], {}
     for qname, qs in config['query_sets'].items():
+        added = 0
         for kw in qs.get(lang, []):
             if kw not in kw_source:
                 keywords.append(kw)
                 kw_source[kw] = qname
+                added += 1
+                # 테스트 모드: 도메인별 2개만
+                if _test_scale and added >= 2:
+                    break
     return keywords, kw_source
 
 

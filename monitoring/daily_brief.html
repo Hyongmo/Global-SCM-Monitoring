@@ -11,8 +11,8 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 .container { display: flex; min-height: 100vh; }
 .sidebar { width: 180px; min-width: 180px; background: #2c3e50; color: #ecf0f1; overflow-y: auto; padding: 10px 0; position: sticky; top: 0; height: 100vh; align-self: flex-start; }
 .sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #2c3e50; color: #bdc3c7; line-height: 1.4; }
-.nav-link { display: block; padding: 8px 10px; font-size: 12px; font-weight: 700; color: #3498db; text-decoration: none; border-bottom: 1px solid #34495e; margin-bottom: 4px; }
-.nav-link:hover { background: #34495e; }
+.nav-link { display:flex; align-items:center; justify-content:space-between; padding:9px 12px; font-size:12px; font-weight:600; color:#ecf0f1; text-decoration:none; border-radius:6px; background:rgba(52,152,219,0.15); border:1px solid rgba(52,152,219,0.3); margin-bottom:8px; }
+.nav-link:hover { background:#3498db; border-color:#3498db; color:#fff; }
 .menu-item { display: block; padding: 8px 10px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #34495e; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
 .menu-item:hover { background: #34495e; }
 #tab_0:checked ~ .sidebar label[for="tab_0"] { background:#3498db; }
@@ -25,6 +25,8 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 #tab_3:checked ~ .main #day_3 { display:block; }
 #tab_4:checked ~ .sidebar label[for="tab_4"] { background:#3498db; }
 #tab_4:checked ~ .main #day_4 { display:block; }
+#tab_5:checked ~ .sidebar label[for="tab_5"] { background:#3498db; }
+#tab_5:checked ~ .main #day_5 { display:block; }
 /* ── 날짜 블록 ── */
 .main { flex: 1; min-width: 0; overflow-y: visible; padding: 20px 28px; }
 .day-block { display: none; }
@@ -33,7 +35,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 .report-header .rh-title { font-size: 20px; font-weight: 700; white-space: nowrap; }
 .report-header .rh-sub { font-size: 13px; color: #bdc3c7; }
 .day-date-header { font-size: 22px; font-weight: 700; color: #2c3e50; padding: 14px 0 10px; border-bottom: 2px solid #e0e4ea; margin-bottom: 16px; }
-.day-content { max-width: 960px; }
+.day-content { }
 .section { background: white; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
 .section-title { font-size: 1.05em; font-weight: 700; color: #2c3e50; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #eef0f3; }
 .exec-text { line-height: 1.75; font-size: 0.97em; color: #34495e; }
@@ -74,6 +76,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
     border-bottom: none; white-space: nowrap; font-size: 11px; margin-bottom: 0; }
   .day-content { padding: 12px; }
 }
+body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,textarea{-webkit-user-select:text;user-select:text;}
 </style>
 </head>
 <body>
@@ -83,13 +86,15 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 <input type="radio" name="daytab" id="tab_2" hidden>
 <input type="radio" name="daytab" id="tab_3" hidden>
 <input type="radio" name="daytab" id="tab_4" hidden>
+<input type="radio" name="daytab" id="tab_5" hidden>
 <div class="sidebar">
-  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">📊 주간 리포트 →</a>
-<label class="menu-item" for="tab_0">2026.03.30 (월)</label>
-<label class="menu-item" for="tab_1">2026.03.29 (일)</label>
-<label class="menu-item" for="tab_2">2026.03.28 (토)</label>
-<label class="menu-item" for="tab_3">2026.03.27 (금)</label>
-<label class="menu-item" for="tab_4">2026.03.26 (목)</label>
+  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a>
+<label class="menu-item" for="tab_0">2026.03.31 (화)</label>
+<label class="menu-item" for="tab_1">2026.03.30 (월)</label>
+<label class="menu-item" for="tab_2">2026.03.29 (일)</label>
+<label class="menu-item" for="tab_3">2026.03.28 (토)</label>
+<label class="menu-item" for="tab_4">2026.03.27 (금)</label>
+<label class="menu-item" for="tab_5">2026.03.26 (목)</label>
 
 </div>
 <div class="main">
@@ -101,6 +106,32 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
   본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.</div>
 
 <div class="day-block" id="day_0">
+  <div class="day-date-header">🗓️ 2026.03.31 (화요일)</div>
+  <div class="day-content">
+    <div class="section">
+      <div class="section-title">📌 주요기사 요약</div>
+      <p class="exec-text">호르무즈 해협 봉쇄 장기화로 국제유가가 100달러를 돌파하고 추가 상승 압력이 지속되는 가운데, 한국 원화 환율이 17년 만에 1,530원을 넘어서고 코스피가 4%대 급락하는 등 금융시장 전반에 충격이 확산되고 있다. 트럼프 행정부가 동맹국에 대해 석유를 자체 확보하라고 압박하면서 한국 등 아시아 에너지 수입국의 대체 공급망 확보 경쟁이 가속화되고 있으며, 봉쇄가 6주 이상 지속될 경우 유가 200달러 가능성도 제기되고 있다.</p>
+    </div>
+    <div class="section">
+      <div class="section-title">🌐 공급망 이슈</div>
+      <p class="empty">오늘 주요 국외 트리거 없음</p>
+    </div>
+    <div class="section">
+      <div class="section-title">🇰🇷 국내 산업 영향</div>
+      <p class="empty">오늘 주요 국내 산업 영향 없음</p>
+    </div>
+    <div class="section">
+      <div class="section-title">📊 어제 대비 변화</div>
+      <div class="chg-group"><span class="chg-label new">신규 ↑</span><ul><li>{'issue': '이란 의회 호르무즈 통행료 부과 승인', 'detail': '이란 의회가 호르무즈 해협 통행에 대한 통행료 부과를 공식 승인한 것으로 보도되어 해협 통제권 공식화 및 봉쇄 장기화 신호로 해석될 가능성이 있다.'}</li><li>{'issue': '트럼프 동맹 압박 및 미국 개입 축소 시사', 'detail': '트럼프 대통령이 호르무즈 재개통보다 이란 핵 능력 타격에 집중하겠다고 밝히고 동맹국에 자체 석유 확보를 촉구하면서 미국의 호르무즈 개통 주도 역할 약화 가능성이 새롭게 부각되었다.'}</li><li>{'issue': '두바이 항 쿠웨이트 유조선 화재', 'detail': '중동 주요 항만인 두바이 항에서 유조선 화재가 발생해 항만 안전 리스크가 추가로 확인되었다.'}</li><li>{'issue': '항공 유류할증료 3배 인상 시행', 'detail': '4월 1일부터 항공 유류할증료가 3배 수준으로 인상되며 항공사 비상 경영 체제 전환 및 소비자 여행 비용 급등이 현실화되었다.'}</li></ul></div><div class="chg-group"><span class="chg-label esc">심화 ▲</span><ul><li>{'issue': '국제유가 100달러 돌파 및 200달러 시나리오 부상', 'detail': '국제유가가 100달러를 돌파해 마감한 가운데, 봉쇄 6주 추가 지속 시 200달러 가능성이 업계에서 공식 제기되어 상황이 심화되고 있다.'}</li><li>{'issue': '원달러 환율 1,530원 돌파 및 금융시장 충격 심화', 'detail': '환율이 17년 만에 1,530원을 넘어서고 코스피가 4%대 급락하며 외국인 역대급 주식 이탈이 동반되는 등 금융시장 충격이 전날 대비 심화된 것으로 보인다.'}</li><li>{'issue': '어업용 면세유 급등으로 조업 차질 현실화', 'detail': '어업용 면세유 가격이 60% 급등하면서 출어 포기 사례가 실제로 나타나고 해수부가 긴급 대책 논의에 나서는 등 수산업 피해가 현실화 단계로 진입했다.'}</li><li>{'issue': '나프타 공급 차질로 산업안보 위기 심화', 'detail': '중동발 나프타 공급 교란이 반도체·석유화학 공급망으로 파급되면서 러시아산 나프타 대체 검토 단계로 심화되고 있다.'}</li></ul></div>
+    </div>
+    <div class="section">
+      <div class="section-title">🗂 카테고리별 분석</div>
+      <div class="flow-item"><div class="flow-label">안보·군사</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>트럼프 대통령이 호르무즈 해협 재개통보다 이란 핵 능력 제거에 집중하겠다고 밝히며 동맹국에 미국산 원유 구매 또는 자체 확보를 촉구했다. 이란 혁명수비대는 미사일·공격형 드론으로 이스라엘을 공격한 것으로 보이며, 이란 의회는 호르무즈 통행료 부과를 승인했다. 이란의 '저항의 축' 재결집으로 홍해 봉쇄 연동 가능성도 제기된다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>미국의 동맹 지원 축소 시사로 한국은 대체 원유 공급처(남미, 호주 등) 확보에 나서고 있으며, 비축유 스와프를 통해 대체 원유 2,000만 배럴 이상 확보에 착수한 것으로 보인다. 트럼프의 '직접 구하라' 발언은 한국 에너지 안보 자립 부담을 가중시키고 있다.</p></div></div><div class="flow-item"><div class="flow-label">해양안전</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>두바이 항에 정박 중이던 쿠웨이트 유조선에서 화재가 발생했다. 중동 전쟁 긴장 고조 속에서 항만 내 유조선 사고가 추가 공급 불안 심리를 자극할 가능성이 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>직접적인 한국 선박 피해는 확인되지 않으나, 중동 지역 항만 안전 리스크 상승으로 해당 항로를 운항하는 한국 선사들의 보험료 및 운항 비용 상승 압력이 높아질 가능성이 있다.</p></div></div><div class="flow-item"><div class="flow-label">운임·물류비</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>2026년 2월 기준 컨테이너 선박 정시 운항 신뢰도가 59%로 하락했으며, 고유가로 인해 선박 운항 비용의 장기 상승이 우려된다. 아프리카 항로는 중동 사태 여파로 물동량이 감소하고 있다. 글로벌 항공 제트유 부족으로 항공 운임도 상승 중이다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>4월 1일부터 항공 유류할증료가 3배 인상되며 항공사 비상 경영 체제에 돌입했다. 해운조합은 유가 폭등 대응을 위해 118억 원 긴급 지원을 결정했으며, 연안해운 업계는 정부 지원 확대를 건의한 것으로 보인다.</p></div></div><div class="flow-item"><div class="flow-label">항만·화물</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>페르시아만에 인도행 에너지 화물 선박 10척이 억류된 것으로 보이며, 인도의 이란산 원유 구매 재개 가능성도 제기된다. 인도 정부는 에너지 안보 차원에서 26만 톤 연료유 수입 및 10만 톤 원유 직접 구매를 승인했다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국 정부는 비축유 스와프를 시행해 대체 원유 2,000만 배럴 이상 확보에 나섰으며, 산업부 장관이 남미·호주 등 대체 수급처 다변화를 직접 진두지휘하고 있다. 서부발전 등 발전사들은 LNG 수급 안정성 점검에 나섰다.</p></div></div><div class="flow-item"><div class="flow-label">경제·금융</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>국제유가가 100달러를 돌파해 마감했으며, 봉쇄 6주 지속 시 200달러 가능성이 업계에서 제기된다. UAE는 이란 전쟁 여파로 4월 유가 인상을 예고했다. 월스트리트는 일시 반등했으나 변동성이 지속되고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>원달러 환율이 17년 만에 1,530원을 넘어섰고 코스피는 4%대 급락하며 5,000선이 위협받고 있다. 외국인의 역대급 주식 이탈이 동시에 진행 중이며, 전국 휘발유 가격이 리터당 1,900원 재돌파를 목전에 두고 서울은 1,940원을 넘어선 것으로 보인다. 유가 150달러 시 아시아 경제 전반에 심각한 타격이 예상된다는 전문가 경고도 나왔다.</p></div></div><div class="flow-item"><div class="flow-label">수산물</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>필리핀에서도 고유가로 인한 성주간 수산물 가격 상승이 우려된다는 보도가 나왔다. 중동 사태발 고유가가 아시아 전역 어업 부문에 영향을 미치고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>어업용 면세유 가격이 60% 급등하면서 출어를 포기하는 어선이 속출하고 있으며 조업 차질이 현실화되고 있다. 해수부는 긴급 대책을 논의 중인 것으로 보이며, 수산물 가격 상승으로 이어질 가능성이 있다.</p></div></div><div class="flow-item"><div class="flow-label">해운</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>다롄 조선소가 한국 선주에 307,000톤급 원유운반선을 인도했다. 위기 국면에서 대형 원유 운반 능력 확충이 의미를 가질 수 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>이 대통령이 한-인도네시아 미래 산업 공급망 구축 파트너십을 강조하며 공급망 다변화를 모색하고 있다. 경남도는 진해신항 중심의 북극항로 전략을 본격화했으며, 포스코는 글로벌 공급망 핵심축 역할을 천명했다. K조선 기자재 전용 해상실증선박 건조도 추진된다.</p></div></div><div class="flow-item"><div class="flow-label">물류</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>글로벌 물류 자동화 트렌드가 AI 지능형으로 전환되는 추세가 관찰된다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>CJ대한통운이 2026 국제물류산업대전에서 상품 포장 휴머노이드 등 피지컬 AI 기술을 선보였다. 중동 위기에 따른 물류비 상승 압박 속에서도 국내 물류 기업의 자동화·AI 전환 투자는 지속되는 것으로 보인다.</p></div></div><div class="flow-item"><div class="flow-label">항만혼잡</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>인도행 에너지 화물 외국 선박 10척이 페르시아만에 억류된 것으로 보이며, 두바이 항에서 유조선 화재가 발생하는 등 중동 주요 항만의 운영 리스크가 높아지고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>직접 억류된 한국 선박은 현재 확인되지 않으나, 중동발 원유·LNG 물량의 선적 지연 가능성이 있으며 대체 항로 이용에 따른 운송 시간 및 비용 증가가 우려된다.</p></div></div><div class="flow-item"><div class="flow-label">기타 산업</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>이란 전쟁이 석유뿐 아니라 헬륨·알루미늄 공급도 교란하고 있으며, LNG 가격이 3년 최고치를 기록하자 아시아가 석탄 사용을 확대하고 있다. 미국 농가는 옥수수 파종 면적을 줄이고 대두 면적을 늘릴 계획이며, 글로벌 항공 제트유 부족이 항공 요금 인상을 초래하고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국은 중동 위기로 나프타 공급에 차질을 빚자 러시아산 나프타로 전환을 모색하고 있으며, 이는 반도체 공급망 불안으로 연결될 가능성이 있다. '나프타 쇼크에 흔들리는 산업안보'라는 우려가 제기되고 있으며, 에너지 위기의 심각성에 대한 업계 경고 수위가 높아지고 있다.</p></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="day-block" id="day_1">
   <div class="day-date-header">🗓️ 2026.03.30 (월요일)</div>
   <div class="day-content">
     <div class="section">
@@ -126,7 +157,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
   </div>
 </div>
 
-<div class="day-block" id="day_1">
+<div class="day-block" id="day_2">
   <div class="day-date-header">🗓️ 2026.03.29 (일요일)</div>
   <div class="day-content">
     <div class="section">
@@ -152,7 +183,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
   </div>
 </div>
 
-<div class="day-block" id="day_2">
+<div class="day-block" id="day_3">
   <div class="day-date-header">🗓️ 2026.03.28 (토요일)</div>
   <div class="day-content">
     <div class="section">
@@ -178,7 +209,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
   </div>
 </div>
 
-<div class="day-block" id="day_3">
+<div class="day-block" id="day_4">
   <div class="day-date-header">🗓️ 2026.03.27 (금요일)</div>
   <div class="day-content">
     <div class="section">
@@ -204,7 +235,7 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
   </div>
 </div>
 
-<div class="day-block" id="day_4">
+<div class="day-block" id="day_5">
   <div class="day-date-header">🗓️ 2026.03.26 (목요일)</div>
   <div class="day-content">
     <div class="section">
@@ -232,26 +263,8 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 </div>
 </div>
 <script>
-(function(){
-  var main = document.querySelector(".main");
-  if (!main) return;
-  main.style.touchAction = "pan-y";
-  var startX = 0;
-  main.addEventListener("touchstart", function(e){ startX = e.changedTouches[0].clientX; }, {passive:true});
-  main.addEventListener("touchend", function(e){
-    var diff = startX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) < 50) return;
-    var cur = document.querySelector("input[type=radio][hidden]:checked");
-    if (!cur) return;
-    var radios = Array.from(document.querySelectorAll("input[type=radio][hidden][name='" + cur.name + "']"));
-    var idx = radios.indexOf(cur);
-    var next = diff > 0 ? idx + 1 : idx - 1;
-    if (next >= 0 && next < radios.length) {
-      var lbl = document.querySelector("label[for="" + radios[next].id + ""]");
-      if (lbl) { lbl.click(); window.scrollTo(0,0); }
-    }
-  }, {passive:true});
-})();
+(function(){var a=document['querySelector']('.main');if(!a)return;a['style']['touchAction']='pan-y';var b=0x0;a['addEventListener']('touchstart',function(c){b=c['changedTouches'][0x0]['clientX'];},{'passive':!![]}),a['addEventListener']('touchend',function(c){var d=b-c['changedTouches'][0x0]['clientX'];if(Math['abs'](d)<0x32)return;var f=document['querySelector']('input[type=radio][hidden]:checked');if(!f)return;var g=Array['from'](document['querySelectorAll']('input[type=radio][hidden][name=\x27'+f['name']+'\x27]')),h=g['indexOf'](f),i=d>0x0?h+0x1:h-0x1;if(i>=0x0&&i<g['length']){var j=document['querySelector']('label[for=\x22'+g[i]['id']+'\x22]');j&&(j['click'](),window['scrollTo'](0x0,0x0));}},{'passive':!![]});}());
 </script>
+<script>document.addEventListener('contextmenu',function(e){e.preventDefault();});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='s'||e.key==='u')){e.preventDefault();}});</script>
 </body>
 </html>
