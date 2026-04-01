@@ -68,17 +68,6 @@ jobs:
           python scripts/collect_daily.py ${{ env.TARGET_DATE }}
 
       # ────────────────────────────────────────────────────────
-      # 5. Google Drive 업로드
-      # ────────────────────────────────────────────────────────
-      - name: Upload to Google Drive
-        continue-on-error: true          # Drive 실패해도 파이프라인 계속
-        env:
-          GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
-          GDRIVE_FOLDER_ID:   ${{ secrets.GDRIVE_FOLDER_ID }}
-        run: |
-          python scripts/upload_gdrive.py ${{ env.TARGET_DATE }}
-
-      # ────────────────────────────────────────────────────────
       # 6. Classified CSV + JSON + HTML 커밋 & 푸시
       #    (weekly 재구성에 필요한 분류 CSV 보존)
       # ────────────────────────────────────────────────────────
