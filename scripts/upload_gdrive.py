@@ -89,13 +89,16 @@ MIME_MAP = {
 
 
 def _get_or_create_folder(name, parent_id):
-    """Drive 내에 이름이 name인 폴더를 찾거나 생성, folder_id 반환"""
+    """Drive 내에 이름이 name인 폴더를 찾거나 생성, folder_id 반환
+    supportsAllDrives=True → Shared Drive(Team Drive) 지원
+    """
     query = (
         f"name='{name}' and mimeType='application/vnd.google-apps.folder' "
         f"and '{parent_id}' in parents and trashed=false"
     )
     results = drive.files().list(
-        q=query, fields='files(id, name)', pageSize=5
+        q=query, fields='files(id, name)', pageSize=5,
+        supportsAllDrives=True, includeItemsFromAllDrives=True
     ).execute()
     files = results.get('files', [])
     if files:
@@ -107,13 +110,17 @@ def _get_or_create_folder(name, parent_id):
         'mimeType': 'application/vnd.google-apps.folder',
         'parents': [parent_id],
     }
-    folder = drive.files().create(body=meta, fields='id').execute()
+    folder = drive.files().create(
+        body=meta, fields='id', supportsAllDrives=True
+    ).execute()
     print(f"  📁 폴더 생성: {name} ({folder['id']})")
     return folder['id']
 
 
 def _upload_file(local_path, file_name, parent_folder_id, overwrite=True):
-    """파일을 Drive 폴더에 업로드. overwrite=True 면 동일 이름 파일 삭제 후 업로드"""
+    """파일을 Drive 폴더에 업로드. overwrite=True 면 동일 이름 파일 삭제 후 업로드
+    supportsAllDrives=True → Shared Drive(Team Drive) 지원
+    """
     if not os.path.exists(local_path):
         print(f"  ⚠ 파일 없음 건너뜀: {local_path}")
         return None
@@ -128,15 +135,19 @@ def _upload_file(local_path, file_name, parent_folder_id, overwrite=True):
             f"name='{file_name}' and '{parent_folder_id}' in parents and trashed=false"
         )
         existing = drive.files().list(
-            q=query, fields='files(id)', pageSize=5
+            q=query, fields='files(id)', pageSize=5,
+            supportsAllDrives=True, includeItemsFromAllDrives=True
         ).execute().get('files', [])
         for f in existing:
-            drive.files().delete(fileId=f['id']).execute()
+            drive.files().delete(
+                fileId=f['id'], supportsAllDrives=True
+            ).execute()
 
     media = MediaFileUpload(local_path, mimetype=mime, resumable=size > 5 * 1024 * 1024)
     meta  = {'name': file_name, 'parents': [parent_folder_id]}
     result = drive.files().create(
-        body=meta, media_body=media, fields='id, name'
+        body=meta, media_body=media, fields='id, name',
+        supportsAllDrives=True
     ).execute()
     print(f"  ✅ 업로드: {file_name}  ({size/1024:.0f} KB)  id={result['id']}")
     return result['id']

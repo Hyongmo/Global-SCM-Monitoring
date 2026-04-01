@@ -17,6 +17,8 @@ jobs:
   daily-pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 120      # 최대 2시간 (LLM 분류 포함)
+    permissions:
+      contents: write         # git push 허용
 
     steps:
       # ────────────────────────────────────────────────────────
