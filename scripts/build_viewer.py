@@ -78,76 +78,42 @@ if not days:
 
 # ─── HTML 렌더링 헬퍼 ─────────────────────────────────────────
 
-def _esc(s):
-    """HTML 이스케이프 (XSS 방지)"""
-    return (s or '').replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
-
-
 def _flow_block(label, data):
-    if not data:
-        return ''
-    ov = _esc((data.get('overseas') or '').strip())
-    ki = _esc((data.get('korea_impact') or '').strip())
-    if not ov and not ki:
-        return ''
+    if not data: return ''
+    ov = (data.get('overseas') or '').strip()
+    ki = (data.get('korea_impact') or '').strip()
+    if not ov and not ki: return ''
     html  = f'<div class="flow-item"><div class="flow-label">{label}</div>'
-    if ov:
-        html += f'<div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>{ov}</p></div>'
-    if ki:
-        html += f'<div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>{ki}</p></div>'
+    if ov: html += f'<div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>{ov}</p></div>'
+    if ki: html += f'<div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>{ki}</p></div>'
     html += '</div>'
     return html
 
 
 def _changes_html(changes):
-    """new / escalated / resolved 변화 블록"""
     new_items = changes.get('new', []) or []
     esc_items = changes.get('escalated', []) or []
     res_items = changes.get('resolved', []) or []
-
-    def _item_text(x):
-        if isinstance(x, dict):
-            issue  = _esc(x.get('issue', ''))
-            detail = _esc(x.get('detail', ''))
-            return f'{issue} — {detail}' if detail else issue
-        return _esc(str(x))
-
     html = ''
     if new_items:
         html += '<div class="chg-group"><span class="chg-label new">신규 ↑</span><ul>'
-        for x in new_items:
-            html += f'<li>{_item_text(x)}</li>'
+        for x in new_items: html += f'<li>{x}</li>'
         html += '</ul></div>'
     if esc_items:
         html += '<div class="chg-group"><span class="chg-label esc">심화 ▲</span><ul>'
-        for x in esc_items:
-            html += f'<li>{_item_text(x)}</li>'
+        for x in esc_items: html += f'<li>{x}</li>'
         html += '</ul></div>'
     if res_items:
         html += '<div class="chg-group"><span class="chg-label res">완화 ↓</span><ul>'
-        for x in res_items:
-            html += f'<li>{_item_text(x)}</li>'
+        for x in res_items: html += f'<li>{x}</li>'
         html += '</ul></div>'
     return html or '<p class="empty">전일 대비 주요 변화 없음</p>'
-
-
-def _alert_badge(level):
-    colors = {
-        'CRISIS':  ('#c0392b', '#fadbd8'),
-        'WARNING': ('#e67e22', '#fdebd0'),
-        'CAUTION': ('#f39c12', '#fef9e7'),
-        'NORMAL':  ('#27ae60', '#d5f5e3'),
-    }
-    fg, bg = colors.get(level, ('#7f8c8d', '#ecf0f1'))
-    labels = {'CRISIS':'🚨 위기','WARNING':'⚠️ 경보','CAUTION':'🟡 주의','NORMAL':'🟢 정상'}
-    label  = labels.get(level, level)
-    return f'<span class="alert-badge" style="background:{bg};color:{fg};">{label}</span>'
 
 
 def _render_day(d, idx):
     date_str   = d.get('date', '?')
     llm        = d.get('llm_result', {})
-    exec_s     = _esc((llm.get('executive_summary') or '').strip())
+    exec_s     = llm.get('executive_summary', '').strip()
     flow       = llm.get('flow', {})
     changes    = llm.get('changes', {}) or {}
     cats       = llm.get('categories', {}) or {}
@@ -165,7 +131,7 @@ def _render_day(d, idx):
     dom_impact = flow.get('domestic_impact', {}) if flow else {}
     dom_html   = ''
     for sector, text in dom_impact.items():
-        t = _esc((text or '').strip())
+        t = (text or '').strip()
         if t:
             dom_html += (
                 f'<div class="dom-item">'
@@ -179,8 +145,8 @@ def _render_day(d, idx):
     cat_html = ''
     for cat_key in CAT_ORDER:
         cat_data = cats.get(cat_key) or {}
-        ov = _esc((cat_data.get('overseas') or '').strip())
-        ki = _esc((cat_data.get('korea_impact') or '').strip())
+        ov = (cat_data.get('overseas') or '').strip()
+        ki = (cat_data.get('korea_impact') or '').strip()
         if not ov and not ki:
             continue
         label     = CAT_KR_MAP.get(cat_key, cat_key)
