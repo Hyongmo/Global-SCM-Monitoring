@@ -80,6 +80,7 @@ jobs:
       #    (weekly 재구성에 필요한 분류 CSV 보존)
       # ────────────────────────────────────────────────────────
       - name: Commit classified CSVs and reports
+        if: always()
         run: |
           DATE_TAG=$(echo "${{ env.TARGET_DATE }}" | tr -d '-')
           git config user.name  "github-actions[bot]"
