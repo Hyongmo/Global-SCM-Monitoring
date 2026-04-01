@@ -7705,3 +7705,74 @@ Run 7 성공 후 확인 결과, `monitoring/20260331/`에 xlsx, docx, md, raw CS
 ### ⚠ 잔여 작업
 
 - [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용하여 Tier 판정 결과 비교
+
+---
+
+## 세션 78 — 2026.04.01 (스크립트 ↔ 노트북 전체 일치 작업)
+
+### 수행한 작업
+
+1. **collect_daily.py — 노트북 Cell 1 (index 2) 일치 수정**
+   - CATEGORIES: 짧은 설명 → notebook 전체 설명으로 교체 (naval operations, IMO regulations 등 추가)
+   - CAT_BLOCK_MON: ~9줄 → ~20줄 (구체적 기업명, 지수명 포함)으로 확장
+   - TRACKED_KEYWORDS: 12개 → 20개 (셧다운, 비상경영, OECD, 반도체, 석유화학, 물가, 홍해, 해운 추가)
+   - call_llm_json: max_tokens 기본값 16384→2048
+   - build_classify_prompt: 전면 교체 — BACKGROUND 섹션, HIGH/MEDIUM/LOW/NONE 상세 기준, mode='mon'/'kg' 분기, batch_contexts 파라미터 추가
+   - classify_articles → classify_group 리네이밍 + mode/batch_contexts 지원
+   - _build_report_prompt: hm_dom → hm_domestic 오타 수정 (런타임 NameError 방지)
+
+2. **regen_reports.py — 노트북 v3 포맷 일치 수정**
+   - TRACKED_KEYWORDS: 동일 8개 누락 키워드 추가
+   - MD 생성: alert_level/headline/outlook 구 포맷 → executive_summary/categories/statistics v3 포맷
+   - DOCX 생성: 마진, 스타일, 카테고리 섹션 등 v3 포맷으로 전면 재작성
+
+3. **build_viewer.py — 노트북 Cell 13 (index 15) CSS/로직 일치 수정**
+   - CSS 수치: section-title 1.03→1.05em, exec-text 1.8→1.75/0.95→0.97em, flow-label 0.88→0.9em, flow-sub/dom-item/chg-group line-height 1.7→1.65
+   - .footer 클래스 제거 (notebook에 없음)
+   - .sidebar-title 클래스 추가 (notebook에 있음)
+   - body{user-select:none} 블록 추가
+   - input[type=radio] display:none 별도 규칙 제거
+   - 카테고리 순회: CAT_ORDER → cats.items() (notebook 방식)
+   - 모바일 CSS: .main padding → .day-content padding, menu-item 추가 속성 제거
+
+4. **전체 syntax 검증**: 3개 파일 모두 py_compile 통과
+
+### ⚠ 잔여 작업
+- [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용하여 Tier 판정 결과 비교
+
+---
+
+## 세션 79 — 2026.04.01
+
+### 수행한 작업 — py 스크립트 ↔ 노트북 완전 일치 수정 (이전 세션 이어서)
+
+1. **collect_daily.py — 리포트 섹션 인덴테이션 수정**
+   - `if raw.startswith("```"):` 블록 안에 갇혀 있던 JSON 파싱/저장 코드(~150줄) 전부 4-space 레벨로 복원
+   - 고아 `else:` 블록(라인 1253-1254) 제거
+
+2. **collect_daily.py — Excel 생성 완전 재작성 (80줄 → 180줄)**
+   - 기존 4시트 기본 버전 → 노트북 Cell 10b `_generate_xlsx(data)` 5시트 전문 버전으로 교체
+   - Sheet1 요약: Malgun Gothic, #4472C4 헤더, 통계표 + 카테고리별 분포(HIGH/MEDIUM/합계/비중%)
+   - Sheet2 기사목록_HIGH_MED: 조건부 색상(high_fill/med_fill), auto_filter, auto_width
+   - Sheet3 국내기사: 한국어 기사 필터, auto_filter
+   - Sheet4 키워드빈도: kw_results (언급 건수/비중%)
+   - Sheet5 전일대비: 전일 카테고리별 변화 화살표(↑↓→)
+   - `_extract_report_data()` 호출하여 데이터 추출 후 `_generate_xlsx()` 호출 구조
+
+3. **collect_daily.py — call_llm_json 수정**
+   - `except Exception` → `except (json.JSONDecodeError, Exception)`
+   - `time.sleep(2*(attempt+1))` → `time.sleep(1*(attempt+1))`
+   - 실패 시 `print(f"  Raw: {text[:200]}...")` 추가
+
+4. **regen_reports.py — 모델 메타데이터 추가**
+   - `LLM_REPORT_MODEL = "claude-sonnet-4-6"` 변수 추가
+   - MD 메타: `> 분석 기준:` → `> 생성 모델: {LLM_REPORT_MODEL}  |  분석 기준:`
+   - DOCX 메타: 동일하게 `생성 모델:` 프리픽스 추가
+
+5. **build_viewer.py — font-family 수정**
+   - `'Malgun Gothic',` 제거 → 노트북과 동일하게 `'Noto Sans KR','Apple SD Gothic Neo',sans-serif`
+
+6. **전체 syntax 검증**: 3개 파일 모두 py_compile 통과
+
+### ⚠ 잔여 작업
+- [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용하여 Tier 판정 결과 비교
