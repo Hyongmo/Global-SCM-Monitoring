@@ -20,6 +20,7 @@ send_email.py
     python scripts/send_email.py 2026-04-01 --to a@b.com c@d.com        # 수신자 지정, Full
     python scripts/send_email.py 2026-04-01 --brief --to a@b.com        # 수신자 지정, Brief (본문만)
     python scripts/send_email.py 2026-04-01 --brief                     # 기본 수신자, Brief
+    python scripts/send_email.py 2026-04-01 --summary --to a@b.com     # 수신자 지정, Summary (요약만)
 """
 
 import json, os, sys, smtplib
@@ -40,6 +41,7 @@ args = sys.argv[1:]
 TARGET_DATE = None
 custom_recipients = []
 brief_mode = False          # --brief: 첨부파일 없이 브리핑 본문만 발송
+summary_mode = False        # --summary: 주요기사 요약만 발송 (첨부 없음)
 
 i = 0
 while i < len(args):
@@ -48,6 +50,8 @@ while i < len(args):
         break
     elif args[i] == '--brief':
         brief_mode = True
+    elif args[i] == '--summary':
+        summary_mode = True
     elif TARGET_DATE is None:
         TARGET_DATE = dateparse(args[i]).date()
     i += 1
@@ -188,6 +192,28 @@ briefing_html = _build_full_briefing() if llm else ''
 # ── 이메일 본문 구성 ──
 subject = f'[KMI 글로벌 공급망 AI 모니터링] {TARGET_DATE} 일일 AI 브리핑'
 
+# summary 모드: 폭 제한 없음 / full·brief 모드: 960px
+_content_width = 'margin:0 auto; padding:20px 16px;'
+
+# summary 모드: 주요기사 요약 + 뷰어 링크만 / brief·full: 전체 브리핑 포함
+_body_sections = f"""
+<div {_SEC}>
+  <div {_SEC_TITLE}>📌 주요기사 요약</div>
+  <p style="font-size:14px; line-height:1.75; color:#34495e; background:#f8f9fa; padding:12px 16px; border-left:4px solid #3498db; border-radius:4px;">
+    {summary}
+  </p>
+</div>
+""" if summary_mode else f"""
+<div {_SEC}>
+  <div {_SEC_TITLE}>📌 주요기사 요약</div>
+  <p style="font-size:14px; line-height:1.75; color:#34495e; background:#f8f9fa; padding:12px 16px; border-left:4px solid #3498db; border-radius:4px;">
+    {summary}
+  </p>
+</div>
+
+{briefing_html}
+"""
+
 html_body = f"""\
 <html>
 <body style="font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif; color:#2c3e50; line-height:1.6; background:#f4f6f9; margin:0; padding:0;">
@@ -200,16 +226,9 @@ html_body = f"""\
   </div>
 </div>
 
-<div style="max-width:960px; width:90%; margin:0 auto; padding:20px 16px;">
+<div style="{_content_width}">
 
-<div {_SEC}>
-  <div {_SEC_TITLE}>📌 주요기사 요약</div>
-  <p style="font-size:14px; line-height:1.75; color:#34495e; background:#f8f9fa; padding:12px 16px; border-left:4px solid #3498db; border-radius:4px;">
-    {summary}
-  </p>
-</div>
-
-{briefing_html}
+{_body_sections}
 
 <div style="text-align:center; margin:20px 0 10px;">
   <a href="https://hyongmo.github.io/Global-SCM-Monitoring/daily_brief.html"
@@ -244,8 +263,8 @@ ATTACHMENTS = [
 ]
 
 attached = 0
-if brief_mode:
-    print("  📋 Brief 모드: 첨부파일 없이 브리핑 본문만 발송")
+if brief_mode or summary_mode:
+    print(f"  📋 {'Summary' if summary_mode else 'Brief'} 모드: 첨부파일 없이 발송")
 else:
     for fname in ATTACHMENTS:
         fpath = os.path.join(DAILY_DIR, fname)
@@ -262,10 +281,10 @@ else:
         print(f"  📎 첨부: {fname}")
 
 # ── 발송 ──
-mode_label = "Brief (본문만)" if brief_mode else "Full (첨부포함)"
+mode_label = "Summary (요약만)" if summary_mode else ("Brief (본문만)" if brief_mode else "Full (첨부포함)")
 print(f"\n[이메일 발송] {TARGET_DATE}  ({mode_label})")
 print(f"  수신: {', '.join(RECIPIENTS)}")
-if not brief_mode:
+if not brief_mode and not summary_mode:
     print(f"  첨부: {attached}/{len(ATTACHMENTS)}개")
 
 try:

@@ -10,11 +10,15 @@ on:
         description: '수신자 이메일 (쉼표 구분, 비우면 기본 수신자)'
         required: false
         default: ''
-      brief_mode:
-        description: 'Brief 모드 (첨부파일 없이 본문만 발송)'
-        type: boolean
-        required: false
-        default: true
+      send_mode:
+        description: '발송 모드'
+        type: choice
+        required: true
+        default: 'summary'
+        options:
+          - brief
+          - summary
+          - full
 
 jobs:
   send-email:
@@ -44,17 +48,20 @@ jobs:
           DATE="${{ github.event.inputs.target_date }}"
           RCPT="${{ github.event.inputs.recipients }}"
 
-          BRIEF_FLAG=""
-          if [ "${{ github.event.inputs.brief_mode }}" = "true" ]; then
-            BRIEF_FLAG="--brief"
+          MODE="${{ github.event.inputs.send_mode }}"
+          MODE_FLAG=""
+          if [ "$MODE" = "brief" ]; then
+            MODE_FLAG="--brief"
+          elif [ "$MODE" = "summary" ]; then
+            MODE_FLAG="--summary"
           fi
 
           if [ -n "$RCPT" ]; then
             # 쉼표 → 공백 변환
             TO_ARGS=$(echo "$RCPT" | tr ',' ' ')
-            python scripts/send_email.py "$DATE" $BRIEF_FLAG --to $TO_ARGS
+            python scripts/send_email.py "$DATE" $MODE_FLAG --to $TO_ARGS
           else
-            python scripts/send_email.py "$DATE" $BRIEF_FLAG
+            python scripts/send_email.py "$DATE" $MODE_FLAG
           fi
 
       - name: Summary
@@ -63,4 +70,4 @@ jobs:
           echo "## 이메일 발송 결과" >> $GITHUB_STEP_SUMMARY
           echo "- 날짜: ${{ github.event.inputs.target_date }}" >> $GITHUB_STEP_SUMMARY
           echo "- 수신자: ${{ github.event.inputs.recipients || '기본 수신자' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- 모드: ${{ github.event.inputs.brief_mode == 'true' && 'Brief (본문만)' || 'Full (첨부포함)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 모드: ${{ github.event.inputs.send_mode }}" >> $GITHUB_STEP_SUMMARY
