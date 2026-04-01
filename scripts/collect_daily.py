@@ -17,6 +17,8 @@ collect_daily.py
 
 import json, os, sys, hashlib, time, re, html, glob, requests
 import pandas as pd
+import networkx as nx
+from collections import Counter
 from datetime import datetime, timedelta, date
 from dateutil.parser import parse as dateparse
 from gdeltdoc import GdeltDoc, Filters
@@ -137,6 +139,128 @@ CAT_BLOCK_MON = """  - 1_Security: International relations changes — transit f
     berth waiting times, container dwell time increases, port capacity constraints
   - 10_OtherIndustry: Petroleum/naphtha price changes, LNG spot price spikes, fertilizer price impacts,
     bunkering price changes, petrochemical feedstock costs, refinery margin shifts"""
+
+# ══════════════════════════════════════════════════════════════
+# 0-b. KG 로드 + 엔티티 매칭 (seed_kg_v4.json)
+# ══════════════════════════════════════════════════════════════
+
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_REPO_ROOT  = os.path.dirname(_SCRIPT_DIR)
+KG_PATH     = os.path.join(_REPO_ROOT, 'seed_kg_v4.json')
+
+def build_entity_patterns(nodes):
+    """KG 노드 → 뉴스 매칭 키워드 사전 (aliases 전체 활용). v7 노트북과 동일."""
+    patterns = {}
+    def add(kw, nid, name, ntype):
+        kw = kw.strip()
+        if len(kw) >= 2:
+            patterns[kw.lower()] = (nid, name, ntype)
+
+    _SKIP_TOKENS = {
+        'strait', 'canal', 'channel', 'waterway', 'sea', 'ocean', 'gulf',
+        'bay', 'port', 'passage', 'route', 'waters', 'lane', 'basin',
+        'export', 'import', 'control', 'ban', 'restriction', 'crisis',
+        'trade', 'supply', 'demand', 'price', 'market', 'risk', 'impact',
+        'flow', 'policy', 'security', 'global', 'international',
+    }
+    for nid, n in nodes.items():
+        ntype  = n.get("node_type", "")
+        name   = n.get("name", "")
+        name_en = n.get("nameEn", "")
+        for alias in n.get("aliases", []):
+            add(alias, nid, name, ntype)
+        if name_en:
+            add(name_en, nid, name, ntype)
+            for tok in name_en.split():
+                if len(tok) >= 3 and tok.lower() not in _SKIP_TOKENS:
+                    add(tok, nid, name, ntype)
+        short_id = nid.split("_", 1)[-1] if "_" in nid else nid
+        if len(short_id) >= 3:
+            add(short_id, nid, name, ntype)
+        if name and any("\uac00" <= c <= "\ud7a3" for c in name):
+            add(name, nid, name, ntype)
+        if ntype == "chokepoint":
+            for suffix in ["strait", "canal", "channel", "waterway"]:
+                add(f"{short_id.lower()} {suffix}", nid, name, ntype)
+                add(f"strait of {short_id.lower()}", nid, name, ntype)
+        if ntype == "commodity_flow":
+            cat = n.get("category", "")
+            extra = {
+                "EnergyFlow":     ["crude oil", "petroleum", "brent", "wti", "crude"],
+                "GasFlow":        ["natural gas", "lng", "liquefied natural gas", "lpg"],
+                "ChemicalFlow":   ["naphtha", "petrochemical", "ethylene", "propylene"],
+                "MetalFlow":      ["iron ore", "steel", "coking coal", "copper"],
+                "GrainFlow":      ["wheat", "corn", "soybean", "grain", "maize"],
+                "FertilizerFlow": ["urea", "fertilizer", "ammonia", "adblue"],
+                "SemiMaterial":   ["hydrogen fluoride", "photoresist", "semiconductor material"],
+            }.get(cat, [])
+            for kw in extra:
+                add(kw, nid, name, ntype)
+    return patterns
+
+
+def match_entities(title, patterns, G, nodes):
+    """기사 제목 → KG 엔티티 매칭 (긴 패턴 우선). v7 노트북과 동일."""
+    title_lower = title.lower()
+    matched = {}
+    for pattern, (eid, ename, etype) in sorted(patterns.items(), key=lambda x: -len(x[0])):
+        if re.search(r"\b" + re.escape(pattern) + r"\b", title_lower):
+            if eid not in matched:
+                matched[eid] = (ename, etype)
+    kg_ctx_lines = []
+    for eid, (ename, etype) in matched.items():
+        neighbors = []
+        if G is not None and eid in G:
+            for _, tgt, _, ed in G.out_edges(eid, data=True, keys=True):
+                neighbors.append(f"{ed.get('relation', '')}→{nodes.get(tgt, {}).get('name', tgt)}")
+        kg_ctx_lines.append(f"[{etype}] {ename}({eid}): {'; '.join(neighbors[:4])}")
+    return {
+        "matched_entities": list(matched.keys()),
+        "match_count": len(matched),
+        "kg_context": "\n".join(kg_ctx_lines),
+    }
+
+
+def apply_kg_matching(df, patterns, G, nodes):
+    """DataFrame 전체에 KG 매칭 적용. 실패 시 빈 값 유지."""
+    if not patterns:
+        df['kg_entities']    = ''
+        df['kg_match_count'] = 0
+        df['_kg_context']    = ''
+        return df
+    results = [match_entities(str(row.get('title', '')), patterns, G, nodes)
+               for _, row in df.iterrows()]
+    df['kg_entities']    = [json.dumps(m["matched_entities"]) for m in results]
+    df['kg_match_count'] = [m["match_count"] for m in results]
+    df['_kg_context']    = [m["kg_context"] for m in results]
+    matched_count = sum(1 for m in results if m["match_count"] > 0)
+    print(f"  KG 매칭: {matched_count}/{len(df)}건 (패턴 {len(patterns)}개)")
+    return df
+
+
+# ── KG 로드 (실패 시 빈 dict → 기존과 동일하게 작동) ──
+_kg_nodes = {}
+_kg_G     = None
+_entity_patterns = {}
+
+try:
+    with open(KG_PATH, encoding='utf-8') as f:
+        _kg_raw = json.load(f)
+    _kg_nodes = _kg_raw.get("nodes", {})
+    _kg_edges = _kg_raw.get("edges", [])
+    _kg_G = nx.MultiDiGraph()
+    for nid, ndata in _kg_nodes.items():
+        _kg_G.add_node(nid, **ndata)
+    for e in _kg_edges:
+        _kg_G.add_edge(e["from"], e["to"],
+                       **{k: v for k, v in e.items() if k not in ("from", "to")})
+    _entity_patterns = build_entity_patterns(_kg_nodes)
+    print(f"✅ KG 로드: {len(_kg_nodes)}노드, {len(_kg_edges)}엣지, {len(_entity_patterns)}패턴")
+except FileNotFoundError:
+    print(f"⚠ KG 파일 없음 ({KG_PATH}) — KG 매칭 비활성화, 기존 방식으로 분류")
+except Exception as e:
+    print(f"⚠ KG 로드 실패: {e} — KG 매칭 비활성화, 기존 방식으로 분류")
+
 
 # ── 추적 키워드 ──
 TRACKED_KEYWORDS = [
@@ -278,7 +402,7 @@ def build_classify_prompt(batch_articles, batch_contexts, mode='mon'):
     for j, (art, ctx) in enumerate(zip(batch_articles, batch_contexts)):
         title = art['title']
         lang = art.get('language', 'English')
-        if mode == 'kg' and ctx:
+        if ctx:
             items.append(f"{j+1}. [{lang}] {title}\n   KG entities: {ctx}")
         else:
             items.append(f"{j+1}. [{lang}] {title}")
@@ -316,6 +440,7 @@ STEP 1 — Relevance (use the criteria below strictly):
 
 - LOW: Article is about:
   * Other countries' domestic supply chain issues with no clear Korea connection
+    (But if KG entities show a link to Korean sectors/ports/companies, upgrade to MEDIUM)
   * General industry trends or corporate news without supply chain disruption angle
   * Historical analysis or opinion pieces without current operational impact
   * Maritime topics unrelated to supply chain (tourism, environment, sports)
@@ -737,9 +862,7 @@ print("-" * 40)
 gdelt_classify_df = pd.DataFrame()
 if len(gdelt_raw_df) > 0:
     _dedup = dedup_by_title(gdelt_raw_df, 'GDELT')
-    _dedup['kg_entities']    = ''
-    _dedup['kg_match_count'] = 0
-    _dedup['_kg_context']    = ''
+    _dedup = apply_kg_matching(_dedup, _entity_patterns, _kg_G, _kg_nodes)
     gdelt_classify_df = proportional_sample(_dedup, MAX_LLM_SAMPLE_GDELT, MIN_PER_KEYWORD)
 
     CLASSIFY_CKPT = os.path.join(CUMUL_DIR, 'gdelt_mon_classify_checkpoint.csv')
@@ -758,9 +881,7 @@ print("-" * 40)
 naver_classify_df = pd.DataFrame()
 if len(naver_raw_df) > 0:
     _naver_dedup = dedup_by_title(naver_raw_df, '네이버')
-    _naver_dedup['kg_entities']    = ''
-    _naver_dedup['kg_match_count'] = 0
-    _naver_dedup['_kg_context']    = ''
+    _naver_dedup = apply_kg_matching(_naver_dedup, _entity_patterns, _kg_G, _kg_nodes)
     naver_classify_df = proportional_sample(_naver_dedup, MAX_LLM_SAMPLE_NAVER, MIN_PER_KEYWORD)
 
     NAVER_CLASSIFY_CKPT = os.path.join(CUMUL_DIR, 'naver_mon_classify_checkpoint.csv')
