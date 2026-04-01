@@ -58,22 +58,16 @@ for jf in json_files[:MAX_DAYS]:
     try:
         with open(jf, encoding='utf-8') as f:
             raw = json.load(f)
-        # stats 필드 정규화 (collect_daily.py 출력 구조 → 뷰어용 플랫 구조)
-        stats = raw.get('stats', {})
-        n_gdelt = stats.get('gdelt_total', 0)
-        n_naver = stats.get('naver_total', 0)
-        n_high  = stats.get('gdelt_high', 0) + stats.get('naver_high', 0)
-        n_med   = stats.get('gdelt_med', 0)  + stats.get('naver_med',  0)
-        # med 필드가 없을 경우 llm_result 에서 추정
+        # v3 notebook flat 구조
         llm = raw.get('llm_result', {})
         days.append({
             'date':    raw.get('date', '?'),
-            'n_total': n_gdelt + n_naver,
-            'n_high':  n_high,
-            'n_med':   n_med,
+            'n_total': raw.get('n_total', 0),
+            'n_high':  raw.get('n_high',  0),
+            'n_med':   raw.get('n_med',   0),
             'llm_result': llm,
         })
-        print(f"   ✓ {raw.get('date','?')}  (HIGH {n_high}, MED {n_med})")
+        print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
     except Exception as e:
         print(f"⚠ 로드 실패 ({jf}): {e}")
 
