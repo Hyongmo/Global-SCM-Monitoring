@@ -115,7 +115,19 @@ jobs:
           git push origin HEAD
 
       # ────────────────────────────────────────────────────────
-      # 7. 실패 시 요약 출력
+      # 7. 이메일 발송 (xlsx + docx + md 첨부)
+      # ────────────────────────────────────────────────────────
+      - name: Send email report
+        if: success()
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          python scripts/send_email.py ${{ env.TARGET_DATE }}
+        continue-on-error: true
+
+      # ────────────────────────────────────────────────────────
+      # 8. 실패 시 요약 출력
       # ────────────────────────────────────────────────────────
       - name: Pipeline summary
         if: always()
