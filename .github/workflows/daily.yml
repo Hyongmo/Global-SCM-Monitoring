@@ -1,9 +1,9 @@
 name: KMI 해상공급망 일일 모니터링
 
 on:
-  # ── 매일 06:10 KST (= 21:10 UTC 전날) ──
+  # ── 매일 04:00 KST (= 19:00 UTC 전날) ──
   schedule:
-    - cron: '10 21 * * *'
+    - cron: '0 19 * * *'
 
   # ── 수동 실행 (날짜 지정 가능) ──
   workflow_dispatch:
