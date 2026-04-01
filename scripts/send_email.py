@@ -16,8 +16,10 @@ send_email.py
     GMAIL_APP_PASSWORD   Gmail 앱 비밀번호 (2단계 인증 필요)
 
 호출:
-    python scripts/send_email.py [YYYY-MM-DD]                    # 기본 수신자로 발송
-    python scripts/send_email.py 2026-04-01 --to a@b.com c@d.com # 수신자 지정 발송
+    python scripts/send_email.py [YYYY-MM-DD]                            # 기본 수신자, Full (첨부포함)
+    python scripts/send_email.py 2026-04-01 --to a@b.com c@d.com        # 수신자 지정, Full
+    python scripts/send_email.py 2026-04-01 --brief --to a@b.com        # 수신자 지정, Brief (본문만)
+    python scripts/send_email.py 2026-04-01 --brief                     # 기본 수신자, Brief
 """
 
 import json, os, sys, smtplib
@@ -37,12 +39,15 @@ DEFAULT_RECIPIENTS = [
 args = sys.argv[1:]
 TARGET_DATE = None
 custom_recipients = []
+brief_mode = False          # --brief: 첨부파일 없이 브리핑 본문만 발송
 
 i = 0
 while i < len(args):
     if args[i] == '--to':
         custom_recipients = args[i+1:]
         break
+    elif args[i] == '--brief':
+        brief_mode = True
     elif TARGET_DATE is None:
         TARGET_DATE = dateparse(args[i]).date()
     i += 1
@@ -229,7 +234,7 @@ msg['To'] = ', '.join(RECIPIENTS)
 msg['Subject'] = subject
 msg.attach(MIMEText(html_body, 'html', 'utf-8'))
 
-# ── 첨부 파일 ──
+# ── 첨부 파일 (brief 모드에서는 건너뜀) ──
 ATTACHMENTS = [
     f'daily_report_{DATE_TAG}.xlsx',
     f'daily_report_llm_{DATE_TAG}.docx',
@@ -239,24 +244,29 @@ ATTACHMENTS = [
 ]
 
 attached = 0
-for fname in ATTACHMENTS:
-    fpath = os.path.join(DAILY_DIR, fname)
-    if not os.path.exists(fpath):
-        print(f"  ⚠ 첨부 파일 없음: {fname}")
-        continue
-    with open(fpath, 'rb') as f:
-        part = MIMEBase('application', 'octet-stream')
-        part.set_payload(f.read())
-    encoders.encode_base64(part)
-    part.add_header('Content-Disposition', f'attachment; filename="{fname}"')
-    msg.attach(part)
-    attached += 1
-    print(f"  📎 첨부: {fname}")
+if brief_mode:
+    print("  📋 Brief 모드: 첨부파일 없이 브리핑 본문만 발송")
+else:
+    for fname in ATTACHMENTS:
+        fpath = os.path.join(DAILY_DIR, fname)
+        if not os.path.exists(fpath):
+            print(f"  ⚠ 첨부 파일 없음: {fname}")
+            continue
+        with open(fpath, 'rb') as f:
+            part = MIMEBase('application', 'octet-stream')
+            part.set_payload(f.read())
+        encoders.encode_base64(part)
+        part.add_header('Content-Disposition', f'attachment; filename="{fname}"')
+        msg.attach(part)
+        attached += 1
+        print(f"  📎 첨부: {fname}")
 
 # ── 발송 ──
-print(f"\n[이메일 발송] {TARGET_DATE}")
+mode_label = "Brief (본문만)" if brief_mode else "Full (첨부포함)"
+print(f"\n[이메일 발송] {TARGET_DATE}  ({mode_label})")
 print(f"  수신: {', '.join(RECIPIENTS)}")
-print(f"  첨부: {attached}/{len(ATTACHMENTS)}개")
+if not brief_mode:
+    print(f"  첨부: {attached}/{len(ATTACHMENTS)}개")
 
 try:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
