@@ -200,7 +200,7 @@ html_body = f"""\
   </div>
 </div>
 
-<div style="max-width:700px; margin:0 auto; padding:20px 16px;">
+<div style="max-width:960px; width:90%; margin:0 auto; padding:20px 16px;">
 
 <div {_SEC}>
   <div {_SEC_TITLE}>📌 주요기사 요약</div>
