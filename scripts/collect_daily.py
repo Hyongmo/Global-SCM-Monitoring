@@ -82,8 +82,8 @@ NAVER_SLEEP   = 0.3
 # ── LLM 파라미터 ──
 MODEL      = "claude-haiku-4-5-20251001"
 BATCH_SIZE = 20
-MAX_LLM_SAMPLE_GDELT = _test_scale if _test_scale else 1000
-MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1000
+MAX_LLM_SAMPLE_GDELT = _test_scale if _test_scale else 1500
+MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1500
 MIN_PER_KEYWORD      = 1 if _test_scale else 3
 
 if _test_scale:
@@ -362,6 +362,7 @@ def call_llm_json(prompt, system="Return ONLY valid JSON.", max_tokens=16384, re
             resp = client.messages.create(
                 model=MODEL,
                 max_tokens=max_tokens,
+                temperature=0.1,
                 system=system,
                 messages=[{"role": "user", "content": prompt}]
             )
@@ -453,6 +454,8 @@ STEP 2 — Category (assign the BEST matching ONE category for HIGH and MEDIUM; 
 Headlines:
 {news_block}
 
+IMPORTANT: Classify based ONLY on what the headline explicitly states. Do NOT infer, assume, or add information beyond the headline text and KG context provided.
+
 Return ONLY valid JSON array:
 [{{"index": 1, "relevance": "HIGH/MEDIUM/LOW/NONE", "topic": "2-3 word topic", "category": "1_Security or empty"}}]"""
 
@@ -473,6 +476,8 @@ STEP 2 — Category (for HIGH and MEDIUM only, leave "" for LOW/NONE):
 
 Headlines with KG context:
 {news_block}
+
+IMPORTANT: Classify based ONLY on what the headline explicitly states. Do NOT infer, assume, or add information beyond the headline text and KG context provided.
 
 Return ONLY valid JSON array:
 [{{"index": 1, "relevance": "HIGH/MEDIUM/LOW/NONE", "topic": "2-3 word topic", "category": "1_Security or empty"}}]"""
@@ -1235,7 +1240,7 @@ LLM_REPORT_MODEL = "claude-sonnet-4-6"
 REPORT_SYSTEM = """당신은 KMI(한국해양수산개발원) 해상 공급망 위기 모니터링 시스템의 전문 분석가입니다.
 현재 핵심 사태: 2026년 호르무즈 해협 봉쇄 위기 (역사상 최초 실제 봉쇄)
 분석 관점: 글로벌 해상 공급망 교란 → 한국 경제·산업·소비자에 미치는 영향
-원칙: 기사 제목 사실 기반으로만 서술. 과장·추론 금지. 불확실하면 '~로 보임', '~가능성' 명시.
+원칙: 기사 제목에 명시된 사실만 서술. 기사에 없는 내용을 절대 추가·추론·상상하지 말 것. 과장 금지. 불확실하면 '~로 보임', '~가능성' 명시.
 출력: 반드시 유효한 JSON만 출력. 설명 텍스트나 마크다운 코드블록 없이 JSON 객체만."""
 
 
@@ -1311,8 +1316,8 @@ HIGH+MEDIUM 기사: 총 {len(hm)}건 (해외 {len(hm_intl)}건 / 국내 {len(hm_
 }}
 
 분석 원칙:
-- 기사 제목 사실 기반, 과장 없이 현황 중심
-- 불확실한 내용은 '~로 보임', '~가능성' 명시
+- 기사 제목에 명시된 사실만 서술. 기사에 없는 내용을 추가하거나 추론·상상하지 말 것
+- 과장 없이 현황 중심. 불확실한 내용은 '~로 보임', '~가능성' 명시
 - 한국 경제·산업 시사점 반드시 포함
 - JSON 외 다른 텍스트 출력 금지"""
 
@@ -1336,6 +1341,7 @@ else:
     resp = report_client.messages.create(
         model=LLM_REPORT_MODEL,
         max_tokens=16384,
+        temperature=0.3,
         system=REPORT_SYSTEM,
         messages=[{"role": "user", "content": report_prompt}]
     )
