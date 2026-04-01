@@ -837,7 +837,7 @@ if len(gdelt_cls) > 0 or len(naver_cls) > 0:
     report_client = anthropic.Anthropic()
     resp = report_client.messages.create(
         model=LLM_REPORT_MODEL,
-        max_tokens=4096,
+        max_tokens=16384,
         system=REPORT_SYSTEM,
         messages=[{"role": "user", "content": report_prompt}]
     )
