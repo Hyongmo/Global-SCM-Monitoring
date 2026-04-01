@@ -148,49 +148,30 @@ def _render_day(d, idx):
     date_str   = d.get('date', '?')
     llm        = d.get('llm_result', {})
     exec_s     = _esc((llm.get('executive_summary') or '').strip())
-    alert_lvl  = (llm.get('alert_level') or 'NORMAL').upper()
-    outlook    = _esc((llm.get('outlook') or '').strip())
     flow       = llm.get('flow', {})
     changes    = llm.get('changes', {}) or {}
     cats       = llm.get('categories', {}) or {}
 
-    # ── 공급망 이슈 (flow 구조가 있으면 사용, 없으면 categories 기반 fallback) ──
+    # ── 공급망 이슈 ──
     triggers   = flow.get('triggers', {}) if flow else {}
     trig_html  = ''
     trig_html += _flow_block('경로(ROUTE) 이슈',     triggers.get('route', {}))
     trig_html += _flow_block('공급원(SOURCE) 이슈',  triggers.get('source', {}))
     trig_html += _flow_block('물류(LOGISTICS) 이슈', triggers.get('logistics', {}))
     if not trig_html:
-        # categories fallback: Security + Freight + Shipping
-        for ckey in ['1_Security', '3_Freight', '7_Shipping']:
-            trig_html += _flow_block(CAT_KR_MAP.get(ckey, ckey), cats.get(ckey) or {})
-    if not trig_html:
-        trig_html = '<p class="empty">오늘 주요 공급망 이슈 없음</p>'
+        trig_html = '<p class="empty">오늘 주요 국외 트리거 없음</p>'
 
-    # ── 국내 산업 영향 (flow.domestic_impact 또는 categories fallback) ──
+    # ── 국내 산업 영향 ──
     dom_impact = flow.get('domestic_impact', {}) if flow else {}
     dom_html   = ''
-    if dom_impact:
-        for sector, text in dom_impact.items():
-            t = _esc((text or '').strip())
-            if t:
-                dom_html += (
-                    f'<div class="dom-item">'
-                    f'<div class="dom-label">{_esc(sector)}</div>'
-                    f'<p>{t}</p></div>'
-                )
-    else:
-        # fallback: EconFinance + PortCargo + OtherIndustry
-        for ckey in ['5_EconFinance', '4_PortCargo', '10_OtherIndustry']:
-            cdata = cats.get(ckey) or {}
-            ki    = _esc((cdata.get('korea_impact') or '').strip())
-            if ki:
-                label = CAT_KR_MAP.get(ckey, ckey)
-                dom_html += (
-                    f'<div class="dom-item">'
-                    f'<div class="dom-label">{label}</div>'
-                    f'<p>{ki}</p></div>'
-                )
+    for sector, text in dom_impact.items():
+        t = _esc((text or '').strip())
+        if t:
+            dom_html += (
+                f'<div class="dom-item">'
+                f'<div class="dom-label">{sector}</div>'
+                f'<p>{t}</p></div>'
+            )
     if not dom_html:
         dom_html = '<p class="empty">오늘 주요 국내 산업 영향 없음</p>'
 
@@ -212,12 +193,6 @@ def _render_day(d, idx):
     if not cat_html:
         cat_html = '<p class="empty">카테고리 분석 없음</p>'
 
-    # ── 전망 ──
-    outlook_html = (
-        f'<div class="section"><div class="section-title">🔭 전망</div>'
-        f'<p class="exec-text">{outlook}</p></div>'
-    ) if outlook else ''
-
     WEEKDAYS = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
     try:
         _d = datetime.strptime(date_str, '%Y-%m-%d')
@@ -230,7 +205,7 @@ def _render_day(d, idx):
   <div class="day-date-header">🗓️ {date_label}</div>
   <div class="day-content">
     <div class="section">
-      <div class="section-title">📌 핵심 요약</div>
+      <div class="section-title">📌 주요기사 요약</div>
       <p class="exec-text">{exec_s if exec_s else '<span class="empty">요약 없음</span>'}</p>
     </div>
     <div class="section">
@@ -242,14 +217,13 @@ def _render_day(d, idx):
       {dom_html}
     </div>
     <div class="section">
-      <div class="section-title">📊 전일 대비 변화</div>
+      <div class="section-title">📊 어제 대비 변화</div>
       {_changes_html(changes)}
     </div>
     <div class="section">
       <div class="section-title">🗂 카테고리별 분석</div>
       {cat_html}
     </div>
-    {outlook_html}
   </div>
 </div>"""
 
@@ -259,7 +233,7 @@ def _render_day(d, idx):
 n = len(days)
 
 tab_css = '\n'.join(
-    f'#tab_{i}:checked ~ .sidebar label[for="tab_{i}"] {{ background:#3498db; color:white; }}\n'
+    f'#tab_{i}:checked ~ .sidebar label[for="tab_{i}"] {{ background:#3498db; }}\n'
     f'#tab_{i}:checked ~ .main #day_{i} {{ display:block; }}'
     for i in range(n)
 )
