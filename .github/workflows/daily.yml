@@ -90,7 +90,12 @@ jobs:
           git add \
             "monitoring/${DATE_TAG}/gdelt_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/naver_mon_classified_daily_${DATE_TAG}.csv" \
+            "monitoring/${DATE_TAG}/gdelt_mon_daily_${DATE_TAG}.csv" \
+            "monitoring/${DATE_TAG}/naver_mon_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json" \
+            "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.md" \
+            "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.docx" \
+            "monitoring/${DATE_TAG}/daily_report_${DATE_TAG}.xlsx" \
             docs/daily_brief.html \
             monitoring/weekly/ \
             || true
