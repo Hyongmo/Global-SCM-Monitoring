@@ -90,12 +90,20 @@ jobs:
           #   - classified CSV  (저작권 문제 없는 분류 결과, weekly 재구성용)
           #   - JSON report     (build_viewer.py 가 30일치 읽어서 HTML 생성)
           #   - HTML viewer     (GitHub Pages 게시용)
+          echo "=== 파일 존재 확인 ==="
+          ls monitoring/${DATE_TAG}/ 2>/dev/null || echo "⚠ monitoring/${DATE_TAG}/ 없음"
+          echo "=== git status ==="
+          git status --short monitoring/${DATE_TAG}/ || true
+
           git add \
             "monitoring/${DATE_TAG}/gdelt_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/naver_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.json" \
             docs/daily_brief.html \
             || true
+
+          echo "=== staged files ==="
+          git diff --cached --name-only || true
 
           # 변경 없으면 커밋 건너뜀
           git diff --cached --quiet && echo "변경 없음 — 커밋 건너뜀" && exit 0
