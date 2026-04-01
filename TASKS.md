@@ -7776,3 +7776,59 @@ Run 7 성공 후 확인 결과, `monitoring/20260331/`에 xlsx, docx, md, raw CS
 
 ### ⚠ 잔여 작업
 - [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용하여 Tier 판정 결과 비교
+
+---
+
+## 세션 80 — 2026.04.01 (이어서)
+
+### 수행한 작업
+
+1. **테스트 모드 도입 및 GitHub Actions 파이프라인 검증**
+   - `TEST_SCALE` 환경변수 기반 축소 실행 (키워드 2개/도메인, MAX_RECORDS=10, Naver 1페이지)
+   - `daily.yml`에 `test_scale` 입력 파라미터 + `TEST_SCALE` env 추가
+   - 테스트 모드 파이프라인 end-to-end 성공 확인
+
+2. **이메일 자동 발송 기능 추가**
+   - `scripts/send_email.py` 신규 생성 (~130줄)
+   - Gmail SMTP (smtp.gmail.com:465, SSL) + App Password 방식
+   - 수신자: hmjeon@kmi.re.kr, h.kim@kmi.re.kr
+   - 첨부: xlsx, docx, md
+   - HTML 본문: 통계 테이블 + executive_summary + 웹뷰어 링크
+   - `daily.yml`에 이메일 발송 스텝 추가 (continue-on-error: true)
+   - GitHub Secrets 등록: GMAIL_ADDRESS, GMAIL_APP_PASSWORD
+
+3. **build_viewer.py — 모바일 CSS 여백 수정**
+   - `.main { overflow:visible; padding:12px 14px; }`
+   - `.day-content { max-width:100%; }`
+   - `.section { padding:14px 16px; }`
+
+4. **.gitignore 정리 — 모니터링 산출물 추적 허용**
+   - 제거: monitoring/*/*.xlsx, *.docx, *.md, raw CSV 무시 규칙
+   - 모니터링 결과 파일이 GitHub repo에 정상 커밋되도록 수정
+
+5. **Google Drive 업로드 시도 → 포기 → 이메일로 전환**
+   - 서비스 어카운트 방식은 personal Gmail에서 storageQuotaExceeded (0 storage)
+   - transferOwnership은 Workspace 계정 전용 → 근본적으로 불가
+   - GDRIVE_CREDENTIALS 시크릿은 GitHub에 잔존 (정리 필요)
+
+6. **3/31 풀스케일 수집 완료 확인**
+   - GitHub Actions에서 풀스케일(TEST_SCALE=0) 3/31 파이프라인 성공
+   - monitoring/20260331/ 에 모든 산출물(xlsx, docx, md, json, csv) 생성 확인
+
+7. **주간 리포트 자동화 사전 조사**
+   - 주간 파이프라인: 주간 롤링 CSV → news_kg_mapping_v7 (2축 분류) → scenario_generator_v6 (리포트)
+   - 정량지표 30개+ 중 자동화 가능/수동 분류:
+     - **자동화 가능 (API)**: WTI(FRED), Brent/NatGas/Gold/VIX/KOSPI/KRWUSD/산업주11개(Yahoo Finance), GPR(matteoiacoviello.com), 한국수출량(ECOS/FRED), GSCPI(NY Fed xlsx 직접 다운로드), 초크포인트 통과량(IMF PortWatch API)
+     - **수동 필요 (유료/스크래핑 차단)**: BDI(Investing.com), SCFI(Trading Economics), Harpex(Harper Petersen), NAPMSDI(Trading Economics), RWI/ISL CTI(ISL), GSCSI(World Bank)
+   - 수동 6개 지표는 주 1회 일요일에 형모님이 파일 업데이트 → 월요일 발간 구조로 결정
+
+### 커밋 내역
+- `21e46ea`: feat: 일일 리포트 이메일 자동 발송 기능 추가 (send_email.py + daily.yml)
+  - ⚠ 로컬에서 push 필요 (`git pull --rebase origin main && git push origin main`)
+
+### ⚠ 미해결 / 다음 작업
+- [ ] 이메일 기능 커밋 push 후 테스트 실행
+- [ ] 3/31 풀스케일 결과 vs 테스트 결과 비교 → LLM 샘플 1500→1000 검토
+- [ ] 주간 리포트 자동화 파이프라인 설계 (반자동: 수동 지표 6개 + 자동 나머지)
+- [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용
+- [ ] GDRIVE_CREDENTIALS 시크릿 정리

@@ -80,8 +80,8 @@ NAVER_SLEEP   = 0.3
 # ── LLM 파라미터 ──
 MODEL      = "claude-haiku-4-5-20251001"
 BATCH_SIZE = 20
-MAX_LLM_SAMPLE_GDELT = _test_scale if _test_scale else 1500
-MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1500
+MAX_LLM_SAMPLE_GDELT = _test_scale if _test_scale else 1000
+MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1000
 MIN_PER_KEYWORD      = 1 if _test_scale else 3
 
 if _test_scale:
@@ -664,7 +664,7 @@ else:
         n_new = 0
         start_idx = 1
 
-        max_start = 31 if _test_scale else 1100  # 테스트: 1페이지만
+        max_start = 31 if _test_scale else 1000  # 테스트: 1페이지만, 네이버 API 한계=1000
         while start_idx <= max_start:
             try:
                 params = {'query': keyword, 'display': NAVER_DISPLAY,
