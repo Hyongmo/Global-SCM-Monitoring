@@ -327,7 +327,9 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
     border-bottom:none; border-right:1px solid #34495e; font-size:11px; white-space:nowrap; }}
   .nav-link {{ flex:0 0 auto; border-radius:4px; padding:4px 10px;
     border-bottom:none; white-space:nowrap; font-size:11px; margin-bottom:0; }}
-  .day-content {{ padding:12px; }}
+  .main {{ overflow:visible; padding:12px 14px; }}
+  .day-content {{ max-width:100%; }}
+  .section {{ padding:14px 16px; }}
 }}
 body{{-webkit-user-select:none;-ms-user-select:none;user-select:none;}}input,textarea{{-webkit-user-select:text;user-select:text;}}
 </style>
