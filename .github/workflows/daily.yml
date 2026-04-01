@@ -71,6 +71,7 @@ jobs:
       # 5. Google Drive 업로드
       # ────────────────────────────────────────────────────────
       - name: Upload to Google Drive
+        continue-on-error: true          # Drive 실패해도 파이프라인 계속
         env:
           GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
           GDRIVE_FOLDER_ID:   ${{ secrets.GDRIVE_FOLDER_ID }}
