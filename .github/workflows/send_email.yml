@@ -1,0 +1,55 @@
+name: 📧 브리핑 이메일 발송
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: '브리핑 날짜 (YYYY-MM-DD)'
+        required: true
+      recipients:
+        description: '수신자 이메일 (쉼표 구분, 비우면 기본 수신자)'
+        required: false
+        default: ''
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send email
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          DATE="${{ github.event.inputs.target_date }}"
+          RCPT="${{ github.event.inputs.recipients }}"
+
+          if [ -n "$RCPT" ]; then
+            # 쉼표 → 공백 변환
+            TO_ARGS=$(echo "$RCPT" | tr ',' ' ')
+            python scripts/send_email.py "$DATE" --to $TO_ARGS
+          else
+            python scripts/send_email.py "$DATE"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 이메일 발송 결과" >> $GITHUB_STEP_SUMMARY
+          echo "- 날짜: ${{ github.event.inputs.target_date }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 수신자: ${{ github.event.inputs.recipients || '기본 수신자' }}" >> $GITHUB_STEP_SUMMARY
