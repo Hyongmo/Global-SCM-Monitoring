@@ -14,7 +14,7 @@ on:
         description: 'Brief 모드 (첨부파일 없이 본문만 발송)'
         type: boolean
         required: false
-        default: false
+        default: true
 
 jobs:
   send-email:
