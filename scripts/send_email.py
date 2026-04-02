@@ -190,7 +190,8 @@ def _build_full_briefing():
 briefing_html = _build_full_briefing() if llm else ''
 
 # ── 이메일 본문 구성 ──
-subject = f'[KMI 글로벌 공급망 AI 모니터링] {TARGET_DATE} 일일 AI 브리핑'
+PUB_DATE = TARGET_DATE + timedelta(days=1)
+subject = f'[KMI 글로벌 공급망 AI 일일 브리핑] {PUB_DATE} AI 브리핑'
 
 # summary 모드: 폭 제한 없음 / full·brief 모드: 960px
 _content_width = 'margin:0 auto; padding:20px 16px;'
@@ -231,7 +232,7 @@ html_body = f"""\
 {_body_sections}
 
 <div style="text-align:center; margin:20px 0 10px;">
-  <a href="https://hyongmo.github.io/Global-SCM-Monitoring/daily_brief.html"
+  <a href="https://hyongmo.github.io/Global-SCM-Monitoring/"
      style="display:inline-block; background:#3498db; color:white; padding:10px 24px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:700;">
     📊 웹 뷰어에서 전체 보기
   </a>
