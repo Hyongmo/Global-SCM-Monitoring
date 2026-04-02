@@ -158,13 +158,18 @@ def _render_day(d, idx):
     WEEKDAYS = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
     try:
         _d = datetime.strptime(date_str, '%Y-%m-%d')
-        date_label = f"{_d.year}.{_d.month:02d}.{_d.day:02d} ({WEEKDAYS[_d.weekday()]})"
+        # 기사 수집일 + 1일 = 게시일
+        from datetime import timedelta
+        _d_pub = _d + timedelta(days=1)
+        pub_date_label = f"{_d_pub.year}.{_d_pub.month:02d}.{_d_pub.day:02d} ({WEEKDAYS[_d_pub.weekday()]})"
+        collect_date_label = f"{_d.year}.{_d.month:02d}.{_d.day:02d}"
     except Exception:
-        date_label = date_str
+        pub_date_label = date_str
+        collect_date_label = date_str
 
     return f"""
 <div class="day-block" id="day_{idx}">
-  <div class="day-date-header">🗓️ {date_label}</div>
+  <div class="day-date-header">🗓️ {pub_date_label}<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: {collect_date_label}</span></div>
   <div class="day-content">
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
@@ -338,12 +343,12 @@ body{{-webkit-user-select:none;-ms-user-select:none;user-select:none;}}input,tex
 <div class="container">
 {radio_inputs}
 <div class="sidebar">
-  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a>
+  <!-- <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a> -->
 {menu_items}
 </div>
 <div class="main">
 <div class="report-header">
-  <span class="rh-title">🚢 글로벌 공급망 일일 AI 브리핑</span>
+  <span class="rh-title">🚢 글로벌 공급망 AI 일일 브리핑</span>
   <span class="rh-sub">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</span>
 </div>
 <div style="background:#f0f4f8;border-left:4px solid #2980b9;padding:8px 14px;font-size:11px;color:#555;margin:10px 14px 0 14px">

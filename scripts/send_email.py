@@ -218,7 +218,7 @@ html_body = f"""\
 <html>
 <body style="font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif; color:#2c3e50; line-height:1.6; background:#f4f6f9; margin:0; padding:0;">
 <div style="background:#2c3e50; color:white; padding:22px 28px 16px;">
-  <h1 style="font-size:20px; font-weight:700; margin:0 0 6px;">🚢 글로벌 공급망 일일 AI 브리핑</h1>
+  <h1 style="font-size:20px; font-weight:700; margin:0 0 6px;">🚢 글로벌 공급망 AI 일일 브리핑</h1>
   <div style="font-size:13px; color:#ecf0f1; margin-bottom:6px;">{TARGET_DATE}</div>
   <div style="font-size:12px; color:#bdc3c7; margin-bottom:10px;">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</div>
   <div style="font-size:11px; color:#95a5a6; background:rgba(255,255,255,0.08); padding:8px 12px; border-radius:4px;">

@@ -7827,8 +7827,123 @@ Run 7 성공 후 확인 결과, `monitoring/20260331/`에 xlsx, docx, md, raw CS
   - ⚠ 로컬에서 push 필요 (`git pull --rebase origin main && git push origin main`)
 
 ### ⚠ 미해결 / 다음 작업
-- [ ] 이메일 기능 커밋 push 후 테스트 실행
-- [ ] 3/31 풀스케일 결과 vs 테스트 결과 비교 → LLM 샘플 1500→1000 검토
+- [x] 이메일 기능 커밋 push 후 테스트 실행
+- [x] 3/31 풀스케일 결과 vs 테스트 결과 비교 → LLM 샘플 1500→1000 검토
 - [ ] 주간 리포트 자동화 파이프라인 설계 (반자동: 수동 지표 6개 + 자동 나머지)
 - [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용
 - [ ] GDRIVE_CREDENTIALS 시크릿 정리
+
+---
+
+## 세션 81 — 2026.04.02
+
+### 수행한 작업
+
+1. **networkx 의존성 추가 (requirements.txt)**
+   - GitHub Actions에서 `ModuleNotFoundError: networkx` → `networkx>=3.2` 추가
+   - 원인: 3/31까지는 KG 매칭 코드가 없었으므로 import 안 됐음. 4/1부터 KG 매칭 추가 후 발생
+
+2. **collect_daily.py 품질 개선**
+   - LLM 샘플 수 1000→1500 복원 (이전 세션에서 축소했으나 품질 문제는 샘플 수가 아닌 프롬프트/파이프라인 이슈)
+   - 추론금지 프롬프트 추가 (분류 mon/kg 2곳 + 리포트 시스템/분석원칙 2곳)
+     - 분류: "IMPORTANT: Classify based ONLY on what the headline explicitly states. Do NOT infer, assume, or add information beyond the headline text."
+     - 리포트: "기사 제목에 명시된 사실만 서술. 기사에 없는 내용을 절대 추가·추론·상상하지 말 것."
+   - temperature 0.1 설정 (분류 call_llm_json + 리포트 client.messages.create)
+   - temperature 0.3 vs 0.1 비교 테스트 → 거의 차이 없음, 안정성 위해 0.1 채택
+
+3. **이메일 발송 기능 대폭 개선 (send_email.py)**
+   - 메일 제목: `[KMI 글로벌 공급망 AI 모니터링] {날짜} 일일 AI 브리핑`
+   - KMI 브랜드 헤더 (🚢 글로벌 공급망 일일 AI 브리핑 + 날짜 + AX지원단 + 면책조항)
+   - 전체 브리핑 본문 포함 (공급망 이슈, 국내 산업 영향, 어제 대비 변화, 카테고리별 분석)
+   - CSV 첨부 (gdelt/naver 분류 결과)
+   - 3가지 발송 모드 추가:
+     - **Full**: 전체 브리핑 + 첨부파일 (자동 발송 기본)
+     - **Brief** (`--brief`): 전체 브리핑, 첨부 없음
+     - **Summary** (`--summary`): 주요기사 요약만, 첨부 없음
+   - `--to` 수신자 지정 기능
+   - 이메일 본문 폭 제한 제거 (max-width 삭제)
+
+4. **수동 이메일 발송 워크플로우 (send_email.yml)**
+   - GitHub Actions workflow_dispatch: 날짜 + 수신자 + 발송모드(드롭다운: summary/brief/full)
+   - 기본값: summary 모드
+
+5. **gdelt_news_monitoring_v3.ipynb 동기화 (미커밋)**
+   - temperature 0.1 적용 (call_llm_json + 리포트)
+   - 추론금지 프롬프트 추가 (분류 mon/kg 2곳 + 리포트)
+   - KG 매칭 로직 추가 (build_entity_patterns, match_entities, apply_kg_matching + networkx)
+   - Cell 6(GDELT), Cell 8(네이버)에서 apply_kg_matching 호출로 변경
+   - 샘플 수 1500 확인 (이미 적용되어 있었음)
+
+### 커밋 내역
+- `2adaccc`: fix: requirements.txt에 networkx 추가
+- `12c28cf`: tune: LLM 샘플 1500 복원, 추론금지 프롬프트, temperature 설정
+- `404f6b8`: tune: 이메일 전체 브리핑 본문 + 수동 발송 기능 + temperature 0.1
+- `5239cce`: feat: 브리핑 이메일 수동 발송 워크플로우 추가
+- `efce3c6`: feat: 이메일 Brief 모드 추가 (--brief 플래그)
+- `a552400`: tune: 수동 이메일 발송 Brief 모드 기본값 true로 변경
+- `072db27`: tune: 이메일 본문 폭 확장 (700px → 960px/90%)
+- `d250764`: feat: 이메일 Summary 모드 추가 + 전 모드 폭 제한 제거
+- ⚠ gdelt_news_monitoring_v3.ipynb 변경은 미커밋 (로컬 Jupyter 테스트 후 커밋 예정)
+
+### 참고
+- 향후 검토: 회사 메일(KMI SMTP) 발송자 전환 가능 (환경변수만 교체)
+- 향후 검토: KMI 홈페이지 HTML 게시 가능 (SCP/SFTP 또는 iframe)
+- 이메일 텍스트 선택 방지는 기술적으로 불가 → summary 모드로 최소 정보만 발송하는 방향
+
+### ⚠ 미해결 / 다음 작업
+- [ ] gdelt_news_monitoring_v3.ipynb 로컬 테스트 후 커밋
+- [ ] 자동 발송 시 외부 수신자에게 별도 모드로 보내는 기능 (수신자 확정 후)
+- [ ] 주간 리포트 자동화 파이프라인 설계
+- [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용
+- [ ] GDRIVE_CREDENTIALS 시크릿 정리
+
+---
+
+## 세션 82 — 2026.04.02 (이어서)
+
+### 수행한 작업
+
+1. **해상공급망 지표 수집 워크플로우 구축**
+   - Chrome 브라우저 자동화를 이용한 6개 지표 반자동 수집 체계 완성
+   - 수집 대상 지표:
+     | 지표 | 출처 | 수집방식 |
+     |------|------|----------|
+     | BDI | Trading Economics | 자동 (page text) |
+     | SCFI | Shanghai Shipping Exchange | 자동 (page text) |
+     | Harpex | Harper Petersen | 자동 (page text) |
+     | NAPMSDI | Trading Economics | 자동 (page text) |
+     | RWI/ISL CTI | ISL.org | 자동 (리포트 페이지) |
+     | GSCSI | World Bank | 자동 (Power BI 호버 툴팁) |
+
+2. **수집 결과 (2026-04-02 첫 수집)**
+   - BDI: 2,030.00 (2026-04-01)
+   - SCFI: 1,826.77 (2026-03-27)
+   - Harpex: 2,213 (2026-03-27)
+   - NAPMSDI: 58.90 (Mar 2026)
+   - RWI/ISL CTI: 144.8 (Feb 2026)
+   - GSCSI: 2.02 million TEUs (Feb 2026)
+
+3. **생성 파일**
+   - `scripts/save_indicators.py` — JSON 입력 → CSV 저장 (일일 + 누적)
+   - `.claude/skills/collect-indicators/SKILL.md` — 수집 절차 스킬 파일
+   - `monitoring/indicators/indicators_20260402.csv` — 첫 일일 수집 결과
+   - `monitoring/indicators/indicators_cumulative.csv` — 누적 데이터
+
+4. **GSCSI 자동 수집 성공**
+   - 당초 Power BI iframe이라 수동 입력 예정이었으나
+   - 차트 끝점 hover → 툴팁에서 값 읽기 성공 (2026년 2월 1일, 2.02 million TEUs)
+   - 완전 자동은 아니지만 반자동으로 값 읽기 가능
+
+### 파일 변경 내역
+- `scripts/save_indicators.py` (신규) — 지표 CSV 저장 스크립트
+- `.claude/skills/collect-indicators/SKILL.md` (신규) — 수집 워크플로우 스킬
+- `monitoring/indicators/` (신규 디렉토리) — 지표 데이터 저장소
+
+### ⚠ 미해결 / 다음 작업
+- [ ] gdelt_news_monitoring_v3.ipynb 로컬 테스트 후 커밋
+- [ ] 자동 발송 시 외부 수신자에게 별도 모드로 보내는 기능 (수신자 확정 후)
+- [ ] 주간 리포트 자동화 파이프라인 설계
+- [ ] CCI 재검증 — V2 157주 데이터에 CCI 공식 적용
+- [ ] GDRIVE_CREDENTIALS 시크릿 정리
+- [ ] 지표 수집 워크플로우 반복 테스트 (사이트 구조 변경 대응)
+- [ ] save_indicators.py 커밋 여부 결정
