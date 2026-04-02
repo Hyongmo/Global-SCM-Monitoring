@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       target_date:
-        description: '브리핑 날짜 (YYYY-MM-DD)'
-        required: true
+        description: '브리핑 날짜 (YYYY-MM-DD, 비우면 전일 자동)'
+        required: false
+        default: ''
       recipients:
         description: '수신자 이메일 (쉼표 구분, 비우면 기본 수신자)'
         required: false
@@ -46,6 +47,10 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
           DATE="${{ github.event.inputs.target_date }}"
+          if [ -z "$DATE" ]; then
+            DATE=$(date -u -d '-1 day' '+%Y-%m-%d')
+            echo "날짜 미입력 → 전일 자동: $DATE"
+          fi
           RCPT="${{ github.event.inputs.recipients }}"
 
           MODE="${{ github.event.inputs.send_mode }}"
@@ -68,6 +73,6 @@ jobs:
         if: always()
         run: |
           echo "## 이메일 발송 결과" >> $GITHUB_STEP_SUMMARY
-          echo "- 날짜: ${{ github.event.inputs.target_date }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 날짜: ${{ github.event.inputs.target_date || '전일 자동' }}" >> $GITHUB_STEP_SUMMARY
           echo "- 수신자: ${{ github.event.inputs.recipients || '기본 수신자' }}" >> $GITHUB_STEP_SUMMARY
           echo "- 모드: ${{ github.event.inputs.send_mode }}" >> $GITHUB_STEP_SUMMARY
