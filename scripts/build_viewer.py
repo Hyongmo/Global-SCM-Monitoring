@@ -237,7 +237,7 @@ html = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>글로벌 공급망 AI 데일리 모니터링 | KMI</title>
+<title>글로벌 공급망 AI 일일 브리핑 | KMI</title>
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
