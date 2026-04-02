@@ -12,8 +12,8 @@ send_email.py
     - naver_mon_classified_daily_YYYYMMDD.csv
 
 환경변수:
-    GMAIL_ADDRESS        발송 Gmail 주소
-    GMAIL_APP_PASSWORD   Gmail 앱 비밀번호 (2단계 인증 필요)
+    KMI_SMTP_ADDRESS     발송 이메일 주소 (kmi@kmi.re.kr)
+    KMI_SMTP_PASSWORD    메일 계정 비밀번호
 
 호출:
     python scripts/send_email.py [YYYY-MM-DD]                            # 기본 수신자, Full (첨부포함)
@@ -66,12 +66,16 @@ MONITOR_DIR = 'monitoring'
 DAILY_DIR = os.path.join(MONITOR_DIR, DATE_TAG)
 
 # ── 환경변수 ──
-GMAIL_ADDRESS = os.environ.get('GMAIL_ADDRESS', '')
-GMAIL_APP_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD', '')
+KMI_SMTP_ADDRESS = os.environ.get('KMI_SMTP_ADDRESS', '')
+KMI_SMTP_PASSWORD = os.environ.get('KMI_SMTP_PASSWORD', '')
 
-if not GMAIL_ADDRESS or not GMAIL_APP_PASSWORD:
-    print("⚠ GMAIL_ADDRESS 또는 GMAIL_APP_PASSWORD 미설정 — 이메일 발송 건너뜀")
+if not KMI_SMTP_ADDRESS or not KMI_SMTP_PASSWORD:
+    print("⚠ KMI_SMTP_ADDRESS 또는 KMI_SMTP_PASSWORD 미설정 — 이메일 발송 건너뜀")
     sys.exit(0)
+
+# ── SMTP 서버 설정 ──
+SMTP_HOST = 'zmx124.mailplug.com'
+SMTP_PORT = 25
 
 # ── 카테고리 한글명 ──
 CAT_KR = {
@@ -249,7 +253,7 @@ html_body = f"""\
 
 # ── 메시지 구성 ──
 msg = MIMEMultipart()
-msg['From'] = GMAIL_ADDRESS
+msg['From'] = KMI_SMTP_ADDRESS
 msg['To'] = ', '.join(RECIPIENTS)
 msg['Subject'] = subject
 msg.attach(MIMEText(html_body, 'html', 'utf-8'))
@@ -289,9 +293,10 @@ if not brief_mode and not summary_mode:
     print(f"  첨부: {attached}/{len(ATTACHMENTS)}개")
 
 try:
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-        server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
-        server.sendmail(GMAIL_ADDRESS, RECIPIENTS, msg.as_string())
+    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
+        server.starttls()
+        server.login(KMI_SMTP_ADDRESS, KMI_SMTP_PASSWORD)
+        server.sendmail(KMI_SMTP_ADDRESS, RECIPIENTS, msg.as_string())
     print(f"✅ 이메일 발송 완료")
 except Exception as e:
     print(f"❌ 이메일 발송 실패: {e}")

@@ -43,8 +43,8 @@ jobs:
 
       - name: Send email
         env:
-          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
         run: |
           DATE="${{ github.event.inputs.target_date }}"
           if [ -z "$DATE" ]; then
