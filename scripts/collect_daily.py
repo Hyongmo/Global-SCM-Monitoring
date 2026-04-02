@@ -1497,7 +1497,7 @@ else:
 
 
 # ══════════════════════════════════════════════════════════════
-# 9. daily_brief.html 생성 (Cell 13)
+# 9. index.html 생성 (Cell 13)
 # ══════════════════════════════════════════════════════════════
 
 print("\n[HTML 뷰어 생성]")
@@ -1523,7 +1523,7 @@ if json_files:
             capture_output=True, text=True
         )
         if result.returncode == 0:
-            print("✅ daily_brief.html 생성 완료")
+            print("✅ index.html 생성 완료")
         else:
             print(f"  ⚠ 뷰어 생성 실패: {result.stderr[:200]}")
 else:

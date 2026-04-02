@@ -3,19 +3,19 @@
 build_viewer.py
 ===============
 monitoring/*/daily_report_llm_*.json 을 읽어
-docs/daily_brief.html 을 빌드 (GitHub Pages 퍼블리시용)
+docs/index.html 을 빌드 (GitHub Pages 퍼블리시용)
 
 호출 방식:
     python scripts/build_viewer.py [--days N]   # 기본 최근 30일
 """
 
 import os, json, glob, sys
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # ─── 경로 설정 ───────────────────────────────────────────────
 MONITOR_DIR = 'monitoring'
 DOCS_DIR    = 'docs'
-VIEWER_PATH = os.path.join(DOCS_DIR, 'daily_brief.html')
+VIEWER_PATH = os.path.join(DOCS_DIR, 'index.html')
 
 # ─── 최대 표시 일수 ───────────────────────────────────────────
 MAX_DAYS = 30
@@ -214,7 +214,8 @@ _WDAYS = ['월', '화', '수', '목', '금', '토', '일']
 def _fmt_menu_date(date_str):
     try:
         _d = datetime.strptime(date_str, '%Y-%m-%d')
-        return f"{_d.year}.{_d.month:02d}.{_d.day:02d} ({_WDAYS[_d.weekday()]})"
+        _d_pub = _d + timedelta(days=1)
+        return f"{_d_pub.year}.{_d_pub.month:02d}.{_d_pub.day:02d} ({_WDAYS[_d_pub.weekday()]})"
     except Exception:
         return date_str
 
