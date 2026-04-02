@@ -101,7 +101,7 @@ jobs:
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.md" \
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.docx" \
             "monitoring/${DATE_TAG}/daily_report_${DATE_TAG}.xlsx" \
-            docs/daily_brief.html \
+            docs/index.html \
             monitoring/weekly/ \
             || true
 
@@ -147,6 +147,6 @@ jobs:
           else
             echo "- JSON 리포트: ❌ 없음" >> $GITHUB_STEP_SUMMARY
           fi
-          if [ -f "docs/daily_brief.html" ]; then
-            echo "- HTML 뷰어: ✅ [열기](https://${GITHUB_REPOSITORY_OWNER}.github.io/$(echo ${GITHUB_REPOSITORY} | cut -d/ -f2)/daily_brief.html)" >> $GITHUB_STEP_SUMMARY
+          if [ -f "docs/index.html" ]; then
+            echo "- HTML 뷰어: ✅ [열기](https://${GITHUB_REPOSITORY_OWNER}.github.io/$(echo ${GITHUB_REPOSITORY} | cut -d/ -f2)/)" >> $GITHUB_STEP_SUMMARY
           fi
