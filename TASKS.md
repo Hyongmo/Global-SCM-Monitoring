@@ -7947,3 +7947,112 @@ Run 7 성공 후 확인 결과, `monitoring/20260331/`에 xlsx, docx, md, raw CS
 - [ ] GDRIVE_CREDENTIALS 시크릿 정리
 - [ ] 지표 수집 워크플로우 반복 테스트 (사이트 구조 변경 대응)
 - [ ] save_indicators.py 커밋 여부 결정
+
+---
+
+## 세션 83 (2026-04-02)
+
+### 수행 작업
+
+1. **서비스 제목 통일: "글로벌 공급망 AI 일일 브리핑"**
+   - `<title>` 태그: build_viewer.py, 노트북 Cell 15, 기존 HTML 파일 모두 수정
+   - 이전: "글로벌 공급망 AI 데일리 모니터링"
+
+2. **파일명 변경: daily_brief.html → index.html**
+   - `scripts/build_viewer.py` — VIEWER_PATH → `docs/index.html`
+   - `scripts/collect_daily.py` — 출력 파일명 index.html
+   - `gdelt_news_monitoring_v3.ipynb` Cell 15 — VIEWER_PATH → `monitoring/index.html`
+   - KMI 도메인 배포 대응 (scm-briefing.kmi.re.kr)
+
+3. **사이드바 날짜 발간일(수집일+1) 기준으로 변경**
+   - `_fmt_menu_date()` — build_viewer.py, 노트북 Cell 15 모두 수정
+   - 본문 `_fmt_day_date()`와 통일
+
+4. **모바일 swipe JS 이스케이프 수정**
+   - 노트북 Cell 15의 f-string 안에서 `\x27` → `\\x27` (Python 해석 방지)
+   - build_viewer.py 코드를 노트북에 그대로 복사하여 해결
+   - 기존 HTML(monitoring, docs) 직접 수정
+
+5. **모바일 CSS build_viewer.py와 동기화**
+   - 노트북 Cell 15에 누락된 모바일 규칙 추가:
+     - `.main { overflow:visible; padding:12px 14px; }`
+     - `.day-content { max-width:100%; }`
+     - `.section { padding:14px 16px; }`
+
+6. **이메일 제목/날짜 발간일 기준으로 변경**
+   - `scripts/send_email.py` — PUB_DATE = TARGET_DATE + 1일
+   - 제목: `[KMI 글로벌 공급망 AI 일일 브리핑] {PUB_DATE} AI 브리핑`
+   - URL: `https://hyongmo.github.io/Global-SCM-Monitoring/`
+
+7. **KMI 도메인 연결 시도**
+   - GitHub Pages Custom domain: `scm-briefing.kmi.re.kr` 설정
+   - CNAME: KMI 전산팀에 DNS 등록 요청 필요
+   - `docs/CNAME` 파일 생성 (scm-briefing.kmi.re.kr)
+
+### 커밋 내역
+- `b237e90` — 브라우저 탭 제목 통일 (scripts 3개)
+- `de85e44` — 스크립트 파일명 index.html 전환 및 사이드바 발간일 (build_viewer, collect_daily, send_email)
+  - ⚠ reset으로 취소됨
+- `cdf1b9a` — 이메일 제목 발간일 기준 변경 (send_email.py만)
+
+### ⚠ 미해결 / 다음 작업
+- [ ] 로컬에서 `git push` 필요 (cdf1b9a)
+- [ ] build_viewer.py, collect_daily.py 변경분 커밋 필요 (현재 unstaged)
+- [ ] 노트북 변경분은 커밋하지 않음 (로컬 전용)
+- [ ] HTML 파일은 커밋하지 않음 (자동 생성물)
+- [ ] KMI 전산팀 DNS CNAME 등록 대기 중
+- [ ] KMI 메일서버 SMTP 정보 확인 필요 (발신 주소 변경 시)
+- [ ] upload_gdrive.py — 사용 안 함
+- [ ] docs/CNAME 커밋 필요
+
+---
+
+## 세션 84 (2026-04-03)
+
+### 수행 작업
+
+1. **데일리 브리프 프롬프트 보강 (노트북 + .py)**
+   - 목표: 정보 밀도 향상 — 운임/유가 언급 시 구체적 지표명(BDI, SCFI, Brent 등), 대상(유조선, 컨테이너 등), 시점 명시
+   - 변경 파일:
+     - `gdelt_news_monitoring_v3.ipynb` Cell 13 (`_build_report_prompt()`)
+     - `scripts/collect_daily.py` L1268-1337
+   - articles_block에 topic, sourcecountry 메타정보 추가
+     - `- {title} [{topic}] ({sourcecountry})` 형태
+   - 프롬프트 메타정보 활용 지시 추가: "각 기사 항목에 [topic] (출처국) 메타정보가 첨부되어 있으니 서술 시 맥락 파악에 활용하세요."
+   - 문장 수 증가: executive 3-4→4-6, 각 파트 2-4→3-5, domestic_impact 2-3→3-5
+   - "분석 원칙" 4항 → "서술 원칙" 7항으로 교체:
+     - 기사 제목에서 확인 가능한 사실만 서술
+     - 운임·유가·지수 언급 시 구체적 지표명과 대상 명시
+     - 수치 언급 시 기준 시점·비교 대상 명시
+     - 같은 주제의 기사들은 묶어서 일관된 흐름으로 서술
+     - 특정할 수 없는 수치·맥락은 생략하거나 "~로 보임"
+     - 불확실한 내용은 "~로 보임", "~가능성" 명시
+     - 한국 경제·산업 시사점 반드시 포함
+
+2. **샘플링 규모 영향 분석**
+   - 4/1(1000+1000, HIGH+MEDIUM 518건) vs 4/2(1500+1500, 774건) 비교
+   - LLM에 전달되는 기사 수: head(10) 제한으로 카테고리당 10건, 국내/국외 합쳐 ~73-80건
+   - 브리프 길이 유사 (~4771 vs ~4436자)
+   - **결론**: 샘플링이 아닌 프롬프트가 브리프 품질 결정
+
+3. **KG 활용 방식 분석 (gate vs lens)**
+   - gate 방식: KG 매칭 안 되면 기사 제외 → 범위 축소 위험
+   - lens 방식: KG 매칭 정보를 제목 옆에 첨부 → 분류 정밀도 향상, 범위 유지
+   - mon 모드 / kg 모드 설명: mon은 KG 컨텍스트 없이 분류, kg는 KG 매칭 정보 첨부
+
+4. **노트북에 KG 엔티티 매칭 추가 (.py와 동기화)**
+   - 발견: .py에는 이미 KG 매칭 구현됨 (L144-262), 노트북에는 없었음
+   - Cell 1 (index 2): KG 로드 + build_entity_patterns + match_entities + apply_kg_matching 함수 121줄 추가
+   - Cell 6 (index 6): `_gdelt_dedup = apply_kg_matching(...)` 추가
+   - Cell 8 (index 8): `_naver_dedup = apply_kg_matching(...)` 추가
+   - 결과: 노트북도 .py와 동일하게 KG 엔티티 매칭 수행
+
+5. **collect_daily.py 프롬프트 변경 커밋**
+   - 커밋 `01d477c` — "데일리 브리프 프롬프트 보강: 맥락·구체성·정보량 개선"
+   - ⚠ push 실패 (HTTPS 인증 문제)
+
+### ⚠ 미해결 / 다음 작업
+- [ ] `git push` 필요 — 커밋 `01d477c` (collect_daily.py 프롬프트 변경) 로컬에만 있음
+- [ ] 노트북 변경분 (프롬프트 보강 + KG 매칭) 커밋되지 않음 (로컬 전용)
+- [ ] BACKGROUND 하드코딩 섹션 유지 + KG 매칭 병행 전략 확정
+- [ ] 실제 브리프 출력 비교 테스트 필요 (프롬프트 변경 전/후)
