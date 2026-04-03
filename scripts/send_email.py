@@ -12,9 +12,9 @@ send_email.py
     - naver_mon_classified_daily_YYYYMMDD.csv
 
 환경변수:
-    SMTP_ADDRESS         발송 이메일 주소 (Gmail 우선)
-    SMTP_PASSWORD        메일 계정 비밀번호 (Gmail 앱 비밀번호)
-    KMI_SMTP_ADDRESS     폴백: KMI 발송 주소 (SMTP_ADDRESS 미설정 시)
+    GMAIL_ADDRESS        Gmail 발송 주소 (우선)
+    GMAIL_APP_PASSWORD   Gmail 앱 비밀번호 (우선)
+    KMI_SMTP_ADDRESS     폴백: KMI 발송 주소 (Gmail 미설정 시)
     KMI_SMTP_PASSWORD    폴백: KMI 비밀번호
 
 호출:
@@ -68,11 +68,11 @@ MONITOR_DIR = 'monitoring'
 DAILY_DIR = os.path.join(MONITOR_DIR, DATE_TAG)
 
 # ── 환경변수 ──
-# Gmail: SMTP_ADDRESS / SMTP_PASSWORD  (smtp.gmail.com:587, STARTTLS)
+# Gmail: GMAIL_ADDRESS / GMAIL_APP_PASSWORD  (smtp.gmail.com:587, STARTTLS)
 # KMI:   KMI_SMTP_ADDRESS / KMI_SMTP_PASSWORD (gov-smtp.mailplug.com:465, SSL)
 # Gmail 우선, 없으면 KMI 폴백
-SMTP_ADDRESS  = os.environ.get('SMTP_ADDRESS', '') or os.environ.get('KMI_SMTP_ADDRESS', '')
-SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD', '') or os.environ.get('KMI_SMTP_PASSWORD', '')
+SMTP_ADDRESS  = os.environ.get('GMAIL_ADDRESS', '') or os.environ.get('KMI_SMTP_ADDRESS', '')
+SMTP_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD', '') or os.environ.get('KMI_SMTP_PASSWORD', '')
 
 if not SMTP_ADDRESS or not SMTP_PASSWORD:
     print("⚠ SMTP_ADDRESS/SMTP_PASSWORD 미설정 — 이메일 발송 건너뜀")
