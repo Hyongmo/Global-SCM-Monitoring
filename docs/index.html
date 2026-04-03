@@ -6,15 +6,29 @@
 <title>글로벌 공급망 AI 일일 브리핑 | KMI</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size: 16px; background: #f5f6fa; color: #2c3e50; }
-/* ── 탭 레이아웃 ── */
-.container { display: flex; min-height: 100vh; }
-.sidebar { width: 180px; min-width: 180px; background: #2c3e50; color: #ecf0f1; overflow-y: auto; padding: 10px 0; position: sticky; top: 0; height: 100vh; align-self: flex-start; }
-.sidebar-title { padding: 14px 14px 10px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #2c3e50; color: #bdc3c7; line-height: 1.4; }
-.nav-link { display:flex; align-items:center; justify-content:space-between; padding:9px 12px; font-size:12px; font-weight:600; color:#ecf0f1; text-decoration:none; border-radius:6px; background:rgba(52,152,219,0.15); border:1px solid rgba(52,152,219,0.3); margin-bottom:8px; }
+body { font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
+       font-size:16px; background:#f5f6fa; color:#2c3e50; }
+
+/* ─ 레이아웃 ─ */
+.container { display:flex; min-height:100vh; }
+
+/* ─ 사이드바 ─ */
+.sidebar { width:180px; min-width:180px; background:#2c3e50; color:#ecf0f1;
+           overflow-y:auto; padding:10px 0; position:sticky; top:0; height:100vh;
+           align-self:flex-start; }
+.sidebar-title { padding:14px 14px 10px; font-size:12px; font-weight:bold; border-bottom:1px solid #2c3e50; color:#bdc3c7; line-height:1.4; }
+.nav-link { display:flex; align-items:center; justify-content:space-between;
+            padding:9px 12px; font-size:12px; font-weight:600; color:#ecf0f1;
+            text-decoration:none; border-radius:6px;
+            background:rgba(52,152,219,0.15); border:1px solid rgba(52,152,219,0.3);
+            margin-bottom:8px; }
 .nav-link:hover { background:#3498db; border-color:#3498db; color:#fff; }
-.menu-item { display: block; padding: 8px 10px; cursor: pointer; font-size: 12px; line-height: 1.5; border-bottom: 1px solid #34495e; color: #ecf0f1; -webkit-user-select: none; user-select: none; transition: .15s; }
-.menu-item:hover { background: #34495e; }
+.menu-item { display:block; padding:8px 10px; cursor:pointer; font-size:12px;
+             line-height:1.5; border-bottom:1px solid #34495e; color:#ecf0f1;
+             user-select:none; -webkit-user-select:none; transition:.15s; }
+.menu-item:hover { background:#34495e; }
+
+/* ─ 탭 활성화 CSS ─ */
 #tab_0:checked ~ .sidebar label[for="tab_0"] { background:#3498db; }
 #tab_0:checked ~ .main #day_0 { display:block; }
 #tab_1:checked ~ .sidebar label[for="tab_1"] { background:#3498db; }
@@ -31,53 +45,76 @@ body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size
 #tab_6:checked ~ .main #day_6 { display:block; }
 #tab_7:checked ~ .sidebar label[for="tab_7"] { background:#3498db; }
 #tab_7:checked ~ .main #day_7 { display:block; }
-/* ── 날짜 블록 ── */
-.main { flex: 1; min-width: 0; overflow-y: visible; padding: 20px 28px; }
-.day-block { display: none; }
-/* ── 기존 daily_report_html과 동일한 스타일 ── */
-.report-header { background: #2c3e50; color: #ecf0f1; padding: 20px 28px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-.report-header .rh-title { font-size: 20px; font-weight: 700; white-space: nowrap; }
-.report-header .rh-sub { font-size: 13px; color: #bdc3c7; }
-.day-date-header { font-size: 22px; font-weight: 700; color: #2c3e50; padding: 14px 0 10px; border-bottom: 2px solid #e0e4ea; margin-bottom: 16px; }
+#tab_8:checked ~ .sidebar label[for="tab_8"] { background:#3498db; }
+#tab_8:checked ~ .main #day_8 { display:block; }
+
+/* ─ 리포트 헤더 ─ */
+.report-header { background:#2c3e50; color:#ecf0f1; padding:20px 28px;
+                display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+.report-header .rh-title { font-size:20px; font-weight:700; white-space:nowrap; }
+.report-header .rh-sub { font-size:13px; color:#bdc3c7; }
+
+/* ─ 본문 ─ */
+.main { flex:1; overflow-y:visible; padding:20px 28px; min-width:0; }
+.day-block { display:none; }
+.day-date-header { font-size:22px; font-weight:700; color:#2c3e50;
+                   padding:14px 0 10px; border-bottom:2px solid #e0e4ea; margin-bottom:16px; }
+
+/* ─ 콘텐츠 ─ */
 .day-content { }
-.section { background: white; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-.section-title { font-size: 1.05em; font-weight: 700; color: #2c3e50; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #eef0f3; }
-.exec-text { line-height: 1.75; font-size: 0.97em; color: #34495e; }
-.flow-item { margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid #f0f0f0; }
-.flow-item:last-child { border-bottom: none; margin-bottom: 0; }
-.flow-label { font-weight: 700; font-size: 0.9em; color: #2980b9; margin-bottom: 8px; letter-spacing: 0.3px; }
-.flow-sub { display: flex; gap: 10px; margin-bottom: 6px; align-items: flex-start; }
-.flow-sub p { font-size: 0.9em; line-height: 1.65; color: #444; flex: 1; }
-.tag { font-size: 0.78em; font-weight: 700; padding: 2px 8px; border-radius: 4px; white-space: nowrap; margin-top: 2px; }
-.tag-intl { background: #ebf5fb; color: #2980b9; }
-.tag-dom  { background: #eafaf1; color: #27ae60; }
-.dom-item { margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #f0f0f0; }
-.dom-item:last-child { border-bottom: none; margin-bottom: 0; }
-.dom-label { font-weight: 700; font-size: 0.88em; color: #8e44ad; margin-bottom: 4px; }
-.dom-item p { font-size: 0.9em; line-height: 1.65; color: #444; }
-.chg-group { margin-bottom: 10px; }
-.chg-label { display: inline-block; font-size: 0.8em; font-weight: 700; padding: 2px 10px; border-radius: 4px; margin-bottom: 4px; }
-.chg-label.new { background: #fdebd0; color: #e67e22; }
-.chg-label.esc { background: #fadbd8; color: #c0392b; }
-.chg-label.res { background: #d5f5e3; color: #27ae60; }
-.chg-group ul { padding-left: 18px; }
-.chg-group li { font-size: 0.9em; line-height: 1.65; color: #444; margin-bottom: 2px; }
-.empty { color: #999; font-size: 0.88em; font-style: italic; }
-@media (max-width: 768px) {
-  .report-header { padding: 8px 12px; }
-  .report-header .rh-title { font-size: 16px; }
-  .report-header .rh-sub { font-size: 12px; }
+.section { background:white; border-radius:8px; padding:20px 24px;
+           margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.section-title { font-size:1.05em; font-weight:700; color:#2c3e50;
+                 margin-bottom:14px; padding-bottom:8px;
+                 border-bottom:2px solid #eef0f3; }
+.exec-text { line-height:1.75; font-size:0.97em; color:#34495e; }
+
+/* ─ 플로우 블록 ─ */
+.flow-item { margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid #f0f0f0; }
+.flow-item:last-child { border-bottom:none; margin-bottom:0; }
+.flow-label { font-weight:700; font-size:0.9em; color:#2980b9;
+              margin-bottom:8px; letter-spacing:0.3px; }
+.flow-sub { display:flex; gap:10px; margin-bottom:6px; align-items:flex-start; }
+.flow-sub p { font-size:0.9em; line-height:1.65; color:#444; flex:1; }
+.tag { font-size:0.78em; font-weight:700; padding:2px 8px; border-radius:4px;
+       white-space:nowrap; margin-top:2px; }
+.tag-intl { background:#ebf5fb; color:#2980b9; }
+.tag-dom  { background:#eafaf1; color:#27ae60; }
+
+/* ─ 국내 영향 ─ */
+.dom-item { margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #f0f0f0; }
+.dom-item:last-child { border-bottom:none; margin-bottom:0; }
+.dom-label { font-weight:700; font-size:0.88em; color:#8e44ad; margin-bottom:4px; }
+.dom-item p { font-size:0.9em; line-height:1.65; color:#444; }
+
+/* ─ 변화 블록 ─ */
+.chg-group { margin-bottom:10px; }
+.chg-label { display:inline-block; font-size:0.8em; font-weight:700;
+             padding:2px 10px; border-radius:4px; margin-bottom:4px; }
+.chg-label.new { background:#fdebd0; color:#e67e22; }
+.chg-label.esc { background:#fadbd8; color:#c0392b; }
+.chg-label.res { background:#d5f5e3; color:#27ae60; }
+.chg-group ul { padding-left:18px; }
+.chg-group li { font-size:0.9em; line-height:1.65; color:#444; margin-bottom:2px; }
+
+.empty { color:#999; font-size:0.88em; font-style:italic; }
+
+/* ─ 모바일 ─ */
+@media (max-width:768px) {
+  .report-header { padding:8px 12px; }
+  .report-header .rh-title { font-size:16px; }
+  .report-header .rh-sub { font-size:12px; }
 }
-@media (max-width: 768px) {
-  body { font-size: 15px; }
-  .container { flex-direction: column; }
-  .sidebar { width: 100%; min-width: 0; height: auto; position: sticky; top: 0; z-index: 100;
-    display: flex; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
-    padding: 6px 8px; gap: 4px; -webkit-overflow-scrolling: touch; }
-  .menu-item { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px;
-    border-bottom: none; border-right: 1px solid #34495e; font-size: 11px; white-space: nowrap; }
-  .nav-link { flex: 0 0 auto; border-radius: 4px; padding: 4px 10px;
-    border-bottom: none; white-space: nowrap; font-size: 11px; margin-bottom: 0; }
+@media (max-width:768px) {
+  body { font-size:15px; }
+  .container { flex-direction:column; }
+  .sidebar { width:100%; min-width:0; height:auto; position:sticky; top:0; z-index:100;
+    display:flex; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden;
+    padding:6px 8px; gap:4px; -webkit-overflow-scrolling:touch; }
+  .menu-item { flex:0 0 auto; border-radius:4px; padding:4px 10px;
+    border-bottom:none; border-right:1px solid #34495e; font-size:11px; white-space:nowrap; }
+  .nav-link { flex:0 0 auto; border-radius:4px; padding:4px 10px;
+    border-bottom:none; white-space:nowrap; font-size:11px; margin-bottom:0; }
   .main { overflow:visible; padding:12px 14px; }
   .day-content { max-width:100%; }
   .section { padding:14px 16px; }
@@ -95,16 +132,18 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
 <input type="radio" name="daytab" id="tab_5" hidden>
 <input type="radio" name="daytab" id="tab_6" hidden>
 <input type="radio" name="daytab" id="tab_7" hidden>
+<input type="radio" name="daytab" id="tab_8" hidden>
 <div class="sidebar">
   <!-- <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a> -->
-<label class="menu-item" for="tab_0">2026.04.03 (금)</label>
-<label class="menu-item" for="tab_1">2026.04.02 (목)</label>
-<label class="menu-item" for="tab_2">2026.04.01 (수)</label>
-<label class="menu-item" for="tab_3">2026.03.31 (화)</label>
-<label class="menu-item" for="tab_4">2026.03.30 (월)</label>
-<label class="menu-item" for="tab_5">2026.03.29 (일)</label>
-<label class="menu-item" for="tab_6">2026.03.28 (토)</label>
-<label class="menu-item" for="tab_7">2026.03.27 (금)</label>
+<label class="menu-item" for="tab_0">2026.04.04 (토)</label>
+<label class="menu-item" for="tab_1">2026.04.03 (금)</label>
+<label class="menu-item" for="tab_2">2026.04.02 (목)</label>
+<label class="menu-item" for="tab_3">2026.04.01 (수)</label>
+<label class="menu-item" for="tab_4">2026.03.31 (화)</label>
+<label class="menu-item" for="tab_5">2026.03.30 (월)</label>
+<label class="menu-item" for="tab_6">2026.03.29 (일)</label>
+<label class="menu-item" for="tab_7">2026.03.28 (토)</label>
+<label class="menu-item" for="tab_8">2026.03.27 (금)</label>
 
 </div>
 <div class="main">
@@ -116,6 +155,32 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.</div>
 
 <div class="day-block" id="day_0">
+  <div class="day-date-header">🗓️ 2026.04.04 (토요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.04.03</span></div>
+  <div class="day-content">
+    <div class="section">
+      <div class="section-title">📌 주요기사 요약</div>
+      <p class="exec-text">호르무즈 해협 봉쇄 이후 처음으로 프랑스·일본·오만 선박이 해협을 통과하며 부분적 재개 신호가 나타났고, 한국을 포함한 40여 개국 외교장관이 해협 개방을 논의하는 등 외교적 움직임이 가시화되고 있다. 그러나 이란이 UAE 가스 플랜트와 쿠웨이트 정유시설을 공격하고 통행료(톨) 부과 방식으로 '우호국' 선박에만 통행을 허용하는 등 봉쇄의 선택적 완화 국면이 전개되고 있다. 브렌트유 현물 가격은 한때 배럴당 141달러를 기록하며 2008년 금융위기 이후 최고치를 경신했고, 국내 나프타 수급 불안으로 석유화학 업계의 이달 생산 중단 가능성이 제기되며 편의점 숟가락·빨대 등 생활용품 품귀 현상이 현실화되고 있다. 코스피와 원화는 호르무즈 재개 기대감에 반등했으나, 유류할증료가 이미 3배 수준으로 급등한 가운데 5월 이후 물류비 추가 충격 가능성이 경고되고 있다. 정부는 호르무즈 우회 운임 상승분에 대한 관세 면제 조치를 시행하고 자동차 수출 물류비·유동성 지원에 나섰으며, 여당은 나프타 수급 지원을 위한 추경 검토를 밝혔다.</p>
+    </div>
+    <div class="section">
+      <div class="section-title">🌐 공급망 이슈</div>
+      <div class="flow-item"><div class="flow-label">경로(ROUTE) 이슈</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>호르무즈 해협 봉쇄 이후 처음으로 프랑스·일본·오만 선박이 해협을 통과하며 부분적 재개 신호가 나타났으나, 이란은 '우호국' 선박에만 통행을 허용하고 통행료를 부과하는 방식으로 해협을 선택적으로 관리하고 있다. 이란의 UAE 가스 플랜트 및 쿠웨이트 정유시설 공격으로 주변 에너지 인프라에 대한 위협이 지속되고 있으며, 인도는 이란산 원유 도입 재개를 보류하고 제재 유조선 항로를 중국으로 변경한 것으로 전해졌다. 한국을 포함한 40여 개국 외교장관이 해협 개방을 논의하고 프랑스·한국이 공동 대응에 나서는 등 외교적 해결 시도가 진행 중이다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>호르무즈 해협의 선택적 통행 허용 상황은 한국 선박의 안정적 통과를 보장하지 못하는 상황으로 보이며, 중동산 원유·LNG의 주요 수입국인 한국에 직접적인 공급 위협이 지속되고 있다. 프랑스와의 협력 및 다자 외교 참여를 통해 해협 재개를 추진하고 있으나, 이란의 통행료 부과 방식이 한국 선박에 어떻게 적용될지는 불확실한 상황이다. 트럼프 대통령의 호르무즈 개방 및 석유 확보 발언이 동맹국 한국에 대한 압박으로 해석될 가능성도 제기되고 있다.</p></div></div><div class="flow-item"><div class="flow-label">공급원(SOURCE) 이슈</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>이란의 UAE 가스 플랜트 및 쿠웨이트 정유시설 공격으로 중동 에너지 생산 인프라가 직접적인 피해를 입은 것으로 보도되었다. 아부다비 알루미늄 생산 정상화에 최대 1년이 소요될 수 있다는 전망이 나왔으며, 러시아는 인도에 대한 원유·LNG 공급 확대 의사를 밝히며 공급원 다변화 움직임이 나타나고 있다. JERA의 미국 Commonwealth LNG와의 구매 계약 종료로 LNG 공급망 재편 가능성도 제기되고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>중동산 원유 공급 차질로 나프타 수급 불안이 심화되어 석유화학 업계의 이달 생산 중단 가능성이 제기되고 있다. 정부는 비료 5개월치를 확보하는 등 원자재 비축에 나섰으나, 원유에 이어 비료 공급 충격으로 올해 작황 및 식품 가격 상승 우려가 확산되고 있다. 인도의 이란산 원유 도입 보류로 아시아 역내 원유 공급 경쟁이 심화될 가능성이 있다.</p></div></div><div class="flow-item"><div class="flow-label">물류(LOGISTICS) 이슈</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>컨테이너 운임은 공급 과잉이 호르무즈 충격을 일부 상쇄하면서 상승세가 정체된 것으로 나타났으나, 탱커 시장은 중동 리스크에도 긍정적 전망이 제시되었다. 인도 바스마티 쌀 수출업체들은 해운사의 추가 요금 부과로 구제를 요청하고 있으며, 방글라데시는 LNG 화물 긴급 추가 구매와 디젤 긴급 수입에 나서는 등 역내 물류 긴장이 지속되고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>국내 유류할증료가 이미 3배 수준으로 급등했으며 5월 이후 추가 충격 가능성이 경고되고 있다. 정부는 호르무즈 우회 운임 상승분에 대한 관세 면제 조치를 시행하고 자동차 수출 물류비 지원에 나섰으나, 유통업계는 물류비·원가 상승의 직격탄을 맞고 있다. 인천 중소기업들은 물류 피해가 원자재 분야로 확산되고 있다고 호소하고 있다.</p></div></div>
+    </div>
+    <div class="section">
+      <div class="section-title">🇰🇷 국내 산업 영향</div>
+      <div class="dom-item"><div class="dom-label">경제·금융</div><p>브렌트유 현물이 한때 배럴당 141달러를 기록하며 2008년 금융위기 이후 최고치를 경신한 가운데, 코스피와 원화는 호르무즈 재개 기대감에 약 3% 반등했다. 고유가발 인플레이션 압력이 국내 물가 전반에 확산될 가능성이 있으며, 일본 국채금리가 27년 만에 최고치를 기록하는 등 글로벌 금융시장 불안도 지속되고 있다. 지방정부 차원에서도 중동 사태 비상경제대응 점검회의가 진행되는 등 위기 대응 체계가 가동되고 있다.</p></div><div class="dom-item"><div class="dom-label">정유·화학</div><p>나프타 가격이 이미 82% 폭등했다는 보도가 나왔으며, 나프타 수급 불안으로 석유화학 업계의 이달 생산 중단 가능성이 제기되고 기업 신용등급 하향 우려도 확산되고 있다. 편의점 숟가락·빨대 등 합성수지 기반 생활용품의 발주 중단 및 품귀 현상이 4월 들어 현실화되고 있으며, 여당은 추경을 통한 나프타 수급 지원 검토와 3·4월 합성수지 가격 인상 폭 완화 방안을 밝혔다. 석유 대리점들은 최고가격제로 인한 유통비 압박으로 공급 중단 및 폐업 위기를 호소하고 있다.</p></div><div class="dom-item"><div class="dom-label">해운·물류</div><p>유류할증료가 이미 3배 수준으로 급등했으며 5월 이후 추가 물류비 충격 가능성이 경고되고 있다. 정부는 호르무즈 우회 운임 상승분 관세 면제 및 자동차 수출 물류비·유동성 지원 조치를 시행했다. 울산항만공사는 중·일과의 국제 급유 협력체계를 확대하고 친환경 연료 급유 선박에 최대 1,000만 원의 인센티브를 도입하는 등 항만 경쟁력 강화에 나서고 있다.</p></div><div class="dom-item"><div class="dom-label">식품·농업</div><p>정부는 비료 5개월치를 확보했으나, 원유에 이어 비료 공급 충격으로 올해 작황에 적신호가 켜지고 있다. 곡물 가격 상승 시 사료·육류 가격의 연쇄 인상 가능성이 제기되고 있으며, UN은 중동 분쟁으로 인한 에너지 비용 상승이 3월 식품 가격 급등을 초래했다고 밝혔다. 글로벌 식량위기 우려가 확산되고 있어 국내 식품 물가에도 추가적인 상승 압력이 가해질 가능성이 있다.</p></div><div class="dom-item"><div class="dom-label">기타산업</div><p>아부다비 알루미늄 생산 정상화에 최대 1년이 소요될 수 있다는 전망이 나오면서 알루미늄 등 비철금속 공급망에도 영향이 예상된다. 이란-미국 전쟁의 영향으로 콘돔 등 석유화학 기반 원자재 부족이 예상된다는 보도가 나오는 등 산업 전반에 걸친 원자재 공급 차질 우려가 확산되고 있다.</p></div>
+    </div>
+    <div class="section">
+      <div class="section-title">📊 어제 대비 변화</div>
+      <div class="chg-group"><span class="chg-label new">신규 ↑</span><ul><li>호르무즈 해협 봉쇄 이후 처음으로 프랑스·일본·오만 선박이 해협을 통과하며 부분적 재개 신호 등장</li><li>이란이 통행료(톨) 부과 방식으로 '우호국' 선박에만 선택적 통행 허용하는 새로운 관리 방식 도입</li><li>이란의 UAE 가스 플랜트 및 쿠웨이트 정유시설 공격으로 주변국 에너지 인프라 피해 발생</li><li>한국을 포함한 40여 개국 외교장관의 호르무즈 해협 개방 논의 회의 개최</li><li>프랑스·한국 호르무즈 재개 공동 협력 추진 보도</li><li>4월 '나프타 쇼크' 현실화로 편의점 숟가락·빨대 등 생활용품 품귀 현상 발생</li><li>여당의 나프타 수급 지원 추경 검토 및 합성수지 가격 인상 폭 완화 방안 발표</li><li>정부의 호르무즈 우회 운임 상승분 관세 면제 조치 시행</li><li>JERA의 미국 Commonwealth LNG 구매 계약 종료 확인</li></ul></div><div class="chg-group"><span class="chg-label esc">심화 ▲</span><ul><li>브렌트유 현물 가격이 한때 배럴당 141달러를 기록하며 2008년 금융위기 이후 최고치 경신</li><li>국내 유류할증료가 이미 3배 수준으로 급등하고 5월 이후 추가 충격 가능성 경고</li><li>석유화학 업계의 이달 생산 중단 가능성 제기 및 기업 신용등급 하향 우려 확산</li><li>나프타 가격 82% 폭등 보도로 석유화학 원가 압박 심화</li><li>인도의 이란산 원유 도입 재개 보류로 아시아 역내 공급 경쟁 심화 가능성</li><li>아부다비 알루미늄 생산 정상화에 최대 1년 소요 전망으로 비철금속 공급 차질 장기화 우려</li><li>고유가발 인플레이션 압력으로 일본 국채금리 27년 만에 최고치 기록 등 글로벌 금융시장 불안 확대</li></ul></div><div class="chg-group"><span class="chg-label res">완화 ↓</span><ul><li>호르무즈 해협 완전 봉쇄 상태에서 일부 선박 통과 허용으로 전면 차단 국면은 부분 완화</li></ul></div>
+    </div>
+    <div class="section">
+      <div class="section-title">🗂 카테고리별 분석</div>
+      <div class="flow-item"><div class="flow-label">안보·군사</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>호르무즈 해협 봉쇄 이후 처음으로 프랑스·일본·오만 선박이 해협을 통과했으며, 이란은 '우호국' 선박에 한해 통행을 허용하고 통행료를 부과하는 방식으로 해협을 관리하고 있다. 이란은 UAE 가스 플랜트와 쿠웨이트 정유시설을 공격한 것으로 보도되어 주변국 에너지 인프라에 대한 위협이 지속되고 있다. 인도는 이란산 원유 도입 재개를 보류하고 제재 대상 유조선의 항로를 중국으로 변경한 것으로 전해졌다. 프랑스와 한국이 호르무즈 해협 재개를 위해 협력하기로 한 것으로 보도되었으며, 일부 분석에서는 이번 봉쇄 위기를 1956년 수에즈 위기와 비교하는 시각도 제기되고 있다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국을 포함한 40여 개국 외교장관이 호르무즈 해협 개방을 논의하는 회의를 개최했으며, 프랑스와 한국이 해협 재개를 위해 공동 대응하기로 한 것으로 보도되었다. 트럼프 대통령은 호르무즈를 쉽게 열고 석유를 확보해 큰돈을 벌 수 있다고 발언하며 동맹국에 대한 압박 가능성이 제기되고 있다. 코스피와 원화는 호르무즈 재개 기대감에 반등하는 등 해협 상황이 국내 금융시장에 직접적인 영향을 미치고 있다.</p></div></div><div class="flow-item"><div class="flow-label">운임·물류비</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>일본 소유 LNG 탱커를 포함한 복수의 선박이 호르무즈 해협을 통과했으며, 인도 국적 선박 3척도 추가 도착이 예상되는 것으로 보도되었다. 컨테이너 운임은 공급 과잉(capacity glut)이 호르무즈 충격을 일부 상쇄하면서 상승세가 정체된 것으로 나타났다. 인도 바스마티 쌀 수출업체들은 전쟁으로 인한 물류 혼란으로 해운사들이 추가 요금을 부과하고 있다며 구제를 요청하고 있다. 탱커 시장에 대해서는 중동 리스크에도 불구하고 긍정적 전망이 제시된 것으로 보도되었다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>국내 유류할증료가 이미 3배 수준으로 급등한 것으로 보도되었으며, 5월 이후 추가적인 물류비 충격 가능성이 경고되고 있다. 정부는 호르무즈 우회 운임 상승분을 관세 산정에서 면제하는 조치를 시행했으며, 종량제봉투 품질검수 기간도 10일에서 1일로 단축하는 등 공급망 대응에 나섰다. 아마존과 우체국도 유류할증료를 도입한 것으로 보도되어 물류비 상승이 전방위로 확산되고 있다. 유통업계는 물류비·원가 상승의 직격탄을 맞고 있으며, 컨테이너 부족 현상도 가시화되고 있는 것으로 보인다.</p></div></div><div class="flow-item"><div class="flow-label">항만·화물</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>방글라데시 정부는 LNG 화물 3건을 추가 긴급 구매에 나섰으며, 싱가포르발 선박이 치타공항에 2만 7,300톤의 디젤을 반입했다. 인도 인디안오일은 LPG 공급이 안정적이라고 밝히며 패닉 구매를 자제할 것을 당부했다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>한국 정부는 비료 5개월치를 확보한 것으로 보도되었으며, 곡물 가격 상승 시 사료·육류 가격의 연쇄 인상 가능성이 제기되고 있다. 석유 대리점들은 최고가격제로 인해 유통비가 막혀 공급 중단 및 폐업 위기에 처했다고 호소하고 있다.</p></div></div><div class="flow-item"><div class="flow-label">경제·금융</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>브렌트유 현물 가격이 한때 배럴당 141달러를 기록하며 2008년 금융위기 이후 최고치를 경신했으며, WTI 원유는 트럼프의 가격 상한 시도에도 불구하고 브렌트를 상회하는 이례적 현상이 나타났다. 이란 공격 이후 근월물 유가가 원월물 대비 기록적인 프리미엄을 형성하는 등 공급 불안이 극도로 고조되고 있다. 미국 소비자 심리지수는 전쟁과 유가 위기 속에 역대 세 번째로 낮은 수준으로 급락했으며, EU 연료 가격도 이란 전쟁으로 인한 공급 압박으로 계속 상승하고 있다. 방글라데시 정부는 에너지 위기로 인해 근무 시간 단축 및 조기 폐점 조치를 시행했으며, UN은 중동 분쟁으로 인한 에너지 비용 상승이 3월 식품 가격 급등을 초래했다고 밝혔다. 유가 150달러 돌파 우려도 제기되고 있으며, 고유가발 인플레이션 압력으로 일본 국채금리가 27년 만에 최고치를 기록했다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>코스피와 원화는 호르무즈 재개 기대감에 각각 약 3% 반등했으나, 브렌트유 현물이 141달러까지 치솟으며 공급 불안이 최고조에 달한 상황이다. 한전KPS는 자원안보 위기 극복을 위한 대국민 에너지 절약 캠페인을 전개하고 있으며, 증평군 등 지방정부도 중동 사태 비상경제대응 점검회의를 진행하고 있다. 고유가발 인플레이션 압력이 국내 물가 전반에 확산될 가능성이 있으며, 에너지 슈퍼 트릴레마 상황에서 한국의 생존 전략 논의가 본격화되고 있는 것으로 보인다.</p></div></div><div class="flow-item"><div class="flow-label">해운</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>CMA CGM이 한국에서 건조된 메탄올 추진 컨테이너선을 인도받은 것으로 보도되었다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>1분기 상선 수주 실적에서 HD현대중공업은 양호한 성과를 보인 반면 한화오션은 다소 부진했으며, LNG 운반선 수주가 주목받고 있다. 울산항만공사는 중·일과의 국제 급유 협력체계를 확대하고, 친환경 연료 급유 선박에 최대 1,000만 원의 인센티브를 도입했다. 해운업의 부산 이전 논의가 정치적 관점이 아닌 산업 논리로 검토되어야 한다는 의견도 제기되고 있다.</p></div></div><div class="flow-item"><div class="flow-label">물류</div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>정부는 중동 리스크에 대응해 자동차 수출 물류비 및 유동성 지원 방안을 마련했다. 인천 중소기업들은 물류 피해가 원자재 분야로 확산되고 있다고 호소하고 있다. 현대글로비스는 레드에너지를 상대로 한 3,000만 달러 규모 소송에서 승소 판결을 받은 것으로 보도되었다.</p></div></div><div class="flow-item"><div class="flow-label">기타 산업</div><div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>이란-미국 전쟁의 영향으로 콘돔 등 석유화학 기반 원자재 부족이 예상된다는 보도가 나왔으며, 아부다비 알루미늄 생산 정상화에 최대 1년이 소요될 수 있다는 전망이 제시되었다. 러시아는 인도에 대한 원유·LNG 공급 확대 의사를 밝혔으며, 파키스탄은 LNG 잉여 상황에서 공급 부족 위기로 전환될 가능성이 제기되고 있다. JERA의 미국 Commonwealth LNG와의 구매 계약이 종료된 것으로 DOE 신고를 통해 확인되었다.</p></div><div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>나프타 수급 불안으로 석유화학 업계의 이달 생산 중단 가능성이 제기되었으며, 나프타 가격이 이미 82% 폭등했다는 보도도 나왔다. 편의점 숟가락·빨대 등 합성수지 기반 생활용품의 발주 중단 및 품귀 현상이 현실화되고 있으며, 4월 '나프타 쇼크'가 생활 물가 전방위 압박으로 이어지고 있다. 여당은 추경을 통한 나프타 수급 지원 검토와 3·4월 합성수지 가격 인상 폭 완화 방안을 밝혔으며, 중동 사태 장기화로 기업 신용등급 하향 우려도 제기되고 있다. 원유에 이어 비료 공급 충격으로 올해 작황에 적신호가 켜지고 글로벌 식량위기 우려도 확산되고 있다.</p></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="day-block" id="day_1">
   <div class="day-date-header">🗓️ 2026.04.03 (금요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.04.02</span></div>
   <div class="day-content">
     <div class="section">
@@ -141,7 +206,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_1">
+<div class="day-block" id="day_2">
   <div class="day-date-header">🗓️ 2026.04.02 (목요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.04.01</span></div>
   <div class="day-content">
     <div class="section">
@@ -167,7 +232,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_2">
+<div class="day-block" id="day_3">
   <div class="day-date-header">🗓️ 2026.04.01 (수요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.03.31</span></div>
   <div class="day-content">
     <div class="section">
@@ -193,7 +258,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_3">
+<div class="day-block" id="day_4">
   <div class="day-date-header">🗓️ 2026.03.31 (화요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.03.30</span></div>
   <div class="day-content">
     <div class="section">
@@ -219,7 +284,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_4">
+<div class="day-block" id="day_5">
   <div class="day-date-header">🗓️ 2026.03.30 (월요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.03.29</span></div>
   <div class="day-content">
     <div class="section">
@@ -245,7 +310,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_5">
+<div class="day-block" id="day_6">
   <div class="day-date-header">🗓️ 2026.03.29 (일요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.03.28</span></div>
   <div class="day-content">
     <div class="section">
@@ -271,7 +336,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_6">
+<div class="day-block" id="day_7">
   <div class="day-date-header">🗓️ 2026.03.28 (토요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.03.27</span></div>
   <div class="day-content">
     <div class="section">
@@ -297,7 +362,7 @@ body{-webkit-user-select:none;-ms-user-select:none;user-select:none;}input,texta
   </div>
 </div>
 
-<div class="day-block" id="day_7">
+<div class="day-block" id="day_8">
   <div class="day-date-header">🗓️ 2026.03.27 (금요일)<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: 2026.03.26</span></div>
   <div class="day-content">
     <div class="section">
