@@ -75,7 +75,7 @@ if not KMI_SMTP_ADDRESS or not KMI_SMTP_PASSWORD:
 
 # ── SMTP 서버 설정 ──
 SMTP_HOST = 'zmx124.mailplug.com'
-SMTP_PORT = 587
+SMTP_PORT = 465
 
 # ── 카테고리 한글명 ──
 CAT_KR = {
@@ -293,8 +293,7 @@ if not brief_mode and not summary_mode:
     print(f"  첨부: {attached}/{len(ATTACHMENTS)}개")
 
 try:
-    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as server:
-        server.starttls()
+    with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as server:
         server.login(KMI_SMTP_ADDRESS, KMI_SMTP_PASSWORD)
         server.sendmail(KMI_SMTP_ADDRESS, RECIPIENTS, msg.as_string())
     print(f"✅ 이메일 발송 완료")
