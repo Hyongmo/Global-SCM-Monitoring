@@ -18,6 +18,12 @@ __pycache__/
 *service_account*.json
 rugged-karma-*.json
 
+# ── 노트북 (로컬 전용) ──
+*.ipynb
+
+# ── 작업 기록 (로컬 전용) ──
+TASKS.md
+
 # ── 임시 파일 ──
 *.tmp
 monitoring/cumulative/
