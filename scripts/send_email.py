@@ -59,7 +59,8 @@ while i < len(args):
     i += 1
 
 if TARGET_DATE is None:
-    TARGET_DATE = (datetime.now() - timedelta(days=1)).date()
+    from zoneinfo import ZoneInfo
+    TARGET_DATE = (datetime.now(ZoneInfo('Asia/Seoul')) - timedelta(days=1)).date()
 
 RECIPIENTS = custom_recipients if custom_recipients else DEFAULT_RECIPIENTS
 

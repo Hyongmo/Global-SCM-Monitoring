@@ -50,7 +50,7 @@ jobs:
         run: |
           DATE="${{ github.event.inputs.target_date }}"
           if [ -z "$DATE" ]; then
-            DATE=$(date -u -d '-1 day' '+%Y-%m-%d')
+            DATE=$(TZ=Asia/Seoul date -d 'yesterday' '+%Y-%m-%d')
             echo "날짜 미입력 → 전일 자동: $DATE"
           fi
           RCPT="${{ github.event.inputs.recipients }}"

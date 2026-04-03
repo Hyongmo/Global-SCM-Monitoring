@@ -32,7 +32,8 @@ import anthropic
 if len(sys.argv) > 1:
     TARGET_DATE = dateparse(sys.argv[1]).date()
 else:
-    TARGET_DATE = (datetime.now() - timedelta(days=1)).date()
+    from zoneinfo import ZoneInfo
+    TARGET_DATE = (datetime.now(ZoneInfo('Asia/Seoul')) - timedelta(days=1)).date()
 
 d_start = TARGET_DATE
 d_end   = TARGET_DATE
