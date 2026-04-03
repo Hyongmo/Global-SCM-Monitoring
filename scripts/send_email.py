@@ -293,10 +293,16 @@ if not brief_mode and not summary_mode:
     print(f"  첨부: {attached}/{len(ATTACHMENTS)}개")
 
 try:
-    with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as server:
+    import ssl, traceback
+    print(f"  SMTP 접속: {SMTP_HOST}:{SMTP_PORT} (SSL)")
+    print(f"  발신: {KMI_SMTP_ADDRESS}")
+    ctx = ssl.create_default_context()
+    with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=ctx, timeout=30) as server:
+        server.set_debuglevel(1)
         server.login(KMI_SMTP_ADDRESS, KMI_SMTP_PASSWORD)
         server.sendmail(KMI_SMTP_ADDRESS, RECIPIENTS, msg.as_string())
     print(f"✅ 이메일 발송 완료")
 except Exception as e:
     print(f"❌ 이메일 발송 실패: {e}")
+    traceback.print_exc()
     sys.exit(1)
