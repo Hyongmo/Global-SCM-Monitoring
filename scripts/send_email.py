@@ -75,7 +75,7 @@ if not KMI_SMTP_ADDRESS or not KMI_SMTP_PASSWORD:
 
 # ── SMTP 서버 설정 ──
 SMTP_HOST = 'zmx124.mailplug.com'
-SMTP_PORT = 25
+SMTP_PORT = 587
 
 # ── 카테고리 한글명 ──
 CAT_KR = {
