@@ -82,8 +82,8 @@ NAVER_SLEEP   = 0.3
 # ── LLM 파라미터 ──
 MODEL      = "claude-haiku-4-5-20251001"
 BATCH_SIZE = 20
-MAX_LLM_SAMPLE_GDELT = _test_scale if _test_scale else 1000
-MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1000
+MAX_LLM_SAMPLE_GDELT = _test_scale if _test_scale else 1500
+MAX_LLM_SAMPLE_NAVER = _test_scale if _test_scale else 1500
 MIN_PER_KEYWORD      = 1 if _test_scale else 3
 
 if _test_scale:
@@ -92,16 +92,16 @@ if _test_scale:
 
 # ── 카테고리 정의 ──
 CATEGORIES = {
-    "1_Security":       "Security — military threats, geopolitical tensions, chokepoint control, naval operations",
+    "1_Security":       "Security & Geopolitics — military actions, armed conflicts, sanctions, naval operations, geopolitical tensions, diplomatic negotiations, chokepoint reopening talks",
     "2_Safety":         "Safety — vessel accidents, maritime safety incidents, IMO regulations",
-    "3_Freight":        "Freight Rates / Transit Volume — freight index changes (BDI, SCFI, etc.), traffic volume shifts",
+    "3_Freight":        "Freight Rates / Transit Volume — freight index changes (BDI, SCFI, etc.), traffic volume shifts, transit resumption through chokepoints",
     "4_PortCargo":      "Port Cargo Volume — import cargo volume, port throughput, port conditions",
-    "5_EconFinance":    "Economy / Finance — stock prices, exchange rates, financial index movements, economic indicators",
+    "5_EconFinance":    "Economy / Finance — stock prices, exchange rates, financial index movements, economic indicators, oil/commodity price movements",
     "6_Seafood":        "Seafood Trade — export/import value and unit prices of seafood, fishing industry impacts",
-    "7_Shipping":       "Shipping Industry — domestic/overseas shipping companies, carrier trends, alternative routes, fleet changes",
+    "7_Shipping":       "Shipping Industry — domestic/overseas shipping companies, carrier trends, alternative routes, fleet changes, vessel transit through chokepoints",
     "8_Logistics":      "Logistics Companies — impacts on logistics/forwarding companies, response measures",
     "9_PortCongestion": "Port Congestion — port delays, berth waiting, container dwell time",
-    "10_OtherIndustry": "Other Industries — petroleum/naphtha, LNG, fertilizers, bunkering price changes, petrochemical impacts",
+    "10_OtherIndustry": "Other Industries — petroleum/naphtha, LNG, fertilizers, bunkering price changes, petrochemical impacts, energy infrastructure attacks",
 }
 CATEGORY_KEYS = list(CATEGORIES.keys())
 
@@ -119,26 +119,30 @@ CAT_KR = {
 }
 CAT_ORDER = list(CAT_KR.keys())
 
-CAT_BLOCK_MON = """  - 1_Security: International relations changes — transit fee disputes, military deployments, UN resolutions,
-    joint condemnation statements, naval operations, chokepoint control, Iran tensions, Houthi attacks
+CAT_BLOCK_MON = """  - 1_Security: Military actions & geopolitics — armed conflict, missile strikes, sanctions, military deployments,
+    diplomatic negotiations for strait reopening, UN resolutions, Iran-US tensions, Houthi attacks.
+    NOTE: Ship transit/passage through chokepoints → 7_Shipping. Oil/energy price impacts → 5_EconFinance.
+    Energy infrastructure attacks → 10_OtherIndustry. Transit fee/toll disputes → 3_Freight.
   - 2_Safety: Vessel accidents, casualties, IMO emergency meetings, maritime safety regulations,
-    Iran communications to IMO, safety incidents at sea
+    safety incidents at sea
   - 3_Freight: Freight index changes (BDI, SCFI, CCFI, WCI), traffic volume shifts through Suez/Hormuz/Cape/Aden,
-    tanker rate spikes, container freight surcharges, shipping rate trends
+    tanker rate spikes, container freight surcharges, transit fees/tolls, shipping rate trends
   - 4_PortCargo: Import cargo volume changes (crude oil, LNG, petroleum products, refined products),
-    port throughput data, import port status, berth utilization
+    port throughput data, import port status, berth utilization, emergency cargo procurement
   - 5_EconFinance: Stock prices (KOSPI, MSCI), VIX, exchange rates (KRW/USD), Brent/WTI oil price movements,
-    financial market reactions in US/Iran/Korea, economic indicators
+    financial market reactions, economic indicators, commodity price surges, inflation impacts
   - 6_Seafood: Seafood export/import values and unit prices, fishing industry difficulties from oil price rises,
     coastal/deep-sea fishing company impacts, seafood market inflation
-  - 7_Shipping: Domestic shipping company (HMM, Pan Ocean) trends, top 10 global carrier updates (Maersk, MSC, CMA CGM),
-    alternative route strategies, emergency bunker surcharges (EBS), fleet repositioning
+  - 7_Shipping: Ship transit through chokepoints (first passage, resumed passage), domestic shipping company
+    (HMM, Pan Ocean) trends, global carrier updates (Maersk, MSC, CMA CGM), alternative route strategies,
+    emergency bunker surcharges (EBS), fleet repositioning, vessel rerouting
   - 8_Logistics: Logistics company impacts (CJ Logistics, Hyundai Glovis), logistics cost changes,
-    operational difficulties, shipper service disruptions, forwarding company responses
+    supply chain disruptions, shipper service disruptions, forwarding company responses
   - 9_PortCongestion: Port congestion around Hormuz/Gulf region, cargo throughput delays,
     berth waiting times, container dwell time increases, port capacity constraints
-  - 10_OtherIndustry: Petroleum/naphtha price changes, LNG spot price spikes, fertilizer price impacts,
-    bunkering price changes, petrochemical feedstock costs, refinery margin shifts"""
+  - 10_OtherIndustry: Energy infrastructure attacks (refineries, gas plants), petroleum/naphtha price changes,
+    LNG spot price spikes, fertilizer price impacts, petrochemical feedstock costs, refinery margin shifts,
+    food price impacts, raw material supply disruptions"""
 
 # ══════════════════════════════════════════════════════════════
 # 0-b. KG 로드 + 엔티티 매칭 (seed_kg_v4.json)
