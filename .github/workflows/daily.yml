@@ -120,6 +120,8 @@ jobs:
       - name: Send email report
         if: success()
         env:
+          SMTP_ADDRESS:       ${{ secrets.SMTP_ADDRESS }}
+          SMTP_PASSWORD:      ${{ secrets.SMTP_PASSWORD }}
           KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
           KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
         run: |

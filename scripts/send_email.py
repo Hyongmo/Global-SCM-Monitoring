@@ -12,8 +12,10 @@ send_email.py
     - naver_mon_classified_daily_YYYYMMDD.csv
 
 환경변수:
-    KMI_SMTP_ADDRESS     발송 이메일 주소 (kmi@kmi.re.kr)
-    KMI_SMTP_PASSWORD    메일 계정 비밀번호
+    SMTP_ADDRESS         발송 이메일 주소 (Gmail 우선)
+    SMTP_PASSWORD        메일 계정 비밀번호 (Gmail 앱 비밀번호)
+    KMI_SMTP_ADDRESS     폴백: KMI 발송 주소 (SMTP_ADDRESS 미설정 시)
+    KMI_SMTP_PASSWORD    폴백: KMI 비밀번호
 
 호출:
     python scripts/send_email.py [YYYY-MM-DD]                            # 기본 수신자, Full (첨부포함)
@@ -66,16 +68,25 @@ MONITOR_DIR = 'monitoring'
 DAILY_DIR = os.path.join(MONITOR_DIR, DATE_TAG)
 
 # ── 환경변수 ──
-KMI_SMTP_ADDRESS = os.environ.get('KMI_SMTP_ADDRESS', '')
-KMI_SMTP_PASSWORD = os.environ.get('KMI_SMTP_PASSWORD', '')
+# Gmail: SMTP_ADDRESS / SMTP_PASSWORD  (smtp.gmail.com:587, STARTTLS)
+# KMI:   KMI_SMTP_ADDRESS / KMI_SMTP_PASSWORD (gov-smtp.mailplug.com:465, SSL)
+# Gmail 우선, 없으면 KMI 폴백
+SMTP_ADDRESS  = os.environ.get('SMTP_ADDRESS', '') or os.environ.get('KMI_SMTP_ADDRESS', '')
+SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD', '') or os.environ.get('KMI_SMTP_PASSWORD', '')
 
-if not KMI_SMTP_ADDRESS or not KMI_SMTP_PASSWORD:
-    print("⚠ KMI_SMTP_ADDRESS 또는 KMI_SMTP_PASSWORD 미설정 — 이메일 발송 건너뜀")
+if not SMTP_ADDRESS or not SMTP_PASSWORD:
+    print("⚠ SMTP_ADDRESS/SMTP_PASSWORD 미설정 — 이메일 발송 건너뜀")
     sys.exit(0)
 
-# ── SMTP 서버 설정 ──
-SMTP_HOST = 'gov-smtp.mailplug.com'
-SMTP_PORT = 465
+# ── SMTP 서버 설정 (Gmail vs KMI 자동 판별) ──
+if 'gmail' in SMTP_ADDRESS:
+    SMTP_HOST = 'smtp.gmail.com'
+    SMTP_PORT = 587
+    SMTP_MODE = 'STARTTLS'
+else:
+    SMTP_HOST = os.environ.get('SMTP_HOST', 'gov-smtp.mailplug.com')
+    SMTP_PORT = int(os.environ.get('SMTP_PORT', '465'))
+    SMTP_MODE = 'SSL'
 
 # ── 카테고리 한글명 ──
 CAT_KR = {
@@ -253,7 +264,7 @@ html_body = f"""\
 
 # ── 메시지 구성 ──
 msg = MIMEMultipart()
-msg['From'] = KMI_SMTP_ADDRESS
+msg['From'] = SMTP_ADDRESS
 msg['To'] = ', '.join(RECIPIENTS)
 msg['Subject'] = subject
 msg.attach(MIMEText(html_body, 'html', 'utf-8'))
@@ -294,13 +305,23 @@ if not brief_mode and not summary_mode:
 
 try:
     import ssl, traceback
-    print(f"  SMTP 접속: {SMTP_HOST}:{SMTP_PORT} (SSL)")
-    print(f"  발신: {KMI_SMTP_ADDRESS}")
+    print(f"  SMTP 접속: {SMTP_HOST}:{SMTP_PORT} ({SMTP_MODE})")
+    print(f"  발신: {SMTP_ADDRESS}")
     ctx = ssl.create_default_context()
-    with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=ctx, timeout=30) as server:
-        server.set_debuglevel(1)
-        server.login(KMI_SMTP_ADDRESS, KMI_SMTP_PASSWORD)
-        server.sendmail(KMI_SMTP_ADDRESS, RECIPIENTS, msg.as_string())
+    if SMTP_MODE == 'STARTTLS':
+        # Gmail: STARTTLS on port 587
+        with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
+            server.ehlo()
+            server.starttls(context=ctx)
+            server.ehlo()
+            server.login(SMTP_ADDRESS, SMTP_PASSWORD)
+            server.sendmail(SMTP_ADDRESS, RECIPIENTS, msg.as_string())
+    else:
+        # KMI mailplug: SSL on port 465
+        with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=ctx, timeout=30) as server:
+            server.set_debuglevel(1)
+            server.login(SMTP_ADDRESS, SMTP_PASSWORD)
+            server.sendmail(SMTP_ADDRESS, RECIPIENTS, msg.as_string())
     print(f"✅ 이메일 발송 완료")
 except Exception as e:
     print(f"❌ 이메일 발송 실패: {e}")
