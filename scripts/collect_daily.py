@@ -121,8 +121,9 @@ CAT_ORDER = list(CAT_KR.keys())
 
 CAT_BLOCK_MON = """  - 1_Security: Military actions & geopolitics — armed conflict, missile strikes, sanctions, military deployments,
     diplomatic negotiations for strait reopening, UN resolutions, Iran-US tensions, Houthi attacks.
-    NOTE: Ship transit/passage through chokepoints → 7_Shipping. Oil/energy price impacts → 5_EconFinance.
-    Energy infrastructure attacks → 10_OtherIndustry. Transit fee/toll disputes → 3_Freight.
+    NOTE: Classify by PRIMARY IMPACT on Korea's supply chain. Ship transit/passage → 7_Shipping.
+    Oil/energy price impacts → 5_EconFinance. Transit fee/toll disputes → 3_Freight.
+    Infrastructure attacks → classify by the impacted function (port attack → 4_PortCargo, refinery attack → 10_OtherIndustry).
   - 2_Safety: Vessel accidents, casualties, IMO emergency meetings, maritime safety regulations,
     safety incidents at sea
   - 3_Freight: Freight index changes (BDI, SCFI, CCFI, WCI), traffic volume shifts through Suez/Hormuz/Cape/Aden,
@@ -453,6 +454,14 @@ STEP 1 — Relevance (use the criteria below strictly):
 - NONE: Article has no connection to maritime supply chain monitoring
 
 STEP 2 — Category (assign the BEST matching ONE category for HIGH and MEDIUM; leave "" for LOW/NONE):
+
+CLASSIFICATION PRINCIPLE: Categorize by the article's PRIMARY IMPACT on Korea's supply chain, not by the nature of the event itself.
+  Example: "Iran attacks UAE gas plant" → primary impact is energy supply → 10_OtherIndustry (not 1_Security)
+  Example: "Iran fires missiles at tanker in Hormuz" → primary impact is strait passage risk → 1_Security
+  Example: "First ship transits Hormuz since war" → primary impact is shipping resumption → 7_Shipping
+  Example: "Brent crude hits $141" → primary impact is financial/price → 5_EconFinance
+  Example: "Korea, France discuss Hormuz reopening" → primary impact is geopolitical negotiation → 1_Security
+
 {CAT_BLOCK_MON}
 
 Headlines:
@@ -476,6 +485,14 @@ STEP 1 — Relevance:
 - NONE: Not related to Korean maritime supply chain (even if KG entities appear in non-relevant context)
 
 STEP 2 — Category (for HIGH and MEDIUM only, leave "" for LOW/NONE):
+
+CLASSIFICATION PRINCIPLE: Categorize by the article's PRIMARY IMPACT on Korea's supply chain, not by the nature of the event itself.
+  Example: "Iran attacks UAE gas plant" → primary impact is energy supply → 10_OtherIndustry (not 1_Security)
+  Example: "Iran fires missiles at tanker in Hormuz" → primary impact is strait passage risk → 1_Security
+  Example: "First ship transits Hormuz since war" → primary impact is shipping resumption → 7_Shipping
+  Example: "Brent crude hits $141" → primary impact is financial/price → 5_EconFinance
+  Example: "Korea, France discuss Hormuz reopening" → primary impact is geopolitical negotiation → 1_Security
+
 {CAT_BLOCK_MON}
 
 Headlines with KG context:
