@@ -74,7 +74,7 @@ if not KMI_SMTP_ADDRESS or not KMI_SMTP_PASSWORD:
     sys.exit(0)
 
 # ── SMTP 서버 설정 ──
-SMTP_HOST = 'zmx124.mailplug.com'
+SMTP_HOST = 'gov-smtp.mailplug.com'
 SMTP_PORT = 465
 
 # ── 카테고리 한글명 ──
