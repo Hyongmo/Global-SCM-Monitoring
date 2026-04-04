@@ -128,7 +128,7 @@ jobs:
           python scripts/send_email.py ${{ env.TARGET_DATE }}
         continue-on-error: true
 
-      - name: Send brief email (external recipients)
+      - name: Send summary email (external recipients)
         if: success()
         env:
           GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
@@ -136,7 +136,7 @@ jobs:
           KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
           KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
         run: |
-          python scripts/send_email.py ${{ env.TARGET_DATE }} --brief --to lde@kmi.re.kr rheesw@kmi.re.kr
+          python scripts/send_email.py ${{ env.TARGET_DATE }} --summary --to lde@kmi.re.kr rheesw@kmi.re.kr
         continue-on-error: true
 
       # ────────────────────────────────────────────────────────
