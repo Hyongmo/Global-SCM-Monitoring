@@ -1354,6 +1354,7 @@ HIGH+MEDIUM 기사: 총 {len(hm)}건 (해외 {len(hm_intl)}건 / 국내 {len(hm_
 - 기사 제목에서 특정할 수 없는 수치·맥락은 생략하거나 "~로 보임"으로 처리
 - 불확실한 내용은 "~로 보임", "~가능성" 명시
 - 한국 경제·산업 시사점 반드시 포함
+- **품질 필터**: 기사 제목만으로 구체적 사실(누가·무엇을·왜·얼마나)을 파악할 수 없는 카테고리는 해당 카테고리를 통째로 생략하라. "구체적 원인은 불분명", "기사 제목에서 특정하기 어려운 상황" 같은 애매한 서술은 절대 포함하지 말 것. 정보가 부족하면 해당 카테고리의 overseas/korea_impact를 빈 문자열로 두라.
 - JSON 외 다른 텍스트 출력 금지"""
 
     return prompt, active_cats
@@ -1398,6 +1399,45 @@ else:
             print(f"⚠ json-repair 실패: {e2}")
             decoder = json.JSONDecoder()
             report_json, _ = decoder.raw_decode(raw)
+
+    # ── 후처리: 저품질 항목 필터링 ──
+    _LOW_QUALITY_PATTERNS = [
+        '특정하기 어려운', '특정하기 어렵', '파악하기 어려운', '파악하기 어렵',
+        '확인하기 어려운', '확인하기 어렵', '구체적 원인은 불분명',
+        '구체적인 원인과 맥락은', '기사 제목에서 특정',
+    ]
+    def _is_low_quality(text):
+        """정보가치 없는 애매한 서술인지 판별"""
+        if not text or not text.strip():
+            return False
+        return any(p in text for p in _LOW_QUALITY_PATTERNS)
+
+    # categories 필터
+    cats = report_json.get('categories', {})
+    removed_cats = []
+    for cat_key in list(cats.keys()):
+        cat_val = cats[cat_key]
+        ov = cat_val.get('overseas', '')
+        ki = cat_val.get('korea_impact', '')
+        # overseas/korea_impact 중 저품질이면 해당 필드를 빈 문자열로
+        if _is_low_quality(ov):
+            cat_val['overseas'] = ''
+        if _is_low_quality(ki):
+            cat_val['korea_impact'] = ''
+        # 둘 다 비었으면 카테고리 자체 삭제
+        if not cat_val.get('overseas', '').strip() and not cat_val.get('korea_impact', '').strip():
+            del cats[cat_key]
+            removed_cats.append(cat_key)
+
+    # flow > domestic_impact 필터
+    flow = report_json.get('flow', {})
+    dom_impact = flow.get('domestic_impact', {})
+    for dk in list(dom_impact.keys()):
+        if _is_low_quality(dom_impact[dk]):
+            dom_impact[dk] = ''
+
+    if removed_cats:
+        print(f"  🗑 저품질 카테고리 삭제: {removed_cats}")
 
     # ── JSON 저장 (v3 notebook 동일 flat 구조) ──
     json_path = os.path.join(DAILY_DIR, f'daily_report_llm_{DATE_TAG}.json')
