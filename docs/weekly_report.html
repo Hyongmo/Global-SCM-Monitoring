@@ -88,8 +88,11 @@ th { background:#f0f3f7; padding:7px 10px; text-align:center; border:1px solid #
 td { padding:8px 10px; border:1px solid #e0e3e8; vertical-align:middle; font-size:15px; line-height:1.6; }
 .impact-table td { text-align:center; }
 .impact-table td:first-child { text-align:left; }
-.matrix-table { width:100%; } .matrix-table th { text-align:center; font-size:13px; word-break:keep-all; } .matrix-table td { text-align:center; white-space:nowrap; width:1px; }
-.matrix-table td:first-child { text-align:left; white-space:normal; width:auto; min-width:50px; max-width:80px; } .matrix-table td:nth-child(6) { text-align:left; white-space:normal; width:auto; max-width:none; } .matrix-table td:nth-child(7) { width:1px; }
+.matrix-table { width:100%; table-layout:fixed; }
+.matrix-table th, .matrix-table td { word-break:keep-all; padding:6px 4px; }
+.matrix-table th:nth-child(1), .matrix-table td:nth-child(1) { width:8%; text-align:left; }
+.matrix-table th:nth-child(6), .matrix-table td:nth-child(6) { width:55%; text-align:left; }
+.matrix-table th:nth-child(7), .matrix-table td:nth-child(7) { width:4%; }
 .change-col { font-weight:bold; color:#c0392b; }
 .pathway { color:#555; font-size:16px; line-height:1.75; word-wrap:break-word; overflow-wrap:break-word; }
 .pw-label { font-weight:600; color:#2980b9; font-size:13px; }
