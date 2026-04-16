@@ -1,0 +1,69 @@
+name: KMI 주간 브리핑 이메일 발송
+
+on:
+  # ── docs/weekly_report.html 푸시 감지 시 자동 발송 ──
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/weekly_report.html'
+
+  # ── 수동 실행 ──
+  workflow_dispatch:
+    inputs:
+      recipients:
+        description: '수신자 (공백 구분, 비우면 기본값 사용)'
+        required: false
+        default: ''
+
+jobs:
+  send-weekly-email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # ────────────────────────────────────────────────────────
+      # 1. 코드 체크아웃 (docs/weekly_report.html 읽기)
+      # ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ────────────────────────────────────────────────────────
+      # 2. Python 환경 설정
+      # ────────────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install beautifulsoup4 lxml
+
+      # ────────────────────────────────────────────────────────
+      # 3. 주간 요약 이메일 발송
+      #    기본 수신자: hmjeon, h.kim, lde, rheesw, pr (send_weekly_email.py 내부 기본값)
+      # ────────────────────────────────────────────────────────
+      - name: Send weekly summary email
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          if [ -n "${{ github.event.inputs.recipients }}" ]; then
+            python scripts/send_weekly_email.py --to ${{ github.event.inputs.recipients }}
+          else
+            python scripts/send_weekly_email.py
+          fi
+
+      # ────────────────────────────────────────────────────────
+      # 4. 실행 요약
+      # ────────────────────────────────────────────────────────
+      - name: Pipeline summary
+        if: always()
+        run: |
+          echo "## 주간 브리핑 이메일 발송 결과" >> $GITHUB_STEP_SUMMARY
+          echo "- 트리거: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 커밋: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 소스: \`docs/weekly_report.html\`" >> $GITHUB_STEP_SUMMARY
