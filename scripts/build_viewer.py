@@ -347,7 +347,7 @@ body{{-webkit-user-select:none;-ms-user-select:none;user-select:none;}}input,tex
 <div class="container">
 {radio_inputs}
 <div class="sidebar">
-  <!-- <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a> -->
+  <a class="nav-link" href="https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html">Go To Weekly <span style="font-size:16px;line-height:1">›</span></a>
 {menu_items}
 </div>
 <div class="main">
