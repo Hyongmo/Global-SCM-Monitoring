@@ -1,18 +1,13 @@
 name: KMI 주간 브리핑 이메일 발송
 
 on:
-  # ── docs/weekly_report.html 푸시 감지 시 자동 발송 ──
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/weekly_report.html'
-
-  # ── 수동 실행 ──
+  # ── 수동 실행 전용 ──
+  #    최신 weekly_report.html 이 main 에 올라간 상태에서 최종본 확정 후
+  #    Actions 탭 > "Run workflow" 로 수동 발송
   workflow_dispatch:
     inputs:
       recipients:
-        description: '수신자 (공백 구분, 비우면 기본값 사용)'
+        description: '수신자 (공백 구분, 비우면 기본값 5명 사용)'
         required: false
         default: ''
 
