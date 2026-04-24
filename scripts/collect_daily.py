@@ -1444,6 +1444,24 @@ else:
     if removed_cats:
         print(f"  🗑 저품질 카테고리 삭제: {removed_cats}")
 
+    # ── 카테고리별 참조 기사 목록 (sources) ──
+    sources = {}
+    for cat in active_cats:
+        cat_hm = hm[hm['category'] == cat]
+        cat_articles = []
+        for _, r in cat_hm.iterrows():
+            url = r.get('url', '')
+            title = r.get('title', '')
+            if not title:
+                continue
+            cat_articles.append({
+                'title': str(title),
+                'url':   str(url) if pd.notna(url) else '',
+                'type':  'intl' if r.get('source_type') == 'international' else 'dom',
+            })
+        if cat_articles:
+            sources[cat] = cat_articles
+
     # ── JSON 저장 (v3 notebook 동일 flat 구조) ──
     json_path = os.path.join(DAILY_DIR, f'daily_report_llm_{DATE_TAG}.json')
     json_data = {
@@ -1457,6 +1475,7 @@ else:
         'n_intl':   int(len(report_data['hm_intl'])),
         'n_dom':    int(len(report_data['hm_domestic'])),
         'llm_result': report_json,
+        'sources':    sources,
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)

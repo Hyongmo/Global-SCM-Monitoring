@@ -65,6 +65,7 @@ for jf in json_files[:MAX_DAYS]:
             'n_high':  raw.get('n_high',  0),
             'n_med':   raw.get('n_med',   0),
             'llm_result': llm,
+            'sources':    raw.get('sources', {}),
         })
         print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
     except Exception as e:
@@ -109,6 +110,38 @@ def _changes_html(changes):
     return html or '<p class="empty">전일 대비 주요 변화 없음</p>'
 
 
+def _sources_html(articles):
+    """카테고리별 참조 기사 접이식 목록 렌더링"""
+    if not articles:
+        return ''
+    intl = [a for a in articles if a.get('type') == 'intl']
+    dom  = [a for a in articles if a.get('type') == 'dom']
+    html = '<details class="src-details"><summary class="src-summary">📰 참조 기사 ('
+    html += f'{len(articles)}건)</summary><div class="src-list">'
+    if intl:
+        html += '<div class="src-group-label">해외</div><ul>'
+        for a in intl:
+            title = a.get('title', '')
+            url   = a.get('url', '')
+            if url:
+                html += f'<li><a href="{url}" target="_blank" rel="noopener">{title}</a></li>'
+            else:
+                html += f'<li>{title}</li>'
+        html += '</ul>'
+    if dom:
+        html += '<div class="src-group-label">국내</div><ul>'
+        for a in dom:
+            title = a.get('title', '')
+            url   = a.get('url', '')
+            if url:
+                html += f'<li><a href="{url}" target="_blank" rel="noopener">{title}</a></li>'
+            else:
+                html += f'<li>{title}</li>'
+        html += '</ul>'
+    html += '</div></details>'
+    return html
+
+
 def _render_day(d, idx):
     date_str   = d.get('date', '?')
     llm        = d.get('llm_result', {})
@@ -116,6 +149,7 @@ def _render_day(d, idx):
     flow       = llm.get('flow', {})
     changes    = llm.get('changes', {}) or {}
     cats       = llm.get('categories', {}) or {}
+    sources    = d.get('sources', {}) or {}
 
     # ── 공급망 이슈 ──
     triggers   = flow.get('triggers', {}) if flow else {}
@@ -151,6 +185,7 @@ def _render_day(d, idx):
         cat_html += f'<div class="flow-item"><div class="flow-label">{label}</div>'
         if ov: cat_html += f'<div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>{ov}</p></div>'
         if ki: cat_html += f'<div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>{ki}</p></div>'
+        cat_html += _sources_html(sources.get(cat_key, []))
         cat_html += '</div>'
     if not cat_html:
         cat_html = '<p class="empty">카테고리 분석 없음</p>'
@@ -301,6 +336,17 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
        white-space:nowrap; margin-top:2px; }}
 .tag-intl {{ background:#ebf5fb; color:#2980b9; }}
 .tag-dom  {{ background:#eafaf1; color:#27ae60; }}
+
+/* ─ 참조 기사 ─ */
+.src-details {{ margin-top:8px; }}
+.src-summary {{ font-size:0.82em; color:#7f8c8d; cursor:pointer; user-select:none; padding:4px 0; }}
+.src-summary:hover {{ color:#2980b9; }}
+.src-list {{ padding:6px 0 0 8px; }}
+.src-list ul {{ margin:2px 0 8px 16px; padding:0; }}
+.src-list li {{ font-size:0.82em; line-height:1.55; color:#555; margin-bottom:3px; }}
+.src-list a {{ color:#2980b9; text-decoration:none; }}
+.src-list a:hover {{ text-decoration:underline; }}
+.src-group-label {{ font-size:0.78em; font-weight:700; color:#95a5a6; margin-top:6px; margin-bottom:2px; }}
 
 /* ─ 국내 영향 ─ */
 .dom-item {{ margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #f0f0f0; }}
