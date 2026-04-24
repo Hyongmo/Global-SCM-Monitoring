@@ -111,22 +111,22 @@ def _flow_block(label, data, ref_map=None):
     return html
 
 
-def _changes_html(changes):
+def _changes_html(changes, ref_map=None):
     new_items = changes.get('new', []) or []
     esc_items = changes.get('escalated', []) or []
     res_items = changes.get('resolved', []) or []
     html = ''
     if new_items:
         html += '<div class="chg-group"><span class="chg-label new">신규 ↑</span><ul>'
-        for x in new_items: html += f'<li>{x}</li>'
+        for x in new_items: html += f'<li>{_linkify_refs(x, ref_map)}</li>'
         html += '</ul></div>'
     if esc_items:
         html += '<div class="chg-group"><span class="chg-label esc">심화 ▲</span><ul>'
-        for x in esc_items: html += f'<li>{x}</li>'
+        for x in esc_items: html += f'<li>{_linkify_refs(x, ref_map)}</li>'
         html += '</ul></div>'
     if res_items:
         html += '<div class="chg-group"><span class="chg-label res">완화 ↓</span><ul>'
-        for x in res_items: html += f'<li>{x}</li>'
+        for x in res_items: html += f'<li>{_linkify_refs(x, ref_map)}</li>'
         html += '</ul></div>'
     return html or '<p class="empty">전일 대비 주요 변화 없음</p>'
 
@@ -245,7 +245,7 @@ def _render_day(d, idx):
     </div>
     <div class="section">
       <div class="section-title">📊 어제 대비 변화</div>
-      {_changes_html(changes)}
+      {_changes_html(changes, rm)}
     </div>
     <div class="section">
       <div class="section-title">🗂 카테고리별 분석</div>
