@@ -1275,9 +1275,11 @@ def _build_report_prompt(data):
     hm_intl  = data['hm_intl']
     hm_dom   = data['hm_domestic']
 
-    # ── 카테고리별 기사 블록 ──
+    # ── 카테고리별 기사 블록 (번호 부여) ──
     active_cats    = []
     articles_block = ""
+    ref_map        = {}      # {번호(str): {title, url, type}}
+    ref_counter    = 1
     for cat in CAT_ORDER:
         cat_hm = hm[hm['category'] == cat]
         if len(cat_hm) == 0:
@@ -1295,7 +1297,13 @@ def _build_report_prompt(data):
                 _country = r.get('sourcecountry', '')
                 _meta = f' [{_topic}]' if _topic else ''
                 if _country: _meta += f' ({_country})'
-                articles_block += f"    - {r['title']}{_meta}\n"
+                articles_block += f"    [{ref_counter}] {r['title']}{_meta}\n"
+                ref_map[str(ref_counter)] = {
+                    'title': str(r['title']),
+                    'url':   str(r.get('url', '')) if pd.notna(r.get('url', '')) else '',
+                    'type':  'intl',
+                }
+                ref_counter += 1
         if len(dom_rows) > 0:
             articles_block += f"  국내({len(dom_rows)}건):\n"
             for _, r in dom_rows.iterrows():
@@ -1303,7 +1311,13 @@ def _build_report_prompt(data):
                 _country = r.get('sourcecountry', '')
                 _meta = f' [{_topic}]' if _topic else ''
                 if _country: _meta += f' ({_country})'
-                articles_block += f"    - {r['title']}{_meta}\n"
+                articles_block += f"    [{ref_counter}] {r['title']}{_meta}\n"
+                ref_map[str(ref_counter)] = {
+                    'title': str(r['title']),
+                    'url':   str(r.get('url', '')) if pd.notna(r.get('url', '')) else '',
+                    'type':  'dom',
+                }
+                ref_counter += 1
 
     cat_keys = ', '.join(f'"{c}"' for c in active_cats)
 
@@ -1313,7 +1327,8 @@ HIGH+MEDIUM 기사: 총 {len(hm)}건 (해외 {len(hm_intl)}건 / 국내 {len(hm_
 {articles_block}
 
 아래 JSON 형식으로 분석하세요. 활성 카테고리 키: {cat_keys}
-각 기사 항목에 [topic] (출처국) 메타정보가 첨부되어 있으니 서술 시 맥락 파악에 활용하세요.
+각 기사 항목에 [번호]가 부여되어 있습니다. 서술 시 해당 정보의 출처 기사 번호를 반드시 인용하세요. 예: "이란이 선박 3척에 발포[3][7]하고..."
+인용 규칙: 각 문장/주장마다 근거가 되는 기사 1~3건의 번호를 [N] 형식으로 붙일 것. 여러 기사면 [3][7] 식으로 나열.
 
 {{
   "executive_summary": "오늘의 핵심 동향 4~6문장. 가장 중요한 변화·위험 신호 중심. 구체적 수치·고유명사·지표명 활용. 같은 맥락의 정보는 묶어서 서술.",
@@ -1359,7 +1374,7 @@ HIGH+MEDIUM 기사: 총 {len(hm)}건 (해외 {len(hm_intl)}건 / 국내 {len(hm_
 - **독립성 원칙**: 각 카테고리 뉴스는 호르무즈 위기와 무관하게 독립적 가치를 가진다. 호르무즈와의 관계가 기사에 명시되지 않은 한, "호르무즈와의 연관성은 불분명하나", "직접 연관인지 특정하기 어려우나" 류의 서술을 절대 쓰지 말 것. 해양안전 뉴스는 해양안전 뉴스로서 보도하라.
 - JSON 외 다른 텍스트 출력 금지"""
 
-    return prompt, active_cats
+    return prompt, active_cats, ref_map
 
 # ── 데이터 추출 ──
 report_data = _extract_report_data(TARGET_DATE)
@@ -1372,7 +1387,7 @@ else:
     hm = report_data['hm']
     print(f"\n🤖 LLM 리포트 생성 중 ({report_data['td_fmt']}, HIGH+MEDIUM {len(hm)}건)...")
 
-    report_prompt, active_cats = _build_report_prompt(report_data)
+    report_prompt, active_cats, ref_map = _build_report_prompt(report_data)
     print(f"  프롬프트 길이: {len(report_prompt)}자")
 
     report_client = anthropic.Anthropic()
@@ -1476,6 +1491,7 @@ else:
         'n_dom':    int(len(report_data['hm_domestic'])),
         'llm_result': report_json,
         'sources':    sources,
+        'ref_map':    ref_map,
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)

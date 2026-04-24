@@ -66,6 +66,7 @@ for jf in json_files[:MAX_DAYS]:
             'n_med':   raw.get('n_med',   0),
             'llm_result': llm,
             'sources':    raw.get('sources', {}),
+            'ref_map':    raw.get('ref_map', {}),
         })
         print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
     except Exception as e:
@@ -78,11 +79,31 @@ if not days:
 
 # ─── HTML 렌더링 헬퍼 ─────────────────────────────────────────
 
-def _flow_block(label, data):
+import re
+
+def _linkify_refs(text, ref_map):
+    """텍스트 내 [N] 인용을 상위첨자 링크로 변환"""
+    if not text or not ref_map:
+        return text
+    def _replace(m):
+        num = m.group(1)
+        ref = ref_map.get(num, {})
+        url = ref.get('url', '')
+        title = ref.get('title', '')
+        title_attr = title.replace('"', '&quot;')[:120] if title else f'기사 {num}'
+        if url:
+            return f'<a href="{url}" target="_blank" rel="noopener" class="ref" title="{title_attr}"><sup>{num}</sup></a>'
+        else:
+            return f'<span class="ref" title="{title_attr}"><sup>{num}</sup></span>'
+    return re.sub(r'\[(\d+)\]', _replace, text)
+
+def _flow_block(label, data, ref_map=None):
     if not data: return ''
     ov = (data.get('overseas') or '').strip()
     ki = (data.get('korea_impact') or '').strip()
     if not ov and not ki: return ''
+    ov = _linkify_refs(ov, ref_map) if ref_map else ov
+    ki = _linkify_refs(ki, ref_map) if ref_map else ki
     html  = f'<div class="flow-item"><div class="flow-label">{label}</div>'
     if ov: html += f'<div class="flow-sub"><span class="tag tag-intl">🌐 해외</span><p>{ov}</p></div>'
     if ki: html += f'<div class="flow-sub"><span class="tag tag-dom">🇰🇷 국내</span><p>{ki}</p></div>'
@@ -150,13 +171,17 @@ def _render_day(d, idx):
     changes    = llm.get('changes', {}) or {}
     cats       = llm.get('categories', {}) or {}
     sources    = d.get('sources', {}) or {}
+    rm         = d.get('ref_map', {}) or {}
+
+    # ref_map이 있으면 텍스트에 인용 링크 적용
+    exec_s = _linkify_refs(exec_s, rm)
 
     # ── 공급망 이슈 ──
     triggers   = flow.get('triggers', {}) if flow else {}
     trig_html  = ''
-    trig_html += _flow_block('경로(ROUTE) 이슈',     triggers.get('route', {}))
-    trig_html += _flow_block('공급원(SOURCE) 이슈',  triggers.get('source', {}))
-    trig_html += _flow_block('물류(LOGISTICS) 이슈', triggers.get('logistics', {}))
+    trig_html += _flow_block('경로(ROUTE) 이슈',     triggers.get('route', {}), rm)
+    trig_html += _flow_block('공급원(SOURCE) 이슈',  triggers.get('source', {}), rm)
+    trig_html += _flow_block('물류(LOGISTICS) 이슈', triggers.get('logistics', {}), rm)
     if not trig_html:
         trig_html = '<p class="empty">오늘 주요 국외 트리거 없음</p>'
 
@@ -164,7 +189,7 @@ def _render_day(d, idx):
     dom_impact = flow.get('domestic_impact', {}) if flow else {}
     dom_html   = ''
     for sector, text in dom_impact.items():
-        t = (text or '').strip()
+        t = _linkify_refs((text or '').strip(), rm)
         if t:
             dom_html += (
                 f'<div class="dom-item">'
@@ -178,8 +203,8 @@ def _render_day(d, idx):
     cat_html = ''
     for cat_key, cat_data in cats.items():
         if not cat_data: continue
-        ov = (cat_data.get('overseas') or '').strip()
-        ki = (cat_data.get('korea_impact') or '').strip()
+        ov = _linkify_refs((cat_data.get('overseas') or '').strip(), rm)
+        ki = _linkify_refs((cat_data.get('korea_impact') or '').strip(), rm)
         if not ov and not ki: continue
         label     = CAT_KR_MAP.get(cat_key, cat_key)
         cat_html += f'<div class="flow-item"><div class="flow-label">{label}</div>'
@@ -336,6 +361,11 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
        white-space:nowrap; margin-top:2px; }}
 .tag-intl {{ background:#ebf5fb; color:#2980b9; }}
 .tag-dom  {{ background:#eafaf1; color:#27ae60; }}
+
+/* ─ 인용 상위첨자 ─ */
+.ref {{ text-decoration:none; color:#3498db; cursor:pointer; }}
+.ref:hover {{ color:#e74c3c; }}
+.ref sup {{ font-size:0.7em; font-weight:700; padding:0 1px; }}
 
 /* ─ 참조 기사 ─ */
 .src-details {{ margin-top:8px; }}
