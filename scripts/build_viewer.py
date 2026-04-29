@@ -163,6 +163,41 @@ def _sources_html(articles):
     return html
 
 
+_TV_SYMBOLS = [
+    ("TVC:UKOIL", "Brent"),
+    ("TVC:USOIL", "WTI"),
+    ("TVC:GOLD", "Gold"),
+    ("PEPPERSTONE:WHEAT", "Wheat"),
+    ("FX_IDC:USDKRW", "USD/KRW"),
+    ("FX_IDC:USDCNY", "USD/CNY"),
+    ("AMEX:BDRY", "BDRY"),
+    ("AMEX:BOAT", "BOAT"),
+]
+
+def _tv_widget_html():
+    """TradingView 실시간 시세 위젯 HTML 생성"""
+    items = []
+    for sym, label in _TV_SYMBOLS:
+        cfg = json.dumps({
+            "symbol": sym, "width": "100%", "height": "100%",
+            "locale": "kr", "dateRange": "1M", "colorTheme": "light",
+            "isTransparent": True, "autosize": True,
+        }, ensure_ascii=False)
+        items.append(
+            f'<div class="tv-mini">'
+            f'<div class="tradingview-widget-container">'
+            f'<script type="text/javascript" '
+            f'src="https://s3.tradingview.com/external-embedding/'
+            f'embed-widget-mini-symbol-overview.js" async>'
+            f'{cfg}</script></div></div>'
+        )
+    return (
+        '<div class="section tv-section">'
+        '<div class="section-title">\U0001f4c8 실시간 시세</div>'
+        '<div class="tv-grid">' + ''.join(items) + '</div></div>'
+    )
+
+
 def _render_day(d, idx, is_latest=False):
     date_str   = d.get('date', '?')
     llm        = d.get('llm_result', {})
@@ -247,7 +282,7 @@ def _render_day(d, idx, is_latest=False):
       <div class="section-title">📊 어제 대비 변화</div>
       {_changes_html(changes, rm)}
     </div>
-    {'<div class="section tv-section"><div class="section-title">📈 실시간 시세</div><div class="tv-grid">' + ''.join(f'<div class="tv-mini"><div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>{{"symbol":"{sym}","width":"100%","height":"100%","locale":"kr","dateRange":"1M","colorTheme":"light","isTransparent":true,"autosize":true}}</script></div></div>' for sym in ["PEPPERSTONE:UKOIL","PEPPERSTONE:USOIL","TVC:GOLD","PEPPERSTONE:WHEAT","FX_IDC:USDKRW","FX_IDC:USDCNY","AMEX:BDRY","AMEX:BOAT"]) + '</div></div>' if is_latest else ''}
+    {_tv_widget_html() if is_latest else ''}
     <div class="section">
       <div class="section-title">🗂 카테고리별 분석</div>
       {cat_html}
@@ -398,7 +433,7 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
 .empty {{ color:#999; font-size:0.88em; font-style:italic; }}
 
 /* ─ 실시간 시세 위젯 ─ */
-.tv-section {{ border-left:4px solid #e67e22; }}
+.tv-section {{ }}
 .tv-grid {{ display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; }}
 .tv-mini {{ height:180px; min-width:0; overflow:hidden; border-radius:6px; background:#fafafa; }}
 .tv-mini .tradingview-widget-container {{ height:100%; }}
