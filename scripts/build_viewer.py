@@ -163,7 +163,7 @@ def _sources_html(articles):
     return html
 
 
-def _render_day(d, idx):
+def _render_day(d, idx, is_latest=False):
     date_str   = d.get('date', '?')
     llm        = d.get('llm_result', {})
     exec_s     = llm.get('executive_summary', '').strip()
@@ -247,6 +247,7 @@ def _render_day(d, idx):
       <div class="section-title">📊 어제 대비 변화</div>
       {_changes_html(changes, rm)}
     </div>
+    {'<div class="section tv-section"><div class="section-title">📈 실시간 시세</div><div class="tv-grid">' + ''.join(f'<div class="tv-mini"><div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>{{"symbol":"{sym}","width":"100%","height":"100%","locale":"kr","dateRange":"1M","colorTheme":"light","isTransparent":true,"autosize":true}}</script></div></div>' for sym in ["PEPPERSTONE:UKOIL","PEPPERSTONE:USOIL","TVC:GOLD","PEPPERSTONE:WHEAT","FX_IDC:USDKRW","FX_IDC:USDCNY","AMEX:BDRY","AMEX:BOAT"]) + '</div></div>' if is_latest else ''}
     <div class="section">
       <div class="section-title">🗂 카테고리별 분석</div>
       {cat_html}
@@ -287,7 +288,7 @@ for i, d in enumerate(days):
         f'</label>\n'
     )
 
-day_blocks = '\n'.join(_render_day(d, i) for i, d in enumerate(days))
+day_blocks = '\n'.join(_render_day(d, i, is_latest=(i == 0)) for i, d in enumerate(days))
 
 generated_ts = datetime.now().strftime('%Y-%m-%d %H:%M UTC')
 
@@ -396,6 +397,12 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
 
 .empty {{ color:#999; font-size:0.88em; font-style:italic; }}
 
+/* ─ 실시간 시세 위젯 ─ */
+.tv-section {{ border-left:4px solid #e67e22; }}
+.tv-grid {{ display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; }}
+.tv-mini {{ height:180px; min-width:0; overflow:hidden; border-radius:6px; background:#fafafa; }}
+.tv-mini .tradingview-widget-container {{ height:100%; }}
+
 /* ─ 모바일 ─ */
 @media (max-width:768px) {{
   .report-header {{ padding:8px 12px; }}
@@ -415,6 +422,8 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
   .main {{ overflow:visible; padding:12px 14px; }}
   .day-content {{ max-width:100%; }}
   .section {{ padding:14px 16px; }}
+  .tv-grid {{ grid-template-columns:repeat(2, 1fr); }}
+  .tv-mini {{ height:150px; }}
 }}
 body{{-webkit-user-select:none;-ms-user-select:none;user-select:none;}}input,textarea{{-webkit-user-select:text;user-select:text;}}
 </style>
