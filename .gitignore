@@ -28,3 +28,6 @@ TASKS.md
 *.tmp
 monitoring/cumulative/
 docs/ontology_schema_v8.html
+
+# ── 루트 HTML 뷰어 (docs/ 사본만 배포) ──
+weekly_report.html
