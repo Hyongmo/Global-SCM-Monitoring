@@ -327,6 +327,15 @@ day_blocks = '\n'.join(_render_day(d, i, is_latest=(i == 0)) for i, d in enumera
 
 generated_ts = datetime.now().strftime('%Y-%m-%d %H:%M UTC')
 
+# ─── KMI 로고 base64 ─────────────────────────────────────────
+import base64 as _b64
+_logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'assets', 'kmi_logo_white.png')
+_KMI_LOGO_B64 = ''
+if os.path.exists(_logo_path):
+    with open(_logo_path, 'rb') as _f:
+        _KMI_LOGO_B64 = _b64.b64encode(_f.read()).decode()
+_logo_img = f'<img class="kmi-logo" src="data:image/png;base64,{_KMI_LOGO_B64}" alt="KMI">' if _KMI_LOGO_B64 else ''
+
 # ─── 전체 HTML 조립 ───────────────────────────────────────────
 
 html = f"""<!DOCTYPE html>
@@ -367,9 +376,11 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
 
 /* ─ 리포트 헤더 ─ */
 .report-header {{ background:#2c3e50; color:#ecf0f1; padding:20px 28px;
-                display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }}
+                display:flex; align-items:center; gap:12px; flex-wrap:nowrap; }}
 .report-header .rh-title {{ font-size:20px; font-weight:700; white-space:nowrap; }}
 .report-header .rh-sub {{ font-size:13px; color:#bdc3c7; }}
+.kmi-logo {{ height:34px; margin-right:0; flex-shrink:0; }}
+.rh-text-group {{ display:flex; flex-direction:column; gap:2px; }}
 
 /* ─ 본문 ─ */
 .main {{ flex:1; overflow-y:visible; padding:20px 28px; min-width:0; }}
@@ -440,9 +451,10 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
 
 /* ─ 모바일 ─ */
 @media (max-width:768px) {{
-  .report-header {{ padding:8px 12px; }}
+  .report-header {{ padding:8px 12px; flex-wrap:nowrap; }}
   .report-header .rh-title {{ font-size:16px; }}
   .report-header .rh-sub {{ font-size:12px; }}
+  .kmi-logo {{ height:27px; }}
 }}
 @media (max-width:768px) {{
   body {{ font-size:15px; }}
@@ -472,8 +484,11 @@ body{{-webkit-user-select:none;-ms-user-select:none;user-select:none;}}input,tex
 </div>
 <div class="main">
 <div class="report-header">
-  <span class="rh-title">🚢 글로벌 공급망 AI 일일 브리핑</span>
-  <span class="rh-sub">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</span>
+  {_logo_img}
+  <div class="rh-text-group">
+    <span class="rh-title">글로벌 공급망 AI 일일 브리핑</span>
+    <span class="rh-sub">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</span>
+  </div>
 </div>
 <div style="background:#f0f4f8;border-left:4px solid #2980b9;padding:8px 14px;font-size:11px;color:#555;margin:10px 14px 0 14px">
   본 브리핑은 온톨로지 기반 전문가 지식 그래프와 국내외 기사를 기반으로 생성형 AI가 작성한 것으로 KMI의 공식 의견이 아님을 밝힙니다.</div>
