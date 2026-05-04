@@ -21,7 +21,7 @@ send_weekly_email.py
     python scripts/send_weekly_email.py --html docs/weekly_report.html  # 소스 지정
 """
 
-import os, sys, smtplib, ssl, traceback
+import os, sys, smtplib, ssl, traceback, base64 as _b64
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -181,6 +181,14 @@ if wp_div:
             wp_items.append({'horizon': horizon, 'text': text})
 
 
+# ── KMI 로고 (base64) ──
+_logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'assets', 'kmi_logo_white.png')
+_KMI_LOGO_B64 = ''
+if os.path.exists(_logo_path):
+    with open(_logo_path, 'rb') as _f:
+        _KMI_LOGO_B64 = _b64.b64encode(_f.read()).decode()
+_logo_img = f'<img src="data:image/png;base64,{_KMI_LOGO_B64}" alt="KMI" style="height:30px; margin-right:12px; vertical-align:middle;">' if _KMI_LOGO_B64 else ''
+
 # ── 이메일 HTML 렌더링 ──
 _S = 'style'
 _SEC       = f'{_S}="background:#fff; border-radius:8px; padding:18px 22px; margin-bottom:14px; border:1px solid #e8eaed;"'
@@ -244,7 +252,10 @@ html_body = f"""\
 <html>
 <body style="font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif; color:#2c3e50; line-height:1.6; background:#f4f6f9; margin:0; padding:0;">
 <div style="background:#2c3e50; color:white; padding:22px 28px 16px;">
-  <h1 style="font-size:20px; font-weight:700; margin:0 0 6px;">🚢 글로벌 공급망 AI 주간 브리핑</h1>
+  <div style="display:flex; align-items:center; margin-bottom:8px;">
+    {_logo_img}
+    <h1 style="font-size:20px; font-weight:700; margin:0;">글로벌 공급망 AI 주간 브리핑</h1>
+  </div>
   <div style="font-size:13px; color:#ecf0f1; margin-bottom:6px;">{period_main}</div>
   {period_sub_html.replace('color:#95a5a6', 'color:#bdc3c7')}
   <div style="font-size:12px; color:#bdc3c7; margin:8px 0 10px;">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</div>

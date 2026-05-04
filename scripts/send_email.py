@@ -25,7 +25,7 @@ send_email.py
     python scripts/send_email.py 2026-04-01 --summary --to a@b.com     # 수신자 지정, Summary (요약만)
 """
 
-import json, os, sys, smtplib
+import json, os, sys, smtplib, base64 as _b64
 from datetime import datetime, timedelta
 from dateutil.parser import parse as dateparse
 from email.mime.multipart import MIMEMultipart
@@ -112,6 +112,14 @@ if os.path.exists(json_path):
     n_high = data.get('n_high', 0)
     n_med = data.get('n_med', 0)
 
+
+# ── KMI 로고 (base64) ──
+_logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'assets', 'kmi_logo_white.png')
+_KMI_LOGO_B64 = ''
+if os.path.exists(_logo_path):
+    with open(_logo_path, 'rb') as _f:
+        _KMI_LOGO_B64 = _b64.b64encode(_f.read()).decode()
+_logo_img = f'<img src="data:image/png;base64,{_KMI_LOGO_B64}" alt="KMI" style="height:30px; margin-right:12px; vertical-align:middle;">' if _KMI_LOGO_B64 else ''
 
 # ── HTML 렌더링 헬퍼 ──
 _S = 'style'
@@ -235,7 +243,10 @@ html_body = f"""\
 <html>
 <body style="font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif; color:#2c3e50; line-height:1.6; background:#f4f6f9; margin:0; padding:0;">
 <div style="background:#2c3e50; color:white; padding:22px 28px 16px;">
-  <h1 style="font-size:20px; font-weight:700; margin:0 0 6px;">🚢 글로벌 공급망 AI 일일 브리핑</h1>
+  <div style="display:flex; align-items:center; margin-bottom:8px;">
+    {_logo_img}
+    <h1 style="font-size:20px; font-weight:700; margin:0;">글로벌 공급망 AI 일일 브리핑</h1>
+  </div>
   <div style="font-size:13px; color:#ecf0f1; margin-bottom:6px;">{PUB_DATE.strftime('%Y. %m. %d')} ({['월','화','수','목','금','토','일'][PUB_DATE.weekday()]}요일) &nbsp; <span style="font-size:11px; color:#95a5a6;">기사수집일: {TARGET_DATE.strftime('%Y. %m. %d')}</span></div>
   <div style="font-size:12px; color:#bdc3c7; margin-bottom:10px;">한국해양수산개발원(KMI) 해양수산 AX 지원단 · hmjeon@kmi.re.kr</div>
   <div style="font-size:11px; color:#95a5a6; background:rgba(255,255,255,0.08); padding:8px 12px; border-radius:4px;">
