@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1920">
-<title>해상 공급망 위기의 3개 유형 분류</title>
+<title>6계층 온톨로지 지식그래프 설계</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -64,133 +64,166 @@ body {
     font-weight: 500;
 }
 
-/* Slide 04 specifics */
+/* Slide 05 specifics */
+.header-row {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 10px;
+}
 .slide-title {
     font-size: 42px; font-weight: 800;
     background: linear-gradient(135deg, #fff, #64b5f6);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    margin-bottom: 10px;
+}
+.slide-subtitle {
+    font-size: 33px; color: rgba(255,255,255,0.4);
+    font-weight: 500;
+}
+.subtitle-num {
+    color: #ffd93d; font-weight: 800; font-size: 36px;
 }
 .title-underline {
     width: 80px; height: 3px;
     background: linear-gradient(90deg, #ffd93d, transparent);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-.cards-row {
-    display: flex; gap: 36px; flex: 1;
+/* Main layout: layers on left, detail on right */
+.main-content {
+    display: flex; gap: 50px; flex: 1;
 }
-.crisis-card {
-    flex: 1; border-radius: 20px; padding: 40px 34px;
+
+/* Left: vertical layer stack */
+.layers-column {
+    flex: 0 0 700px; display: flex; flex-direction: column;
+    gap: 6px; justify-content: center;
+}
+
+.layer-row {
+    display: flex; align-items: center; gap: 16px;
+    position: relative;
+    animation: slideInLeft 0.6s ease-out both;
+}
+.layer-row:nth-child(1) { animation-delay: 0.1s; }
+.layer-row:nth-child(2) { animation-delay: 0.2s; }
+.layer-row:nth-child(3) { animation-delay: 0.3s; }
+.layer-row:nth-child(4) { animation-delay: 0.4s; }
+.layer-row:nth-child(5) { animation-delay: 0.5s; }
+.layer-row:nth-child(6) { animation-delay: 0.6s; }
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.layer-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 27px; font-weight: 900; color: #0a0f1b;
+    flex-shrink: 0;
+}
+.layer-bar {
+    flex: 1; border-radius: 12px; padding: 16px 22px;
+    display: flex; align-items: center; justify-content: space-between;
     position: relative; overflow: hidden;
-    display: flex; flex-direction: column;
-    transition: transform 0.3s;
+    min-height: 68px;
 }
-/* Orange - Route */
-.crisis-card.route {
-    background: linear-gradient(180deg, rgba(255,112,67,0.12), rgba(255,112,67,0.03));
-    border: 1px solid rgba(255,112,67,0.25);
+.layer-bar::after {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 0;
+    width: 40%; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.3));
 }
-.crisis-card.route::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, #ff7043, #ff8a65);
+.layer-name {
+    font-size: 33px; font-weight: 700; position: relative; z-index: 2;
 }
-/* Red - Source */
-.crisis-card.source {
-    background: linear-gradient(180deg, rgba(239,83,80,0.12), rgba(239,83,80,0.03));
-    border: 1px solid rgba(239,83,80,0.25);
-}
-.crisis-card.source::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, #ef5350, #e57373);
-}
-/* Purple - Logistics */
-.crisis-card.logistics {
-    background: linear-gradient(180deg, rgba(171,71,188,0.12), rgba(171,71,188,0.03));
-    border: 1px solid rgba(171,71,188,0.25);
-}
-.crisis-card.logistics::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, #ab47bc, #ce93d8);
+.layer-count {
+    font-size: 22px; font-weight: 600; position: relative; z-index: 2;
+    opacity: 0.8;
 }
 
-.card-icon {
-    font-size: 84px; margin-bottom: 20px;
-}
-.card-type-kr {
-    font-size: 45px; font-weight: 800; margin-bottom: 4px;
-}
-.route .card-type-kr { color: #ff7043; }
-.source .card-type-kr { color: #ef5350; }
-.logistics .card-type-kr { color: #ab47bc; }
+/* Layer colors */
+.layer-1 .layer-num { background: #ef5350; }
+.layer-1 .layer-bar { background: linear-gradient(90deg, rgba(239,83,80,0.3), rgba(239,83,80,0.08)); border: 1px solid rgba(239,83,80,0.3); }
+.layer-1 .layer-name { color: #ef9a9a; }
 
-.card-type-en {
-    font-size: 24px; font-weight: 600;
-    color: rgba(255,255,255,0.35); margin-bottom: 24px;
-    letter-spacing: 1px;
+.layer-2 .layer-num { background: #ff7043; }
+.layer-2 .layer-bar { background: linear-gradient(90deg, rgba(255,112,67,0.3), rgba(255,112,67,0.08)); border: 1px solid rgba(255,112,67,0.3); }
+.layer-2 .layer-name { color: #ffab91; }
+
+.layer-3 .layer-num { background: #ffd93d; }
+.layer-3 .layer-bar { background: linear-gradient(90deg, rgba(255,217,61,0.25), rgba(255,217,61,0.06)); border: 1px solid rgba(255,217,61,0.3); }
+.layer-3 .layer-name { color: #fff176; }
+
+.layer-4 .layer-num { background: #66bb6a; }
+.layer-4 .layer-bar { background: linear-gradient(90deg, rgba(102,187,106,0.3), rgba(102,187,106,0.08)); border: 1px solid rgba(102,187,106,0.3); }
+.layer-4 .layer-name { color: #a5d6a7; }
+
+.layer-5 .layer-num { background: #42a5f5; }
+.layer-5 .layer-bar { background: linear-gradient(90deg, rgba(66,165,245,0.3), rgba(66,165,245,0.08)); border: 1px solid rgba(66,165,245,0.3); }
+.layer-5 .layer-name { color: #90caf9; }
+
+.layer-6 .layer-num { background: #ab47bc; }
+.layer-6 .layer-bar { background: linear-gradient(90deg, rgba(171,71,188,0.3), rgba(171,71,188,0.08)); border: 1px solid rgba(171,71,188,0.3); }
+.layer-6 .layer-name { color: #ce93d8; }
+
+/* Arrows between layers */
+.layer-arrow {
+    display: flex; justify-content: center;
+    padding-left: 60px;
+}
+.layer-arrow svg {
+    width: 24px; height: 16px;
 }
 
-.card-definition {
-    font-size: 26px; color: rgba(255,255,255,0.8);
-    line-height: 1.6; margin-bottom: 24px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+/* Right: detail panel */
+.detail-column {
+    flex: 1; display: flex; flex-direction: column; gap: 12px;
+    justify-content: center;
 }
+.detail-card {
+    border-radius: 14px; padding: 18px 22px;
+    display: flex; gap: 16px; align-items: flex-start;
+    animation: fadeInUp 0.6s ease-out both;
+}
+.detail-card:nth-child(1) { animation-delay: 0.3s; }
+.detail-card:nth-child(2) { animation-delay: 0.4s; }
+.detail-card:nth-child(3) { animation-delay: 0.5s; }
+.detail-card:nth-child(4) { animation-delay: 0.6s; }
+.detail-card:nth-child(5) { animation-delay: 0.7s; }
+.detail-card:nth-child(6) { animation-delay: 0.8s; }
 
-.card-mechanism-label {
-    font-size: 20px; font-weight: 700;
-    color: rgba(255,255,255,0.35); letter-spacing: 2px;
-    margin-bottom: 12px;
+.detail-card.d1 { background: rgba(239,83,80,0.06); border: 1px solid rgba(239,83,80,0.15); }
+.detail-card.d2 { background: rgba(255,112,67,0.06); border: 1px solid rgba(255,112,67,0.15); }
+.detail-card.d3 { background: rgba(255,217,61,0.06); border: 1px solid rgba(255,217,61,0.12); }
+.detail-card.d4 { background: rgba(102,187,106,0.06); border: 1px solid rgba(102,187,106,0.15); }
+.detail-card.d5 { background: rgba(66,165,245,0.06); border: 1px solid rgba(66,165,245,0.15); }
+.detail-card.d6 { background: rgba(171,71,188,0.06); border: 1px solid rgba(171,71,188,0.15); }
+
+.detail-layer-tag {
+    flex-shrink: 0; font-size: 18px; font-weight: 800;
+    padding: 4px 10px; border-radius: 6px;
+    letter-spacing: 1px; margin-top: 2px;
 }
-.card-mechanism {
+.d1 .detail-layer-tag { background: rgba(239,83,80,0.2); color: #ef9a9a; }
+.d2 .detail-layer-tag { background: rgba(255,112,67,0.2); color: #ffab91; }
+.d3 .detail-layer-tag { background: rgba(255,217,61,0.2); color: #fff176; }
+.d4 .detail-layer-tag { background: rgba(102,187,106,0.2); color: #a5d6a7; }
+.d5 .detail-layer-tag { background: rgba(66,165,245,0.2); color: #90caf9; }
+.d6 .detail-layer-tag { background: rgba(171,71,188,0.2); color: #ce93d8; }
+
+.detail-text {
     font-size: 22px; color: rgba(255,255,255,0.65);
-    line-height: 1.6; margin-bottom: 28px;
+    line-height: 1.5;
 }
-.mechanism-flow {
-    display: flex; flex-direction: column; gap: 8px;
-}
-.mechanism-step {
-    display: flex; align-items: center; gap: 10px;
-}
-.mechanism-arrow {
-    font-size: 21px; flex-shrink: 0;
-}
-.route .mechanism-arrow { color: #ff7043; }
-.source .mechanism-arrow { color: #ef5350; }
-.logistics .mechanism-arrow { color: #ab47bc; }
-
-.card-examples {
-    margin-top: auto;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.06);
-}
-.examples-label {
-    font-size: 20px; font-weight: 700;
-    color: rgba(255,255,255,0.35); letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-.example-tag {
-    display: inline-block; padding: 6px 14px;
-    border-radius: 20px; font-size: 20px; font-weight: 600;
-    margin: 3px 4px 3px 0;
-}
-.route .example-tag {
-    background: rgba(255,112,67,0.15); color: #ffab91;
-    border: 1px solid rgba(255,112,67,0.2);
-}
-.source .example-tag {
-    background: rgba(239,83,80,0.15); color: #ef9a9a;
-    border: 1px solid rgba(239,83,80,0.2);
-}
-.logistics .example-tag {
-    background: rgba(171,71,188,0.15); color: #ce93d8;
-    border: 1px solid rgba(171,71,188,0.2);
+.detail-text strong {
+    color: rgba(255,255,255,0.85); font-weight: 600;
 }
 
-/* Staggered animation */
-.crisis-card:nth-child(1) { animation: fadeInUp 0.8s ease-out 0.1s both; }
-.crisis-card:nth-child(2) { animation: fadeInUp 0.8s ease-out 0.3s both; }
-.crisis-card:nth-child(3) { animation: fadeInUp 0.8s ease-out 0.5s both; }
+/* Propagation arrow column */
+.propagation-arrows {
+    position: absolute;
+    left: 52px; top: 0; bottom: 0;
+    width: 40px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+}
 
 .glow-orb {
     position: absolute; border-radius: 50%; filter: blur(80px);
@@ -201,114 +234,148 @@ body {
     33% { transform: translate(40px, -30px); }
     66% { transform: translate(-20px, 20px); }
 }
+
+/* Flow indicator */
+.flow-label {
+    position: absolute; left: -20px; top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 21px; font-weight: 700;
+    color: rgba(255,255,255,0.12);
+    letter-spacing: 8px;
+    white-space: nowrap;
+}
 </style>
 </head>
 <body>
 <div class="slide-container">
 <div class="content-area">
     <div class="digital-grid"></div>
-    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,112,67,0.06);top:20%;left:5%;"></div>
-    <div class="glow-orb" style="width:280px;height:280px;background:rgba(171,71,188,0.06);bottom:10%;right:5%;animation-delay:-8s;"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(66,165,245,0.08);top:5%;right:15%;"></div>
+    <div class="glow-orb" style="width:250px;height:250px;background:rgba(171,71,188,0.06);bottom:10%;left:10%;animation-delay:-10s;"></div>
 
     <div class="content-wrapper">
-        <div class="slide-title">해상 공급망 위기의 3개 유형 분류</div>
+        <div class="header-row">
+            <div class="slide-title">6계층 온톨로지 지식그래프 설계</div>
+            <div class="slide-subtitle">
+                <span class="subtitle-num">165</span> 노드 &nbsp;·&nbsp;
+                <span class="subtitle-num">263</span> 엣지 &nbsp;·&nbsp;
+                <span class="subtitle-num">18</span> 관계유형
+            </div>
+        </div>
         <div class="title-underline"></div>
 
-        <div class="cards-row">
-            <!-- Route Disruption -->
-            <div class="crisis-card route">
-                <div class="card-icon">🚢</div>
-                <div class="card-type-kr">경로위기</div>
-                <div class="card-type-en">Route Disruption</div>
-                <div class="card-definition">
-                    해상 초크포인트의 물리적 차단 또는 통항 제한으로 인한 공급망 교란
-                </div>
-                <div class="card-mechanism-label">전파 메커니즘</div>
-                <div class="card-mechanism">
-                    <div class="mechanism-flow">
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>통항 감소 · 우회</span>
-                        </div>
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>물자 수급 차질</span>
-                        </div>
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>운임 · 보험료 상승</span>
-                        </div>
+        <div class="main-content">
+            <!-- Left: Layer stack -->
+            <div class="layers-column" style="position:relative;">
+                <div class="flow-label">PROPAGATION FLOW ▼</div>
+
+                <div class="layer-row layer-1">
+                    <div class="layer-num">1</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">위기발생</div>
+                        <div class="layer-count">6 nodes</div>
                     </div>
                 </div>
-                <div class="card-examples">
-                    <div class="examples-label">사례</div>
-                    <span class="example-tag">수에즈 2021</span>
-                    <span class="example-tag">Red Sea 2023</span>
-                    <span class="example-tag">호르무즈 2026</span>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(239,83,80,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-2">
+                    <div class="layer-num">2</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">해상인프라</div>
+                        <div class="layer-count">54 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(255,112,67,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-3">
+                    <div class="layer-num">3</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">물자 흐름</div>
+                        <div class="layer-count">12 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(255,217,61,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-4">
+                    <div class="layer-num">4</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">한국 산업</div>
+                        <div class="layer-count">80 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(102,187,106,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-5">
+                    <div class="layer-num">5</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">한국 영향</div>
+                        <div class="layer-count">7 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(66,165,245,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-6">
+                    <div class="layer-num">6</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">정책대응</div>
+                        <div class="layer-count">6 nodes</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Source Disruption -->
-            <div class="crisis-card source">
-                <div class="card-icon">⛔</div>
-                <div class="card-type-kr">공급원위기</div>
-                <div class="card-type-en">Source Disruption</div>
-                <div class="card-definition">
-                    수출국의 규제 · 분쟁으로 특정 물자의 공급이 직접 차단되는 위기
-                </div>
-                <div class="card-mechanism-label">전파 메커니즘</div>
-                <div class="card-mechanism">
-                    <div class="mechanism-flow">
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>특정 물자 수출 중단</span>
-                        </div>
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>대체 공급원 부재</span>
-                        </div>
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>해당 산업 직접 타격</span>
-                        </div>
+            <!-- Right: Detail descriptions -->
+            <div class="detail-column">
+                <div class="detail-card d1">
+                    <div class="detail-layer-tag">L1</div>
+                    <div class="detail-text">
+                        <strong>위기 이벤트 · 트리거</strong><br>
+                        호르무즈 봉쇄, 수에즈 좌초, Red Sea 공격 등 해상 초크포인트 위기 유형 정의
                     </div>
                 </div>
-                <div class="card-examples">
-                    <div class="examples-label">사례</div>
-                    <span class="example-tag">요소수 2021</span>
-                    <span class="example-tag">일본 2019</span>
-                    <span class="example-tag">우크라이나 2022</span>
-                </div>
-            </div>
-
-            <!-- Logistics Disruption -->
-            <div class="crisis-card logistics">
-                <div class="card-icon">📦</div>
-                <div class="card-type-kr">물류위기</div>
-                <div class="card-type-en">Logistics Disruption</div>
-                <div class="card-definition">
-                    해운 인프라 자체의 교란으로 전반적인 운송 차질이 발생하는 위기
-                </div>
-                <div class="card-mechanism-label">전파 메커니즘</div>
-                <div class="card-mechanism">
-                    <div class="mechanism-flow">
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>선박 부족 · 운임 폭등</span>
-                        </div>
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>전 물자 운송비 동시 상승</span>
-                        </div>
-                        <div class="mechanism-step">
-                            <span class="mechanism-arrow">▸</span>
-                            <span>전 산업 파급</span>
-                        </div>
+                <div class="detail-card d2">
+                    <div class="detail-layer-tag">L2</div>
+                    <div class="detail-text">
+                        <strong>초크포인트 · 항로 · 선박</strong><br>
+                        해협, 운하, 주요 항구, 선종별 선박, 우회항로 등 해상 인프라 구성요소
                     </div>
                 </div>
-                <div class="card-examples">
-                    <div class="examples-label">사례</div>
-                    <span class="example-tag">COVID 2020</span>
+                <div class="detail-card d3">
+                    <div class="detail-layer-tag">L3</div>
+                    <div class="detail-text">
+                        <strong>원유 · LNG · 곡물 · 철광석</strong><br>
+                        한국이 해상으로 수입하는 12대 핵심 물자와 수입 의존도
+                    </div>
+                </div>
+                <div class="detail-card d4">
+                    <div class="detail-layer-tag">L4</div>
+                    <div class="detail-text">
+                        <strong>석유화학 · 철강 · 자동차 · 반도체</strong><br>
+                        투입산출표 기반 80개 산업 분류, 산업 간 투입계수로 연결
+                    </div>
+                </div>
+                <div class="detail-card d5">
+                    <div class="detail-layer-tag">L5</div>
+                    <div class="detail-text">
+                        <strong>물가 · 고용 · 무역수지 · 성장률</strong><br>
+                        한국 거시경제 지표에 대한 최종 영향 평가 노드
+                    </div>
+                </div>
+                <div class="detail-card d6">
+                    <div class="detail-layer-tag">L6</div>
+                    <div class="detail-text">
+                        <strong>비축량 방출 · 수입선 다변화 · 운항 지원</strong><br>
+                        위기 단계별 정부 · 산업계 대응 정책 옵션
+                    </div>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1920">
-<title>생성형 AI 파이프라인</title>
+<title>해상 공급망 위기의 3개 유형 분류</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -39,71 +39,10 @@ body {
     0% { transform: translate(0, 0); }
     100% { transform: translate(50px, 50px); }
 }
-.glow-orb {
-    position: absolute; border-radius: 50%;
-    filter: blur(80px);
-    animation: orb-drift 20s ease-in-out infinite;
-}
-@keyframes orb-drift {
-    0%, 100% { transform: translate(0, 0); }
-    33% { transform: translate(40px, -30px); }
-    66% { transform: translate(-20px, 20px); }
-}
-.wave-bg {
-    position: absolute; width: 100%; height: 100%; overflow: hidden;
-}
-.wave {
-    position: absolute; bottom: -50px; width: 200%; height: 300px;
-    opacity: 0.06;
-    background: linear-gradient(180deg, transparent, #66bb6a);
-    border-radius: 50% 50% 0 0;
-}
-.wave1 { animation: wave 8s ease-in-out infinite; left: -50%; }
-.wave2 { animation: wave 10s ease-in-out infinite reverse; left: -30%; opacity: 0.04; bottom: -80px; }
-.wave3 { animation: wave 12s ease-in-out infinite; left: -40%; opacity: 0.03; bottom: -110px; }
-@keyframes wave {
-    0%, 100% { transform: translateX(0) translateY(0); }
-    50% { transform: translateX(30px) translateY(-20px); }
-}
-.nodes-canvas {
-    position: absolute; width: 100%; height: 100%; overflow: hidden;
-}
-.node {
-    position: absolute; border-radius: 50%;
-    background: radial-gradient(circle, rgba(102,187,106,0.4), transparent);
-    animation: float-node 15s ease-in-out infinite;
-}
-.node::after {
-    content: ''; position: absolute;
-    top: 50%; left: 50%; width: 6px; height: 6px;
-    margin: -3px 0 0 -3px; border-radius: 50%;
-    background: #66bb6a;
-    box-shadow: 0 0 10px #66bb6a;
-}
-@keyframes float-node {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(30px, -20px) scale(1.1); }
-    50% { transform: translate(-10px, 20px) scale(0.9); }
-    75% { transform: translate(20px, 10px) scale(1.05); }
-}
-.connection-lines {
-    position: absolute; width: 100%; height: 100%;
-}
-.connection-lines svg { width: 100%; height: 100%; }
-.conn-line {
-    stroke: rgba(102,187,106,0.08);
-    stroke-width: 1;
-    animation: pulse-line 4s ease-in-out infinite;
-}
-@keyframes pulse-line {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.8; }
-}
 .content-wrapper {
     position: relative; z-index: 10; color: white;
     width: 100%; height: 100%;
     display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
     padding: 50px 80px;
     animation: fadeInUp 1s ease-out;
 }
@@ -111,50 +50,6 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-.section-num {
-    font-size: 160px; font-weight: 900;
-    color: #66bb6a;
-    opacity: 0.15;
-    line-height: 1;
-    margin-bottom: -30px;
-    letter-spacing: 10px;
-}
-.section-title {
-    font-size: 64px; font-weight: 800;
-    text-align: center; line-height: 1.4;
-    background: linear-gradient(135deg, #ffffff 0%, #66bb6a 60%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 50px;
-    animation: title-glow 3s ease-in-out infinite alternate;
-}
-@keyframes title-glow {
-    from { filter: drop-shadow(0 0 20px rgba(100,181,246,0)); }
-    to { filter: drop-shadow(0 0 20px rgba(102,187,106,0.3)); }
-}
-.divider-line {
-    width: 120px; height: 2px;
-    background: linear-gradient(90deg, transparent, #66bb6a, transparent);
-    margin: 0 auto 40px;
-}
-.section-items {
-    display: flex; align-items: center; gap: 16px;
-    flex-wrap: wrap; justify-content: center;
-}
-.section-chip {
-    padding: 12px 28px;
-    border-radius: 12px;
-    font-size: 24px;
-    color: rgba(255,255,255,0.7);
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-}
-.section-arrow {
-    color: rgba(255,255,255,0.2);
-    font-size: 20px;
-}
-
 .kmi-badge {
     position: absolute; right: 60px; top: 30px;
     display: flex; align-items: center; gap: 8px;
@@ -168,50 +63,254 @@ body {
     font-size: 18px; color: rgba(255,255,255,0.35);
     font-weight: 500;
 }
+
+/* Slide 04 specifics */
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 10px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 50px;
+}
+
+.cards-row {
+    display: flex; gap: 36px; flex: 1;
+}
+.crisis-card {
+    flex: 1; border-radius: 20px; padding: 40px 34px;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform 0.3s;
+}
+/* Orange - Route */
+.crisis-card.route {
+    background: linear-gradient(180deg, rgba(255,112,67,0.12), rgba(255,112,67,0.03));
+    border: 1px solid rgba(255,112,67,0.25);
+}
+.crisis-card.route::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #ff7043, #ff8a65);
+}
+/* Red - Source */
+.crisis-card.source {
+    background: linear-gradient(180deg, rgba(239,83,80,0.12), rgba(239,83,80,0.03));
+    border: 1px solid rgba(239,83,80,0.25);
+}
+.crisis-card.source::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #ef5350, #e57373);
+}
+/* Purple - Logistics */
+.crisis-card.logistics {
+    background: linear-gradient(180deg, rgba(171,71,188,0.12), rgba(171,71,188,0.03));
+    border: 1px solid rgba(171,71,188,0.25);
+}
+.crisis-card.logistics::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #ab47bc, #ce93d8);
+}
+
+.card-icon {
+    font-size: 84px; margin-bottom: 20px;
+}
+.card-type-kr {
+    font-size: 45px; font-weight: 800; margin-bottom: 4px;
+}
+.route .card-type-kr { color: #ff7043; }
+.source .card-type-kr { color: #ef5350; }
+.logistics .card-type-kr { color: #ab47bc; }
+
+.card-type-en {
+    font-size: 24px; font-weight: 600;
+    color: rgba(255,255,255,0.35); margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.card-definition {
+    font-size: 26px; color: rgba(255,255,255,0.8);
+    line-height: 1.6; margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.card-mechanism-label {
+    font-size: 20px; font-weight: 700;
+    color: rgba(255,255,255,0.35); letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.card-mechanism {
+    font-size: 22px; color: rgba(255,255,255,0.65);
+    line-height: 1.6; margin-bottom: 28px;
+}
+.mechanism-flow {
+    display: flex; flex-direction: column; gap: 8px;
+}
+.mechanism-step {
+    display: flex; align-items: center; gap: 10px;
+}
+.mechanism-arrow {
+    font-size: 21px; flex-shrink: 0;
+}
+.route .mechanism-arrow { color: #ff7043; }
+.source .mechanism-arrow { color: #ef5350; }
+.logistics .mechanism-arrow { color: #ab47bc; }
+
+.card-examples {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+.examples-label {
+    font-size: 20px; font-weight: 700;
+    color: rgba(255,255,255,0.35); letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.example-tag {
+    display: inline-block; padding: 6px 14px;
+    border-radius: 20px; font-size: 20px; font-weight: 600;
+    margin: 3px 4px 3px 0;
+}
+.route .example-tag {
+    background: rgba(255,112,67,0.15); color: #ffab91;
+    border: 1px solid rgba(255,112,67,0.2);
+}
+.source .example-tag {
+    background: rgba(239,83,80,0.15); color: #ef9a9a;
+    border: 1px solid rgba(239,83,80,0.2);
+}
+.logistics .example-tag {
+    background: rgba(171,71,188,0.15); color: #ce93d8;
+    border: 1px solid rgba(171,71,188,0.2);
+}
+
+/* Staggered animation */
+.crisis-card:nth-child(1) { animation: fadeInUp 0.8s ease-out 0.1s both; }
+.crisis-card:nth-child(2) { animation: fadeInUp 0.8s ease-out 0.3s both; }
+.crisis-card:nth-child(3) { animation: fadeInUp 0.8s ease-out 0.5s both; }
+
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
 </style>
 </head>
 <body>
 <div class="slide-container">
 <div class="content-area">
     <div class="digital-grid"></div>
-
-    <div class="glow-orb" style="width:400px;height:400px;background:rgba(46,125,50,0.15);top:10%;left:5%;"></div>
-    <div class="glow-orb" style="width:350px;height:350px;background:rgba(102,187,106,0.10);top:50%;right:10%;animation-delay:-7s;"></div>
-    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,255,255,0.03);bottom:10%;left:40%;animation-delay:-13s;"></div>
-
-    <div class="wave-bg">
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-    </div>
-
-    <div class="nodes-canvas">
-        <div class="node" style="width:35px;height:35px;top:15%;left:10%;animation-delay:0s;"></div>
-        <div class="node" style="width:28px;height:28px;top:22%;left:82%;animation-delay:-3s;"></div>
-        <div class="node" style="width:32px;height:32px;top:65%;left:12%;animation-delay:-6s;"></div>
-        <div class="node" style="width:25px;height:25px;top:72%;left:85%;animation-delay:-9s;"></div>
-        <div class="node" style="width:38px;height:38px;top:45%;left:90%;animation-delay:-5s;"></div>
-        <div class="node" style="width:22px;height:22px;top:85%;left:50%;animation-delay:-8s;"></div>
-    </div>
-
-    <div class="connection-lines">
-        <svg viewBox="0 0 1920 1080" preserveAspectRatio="none">
-            <line class="conn-line" x1="192" y1="162" x2="1574" y2="238" style="animation-delay:0s"/>
-            <line class="conn-line" x1="230" y1="702" x2="1728" y2="918" style="animation-delay:-1.5s"/>
-            <line class="conn-line" x1="1574" y1="238" x2="1728" y2="777" style="animation-delay:-3s"/>
-        </svg>
-    </div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,112,67,0.06);top:20%;left:5%;"></div>
+    <div class="glow-orb" style="width:280px;height:280px;background:rgba(171,71,188,0.06);bottom:10%;right:5%;animation-delay:-8s;"></div>
 
     <div class="content-wrapper">
-        <div class="section-num">III</div>
-        <div class="section-title">생성형 AI 파이프라인</div>
-        <div class="divider-line"></div>
-        <div class="section-items">
-            <span class="section-chip">뉴스 데이터 수집</span>
-            <span class="section-arrow">&#x25B6;</span>
-            <span class="section-chip">AI × 지식그래프 활용</span>
-            <span class="section-arrow">&#x25B6;</span>
-            <span class="section-chip">주간 시나리오 분석</span>
+        <div class="slide-title">해상 공급망 위기의 3개 유형 분류</div>
+        <div class="title-underline"></div>
+
+        <div class="cards-row">
+            <!-- Route Disruption -->
+            <div class="crisis-card route">
+                <div class="card-icon">🚢</div>
+                <div class="card-type-kr">경로위기</div>
+                <div class="card-type-en">Route Disruption</div>
+                <div class="card-definition">
+                    해상 초크포인트의 물리적 차단 또는 통항 제한으로 인한 공급망 교란
+                </div>
+                <div class="card-mechanism-label">전파 메커니즘</div>
+                <div class="card-mechanism">
+                    <div class="mechanism-flow">
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>통항 감소 · 우회</span>
+                        </div>
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>물자 수급 차질</span>
+                        </div>
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>운임 · 보험료 상승</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-examples">
+                    <div class="examples-label">사례</div>
+                    <span class="example-tag">수에즈 2021</span>
+                    <span class="example-tag">Red Sea 2023</span>
+                    <span class="example-tag">호르무즈 2026</span>
+                </div>
+            </div>
+
+            <!-- Source Disruption -->
+            <div class="crisis-card source">
+                <div class="card-icon">⛔</div>
+                <div class="card-type-kr">공급원위기</div>
+                <div class="card-type-en">Source Disruption</div>
+                <div class="card-definition">
+                    수출국의 규제 · 분쟁으로 특정 물자의 공급이 직접 차단되는 위기
+                </div>
+                <div class="card-mechanism-label">전파 메커니즘</div>
+                <div class="card-mechanism">
+                    <div class="mechanism-flow">
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>특정 물자 수출 중단</span>
+                        </div>
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>대체 공급원 부재</span>
+                        </div>
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>해당 산업 직접 타격</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-examples">
+                    <div class="examples-label">사례</div>
+                    <span class="example-tag">요소수 2021</span>
+                    <span class="example-tag">일본 2019</span>
+                    <span class="example-tag">우크라이나 2022</span>
+                </div>
+            </div>
+
+            <!-- Logistics Disruption -->
+            <div class="crisis-card logistics">
+                <div class="card-icon">📦</div>
+                <div class="card-type-kr">물류위기</div>
+                <div class="card-type-en">Logistics Disruption</div>
+                <div class="card-definition">
+                    해운 인프라 자체의 교란으로 전반적인 운송 차질이 발생하는 위기
+                </div>
+                <div class="card-mechanism-label">전파 메커니즘</div>
+                <div class="card-mechanism">
+                    <div class="mechanism-flow">
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>선박 부족 · 운임 폭등</span>
+                        </div>
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>전 물자 운송비 동시 상승</span>
+                        </div>
+                        <div class="mechanism-step">
+                            <span class="mechanism-arrow">▸</span>
+                            <span>전 산업 파급</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-examples">
+                    <div class="examples-label">사례</div>
+                    <span class="example-tag">COVID 2020</span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
@@ -241,7 +340,7 @@ body {
   const hud = document.createElement('div');
   Object.assign(hud.style, {
     position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
-    fontSize:'30px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
     color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
   });
   hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
