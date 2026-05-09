@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>연구 목적 및 범위</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 10px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 36px;
+}
+
+/* Main layout */
+.main-layout {
+    display: flex; gap: 36px; flex: 1; min-height: 0;
+}
+
+/* Left: Purpose */
+.purpose-section {
+    flex: 3; display: flex; flex-direction: column; gap: 0;
+}
+
+.section-label {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 20px;
+}
+.section-badge {
+    padding: 6px 18px; border-radius: 20px;
+    font-size: 27px; font-weight: 800; color: #fff;
+}
+.badge-purpose { background: linear-gradient(135deg, #1565c0, #42a5f5); }
+.badge-scope { background: linear-gradient(135deg, #2e7d32, #66bb6a); }
+
+/* Problem-solution flow */
+.flow-container {
+    flex: 1; display: flex; flex-direction: column; gap: 0;
+}
+
+.problem-row {
+    display: flex; gap: 14px; align-items: stretch;
+    margin-bottom: 10px;
+}
+
+.problem-card {
+    flex: 1;
+    background: rgba(239,83,80,0.06);
+    border: 1px solid rgba(239,83,80,0.15);
+    border-radius: 14px;
+    padding: 20px 18px;
+    position: relative;
+    animation: fadeInUp 0.6s ease-out both;
+}
+.problem-card:nth-child(1) { animation-delay: 0.1s; }
+.problem-card:nth-child(2) { animation-delay: 0.2s; }
+.problem-card:nth-child(3) { animation-delay: 0.3s; }
+
+.problem-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, #ef5350, rgba(239,83,80,0.3));
+    border-radius: 14px 14px 0 0;
+}
+
+.problem-step {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 10px;
+}
+.step-num {
+    width: 28px; height: 28px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 21px; font-weight: 900;
+    background: rgba(239,83,80,0.2); color: #ef5350;
+    flex-shrink: 0;
+}
+.step-title {
+    font-size: 27px; font-weight: 700; color: #ef9a9a;
+}
+.problem-desc {
+    font-size: 22px; color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+}
+.problem-desc strong {
+    color: rgba(255,255,255,0.85); font-weight: 600;
+}
+
+/* Flow arrows between rows */
+.flow-arrow-down {
+    display: flex; align-items: center; justify-content: center;
+    height: 28px; flex-shrink: 0;
+}
+.flow-arrow-down svg { width: 24px; height: 24px; }
+
+/* Barrier row */
+.barrier-row {
+    display: flex; align-items: center; gap: 16px;
+    padding: 14px 24px;
+    background: rgba(255,167,38,0.06);
+    border: 1px solid rgba(255,167,38,0.2);
+    border-radius: 14px;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+.barrier-icon {
+    font-size: 42px; flex-shrink: 0;
+}
+.barrier-text {
+    font-size: 26px; color: rgba(255,255,255,0.75); line-height: 1.5;
+}
+.barrier-text strong {
+    color: #ffcc80; font-weight: 700;
+}
+
+/* Solution row */
+.solution-row {
+    background: linear-gradient(135deg, rgba(21,101,192,0.15), rgba(66,165,245,0.06));
+    border: 2px solid rgba(66,165,245,0.25);
+    border-radius: 16px;
+    padding: 22px 28px;
+    position: relative; overflow: hidden;
+    animation: fadeInUp 0.6s ease-out 0.7s both;
+}
+.solution-row::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, #42a5f5, #ffd93d);
+}
+.solution-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 10px;
+}
+.solution-icon {
+    font-size: 36px;
+}
+.solution-title {
+    font-size: 30px; font-weight: 800; color: #64b5f6;
+}
+.solution-desc {
+    font-size: 26px; color: rgba(255,255,255,0.85); line-height: 1.7;
+}
+.solution-desc strong {
+    color: #ffd93d; font-weight: 700;
+}
+.solution-desc .hl-blue {
+    color: #64b5f6; font-weight: 700;
+}
+
+/* Right: Scope */
+.scope-section {
+    flex: 2; display: flex; flex-direction: column;
+}
+
+.scope-card {
+    flex: 1;
+    background: rgba(46,125,50,0.06);
+    border: 1px solid rgba(102,187,106,0.15);
+    border-radius: 16px;
+    padding: 28px 24px;
+    display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+.scope-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #66bb6a, rgba(102,187,106,0.3));
+    border-radius: 16px 16px 0 0;
+}
+
+.scope-main-text {
+    font-size: 30px; font-weight: 700; color: #a5d6a7;
+    line-height: 1.6; margin-bottom: 24px;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(102,187,106,0.15);
+}
+
+.scope-items {
+    display: flex; flex-direction: column; gap: 14px;
+    flex: 1;
+}
+
+.scope-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 14px 16px;
+    background: rgba(102,187,106,0.04);
+    border-radius: 10px;
+    border: 1px solid rgba(102,187,106,0.08);
+}
+.scope-item-icon {
+    font-size: 33px; flex-shrink: 0; margin-top: 2px;
+}
+.scope-item-content {}
+.scope-item-title {
+    font-size: 24px; font-weight: 700; color: #a5d6a7;
+    margin-bottom: 4px;
+}
+.scope-item-desc {
+    font-size: 21px; color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+}
+
+/* Output badges */
+.output-row {
+    display: flex; gap: 10px; margin-top: auto; padding-top: 18px;
+    border-top: 1px solid rgba(102,187,106,0.12);
+}
+.output-badge {
+    flex: 1; text-align: center;
+    padding: 12px 8px;
+    background: rgba(102,187,106,0.08);
+    border: 1px solid rgba(102,187,106,0.15);
+    border-radius: 10px;
+}
+.output-badge-label {
+    font-size: 20px; color: rgba(255,255,255,0.4);
+    margin-bottom: 4px;
+}
+.output-badge-value {
+    font-size: 27px; font-weight: 800;
+    color: #a5d6a7;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(21,101,192,0.1);top:8%;right:15%;"></div>
+    <div class="glow-orb" style="width:280px;height:280px;background:rgba(46,125,50,0.08);bottom:15%;right:5%;animation-delay:-8s;"></div>
+    <div class="glow-orb" style="width:250px;height:250px;background:rgba(239,83,80,0.05);top:40%;left:5%;animation-delay:-14s;"></div>
+
+    <div class="content-wrapper">
+        <div class="slide-title">연구 목적 및 범위</div>
+        <div class="title-underline"></div>
+
+        <div class="main-layout">
+            <!-- Left: Purpose -->
+            <div class="purpose-section">
+                <div class="section-label">
+                    <div class="section-badge badge-purpose">연구 목적</div>
+                </div>
+
+                <!-- Problem cards row -->
+                <div class="problem-row">
+                    <div class="problem-card">
+                        <div class="problem-step">
+                            <div class="step-num">1</div>
+                            <div class="step-title">불확실성 증가</div>
+                        </div>
+                        <div class="problem-desc">
+                            정치, 경제, 외교적 <strong>불확실성이 전세계적으로 확대</strong>되며 다발적 공급망 교란 발생
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-step">
+                            <div class="step-num">2</div>
+                            <div class="step-title">한국 산업 전파</div>
+                        </div>
+                        <div class="problem-desc">
+                            교란이 에너지, 원자재, 물류 등 <strong>다양한 경로로 한국 산업에 전파</strong>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-step">
+                            <div class="step-num">3</div>
+                            <div class="step-title">모니터링 부재</div>
+                        </div>
+                        <div class="problem-desc">
+                            즉각적으로 인지·분석할 <strong>체계적 모니터링 시스템이 부재</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow-down">
+                    <svg viewBox="0 0 24 24"><path d="M8 4 L16 4 L16 14 L20 14 L12 22 L4 14 L8 14 Z" fill="rgba(255,167,38,0.3)"/></svg>
+                </div>
+
+                <!-- Barrier -->
+                <div class="barrier-row">
+                    <div class="barrier-icon">&#9888;</div>
+                    <div class="barrier-text">
+                        수동 대응의 한계 &mdash; 매일 국내외 기사를 <strong>수집·분류·분석</strong>하려면 막대한 <strong>시간, 인력, 비용</strong>이 소요되어 지속적 운영이 사실상 불가능
+                    </div>
+                </div>
+
+                <div class="flow-arrow-down">
+                    <svg viewBox="0 0 24 24"><path d="M8 4 L16 4 L16 14 L20 14 L12 22 L4 14 L8 14 Z" fill="rgba(66,165,245,0.3)"/></svg>
+                </div>
+
+                <!-- Solution -->
+                <div class="solution-row">
+                    <div class="solution-header">
+                        <div class="solution-icon">&#x1F916;</div>
+                        <div class="solution-title">생성형 AI 기반 자동화 시스템 개발</div>
+                    </div>
+                    <div class="solution-desc">
+                        <strong>생성형 AI</strong>를 활용하여 국내외 뉴스를 <strong>자동 수집·분류·분석</strong>하고,<br>
+                        <strong>매일 일일 브리핑</strong>과 <strong>주간 모니터링 리포트</strong>를 자동 생성·배포하는<br>
+                        <span class="hl-blue">AI 기반 글로벌 해상 공급망 모니터링 체계</span>를 구축
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Scope -->
+            <div class="scope-section">
+                <div class="section-label">
+                    <div class="section-badge badge-scope">연구 범위</div>
+                </div>
+
+                <div class="scope-card">
+                    <div class="scope-main-text">
+                        한국 산업 및 거시경제에 영향을 미치는<br>
+                        전세계 글로벌 공급망 이슈 전체
+                    </div>
+
+                    <div class="scope-items">
+                        <div class="scope-item">
+                            <div class="scope-item-icon">&#x1F30F;</div>
+                            <div class="scope-item-content">
+                                <div class="scope-item-title">지역 범위</div>
+                                <div class="scope-item-desc">전세계 주요 초크포인트 및 공급망 거점<br>(호르무즈, 수에즈, 말라카, 파나마, 대만해협 등)</div>
+                            </div>
+                        </div>
+                        <div class="scope-item">
+                            <div class="scope-item-icon">&#x1F4E6;</div>
+                            <div class="scope-item-content">
+                                <div class="scope-item-title">품목 범위</div>
+                                <div class="scope-item-desc">에너지(원유, LNG), 곡물, 철광석, 반도체 소재, 비료 원료 등 해상 수입 전 품목</div>
+                            </div>
+                        </div>
+                        <div class="scope-item">
+                            <div class="scope-item-icon">&#x1F4F0;</div>
+                            <div class="scope-item-content">
+                                <div class="scope-item-title">데이터 범위</div>
+                                <div class="scope-item-desc">GDELT 국제뉴스 + 네이버 국내뉴스<br>일 ~3,000건 자동 수집</div>
+                            </div>
+                        </div>
+                        <div class="scope-item">
+                            <div class="scope-item-icon">&#x1F3AF;</div>
+                            <div class="scope-item-content">
+                                <div class="scope-item-title">분석 범위</div>
+                                <div class="scope-item-desc">9개 도메인 분류, 위기 클러스터 추적,<br>한국 산업 전파 경로 분석</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="output-row">
+                        <div class="output-badge">
+                            <div class="output-badge-label">일일</div>
+                            <div class="output-badge-value">Daily Briefing</div>
+                        </div>
+                        <div class="output-badge">
+                            <div class="output-badge-label">주간</div>
+                            <div class="output-badge-value">Weekly Report</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

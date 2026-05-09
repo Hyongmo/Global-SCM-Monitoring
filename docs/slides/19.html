@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>실증 분석 및 서비스</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.glow-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+.wave-bg {
+    position: absolute; width: 100%; height: 100%; overflow: hidden;
+}
+.wave {
+    position: absolute; bottom: -50px; width: 200%; height: 300px;
+    opacity: 0.06;
+    background: linear-gradient(180deg, transparent, #ce93d8);
+    border-radius: 50% 50% 0 0;
+}
+.wave1 { animation: wave 8s ease-in-out infinite; left: -50%; }
+.wave2 { animation: wave 10s ease-in-out infinite reverse; left: -30%; opacity: 0.04; bottom: -80px; }
+.wave3 { animation: wave 12s ease-in-out infinite; left: -40%; opacity: 0.03; bottom: -110px; }
+@keyframes wave {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(30px) translateY(-20px); }
+}
+.nodes-canvas {
+    position: absolute; width: 100%; height: 100%; overflow: hidden;
+}
+.node {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(206,147,216,0.4), transparent);
+    animation: float-node 15s ease-in-out infinite;
+}
+.node::after {
+    content: ''; position: absolute;
+    top: 50%; left: 50%; width: 6px; height: 6px;
+    margin: -3px 0 0 -3px; border-radius: 50%;
+    background: #ce93d8;
+    box-shadow: 0 0 10px #ce93d8;
+}
+@keyframes float-node {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(30px, -20px) scale(1.1); }
+    50% { transform: translate(-10px, 20px) scale(0.9); }
+    75% { transform: translate(20px, 10px) scale(1.05); }
+}
+.connection-lines {
+    position: absolute; width: 100%; height: 100%;
+}
+.connection-lines svg { width: 100%; height: 100%; }
+.conn-line {
+    stroke: rgba(171,71,188,0.08);
+    stroke-width: 1;
+    animation: pulse-line 4s ease-in-out infinite;
+}
+@keyframes pulse-line {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-num {
+    font-size: 160px; font-weight: 900;
+    color: #ce93d8;
+    opacity: 0.15;
+    line-height: 1;
+    margin-bottom: -30px;
+    letter-spacing: 10px;
+}
+.section-title {
+    font-size: 64px; font-weight: 800;
+    text-align: center; line-height: 1.4;
+    background: linear-gradient(135deg, #ffffff 0%, #ce93d8 60%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 50px;
+    animation: title-glow 3s ease-in-out infinite alternate;
+}
+@keyframes title-glow {
+    from { filter: drop-shadow(0 0 20px rgba(100,181,246,0)); }
+    to { filter: drop-shadow(0 0 20px rgba(206,147,216,0.3)); }
+}
+.divider-line {
+    width: 120px; height: 2px;
+    background: linear-gradient(90deg, transparent, #ce93d8, transparent);
+    margin: 0 auto 40px;
+}
+.section-items {
+    display: flex; align-items: center; gap: 16px;
+    flex-wrap: wrap; justify-content: center;
+}
+.section-chip {
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 24px;
+    color: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.section-arrow {
+    color: rgba(255,255,255,0.2);
+    font-size: 20px;
+}
+
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+
+    <div class="glow-orb" style="width:400px;height:400px;background:rgba(142,36,170,0.15);top:10%;left:5%;"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(171,71,188,0.10);top:50%;right:10%;animation-delay:-7s;"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,255,255,0.03);bottom:10%;left:40%;animation-delay:-13s;"></div>
+
+    <div class="wave-bg">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+
+    <div class="nodes-canvas">
+        <div class="node" style="width:35px;height:35px;top:15%;left:10%;animation-delay:0s;"></div>
+        <div class="node" style="width:28px;height:28px;top:22%;left:82%;animation-delay:-3s;"></div>
+        <div class="node" style="width:32px;height:32px;top:65%;left:12%;animation-delay:-6s;"></div>
+        <div class="node" style="width:25px;height:25px;top:72%;left:85%;animation-delay:-9s;"></div>
+        <div class="node" style="width:38px;height:38px;top:45%;left:90%;animation-delay:-5s;"></div>
+        <div class="node" style="width:22px;height:22px;top:85%;left:50%;animation-delay:-8s;"></div>
+    </div>
+
+    <div class="connection-lines">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="none">
+            <line class="conn-line" x1="192" y1="162" x2="1574" y2="238" style="animation-delay:0s"/>
+            <line class="conn-line" x1="230" y1="702" x2="1728" y2="918" style="animation-delay:-1.5s"/>
+            <line class="conn-line" x1="1574" y1="238" x2="1728" y2="777" style="animation-delay:-3s"/>
+        </svg>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="section-num">IV</div>
+        <div class="section-title">실증 분석 및 서비스</div>
+        <div class="divider-line"></div>
+        <div class="section-items">
+            <span class="section-chip">7개 위기 실증 분석</span>
+            <span class="section-arrow">&#x25B6;</span>
+            <span class="section-chip">서비스 운영 현황</span>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'30px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

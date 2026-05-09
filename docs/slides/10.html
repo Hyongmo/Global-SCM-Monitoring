@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>온톨로지 KG 구축의 필요성</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 6px;
+}
+.slide-subtitle {
+    font-size: 30px; color: rgba(255,255,255,0.45); font-weight: 500;
+    margin-bottom: 10px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 30px;
+}
+
+/* Main layout: left = problem/solution concept, right = pipeline roles */
+.main-layout {
+    flex: 1; display: flex; gap: 40px;
+}
+
+/* Left column: core concept */
+.concept-col {
+    flex: 0 0 520px; display: flex; flex-direction: column; gap: 20px;
+}
+
+/* Problem vs Solution */
+.concept-card {
+    border-radius: 16px; padding: 24px 28px;
+    position: relative; overflow: hidden;
+}
+.concept-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    border-radius: 16px 16px 0 0;
+}
+
+.problem-card {
+    background: rgba(239,83,80,0.06);
+    border: 1px solid rgba(239,83,80,0.2);
+}
+.problem-card::before { background: #ef5350; }
+
+.solution-card {
+    background: rgba(102,187,106,0.06);
+    border: 1px solid rgba(102,187,106,0.2);
+    flex: 1;
+}
+.solution-card::before { background: #66bb6a; }
+
+.concept-label {
+    font-size: 21px; font-weight: 900; letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.problem-card .concept-label { color: #ef9a9a; }
+.solution-card .concept-label { color: #a5d6a7; }
+
+.concept-text {
+    font-size: 26px; color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+}
+.concept-text strong {
+    color: rgba(255,255,255,0.95); font-weight: 700;
+}
+
+.concept-example {
+    margin-top: 14px; padding: 14px 18px;
+    background: rgba(0,0,0,0.25); border-radius: 10px;
+    font-size: 21px; color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+    border-left: 3px solid;
+}
+.problem-card .concept-example { border-color: #ef5350; }
+.solution-card .concept-example { border-color: #66bb6a; }
+.concept-example .ex-wrong { color: #ef9a9a; }
+.concept-example .ex-right { color: #a5d6a7; }
+
+/* Arrow between problem and solution */
+.concept-arrow {
+    display: flex; justify-content: center; align-items: center;
+    height: 24px;
+}
+.concept-arrow svg { width: 28px; height: 24px; }
+
+/* Right column: 5 pipeline roles */
+.roles-col {
+    flex: 1; display: flex; flex-direction: column; gap: 10px;
+    justify-content: center;
+}
+
+.role-card {
+    display: flex; align-items: stretch; gap: 0;
+    border-radius: 14px; overflow: hidden;
+    animation: fadeInUp 0.5s ease-out both;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+.role-card:nth-child(1) { animation-delay: 0.15s; }
+.role-card:nth-child(2) { animation-delay: 0.25s; }
+.role-card:nth-child(3) { animation-delay: 0.35s; }
+.role-card:nth-child(4) { animation-delay: 0.45s; }
+.role-card:nth-child(5) { animation-delay: 0.55s; }
+
+.role-step {
+    flex: 0 0 56px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 900; letter-spacing: 1px;
+    writing-mode: vertical-lr; text-orientation: mixed;
+    color: #0a0f1b;
+}
+
+.role-content {
+    flex: 1; padding: 16px 22px;
+    display: flex; align-items: center; gap: 18px;
+}
+
+.role-icon {
+    font-size: 42px; flex-shrink: 0; width: 36px; text-align: center;
+}
+
+.role-info { flex: 1; }
+.role-title {
+    font-size: 27px; font-weight: 800;
+    margin-bottom: 4px;
+}
+.role-desc {
+    font-size: 21px; color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+}
+.role-desc strong {
+    color: rgba(255,255,255,0.85); font-weight: 700;
+}
+
+.role-effect {
+    flex: 0 0 200px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px 16px;
+    font-size: 20px; font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    border-left: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Role colors */
+.role-1 .role-step { background: #66bb6a; }
+.role-1 .role-content { background: rgba(102,187,106,0.05); }
+.role-1 .role-title { color: #a5d6a7; }
+.role-1 .role-effect { color: #a5d6a7; background: rgba(102,187,106,0.08); }
+.role-1 { border-color: rgba(102,187,106,0.15); }
+
+.role-2 .role-step { background: #42a5f5; }
+.role-2 .role-content { background: rgba(66,165,245,0.05); }
+.role-2 .role-title { color: #90caf9; }
+.role-2 .role-effect { color: #90caf9; background: rgba(66,165,245,0.08); }
+.role-2 { border-color: rgba(66,165,245,0.15); }
+
+.role-3 .role-step { background: #ab47bc; }
+.role-3 .role-content { background: rgba(171,71,188,0.05); }
+.role-3 .role-title { color: #ce93d8; }
+.role-3 .role-effect { color: #ce93d8; background: rgba(171,71,188,0.08); }
+.role-3 { border-color: rgba(171,71,188,0.15); }
+
+.role-4 .role-step { background: #ffd93d; color: #0a0f1b; }
+.role-4 .role-content { background: rgba(255,217,61,0.05); }
+.role-4 .role-title { color: #fff176; }
+.role-4 .role-effect { color: #fff176; background: rgba(255,217,61,0.08); }
+.role-4 { border-color: rgba(255,217,61,0.15); }
+
+.role-5 .role-step { background: #ff7043; }
+.role-5 .role-content { background: rgba(255,112,67,0.05); }
+.role-5 .role-title { color: #ffab91; }
+.role-5 .role-effect { color: #ffab91; background: rgba(255,112,67,0.08); }
+.role-5 { border-color: rgba(255,112,67,0.15); }
+
+/* Bottom summary bar */
+.summary-bar {
+    margin-top: 10px;
+    padding: 12px 32px;
+    background: linear-gradient(90deg, rgba(255,217,61,0.08), rgba(102,187,106,0.06), rgba(66,165,245,0.06));
+    border: 1px solid rgba(255,217,61,0.15);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; gap: 40px;
+    animation: fadeInUp 0.6s ease-out 0.7s both;
+}
+.summary-item {
+    text-align: center;
+}
+.summary-num {
+    font-size: 36px; font-weight: 900;
+    background: linear-gradient(135deg, #ffd93d, #ffab00);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.summary-label {
+    font-size: 18px; color: rgba(255,255,255,0.4);
+    margin-top: 2px;
+}
+.summary-divider {
+    width: 1px; height: 40px;
+    background: rgba(255,255,255,0.08);
+}
+.summary-quote {
+    font-size: 24px; font-weight: 700;
+    color: rgba(255,255,255,0.6);
+    font-style: italic;
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.5;
+}
+.summary-quote em {
+    color: #ffd93d; font-style: normal;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(102,187,106,0.08);top:5%;left:5%;"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(66,165,245,0.07);bottom:10%;right:8%;animation-delay:-10s;"></div>
+    <div class="glow-orb" style="width:250px;height:250px;background:rgba(255,217,61,0.05);top:40%;right:30%;animation-delay:-15s;"></div>
+
+    <div class="content-wrapper">
+        <div class="slide-title">온톨로지 KG 구축의 필요성</div>
+        <div class="slide-subtitle">온톨로지 지식그래프가 생성형 AI의 정확성을 보장하는 5가지 역할</div>
+        <div class="title-underline"></div>
+
+        <div class="main-layout">
+            <!-- Left: Problem vs Solution -->
+            <div class="concept-col">
+                <div class="concept-card problem-card">
+                    <div class="concept-label">PROBLEM — LLM 단독 사용</div>
+                    <div class="concept-text">
+                        생성형 AI가 <strong>도메인 지식 없이</strong> 뉴스를 분석하면,
+                        그럴듯하지만 <strong>사실과 다른 분석</strong>을 생성할 위험이 있음
+                    </div>
+                    <div class="concept-example">
+                        <span class="ex-wrong">&#x2717;</span> "호르무즈 봉쇄 시 한국 반도체 산업에 <strong>즉각적</strong> 타격"<br>
+                        <span class="ex-wrong">&#x2717;</span> 존재하지 않는 수입경로를 생성<br>
+                        <span class="ex-wrong">&#x2717;</span> 근거 없는 피해 규모 수치 제시
+                    </div>
+                </div>
+
+                <div class="concept-arrow">
+                    <svg viewBox="0 0 28 24"><path d="M14 0 L22 16 L18 16 L18 24 L10 24 L10 16 L6 16 Z" fill="rgba(102,187,106,0.4)"/></svg>
+                </div>
+
+                <div class="concept-card solution-card">
+                    <div class="concept-label">SOLUTION — KG + LLM 결합</div>
+                    <div class="concept-text">
+                        <strong>온톨로지 KG가 LLM의 분석 범위를 제약</strong>하여,
+                        정의된 엔티티·관계·정량값 안에서만 추론하도록 강제
+                    </div>
+                    <div class="concept-example">
+                        <span class="ex-right">&#x2713;</span> "호르무즈 → 원유(의존도 70%) → 나프타 → 석유화학"<br>
+                        <span class="ex-right">&#x2713;</span> KG에 정의된 전파경로만 참조<br>
+                        <span class="ex-right">&#x2713;</span> IO표 투입계수로 영향도 산출<br>
+                        <span class="ex-right">&#x2713;</span> 반도체는 <strong>간접(2차) 영향</strong>으로 정확히 분류
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: 5 Pipeline Roles -->
+            <div class="roles-col">
+                <div class="role-card role-1">
+                    <div class="role-step">수집</div>
+                    <div class="role-content">
+                        <div class="role-icon">&#x1F50D;</div>
+                        <div class="role-info">
+                            <div class="role-title">검색어 자동 도출</div>
+                            <div class="role-desc">KG 노드에서 <strong>124+119개 키워드</strong>를 자동 추출하여 뉴스 수집 범위를 정의. KG가 변경되면 쿼리도 자동 갱신</div>
+                        </div>
+                    </div>
+                    <div class="role-effect">수집 범위를<br>KG가 결정</div>
+                </div>
+
+                <div class="role-card role-2">
+                    <div class="role-step">분류</div>
+                    <div class="role-content">
+                        <div class="role-icon">&#x1F3AF;</div>
+                        <div class="role-info">
+                            <div class="role-title">엔티티 매칭 분류</div>
+                            <div class="role-desc">기사 내 KG 엔티티를 탐지하여 <strong>8개 카테고리</strong>로 분류. LLM이 임의 카테고리를 만들 수 없음</div>
+                        </div>
+                    </div>
+                    <div class="role-effect">분류 기준을<br>KG가 제공</div>
+                </div>
+
+                <div class="role-card role-3">
+                    <div class="role-step">분석</div>
+                    <div class="role-content">
+                        <div class="role-icon">&#x1F9ED;</div>
+                        <div class="role-info">
+                            <div class="role-title">전파경로 제약</div>
+                            <div class="role-desc">시나리오 작성 시 <strong>KG에 정의된 6계층 경로만</strong> 참조. 존재하지 않는 수입경로·산업연결을 만들어내지 못함</div>
+                        </div>
+                    </div>
+                    <div class="role-effect">분석 경로를<br>KG가 제한</div>
+                </div>
+
+                <div class="role-card role-4">
+                    <div class="role-step">정량</div>
+                    <div class="role-content">
+                        <div class="role-icon">&#x1F4CA;</div>
+                        <div class="role-info">
+                            <div class="role-title">실측 데이터 바인딩</div>
+                            <div class="role-desc"><strong>IO표 투입계수, 수입의존도, 봉쇄율</strong> 등 모든 정량값이 KG에 실측 데이터로 고정. LLM이 수치를 자체 생성 불가</div>
+                        </div>
+                    </div>
+                    <div class="role-effect">수치를<br>KG가 고정</div>
+                </div>
+
+                <div class="role-card role-5">
+                    <div class="role-step">검증</div>
+                    <div class="role-content">
+                        <div class="role-icon">&#x2705;</div>
+                        <div class="role-info">
+                            <div class="role-title">산업 영향 매트릭스 검증</div>
+                            <div class="role-desc"><strong>한국은행 투입산출표</strong> 기반 80개 산업 분류로 영향도 교차검증. 직접/간접 영향을 구분하여 과장 방지</div>
+                        </div>
+                    </div>
+                    <div class="role-effect">영향도를<br>KG가 검증</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>글로벌 뉴스 데이터 수집 체계</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 6px;
+}
+.slide-subtitle {
+    font-size: 30px; color: rgba(255,255,255,0.45); font-weight: 500;
+    margin-bottom: 10px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 30px;
+}
+
+/* Main layout */
+.main-layout {
+    flex: 1; display: flex; gap: 36px;
+}
+
+/* Two source cards */
+.source-card {
+    flex: 1; border-radius: 16px;
+    display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
+    animation: fadeInUp 0.6s ease-out both;
+}
+.source-card:nth-child(1) { animation-delay: 0.15s; }
+.source-card:nth-child(2) { animation-delay: 0.3s; }
+
+.source-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    border-radius: 16px 16px 0 0;
+}
+
+/* GDELT = blue */
+.gdelt-card {
+    background: rgba(66,165,245,0.05);
+    border: 1px solid rgba(66,165,245,0.2);
+}
+.gdelt-card::before { background: linear-gradient(90deg, #42a5f5, #1565c0); }
+
+/* Naver = green */
+.naver-card {
+    background: rgba(102,187,106,0.05);
+    border: 1px solid rgba(102,187,106,0.2);
+}
+.naver-card::before { background: linear-gradient(90deg, #66bb6a, #2e7d32); }
+
+.source-header {
+    padding: 28px 32px 0;
+}
+.source-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 18px; border-radius: 10px;
+    font-size: 36px; font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.gdelt-card .source-badge {
+    background: rgba(66,165,245,0.15);
+    color: #90caf9;
+    border: 1px solid rgba(66,165,245,0.3);
+}
+.naver-card .source-badge {
+    background: rgba(102,187,106,0.15);
+    color: #a5d6a7;
+    border: 1px solid rgba(102,187,106,0.3);
+}
+.source-type {
+    font-size: 22px; color: rgba(255,255,255,0.45);
+    font-weight: 500;
+}
+
+/* Description area */
+.source-desc {
+    padding: 20px 32px;
+    flex: 1; display: flex; flex-direction: column; gap: 16px;
+}
+
+.desc-block {
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.2);
+}
+.desc-label {
+    font-size: 18px; font-weight: 800; letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+.gdelt-card .desc-label { color: #64b5f6; }
+.naver-card .desc-label { color: #81c784; }
+
+.desc-text {
+    font-size: 24px; color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+}
+.desc-text strong {
+    color: rgba(255,255,255,0.95); font-weight: 700;
+}
+
+/* Feature grid */
+.feature-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    padding: 0 32px 24px;
+}
+.feature-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 16px; border-radius: 10px;
+    font-size: 22px; color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+}
+.gdelt-card .feature-item {
+    background: rgba(66,165,245,0.06);
+    border: 1px solid rgba(66,165,245,0.1);
+}
+.naver-card .feature-item {
+    background: rgba(102,187,106,0.06);
+    border: 1px solid rgba(102,187,106,0.1);
+}
+.feature-item strong {
+    color: rgba(255,255,255,0.9); font-weight: 700;
+}
+.feature-icon {
+    font-size: 33px; flex-shrink: 0; width: 30px; text-align: center;
+}
+
+/* Stats bar at bottom of each card */
+.source-stats {
+    padding: 16px 32px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    display: flex; align-items: center; justify-content: space-around;
+}
+.stat-item { text-align: center; }
+.stat-num {
+    font-size: 42px; font-weight: 900;
+}
+.gdelt-card .stat-num {
+    background: linear-gradient(135deg, #64b5f6, #1e88e5);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.naver-card .stat-num {
+    background: linear-gradient(135deg, #81c784, #43a047);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.stat-label {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    margin-top: 2px;
+}
+.stat-divider {
+    width: 1px; height: 36px; background: rgba(255,255,255,0.06);
+}
+
+/* Center merge arrow */
+.merge-col {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 10px; flex-shrink: 0; width: 60px;
+    animation: fadeInUp 0.6s ease-out 0.45s both;
+}
+.merge-arrow-line {
+    width: 2px; flex: 1;
+    background: linear-gradient(180deg, rgba(66,165,245,0.3), rgba(255,217,61,0.5), rgba(102,187,106,0.3));
+}
+.merge-badge {
+    padding: 10px 8px;
+    background: rgba(255,217,61,0.1);
+    border: 1px solid rgba(255,217,61,0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+.merge-icon { font-size: 33px; margin-bottom: 4px; }
+.merge-text {
+    font-size: 16px; font-weight: 800; color: #ffd93d;
+    letter-spacing: 1px; writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+/* Bottom summary */
+.bottom-bar {
+    margin-top: 20px;
+    padding: 16px 40px;
+    background: linear-gradient(90deg, rgba(66,165,245,0.06), rgba(255,217,61,0.06), rgba(102,187,106,0.06));
+    border: 1px solid rgba(255,217,61,0.12);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; gap: 40px;
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+}
+.bottom-flow {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 24px; font-weight: 700;
+}
+.bf-node {
+    padding: 8px 16px; border-radius: 8px;
+    font-size: 21px; font-weight: 800;
+}
+.bf-gdelt { background: rgba(66,165,245,0.15); color: #90caf9; border: 1px solid rgba(66,165,245,0.25); }
+.bf-naver { background: rgba(102,187,106,0.15); color: #a5d6a7; border: 1px solid rgba(102,187,106,0.25); }
+.bf-merge { background: rgba(255,217,61,0.15); color: #ffd93d; border: 1px solid rgba(255,217,61,0.25); }
+.bf-kg { background: rgba(171,71,188,0.15); color: #ce93d8; border: 1px solid rgba(171,71,188,0.25); }
+.bf-arrow { color: rgba(255,255,255,0.2); font-size: 27px; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(66,165,245,0.08);top:5%;left:8%;"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(102,187,106,0.07);bottom:8%;right:8%;animation-delay:-10s;"></div>
+    <div class="glow-orb" style="width:250px;height:250px;background:rgba(255,217,61,0.04);top:40%;left:45%;animation-delay:-15s;"></div>
+
+    <div class="content-wrapper">
+        <div class="slide-title">글로벌 뉴스 데이터 수집 체계</div>
+        <div class="slide-subtitle">해외 + 국내 뉴스를 결합하여 해상 공급망 위기 신호를 포착</div>
+        <div class="title-underline"></div>
+
+        <div class="main-layout">
+            <!-- GDELT Card -->
+            <div class="source-card gdelt-card">
+                <div class="source-header">
+                    <div class="source-badge">GDELT Project</div>
+                    <div class="source-type">해외 뉴스 수집 — Global Database of Events, Language, and Tone</div>
+                </div>
+
+                <div class="source-desc">
+                    <div class="desc-block">
+                        <div class="desc-label">WHAT IS GDELT?</div>
+                        <div class="desc-text">
+                            전 세계 <strong>100개 이상 언어</strong>의 뉴스를 <strong>15분 단위</strong>로 모니터링하는
+                            세계 최대 규모의 오픈 뉴스 데이터베이스.
+                            Google Jigsaw이 지원하며, 학술·정책 연구에 널리 활용
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <div class="desc-label">OUR USAGE</div>
+                        <div class="desc-text">
+                            KG에서 자동 도출한 <strong>124개 영문 키워드</strong>로
+                            해상 공급망 관련 국제 뉴스를 수집.
+                            에너지, 해운, 지정학, 무역 등 <strong>9개 도메인</strong>을 커버
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x1F30D;</div>
+                        <span><strong>100+</strong> 언어 커버</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x23F1;</div>
+                        <span><strong>15분</strong> 갱신 주기</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x1F4F0;</div>
+                        <span>GKG <strong>톤 분석</strong> 내장</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x1F513;</div>
+                        <span><strong>오픈 데이터</strong> (무료)</span>
+                    </div>
+                </div>
+
+                <div class="source-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">124</div>
+                        <div class="stat-label">영문 검색 키워드</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">~2,500</div>
+                        <div class="stat-label">일일 수집 (해외)</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">DOC API</div>
+                        <div class="stat-label">수집 인터페이스</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center merge -->
+            <div class="merge-col">
+                <div class="merge-arrow-line"></div>
+                <div class="merge-badge">
+                    <div class="merge-icon">&#x2694;</div>
+                    <div class="merge-text">통합</div>
+                </div>
+                <div class="merge-arrow-line"></div>
+            </div>
+
+            <!-- Naver Card -->
+            <div class="source-card naver-card">
+                <div class="source-header">
+                    <div class="source-badge">Naver News API</div>
+                    <div class="source-type">국내 뉴스 수집 — 한국 최대 포털의 뉴스 검색 API</div>
+                </div>
+
+                <div class="source-desc">
+                    <div class="desc-block">
+                        <div class="desc-label">WHY NAVER?</div>
+                        <div class="desc-text">
+                            한국 뉴스 시장 점유율 <strong>1위</strong> 포털.
+                            국내 언론사의 기사가 가장 빠르고 포괄적으로 집약되며,
+                            <strong>한국 관점의 영향 분석</strong>에 필수적인 국내 보도를 확보
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <div class="desc-label">OUR USAGE</div>
+                        <div class="desc-text">
+                            KG에서 자동 도출한 <strong>119개 국문 키워드</strong>로
+                            해상 공급망·에너지·물가 관련 국내 뉴스를 수집.
+                            <strong>한국 산업·정책 영향</strong> 기사에 특화
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x1F1F0;&#x1F1F7;</div>
+                        <span><strong>국내 언론</strong> 전수 커버</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x26A1;</div>
+                        <span><strong>실시간</strong> 기사 반영</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x1F3ED;</div>
+                        <span><strong>산업·정책</strong> 보도 특화</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">&#x1F4B0;</div>
+                        <span>일 <strong>25,000건</strong> 무료</span>
+                    </div>
+                </div>
+
+                <div class="source-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">119</div>
+                        <div class="stat-label">국문 검색 키워드</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">~500</div>
+                        <div class="stat-label">일일 수집 (국내)</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">REST API</div>
+                        <div class="stat-label">수집 인터페이스</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom flow -->
+        <div class="bottom-bar">
+            <div class="bottom-flow">
+                <span class="bf-node bf-gdelt">GDELT 해외</span>
+                <span class="bf-arrow">+</span>
+                <span class="bf-node bf-naver">Naver 국내</span>
+                <span class="bf-arrow">&#x25B6;</span>
+                <span class="bf-node bf-merge">통합 ~3,000건/일</span>
+                <span class="bf-arrow">&#x25B6;</span>
+                <span class="bf-node bf-kg">KG 기반 분류 · 샘플링</span>
+            </div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

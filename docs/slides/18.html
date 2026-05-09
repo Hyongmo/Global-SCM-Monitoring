@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>주간 시나리오 분석 체계</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 44px 70px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 8px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 22px;
+}
+
+/* Main layout: top row (cluster) + bottom row (tier + propagation) */
+.main-layout {
+    flex: 1; display: flex; flex-direction: column; gap: 18px; min-height: 0;
+}
+
+/* ===== TOP ROW: Crisis Cluster ===== */
+.cluster-row {
+    display: flex; gap: 20px;
+    flex: 0 0 auto;
+}
+
+/* Cluster construction */
+.cluster-build {
+    flex: 1;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(171,71,188,0.15);
+    border-radius: 14px;
+    padding: 20px 26px;
+    position: relative;
+    overflow: hidden;
+}
+.cluster-build::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, #ab47bc, transparent);
+}
+
+.section-label {
+    font-size: 30px; font-weight: 800;
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
+}
+.section-label-purple { color: #ce93d8; }
+.section-label-amber { color: #ffd93d; }
+.section-label-blue { color: #90caf9; }
+
+.cluster-desc {
+    font-size: 21px; color: rgba(255,255,255,0.55);
+    line-height: 1.6; margin-bottom: 14px;
+}
+.cluster-desc strong { color: rgba(255,255,255,0.85); }
+
+.cluster-examples {
+    display: flex; gap: 10px; flex-wrap: wrap;
+}
+.cluster-chip {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 20px; font-weight: 700;
+    background: rgba(171,71,188,0.08);
+    border: 1px solid rgba(171,71,188,0.2);
+    color: rgba(255,255,255,0.7);
+}
+.cluster-chip-dominant {
+    background: rgba(239,83,80,0.12);
+    border: 1px solid rgba(239,83,80,0.3);
+    color: #ef9a9a;
+    position: relative;
+}
+.cluster-chip-other {
+    opacity: 0.5;
+}
+.dominant-star {
+    color: #ffd93d; margin-right: 4px;
+}
+
+/* Dominant selection */
+.cluster-select {
+    flex: 0 0 580px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,217,61,0.15);
+    border-radius: 14px;
+    padding: 20px 26px;
+    position: relative;
+    overflow: hidden;
+}
+.cluster-select::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, #ffd93d, transparent);
+}
+
+.select-flow {
+    display: flex; flex-direction: column; gap: 10px;
+}
+.select-step {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 14px;
+    background: rgba(255,217,61,0.03);
+    border: 1px solid rgba(255,217,61,0.08);
+    border-radius: 10px;
+}
+.select-num {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: rgba(255,217,61,0.15);
+    border: 1px solid rgba(255,217,61,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 900; color: #ffd93d;
+    flex-shrink: 0;
+}
+.select-text {
+    font-size: 21px; color: rgba(255,255,255,0.65);
+    line-height: 1.5;
+}
+.select-text strong { color: rgba(255,255,255,0.9); }
+
+/* ===== BOTTOM ROW: Tier + Indicators + Propagation ===== */
+.bottom-row {
+    flex: 1; display: flex; gap: 20px; min-height: 0;
+}
+
+/* Section containers */
+.section {
+    flex: 1; display: flex; flex-direction: column;
+    border-radius: 14px; overflow: hidden;
+}
+.section-header {
+    padding: 14px 22px; font-size: 26px; font-weight: 800;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+/* Tier section */
+.sec-tier .section-header {
+    background: linear-gradient(135deg, rgba(239,83,80,0.2), rgba(255,167,38,0.1));
+    border-bottom: 1px solid rgba(239,83,80,0.2);
+    color: #ef9a9a;
+}
+.sec-tier .section-body {
+    background: rgba(239,83,80,0.03);
+    border: 1px solid rgba(239,83,80,0.1);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    flex: 1; padding: 16px 20px;
+    display: flex; flex-direction: column; gap: 10px;
+}
+
+.tier-row {
+    display: flex; align-items: center; gap: 12px;
+}
+.tier-badge {
+    width: 70px; padding: 6px 0; border-radius: 8px;
+    text-align: center; font-size: 18px; font-weight: 900;
+    letter-spacing: 0.5px; flex-shrink: 0;
+}
+.tier-1 .tier-badge { background: rgba(102,187,106,0.2); color: #a5d6a7; border: 1px solid rgba(102,187,106,0.3); }
+.tier-2 .tier-badge { background: rgba(255,217,61,0.2); color: #fff176; border: 1px solid rgba(255,217,61,0.3); }
+.tier-3 .tier-badge { background: rgba(255,167,38,0.2); color: #ffcc80; border: 1px solid rgba(255,167,38,0.3); }
+.tier-4 .tier-badge { background: rgba(239,83,80,0.2); color: #ef9a9a; border: 1px solid rgba(239,83,80,0.3); }
+.tier-5 .tier-badge { background: rgba(183,28,28,0.25); color: #ef9a9a; border: 1px solid rgba(183,28,28,0.4); }
+
+.tier-info { flex: 1; }
+.tier-name { font-size: 22px; font-weight: 700; }
+.tier-1 .tier-name { color: #a5d6a7; }
+.tier-2 .tier-name { color: #fff176; }
+.tier-3 .tier-name { color: #ffcc80; }
+.tier-4 .tier-name { color: #ef9a9a; }
+.tier-5 .tier-name { color: #ef5350; }
+.tier-cond {
+    font-size: 16px; color: rgba(255,255,255,0.4);
+    margin-top: 2px; line-height: 1.3;
+}
+
+.tier-bar {
+    height: 5px; border-radius: 3px; margin-top: 4px;
+    background: rgba(255,255,255,0.05); overflow: hidden;
+}
+.tier-bar-fill {
+    height: 100%; border-radius: 3px;
+    animation: barGrow 1s ease-out both;
+}
+@keyframes barGrow { from { width: 0; } }
+.tier-1 .tier-bar-fill { background: #66bb6a; width: 20%; animation-delay: 0.3s; }
+.tier-2 .tier-bar-fill { background: #ffd93d; width: 40%; animation-delay: 0.4s; }
+.tier-3 .tier-bar-fill { background: #ffa726; width: 60%; animation-delay: 0.5s; }
+.tier-4 .tier-bar-fill { background: #ef5350; width: 80%; animation-delay: 0.6s; }
+.tier-5 .tier-bar-fill { background: #b71c1c; width: 100%; animation-delay: 0.7s; }
+
+/* Indicators section */
+.sec-ind .section-header {
+    background: linear-gradient(135deg, rgba(66,165,245,0.2), rgba(66,165,245,0.1));
+    border-bottom: 1px solid rgba(66,165,245,0.2);
+    color: #90caf9;
+}
+.sec-ind .section-body {
+    background: rgba(66,165,245,0.03);
+    border: 1px solid rgba(66,165,245,0.1);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    flex: 1; padding: 14px 18px;
+    display: flex; flex-direction: column; gap: 6px;
+}
+
+.ind-group {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 10px; border-radius: 6px;
+    background: rgba(66,165,245,0.04);
+    border: 1px solid rgba(66,165,245,0.08);
+}
+.ind-icon { font-size: 24px; flex-shrink: 0; width: 24px; text-align: center; }
+.ind-name { font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.75); flex: 1; }
+.ind-count { font-size: 18px; font-weight: 700; color: #64b5f6; flex-shrink: 0; }
+
+.ind-total {
+    margin-top: auto; padding-top: 8px;
+    border-top: 1px solid rgba(66,165,245,0.1);
+    text-align: center;
+}
+.ind-total-num {
+    font-size: 48px; font-weight: 900;
+    background: linear-gradient(135deg, #ffd93d, #ffab00);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.ind-total-label { font-size: 18px; color: rgba(255,255,255,0.35); }
+
+/* Propagation section */
+.sec-prop .section-header {
+    background: linear-gradient(135deg, rgba(255,217,61,0.2), rgba(255,217,61,0.1));
+    border-bottom: 1px solid rgba(255,217,61,0.2);
+    color: #ffd93d;
+}
+.sec-prop .section-body {
+    background: rgba(255,217,61,0.03);
+    border: 1px solid rgba(255,217,61,0.1);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    flex: 1; padding: 18px 22px;
+    display: flex; flex-direction: column; gap: 14px;
+}
+
+.formula-box {
+    background: rgba(0,0,0,0.3); border-radius: 10px;
+    padding: 14px 18px; text-align: center;
+    border: 1px solid rgba(255,217,61,0.15);
+}
+.formula-label {
+    font-size: 16px; color: rgba(255,255,255,0.4);
+    margin-bottom: 6px; letter-spacing: 1px; font-weight: 700;
+}
+.formula-text {
+    font-size: 24px; font-weight: 700;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #ffd93d; letter-spacing: 0.5px;
+}
+.formula-vars {
+    font-size: 16px; color: rgba(255,255,255,0.35);
+    margin-top: 6px; line-height: 1.5;
+}
+
+.path-example {
+    display: flex; align-items: center; justify-content: center;
+    gap: 5px; flex-wrap: wrap;
+}
+.path-node {
+    font-size: 18px; font-weight: 800; padding: 5px 10px;
+    border-radius: 6px; letter-spacing: 0.3px;
+}
+.pn-evt { background: rgba(239,83,80,0.2); color: #ef9a9a; border: 1px solid rgba(239,83,80,0.3); }
+.pn-cp { background: rgba(255,112,67,0.2); color: #ffab91; border: 1px solid rgba(255,112,67,0.3); }
+.pn-cf { background: rgba(255,217,61,0.2); color: #fff176; border: 1px solid rgba(255,217,61,0.3); }
+.pn-ks { background: rgba(102,187,106,0.2); color: #a5d6a7; border: 1px solid rgba(102,187,106,0.3); }
+.pn-ki { background: rgba(66,165,245,0.2); color: #90caf9; border: 1px solid rgba(66,165,245,0.3); }
+.path-arrow { color: rgba(255,255,255,0.2); font-size: 21px; }
+
+.phase-label {
+    font-size: 18px; font-weight: 700; color: rgba(255,255,255,0.45);
+    margin-bottom: 4px;
+}
+.phases { display: flex; gap: 6px; }
+.phase-card {
+    flex: 1; text-align: center; padding: 10px 6px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+.phase-time { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.35); margin-bottom: 3px; }
+.phase-name { font-size: 21px; font-weight: 800; }
+.ph-short .phase-name { color: #ef9a9a; }
+.ph-mid .phase-name { color: #ffcc80; }
+.ph-long .phase-name { color: #90caf9; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(239,83,80,0.06);top:8%;left:5%;"></div>
+    <div class="glow-orb" style="width:280px;height:280px;background:rgba(255,217,61,0.05);bottom:10%;right:5%;animation-delay:-12s;"></div>
+
+    <div class="content-wrapper">
+        <div class="slide-title">주간 시나리오 분석 체계</div>
+        <div class="title-underline"></div>
+
+        <div class="main-layout">
+            <!-- ===== TOP ROW: Crisis Cluster ===== -->
+            <div class="cluster-row">
+                <!-- Left: What are crisis clusters & why -->
+                <div class="cluster-build">
+                    <div class="section-label section-label-purple">위기 클러스터 구축</div>
+                    <div class="cluster-desc">
+                        KG 온톨로지의 <strong>위기 유형 노드</strong>를 중심으로 관련 초크포인트·물자·산업을 묶어
+                        <strong>독립된 분석 단위</strong>를 구성합니다.
+                        각 클러스터는 고유한 전파경로와 영향 지표를 가지며, 뉴스 분류 시 기사가 어떤 클러스터에 속하는지 자동 배정됩니다.
+                    </div>
+                    <div class="cluster-examples">
+                        <div class="cluster-chip cluster-chip-dominant"><span class="dominant-star">&#x2605;</span> 호르무즈 해협 봉쇄</div>
+                        <div class="cluster-chip cluster-chip-other">수에즈 운하 교란</div>
+                        <div class="cluster-chip cluster-chip-other">말라카 해협 위기</div>
+                        <div class="cluster-chip cluster-chip-other">대만해협 긴장</div>
+                        <div class="cluster-chip cluster-chip-other">흑해 곡물 위기</div>
+                        <div class="cluster-chip cluster-chip-other">파나마 운하 가뭄</div>
+                    </div>
+                </div>
+
+                <!-- Right: Dominant cluster selection process -->
+                <div class="cluster-select">
+                    <div class="section-label section-label-amber">도미넌트 클러스터 선정</div>
+                    <div class="select-flow">
+                        <div class="select-step">
+                            <div class="select-num">1</div>
+                            <div class="select-text">주간 분류 기사를 클러스터별로 집계하고 <strong>기사 빈도 · 위기등급 분포</strong>를 산출</div>
+                        </div>
+                        <div class="select-step">
+                            <div class="select-num">2</div>
+                            <div class="select-text">Crisis·Warning 비율이 가장 높은 클러스터를 <strong>도미넌트 클러스터</strong>로 선정</div>
+                        </div>
+                        <div class="select-step">
+                            <div class="select-num">3</div>
+                            <div class="select-text">도미넌트 클러스터의 <strong>KG 전파경로·정량 속성</strong>으로 주간 시나리오 집중 분석</div>
+                        </div>
+                        <div class="select-step">
+                            <div class="select-num">4</div>
+                            <div class="select-text">비도미넌트 클러스터는 <strong>요약 모니터링</strong>으로 분리 &mdash; 혼재 방지</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== BOTTOM ROW: Tier + Indicators + Propagation ===== -->
+            <div class="bottom-row">
+                <!-- Tier System -->
+                <div class="section sec-tier">
+                    <div class="section-header">위기 등급 체계 (Tier 1~4)</div>
+                    <div class="section-body">
+                        <div class="tier-row tier-1">
+                            <div class="tier-badge">Tier 1</div>
+                            <div class="tier-info">
+                                <div class="tier-name">정상</div>
+                                <div class="tier-cond">그 외</div>
+                                <div class="tier-bar"><div class="tier-bar-fill"></div></div>
+                            </div>
+                        </div>
+                        <div class="tier-row tier-2">
+                            <div class="tier-badge">Tier 2</div>
+                            <div class="tier-info">
+                                <div class="tier-name">관심</div>
+                                <div class="tier-cond">경고+위기 &gt;50% OR 위기 &gt;12%</div>
+                                <div class="tier-bar"><div class="tier-bar-fill"></div></div>
+                            </div>
+                        </div>
+                        <div class="tier-row tier-3">
+                            <div class="tier-badge">Tier 3</div>
+                            <div class="tier-info">
+                                <div class="tier-name">경계</div>
+                                <div class="tier-cond">경고+위기 &gt;60% OR 위기 &gt;18%</div>
+                                <div class="tier-bar"><div class="tier-bar-fill"></div></div>
+                            </div>
+                        </div>
+                        <div class="tier-row tier-4">
+                            <div class="tier-badge">Tier 4</div>
+                            <div class="tier-info">
+                                <div class="tier-name">위기</div>
+                                <div class="tier-cond">경고+위기 &gt;72% OR 위기 &gt;26%</div>
+                                <div class="tier-bar"><div class="tier-bar-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 41 Indicators -->
+                <div class="section sec-ind">
+                    <div class="section-header">정량 지표 수집 (41개)</div>
+                    <div class="section-body">
+                        <div class="ind-group"><div class="ind-icon">&#x26F5;</div><div class="ind-name">해운운임</div><div class="ind-count">6</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x26FD;</div><div class="ind-name">에너지가격</div><div class="ind-count">5</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F6A2;</div><div class="ind-name">초크포인트 통항량</div><div class="ind-count">5</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F3ED;</div><div class="ind-name">한국 산업지표</div><div class="ind-count">5</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F4C8;</div><div class="ind-name">거시경제지표</div><div class="ind-count">5</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F4E6;</div><div class="ind-name">공급망 스트레스</div><div class="ind-count">4</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F4B1;</div><div class="ind-name">환율/금융</div><div class="ind-count">4</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F30D;</div><div class="ind-name">지정학 리스크</div><div class="ind-count">3</div></div>
+                        <div class="ind-group"><div class="ind-icon">&#x1F4CA;</div><div class="ind-name">기타 시장지표</div><div class="ind-count">4</div></div>
+                        <div class="ind-total">
+                            <div class="ind-total-num">41</div>
+                            <div class="ind-total-label">정량 지표 총 수</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KG Propagation -->
+                <div class="section sec-prop">
+                    <div class="section-header">KG 기반 전파경로 분석</div>
+                    <div class="section-body">
+                        <div class="formula-box">
+                            <div class="formula-label">PROPAGATION FORMULA</div>
+                            <div class="formula-text">S = blockageRate &times; exposureRate &times; weight</div>
+                            <div class="formula-vars">
+                                blockageRate: 봉쇄 강도 | exposureRate: 노출도 | weight: IO 투입계수
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="phase-label">전파 경로 예시</div>
+                            <div class="path-example">
+                                <span class="path-node pn-evt">EVT</span>
+                                <span class="path-arrow">&#x25B6;</span>
+                                <span class="path-node pn-cp">CP</span>
+                                <span class="path-arrow">&#x25B6;</span>
+                                <span class="path-node pn-cf">CF</span>
+                                <span class="path-arrow">&#x25B6;</span>
+                                <span class="path-node pn-ks">KS</span>
+                                <span class="path-arrow">&#x25B6;</span>
+                                <span class="path-node pn-ki">KI</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="phase-label">영향 시차 구분</div>
+                            <div class="phases">
+                                <div class="phase-card ph-short">
+                                    <div class="phase-time">0-2주</div>
+                                    <div class="phase-name">초기</div>
+                                </div>
+                                <div class="phase-card ph-mid">
+                                    <div class="phase-time">2-8주</div>
+                                    <div class="phase-name">중기</div>
+                                </div>
+                                <div class="phase-card ph-long">
+                                    <div class="phase-time">8주+</div>
+                                    <div class="phase-name">장기</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

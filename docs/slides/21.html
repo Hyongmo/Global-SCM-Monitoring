@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>서비스 운영 현황</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 30px 60px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+.page-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #64b5f6 50%, #42a5f5 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.service-columns {
+    display: flex; gap: 30px; flex: 1;
+    align-items: stretch;
+    min-height: 0;
+}
+
+.service-card {
+    flex: 1;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(100,181,246,0.15);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex; flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.service-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, #64b5f6, transparent);
+}
+
+.service-header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+}
+.service-label {
+    font-size: 39px; font-weight: 700;
+    color: #ffd93d;
+}
+.service-since {
+    font-size: 21px; color: rgba(255,255,255,0.4);
+    margin-bottom: 14px;
+    flex-shrink: 0;
+}
+
+.iframe-wrapper {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(100,181,246,0.2);
+    box-shadow: 0 0 30px rgba(66,165,245,0.08);
+    position: relative;
+    min-height: 0;
+}
+.iframe-wrapper iframe {
+    width: 100%; height: 100%; border: none;
+    background: #111827;
+}
+.iframe-overlay {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    border-radius: 12px;
+    box-shadow: inset 0 0 40px rgba(10, 15, 27, 0.4);
+}
+
+.service-meta {
+    display: flex; align-items: center; gap: 12px;
+    margin-top: 12px;
+    flex-shrink: 0;
+}
+.feature-tag {
+    padding: 4px 10px;
+    background: rgba(100,181,246,0.1);
+    border: 1px solid rgba(100,181,246,0.2);
+    border-radius: 6px;
+    font-size: 20px;
+    color: rgba(255,255,255,0.6);
+}
+.service-url {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: rgba(100,181,246,0.08);
+    border-radius: 8px;
+    font-size: 21px;
+    color: #64b5f6;
+    text-align: center;
+    border: 1px solid rgba(100,181,246,0.15);
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+.service-url:hover {
+    background: rgba(100,181,246,0.18);
+    border-color: rgba(100,181,246,0.4);
+    color: #90caf9;
+}
+
+.hint {
+    text-align: center;
+    font-size: 21px;
+    color: rgba(255,255,255,0.3);
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:400px;height:400px;background:rgba(21,101,192,0.15);top:10%;left:5%;"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(66,165,245,0.1);top:50%;right:10%;animation-delay:-7s;"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,217,61,0.05);bottom:10%;left:40%;animation-delay:-13s;"></div>
+
+    <div class="content-wrapper">
+        <div class="page-title">서비스 운영 현황</div>
+
+        <div class="service-columns">
+            <!-- Daily Briefing -->
+            <div class="service-card">
+                <div class="service-label">일일 브리핑</div>
+                <div class="service-since">2026년 4월~ / 매일 새벽 자동 생성·배포</div>
+
+                <div class="iframe-wrapper">
+                    <iframe src="https://scm-briefing.kmi.re.kr" loading="lazy"></iframe>
+                    <div class="iframe-overlay"></div>
+                </div>
+
+                <div class="service-meta">
+                    <span class="feature-tag">6개 섹션 구조화</span>
+                    <span class="feature-tag">KG 엔티티 매칭</span>
+                    <span class="feature-tag">자동 배포</span>
+                </div>
+                <a class="service-url" href="https://scm-briefing.kmi.re.kr" target="_blank" rel="noopener">scm-briefing.kmi.re.kr</a>
+            </div>
+
+            <!-- Weekly Report -->
+            <div class="service-card">
+                <div class="service-label">주간 모니터링</div>
+                <div class="service-since">2023년 1월~ (백테스트) + 2026년 4월~ (실시간)</div>
+
+                <div class="iframe-wrapper">
+                    <iframe src="https://scm-briefing.kmi.re.kr/weekly_report.html" loading="lazy"></iframe>
+                    <div class="iframe-overlay"></div>
+                </div>
+
+                <div class="service-meta">
+                    <span class="feature-tag">위기등급 Tier 1~5</span>
+                    <span class="feature-tag">KG 전파경로</span>
+                    <span class="feature-tag">PDF 자동생성</span>
+                </div>
+                <a class="service-url" href="https://scm-briefing.kmi.re.kr/weekly_report.html" target="_blank" rel="noopener">scm-briefing.kmi.re.kr/weekly_report.html</a>
+            </div>
+        </div>
+
+        <div class="hint">iframe 내부 콘텐츠를 클릭하여 실제 서비스와 상호작용할 수 있습니다</div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown'].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  /* NOTE: click-to-advance 비활성화 — iframe 상호작용 필요 */
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → 키로 이동  •  서비스 클릭 가능';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

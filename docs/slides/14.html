@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>6계층 온톨로지 지식그래프 설계</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+
+/* Slide 05 specifics */
+.header-row {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 10px;
+}
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.slide-subtitle {
+    font-size: 33px; color: rgba(255,255,255,0.4);
+    font-weight: 500;
+}
+.subtitle-num {
+    color: #ffd93d; font-weight: 800; font-size: 36px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 40px;
+}
+
+/* Main layout: layers on left, detail on right */
+.main-content {
+    display: flex; gap: 50px; flex: 1;
+}
+
+/* Left: vertical layer stack */
+.layers-column {
+    flex: 0 0 700px; display: flex; flex-direction: column;
+    gap: 6px; justify-content: center;
+}
+
+.layer-row {
+    display: flex; align-items: center; gap: 16px;
+    position: relative;
+    animation: slideInLeft 0.6s ease-out both;
+}
+.layer-row:nth-child(1) { animation-delay: 0.1s; }
+.layer-row:nth-child(2) { animation-delay: 0.2s; }
+.layer-row:nth-child(3) { animation-delay: 0.3s; }
+.layer-row:nth-child(4) { animation-delay: 0.4s; }
+.layer-row:nth-child(5) { animation-delay: 0.5s; }
+.layer-row:nth-child(6) { animation-delay: 0.6s; }
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.layer-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 27px; font-weight: 900; color: #0a0f1b;
+    flex-shrink: 0;
+}
+.layer-bar {
+    flex: 1; border-radius: 12px; padding: 16px 22px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: relative; overflow: hidden;
+    min-height: 68px;
+}
+.layer-bar::after {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 0;
+    width: 40%; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.3));
+}
+.layer-name {
+    font-size: 33px; font-weight: 700; position: relative; z-index: 2;
+}
+.layer-count {
+    font-size: 22px; font-weight: 600; position: relative; z-index: 2;
+    opacity: 0.8;
+}
+
+/* Layer colors */
+.layer-1 .layer-num { background: #ef5350; }
+.layer-1 .layer-bar { background: linear-gradient(90deg, rgba(239,83,80,0.3), rgba(239,83,80,0.08)); border: 1px solid rgba(239,83,80,0.3); }
+.layer-1 .layer-name { color: #ef9a9a; }
+
+.layer-2 .layer-num { background: #ff7043; }
+.layer-2 .layer-bar { background: linear-gradient(90deg, rgba(255,112,67,0.3), rgba(255,112,67,0.08)); border: 1px solid rgba(255,112,67,0.3); }
+.layer-2 .layer-name { color: #ffab91; }
+
+.layer-3 .layer-num { background: #ffd93d; }
+.layer-3 .layer-bar { background: linear-gradient(90deg, rgba(255,217,61,0.25), rgba(255,217,61,0.06)); border: 1px solid rgba(255,217,61,0.3); }
+.layer-3 .layer-name { color: #fff176; }
+
+.layer-4 .layer-num { background: #66bb6a; }
+.layer-4 .layer-bar { background: linear-gradient(90deg, rgba(102,187,106,0.3), rgba(102,187,106,0.08)); border: 1px solid rgba(102,187,106,0.3); }
+.layer-4 .layer-name { color: #a5d6a7; }
+
+.layer-5 .layer-num { background: #42a5f5; }
+.layer-5 .layer-bar { background: linear-gradient(90deg, rgba(66,165,245,0.3), rgba(66,165,245,0.08)); border: 1px solid rgba(66,165,245,0.3); }
+.layer-5 .layer-name { color: #90caf9; }
+
+.layer-6 .layer-num { background: #ab47bc; }
+.layer-6 .layer-bar { background: linear-gradient(90deg, rgba(171,71,188,0.3), rgba(171,71,188,0.08)); border: 1px solid rgba(171,71,188,0.3); }
+.layer-6 .layer-name { color: #ce93d8; }
+
+/* Arrows between layers */
+.layer-arrow {
+    display: flex; justify-content: center;
+    padding-left: 60px;
+}
+.layer-arrow svg {
+    width: 24px; height: 16px;
+}
+
+/* Right: detail panel */
+.detail-column {
+    flex: 1; display: flex; flex-direction: column; gap: 12px;
+    justify-content: center;
+}
+.detail-card {
+    border-radius: 14px; padding: 18px 22px;
+    display: flex; gap: 16px; align-items: flex-start;
+    animation: fadeInUp 0.6s ease-out both;
+}
+.detail-card:nth-child(1) { animation-delay: 0.3s; }
+.detail-card:nth-child(2) { animation-delay: 0.4s; }
+.detail-card:nth-child(3) { animation-delay: 0.5s; }
+.detail-card:nth-child(4) { animation-delay: 0.6s; }
+.detail-card:nth-child(5) { animation-delay: 0.7s; }
+.detail-card:nth-child(6) { animation-delay: 0.8s; }
+
+.detail-card.d1 { background: rgba(239,83,80,0.06); border: 1px solid rgba(239,83,80,0.15); }
+.detail-card.d2 { background: rgba(255,112,67,0.06); border: 1px solid rgba(255,112,67,0.15); }
+.detail-card.d3 { background: rgba(255,217,61,0.06); border: 1px solid rgba(255,217,61,0.12); }
+.detail-card.d4 { background: rgba(102,187,106,0.06); border: 1px solid rgba(102,187,106,0.15); }
+.detail-card.d5 { background: rgba(66,165,245,0.06); border: 1px solid rgba(66,165,245,0.15); }
+.detail-card.d6 { background: rgba(171,71,188,0.06); border: 1px solid rgba(171,71,188,0.15); }
+
+.detail-layer-tag {
+    flex-shrink: 0; font-size: 18px; font-weight: 800;
+    padding: 4px 10px; border-radius: 6px;
+    letter-spacing: 1px; margin-top: 2px;
+}
+.d1 .detail-layer-tag { background: rgba(239,83,80,0.2); color: #ef9a9a; }
+.d2 .detail-layer-tag { background: rgba(255,112,67,0.2); color: #ffab91; }
+.d3 .detail-layer-tag { background: rgba(255,217,61,0.2); color: #fff176; }
+.d4 .detail-layer-tag { background: rgba(102,187,106,0.2); color: #a5d6a7; }
+.d5 .detail-layer-tag { background: rgba(66,165,245,0.2); color: #90caf9; }
+.d6 .detail-layer-tag { background: rgba(171,71,188,0.2); color: #ce93d8; }
+
+.detail-text {
+    font-size: 22px; color: rgba(255,255,255,0.65);
+    line-height: 1.5;
+}
+.detail-text strong {
+    color: rgba(255,255,255,0.85); font-weight: 600;
+}
+
+/* Propagation arrow column */
+.propagation-arrows {
+    position: absolute;
+    left: 52px; top: 0; bottom: 0;
+    width: 40px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+}
+
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+/* Flow indicator */
+.flow-label {
+    position: absolute; left: -20px; top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 21px; font-weight: 700;
+    color: rgba(255,255,255,0.12);
+    letter-spacing: 8px;
+    white-space: nowrap;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(66,165,245,0.08);top:5%;right:15%;"></div>
+    <div class="glow-orb" style="width:250px;height:250px;background:rgba(171,71,188,0.06);bottom:10%;left:10%;animation-delay:-10s;"></div>
+
+    <div class="content-wrapper">
+        <div class="header-row">
+            <div class="slide-title">6계층 온톨로지 지식그래프 설계</div>
+            <div class="slide-subtitle">
+                <span class="subtitle-num">165</span> 노드 &nbsp;·&nbsp;
+                <span class="subtitle-num">263</span> 엣지 &nbsp;·&nbsp;
+                <span class="subtitle-num">18</span> 관계유형
+            </div>
+        </div>
+        <div class="title-underline"></div>
+
+        <div class="main-content">
+            <!-- Left: Layer stack -->
+            <div class="layers-column" style="position:relative;">
+                <div class="flow-label">PROPAGATION FLOW ▼</div>
+
+                <div class="layer-row layer-1">
+                    <div class="layer-num">1</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">위기발생</div>
+                        <div class="layer-count">6 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(239,83,80,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-2">
+                    <div class="layer-num">2</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">해상인프라</div>
+                        <div class="layer-count">54 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(255,112,67,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-3">
+                    <div class="layer-num">3</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">물자 흐름</div>
+                        <div class="layer-count">12 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(255,217,61,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-4">
+                    <div class="layer-num">4</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">한국 산업</div>
+                        <div class="layer-count">80 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(102,187,106,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-5">
+                    <div class="layer-num">5</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">한국 영향</div>
+                        <div class="layer-count">7 nodes</div>
+                    </div>
+                </div>
+                <div class="layer-arrow">
+                    <svg viewBox="0 0 24 16"><path d="M8 0 L16 0 L16 4 L20 4 L12 16 L4 4 L8 4 Z" fill="rgba(66,165,245,0.3)"/></svg>
+                </div>
+
+                <div class="layer-row layer-6">
+                    <div class="layer-num">6</div>
+                    <div class="layer-bar">
+                        <div class="layer-name">정책대응</div>
+                        <div class="layer-count">6 nodes</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Detail descriptions -->
+            <div class="detail-column">
+                <div class="detail-card d1">
+                    <div class="detail-layer-tag">L1</div>
+                    <div class="detail-text">
+                        <strong>위기 이벤트 · 트리거</strong><br>
+                        호르무즈 봉쇄, 수에즈 좌초, Red Sea 공격 등 해상 초크포인트 위기 유형 정의
+                    </div>
+                </div>
+                <div class="detail-card d2">
+                    <div class="detail-layer-tag">L2</div>
+                    <div class="detail-text">
+                        <strong>초크포인트 · 항로 · 선박</strong><br>
+                        해협, 운하, 주요 항구, 선종별 선박, 우회항로 등 해상 인프라 구성요소
+                    </div>
+                </div>
+                <div class="detail-card d3">
+                    <div class="detail-layer-tag">L3</div>
+                    <div class="detail-text">
+                        <strong>원유 · LNG · 곡물 · 철광석</strong><br>
+                        한국이 해상으로 수입하는 12대 핵심 물자와 수입 의존도
+                    </div>
+                </div>
+                <div class="detail-card d4">
+                    <div class="detail-layer-tag">L4</div>
+                    <div class="detail-text">
+                        <strong>석유화학 · 철강 · 자동차 · 반도체</strong><br>
+                        투입산출표 기반 80개 산업 분류, 산업 간 투입계수로 연결
+                    </div>
+                </div>
+                <div class="detail-card d5">
+                    <div class="detail-layer-tag">L5</div>
+                    <div class="detail-text">
+                        <strong>물가 · 고용 · 무역수지 · 성장률</strong><br>
+                        한국 거시경제 지표에 대한 최종 영향 평가 노드
+                    </div>
+                </div>
+                <div class="detail-card d6">
+                    <div class="detail-layer-tag">L6</div>
+                    <div class="detail-text">
+                        <strong>비축량 방출 · 수입선 다변화 · 운항 지원</strong><br>
+                        위기 단계별 정부 · 산업계 대응 정책 옵션
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

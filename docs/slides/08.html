@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>모니터링 시스템 아키텍처</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+/* Slide 07 specifics */
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 10px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 30px;
+}
+
+/* Architecture layout */
+.arch-layout {
+    flex: 1; display: flex; gap: 40px; align-items: stretch;
+}
+
+/* Pipeline columns */
+.pipeline-col {
+    flex: 1; display: flex; flex-direction: column; gap: 12px;
+}
+.pipeline-header {
+    text-align: center; padding: 16px 20px;
+    border-radius: 14px 14px 0 0;
+    font-size: 30px; font-weight: 800;
+    letter-spacing: 1px;
+}
+.pipeline-header .freq {
+    font-size: 20px; font-weight: 500; opacity: 0.7;
+    margin-top: 4px; display: block;
+}
+
+/* Daily = purple */
+.daily .pipeline-header {
+    background: linear-gradient(135deg, rgba(171,71,188,0.3), rgba(171,71,188,0.1));
+    border: 1px solid rgba(171,71,188,0.3);
+    color: #ce93d8;
+}
+/* Weekly = blue */
+.weekly .pipeline-header {
+    background: linear-gradient(135deg, rgba(66,165,245,0.3), rgba(66,165,245,0.1));
+    border: 1px solid rgba(66,165,245,0.3);
+    color: #90caf9;
+}
+
+.step-box {
+    display: flex; align-items: center; gap: 14px;
+    border-radius: 12px; padding: 16px 20px;
+    animation: fadeInUp 0.5s ease-out both;
+}
+.step-box:nth-child(2) { animation-delay: 0.2s; }
+.step-box:nth-child(3) { animation-delay: 0.3s; }
+.step-box:nth-child(4) { animation-delay: 0.4s; }
+.step-box:nth-child(5) { animation-delay: 0.5s; }
+.step-box:nth-child(6) { animation-delay: 0.6s; }
+.step-box:nth-child(7) { animation-delay: 0.7s; }
+
+.daily .step-box {
+    background: rgba(171,71,188,0.06);
+    border: 1px solid rgba(171,71,188,0.15);
+}
+.weekly .step-box {
+    background: rgba(66,165,245,0.06);
+    border: 1px solid rgba(66,165,245,0.15);
+}
+
+.step-num {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 900; flex-shrink: 0;
+    color: #0a0f1b;
+}
+.daily .step-num { background: #ab47bc; }
+.weekly .step-num { background: #42a5f5; }
+
+.step-text {
+    font-size: 24px; font-weight: 600; color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+}
+.step-detail {
+    font-size: 20px; font-weight: 400; color: rgba(255,255,255,0.45);
+    margin-top: 2px;
+}
+
+/* Arrow between steps */
+.step-arrow {
+    display: flex; justify-content: center; padding: 0;
+    height: 16px; align-items: center;
+}
+.step-arrow svg { width: 20px; height: 16px; }
+
+/* Center KG block */
+.kg-foundation {
+    position: absolute; bottom: 90px; left: 50%; transform: translateX(-50%);
+    background: linear-gradient(135deg, rgba(255,217,61,0.12), rgba(255,217,61,0.04));
+    border: 2px solid rgba(255,217,61,0.3);
+    border-radius: 16px; padding: 20px 50px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+.kg-label {
+    font-size: 33px; font-weight: 800; color: #ffd93d;
+    margin-bottom: 4px;
+}
+.kg-sublabel {
+    font-size: 21px; color: rgba(255,255,255,0.5);
+}
+
+/* Connector lines from KG to pipelines */
+.connector-svg {
+    position: absolute; bottom: 70px; left: 0; width: 100%; height: 120px;
+    z-index: 5; pointer-events: none;
+}
+.conn-dash {
+    stroke: rgba(255,217,61,0.2); stroke-width: 2;
+    stroke-dasharray: 6 4;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(171,71,188,0.08);top:10%;left:10%;"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(66,165,245,0.08);top:10%;right:10%;animation-delay:-8s;"></div>
+    <div class="glow-orb" style="width:250px;height:250px;background:rgba(255,217,61,0.05);bottom:5%;left:40%;animation-delay:-14s;"></div>
+
+    <div class="content-wrapper">
+        <div class="slide-title">모니터링 시스템 아키텍처</div>
+        <div class="title-underline"></div>
+
+        <div class="arch-layout">
+            <!-- LEFT: Daily pipeline -->
+            <div class="pipeline-col daily">
+                <div class="pipeline-header">
+                    일일 브리핑 파이프라인
+                    <span class="freq">매일 새벽 자동 실행</span>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">1</div>
+                    <div>
+                        <div class="step-text">KG 쿼리 도출 + 뉴스 수집</div>
+                        <div class="step-detail">GDELT API / Naver API</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(171,71,188,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">2</div>
+                    <div>
+                        <div class="step-text">KG 기반 뉴스 분류</div>
+                        <div class="step-detail">8개 카테고리 자동 분류</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(171,71,188,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">3</div>
+                    <div>
+                        <div class="step-text">기사 샘플링</div>
+                        <div class="step-detail">카테고리별 비례 추출</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(171,71,188,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">4</div>
+                    <div>
+                        <div class="step-text">데일리 브리핑 생성 / 배포</div>
+                        <div class="step-detail">HTML 리포트 자동 발송</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Weekly pipeline -->
+            <div class="pipeline-col weekly">
+                <div class="pipeline-header">
+                    주간 모니터링 파이프라인
+                    <span class="freq">매주 월요일 새벽 자동 실행</span>
+                </div>
+                <div class="step-box">
+                    <div class="step-num">1</div>
+                    <div>
+                        <div class="step-text">주간 기사 2차 샘플링</div>
+                        <div class="step-detail">위기 클러스터 판별 포함</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(66,165,245,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">2</div>
+                    <div>
+                        <div class="step-text">위기 심각성 평가</div>
+                        <div class="step-detail">Tier 1~4 등급 판정</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(66,165,245,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">3</div>
+                    <div>
+                        <div class="step-text">정량 지표 수집</div>
+                        <div class="step-detail">41개 지표, 9개 그룹</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(66,165,245,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">4</div>
+                    <div>
+                        <div class="step-text">KG 기반 시나리오 생성</div>
+                        <div class="step-detail">전파경로 분석 + 산업 영향</div>
+                    </div>
+                </div>
+                <div class="step-arrow"><svg viewBox="0 0 20 16"><path d="M10 0 L16 10 L13 10 L13 16 L7 16 L7 10 L4 10 Z" fill="rgba(66,165,245,0.3)"/></svg></div>
+                <div class="step-box">
+                    <div class="step-num">5</div>
+                    <div>
+                        <div class="step-text">HTML 리포트 생성 / 배포</div>
+                        <div class="step-detail">주간 종합 분석 리포트</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KG Foundation -->
+        <div class="kg-foundation">
+            <div class="kg-label">온톨로지 지식그래프 (KG)</div>
+            <div class="kg-sublabel">165 노드 / 263 엣지 &mdash; 두 파이프라인의 공통 기반</div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

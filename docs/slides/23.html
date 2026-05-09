@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>핵심 연구 성과</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+.glow-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+.page-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #64b5f6 50%, #42a5f5 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px;
+    flex: 1;
+}
+
+.achievement-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(100,181,246,0.12);
+    border-radius: 16px;
+    padding: 30px 32px;
+    display: flex; flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.achievement-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(100,181,246,0.25);
+    transform: translateY(-2px);
+}
+.achievement-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, #64b5f6, transparent);
+    opacity: 0.5;
+}
+
+.card-header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 20px;
+}
+.card-icon {
+    width: 48px; height: 48px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    flex-shrink: 0;
+}
+.card-icon-1 { background: rgba(100,181,246,0.15); }
+.card-icon-2 { background: rgba(171,71,188,0.15); }
+.card-icon-3 { background: rgba(255,167,38,0.15); }
+.card-icon-4 { background: rgba(102,187,106,0.15); }
+
+.card-title {
+    font-size: 33px; font-weight: 700;
+    color: #ffd93d;
+}
+.card-subtitle {
+    font-size: 21px; color: rgba(255,255,255,0.4);
+    margin-top: 2px;
+}
+
+.card-bullets {
+    list-style: none;
+}
+.card-bullets li {
+    font-size: 26px;
+    color: rgba(255,255,255,0.75);
+    padding: 6px 0 6px 22px;
+    position: relative;
+    line-height: 1.5;
+}
+.card-bullets li::before {
+    content: '';
+    position: absolute; left: 0; top: 14px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #64b5f6;
+    box-shadow: 0 0 6px rgba(100,181,246,0.4);
+}
+.card-bullets li strong {
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:400px;height:400px;background:rgba(21,101,192,0.15);top:10%;left:5%;"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(66,165,245,0.1);top:50%;right:10%;animation-delay:-7s;"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,217,61,0.05);bottom:10%;left:40%;animation-delay:-13s;"></div>
+
+    <div class="content-wrapper">
+        <div class="page-title">핵심 연구 성과</div>
+
+        <div class="achievement-grid">
+            <!-- Card 1 -->
+            <div class="achievement-card">
+                <div class="card-header">
+                    <div class="card-icon card-icon-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v2H4V5zm0 6h16v2H4v-2zm0 6h10v2H4v-2z" fill="#64b5f6"/></svg>
+                    </div>
+                    <div>
+                        <div class="card-title">위기 유형 분류 체계</div>
+                        <div class="card-subtitle">구조적 기여</div>
+                    </div>
+                </div>
+                <ul class="card-bullets">
+                    <li>해상 공급망 위기를 <strong>3유형</strong>으로 체계적 분류</li>
+                    <li>유형별 한국 전파 경로를 <strong>온톨로지</strong>로 정의</li>
+                    <li><strong>165노드, 263엣지</strong>의 실측 기반 KG</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="achievement-card">
+                <div class="card-header">
+                    <div class="card-icon card-icon-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="#ab47bc" stroke-width="2"/><circle cx="16" cy="8" r="3" stroke="#ab47bc" stroke-width="2"/><circle cx="12" cy="16" r="3" stroke="#ab47bc" stroke-width="2"/><line x1="10" y1="9.5" x2="12" y2="13.5" stroke="#ab47bc" stroke-width="1.5"/><line x1="14" y1="9.5" x2="12" y2="13.5" stroke="#ab47bc" stroke-width="1.5"/></svg>
+                    </div>
+                    <div>
+                        <div class="card-title">위기 클러스터 구조</div>
+                        <div class="card-subtitle">방법론적 기여</div>
+                    </div>
+                </div>
+                <ul class="card-bullets">
+                    <li>동시다발 위기 간 <strong>LLM 혼동 방지</strong></li>
+                    <li><strong>4주 롤링 윈도우</strong> 기반 추세 분석</li>
+                    <li>KG 엔티티 매칭으로 <strong>분류 정밀도 향상</strong></li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="achievement-card">
+                <div class="card-header">
+                    <div class="card-icon card-icon-3">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#ffa726" stroke-width="2"/><path d="M7 12h10M12 7v10" stroke="#ffa726" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <div>
+                        <div class="card-title">실시간 모니터링 서비스</div>
+                        <div class="card-subtitle">실천적 기여</div>
+                    </div>
+                </div>
+                <ul class="card-bullets">
+                    <li>정책연구기관 <strong>최초</strong> 생성형AI 기반 모니터링</li>
+                    <li>KMI <strong>정식 웹서비스</strong>로 운영 중</li>
+                    <li>일일 브리핑 + 주간 리포트 <strong>이중 체계</strong></li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="achievement-card">
+                <div class="card-header">
+                    <div class="card-icon card-icon-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#66bb6a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#66bb6a" stroke-width="2"/></svg>
+                    </div>
+                    <div>
+                        <div class="card-title">범용 프레임워크 검증</div>
+                        <div class="card-subtitle">학술적 기여</div>
+                    </div>
+                </div>
+                <ul class="card-bullets">
+                    <li><strong>7개 위기 사례</strong>로 범용성 실증</li>
+                    <li><strong>7개 서술 원칙</strong>으로 AI 출력 일관성 확보</li>
+                    <li><strong>41개 정량 지표</strong>와 뉴스 신호 교차 검증</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>

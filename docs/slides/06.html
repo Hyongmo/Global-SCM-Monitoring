@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>기존 연구의 한계와 본 연구의 차별점</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;
+    overflow: hidden; background: #0a1628;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+}
+.slide-container {
+    width: 100vw; height: 100vh; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #0a0f1b;
+}
+.content-area {
+    width: 1920px; height: 1080px; position: relative;
+    max-width: 100vw; max-height: 100vh;
+}
+@media screen {
+    .content-area {
+        transform-origin: center center;
+        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+    }
+}
+.digital-grid {
+    position: absolute; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 183, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 183, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+}
+@keyframes grid-move {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+.content-wrapper {
+    position: relative; z-index: 10; color: white;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    padding: 50px 80px;
+    animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.kmi-badge {
+    position: absolute; right: 60px; top: 30px;
+    display: flex; align-items: center; gap: 8px;
+    z-index: 20;
+}
+.kmi-badge img {
+    height: 28px; width: auto;
+    opacity: 0.4;
+}
+.kmi-badge span {
+    font-size: 18px; color: rgba(255,255,255,0.35);
+    font-weight: 500;
+}
+
+/* Slide 03 specifics */
+.slide-title {
+    font-size: 42px; font-weight: 800;
+    background: linear-gradient(135deg, #fff, #64b5f6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 10px;
+}
+.title-underline {
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, transparent);
+    margin-bottom: 40px;
+}
+
+.columns-row {
+    display: flex; gap: 30px; margin-bottom: 36px; flex: 0 0 auto;
+}
+.approach-card {
+    flex: 1;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 32px 28px;
+    position: relative; overflow: hidden;
+    transition: transform 0.3s;
+}
+.approach-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.approach-card:nth-child(1)::before { background: linear-gradient(90deg, #78909c, #546e7a); }
+.approach-card:nth-child(2)::before { background: linear-gradient(90deg, #78909c, #546e7a); }
+.approach-card:nth-child(3)::before { background: linear-gradient(90deg, #78909c, #546e7a); }
+
+.approach-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(120,144,156,0.2); color: #90a4ae;
+    font-size: 24px; font-weight: 800; margin-bottom: 16px;
+}
+.approach-type {
+    font-size: 33px; font-weight: 700; color: #90a4ae;
+    margin-bottom: 6px;
+}
+.approach-example {
+    font-size: 21px; color: rgba(255,255,255,0.35);
+    margin-bottom: 16px;
+}
+.approach-method {
+    font-size: 26px; color: rgba(255,255,255,0.7);
+    margin-bottom: 12px; line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 8px;
+}
+.approach-method .arrow { color: #546e7a; flex-shrink: 0; }
+
+.limitation-box {
+    margin-top: 12px; padding: 14px 18px;
+    background: rgba(239,83,80,0.08);
+    border: 1px solid rgba(239,83,80,0.2);
+    border-radius: 10px;
+}
+.limitation-icon { color: #ef5350; font-size: 21px; margin-right: 6px; }
+.limitation-text {
+    font-size: 24px; color: rgba(239,83,80,0.85);
+    line-height: 1.5;
+}
+
+/* Solution box */
+.solution-section {
+    flex: 1; display: flex; flex-direction: column; justify-content: flex-end;
+}
+.solution-label {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 16px;
+}
+.solution-badge {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    padding: 6px 20px; border-radius: 20px;
+    font-size: 27px; font-weight: 800; color: #fff;
+}
+.solution-arrow {
+    font-size: 36px; color: #42a5f5;
+}
+.solution-box {
+    background: linear-gradient(135deg, rgba(21,101,192,0.2), rgba(66,165,245,0.08));
+    border: 2px solid rgba(66,165,245,0.3);
+    border-radius: 20px; padding: 36px 40px;
+    position: relative; overflow: hidden;
+    animation: solution-glow 3s ease-in-out infinite alternate;
+}
+@keyframes solution-glow {
+    from { box-shadow: 0 0 30px rgba(66,165,245,0); }
+    to { box-shadow: 0 0 30px rgba(66,165,245,0.15); }
+}
+.solution-box::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #ffd93d, #42a5f5, #ffd93d);
+}
+.solution-text {
+    font-size: 33px; line-height: 1.7; color: rgba(255,255,255,0.9);
+}
+.solution-text strong {
+    color: #ffd93d; font-weight: 700;
+}
+.solution-text .highlight-blue {
+    color: #64b5f6; font-weight: 700;
+}
+
+.glow-orb {
+    position: absolute; border-radius: 50%; filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+/* Staggered animation */
+.approach-card:nth-child(1) { animation: fadeInUp 0.8s ease-out 0.1s both; }
+.approach-card:nth-child(2) { animation: fadeInUp 0.8s ease-out 0.3s both; }
+.approach-card:nth-child(3) { animation: fadeInUp 0.8s ease-out 0.5s both; }
+.solution-box { animation: fadeInUp 0.8s ease-out 0.7s both; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="content-area">
+    <div class="digital-grid"></div>
+    <div class="glow-orb" style="width:300px;height:300px;background:rgba(21,101,192,0.1);top:10%;right:5%;"></div>
+
+    <div class="content-wrapper">
+        <div class="slide-title">기존 연구의 한계와 본 연구의 차별점</div>
+        <div class="title-underline"></div>
+
+        <div class="columns-row">
+            <div class="approach-card">
+                <div class="approach-num">1</div>
+                <div class="approach-type">물류데이터 기반</div>
+                <div class="approach-example">PortWatch, MarineTraffic 등</div>
+                <div class="approach-method">
+                    <span class="arrow">→</span>
+                    <span>선박 AIS 이동 데이터 기반 물동량 추적</span>
+                </div>
+                <div class="limitation-box">
+                    <div class="limitation-text">
+                        <span class="limitation-icon">✕</span>
+                        산업별 파급효과 미추적<br>
+                        <span class="limitation-icon">✕</span>
+                        국내 전파 경로 식별 불가
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach-card">
+                <div class="approach-num">2</div>
+                <div class="approach-type">텍스트 기반</div>
+                <div class="approach-example">감성분석, 토픽모델링</div>
+                <div class="approach-method">
+                    <span class="arrow">→</span>
+                    <span>뉴스 텍스트에서 감성지수 도출</span>
+                </div>
+                <div class="limitation-box">
+                    <div class="limitation-text">
+                        <span class="limitation-icon">✕</span>
+                        구체적 전파 경로 미식별<br>
+                        <span class="limitation-icon">✕</span>
+                        정량적 영향도 산출 한계
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach-card">
+                <div class="approach-num">3</div>
+                <div class="approach-type">LLM 기반</div>
+                <div class="approach-example">GPT 에이전트, RAG</div>
+                <div class="approach-method">
+                    <span class="arrow">→</span>
+                    <span>범용 LLM으로 위기 분류·요약</span>
+                </div>
+                <div class="limitation-box">
+                    <div class="limitation-text">
+                        <span class="limitation-icon">✕</span>
+                        유사 위기 간 혼동<br>
+                        <span style="font-size:20px;color:rgba(255,255,255,0.4);margin-left:20px;">(Red Sea vs 호르무즈)</span><br>
+                        <span class="limitation-icon">✕</span>
+                        도메인 지식 부재
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <div class="solution-label">
+                <div class="solution-badge">본 연구</div>
+                <div class="solution-arrow">▼</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-text">
+                    <strong>온톨로지에 위기 클러스터를 정의</strong>하여 LLM의 위기 간 혼동을 <span class="highlight-blue">구조적으로 방지</span>하고,<br>
+                    해외 → 국내 → 산업 간 <strong>전파 경로를 KG 기반으로 자동 추적</strong>하는 모니터링 체계 구축
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>
+</div>
+</div>
+
+<script>
+(function () {
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
+  const slidesN = slides.map(toNFC);
+  let idx = slidesN.indexOf(toNFC(current));
+  if (idx < 0) idx = 0;
+  function go(i) { const t = slides[(i + slides.length) % slides.length]; if (t) window.location.href = t; }
+  window.addEventListener('keydown', function (e) {
+    const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+    if (e.target && (e.target.isContentEditable || ['input','textarea','select'].includes(tag))) return;
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(idx + 1); }
+    else if (['ArrowLeft','PageUp','Backspace'].includes(e.key)) { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  }, true);
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a,button,input,textarea,select,video,audio,label,svg')) go(idx + 1);
+  });
+  const hud = document.createElement('div');
+  Object.assign(hud.style, {
+    position:'fixed', right:'16px', bottom:'12px', padding:'6px 10px',
+    fontSize:'20px', borderRadius:'10px', background:'rgba(0,0,0,0.35)',
+    color:'#fff', backdropFilter:'blur(3px)', zIndex:9999, userSelect:'none', pointerEvents:'none'
+  });
+  hud.textContent = (idx+1)+' / '+slides.length+'  •  ← / → or click';
+  document.body.appendChild(hud);
+})();
+</script>
+</body>
+</html>
