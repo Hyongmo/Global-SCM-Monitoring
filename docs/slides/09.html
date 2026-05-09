@@ -43,7 +43,7 @@ body {
     position: relative; z-index: 10; color: white;
     width: 100%; height: 100%;
     display: flex; flex-direction: column;
-    padding: 50px 80px;
+    padding: 36px 80px;
     animation: fadeInUp 1s ease-out;
 }
 @keyframes fadeInUp {
@@ -82,24 +82,24 @@ body {
 .title-underline {
     width: 80px; height: 3px;
     background: linear-gradient(90deg, #ffd93d, transparent);
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 /* Main two-column layout */
 .main-row {
-    display: flex; gap: 40px; flex: 1; min-height: 0;
+    display: flex; gap: 30px; flex: 1; min-height: 0;
 }
 
 /* Left: Concept explanation */
 .concept-col {
-    flex: 1; display: flex; flex-direction: column; gap: 20px;
+    flex: 1; display: flex; flex-direction: column; gap: 14px;
 }
 
 .def-card {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(100,181,246,0.15);
     border-radius: 16px;
-    padding: 28px 28px;
+    padding: 20px 24px;
     position: relative; overflow: hidden;
 }
 .def-card::before {
@@ -110,7 +110,7 @@ body {
 
 .def-label {
     font-size: 20px; font-weight: 700; color: #64b5f6;
-    letter-spacing: 2px; margin-bottom: 12px;
+    letter-spacing: 2px; margin-bottom: 8px;
     text-transform: uppercase;
 }
 
@@ -121,7 +121,7 @@ body {
 .def-block {
     flex: 1;
     text-align: center;
-    padding: 16px 14px;
+    padding: 12px 12px;
     background: rgba(100,181,246,0.04);
     border-radius: 12px;
     border: 1px solid rgba(100,181,246,0.08);
@@ -152,7 +152,7 @@ body {
 .def-result {
     flex: 1.2;
     text-align: center;
-    padding: 16px 14px;
+    padding: 12px 12px;
     background: linear-gradient(135deg, rgba(21,101,192,0.12), rgba(66,165,245,0.05));
     border-radius: 12px;
     border: 1px solid rgba(100,181,246,0.2);
@@ -168,7 +168,7 @@ body {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.06);
     border-radius: 14px;
-    padding: 22px 20px;
+    padding: 16px 16px;
     display: flex; flex-direction: column;
     position: relative; overflow: hidden;
     animation: fadeInUp 0.6s ease-out both;
@@ -186,7 +186,7 @@ body {
 .struct-card:nth-child(3)::before { background: #ffa726; }
 
 .struct-icon {
-    font-size: 48px; margin-bottom: 12px;
+    font-size: 36px; margin-bottom: 8px;
 }
 .struct-title {
     font-size: 30px; font-weight: 800; margin-bottom: 8px;
@@ -197,7 +197,7 @@ body {
 
 .struct-desc {
     font-size: 22px; color: rgba(255,255,255,0.6);
-    line-height: 1.6; margin-bottom: 14px;
+    line-height: 1.5; margin-bottom: 8px;
 }
 
 .struct-examples {
@@ -220,7 +220,7 @@ body {
 
 /* Right: Visual graph */
 .graph-col {
-    flex: 1; display: flex; flex-direction: column; gap: 20px;
+    flex: 1; display: flex; flex-direction: column; gap: 14px;
 }
 
 .graph-area {
@@ -240,7 +240,7 @@ body {
     background: linear-gradient(135deg, rgba(255,167,38,0.08), rgba(255,167,38,0.03));
     border: 1px solid rgba(255,167,38,0.2);
     border-radius: 14px;
-    padding: 18px 24px;
+    padding: 14px 20px;
     display: flex; align-items: center; gap: 16px;
     animation: fadeInUp 0.6s ease-out 0.6s both;
 }
@@ -248,7 +248,7 @@ body {
     font-size: 42px; flex-shrink: 0;
 }
 .causality-text {
-    font-size: 26px; color: rgba(255,255,255,0.75); line-height: 1.6;
+    font-size: 24px; color: rgba(255,255,255,0.75); line-height: 1.5;
 }
 .causality-text strong {
     color: #ffcc80; font-weight: 700;
@@ -452,7 +452,7 @@ body {
             <div class="causality-text">
                 전문가 지식그래프는 <strong>"A가 발생하면 B에 영향을 미치고, B는 다시 C로 전파된다"</strong>는
                 <span class="hl-blue">인과 전파 경로</span>를 노드와 엣지로 명시적으로 정의하여,
-                AI가 <strong>근거 있는 분석</strong>만 수행하도록 제약하는 <strong>사실 기반 레일</strong> 역할을 합니다
+                AI가 <strong>근거 있는 분석</strong>만 수행하도록 제약하는 <strong>사실 기반 레일</strong> 역할 수행
             </div>
         </div>
     </div>

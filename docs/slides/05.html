@@ -43,7 +43,7 @@ body {
     position: relative; z-index: 10; color: white;
     width: 100%; height: 100%;
     display: flex; flex-direction: column;
-    padding: 50px 80px;
+    padding: 36px 80px;
     animation: fadeInUp 1s ease-out;
 }
 @keyframes fadeInUp {
@@ -82,12 +82,12 @@ body {
 .title-underline {
     width: 80px; height: 3px;
     background: linear-gradient(90deg, #ffd93d, transparent);
-    margin-bottom: 36px;
+    margin-bottom: 20px;
 }
 
 /* Main layout */
 .main-layout {
-    display: flex; gap: 36px; flex: 1; min-height: 0;
+    display: flex; gap: 30px; flex: 1; min-height: 0;
 }
 
 /* Left: Purpose */
@@ -97,7 +97,7 @@ body {
 
 .section-label {
     display: inline-flex; align-items: center; gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 .section-badge {
     padding: 6px 18px; border-radius: 20px;
@@ -113,7 +113,7 @@ body {
 
 .problem-row {
     display: flex; gap: 14px; align-items: stretch;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .problem-card {
@@ -121,7 +121,7 @@ body {
     background: rgba(239,83,80,0.06);
     border: 1px solid rgba(239,83,80,0.15);
     border-radius: 14px;
-    padding: 20px 18px;
+    padding: 16px 16px;
     position: relative;
     animation: fadeInUp 0.6s ease-out both;
 }
@@ -160,18 +160,18 @@ body {
 /* Flow arrows between rows */
 .flow-arrow-down {
     display: flex; align-items: center; justify-content: center;
-    height: 28px; flex-shrink: 0;
+    height: 20px; flex-shrink: 0;
 }
 .flow-arrow-down svg { width: 24px; height: 24px; }
 
 /* Barrier row */
 .barrier-row {
     display: flex; align-items: center; gap: 16px;
-    padding: 14px 24px;
+    padding: 10px 20px;
     background: rgba(255,167,38,0.06);
     border: 1px solid rgba(255,167,38,0.2);
     border-radius: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     animation: fadeInUp 0.6s ease-out 0.5s both;
 }
 .barrier-icon {
@@ -189,7 +189,7 @@ body {
     background: linear-gradient(135deg, rgba(21,101,192,0.15), rgba(66,165,245,0.06));
     border: 2px solid rgba(66,165,245,0.25);
     border-radius: 16px;
-    padding: 22px 28px;
+    padding: 16px 24px;
     position: relative; overflow: hidden;
     animation: fadeInUp 0.6s ease-out 0.7s both;
 }
@@ -199,7 +199,7 @@ body {
 }
 .solution-header {
     display: flex; align-items: center; gap: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .solution-icon {
     font-size: 36px;
@@ -227,7 +227,7 @@ body {
     background: rgba(46,125,50,0.06);
     border: 1px solid rgba(102,187,106,0.15);
     border-radius: 16px;
-    padding: 28px 24px;
+    padding: 20px 22px;
     display: flex; flex-direction: column;
     position: relative; overflow: hidden;
     animation: fadeInUp 0.8s ease-out 0.4s both;
@@ -240,20 +240,20 @@ body {
 
 .scope-main-text {
     font-size: 30px; font-weight: 700; color: #a5d6a7;
-    line-height: 1.6; margin-bottom: 24px;
+    line-height: 1.5; margin-bottom: 14px;
     text-align: center;
-    padding: 16px 0;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(102,187,106,0.15);
 }
 
 .scope-items {
-    display: flex; flex-direction: column; gap: 14px;
+    display: flex; flex-direction: column; gap: 10px;
     flex: 1;
 }
 
 .scope-item {
     display: flex; align-items: flex-start; gap: 14px;
-    padding: 14px 16px;
+    padding: 10px 14px;
     background: rgba(102,187,106,0.04);
     border-radius: 10px;
     border: 1px solid rgba(102,187,106,0.08);
@@ -273,12 +273,12 @@ body {
 
 /* Output badges */
 .output-row {
-    display: flex; gap: 10px; margin-top: auto; padding-top: 18px;
+    display: flex; gap: 10px; margin-top: auto; padding-top: 12px;
     border-top: 1px solid rgba(102,187,106,0.12);
 }
 .output-badge {
     flex: 1; text-align: center;
-    padding: 12px 8px;
+    padding: 8px 8px;
     background: rgba(102,187,106,0.08);
     border: 1px solid rgba(102,187,106,0.15);
     border-radius: 10px;
