@@ -124,7 +124,9 @@ body {
 }
 .v-card {
     border-radius: 12px; padding: 14px 18px;
-    max-width: 230px; position: relative;
+    width: 220px; height: 150px; position: relative;
+    display: flex; flex-direction: column; justify-content: center;
+    overflow: hidden;
 }
 .v-tag {
     font-size: 20px; font-weight: 900; letter-spacing: 1px;
@@ -135,7 +137,7 @@ body {
     margin-bottom: 6px;
 }
 .v-desc {
-    font-size: 21px; color: rgba(255,255,255,0.7);
+    font-size: 19px; color: rgba(255,255,255,0.7);
     line-height: 1.5;
 }
 .v-desc strong {
@@ -187,7 +189,7 @@ body {
 
 /* Highlight badge */
 .highlight-badge {
-    position: absolute; right: 80px; top: 55px;
+    position: absolute; right: 80px; top: 100px;
     background: linear-gradient(135deg, rgba(255,217,61,0.15), rgba(255,217,61,0.05));
     border: 1px solid rgba(255,217,61,0.3);
     border-radius: 12px; padding: 14px 24px;
@@ -221,11 +223,11 @@ body {
             <div class="timeline-track">
                 <!-- Diagonal timeline line -->
                 <svg class="timeline-line-svg" viewBox="0 0 1760 520" preserveAspectRatio="none">
-                    <line class="tl-line" x1="60" y1="460" x2="1700" y2="60"/>
+                    <line class="tl-line" x1="30" y1="460" x2="1640" y2="60"/>
                 </svg>
 
                 <!-- v1 — bottom-left -->
-                <div class="version-node v1" style="left:20px; bottom:10px;">
+                <div class="version-node v1" style="left:20px; bottom:42px;">
                     <div class="v-card">
                         <div class="v-tag">v1 <span class="v-strike">DEPRECATED</span></div>
                         <div class="v-date">3/18</div>
@@ -235,7 +237,7 @@ body {
                 </div>
 
                 <!-- v2 -->
-                <div class="version-node v2" style="left:250px; bottom:85px;">
+                <div class="version-node v2" style="left:190px; bottom:100px;">
                     <div class="v-card">
                         <div class="v-tag">v2</div>
                         <div class="v-desc"><strong>6레이어 범용 구조</strong> 설계<br>초크포인트 독립 아키텍처</div>
@@ -244,7 +246,7 @@ body {
                 </div>
 
                 <!-- v3 -->
-                <div class="version-node v3" style="left:480px; bottom:170px;">
+                <div class="version-node v3" style="left:420px; bottom:157px;">
                     <div class="v-card">
                         <div class="v-tag">v3</div>
                         <div class="v-desc">L1 위기 3유형 도입<br><strong>Route / Supply / Logistics</strong></div>
@@ -253,7 +255,7 @@ body {
                 </div>
 
                 <!-- v4 -->
-                <div class="version-node v4" style="left:710px; bottom:260px;">
+                <div class="version-node v4" style="left:650px; bottom:214px;">
                     <div class="v-card">
                         <div class="v-tag">v4</div>
                         <div class="v-desc">L3 물자흐름 5개 하위분류<br><strong>에너지 / 산업원자재 /<br>농식품 / 중간재 / 완제품</strong></div>
@@ -262,7 +264,7 @@ body {
                 </div>
 
                 <!-- v5 -->
-                <div class="version-node v5" style="left:970px; bottom:340px;">
+                <div class="version-node v5" style="left:910px; bottom:121px;">
                     <div class="v-dot" style="margin-bottom:8px;"></div>
                     <div class="v-card">
                         <div class="v-tag">v5 &mdash; Seed KG</div>
@@ -271,7 +273,7 @@ body {
                 </div>
 
                 <!-- v6-v7 -->
-                <div class="version-node v67" style="left:1220px; bottom:340px;">
+                <div class="version-node v67" style="left:1160px; bottom:184px;">
                     <div class="v-dot" style="margin-bottom:8px;"></div>
                     <div class="v-card">
                         <div class="v-tag">v6-v7</div>
@@ -280,7 +282,7 @@ body {
                 </div>
 
                 <!-- v8 (final) -->
-                <div class="version-node v8" style="left:1480px; bottom:340px;">
+                <div class="version-node v8" style="left:1420px; bottom:249px;">
                     <div class="v-dot" style="margin-bottom:8px;"></div>
                     <div class="v-card">
                         <div class="v-tag">v8 (FINAL)</div>
