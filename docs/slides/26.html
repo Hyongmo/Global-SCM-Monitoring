@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>연구의 한계 및 향후 과제</title>
+<title>Fish-Price — 개발 필요성 및 목적</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -39,6 +39,16 @@ body {
     0% { transform: translate(0, 0); }
     100% { transform: translate(50px, 50px); }
 }
+.glow-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
 .content-wrapper {
     z-index: 10; color: white;
     width: 1920px; height: 1080px;
@@ -58,65 +68,54 @@ body {
     display: flex; align-items: center; gap: 8px;
     z-index: 20;
 }
-.kmi-badge img {
-    height: 28px; width: auto;
-    opacity: 0.4;
+.kmi-badge img { height: 28px; width: auto; opacity: 0.4; }
+.kmi-badge span { font-size: 18px; color: rgba(255,255,255,0.35); font-weight: 500; }
+.section-tag {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 22px; font-weight: 600;
+    color: #ffd93d;
+    background: rgba(255,217,61,0.1);
+    border: 1px solid rgba(255,217,61,0.3);
+    padding: 6px 16px; border-radius: 20px;
+    margin-bottom: 20px;
 }
-.kmi-badge span {
-    font-size: 18px; color: rgba(255,255,255,0.35);
-    font-weight: 500;
-}
-.glow-orb {
-    position: absolute; border-radius: 50%;
-    filter: blur(80px);
-    animation: orb-drift 20s ease-in-out infinite;
-}
-@keyframes orb-drift {
-    0%, 100% { transform: translate(0, 0); }
-    33% { transform: translate(40px, -30px); }
-    66% { transform: translate(-20px, 20px); }
-}
-
 .page-title {
-    font-size: 42px; font-weight: 800;
+    font-size: 48px; font-weight: 800;
     background: linear-gradient(135deg, #ffffff 0%, #64b5f6 50%, #42a5f5 100%);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 44px;
-    text-align: center;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    align-self: flex-start;
 }
-
+.page-subtitle {
+    font-size: 26px; color: rgba(255,255,255,0.7);
+    margin-bottom: 40px; line-height: 1.5;
+    align-self: flex-start;
+}
 .two-columns {
     display: flex; gap: 40px; flex: 1;
 }
-
-.column {
-    flex: 1; display: flex; flex-direction: column; gap: 20px;
-}
-
+.column { flex: 1; display: flex; flex-direction: column; gap: 18px; }
 .column-header {
-    font-size: 39px; font-weight: 700;
-    padding-bottom: 12px;
-    margin-bottom: 4px;
+    font-size: 32px; font-weight: 700;
+    padding-bottom: 12px; margin-bottom: 8px;
     border-bottom: 2px solid;
 }
-.column-header-limit {
-    color: #ef9a9a;
-    border-color: rgba(239,154,154,0.3);
+.column-header-need {
+    color: #ef9a9a; border-color: rgba(239,154,154,0.3);
 }
-.column-header-future {
-    color: #a5d6a7;
-    border-color: rgba(165,214,167,0.3);
+.column-header-goal {
+    color: #a5d6a7; border-color: rgba(165,214,167,0.3);
 }
-
 .item-card {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.06);
     border-radius: 12px;
-    padding: 18px 24px;
-    display: flex; gap: 18px;
+    padding: 18px 22px;
+    display: flex; gap: 16px;
     align-items: flex-start;
-    transition: all 0.3s;
     animation: fadeInUp 0.6s ease-out both;
 }
 /* Left column: header is child 1, item-cards are children 2-5 */
@@ -124,49 +123,27 @@ body {
 .column:first-child .item-card:nth-child(3) { animation-delay: 0.2s; }
 .column:first-child .item-card:nth-child(4) { animation-delay: 0.3s; }
 .column:first-child .item-card:nth-child(5) { animation-delay: 0.4s; }
-/* Right column: header is child 1, item-cards are children 2-6 */
+/* Right column: header is child 1, item-cards are children 2-5 */
 .column:last-child .item-card:nth-child(2) { animation-delay: 0.15s; }
 .column:last-child .item-card:nth-child(3) { animation-delay: 0.25s; }
 .column:last-child .item-card:nth-child(4) { animation-delay: 0.35s; }
 .column:last-child .item-card:nth-child(5) { animation-delay: 0.45s; }
-.column:last-child .item-card:nth-child(6) { animation-delay: 0.55s; }
-.item-card:hover {
-    background: rgba(255,255,255,0.05);
-}
-
 .item-number {
     width: 36px; height: 36px;
     border-radius: 10px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 27px; font-weight: 800;
-    flex-shrink: 0;
+    font-size: 24px; font-weight: 800; flex-shrink: 0;
 }
-.item-number-limit {
-    background: rgba(239,83,80,0.12);
-    color: #ef5350;
+.item-number-need {
+    background: rgba(239,83,80,0.12); color: #ef5350;
     border: 1px solid rgba(239,83,80,0.25);
 }
-.item-number-future {
-    background: rgba(102,187,106,0.12);
-    color: #66bb6a;
+.item-number-goal {
+    background: rgba(102,187,106,0.12); color: #66bb6a;
     border: 1px solid rgba(102,187,106,0.25);
 }
-
-.item-text {
-    font-size: 27px;
-    color: rgba(255,255,255,0.8);
-    line-height: 1.6;
-}
-
-/* Arrow connector between columns */
-.column-connector {
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0; width: 40px;
-}
-.connector-arrow {
-    width: 24px; height: 24px;
-    color: rgba(100,181,246,0.3);
-}
+.item-text { font-size: 24px; color: rgba(255,255,255,0.85); line-height: 1.55; }
+.item-text strong { color: #fff; }
 </style>
 </head>
 <body>
@@ -178,67 +155,48 @@ body {
     <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,217,61,0.05);bottom:10%;left:40%;animation-delay:-13s;"></div>
 
     <div class="content-wrapper">
-        <div class="page-title">연구의 한계 및 향후 과제</div>
+        <div class="section-tag">Fish-Price · 향후 과제 확장</div>
+        <div class="page-title">수입 수산물 가격 모니터링 및 예측</div>
+        <div class="page-subtitle">개발 필요성 및 목적</div>
 
         <div class="two-columns">
-            <!-- Limitations -->
             <div class="column">
-                <div class="column-header column-header-limit">한계점</div>
-
+                <div class="column-header column-header-need">개발 필요성</div>
                 <div class="item-card">
-                    <div class="item-number item-number-limit">1</div>
-                    <div class="item-text">온톨로지 설계가 수입통계 · 투입산출표 기반이나<br>외부 전문가 패널 검증 필요</div>
+                    <div class="item-number item-number-need">1</div>
+                    <div class="item-text"><strong>가격 정보 공개 시차 (2주)</strong><br>무역통계진흥원 HS코드별 수입가격 → 시장에는 항상 2주 늦게 도달</div>
                 </div>
                 <div class="item-card">
-                    <div class="item-number item-number-limit">2</div>
-                    <div class="item-text">위기 등급 임계값이 운영 경험 기반<br>&rarr; 경제 영향과의 정량적 사후 검증 필요</div>
+                    <div class="item-number item-number-need">2</div>
+                    <div class="item-text"><strong>공급지·운송로 충격이 가격에 반영되는 시차 정량화 부재</strong><br>이슈 발생 → 가격 영향 시점·강도가 사후적으로만 파악</div>
                 </div>
                 <div class="item-card">
-                    <div class="item-number item-number-limit">3</div>
-                    <div class="item-text">생성형 AI 기반 뉴스 분류의<br>장기적 일관성 평가 필요</div>
+                    <div class="item-number item-number-need">3</div>
+                    <div class="item-text"><strong>HS코드 단위 가격은 그대로 공개 불가</strong><br>거래 비밀 보호 → 카테고리 단위(국가×어종)로 가공 필요</div>
                 </div>
                 <div class="item-card">
-                    <div class="item-number item-number-limit">4</div>
-                    <div class="item-text">온톨로지 확장(새 위기, 물자, 산업 노드)이 수동<br>&rarr; 자동 업데이트 메커니즘 개발 필요</div>
+                    <div class="item-number item-number-need">4</div>
+                    <div class="item-text"><strong>Hormuz·해양환경 모니터링의 자연스러운 확장</strong><br>이슈 → 영향 가능성 알림 → 가격 정량 영향까지 한 단계 더</div>
                 </div>
             </div>
 
-            <!-- Connector -->
-            <div class="column-connector">
-                <svg class="connector-arrow" viewBox="0 0 24 24" fill="none">
-                    <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-
-            <!-- Future Work -->
             <div class="column">
-                <div class="column-header column-header-future">향후 과제</div>
-
+                <div class="column-header column-header-goal">개발 목적</div>
                 <div class="item-card">
-                    <div class="item-number item-number-future">1</div>
-                    <div class="item-text">외부 전문가 패널을 통한<br>온톨로지 구조 및 정량 속성 검증</div>
+                    <div class="item-number item-number-goal">1</div>
+                    <div class="item-text"><strong>Nowcasting (현재가 추정)</strong><br>2주 시차의 가격 → 뉴스 이벤트 결합 → "지금 이 순간" 가격 추정 (서비스 메인)</div>
                 </div>
                 <div class="item-card">
-                    <div class="item-number item-number-future">2</div>
-                    <div class="item-text">위기 등급과 실제 경제지표 변동 간의<br>시차 · 강도 비교 분석</div>
+                    <div class="item-number item-number-goal">2</div>
+                    <div class="item-text"><strong>Forecasting (미래가 예측)</strong><br>현재 시점 정보 기반 → 향후 N주 가격 예측 (보조 기능)</div>
                 </div>
                 <div class="item-card">
-                    <div class="item-number item-number-future">3</div>
-                    <div class="item-text">장기 운영 데이터 축적 후<br>분류 정밀도 · 재현율 체계적 평가</div>
+                    <div class="item-number item-number-goal">3</div>
+                    <div class="item-text"><strong>이벤트 → 가격 영향 정량화</strong><br>특정 사건이 어떤 카테고리에 얼마나, 언제 영향을 주는지 수치화</div>
                 </div>
                 <div class="item-card">
-                    <div class="item-number item-number-future">4</div>
-                    <div class="item-text">뉴스 · 경제통계 · 무역데이터 기반<br>KG 자동 업데이트 파이프라인 구축</div>
-                </div>
-                <div class="item-card" style="border-color: rgba(100,181,246,0.15);">
-                    <div class="item-number item-number-future">5</div>
-                    <div class="item-text">AI 자동 모니터링 시스템 도메인 확장<br>
-                        <span style="font-size:22px;color:rgba(255,255,255,0.55);">
-                        &rarr; 해양환경·대기·에너지·자원·폐기물 모니터링 <span style="color:#ffd93d;font-size:20px;">(개발중)</span><br>
-                        &rarr; 수입 수산물 가격 모니터링 및 예측 <span style="color:#ffd93d;font-size:20px;">(개발중)</span><br>
-                        &rarr; 각 도메인 온톨로지 상호 연결 &rarr; 통합 모니터링 체계
-                        </span>
-                    </div>
+                    <div class="item-number item-number-goal">4</div>
+                    <div class="item-text"><strong>주간 브리핑 자동 생성</strong><br>Hormuz 서비스(weekly_report)와 동일 패턴, 가격 추정·예측 + 변동 원인 설명</div>
                 </div>
             </div>
         </div>

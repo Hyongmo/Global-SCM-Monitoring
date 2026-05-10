@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>온톨로지 KG 설계</title>
+<title>감사합니다 — Q&A</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -39,66 +39,6 @@ body {
     0% { transform: translate(0, 0); }
     100% { transform: translate(50px, 50px); }
 }
-.glow-orb {
-    position: absolute; border-radius: 50%;
-    filter: blur(80px);
-    animation: orb-drift 20s ease-in-out infinite;
-}
-@keyframes orb-drift {
-    0%, 100% { transform: translate(0, 0); }
-    33% { transform: translate(40px, -30px); }
-    66% { transform: translate(-20px, 20px); }
-}
-.wave-bg {
-    position: absolute; width: 100%; height: 100%; overflow: hidden;
-}
-.wave {
-    position: absolute; bottom: -50px; width: 200%; height: 300px;
-    opacity: 0.06;
-    background: linear-gradient(180deg, transparent, #ffd93d);
-    border-radius: 50% 50% 0 0;
-}
-.wave1 { animation: wave 8s ease-in-out infinite; left: -50%; }
-.wave2 { animation: wave 10s ease-in-out infinite reverse; left: -30%; opacity: 0.04; bottom: -80px; }
-.wave3 { animation: wave 12s ease-in-out infinite; left: -40%; opacity: 0.03; bottom: -110px; }
-@keyframes wave {
-    0%, 100% { transform: translateX(0) translateY(0); }
-    50% { transform: translateX(30px) translateY(-20px); }
-}
-.nodes-canvas {
-    position: absolute; width: 100%; height: 100%; overflow: hidden;
-}
-.node {
-    position: absolute; border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,217,61,0.4), transparent);
-    animation: float-node 15s ease-in-out infinite;
-}
-.node::after {
-    content: ''; position: absolute;
-    top: 50%; left: 50%; width: 6px; height: 6px;
-    margin: -3px 0 0 -3px; border-radius: 50%;
-    background: #ffd93d;
-    box-shadow: 0 0 10px #ffd93d;
-}
-@keyframes float-node {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(30px, -20px) scale(1.1); }
-    50% { transform: translate(-10px, 20px) scale(0.9); }
-    75% { transform: translate(20px, 10px) scale(1.05); }
-}
-.connection-lines {
-    position: absolute; width: 100%; height: 100%;
-}
-.connection-lines svg { width: 100%; height: 100%; }
-.conn-line {
-    stroke: rgba(255,217,61,0.08);
-    stroke-width: 1;
-    animation: pulse-line 4s ease-in-out infinite;
-}
-@keyframes pulse-line {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.8; }
-}
 .content-wrapper {
     z-index: 10; color: white;
     width: 1920px; height: 1080px;
@@ -114,50 +54,6 @@ body {
     from { opacity: 0; translate: 0 20px; }
     to { opacity: 1; translate: 0 0; }
 }
-
-.section-num {
-    font-size: 160px; font-weight: 900;
-    color: #ffd93d;
-    opacity: 0.15;
-    line-height: 1;
-    margin-bottom: -30px;
-    letter-spacing: 10px;
-}
-.section-title {
-    font-size: 64px; font-weight: 800;
-    text-align: center; line-height: 1.4;
-    background: linear-gradient(135deg, #ffffff 0%, #ffd93d 60%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 50px;
-    animation: title-glow 3s ease-in-out infinite alternate;
-}
-@keyframes title-glow {
-    from { filter: drop-shadow(0 0 20px rgba(100,181,246,0)); }
-    to { filter: drop-shadow(0 0 20px rgba(255,217,61,0.3)); }
-}
-.divider-line {
-    width: 120px; height: 2px;
-    background: linear-gradient(90deg, transparent, #ffd93d, transparent);
-    margin: 0 auto 40px;
-}
-.section-items {
-    display: flex; align-items: center; gap: 16px;
-    flex-wrap: wrap; justify-content: center;
-}
-.section-chip {
-    padding: 12px 28px;
-    border-radius: 12px;
-    font-size: 24px;
-    color: rgba(255,255,255,0.7);
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-}
-.section-arrow {
-    color: rgba(255,255,255,0.2);
-    font-size: 20px;
-}
-
 .kmi-badge {
     position: absolute; right: 60px; top: 30px;
     display: flex; align-items: center; gap: 8px;
@@ -171,6 +67,133 @@ body {
     font-size: 18px; color: rgba(255,255,255,0.35);
     font-weight: 500;
 }
+.glow-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(80px);
+    animation: orb-drift 20s ease-in-out infinite;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(40px, -30px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+/* Wave background (calmer version) */
+.wave-bg {
+    position: absolute; width: 100%; height: 100%; overflow: hidden;
+}
+.wave {
+    position: absolute; bottom: -50px; width: 200%; height: 300px;
+    opacity: 0.04;
+    background: linear-gradient(180deg, transparent, #42a5f5);
+    border-radius: 50% 50% 0 0;
+}
+.wave1 { animation: wave 12s ease-in-out infinite; left: -50%; }
+.wave2 { animation: wave 16s ease-in-out infinite reverse; left: -30%; opacity: 0.03; bottom: -80px; }
+.wave3 { animation: wave 20s ease-in-out infinite; left: -40%; opacity: 0.02; bottom: -110px; }
+@keyframes wave {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(30px) translateY(-20px); }
+}
+
+/* Floating nodes (fewer, calmer) */
+.nodes-canvas {
+    position: absolute; width: 100%; height: 100%; overflow: hidden;
+}
+.node {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(100, 181, 246, 0.3), transparent);
+    animation: float-node 20s ease-in-out infinite;
+}
+.node::after {
+    content: ''; position: absolute;
+    top: 50%; left: 50%; width: 5px; height: 5px;
+    margin: -2.5px 0 0 -2.5px; border-radius: 50%;
+    background: #64b5f6;
+    box-shadow: 0 0 8px #64b5f6;
+}
+@keyframes float-node {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(20px, -15px) scale(1.05); }
+    50% { transform: translate(-8px, 15px) scale(0.95); }
+    75% { transform: translate(15px, 8px) scale(1.02); }
+}
+
+.thank-you {
+    font-size: 120px; font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #64b5f6 50%, #42a5f5 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+    animation: title-glow 3s ease-in-out infinite alternate;
+}
+@keyframes title-glow {
+    from { filter: drop-shadow(0 0 20px rgba(100,181,246,0)); }
+    to { filter: drop-shadow(0 0 20px rgba(100,181,246,0.3)); }
+}
+
+.qa-text {
+    font-size: 54px; font-weight: 300;
+    color: rgba(255,217,61,0.8);
+    letter-spacing: 8px;
+    margin-bottom: 60px;
+}
+
+.divider-line {
+    width: 120px; height: 2px;
+    background: linear-gradient(90deg, transparent, #64b5f6, transparent);
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-name {
+    font-size: 42px; font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.contact-name-en {
+    font-size: 27px; font-weight: 400;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 12px;
+}
+.contact-inst {
+    font-size: 33px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+}
+.contact-email {
+    font-size: 27px;
+    color: rgba(100,181,246,0.7);
+}
+
+.service-links {
+    display: flex; gap: 32px;
+}
+.service-link {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(100,181,246,0.15);
+    border-radius: 12px;
+    padding: 16px 28px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.service-link:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(100,181,246,0.3);
+}
+.service-link-label {
+    font-size: 21px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 6px;
+}
+.service-link-url {
+    font-size: 26px;
+    color: #64b5f6;
+    letter-spacing: 0.5px;
+}
 </style>
 </head>
 <body>
@@ -178,45 +201,52 @@ body {
 <div class="content-area">
     <div class="digital-grid"></div>
 
-    <div class="glow-orb" style="width:400px;height:400px;background:rgba(204,170,0,0.15);top:10%;left:5%;"></div>
-    <div class="glow-orb" style="width:350px;height:350px;background:rgba(255,217,61,0.10);top:50%;right:10%;animation-delay:-7s;"></div>
-    <div class="glow-orb" style="width:300px;height:300px;background:rgba(255,255,255,0.03);bottom:10%;left:40%;animation-delay:-13s;"></div>
+    <!-- Glow orbs -->
+    <div class="glow-orb" style="width:500px;height:500px;background:rgba(21,101,192,0.12);top:5%;left:10%;"></div>
+    <div class="glow-orb" style="width:400px;height:400px;background:rgba(66,165,245,0.08);top:40%;right:5%;animation-delay:-7s;"></div>
+    <div class="glow-orb" style="width:350px;height:350px;background:rgba(255,217,61,0.04);bottom:5%;left:35%;animation-delay:-13s;"></div>
 
+    <!-- Waves (calmer) -->
     <div class="wave-bg">
         <div class="wave wave1"></div>
         <div class="wave wave2"></div>
         <div class="wave wave3"></div>
     </div>
 
+    <!-- Floating nodes (fewer) -->
     <div class="nodes-canvas">
-        <div class="node" style="width:35px;height:35px;top:15%;left:10%;animation-delay:0s;"></div>
-        <div class="node" style="width:28px;height:28px;top:22%;left:82%;animation-delay:-3s;"></div>
-        <div class="node" style="width:32px;height:32px;top:65%;left:12%;animation-delay:-6s;"></div>
-        <div class="node" style="width:25px;height:25px;top:72%;left:85%;animation-delay:-9s;"></div>
-        <div class="node" style="width:38px;height:38px;top:45%;left:90%;animation-delay:-5s;"></div>
-        <div class="node" style="width:22px;height:22px;top:85%;left:50%;animation-delay:-8s;"></div>
-    </div>
-
-    <div class="connection-lines">
-        <svg viewBox="0 0 1920 1080" preserveAspectRatio="none">
-            <line class="conn-line" x1="192" y1="162" x2="1574" y2="238" style="animation-delay:0s"/>
-            <line class="conn-line" x1="230" y1="702" x2="1728" y2="918" style="animation-delay:-1.5s"/>
-            <line class="conn-line" x1="1574" y1="238" x2="1728" y2="777" style="animation-delay:-3s"/>
-        </svg>
+        <div class="node" style="width:30px;height:30px;top:15%;left:12%;animation-delay:0s;"></div>
+        <div class="node" style="width:25px;height:25px;top:20%;left:82%;animation-delay:-4s;"></div>
+        <div class="node" style="width:28px;height:28px;top:70%;left:10%;animation-delay:-8s;"></div>
+        <div class="node" style="width:22px;height:22px;top:78%;left:85%;animation-delay:-12s;"></div>
+        <div class="node" style="width:35px;height:35px;top:45%;left:5%;animation-delay:-6s;"></div>
+        <div class="node" style="width:26px;height:26px;top:30%;left:92%;animation-delay:-10s;"></div>
     </div>
 
     <div class="content-wrapper">
-        <div class="section-num">II</div>
-        <div class="section-title">온톨로지 KG 설계</div>
+        <div class="thank-you">감사합니다</div>
+        <div class="qa-text">Q & A</div>
         <div class="divider-line"></div>
-        <div class="section-items">
-            <span class="section-chip">시스템 아키텍처</span>
-            <span class="section-arrow">&#x25B6;</span>
-            <span class="section-chip">KG 개념 및 필요성</span>
-            <span class="section-arrow">&#x25B6;</span>
-            <span class="section-chip">KG 설계 진화</span>
-            <span class="section-arrow">&#x25B6;</span>
-            <span class="section-chip">위기 유형 · 6계층 구조</span>
+
+        <div class="contact-info">
+            <div class="contact-name">전형모</div>
+            <div class="contact-name-en">Hyongmo Jeon, Ph.D.</div>
+            <div class="contact-inst" style="display:flex;align-items:center;justify-content:center;gap:12px;">
+                <img src="kmi_logo_white.png" alt="KMI" style="height:36px;width:auto;opacity:0.7;">
+                <span>한국해양수산개발원</span>
+            </div>
+            <div class="contact-email">hmjeon@kmi.re.kr</div>
+        </div>
+
+        <div class="service-links">
+            <div class="service-link">
+                <div class="service-link-label">일일 브리핑</div>
+                <div class="service-link-url">scm-briefing.kmi.re.kr</div>
+            </div>
+            <div class="service-link">
+                <div class="service-link-label">주간 모니터링</div>
+                <div class="service-link-url">scm-briefing.kmi.re.kr/weekly_report.html</div>
+            </div>
         </div>
     </div>
     <div class="kmi-badge"><img src="kmi_logo_white.png" alt="KMI"><span>한국해양수산개발원</span></div>

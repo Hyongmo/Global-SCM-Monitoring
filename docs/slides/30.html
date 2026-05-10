@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>온톨로지 KG 스키마 — 인터랙티브 뷰</title>
+<title>Fish-Price 온톨로지 KG 스키마 — 인터랙티브 뷰</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -45,6 +45,7 @@ body {
     display: flex; align-items: center; justify-content: space-between;
     margin-bottom: 12px;
     flex-shrink: 0;
+    padding-right: 280px;  /* KMI 로고 영역 회피 */
 }
 .slide-title {
     font-size: 36px; font-weight: 800;
@@ -55,11 +56,6 @@ body {
     font-size: 24px; color: rgba(255,255,255,0.4);
     display: flex; align-items: center; gap: 8px;
     margin-right: 280px;
-}
-.hint-icon {
-    display: inline-block; width: 24px; height: 24px;
-    border: 1px solid rgba(255,255,255,0.3); border-radius: 6px;
-    text-align: center; line-height: 24px; font-size: 18px;
 }
 .iframe-container {
     flex: 1; border-radius: 16px; overflow: hidden;
@@ -96,12 +92,12 @@ body {
 <div class="content-area">
     <div class="content-wrapper">
         <div class="header-bar">
-            <div class="slide-title">온톨로지 KG 스키마 — 인터랙티브 뷰</div>
+            <div class="slide-title">Fish-Price 온톨로지 KG 스키마 — 인터랙티브 뷰</div>
             <div class="hint">
             </div>
         </div>
         <div class="iframe-container">
-            <iframe src="ontology_schema_v8.html" allow="fullscreen"></iframe>
+            <iframe src="ontology_schema_fishprice_v0.html" allow="fullscreen"></iframe>
             <div class="iframe-overlay"></div>
         </div>
     </div>

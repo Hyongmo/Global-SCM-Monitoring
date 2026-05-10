@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1920">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>실증 분석 및 서비스</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,13 +18,13 @@ body {
     overflow: hidden; background: #0a0f1b;
 }
 .content-area {
-    width: 1920px; height: 1080px; position: relative;
-    max-width: 100vw; max-height: 100vh;
+    width: 100%; height: 100%; position: relative;
+    /* scaled by JS */
 }
 @media screen {
     .content-area {
         transform-origin: center center;
-        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+        /* JS 기반 스케일링 — fitSlide() */
     }
 }
 .digital-grid {
@@ -100,16 +100,19 @@ body {
     50% { opacity: 0.8; }
 }
 .content-wrapper {
-    position: relative; z-index: 10; color: white;
-    width: 100%; height: 100%;
+    z-index: 10; color: white;
+    width: 1920px; height: 1080px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    transform-origin: center center;
+    animation: fadeInUp 0.8s ease-out;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     padding: 50px 80px;
-    animation: fadeInUp 1s ease-out;
 }
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; translate: 0 20px; }
+    to { opacity: 1; translate: 0 0; }
 }
 
 .section-num {
@@ -218,7 +221,7 @@ body {
 
 <script>
 (function () {
-  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html", "26.html", "27.html", "28.html", "29.html", "30.html", "31.html"];
   const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
   const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
   const slidesN = slides.map(toNFC);
@@ -247,4 +250,17 @@ body {
 })();
 </script>
 </body>
+<script>
+function fitSlide(){
+    var c=document.querySelector('.content-wrapper');
+    if(!c)return;
+    var sx=window.innerWidth/1920, sy=window.innerHeight/1080;
+    var s=Math.min(sx,sy);
+    c.style.transform='translate(-50%,-50%) scale('+s+')';
+    var b=document.querySelector('.kmi-badge');
+    if(b){b.style.transform='scale('+s+')';b.style.transformOrigin='top right';}
+}
+fitSlide();
+window.addEventListener('resize',fitSlide);
+</script>
 </html>

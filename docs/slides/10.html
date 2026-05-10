@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1920">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>온톨로지 KG 구축의 필요성</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,13 +18,13 @@ body {
     overflow: hidden; background: #0a0f1b;
 }
 .content-area {
-    width: 1920px; height: 1080px; position: relative;
-    max-width: 100vw; max-height: 100vh;
+    width: 100%; height: 100%; position: relative;
+    /* scaled by JS */
 }
 @media screen {
     .content-area {
         transform-origin: center center;
-        transform: scale(min(calc(100vw / 1920), calc(100vh / 1080)));
+        /* JS 기반 스케일링 — fitSlide() */
     }
 }
 .digital-grid {
@@ -40,15 +40,18 @@ body {
     100% { transform: translate(50px, 50px); }
 }
 .content-wrapper {
-    position: relative; z-index: 10; color: white;
-    width: 100%; height: 100%;
+    z-index: 10; color: white;
+    width: 1920px; height: 1080px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    transform-origin: center center;
+    animation: fadeInUp 0.8s ease-out;
     display: flex; flex-direction: column;
     padding: 44px 80px;
-    animation: fadeInUp 1s ease-out;
 }
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; translate: 0 20px; }
+    to { opacity: 1; translate: 0 0; }
 }
 .kmi-badge {
     position: absolute; right: 60px; top: 30px;
@@ -157,9 +160,15 @@ body {
 
 /* Right column: 5 pipeline roles */
 .roles-col {
-    flex: 1; display: flex; flex-direction: column; gap: 8px;
+    flex: 1; display: flex; flex-direction: column; gap: 10px;
     justify-content: center;
 }
+
+.role-arrow {
+    display: flex; justify-content: center; align-items: center;
+    height: 24px;
+}
+.role-arrow svg { width: 22px; height: 20px; }
 
 .role-card {
     display: flex; align-items: stretch; gap: 0;
@@ -168,10 +177,10 @@ body {
     border: 1px solid rgba(255,255,255,0.06);
 }
 .role-card:nth-child(1) { animation-delay: 0.15s; }
-.role-card:nth-child(2) { animation-delay: 0.25s; }
-.role-card:nth-child(3) { animation-delay: 0.35s; }
-.role-card:nth-child(4) { animation-delay: 0.45s; }
-.role-card:nth-child(5) { animation-delay: 0.55s; }
+.role-card:nth-child(3) { animation-delay: 0.25s; }
+.role-card:nth-child(5) { animation-delay: 0.35s; }
+.role-card:nth-child(7) { animation-delay: 0.45s; }
+.role-card:nth-child(9) { animation-delay: 0.55s; }
 
 .role-step {
     flex: 0 0 56px;
@@ -344,6 +353,7 @@ body {
                     </div>
                     <div class="role-effect">수집 범위를<br>KG가 결정</div>
                 </div>
+                <div class="role-arrow"><svg viewBox="0 0 20 16"><path d="M7 0 L13 0 L13 6 L16 6 L10 16 L4 6 L7 6 Z" fill="rgba(102,187,106,0.5)"/></svg></div>
 
                 <div class="role-card role-2">
                     <div class="role-step">분류</div>
@@ -356,6 +366,7 @@ body {
                     </div>
                     <div class="role-effect">분류 기준을<br>KG가 제공</div>
                 </div>
+                <div class="role-arrow"><svg viewBox="0 0 20 16"><path d="M7 0 L13 0 L13 6 L16 6 L10 16 L4 6 L7 6 Z" fill="rgba(66,165,245,0.5)"/></svg></div>
 
                 <div class="role-card role-3">
                     <div class="role-step">분석</div>
@@ -368,6 +379,7 @@ body {
                     </div>
                     <div class="role-effect">분석 경로를<br>KG가 제한</div>
                 </div>
+                <div class="role-arrow"><svg viewBox="0 0 20 16"><path d="M7 0 L13 0 L13 6 L16 6 L10 16 L4 6 L7 6 Z" fill="rgba(171,71,188,0.5)"/></svg></div>
 
                 <div class="role-card role-4">
                     <div class="role-step">정량</div>
@@ -380,6 +392,7 @@ body {
                     </div>
                     <div class="role-effect">수치를<br>KG가 고정</div>
                 </div>
+                <div class="role-arrow"><svg viewBox="0 0 20 16"><path d="M7 0 L13 0 L13 6 L16 6 L10 16 L4 6 L7 6 Z" fill="rgba(255,217,61,0.5)"/></svg></div>
 
                 <div class="role-card role-5">
                     <div class="role-step">검증</div>
@@ -402,7 +415,7 @@ body {
 
 <script>
 (function () {
-  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html"];
+  const slides = ["01.html", "02.html", "03.html", "04.html", "05.html", "06.html", "07.html", "08.html", "09.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html", "26.html", "27.html", "28.html", "29.html", "30.html", "31.html"];
   const current = decodeURIComponent(window.location.pathname.split('/').pop() || '');
   const toNFC = s => (String.prototype.normalize ? s.normalize('NFC') : s);
   const slidesN = slides.map(toNFC);
@@ -431,4 +444,17 @@ body {
 })();
 </script>
 </body>
+<script>
+function fitSlide(){
+    var c=document.querySelector('.content-wrapper');
+    if(!c)return;
+    var sx=window.innerWidth/1920, sy=window.innerHeight/1080;
+    var s=Math.min(sx,sy);
+    c.style.transform='translate(-50%,-50%) scale('+s+')';
+    var b=document.querySelector('.kmi-badge');
+    if(b){b.style.transform='scale('+s+')';b.style.transformOrigin='top right';}
+}
+fitSlide();
+window.addEventListener('resize',fitSlide);
+</script>
 </html>
