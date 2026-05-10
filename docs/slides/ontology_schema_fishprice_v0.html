@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>수산물 수입가격 KG 온톨로지 v0</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', Arial, sans-serif; background: #0a0e17; color: #e0e0e0; overflow: hidden; }
+  #header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,14,23,0.95); padding: 12px 24px; border-bottom: 1px solid #1a2040; }
+  #header h1 { font-size: 16px; color: #7eb8ff; font-weight: 600; }
+  #header p { font-size: 11px; color: #888; margin-top: 3px; }
+  #header .badge { display: inline-block; background: #1a3a6a; color: #7eb8ff; padding: 2px 8px; border-radius: 10px; font-size: 10px; margin-left: 8px; }
+  #canvas { width: 100vw; height: 100vh; }
+  #sidebar { position: fixed; right: 0; top: 0; bottom: 0; width: 420px; background: rgba(12,16,30,0.98); border-left: 1px solid #1a2040; padding: 60px 20px 20px; overflow-y: auto; transform: translateX(100%); transition: transform 0.3s; z-index: 99; }
+  #sidebar.open { transform: translateX(0); }
+  #sidebar h2 { font-size: 15px; margin-bottom: 8px; }
+  #sidebar h3 { color: #a0c4ff; font-size: 12px; margin: 14px 0 6px; border-bottom: 1px solid #1a2040; padding-bottom: 3px; }
+  #sidebar .prop { font-size: 11px; color: #ccc; margin: 3px 0; padding: 3px 8px; background: rgba(255,255,255,0.03); border-radius: 3px; }
+  #sidebar .prop b { color: #7eb8ff; }
+  #sidebar .rel { font-size: 11px; margin: 3px 0; padding: 3px 8px; background: rgba(126,184,255,0.06); border-radius: 3px; }
+  #sidebar .rel .arrow { color: #f0a040; }
+  #sidebar .example { font-size: 10px; color: #999; margin: 2px 0 2px 12px; font-style: italic; }
+  #sidebar .close-btn { position: absolute; top: 60px; right: 16px; cursor: pointer; color: #666; font-size: 20px; }
+  #sidebar .tag { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 9px; margin: 1px 2px; }
+  #legend { position: fixed; bottom: 16px; left: 16px; background: rgba(12,16,30,0.92); border: 1px solid #1a2040; border-radius: 8px; padding: 12px 16px; z-index: 100; max-width: 380px; }
+  #legend h4 { font-size: 11px; color: #888; margin-bottom: 6px; }
+  #legend .item { display: flex; align-items: center; gap: 8px; font-size: 10px; margin: 3px 0; }
+  #legend .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  #legend .line-sample { width: 24px; height: 2px; flex-shrink: 0; }
+  #legend hr { border: none; border-top: 1px solid #1a2040; margin: 6px 0; }
+  #controls { position: fixed; bottom: 16px; right: 16px; z-index: 100; display: flex; gap: 8px; }
+  #controls button { background: rgba(30,40,70,0.9); border: 1px solid #2a3a60; color: #aaa; padding: 5px 12px; border-radius: 6px; cursor: pointer; font-size: 11px; }
+  #controls button:hover { background: #2a3a60; color: #fff; }
+  #controls button.active { background: #2a5a9a; color: #fff; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Fish-Price Knowledge Graph Ontology
+    <span class="badge">v0 — Class schema + 데이터 파이프라인</span>
+    <span class="badge" style="background:#1a3a3a;color:#88ffcc">Hormuz 패턴 차용</span>
+    <span class="badge" style="background:#3a2a1a;color:#ffcc88">Verification: estimate_v0 (v1 1차 출처 대조 예정)</span>
+  </h1>
+  <p>수산물 수입가격 모니터링 KG 온톨로지 v0 | fish_price_kg_v0.json 기준 146 nodes · 426 edges · 14 relations | 클래스 30개 + 외부 자산·파이프라인·모델까지 포괄 | 노드 클릭 → 상세정보 | 드래그 → 이동 | 휠 → 줌</p>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<div id="sidebar">
+  <span class="close-btn" onclick="closeSidebar()">&times;</span>
+  <div id="sidebar-content"></div>
+</div>
+
+<div id="legend">
+  <h4>ONTOLOGY LAYERS</h4>
+  <div class="item"><div class="dot" style="background:#e74c3c"></div>L1: 입력 데이터 (가격·뉴스 source)</div>
+  <div class="item"><div class="dot" style="background:#f1c40f"></div>L0: EventType enum (분류)</div>
+  <div class="item"><div class="dot" style="background:#27ae60"></div>L2: Origin/Species/Category (수산 핵심)</div>
+  <div class="item"><div class="dot" style="background:#9b59b6"></div>L2: Disease/Season/Regulation/Input/Demand (도메인)</div>
+  <div class="item"><div class="dot" style="background:#f39c12"></div>L2: Maritime Infra (Hormuz 상속)</div>
+  <div class="item"><div class="dot" style="background:#1abc9c"></div>L3: Pipeline (전처리·LLM 추출)</div>
+  <div class="item"><div class="dot" style="background:#3498db"></div>L4: Korea Sector(7) / Company</div>
+  <div class="item"><div class="dot" style="background:#e91e63"></div>L5: Model (Nowcast/Forecast/Output)</div>
+  <div class="item"><div class="dot" style="background:#95a5a6"></div>External: Scenarios / Events / Queries</div>
+  <hr>
+  <h4>EDGE TYPES (14 relations)</h4>
+  <div class="item"><div class="line-sample" style="background:rgba(150,170,220,0.5)"></div>combinesInto / producesAt / belongsTo / operatesIn (구조)</div>
+  <div class="item"><div class="line-sample" style="background:#3498db"></div>vulnerableTo / inSeason / requiresInput / regulatedBy / demandedBy (속성)</div>
+  <div class="item"><div class="line-sample" style="background:#e67e22"></div>transportedBy / transitsThrough / shipsTo / bypasses (운송)</div>
+  <div class="item"><div class="line-sample" style="background:rgba(241,196,15,0.6);border-top:1px dashed rgba(241,196,15,0.6);height:0"></div>classifiedAs (EventType 분류)</div>
+  <div class="item"><div class="line-sample" style="background:rgba(149,165,166,0.4);border-top:1px dashed rgba(149,165,166,0.4);height:0"></div>references (외부 자산 → KG)</div>
+</div>
+
+<div id="controls">
+  <button onclick="resetView()">Reset</button>
+  <button id="btnAll" class="active" onclick="showLayer('all')">All</button>
+  <button id="btnCore" onclick="showLayer('core')">Core (수산 핵심)</button>
+  <button id="btnInherited" onclick="showLayer('inherited')">Hormuz 상속</button>
+  <button id="btnExternal" onclick="showLayer('external')">External</button>
+</div>
+
+<script>
+// ============================================================
+// CLASS DEFINITIONS — Fish-Price KG 온톨로지 클래스 스키마
+// 인스턴스 데이터는 fish_price_kg_v0.json에 있고, 여기서는 클래스 구조만 시각화
+// ============================================================
+const classes = [
+  // ============================================================
+  // === L1: 입력 데이터 (data sources) ===
+  // ============================================================
+  { id: "TradeStatPrice", label: "Trade Stat\nPrice\n(가격 데이터)", cat: "input", x: 80, y: 80, layer: "input",
+    desc: "★ 가격 데이터 1차 source. 무역통계진흥원 HS코드별 수입가격(유료). 약 2주 공개 시차 — 본 시스템의 nowcasting 필요성의 근원. HS코드 단위 raw 데이터는 그대로 공개 불가, 카테고리 집계 후 공개 가능.",
+    props: ["source: 무역통계진흥원 (유료)", "unit: HS코드별, 수입가격 (USD/kg 또는 KRW/kg)", "frequency: 월간 또는 주간 (협의 후 확정)", "publishLag: ~14일 (10~11일 전 데이터까지 가용)", "coverage: 2005년~현재 (신진원 책임 확보)", "downstream: → CategoryAggregation"],
+    examples: ["HS 0302~0307 (어류 신선·냉장·냉동·건조)", "HS 0306 (갑각류 — 새우·게)", "HS 0307 (연체동물 — 오징어·낙지·문어)"] },
+
+  { id: "NewsSignal", label: "News\nSignal\n(뉴스 신호)", cat: "input", x: 220, y: 80, layer: "input",
+    desc: "★ 가격 영향 이벤트의 source. (a) 과거 데이터 — 모델 개발용, 결손 허용. (b) 실시간 데이터 — 운영용, 안정성·라이선스 우선. 매체별 RSS·스크래핑·API 조합으로 수집.",
+    props: ["sources_past: GDELT 2.0(2017~), 한국수산경제(fisheco.com 2005~), Common Crawl, Wayback Machine", "sources_realtime: RSS·정기 스크래핑, GDELT 15분 스트림, SeafoodSource 등", "fields: source_url, source_domain, language, published_at, title, body(또는 발췌), entities", "downstream: → EventExtractor (LLM 추출)", "validation: source-availability-check-2026-05-07.md 참조"],
+    examples: ["fisheco.com idxno=1~93000+ (한국 수산 21년 아카이브, 단일 최고 가치)", "GDELT TimelineVol API (영문 메타데이터 backbone)", "한국어 검색 한계로 fisheco 등 직접 스크래핑 본진"] },
+
+  // ============================================================
+  // === L0: EventType enum (12개) ===
+  // ============================================================
+  { id: "EventType", label: "EventType\n(이벤트유형 enum)", cat: "eventtype", x: 540, y: 60, layer: "core",
+    desc: "LLM이 뉴스에서 추출한 이벤트의 event_type 필드 분류 enum. 시점 인스턴스가 아닌 클래스. KG 내 다른 노드와 직접 엣지로 연결되지 않으나, DIS_·REG_ 등이 classifiedAs 엣지로 자동 분류됨.",
+    props: ["id: ET_*", "name / nameEn / aliases: [string]", "classifiedAs: 역방향 (DIS/REG → ET)", "(시점 데이터 없음 — 분류 enum)"],
+    examples: ["ET_Disease, ET_Logistics, ET_Politics, ET_War, ET_Weather, ET_Regulation, ET_TradeDispute, ET_Pandemic, ET_Contamination, ET_DemandShock, ET_FeedCost, ET_FuelCost (총 12개)"] },
+
+  // === L2: 수산 도메인 핵심 — Origin / Species / Category (자동 derive) ===
+  { id: "Origin", label: "Origin\n(생산국)", cat: "core", x: 200, y: 200, layer: "core",
+    desc: "수산물 생산국. v0에서 국가 단위 12개. v1에서 어장(FAO 어장) 단위로 세분화 예정. primary_supply 필드는 카테고리 자동 derive의 기준.",
+    props: ["id: ORG_*", "name / nameEn / aliases / iso2", "primary_supply: [string] — 한국 수출 주력 어종 키워드", "producesAt: → SP (정량: globalProductionShare_pct, koreaImportShare_pct, productionMethod)", "combinesInto: → CAT", "operatesIn: ORG_Korea → KS_*"],
+    examples: ["ORG_Norway: salmon/mackerel/cod (양식+자연산)", "ORG_Chile: salmon (양식 25% global)", "ORG_Thailand: shrimp (양식, EMS 영향 후 점유율 감소)", "ORG_Vietnam: shrimp/pangasius (palm 90%+)", "ORG_Russia: pollock/crab (자연산)", "ORG_China: crab/squid/eel/hairtail + minor", "ORG_Korea: hairtail/squid (자체 어획)", "+5 (Indonesia, Peru, Iceland, Japan, USA)"] },
+
+  { id: "SeafoodProduct", label: "Seafood\nProduct\n(어종)", cat: "core", x: 380, y: 200, layer: "core",
+    desc: "어종 마스터 (taxonomy 단위). v0 12개. v1에서 30+ 확장 + FAO ASFIS 코드 매핑 예정.",
+    props: ["id: SP_*", "name / nameEn / aliases", "category_hint: string", "vulnerableTo: → DIS (정량: severityScore, typicalMortalityRate_pct, outbreakFrequency, recoveryMonths)", "inSeason: → SEA (정량: peakIntensity, priceImpact_pct)", "requiresInput: → AQI (양식 한정, 정량: costShare_pct, substitutability)", "combinesInto: → CAT"],
+    examples: ["SP_Salmon (연어, 주로 양식)", "SP_Mackerel (고등어, 자연산)", "SP_Shrimp (새우, 양식)", "SP_Tuna (참치, 원양)", "SP_Pollock (명태, 자연산)", "SP_Octopus, SP_Squid, SP_Crab, SP_Hairtail, SP_Cod, SP_Pangasius, SP_Eel"] },
+
+  { id: "SeafoodCategory", label: "Seafood\nCategory\n(★ 자동 derive)", cat: "core", x: 540, y: 280, layer: "core",
+    desc: "★ 가격 시계열의 단위. Origin × Species 조합으로 자동 생성. v0에서 36개 카테고리 자동 derive. ORG.primary_supply ⊃ SP_KEY 매칭 시 CAT 노드 자동 생성. 새 ORG/SP 추가 시 카테고리도 자동 확장.",
+    props: ["id: CAT_{Origin}_{Species}", "name / nameEn (예: '노르웨이산 연어')", "origin: → ORG", "species: → SP", "regulatedBy: → REG (수입 카테고리는 모두 REG_Korea_Quarantine, 양식은 ASC, 자연산은 MSC)", "demandedBy: → DOM (정량: demandIntensity, priceElasticity, seasonalPriceShift_pct)", "transportedBy: → VT (정량: typicalTransitDays, coldChainRequired, usageShare_pct)", "transitsThrough: → CP (Hormuz 상속 패턴)"],
+    examples: ["CAT_Norway_Salmon, CAT_Norway_Mackerel, CAT_Norway_Cod", "CAT_Chile_Salmon", "CAT_Thailand_Shrimp, CAT_Thailand_Tuna", "CAT_Vietnam_Shrimp, CAT_Vietnam_Pangasius, CAT_Vietnam_Tuna", "CAT_Russia_Pollock, CAT_Russia_Crab, CAT_Russia_Salmon", "CAT_China_Eel, CAT_China_Hairtail, CAT_China_Squid, ...", "(총 36개, categories_v0.csv 참조)"] },
+
+  // === L2: 수산 도메인 부속 — Disease / Season / Regulation / Input / Demand ===
+  { id: "FishDisease", label: "Fish\nDisease\n(어종 질병)", cat: "domain", x: 720, y: 200, layer: "core",
+    desc: "어종별 질병. v0 8개. classifiedAs ET_Disease로 자동 분류. v1에서 자연산 질병·기생충 추가 예정.",
+    props: ["id: DIS_*", "name / nameEn / aliases", "affects: [SP_*]", "severityScore: 1-5", "typicalMortalityRate_pct: 0-100", "outbreakFrequency: rare/occasional/frequent/endemic", "recoveryMonths: 0-60", "affectsAquacultureOnly: bool", "classifiedAs: → ET_Disease"],
+    examples: ["DIS_ISA (연어 빈혈증, 양식 90% 폐사)", "DIS_EMS_AHPND (새우 조기사망, 70% 폐사)", "DIS_WhiteSpot (백점병)", "DIS_IPN, DIS_Vibriosis", "DIS_Norovirus (오염, 시장 거부 효과)", "DIS_Saprolegnia, DIS_AvianFlu"] },
+
+  { id: "Season", label: "Season\n(어기·계절성)", cat: "domain", x: 880, y: 200, layer: "core",
+    desc: "어종별 어기·산란기·금어기 등 계절성 패턴. v0 5개.",
+    props: ["id: SEA_*", "name / nameEn", "months: [int]", "affects: [SP_*]", "peakIntensity: -5 ~ +5 (양수: 공급 풍부 시즌, 음수: 부족)", "priceImpact_pct: -100 ~ +100", "inSeason: 역방향 (SP → SEA)"],
+    examples: ["SEA_Mackerel_Peak (8-11월, +10% 공급, -10% 가격)", "SEA_Pollock_FishingBan (한국 자체 금어기)", "SEA_Squid_Spawning (4-6월, 산란기)", "SEA_Salmon_Harvest (9-2월 양식 출하)", "SEA_Hairtail_Peak (가을)"] },
+
+  { id: "SeafoodRegulation", label: "Seafood\nRegulation\n(검역·인증·규제)", cat: "domain", x: 200, y: 380, layer: "core",
+    desc: "검역, 인증, 무역규제. v0 8개. classifiedAs ET_Regulation로 자동 분류. 후쿠시마 처리수처럼 단기 가격 충격 사례 포함.",
+    props: ["id: REG_*", "name / nameEn / aliases", "regulatedBy: 역방향 (CAT → REG)", "classifiedAs: → ET_Regulation", "(v1 추가: regulationStrength enum, priceImpactDirection)"],
+    examples: ["REG_Korea_Quarantine (모든 수입 CAT)", "REG_FDA_ImportAlert (글로벌 redirection)", "REG_EU_HealthCert", "REG_MSC (자연산 인증)", "REG_ASC (양식 인증)", "REG_FAO_Quota (원양어업 쿼터)", "REG_Fukushima_TreatedWater (한국 검역+소비 위축)", "REG_AntibioticResidue"] },
+
+  { id: "AquacultureInput", label: "Aquaculture\nInput\n(양식 투입)", cat: "domain", x: 380, y: 380, layer: "core",
+    desc: "양식 사료·종묘·항생제 등 투입 자원. 양식 어종의 비용 구조와 직결. v0 5개.",
+    props: ["id: AQI_*", "name / nameEn / aliases", "requiresInput: 역방향 (SP → AQI, 양식 어종 한정)", "costShare_pct: 0-100 (사료·투입자원비 중 비중)", "substitutability: low/medium/high"],
+    examples: ["AQI_Fishmeal (어분, 페루·칠레 anchoveta 의존)", "AQI_FishOil (어유, 대체 어려움)", "AQI_FeedSoy (대두 사료, 팡가시우스)", "AQI_Antibiotic (잔류 규제 대상)", "AQI_Vaccine (장어 등)"] },
+
+  { id: "DomesticDemand", label: "Domestic\nDemand\n(국내 수요)", cat: "domain", x: 720, y: 380, layer: "core",
+    desc: "한국 국내 수산물 수요 사이클. 명절·계절·급식 등. 가격 시계열에 명확한 패턴 관측. v0 5개.",
+    props: ["id: DOM_*", "name / nameEn / aliases", "months: [int]", "demandedBy: 역방향 (CAT → DOM)", "demandIntensity: 1-5", "priceElasticity_estimate: -3 ~ +3 (음수: 가격 하락 시 수요 증가)", "seasonalPriceShift_pct: -100 ~ +100"],
+    examples: ["DOM_Seollal (설, intensity 4)", "DOM_Chuseok (추석, intensity 4)", "DOM_SummerVacation (휴가철, intensity 3)", "DOM_YearEnd (송년 회식, intensity 3)", "DOM_SchoolLunch (학교 급식, intensity 4)"] },
+
+  // === L2: Hormuz 상속 — Maritime Infrastructure ===
+  { id: "Chokepoint", label: "Chokepoint\n(초크포인트)", cat: "maritime", x: 200, y: 540, layer: "inherited",
+    desc: "해상 공급망의 병목 지점. Hormuz Crisis KG에서 6개 상속(CP_Lombok 제외 — 호주 광물선 위주, 수산 통과량 미미). 수산 직접 통과는 일부, 유가→연료비 간접 영향 큼.",
+    props: ["id: CP_* (Hormuz 상속)", "name / region / widthKm", "baselineDailyTransits", "globalOilShare / globalContainerShare / globalLNGShare (Hormuz)", "transitsThrough: 역방향 (CAT/SP → CP)"],
+    examples: ["CP_Suez (노르웨이/유럽산 연어·고등어 주 경로)", "CP_Malacca (동남아/유럽발 핵심)", "CP_BabElMandeb (수에즈 연결)", "CP_Panama (칠레산 연어 일부)", "CP_Taiwan (중국·일본 → 한국)", "CP_Hormuz (직접 수산 미미, 유가→연료비 간접)"] },
+
+  { id: "BypassInfrastructure", label: "Bypass\nInfra\n(우회 인프라)", cat: "maritime", x: 360, y: 540, layer: "inherited",
+    desc: "초크포인트 봉쇄 시 가용한 우회 옵션. Hormuz에서 5개 그대로 상속. 수산에 직접적이지 않으나 호르무즈 위기 시 글로벌 운송 비용 영향을 통해 간접 작용.",
+    props: ["id: BP_* (Hormuz 상속)", "name / operator / capacity", "bypasses: → CP", "(Hormuz 정량 그대로)"],
+    examples: ["BP_FujairahPipeline (UAE 호르무즈 우회 ~150만 bpd)", "BP_SaudiEastWest (Petroline)", "BP_CapeRoute (희망봉 우회)", "BP_OmanLand (오만 육상)", "+1"] },
+
+  { id: "ForeignPort", label: "Foreign\nPort\n(해외항만)", cat: "maritime", x: 540, y: 540, layer: "inherited",
+    desc: "해외 수산 출항지. Hormuz 21개 중 13개 제외(유류·LNG·광물·페르시아만 항만). 수산 관련 8개 상속.",
+    props: ["id: FP_* (Hormuz 상속)", "name / nameEn / country / region", "transitCPs: [CP_*]", "shipsTo: → CAT (러시아 카테고리에 정량 frequency)"],
+    examples: ["FP_Vladivostok (러시아 수산물 1순위)", "FP_Vancouver (캐나다 연어·게)", "FP_Rotterdam (유럽 환적 허브)", "FP_Yokohama (일본 참치)", "FP_Kaohsiung (대만 환적)", "FP_Lianyungang, FP_Qingdao (중국)", "FP_Indonesian (동남아 통합)"] },
+
+  { id: "KoreaPort", label: "Korea\nPort\n(한국항만)", cat: "maritime", x: 720, y: 540, layer: "inherited",
+    desc: "한국 수산 진입 항만. Hormuz 13개 중 9개 제외(정유·LNG·제철소 전용). 수산 가능 4개 상속.",
+    props: ["id: KP_* (Hormuz 상속)", "name / primaryCargo", "shipsTo: 역방향 (FP → KP)"],
+    examples: ["KP_Busan (수산+컨테이너 메인. 자갈치)", "KP_Incheon (수도권 진입)", "KP_Gunsan (서해 진입)", "KP_Boryeong (서해 소형)"] },
+
+  { id: "Vessel", label: "Vessel\n(선종)", cat: "maritime", x: 880, y: 540, layer: "inherited",
+    desc: "수산 운송 선박. Hormuz 8개 중 7개 제외(유조선·LNG선·legacy 냉장선). VT_Container만 default. v1에서 항공 cargo·활어운반선·신규 reefer 컨테이너선 추가 예정.",
+    props: ["id: VT_* (Hormuz 상속)", "name / capacity", "transportedBy: 역방향 (CAT → VT)"],
+    examples: ["VT_Container (모든 CAT의 default 운송수단, 리퍼 컨테이너 포함)"] },
+
+  // ============================================================
+  // === L3: 데이터 파이프라인 (전처리·LLM 추출) ===
+  // ============================================================
+  { id: "CategoryAggregation", label: "Category\nAggregation\n(HS→CAT 가공)", cat: "pipeline", x: 80, y: 280, layer: "core",
+    desc: "★ HS코드별 raw 가격 데이터를 카테고리(국가×어종) 단위로 집계하는 전처리 파이프라인. KG의 SeafoodCategory 노드 ID와 매핑되며, 카테고리 정의 변경 시 노트북 재실행으로 일괄 재집계 가능.",
+    props: ["input: TradeStatPrice (HS코드별)", "mapping: data/reference/hs_to_category.csv (이정미 박사·신진원 책임)", "output: 카테고리별 가격 시계열 (data/processed/category_prices.parquet)", "aggregation_rule: 가중평균(거래량 기반) 또는 단순평균 — Phase 0 검토", "automation: notebooks/processing/01_aggregate_prices.ipynb (예정)", "constraint: HS코드 단위 직접 공개 금지 — 본 단계 산출물(카테고리 집계)이 공개 가능 단위"],
+    examples: ["HS 0302.14 (Atlantic salmon, fresh) + HS 0303.13 (frozen) + ... → CAT_Norway_Salmon", "HS 0306.17 (frozen shrimp) + 원산지 태국 → CAT_Thailand_Shrimp"] },
+
+  { id: "EventExtractor", label: "Event\nExtractor\n(LLM 이벤트 추출)", cat: "pipeline", x: 220, y: 280, layer: "core",
+    desc: "★ NewsSignal에서 가격 영향 이벤트를 LLM으로 추출. 추출된 이벤트는 KG 노드(ET_, DIS_, REG_, CAT_, ORG_ 등)로 자동 태깅. 본문 대신 추상화된 이벤트 feature를 모델에 투입(분포 차이 완화).",
+    props: ["input: NewsSignal (기사)", "output_schema: {event_id, event_type (→ ET_*), affected_categories ([CAT_*]), affected_origins ([ORG_*]), affected_routes ([CP_*/VT_*]), direction (up/down/uncertain), magnitude (low/medium/high), confidence (0~1), evidence_quote, source_url}", "kg_grounding: KG의 모든 enum·도메인 노드를 LLM context에 제공하여 enum 값 강제", "guidance: 카테고리별 risk profile (KG에서 derive) → LLM 정확도 향상", "downstream: → DynamicEvent (운영) 또는 BenchmarkScenario validation (검증)"],
+    examples: ["기사: '태국 새우 양식장 EMS 발병 확산' → {ET_Disease, CAT_Thailand_Shrimp, DIS_EMS_AHPND, direction:up, magnitude:high}", "기사: 'Norwegian salmon export hit by feed cost surge' → {ET_FeedCost, CAT_Norway_Salmon, AQI_Fishmeal, direction:up}"] },
+
+  // ============================================================
+  // === L4: 한국 수산 섹터·기업 (Hormuz 패턴 차용) ===
+  // ============================================================
+  { id: "KoreaSector", label: "Korea\nSector\n(한국 수산 부문 ★7개)", cat: "korea", x: 1080, y: 200, layer: "core",
+    desc: "Hormuz의 일반 산업 섹터(에너지·소재·제조 등) 모두 교체. 수산 도메인 7개 신규 정의.",
+    props: ["id: KS_*", "name / nameEn / aliases / description", "belongsTo: 역방향 (KC → KS)", "operatesIn: 역방향 (ORG_Korea → KS)"],
+    examples: ["KS_Aquaculture (양식업)", "KS_Fishery_Coastal (연근해)", "KS_Fishery_DeepSea (원양)", "KS_Processing (수산가공)", "KS_DistributionWholesale (도매유통)", "KS_RetailFood (소매·외식)", "KS_SeafoodImport (수입상)"] },
+
+  { id: "KS_Aquaculture", label: "KS\nAquaculture\n(양식업)", cat: "korea_sub", x: 1180, y: 100, layer: "core",
+    desc: "국내 해상·내수면 양식. 사료(AQI)·종묘·질병(DIS) 영향 직접. AQI 가격 변동 → 양식 비용 → 출하 가격 전파.",
+    props: ["subClassOf: KoreaSector", "exposure: AQI_Fishmeal/FishOil/Antibiotic/FeedSoy/Vaccine", "operatesIn: ← ORG_Korea", "(v1: 한국 양식 어종 cap, 광어/우럭/굴 등 추가)"],
+    examples: ["국내 양식 어종 — 광어, 우럭, 농어, 굴, 김, 미역 등 (v1 SP 확장 시 한국 양식 카테고리 추가)"] },
+  { id: "KS_FisheryCoastal", label: "KS\nFishery_Coastal\n(연근해어업)", cat: "korea_sub", x: 1280, y: 160, layer: "core",
+    desc: "한국 영해 어획. 갈치·오징어·낙지 등.",
+    props: ["subClassOf: KoreaSector", "operatesIn: ← ORG_Korea"],
+    examples: ["연근해 갈치, 오징어, 낙지 어획"] },
+  { id: "KS_FisheryDeepSea", label: "KS\nFishery_DeepSea\n(원양어업)", cat: "korea_sub", x: 1280, y: 220, layer: "core",
+    desc: "원양 어획 — 참치, 명태, 게 등. 동원산업·사조산업 등이 belongsTo.",
+    props: ["subClassOf: KoreaSector", "companies: KC_DongwonIndustries, KC_Sajo"],
+    examples: ["원양 참치, 명태, 대게 등"] },
+  { id: "KS_Processing", label: "KS\nProcessing\n(수산가공)", cat: "korea_sub", x: 1180, y: 280, layer: "core",
+    desc: "통조림·HMR·간편식. 가장 많은 KC가 소속.",
+    props: ["subClassOf: KoreaSector", "companies: KC_DongwonFB, KC_OYang, KC_HowonFood, KC_DaesangSusan, KC_CJSeafood"],
+    examples: ["참치 통조림, HMR 어묵, 즉석 수산물 등"] },
+  { id: "KS_DistributionWholesale", label: "KS\nDistributionWholesale\n(도매유통)", cat: "korea_sub", x: 1280, y: 340, layer: "core",
+    desc: "노량진·자갈치 등 수산물 도매 시장.",
+    props: ["subClassOf: KoreaSector", "companies: KC_NoryangjinMarket"],
+    examples: ["노량진수산시장 (서울), 자갈치 (부산)"] },
+  { id: "KS_RetailFood", label: "KS\nRetailFood\n(소매·외식)", cat: "korea_sub", x: 1180, y: 400, layer: "core",
+    desc: "대형마트 수산 코너 + 외식업. 소비자 가격 직결.",
+    props: ["subClassOf: KoreaSector", "companies: KC_LotteSeafood, KC_EmartSeafood, KC_HomeplusSeafood"],
+    examples: ["대형마트 수산 코너, 회·구이·초밥 외식"] },
+  { id: "KS_SeafoodImport", label: "KS\nSeafoodImport\n(수입상)", cat: "korea_sub", x: 1280, y: 460, layer: "core",
+    desc: "수산물 수입 전문업체.",
+    props: ["subClassOf: KoreaSector", "companies: KC_SallaeTrading"],
+    examples: ["신라교역 등"] },
+
+  { id: "KoreaCompany", label: "Korea\nCompany\n(한국 수산 기업)", cat: "korea", x: 1080, y: 540, layer: "core",
+    desc: "Hormuz의 74개 일반 산업 기업 모두 교체. 한국 수산 대표 12개 정의 (v0). v1에서 시가총액·매출·수입 의존도 정량 속성 추가 + 30+ 확장 예정.",
+    props: ["id: KC_*", "name / nameEn / aliases", "sector: KS_*", "belongsTo: → KS", "(v1 추가: marketCap, revenue, importDependency)"],
+    examples: ["KC_DongwonFB, KC_DongwonIndustries, KC_Sajo (대형 수산)", "KC_SallaeTrading (수입상)", "KC_OYang, KC_HowonFood, KC_DaesangSusan, KC_CJSeafood (가공)", "KC_LotteSeafood, KC_EmartSeafood, KC_HomeplusSeafood (대형마트 수산)", "KC_NoryangjinMarket (도매)"] },
+
+  // ============================================================
+  // === L5: 모델 (Nowcasting / Forecasting / Output) ===
+  // ============================================================
+  { id: "NowcastingModel", label: "Nowcasting\nModel\n(현재가 추정)", cat: "model", x: 80, y: 460, layer: "core",
+    desc: "★ 본 시스템의 메인 모델. T-14일 가격 + T-14~T 사이 이벤트 + 교란변수(환율·어기·명절) → T 시점 카테고리 가격 추정. LLM(이벤트 추출, qualitative) + 전통 시계열·회귀(수치 예측, quantitative) 하이브리드.",
+    props: ["input: T-14일 카테고리 가격, EventExtractor 출력 이벤트, control 변수", "output: T 시점 카테고리별 가격 추정값 + 신뢰구간", "structure: hybrid (LLM event features + ARIMA/회귀/ML)", "training: 1차 — 과거 backtest, 2차 — walk-forward (실시간 시범운영)", "validation: 신진원 책임 가격결과 검증 + 자동 정확도 누적", "metrics: MAPE, 방향성 정확도, 신뢰구간 calibration"],
+    examples: ["입력: 4월 23일 노르웨이산 연어 가격 + 4월 23일~5월 7일 사이 발생 이벤트 (사료비 충격, 항로 우회 등) → 출력: 5월 7일 노르웨이산 연어 추정가 ± 5%"] },
+
+  { id: "ForecastingModel", label: "Forecasting\nModel\n(미래가 예측)", cat: "model", x: 220, y: 460, layer: "core",
+    desc: "보조 모델. T 시점 정보(추정 현재가 + 진행 중 이벤트 + 교란 전망) → T+N 시점 가격 예측. nowcasting 대비 정확도 낮음 → 신뢰구간 충분히 표시.",
+    props: ["input: NowcastingModel 출력 + 진행 중 이벤트 + 환율·유가 전망", "output: T+N (N=2,4,8주) 카테고리 가격 예측 + 신뢰구간", "structure: time series + event-aware regression", "uncertainty: 신뢰구간 폭이 N 증가에 따라 확대"],
+    examples: ["5월 7일 nowcast 기반 5월 21일·6월 4일·6월 18일 노르웨이산 연어 예측가 ± 8%/12%/18%"] },
+
+  { id: "PricePrediction", label: "Price\nPrediction\n(가격 예측 출력)", cat: "model", x: 380, y: 460, layer: "core",
+    desc: "모델 출력 — 카테고리별 현재가 추정 + 미래 예측 시계열. 외부 공개 단위.",
+    props: ["category_id: → CAT", "as_of_date: 추정 시점", "nowcast_value: 현재가 추정 (KRW/kg 또는 USD/kg)", "nowcast_confidence_interval: [lo, hi]", "forecast_2w / 4w / 8w: 미래 예측값 + CI", "contributing_events: [event_id] (모델이 가격 추정에 사용한 이벤트들)", "explanation: LLM 자동 생성 설명 (가격 변동 원인)"],
+    examples: ["{category: CAT_Norway_Salmon, as_of: 2026-05-07, nowcast: 12,500 KRW/kg ± 8%, contributing_events: [evt_2026-04-29_redsea_freight_surge, evt_2026-05-03_isa_outbreak_norway]}"] },
+
+  { id: "BriefingReport", label: "Briefing\nReport\n(주간 브리핑)", cat: "model", x: 540, y: 460, layer: "core",
+    desc: "★ 외부 공개 산출물. Hormuz Crisis 서비스(scm-briefing.kmi.re.kr)와 유사한 형식. 카테고리별 추정·예측·설명 통합.",
+    props: ["frequency: 주간", "format: HTML 대시보드 + PDF 다운로드", "sections: 주요 카테고리 가격 동향, 위험 카테고리 알림, 진행 중 이벤트 요약, 카테고리별 nowcast vs forecast 차트", "audience: 정부·산업 의사결정자", "url_pattern: scm-briefing.kmi.re.kr/fish-price/weekly_report.html (예정)"],
+    examples: ["주간 수산물 가격 모니터링 브리핑 (Phase 4 본 서비스부터 외부 공개)"] },
+
+  // === KG 외부 자산 ===
+  { id: "BenchmarkScenario", label: "Benchmark\nScenario\n(검증용 시점)", cat: "external", x: 200, y: 700, layer: "external",
+    desc: "★ KG 외부 — backtest 검증용 역사적 사건. notebooks/03_build_benchmark_scenarios.ipynb로 생성. KG 노드 ID로 affects 참조하여 KG 변경 시 자동 검증.",
+    props: ["scenario_id: BS_*", "name / nameEn / event_type (→ ET_*)", "startDate / endDate", "affects: {category_ids, species_ids, origin_ids, disease_ids, regulation_ids, ...} → KG 노드 ID 참조", "observed_impact: {description, priceImpact_pct, volumeImpact_pct}", "dataSource: [string] (1차 출처)", "relatedNewsKeywords: [string]"],
+    examples: ["BS_2007_Chile_SalmonISA → ET_Disease, CAT_Chile_Salmon, DIS_ISA", "BS_2013_SEAsia_ShrimpEMS → ET_Disease, DIS_EMS_AHPND", "BS_2020_COVID_Seafood → ET_Pandemic", "BS_2022_Ukraine_FeedShock → ET_FeedCost, AQI_Fishmeal", "BS_2023_Fukushima_TreatedWater → ET_Regulation", "BS_2024_RedSea_Reroute → ET_Logistics, CP_BabElMandeb"] },
+
+  { id: "DynamicEvent", label: "Dynamic\nEvent\n(운영 LLM 추출)", cat: "external", x: 540, y: 700, layer: "external",
+    desc: "★ KG 외부 — 운영 파이프라인이 매시간 LLM 이벤트 추출 누적. dynamic_events.parquet (예정). Phase 3 시범운영부터 가동.",
+    props: ["event_id / detected_at", "event_type: → ET_*", "severity: 1-5 / confidence: 0-1", "affected_categories: [CAT_*]", "affected_origins: [ORG_*]", "affected_routes: [CP_*/VT_*]", "source_url / source_domain / source_language", "evidence_quote", "estimated_price_direction (up/down/uncertain)", "estimated_lag_days"],
+    examples: ["(Phase 3 가동 시 시계열 누적 시작)"] },
+
+  { id: "NewsQuery", label: "News\nQuery\n(KG 자동 derive)", cat: "external", x: 880, y: 700, layer: "external",
+    desc: "★ KG 외부 — 수집 쿼리. notebooks/02_derive_news_queries.ipynb로 KG 노드 name·nameEn·aliases에서 자동 derive. KG 변경 시 자동 갱신.",
+    props: ["query_sets: 13개 차원 (Hormuz 5 상속 + Fish-Price 8 신규)", "각 차원: {en: [string], ko: [string], derived_from: KG 노드 타입 또는 domain_constant, note}", "category_query_hints: 36개 (CAT별 origin·species 키워드)", "gdelt_length_warnings: GDELT 4글자 제약 경고"],
+    examples: ["D-Species (39 EN / 27 KO) ← kg.seafood_product", "D-Origin (28/12) ← kg.origin", "D-Disease (24/11) ← kg.fish_disease", "D-SeafoodReg (22/13) ← kg.seafood_regulation", "D-Korea_Fish (14/21) ← kg.domestic_demand + 도메인 상수", "Hormuz 상속: D1_초크포인트, D3_인프라, D4_운송, D6_교란행위, D7_행위자"] },
+];
+
+// ============================================================
+// RELATIONS — 14개 엣지 관계 (KG 내 + 외부 참조)
+// ============================================================
+const relations = [
+  // 카테고리 자동 derive
+  { from: "Origin", to: "SeafoodCategory", label: "combinesInto", desc: "ORG × SP = CAT 자동 derive 핵심", style: "structure" },
+  { from: "SeafoodProduct", to: "SeafoodCategory", label: "combinesInto", desc: "ORG × SP = CAT 자동 derive 핵심", style: "structure" },
+
+  // 생산
+  { from: "Origin", to: "SeafoodProduct", label: "producesAt", desc: "정량: globalProductionShare_pct, koreaImportShare_pct, productionMethod", style: "structure", props: "100% 정량 (36/36)" },
+
+  // 어종 속성
+  { from: "SeafoodProduct", to: "FishDisease", label: "vulnerableTo", desc: "정량: severityScore, typicalMortalityRate_pct, outbreakFrequency", style: "attribute", props: "100% 정량 (12/12)" },
+  { from: "SeafoodProduct", to: "Season", label: "inSeason", desc: "정량: peakIntensity, priceImpact_pct", style: "attribute", props: "100% 정량 (5/5)" },
+  { from: "SeafoodProduct", to: "AquacultureInput", label: "requiresInput", desc: "양식 어종 한정. 정량: costShare_pct, substitutability", style: "attribute", props: "100% 정량 (8/8)" },
+
+  // 카테고리 속성
+  { from: "SeafoodCategory", to: "SeafoodRegulation", label: "regulatedBy", desc: "수입 CAT → REG_Korea_Quarantine, 양식 → REG_ASC, 자연산 → REG_MSC", style: "attribute", props: "v0 구조 only, v1 정량 보강" },
+  { from: "SeafoodCategory", to: "DomesticDemand", label: "demandedBy", desc: "정량: demandIntensity, priceElasticity_estimate, seasonalPriceShift_pct", style: "attribute", props: "100% 정량 (133/133)" },
+
+  // 운송 (Hormuz 상속 패턴)
+  { from: "SeafoodCategory", to: "Vessel", label: "transportedBy", desc: "정량: typicalTransitDays, coldChainRequired, usageShare_pct", style: "transport", props: "100% 정량 (36/36)" },
+  { from: "SeafoodCategory", to: "Chokepoint", label: "transitsThrough", desc: "Hormuz 상속 패턴 — 카테고리가 초크포인트 통과", style: "transport" },
+  { from: "ForeignPort", to: "SeafoodCategory", label: "shipsTo", desc: "FP → CAT 출항지 매핑 (Vladivostok→러시아 CAT 3개에 정량 frequency)", style: "transport" },
+  { from: "ForeignPort", to: "KoreaPort", label: "shipsTo", desc: "Hormuz 상속 — 해외항만 → 한국항만 직접 항로 (수산 운송 일부 활용)", style: "transport" },
+  { from: "BypassInfrastructure", to: "Chokepoint", label: "bypasses", desc: "Hormuz 상속 — 우회 인프라가 초크포인트 우회", style: "transport" },
+
+  // 한국 부문
+  { from: "KoreaCompany", to: "KoreaSector", label: "belongsTo", desc: "기업이 섹터 소속", style: "structure" },
+  { from: "Origin", to: "KoreaSector", label: "operatesIn", desc: "ORG_Korea → KS_Aquaculture/Fishery_Coastal/Fishery_DeepSea (한국 자체 어업·양식)", style: "structure", props: "ORG_Korea만" },
+
+  // EventType 분류
+  { from: "FishDisease", to: "EventType", label: "classifiedAs", desc: "DIS_* → ET_Disease 자동 분류", style: "classify" },
+  { from: "SeafoodRegulation", to: "EventType", label: "classifiedAs", desc: "REG_* → ET_Regulation 자동 분류", style: "classify" },
+
+  // KG 외부 자산 → KG 노드 references
+  { from: "BenchmarkScenario", to: "EventType", label: "references", desc: "scenario.event_type", style: "ref" },
+  { from: "BenchmarkScenario", to: "SeafoodCategory", label: "references", desc: "scenario.affects.category_ids", style: "ref" },
+  { from: "BenchmarkScenario", to: "FishDisease", label: "references", desc: "scenario.affects.disease_ids", style: "ref" },
+  { from: "DynamicEvent", to: "EventType", label: "references", desc: "event.event_type (LLM 추출)", style: "ref" },
+  { from: "DynamicEvent", to: "SeafoodCategory", label: "references", desc: "event.affected_categories (LLM 추출)", style: "ref" },
+  { from: "NewsQuery", to: "SeafoodProduct", label: "derives_from", desc: "D-Species는 SP 노드의 name/nameEn/aliases에서 자동 추출", style: "ref" },
+  { from: "NewsQuery", to: "Origin", label: "derives_from", desc: "D-Origin은 ORG 노드에서 자동 추출", style: "ref" },
+  { from: "NewsQuery", to: "FishDisease", label: "derives_from", desc: "D-Disease는 DIS 노드에서 자동 추출", style: "ref" },
+
+  // === 데이터 파이프라인 (input → pipeline → model) ===
+  { from: "TradeStatPrice", to: "CategoryAggregation", label: "feeds", desc: "HS코드별 가격 → 카테고리 집계 입력", style: "pipeline" },
+  { from: "CategoryAggregation", to: "SeafoodCategory", label: "produces", desc: "카테고리별 가격 시계열 생성 → CAT 노드와 매핑", style: "pipeline" },
+  { from: "NewsSignal", to: "EventExtractor", label: "feeds", desc: "기사 → LLM 이벤트 추출 입력", style: "pipeline" },
+  { from: "NewsQuery", to: "NewsSignal", label: "queries", desc: "쿼리가 NewsSignal 수집 범위 결정", style: "pipeline" },
+  { from: "EventExtractor", to: "DynamicEvent", label: "produces", desc: "추출 결과를 dynamic_events.parquet로 누적", style: "pipeline" },
+  { from: "EventExtractor", to: "EventType", label: "uses_enum", desc: "ET_ enum으로 event_type 분류", style: "ref" },
+  { from: "EventExtractor", to: "SeafoodCategory", label: "uses_enum", desc: "CAT_ ID로 affected_categories 태깅", style: "ref" },
+
+  // === 모델 입력·출력 ===
+  { from: "SeafoodCategory", to: "NowcastingModel", label: "feeds_price", desc: "T-14일 카테고리 가격 시계열 → nowcasting 입력", style: "model_in" },
+  { from: "DynamicEvent", to: "NowcastingModel", label: "feeds_event", desc: "T-14~T 사이 이벤트 → nowcasting 입력 feature", style: "model_in" },
+  { from: "BenchmarkScenario", to: "NowcastingModel", label: "validates", desc: "역사 시나리오로 backtest 정확도 검증", style: "ref" },
+  { from: "NowcastingModel", to: "PricePrediction", label: "produces", desc: "현재가 추정 출력", style: "pipeline" },
+  { from: "NowcastingModel", to: "ForecastingModel", label: "feeds", desc: "현재가 추정값을 미래 예측의 base로", style: "pipeline" },
+  { from: "ForecastingModel", to: "PricePrediction", label: "produces", desc: "미래 예측 출력 (T+N)", style: "pipeline" },
+  { from: "PricePrediction", to: "BriefingReport", label: "feeds", desc: "예측 결과를 주간 브리핑으로 가공", style: "pipeline" },
+
+  // === 한국 부문 subClassOf 계층 ===
+  { from: "KoreaSector", to: "KS_Aquaculture",          label: "subClassOf", desc: "양식업", style: "subclass" },
+  { from: "KoreaSector", to: "KS_FisheryCoastal",       label: "subClassOf", desc: "연근해어업", style: "subclass" },
+  { from: "KoreaSector", to: "KS_FisheryDeepSea",       label: "subClassOf", desc: "원양어업", style: "subclass" },
+  { from: "KoreaSector", to: "KS_Processing",           label: "subClassOf", desc: "수산가공", style: "subclass" },
+  { from: "KoreaSector", to: "KS_DistributionWholesale", label: "subClassOf", desc: "도매유통", style: "subclass" },
+  { from: "KoreaSector", to: "KS_RetailFood",           label: "subClassOf", desc: "소매·외식", style: "subclass" },
+  { from: "KoreaSector", to: "KS_SeafoodImport",        label: "subClassOf", desc: "수입상", style: "subclass" },
+
+  // KC → 구체 sub-sector belongsTo (예시)
+  { from: "KoreaCompany", to: "KS_Processing", label: "belongsTo (예)", desc: "KC_DongwonFB·OYang·HowonFood·CJSeafood 등 5개사", style: "structure" },
+  { from: "KoreaCompany", to: "KS_FisheryDeepSea", label: "belongsTo (예)", desc: "KC_DongwonIndustries, KC_Sajo", style: "structure" },
+  { from: "KoreaCompany", to: "KS_RetailFood", label: "belongsTo (예)", desc: "KC_LotteSeafood·EmartSeafood·HomeplusSeafood", style: "structure" },
+
+  // ORG_Korea → 한국 어업·양식 섹터
+  { from: "Origin", to: "KS_Aquaculture",       label: "operatesIn (Korea)", desc: "ORG_Korea만", style: "structure" },
+  { from: "Origin", to: "KS_FisheryCoastal",    label: "operatesIn (Korea)", desc: "ORG_Korea만", style: "structure" },
+  { from: "Origin", to: "KS_FisheryDeepSea",    label: "operatesIn (Korea)", desc: "ORG_Korea만", style: "structure" },
+];
+
+// ===== RENDERING (Hormuz 패턴 차용) =====
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let W, H, scale = 1, offsetX = 0, offsetY = 0;
+let dragNode = null, dragOffX = 0, dragOffY = 0, dragMoved = false;
+let isPanning = false, panStartX = 0, panStartY = 0;
+let hoveredNode = null;
+let currentLayer = "all";
+
+const catColors = {
+  input:     "#e74c3c",     // L1 입력 데이터
+  eventtype: "#f1c40f",     // L0 enum
+  core:      "#27ae60",     // L2 수산 핵심
+  domain:    "#9b59b6",     // L2 수산 부속
+  maritime:  "#f39c12",     // L2 호르무즈 상속
+  pipeline:  "#1abc9c",     // L3 파이프라인
+  korea:     "#3498db",     // L4 한국 부문 (상위)
+  korea_sub: "#5dade2",     // L4 sub-sectors
+  model:     "#e91e63",     // L5 모델·출력
+  external:  "#95a5a6",     // KG 외부
+};
+
+function resize() {
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W * devicePixelRatio; canvas.height = H * devicePixelRatio;
+  canvas.style.width = W + "px"; canvas.style.height = H + "px";
+  ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+  draw();
+}
+window.addEventListener("resize", resize);
+
+function isVisible(node) {
+  if (currentLayer === "all") return true;
+  if (currentLayer === "core") return ["core","domain","eventtype","input","pipeline","model","korea","korea_sub"].includes(node.cat);
+  if (currentLayer === "inherited") return node.cat === "maritime";
+  if (currentLayer === "external") return node.cat === "external";
+  return true;
+}
+
+function toScreen(x, y) { return [x * scale + offsetX + W/2 - 600*scale, y * scale + offsetY + H/2 - 380*scale]; }
+function toWorld(sx, sy) { return [(sx - offsetX - W/2 + 600*scale)/scale, (sy - offsetY - H/2 + 380*scale)/scale]; }
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+
+  // Draw relations
+  for (const rel of relations) {
+    const fromNode = classes.find(c => c.id === rel.from);
+    const toNode = classes.find(c => c.id === rel.to);
+    if (!fromNode || !toNode || !isVisible(fromNode) || !isVisible(toNode)) continue;
+
+    const [x1, y1] = toScreen(fromNode.x, fromNode.y);
+    const [x2, y2] = toScreen(toNode.x, toNode.y);
+
+    ctx.beginPath();
+    if (rel.style === "structure") { ctx.strokeStyle = "rgba(150,170,220,0.5)"; ctx.setLineDash([]); ctx.lineWidth = 1.5; }
+    else if (rel.style === "attribute") { ctx.strokeStyle = "#3498db"; ctx.setLineDash([]); ctx.lineWidth = 1.8; }
+    else if (rel.style === "transport") { ctx.strokeStyle = "#e67e22"; ctx.setLineDash([]); ctx.lineWidth = 1.8; }
+    else if (rel.style === "classify") { ctx.strokeStyle = "rgba(241,196,15,0.6)"; ctx.setLineDash([5, 4]); ctx.lineWidth = 1.5; }
+    else if (rel.style === "pipeline") { ctx.strokeStyle = "#1abc9c"; ctx.setLineDash([]); ctx.lineWidth = 2.2; }
+    else if (rel.style === "model_in") { ctx.strokeStyle = "#e91e63"; ctx.setLineDash([2, 3]); ctx.lineWidth = 1.8; }
+    else if (rel.style === "subclass") { ctx.strokeStyle = "rgba(93,173,226,0.55)"; ctx.setLineDash([4, 3]); ctx.lineWidth = 1.2; }
+    else if (rel.style === "ref") { ctx.strokeStyle = "rgba(149,165,166,0.4)"; ctx.setLineDash([3, 4]); ctx.lineWidth = 1; }
+    else { ctx.strokeStyle = "rgba(150,170,220,0.3)"; ctx.setLineDash([]); ctx.lineWidth = 1.5; }
+
+    ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+
+    // Arrow
+    const angle = Math.atan2(y2 - y1, x2 - x1);
+    const ax = x1 + (x2-x1)*0.72, ay = y1 + (y2-y1)*0.72;
+    ctx.beginPath();
+    ctx.moveTo(ax, ay);
+    ctx.lineTo(ax - 7*Math.cos(angle - 0.4), ay - 7*Math.sin(angle - 0.4));
+    ctx.lineTo(ax - 7*Math.cos(angle + 0.4), ay - 7*Math.sin(angle + 0.4));
+    ctx.closePath(); ctx.fillStyle = ctx.strokeStyle; ctx.fill();
+
+    // Label
+    const mx = (x1+x2)/2, my = (y1+y2)/2;
+    ctx.font = `${8*scale}px Arial`;
+    ctx.fillStyle = "rgba(180,200,230,0.6)";
+    ctx.textAlign = "center";
+    ctx.setLineDash([]);
+    ctx.fillText(rel.label, mx, my - 3*scale);
+  }
+  ctx.setLineDash([]);
+
+  // Draw nodes
+  for (const node of classes) {
+    if (!isVisible(node)) continue;
+    const [x, y] = toScreen(node.x, node.y);
+    const r = 42 * scale;
+    const color = catColors[node.cat] || "#888";
+    const isHovered = hoveredNode === node;
+
+    if (isHovered) {
+      ctx.beginPath(); ctx.arc(x, y, r + 8, 0, Math.PI * 2);
+      ctx.fillStyle = color + "30"; ctx.fill();
+    }
+
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fillStyle = isHovered ? color : color + "CC";
+    ctx.fill();
+    ctx.strokeStyle = isHovered ? "#fff" : color;
+    ctx.lineWidth = isHovered ? 2 : 1.5;
+    ctx.stroke();
+
+    const lines = node.label.split("\n");
+    ctx.font = `bold ${9*scale}px Arial`;
+    ctx.fillStyle = "#fff";
+    ctx.textAlign = "center";
+    lines.forEach((line, i) => {
+      ctx.fillText(line, x, y + (i - (lines.length-1)/2) * 11*scale + 3);
+    });
+  }
+}
+
+function getNodeAt(sx, sy) {
+  const [wx, wy] = toWorld(sx, sy);
+  for (const node of [...classes].reverse()) {
+    if (!isVisible(node)) continue;
+    const dx = wx - node.x, dy = wy - node.y;
+    if (dx*dx + dy*dy < 46*46) return node;
+  }
+  return null;
+}
+
+function showSidebar(node) {
+  const sb = document.getElementById("sidebar-content");
+  const color = catColors[node.cat] || "#888";
+  const layerLabel = {
+    input:     'L1 입력 데이터',
+    eventtype: 'L0 EventType enum',
+    core:      'L2 수산 핵심',
+    domain:    'L2 수산 도메인',
+    maritime:  'L2 Hormuz 상속',
+    pipeline:  'L3 파이프라인',
+    korea:     'L4 한국 부문 (상위)',
+    korea_sub: 'L4 sub-sector',
+    model:     'L5 모델·출력',
+    external:  'KG 외부 자산',
+  }[node.cat] || node.cat;
+  const layerTag = `<span class="tag" style="background:#1a3a6a;color:#7eb8ff">${layerLabel}</span>`;
+
+  let html = `<h2 style="color:${color}">${node.id} ${layerTag}</h2>`;
+  if (node.desc) html += `<p style="font-size:12px;color:#bbb;margin-bottom:10px">${node.desc}</p>`;
+
+  html += `<h3>Properties (Schema)</h3>`;
+  for (const p of (node.props || [])) {
+    const [key, ...val] = p.split(":");
+    html += `<div class="prop"><b>${key}</b>:${val.join(":")}</div>`;
+  }
+
+  const rels = relations.filter(r => r.from === node.id || r.to === node.id);
+  if (rels.length > 0) {
+    html += `<h3>Relations (${rels.length})</h3>`;
+    for (const r of rels) {
+      const dir = r.from === node.id ? "OUT" : "IN";
+      const other = r.from === node.id ? r.to : r.from;
+      const arrow = dir === "OUT" ? "→" : "←";
+      html += `<div class="rel"><span class="arrow">${arrow}</span> <b>${r.label}</b> ${other}`;
+      if (r.props) html += `<br><span style="color:#888;font-size:10px">${r.props}</span>`;
+      if (r.desc) html += `<br><span style="color:#666;font-size:10px">${r.desc}</span>`;
+      html += `</div>`;
+    }
+  }
+
+  if (node.examples) {
+    html += `<h3>Instances / Examples</h3>`;
+    for (const ex of node.examples) html += `<div class="example">${ex}</div>`;
+  }
+
+  sb.innerHTML = html;
+  document.getElementById("sidebar").classList.add("open");
+}
+
+function closeSidebar() { document.getElementById("sidebar").classList.remove("open"); }
+
+function showLayer(layer) {
+  currentLayer = layer;
+  document.querySelectorAll("#controls button").forEach(b => b.classList.remove("active"));
+  const btnId = layer === "all" ? "btnAll" :
+                layer === "core" ? "btnCore" :
+                layer === "inherited" ? "btnInherited" : "btnExternal";
+  document.getElementById(btnId).classList.add("active");
+  draw();
+}
+
+canvas.addEventListener("mousedown", e => {
+  const node = getNodeAt(e.clientX, e.clientY);
+  if (node) {
+    dragNode = node; dragMoved = false;
+    const [wx, wy] = toWorld(e.clientX, e.clientY);
+    dragOffX = wx - node.x; dragOffY = wy - node.y;
+  } else {
+    isPanning = true;
+    panStartX = e.clientX - offsetX; panStartY = e.clientY - offsetY;
+  }
+});
+
+canvas.addEventListener("mousemove", e => {
+  if (dragNode) {
+    const [wx, wy] = toWorld(e.clientX, e.clientY);
+    dragNode.x = wx - dragOffX; dragNode.y = wy - dragOffY;
+    dragMoved = true; draw();
+  } else if (isPanning) {
+    offsetX = e.clientX - panStartX; offsetY = e.clientY - panStartY; draw();
+  } else {
+    const node = getNodeAt(e.clientX, e.clientY);
+    if (node !== hoveredNode) { hoveredNode = node; canvas.style.cursor = node ? "pointer" : "grab"; draw(); }
+  }
+});
+
+canvas.addEventListener("mouseup", e => {
+  if (dragNode && !dragMoved) showSidebar(dragNode);
+  dragNode = null; isPanning = false;
+});
+
+canvas.addEventListener("wheel", e => {
+  e.preventDefault();
+  scale = Math.max(0.3, Math.min(3, scale * (e.deltaY > 0 ? 0.9 : 1.1)));
+  draw();
+}, { passive: false });
+
+function resetView() { scale = 1; offsetX = 0; offsetY = 0; draw(); }
+resize();
+</script>
+<script>
+function fitSlide(){
+    var c=document.querySelector('.content-area');
+    if(!c)return;
+    var sx=window.innerWidth/1920, sy=window.innerHeight/1080;
+    var s=Math.min(sx,sy);
+    c.style.transform='scale('+s+')';
+}
+window.addEventListener('load',fitSlide);
+window.addEventListener('resize',fitSlide);
+</script>
+</body>
+</html>

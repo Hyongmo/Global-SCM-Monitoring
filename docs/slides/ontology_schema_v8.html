@@ -614,4 +614,15 @@ function resetView() { scale = 1; offsetX = 0; offsetY = 0; draw(); }
 resize();
 </script>
 </body>
+<script>
+function fitSlide(){
+    var c=document.querySelector('.content-area');
+    if(!c)return;
+    var sx=window.innerWidth/1920, sy=window.innerHeight/1080;
+    var s=Math.min(sx,sy);
+    c.style.transform='scale('+s+')';
+}
+window.addEventListener('load',fitSlide);
+window.addEventListener('resize',fitSlide);
+</script>
 </html>
