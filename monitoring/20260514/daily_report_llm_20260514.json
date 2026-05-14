@@ -1,0 +1,2860 @@
+{
+  "date": "2026-05-14",
+  "date_key": "20260514",
+  "n_total": 2974,
+  "n_high": 99,
+  "n_med": 333,
+  "n_low": 464,
+  "n_none": 2078,
+  "n_intl": 265,
+  "n_dom": 167,
+  "llm_result": {
+    "executive_summary": "UAE 인근 호르무즈 해협에서 선박 나포 및 침몰 사건이 동시 발생하며 해협 긴장이 고조된 가운데[1][2][4][7], 이란은 '부유 무기고' 선박을 나포하고 쿠웨이트는 이란이 중국 자금 지원 항구가 있는 섬을 공격했다고 비난했다[3][6]. 미중 정상회담에서 트럼프와 시진핑은 '이란 핵무장 불허·호르무즈 개방' 원칙에 합의했으며[14][17], 이란은 일부 중국 선박의 호르무즈 통과를 13일 밤부터 허용하기 시작한 것으로 보도됐다[67][68][77]. 한국 선박 '나무호' 공격과 관련해 한국 정부는 이란 외 다른 주체 가능성이 크지 않다고 밝히고 기술분석팀을 두바이에 파견했으며[11][19][22], 외교적 공세를 예고했다[18]. 국제에너지기구(IEA)는 호르무즈 공급 손실로 글로벌 원유 재고가 기록적 속도로 감소하고 있다고 경고했으며[49][50][98], 유가는 100달러 위를 유지하고 있다[48][52]. 한국 석유공사는 미국산 원유 210만 배럴을 여수 석유비축기지에 입고하며 에너지 안보 대응에 나섰다[37][38][44].",
+    "categories": {
+      "1_Security": {
+        "overseas": "UAE 인근 호르무즈 해협에서 선박 1척이 나포되어 이란 방향으로 이동했으며, 오만 앞바다에서는 화물선 1척이 침몰했다[2][4][7]. 나포된 선박은 '부유 무기고'였던 것으로 보도됐으며[3][5], 쿠웨이트는 이란이 중국 자금 지원 항구가 있는 섬을 공격했다고 비난했다[6]. 트럼프 대통령은 시진핑이 이란과의 협상 지원을 제안했으며 호르무즈 해협 개방을 원한다고 밝혔고[8], 미중 정상은 '이란 핵무장 불허·호르무즈 개방' 원칙에 합의했다[14][17]. UAE 에너지부 장관은 호르무즈가 사실상 인질로 잡혀 에너지가 무기화됐다고 발언했다[10].",
+        "korea_impact": "한국 정부는 나무호 공격 주체로 이란 외 다른 주체 가능성이 크지 않다고 밝히며 이란을 사실상 지목했다[11][19][20]. 고위 당국자는 공격 주체가 확인되면 응분의 공세를 취하겠다고 밝혔으며[18], 정부는 외교적 공세를 예고했다[11]. 한국 정부는 기술분석팀을 두바이에 파견해 나무호 피격 사건을 조사 중이다[22]. 트럼프·시진핑 정상회담에서 무역, 이란, 대만 등 주요 현안이 논의됐으며 한국도 이 회담 결과를 주시하고 있다[13]."
+      },
+      "2_Safety": {
+        "overseas": "인도는 오만 앞바다에서 발생한 선박 공격을 규탄했으며, 해당 선박은 침몰한 것으로 보고됐다[21].",
+        "korea_impact": "한국 정부는 호르무즈 해협 피격 선박 조사를 위해 기술분석팀을 두바이에 파견했다[22]."
+      },
+      "3_Freight": {
+        "overseas": "이란이 수십 척의 선박이 호르무즈를 통과하고 있다고 밝힌 이후 유가가 소폭 하락했으며[23], 인도 국영석유공사(IOC) LPG 화물이 서아시아 위기 속에서도 호르무즈를 안전하게 통과했다[24]. 반면 EIA에 따르면 호르무즈를 통한 원유 흐름은 전 분기 대비 약 30% 감소했으며[26], 하루 600만 배럴 감소라는 보도도 있다[27]. 컨테이너 현물 운임은 조기 성수기를 앞두고 선사들이 할증료를 부과하면서 급등했다[29].",
+        "korea_impact": "중국 유조선이 호르무즈를 통과했으며, 이란과 오만이 통행세를 조율 중인 것으로 보도됐다[31]. 호르무즈 해협 통행량이 증가하는 가운데 AIS(선박자동식별장치)를 끈 선박도 늘고 있는 것으로 나타났다[32]."
+      },
+      "4_PortCargo": {
+        "overseas": "미국은 유가 상승에 대응해 전략비축유(SPR) 5,300만 배럴을 방출했다[33]. 사우디아라비아의 원유 생산량은 호르무즈 교란 여파로 1990년 이후 최저 수준으로 떨어졌다[34]. 인도의 차바하르 항구 운영이 불투명해지면서 인도의 중앙아시아·러시아 접근 경로에 차질이 우려된다[36].",
+        "korea_impact": "한국석유공사는 미국산 원유 210만 배럴을 여수 석유비축기지에 입고했으며, 손주석 사장이 현장을 직접 점검했다[37][38][44][45]. 이는 중동산 원유 의존도를 낮추기 위한 비중동산 원유 도입 조치의 일환으로 보인다[41]. 삼성전자는 생산 비상 체제를 가동하며 반도체 공급망 불안에 대응하고 있다[40]."
+      },
+      "5_EconFinance": {
+        "overseas": "국제유가는 트럼프·시진핑 회담과 이란 분쟁 속에서 100달러 위를 유지하고 있으며[48][52], 호르무즈 위기 75일째를 맞았다[52]. IEA는 중동 교란으로 원유 시장 공급 부족을 경고했으며[49], 각국이 기록적 속도로 원유 재고를 소진하고 있다고 밝혔다[50]. IMF는 이란 전쟁 교란이 글로벌 경제를 '불리한' 시나리오로 몰아가고 있다고 경고했다[55]. 캐나다 가스 가격은 이란 전쟁 여파로 사상 최고치에 근접하고 있다[53].",
+        "korea_impact": "한국 정부는 중동 전쟁 속 물가 안정을 위해 총력 대응을 선언했으며[58], 유가가 100달러 아래로 내려가야 최고가격제 해제를 검토하겠다고 밝혔다[61][63]. 미국 4월 소매판매는 고유가 영향으로 0.5% 증가에 그치며 증가세가 둔화됐다[64][65]. 한국은 미국과 통화스와프를 재개했으며[56], 미중 정상회담 결과로 한국 반도체 기업들은 어려운 선택에 직면한 것으로 보도됐다[57]. 미 재무장관은 이란의 원유 저장 공간이 소진되어 생산 중단이 불가피하다고 밝혔다[59]."
+      },
+      "6_Seafood": {
+        "overseas": "인도 구자라트 어민들은 2년 연속 전쟁 여파로 위기에 처해 있다[66].",
+        "korea_impact": ""
+      },
+      "7_Shipping": {
+        "overseas": "이란이 일부 중국 선박의 호르무즈 통과를 13일 밤부터 허용하기 시작했으며[68][71], 중국 초대형 유조선이 호르무즈 봉쇄를 통과했다[67]. 인도행 LPG 탱커 2척이 호르무즈를 통과했으나 또 다른 선박 1척은 공격 후 침몰했다[69]. 일본 연계 원유 탱커 2척이 호르무즈를 통과했으며, 다카이치 총리가 이란에 직접 요청한 것으로 알려졌다[70][72][75][78]. HMM은 운임 하락으로 1분기 영업이익이 전년 대비 56% 감소했다[73].",
+        "korea_impact": "이란 매체는 중국 일부 선박이 13일 밤부터 호르무즈 통과를 시작했다고 보도했다[77]. HMM의 1분기 실적은 중동 전쟁 여파로 56% 급감했다[80]. 삼성중공업은 LNG 운반선 2척을 7,505억 원 규모로 수주했으며[81][83], HD현대와 삼성중공업이 각각 LNG선 2척씩 나란히 계약을 체결했다[82]. 대한전선은 1만 톤급 해저케이블 포설선(CLV)을 추가 확보해 해저 턴키 경쟁력을 강화했다[85][86]."
+      },
+      "8_Logistics": {
+        "overseas": "",
+        "korea_impact": "신한은행·삼성중공업·무역보험공사는 3,000억 원 규모의 특별보증을 추진해 K-조선 공급망을 지원하기로 했다[87]. 우리은행은 한화오션과 3,000억 원 규모의 상생금융 협약을 체결해 협력사 지원을 확대하기로 했다[88][91][92][94]. 하나은행은 HD현대중공업 협력사를 대상으로 4,000억 원 우대금융을 지원하기로 했으며[89][95], K-조선 수출 공급망 지원을 위한 1조 원 상생금융·15조 원 무역금융도 추진된다[96]. 금융권 전반에서 K-조선 상생 지원책이 잇따르고 있다[90]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "미국의 에탄 수입이 이란 전쟁으로 경쟁 원료 공급이 줄면서 사상 최고치를 기록했다[97]. IEA에 따르면 호르무즈 공급 손실로 글로벌 원유 재고가 기록적 속도로 감소하고 있다[98]. 인도는 BRICS에 서아시아 위기로 인한 에너지 충격을 경고했으며[103], 남아프리카공화국 밀 농가들은 이란 전쟁 여파로 생산 감축을 검토하고 있다[104].",
+        "korea_impact": "중동 전쟁으로 농자재 가격이 폭등하면서 농민들의 우려가 커지고 있다[107]. 철강업계는 50년 만에 최악의 상황으로 연쇄 파산이 시작됐다는 보도가 나왔으며[108], 철강·석유화학 부진에 중동 리스크까지 겹쳐 포항·서산 지역 고용지원이 6개월 연장됐다[109]. 중동 사태로 인한 잉크 부족으로 일본 식품업체들이 인쇄 면적을 줄이고 있으며[111], 전남도는 나프타 원료 의료제품 수급에는 차질이 없다고 밝혔다[112]. 정부는 정유사 최고가격제 손실 보전 기준을 5월 말 확정하고 원가 기반 100% 보전 원칙을 적용할 방침이다[115][116]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "UAE 인근 호르무즈 해협에서 선박 나포 및 오만 앞바다 화물선 침몰이 동시 발생하며 해협 통항 위험이 지속되고 있다[2][4][7]. 이란은 일부 중국 선박의 통과를 13일 밤부터 허용하기 시작했으나[68][71], 인도행 LPG 탱커 통과 중 또 다른 선박이 침몰하는 등 위험이 상존한다[69]. 일본은 총리가 이란에 직접 요청해 연계 유조선 2척의 통과를 확보했다[72][75]. AIS를 끈 선박이 늘고 있어 실제 통항 상황 파악이 어려운 상태다[32].",
+          "korea_impact": "한국 선박 나무호가 호르무즈 해협에서 공격을 받았으며, 정부는 이란을 사실상 공격 주체로 지목하고 기술분석팀을 두바이에 파견했다[11][19][22]. 중국·일본 선박은 각국 정부의 외교적 노력으로 통과를 확보하고 있으나, 한국 선박의 안전한 통항 확보를 위한 외교적 노력이 필요한 상황으로 보인다[11][18]. 호르무즈 통행량이 증가하는 가운데 이란과 오만이 통행세를 조율 중인 것으로 알려졌다[31]."
+        },
+        "source": {
+          "overseas": "사우디아라비아의 원유 생산량이 호르무즈 교란 여파로 1990년 이후 최저 수준으로 떨어졌다[34]. 이란의 카르그 섬 원유 선적 부두가 다시 비어 있는 것이 위성 사진으로 확인됐으며[99], 미 재무장관은 이란의 원유 저장 공간이 소진되어 생산 중단이 불가피하다고 밝혔다[59]. EIA에 따르면 호르무즈를 통한 원유 흐름은 전 분기 대비 약 30% 감소했으며[26], IEA는 글로벌 원유 재고가 기록적 속도로 감소하고 있다고 경고했다[50][98].",
+          "korea_impact": "한국석유공사는 중동산 원유 의존도를 낮추기 위해 미국산 원유 210만 배럴을 여수 석유비축기지에 입고했다[37][38][41][44]. 전남도는 나프타 원료 의료제품 수급에는 차질이 없다고 밝혔으나[112], 농자재 가격 폭등과 철강·석유화학 업계 부진이 이어지고 있다[107][109]. 중국의 연료 수출은 규제 완화에도 불구하고 전쟁 이전의 절반 수준에 그치고 있다[110]."
+        },
+        "logistics": {
+          "overseas": "컨테이너 현물 운임은 조기 성수기를 앞두고 선사들이 할증료를 부과하면서 급등했다[29]. 미국은 전략비축유 5,300만 배럴을 방출해 공급 충격 완화에 나섰다[33]. 인도의 차바하르 항구 운영이 불투명해지면서 대체 물류 경로 확보에 차질이 우려된다[36].",
+          "korea_impact": "HMM의 1분기 영업이익은 운임 하락으로 전년 대비 56% 감소했다[73][80]. 삼성중공업과 HD현대는 LNG 운반선 수주를 이어가며 조선업 수주 릴레이를 이어가고 있다[81][82]. 금융권은 K-조선 공급망 지원을 위해 신한·우리·하나은행 등이 총 1조 원 이상의 상생금융 지원에 나섰다[87][88][89][96]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "한국 정부는 중동 전쟁 속 물가 안정을 위해 총력 대응을 선언하고, 유가 100달러 아래 시 최고가격제 해제를 검토하겠다고 밝혔다[58][61][63]. 한국은 미국과 통화스와프를 재개했으며[56], 미중 정상회담 결과로 한국 반도체 기업들은 어려운 선택에 직면한 것으로 보도됐다[57]. 미국의 4월 소매판매는 고유가 영향으로 0.5% 증가에 그치며 증가세가 둔화됐다[64][65].",
+        "정유·화학": "한국석유공사는 미국산 원유 210만 배럴을 여수 석유비축기지에 입고하며 에너지 위기 대응에 나섰다[37][38][44][45]. 정부는 정유사 최고가격제 손실 보전 기준을 5월 말 확정하고 원가 기반 100% 보전 원칙을 적용할 방침이다[115][116]. 공정위는 석유화학 기업 4곳의 PVC·가소제 담합 관련 조사에 착수했다[113].",
+        "해운·물류": "HMM의 1분기 영업이익은 전년 대비 56% 급감했다[80]. 삼성중공업과 HD현대는 LNG 운반선을 각각 2척씩 수주하며 조선업 수주 모멘텀을 이어가고 있다[81][82]. 신한·우리·하나은행 등 금융권이 K-조선 협력사 지원을 위해 총 1조 원 이상의 상생금융을 추진하고 있다[87][88][89][96].",
+        "식품·농업": "중동 전쟁으로 농자재 가격이 폭등하면서 농민들의 우려가 커지고 있다[107]. 인도 구자라트 어민들은 2년 연속 전쟁 여파로 위기에 처해 있으며[66], 남아프리카공화국 밀 농가들도 이란 전쟁 여파로 생산 감축을 검토하고 있다[104].",
+        "기타산업": "철강업계는 50년 만에 최악의 상황으로 연쇄 파산이 시작됐다는 보도가 나왔으며[108], 철강·석유화학 부진에 중동 리스크까지 겹쳐 포항·서산 지역 고용지원이 6개월 연장됐다[109]. 삼성전자는 생산 비상 체제를 가동하며 반도체 공급망 불안에 대응하고 있다[40]."
+      }
+    },
+    "changes": {
+      "new": [
+        "이란이 일부 중국 선박의 호르무즈 통과를 13일 밤부터 허용하기 시작[67][68][77]",
+        "미중 정상회담에서 '이란 핵무장 불허·호르무즈 개방' 원칙 합의[14][17]",
+        "쿠웨이트, 이란이 중국 자금 지원 항구가 있는 섬을 공격했다고 비난[6]",
+        "한국 정부, 나무호 공격 주체로 이란 사실상 지목 및 기술분석팀 두바이 파견[11][19][22]",
+        "한국, 미국과 통화스와프 재개[56]",
+        "미국 전략비축유(SPR) 5,300만 배럴 방출[33]"
+      ],
+      "escalated": [
+        "호르무즈 해협 선박 나포·침몰 동시 발생으로 해협 긴장 고조[2][4][7]",
+        "EIA, 호르무즈 원유 흐름 전 분기 대비 약 30% 감소 확인[26]",
+        "IEA, 글로벌 원유 재고 기록적 속도 감소 경고[49][50][98]",
+        "사우디 원유 생산량 1990년 이후 최저 수준으로 하락[34]",
+        "철강업계 연쇄 파산 시작, '50년 만에 최악' 보도[108]",
+        "HMM 1분기 영업이익 56% 급감[73][80]",
+        "IMF, 이란 전쟁 교란이 글로벌 경제를 '불리한' 시나리오로 몰아가고 있다고 경고[55]"
+      ],
+      "resolved": [
+        "일본 연계 유조선 2척 호르무즈 통과 확보[70][72][75][78]",
+        "인도 IOC LPG 화물 호르무즈 안전 통과[24]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "Trump says China offered help with Iran as ship seized near UAE",
+        "url": "https://www.courant.com/2026/05/14/trump-says-china-offered-help-with-iran-as-ship-seized-near-uae-3/",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz ship seized near UAE , heads toward Iran , united kingdom reports",
+        "url": "https://www.foxnews.com/world/ship-seized-coast-uae-near-strait-hormuz-may-floating-armory-report",
+        "type": "intl"
+      },
+      {
+        "title": "Iran seizes  floating armory  near Hormuz as Trump says China promised not to arm Teh",
+        "url": "https://www.ynetnews.com/article/skkc00wqkge",
+        "type": "intl"
+      },
+      {
+        "title": "Tensions flare near Strait of Hormuz as a ship is seized and another is sunk - Las Vegas Sun News",
+        "url": "https://lasvegassun.com/news/2026/may/14/tensions-flare-near-strait-of-hormuz-as-a-ship-is/",
+        "type": "intl"
+      },
+      {
+        "title": "Ship seized off coast of UAE near Strait of Hormuz may have been  floating armory : report",
+        "url": "https://www.wfmd.com/2026/05/14/ship-seized-off-coast-of-uae-near-strait-of-hormuz-may-have-been-floating-armory-report/",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwait Accuses Iran of Attacking Island with Chinese - Funded Port",
+        "url": "https://www.breitbart.com/national-security/2026/05/13/kuwait-accuses-iran-of-attacking-island-with-chinese-funded-port/",
+        "type": "intl"
+      },
+      {
+        "title": "UAE Business : Cargo ship sunk off Oman , another vessel seized near Fujairah",
+        "url": "https://www.gdnonline.com:443/Details/1394742/Cargo-ship-sunk-off-Oman,-another-vessel-seized-near-Fujairah",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Says Xi Offered Help To Make a Deal With Iran And  Would Like To See The Hormuz Strait Open  ",
+        "url": "https://www.ibtimes.com/trump-says-xi-offered-help-make-deal-iran-would-like-see-hormuz-strait-open-3802826",
+        "type": "intl"
+      },
+      {
+        "title": "Iran latest : Ship seized near Strait of Hormuz ; Trump presses China to help end war",
+        "url": "https://www.fox10phoenix.com/news/iran-war-latest-may-14",
+        "type": "intl"
+      },
+      {
+        "title": "Energy has been weaponised by Hormuz  being taken hostage effectively , we are responsible player in energy space : UAE Minister",
+        "url": "https://news.webindia123.com/news/Articles/World/20260514/4450307.html",
+        "type": "intl"
+      },
+      {
+        "title": "Tensions flare near Strait of Hormuz as a ship is seized and another is sunk",
+        "url": "https://www.seattletimes.com/business/ship-is-reported-seized-off-the-coast-of-the-uae-and-is-heading-toward-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "UKMTO Warns Ship Seized Near Hormuz Is Being Taken Toward Iran",
+        "url": "https://gcaptain.com/ukmto-warns-ship-seized-near-hormuz-is-being-taken-toward-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "US , China agree to keep Strait of Hormuz open , free from militarization",
+        "url": "https://www.radio.gov.pk/14-05-2026/us-china-agree-to-keep-strait-of-hormuz-open-free-from-militarization",
+        "type": "intl"
+      },
+      {
+        "title": "Xi offered China help on Hormuz , vowed no arms support for Iran : Trump",
+        "url": "https://www.dailysabah.com/world/asia-pacific/xi-offered-chinas-help-on-hormuz-vowed-no-arms-support-for-iran-trump",
+        "type": "intl"
+      },
+      {
+        "title": "MMEA flags Iranian - linked oil transfers near Malaysian waters",
+        "url": "https://www.freemalaysiatoday.com/category/nation/2026/05/14/mmea-flags-iranian-linked-oil-transfers-near-malaysian-waters",
+        "type": "intl"
+      },
+      {
+        "title": "Indian Ship Sunk Near Oman ; Iranian Commandos Seize Vessel Off UAE",
+        "url": "https://www.zerohedge.com/geopolitical/iranian-commandos-board-seize-honduras-flagged-ship-uae",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Xi vowed not to arm Iran , offered help to open Hormuz",
+        "url": "https://timesofindia.indiatimes.com/world/us/trump-says-xi-vowed-not-to-arm-iran-offered-help-to-open-hormuz/articleshow/131098611.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Xi Jinping offered help to open Strait of Hormuz , vowed not to arm Iran",
+        "url": "https://www.moneycontrol.com/world/trump-says-xi-jinping-offered-help-to-open-strait-of-hormuz-vowed-not-to-arm-iran-article-13919713.html",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz sees more attacks on ships as U . S .- Iran standoff continues",
+        "url": "https://reason.com/2026/05/14/new-attacks-in-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Chaos in Hormuz : Ship seized , Indian vessel sunk as Iran tightens grip on global oil",
+        "url": "https://indianexpress.com/article/world/strait-of-hormuz-ship-seized-indian-cargo-vessel-sunk-iran-us-tensions-10689957/",
+        "type": "intl"
+      },
+      {
+        "title": "Tensions Flare Up Over Strait of Hormuz as Ship Is Reported Seized and Heading Toward Iran",
+        "url": "https://www.military.com/tensions-flare-up-over-strait-of-hormuz-as-ship-is-reported-seized-and-heading-toward-iran",
+        "type": "intl"
+      },
+      {
+        "title": "Tensions flare near Strait of Hormuz as ship is seized and another is sunk",
+        "url": "https://www.breakingnews.ie/world/tensions-flare-near-strait-of-hormuz-as-ship-is-seized-and-another-is-sunk-1899958.html",
+        "type": "intl"
+      },
+      {
+        "title": "Tensions flare up over Strait as ship reported seized and heading towards Iran",
+        "url": "https://www.lancashiretelegraph.co.uk/news/national/26107263.tensions-flare-strait-ship-reported-seized-heading-towards-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump and Xi Agree That the Strait of Hormuz Must Remain Open",
+        "url": "http://www.bgnes.com/conflicts/trump-and-xi-agree-that-the-strait-of-hormuz-must-remain-open",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz sees renewed attacks while US , China discuss Iran war",
+        "url": "https://www.dailysabah.com/world/mid-east/hormuz-sees-renewed-attacks-while-us-china-discuss-iran-war",
+        "type": "intl"
+      },
+      {
+        "title": "Ship is reported seized off the coast of UAE , is heading toward Iran",
+        "url": "https://www.baltimoresun.com/2026/05/14/iran-war-uae-ship/",
+        "type": "intl"
+      },
+      {
+        "title": "Vessel off UAE coast  taken , now bound for Iran waters",
+        "url": "https://www.naharnet.com:443/stories/en/320134-vessel-off-uae-coast-taken-now-bound-for-iran-waters",
+        "type": "intl"
+      },
+      {
+        "title": "Oman authorities rescue crew aboard Indian - flagged ship targeted near Hormuz ; MEA calls attack  unacceptable  ",
+        "url": "https://www.theweek.in/news/middle-east/2026/05/14/oman-authorities-rescue-crew-aboard-indian-flagged-ship-targeted-near-hormuz-mea-calls-attack-unacceptable.html",
+        "type": "intl"
+      },
+      {
+        "title": "  Strait of Hormuz open to all commercial ships , but must cooperate with our Navy : Iranian FM Araghchi",
+        "url": "http://www.bignewsnetwork.com/news/279050049/strait-of-hormuz-open-to-all-commercial-ships-but-must-cooperate-with-our-navy-iranian-fm-araghchi",
+        "type": "intl"
+      },
+      {
+        "title": "US Efforts to End Iran War Stumble as Ship Seized Near UAE",
+        "url": "https://www.insurancejournal.com/news/international/2026/05/14/869787.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul blames Iran for Korean ship attack , vows  diplomatic offensive  ",
+        "url": "https://www.koreatimes.co.kr/foreignaffairs/20260514/seoul-blames-iran-for-korean-ship-attack-vows-diplomatic-offensive",
+        "type": "dom"
+      },
+      {
+        "title": "Australia sees oil at $200 amid Iran war escalation fears | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/australia-sees-oil-at-200-amid-iran-war-escalation-fears/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi agree Strait of Hormuz must stay open , White House says",
+        "url": "https://www.businesstimes.com.sg/international/global/trump-xi-agree-strait-hormuz-must-stay-open-white-house-says",
+        "type": "intl"
+      },
+      {
+        "title": "AIB warns of 7 % inflation peak if Hormuz blockade remains",
+        "url": "https://www.rte.ie/news/business/2026/0514/1573288-aib-may-economic-forecast/",
+        "type": "intl"
+      },
+      {
+        "title": "UKMTO : Ship seized off UAE Fujairah headed toward Iranian waters",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-896197",
+        "type": "intl"
+      },
+      {
+        "title": "Vessel off UAE coast  taken , now bound for Iran waters : united kingdom maritime agency",
+        "url": "http://thepeninsulaqatar.com/article/14/05/2026/vessel-off-uae-coast-taken-now-bound-for-iran-waters-uk-maritime-agency",
+        "type": "intl"
+      },
+      {
+        "title": "Vessel heads for Iran waters after  taken  off UAE coast : UKMTO",
+        "url": "https://www.dailysabah.com/world/mid-east/vessel-heads-for-irans-waters-after-taken-off-uae-coast-ukmto",
+        "type": "intl"
+      },
+      {
+        "title": "Ship is reported seized off the coast of the UAE and is heading toward Iran",
+        "url": "https://www.clickorlando.com/news/world/2026/05/14/ship-is-reported-seized-off-the-coast-of-the-uae-and-is-heading-toward-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul sees low likelihood of non - Iranian role in Hormuz ship attack",
+        "url": "https://www.koreaherald.com/article/10738044",
+        "type": "dom"
+      },
+      {
+        "title": "Strait of Hormuz Standoff : Iran Tightens Grip , US Blockades Ports as Global Oil Trade Faces Dangerous Deadlock",
+        "url": "https://gulfnews.com/world/mena/the-hormuz-deadlock-who-gives-way-first-as-iran-tightens-its-grip-on-the-strait-1.500539601",
+        "type": "intl"
+      },
+      {
+        "title": "South Korean official says  unlikely  anyone but Iran behind attack on vessel",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korean-official-says-unlikely-anyone-iran-behind-attack-vessel",
+        "type": "intl"
+      },
+      {
+        "title": "Trump - Xi Summit Leaves South Korea Navigating Familiar Pressures",
+        "url": "https://thediplomat.com/2026/05/trump-xi-summit-leaves-south-korea-navigating-familiar-pressures/",
+        "type": "intl"
+      },
+      {
+        "title": "US Senate again rejects resolution to force authorization for Iran war",
+        "url": "https://www.idahostatejournal.com/freeaccess/us-senate-again-rejects-resolution-to-force-authorization-for-iran-war/article_96fddd4e-0279-4536-a9b4-fab297579d17.html",
+        "type": "intl"
+      },
+      {
+        "title": "West Asia war , Hormuz , Gaza dominate BRICS foreign minister meet",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/west-asia-war-hormuz-gaza-dominate-brics-foreign-ministers-meet/articleshow/131101873.cms",
+        "type": "intl"
+      },
+      {
+        "title": "US Needs to Take Away Iran  Offensive Punch  Says Jensen",
+        "url": "https://www.marketscreener.com/news/us-needs-to-take-away-iran-s-offensive-punch-says-jensen-ce7f5bddd089ff23",
+        "type": "intl"
+      },
+      {
+        "title": "  Never mess it up : What Xi and Trump said on day one of Beijing talks | Business and Economy News",
+        "url": "https://www.aljazeera.com/news/2026/5/14/never-mess-it-up-what-xi-and-trump-said-on-day-one-of-beijing-talks",
+        "type": "intl"
+      },
+      {
+        "title": "TRUMP : Xi Jinping Offered China Help To Keep Strait Of Hormuz Open , Wont Arm Iran – The Yeshiva World",
+        "url": "https://www.theyeshivaworld.com/news/israel-news/2549430/trump-xi-jinping-offered-chinas-help-to-keep-strait-of-hormuz-open-wont-arm-iran.html",
+        "type": "intl"
+      },
+      {
+        "title": "White House says Xi agreed Iran can  never have a nuclear weapon  ",
+        "url": "https://www.washingtonexaminer.com/watch/2599064/",
+        "type": "intl"
+      },
+      {
+        "title": "ترمب : الرئيس الصيني عرض المساعدة في حل أزمة « هرمز » ",
+        "url": "https://www.okaz.com.sa/politics/na/2248686",
+        "type": "intl"
+      },
+      {
+        "title": "Ship reported seized off the coast of the UAE",
+        "url": "https://morningstaronline.co.uk/article/ship-reported-seized-coast-uae",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM chief tells senators Iran hold on Strait of Hormuz has weakened , but threats remain",
+        "url": "https://www.cbsnews.com/news/brad-cooper-centcom-senate-testimony-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Xi promised not to provide military equipment to Iran",
+        "url": "https://www.washingtonexaminer.com/news/white-house/4568795/trump-says-xi-promised-not-provide-military-equipment-to-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump claims China Xi told him Beijing will not provide military equipment to Iran – Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20260514-trump-claims-chinas-xi-told-him-beijing-will-not-provide-military-equipment-to-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Rubio says US policy toward Taiwan is  unchanged  after Trump meeting with Xi",
+        "url": "https://www.kbtx.com/2026/05/14/rubio-says-us-policy-toward-taiwan-is-unchanged-after-trumps-meeting-with-xi/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran opens Strait of Hormuz to Chinese ships",
+        "url": "https://www.premiumtimesng.com/foreign/879505-iran-opens-strait-of-hormuz-to-chinese-ships.html",
+        "type": "intl"
+      },
+      {
+        "title": "Costs tied to Iran war add to Washington state farm woes",
+        "url": "http://www.thereflector.com/stories/costs-tied-to-iran-war-add-to-washington-state-farm-woes,402409",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump China visit : Xi Jinping warns US president differences over Taiwan could lead to conflict",
+        "url": "https://www.9news.com.au/world/donald-trump-china-visit-xi-jinping-warns-us-president-differences-over-taiwan-could-lead-to-conflict/05f91a68-e885-407b-bced-6a95288132a4",
+        "type": "intl"
+      },
+      {
+        "title": "Canada could pitch into Hormuz defence mission with vessel , demining support , satellite imagery",
+        "url": "https://www.theglobeandmail.com/politics/article-canada-strait-hormuz-mission-vessel-demining-satellite/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war overshadows Trump China visit as peace talks stall",
+        "url": "https://www.bworldonline.com/world/2026/05/14/749736/iran-war-overshadows-trumps-china-visit-as-peace-talks-stall/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran opens Strait of Hormuz access to Chinese - linked tankers",
+        "url": "https://www.thenews.com.pk/latest/1402568-iran-opens-strait-of-hormuz-access-to-chinese-linked-tankers",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi send strong message to Iran over Strait of Hormuz",
+        "url": "https://pmnewsnigeria.com/2026/05/14/trump-xi-send-strong-message-to-iran-over-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump - Xi Beijing summit tests leverage on Iran , trade , Taiwan",
+        "url": "http://www.jpost.com/international/article-896242",
+        "type": "intl"
+      },
+      {
+        "title": "China leader warns Trump that differences over Taiwan could lead to a clash",
+        "url": "https://laist.com/news/chinas-leader-warns-trump-that-differences-over-taiwan-could-lead-to-a-clash",
+        "type": "intl"
+      },
+      {
+        "title": "Dozens of ships set sail from Turkey as Gaza flotilla tries second blockade run",
+        "url": "http://www.jpost.com/international/article-896249",
+        "type": "intl"
+      },
+      {
+        "title": "US Treasury chief says Iranian ports blockade is working in putting pressure on Iran economy",
+        "url": "https://www.thenews.com.pk/latest/1402566-us-treasury-chief-says-iranian-ports-blockade-is-working-in-putting-pressure-on-irans-economy",
+        "type": "intl"
+      },
+      {
+        "title": "Israel to extend F - 35I range amid war with Iran",
+        "url": "https://www.defensenews.com/global/mideast-africa/2026/05/14/israel-to-extend-f-35i-range-amid-war-with-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Aid flotilla sets sail again from Turkey , bound for Gaza",
+        "url": "https://www.yahoo.com/news/articles/aid-flotilla-sets-sail-again-152323563.html",
+        "type": "intl"
+      },
+      {
+        "title": "Dow Jones Top Energy Headlines at 11 AM ET : Oil Prices Will Fall Quickly , Says Bessent . China Agrees Hormuz Must Open . | U . S . ... ",
+        "url": "https://www.morningstar.com/news/dow-jones/202605147950/dow-jones-top-energy-headlines-at-11-am-et-oil-prices-will-fall-quickly-says-bessent-china-agrees-hormuz-must-open-us",
+        "type": "intl"
+      },
+      {
+        "title": "Iran regime has  gun to our head  over Strait of Hormuz , says former CIA boss",
+        "url": "https://www.independent.co.uk/news/world/americas/us-politics/iran-war-leon-panetta-trump-b2976379.html",
+        "type": "intl"
+      },
+      {
+        "title": "White House claims Xi , Trump agree  Hormuz must remain open  ",
+        "url": "https://www.dailysabah.com/world/mid-east/white-house-claims-xi-trump-agree-hormuz-must-remain-open",
+        "type": "intl"
+      },
+      {
+        "title": "San Diego warship preps for battle in Middle East",
+        "url": "https://nypost.com/2026/05/14/us-news/san-diego-warship-preps-for-battle-in-middle-east/",
+        "type": "intl"
+      },
+      {
+        "title": "The US Has Restarted Jungle Warfare In Panama After 25 Years",
+        "url": "https://www.zerohedge.com/markets/us-has-restarted-jungle-warfare-panama-after-25-years",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan Calls China Main Risk to Peace and Stability in Region",
+        "url": "https://www.khaama.com/taiwan-calls-china-main-risk-to-peace-and-stability-in-region/",
+        "type": "intl"
+      },
+      {
+        "title": "Xi Tells Trump Peace in Taiwan Strait Key to US - China Ties",
+        "url": "https://www.khaama.com/xi-tells-trump-peace-in-taiwan-strait-key-to-us-china-ties/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi Hold Extended Beijing Summit As Taiwan Warning Looms Over Trade Talks",
+        "url": "https://www.ibtimes.com/trump-xi-hold-extended-beijing-summit-taiwan-warning-looms-over-trade-talks-3802772",
+        "type": "intl"
+      },
+      {
+        "title": "Iran parliamentary commission finalizes plan to secure Strait of Hormuz : Chairman",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/05/iran-260513-presstv06.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi agreed Strait of Hormuz  must remain open : White House",
+        "url": "https://www.bssnews.net/news-flash/386950",
+        "type": "intl"
+      },
+      {
+        "title": "Trump may resume war on Iran this weekend",
+        "url": "https://www.albawaba.com/news/trump-may-resume-war-iran-weekend-1627658",
+        "type": "intl"
+      },
+      {
+        "title": "Japan fires first - ever missiles from Philippine soil",
+        "url": "https://www.defensenews.com/global/asia-pacific/2026/05/14/japan-fires-first-ever-missiles-from-philippine-soil/",
+        "type": "intl"
+      },
+      {
+        "title": "Xi warns Trump of possible conflict over Taiwan",
+        "url": "https://www.odt.co.nz/news/world/xi-warns-trump-possible-conflict-over-taiwan",
+        "type": "intl"
+      },
+      {
+        "title": "World News : Xi tells Trump that mishandling of Taiwan could spark conflict",
+        "url": "https://www.gdnonline.com:443/Details/1394720/Xi-tells-Trump-that-mishandling-of-Taiwan-could-spark-conflict",
+        "type": "intl"
+      },
+      {
+        "title": "China warns Trump that differences over Taiwan could lead to a clash : NPR",
+        "url": "https://www.npr.org/2026/05/14/nx-s1-5822168/trump-xi-summit",
+        "type": "intl"
+      },
+      {
+        "title": "Pageantry meets politics : Xi stark Taiwan warning counters Trump optimism",
+        "url": "https://www.fox13now.com/world/asia/pageantry-meets-politics-xis-stark-taiwan-warning-counters-trumps-optimism",
+        "type": "intl"
+      },
+      {
+        "title": "China Xi warns Trump differences over Taiwan could lead to conflict",
+        "url": "https://www.ocregister.com/2026/05/14/china-xi-trump/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War : Tanker War Lite as Trump Comes Even More Unglued and Real Economy Damage Becomes More Visible",
+        "url": "https://www.nakedcapitalism.com/2026/05/iran-war-tanker-war-lite-as-trump-comes-even-more-unglued-and-real-economy-damage-becomes-more-visible.html",
+        "type": "intl"
+      },
+      {
+        "title": "US - China summit : Trump and Xi hold high stakes talks on trade , Taiwan and Iran",
+        "url": "https://www.ewn.co.za/2026/05/14/us-china-summit-trump-and-xi-hold-high-stakes-talks-on-trade-taiwan-and-iran",
+        "type": "intl"
+      },
+      {
+        "title": "Trump lands in Beijing for pivotal Xi summit amid Iran war , Taiwan tensions – NaturalNews . com",
+        "url": "https://www.naturalnews.com/2026-05-14-trump-lands-in-beijing-pivotal-xi-summit.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi Agreed Strait Of Hormuz  Must Remain Open  White House",
+        "url": "https://www.channelstv.com/2026/05/14/trump-xi-agreed-strait-of-hormuz-must-remain-open-white-house/",
+        "type": "intl"
+      },
+      {
+        "title": "No need for China help on Iran : Trump",
+        "url": "https://article.wn.com/view/2026/05/14/No_need_for_China_s_help_on_Iran_Trump/",
+        "type": "intl"
+      },
+      {
+        "title": "China Xi warns Trump that differences over Taiwan could lead to conflict - WSVN 7News | Miami News , Weather , Sports",
+        "url": "https://wsvn.com/news/politics/chinas-xi-warns-trump-that-differences-over-taiwan-could-lead-to-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "President Trump has  good meeting  with Chinese President ; US , China agree that Strait of Hormuz  must remain open  ",
+        "url": "https://news.webindia123.com/news/Articles/World/20260514/4450140.html",
+        "type": "intl"
+      },
+      {
+        "title": "China Xi warns President Trump of possible confrontation",
+        "url": "https://jcpost.com/posts/627fc935-1f5e-4d06-b984-db8c51111251",
+        "type": "intl"
+      },
+      {
+        "title": "Iran allowing transit of Chinese vessels in Strait of Hormuz , Fars news reports",
+        "url": "https://www.straitstimes.com/world/middle-east/iran-allowing-transit-of-chinese-vessels-in-strait-of-hormuz-fars-news-reports",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump in China : Xi warns of possible confrontation",
+        "url": "https://www.bnnbloomberg.ca/business/international/2026/05/14/chinas-xi-warns-trump-that-differences-over-taiwan-could-lead-to-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump heads to Beijing summit as AI Cold War and Taiwan risks rise",
+        "url": "https://www.foxnews.com/opinion/trump-xis-china-summit-defining-test-america-new-cold-war",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran standoff lengthens as Trump reiterates war threats | Jefferson City News Tribune",
+        "url": "https://www.newstribune.com/news/2026/may/14/us-iran-standoff-lengthens-as-trump-reiterates/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war and oil dominate BRICS meet in India",
+        "url": "https://tribune.com.pk/story/2608052/iran-war-and-oil-dominate-brics-meet-in-india",
+        "type": "intl"
+      },
+      {
+        "title": "On the road to Tehran , Iranians on edge as threat of resumption of war looms",
+        "url": "https://article.wn.com/view/2026/05/14/On_the_road_to_Tehran_Iranians_on_edge_as_threat_of_resumpti/",
+        "type": "intl"
+      },
+      {
+        "title": "Araghchi says Strait of Hormuz open to shipping but urges cooperation with Iran",
+        "url": "https://news.az/news/araghchi-says-strait-of-hormuz-open-to-shipping-but-urges-cooperation-with-iran",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz Open to Ships Cooperating With Iran",
+        "url": "https://www.newkerala.com/news/a/strait-hormuz-open-all-commercial-ships-must-cooperate-847.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Signals Safe Passage For More Indian Ships Ahead Of BRICS Meet",
+        "url": "https://www.siliconindia.com/news/general/iran-signals-safe-passage-for-more-indian-ships-ahead-of-brics-meet-nid-240639-cid-1.html",
+        "type": "intl"
+      },
+      {
+        "title": "Italy in the Hormuz crisis : Diplomacy , naval missions and food security",
+        "url": "http://thepeninsulaqatar.com/opinion/14/05/2026/italy-in-the-hormuz-crisis-diplomacy-naval-missions-and-food-security",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war : Trump discusses conflict with XI Jinping as peace talks stall",
+        "url": "https://www.irishtimes.com/world/middle-east/2026/05/14/iran-war-trump-discusses-conflict-with-xi-jinping-as-peace-talks-stall/",
+        "type": "intl"
+      },
+      {
+        "title": "PM Modi likely to seek more energy supplies from UAE during short visit , sources say",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/pm-modi-likely-to-seek-more-energy-supplies-from-uae-during-short-visit-sources-say/articleshow/131088121.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Xi hails trade progress , warns Trump on Taiwan at Beijing summit",
+        "url": "https://www.ynetnews.com/article/bj5bkyqygg",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war day 76 : Vance says progress made in talks ; Israel pounds Lebanon",
+        "url": "https://www.aljazeera.com/news/2026/5/14/iran-war-day-76-vance-says-progress-made-in-talks-israel-pounds-lebanon",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war day 76 : Vance says progress made in talks ; Israel pounds Lebanon - Grenada Chronicle – Daily Grenada And Caribbean News",
+        "url": "https://grenadachronicle.com/iran-war-day-76-vance-says-progress-made-in-talks-israel-pounds-lebanon/",
+        "type": "intl"
+      },
+      {
+        "title": "Working on safe passage of more Indian vessels through Strait of Hormuz : Iranian minister",
+        "url": "https://www.ibtimes.co.in/working-safe-passage-more-indian-vessels-through-strait-hormuz-iranian-minister-902029",
+        "type": "intl"
+      },
+      {
+        "title": "Xi warns US over mishandling Taiwan issue in talks with Trump",
+        "url": "https://www.dailysabah.com/world/asia-pacific/xi-warns-us-over-mishandling-taiwan-issue-in-talks-with-trump",
+        "type": "intl"
+      },
+      {
+        "title": "Unknown people take ship off UAE coast toward Iran waters",
+        "url": "https://www.albawaba.com/news/unknown-people-take-ship-uae-coast-1627620",
+        "type": "intl"
+      },
+      {
+        "title": "Xi warns Trump on Taiwan at Beijing summit | The Manila Times",
+        "url": "https://www.manilatimes.net/2026/05/14/news/xi-warns-trump-on-taiwan-at-beijing-summit/2343600",
+        "type": "intl"
+      },
+      {
+        "title": "India says safe , unimpeded maritime flows vital for global economic well - being",
+        "url": "https://economictimes.indiatimes.com/news/india/india-says-safe-unimpeded-maritime-flows-vital-for-global-economic-well-being-us-israel-war-strait-of-hormuz/articleshow/131085550.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War , Oil Top Agenda As BRICS Meet In India",
+        "url": "https://www.channelstv.com/2026/05/14/iran-war-oil-top-agenda-as-brics-meet-in-india/",
+        "type": "intl"
+      },
+      {
+        "title": "EAM Jaishankar flags fragile West Asia situation , says safe waterways vital for global economic well - being",
+        "url": "https://www.prokerala.com/news/articles/a1762679.html",
+        "type": "intl"
+      },
+      {
+        "title": "What Trump says vs . what the intelligence says on Iran",
+        "url": "https://edition.cnn.com/2026/05/14/politics/trump-iran-strait-of-hormuz-missile-military-analysis",
+        "type": "intl"
+      },
+      {
+        "title": "Russian  Shadow Fleet  Suspicions Linger in Dropped Albania Smuggling Case",
+        "url": "https://balkaninsight.com/2026/05/14/russian-shadow-fleet-suspicions-linger-in-dropped-albania-smuggling-case/bi/",
+        "type": "intl"
+      },
+      {
+        "title": "India asks US for waiver on Russian oil as Iran war squeezes energy supply : Report",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/india-asks-us-for-waiver-on-russian-oil-as-iran-war-squeezes-energy-supply-report/articleshow/131084613.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Rubio : US wants China to take a more active role in Strait of Hormuz crisis",
+        "url": "https://www.gazetaexpress.com/en/Rubio:-US-wants-China-to-take-a-more-active-role-in-the-Strait-of-Hormuz-crisis/",
+        "type": "intl"
+      },
+      {
+        "title": "Vance says US - Iran talks making progress as UAE denies Netanyahu secret visit",
+        "url": "https://www.siasat.com/vance-says-us-iran-talks-making-progress-as-uae-denies-netanyahus-secret-visit-3470714/",
+        "type": "intl"
+      },
+      {
+        "title": "Xi Warns On Taiwan As Trump Seeks Trade Progress During Beijing Summit",
+        "url": "https://www.rferl.org/a/trump-xi-summit-trade-iran-taiwan-minerals-nvidia-china/33756553.html",
+        "type": "intl"
+      },
+      {
+        "title": "Xi warns Trump Taiwan issue could lead to  conflict  ",
+        "url": "https://www.freemalaysiatoday.com/category/highlight/2026/05/14/xi-warns-trump-taiwan-issue-could-lead-to-conflict",
+        "type": "intl"
+      },
+      {
+        "title": "Xi Warns Trump US - China Ties Could  Collide  If Taiwan Issue Mishandled",
+        "url": "https://www.kyivpost.com/post/76074",
+        "type": "intl"
+      },
+      {
+        "title": "Iran dismisses support for Bahrain - US Hormuz resolution as  misleading and deceptive  ",
+        "url": "https://news.webindia123.com/news/Articles/World/20260514/4449939.html",
+        "type": "intl"
+      },
+      {
+        "title": "  It an honor to be your friend  Trump tells Xi Jinping as crunch US - China summit gets underway",
+        "url": "https://www.lbc.co.uk/article/donald-trump-xi-jinping-china-talks-5HjdZ6g_2/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi Holding High - Stakes Beijing Talks on Trade , Taiwan and Iran",
+        "url": "https://www.khaama.com/trump-xi-holding-high-stakes-beijing-talks-on-trade-taiwan-and-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran hardens stance on strait",
+        "url": "http://africa.chinadaily.com.cn/a/202605/14/WS6a051f55a310d6866eb487c7.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi begin summit talks over trade , Iran , Taiwan , other key issues",
+        "url": "https://www.prokerala.com/news/articles/a1762594.html",
+        "type": "intl"
+      },
+      {
+        "title": "US Iran war news live : Trump arrives at Great Hall of the People for talks with Xi",
+        "url": "https://www.moneycontrol.com/world/us-iran-israel-war-news-live-updates-may-14-donald-trump-xi-jinping-us-china-middle-east-conflict-west-asia-war-liveblog-13918533.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war gives Xi the chance to rekindle gas sales with Trump",
+        "url": "https://www.moneycontrol.com/world/iran-war-gives-xi-the-chance-to-rekindle-gas-sales-with-trump-article-13918744.html",
+        "type": "intl"
+      },
+      {
+        "title": "JD Vance signals progress in Iran talks as US seeks to enforce Trump red line",
+        "url": "https://pakobserver.net/jd-vance-signals-progress-in-iran-talks-as-us-seeks-to-enforce-trumps-red-line/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi set for Beijing talks with trade truce , Iran war at stake",
+        "url": "https://www.bworldonline.com/world/2026/05/14/749633/trump-xi-set-for-beijing-talks-with-trade-truce-iran-war-at-stake/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen expresses solidarity with Iran ; warns regional instability if US - Israeli actions continue",
+        "url": "https://news.webindia123.com/news/Articles/World/20260514/4449905.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Meets Xi at Beijing Summit Amid Trade , Iran Tensions",
+        "url": "https://punchng.com/photos-trump-meets-xi-at-beijing-summit-as-trade-iran-tensions-others-rise/",
+        "type": "intl"
+      },
+      {
+        "title": "Soaring inflation and plummeting economy test Iran ability to withstand war and US blockade",
+        "url": "https://www.journalgazette.net/business/soaring-inflation-and-plummeting-economy-test-irans-ability-to-withstand-war-and-us-blockade/article_fd5a07f9-a0ac-510f-8354-2193205057c5.html",
+        "type": "intl"
+      },
+      {
+        "title": "US embargo on Hormuz Strait hits Cuba energy stock",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-embargo-hormuz-strait-hits-cubas-energy-stock",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Deputy FM Kazem Gharibabadi Says US Not Engaged in Serious Diplomacy",
+        "url": "https://www.newsx.com/world/iran-deputy-fm-kazem-gharibabadi-says-us-not-engaged-in-serious-diplomacy-218600/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Issues Warning Over  Ties With Israel  Following Netanyahu UAE Visit Claim",
+        "url": "https://www.newsx.com/world/iran-issues-warning-over-ties-with-israel-following-netanyahus-uae-visit-claim-218596/",
+        "type": "intl"
+      },
+      {
+        "title": "Malaysia says Iranian oil transfers near its waters exploit a maritime loophole",
+        "url": "https://www.seattletimes.com/business/malaysia-says-it-can-do-little-to-stop-iranian-linked-oil-transfers-near-its-water/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump meets Xi in Beijing as leaders open high - stakes talks amid trade , Iran tensions",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/xi-meets-trump-in-beijing-as-leaders-open-high-stakes-talks-amid-trade-iran-tensions/articleshow/131080441.cms",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . still enforcing blockade as Trump meets Xi ; 69 ships excluded",
+        "url": "https://worldtribune.com/u-s-still-enforcing-blockade-as-trump-meets-xi-69-ships-excluded/",
+        "type": "intl"
+      },
+      {
+        "title": "GCC interior ministers vow united response to regional threats after Kuwait infiltration case",
+        "url": "https://www.arabnews.com/node/2643517/saudi-arabia",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Xi to hold summit talks over trade , Iran , Taiwan , other key issues",
+        "url": "https://www.koreatimes.co.kr/world/20260514/trump-xi-to-hold-summit-talks-over-trade-iran-taiwan-other-key-issues",
+        "type": "dom"
+      },
+      {
+        "title": "US may rename Iran war  Operation Sledgehammer  if fighting resumes",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-896121",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warns Against Collusion with Israel After Netanyahu UAE Visit Claim",
+        "url": "https://www.deccanchronicle.com/west-asia/iran-warns-against-collusion-with-israel-after-netanyahus-uae-visit-claim-1956604",
+        "type": "intl"
+      },
+      {
+        "title": "China may be using third countries for secret arms shipments to Iran : Report",
+        "url": "https://www.moneycontrol.com/world/china-may-be-using-third-countries-for-secret-arms-shipments-to-iran-report-article-13918493.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trade , Taiwan , and Iran Tension Loom Large in Trump - Xi Meeting in Beijing",
+        "url": "https://www.moroccoworldnews.com/2026/05/299149/trade-taiwan-and-iran-tension-loom-large-in-trump-xi-meeting-in-beijing/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns against  collusion with Israel  after Netanyahu claim of UAE visit - Moneycontrol . com",
+        "url": "https://www.moneycontrol.com/world/iran-warns-against-collusion-with-israel-after-netanyahu-s-claim-of-uae-visit-article-13918496.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Turns Iran Into China Problem",
+        "url": "https://www.dailysignal.com/2026/05/13/trump-turns-iran-chinas-problem/",
+        "type": "intl"
+      },
+      {
+        "title": "Tehran will welcome diplomatic initiative from India : Iran Dy FM Abbas Araghchi",
+        "url": "https://indianexpress.com/article/india/tehran-will-welcome-diplomatic-initiative-from-india-iran-dy-fm-abbas-araghchi-10688220/",
+        "type": "intl"
+      },
+      {
+        "title": "Rubio hopes to convince China to  play a more active role  in pressuring Iran to open the Strait of Hormuz",
+        "url": "https://nypost.com/2026/05/13/us-news/rubio-hopes-to-convince-china-to-play-a-more-active-role-in-pressuring-iran-to-open-the-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Meets Xi in Beijing With Four Unsettled Disputes : Rare Earths , AI Chips , Taiwan , and a War",
+        "url": "https://www.techtimes.com/articles/316588/20260513/trump-meets-xi-beijing-four-unsettled-disputes-rare-earths-ai-chips-taiwan-war.htm",
+        "type": "intl"
+      },
+      {
+        "title": "China ready to expand cooperation with US on basis of mutual respect : Foreign Ministry",
+        "url": "https://www.dailyexcelsior.com/china-ready-to-expand-cooperation-with-us-on-basis-of-mutual-respect-foreign-ministry/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Missile Arsenal Still Intact , Reports Say , Contradicting Trump Claims",
+        "url": "https://truthout.org/articles/irans-missile-arsenal-still-intact-sources-say-contradicting-trumps-claims/",
+        "type": "intl"
+      },
+      {
+        "title": "Republicans break ranks , but Senate fails to curb Trump Iran war powers | US - Israel war on Iran News",
+        "url": "https://www.aljazeera.com/news/2026/5/13/three-republicans-break-ranks-but-senate-fails-to-curb-trumps-war-powers",
+        "type": "intl"
+      },
+      {
+        "title": "트럼프·시진핑, 호르무즈 해협 개방 유지 합의",
+        "url": "https://www.tokenpost.kr/news/breaking/359741",
+        "type": "dom"
+      },
+      {
+        "title": "[미중정상회담] '이란핵 불용·호르무즈 개방' 일치…中 역할할진 미지...",
+        "url": "https://n.news.naver.com/mnews/article/001/0016078330?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "인도 국적 선박, 호르무즈해협서 공격 후 침몰",
+        "url": "https://www.tokenpost.kr/news/breaking/359739",
+        "type": "dom"
+      },
+      {
+        "title": "미·중 정상, '이란 핵무장 불허·호르무즈 개방' 합의",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=81069",
+        "type": "dom"
+      },
+      {
+        "title": "고위 당국자 “나무호 공격 주체, 확인되면 응분의 공세”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004621021?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "정부 “나무호 공격, 이란 외 다른 주체 가능성 크지 않아”",
+        "url": "https://n.news.naver.com/mnews/article/005/0001849065?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "“공격 주체 이란 아닐 가능성 낮아”…나무호에 기술분석팀 파견",
+        "url": "https://n.news.naver.com/mnews/article/056/0012181480?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "美국무 \"中, 호르무즈 개방 유엔 결의안 입장변화 희망\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0013946051?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·중 정상 ‘세기의 담판’…“호르무즈 개방·이란 핵무기 불허 합의...",
+        "url": "https://n.news.naver.com/mnews/article/056/0012181473?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란, '호르무즈 통행 허가제' 굳히기 시도",
+        "url": "https://n.news.naver.com/mnews/article/055/0001356308?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 13일부터 中 선박 호르무즈 통행 허용\"…규정 준수 '조건부'",
+        "url": "https://n.news.naver.com/mnews/article/421/0008945820?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·중 정상회담 노림수?…이란, 중국 선박 호르무즈 통항 허용",
+        "url": "https://n.news.naver.com/mnews/article/025/0003523388?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 미중 정상회담 맞춰 중국에 선물…호프무즈 통항 허락",
+        "url": "https://n.news.naver.com/mnews/article/437/0000491453?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[김종석의 오프닝]“미중 정상, 호르무즈 개방·이란 핵무기 불허 합의...",
+        "url": "https://n.news.naver.com/mnews/article/449/0000345260?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"호르무즈, 협조하면 열려 있어\"...'미 규탄' 촉구",
+        "url": "https://n.news.naver.com/mnews/article/052/0002353114?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "백악관 \"미중 정상, 호르무즈 개방·이란 핵무기 불허 합의\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002353111?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "말레이시아, 이란 선박 간 원유 이송 급증 경고",
+        "url": "https://www.tokenpost.kr/news/breaking/359642",
+        "type": "dom"
+      },
+      {
+        "title": "Gov't sees low possibility of non-Iranian actor being behind attack on HM...",
+        "url": "https://www.arirang.com/news/view?id=296078",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프-시진핑, \"미중 협력강화\" 원론 교환…'이란·대만' 성과없어",
+        "url": "https://n.news.naver.com/mnews/article/003/0013946062?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[미중정상회담] 한반도 정세도 테이블에…이란에 밀려 비중 작았다",
+        "url": "https://n.news.naver.com/mnews/article/001/0016078325?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘이란 전쟁 협조’ 얻은 트럼프, ‘대만 레드라인’ 못박은 시진핑…미...",
+        "url": "https://n.news.naver.com/mnews/article/028/0002805159?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프·시진핑, 135분 회담…협력 메시지 속 성과는 제한",
+        "url": "https://www.ajunews.com/view/20260514213434485",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “미 규탄에 동참을”…인도 개최 ‘브릭스 외무’ 회의서 촉구",
+        "url": "https://n.news.naver.com/mnews/article/056/0012181168?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴스더] 트럼프 면전 서 대만 문제 경고…9년 전과 달라진 中 위상",
+        "url": "https://n.news.naver.com/mnews/article/448/0000611596?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "인도, 러시아산 원유 제재 유예 연장 美에 요청",
+        "url": "https://www.tokenpost.kr/news/breaking/359659",
+        "type": "dom"
+      },
+      {
+        "title": "미 부통령 \"이란 협상 진전\"…걸프선 충돌 긴장 고조",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1524479",
+        "type": "dom"
+      },
+      {
+        "title": "\"용서 못 해\" 이란 폭발…뒤늦게 공개된 '비밀 회동'",
+        "url": "https://n.news.naver.com/mnews/article/055/0001356281?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란 이외 주체가 공격했을 가능성 크지 않아\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001356280?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "“나무호 공격 주체, 이란 외 추정 어려워”…미사일 가능성",
+        "url": "https://n.news.naver.com/mnews/article/449/0000345238?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "HD현대, 중동 리스크에 협력사 자금 지원…7400억원 조기 지급",
+        "url": "https://www.econovill.com/news/articleView.html?idxno=740086",
+        "type": "dom"
+      },
+      {
+        "title": "외교부 \"나무호, 공격 주체 식별되면 필요한 대응 조치 취할 것\"",
+        "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=312187",
+        "type": "dom"
+      },
+      {
+        "title": "우리은행, 한화오션과 맞손… 조선 협력사 지원 확대",
+        "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=353834",
+        "type": "dom"
+      },
+      {
+        "title": "중동 체류 국민 귀국 도운 재외공관 직원에 포상금",
+        "url": "http://www.worldkorean.net/news/articleView.html?idxno=56848",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑, 트럼프 면전서 “대만 문제 잘못 다루면 美·中 충돌할 것”",
+        "url": "https://n.news.naver.com/mnews/article/021/0002791323?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[오늘의 뉴스 종합] [트럼프 방중] \"대만 문제 잘못 다루면 미중 충돌\" ...",
+        "url": "https://www.ajunews.com/view/20260514200900412",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑, 트럼프에 '양국 공존' 강조",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=548184",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 만난 시진핑, ‘공존의 길’ 강조…대만문제엔 어떤 입장을?",
+        "url": "https://n.news.naver.com/mnews/article/009/0005680305?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑 \"대만 잘못 다루면 충돌\"…트럼프 '침묵'",
+        "url": "https://n.news.naver.com/mnews/article/422/0000864872?sid=161",
+        "type": "dom"
+      },
+      {
+        "title": "\"적 아닌 동반자\" vs \"상호주의\"…뼈있는 덕담",
+        "url": "https://n.news.naver.com/mnews/article/422/0000864870?sid=161",
+        "type": "dom"
+      },
+      {
+        "title": "[미중 정상회담]\"투키디데스 함정 넘어야\"…대만 문제엔 강경(종합)",
+        "url": "https://n.news.naver.com/mnews/article/277/0005763122?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"시진핑 9월 방미 초청\"…시진핑 \"양국 간 공존 중요\"",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1708866",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑, ‘대만 문제’ 면전서 경고…트럼프는 말 아껴",
+        "url": "https://n.news.naver.com/mnews/article/032/0003445836?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑, 트럼프에 '공존의 길' 강조…대만문제엔 \"잘못하면 충돌\"(종합...",
+        "url": "https://n.news.naver.com/mnews/article/001/0016078228?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "대만 “중국 스스로 군사위협 자제해야”…시진핑 ‘대만 문제’ 거론에...",
+        "url": "https://n.news.naver.com/mnews/article/028/0002805147?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“대만 잘못 처리 땐 美-中 충돌” 시진핑, 트럼프 면전서 경고",
+        "url": "https://n.news.naver.com/mnews/article/658/0000143922?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중국은 미국과 대등한 존재‥갈등 만들지 말라며 짐짓 경고",
+        "url": "https://n.news.naver.com/mnews/article/214/0001499003?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “역대 가장 좋은 미중 관계”…시진핑 부부 백악관 초청",
+        "url": "https://n.news.naver.com/mnews/article/666/0000107065?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "웃으며 만난 트럼프·시진핑 무슨 말 오갔나",
+        "url": "http://www.00news.co.kr/news/articleView.html?idxno=103810",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑 “대만문제 잘못 다루면 전면 충돌” 트럼프 면전서 경고 [미중...",
+        "url": "https://n.news.naver.com/mnews/article/011/0004620994?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘공존’ 강조하던 시진핑, 트럼프 면전에 “대만 문제 충돌 경고”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012181189?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "또 ‘투키디데스 함정’ 꺼낸 시진핑… 美에 ‘대만 레드라인’ 경고",
+        "url": "https://n.news.naver.com/mnews/article/005/0001849034?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "'대만'은 넘지 말라…미·중 관계 레드라인만 확인한 135분",
+        "url": "https://n.news.naver.com/mnews/article/018/0006281707?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "대만 문제 거론한 시진핑에…대만 “중국은 대만을 대표해 주장할 권리...",
+        "url": "https://n.news.naver.com/mnews/article/449/0000345214?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"투키디데스 함정·美中 충돌\"…강한 메시지 던진 시진핑[영상]",
+        "url": "https://n.news.naver.com/mnews/article/079/0004147075?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘美 대만 19조원 무기 패키지’ 흔들리나…시진핑 압박에 긴장 고조",
+        "url": "https://n.news.naver.com/mnews/article/005/0001849024?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中외교부 \"美, 대만문제 신중해야\"…시진핑 언급 재차 강조",
+        "url": "https://n.news.naver.com/mnews/article/003/0013945891?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "세기의 담판…'대만, '시장개방' 꺼냈다",
+        "url": "https://n.news.naver.com/mnews/article/374/0000510251?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "무역·이란 문제 놓고 담판...미 국무 \"중국, 최우선 도전\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002352767?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 국무장관 \"중국, 최우선 도전이자 가장 중요한 관계\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001498851?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 블랙호크 표적 삼아 드론 돌격…이란, 수도 방어 훈련 공개",
+        "url": "https://n.news.naver.com/mnews/article/449/0000345237?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무, UAE에 \"이스라엘과 동맹...침략 직접 개입\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002353094?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무장관, UAE에 “이스라엘의 침략 파트너” 맹비난",
+        "url": "https://n.news.naver.com/mnews/article/025/0003523381?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무, UAE에 “이스라엘과 동맹…침략의 능동적 파트너”",
+        "url": "https://n.news.naver.com/mnews/article/016/0002643636?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“기름값만 걱정할 때가 아니었네”…이란 전쟁에 고래 등 터질 판, 무슨...",
+        "url": "https://n.news.naver.com/mnews/article/011/0004620751?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "안규백 “호르무즈 단계적 기여 방안 검토, 美에도 전달”",
+        "url": "https://n.news.naver.com/mnews/article/020/0003719490?sid=100",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "S . Korea sends technical analysis team to Dubai to probe strike on Hormuz ship",
+        "url": "https://www.koreaherald.com/article/10737818",
+        "type": "dom"
+      },
+      {
+        "title": "India condemns attack on ship off Oman , vessel reported sunk",
+        "url": "https://www.arabnews.com/node/2643559/middle-east",
+        "type": "intl"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Oil prices dip after Iran says dozens of vessels are crossing Hormuz",
+        "url": "https://thefrontierpost.com/oil-prices-dip-after-iran-says-dozens-of-vessels-are-crossing-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "IOC LPG cargoes cross Hormuz safely amid West Asia crisis ; Govt says fuel supplies remain stable",
+        "url": "http://www.calcuttanews.net/news/279050319/ioc-lpg-cargoes-cross-hormuz-safely-amid-west-asia-crisis-govt-says-fuel-supplies-remain-stable",
+        "type": "intl"
+      },
+      {
+        "title": "Oil flows through Strait of Hormuz drop sharply",
+        "url": "https://www.azernews.az/oil_and_gas/258394.html",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz oil flows fell nearly 30 % last quarter , EIA says",
+        "url": "https://financialpost.com/commodities/energy/oil-gas/hormuz-oil-flows-fell-nearly-30-per-cent",
+        "type": "intl"
+      },
+      {
+        "title": "Oil flow through Strait of Hormuz drops by 6 million barrels a day amid global energy shock",
+        "url": "https://www.moneycontrol.com/world/oil-flow-through-strait-of-hormuz-drops-by-6-million-barrels-a-day-amid-global-energy-shock-article-13918491.html",
+        "type": "intl"
+      },
+      {
+        "title": "C . H . Robinson Truckload Pricing Backdrop Inflecting Sharply Positive",
+        "url": "https://www.morningstar.com/company-reports/1482159-ch-robinsons-truckload-pricing-backdrop-inflecting-sharply-positive",
+        "type": "intl"
+      },
+      {
+        "title": "Container Spot Rates Surge as Carriers Layer Surcharges Ahead of Early Peak Season",
+        "url": "https://gcaptain.com/container-spot-rates-surge-as-carriers-layer-surcharges-ahead-of-early-peak-season/",
+        "type": "intl"
+      },
+      {
+        "title": "Two India - bound LPG tankers add to uptick in Hormuz transits",
+        "url": "https://www.thehindubusinessline.com/news/two-india-bound-lpg-tankers-add-to-uptick-in-hormuz-transits/article70977690.ece",
+        "type": "intl"
+      },
+      {
+        "title": "중국 유조선 호르무즈 통과…이란-오만, 통행세 조율",
+        "url": "https://n.news.naver.com/mnews/article/056/0012181477?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 통행량 증가…AIS 끈 선박도 늘어",
+        "url": "https://www.tokenpost.kr/news/breaking/359701",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "U . S . Releases 53 Million Barrels From Strategic Petroleum Reserve Amid Rising Gas Prices – NaturalNews . com",
+        "url": "https://www.naturalnews.com/2026-05-14-us-releases-53m-barrels-strategic-petroleum-reserve.html",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi oil production falls to lowest level since 1990 amid Hormuz disruption",
+        "url": "https://www.middleeastmonitor.com/20260514-saudi-oil-production-falls-to-lowest-level-since-1990-amid-hormuz-disruption/",
+        "type": "intl"
+      },
+      {
+        "title": "Talks to avert strike at Inpex Australia LNG plant enter final day",
+        "url": "https://www.yahoo.com/news/articles/talks-avert-strike-inpexs-australia-110221757.html",
+        "type": "intl"
+      },
+      {
+        "title": "With Chabahar Port in limbo , can India still reach Central Asia and Russia ? ",
+        "url": "https://economictimes.indiatimes.com/news/india/with-chabahar-port-in-limbo-can-india-still-reach-central-asia-and-russia/articleshow/131063419.cms",
+        "type": "intl"
+      },
+      {
+        "title": "손주석 석유공사 사장, 미국산 원유 210만배럴 입고 점검…에너지 안보...",
+        "url": "https://www.cnbnews.com/news/articleView.html?idxno=1001832",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국산 원유 210만 배럴, 여수 석유비축기지에 들어왔다\"",
+        "url": "http://www.energydaily.co.kr/news/articleView.html?idxno=167255",
+        "type": "dom"
+      },
+      {
+        "title": "손주석 석유공사 사장, 美 원유 210만 배럴 입고현장 점검",
+        "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202605141718454620820",
+        "type": "dom"
+      },
+      {
+        "title": "삼성, 생산 비상 체제…반도체 공급망 흔들린다",
+        "url": "https://n.news.naver.com/mnews/article/215/0001252154?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "'비(非)중동산 원유' 210만배럴 입고…석유공사 사장, 현장점검",
+        "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7164269",
+        "type": "dom"
+      },
+      {
+        "title": "시진핑 “호혜와 윈윈” 경협 확대 뜻…미국산 농산물·석유 수입 늘릴...",
+        "url": "https://n.news.naver.com/mnews/article/028/0002805160?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "손석주 석유공사 사장, 미국산 원유 210만 배럴 입고현장 점검",
+        "url": "https://n.news.naver.com/mnews/article/082/0001380860?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "석유공사, 미국산 원유 210만 배럴 입고",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=385767",
+        "type": "dom"
+      },
+      {
+        "title": "석유공사, 미국산 원유 입고현장 점검…\"에너지 위기 철저대응\"",
+        "url": "https://n.news.naver.com/mnews/article/658/0000143872?sid=101",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Crude Oil Advances Amid Continuing Hormuz Crisis , Trump - Xi Meet",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-05/68500860-crude-oil-advances-amid-continuing-hormuz-crisis-trump-xi-meet-020.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Oil and Dollar Move in Tandem as Middle East Crisis Disrupts Markets",
+        "url": "https://www.bloomberg.com:443/news/articles/2026-05-14/dollar-s-link-to-oil-most-positive-ever-as-iran-crisis-drags-on",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Hold Above $100 as Trump - Xi Meeting and Iran Conflict Keep Markets on Edge",
+        "url": "http://www.econotimes.com/Oil-Prices-Hold-Above-100-as-Trump-Xi-Meeting-and-Iran-Conflict-Keep-Markets-on-Edge-1741656",
+        "type": "intl"
+      },
+      {
+        "title": "IEA warns of oil market deficit amid Mideast disruption",
+        "url": "https://www.zawya.com/en/business/energy/iea-warns-of-oil-market-deficit-amid-mideast-disruption-wi339dne",
+        "type": "intl"
+      },
+      {
+        "title": "Nations drawing down oil stocks at record pace : IEA - Markets",
+        "url": "https://www.thejakartapost.com/business/2026/05/14/nations-drawing-down-oil-stocks-at-record-pace-iea.html",
+        "type": "intl"
+      },
+      {
+        "title": "Commodity Corner : Crude remains elevated amid Iran war ; gold slips on inflation worries",
+        "url": "https://www.moneycontrol.com/news/business/markets/commodity-corner-crude-remains-elevated-amid-iran-war-gold-slips-on-inflation-worries-13918746.html",
+        "type": "intl"
+      },
+      {
+        "title": "75 days of Hormuz chaos : Oil prices remain above $100 as Trump - Xi talks near",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/75-days-of-hormuz-chaos-oil-prices-remain-above-100-as-trump-xi-talks-near/articleshow/131080240.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Gas prices in Canada inching closer to an all - time high amid Iran war - National",
+        "url": "https://globalnews.ca/news/11849498/gas-prices-record-high-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "EGP under pressure , inflation risks rise amid regional tensions : Experts - Economy - Business",
+        "url": "https://english.ahram.org.eg/News/563795.aspx",
+        "type": "intl"
+      },
+      {
+        "title": "IMF warns Iran war disruptions are pushing global economy towards  adverse  scenario ; growth risks rise",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/imf-warns-iran-war-disruptions-are-pushing-global-economy-towards-adverse-scenario-growth-risks-rise/articleshow/131099734.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Russian LNG shipments to use Chinese reinsurers",
+        "url": "https://www.businessinsurance.com/russian-lng-shipments-to-use-chinese-reinsurers/",
+        "type": "intl"
+      },
+      {
+        "title": "IMF sees risks to global growth forecast over sustained Iran war",
+        "url": "https://www.digitaljournal.com/business/imf-sees-risks-to-global-growth-forecast-over-sustained-iran-war/article",
+        "type": "intl"
+      },
+      {
+        "title": "Nymex Overview : Oil Futures Ease Amid Trump - Xi Summit -- OPIS",
+        "url": "https://www.marketscreener.com/news/nymex-overview-oil-futures-ease-amid-trump-xi-summit-opis-ce7f5bddd188fe24",
+        "type": "intl"
+      },
+      {
+        "title": "SIA warns of higher cost pressures as jet fuel prices surge ; profit hit by Air India losses",
+        "url": "https://www.straitstimes.com/business/companies-markets/sia-warns-of-higher-cost-pressures-as-jet-fuel-prices-surge-profit-hit-by-air-india-losses",
+        "type": "intl"
+      },
+      {
+        "title": "How Trump and Xi talks could impact your wallet",
+        "url": "https://www.wyff4.com/article/trump-and-xi-talks-wallet-impact/71302897",
+        "type": "intl"
+      },
+      {
+        "title": "FLEX LNG Ltd . ( NYSE : FLNG ) Q1 2026 Earnings Call Transcript",
+        "url": "https://www.insidermonkey.com/blog/flex-lng-ltd-nyseflng-q1-2026-earnings-call-transcript-1762088/",
+        "type": "intl"
+      },
+      {
+        "title": "Europe Dependence On US LNG Set To Surge",
+        "url": "https://www.zerohedge.com/commodities/europes-dependence-us-lng-set-surge",
+        "type": "intl"
+      },
+      {
+        "title": "US faces $300 billion nightmare from Iran war : How gas prices , mortgages , and wages are set to",
+        "url": "https://www.bankingnews.gr/diethni/articles/875084/us-faces-300-billion-nightmare-from-iran-war-how-gas-prices-mortgages-and-wages-are-set-to-burn",
+        "type": "intl"
+      },
+      {
+        "title": "Modi Urges Fuel Conservation as Oil Shock Intensifies – NaturalNews . com",
+        "url": "https://www.naturalnews.com/2026-05-14-modi-urges-fuel-conservation-oil-shock-intensifies.html",
+        "type": "intl"
+      },
+      {
+        "title": "CEZ Raises 2026 Outlook as Middle East Crisis Lifts Power Prices",
+        "url": "https://oilprice.com/Company-News/CEZ-Raises-2026-Outlook-as-Middle-East-Crisis-Lifts-Power-Prices.html",
+        "type": "intl"
+      },
+      {
+        "title": "Rupee slips to record low near 96 / $ as energy risks deepen",
+        "url": "https://www.thehindubusinessline.com/markets/forex/rupee-slips-to-record-low-near-96-as-energy-risks-deepen/article70978006.ece",
+        "type": "intl"
+      },
+      {
+        "title": "India rupee slips to record low near 96 per USD as energy risks deepen",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/india-rupee-slips-to-record-low-near-96-per-usd-as-energy-risks-deepen/articleshow/131090126.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Inflation rate rises with a litre of petrol up 45c compared with last year",
+        "url": "https://www.independent.ie/business/money/inflation-rate-rises-with-a-litre-of-petrol-up-45c-compared-with-last-year/a1596690711.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sensex claws back 880 points , but rupee hits an all - time low nears 96 mark",
+        "url": "https://www.theweek.in/news/biz-tech/2026/05/14/rupee-falls-market-recovers.html",
+        "type": "intl"
+      },
+      {
+        "title": "Petrol , Diesel Prices May Rise Soon if Middle East Crisis Continues , Warns RBI Governor",
+        "url": "https://pragativadi.com/petrol-diesel-prices-may-rise-soon-if-middle-east-crisis-continues-warns-rbi-governor/",
+        "type": "intl"
+      },
+      {
+        "title": "Japanese snacks go black - and - white : Why Iran war is driving up ink prices",
+        "url": "https://www.aljazeera.com/news/2026/5/14/japanese-snacks-go-black-and-white-why-iran-war-is-driving-up-ink-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Wholesale inflation surges to 42 - month high of 8 . 3 % in April on crude spike",
+        "url": "https://www.livemint.com/economy/wpi-inflation-wholesale-inflation-india-april-2026-inflation-fuel-and-power-inflation-crude-oil-prices-11778746946653.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Edges Higher As Markets Watch US - China Summit",
+        "url": "https://www.marinelink.com/news/oil-edges-higher-markets-watch-uschina-539196",
+        "type": "intl"
+      },
+      {
+        "title": "Wholesale inflation surges to 8 . 3 % YoY in April , Fuel and Power inflation rises to 24 . 71 % ",
+        "url": "https://aninews.in/news/business/wholesale-inflation-surges-to-83-yoy-in-april-fuel-and-power-inflation-rises-to-247120260514123043/",
+        "type": "intl"
+      },
+      {
+        "title": "Wholesale price inflation rises to 8 . 3 % in April on sharp spike in fuel , power , crude",
+        "url": "https://www.thehindu.com/business/Economy/wholesale-price-inflation-rises-to-83-in-april-on-sharp-spike-in-fuel-power-crude/article70977394.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Australian grain : northern markets rise amid global unease | Queensland Country Life",
+        "url": "https://www.queenslandcountrylife.com.au/story/9244606/australian-grain-northern-markets-rise-amid-global-unease/",
+        "type": "intl"
+      },
+      {
+        "title": "Europe household energy prices surge after Iran war : Which capitals were hit hardest ? ",
+        "url": "https://www.euronews.com/business/2026/05/14/europes-household-energy-prices-surge-after-iran-war-which-capitals-were-hit-hardest",
+        "type": "intl"
+      },
+      {
+        "title": "Wholesale Inflation Hits 8 . 3 % in April 2026",
+        "url": "https://www.newkerala.com/news/a/wholesale-inflation-surges-83-yoy-april-fuel-power-117.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Cement makers turn defensive as West Asia shock lifts input costs",
+        "url": "https://www.livemint.com/industry/cement-makers-margin-squeeze-west-asia-cost-surge-petcoke-demand-slowdown-11778729049985.html",
+        "type": "intl"
+      },
+      {
+        "title": "Mitrade EU : Mitrade Launches Trumponomics Ebook ; Strait of Hormuz Crisis Stokes Europe Energy Volatility",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-05/68493185-mitrade-eu-mitrade-launches-trumponomics-ebook-strait-of-hormuz-crisis-stokes-europe-s-energy-volatility-008.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Crude oil futures edge higher ahead of US - China presidential meeting",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-edge-higher-ahead-of-us-china-presidential-meeting/article70976917.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Wholesale inflation surges to a 42 - month high of 8 . 3 % in April on crude spike",
+        "url": "https://www.moneycontrol.com/news/business/economy/wholesale-inflation-surges-to-a-42-month-high-of-8-3-in-april-on-crude-spike-13918959.html",
+        "type": "intl"
+      },
+      {
+        "title": "Korea refloats currency swap with US",
+        "url": "https://www.koreaherald.com/article/10738084",
+        "type": "dom"
+      },
+      {
+        "title": "Trump - Xi talks leave Korean chipmakers facing tough trade - offs",
+        "url": "https://www.koreaherald.com/article/10738036",
+        "type": "dom"
+      },
+      {
+        "title": "OPEC Cuts 2026 Global Oil Demand Growth Forecast",
+        "url": "https://english.aawsat.com/business/5273009-opec-cuts-2026-global-oil-demand-growth-forecast",
+        "type": "intl"
+      },
+      {
+        "title": "ADNOC Logistics & Services Hikes 2026 Guidance as Q1 Profit Jumps 20 % to $222 Million",
+        "url": "https://gulfnews.com/business/markets/adnoc-ls-lifts-2026-guidance-after-profit-rises-to-222-million-1.500539967",
+        "type": "intl"
+      },
+      {
+        "title": "Azerbaijani oil moves down in price",
+        "url": "https://www.trend.az/business/4185664.html",
+        "type": "intl"
+      },
+      {
+        "title": "Supply - chain stress that peaked in covid heads higher again",
+        "url": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/supply-chain-stress-that-peaked-in-covid-heads-higher-again/articleshow/131083390.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Rise Ahead of Trump - Xi Talks",
+        "url": "https://athens-times.com/oil-prices-edge-higher-as-traders-watch-trump-xi-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Australian grain : northern markets rise amid global unease | Stock Journal",
+        "url": "https://www.stockjournal.com.au/story/9244606/australian-grain-northern-markets-rise-amid-global-unease/",
+        "type": "intl"
+      },
+      {
+        "title": "China yuan hits 3 - year high , stocks dip , as Trump - Xi summit begins",
+        "url": "https://finance.yahoo.com/markets/currencies/articles/chinas-yuan-hits-3-high-043851142.html",
+        "type": "intl"
+      },
+      {
+        "title": "Indian bonds open 1 bps higher , traders await US - China meet outcome amid Brent crude worries",
+        "url": "https://www.moneycontrol.com/news/business/markets/indian-bonds-open-1-bps-higher-traders-await-us-china-meet-outcome-amid-brent-crude-worries-13918792.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil edges up as investors focus on Trump - Xi meeting in Beijing",
+        "url": "https://dunyanews.tv/en/Business/951454-oil-edges-up-as-investors-focus-on-trumpxi-meeting-in-beijing",
+        "type": "intl"
+      },
+      {
+        "title": "Yield Tracker : India 10 - year bond yield slips marginally amid easing oil prices",
+        "url": "https://www.moneycontrol.com/news/business/markets/yield-tracker-india-s-10-year-bond-yield-slips-marginally-amid-easing-oil-prices-13918760.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sensex Today | Stock Market Live : Sensex , Nifty set for firm start tracking global rally ; oil , rupee key concerns",
+        "url": "https://www.moneycontrol.com/news/business/markets/sensex-today-stock-market-live-sensex-nifty-set-for-firm-start-tracking-global-rally-oil-rupee-key-concerns-liveblog-13918710.html",
+        "type": "intl"
+      },
+      {
+        "title": "Crude @ $100+ : The Rs 3 lakh crore power boom you might be missing",
+        "url": "https://economictimes.indiatimes.com/markets/stocks/news/crude100-the-rs-3-lakh-crore-power-boom-you-might-be-missing/articleshow/131081991.cms",
+        "type": "intl"
+      },
+      {
+        "title": "War On Iran : – U . S . Experiencing Price Increases – Moon of Alabama",
+        "url": "https://www.moonofalabama.org/2026/05/war-on-iran-u-s-experiencing-price-increases.html/comment-page-2",
+        "type": "intl"
+      },
+      {
+        "title": "Rupee stuck under oil pressure ; Iran war shadows Trump China trip",
+        "url": "https://www.thehindubusinessline.com/markets/forex/rupee-stuck-under-oil-pressure-iran-war-shadows-trumps-china-trip/article70976865.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Rupee Hits Record Low Against US Dollar Amid Crude Oil Surge and West Asia Tensions",
+        "url": "https://dailypioneer.com/news/rupee-crashes-to-record-95-80-against-usd",
+        "type": "intl"
+      },
+      {
+        "title": "Air NZ bracing for big hit as fuel costs soar",
+        "url": "https://www.odt.co.nz/business/air-nz-bracing-big-hit-fuel-costs-soar",
+        "type": "intl"
+      },
+      {
+        "title": "Bapcor ( BAP ASX ) slashes profit guidance as Middle East war drives up costs",
+        "url": "https://www.afr.com/companies/retail/bapcor-lowers-guidance-as-war-costs-stall-recovery-20260514-p5zwpi",
+        "type": "intl"
+      },
+      {
+        "title": "Rupee may slide to 96 - 98 by December - end amid oil shock : Mint poll",
+        "url": "https://www.livemint.com/market/rupee-may-slide-to-96-98-by-december-end-amid-oil-shock-mint-poll-11778659684263.html",
+        "type": "intl"
+      },
+      {
+        "title": "New checked baggage charges ? Some airlines running into trouble with the Iran war fuel price surge",
+        "url": "https://www.straitstimes.com/opinion/airlines-are-making-money-again-but-that-might-not-last",
+        "type": "intl"
+      },
+      {
+        "title": "Govt . to take all - out efforts to stabilize prices amid Middle East war",
+        "url": "https://www.koreaherald.com/article/10737626",
+        "type": "dom"
+      },
+      {
+        "title": "S & P 500 , Nasdaq end at records as oil prices retreat",
+        "url": "https://www.moneycontrol.com/news/business/markets/s-p-500-nasdaq-end-at-records-as-oil-prices-retreat-13918488.html",
+        "type": "intl"
+      },
+      {
+        "title": "미 재무장관 \"이란 원유 저장공간 소진…생산 중단 불가피\"",
+        "url": "https://www.tokenpost.kr/news/breaking/359742",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴욕증시]미중 정상회담 주시하며 일제히 상승 출발",
+        "url": "https://n.news.naver.com/mnews/article/277/0005763137?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "정부 \"유가 100달러 아래로 가야 최고가격제 해제 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001356293?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 美 4월 소매판매 큰폭 둔화",
+        "url": "https://n.news.naver.com/mnews/article/009/0005680326?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "정부 \"유가 100달러 아래면 최고가격제 해제 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000864899?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미 4월 소매판매 0.5%↑…“고유가에 증가세 둔화”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012181458?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 4월 소매판매 0.5%↑…고유가에 소비 위축",
+        "url": "https://n.news.naver.com/mnews/article/277/0005763134?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "원/달러 환율, 5거래일 연속 상승…외국인 투자자 매도세 지속",
+        "url": "https://www.tokenpost.kr/news/economy/359702",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 미국 소비 '뚝'⋯미 4월 소매판매 0.5%↑",
+        "url": "https://www.gukjenews.com/news/articleView.html?idxno=3582505",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 소비 위축 조짐…美 4월 소매판매 0.5%↑ 증가세 급 둔화",
+        "url": "https://n.news.naver.com/mnews/article/016/0002643661?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 4월 소매판매 0.5%↑…고유가에 증가세 둔화",
+        "url": "https://n.news.naver.com/mnews/article/422/0000864892?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 미국 소비 둔화⋯4월 소매판매 증가폭 축소",
+        "url": "https://www.etoday.co.kr/news/view/2584685",
+        "type": "dom"
+      },
+      {
+        "title": "美 4월 소매판매 0.5%↑…고유가에 증가세 둔화",
+        "url": "https://n.news.naver.com/mnews/article/001/0016078289?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "‘매파’ 일본은행에 엔캐리 청산…비트코인 ETF 넉달 만에 최대 순유출",
+        "url": "https://n.news.naver.com/mnews/article/018/0006281736?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "원·달러 환율, 달러 강세·외인 주식 '팔자'에 5거래일째 상승...코스피...",
+        "url": "https://www.betanews.net/article/view/beta202605140116",
+        "type": "dom"
+      },
+      {
+        "title": "전주 고유가 지원금, 지역경제 1512억 효과",
+        "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=689826",
+        "type": "dom"
+      },
+      {
+        "title": "2차 고유가피해지원금 18일부터 지급",
+        "url": "https://n.news.naver.com/mnews/article/661/0000076283?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "고유가 피해 지원금 2차 지급 다음 주 시작",
+        "url": "https://jejumbc.com/NewsArticle/840469",
+        "type": "dom"
+      },
+      {
+        "title": "엔진오일 교체하기도 무섭네… 울산 차량 유지비 폭등",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=385740",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노, 1분기 영업익 2.1조..'재고 이익 증가'",
+        "url": "http://web.ubc.co.kr/wp/archives/127545",
+        "type": "dom"
+      },
+      {
+        "title": "市, 18일부터 고유가 지원금 2차 지급",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=385795",
+        "type": "dom"
+      },
+      {
+        "title": "엄태영 의원, 국제유가 급등 대응 '소상공인 유류비·물류비 지원법' 대...",
+        "url": "http://www.cctimes.kr/news/articleView.html?idxno=906879",
+        "type": "dom"
+      },
+      {
+        "title": "정유주, 1분기 호실적에도 엇갈린 주가... 미중 정상회담 및 국제유가 변...",
+        "url": "https://www.tokenpost.kr/news/market/359683",
+        "type": "dom"
+      },
+      {
+        "title": "\"착시\"…4대 정유사 '역대급' 이익에도 못 웃는 이유",
+        "url": "https://n.news.naver.com/mnews/article/437/0000491418?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "산업부 \"국제유가 100달러 이하면 최고가격제 해제 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/658/0000143871?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "GS칼텍스가 떠받친 GS…정유 호황에 웃지만 의존도는 숙제",
+        "url": "https://www.econovill.com/news/articleView.html?idxno=740102",
+        "type": "dom"
+      },
+      {
+        "title": "\"손실보전 없으면 주주행동\"… 정유업계, 최고가격제發 소송리스크 부상",
+        "url": "https://n.news.naver.com/mnews/article/029/0003026770?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가, 美中 정상회담 기대감·금리 인상 전망에 하락…브렌트 105달...",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=81067",
+        "type": "dom"
+      },
+      {
+        "title": "정부 \"국제유가 100달러 이하 돼야 최고가격제 해제 검토\"",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=840813",
+        "type": "dom"
+      },
+      {
+        "title": "정부 \"유가 100달러 아래로 떨어져야 석유 최고가격제 해제 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006281448?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "정유 4사 '합산 6조' 호실적에도 가격 통제·하락 우려에 울상",
+        "url": "https://n.news.naver.com/mnews/article/417/0001143260?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "마르코스, 고유가 충격에 물가 방어 총력...식품 관세 인하·LPG·등유 소...",
+        "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=90&CONTENTS_NO=1&bbsGbn=244&bbsSn=244&pNttSn=241053",
+        "type": "dom"
+      },
+      {
+        "title": "고유가 직격탄 맞은 화물업계…생계형 기사들 한숨",
+        "url": "http://www.kjdaily.com/article.php?aid=1778755475678716004",
+        "type": "dom"
+      },
+      {
+        "title": "미중 무역 갈등 완화 분위기…車·배터리 업계 \"호재·악재 동시에\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0008945497?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "산업통상부 \"석유최고가격제로 휘발유 3%·경유 8% 소비 감소\"",
+        "url": "https://daily.hankooki.com/news/articleView.html?idxno=1367339",
+        "type": "dom"
+      },
+      {
+        "title": "정부 “유가 90달러대 돼야 최고가격제 해제 검토”",
+        "url": "https://n.news.naver.com/mnews/article/029/0003026771?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프·시진핑의 '무역담판'…우리 경제에는 득일까, 실일까",
+        "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=358909",
+        "type": "dom"
+      },
+      {
+        "title": "산업부 \"국제유가 100달러 이하로 떨어져야 최고가격제 종료 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005762798?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "유럽, LNG 수입 러시아산 줄고 미국산 늘었다",
+        "url": "https://www.todayenergy.kr/news/articleView.html?idxno=297804",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "Gujarat fisherfolk in crisis after two summers of war",
+        "url": "https://scroll.in/article/1092822/gujarat-fisherfolk-in-crisis-after-two-summers-of-war",
+        "type": "intl"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "Chinese Supertanker Glides Through Hormuz Blockade As White House Touts  Good  Talks In Beijing",
+        "url": "https://dailycaller.com/2026/05/14/chinese-supertanker-hormuz-blockade-china-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran begins letting some Chinese ships cross Strait of Hormuz -- media",
+        "url": "http://www.greekherald.com/news/279050501/iran-begins-letting-some-chinese-ships-cross-strait-of-hormuz-media",
+        "type": "intl"
+      },
+      {
+        "title": "Two India - bound LPG tankers cross Hormuz ; another sinks after attack",
+        "url": "https://www.rediff.com/news/report/two-india-bound-lpg-tankers-cross-hormuz-another-sinks-after-attack/20260514.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Second Japan - linked oil tanker passes Hormuz strait | The Asahi Shimbun : Breaking News , Japan News and Analysis",
+        "url": "https://www.asahi.com/ajw/articles/16564146",
+        "type": "intl"
+      },
+      {
+        "title": "1st LD Writethru : Iran begins letting some Chinese ships cross Strait of Hormuz -- media",
+        "url": "http://www.bignewsnetwork.com/news/279050220/1st-ld-writethru-iran-begins-letting-some-chinese-ships-cross-strait-of-hormuz-media",
+        "type": "intl"
+      },
+      {
+        "title": "Second Japan - linked Oil Tanker Sails Via Strait of Hormuz as PM Asks Iran to Help Out",
+        "url": "https://gcaptain.com/second-japan-linked-oil-tanker-sails-via-strait-of-hormuz-as-pm-asks-iran-to-help-out/",
+        "type": "intl"
+      },
+      {
+        "title": "HMM first - quarter operating profit down 56 % as freight rates decline",
+        "url": "https://www.freshplaza.com/north-america/article/9838084/hmm-first-quarter-operating-profit-down-56-as-freight-rates-decline/",
+        "type": "intl"
+      },
+      {
+        "title": "Why Iran Foreign Minister Arrived in Delhi Just as the 15th Indian LPG Tanker Successfully Pierced the Strait of Hormuz Blockade",
+        "url": "https://indianexpress.com/article/india/iran-foreign-minister-araghchi-delhi-two-india-lpg-tankers-cross-strait-hormuz-10689110/",
+        "type": "intl"
+      },
+      {
+        "title": "Japan Secures Second Oil Tanker Passage Through Strait",
+        "url": "https://www.marinelink.com/news/japan-secures-second-oil-tanker-passage-539197",
+        "type": "intl"
+      },
+      {
+        "title": "Second Japan - linked crude oil tanker passes through Strait of Hormuz , LSEG data shows",
+        "url": "https://www.arabnews.com/node/2643523/middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "MV Sunshine En Route To India Crosses Strait Of Hormuz With Coordinated Support From Indian Navy And Agencies : Sources",
+        "url": "https://www.newsx.com/world/mv-sunshine-en-route-to-india-crosses-strait-of-hormuz-with-coordinated-support-from-indian-navy-and-agencies-sources-218606/",
+        "type": "intl"
+      },
+      {
+        "title": "Vietnam state oil company urges US Navy to allow tanker through blockade , document shows",
+        "url": "https://www.yahoo.com/news/articles/vietnam-state-oil-company-urges-002621003.html",
+        "type": "intl"
+      },
+      {
+        "title": "India - bound LPG tanker crosses Strait of Hormuz safely amid regional tensions",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/india-bound-lpg-tanker-mv-sunshine-crosses-strait-of-hormuz-with-indian-navy-support/article70976029.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Chinese Supertanker Transits Strait of Hormuz with 2M Barrels of Oil",
+        "url": "https://www.breitbart.com/middle-east/2026/05/13/chinese-supertanker-transits-strait-of-hormuz-with-two-million-barrels-of-iraqi-crude/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Chinese ships passed through Hormuz overnight",
+        "url": "https://www.dw.com/en/iran-says-chinese-ships-passed-through-hormuz-overnight/a-77163709",
+        "type": "intl"
+      },
+      {
+        "title": "Dual - Fuel Ships Leading the Energy Transition",
+        "url": "https://gcaptain.com/shippings-180-billion-push-into-dual-fuel-ships-shows-no-signs-of-slowing/",
+        "type": "intl"
+      },
+      {
+        "title": "Chinese Ships Cross Hormuz Under Iran Protocol Amid US Block - Pakistan Today",
+        "url": "https://www.pakistantoday.com.pk/2026/05/14/chinese-ships-cross-hormuz-under-iran-protocol-amid-us-blockade",
+        "type": "intl"
+      },
+      {
+        "title": "Lower revenue , higher costs drive Hapag - Lloyd to loss",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/lower-revenue-higher-costs-drive-135806793.html",
+        "type": "intl"
+      },
+      {
+        "title": "  2 LPG carrier vessels crossed Strait of Hormuz , expected to arrive at Kandla Port on May 16 : Shipping Ministry",
+        "url": "https://aninews.in/news/national/general-news/2-lpg-carrier-vessels-crossed-strait-of-hormuz-expected-to-arrive-at-kandla-port-on-may-16-shipping-ministry20260514171103/",
+        "type": "intl"
+      },
+      {
+        "title": "Dongfeng Motor , COSCO Shipping deepen partnership to support global expansion",
+        "url": "https://autonews.gasgoo.com/articles/market-industry/dongfeng-motor-cosco-shipping-deepen-partnership-to-support-global-expansion-2054767930724737024",
+        "type": "intl"
+      },
+      {
+        "title": "Two more India - bound ships cross Hormuz , taking total to 13",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/two-more-india-bound-ships-cross-hormuz-taking-total-to-13/articleshow/131082803.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Hapag - Lloyd Calls Q1  Unsatisfactory  While Warning of Uncertainty",
+        "url": "https://maritime-executive.com/article/hapag-lloyd-calls-q1-unsatisfactory-while-warning-of-uncertainty",
+        "type": "intl"
+      },
+      {
+        "title": "India - bound LPG tanker MV Sunshine safely crosses Strait of Hormuz : Report",
+        "url": "https://www.moneycontrol.com/news/india/india-bound-lpg-tanker-mv-sunshine-safely-crosses-strait-of-hormuz-report-13918480.html",
+        "type": "intl"
+      },
+      {
+        "title": "이란 매체 \"中 일부 선박 호르무즈 통과 어젯밤부터 시작\"",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4414924",
+        "type": "dom"
+      },
+      {
+        "title": "일본 유조선 또 호르무즈 통과...다카이치 \"직접 요청\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002353124?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"중국 선박, 13일 밤부터 호르무즈 통항 시작\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002353123?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "HMM, 중동전쟁 여파 1분기 실적 56% ‘뚝’",
+        "url": "https://n.news.naver.com/mnews/article/658/0000143877?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "삼성重, LNG운반선 2척 7505억 수주",
+        "url": "http://www.gnmaeil.com/news/articleView.html?idxno=586597",
+        "type": "dom"
+      },
+      {
+        "title": "K-조선, LNG선 수주 릴레이…HD현대·삼성重, 2척씩 나란히 계약",
+        "url": "https://n.news.naver.com/mnews/article/138/0002227938?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "삼성중공업 LNG 운반선 2척…7505억원 규모 수주",
+        "url": "http://www.gndomin.com/news/articleView.html?idxno=475681",
+        "type": "dom"
+      },
+      {
+        "title": "LIG D&A, 동유럽 방산 전시회 BSDA 참가…삼성重, LNG운반선 2척 수주 [산...",
+        "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=201064",
+        "type": "dom"
+      },
+      {
+        "title": "대한전선, 1만톤급 CLV 추가 확보… 해저 턴키 경쟁력 고도화",
+        "url": "https://n.news.naver.com/mnews/article/031/0001028750?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "대한전선, 1만톤급 해저케이블 포설선 확보",
+        "url": "https://n.news.naver.com/mnews/article/009/0005680215?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "김상백 경북도의원 후보 \"흥해·북부권, AI·북극항로 거점 도약... 세대...",
+        "url": "https://www.getnews.co.kr/news/articleView.html?idxno=870187",
+        "type": "dom"
+      },
+      {
+        "title": "HMM 부산행에 들썩인 해양판… 부산 재계, 해수부와 '속도전' 시동",
+        "url": "https://www.mhns.co.kr/news/articleView.html?idxno=747505",
+        "type": "dom"
+      },
+      {
+        "title": "해수부 찾은 부산상의 “HMM 본사 이전·북극항로 지원을”",
+        "url": "https://n.news.naver.com/mnews/article/658/0000143919?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "“바이오 선박유 없인 수출길 막혀”…선·화주 상생과 벙커링 거점 확...",
+        "url": "https://www.ekn.kr/web/view.php?key=20260514023334865",
+        "type": "dom"
+      },
+      {
+        "title": "정청래, 울릉서 표심 몰이... \"공항·해운 인프라로 이동권 보장할 것\"",
+        "url": "https://www.getnews.co.kr/news/articleView.html?idxno=870181",
+        "type": "dom"
+      },
+      {
+        "title": "HJ중공업 7900TEU급 컨테이너선 명명식 개최",
+        "url": "https://n.news.naver.com/mnews/article/003/0013945476?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[영상] 미국 LNG 하루 3척 시대…한국 조선 ‘20년 슈퍼사이클’ 신호탄",
+        "url": "https://www.theguru.co.kr/news/article.html?no=101727",
+        "type": "dom"
+      },
+      {
+        "title": "[특집] 북극항로 시범운항 기항지에 포항 영일만항…포스코 화주 참여",
+        "url": "https://www.idaegu.com/news/articleView.html?idxno=662162",
+        "type": "dom"
+      },
+      {
+        "title": "전략물자운송선박 국내 발주 촉진",
+        "url": "https://www.naeil.com/news/read/588650?ref=naver",
+        "type": "dom"
+      }
+    ],
+    "8_Logistics": [
+      {
+        "title": "신한은행·삼성중공업·무보, 3000억 특별보증 추진…K-조선 공급망 지원...",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=452815",
+        "type": "dom"
+      },
+      {
+        "title": "우리은행, 한화오션과 3천억 상생금융 협약 \"협력사 지원 확대\"",
+        "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2171621",
+        "type": "dom"
+      },
+      {
+        "title": "하나은행 \"HD현대중공업 협력사 대상 4천억원 우대금융 지원\"",
+        "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1256647",
+        "type": "dom"
+      },
+      {
+        "title": "금융권 'K-조선' 상생책 지원",
+        "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3063692",
+        "type": "dom"
+      },
+      {
+        "title": "우리은행, 한화오션과 3000억 상생금융 지원",
+        "url": "http://www.paxetv.com/news/articleView.html?idxno=272080",
+        "type": "dom"
+      },
+      {
+        "title": "우리은행, 한화오션과 3천억 규모 상생금융 협약 체결",
+        "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4083761",
+        "type": "dom"
+      },
+      {
+        "title": "신한은행, 삼성중공업·무보와 조선업 금융지원 협약",
+        "url": "http://www.popcornnews.net/news/articleView.html?idxno=121331",
+        "type": "dom"
+      },
+      {
+        "title": "우리은행 조선업 생태계 동반성장 견인…한화오션과 협력",
+        "url": "https://www.inthenews.co.kr/news/article.html?no=86862",
+        "type": "dom"
+      },
+      {
+        "title": "하나은행, 조선 협력사에 4000억 지원…수출 경쟁력 강화",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1708840",
+        "type": "dom"
+      },
+      {
+        "title": "하나은행, 'K-조선' 수출 공급망 지원 확대 … 1조 상생금융·15조 무역금...",
+        "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=84607",
+        "type": "dom"
+      },
+      {
+        "title": "HD현대, 7400억 현금 수혈로 '공급망 방벽' 쌓는다",
+        "url": "http://www.ttlnews.com/news/articleView.html?idxno=3108021",
+        "type": "dom"
+      },
+      {
+        "title": "HD현대, 중동 사태 장기화에 협력사 7400억 조기 지급···'상생 경영' ...",
+        "url": "http://www.finomy.com/news/articleView.html?idxno=254415",
+        "type": "dom"
+      },
+      {
+        "title": "KMI \"K-푸드 확산 위해 스마트 콜드체인 구축해야\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0013945579?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "“K-푸드 수출길, 더 차갑고 똑똑하게”… KMI, 국가 스마트 콜드체인 물...",
+        "url": "https://n.news.naver.com/mnews/article/277/0005762956?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "KMI \"농수산식품 수출경쟁력 제고 위해 국가 스마트 콜드체인 구축 필요...",
+        "url": "https://n.news.naver.com/mnews/article/421/0008944870?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한미 조선협력 커지는데…중소조선소 '중국산 기자재' 의존 심화",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260514010003933",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "China U . S . ethane imports hit record as Iran war cut rival feedstock supply",
+        "url": "http://www.hydrocarbonprocessing.com/news/2026/05/chinas-us-ethane-imports-hit-record-as-iran-war-cut-rival-feedstock-supply/",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz supply losses draw down global oil stocks  at record pace : IEA",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/05/iran-260513-pdo02.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Kharg Island Oil Jetties Empty Again Yesterday , Satellite Shows",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/iran-kharg-island-oil-jetties-140646551.html",
+        "type": "intl"
+      },
+      {
+        "title": "New Logic Highlights Role of Biogas in Reducing South Korea LNG Dependence",
+        "url": "https://www.pr.com:443/press-release/968591",
+        "type": "intl"
+      },
+      {
+        "title": "Blackouts and protests as Cuba says fuel has  run out  ",
+        "url": "https://www.digitaljournal.com/world/blackouts-and-protests-as-cuba-says-fuel-has-run-out/article",
+        "type": "intl"
+      },
+      {
+        "title": "Cuba electrical grid suffers partial collapse as protests flare",
+        "url": "https://www.marketscreener.com/news/cuba-s-electrical-grid-suffers-partial-collapse-as-protests-flare-ce7f5bddd18bf326",
+        "type": "intl"
+      },
+      {
+        "title": "India warns BRICS of energy shock from West Asia crisis",
+        "url": "https://www.rediff.com/news/report/india-warns-brics-of-energy-shock-from-west-asia-crisis/20260514.htm",
+        "type": "intl"
+      },
+      {
+        "title": "SA wheat farmers weigh production cuts as Iran war bites",
+        "url": "https://www.businessday.co.za/companies/2026-05-14-sas-wheat-farmers-weigh-production-cuts-as-iran-war-bites/",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz crisis a wake up call ! India eyes Rs 40 , 000 crore subsea pipeline for uninterrupted gas supplies from Gulf",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/strait-of-hormuz-crisis-a-wake-up-call-india-eyes-rs-40000-crore-subsea-pipeline-for-uninterrupted-gas-supplies-from-gulf/articleshow/131085408.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Oil shortage fades colors on Japanese chip packs",
+        "url": "https://www.azernews.az/region/258353.html",
+        "type": "intl"
+      },
+      {
+        "title": "India bans sugar exports till September 30",
+        "url": "https://www.thehindu.com/business/Industry/india-bans-sugar-exports-till-september-30/article70976919.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Australian grain : northern markets rise amid global unease | The Land",
+        "url": "https://www.theland.com.au/story/9244606/australian-grain-northern-markets-rise-amid-global-unease/",
+        "type": "intl"
+      },
+      {
+        "title": "India bans sugar exports till Sept 30 ; exemptions for EU , US quotas",
+        "url": "https://www.tribuneindia.com/news/india/india-bans-sugar-exports-till-sept-30-exemptions-for-eu-us-quotas/",
+        "type": "intl"
+      },
+      {
+        "title": "Cuba has run out of diesel and oil , energy minister says",
+        "url": "https://www.yahoo.com/news/articles/cuba-run-diesel-oil-energy-043146019.html",
+        "type": "intl"
+      },
+      {
+        "title": "Europe Faces New Energy Squeeze as Gulf Crisis Threatens Gas Supplies",
+        "url": "https://www.dnews.gr/eidhseis/news-in-english/588093/europe-faces-new-energy-squeeze-as-gulf-crisis-threatens-gas-supplies",
+        "type": "intl"
+      },
+      {
+        "title": "Fertilizer maker Mosaic cuts output after Iran war raises costs",
+        "url": "https://www.mining.com/web/fertilizer-maker-mosaic-cuts-output-after-iran-war-raises-costs/",
+        "type": "intl"
+      },
+      {
+        "title": "Satellite images reveal oil spills as Iran war threatens global energy and the environment – NaturalNews . com",
+        "url": "https://www.naturalnews.com/2026-05-13-strait-of-hormuz-satellite-images-reveal-oil-spills.html",
+        "type": "intl"
+      },
+      {
+        "title": "US lawmakers cite India fertiliser imports amid farm cost crisis",
+        "url": "https://www.prokerala.com/news/articles/a1762551.html",
+        "type": "intl"
+      },
+      {
+        "title": "Morocco Suspends Soft Wheat Imports as Harvest Outlook Improves",
+        "url": "https://www.moroccoworldnews.com/2026/05/299243/morocco-suspends-soft-wheat-imports-as-harvest-outlook-improves/",
+        "type": "intl"
+      },
+      {
+        "title": "Asian wheat millers resume purchases after two - month hiatus - Markets",
+        "url": "https://www.thejakartapost.com/business/2026/05/14/asian-wheat-millers-resume-purchases-after-two-month-hiatus.html",
+        "type": "intl"
+      },
+      {
+        "title": "중동 전쟁에 농자재값 폭등…농민 \"앞으로 더 걱정\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000864898?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[단독] \"50년 만에 최악\" 줄파산 시작…철강업계 '초비상'",
+        "url": "https://n.news.naver.com/mnews/article/015/0005287147?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "철강·석화 부진에 중동 리스크까지…포항·서산 고용지원 6개월 연장",
+        "url": "https://n.news.naver.com/mnews/article/421/0008945604?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중국 연료 수출, 규제 완화에도 전쟁 이전 절반 수준",
+        "url": "https://www.tokenpost.kr/news/breaking/359717",
+        "type": "dom"
+      },
+      {
+        "title": "중동사태 잉크 부족에 日식품사 인쇄 면적 줄인다",
+        "url": "https://n.news.naver.com/mnews/article/005/0001849048?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "전남도 “나프타 원료 의료제품 수급차질 없다”",
+        "url": "http://www.jndn.com/article.php?aid=1778753837432567003",
+        "type": "dom"
+      },
+      {
+        "title": "공정위, 석화기업 4곳 PVC·가소제 담합 관련 조사 착수",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=452800",
+        "type": "dom"
+      },
+      {
+        "title": "[기고]국제 곡물 외교 – 해외 곡물 기지와 식량 외교 전략",
+        "url": "https://www.ksmnews.co.kr/news/view.php?idx=605055",
+        "type": "dom"
+      },
+      {
+        "title": "산업부 “정유사 최고가격제 손실 보전, ‘기회이익’ 기준 아냐… 3조...",
+        "url": "https://n.news.naver.com/mnews/article/366/0001164232?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "정부, 정유사 '손실보전 기준' 5월 말 확정…원가 기반 100% 보전 원칙",
+        "url": "https://n.news.naver.com/mnews/article/119/0003090381?sid=101",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "Trump says China offered help with Iran as ship seized near UAE",
+      "url": "https://www.courant.com/2026/05/14/trump-says-china-offered-help-with-iran-as-ship-seized-near-uae-3/",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Strait of Hormuz ship seized near UAE , heads toward Iran , united kingdom reports",
+      "url": "https://www.foxnews.com/world/ship-seized-coast-uae-near-strait-hormuz-may-floating-armory-report",
+      "type": "intl"
+    },
+    "3": {
+      "title": "Iran seizes  floating armory  near Hormuz as Trump says China promised not to arm Teh",
+      "url": "https://www.ynetnews.com/article/skkc00wqkge",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Tensions flare near Strait of Hormuz as a ship is seized and another is sunk - Las Vegas Sun News",
+      "url": "https://lasvegassun.com/news/2026/may/14/tensions-flare-near-strait-of-hormuz-as-a-ship-is/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Ship seized off coast of UAE near Strait of Hormuz may have been  floating armory : report",
+      "url": "https://www.wfmd.com/2026/05/14/ship-seized-off-coast-of-uae-near-strait-of-hormuz-may-have-been-floating-armory-report/",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Kuwait Accuses Iran of Attacking Island with Chinese - Funded Port",
+      "url": "https://www.breitbart.com/national-security/2026/05/13/kuwait-accuses-iran-of-attacking-island-with-chinese-funded-port/",
+      "type": "intl"
+    },
+    "7": {
+      "title": "UAE Business : Cargo ship sunk off Oman , another vessel seized near Fujairah",
+      "url": "https://www.gdnonline.com:443/Details/1394742/Cargo-ship-sunk-off-Oman,-another-vessel-seized-near-Fujairah",
+      "type": "intl"
+    },
+    "8": {
+      "title": "Trump Says Xi Offered Help To Make a Deal With Iran And  Would Like To See The Hormuz Strait Open  ",
+      "url": "https://www.ibtimes.com/trump-says-xi-offered-help-make-deal-iran-would-like-see-hormuz-strait-open-3802826",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Iran latest : Ship seized near Strait of Hormuz ; Trump presses China to help end war",
+      "url": "https://www.fox10phoenix.com/news/iran-war-latest-may-14",
+      "type": "intl"
+    },
+    "10": {
+      "title": "Energy has been weaponised by Hormuz  being taken hostage effectively , we are responsible player in energy space : UAE Minister",
+      "url": "https://news.webindia123.com/news/Articles/World/20260514/4450307.html",
+      "type": "intl"
+    },
+    "11": {
+      "title": "Seoul blames Iran for Korean ship attack , vows  diplomatic offensive  ",
+      "url": "https://www.koreatimes.co.kr/foreignaffairs/20260514/seoul-blames-iran-for-korean-ship-attack-vows-diplomatic-offensive",
+      "type": "dom"
+    },
+    "12": {
+      "title": "Seoul sees low likelihood of non - Iranian role in Hormuz ship attack",
+      "url": "https://www.koreaherald.com/article/10738044",
+      "type": "dom"
+    },
+    "13": {
+      "title": "Trump , Xi to hold summit talks over trade , Iran , Taiwan , other key issues",
+      "url": "https://www.koreatimes.co.kr/world/20260514/trump-xi-to-hold-summit-talks-over-trade-iran-taiwan-other-key-issues",
+      "type": "dom"
+    },
+    "14": {
+      "title": "트럼프·시진핑, 호르무즈 해협 개방 유지 합의",
+      "url": "https://www.tokenpost.kr/news/breaking/359741",
+      "type": "dom"
+    },
+    "15": {
+      "title": "[미중정상회담] '이란핵 불용·호르무즈 개방' 일치…中 역할할진 미지...",
+      "url": "https://n.news.naver.com/mnews/article/001/0016078330?sid=104",
+      "type": "dom"
+    },
+    "16": {
+      "title": "인도 국적 선박, 호르무즈해협서 공격 후 침몰",
+      "url": "https://www.tokenpost.kr/news/breaking/359739",
+      "type": "dom"
+    },
+    "17": {
+      "title": "미·중 정상, '이란 핵무장 불허·호르무즈 개방' 합의",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=81069",
+      "type": "dom"
+    },
+    "18": {
+      "title": "고위 당국자 “나무호 공격 주체, 확인되면 응분의 공세”",
+      "url": "https://n.news.naver.com/mnews/article/011/0004621021?sid=100",
+      "type": "dom"
+    },
+    "19": {
+      "title": "정부 “나무호 공격, 이란 외 다른 주체 가능성 크지 않아”",
+      "url": "https://n.news.naver.com/mnews/article/005/0001849065?sid=100",
+      "type": "dom"
+    },
+    "20": {
+      "title": "“공격 주체 이란 아닐 가능성 낮아”…나무호에 기술분석팀 파견",
+      "url": "https://n.news.naver.com/mnews/article/056/0012181480?sid=100",
+      "type": "dom"
+    },
+    "21": {
+      "title": "India condemns attack on ship off Oman , vessel reported sunk",
+      "url": "https://www.arabnews.com/node/2643559/middle-east",
+      "type": "intl"
+    },
+    "22": {
+      "title": "S . Korea sends technical analysis team to Dubai to probe strike on Hormuz ship",
+      "url": "https://www.koreaherald.com/article/10737818",
+      "type": "dom"
+    },
+    "23": {
+      "title": "Oil prices dip after Iran says dozens of vessels are crossing Hormuz",
+      "url": "https://thefrontierpost.com/oil-prices-dip-after-iran-says-dozens-of-vessels-are-crossing-hormuz/",
+      "type": "intl"
+    },
+    "24": {
+      "title": "IOC LPG cargoes cross Hormuz safely amid West Asia crisis ; Govt says fuel supplies remain stable",
+      "url": "http://www.calcuttanews.net/news/279050319/ioc-lpg-cargoes-cross-hormuz-safely-amid-west-asia-crisis-govt-says-fuel-supplies-remain-stable",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Oil flows through Strait of Hormuz drop sharply",
+      "url": "https://www.azernews.az/oil_and_gas/258394.html",
+      "type": "intl"
+    },
+    "26": {
+      "title": "Hormuz oil flows fell nearly 30 % last quarter , EIA says",
+      "url": "https://financialpost.com/commodities/energy/oil-gas/hormuz-oil-flows-fell-nearly-30-per-cent",
+      "type": "intl"
+    },
+    "27": {
+      "title": "Oil flow through Strait of Hormuz drops by 6 million barrels a day amid global energy shock",
+      "url": "https://www.moneycontrol.com/world/oil-flow-through-strait-of-hormuz-drops-by-6-million-barrels-a-day-amid-global-energy-shock-article-13918491.html",
+      "type": "intl"
+    },
+    "28": {
+      "title": "C . H . Robinson Truckload Pricing Backdrop Inflecting Sharply Positive",
+      "url": "https://www.morningstar.com/company-reports/1482159-ch-robinsons-truckload-pricing-backdrop-inflecting-sharply-positive",
+      "type": "intl"
+    },
+    "29": {
+      "title": "Container Spot Rates Surge as Carriers Layer Surcharges Ahead of Early Peak Season",
+      "url": "https://gcaptain.com/container-spot-rates-surge-as-carriers-layer-surcharges-ahead-of-early-peak-season/",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Two India - bound LPG tankers add to uptick in Hormuz transits",
+      "url": "https://www.thehindubusinessline.com/news/two-india-bound-lpg-tankers-add-to-uptick-in-hormuz-transits/article70977690.ece",
+      "type": "intl"
+    },
+    "31": {
+      "title": "중국 유조선 호르무즈 통과…이란-오만, 통행세 조율",
+      "url": "https://n.news.naver.com/mnews/article/056/0012181477?sid=104",
+      "type": "dom"
+    },
+    "32": {
+      "title": "호르무즈 해협 통행량 증가…AIS 끈 선박도 늘어",
+      "url": "https://www.tokenpost.kr/news/breaking/359701",
+      "type": "dom"
+    },
+    "33": {
+      "title": "U . S . Releases 53 Million Barrels From Strategic Petroleum Reserve Amid Rising Gas Prices – NaturalNews . com",
+      "url": "https://www.naturalnews.com/2026-05-14-us-releases-53m-barrels-strategic-petroleum-reserve.html",
+      "type": "intl"
+    },
+    "34": {
+      "title": "Saudi oil production falls to lowest level since 1990 amid Hormuz disruption",
+      "url": "https://www.middleeastmonitor.com/20260514-saudi-oil-production-falls-to-lowest-level-since-1990-amid-hormuz-disruption/",
+      "type": "intl"
+    },
+    "35": {
+      "title": "Talks to avert strike at Inpex Australia LNG plant enter final day",
+      "url": "https://www.yahoo.com/news/articles/talks-avert-strike-inpexs-australia-110221757.html",
+      "type": "intl"
+    },
+    "36": {
+      "title": "With Chabahar Port in limbo , can India still reach Central Asia and Russia ? ",
+      "url": "https://economictimes.indiatimes.com/news/india/with-chabahar-port-in-limbo-can-india-still-reach-central-asia-and-russia/articleshow/131063419.cms",
+      "type": "intl"
+    },
+    "37": {
+      "title": "손주석 석유공사 사장, 미국산 원유 210만배럴 입고 점검…에너지 안보...",
+      "url": "https://www.cnbnews.com/news/articleView.html?idxno=1001832",
+      "type": "dom"
+    },
+    "38": {
+      "title": "\"미국산 원유 210만 배럴, 여수 석유비축기지에 들어왔다\"",
+      "url": "http://www.energydaily.co.kr/news/articleView.html?idxno=167255",
+      "type": "dom"
+    },
+    "39": {
+      "title": "손주석 석유공사 사장, 美 원유 210만 배럴 입고현장 점검",
+      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202605141718454620820",
+      "type": "dom"
+    },
+    "40": {
+      "title": "삼성, 생산 비상 체제…반도체 공급망 흔들린다",
+      "url": "https://n.news.naver.com/mnews/article/215/0001252154?sid=101",
+      "type": "dom"
+    },
+    "41": {
+      "title": "'비(非)중동산 원유' 210만배럴 입고…석유공사 사장, 현장점검",
+      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7164269",
+      "type": "dom"
+    },
+    "42": {
+      "title": "시진핑 “호혜와 윈윈” 경협 확대 뜻…미국산 농산물·석유 수입 늘릴...",
+      "url": "https://n.news.naver.com/mnews/article/028/0002805160?sid=104",
+      "type": "dom"
+    },
+    "43": {
+      "title": "손석주 석유공사 사장, 미국산 원유 210만 배럴 입고현장 점검",
+      "url": "https://n.news.naver.com/mnews/article/082/0001380860?sid=101",
+      "type": "dom"
+    },
+    "44": {
+      "title": "석유공사, 미국산 원유 210만 배럴 입고",
+      "url": "http://www.ujeil.com/news/articleView.html?idxno=385767",
+      "type": "dom"
+    },
+    "45": {
+      "title": "석유공사, 미국산 원유 입고현장 점검…\"에너지 위기 철저대응\"",
+      "url": "https://n.news.naver.com/mnews/article/658/0000143872?sid=101",
+      "type": "dom"
+    },
+    "46": {
+      "title": "Crude Oil Advances Amid Continuing Hormuz Crisis , Trump - Xi Meet",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-05/68500860-crude-oil-advances-amid-continuing-hormuz-crisis-trump-xi-meet-020.htm",
+      "type": "intl"
+    },
+    "47": {
+      "title": "Oil and Dollar Move in Tandem as Middle East Crisis Disrupts Markets",
+      "url": "https://www.bloomberg.com:443/news/articles/2026-05-14/dollar-s-link-to-oil-most-positive-ever-as-iran-crisis-drags-on",
+      "type": "intl"
+    },
+    "48": {
+      "title": "Oil Prices Hold Above $100 as Trump - Xi Meeting and Iran Conflict Keep Markets on Edge",
+      "url": "http://www.econotimes.com/Oil-Prices-Hold-Above-100-as-Trump-Xi-Meeting-and-Iran-Conflict-Keep-Markets-on-Edge-1741656",
+      "type": "intl"
+    },
+    "49": {
+      "title": "IEA warns of oil market deficit amid Mideast disruption",
+      "url": "https://www.zawya.com/en/business/energy/iea-warns-of-oil-market-deficit-amid-mideast-disruption-wi339dne",
+      "type": "intl"
+    },
+    "50": {
+      "title": "Nations drawing down oil stocks at record pace : IEA - Markets",
+      "url": "https://www.thejakartapost.com/business/2026/05/14/nations-drawing-down-oil-stocks-at-record-pace-iea.html",
+      "type": "intl"
+    },
+    "51": {
+      "title": "Commodity Corner : Crude remains elevated amid Iran war ; gold slips on inflation worries",
+      "url": "https://www.moneycontrol.com/news/business/markets/commodity-corner-crude-remains-elevated-amid-iran-war-gold-slips-on-inflation-worries-13918746.html",
+      "type": "intl"
+    },
+    "52": {
+      "title": "75 days of Hormuz chaos : Oil prices remain above $100 as Trump - Xi talks near",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/75-days-of-hormuz-chaos-oil-prices-remain-above-100-as-trump-xi-talks-near/articleshow/131080240.cms",
+      "type": "intl"
+    },
+    "53": {
+      "title": "Gas prices in Canada inching closer to an all - time high amid Iran war - National",
+      "url": "https://globalnews.ca/news/11849498/gas-prices-record-high-iran/",
+      "type": "intl"
+    },
+    "54": {
+      "title": "EGP under pressure , inflation risks rise amid regional tensions : Experts - Economy - Business",
+      "url": "https://english.ahram.org.eg/News/563795.aspx",
+      "type": "intl"
+    },
+    "55": {
+      "title": "IMF warns Iran war disruptions are pushing global economy towards  adverse  scenario ; growth risks rise",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/imf-warns-iran-war-disruptions-are-pushing-global-economy-towards-adverse-scenario-growth-risks-rise/articleshow/131099734.cms",
+      "type": "intl"
+    },
+    "56": {
+      "title": "Korea refloats currency swap with US",
+      "url": "https://www.koreaherald.com/article/10738084",
+      "type": "dom"
+    },
+    "57": {
+      "title": "Trump - Xi talks leave Korean chipmakers facing tough trade - offs",
+      "url": "https://www.koreaherald.com/article/10738036",
+      "type": "dom"
+    },
+    "58": {
+      "title": "Govt . to take all - out efforts to stabilize prices amid Middle East war",
+      "url": "https://www.koreaherald.com/article/10737626",
+      "type": "dom"
+    },
+    "59": {
+      "title": "미 재무장관 \"이란 원유 저장공간 소진…생산 중단 불가피\"",
+      "url": "https://www.tokenpost.kr/news/breaking/359742",
+      "type": "dom"
+    },
+    "60": {
+      "title": "[뉴욕증시]미중 정상회담 주시하며 일제히 상승 출발",
+      "url": "https://n.news.naver.com/mnews/article/277/0005763137?sid=104",
+      "type": "dom"
+    },
+    "61": {
+      "title": "정부 \"유가 100달러 아래로 가야 최고가격제 해제 검토\"",
+      "url": "https://n.news.naver.com/mnews/article/055/0001356293?sid=101",
+      "type": "dom"
+    },
+    "62": {
+      "title": "고유가에 美 4월 소매판매 큰폭 둔화",
+      "url": "https://n.news.naver.com/mnews/article/009/0005680326?sid=101",
+      "type": "dom"
+    },
+    "63": {
+      "title": "정부 \"유가 100달러 아래면 최고가격제 해제 검토\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000864899?sid=101",
+      "type": "dom"
+    },
+    "64": {
+      "title": "미 4월 소매판매 0.5%↑…“고유가에 증가세 둔화”",
+      "url": "https://n.news.naver.com/mnews/article/056/0012181458?sid=104",
+      "type": "dom"
+    },
+    "65": {
+      "title": "美 4월 소매판매 0.5%↑…고유가에 소비 위축",
+      "url": "https://n.news.naver.com/mnews/article/277/0005763134?sid=104",
+      "type": "dom"
+    },
+    "66": {
+      "title": "Gujarat fisherfolk in crisis after two summers of war",
+      "url": "https://scroll.in/article/1092822/gujarat-fisherfolk-in-crisis-after-two-summers-of-war",
+      "type": "intl"
+    },
+    "67": {
+      "title": "Chinese Supertanker Glides Through Hormuz Blockade As White House Touts  Good  Talks In Beijing",
+      "url": "https://dailycaller.com/2026/05/14/chinese-supertanker-hormuz-blockade-china-talks/",
+      "type": "intl"
+    },
+    "68": {
+      "title": "Iran begins letting some Chinese ships cross Strait of Hormuz -- media",
+      "url": "http://www.greekherald.com/news/279050501/iran-begins-letting-some-chinese-ships-cross-strait-of-hormuz-media",
+      "type": "intl"
+    },
+    "69": {
+      "title": "Two India - bound LPG tankers cross Hormuz ; another sinks after attack",
+      "url": "https://www.rediff.com/news/report/two-india-bound-lpg-tankers-cross-hormuz-another-sinks-after-attack/20260514.htm",
+      "type": "intl"
+    },
+    "70": {
+      "title": "Second Japan - linked oil tanker passes Hormuz strait | The Asahi Shimbun : Breaking News , Japan News and Analysis",
+      "url": "https://www.asahi.com/ajw/articles/16564146",
+      "type": "intl"
+    },
+    "71": {
+      "title": "1st LD Writethru : Iran begins letting some Chinese ships cross Strait of Hormuz -- media",
+      "url": "http://www.bignewsnetwork.com/news/279050220/1st-ld-writethru-iran-begins-letting-some-chinese-ships-cross-strait-of-hormuz-media",
+      "type": "intl"
+    },
+    "72": {
+      "title": "Second Japan - linked Oil Tanker Sails Via Strait of Hormuz as PM Asks Iran to Help Out",
+      "url": "https://gcaptain.com/second-japan-linked-oil-tanker-sails-via-strait-of-hormuz-as-pm-asks-iran-to-help-out/",
+      "type": "intl"
+    },
+    "73": {
+      "title": "HMM first - quarter operating profit down 56 % as freight rates decline",
+      "url": "https://www.freshplaza.com/north-america/article/9838084/hmm-first-quarter-operating-profit-down-56-as-freight-rates-decline/",
+      "type": "intl"
+    },
+    "74": {
+      "title": "Why Iran Foreign Minister Arrived in Delhi Just as the 15th Indian LPG Tanker Successfully Pierced the Strait of Hormuz Blockade",
+      "url": "https://indianexpress.com/article/india/iran-foreign-minister-araghchi-delhi-two-india-lpg-tankers-cross-strait-hormuz-10689110/",
+      "type": "intl"
+    },
+    "75": {
+      "title": "Japan Secures Second Oil Tanker Passage Through Strait",
+      "url": "https://www.marinelink.com/news/japan-secures-second-oil-tanker-passage-539197",
+      "type": "intl"
+    },
+    "76": {
+      "title": "Second Japan - linked crude oil tanker passes through Strait of Hormuz , LSEG data shows",
+      "url": "https://www.arabnews.com/node/2643523/middle-east",
+      "type": "intl"
+    },
+    "77": {
+      "title": "이란 매체 \"中 일부 선박 호르무즈 통과 어젯밤부터 시작\"",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4414924",
+      "type": "dom"
+    },
+    "78": {
+      "title": "일본 유조선 또 호르무즈 통과...다카이치 \"직접 요청\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002353124?sid=104",
+      "type": "dom"
+    },
+    "79": {
+      "title": "\"중국 선박, 13일 밤부터 호르무즈 통항 시작\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002353123?sid=104",
+      "type": "dom"
+    },
+    "80": {
+      "title": "HMM, 중동전쟁 여파 1분기 실적 56% ‘뚝’",
+      "url": "https://n.news.naver.com/mnews/article/658/0000143877?sid=101",
+      "type": "dom"
+    },
+    "81": {
+      "title": "삼성重, LNG운반선 2척 7505억 수주",
+      "url": "http://www.gnmaeil.com/news/articleView.html?idxno=586597",
+      "type": "dom"
+    },
+    "82": {
+      "title": "K-조선, LNG선 수주 릴레이…HD현대·삼성重, 2척씩 나란히 계약",
+      "url": "https://n.news.naver.com/mnews/article/138/0002227938?sid=101",
+      "type": "dom"
+    },
+    "83": {
+      "title": "삼성중공업 LNG 운반선 2척…7505억원 규모 수주",
+      "url": "http://www.gndomin.com/news/articleView.html?idxno=475681",
+      "type": "dom"
+    },
+    "84": {
+      "title": "LIG D&A, 동유럽 방산 전시회 BSDA 참가…삼성重, LNG운반선 2척 수주 [산...",
+      "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=201064",
+      "type": "dom"
+    },
+    "85": {
+      "title": "대한전선, 1만톤급 CLV 추가 확보… 해저 턴키 경쟁력 고도화",
+      "url": "https://n.news.naver.com/mnews/article/031/0001028750?sid=101",
+      "type": "dom"
+    },
+    "86": {
+      "title": "대한전선, 1만톤급 해저케이블 포설선 확보",
+      "url": "https://n.news.naver.com/mnews/article/009/0005680215?sid=101",
+      "type": "dom"
+    },
+    "87": {
+      "title": "신한은행·삼성중공업·무보, 3000억 특별보증 추진…K-조선 공급망 지원...",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=452815",
+      "type": "dom"
+    },
+    "88": {
+      "title": "우리은행, 한화오션과 3천억 상생금융 협약 \"협력사 지원 확대\"",
+      "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2171621",
+      "type": "dom"
+    },
+    "89": {
+      "title": "하나은행 \"HD현대중공업 협력사 대상 4천억원 우대금융 지원\"",
+      "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1256647",
+      "type": "dom"
+    },
+    "90": {
+      "title": "금융권 'K-조선' 상생책 지원",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3063692",
+      "type": "dom"
+    },
+    "91": {
+      "title": "우리은행, 한화오션과 3000억 상생금융 지원",
+      "url": "http://www.paxetv.com/news/articleView.html?idxno=272080",
+      "type": "dom"
+    },
+    "92": {
+      "title": "우리은행, 한화오션과 3천억 규모 상생금융 협약 체결",
+      "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4083761",
+      "type": "dom"
+    },
+    "93": {
+      "title": "신한은행, 삼성중공업·무보와 조선업 금융지원 협약",
+      "url": "http://www.popcornnews.net/news/articleView.html?idxno=121331",
+      "type": "dom"
+    },
+    "94": {
+      "title": "우리은행 조선업 생태계 동반성장 견인…한화오션과 협력",
+      "url": "https://www.inthenews.co.kr/news/article.html?no=86862",
+      "type": "dom"
+    },
+    "95": {
+      "title": "하나은행, 조선 협력사에 4000억 지원…수출 경쟁력 강화",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1708840",
+      "type": "dom"
+    },
+    "96": {
+      "title": "하나은행, 'K-조선' 수출 공급망 지원 확대 … 1조 상생금융·15조 무역금...",
+      "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=84607",
+      "type": "dom"
+    },
+    "97": {
+      "title": "China U . S . ethane imports hit record as Iran war cut rival feedstock supply",
+      "url": "http://www.hydrocarbonprocessing.com/news/2026/05/chinas-us-ethane-imports-hit-record-as-iran-war-cut-rival-feedstock-supply/",
+      "type": "intl"
+    },
+    "98": {
+      "title": "Hormuz supply losses draw down global oil stocks  at record pace : IEA",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/05/iran-260513-pdo02.htm",
+      "type": "intl"
+    },
+    "99": {
+      "title": "Iran Kharg Island Oil Jetties Empty Again Yesterday , Satellite Shows",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/iran-kharg-island-oil-jetties-140646551.html",
+      "type": "intl"
+    },
+    "100": {
+      "title": "New Logic Highlights Role of Biogas in Reducing South Korea LNG Dependence",
+      "url": "https://www.pr.com:443/press-release/968591",
+      "type": "intl"
+    },
+    "101": {
+      "title": "Blackouts and protests as Cuba says fuel has  run out  ",
+      "url": "https://www.digitaljournal.com/world/blackouts-and-protests-as-cuba-says-fuel-has-run-out/article",
+      "type": "intl"
+    },
+    "102": {
+      "title": "Cuba electrical grid suffers partial collapse as protests flare",
+      "url": "https://www.marketscreener.com/news/cuba-s-electrical-grid-suffers-partial-collapse-as-protests-flare-ce7f5bddd18bf326",
+      "type": "intl"
+    },
+    "103": {
+      "title": "India warns BRICS of energy shock from West Asia crisis",
+      "url": "https://www.rediff.com/news/report/india-warns-brics-of-energy-shock-from-west-asia-crisis/20260514.htm",
+      "type": "intl"
+    },
+    "104": {
+      "title": "SA wheat farmers weigh production cuts as Iran war bites",
+      "url": "https://www.businessday.co.za/companies/2026-05-14-sas-wheat-farmers-weigh-production-cuts-as-iran-war-bites/",
+      "type": "intl"
+    },
+    "105": {
+      "title": "Strait of Hormuz crisis a wake up call ! India eyes Rs 40 , 000 crore subsea pipeline for uninterrupted gas supplies from Gulf",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/strait-of-hormuz-crisis-a-wake-up-call-india-eyes-rs-40000-crore-subsea-pipeline-for-uninterrupted-gas-supplies-from-gulf/articleshow/131085408.cms",
+      "type": "intl"
+    },
+    "106": {
+      "title": "Oil shortage fades colors on Japanese chip packs",
+      "url": "https://www.azernews.az/region/258353.html",
+      "type": "intl"
+    },
+    "107": {
+      "title": "중동 전쟁에 농자재값 폭등…농민 \"앞으로 더 걱정\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000864898?sid=102",
+      "type": "dom"
+    },
+    "108": {
+      "title": "[단독] \"50년 만에 최악\" 줄파산 시작…철강업계 '초비상'",
+      "url": "https://n.news.naver.com/mnews/article/015/0005287147?sid=101",
+      "type": "dom"
+    },
+    "109": {
+      "title": "철강·석화 부진에 중동 리스크까지…포항·서산 고용지원 6개월 연장",
+      "url": "https://n.news.naver.com/mnews/article/421/0008945604?sid=101",
+      "type": "dom"
+    },
+    "110": {
+      "title": "중국 연료 수출, 규제 완화에도 전쟁 이전 절반 수준",
+      "url": "https://www.tokenpost.kr/news/breaking/359717",
+      "type": "dom"
+    },
+    "111": {
+      "title": "중동사태 잉크 부족에 日식품사 인쇄 면적 줄인다",
+      "url": "https://n.news.naver.com/mnews/article/005/0001849048?sid=104",
+      "type": "dom"
+    },
+    "112": {
+      "title": "전남도 “나프타 원료 의료제품 수급차질 없다”",
+      "url": "http://www.jndn.com/article.php?aid=1778753837432567003",
+      "type": "dom"
+    },
+    "113": {
+      "title": "공정위, 석화기업 4곳 PVC·가소제 담합 관련 조사 착수",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=452800",
+      "type": "dom"
+    },
+    "114": {
+      "title": "[기고]국제 곡물 외교 – 해외 곡물 기지와 식량 외교 전략",
+      "url": "https://www.ksmnews.co.kr/news/view.php?idx=605055",
+      "type": "dom"
+    },
+    "115": {
+      "title": "산업부 “정유사 최고가격제 손실 보전, ‘기회이익’ 기준 아냐… 3조...",
+      "url": "https://n.news.naver.com/mnews/article/366/0001164232?sid=101",
+      "type": "dom"
+    },
+    "116": {
+      "title": "정부, 정유사 '손실보전 기준' 5월 말 확정…원가 기반 100% 보전 원칙",
+      "url": "https://n.news.naver.com/mnews/article/119/0003090381?sid=101",
+      "type": "dom"
+    }
+  }
+}
