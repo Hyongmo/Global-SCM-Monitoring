@@ -98501,5 +98501,887 @@
         "data_date": "2026-05-15"
       }
     }
+  },
+  {
+    "period": "2026-W21 (2026-05-25)",
+    "tier": 4,
+    "tier_label": "위기",
+    "header": {
+      "period": "2026-W21 (2026-05-25)",
+      "crisis_level": "Crisis",
+      "situation_summary": "이번 주 호르무즈 해협 위기는 이란의 통제 제도화 시도와 미·이란 간 외교·군사적 이중 압박이 동시에 전개되는 양상을 보였다. 05월 18일 이란은 '페르시아만 해협청(PGSA)'을 공식 신설하고 호르무즈 통항에 통행료를 부과하는 관리 체계를 공식화하였으며, 무단 통항을 불법으로 규정하고 적국 군사 장비의 통과를 금지하는 조치를 발표했다[1][2][3]. 같은 날 브렌트유는 배럴당 110달러를 상회하였고, 호르무즈 우회 육상운송 운임은 4배 상승하였으며, 요소 가격은 2.5배 급등하여 시멘트 업계에 심각한 압박이 가해졌다. 05월 19일에는 트럼프 대통령이 이란 공격을 1시간 앞두고 보류하며 외교적 협상 여지를 남겼으나[4][5], 이란군은 호르무즈 지휘권 확보를 공식 선언하고 인터넷 통행세 부과까지 위협하는 등 긴장이 지속되었다. 05월 19일 한일 정상은 안동 회담에서 원유·LNG 스와프 체계 구축 및 상호 공급 확대에 공식 합의하였다. 05월 20일 미군은 인도양에서 이란 연계 유조선을 추가 나포하며 봉쇄 집행을 강화하였고[6][7], 이란 혁명수비대는 24시간 동안 26척(한국 선박 1척 포함)의 통과를 조율했다고 발표하며 자국 해군의 통제권을 주장하였다. 05월 21일 이란은 PGSA 규제 체계를 공식화하며 통행료 징수 제도화를 가속하였고, IEA는 올여름 글로벌 석유 공급의 '위험 구간' 진입 가능성을 경고하였다.\n\n05월 22일 사우디 매체는 미·이란 합의 초안이 수 시간 내 발표될 가능성을 보도하였으나, 호르무즈 통제권과 핵 문제는 여전히 쟁점으로 남았다[9][10]. 같은 날 이란 혁명수비대는 이틀 연속 하루 30~35척의 호르무즈 통행을 허가한다고 발표하며 통제권 공식화를 심화시켰고, SCFI는 2,200선을 돌파하며 4주 연속 상승세를 이어갔다. 05월 23일 미·이란 간 60일 휴전 연장 및 호르무즈 단계적 재개방 협상이 진행 중인 가운데, 트럼프 대통령은 메모리얼 데이 연휴 일정을 취소하고 이란 공습 재개를 검토하는 등 협상과 군사적 압박이 동시에 진행되었다[11][12]. 파키스탄 중재 초안에는 제재 완화 및 호르무즈 통행 보장 조항이 포함된 것으로 보도되었다. 05월 24일에는 전쟁 발발 이후 처음으로 LNG 탱커가 호르무즈 해협을 통과해 인도로 향하였고, 미국 관리는 워싱턴·테헤란 간 호르무즈 재개방 예비 합의 도달을 보고하였다[13][14]. 그러나 트럼프 대통령은 최종 합의 서명 전까지 미국의 봉쇄를 유지하겠다고 밝혀 불확실성이 지속되었다.\n\n시장 지표 측면에서는 브렌트유가 전주 대비 8.3% 하락하여 100.2달러/배럴을 기록하였는데, 이는 미·이란 협상 진전 기대감이 반영된 결과로 해석된다. 반면 SCFI는 +3.6% 상승하여 2,218.2포인트를 기록하며 컨테이너 운임 상승세가 지속되었고, 호르무즈 통과 선박 수는 전주 대비 +300.0% 급증하여 44척을 기록하였는데 이는 이란 혁명수비대의 제한적 통항 허가 조치에 따른 것이다. 원/달러 환율은 1,504원으로 +0.4% 상승하였으며, 장중 1,520원에 근접하는 등 원화 가치가 17년 만에 최저 수준에 근접하여 중동발 인플레이션 압력이 외환시장에도 반영되고 있다[15][16]. BDI는 5.1% 하락하여 2,991.0포인트를 기록하였으며, VIX는 9.4% 하락하여 16.7포인트를 기록하는 등 협상 기대감에 따른 금융시장 변동성 완화가 나타났다.",
+      "changes_from_prev": [
+        {
+          "item": "호르무즈",
+          "change": "↑",
+          "from": "11 척",
+          "to": "44 척",
+          "detail": "이란 혁명수비대의 제한적 통항 허가 조치로 호르무즈 통과 선박 수가 11척에서 44척으로 +300.0% 급증하였으나, 이는 이란의 통제 하에 이루어진 제한적 재개로 봉쇄 해소와는 구별됨"
+        },
+        {
+          "item": "브렌트유",
+          "change": "↓",
+          "from": "109.3 USD/bbl",
+          "to": "100.2 USD/bbl",
+          "detail": "미·이란 60일 휴전 연장 및 호르무즈 재개방 예비 합의 기대감이 반영되어 브렌트유가 109.3달러에서 100.2달러로 8.3% 하락"
+        },
+        {
+          "item": "VIX",
+          "change": "↓",
+          "from": "18.4 pt",
+          "to": "16.7 pt",
+          "detail": "미·이란 협상 진전 보도 및 호르무즈 제한적 통항 재개 신호로 금융시장 불확실성이 완화되어 VIX가 18.4에서 16.7포인트로 9.4% 하락"
+        },
+        {
+          "item": "BDI",
+          "change": "↓",
+          "from": "3,151.0 pt",
+          "to": "2,991.0 pt",
+          "detail": "호르무즈 긴장 지속에 따른 벌크선 우회 항로 수요 감소 및 글로벌 건화물 교역 둔화 우려로 BDI가 3,151.0에서 2,991.0포인트로 5.1% 하락"
+        },
+        {
+          "item": "SCFI",
+          "change": "↑",
+          "from": "2,140.7 pt",
+          "to": "2,218.2 pt",
+          "detail": "중동 운영 리스크 반영 및 컨테이너 운임 상승세 지속으로 SCFI가 2,140.7에서 2,218.2포인트로 +3.6% 상승, 4주 연속 상승세"
+        },
+        {
+          "item": "KOSPI",
+          "change": "↑",
+          "from": "7,493.2 pt",
+          "to": "7,847.7 pt",
+          "detail": "미·이란 협상 기대감 및 유가 하락에 따른 에너지 비용 완화 기대로 KOSPI가 7,493.2에서 7,847.7포인트로 +4.7% 상승"
+        },
+        {
+          "item": "WTI",
+          "change": "↓",
+          "from": "101.0 USD/bbl",
+          "to": "96.6 USD/bbl",
+          "detail": "호르무즈 재개방 예비 합의 기대감으로 WTI가 101.0달러에서 96.6달러로 4.4% 하락"
+        },
+        {
+          "item": "대만해협",
+          "change": "↑",
+          "from": "1,629 척",
+          "to": "1,708 척",
+          "detail": "대만해협 통과 선박 수가 1,629척에서 1,708척으로 +4.8% 증가하며 중동 우회 항로 대안 탐색 움직임 반영"
+        }
+      ],
+      "watchpoints": [
+        {
+          "horizon": "초기(0-4주)",
+          "point": "미·이란 최종 합의 서명 여부 및 PGSA 통행료 징수 제도화 진행 상황: 합의 불발 시 브렌트유 재급등 및 SCFI 추가 상승 가능성 모니터링"
+        },
+        {
+          "horizon": "초기(0-4주)",
+          "point": "호르무즈 통과 선박 수(현재 44척) 추이 및 이란 혁명수비대의 통항 허가 조건 변화: 통행료 강제 징수 본격화 시 국내 정유사·석유화학 업체의 원가 부담 급증"
+        },
+        {
+          "horizon": "중기(4-12주)",
+          "point": "UAE 원유 공급 정상화 시점(2027년 상반기 전망) 및 대체 공급원 확보 진행 상황: 한일 원유·LNG 스와프 체계 실효성 검증 필요"
+        },
+        {
+          "horizon": "장기(12주+)",
+          "point": "이란의 PGSA 체계 항구화 및 호르무즈 통제권 국제법적 분쟁화 가능성: 장기 봉쇄 또는 통행료 제도화 시 한국 에너지 수입 구조의 근본적 재편 필요성 대두"
+        }
+      ]
+    },
+    "part_a": {
+      "routes": [
+        {
+          "commodity": "원유",
+          "status": "활성",
+          "path": "호르무즈 해협(PGSA 통제·통행료 부과) → 중동산 원유 공급 제한(즉시) → 국제유가 급등·정유 마진 압박(1-2주) → 국내 정유사 원가 상승·에너지 가격 전가(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> 원유 --[feedsInto]--> 에너지(w=0.5022)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "LNG",
+          "status": "활성",
+          "path": "호르무즈 해협(이란 혁명수비대 통제·제한적 통항 허가) → LNG 탱커 통항 불확실성(즉시) → LNG 현물가 상승·장기계약 프리미엄 확대(1-2주) → 국내 발전·도시가스 비용 상승(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> LNG --[feedsInto]--> 에너지(w=0.5412)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "나프타",
+          "status": "활성",
+          "path": "호르무즈 해협(PGSA 통행료·통항 심사 강화) → 중동산 나프타 공급 차질(즉시) → 나프타 현물가 상승·석유화학 원료 조달 비용 증가(1-2주) → 국내 석유화학 업체 수익성 악화(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> 나프타 --[feedsInto]--> 소재/화학(w=0.2832)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "요소",
+          "status": "활성",
+          "path": "호르무즈 해협(이란 통제 강화·우회 운송 비용 급등) → 중동산 요소 공급 차질(즉시) → 요소 가격 2.5배 급등(1-2주) → 국내 농업·시멘트 업계 원가 압박 심화(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> 요소 --[feedsInto]--> 식량/식품(w=0.1107)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "유럽 컨테이너",
+          "status": "활성",
+          "path": "수에즈 운하·바브엘만데브 해협(중동 긴장 지속·우회 항로 고착화) → 유럽행 컨테이너 운임 상승(즉시) → SCFI 2,218포인트 돌파·4주 연속 상승(1-2주) → 국내 수출기업 물류비 부담 증가(2-4주)",
+          "kg_basis": "수에즈 운하 --[restrictsFlowOf]--> 유럽 컨테이너; 바브엘만데브 해협 --[restrictsFlowOf]--> 유럽 컨테이너",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        }
+      ]
+    },
+    "part_b": {
+      "cascades": [
+        {
+          "name": "에너지 → 소재/화학 → 제조/조립",
+          "steps": [
+            {
+              "from": "에너지(KS_Energy)",
+              "to": "소재/화학(KS_Material)",
+              "mechanism": "고유가·고LNG가로 인한 나프타 원료 조달 비용 급등이 석유화학 업체의 생산 원가를 직접 압박하며, 에틸렌·프로필렌 등 기초 화학원료 가격 상승으로 전이",
+              "lag": "1-2주"
+            },
+            {
+              "from": "소재/화학(KS_Material)",
+              "to": "제조/조립(KS_Manufacture)",
+              "mechanism": "합성수지·화학소재 가격 상승이 전자·자동차·기계 등 제조업체의 부품·소재 조달 비용을 증가시키며 생산 마진 압박",
+              "lag": "2-4주"
+            }
+          ],
+          "is_new": false
+        },
+        {
+          "name": "에너지 → 식량/식품",
+          "steps": [
+            {
+              "from": "에너지(KS_Energy)",
+              "to": "식량/식품(KS_FoodAgri)",
+              "mechanism": "면세유·벙커유 가격 상승이 수산업 조업 및 농업 생산 비용 증가로 이어지며(제주 연근해 위판 금액 300억 원 감소·조업 포기 확산), 냉장물류·수산가공·양식장 운영비 상승과 요소 가격 급등이 식량·식품 생산단가를 전반적으로 끌어올리는 복합 압박 구조",
+              "lag": "2-4주"
+            }
+          ],
+          "is_new": false
+        },
+        {
+          "name": "에너지 → 건설/인프라",
+          "steps": [
+            {
+              "from": "에너지(KS_Energy)",
+              "to": "건설/인프라(KS_Construction)",
+              "mechanism": "요소 가격 2.5배 급등에 따른 시멘트 생산 원가 상승이 건설 자재비를 직접 압박하며, 고유가로 인한 아스팔트·합성수지 계열 건설 소재 가격 상승이 복합적으로 작용",
+              "lag": "2-4주"
+            }
+          ],
+          "is_new": false
+        }
+      ]
+    },
+    "part_d": {
+      "matrix": [
+        {
+          "sector": "에너지(KS_Energy)",
+          "direction": "네거티브",
+          "initial": "심각",
+          "mid": "심각",
+          "long": "중요",
+          "pathway": "호르무즈 해협 PGSA 통행료 부과 및 이란 혁명수비대 통항 통제로 중동산 원유·LNG 조달 불확실성 지속. 브렌트유가 전주 대비 -8.3% 하락하여 100.2달러/배럴을 기록하였으나 이는 협상 기대감에 따른 일시적 완화로, 합의 불발 시 재급등 위험 상존. 국내 정유사는 원유 도입 단가 상승 및 운임 할증료 부담 지속. 한일 원유·LNG 스와프 체계 합의가 중기 완충 역할을 할 수 있으나 실효성 검증 필요. 장기적으로는 UAE 원유 공급 정상화 시점이 2027년 상반기로 장기화되어 대체 공급원 다변화 압박 지속.",
+          "change": "↓"
+        },
+        {
+          "sector": "소재/화학(KS_Material)",
+          "direction": "네거티브",
+          "initial": "심각",
+          "mid": "심각",
+          "long": "중요",
+          "pathway": "호르무즈 해협 통제 강화로 중동산 나프타 공급 차질 지속. 나프타 현물가 상승이 에틸렌·프로필렌 등 기초 화학원료 생산 원가를 직접 압박. 석유화학 업체의 수익성 악화 우려가 재부상하고 있으며, 중동 특수 종료 가능성도 제기되고 있음. 화학 관련 지수는 전주 대비 +2.9% 소폭 반등하였으나 이는 협상 기대감에 따른 일시적 현상으로 판단. 철광석 공급은 말라카 해협 통과 선박 수 -3.4% 감소로 소폭 영향권에 진입.",
+          "change": "↓"
+        },
+        {
+          "sector": "해운/물류(KS_Shipping)",
+          "direction": "혼합",
+          "initial": "중요",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "SCFI가 2,218.2포인트로 +3.6% 상승하며 4주 연속 상승세를 기록, 컨테이너 운임 강세가 지속되고 있어 국내 해운사의 운임 수익은 단기적으로 긍정적. 반면 BDI는 -5.1% 하락하여 2,991.0포인트를 기록하며 벌크선 시장은 약세. 호르무즈 통과 선박 수가 +300.0% 급증하였으나 이란 혁명수비대의 통제 하에 이루어진 제한적 재개로 불확실성 상존. 벙커유 가격 상승으로 운항 비용 증가가 수익성을 일부 상쇄.",
+          "change": "−"
+        },
+        {
+          "sector": "식량/식품(KS_FoodAgri)",
+          "direction": "네거티브",
+          "initial": "중요",
+          "mid": "중요",
+          "long": "중요",
+          "pathway": "요소 가격 2.5배 급등으로 농업 생산비 직접 압박. 벙커유 가격 상승으로 수산업 조업 비용이 급증하여 연근해 어업 경쟁력이 심각하게 저하되고 있으며, 조업 포기 사례가 확산되고 있음. 냉장물류·수산가공·양식장 운영비 상승이 식품 생산단가를 전반적으로 끌어올리고 있음. 해운 운임 상승(SCFI +3.6%)이 수산물 수출입 기업의 물류비 부담을 가중시키며 수산업 경쟁력을 추가로 약화. 원/달러 환율 1,504원 수준의 고환율이 수입 식품 원자재 가격 상승으로 이어져 식품업체의 원가 부담 심화.",
+          "change": "↓"
+        },
+        {
+          "sector": "건설/인프라(KS_Construction)",
+          "direction": "혼합",
+          "initial": "보통",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "요소 가격 2.5배 급등에 따른 시멘트 생산 원가 상승이 건설 자재비를 직접 압박. 고유가로 인한 아스팔트·합성수지 계열 건설 소재 가격 상승이 복합적으로 작용. 건설 관련 지수는 전주 대비 +0.7% 소폭 상승하며 상대적 안정세를 유지하고 있으나, 중기적으로 자재비 상승 압박이 본격화될 가능성. 중동 건설 프로젝트 관련 국내 건설사의 수주 환경은 고유가 지속 시 중동 국가들의 재정 여력 확대로 긍정적 측면도 존재.",
+          "change": "↑"
+        },
+        {
+          "sector": "제조/조립(KS_Manufacture)",
+          "direction": "네거티브",
+          "initial": "중요",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "나프타·화학소재 가격 상승이 전자·자동차·기계 등 제조업체의 부품·소재 조달 비용을 증가시키며 생산 마진 압박. 부산 수출기업의 72.7~73%가 원·부자재 재고 3개월 미만으로 공급망 취약성이 심화되어 있어 봉쇄 장기화 시 생산 차질 위험 상존. 반도체 관련 지수는 전주 대비 -3.0% 하락하며 시장 심리 악화. 자동차 관련 지수도 -2.0% 하락.",
+          "change": "↓"
+        },
+        {
+          "sector": "금융/외환(KS_Finance)",
+          "direction": "혼합",
+          "initial": "중요",
+          "mid": "보통",
+          "long": "미약",
+          "pathway": "원/달러 환율이 1,504원으로 +0.4% 상승하며 장중 1,520원에 근접, 17년 만에 최저 수준에 근접하여 수입 물가 상승 압력 지속. 중동발 인플레이션 압력으로 주택담보대출 고정금리 하단이 5%대에 진입. 반면 KOSPI는 미·이란 협상 기대감으로 +4.7% 상승하여 7,847.7포인트를 기록하며 금융시장 심리는 단기적으로 개선. VIX -9.4% 하락으로 글로벌 변동성 완화 신호도 나타남.",
+          "change": "↑"
+        }
+      ]
+    },
+    "part_e": {
+      "vulnerabilities": [
+        "호르무즈 PGSA 통행료 제도화 리스크: 이란이 '페르시아만 해협청'을 통해 통행료 징수를 제도화할 경우, 한국의 중동산 원유·LNG 의존도(중동산 원유 약 70% 이상)를 감안할 때 도입 원가가 구조적으로 상승하게 됨. 브렌트유가 현재 100.2달러/배럴 수준이나 합의 불발 시 160~200달러 전망이 제기되고 있어, 에너지 집약 산업(정유·석유화학·발전)의 수익성 악화가 불가피함.",
+        "수산업·식품업의 이중 비용 압박 취약성: 벙커유 가격 급등으로 수산업 조업 비용이 급증하고 있으며, 동시에 SCFI +3.6% 상승에 따른 해운 운임 증가가 수산물 수출입 기업의 물류비를 가중시키고 있음. 요소 가격 2.5배 급등이 농업 생산비에도 추가 압박을 가하고 있어, 식량/식품 섹터 전반의 원가 구조가 복합적으로 악화되고 있음. 수산기업들은 벙커유·운임 상승의 직접 영향권에 있어 단기 수익성 방어 능력이 제한적.",
+        "국내 수출기업의 원·부자재 재고 부족 취약성: 부산 수출기업의 72.7~73%가 원·부자재 재고를 3개월 미만으로 보유하고 있어, 호르무즈 봉쇄가 추가 4~8주 지속될 경우 제조업 생산 차질이 현실화될 위험이 높음. BDI -5.1% 하락으로 벌크선 조달 여건도 악화되고 있어 대체 공급원 확보를 위한 긴급 수송 비용이 추가로 발생할 가능성."
+      ],
+      "monitoring_recommendations": [
+        "미·이란 최종 합의 서명 여부 및 PGSA 통행료 징수 조건 모니터링: 합의 불발 또는 통행료 강제 징수 본격화 시 브렌트유 재급등 가능성이 높으므로, 브렌트유 105달러/배럴 재돌파 여부를 핵심 트리거로 설정하고 국내 정유사·석유화학 업체의 원가 부담 변화를 주간 단위로 추적할 것.",
+        "호르무즈 통과 선박 수(현재 44척, +300.0%) 및 이란 혁명수비대 통항 허가 조건 변화 추적: 통과 선박 수가 다시 감소하거나 통행료 납부 조건이 강화될 경우 LNG·원유 공급 차질이 재심화될 수 있으므로, 이란 PGSA 공식 발표 및 혁명수비대 일일 통항 허가 현황을 실시간 모니터링할 것.",
+        "SCFI 및 벙커유 가격 연동 수산업·식품업 물류비 부담 지수 추적: SCFI가 현재 2,218.2포인트로 4주 연속 상승 중이며, 벙커유 가격 상승이 수산업 조업 비용에 직접 전가되고 있음. 수산물 수출입 기업의 운임 할증료 부담 수준과 조업 포기율 변화를 격주 단위로 점검하고, SCFI 2,500포인트 돌파 시 긴급 물류비 지원 방안 검토를 권고.",
+        "원/달러 환율 1,520원 돌파 여부 및 수입 물가 연동 식품 원자재 가격 모니터링: 환율이 장중 1,520원에 근접하는 등 원화 가치가 17년 만에 최저 수준에 근접하고 있어, 수입 의존도가 높은 식품 원자재(밀·옥수수·육류) 가격 상승이 가속화될 위험이 있음. 환율 1,520원 돌파 시 식품업체의 원가 전가 압력 및 소비자물가 영향을 즉시 점검할 것.",
+        "한일 원유·LNG 스와프 체계 실효성 및 대체 공급원 다변화 진행 상황 점검: 한일 정상 합의에 따른 원유·LNG 스와프 체계가 실제 공급 안정화에 기여하는지 검증하고, UAE 원유 공급 정상화 시점(2027년 상반기 전망)을 감안하여 중장기 대체 공급원(미국 LNG, 호주 LNG 등) 계약 확대 진행 상황을 분기 단위로 점검할 것."
+      ]
+    },
+    "overall_severity": "심각",
+    "overall_direction": "네거티브",
+    "alert_level": "Crisis",
+    "ref_map": {
+      "1": {
+        "title": "Iran deploys mosquito fleet in Strait of Hormuz",
+        "url": "https://www.trend.az/iran/4184464.html"
+      },
+      "2": {
+        "title": "Global shock : Iran seizes control of undersea cables in Hormuz , threatens digital blackout , and demands transit fees",
+        "url": "https://www.bankingnews.gr/diethni/articles/874091/global-shock-iran-seizes-control-of-undersea-cables-in-hormuz-threatens-digital-blackout-and-demands-transit-fees"
+      },
+      "3": {
+        "title": "Iran - US war latest : Tehran vows to tighten grip on Strait of Hormuz",
+        "url": "https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strait-of-hormuz-ceasefire-b2973713.html"
+      },
+      "4": {
+        "title": "Iran warns Strait of Hormuz could be closed to countries who back US resolution",
+        "url": "https://www.azernews.az/region/258222.html"
+      },
+      "5": {
+        "title": "Iran Warns Countries Enforcing US Sanctions May Face Strait Of Hormuz Shipping Disruptions",
+        "url": "https://www.khaama.com/iran-warns-countries-enforcing-us-sanctions-may-face-strait-of-hormuz-shipping-disruptions/"
+      },
+      "6": {
+        "title": "Strait of Hormuz remains effectively blocked",
+        "url": "https://www.omanobserver.om/article/1189361/business/markets/strait-of-hormuz-remains-effectively-blocked"
+      },
+      "7": {
+        "title": "Iran uses  mosquito fleet  to tighten grip on Strait of Hormuz : Report",
+        "url": "https://www.dailyexcelsior.com/iran-uses-mosquito-fleet-to-tighten-grip-on-strait-of-hormuz-report/"
+      },
+      "8": {
+        "title": "May 8 : Iranian forces inflict damage on US assets in Strait of Hormuz as Trump desperation grows",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/05/iran-260508-presstv04.htm"
+      },
+      "9": {
+        "title": "South Korea says  unidentified aircraft  hit cargo vessel in Hormuz Monday",
+        "url": "https://www.spacewar.com/afp/260510113248.c6dpbzng.html"
+      },
+      "10": {
+        "title": "Seoul concludes  external strike  caused explosion on HMM vessel in Hormuz",
+        "url": "https://www.koreaherald.com/article/10734716"
+      },
+      "11": {
+        "title": "2nd LD Writethru : S . Korea says unidentified aerial objects hit vessel in Strait of Hormuz",
+        "url": "http://www.bignewsnetwork.com/news/279042174/2nd-ld-writethru-s-korea-says-unidentified-aerial-objects-hit-vessel-in-strait-of-hormuz"
+      },
+      "12": {
+        "title": "S . Korea says unidentified aerial objects hit vessel in Strait of Hormuz - Xinhua",
+        "url": "https://english.news.cn/asiapacific/20260510/ea92eb6e9fec43b68393302024604fb8/c.html"
+      },
+      "13": {
+        "title": "South Korea says ship in Hormuz was hit by unidentified objects on May 4",
+        "url": "https://asia.nikkei.com/spotlight/iran-tensions/iran-war/south-korea-says-ship-in-hormuz-was-hit-by-unidentified-objects-on-may-4"
+      },
+      "14": {
+        "title": "Hormuz disruption sends shock through oil and food supply chains",
+        "url": "https://www.upi.com/Top_News/World-News/2026/05/10/supply-chain-disruptions-iran-war-food-chemical-industries/4211778454792/"
+      },
+      "15": {
+        "title": "The Strait of Hormuz crisis shows energy security is now a boardroom issue",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/strait-hormuz-crisis-shows-energy-205900947.html"
+      },
+      "16": {
+        "title": "US Iran war news LIVE : Oil jumps over $105 per barrel amid Hormuz crisis as Trump rejects Iran proposal response",
+        "url": "https://www.hindustantimes.com/world-news/us-iran-war-news-live-updates-trump-proposal-tehran-strait-of-hormuz-uae-dubai-ceasefire-israel-netanyahu-latest-news-101778462313541.html"
+      },
+      "17": {
+        "title": "Oil prices today : Crude jumps after Trump rejects Iran latest offer ; Strait of Hormuz remains shut",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-crude-jumps-after-trump-rejects-irans-latest-offer-strait-of-hormuz-remains-shut/articleshow/131002228.cms"
+      },
+      "18": {
+        "title": "Oil gains almost 3 % amid fears of prolonged disruption in Gulf shipping route",
+        "url": "https://www.geo.tv/latest/663786-oil-gains-almost-3-amid-fears-of-prolonged-disruption-in-gulf-shipping-route"
+      },
+      "19": {
+        "title": "Trump Rejects Iran Proposal as Strait of Hormuz Crisis Pushes Oil Prices Higher",
+        "url": "http://www.econotimes.com/Trump-Rejects-Iran-Proposal-as-Strait-of-Hormuz-Crisis-Pushes-Oil-Prices-Higher-1741317"
+      },
+      "20": {
+        "title": "Iran demands total control of Hormuz and war reparations : Trump brands Iranian response",
+        "url": "https://www.bankingnews.gr/diethni/articles/874239/iran-demands-total-control-of-hormuz-and-war-reparations-trump-brands-iranian-response-unacceptable"
+      },
+      "21": {
+        "title": "US Awaits Iranian Response After Hormuz Clashes Strain Ceasefire",
+        "url": "https://www.marketscreener.com/news/us-awaits-iranian-response-after-hormuz-clashes-strain-ceasefire-ce7f5bd8df80ff26"
+      },
+      "22": {
+        "title": "South Korea condemns attack on cargo ship in Strait of Hormuz",
+        "url": "https://www.emirates247.com/world/south-korea-condemns-attack-on-cargo-ship-in-strait-of-hormuz/1493"
+      },
+      "23": {
+        "title": "South Korea Condemns Attack on Cargo Ship in Strait of Hormuz , Vows Response",
+        "url": "https://english.aawsat.com/world/5271867-south-korea-condemns-attack-cargo-ship-strait-hormuz-vows-response"
+      },
+      "24": {
+        "title": "Trump Rejects Iran Ceasefire Proposal : Gulf Truce at Risk , Strait of Hormuz and Oil Markets on Edge",
+        "url": "https://gulfnews.com/world/mena/back-to-the-brink-what-happens-next-after-trump-rejects-iran-proposal-1.500536417"
+      },
+      "25": {
+        "title": "Iran warns of  decisive response  to any European naval deployment in Strait of Hormuz",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/05/iran-260510-presstv05.htm"
+      }
+    },
+    "week_label": "2026-W21",
+    "signal": {
+      "n_articles": 5332,
+      "crisis_pct": 12.7,
+      "warning_pct": 47.3,
+      "warning_crisis_pct": 60.0,
+      "trend": "stable",
+      "dominant_cluster": "CP_Hormuz",
+      "dominant_display": "호르무즈 해협",
+      "dominant_crisis_pct": 35.9,
+      "confirmed_clusters": [
+        "CP_Panama",
+        "CP_Hormuz",
+        "CP_Malacca",
+        "CP_Taiwan",
+        "CP_Suez",
+        "EVT_Ukraine2022",
+        "EVT_Japan2019",
+        "CP_BabElMandeb",
+        "EVT_COVID2020",
+        "CP_BlackSea",
+        "EVT_RedSea2023"
+      ],
+      "candidate_clusters": []
+    },
+    "week": "2026-W21",
+    "indicators": {
+      "SCFI": {
+        "name": "SCFI",
+        "full": "상하이 컨테이너 운임지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "up_bad",
+        "value": 2218.15,
+        "chg_pct": 3.6,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "BDI": {
+        "name": "BDI",
+        "full": "발틱건화물지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "up_bad",
+        "value": 2991.0,
+        "chg_pct": -5.1,
+        "chg_dir": "down",
+        "freq": "daily",
+        "data_date": "2026-05-22"
+      },
+      "Harpex": {
+        "name": "Harpex",
+        "full": "컨테이너 용선료 지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "up_bad",
+        "value": 2321.0,
+        "chg_pct": 0.1,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "GSCSI": {
+        "name": "GSCSI",
+        "full": "글로벌 해상 컨테이너 물동량",
+        "unit": "M TEU",
+        "group": "글로벌 해운",
+        "dir": "neutral",
+        "value": 2.09,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-04-01"
+      },
+      "RWI_ISL_CTI": {
+        "name": "RWI/ISL CTI",
+        "full": "컨테이너 처리량 지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "neutral",
+        "value": 142.6,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-03-01"
+      },
+      "GSCPI": {
+        "name": "GSCPI",
+        "full": "글로벌 공급망 압력지수",
+        "unit": "σ",
+        "group": "공급망 스트레스",
+        "dir": "up_bad",
+        "value": 1.82,
+        "chg_pct": 0.2,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-04-30"
+      },
+      "NAPMSDI": {
+        "name": "NAPMSDI",
+        "full": "ISM 납기지연지수",
+        "unit": "pt",
+        "group": "공급망 스트레스",
+        "dir": "up_bad",
+        "value": 60.6,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-04-01"
+      },
+      "GPR": {
+        "name": "GPR",
+        "full": "지정학적 위험지수",
+        "unit": "pt",
+        "group": "공급망 스트레스",
+        "dir": "up_bad",
+        "value": 230.77,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-04-01"
+      },
+      "CP_Hormuz": {
+        "name": "호르무즈",
+        "full": "호르무즈 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 44.0,
+        "chg_pct": 300.0,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-17"
+      },
+      "CP_Suez": {
+        "name": "수에즈",
+        "full": "수에즈 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 256.0,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-05-17"
+      },
+      "CP_BabElMandeb": {
+        "name": "바브엘만데브",
+        "full": "바브엘만데브 선박통과",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 222.0,
+        "chg_pct": 3.7,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-17"
+      },
+      "CP_Malacca": {
+        "name": "말라카",
+        "full": "말라카 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 1487.0,
+        "chg_pct": -3.4,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-17"
+      },
+      "CP_Taiwan": {
+        "name": "대만해협",
+        "full": "대만해협 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 1708.0,
+        "chg_pct": 4.8,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-17"
+      },
+      "CP_Korea": {
+        "name": "한국해협",
+        "full": "한국해협 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 1429.0,
+        "chg_pct": 8.5,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-17"
+      },
+      "Brent": {
+        "name": "브렌트유",
+        "full": "브렌트유 선물",
+        "unit": "USD/bbl",
+        "group": "에너지",
+        "dir": "up_bad",
+        "value": 100.21,
+        "chg_pct": -8.3,
+        "chg_dir": "down",
+        "freq": "nan",
+        "data_date": "2026-05-24"
+      },
+      "WTI": {
+        "name": "WTI",
+        "full": "WTI 원유 선물",
+        "unit": "USD/bbl",
+        "group": "에너지",
+        "dir": "up_bad",
+        "value": 96.6,
+        "chg_pct": -4.4,
+        "chg_dir": "down",
+        "freq": "nan",
+        "data_date": "2026-05-24"
+      },
+      "NatGas": {
+        "name": "천연가스",
+        "full": "천연가스 선물",
+        "unit": "USD/MMBtu",
+        "group": "에너지",
+        "dir": "up_bad",
+        "value": 3.02,
+        "chg_pct": 2.1,
+        "chg_dir": "up",
+        "freq": "daily",
+        "data_date": "2026-05-24"
+      },
+      "Gold": {
+        "name": "금",
+        "full": "금 현물 (GLD ETF)",
+        "unit": "USD",
+        "group": "거시경제",
+        "dir": "neutral",
+        "value": 413.82,
+        "chg_pct": -0.8,
+        "chg_dir": "down",
+        "freq": "daily",
+        "data_date": "2026-05-22"
+      },
+      "KOSPI": {
+        "name": "KOSPI",
+        "full": "KOSPI 지수",
+        "unit": "pt",
+        "group": "거시경제",
+        "dir": "down_bad",
+        "value": 7847.71,
+        "chg_pct": 4.7,
+        "chg_dir": "up",
+        "freq": "nan",
+        "data_date": "2026-05-22"
+      },
+      "KRWUSD": {
+        "name": "원/달러",
+        "full": "원달러 환율",
+        "unit": "KRW",
+        "group": "거시경제",
+        "dir": "up_bad",
+        "value": 1504.4,
+        "chg_pct": 0.4,
+        "chg_dir": "flat",
+        "freq": "daily",
+        "data_date": "2026-05-22"
+      },
+      "USD_Index": {
+        "name": "달러지수",
+        "full": "달러 인덱스 (UUP ETF)",
+        "unit": "USD",
+        "group": "거시경제",
+        "dir": "up_bad",
+        "value": 27.77,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "daily",
+        "data_date": "2026-05-22"
+      },
+      "KR_ExportVol": {
+        "name": "수출량",
+        "full": "한국 수출량 지수",
+        "unit": "USD",
+        "group": "거시경제",
+        "dir": "down_bad",
+        "value": 85867478375.0,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-04-01"
+      },
+      "VIX": {
+        "name": "VIX",
+        "full": "공포지수",
+        "unit": "pt",
+        "group": "거시경제",
+        "dir": "up_bad",
+        "value": 16.7,
+        "chg_pct": -9.4,
+        "chg_dir": "down",
+        "freq": "nan",
+        "data_date": "2026-05-22"
+      },
+      "SK이노베이션": {
+        "name": "SK이노",
+        "full": "SK이노베이션",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 123700.0,
+        "chg_pct": 0.2,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "S_Oil": {
+        "name": "S-Oil",
+        "full": "S-Oil",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 109000.0,
+        "chg_pct": -2.8,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "롯데케미칼": {
+        "name": "롯데케미칼",
+        "full": "롯데케미칼",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 82900.0,
+        "chg_pct": -4.2,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "LG화학": {
+        "name": "LG화학",
+        "full": "LG화학",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 351000.0,
+        "chg_pct": -6.1,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "한화솔루션": {
+        "name": "한화솔루션",
+        "full": "한화솔루션",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 42700.0,
+        "chg_pct": 5.2,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "HMM": {
+        "name": "HMM",
+        "full": "HMM (컨테이너)",
+        "unit": "KRW",
+        "group": "한국 해운",
+        "dir": "neutral",
+        "value": 20500.0,
+        "chg_pct": 3.1,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "팬오션": {
+        "name": "팬오션",
+        "full": "팬오션 (벌크)",
+        "unit": "KRW",
+        "group": "한국 해운",
+        "dir": "neutral",
+        "value": 5980.0,
+        "chg_pct": -0.8,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "한국가스공사": {
+        "name": "가스공사",
+        "full": "한국가스공사",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 37650.0,
+        "chg_pct": -0.5,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "대한항공": {
+        "name": "대한항공",
+        "full": "대한항공",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 26800.0,
+        "chg_pct": 2.9,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "CJ제일제당": {
+        "name": "CJ제일제당",
+        "full": "CJ제일제당",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 215000.0,
+        "chg_pct": -5.9,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "농심": {
+        "name": "농심",
+        "full": "농심",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 400000.0,
+        "chg_pct": 0.3,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "에너지화학ETF": {
+        "name": "에너지화학ETF",
+        "full": "에너지화학ETF (117460.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 16705.0,
+        "chg_pct": -0.4,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "화학ETF": {
+        "name": "화학ETF",
+        "full": "화학ETF (227550.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 15325.0,
+        "chg_pct": 2.9,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "반도체ETF": {
+        "name": "반도체ETF",
+        "full": "반도체ETF (266410.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 9770.0,
+        "chg_pct": -3.0,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "자동차ETF": {
+        "name": "자동차ETF",
+        "full": "자동차ETF (091180.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 38065.0,
+        "chg_pct": -2.0,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "농산물종합": {
+        "name": "농산물종합",
+        "full": "농산물종합 (DBA)",
+        "unit": "USD",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 27.56,
+        "chg_pct": -1.0,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "밀": {
+        "name": "밀",
+        "full": "밀 (WEAT)",
+        "unit": "USD",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 24.55,
+        "chg_pct": 1.8,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      },
+      "건설ETF": {
+        "name": "건설ETF",
+        "full": "건설ETF (117700.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 8435.0,
+        "chg_pct": 0.7,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-05-22"
+      }
+    }
   }
 ]
