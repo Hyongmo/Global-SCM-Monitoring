@@ -6,7 +6,7 @@ monitoring/*/daily_report_llm_*.json 을 읽어
 docs/index.html 을 빌드 (GitHub Pages 퍼블리시용)
 
 호출 방식:
-    python scripts/build_viewer.py [--days N]   # 기본 최근 30일
+    python scripts/build_viewer.py [--days N]   # 기본: 전체 기간 (0=전체)
 """
 
 import os, json, glob, sys
@@ -17,8 +17,8 @@ MONITOR_DIR = 'monitoring'
 DOCS_DIR    = 'docs'
 VIEWER_PATH = os.path.join(DOCS_DIR, 'index.html')
 
-# ─── 최대 표시 일수 ───────────────────────────────────────────
-MAX_DAYS = 30
+# ─── 최대 표시 일수 (0 = 전체) ─────────────────────────────────
+MAX_DAYS = 0
 if '--days' in sys.argv:
     idx = sys.argv.index('--days')
     try:
@@ -53,7 +53,7 @@ if not json_files:
 print(f"📂 발견된 JSON: {len(json_files)}개")
 
 days = []
-for jf in json_files[:MAX_DAYS]:
+for jf in (json_files[:MAX_DAYS] if MAX_DAYS > 0 else json_files):
     try:
         with open(jf, encoding='utf-8') as f:
             raw = json.load(f)
