@@ -1,0 +1,2398 @@
+{
+  "date": "2026-06-10",
+  "date_key": "20260610",
+  "n_total": 2335,
+  "n_high": 70,
+  "n_med": 296,
+  "n_low": 356,
+  "n_none": 1613,
+  "n_intl": 159,
+  "n_dom": 207,
+  "llm_result": {
+    "executive_summary": "미국이 이란 군사시설을 공습하고 이란이 요르단·바레인 미군기지를 보복 공격하는 등 미·이란 무력 충돌이 격화되고 있으며[1][2][5][6], IRGC는 호르무즈 해협 인근에서 미군 MQ-9 드론을 격추했다[4][8]. 트럼프 대통령은 이란 발전소·교량에 대한 추가 공습이 임박했다고 경고했고[13][15][16], 한·EU 정상은 공동성명을 통해 호르무즈 해협 항행 자유와 국제법 존중을 촉구했다[12][14]. 호르무즈 봉쇄 102일 만에 HMM 유조선 '유니버설 위너호'가 해협을 통과해 울산항에 입항했으며[35][62][71], 미국 에너지장관은 호르무즈 통과 선박이 매우 의미 있게 증가 중이라고 밝혔다[31]. 수에즈 운하는 호르무즈 교란에 따른 항로 우회로 유조선 통항이 급증하고 수수료를 인상했으며[22][25][28][30], 아시아-미국 컨테이너 운임은 이란 전쟁 여파로 두 배 급등했다[23]. 미국 5월 소비자물가는 전년 대비 4.2% 상승해 2023년 4월 이후 최고치를 기록했고[52][53][55], 원/달러 환율은 1,520원대로 복귀했다[54].",
+    "categories": {
+      "1_Security": {
+        "overseas": "미국이 이란 군사시설을 공습했고, 이란은 요르단과 바레인의 미군기지를 보복 공격했다[1][5][6]. IRGC는 호르무즈 해협 인근에서 미군 MQ-9 드론을 격추했으며[4][8], 오만 해안 인근에서 미 육군 아파치 헬기가 격추된 사건도 보고됐다[9][10]. 예멘 해역에서는 무장 세력이 화물선을 공격하고 경비원이 응사하는 사건이 발생했다[3]. 이란 외무장관 아라그치는 호르무즈 해협은 적대적 존재에 결코 우호적이지 않으며 외국 군대는 떠나야 한다고 촉구했다[7]. 트럼프 대통령은 협상을 오래 끄는 이란이 대가를 치러야 한다며 발전소·교량에 대한 추가 공습 명령이 임박했다고 경고했다[2][13][15].",
+        "korea_impact": "한·EU 정상은 공동성명을 통해 호르무즈 해협 항행 자유, 안전 통항, 국제법 존중을 촉구했으며 대만해협 평화·안정의 중요성도 함께 명시했다[12][14]. 국내 언론은 호르무즈 봉쇄가 에너지 비상벨을 울렸다고 보도하며 에너지 안보 위기를 집중 조명했다[11]. 미·이란 갈등 격화와 호르무즈 긴장이 최고조에 달한 가운데 트럼프의 추가 공습 임박 경고가 국내에서도 주요 뉴스로 다뤄졌다[18][19][20]."
+      },
+      "2_Safety": {
+        "overseas": "",
+        "korea_impact": "IMO가 북극항로 운항 기준을 마련하면서 취약한 생태계를 고려한 특별 관리 방안을 논의 중인 것으로 보도됐다[21]."
+      },
+      "3_Freight": {
+        "overseas": "호르무즈 해협 교란으로 에너지 무역 항로가 재편되면서 수에즈 운하의 유조선 통항이 급증했다[22][25][27][28]. 수에즈 운하는 유조선 통항 급증에 따른 새로운 해상 운송 성과를 기록했으며 추가 통항 증대를 목표로 수수료(서차지)를 인상할 예정이다[26][30]. 아시아-미국 컨테이너 운임은 이란 전쟁이 촉발한 연료비 및 운임 급등으로 두 배 수준으로 상승했다[23]. 트럼프 대통령은 미국이 수백만 배럴의 원유를 호르무즈 해협을 통해 비밀리에 이동시켰다고 밝혔으며[24], 브렌트유는 호르무즈 봉쇄에도 불구하고 100달러 아래를 유지하며 여름 위기를 피한 것으로 보도됐다[29].",
+        "korea_impact": "미국 에너지장관은 호르무즈 해협을 통과하는 선박이 매우 의미 있게 증가하고 있다고 밝혔다[31]."
+      },
+      "4_PortCargo": {
+        "overseas": "쿠웨이트가 미·이란 전쟁 개시 이후 처음으로 아시아 구매자들에게 원유를 공급하겠다고 제안했다[32]. 일본 JERA는 페트로나스와 연간 약 200만 톤 규모의 LNG를 20년 장기 계약으로 구매하는 계약을 체결했으며[33], 페트로나스도 일본 발전 대기업과 20년 LNG 공급 계약을 체결했다[80]. 호주 익스플로리스(Inpex)는 다윈 LNG 시설의 파업 중단을 위한 긴급 명령을 신청했다[34].",
+        "korea_impact": "호르무즈 해협에 102일간 발이 묶였던 위너호(유니버설 위너호)가 원유를 싣고 울산항에 도착했다[35]. 삼성중공업은 아프리카 선주와 3조 6,500억 원 규모의 FLNG 본계약을 체결했다[36]."
+      },
+      "5_EconFinance": {
+        "overseas": "미국 5월 소비자물가지수(CPI)는 전년 대비 4.2% 상승해 2023년 4월 이후 최고 상승률을 기록했으며, 이는 유가 급등이 주요 원인으로 지목됐다[52][53][55]. 뉴욕 증시는 미·이란 갈등 격화와 CPI 부담으로 하락 출발했으며[48][49], 다우·S&P500·나스닥 선물도 CPI 발표와 미·이란 휴전 불안 속에 손실을 줄이는 흐름을 보였다[42]. 브렌트유는 호르무즈 봉쇄에도 100달러 아래를 유지했으나 유가가 장기적으로 상승할 것이라는 전망도 제기됐다[29][37]. OPEC 산유량은 미국의 이란 봉쇄 압박으로 최소 2000년 이후 최저 수준으로 떨어진 것으로 보도됐다[72][73]. 미·이란 전쟁이 페르시아만 국가들에 '상당한 경제적 충격'을 주고 있다는 분석도 나왔다[44].",
+        "korea_impact": "원/달러 환율은 중동 긴장 고조와 외국인 주식 매도 영향으로 1,520원대로 복귀했다[54]. 코스피는 반도체 대형주 주도의 매도세로 4.5% 하락했다[46]. 호르무즈 봉쇄 3개월째임에도 국내 기름값이 천장을 뚫지 않은 이유에 대한 분석 보도가 나왔으며[47], 미국 5월 CPI 4.2% 상승이 국내 물가 부담 우려로도 이어졌다[50][56]."
+      },
+      "6_Seafood": {
+        "overseas": "",
+        "korea_impact": "강릉 주문진 앞바다에서 이틀 새 참치 2,000마리가 잡히는 사상 최대 어황이 기록됐으며[57], 참다랑어 200마리가 한꺼번에 잡히는 장면에 어민들도 처음 보는 일이라고 반응했다[58][59]."
+      },
+      "7_Shipping": {
+        "overseas": "수에즈 운하는 초대형 컨테이너선 통항이라는 새로운 해상 운송 성과를 달성했다[60]. 중국에서는 핑루 운하 개통을 앞두고 조선사부터 물류 운영사까지 ASEAN 연결 신규 항로 준비에 나서고 있다[61].",
+        "korea_impact": "HMM 유조선 '유니버설 위너호'가 호르무즈 봉쇄 102일 만에 해협을 통과해 울산항에 입항하고 원유 하역을 시작했다[62][63][64][65][66][67][68][69][70][71]. 이 선박은 한국 선박 중 호르무즈 해협을 통과한 첫 사례로 보도됐다[62][71]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "OPEC 산유량은 미국의 이란 봉쇄 압박으로 최소 2000년 이후 최저 수준으로 하락했다[72][73]. 호주 다윈 LNG 시설의 파업이 가스 시장에 상당한 영향을 미칠 수 있다는 우려 속에 Inpex가 파업 중단 긴급 명령을 신청했다[74]. EU의 러시아 북극 LNG 수입은 새로운 제재에도 불구하고 급증했으며 스페인이 5월 최대 구매국으로 나타났다[78]. 엘니뇨 우려로 아시아 농작물이 잠재적 가뭄 위험에 직면했다는 보도가 나왔다[79].",
+        "korea_impact": "중동 전쟁 여파로 비료 가격이 인상되자 정부가 무기질비료 보조금 115억 원을 긴급 지원했다[89]. 삼성중공업은 미국 첫 해상 LNG 수출기지 '델핀 1호기' 4조 3,000억 원 규모 본계약을 체결했다[86][87][88][91]. 중국은 중동 위기 장기화에 대응해 원유 비축분을 방출했다[83]. 동해 심해 가스전 '대왕고래'가 BP를 파트너로 맞아 재추진 가능성이 보도됐다[85]. LG화학은 석유화학·배터리 동반 호조로 흑자 전환 기대감이 커지고 있다[90]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "미·이란 무력 충돌이 격화되면서 호르무즈 해협 긴장이 최고조에 달했으며, IRGC가 해협 인근에서 미군 MQ-9 드론을 격추했다[4][8]. 이란 외무장관은 호르무즈 해협에서 외국 군대가 떠나야 한다고 촉구했다[7]. 호르무즈 교란으로 에너지 무역 항로가 재편되면서 수에즈 운하의 유조선 통항이 급증했고[22][25][27][28], 수에즈 운하는 수수료 인상을 예고했다[30]. 예멘 해역에서도 화물선 공격 사건이 발생해 복수의 초크포인트에서 위협이 동시에 진행 중이다[3].",
+          "korea_impact": "호르무즈 봉쇄 102일 만에 HMM 유조선 '유니버설 위너호'가 해협을 통과해 울산항에 입항했으며[62][71], 이는 한국 선박의 첫 호르무즈 통과 사례로 보도됐다. 한·EU 정상은 공동성명에서 호르무즈 해협 항행 자유와 안전 통항을 촉구했다[12][14]. 미국 에너지장관은 호르무즈 통과 선박이 매우 의미 있게 증가 중이라고 밝혔다[31]."
+        },
+        "source": {
+          "overseas": "OPEC 산유량은 미국의 이란 봉쇄 압박으로 최소 2000년 이후 최저 수준으로 하락했다[72][73]. 쿠웨이트가 미·이란 전쟁 이후 처음으로 아시아 구매자에게 원유 공급을 제안했으며[32], 중국은 중동 위기 장기화에 대응해 원유 비축분을 방출했다[83]. 호주 다윈 LNG 시설의 파업이 가스 시장에 상당한 영향을 미칠 수 있다는 우려가 제기됐다[74]. EU의 러시아 북극 LNG 수입은 새로운 제재에도 급증했다[78].",
+          "korea_impact": "중동 전쟁 여파로 비료 가격이 인상되자 정부가 무기질비료 보조금 115억 원을 긴급 지원했다[89]. 동해 심해 가스전 '대왕고래'가 BP를 파트너로 맞아 재추진 가능성이 보도됐다[85]. 삼성중공업은 미국 첫 해상 LNG 수출기지 본계약을 체결하며 에너지 인프라 수주를 확대했다[86][88][91]."
+        },
+        "logistics": {
+          "overseas": "수에즈 운하는 호르무즈 교란에 따른 항로 우회로 유조선 통항이 급증하고 수수료 인상을 예고했다[22][25][28][30]. 아시아-미국 컨테이너 운임은 이란 전쟁 여파로 두 배 수준으로 급등했다[23]. 수에즈 운하는 초대형 컨테이너선 통항이라는 새로운 성과도 달성했다[60].",
+          "korea_impact": "HMM 유조선이 호르무즈 해협을 통과해 울산항에 입항하며 원유 하역을 시작했다[35][70]. 삼성중공업은 아프리카 선주와 3조 6,500억 원 규모 FLNG 본계약을 체결하며 해양 물류 인프라 수주를 이어갔다[36]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "미국 5월 CPI가 전년 대비 4.2% 상승해 2023년 4월 이후 최고치를 기록했으며 유가 급등이 주요 원인으로 지목됐다[52][53][55]. 원/달러 환율은 중동 긴장 고조와 외국인 주식 매도 영향으로 1,520원대로 복귀했고[54], 코스피는 반도체 대형주 주도 매도세로 4.5% 하락했다[46]. 뉴욕 증시는 미·이란 갈등과 CPI 부담으로 하락 출발했다[48][49]. 호르무즈 봉쇄 3개월째임에도 국내 기름값이 급등하지 않은 배경에 대한 분석 보도가 나왔다[47].",
+        "정유·화학": "호르무즈 봉쇄 102일 만에 HMM 유조선이 원유를 싣고 울산항에 입항해 하역을 시작했다[35][70]. LG화학은 석유화학·배터리 동반 호조로 흑자 전환 기대감이 커지고 있다[90]. 중동발 에너지 위기가 한국형 녹색전환에 미치는 영향에 대한 우려도 제기됐다[84].",
+        "해운·물류": "HMM 유조선 '유니버설 위너호'가 호르무즈 봉쇄 102일 만에 해협을 통과해 울산항에 입항했으며[62][63][64][65][66][67][68][69][70][71], 이는 한국 선박의 첫 호르무즈 통과 사례다. 삼성중공업은 아프리카 선주와 3조 6,500억 원 규모 FLNG 본계약을 체결했고[36], 미국 첫 해상 LNG 수출기지 4조 3,000억 원 규모 본계약도 체결했다[86][88][91].",
+        "식품·농업": "중동 전쟁 여파로 비료 가격이 인상되자 정부가 무기질비료 보조금 115억 원을 긴급 지원했다[89]. 강릉 주문진 앞바다에서 이틀 새 참치 2,000마리가 잡히는 사상 최대 어황이 기록됐다[57][58][59].",
+        "기타산업": "삼성중공업이 미국 해상 LNG 수출기지 및 아프리카 FLNG 등 대형 해양 플랜트 계약을 연이어 체결하며 수주 확대를 이어가고 있다[36][86][87][88][91]. 동해 심해 가스전 '대왕고래'가 BP를 파트너로 맞아 재추진 가능성이 보도됐다[85]."
+      }
+    },
+    "changes": {
+      "new": [
+        "HMM 유조선 '유니버설 위너호', 호르무즈 봉쇄 102일 만에 해협 통과 후 울산항 입항·원유 하역 시작[62][71]",
+        "이란, 요르단·바레인 미군기지 보복 공격[5][6]",
+        "IRGC, 호르무즈 해협 인근에서 미군 MQ-9 드론 격추[4][8]",
+        "쿠웨이트, 미·이란 전쟁 이후 처음으로 아시아 구매자에게 원유 공급 제안[32]",
+        "미국 5월 CPI 전년 대비 4.2% 상승, 2023년 4월 이후 최고치 기록[52][53][55]",
+        "한·EU 정상 공동성명, 호르무즈 해협 항행 자유·안전 통항·국제법 존중 촉구[12][14]",
+        "삼성중공업, 미국 첫 해상 LNG 수출기지 '델핀 1호기' 4조 3,000억 원 본계약 체결[86][88][91]",
+        "삼성중공업, 아프리카 선주와 3조 6,500억 원 FLNG 본계약 체결[36]",
+        "정부, 중동전쟁 여파 비료값 인상에 무기질비료 보조금 115억 원 긴급 지원[89]",
+        "강릉 주문진 앞바다 이틀 새 참치 2,000마리 사상 최대 어황[57][58][59]"
+      ],
+      "escalated": [
+        "미·이란 무력 충돌 격화: 미국 이란 군사시설 공습 → 이란 미군기지 보복 공격 → 트럼프 발전소·교량 추가 공습 임박 경고[1][2][5][6][13][15][16]",
+        "수에즈 운하 유조선 통항 급증 및 수수료 인상 예고[22][25][28][30]",
+        "아시아-미국 컨테이너 운임 두 배 급등[23]",
+        "원/달러 환율 1,520원대 복귀, 코스피 4.5% 하락[46][54]",
+        "OPEC 산유량 2000년 이후 최저 수준으로 하락[72][73]"
+      ],
+      "resolved": []
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "U . S . Strikes Iranian Military Facilities After Drone Takes Down Apache Helicopter",
+        "url": "https://thenewamerican.com/world-news/middle-east/u-s-strikes-iranian-military-facilities-after-drone-takes-down-apache-helicopter/",
+        "type": "intl"
+      },
+      {
+        "title": "Report from Tehran : Amid More U . S ./ Iran Bombing , Trump Warns Iran Is  DEAD … Will Pay the Price  ",
+        "url": "https://www.democracynow.org/2026/6/10/mohammad_eslami_iran_us",
+        "type": "intl"
+      },
+      {
+        "title": "Gunmen Attack Cargo Ship off Yemen , Guards Return Fire",
+        "url": "https://themedialine.org/headlines/gunmen-attack-cargo-ship-off-yemen-guards-return-fire/",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC Shoots Down MQ - 9 Drone Near Strait of Hormuz Amidst Iran Reaction to US Aggression",
+        "url": "https://www.islamicinvitationturkey.com/irgc-shoots-down-mq-9-drone-near-strait-of-hormuz-amidst-irans-reaction-to-us-aggression/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Attacks US Bases In Jordan And Bahrain",
+        "url": "https://www.channelstv.com/2026/06/10/iran-attacks-us-bases-in-jordan-and-bahrain/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Targets US Bases Across Gulf After American Strikes",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260610-rferl01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz never hospitable to hostile presence ; foreign forces urged to leave : FM Araghchi",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260609-presstv03.htm",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC downs MQ - 9 near Strait of Hormuz as Iran responds to US aggression",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260610-presstv01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after downing of US Army Apache helicopter off Oman coast – The Indian Awaaz",
+        "url": "https://theindianawaaz.com/us-strikes-iran-after-downing-of-us-army-apache-helicopter-off-oman-coast-2/",
+        "type": "intl"
+      },
+      {
+        "title": "June 9 : Iran slams politically motivated IAEA resolution , as US Apache helicopter crashes near Strait of Hormuz",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260609-presstv02.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwait eyes regional pipeline tie - ups to bypass Hormuz",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2837499-kuwait-eyes-regional-pipeline-tie-ups-to-bypass-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims heavy blow to US bases after  savage attacks  ",
+        "url": "https://news.az/news/iran-claims-heavy-blow-to-us-bases-after-savage-attacks",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo Ship Fired Upon South of Yemen : UKMTO",
+        "url": "https://shipandbunker.com/news/emea/436968-cargo-ship-fired-upon-south-of-yemen-ukmto",
+        "type": "intl"
+      },
+      {
+        "title": "Iran shot down Apache , US struck in Sirik , Bandar Abbas and Qeshm - IRGC : We hit 25 US targets",
+        "url": "https://www.bankingnews.gr/diethni/articles/880775/iran-shot-down-apache-us-struck-in-sirik-bandar-abbas-and-qeshm-irgc-we-hit-25-us-targets%20title=",
+        "type": "intl"
+      },
+      {
+        "title": "Iran vows strong response after US hits targets near Strait of Hormuz",
+        "url": "https://pakobserver.net/iran-vows-strong-response-after-us-hits-targets-near-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Revolutionary Guard says 21 US military targets hit across region",
+        "url": "https://tribune.com.pk/story/2612373/irans-revolutionary-guard-says-21-us-military-targets-hit-across-region",
+        "type": "intl"
+      },
+      {
+        "title": "Iran targets 21 US bases , F - 35 hangars after strikes over Apache downing",
+        "url": "https://www.rediff.com/news/report/iran-targets-21-us-bases-f-35-hangars-after-strikes-over-apache-downing/20260610.htm",
+        "type": "intl"
+      },
+      {
+        "title": "War clouds over West Asia as Iran claims targeting F - 35 hangars , 21 US air and naval bases in region",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460645.html",
+        "type": "intl"
+      },
+      {
+        "title": "Air raid sirens blare across Bahrain for second time following IRGC drone strike on US Fifth Fleet",
+        "url": "https://aninews.in/news/world/middle-east/air-raid-sirens-blare-across-bahrain-for-second-time-following-irgc-drone-strike-on-us-fifth-fleet20260610102111/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims targeting F - 35 hangars , 21 US air and naval bases in region",
+        "url": "https://timesofoman.com/article/172823-iran-claims-targeting-f-35-hangars-21-us-air-and-naval-bases-in-region",
+        "type": "intl"
+      },
+      {
+        "title": "Jordan Intercepts 5 Iranian Missiles in US - Iran Gulf Crisis",
+        "url": "https://www.newkerala.com/news/a/jordanian-military-intercepts-iranian-missiles-amid-sharp-us-tehran-517.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East crisis live : Iran launches broad retaliatory attacks after US strikes over downed helicopter",
+        "url": "https://www.theguardian.com/world/live/2026/jun/10/iran-war-updates-missile-strikes-trump-us-retaliation-middle-east-crisis-war-live",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian state media claims explosion heard in various regions of Iran as US CENTCOM begins retaliatory strikes",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460608.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran IRGC drones strike US Fifth Fleet in Bahrain ; nation - wide air raid sirens sounded",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460625.html",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iranian air defences after Apache downed over Hormuz ; Iran targets US Fifth Fleet",
+        "url": "https://www.businesstoday.in/world/story/us-strikes-iranian-air-defences-after-apache-downed-over-hormuz-iran-targets-us-fifth-fleet-535914-2026-06-10",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Threatens To Attack Iran , Claims Oil Has Been",
+        "url": "https://www.marinelink.com/news/trump-threatens-attack-iran-claims-oil-540172",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Stocks Move Sharply Lower As Trump Ramps Up Iran Threats",
+        "url": "https://www.finanzen.ch/nachrichten/aktien/u-s-stocks-move-sharply-lower-as-trump-ramps-up-iran-threats-1036240542",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Vows To Hit Iran  Very Hard  If No Deal Made",
+        "url": "http://www.britainnews.net/news/279114461/trump-vows-to-hit-iran-very-hard-if-no-deal-made",
+        "type": "intl"
+      },
+      {
+        "title": "  Were going to be attacking them very hard : Trump vows renewed strikes on Iran",
+        "url": "https://aninews.in/news/world/us/were-going-to-be-attacking-them-very-hard-trump-vows-renewed-strikes-on-iran20260610224806/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran new leaders are taking risks their predecessors avoided",
+        "url": "https://www.yahoo.com/news/world/articles/iran-leaders-taking-risks-predecessors-040244340.html",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  – WDBO",
+        "url": "https://www.wdbo.com/news/national/latest-trump-says/OESSOE7ESM6JZEKNSY5DTDI2BY/",
+        "type": "intl"
+      },
+      {
+        "title": "UN chief warns of  full resumption of conflict  as Middle East pulled  deeper into crisis  ",
+        "url": "https://aa.com.tr/en/world/un-chief-warns-of-full-resumption-of-conflict-as-middle-east-pulled-deeper-into-crisis/3962950",
+        "type": "intl"
+      },
+      {
+        "title": "Washington Walks a Tightrope After Striking Iran",
+        "url": "https://oilprice.com/Energy/Energy-General/Washington-Walks-a-Tightrope-After-Striking-Iran.html",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC Drone Targets Fifth Fleet HQ in Bahrain : Gulf Base Defense Costs $4M Per Intercept",
+        "url": "https://www.techtimes.com/articles/318113/20260610/irgc-drone-targets-fifth-fleet-hq-bahrain-gulf-base-defense-costs-4m-per-intercept.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Kazakhstan Oil Buyers Demand More Supply as Hormuz Closure Tightens Market",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Oil-Buyers-Demand-More-Supply-as-Hormuz-Closure-Tightens-Market.html",
+        "type": "intl"
+      },
+      {
+        "title": "Even as they exchange blows , Washington and Tehran are trying to keep talks alive and avoid a broader war",
+        "url": "https://www.theweek.in/news/middle-east/2026/06/10/iran-us-conflict-hormuz-helicopter-drone-attack.html",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  | National News",
+        "url": "https://www.yumasun.com/news/national_news/the-latest-trump-says-iran-will-have-to-pay-the-price/article_a892b78a-5a0f-5447-bdb8-f1b2b1639937.html",
+        "type": "intl"
+      },
+      {
+        "title": "Shocking Trump threats : Iran is dead , it delayed too much , it will pay the price ... – IRGC : Come on , we will destroy you",
+        "url": "https://www.bankingnews.gr/diethni/articles/880873/shocking-trump-threats-iran-is-dead-it-delayed-too-much-it-will-pay-the-price-irgc-come-on-we-will-destroy-you",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War : US Launches New Attacks on Iran Using Bogus Pretext , With Iran Retaliating Swiftly ; Global - Economy - Destroying Long Conflict Looks Baked In",
+        "url": "https://www.nakedcapitalism.com/2026/06/iran-war-us-launches-new-attacks-on-iran-using-bogus-pretext-with-iran-retaliating-swiftly-global-economy-destroying-long-conflict-looks-baked-in.html",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/world/2026/06/10/the-latest-trump-says-iran-will-have-to-pay-the-price",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  | National",
+        "url": "https://www.dailygazette.com/hv360/ap/national/the-latest-trump-says-iran-will-have-to-pay-the-price/article_630b3191-1d76-5694-a7fa-8c03dcc6b4b0.html",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  ",
+        "url": "https://www.local10.com/news/national/2026/06/10/the-latest-trump-says-iran-will-have-to-pay-the-price/",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  | National And World News",
+        "url": "https://www.woonsocketcall.com/news/national_and_world_news/the-latest-trump-says-iran-will-have-to-pay-the-price/article_066f22bf-da5d-5578-bb22-21fadfbdc0ed.html",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  – 95 . 5 WSB",
+        "url": "https://www.wsbradio.com/news/national/latest-trump-says/OESSOE7ESM6JZEKNSY5DTDI2BY/",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : Trump says Iran  will have to pay the price  – 104 . 5 WOKV",
+        "url": "https://www.wokv.com/news/national/latest-trump-says/OESSOE7ESM6JZEKNSY5DTDI2BY/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Says Iran Has  Taken Too Long To Negotiate a Deal  And Will Now  Have To Pay The Price  ",
+        "url": "https://www.ibtimes.com/trump-says-iran-has-taken-too-long-negotiate-deal-will-now-have-pay-price-3803903",
+        "type": "intl"
+      },
+      {
+        "title": "Iran retaliates , strikes American bases on World Cup eve",
+        "url": "https://pmnewsnigeria.com/2026/06/10/iran-retaliates-strikes-american-bases-on-world-cup-eve/",
+        "type": "intl"
+      },
+      {
+        "title": "Tehran Cites UN Self - defence Clause For Retaliatory Strikes On US » IndiaPost NewsPaper",
+        "url": "https://indiapost.com/tehran-cites-un-self-defence-clause-for-retaliatory-strikes-on-us/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran after Trump blames Tehran for downing Army helicopter",
+        "url": "https://www.texarkanagazette.com/news/2026/jun/09/us-strikes-iran-after-trump-blames-tehran-for/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says participation in truce talks  must be reviewed  after US strikes",
+        "url": "https://www.clevelandjewishnews.com/jns/iran-says-participation-in-truce-talks-must-be-reviewed-after-us-strikes/article_89117141-b425-5c15-a45a-d24c688cd357.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian armed forces to leave no attack unanswered , FM warns after fresh US aggression",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260609-presstv01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Limited Strikes , Larger Signal : What The US Attack On Iran Reveals",
+        "url": "https://www.globalsecurity.org/military/library/news/2026/06/mil-260610-rferl01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "The Strait of Hormuz crisis could drive global conflicts for years to come",
+        "url": "https://www.vox.com/politics/491389/food-fuel-price-shocks-instability-protests-riots",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after helicopter incident",
+        "url": "http://www.iranherald.com/news/279113276/us-strikes-iran-after-helicopter-incident",
+        "type": "intl"
+      },
+      {
+        "title": "Russia condemns EU plan for warships to stop  shadow fleet  vessels in Mediterranean – The Frontier Post",
+        "url": "https://thefrontierpost.com/russia-condemns-eu-plan-for-warships-to-stop-shadow-fleet-vessels-in-mediterranean/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran  reviewing  US talks after fresh strikes , says diplomacy cannot  take place in a vacuum  ",
+        "url": "https://www.moneycontrol.com/world/iran-reviewing-us-talks-after-fresh-strikes-says-diplomacy-cannot-take-place-in-a-vacuum-article-13946131.html",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwait in talks with Saudi Arabia and UAE on alternative oil export routes",
+        "url": "https://www.middleeastmonitor.com/20260610-kuwait-in-talks-with-saudi-arabia-and-uae-on-alternative-oil-export-routes/",
+        "type": "intl"
+      },
+      {
+        "title": "Explosion heard near Iran Qeshm island",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460811.html",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after Army helicopter is downed - Hawaii Tribune - Herald",
+        "url": "https://www.hawaiitribune-herald.com/2026/06/10/nation-world-news/us-strikes-iran-after-army-helicopter-is-downed/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after Trump blames Tehran for downing Army helicopter | News , Sports , Jobs",
+        "url": "https://www.morningjournalnews.com/uncategorized/2026/06/us-strikes-iran-after-trump-blames-tehran-for-downing-army-helicopter/",
+        "type": "intl"
+      },
+      {
+        "title": "Irans armed forces dealt heavy blows to US bases , assets after savage attacks : Foreign ministry",
+        "url": "https://www.presstv.ir/Detail/2026/06/10/770176/Iran-US-attacks-regional-countries-aggression-Turkey-Saudi-Arabia-",
+        "type": "intl"
+      },
+      {
+        "title": "Russia condemns EU plan for warships to stop  shadow fleet  vessels in Mediterranean",
+        "url": "https://www.arabnews.com/node/2646631/world",
+        "type": "intl"
+      },
+      {
+        "title": "Tehran cites UN self - defence clause for retaliatory strikes on US",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460768.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump faces pressure as Iran gains leverage in war with Israel",
+        "url": "https://www.siasat.com/trump-faces-pressure-as-iran-gains-leverage-in-war-with-israel-3486334/",
+        "type": "intl"
+      },
+      {
+        "title": "The Iran War Pressure on the Egyptian Pound : Fragile Stability and Expected Shocks",
+        "url": "https://www.washingtoninstitute.org/policy-analysis/iran-wars-pressure-egyptian-pound-fragile-stability-and-expected-shocks",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Hits Iran , Tehran Hits Back : U . S . Bases in Bahrain , Jordan and Kuwait Targeted - Novinite . com",
+        "url": "https://www.novinite.com/articles/238961/Trump+Hits+Iran,+Tehran+Hits+Back:+U.S.+Bases+in+Bahrain,+Jordan+and+Kuwait+Targeted",
+        "type": "intl"
+      },
+      {
+        "title": "Iran FM Araghchi discusses US strikes with Saudi , Turkish counterparts",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460709.html",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran launch airstrikes after Trump blames Tehran for downing Army helicopter",
+        "url": "https://www.orissapost.com/us-iran-launch-airstrikes-after-trump-blames-tehran-for-downing-army-helicopter/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran and the Shield That Became a Bullseye",
+        "url": "https://slguardian.org/__trashed-4/",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian FM Claims IRGC Damaged US Bases ; Jordan , Bahrain , and Kuwait Said They Intercepted Aerial Attacks",
+        "url": "https://themedialine.org/headlines/iranian-fm-claims-irgc-damaged-us-bases-jordan-bahrain-and-kuwait-said-they-intercepted-aerial-attacks/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran exchange fire after Trump accuses Tehran of downing helicopter",
+        "url": "http://europe.chinadaily.com.cn/a/202606/10/WS6a2906c9a310d6866eb4d79f.html",
+        "type": "intl"
+      },
+      {
+        "title": "Asian stocks fall as US and Iran exchange fire – business live",
+        "url": "https://www.theguardian.com/business/live/2026/jun/10/asian-stocks-fall-us-iran-exchange-fire-middle-east-strait-of-hormuz-oil-prices-latest-news-updates",
+        "type": "intl"
+      },
+      {
+        "title": "US military retaliates after helicopter crash ; Iran attacks Bahrain , Jordan , Kuwait",
+        "url": "https://www.wishtv.com/news/politics/us-military-retaliates-after-helicopter-crash-iran-attacks-bahrain-jordan-kuwait/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says US  must  respond after Iran shot down US Army helicopter near Strait of Hormuz | News , Sports , Jobs",
+        "url": "https://www.lockhaven.com/news/local-news/2026/06/trump-says-us-must-respond-after-iran-shot-down-us-army-helicopter-near-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says US  must  respond after Iran downed US Army helicopter near Strait of Hormuz | News , Sports , Jobs",
+        "url": "https://www.mariettatimes.com/uncategorized/2026/06/trump-says-us-must-respond-after-iran-downed-us-army-helicopter-near-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S ., Iran exchange fire after Trump accuses Tehran of downing helicopter",
+        "url": "http://www.middleeaststar.com/news/279113436/us-iran-exchange-fire-after-trump-accuses-tehran-of-downing-helicopter",
+        "type": "intl"
+      },
+      {
+        "title": "Roundup : U . S ., Iran exchange fire after Trump accuses Tehran of downing helicopter",
+        "url": "http://www.bignewsnetwork.com/news/279113508/roundup-us-iran-exchange-fire-after-trump-accuses-tehran-of-downing-helicopter",
+        "type": "intl"
+      },
+      {
+        "title": "US begins retaliatory strikes on Iran | News , Sports , Jobs",
+        "url": "https://www.altoonamirror.com/news/international/2026/06/iranwar-us-retaliatory-strikes-begins/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Gulf nations have  responsibility  to halt US , Israeli strikes",
+        "url": "https://economictimes.indiatimes.com/news/defence/iran-says-gulf-nations-have-responsibility-to-halt-us-israeli-strikes/articleshow/131625535.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Is the Iran War Tipping the Gulf Away From the U . S .? ",
+        "url": "https://www.theamericanconservative.com/is-the-iran-war-tipping-the-gulf-away-from-the-u-s/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after Trump blames Tehran for downing Army helicopter - Boston News , Weather , Sports",
+        "url": "https://whdh.com/news/us-strikes-iran-after-trump-blames-tehran-for-downing-army-helicopter/",
+        "type": "intl"
+      },
+      {
+        "title": "Jordanian military intercepts 5 Iranian missiles amid sharp US - Tehran escalation in Gulf",
+        "url": "https://news.webindia123.com/news/Articles/World/20260610/4460667.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Launches Strikes on Iran Over Downed Army Apache | The Asahi Shimbun : Breaking News , Japan News and Analysis",
+        "url": "https://www.asahi.com/ajw/articles/16631276",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran launch airstrikes after Trump blames Tehran for downing Army helicopter",
+        "url": "https://www.news-gazette.com/news/nation-world/us-and-iran-launch-airstrikes-after-trump-blames-tehran-for-downing-army-helicopter/article_e4dc2e28-0478-5b61-9ff2-1c6c83ed8b83.html",
+        "type": "intl"
+      },
+      {
+        "title": "  Leave Our Region If You …: Iran Warns After Fresh US Strikes",
+        "url": "https://www.cinaradio.com/2026/06/09/leave-our-region-if-you-iran-warns-after-fresh-us-strikes/",
+        "type": "intl"
+      },
+      {
+        "title": "Has the ceasefire really survived the latest US - Iran tensions ? ",
+        "url": "https://www.jpost.com/middle-east/article-898915",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran launch strikes after Donald Trump blames Tehran",
+        "url": "https://www.siasat.com/us-iran-launch-strikes-after-donald-trump-blames-tehran-3486101/",
+        "type": "intl"
+      },
+      {
+        "title": "What is the aim of the U . S . strike on Iran during ongoing talks ? ",
+        "url": "https://news.az/news/what-is-the-aim-of-the-us-strike-on-iran-during-ongoing-talks",
+        "type": "intl"
+      },
+      {
+        "title": "Iran … Trump … Conflict / War … Evening … June 9 , 2026 … Helo down / Rescue … US / Iran Exchange Attacks …. ",
+        "url": "https://politicaldog101.com/2026/06/irantrumpconflict-warevening-june-9-2026-helo-down-rescue-us-iran-exchange-attacks/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran strikes US Navy 5th Fleet after attacks over Apache chopper downing",
+        "url": "https://www.tribuneindia.com/news/usa-news/iran-strikes-us-navys-5th-fleet-after-attacks-over-apache-chopper-downing/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran US Conflict : ದಾಳಿಗೆ ತಕ್ಕ ಪ್ರತ್ಯುತ್ತರ ನೀಡದೇ ಬಿಡುವುದಿಲ್ಲ : ಅಮೆರಿಕಕ್ಕೆ ಇರಾನ್ ಬೆದರಿಕೆ",
+        "url": "https://www.prajavani.net/news/world-news/iran-warns-america-retaliation-airstrike-4048903",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran launch airstrikes after Trump blamed Tehran for downing Army helicopter",
+        "url": "https://www.news-gazette.com/news/nation-world/us-and-iran-launch-airstrikes-after-trump-blamed-tehran-for-downing-army-helicopter/article_e4dc2e28-0478-5b61-9ff2-1c6c83ed8b83.html",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran launch airstrikes after Trump blamed Tehran for downing Army helicopter",
+        "url": "https://www.wlwt.com/article/us-strikes-iran-crash-army-helicopter-oman-coast/71539867",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after drone boat rescues aviators | News , Sports , Jobs",
+        "url": "https://www.ironmountaindailynews.com/news/2026/06/us-strikes-iran-after-drone-boat-rescues-aviators/",
+        "type": "intl"
+      },
+      {
+        "title": "US forces strike Iran after American helicopter is downed",
+        "url": "https://www.bostonherald.com/2026/06/09/us-forces-strike-iran-after-american-helicopter-is-downed-3/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after Trump blames Tehran for downing Army helicopter",
+        "url": "https://www.sun-sentinel.com/2026/06/09/us-strikes-iran-after-trump-blames-tehran-for-downing-army-helicopter/",
+        "type": "intl"
+      },
+      {
+        "title": "Leave Our Region If You Want to be Safe : Iran Warns US",
+        "url": "https://www.deccanchronicle.com/west-asia/leave-our-region-if-you-want-to-be-safe-iran-warns-us-1962554",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . launches new attacks on Iran in retaliation for downing of helicopter , CENTCOM says",
+        "url": "https://www.nbcnews.com/world/iran/live-blog/us-attacks-iran-rcna349305",
+        "type": "intl"
+      },
+      {
+        "title": "US says it has begun strikes against Iran following crash of Army Apache helicopter off Oman coast - WSVN 7News | Miami News , Weather , Sports",
+        "url": "https://wsvn.com/news/us-world/us-says-it-has-begun-strikes-against-iran-following-crash-of-army-apache-helicopter-off-oman-coast/",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM : U . S . Hits Iranian Targets After Helicopter Downing",
+        "url": "https://www.breitbart.com/politics/2026/06/09/u-s-hits-iranian-targets-helicopter-downing-centcom/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . launches strikes on Iran in response to downed helicopter",
+        "url": "https://littleapplepost.com/posts/7f040e40-3b9a-4bcf-b103-e89231d2a48d",
+        "type": "intl"
+      },
+      {
+        "title": "  Leave our region if you want to be safe : Iran warns US amid escalating tensions",
+        "url": "https://aninews.in/news/world/middle-east/leave-our-region-if-you-want-to-be-safe-iran-warns-us-amid-escalating-tensions20260610053825/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warns US : Leave Region or Face Dire Fate",
+        "url": "https://www.newkerala.com/news/a/leave-our-region-if-you-want-safe-iran-132.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says US will retaliate after Iran shoots down helicopter",
+        "url": "https://www.clevelandjewishnews.com/jns/trump-says-us-will-retaliate-after-iran-shoots-down-helicopter/article_bc01b4f6-4816-51a5-8fb3-aef32a2efab6.html",
+        "type": "intl"
+      },
+      {
+        "title": "US says it has begun strikes against Iran | News",
+        "url": "https://www.theadvocate.com/baton_rouge/news/united-states-iran-strikes-helicopter/article_322397f9-3357-535e-b42c-dda21ea5ec34.html",
+        "type": "intl"
+      },
+      {
+        "title": "US begins strikes against Iran following Apache helicopter crash",
+        "url": "https://www.breakingnews.ie/world/us-begins-strikes-against-iran-following-apache-helicopter-crash-1911509.html",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after Trump blames Tehran for Army helicopter crash",
+        "url": "https://www.whio.com/news/world/trump-says-pilots/7ENXQ4NVLQ5UJA26UO2CSNTGIU/",
+        "type": "intl"
+      },
+      {
+        "title": "Container ship captain arrested for circumventing sanctions against Russia",
+        "url": "https://nltimes.nl/2026/06/09/container-ship-captain-arrested-circumventing-sanctions-russia",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . launches strikes against Iran in response to helicopter attack",
+        "url": "https://www.yahoo.com/news/us/articles/u-helicopter-crew-rescued-coming-133104168.html",
+        "type": "intl"
+      },
+      {
+        "title": "US says it has begun strikes against Iran after helicopter crash off Oman coast",
+        "url": "https://www.ksl.com:443/article/51508701/us-says-it-has-begun-strikes-against-iran-following-crash-of-army-apache-helicopter",
+        "type": "intl"
+      },
+      {
+        "title": "US says it has begun strikes against Iran following crash of helicopter",
+        "url": "https://www.wcvb.com/article/us-strikes-iran-crash-army-helicopter-oman-coast/71539867",
+        "type": "intl"
+      },
+      {
+        "title": "US says it has begun strikes against Iran following crash of Army Apache helicopter off Oman coast",
+        "url": "https://www.wandtv.com/news/national/us-says-it-has-begun-strikes-against-iran-following-crash-of-army-apache-helicopter-off/article_92e42ab3-ba8c-5646-b163-492700dd3ae6.html",
+        "type": "intl"
+      },
+      {
+        "title": "The Latest : US military launches strikes against Iran in response to downing of American helicopter",
+        "url": "https://www.yakimaherald.com/news/nation_and_world/nation/the-latest-us-military-launches-strikes-against-iran-in-response-to-downing-of-american-helicopter/article_29640e50-0ce1-51f9-85a5-1afe4669c4b0.html",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran in response to helicopter incident",
+        "url": "http://www.batonrougepost.com/news/279112643/us-strikes-iran-in-response-to-helicopter-incident",
+        "type": "intl"
+      },
+      {
+        "title": "US conducts strikes against Iran following crash of Army Apache helicopter off Oman coast",
+        "url": "https://www.waaytv.com/news/us-conducts-strikes-against-iran-following-crash-of-army-apache-helicopter-off-oman-coast/article_549a6135-c2cb-4c41-a373-83bad9950709.html",
+        "type": "intl"
+      },
+      {
+        "title": "[팩트추적] 호르무즈 봉쇄가 울린 에너지 비상벨",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364806?sid=004",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 한-EU 정상 \"호르무즈 해협 항행 자유·안전 통항·국제법 존중 ...",
+        "url": "https://n.news.naver.com/mnews/article/421/0008996939?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란의 발전소·교량 새 공습 가까워져”",
+        "url": "https://n.news.naver.com/mnews/article/658/0000146377?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 한·EU 공동성명 \"대만해협 평화·안정 중요…호르무즈 항행 국제...",
+        "url": "https://n.news.naver.com/mnews/article/422/0000873459?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"협상 시간 끄는 이란…발전소·교량 공습 지시 임박\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001363373?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란 발전소·교량에 대한 새 공격 명령에 가까워져”",
+        "url": "https://n.news.naver.com/mnews/article/020/0003725920?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “협상 너무 오래 끄는 이란, 대가 치러야”…공습 재개 위협",
+        "url": "https://n.news.naver.com/mnews/article/028/0002809085?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 긴장 최고조…트럼프 \"이란 발전소·교량 공습 임박\"",
+        "url": "https://n.news.naver.com/mnews/article/586/0000131236?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌어…발전소·교량 추가 공습 가까워져...",
+        "url": "https://n.news.naver.com/mnews/article/018/0006302538?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "다시 포성 휩싸인 호르무즈…중동 정세 ‘고비’",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197773?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 미군 기지 21곳 무차별 보복 공습… 중동 전면전 위기 고조",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=843516",
+        "type": "dom"
+      },
+      {
+        "title": "'휴전 협상' 무색하게…호르무즈서 미국·이란 '맞불 타격'",
+        "url": "https://n.news.naver.com/mnews/article/055/0001363357?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란 발전소·교량 공습 한층 가까워져…대가 치러야 할 것”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004629808?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "영국해사기구 \"예멘 인근 아덴만서 무장 소형 보트·화물선 교전\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001504637?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "UKMTO “예멘 인근 아덴만서 소형 보트·화물선 교전”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197569?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 연안 아덴만서 화물선 경비원이 접근 무장 선박과 총격전…UKMTO",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999251?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미, ‘헬기 추락’에 이란 방공시설 타격…이란도 보복 맞대응",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197929?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “질질끄는 이란 폭격할 수도”…美·이란 휴전 위태",
+        "url": "https://www.ekn.kr/web/view.php?key=20260610021092287",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 협상 재검토 선언…트럼프는 추가 공습 압박",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16086831",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU, 에너지 분야 차관급 대화 창구 개설…중동발 안보 위기 극복 공조",
+        "url": "https://n.news.naver.com/mnews/article/016/0002654897?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU, 에너지 분야 협의 위한 차관급 대화 창구 개설",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131821?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌어…대가 치러야 할 것\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005297447?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU, 정부 고위급 인사 에너지 대화창구 신설…에너지 안보 대응 등 공...",
+        "url": "https://www.kukinews.com/article/view/kuk202606100176",
+        "type": "dom"
+      },
+      {
+        "title": "韓, EU와 중동발 에너지 위기 극복 공조…기후부, 고위급 대화창구 신설",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999472?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "韓-EU 에너지 핫라인 뚫린다…재생E·전기화 차관급 채널개설 합의",
+        "url": "https://n.news.naver.com/mnews/article/421/0008996958?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU 정상회담 공동성명 채택… 러북 군사협력 규탄·경제안보 협력 강...",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3408310",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU 공동성명…북핵 규탄·항행의 자유 지지 재확인",
+        "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5029342",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란에 최후 압박…종전협상 흔들며 추가 공습 경고",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16086819",
+        "type": "dom"
+      },
+      {
+        "title": "이재명 대통령, EU 지도부와 제11차 한-EU 정상회담 공동성명 채택 [뉴시...",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999470?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "\"프랑스, G7 정상회의에 사우디·카타르도 초청...호르무즈 논의\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364796?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"충돌과 협상은 별개\"...트럼프, '이란과 합의 임박' 유지",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364792?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美-이란 전쟁 재개?…트럼프 \"시간 끄는 이란 대가 치를 것\"",
+        "url": "https://n.news.naver.com/mnews/article/660/0000110979?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[전문]제11차 한-EU 정상회담 공동성명",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999449?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "[김종석의 리포트]미국 vs 이란 꼬리 문 보복",
+        "url": "https://n.news.naver.com/mnews/article/449/0000348685?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌어…새 공습 가까워져\"",
+        "url": "https://n.news.naver.com/mnews/article/057/0001953260?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란 협상 지연 대가 치를 것”⋯발전소ㆍ교량 공습 검토 [종...",
+        "url": "https://www.etoday.co.kr/news/view/2592421",
+        "type": "dom"
+      },
+      {
+        "title": "\"시간끌기 대가 치를 것\"…트럼프, 이란 기간시설 타격 재개 시사",
+        "url": "https://n.news.naver.com/mnews/article/277/0005774721?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 트럼프 “이란, 협상 너무 오래 끈 대가 치러야 할 것”",
+        "url": "https://n.news.naver.com/mnews/article/029/0003031149?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 합의 너무 오래 끌어…이제 대가 치러야\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000618584?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란, 너무 오래 끌었다…이제 대가 치러야 할 것”",
+        "url": "https://n.news.naver.com/mnews/article/009/0005692189?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 시간만 끌고있어…발전소·교량 공습할 수도\"",
+        "url": "https://n.news.naver.com/mnews/article/079/0004156524?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"협상 시간끄는 이란의 발전소·교량 새 공습 가까워져\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131755?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 이제 대가 치를 것…중동 깡패는 죽었다\"",
+        "url": "https://n.news.naver.com/mnews/article/654/0000184946?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란 협상 너무 오래 끌어…대가 치를 때 됐다”",
+        "url": "https://n.news.naver.com/mnews/article/119/0003099864?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 트럼프 \"이란, 협상 너무 오래 끌었다…대가 치러야\"",
+        "url": "https://www.slist.kr/news/articleView.html?idxno=744532",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌어…대가 치를 것\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/018/0006302526?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“미국, 고농축 우라늄 ‘이란 내 희석’ 타협”…‘핵 협상’ 간극 좁...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003451262?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘아파치 격추’에 미·이란 공방 재개…트럼프 “새 공습 가까워져”",
+        "url": "https://n.news.naver.com/mnews/article/032/0003451261?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란, 협상 너무 오래 끌었다…대가 치를 것”",
+        "url": "https://www.kukinews.com/article/view/kuk202606100195",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"협상 시간 끄는 이란...발전소 공격 가까워져\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364752?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란, 협상 너무 오래 끌었다…이제 대가 치러야 할 것”",
+        "url": "https://n.news.naver.com/mnews/article/016/0002654880?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란 발전소 및 교량에 대한 새 공습 준비하고 있다\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999391?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌어…대가 치러야\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006302521?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란, 협상 너무 오래 끌어…새 공습 가까워져”",
+        "url": "https://n.news.naver.com/mnews/article/081/0003651394?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]트럼프 “시간 끄는 이란 대가 치를 것…새 공습 명령할 수도”",
+        "url": "https://n.news.naver.com/mnews/article/021/0002796873?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란, 협상 너무 오래 끌어…공습 명령에 가까워져”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197754?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 이제 대가 치를 것\"…중동 다시 전운",
+        "url": "https://n.news.naver.com/mnews/article/088/0001014027?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 오래 끌었다…대가 치를 것\"",
+        "url": "https://n.news.naver.com/mnews/article/014/0005533387?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란 발전소·교량 겨냥 새 공습 가까워져\"",
+        "url": "https://n.news.naver.com/mnews/article/656/0000178768?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "아파치 격추에 보복 공습한 트럼프 “이란, 협상 시간 끈 대가 치러야”",
+        "url": "https://n.news.naver.com/mnews/article/020/0003725917?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌었다…대가 치러야 할 것\"",
+        "url": "https://n.news.naver.com/mnews/article/469/0000935786?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미-이란 무력 충돌...종전 협상 위기",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527107",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 대가 치를 것…새 공습 지시 가까워져\"",
+        "url": "https://n.news.naver.com/mnews/article/437/0000495561?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU 경쟁력 파트너십 출범… 에너지·공급망 협력 확대",
+        "url": "http://www.e-platform.net/news/articleView.html?idxno=102901",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 대통령 “미 해군 봉쇄 효과적…이란 자금난 심화”",
+        "url": "https://www.tokenpost.kr/news/breaking/367822",
+        "type": "dom"
+      },
+      {
+        "title": "중동 긴장 재고조에 美 증시 하락, 상승 전환 시도",
+        "url": "https://n.news.naver.com/mnews/article/015/0005297456?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미-이란 갈등·CPI 등 여파로 뉴욕증시 하락 출발",
+        "url": "https://n.news.naver.com/mnews/article/021/0002796882?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미 달러화 강보합…트럼프 이란 추가 공격 가능성 위협",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419352",
+        "type": "dom"
+      },
+      {
+        "title": "경제학자 “트럼프 대통령, 연준 회의 전 헤르무즈 해협 불확실성 해소...",
+        "url": "https://www.tokenpost.kr/news/breaking/367866",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란, 협상 너무 오래 끈 대가 치를 것”…발전소·교량 추가...",
+        "url": "https://www.etoday.co.kr/news/view/2592418",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]트럼프 \"이란, 대가를 치를 것\"…뉴욕증시 선물 하락",
+        "url": "https://news.mtn.co.kr/news-detail/2026061020302199350",
+        "type": "dom"
+      },
+      {
+        "title": "재경부 수출플러스지원단, 중동리스크 대응 수출기업 설명회",
+        "url": "https://www.taxtimes.co.kr/news/article.html?no=275479",
+        "type": "dom"
+      },
+      {
+        "title": "[올댓차이나] 中 증시, 중동 긴장 고조에 반락 마감…창업판 2.7%↓",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999268?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "日·말레이 정상회담…에너지·핵심광물 협력 강화",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131515?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU, 고위급 핫라인 신설... “에너지 협력 강화”",
+        "url": "https://www.viva100.com/article/20260610501360",
+        "type": "dom"
+      },
+      {
+        "title": "한·EU, ‘공급망·에너지’ 협력 강화…고위급 경제대화 신설 추진",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197912?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "분석가 “미·이란, 충돌에도 무제한 전쟁은 원치 않아”",
+        "url": "https://www.tokenpost.kr/news/breaking/367832",
+        "type": "dom"
+      },
+      {
+        "title": "서방 22國, 이란 배후 테러행위들 규탄 성명…\"공동조치 취할것\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131830?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 종전 협상 지연시켜…발전소·교량 공습 명령 임박\" (종합...",
+        "url": "https://n.news.naver.com/mnews/article/421/0008996938?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “협상 시간 끄는 이란에 대응해 새 공습 명령할 수도”",
+        "url": "https://n.news.naver.com/mnews/article/366/0001170910?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 협상 너무 오래 끌어…이젠 대가 치러야\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0008996850?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 미 스텔스 전투기 격납고 표적 공격",
+        "url": "https://n.news.naver.com/mnews/article/449/0000348675?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이 대통령-EU 정상 \"北, 핵보유국 결코 인정 안 돼... 북러 불법 군사협...",
+        "url": "https://n.news.naver.com/mnews/article/469/0000935793?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한-EU 정상 공동성명 “대만해협 평화·안정 유지 중요…현상 변경 일방...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003451297?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "日, 방위백서에 '중국 최대 전략적 도전'…\"동맹국과 억지력 강화\"",
+        "url": "https://n.news.naver.com/mnews/article/469/0000935730?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "대북제재 위반 의혹 선박, 평택항에 석 달째 머물러",
+        "url": "https://n.news.naver.com/mnews/article/366/0001170911?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 걸프국들에 \"미국 공격 막을 책임 있다\" 경고",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527105",
+        "type": "dom"
+      },
+      {
+        "title": "밴스 美부통령, 중동 긴장 고조 속에도 \"이란과 종전 합의 매우 근접\"",
+        "url": "https://www.etoday.co.kr/news/view/2592333",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 정부군과 후티군, 호데이다주에서 충돌, 격전 ..후티가 공격",
+        "url": "https://n.news.naver.com/mnews/article/003/0013997145?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]예멘 서부 호데이다주에서 정부군과 후티군 충돌, 격전",
+        "url": "https://n.news.naver.com/mnews/article/003/0013997120?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[아시아 이슈]日·말레이, 한일 원유수송 길목 말라카해협서 해상보안 ...",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260610010003447",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "북극항로 운항 기준 만드는 IMO 취약한 생태계 고려해 ‘특별 관리’[알...",
+        "url": "https://n.news.naver.com/mnews/article/082/0001384844?sid=101",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Suez Canal traffic soars as Hormuz disruptions reroute energy trade",
+        "url": "https://www.al-monitor.com/originals/2026/06/suez-canal-traffic-soars-hormuz-disruptions-reroute-energy-trade",
+        "type": "intl"
+      },
+      {
+        "title": "Asia - US container shipping costs double as Iran war drives fuel and freight surge",
+        "url": "https://www.thehindubusinessline.com/economy/logistics/iran-conflict-pushes-global-container-shipping-prices-to-near-double-levels/article71086384.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says U . S . secretly moved millions of barrels of oil through Strait of Hormuz",
+        "url": "https://www.cnbc.com/2026/06/10/trump-strait-hormuz-iran-oil-tanker-navy.html",
+        "type": "intl"
+      },
+      {
+        "title": "Suez Canal Gets Oil Tanker Boost",
+        "url": "https://www.rigzone.com/news/wire/suez_canal_gets_oil_tanker_boost-10-jun-2026-183895-article/",
+        "type": "intl"
+      },
+      {
+        "title": "Suez Canal revenues rise as tanker traffic rebounds amid shipping route shifts",
+        "url": "https://www.domain-b.com/economy/trade/suez-canal-revenues-rise-tanker-traffic-recovery-2026",
+        "type": "intl"
+      },
+      {
+        "title": "Suez Canal sees oil tanker surge amid Strait of Hormuz disruption",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/suez-canal-revenues-surge-as-oil-tanker-traffic-increases-amid-hormuz-disruption/articleshow/131630993.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Suez Canal Gets Oil - Tanker Boost Amid Hormuz Strait Shutdown",
+        "url": "https://www.bloomberg.com:443/news/articles/2026-06-10/suez-canal-gets-oil-tanker-boost-amid-hormuz-strait-shutdown",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Market Avoids Summer Crisis After Closure of the Strait of Hormuz as Brent Holds Below $100",
+        "url": "https://peakoil.com/publicpolicy/oil-market-avoids-summer-crisis-after-closure-of-the-strait-of-hormuz-as-brent-holds-below-100",
+        "type": "intl"
+      },
+      {
+        "title": "Suez Canal Will Raise Surcharge Fees as It Still Looks to Increase Transits",
+        "url": "https://maritime-executive.com/article/suez-canal-will-raise-surcharge-fees-as-it-still-looks-to-increase-transits",
+        "type": "intl"
+      },
+      {
+        "title": "라이트 美에너지장관 \"호르무즈 통과 선박 매우 의미있게 증가 중\"",
+        "url": "https://www.tfmedia.co.kr/news/article.html?no=205035",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Kuwait offers oil to Asian buyers for the first time since US - Iran war began",
+        "url": "https://www.hindustantimes.com/world-news/kuwait-offers-oil-to-asian-buyers-for-the-first-time-since-us-iran-war-began-101781060015584.html",
+        "type": "intl"
+      },
+      {
+        "title": "JERA to buy around 2mtpa of LNG from Petronas in 20 - year deal",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/jera-buy-around-2mtpa-lng-143541047.html",
+        "type": "intl"
+      },
+      {
+        "title": "Inpex applies to halt Australia Ichthys LNG strike",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2837500-inpex-applies-to-halt-australia-s-ichthys-lng-strike",
+        "type": "intl"
+      },
+      {
+        "title": "102일 동안 발 묶였던 위너호, 원유 싣고 울산항에 도착",
+        "url": "https://n.news.naver.com/mnews/article/055/0001363350?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "삼성重, 아프리카 선주와 3.65조원 FLNG 본계약 체결",
+        "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=638739",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Higher For Longer : Why Oil Prices Will Climb Despite Recent Headlines",
+        "url": "https://dailycaller.com/2026/06/10/opinion-oil-prices-higher-headlines-david-blackmon/",
+        "type": "intl"
+      },
+      {
+        "title": "World markets walk a tightrope between AI stocks and oil shocks",
+        "url": "https://www.theglobeandmail.com/investing/article-world-markets-walk-a-tightrope-between-ai-stocks-and-oil-shocks/",
+        "type": "intl"
+      },
+      {
+        "title": "The world oil piggy bank is being smashed open . What can go wrong ? ",
+        "url": "https://economictimes.indiatimes.com/news/international/global-trends/the-worlds-oil-piggy-bank-is-being-smashed-open-what-can-go-wrong/articleshow/131639706.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Ceasefire Caps Oil Rally as China Demand Weakens  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/consumption/ceasefire-caps-oil-rally-as-china-demand-weakens",
+        "type": "intl"
+      },
+      {
+        "title": "Current price of oil as of June 10 , 2026",
+        "url": "https://fortune.com/article/price-of-oil-06-10-2026/",
+        "type": "intl"
+      },
+      {
+        "title": "Stock market today : Dow , S & P 500 , Nasdaq futures pare losses as CPI report lands , US - Iran truce teeters",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-pare-losses-as-cpi-report-lands-us-iran-truce-teeters-215056909.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil : Escalation Is No Reason for a Rally",
+        "url": "https://www.actionforex.com/contributors/fundamental-analysis/643299-oil-escalation-is-no-reason-for-a-rally/",
+        "type": "intl"
+      },
+      {
+        "title": "US war on Iran has had  significant economic impact  on Persian Gulf states : Economist",
+        "url": "https://www.presstv.ir/Detail/2026/06/10/770180/us-war-iran-has-significant-economic-impact-persian-gulf-states-economist",
+        "type": "intl"
+      },
+      {
+        "title": "The oil market fate isnt in OPEC hands anymore",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/oil-markets-fate-isnt-opecs-230000239.html",
+        "type": "intl"
+      },
+      {
+        "title": "KOSPI Drops 4 . 5 % Today as Semiconductor Giants Lead Selloff",
+        "url": "https://thebull.com.au/news/kospi-plunges-4-5-as-semiconductor-giants-samsung-and-sk-hynix-lead-brutal-selloff/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil shock cuts global growth outlook despite AI boom",
+        "url": "https://www.investordaily.com.au/oil-shock-cuts-global-growth-outlook-despite-ai-boom/",
+        "type": "intl"
+      },
+      {
+        "title": "Global markets : Japan Nikkei slides as Gulf tensions prompt shift out of high - flying tech stocks",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-japans-nikkei-slides-as-gulf-tensions-prompt-shift-out-of-high-flying-tech-stocks/articleshow/131628282.cms",
+        "type": "intl"
+      },
+      {
+        "title": "FTSE 100 Live : Stocks called higher after US tech sell - off , oil calm dispite US - Iran strikes",
+        "url": "https://www.proactiveinvestors.co.uk/companies/news/1093695/ftse-100-live-stocks-called-higher-after-us-tech-sell-off-oil-calm-dispite-us-iran-strikes-1093695.html",
+        "type": "intl"
+      },
+      {
+        "title": "Financial Review : Scorpio Tankers ( NYSE : STNG ) versus Martin Midstream Partners ( NASDAQ : MMLP ) ",
+        "url": "https://www.tickerreport.com/banking-finance/13468752/financial-review-scorpio-tankers-nysestng-versus-martin-midstream-partners-nasdaqmmlp.html",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea booming stock market mints generation of novice investors | Financial Markets News",
+        "url": "https://www.aljazeera.com/economy/2026/6/10/south-koreas-booming-stock-market-mints-a-generation-of-novice-investors",
+        "type": "intl"
+      },
+      {
+        "title": "Oil has risen as the US has launched wave after wave after wave of attacks on Iran",
+        "url": "https://investinglive.com:443/commodities/oil-has-risen-as-the-us-has-launched-wave-after-wave-after-wave-or-attacks-on-iran-20260610/",
+        "type": "intl"
+      },
+      {
+        "title": "US Stock Futures Slip as New Iran Strikes Weigh on Market Sentiment Ahead of Inflation Data",
+        "url": "http://www.econotimes.com/US-Stock-Futures-Slip-as-New-Iran-Strikes-Weigh-on-Market-Sentiment-Ahead-of-Inflation-Data-1743942",
+        "type": "intl"
+      },
+      {
+        "title": "호르무즈 폐쇄 석 달째인데…기름값, 천장 뚫지 않은 이유는?[트럼프 2기...",
+        "url": "https://n.news.naver.com/mnews/article/002/0002444668?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕 증시, 미·이란 갈등·CPI 소화하며 하락 출발",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364805?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란 긴장 고조, 물가 부담에…뉴욕증시, 하락 출발",
+        "url": "https://n.news.naver.com/mnews/article/366/0001170920?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "4%대로 올라선 美 소비자물가 …'3년 디플레' 中도 생산물가 들썩",
+        "url": "https://n.news.naver.com/mnews/article/009/0005692208?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시 혼조 출발…유가·AI반도체 흔들, 테슬라·QQQ 시험대",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16086805",
+        "type": "dom"
+      },
+      {
+        "title": "미국 소비자물가 3년 만에 4% 돌파…'유가 쇼크' 에도 근원물가는 둔화",
+        "url": "https://n.news.naver.com/mnews/article/215/0001254982?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 소비자물가 전년比 4.2%↑…2023년 4월 이후 최고상승률(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131808?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동 긴장 속 원/달러 환율 1,520원대 복귀… 외국인 주식 매도 영향",
+        "url": "https://www.tokenpost.kr/news/economy/367859",
+        "type": "dom"
+      },
+      {
+        "title": "유가 치솟자 美 5월 소비자물가 전년대비 4.2%↑…3년1개월만에 최대",
+        "url": "https://n.news.naver.com/mnews/article/008/0005370160?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국, 이란 전쟁發 유가 충격…5월 CPI 4.2% 3년래 최고",
+        "url": "https://www.etoday.co.kr/news/view/2592423",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 CPI 4.2%↑ ‘3년 1개월래 최고’…연준 셈법 복잡해졌다",
+        "url": "https://n.news.naver.com/mnews/article/029/0003031150?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 소비자물가 상승률 전년비 4.2%↑…3년여 만에 최고",
+        "url": "https://n.news.naver.com/mnews/article/025/0003529544?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미국 소비자 물가 3년1개월만 최대…4.2% 상승",
+        "url": "https://n.news.naver.com/mnews/article/016/0002654887?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "환율 사흘만에 상승 전환…중동상황 악화·수급 악화에 1520원대로",
+        "url": "https://n.news.naver.com/mnews/article/018/0006302448?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "외인·기관 동반 매도…코스피, 7730.82 마감",
+        "url": "https://news.mtn.co.kr/news-detail/2026061015422386169",
+        "type": "dom"
+      },
+      {
+        "title": "AA-급 회사채 금리 4.5%대 급등…기업 자금 조달 난항 [시그널]",
+        "url": "https://n.news.naver.com/mnews/article/011/0004629736?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "코스피, 급락으로 매도 사이드카 발동…시장 변동성 고조",
+        "url": "https://www.tokenpost.kr/news/market/367744",
+        "type": "dom"
+      },
+      {
+        "title": "'고유가' 미국 5월 소비자물가 전년대비 4.2%↑‥3년1개월만 최대",
+        "url": "https://n.news.naver.com/mnews/article/214/0001504693?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[마켓인사이드] CPI 예상치 부합에 글로벌 증시 안도, 그러나 금리인상...",
+        "url": "https://www.news2day.co.kr/article/20260610500326",
+        "type": "dom"
+      },
+      {
+        "title": "달러-원, 뉴욕장서 1,520원 중반대 거래",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419353",
+        "type": "dom"
+      },
+      {
+        "title": "美 소비자물가 전망…\"5월 정점\" VS \"유가상승 여파 오래갈 것\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005297445?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미국 5월 물가상승률 4.2%…3년 1개월 만에 최고",
+        "url": "https://n.news.naver.com/mnews/article/656/0000178775?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 CPI 4.2% 급등…37개월 만에 최고",
+        "url": "https://n.news.naver.com/mnews/article/011/0004629822?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 소비자물가 4.2% 급등…또 3년 만에 최고치",
+        "url": "https://n.news.naver.com/mnews/article/119/0003099868?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "안양시, 고유가 피해지원금 지급률 94% 돌파",
+        "url": "https://www.cnbnews.com/news/articleView.html?idxno=1004249",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 급등에 美 5월 CPI 3년 만에 4.2%↑",
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=127557",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 소비자물가지수 4.2% 폭등…전망치엔 '부합'",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026061022104708024",
+        "type": "dom"
+      },
+      {
+        "title": "美 소비자물가 4.2% 상승… 기준금리 인상론 부각되나",
+        "url": "https://www.g-enews.com/view.php?ud=202606102204299518e207547429_1",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 고유가에…美 5월 소비자물가 전년대비 4.2%↑",
+        "url": "https://n.news.naver.com/mnews/article/011/0004629818?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[종합] 美 CPI 4.2%로 3년 만에 최고…에너지發 물가 급등에도 근원물가...",
+        "url": "https://www.newspim.com/news/view/20260610001373",
+        "type": "dom"
+      },
+      {
+        "title": "코스피 다시 '8천피' 아래로...4.5% 급락 7,730 마감",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364772?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 물가 4.2% 급등…3년 만에 최고",
+        "url": "https://n.news.naver.com/mnews/article/014/0005533392?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 5월 美 소비자물가 전년대비 4.2%↑…3년1개월 만에 최대",
+        "url": "https://www.livebiz.today/news/articleView.html?idxno=202557",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 美 5월 소비자물가 전년대비 4.2%↑",
+        "url": "https://n.news.naver.com/mnews/article/366/0001170915?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 미국 5월 소비자물가 4.2%↑…3년1개월만 최대",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197803?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 미 5월 소비자물가 전년대비 4.2%↑",
+        "url": "https://n.news.naver.com/mnews/article/422/0000873454?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 美 5월 CPI 전년比 4.2%↑…3년1개월만 최대(상보)",
+        "url": "https://n.news.naver.com/mnews/article/277/0005774723?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 고유가에 美 5월 소비자물가 전년대비 4.2%↑…3년1개월만 최대",
+        "url": "https://n.news.naver.com/mnews/article/057/0001953259?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[2보] 고유가에 美 5월 소비자물가 전년대비 4.2%↑…3년1개월만 최대",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131763?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 물가 3년만에 다시 4%대… 금리인하 전망 멀어져",
+        "url": "https://n.news.naver.com/mnews/article/023/0003981275?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 연준 금리 인상 우려에 금·은·비트코인 일제히 폭락",
+        "url": "https://www.g-enews.com/view.php?ud=202606102129293891e250e8e188_1",
+        "type": "dom"
+      },
+      {
+        "title": "코스피, 4.5% 급락… 다시 8천선 밑으로",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=550719",
+        "type": "dom"
+      },
+      {
+        "title": "[1보] 고유가에 美 5월 소비자물가 전년대비 4.2%↑…3년1개월만 최대",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131754?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "당정 \"고환율·고유가 충격 방어 최우선\"",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=550669",
+        "type": "dom"
+      },
+      {
+        "title": "8% 내리더니 8% 뛰고 4% 내리고···코스피 ‘폭력적 변동성’에 털려 ...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003451253?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴욕증시]CPI 3년 만에 최고…S&P500·나스닥 상승",
+        "url": "https://n.news.naver.com/mnews/article/277/0005774732?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "코스피, 7,730선 추락... 극심한 변동성에 요동치는 시장",
+        "url": "https://www.tokenpost.kr/news/market/367882",
+        "type": "dom"
+      },
+      {
+        "title": "美 CPI 3년來 최고…연내 금리인상 힘실려",
+        "url": "https://n.news.naver.com/mnews/article/015/0005297446?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]트럼프 경고에 물가 부담까지…뉴욕증시 하락 출발",
+        "url": "https://news.mtn.co.kr/news-detail/2026061022445333020",
+        "type": "dom"
+      },
+      {
+        "title": "시장, 연준 금리 인상 베팅 축소…유가는 보합",
+        "url": "https://www.tokenpost.kr/news/breaking/367860",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 CPI 4.2%로 2023년 이후 최고…근원물가는 예상 하회(종합)",
+        "url": "https://n.news.naver.com/mnews/article/018/0006302535?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "삼성전자·SK하이닉스 주가 급락, 중동 불안과 미국 반도체주 약세 영향",
+        "url": "https://www.tokenpost.kr/news/market/367847",
+        "type": "dom"
+      },
+      {
+        "title": "[긴급진단] 미국 CPI 물가 끝내 마지노선 붕괴... 뉴욕증시 반도체 거품...",
+        "url": "https://www.g-enews.com/view.php?ud=202606101924069274906806b77b_1",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시 프리뷰, 반도체주 급락에 주가 선물 일제 하락...CPI·중동 리스...",
+        "url": "https://www.newspim.com/news/view/20260610001357",
+        "type": "dom"
+      },
+      {
+        "title": "美·브렌트유, 단기 2달러 상승",
+        "url": "https://www.tokenpost.kr/news/breaking/367806",
+        "type": "dom"
+      },
+      {
+        "title": "당정 “환율·물가 안정 최우선… 외환거래 규제 개선 검토” [뉴스 투...",
+        "url": "https://n.news.naver.com/mnews/article/022/0004134440?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동발 고유가에 고물가 본격화… 고환율까지 겹친 '3高’에 얼어붙는 ...",
+        "url": "https://www.joongdo.co.kr/web/view.php?key=20260610010002814",
+        "type": "dom"
+      },
+      {
+        "title": "코스피 '8천피' 또 반납…하루 만에 4.5% 급락",
+        "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=50855",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 소비자물가지수 전년 대비 4.2%↑…3년 만에 최고치 경신",
+        "url": "https://n.news.naver.com/mnews/article/421/0008996907?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 5월 소비자물가 4.2%↑…근원물가 둔화에 시장 안도",
+        "url": "http://www.4th.kr/news/articleView.html?idxno=2113007",
+        "type": "dom"
+      },
+      {
+        "title": "고유가에 美 5월 소비자물가 전년대비 4.2%↑…3년1개월만 최대",
+        "url": "https://n.news.naver.com/mnews/article/469/0000935788?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 CPI, 전월비 0.5% 상승…예상치 부합(상보)",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419354",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 CPI 4.2%로 3년여 만에 최고… 근원물가는 예상 밑돌아",
+        "url": "https://n.news.naver.com/mnews/article/005/0001854224?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미 5월 소비자물가 3년 만에 최대 상승…전년 동월 대비 4.2% 올라",
+        "url": "https://n.news.naver.com/mnews/article/028/0002809086?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "5월 미 소비자물가 상승률 4.2%…시장 전망치와 동일",
+        "url": "https://n.news.naver.com/mnews/article/082/0001384893?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미 5월 CPI 인플레, 37개월 래 최고치인 4.2%…근원치는 2.9% 머물러 (종...",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999434?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국 5월 소비자물가 4.2% 상승…3년 만에 다시 4%대 진입",
+        "url": "https://news.mtn.co.kr/news-detail/2026061021592423677",
+        "type": "dom"
+      },
+      {
+        "title": "미국 물가상승률 4.2%로 상승",
+        "url": "https://www.tokenpost.kr/news/breaking/367850",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 소비자물가 연 4.2% 상승…3년 1개월만 '최고'",
+        "url": "https://www.ajunews.com/view/20260610214238484",
+        "type": "dom"
+      },
+      {
+        "title": "미 5월 소비자물가 연 4.2%↑...3년만에 최대 상승폭",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364769?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 5월 근원CPI 전월비 0.2%↑ 전망치 하회",
+        "url": "http://www.4th.kr/news/articleView.html?idxno=2113006",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 미국 5월 CPI 전년 동기 대비 4.2%↑ 근원 CPI는 2.9%↑…향후 지...",
+        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=581051",
+        "type": "dom"
+      },
+      {
+        "title": "美 연준 내부서 금리 인상론 부상…\"물가 아직 높다\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0013999401?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "亞증시는?..日-호주증시 '하락출발', 코스피 & 韓 CHIP주 '급락출발'",
+        "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=166351",
+        "type": "dom"
+      },
+      {
+        "title": "환율 급등 이면에 투기·시장 교란 있었나…오늘부터 외국계 은행 등 검...",
+        "url": "https://n.news.naver.com/mnews/article/055/0001363111?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "달리는 수출 앞길 막는 美301조·EU 철강관세·탄소비용",
+        "url": "https://n.news.naver.com/mnews/article/014/0005533337?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 5월 CPI 전년비 4.2% 급등…2023년 이후 최고(상보)",
+        "url": "https://n.news.naver.com/mnews/article/018/0006302532?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동발 유가 폭등에 대러제재 ‘흔들’… EU, 러 ‘원유 보너스’ 차단...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003451193?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[K-석유화학 진단] 美·이란 협상 교착…복잡한 정유업계 셈법",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=843111",
+        "type": "dom"
+      },
+      {
+        "title": "원달러 환율 1500원 장기 조짐에 대전 소상공인 '한숨만'",
+        "url": "https://www.joongdo.co.kr/web/view.php?key=20260610010002815",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 하락…미 에너지장관 \"호르무즈 통항량↑\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000873118?sid=104",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "이틀 새 참치 2천 마리 잡혀...사상 최대",
+        "url": "https://www.tbc.co.kr/news/view?pno=20260610172839AE00912&id=207213",
+        "type": "dom"
+      },
+      {
+        "title": "강릉 주문진 바다서 \"참다랑어 200마리 한꺼번에?\"... 어민들도 \"처음 본...",
+        "url": "http://www.phmbc.co.kr/www/news/desk_news?idx=203011&mode=view",
+        "type": "dom"
+      },
+      {
+        "title": "참다랑어 돌아왔다... 주문진 앞바다서 초대박 어황",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=843511",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "Suez Canal makes new maritime achievement with transit of giant container ship",
+        "url": "https://www.egyptindependent.com/suez-canal-makes-new-maritime-achievement-with-transit-of-giant-container-ship/",
+        "type": "intl"
+      },
+      {
+        "title": "New connection to ASEAN : From shipbuilders to logistics operators , firms gear up for Pinglu Canal opening",
+        "url": "https://www.globaltimes.cn/page/202606/1363151.shtml",
+        "type": "intl"
+      },
+      {
+        "title": "호르무즈 해협 빠져나온 첫 국내 유조선 울산항 입항",
+        "url": "https://n.news.naver.com/mnews/article/014/0005533393?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 첫 탈출 '한국 유조선'…울산 무사 도착",
+        "url": "https://n.news.naver.com/mnews/article/422/0000873462?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "'호르무즈 탈출' HMM 유조선, 울산항 도착",
+        "url": "https://n.news.naver.com/mnews/article/052/0002364793?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "‘호르무즈 첫 탈출’ 유니버설 위너호 울산으로 귀환",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197850?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 빠져나온 HMM 원유선…3주 만에 울산 도착",
+        "url": "https://n.news.naver.com/mnews/article/009/0005692195?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 건넌 첫 한국 유조선‥ 울산항 입항",
+        "url": "https://www.usmbc.co.kr/NewsArticle/845120",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 빠져나온 HMM 원유선, 3주 만에 울산 도착",
+        "url": "https://www.newspim.com/news/view/20260610001365",
+        "type": "dom"
+      },
+      {
+        "title": "한국 첫 호르무즈 통과 선박, 울산 앞바다 도착",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=550733",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 첫 탈출한 HMM 유조선 울산항 도착…원유 하역",
+        "url": "https://n.news.naver.com/mnews/article/025/0003529541?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "‘호르무즈 첫 통과’ 한국 유조선, 봉쇄 102일 만에 울산항 도착",
+        "url": "https://n.news.naver.com/mnews/article/366/0001170913?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "원유 200만 배럴 싣고…'봉쇄 해협' 뚫고 온 첫 한국 선박",
+        "url": "https://n.news.naver.com/mnews/article/015/0005297427?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 뚫은 국적선 울산 도착",
+        "url": "http://web.ubc.co.kr/wp/archives/128118",
+        "type": "dom"
+      },
+      {
+        "title": "First Korean tanker through Strait of Hormuz arrives in Ulsan",
+        "url": "https://www.arirang.com/news/view?id=297083",
+        "type": "dom"
+      },
+      {
+        "title": "S. Korean oil tanker arrives off Ulsan after exiting Strait of Hormuz",
+        "url": "https://n.news.naver.com/mnews/article/001/0016131364?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "K조선, LNG선 앞세워 중국 턱밑 추격…가격보다 기술로 승부",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026061015322297407",
+        "type": "dom"
+      },
+      {
+        "title": "한국 HMM 해운, 물동량 7위",
+        "url": "http://www.koreatimes.com/article/1616714",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "OPEC oil output lowest since at least 2000 as US blockade squeezes Iran , Reuters survey shows",
+        "url": "https://www.oilandgas360.com/opec-oil-output-lowest-since-at-least-2000-as-us-blockade-squeezes-iran-reuters-survey-shows/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC oil output lowest since at least 2000 as US blockade squeezes Iran : Report",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/opec-oil-output-lowest-since-at-least-2000-as-us-blockade-squeezes-iran-report/articleshow/131638232.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Inpex seeks urgent orders to stop Darwin strike as experts fear impact on gas market could be significant",
+        "url": "https://www.abc.net.au/news/2026-06-10/nt-inpex-seeks-to-stop-strike-action-at-fair-work-commission/106781346",
+        "type": "intl"
+      },
+      {
+        "title": "Officials redacted advice showing  low need  for LNG imports",
+        "url": "https://www.rnz.co.nz/news/political/597839/officials-redacted-advice-showing-low-need-for-lng-imports",
+        "type": "intl"
+      },
+      {
+        "title": "Naftogaz locks in first long - term European LNG regasification capacity through 2044",
+        "url": "https://en.interfax.com.ua/news/economic/1175421.html",
+        "type": "intl"
+      },
+      {
+        "title": "India marketers of consumer products should keep a close eye on El Niño for what it can do to farm output",
+        "url": "https://www.livemint.com/opinion/online-views/india-marketers-consumer-products-el-ni-o-farm-output-agriculture-fmcg-hul-nestle-itc-11781009633346.html",
+        "type": "intl"
+      },
+      {
+        "title": "EU Imports of Russian Arctic LNG Surge Despite New Restrictions , Spain Leads May Buying",
+        "url": "https://gcaptain.com/eu-imports-of-russian-arctic-lng-surge-despite-new-restrictions-spain-leads-may-buying/",
+        "type": "intl"
+      },
+      {
+        "title": "El Niño fears grow as Asian crops face potential drought",
+        "url": "https://www.thescottishfarmer.co.uk/news/26177059.el-ni-o-fears-grow-asian-crops-face-potential-drought/",
+        "type": "intl"
+      },
+      {
+        "title": "Petronas inks 20 - year LNG supply deal with Japan power generation giant",
+        "url": "https://www.freemalaysiatoday.com/category/nation/2026/06/10/petronas-inks-20-year-lng-supply-deal-with-japan-power-generation-giant",
+        "type": "intl"
+      },
+      {
+        "title": "The European jet fuel crisis that never came and why it still might",
+        "url": "https://www.politico.eu/article/europe-jet-fuel-crisis-energy-markets-war-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan - Iran border trade halt to trigger LPG shortages",
+        "url": "https://phnompenhpost.com/international/pakistan-iran-border-trade-halt-to-trigger-lpg-shortages/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Cargo To Philippines Identified As Iranian Came",
+        "url": "https://www.marinelink.com/news/oil-cargo-philippines-identified-iranian-540119",
+        "type": "intl"
+      },
+      {
+        "title": "Ksi Lisims LNG signs benefit agreements with First Nations , challenges withdrawn",
+        "url": "https://energeticcity.ca/2026/06/09/ksi-lisims-lng-signs-benefit-agreements-with-first-nations-challenges-withdrawn/",
+        "type": "intl"
+      },
+      {
+        "title": "美 대쿠바 제재 강화…트라피구라, 쿠바산 아연 정광 공급 중단",
+        "url": "http://www.snmnews.com/news/articleView.html?idxno=570569",
+        "type": "dom"
+      },
+      {
+        "title": "중국, 중동 위기 장기화에 원유 비축분 방출",
+        "url": "https://www.tokenpost.kr/news/breaking/367791",
+        "type": "dom"
+      },
+      {
+        "title": "'한국형 녹색전환' 중동發 에너지 위기로 '반쪽' 안되려면?",
+        "url": "https://www.newstree.kr/newsView/ntr202606100015",
+        "type": "dom"
+      },
+      {
+        "title": "1차 실패 딛고 BP 품은 ‘대왕고래’…동해 심해 가스전, 잔불 살릴까",
+        "url": "https://www.kukinews.com/article/view/kuk202606100170",
+        "type": "dom"
+      },
+      {
+        "title": "삼성중공업, 美 첫 해상 LNG 수출기지 '본계약 도장'",
+        "url": "https://www.newsgn.com/news/articleView.html?idxno=556238",
+        "type": "dom"
+      },
+      {
+        "title": "삼성중공업 4.3조 규모 '델핀 1호기' 발판으로 추가 FLNG 수주 이어갈까...",
+        "url": "https://www.huffingtonpost.kr/article/257855",
+        "type": "dom"
+      },
+      {
+        "title": "삼성중공업, 4.3조 美 첫 해상 FLNG 본계약 체결",
+        "url": "http://www.newslock.co.kr/news/articleView.html?idxno=131255",
+        "type": "dom"
+      },
+      {
+        "title": "중동전쟁 여파에 비료값 인상… 정부, 무기질비료 보조금 115억 원 긴급...",
+        "url": "http://www.youngnong.co.kr/news/articleView.html?idxno=60150",
+        "type": "dom"
+      },
+      {
+        "title": "'석유화학·배터리 동반 호조'...LG화학, 흑자 전환 기대감 커져",
+        "url": "https://www.newspim.com/news/view/20260610000873",
+        "type": "dom"
+      },
+      {
+        "title": "삼성중공업, 미국 해상 LNG 수출 프로젝트 본계약 체결",
+        "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2195390",
+        "type": "dom"
+      },
+      {
+        "title": "삼성중, '4조 3000억' 델핀 프로젝트 '공략'",
+        "url": "http://www.gnmaeil.com/news/articleView.html?idxno=588394",
+        "type": "dom"
+      },
+      {
+        "title": "우크라, 크림반도 석유 시설 집중 공격…러시아, “연료 공급 차질”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012197087?sid=104",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "U . S . Strikes Iranian Military Facilities After Drone Takes Down Apache Helicopter",
+      "url": "https://thenewamerican.com/world-news/middle-east/u-s-strikes-iranian-military-facilities-after-drone-takes-down-apache-helicopter/",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Report from Tehran : Amid More U . S ./ Iran Bombing , Trump Warns Iran Is  DEAD … Will Pay the Price  ",
+      "url": "https://www.democracynow.org/2026/6/10/mohammad_eslami_iran_us",
+      "type": "intl"
+    },
+    "3": {
+      "title": "Gunmen Attack Cargo Ship off Yemen , Guards Return Fire",
+      "url": "https://themedialine.org/headlines/gunmen-attack-cargo-ship-off-yemen-guards-return-fire/",
+      "type": "intl"
+    },
+    "4": {
+      "title": "IRGC Shoots Down MQ - 9 Drone Near Strait of Hormuz Amidst Iran Reaction to US Aggression",
+      "url": "https://www.islamicinvitationturkey.com/irgc-shoots-down-mq-9-drone-near-strait-of-hormuz-amidst-irans-reaction-to-us-aggression/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Iran Attacks US Bases In Jordan And Bahrain",
+      "url": "https://www.channelstv.com/2026/06/10/iran-attacks-us-bases-in-jordan-and-bahrain/",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Iran Targets US Bases Across Gulf After American Strikes",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260610-rferl01.htm",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Strait of Hormuz never hospitable to hostile presence ; foreign forces urged to leave : FM Araghchi",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260609-presstv03.htm",
+      "type": "intl"
+    },
+    "8": {
+      "title": "IRGC downs MQ - 9 near Strait of Hormuz as Iran responds to US aggression",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260610-presstv01.htm",
+      "type": "intl"
+    },
+    "9": {
+      "title": "US strikes Iran after downing of US Army Apache helicopter off Oman coast – The Indian Awaaz",
+      "url": "https://theindianawaaz.com/us-strikes-iran-after-downing-of-us-army-apache-helicopter-off-oman-coast-2/",
+      "type": "intl"
+    },
+    "10": {
+      "title": "June 9 : Iran slams politically motivated IAEA resolution , as US Apache helicopter crashes near Strait of Hormuz",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/06/iran-260609-presstv02.htm",
+      "type": "intl"
+    },
+    "11": {
+      "title": "[팩트추적] 호르무즈 봉쇄가 울린 에너지 비상벨",
+      "url": "https://n.news.naver.com/mnews/article/052/0002364806?sid=004",
+      "type": "dom"
+    },
+    "12": {
+      "title": "[속보] 한-EU 정상 \"호르무즈 해협 항행 자유·안전 통항·국제법 존중 ...",
+      "url": "https://n.news.naver.com/mnews/article/421/0008996939?sid=100",
+      "type": "dom"
+    },
+    "13": {
+      "title": "트럼프 “이란의 발전소·교량 새 공습 가까워져”",
+      "url": "https://n.news.naver.com/mnews/article/658/0000146377?sid=104",
+      "type": "dom"
+    },
+    "14": {
+      "title": "[속보] 한·EU 공동성명 \"대만해협 평화·안정 중요…호르무즈 항행 국제...",
+      "url": "https://n.news.naver.com/mnews/article/422/0000873459?sid=100",
+      "type": "dom"
+    },
+    "15": {
+      "title": "트럼프 \"협상 시간 끄는 이란…발전소·교량 공습 지시 임박\"",
+      "url": "https://n.news.naver.com/mnews/article/055/0001363373?sid=104",
+      "type": "dom"
+    },
+    "16": {
+      "title": "트럼프 “이란 발전소·교량에 대한 새 공격 명령에 가까워져”",
+      "url": "https://n.news.naver.com/mnews/article/020/0003725920?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "트럼프 “협상 너무 오래 끄는 이란, 대가 치러야”…공습 재개 위협",
+      "url": "https://n.news.naver.com/mnews/article/028/0002809085?sid=104",
+      "type": "dom"
+    },
+    "18": {
+      "title": "호르무즈 긴장 최고조…트럼프 \"이란 발전소·교량 공습 임박\"",
+      "url": "https://n.news.naver.com/mnews/article/586/0000131236?sid=104",
+      "type": "dom"
+    },
+    "19": {
+      "title": "트럼프 \"이란, 협상 너무 오래 끌어…발전소·교량 추가 공습 가까워져...",
+      "url": "https://n.news.naver.com/mnews/article/018/0006302538?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "다시 포성 휩싸인 호르무즈…중동 정세 ‘고비’",
+      "url": "https://n.news.naver.com/mnews/article/056/0012197773?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "북극항로 운항 기준 만드는 IMO 취약한 생태계 고려해 ‘특별 관리’[알...",
+      "url": "https://n.news.naver.com/mnews/article/082/0001384844?sid=101",
+      "type": "dom"
+    },
+    "22": {
+      "title": "Suez Canal traffic soars as Hormuz disruptions reroute energy trade",
+      "url": "https://www.al-monitor.com/originals/2026/06/suez-canal-traffic-soars-hormuz-disruptions-reroute-energy-trade",
+      "type": "intl"
+    },
+    "23": {
+      "title": "Asia - US container shipping costs double as Iran war drives fuel and freight surge",
+      "url": "https://www.thehindubusinessline.com/economy/logistics/iran-conflict-pushes-global-container-shipping-prices-to-near-double-levels/article71086384.ece",
+      "type": "intl"
+    },
+    "24": {
+      "title": "Trump says U . S . secretly moved millions of barrels of oil through Strait of Hormuz",
+      "url": "https://www.cnbc.com/2026/06/10/trump-strait-hormuz-iran-oil-tanker-navy.html",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Suez Canal Gets Oil Tanker Boost",
+      "url": "https://www.rigzone.com/news/wire/suez_canal_gets_oil_tanker_boost-10-jun-2026-183895-article/",
+      "type": "intl"
+    },
+    "26": {
+      "title": "Suez Canal revenues rise as tanker traffic rebounds amid shipping route shifts",
+      "url": "https://www.domain-b.com/economy/trade/suez-canal-revenues-rise-tanker-traffic-recovery-2026",
+      "type": "intl"
+    },
+    "27": {
+      "title": "Suez Canal sees oil tanker surge amid Strait of Hormuz disruption",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/suez-canal-revenues-surge-as-oil-tanker-traffic-increases-amid-hormuz-disruption/articleshow/131630993.cms",
+      "type": "intl"
+    },
+    "28": {
+      "title": "Suez Canal Gets Oil - Tanker Boost Amid Hormuz Strait Shutdown",
+      "url": "https://www.bloomberg.com:443/news/articles/2026-06-10/suez-canal-gets-oil-tanker-boost-amid-hormuz-strait-shutdown",
+      "type": "intl"
+    },
+    "29": {
+      "title": "Oil Market Avoids Summer Crisis After Closure of the Strait of Hormuz as Brent Holds Below $100",
+      "url": "https://peakoil.com/publicpolicy/oil-market-avoids-summer-crisis-after-closure-of-the-strait-of-hormuz-as-brent-holds-below-100",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Suez Canal Will Raise Surcharge Fees as It Still Looks to Increase Transits",
+      "url": "https://maritime-executive.com/article/suez-canal-will-raise-surcharge-fees-as-it-still-looks-to-increase-transits",
+      "type": "intl"
+    },
+    "31": {
+      "title": "라이트 美에너지장관 \"호르무즈 통과 선박 매우 의미있게 증가 중\"",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=205035",
+      "type": "dom"
+    },
+    "32": {
+      "title": "Kuwait offers oil to Asian buyers for the first time since US - Iran war began",
+      "url": "https://www.hindustantimes.com/world-news/kuwait-offers-oil-to-asian-buyers-for-the-first-time-since-us-iran-war-began-101781060015584.html",
+      "type": "intl"
+    },
+    "33": {
+      "title": "JERA to buy around 2mtpa of LNG from Petronas in 20 - year deal",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/jera-buy-around-2mtpa-lng-143541047.html",
+      "type": "intl"
+    },
+    "34": {
+      "title": "Inpex applies to halt Australia Ichthys LNG strike",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2837500-inpex-applies-to-halt-australia-s-ichthys-lng-strike",
+      "type": "intl"
+    },
+    "35": {
+      "title": "102일 동안 발 묶였던 위너호, 원유 싣고 울산항에 도착",
+      "url": "https://n.news.naver.com/mnews/article/055/0001363350?sid=102",
+      "type": "dom"
+    },
+    "36": {
+      "title": "삼성重, 아프리카 선주와 3.65조원 FLNG 본계약 체결",
+      "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=638739",
+      "type": "dom"
+    },
+    "37": {
+      "title": "Higher For Longer : Why Oil Prices Will Climb Despite Recent Headlines",
+      "url": "https://dailycaller.com/2026/06/10/opinion-oil-prices-higher-headlines-david-blackmon/",
+      "type": "intl"
+    },
+    "38": {
+      "title": "World markets walk a tightrope between AI stocks and oil shocks",
+      "url": "https://www.theglobeandmail.com/investing/article-world-markets-walk-a-tightrope-between-ai-stocks-and-oil-shocks/",
+      "type": "intl"
+    },
+    "39": {
+      "title": "The world oil piggy bank is being smashed open . What can go wrong ? ",
+      "url": "https://economictimes.indiatimes.com/news/international/global-trends/the-worlds-oil-piggy-bank-is-being-smashed-open-what-can-go-wrong/articleshow/131639706.cms",
+      "type": "intl"
+    },
+    "40": {
+      "title": "Ceasefire Caps Oil Rally as China Demand Weakens  | Peak Oil News and Message Boards",
+      "url": "https://peakoil.com/consumption/ceasefire-caps-oil-rally-as-china-demand-weakens",
+      "type": "intl"
+    },
+    "41": {
+      "title": "Current price of oil as of June 10 , 2026",
+      "url": "https://fortune.com/article/price-of-oil-06-10-2026/",
+      "type": "intl"
+    },
+    "42": {
+      "title": "Stock market today : Dow , S & P 500 , Nasdaq futures pare losses as CPI report lands , US - Iran truce teeters",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-pare-losses-as-cpi-report-lands-us-iran-truce-teeters-215056909.html",
+      "type": "intl"
+    },
+    "43": {
+      "title": "Oil : Escalation Is No Reason for a Rally",
+      "url": "https://www.actionforex.com/contributors/fundamental-analysis/643299-oil-escalation-is-no-reason-for-a-rally/",
+      "type": "intl"
+    },
+    "44": {
+      "title": "US war on Iran has had  significant economic impact  on Persian Gulf states : Economist",
+      "url": "https://www.presstv.ir/Detail/2026/06/10/770180/us-war-iran-has-significant-economic-impact-persian-gulf-states-economist",
+      "type": "intl"
+    },
+    "45": {
+      "title": "The oil market fate isnt in OPEC hands anymore",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/oil-markets-fate-isnt-opecs-230000239.html",
+      "type": "intl"
+    },
+    "46": {
+      "title": "KOSPI Drops 4 . 5 % Today as Semiconductor Giants Lead Selloff",
+      "url": "https://thebull.com.au/news/kospi-plunges-4-5-as-semiconductor-giants-samsung-and-sk-hynix-lead-brutal-selloff/",
+      "type": "intl"
+    },
+    "47": {
+      "title": "호르무즈 폐쇄 석 달째인데…기름값, 천장 뚫지 않은 이유는?[트럼프 2기...",
+      "url": "https://n.news.naver.com/mnews/article/002/0002444668?sid=104",
+      "type": "dom"
+    },
+    "48": {
+      "title": "뉴욕 증시, 미·이란 갈등·CPI 소화하며 하락 출발",
+      "url": "https://n.news.naver.com/mnews/article/052/0002364805?sid=104",
+      "type": "dom"
+    },
+    "49": {
+      "title": "美·이란 긴장 고조, 물가 부담에…뉴욕증시, 하락 출발",
+      "url": "https://n.news.naver.com/mnews/article/366/0001170920?sid=104",
+      "type": "dom"
+    },
+    "50": {
+      "title": "4%대로 올라선 美 소비자물가 …'3년 디플레' 中도 생산물가 들썩",
+      "url": "https://n.news.naver.com/mnews/article/009/0005692208?sid=101",
+      "type": "dom"
+    },
+    "51": {
+      "title": "뉴욕증시 혼조 출발…유가·AI반도체 흔들, 테슬라·QQQ 시험대",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16086805",
+      "type": "dom"
+    },
+    "52": {
+      "title": "미국 소비자물가 3년 만에 4% 돌파…'유가 쇼크' 에도 근원물가는 둔화",
+      "url": "https://n.news.naver.com/mnews/article/215/0001254982?sid=101",
+      "type": "dom"
+    },
+    "53": {
+      "title": "美 5월 소비자물가 전년比 4.2%↑…2023년 4월 이후 최고상승률(종합)",
+      "url": "https://n.news.naver.com/mnews/article/001/0016131808?sid=101",
+      "type": "dom"
+    },
+    "54": {
+      "title": "중동 긴장 속 원/달러 환율 1,520원대 복귀… 외국인 주식 매도 영향",
+      "url": "https://www.tokenpost.kr/news/economy/367859",
+      "type": "dom"
+    },
+    "55": {
+      "title": "유가 치솟자 美 5월 소비자물가 전년대비 4.2%↑…3년1개월만에 최대",
+      "url": "https://n.news.naver.com/mnews/article/008/0005370160?sid=104",
+      "type": "dom"
+    },
+    "56": {
+      "title": "미국, 이란 전쟁發 유가 충격…5월 CPI 4.2% 3년래 최고",
+      "url": "https://www.etoday.co.kr/news/view/2592423",
+      "type": "dom"
+    },
+    "57": {
+      "title": "이틀 새 참치 2천 마리 잡혀...사상 최대",
+      "url": "https://www.tbc.co.kr/news/view?pno=20260610172839AE00912&id=207213",
+      "type": "dom"
+    },
+    "58": {
+      "title": "강릉 주문진 바다서 \"참다랑어 200마리 한꺼번에?\"... 어민들도 \"처음 본...",
+      "url": "http://www.phmbc.co.kr/www/news/desk_news?idx=203011&mode=view",
+      "type": "dom"
+    },
+    "59": {
+      "title": "참다랑어 돌아왔다... 주문진 앞바다서 초대박 어황",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=843511",
+      "type": "dom"
+    },
+    "60": {
+      "title": "Suez Canal makes new maritime achievement with transit of giant container ship",
+      "url": "https://www.egyptindependent.com/suez-canal-makes-new-maritime-achievement-with-transit-of-giant-container-ship/",
+      "type": "intl"
+    },
+    "61": {
+      "title": "New connection to ASEAN : From shipbuilders to logistics operators , firms gear up for Pinglu Canal opening",
+      "url": "https://www.globaltimes.cn/page/202606/1363151.shtml",
+      "type": "intl"
+    },
+    "62": {
+      "title": "호르무즈 해협 빠져나온 첫 국내 유조선 울산항 입항",
+      "url": "https://n.news.naver.com/mnews/article/014/0005533393?sid=102",
+      "type": "dom"
+    },
+    "63": {
+      "title": "호르무즈 첫 탈출 '한국 유조선'…울산 무사 도착",
+      "url": "https://n.news.naver.com/mnews/article/422/0000873462?sid=102",
+      "type": "dom"
+    },
+    "64": {
+      "title": "'호르무즈 탈출' HMM 유조선, 울산항 도착",
+      "url": "https://n.news.naver.com/mnews/article/052/0002364793?sid=101",
+      "type": "dom"
+    },
+    "65": {
+      "title": "‘호르무즈 첫 탈출’ 유니버설 위너호 울산으로 귀환",
+      "url": "https://n.news.naver.com/mnews/article/056/0012197850?sid=101",
+      "type": "dom"
+    },
+    "66": {
+      "title": "호르무즈 빠져나온 HMM 원유선…3주 만에 울산 도착",
+      "url": "https://n.news.naver.com/mnews/article/009/0005692195?sid=101",
+      "type": "dom"
+    },
+    "67": {
+      "title": "호르무즈 건넌 첫 한국 유조선‥ 울산항 입항",
+      "url": "https://www.usmbc.co.kr/NewsArticle/845120",
+      "type": "dom"
+    },
+    "68": {
+      "title": "호르무즈 빠져나온 HMM 원유선, 3주 만에 울산 도착",
+      "url": "https://www.newspim.com/news/view/20260610001365",
+      "type": "dom"
+    },
+    "69": {
+      "title": "한국 첫 호르무즈 통과 선박, 울산 앞바다 도착",
+      "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=550733",
+      "type": "dom"
+    },
+    "70": {
+      "title": "호르무즈 첫 탈출한 HMM 유조선 울산항 도착…원유 하역",
+      "url": "https://n.news.naver.com/mnews/article/025/0003529541?sid=101",
+      "type": "dom"
+    },
+    "71": {
+      "title": "‘호르무즈 첫 통과’ 한국 유조선, 봉쇄 102일 만에 울산항 도착",
+      "url": "https://n.news.naver.com/mnews/article/366/0001170913?sid=101",
+      "type": "dom"
+    },
+    "72": {
+      "title": "OPEC oil output lowest since at least 2000 as US blockade squeezes Iran , Reuters survey shows",
+      "url": "https://www.oilandgas360.com/opec-oil-output-lowest-since-at-least-2000-as-us-blockade-squeezes-iran-reuters-survey-shows/",
+      "type": "intl"
+    },
+    "73": {
+      "title": "OPEC oil output lowest since at least 2000 as US blockade squeezes Iran : Report",
+      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/opec-oil-output-lowest-since-at-least-2000-as-us-blockade-squeezes-iran-report/articleshow/131638232.cms",
+      "type": "intl"
+    },
+    "74": {
+      "title": "Inpex seeks urgent orders to stop Darwin strike as experts fear impact on gas market could be significant",
+      "url": "https://www.abc.net.au/news/2026-06-10/nt-inpex-seeks-to-stop-strike-action-at-fair-work-commission/106781346",
+      "type": "intl"
+    },
+    "75": {
+      "title": "Officials redacted advice showing  low need  for LNG imports",
+      "url": "https://www.rnz.co.nz/news/political/597839/officials-redacted-advice-showing-low-need-for-lng-imports",
+      "type": "intl"
+    },
+    "76": {
+      "title": "Naftogaz locks in first long - term European LNG regasification capacity through 2044",
+      "url": "https://en.interfax.com.ua/news/economic/1175421.html",
+      "type": "intl"
+    },
+    "77": {
+      "title": "India marketers of consumer products should keep a close eye on El Niño for what it can do to farm output",
+      "url": "https://www.livemint.com/opinion/online-views/india-marketers-consumer-products-el-ni-o-farm-output-agriculture-fmcg-hul-nestle-itc-11781009633346.html",
+      "type": "intl"
+    },
+    "78": {
+      "title": "EU Imports of Russian Arctic LNG Surge Despite New Restrictions , Spain Leads May Buying",
+      "url": "https://gcaptain.com/eu-imports-of-russian-arctic-lng-surge-despite-new-restrictions-spain-leads-may-buying/",
+      "type": "intl"
+    },
+    "79": {
+      "title": "El Niño fears grow as Asian crops face potential drought",
+      "url": "https://www.thescottishfarmer.co.uk/news/26177059.el-ni-o-fears-grow-asian-crops-face-potential-drought/",
+      "type": "intl"
+    },
+    "80": {
+      "title": "Petronas inks 20 - year LNG supply deal with Japan power generation giant",
+      "url": "https://www.freemalaysiatoday.com/category/nation/2026/06/10/petronas-inks-20-year-lng-supply-deal-with-japan-power-generation-giant",
+      "type": "intl"
+    },
+    "81": {
+      "title": "The European jet fuel crisis that never came and why it still might",
+      "url": "https://www.politico.eu/article/europe-jet-fuel-crisis-energy-markets-war-iran/",
+      "type": "intl"
+    },
+    "82": {
+      "title": "美 대쿠바 제재 강화…트라피구라, 쿠바산 아연 정광 공급 중단",
+      "url": "http://www.snmnews.com/news/articleView.html?idxno=570569",
+      "type": "dom"
+    },
+    "83": {
+      "title": "중국, 중동 위기 장기화에 원유 비축분 방출",
+      "url": "https://www.tokenpost.kr/news/breaking/367791",
+      "type": "dom"
+    },
+    "84": {
+      "title": "'한국형 녹색전환' 중동發 에너지 위기로 '반쪽' 안되려면?",
+      "url": "https://www.newstree.kr/newsView/ntr202606100015",
+      "type": "dom"
+    },
+    "85": {
+      "title": "1차 실패 딛고 BP 품은 ‘대왕고래’…동해 심해 가스전, 잔불 살릴까",
+      "url": "https://www.kukinews.com/article/view/kuk202606100170",
+      "type": "dom"
+    },
+    "86": {
+      "title": "삼성중공업, 美 첫 해상 LNG 수출기지 '본계약 도장'",
+      "url": "https://www.newsgn.com/news/articleView.html?idxno=556238",
+      "type": "dom"
+    },
+    "87": {
+      "title": "삼성중공업 4.3조 규모 '델핀 1호기' 발판으로 추가 FLNG 수주 이어갈까...",
+      "url": "https://www.huffingtonpost.kr/article/257855",
+      "type": "dom"
+    },
+    "88": {
+      "title": "삼성중공업, 4.3조 美 첫 해상 FLNG 본계약 체결",
+      "url": "http://www.newslock.co.kr/news/articleView.html?idxno=131255",
+      "type": "dom"
+    },
+    "89": {
+      "title": "중동전쟁 여파에 비료값 인상… 정부, 무기질비료 보조금 115억 원 긴급...",
+      "url": "http://www.youngnong.co.kr/news/articleView.html?idxno=60150",
+      "type": "dom"
+    },
+    "90": {
+      "title": "'석유화학·배터리 동반 호조'...LG화학, 흑자 전환 기대감 커져",
+      "url": "https://www.newspim.com/news/view/20260610000873",
+      "type": "dom"
+    },
+    "91": {
+      "title": "삼성중공업, 미국 해상 LNG 수출 프로젝트 본계약 체결",
+      "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2195390",
+      "type": "dom"
+    }
+  }
+}
