@@ -1,0 +1,2498 @@
+{
+  "date": "2026-06-18",
+  "date_key": "20260618",
+  "n_total": 2244,
+  "n_high": 119,
+  "n_med": 255,
+  "n_low": 371,
+  "n_none": 1499,
+  "n_intl": 206,
+  "n_dom": 168,
+  "llm_result": {
+    "executive_summary": "미국과 이란이 14개항 종전 MOU에 서명·발효하면서[6][14][17] 호르무즈 해협 봉쇄가 공식 해제되었으며, 사우디 초대형 유조선 3척이 해협을 통과하고 그 중 1척이 울산으로 향하고 있다[39][40][41]. 그러나 MOU는 60일간만 통행료를 면제하고 이후 이란의 통행료 부과를 사실상 인정하는 구조로, 미국 언론과 해운업계에서 '갈취 공식화'라는 비판이 제기되고 있다[12][28][31]. 골드만삭스는 호르무즈 원유 통행량이 봉쇄 이전 대비 70% 수준에 그칠 것으로 전망하며 해협 교통량의 완전 회복에 회의적 시각을 보였고[24][32], SCFI는 3,000선을 돌파하며 해상 운임 상승세가 지속되고 있다[26][27]. 국제 유가는 미·이란 합의 서명 직후 2% 이상 하락하고 브렌트유 기준 골드만삭스는 80달러를 전망했으나[47][51][52], 합의 파기 시 브렌트유 126달러 급등 가능성도 경고되고 있다[62]. 한국 정부는 LNG·LPG 할당관세율을 하반기 0%로 적용하고 석유 최고가격 적용 기간을 연장하는 등 물가 방어에 총력을 기울이고 있다[44][45][57].",
+    "categories": {
+      "1_Security": {
+        "overseas": "미국과 이란은 14개항 종전 MOU에 서명하고 즉각 발효시켰으며[6][7][8], 미 해군은 이란 항구에 대한 봉쇄를 해제하고 이란행 선박의 통항을 허용했다[8][9]. 이란 국영 TV는 호르무즈 통항이 여전히 테헤란과의 조율을 필요로 한다고 밝혔고[1], 이란 대통령은 이번 합의를 '역사적 합의'라고 평가하며 만족감을 표했다[16]. 반면 해운업계는 기뢰 위험이 지속되는 상황에서 호르무즈 재개통에 대한 명확한 지침을 요구하고 있으며[3][4], 합의의 향후 호르무즈 관리 방식에 대한 심각한 우려도 제기되고 있다[2].",
+        "korea_impact": "한국 언론은 이번 MOU가 이란에 호르무즈 통제권을 사실상 내준 '미국의 완패'라는 분석을 보도했으며[19][20], 핵 문제는 미루고 탄도미사일과 호르무즈 통제권을 이란이 확보했다는 평가가 나왔다[20]. 미국 언론도 '60일만 무료 통행' 합의에 대해 '갈취 공식화'라고 비판한 것으로 보도되었다[12]. 한국 정부는 MOU 체결 이후에도 호르무즈 통항 재개 상황을 주시하며 석유 최고가격 적용 기간을 연장했다[57]."
+      },
+      "3_Freight": {
+        "overseas": "미·이란 합의 발효 직후 밴스 부통령은 1,250만 배럴의 원유가 호르무즈를 통과했다고 밝혔으며[21], 페르시아만에서 6,000만 배럴 이상의 원유가 아시아로 향할 준비가 된 것으로 보도되었다[36]. 합의에 따라 60일간 통행료 면제 기간이 적용되나[23], 이란은 60일 이후 통행료 부과 계획을 재확인했다[25]. 골드만삭스는 호르무즈 교통량이 완전히 회복되지 않을 수 있다고 경고했다[24].",
+        "korea_impact": "SCFI가 3,000선을 돌파하며 컨테이너 운임 상승세가 지속되고 있으며[26][27], 종전 합의에도 불구하고 해상물류 정상화가 지연되고 있다[26]. 호르무즈 통행료 60일 면제 이후 부과 방침에 대해 한국 정부는 '어떤 수수료도 안 된다'는 입장을 밝혔다[34]. 해운사들은 무료 기간 내 탈출도 어렵다며 당황한 반응을 보이고 있으며[33], 골드만삭스의 원유 통행량 70% 전망이 국내에서도 주목받고 있다[32]."
+      },
+      "4_PortCargo": {
+        "overseas": "사우디 초대형 유조선 3척이 미·이란 합의 서명 직후 호르무즈 해협을 통과했으며[72][73][75], 이란의 첫 원유 수출 물량도 2개월 만에 호르무즈를 떠났다[37]. 사우디 초대형 유조선 출항과 함께 페르시아만 원유의 아시아 향 대규모 공급이 시작되는 것으로 보도되었다[35][36]. 인도네시아는 호르무즈 완화에도 불구하고 러시아산 원유 수입을 계속할 것이라고 밝혔다[38].",
+        "korea_impact": "사우디 초대형 유조선 3척 중 1척이 울산으로 향하고 있다[39][40][41][42][43]. 한국 정부는 LNG·LPG 할당관세율을 하반기 0%로 적용하기로 결정했으며[44][45], 이는 물가 방어를 위한 조치로 보인다[56]."
+      },
+      "5_EconFinance": {
+        "overseas": "미·이란 합의 서명 직후 국제 유가는 2% 이상 하락했으며[47][48][51], 미국 휘발유 가격은 갤런당 4달러 아래로 떨어졌다[46]. 골드만삭스는 브렌트유가 80달러 수준으로 향할 것으로 전망했고[52], 호르무즈 재개통으로 원유 공급 과잉 우려가 제기되고 있다[22]. 미국 전략비축유 재충전에는 상당한 시간이 소요될 것이라는 분석도 나왔으며[55], 미국 30년 모기지 금리는 이란 전쟁 완화 기대감에 6.47%로 하락했다[54].",
+        "korea_impact": "코스피가 9,000선을 돌파하며 사상 최대 상승을 기록했으며[59], 뉴욕 증시도 미·이란 MOU 서명 소식에 상승 출발했다[60][63]. 미국 달러화는 연준의 매파적 동결 결정에 DXY 기준 13개월 만에 최고치를 기록했다[64]. 트럼프 대통령이 합의 파기 시 폭격을 경고하는 상황에서 브렌트유 126달러 급등 가능성도 경고되고 있다[62]. 미국의 원유 재고는 41년 만에 최저 수준으로 떨어진 것으로 보도되었다[58]."
+      },
+      "6_Seafood": {
+        "overseas": "",
+        "korea_impact": "수협은 고유가 부담을 겪고 있는 어업인을 대상으로 유류비 100억 원을 지원하기로 했다[66]."
+      },
+      "7_Shipping": {
+        "overseas": "해양 데이터 기업에 따르면 호르무즈에 묶여 있던 선박들이 해협 통과를 재개하기 시작했으며[67][68][70][71], 사우디 국적 초대형 유조선 3척이 합의 서명 후 호르무즈를 통과한 것이 데이터로 확인되었다[72][73]. 그러나 해운업계는 기뢰 위험 등을 이유로 호르무즈 항행 재개에 여전히 신중한 입장을 보이고 있으며[76], 미국은 이란 합의를 준수하며 원유가 호르무즈를 통해 흐르고 있다고 밝혔다[69].",
+        "korea_impact": "사우디 초대형 유조선 3척이 호르무즈를 통과했으며 그 중 1척인 아우타드호가 울산으로 향하고 있다[77][78][79][80][81][82][83][84][85][86]. 이는 미·이란 합의 서명 이후 한국으로의 원유 공급이 재개되는 첫 신호로 보인다."
+      },
+      "8_Logistics": {
+        "overseas": "",
+        "korea_impact": "울산세관은 중동발 수출기업 피해 대응에 총력을 기울이고 있다[87]. 한국과 인도네시아 간 신규 항로 확대를 통한 서인도 연결 물류 네트워크 구축이 추진되고 있다[88]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "UN은 중동 전쟁 여파로 글로벌 비료 교역량이 30% 감소했다고 밝혔으며[94], 미·이란 합의로 비료 선적이 회복될 것으로 전망되고 있다[93]. IEA는 에너지 시장이 전쟁 이후 점진적으로 회복될 것이라고 밝혔고[91], 글로벌 화학 산업도 미·이란 평화 합의를 핵심 촉매로 점진적 회복 경로에 있다는 분석이 나왔다[97]. 우크라이나의 대규모 드론 공습으로 모스크바 정유시설에 화재가 발생하고 공항 운영에 차질이 빚어졌다[90][96].",
+        "korea_impact": "한국 정부는 중동 종전에 따라 나프타 보조금을 6월에 종료하기로 확정했으며, 이는 범용 석유화학 업계에 영향을 미칠 것으로 보인다[102]. 중동 전쟁 종료에도 불구하고 식량난이 올 수 있다는 우려가 제기되며 유엔이 국제사회의 긴급 지원을 호소했다[100]. 한국은 2028년 세계 최대 규모인 2,000㎥급 액화수소 운반선 출항을 목표로 개발을 추진하고 있다[103]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "미·이란 14개항 종전 MOU 서명·발효로 호르무즈 해협 봉쇄가 공식 해제되었으며[6][8], 묶여 있던 선박들이 통과를 재개하기 시작했다[67][68]. 사우디 초대형 유조선 3척이 합의 직후 해협을 통과했고[72][73], 이란의 첫 원유 수출 물량도 2개월 만에 호르무즈를 떠났다[37]. 그러나 이란 국영 TV는 통항이 여전히 테헤란과의 조율을 필요로 한다고 밝혔고[1], 해운업계는 기뢰 위험 지속을 이유로 완전 정상화까지 긴 여정이 남아 있다고 경고했다[3][4].",
+          "korea_impact": "사우디 초대형 유조선 3척 중 1척이 울산으로 향하고 있어 한국으로의 원유 공급 재개가 시작되는 것으로 보인다[39][40][41]. 그러나 60일 이후 이란의 통행료 부과 방침이 확인된 상황에서[25] 한국 정부는 '어떤 수수료도 안 된다'는 입장을 밝혔다[34]. 골드만삭스가 호르무즈 원유 통행량을 봉쇄 이전 대비 70% 수준으로 전망함에 따라[32] 한국의 중동산 원유 수입 정상화에는 시간이 걸릴 가능성이 있다."
+        },
+        "source": {
+          "overseas": "호르무즈 재개통으로 페르시아만에서 6,000만 배럴 이상의 원유가 아시아로 향할 준비가 된 것으로 보도되었다[36]. 밴스 부통령은 합의 발효 직후 1,250만 배럴의 원유가 호르무즈를 통과했다고 밝혔다[21]. 그러나 인도네시아는 호르무즈 완화에도 러시아산 원유 수입을 계속할 것이라고 밝혀[38] 공급원 다변화 흐름이 유지될 가능성이 있다. UN은 중동 전쟁 여파로 글로벌 비료 교역량이 30% 감소했다고 밝혔다[94].",
+          "korea_impact": "한국 정부는 LNG·LPG 할당관세율을 하반기 0%로 적용하기로 결정하며 에너지 공급 비용 부담 완화에 나섰다[44][45][56]. 미국의 원유 재고가 41년 만에 최저 수준으로 떨어진 것으로 보도되어[58] 글로벌 원유 공급 여건의 빠른 정상화는 불확실한 상황이다. 정부는 서아시아 공급 안정성을 확인한 후 비상 연료 공급 조치를 단계적으로 해제할 방침인 것으로 보인다[95]."
+        },
+        "logistics": {
+          "overseas": "호르무즈 재개통에도 불구하고 해운업계는 기뢰 위험과 이란의 통항 조율 요구를 이유로 완전 정상화에 신중한 입장을 보이고 있다[3][76]. 골드만삭스는 호르무즈 교통량이 완전히 회복되지 않을 수 있다고 경고했으며[24], 60일 이후 통행료 부과 방침이 해운사들에게 불확실성을 주고 있다[25][33].",
+          "korea_impact": "SCFI가 3,000선을 돌파하며 컨테이너 운임 상승세가 지속되고 있어[26][27] 종전 합의 이후에도 해상물류 정상화가 지연되고 있다. 해운사들은 60일 무료 기간 내 탈출도 어렵다며 당황한 반응을 보이고 있으며[33], 울산세관은 중동발 수출기업 피해 대응에 총력을 기울이고 있다[87]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "코스피가 9,000선을 돌파하며 사상 최대 상승을 기록했고[59], 뉴욕 증시도 미·이란 MOU 서명 소식에 상승 출발했다[60][63]. 미국 달러화는 연준의 매파적 동결 결정에 DXY 기준 13개월 만에 최고치를 기록했다[64]. 트럼프 대통령이 합의 파기 시 폭격을 경고하는 상황에서 브렌트유 126달러 급등 가능성도 경고되고 있어[62] 금융시장의 불확실성은 완전히 해소되지 않은 상태다.",
+        "정유·화학": "사우디 초대형 유조선 1척이 울산으로 향하고 있어 국내 정유업계의 원유 수급 재개가 시작되는 것으로 보인다[39][40][41]. 정부는 중동 종전에 따라 나프타 보조금을 6월에 종료하기로 확정했으며[102], LNG·LPG 할당관세율은 하반기 0%로 적용된다[44][45]. 정부는 석유 최고가격 적용 기간을 연장하며 호르무즈 통항 재개 상황을 주시하고 있다[57][99].",
+        "해운·물류": "SCFI가 3,000선을 돌파하며 컨테이너 운임 상승세가 지속되고 있으며[26][27], 해운사들은 60일 무료 기간 이후 통행료 부과 방침에 당황한 반응을 보이고 있다[33]. 울산세관은 중동발 수출기업 피해 대응에 총력을 기울이고 있으며[87], 한국-인도네시아 간 신규 항로 확대를 통한 물류 네트워크 구축도 추진되고 있다[88].",
+        "식품·농업": "수협은 고유가 부담을 겪고 있는 어업인을 대상으로 유류비 100억 원을 지원하기로 했다[66]. 중동 전쟁 종료에도 불구하고 식량난이 올 수 있다는 우려가 제기되며 유엔이 국제사회의 긴급 지원을 호소했다[100].",
+        "기타산업": "한국은 2028년 세계 최대 규모인 2,000㎥급 액화수소 운반선 출항을 목표로 개발을 추진하고 있다[103]. 우크라이나의 대규모 드론 공습으로 모스크바 정유시설에 화재가 발생하고 공항 운영에 차질이 빚어졌다[101]."
+      }
+    },
+    "changes": {
+      "new": [
+        "미·이란 14개항 종전 MOU 공식 서명·발효[6][14][17]",
+        "사우디 초대형 유조선 3척 호르무즈 통과, 1척 울산행 확인[39][40][41]",
+        "호르무즈 60일 통행료 면제 후 이란 통행료 부과 방침 확인[25][28][31]",
+        "코스피 9,000선 돌파, 사상 최대 상승 기록[59]",
+        "SCFI 3,000선 돌파[26][27]",
+        "정부 나프타 보조금 6월 종료 확정[102]",
+        "LNG·LPG 할당관세율 하반기 0% 적용 결정[44][45]"
+      ],
+      "escalated": [
+        "골드만삭스, 호르무즈 원유 통행량 완전 회복 불가 경고(봉쇄 이전 대비 70% 전망)[24][32]",
+        "해운업계, 기뢰 위험 지속으로 호르무즈 항행 재개에 신중 입장 유지[3][76]",
+        "이란, 호르무즈 통항 조율 권한 지속 주장[1]",
+        "UN, 글로벌 비료 교역량 30% 감소 발표[94]"
+      ],
+      "resolved": [
+        "미 해군의 이란 항구 봉쇄 해제[8][9]",
+        "호르무즈 해협 통항 재개, 묶여 있던 선박들 이동 시작[67][68][70]",
+        "이란 원유 수출 2개월 만에 재개[37]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "Iran state television says Hormuz passage  still requires coordination  with Tehran",
+        "url": "https://tribune.com.pk/story/2613886/irans-state-television-says-hormuz-passage-still-requires-coordination-with-tehran",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Deal Raises Serious Questions Over Future Management of the Strait of Hormuz",
+        "url": "https://gcaptain.com/iran-deal-raises-serious-questions-over-future-management-of-the-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Maritime Industry Demands Clarity on Hormuz Reopening as Mine Risks Persist",
+        "url": "https://gcaptain.com/maritime-industry-demands-clarity-on-hormuz-reopening-as-mine-risks-persist/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Deal Opens Door to Hormuz Reopening , But Shipping Industry Warns of Long Road Ahead",
+        "url": "https://gcaptain.com/iran-deal-opens-door-to-hormuz-reopening-but-shipping-industry-warns-of-long-road-ahead/",
+        "type": "intl"
+      },
+      {
+        "title": "Crude Oil Slides As Strait Of Hormuz Reopens Following U . S .- Iran Interim Peace Deal",
+        "url": "https://www.finanzen.ch/nachrichten/aktien/crude-oil-slides-as-strait-of-hormuz-reopens-following-u-s-iran-interim-peace-deal-1036261014",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War Day 111 : U . S . and Iran Sign Framework Peace Deal",
+        "url": "https://www.theamericanconservative.com/iran-war-day-111-u-s-and-iran-sign-framework-peace-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Vance : US eases blockade , clears passage for ships bound for Iranian ports",
+        "url": "https://www.manilatimes.net/2026/06/19/world/vance-us-eases-blockade-clears-passage-for-ships-bound-for-iranian-ports/2368732",
+        "type": "intl"
+      },
+      {
+        "title": "US Navy lifts blockade on Iranian ports as part of new agreement",
+        "url": "https://www.courant.com/2026/06/18/us-navy-lifts-iranian-port-blockade-agreement/",
+        "type": "intl"
+      },
+      {
+        "title": "Vance says US allows more than dozen ships through to Iranian ports , lifting blockade under deal – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/business/2026/06/18/vance-says-us-allows-more-than-dozen-ships-through-to-iranian-ports-lifting-blockade-under-deal",
+        "type": "intl"
+      },
+      {
+        "title": "How the 14 - Point U . S .- Iran MOU Could Reshape Global Supply Chains",
+        "url": "https://finance.yahoo.com/energy/articles/14-point-u-iran-mou-134426961.html",
+        "type": "intl"
+      },
+      {
+        "title": "  Will Not Return to Pre - War Conditions : Iran Defies Donald Trump by Vowing to Impose Tolls on Strait of Hormuz Just Hours After War - Ending Peace Deal",
+        "url": "https://indianexpress.com/article/world/iran-impose-tolls-strait-of-hormuz-us-deal-trump-oil-prices-10746149/",
+        "type": "intl"
+      },
+      {
+        "title": "US Iran Peace Agreement 2026 Key Points | US and Iran Sign MOU to End Middle East War | Key points from the US - Iran memorandum",
+        "url": "https://www.thedailystar.net/news/world/us-israel-war-iran/news/key-points-the-us-iran-memorandum-4201771",
+        "type": "intl"
+      },
+      {
+        "title": "Trump signs Iran peace plan , claiming deal averts  worldwide depression  – The Irish Times",
+        "url": "https://www.irishtimes.com/world/middle-east/2026/06/18/trump-signs-iran-peace-plan-claiming-deal-averts-worldwide-depression/",
+        "type": "intl"
+      },
+      {
+        "title": "Live updates : US and Iran sign hard copy of agreement",
+        "url": "https://www.cnn.com/2026/06/18/world/live-news/iran-war-trump-israel-lebanon",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran ink MoU to end hostilities , reopen Strait of Hormuz | Rediff - TV",
+        "url": "https://tv.rediff.com/news/us-iran-ink-mou-to-end-hostilities-reopen-strait-of-hormuz/392823",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Fall Amid Prospects of Fast Reopening of Strait of Hormuz Update",
+        "url": "https://www.morningstar.com/news/dow-jones/20260618819/oil-prices-fall-amid-prospects-of-fast-reopening-of-strait-of-hormuz-update",
+        "type": "intl"
+      },
+      {
+        "title": "Trump , Iran president sign deal to end Middle East war",
+        "url": "https://www.geo.tv/latest/669229-trump-irans-president-sign-deal-to-end-middle-east-war",
+        "type": "intl"
+      },
+      {
+        "title": "Oil down 2 % after US , Iran sign ceasefire agreement - Breaking News",
+        "url": "https://www.dailymirror.lk/breaking-news/Oil-down-2-after-US-Iran-sign-ceasefire-agreement/108-343270",
+        "type": "intl"
+      },
+      {
+        "title": "Iran - U . S . MOU opens doors for Iran to stake claims in Strait of Hormuz",
+        "url": "https://www.thehindu.com/news/international/iran-us-mou-opens-doors-for-iran-to-stake-claims-in-strait-of-hormuz/article71116518.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian , US presidents sign Islamabad MoU digitally to end conflict",
+        "url": "https://www.samaa.tv/2087352201-iranian-us-presidents-sign-islamabad-mou-digitally-to-end-conflict",
+        "type": "intl"
+      },
+      {
+        "title": "Key points from the US - Iran memorandum",
+        "url": "https://www.thestar.com.my/news/world/2026/06/18/key-points-from-the-us-iran-memorandum",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran sign initial peace deal to end war and reopen Strait of Hormuz",
+        "url": "https://www.thenews.com.pk/latest/1406330-us-and-iran-sign-initial-peace-deal-to-end-war-and-reopen-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran ink MoU to end hostilities , reopen Strait of Hormuz",
+        "url": "https://www.rediff.com/news/report/us-iran-ink-mou-to-end-hostilities-reopen-strait-of-hormuz/20260618.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Physical Copy of US - Iran Peace Deal in Versailles as Interim Nuclear Accord Ends Blockade and Eases Sanctions",
+        "url": "https://gulfnews.com/world/mena/donald-trump-signs-physical-copy-of-iran-truce-during-versailles-dinner-1.500578180",
+        "type": "intl"
+      },
+      {
+        "title": "Iran to  instantly  reopen Hormuz , US to  immediately  lift blockade : Pakistan PM",
+        "url": "https://www.thedailystar.net/news/world/us-israel-war-iran/news/iran-instantly-reopen-hormuz-us-immediately-lift-blockade-pakistan-pm-4201751",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump Signs Historic Peace Deal With Iran : Oil Sanctions Lifted & Strait Of Hormuz Reopens",
+        "url": "https://www.oneindia.com/international/donald-trump-signs-historic-peace-deal-with-iran-oil-sanctions-lifted-strait-of-hormuz-reopens-014-8121769.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump signs US - Iran MoU , says White House ; Tehran confirms agreement signed electronically by both sides",
+        "url": "https://www.moneycontrol.com/world/trump-signs-us-iran-mou-says-white-house-tehran-confirms-agreement-signed-electronically-by-both-sides-article-13952440.html",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz reopening , uranium stockpile and economic relief in focus as US , Iran sign peace deal",
+        "url": "https://www.theweek.in/news/middle-east/2026/06/18/us-iran-peace-deal-middle-east-signed.html",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan PM outlines immediate Hormuz reopening under new US - Iran pact",
+        "url": "https://www.israelnationalnews.com/news/428806",
+        "type": "intl"
+      },
+      {
+        "title": "  It signed : US - Iran MoU officially finalized after both sides digitally sign agreement",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/its-signed-us-iran-mou-officially-finalized-after-both-sides-digitally-sign-agreement/articleshow/131814879.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Iran to  instantly  reopen Hormuz , US to  immediately  lift blockade Pakistan PM",
+        "url": "https://www.jamaicaobserver.com/2026/06/17/iran-instantly-reopen-hormuz-us-immediately-lift-blockade-pakistan-pm/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran to reopen Hormuz , sell oil freely under deal with US",
+        "url": "https://theshillongtimes.com/2026/06/18/iran-to-reopen-hormuz-sell-oil-freely-under-deal-with-us/",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran sign 14 - point MoU ending military operations , reopening Hormuz",
+        "url": "https://news.webindia123.com/news/Articles/World/20260618/4463942.html",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran news LIVE Updates : US - Iran peace deal takes  immediate effect  after both sides sign , says Pakistan PM Sharif",
+        "url": "https://www.livemint.com/news/world/us-iran-peace-deal-latest-news-updates-donald-trump-abbas-araghchi-benjamin-netanyahu-ceasefire-israel-lebanon-11781739679515.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs U . S .- Iran Memorandum of Understanding as Peace Deal Takes Effect",
+        "url": "https://hannity.com/media-room/digital-diplomacy-trump-iran-finalize-peace-pact-through-remote-signing-axios/",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran MoU : Ending Hostilities , Reopening Hormuz",
+        "url": "https://www.newkerala.com/news/a/us-iran-sign-14-point-mou-ending-military-operations-reopening-314.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Vance says 60 - day period in US - Iran deal has begun",
+        "url": "https://www.canberratimes.com.au/story/9295084/vance-says-60-day-period-in-us-iran-deal-has-begun/",
+        "type": "intl"
+      },
+      {
+        "title": "More Than Dozen Ships Cleared for Iranian Ports Under Deal : Vance",
+        "url": "https://www.deccanchronicle.com/world/us-eases-iran-port-blockade-allows-more-than-a-dozen-ships-through-under-deal-vance-1964541",
+        "type": "intl"
+      },
+      {
+        "title": "Vance says US allowed several ships through to Iranian ports",
+        "url": "https://www.kcra.com/article/iranian-ships-ports-lifting-blockade-under-deal/71628379",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan not  provoking  China , hopes new US arms sale package can be approved soon , president says",
+        "url": "https://www.mvariety.com/regional/regional-taiwan-not-provoking-china-hopes-new-us-arms-sale-package-can-be-approved-soon-president-says/article_d3b0abb7-da62-4edd-81ab-b2e558685a65.html",
+        "type": "intl"
+      },
+      {
+        "title": "In pictures : From first strike to peace deal the 111 - day US - Iran war",
+        "url": "https://www.geo.tv/latest/669122-in-pictures-from-first-strike-to-peace-deal-the-111-day-us-iran-war",
+        "type": "intl"
+      },
+      {
+        "title": "Baystreet . ca - Iran War Warning : Peace Agreement Broke Down",
+        "url": "http://baystreet.ca/articles/stockstowatch/121499/Iran-War-Warning-Peace-Agreement-Broke-Down",
+        "type": "intl"
+      },
+      {
+        "title": "Sanctions removal will help bilateral trade surpass previous peaks , Iran can be among India principal oil suppliers : Envoy Mohammad Fathali",
+        "url": "https://news.webindia123.com/news/Articles/World/20260618/4464311.html",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan needs US weapons as threat from China grows , diplomat tells AP",
+        "url": "https://www.bostonherald.com/2026/06/18/taiwan-us-weapons-china-threat/",
+        "type": "intl"
+      },
+      {
+        "title": "Europe $29 billion Iran War bill is driving a scramble for new energy routes",
+        "url": "https://fortune.com/2026/06/18/europe-energy-imec-iran-war-hormuz-routes/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Stocks May Regain Ground As U . S ., Iran Sign Memorandum Of Understanding",
+        "url": "https://www.finanzen.ch/nachrichten/aktien/u-s-stocks-may-regain-ground-as-u-s-iran-sign-memorandum-of-understanding-1036259548",
+        "type": "intl"
+      },
+      {
+        "title": "Where Is Strait Of Hormuz In The US - Iran Deal ? Leaked Text Has No Mention Of ... ",
+        "url": "https://article.wn.com/view/2026/06/18/Where_Is_Strait_Of_Hormuz_In_The_USIran_Deal_Leaked_Text_Has/",
+        "type": "intl"
+      },
+      {
+        "title": "PM Modi Stresses Importance Of Strait Of Hormuz |  Global Economy Depends On It  | ... ",
+        "url": "https://article.wn.com/view/2026/06/18/PM_Modi_Stresses_Importance_Of_Strait_Of_Hormuz_Global_Econo/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war turmoil leads Europe to explore energy alternatives",
+        "url": "https://www.bnnbloomberg.ca/business/international/2026/06/18/europe-explores-energy-security-alternatives-after-iran-wars-turmoil/",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan PM Shehbaz Sharif signs US - Iran peace deal | Rediff - TV",
+        "url": "https://tv.rediff.com/news/pakistan-pm-shehbaz-sharif-signs-usiran-peace-deal/392875",
+        "type": "intl"
+      },
+      {
+        "title": "Iran publishes own version of US deal , exposing key changes",
+        "url": "https://www.siasat.com/iran-publishes-own-version-of-us-deal-exposing-key-changes-3491703/",
+        "type": "intl"
+      },
+      {
+        "title": "2 Key Details About the Strait of Hormuz in the US - Iran Deal",
+        "url": "https://www.businessinsider.com/us-iran-deal-strait-of-hormuz-blockade-oil-2026-6",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan president says hopes for $14 bn US arms sale  as soon as possible  – The Frontier Post",
+        "url": "https://thefrontierpost.com/taiwan-president-says-hopes-for-14-bn-us-arms-sale-as-soon-as-possible/",
+        "type": "intl"
+      },
+      {
+        "title": "Prediction markets sceptical on rapid Strait of Hormuz recovery despite US - Iran deal",
+        "url": "https://www.proactiveinvestors.co.uk/companies/news/1094101/prediction-markets-sceptical-on-rapid-strait-of-hormuz-recovery-despite-us-iran-deal-1094101.html",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran to hold talks in Switzerland ; Pak , Qatar to attend",
+        "url": "https://www.rediff.com/news/report/us-iran-to-hold-talks-in-switzerland-pak-qatar-to-attend/20260618.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Peace deal is signed by Iran and US : Pak PM Shehbaz - The HinduBusinessLine",
+        "url": "https://www.thehindubusinessline.com/news/world/peace-deal-is-signed-by-iran-and-us-pak-pm-shehbaz/article71116673.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | KOA 850 AM & 94 . 1 FM",
+        "url": "https://koacolorado.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | News Radio 1410 AM & 100 . 9 FM",
+        "url": "https://newsradio1410.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran talks to take place in Switzerland following signing of ceasefire agreement : Reuters report",
+        "url": "https://news.webindia123.com/news/Articles/World/20260618/4464090.html",
+        "type": "intl"
+      },
+      {
+        "title": "14 - point US - Iran agreement revealed : What settled and what remains unresolved",
+        "url": "https://www.thenews.com.pk/latest/1406349-14-point-us-iran-agreement-revealed-whats-settled-and-what-remains-unresolved",
+        "type": "intl"
+      },
+      {
+        "title": "What in the US - Iran deal ? Reopening shipping , waiving oil sanctions and Lebanon – The Irish Times",
+        "url": "https://www.irishtimes.com/world/middle-east/2026/06/18/whats-in-the-us-iran-deal-reopening-shipping-waiving-oil-sanctions-and-lebanon/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Pezeshkian Signs US - Iran Deal",
+        "url": "https://www.khaama.com/irans-pezeshkian-signs-us-iran-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "What in the 14 - point US - Iran peace plan ? ",
+        "url": "https://www.dw.com/en/whats-in-the-14-point-us-iran-peace-plan/a-77595563",
+        "type": "intl"
+      },
+      {
+        "title": "US officials release 14 - point Iran peace plan",
+        "url": "https://timesofoman.com/article/173183-us-officials-release-14-point-iran-peace-plan",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | News Talk 99 . 5 WRNO",
+        "url": "https://wrno.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine Hits Moscow in Massive Drone Attack , Sparking Fires and Evacuations",
+        "url": "https://www.themoscowtimes.com/2026/06/18/ukraine-hits-moscow-in-massive-drone-attack-sparking-fires-and-evacuations-a93043",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan needs US weapons for self - defense as threat from China grows , diplomat tells AP",
+        "url": "https://www.ksat.com/news/world/2026/06/18/taiwan-needs-us-weapons-for-self-defense-as-threat-from-china-grows-diplomat-tells-ap/",
+        "type": "intl"
+      },
+      {
+        "title": "Putin hosts ASEAN leaders in Kazan summit",
+        "url": "https://www.pakistantoday.com.pk/2026/06/18/putin-hosts-asean-leaders",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan says it cannot wait as China threat grows and US arms deliveries stall",
+        "url": "https://news.az/news/taiwan-says-it-cannot-wait-as-china-threat-grows-and-us-arms-deliveries-stall",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsRadio 1450 / 1370 WKIP",
+        "url": "https://1450wkip.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | News Radio 98 . 3 WMAN",
+        "url": "https://wmanfm.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan needs US weapons for self - defense as threat from China grows , diplomat tells AP - Las Vegas Sun News",
+        "url": "https://lasvegassun.com/news/2026/jun/17/taiwan-needs-us-weapons-for-self-defense-as-threat/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | Newsradio 95 WXTK",
+        "url": "https://95wxtk.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | News Radio 1400 WRAK",
+        "url": "https://wrak.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsRadio 630 WLAP",
+        "url": "https://wlap.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Reactions to Iran deal mixed",
+        "url": "http://europe.chinadaily.com.cn/a/202606/18/WS6a3360e8a310986e2b460b8b.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsRadio 790 WAEB",
+        "url": "https://790waeb.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsTalk 1240 WSFC",
+        "url": "https://wsfcam.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | News Talk 550 KFYI",
+        "url": "https://kfyi.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | News Radio 103 . 1 and 810 WGY",
+        "url": "https://wgy.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran Put 14 - Point Ceasefire Memo into Effect",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=202259",
+        "type": "dom"
+      },
+      {
+        "title": "G7 leaders to boost Ukraine air defences , tighten sanctions on Russia",
+        "url": "https://island.lk/g7-leaders-to-boost-ukraine-air-defences-tighten-sanctions-on-russia/",
+        "type": "intl"
+      },
+      {
+        "title": "A history of Iran nuclear program and tensions with the US as an interim deal is reached",
+        "url": "http://www.goskagit.com/news/nation/a-history-of-irans-nuclear-program-and-tensions-with-the-us-as-an-interim-deal/article_ec65e641-c2cc-5915-ac7c-efe0374f9834.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible",
+        "url": "https://wsyr.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsRadio WHAM 1180",
+        "url": "https://wham1180.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | The Patriot KEIB AM 1150",
+        "url": "https://patriotla.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | WJBO Newsradio 1150 AM & 98 . 7 FM",
+        "url": "https://wjbo.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | Newsradio 92 . 7 WBEX",
+        "url": "https://wbex.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsRadio 1370 AM & 92 . 9 FM WSPD",
+        "url": "https://wspd.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan needs US weapons to defend against China threat , diplomat says",
+        "url": "https://www.wsbradio.com/news/world/taiwan-needs-us/5NS77CU6NU3TZFUVLPXEC6XF2Q/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Indicates Iran Deal Timeline Flexible | NewsRadio 104 . 9 WBUV",
+        "url": "https://newsradio1049.iheart.com/content/2026-06-18-trump-indicates-iran-deal-timeline-flexible/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit",
+        "url": "https://wonw1280.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | NewsRadio 104 . 9 WBUV",
+        "url": "https://newsradio1049.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "The Iran Deal Is Now In Effect",
+        "url": "https://politicalwire.com/2026/06/17/the-iran-deal-is-now-in-effect/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | News Radio 570 WWNC",
+        "url": "https://wwnc.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | Twin Cities News Talk",
+        "url": "https://twincitiesnewstalk.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | News Radio 830 KHVH",
+        "url": "https://khvhradio.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | Newsradio WTAM 1100",
+        "url": "https://wtam.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump and Iran president sign initial deal aiming to end war",
+        "url": "https://www.bbc.com/news/articles/crr8z4z2er9o",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | News Radio 101 . 9 Big WAAX",
+        "url": "https://1019bigwaax.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | NewsTalk WMEQ",
+        "url": "https://wmeq.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Memorandum with Iran Amid G7 Summit | Talk Radio 105 . 9",
+        "url": "https://knrs.iheart.com/content/2026-06-17-trump-signs-memorandum-with-iran-amid-g7-summit/",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan needs US weapons for self - defense as threat from China grows , diplomat tells AP – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/world/2026/06/17/taiwan-needs-us-weapons-for-self-defense-as-threat-from-china-grows-diplomat-tells-ap",
+        "type": "intl"
+      },
+      {
+        "title": "Europe explores energy security alternatives after Iran war turmoil",
+        "url": "https://www.yahoo.com/news/world/articles/europe-explores-energy-security-alternatives-022207772.html",
+        "type": "intl"
+      },
+      {
+        "title": "Europe explores energy security alternatives after Iran war turmoil – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/arts-and-life/life/sci-tech/2026/06/17/europe-explores-energy-security-alternatives-after-iran-wars-turmoil",
+        "type": "intl"
+      },
+      {
+        "title": "Iran latest : Deal to end war to take  immediate effect  after US , Iran sign , Pakistan says",
+        "url": "https://www.fox6now.com/news/iran-latest-june-17",
+        "type": "intl"
+      },
+      {
+        "title": "Details of US - Iran ceasefire released",
+        "url": "https://www.abc.net.au/listen/programs/am/details-of-us-iran-ceasefire-released/106811918",
+        "type": "intl"
+      },
+      {
+        "title": "Watch : Trump signs Iran memorandum of understanding",
+        "url": "https://www.israelnationalnews.com/news/428804",
+        "type": "intl"
+      },
+      {
+        "title": "Giving Iran Permanent Control Of The Strait Of Hormuz Will Be A Disaster For The Global Economy",
+        "url": "https://www.shtfplan.com/economics/giving-iran-permanent-control-of-the-strait-of-hormuz-will-be-a-disaster-for-the-global-economy",
+        "type": "intl"
+      },
+      {
+        "title": "Here how much the the Iran war cost -- and how its effects will linger",
+        "url": "https://www.kalw.org/npr-news/2026-06-17/heres-how-much-the-the-iran-war-cost-and-how-its-effects-will-linger",
+        "type": "intl"
+      },
+      {
+        "title": "美언론도 부글…'60일만 호르무즈 무료통행' 합의에 \"갈취 공식화\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016147013?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[W 언박싱] MOU 뜯어보니 ‘이란 퍼주기’?…‘핵’보다 강한 ‘호르무...",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202880?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미-이란 종전 MOU 서명·발효…트럼프 “합의 안 지키면 폭격”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202879?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "스위스 \"美·이란 내일 뷔르겐슈토크에서 초기 협상 진행\"",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420784",
+        "type": "dom"
+      },
+      {
+        "title": "이란 대통령 “역사적 합의”…美와 종전 합의에 만족감",
+        "url": "https://n.news.naver.com/mnews/article/119/0003102506?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란, '종전 MOU' 조기 서명… 예정보다 앞당겨 '전쟁 즉각 종료' 선...",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3410446",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란과 종전 MOU 전자 서명",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=551518",
+        "type": "dom"
+      },
+      {
+        "title": "“핵보다 무서운 호르무즈 통제권 내줬다, 미국의 완패”…트럼프만 정...",
+        "url": "https://n.news.naver.com/mnews/article/030/0003439196?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘핵’ 미루고, 탄도미사일 쥐고, 호르무즈 통제권까지 챙긴 이란",
+        "url": "https://n.news.naver.com/mnews/article/032/0003453023?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 혁명수비대 해군, 호르무즈 해협 통제 지속",
+        "url": "https://www.tokenpost.kr/news/breaking/370798",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 통행 \"60일만\" 무료…빈손 합의에 공화당서도 \"최악\" 비판[트럼...",
+        "url": "https://n.news.naver.com/mnews/article/002/0002445549?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "즉각 호르무즈 개방…기뢰 제거 시작",
+        "url": "https://n.news.naver.com/mnews/article/449/0000349689?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국-이란, 종전 양해각서 공식 서명…미, 합의문 공개",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202591?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미-이란, 110일 만에 전쟁 종료…이틀 앞당겨 종전 MOU 서명",
+        "url": "https://n.news.naver.com/mnews/article/449/0000349688?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "종전 MOU 서명 전인데…\"이란 유조선들, 미 봉쇄 뚫었다\"",
+        "url": "https://n.news.naver.com/mnews/article/057/0001954479?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란, 종전 MOU 서명…60일 동안만 호르무즈 통행료 면제",
+        "url": "https://n.news.naver.com/mnews/article/374/0000516819?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란 종전 양해각서 전격 발효, 스위스 서명식 생략",
+        "url": "https://n.news.naver.com/mnews/article/014/0005536479?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[미·이란 종전 합의] 14개항 MOU 공개…호르무즈 재개 대가로 제재 완화...",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260618010006230",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"미국과 종전 MOU 최종 확정…스위스서 서명식 안 열려\"",
+        "url": "https://n.news.naver.com/mnews/article/417/0001148004?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프·이란, 종전 MOU 서명·발효…19일 스위스 서명식 생략(종합)",
+        "url": "https://n.news.naver.com/mnews/article/421/0009009711?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국, 종전 MOU 공개…\"60일간 호르무즈 통행료 면제\"",
+        "url": "https://n.news.naver.com/mnews/article/629/0000508500?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무 \"걸프국들과 '오해' 풀고 싶어\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001365564?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무 “걸프국들과 ‘오해’ 풀고 싶다”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202871?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[사설]‘先보상’ 가득한 이란戰 MOU… 완패한 ‘허영의 전쟁’",
+        "url": "https://n.news.naver.com/mnews/article/020/0003727863?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "푸틴, 미·이란 종전 합의 첫 메시지…“환영. 중동 정세 안정되길”",
+        "url": "https://n.news.naver.com/mnews/article/025/0003531541?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "핵보다 무서운 호르무즈 통제권 넘겼다...\"미국의 완패\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002368351?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴욕개장] 美·이란 평화합의 기대에 상승…나스닥 1.49%↑",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011852?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "60일 무료 통항·우라늄은 이란에…\"미국의 항복\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001365555?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[김종석의 리포트]“레이건이 무덤서 뛰쳐나올 일”…호르무즈 열렸지...",
+        "url": "https://n.news.naver.com/mnews/article/449/0000349729?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "원유 풀고 동결자산 허용...'선지급' 늪에 빠진 미국",
+        "url": "https://n.news.naver.com/mnews/article/052/0002368341?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美-이란 대통령, 종전 MOU 서명…\"미국의 항복\" 비판 잇따라",
+        "url": "https://n.news.naver.com/mnews/article/448/0000620708?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "종전 MOU, 뚜껑 열어보니 이란에 ‘선물 보따리’",
+        "url": "https://n.news.naver.com/mnews/article/032/0003453029?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈해협 고립됐던 목포해양대 실습생 4명 귀국",
+        "url": "https://ysmbc.co.kr/NewsArticle/1523768",
+        "type": "dom"
+      },
+      {
+        "title": "이란 대통령 \"美와 역사적 합의…상호 존중해야 평화\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011818?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘핵협상’ 60일 내 난망… 이란 미사일·헤즈볼라 갈등도 빠져",
+        "url": "https://n.news.naver.com/mnews/article/022/0004136588?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "핵·호르무즈·원유·동결자산 다 내줬다… “레이건, 무덤서 일어날 판...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003653935?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란 ‘제재 완화·재건 기금’ 요구 대거 받아줬다",
+        "url": "https://n.news.naver.com/mnews/article/028/0002810348?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"중동 리스크 대응 에너지안보 재설계 필요\"",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=387480",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"종전 서명식 취소\"...현장은 '철통보안'",
+        "url": "https://n.news.naver.com/mnews/article/052/0002368318?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “다카이치에 이란전 군사 개입 타진했다가 거절당해”",
+        "url": "https://n.news.naver.com/mnews/article/009/0005695900?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 대통령 “미국과의 종전 MOU, 강력한 이란이 보내는 메시지”",
+        "url": "https://n.news.naver.com/mnews/article/032/0003452955?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "韓 독박 쓰나…트럼프 '호르무즈 군사지원' 거절한 다카이치",
+        "url": "https://n.news.naver.com/mnews/article/088/0001015287?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "IEA \"호르무즈 '깨진 꽃병' 됐다…조건 없이 재개방해야\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011785?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"다카이치에 이란전 군사개입 거절 당해\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876175?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"美·이란, 19일 스위스서 종전 MOU 이행협상\"…서명식은 생략 전망(종합...",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011779?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "외교부 \"이란 재건 기금 논의·관련국 동향 주시\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001365522?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "젤렌스키 \"우크라이나 불타면 모스크바도 불탈 것\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011793?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이스라엘 외무 \"EU 외교수장과 접촉 중단\"…칼라스 \"건설적 관계 전념\"(...",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011789?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "러·우, 상대 수도 공습…외교전 속 전사자 시신 교환도",
+        "url": "https://n.news.naver.com/mnews/article/277/0005778423?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "라이칭더 \"대만 방위 강화, 中에 '도발' 아냐\"…美 무기판매 승인 촉구",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011828?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시, 미국 ·이란 종전 MOU 서명 소식에 상승 출발",
+        "url": "https://n.news.naver.com/mnews/article/366/0001172812?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국-이란 종전에 석유 숨통…차량 2부제도 풀리나?",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202855?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "울산세관, 중동위기 대응 446건 관세 지원",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202842?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "이란 동결자산 및 제재 해제…경제 활력 찾나",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527947",
+        "type": "dom"
+      },
+      {
+        "title": "\"핵 약속만 받은 미국\" vs \"최소 450조 이란\"…MOU 뜯어보니 이란 '완승'",
+        "url": "https://n.news.naver.com/mnews/article/057/0001954492?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "의구심만 커진 '빅딜'… 이란, 우라늄 지키고 456조원 챙겼다 [美-이란 ...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005536960?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[미·이란 종전 합의] 전 세계 지도자들 환영…美 내부 \"이란에만 좋은...",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260618010006638",
+        "type": "dom"
+      },
+      {
+        "title": "유엔 제재 북 유조선, 중국 연안서 포착…불법 활동 의혹",
+        "url": "https://www.voakorea.com/a/nk-tanker-in-china-061826-/8162266.html",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무, 쿠웨이트에 전화...\"오해 풀자\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002368375?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "푸틴 \"미·이란 종전 합의 환영, 중동 정세 안정되길\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876218?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "푸틴 \"미·이란 종전 합의 환영… 중동 안정 기대\"",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3410448",
+        "type": "dom"
+      },
+      {
+        "title": "푸틴 “미·이란 종전 합의 환영, 중동 정세 안정되길”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202864?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "서명 직후 “브라보”, 현실은 “못 믿어”···미·이란 샅바싸움 이제...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003452853?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란 초교 공습 美책임 인정…“실수는 생기기 마련”",
+        "url": "https://n.news.naver.com/mnews/article/020/0003727837?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란 초교 오폭 참사 첫 인정…“실수는 누구나 할 수 있어”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202592?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "'175명 사망' 학교 공습 두고 \"누구나 실수해\"…'이란 짓'이라더니 책임...",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876132?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘이란 짓’이라던 트럼프 “초교 공습 참사, 실수는 누구나…”",
+        "url": "https://n.news.naver.com/mnews/article/005/0001855784?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "라이칭더 \"대만은 中일부 아냐…中, 군사확장 포기해야\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014015126?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "'17억 달러 퍼주기'라 비판하더니…트럼프, 이란에 3천억 달러 제시",
+        "url": "https://n.news.naver.com/mnews/article/448/0000620529?sid=104",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Vance says 12 . 5 million barrels of oil passed through Strait of Hormuz as US - Iran deal takes effect",
+        "url": "https://www.moneycontrol.com/world/vance-says-12-5-million-barrels-of-oil-passed-through-strait-of-hormuz-as-us-iran-deal-takes-effect-article-13953431.html",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz reopening to release wave of oil supply , depress prices",
+        "url": "https://www.al-monitor.com/originals/2026/06/hormuz-reopening-release-wave-oil-supply-depress-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Reaffirms Plan to Charge Ships Crossing Strait of Hormuz after 60 Days",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=202264",
+        "type": "dom"
+      },
+      {
+        "title": "US - Iran peace deal comes into effect ; ships crossing Hormuz get 60 - day fee - free period",
+        "url": "https://article.wn.com/view/2026/06/18/USIran_peace_deal_comes_into_effect_ships_crossing_Hormuz_ge/",
+        "type": "intl"
+      },
+      {
+        "title": "Goldman Sachs Warns Strait of Hormuz Traffic May Never Fully Recover",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Warns-Strait-of-Hormuz-Traffic-May-Never-Fully-Recover.html",
+        "type": "intl"
+      },
+      {
+        "title": "종전 합의에도 해상물류 정상화 지연…SCFI 3천선 돌파하며 운임 상승 지...",
+        "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=429969",
+        "type": "dom"
+      },
+      {
+        "title": "중동전쟁 여진에서 벗어나지 못한 해운 운임...컨테이너 운임지수, 3천선...",
+        "url": "https://www.livebiz.today/news/articleView.html?idxno=202730",
+        "type": "dom"
+      },
+      {
+        "title": "“호르무즈 통행료 60일만 면제”…종전 MOU 향후 논란 쟁점은?",
+        "url": "https://n.news.naver.com/mnews/article/056/0012202712?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미-이란 MOU체결...호르무즈 통행료 논란",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527946",
+        "type": "dom"
+      },
+      {
+        "title": "“호르무즈, 국제사회 관심에 답해야”…중국 ‘이란 통항료 부과 반대...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003452972?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"호르무즈 통행료 없다\"던 트럼프…까보니 '60일만 무료'",
+        "url": "https://n.news.naver.com/mnews/article/437/0000496878?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 이젠 열려도 안 간다? 골드만삭스 \"원유 통행량 70%\" 전망",
+        "url": "https://n.news.naver.com/mnews/article/008/0005374104?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "통행료 날벼락에 해운사들 ‘당황’… 무료기간 내 탈출도 어려워",
+        "url": "https://n.news.naver.com/mnews/article/081/0003653924?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "60일만 통행료 면제?…정부 \"어떤 수수료도 안 돼\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876173?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "[따져보니] 60일 동안만 무료?…호르무즈 통행료 논란",
+        "url": "https://n.news.naver.com/mnews/article/448/0000620709?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "SCFI 8주 연속 상승..3000선 돌파",
+        "url": "http://www.4th.kr/news/articleView.html?idxno=2113405",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Hormuz Normalization Begins As Saudi Supertankers Exit And A Flood Of Persian Gulf Oil Heads For Asia",
+        "url": "https://www.zerohedge.com/energy/hormuz-normalization-begins-saudi-supertankers-exit-and-flood-persian-gulf-oil-heads-asia",
+        "type": "intl"
+      },
+      {
+        "title": "More Than 60 Million Barrels of Oil Ready to Head to Asia as Hormuz Reopens",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/More-Than-60-Million-Barrels-of-Oil-Ready-to-Head-to-Asia-as-Hormuz-Reopens.html",
+        "type": "intl"
+      },
+      {
+        "title": "First Iranian Crude Exports In 2 Months Leave Hormuz",
+        "url": "http://www.parisguardian.com/news/279129315/first-iranian-crude-exports-in-2-months-leave-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Russian crude imports to continue despite Hormuz easing : Indonesia",
+        "url": "https://en.antaranews.com/news/419504/russian-crude-imports-to-continue-despite-hormuz-easing-indonesia",
+        "type": "intl"
+      },
+      {
+        "title": "사우디 초대형 유조선 3척, 호르무즈 해협 통과…1척은 울산행",
+        "url": "https://n.news.naver.com/mnews/article/448/0000620682?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 초대형 유조선 3척 호르무즈 통과…울산행도 포함\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001365525?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 초대형 유조선 호르무즈 통과…\"3척 중 1척은 울산행\"",
+        "url": "https://n.news.naver.com/mnews/article/215/0001255888?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 초대형 유조선 3척 호르무즈 통과…울산행 포함\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876170?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 초대형 유조선 3척 호르무즈 통과‥울산행도 포함\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001506369?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "LNG·LPG 할당관세율 하반기 0%… 물가 방어 총력전",
+        "url": "https://n.news.naver.com/mnews/article/022/0004136555?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "하반기부터 ‘LPG·LNG 할당관세율’ 제로 적용",
+        "url": "https://n.news.naver.com/mnews/article/082/0001386074?sid=101",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "U . S . gas prices drop below $4 a gallon after Iran deal",
+        "url": "https://finance.yahoo.com/energy/articles/u-gas-prices-drop-below-122246872.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Fall After Trump and Pezeshkian Sign US - Iran Deal",
+        "url": "https://www.khaama.com/oil-prices-fall-after-trump-and-pezeshkian-sign-us-iran-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices fall after US , Iran sign ceasefire deal",
+        "url": "https://www.rte.ie/news/business/2026/0618/1579051-world-oil-prices/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil slips again after landmark US - Iran agreement",
+        "url": "https://www.geo.tv/latest/669226-oil-slips-again-as-us-iran-sign-peace-deal",
+        "type": "intl"
+      },
+      {
+        "title": "Global crude oil prices fall further as U . S .- Iran peace deal eases supply fears - Breaking News",
+        "url": "https://www.dailymirror.lk/breaking-news/Global-crude-oil-prices-fall-further-as-U-S-Iran-peace-deal-eases-supply-fears/108-343247",
+        "type": "intl"
+      },
+      {
+        "title": "Oil down 2 % after US , Iran sign ceasefire agreement",
+        "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/oil-down-2-after-us-iran-sign-ceasefire-agreement",
+        "type": "intl"
+      },
+      {
+        "title": "Where will oil prices go after the Hormuz reopening deal ? Goldman Sachs sees Brent at $80",
+        "url": "https://www.businesstoday.in/latest/economy/story/where-will-oil-prices-go-after-the-hormuz-reopening-deal-goldman-sachs-sees-brent-at-80-537662-2026-06-18",
+        "type": "intl"
+      },
+      {
+        "title": "Korea to apply zero tariffs on LNG , LPG under quota scheme to tackle inflation",
+        "url": "https://www.koreatimes.co.kr/southkorea/20260618/korea-to-apply-zero-tariffs-on-lng-lpg-under-quota-scheme-to-tackle-inflation",
+        "type": "dom"
+      },
+      {
+        "title": "Crude prices fall as US - Iran deal reopens Hormuz after over 100 days",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/crude-prices-fall-as-us-iran-deal-reopens-hormuz-after-over-100-days/articleshow/131815327.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Average 30 - year U . S . mortgage rate falls to 6 . 47 %, tracking lower bond yields as Iran war winds down",
+        "url": "https://www.newsday.com/business/mortgages-interest-rates-economy-housing-real-estate-f40510",
+        "type": "intl"
+      },
+      {
+        "title": "Why strategic oil reserve refills will take  a lot of time  after Iran deal - National",
+        "url": "https://globalnews.ca/news/11911825/iran-oil-strategic-reserves/",
+        "type": "intl"
+      },
+      {
+        "title": "Indonesia monitors US - Iran peace deal impact on fuel prices",
+        "url": "https://en.antaranews.com/news/419677/indonesia-monitors-us-iran-peace-deal-impact-on-fuel-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices continue downward trend after Islamabad MoU",
+        "url": "https://www.samaa.tv/2087352239-oil-prices-continue-downward-trend-after-islamabad-mou",
+        "type": "intl"
+      },
+      {
+        "title": "US gas prices fall below $4 on average for first time since March",
+        "url": "https://www.azfamily.com/2026/06/18/us-gas-prices-fall-below-4-average-first-time-since-march/",
+        "type": "intl"
+      },
+      {
+        "title": "Nasdaq rebounds as Iran deal signed , SpaceX falls again",
+        "url": "https://www.proactiveinvestors.com/companies/news/1094119/nasdaq-rebounds-as-iran-deal-signed-spacex-falls-again-1094119.html",
+        "type": "intl"
+      },
+      {
+        "title": "US gas prices fall below $4 after Iran agreement signed",
+        "url": "https://www.wtae.com/article/us-gas-prices-june-2026/71626084",
+        "type": "intl"
+      },
+      {
+        "title": "Sensex ends over 250 points higher , Nifty settles at 24 , 168 amid easing crude oil prices",
+        "url": "http://www.mexicostar.com/news/279131860/sensex-ends-over-250-points-higher-nifty-settles-at-24168-amid-easing-crude-oil-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Crude prices easing ; govt to take fuel price decisions in line with evolving global situation : Petroleum Ministry",
+        "url": "https://news.webindia123.com/news/Articles/Business/20260618/4464328.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Gas Prices Slip Below $4 a Gallon for First Time Since March , Remain 25 % Higher Than Before Iran War",
+        "url": "https://www.theyeshivaworld.com/news/general/2564135/u-s-gas-prices-slip-below-4-a-gallon-for-first-time-since-march-remain-25-higher-than-before-iran-war.html",
+        "type": "intl"
+      },
+      {
+        "title": "Crude Sinks To 200 - Day Average As Hormuz Set To Reopen - United States Oil Fund ( ARCA : USO ) ",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53278139/crude-oil-200-day-average-hormuz-reopening-bofa-goldman",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . gas prices drop below $4 mark for first time since March 30",
+        "url": "https://www.upi.com/Top_News/US/2026/06/18/average-gas-below-4-dollars-per-gallon/3631781790406/",
+        "type": "intl"
+      },
+      {
+        "title": "BSP Raises Key Interest Rate Again as Mideast Energy Shock Fuels Inflation Risks in Philippines",
+        "url": "https://tribune.net.ph/2026/06/18/bsp-hikes-rates-again-amid-mideast-inflation-risks",
+        "type": "intl"
+      },
+      {
+        "title": "US Gas Prices Fall Below $4 Per Gallon for First Time Since March as Hormuz Reopening Looms",
+        "url": "https://hannity.com/media-room/pump-pain-eases-national-gas-average-falls-below-4-for-first-time-in-5-months/",
+        "type": "intl"
+      },
+      {
+        "title": "As Hormuz crisis eases , gas prices may drop other costs like groceries and home goods could stay high for a while",
+        "url": "https://www.hellenicshippingnews.com/as-hormuz-crisis-eases-gas-prices-may-drop-other-costs-like-groceries-and-home-goods-could-stay-high-for-a-while/",
+        "type": "intl"
+      },
+      {
+        "title": "Decision on fuel price cuts will be taken in line with evolving global situation : Petroleum Ministry",
+        "url": "https://www.thehindu.com/business/Industry/decision-on-fuel-price-cuts-will-be-taken-in-line-with-evolving-global-situation-petroleum-ministry/article71118027.ece",
+        "type": "intl"
+      },
+      {
+        "title": "US gas prices fall below $4 for 1st time since March , but still 25 % higher than last year",
+        "url": "https://www.clickorlando.com/business/2026/06/18/us-gas-prices-dip-below-4-for-the-first-time-since-march/",
+        "type": "intl"
+      },
+      {
+        "title": "Wall Street on track to open with gains , oil falls and Intel soars on Trump post about Apple deal",
+        "url": "https://www.nhregister.com/news/world/article/asian-shares-shrug-off-us-retreat-after-initial-22310493.php",
+        "type": "intl"
+      },
+      {
+        "title": "Average Gas Price Falls Below $4 for First Time in Months",
+        "url": "https://politicalwire.com/2026/06/18/average-gas-price-falls-below-4-for-first-time-in-months/",
+        "type": "intl"
+      },
+      {
+        "title": "US gas prices dip below $4 for the first time since March",
+        "url": "https://www.courant.com/2026/06/18/gas-prices-below-4-dollars/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil falls to lowest since start of Iran war after ceasefire deal signed - Moneycontrol . com",
+        "url": "https://www.moneycontrol.com/news/business/commodities/oil-falls-to-lowest-since-start-of-iran-war-after-ceasefire-deal-signed-13953095.html",
+        "type": "intl"
+      },
+      {
+        "title": "Brent crude expected at $90 - 95 / barrel , raising India CAD risk : Crisil",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/brent-crude-expected-at-90-95barrel-raising-indias-cad-risk-crisil/article71117086.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Rate In International Market - 18 June 2026",
+        "url": "https://arynews.tv/oil-rate-in-international-market-18-june-2026",
+        "type": "intl"
+      },
+      {
+        "title": "Dow Jones Top Energy Headlines at 7 AM ET : Oil Prices Fall on Iran Peace Deal , Gas Below $4 a Gallon | Saudi ... ",
+        "url": "https://www.morningstar.com/news/dow-jones/202606183251/dow-jones-top-energy-headlines-at-7-am-et-oil-prices-fall-on-iran-peace-deal-gas-below-4-a-gallon-saudi",
+        "type": "intl"
+      },
+      {
+        "title": "Stock markets end higher for 5th day in a row on lower crude prices , optimism over US - Iran deal",
+        "url": "https://www.tribuneindia.com/news/business/stock-markets-end-higher-for-5th-day-in-a-row-on-lower-crude-prices-optimism-over-us-iran-peace-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "West Asia crisis threatens 12 million jobs in India , Green shift can offer hope , finds study",
+        "url": "https://www.livemint.com/news/world/us-iran-war-west-asia-crisis-threatens-12-million-jobs-in-india-green-shift-can-offer-hope-ipe-global-donald-trump-11781773099814.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Tumble As US And Iran Sign Provisional Peace Deal",
+        "url": "https://www.rttnews.com/3661159/oil-prices-tumble-as-us-and-iran-sign-provisional-peace-deal.aspx",
+        "type": "intl"
+      },
+      {
+        "title": "Brent crude expected at USD 90 - 95 / barrel , raising India CAD risk : Crisil",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/brent-crude-expected-at-usd-90-95/barrel-raising-indias-cad-risk-crisil/articleshow/131824658.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Drop As US - Iran Peace Deal Reopens A Vital Global Trade Route",
+        "url": "https://www.oneindia.com/international/oil-prices-drop-as-us-iran-peace-deal-reopens-a-vital-global-trade-route-8121773.html",
+        "type": "intl"
+      },
+      {
+        "title": "Citi revamps oil price target as Hormuz fears ease",
+        "url": "https://finance.yahoo.com/energy/articles/citi-revamps-oil-price-target-194700259.html",
+        "type": "intl"
+      },
+      {
+        "title": "Decline in crude oil prices does not mean immediate fuel price cuts : Minister",
+        "url": "https://www.prokerala.com/news/articles/a1776849.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sensex , Nifty in flux : US Fed throws hot water on West Asia peace deal momentum",
+        "url": "https://www.theweek.in/news/biz-tech/2026/06/18/indian-equity-market-volatile-start.html",
+        "type": "intl"
+      },
+      {
+        "title": "China did use crude stockpiles to ease Iran shock , but not that much : Russell",
+        "url": "https://www.zawya.com/en/news/insights/china-did-use-crude-stockpiles-to-ease-iran-shock-but-not-that-much-russell-bve7q6hb",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Fall Toward Pre - War Levels",
+        "url": "https://athens-times.com/oil-prices-head-toward-pre-war-levels-brent-falls-to-78-wti-to-75/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Drop as U . S .- Iran Peace Deal Eases Supply Concerns",
+        "url": "http://www.econotimes.com/Oil-Prices-Drop-as-US-Iran-Peace-Deal-Eases-Supply-Concerns-1744576",
+        "type": "intl"
+      },
+      {
+        "title": "Indian markets open flat amid weak global cues ; lower oil prices support medium - term outlook",
+        "url": "https://aninews.in/news/business/indian-markets-open-flat-amid-weak-global-cues-lower-oil-prices-support-medium-term-outlook20260618100606/",
+        "type": "intl"
+      },
+      {
+        "title": "Crude oil futures decline following reports of digitally signed US - Iran interim peace deal",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-decline-following-reports-of-digitally-signed-us-iran-interim-peace-deal/article71116405.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Crude oil prices fall over 1 % on US - Iran peace deal ; Brent hovers around $78 per barrel",
+        "url": "https://www.livemint.com/market/commodities/crude-oil-prices-fall-over-1-on-us-iran-peace-deal-brent-hovers-around-78-per-barrel-11781745501212.html",
+        "type": "intl"
+      },
+      {
+        "title": "WTI Crude Oil May Struggle to Recover as Sellers Stay Active",
+        "url": "https://www.actionforex.com/contributors/technical-analysis/644262-wti-crude-oil-may-struggle-to-recover-as-sellers-stay-active/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices may stay elevated near term despite Hormuz breakthrough , say brokerages",
+        "url": "https://www.moneycontrol.com/news/business/markets/oil-prices-may-stay-elevated-near-term-despite-hormuz-breakthrough-say-brokerages-13952252.html",
+        "type": "intl"
+      },
+      {
+        "title": "Fed Holds Rates Steady But Signals Future Tightening ; Dow Futures Jump 260 Points , Oil Is At $75 . 99",
+        "url": "https://www.benzinga.com/markets/economic-data/26/06/53267306/fed-holds-rates-steady-signals-future-tightening-as-dow-futures-jump-260-points",
+        "type": "intl"
+      },
+      {
+        "title": "Commodity Corner : Oil falls on US - Iran deal , but gold and silver hold firm as Fed fears return",
+        "url": "https://www.moneycontrol.com/news/business/commodities/commodity-corner-crude-slides-on-us-iran-deal-gold-prices-gain-13952493.html",
+        "type": "intl"
+      },
+      {
+        "title": "GIFT Nifty down , signals muted start for Sensex , Nifty ; investors assess Fed outlook , cheaper crude , Iran deal",
+        "url": "https://www.moneycontrol.com/news/business/markets/gift-nifty-down-signals-muted-start-for-sensex-nifty-investors-assess-fed-outlook-cheaper-crude-iran-deal-13952542.html",
+        "type": "intl"
+      },
+      {
+        "title": "Daily Voice : Cheap crude may lift stocks , but earnings will decide the next market move , says Bajaj Life CIO",
+        "url": "https://www.moneycontrol.com/news/business/markets/daily-voice-cheap-crude-may-lift-stocks-but-earnings-will-decide-the-next-market-move-says-bajaj-life-cio-13952444.html",
+        "type": "intl"
+      },
+      {
+        "title": "Stock Market Live Updates Today : BSE Sensex , Nifty50 may see positive start to day as US - Iran sign MoU ; crude oil prices drop further",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-18-june-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/liveblog/131815598.cms",
+        "type": "intl"
+      },
+      {
+        "title": "U . S .- Iran peace deal could bring big oil glut next year , IEA says ( USO : NYSEARCA ) ",
+        "url": "https://seekingalpha.com/news/4604622-us-iran-peace-deal-could-bring-big-oil-glut-next-year-iea-says",
+        "type": "intl"
+      },
+      {
+        "title": "정부, 6차 석유 최고가격 일단 연장…\"호르무즈 통항 재개 주시\"",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1713114",
+        "type": "dom"
+      },
+      {
+        "title": "미 원유 재고 41년 만에 최저···호르무즈 봉쇄 여파",
+        "url": "https://n.news.naver.com/mnews/article/032/0003452776?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "코스피, 9,000선 돌파하며 사상 최대 상승 기록",
+        "url": "https://www.tokenpost.kr/news/market/370850",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 종전 MOU 서명에 뉴욕증시 상승 출발…기술주 강세",
+        "url": "https://n.news.naver.com/mnews/article/654/0000186290?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美휘발유 가격, 종전 기대감에 3월 이후 첫 4달러 하회",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011856?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"합의 깨면 폭격\"...브렌트유 126달러·비트코인(BTC) 추락 경고등",
+        "url": "http://coinreaders.com/243161",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕 증시, 미국·이란 MOU 서명 소식에 상승 출발",
+        "url": "https://n.news.naver.com/mnews/article/052/0002368366?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 달러화 강세…연준 '매파적 동결'에 DXY 13개월만에 최고",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420782",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시, 유가 급락에 반등…엔비디아·반도체주 쏠림",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16100783",
+        "type": "dom"
+      },
+      {
+        "title": "英 중앙은행, 기준금리 3.75%로 또 묶었다···\"고유가 리스크 당분간 ...",
+        "url": "https://www.ajunews.com/view/20260618211443140",
+        "type": "dom"
+      },
+      {
+        "title": "미국 이어 영국도 기준금리 동결‥\"에너지 가격 상승 위험 여전\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001506410?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[인도증시] 유가 하락에 5일 연속 상승...NSE 상장 가시화에 지분 보유 ...",
+        "url": "https://www.newspim.com/news/view/20260618001123",
+        "type": "dom"
+      },
+      {
+        "title": "6차 석유 최고가격 일단 연장…중동전 종전 변수 고려",
+        "url": "https://www.slist.kr/news/articleView.html?idxno=746175",
+        "type": "dom"
+      },
+      {
+        "title": "한국도 후폭풍…“트럼프, 이란에 ‘연간 100조원’ 안긴다” 이상한 승...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003653930?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "정부, 석유 최고가격 6차 체제 유지…중동 정세 지켜본 뒤 7차 결정",
+        "url": "http://www.newsian.co.kr/news/articleView.html?idxno=91148",
+        "type": "dom"
+      },
+      {
+        "title": "석유 최고가 현행 유지…7차는 종전 상황 보며 추후 결정",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876163?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "달러-원, 뉴욕장 앞두고 한때 1,540원 돌파",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420783",
+        "type": "dom"
+      },
+      {
+        "title": "코스피 9,000 시대 개막…또 증시 새 역사",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876203?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미, EU·일 이어 ‘기준금리 인상’에 무게…한국도 ‘압력’ 커져",
+        "url": "https://n.news.naver.com/mnews/article/032/0003453016?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 연준 금리 동결… 한국은행, 기준금리 인상 불가피",
+        "url": "https://n.news.naver.com/mnews/article/022/0004136554?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "'유가 담합' HD현대오일뱅크 임직원 1명 구속·1명은 구속영장 기각",
+        "url": "https://n.news.naver.com/mnews/article/008/0005374122?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "'유가 담합 의혹' HD현대오일뱅크 임직원 1명 구속…\"증거인멸 염려\"",
+        "url": "https://n.news.naver.com/mnews/article/437/0000496908?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]‘유가 담합 의혹’ 현대오일뱅크 임직원 구속···“증거 인멸 ...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003453034?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]'유가 담합 의혹' HD현대오일뱅크 임직원 1명 구속…1명 기각",
+        "url": "https://n.news.naver.com/mnews/article/003/0014015172?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] '유가 담합' 의혹 HD현대오일뱅크 임원 1명 구속…1명 기각",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011859?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]'유가 담합 의혹' HD현대오일뱅크 임직원 1명 구속…다른 1명 영장...",
+        "url": "https://n.news.naver.com/mnews/article/277/0005778450?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "원/달러 환율 1,530원대 근접, 연준 통화정책 변화에 반응",
+        "url": "https://www.tokenpost.kr/news/economy/370834",
+        "type": "dom"
+      },
+      {
+        "title": "영란은행 기준금리 동결 결정…연 3.75% 유지",
+        "url": "https://n.news.naver.com/mnews/article/008/0005374117?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국 이어 영국도 기준금리 동결…\"에너지 가격 상승 위험 여전\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001365558?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 이어 英도 기준금리 동결…“에너지 가격 상승 위험 여전”",
+        "url": "https://n.news.naver.com/mnews/article/025/0003531536?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "영국 잉글랜드은행, 기준금리 3.75% 동결…인플레 불확실성 주시",
+        "url": "https://www.etoday.co.kr/news/view/2595150",
+        "type": "dom"
+      },
+      {
+        "title": "이란 평화에 유가도 내리는데...비트코인(BTC)·알트코인, 대조정 끝내고...",
+        "url": "http://coinreaders.com/243118",
+        "type": "dom"
+      },
+      {
+        "title": "[단독]“전쟁 직후 바로 인상”…‘유가 담합 혐의’ 구속 심사",
+        "url": "https://n.news.naver.com/mnews/article/449/0000349717?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "달러-원, 런던장서 1,530원 돌파…美·이란 종전 후 처음(상보)",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420774",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 대통령 “석유 가격 하락 중”",
+        "url": "https://www.tokenpost.kr/news/breaking/370761",
+        "type": "dom"
+      },
+      {
+        "title": "석유 최고가격제 손실 ‘5조원’ 추산… 정유업계 “관건은 적정마진”",
+        "url": "http://www.segyebiz.com/newsView/20260618519880?OutUrl=naver",
+        "type": "dom"
+      },
+      {
+        "title": "LNG·LPG 할당관세 0% 및 개별소비세 인하 연장",
+        "url": "http://www.e2news.com/news/articleView.html?idxno=331485",
+        "type": "dom"
+      },
+      {
+        "title": "WTI 원유, 배럴당 73달러 하회…장중 3.66% 하락",
+        "url": "https://www.tokenpost.kr/news/breaking/370838",
+        "type": "dom"
+      },
+      {
+        "title": "[주식마감] 코스피 사상 첫 '9천피' 시대 열었다… 삼화전기·우리로·한...",
+        "url": "https://www.ggilbo.com/news/articleView.html?idxno=1164518",
+        "type": "dom"
+      },
+      {
+        "title": "‘석유 최고가격제’ 정유사 손실 보전, 원가＋적정마진…“3~4조보다 ...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002658548?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "정유사 손실보전 고시…적정 수준 마진·재고 손실 보전 관건",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011722?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[채권-마감] '매파' FOMC에 금리 일제히 올라",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420773",
+        "type": "dom"
+      },
+      {
+        "title": "정부, 하반기 LNG·LPG 할당관세 '0%' 적용...물가 안정 총력전",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026061817364856349",
+        "type": "dom"
+      },
+      {
+        "title": "정부, 하반기 LNG·LPG 관세 0%로…AI '알뜰소비앱' 나온다",
+        "url": "https://www.pointe.co.kr/news/articleView.html?idxno=80828",
+        "type": "dom"
+      },
+      {
+        "title": "'반쪽 보상'에 늑장 지급설까지…석유가격 손실보상 고시에 정유업계 반...",
+        "url": "https://n.news.naver.com/mnews/article/030/0003439143?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "구윤철 \"정상화 시간 소요\"···운송업계 유가 연동 보조금 9월 말까지...",
+        "url": "https://www.seoulfn.com/news/articleView.html?idxno=631466",
+        "type": "dom"
+      },
+      {
+        "title": "정유사 손실보전 '원가+적정마진'으로…업계 '3~4조' 요구 못 미칠 듯",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011630?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "경유 유가연동보조금 9월까지 연장, 서민 연료비 부담 낮춘다",
+        "url": "https://www.newscammp.co.kr/news/articleView.html?idxno=6417",
+        "type": "dom"
+      },
+      {
+        "title": "석유 최고가격제 손실 보상안, 적정 마진 산정 진통",
+        "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000043620",
+        "type": "dom"
+      },
+      {
+        "title": "아시아증시, 중동 리스크 완화⋯日·대만 사상 최고치",
+        "url": "https://www.etoday.co.kr/news/view/2595093",
+        "type": "dom"
+      },
+      {
+        "title": "석유 최고가제 손실 업계선 5조원 추산…\"적정마진이 관건\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016146797?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "LNG·LPG 할당관세 0%···식품원료 관세 인하 연장",
+        "url": "https://www.ktv.go.kr/content/view?content_id=756780",
+        "type": "dom"
+      },
+      {
+        "title": "수협, 고유가 피해 어업인에 100억 투입 면세유 구매 약 4만명에 40억 현...",
+        "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=358941",
+        "type": "dom"
+      },
+      {
+        "title": "\"뉴욕 증시, 연준 금리 인상 가능성에 큰 폭 하락…기술주 타격\"",
+        "url": "https://www.gokorea.kr/news/articleView.html?idxno=869499",
+        "type": "dom"
+      },
+      {
+        "title": "한은 경고…“물가, 내년까지 안 잡힌다”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004632413?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[데일리 머니마켓] 금리인상 가능성에 뉴욕 증시 하락",
+        "url": "https://www.bigtanews.co.kr/article/view/big202606180001",
+        "type": "dom"
+      },
+      {
+        "title": "6차 석유 최고가격 일단 유지…추가 상황 지켜보기로",
+        "url": "https://n.news.naver.com/mnews/article/656/0000179382?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "금리 인하 기대 후퇴… 원달러 1520원대 중반 강세",
+        "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3066931",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "수협, 고유가 부담 어업인에 유류비 100억원 지원",
+        "url": "https://n.news.naver.com/mnews/article/448/0000620657?sid=101",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "Stranded ships have begun transiting the Strait of Hormuz , maritime data company says",
+        "url": "https://www.ksat.com/news/2026/06/18/maritime-data-company-says-stranded-ships-have-begun-transiting-the-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Maritime data shows stranded vessels resuming passage through Strait of Hormuz",
+        "url": "https://www.manilatimes.net/2026/06/19/world/maritime-data-shows-stranded-vessels-resuming-passage-through-strait-of-hormuz/2368817",
+        "type": "intl"
+      },
+      {
+        "title": "US is  honouring  Iran deal as oil flows through Strait of Hormuz – Vance",
+        "url": "https://www.thetelegraphandargus.co.uk/news/national/26208317.us-honouring-iran-deal-oil-flows-strait-hormuz---vance/",
+        "type": "intl"
+      },
+      {
+        "title": "Maritime data company says stranded ships have begun transiting Strait of Hormuz",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/maritime-data-company-says-stranded-ships-have-begun-transiting-strait-of-hormuz/articleshow/131835680.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Maritime data company says stranded ships have begun transiting the Strait of Hormuz – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/business/2026/06/18/maritime-data-company-says-stranded-ships-have-begun-transiting-the-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Three Saudi - Flagged Supertankers Sail Through Hormuz After Iran Deal Signed , Data Shows",
+        "url": "https://gcaptain.com/three-saudi-flagged-supertankers-sail-through-hormuz-after-iran-deal-signed-data-shows/",
+        "type": "intl"
+      },
+      {
+        "title": "Three Saudi oil tankers transit Strait of Hormuz following U . S .- Iran accord",
+        "url": "https://sana.sy/en/international/2324089/",
+        "type": "intl"
+      },
+      {
+        "title": "Live Updates : U . S .- Iran deal signing gets more ships moving in Strait of Hormuz , but big challenges remain",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-deal-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi supertankers sail through Strait of Hormuz following Iran deal",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-supertankers-sail-through-strait-hormuz-following-iran-deal",
+        "type": "intl"
+      },
+      {
+        "title": "Shipping industry wary of resuming Strait of Hormuz navigation",
+        "url": "https://www.euronews.com/my-europe/2026/06/18/shipping-industry-wary-of-resuming-strait-of-hormuz-navigation-despite-imminent-deal",
+        "type": "intl"
+      },
+      {
+        "title": "Qatar LNG tanker sails for Hormuz as Middle East peace returns",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/qatar-lng-tanker-sails-for-hormuz-as-middle-east-peace-returns/articleshow/131816484.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Is The Strait Of Hormuz Open ? Pakistan Prime Minister Shehbaz Sharif Shares Key Update",
+        "url": "https://www.newsx.com/world/strait-of-hormuz-open-news-pakistan-prime-minister-shehbaz-sharif-shares-key-update-236011/",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker Companies Say Hormuz Traffic Will Take  Week to Return to Normal",
+        "url": "https://www.breitbart.com/national-security/2026/06/16/tanker-companies-say-hormuz-traffic-will-take-weeks-to-return-to-normal/",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian Oil Tankers Pass U . S . Blockade Line After Ceasefire Deal Announced",
+        "url": "https://www.breitbart.com/national-security/2026/06/17/iranian-oil-tankers-pass-u-s-blockade-line-after-ceasefire-deal-announced/",
+        "type": "intl"
+      },
+      {
+        "title": "  No India - flagged vessel moved out after Disha crossed Hormuz : Govt says coordination efforts on",
+        "url": "https://www.moneycontrol.com/news/india/no-india-flagged-vessel-moved-out-after-disha-crossed-hormuz-govt-says-coordination-efforts-on-13953347.html",
+        "type": "intl"
+      },
+      {
+        "title": "After LNG carrier Disha , no Indian - flagged ship has exited Persian Gulf : Shipping ministry",
+        "url": "https://www.hindustantimes.com/india-news/after-lng-carrier-disha-no-indian-flagged-ship-has-exited-persian-gulf-shipping-ministry-strait-of-hormuz-us-iran-deal-101781785841182.html",
+        "type": "intl"
+      },
+      {
+        "title": "  No other Indian - flagged vessel moved out after Disha : Shipping Ministry on efforts directed towards safe return of vessels from Persian Gulf",
+        "url": "https://news.webindia123.com/news/Articles/World/20260618/4464256.html",
+        "type": "intl"
+      },
+      {
+        "title": "China urged to strengthen navy escorts and find other routes to secure energy supply",
+        "url": "https://www.scmp.com/news/china/diplomacy/article/3357511/china-urged-strengthen-navy-escorts-and-find-other-routes-secure-energy-supply",
+        "type": "intl"
+      },
+      {
+        "title": "“울산행도 있다”…원유 실은 사우디 유조선 3척 호르무즈 통과",
+        "url": "https://n.news.naver.com/mnews/article/025/0003531540?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 유조선 3척 호르무즈 통과…울산행 포함\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000876205?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘호르무즈 통과’ 사우디 유조선, 울산으로도 온다…종전 MOU 체결 후 ...",
+        "url": "https://n.news.naver.com/mnews/article/009/0005695914?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 초대형 유조선 세 척 호르무즈 통과…한 척은 울산으로",
+        "url": "https://n.news.naver.com/mnews/article/008/0005374116?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[중동戰 그 후] 한국행 아우타드호 등 사우디 선적 유조선 3척 호르무즈...",
+        "url": "https://n.news.naver.com/mnews/article/003/0014015153?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 초대형 유조선 호르무즈 통과…울산행도 포함",
+        "url": "https://n.news.naver.com/mnews/article/079/0004159513?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 초대형 유조선 3척 호르무즈 통과...울산행도 포함\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002368322?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "원유 최대수출국 사우디 초대형유조선 3척 호르무즈해협 첫 통과…이란...",
+        "url": "https://n.news.naver.com/mnews/article/029/0003032582?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 초대형 유조선 3척 호르무즈 통과…\"울산행 1척도 포함돼\"",
+        "url": "https://n.news.naver.com/mnews/article/656/0000179418?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 초대형 유조선 3척, 美·이란 합의 서명 뒤 호르무즈 통과",
+        "url": "https://n.news.naver.com/mnews/article/421/0009011771?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 초대형 유조선 3척, 호르무즈 넘었다",
+        "url": "https://n.news.naver.com/mnews/article/082/0001386091?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[시사난장] 북극항로 시대 부산, 생명 지키는 항만돼야",
+        "url": "https://n.news.naver.com/mnews/article/658/0000147149?sid=110",
+        "type": "dom"
+      }
+    ],
+    "8_Logistics": [
+      {
+        "title": "울산세관, 중동발 수출기업 피해 대응 총력",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=387478",
+        "type": "dom"
+      },
+      {
+        "title": "인니 지역 신규항로 확대… 서인도 잇는 물류 네트워크 구축 [한-인니 협...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005536940?sid=101",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "Major reduction in petroleum product prices expected from June 20",
+        "url": "https://dailythepatriot.com/major-reduction-in-petroleum-product-prices-expected-from-june-20/",
+        "type": "intl"
+      },
+      {
+        "title": "Moscow oil refinery on fire after  large - scale  Ukrainian drone strike | Russia",
+        "url": "https://www.theguardian.com/world/2026/jun/18/moscow-oil-refinery-on-fire-ukraine-drone-stikes",
+        "type": "intl"
+      },
+      {
+        "title": "Markets Will Recover Gradually from War , IEA Says",
+        "url": "https://www.industrialinfo.com/news/article/markets-will-recover-gradually-from-war-iea-says--359168",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran war linked to world energy crisis Oluwo",
+        "url": "https://dailypost.ng/2026/06/18/us-iran-war-linked-to-world-energy-crisis-oluwo/",
+        "type": "intl"
+      },
+      {
+        "title": "Fertilizer Shipments Should Bounce Back with U . S .- Iran Deal",
+        "url": "http://www.maritimeprofessional.com/news/fertilizer-shipments-should-bounce-back-420392",
+        "type": "intl"
+      },
+      {
+        "title": "Global Fertiliser Trade Drops 30 % Amid Mideast War : UN",
+        "url": "https://www.deccanchronicle.com/world/global-fertiliser-trade-drops-30-amid-mideast-war-un-1964503",
+        "type": "intl"
+      },
+      {
+        "title": "Emergency fuel supply measures to be rolled back once govt feels confident of West Asia supply stability",
+        "url": "https://indianexpress.com/article/business/us-iran-peace-deal-strait-of-hormuz-india-fuel-lpg-rationing-10746533/",
+        "type": "intl"
+      },
+      {
+        "title": "Russian oil refinery on fire after barrage of Ukrainian drones strike Moscow",
+        "url": "https://www.aol.co.uk/articles/moscow-oil-refinery-fire-large-054749000.html",
+        "type": "intl"
+      },
+      {
+        "title": "Global chemical industry seen on gradual recovery path ; Iran - US peace deal key catalyst : Report",
+        "url": "https://aninews.in/news/business/global-chemical-industry-seen-on-gradual-recovery-path-iran-us-peace-deal-key-catalyst-report20260618153243/",
+        "type": "intl"
+      },
+      {
+        "title": "Americas , Asia could bear brunt of most powerful El Niño in 70 years",
+        "url": "https://www.2lt.com.au/americas-asia-could-bear-brunt-of-most-powerful-el-nino-in-70-years/",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine hits Moscow refinery in major attack on capital",
+        "url": "https://www.canberratimes.com.au/story/9294811/ukraine-hits-moscow-refinery-in-major-attack-on-capital/",
+        "type": "intl"
+      },
+      {
+        "title": "Drones hit Moscow oil refinery as Russia and Ukraine exchange strikes",
+        "url": "https://www.scmp.com/news/world/europe/article/3357515/drones-hit-moscow-oil-refinery-russia-and-ukraine-exchange-strikes",
+        "type": "intl"
+      },
+      {
+        "title": "El Niño could be strongest in decades , Australia declares",
+        "url": "http://www.taiwansun.com/news/279127143/most-powerful-el-nino-in-70-years-could-affect-americas-asia",
+        "type": "intl"
+      },
+      {
+        "title": "Ukrainian drones strike Moscow oil refinery again ; flames , thick plumes of smoke seen",
+        "url": "https://timesofindia.indiatimes.com/world/europe/ukrainian-drones-strike-moscows-oil-refinery-again-flames-thick-plumes-of-smoke-seen/articleshow/131816478.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Woodside sees LNG , oil sales rising 50 % as investments from US to Australia pay off",
+        "url": "https://asia.nikkei.com/business/energy/woodside-sees-lng-oil-sales-rising-50-as-investments-from-us-to-australia-pay-off",
+        "type": "intl"
+      },
+      {
+        "title": "Fertilizer woes : Strait of Hormuz only part of the problem",
+        "url": "https://www.dakotanewsnow.com/2026/06/17/fertilizer-woes-strait-hormuz-only-part-problem/",
+        "type": "intl"
+      },
+      {
+        "title": "Survey shows urea prices dropping | Stuttgart Daily Leader",
+        "url": "https://www.stuttgartdailyleader.com/survey-shows-urea-prices-dropping/",
+        "type": "intl"
+      },
+      {
+        "title": "정부, 6차 석유 최고가격 적용 기간 연장…“주말 중동전 상황 보고 조...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003453015?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동 전쟁 끝나도 식량난 온다…유엔, 국제사회 긴급 지원 호소",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527954",
+        "type": "dom"
+      },
+      {
+        "title": "우크라이나, 모스크바 최대 드론 공습…정유시설 화재·공항 운영 차질",
+        "url": "https://www.kbmaeil.com/article/20260618500735",
+        "type": "dom"
+      },
+      {
+        "title": "[미궁 속 K-석화] 중동 종전에 정부 나프타 보조금 6월 종료 확정...범용...",
+        "url": "https://www.ajunews.com/view/20260618155054093",
+        "type": "dom"
+      },
+      {
+        "title": "2028년 한국산 2천㎥급 액화수소 운반선 출항한다…세계 최대 규모",
+        "url": "https://kidd.co.kr/news/246383",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "Iran state television says Hormuz passage  still requires coordination  with Tehran",
+      "url": "https://tribune.com.pk/story/2613886/irans-state-television-says-hormuz-passage-still-requires-coordination-with-tehran",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Iran Deal Raises Serious Questions Over Future Management of the Strait of Hormuz",
+      "url": "https://gcaptain.com/iran-deal-raises-serious-questions-over-future-management-of-the-strait-of-hormuz/",
+      "type": "intl"
+    },
+    "3": {
+      "title": "Maritime Industry Demands Clarity on Hormuz Reopening as Mine Risks Persist",
+      "url": "https://gcaptain.com/maritime-industry-demands-clarity-on-hormuz-reopening-as-mine-risks-persist/",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Iran Deal Opens Door to Hormuz Reopening , But Shipping Industry Warns of Long Road Ahead",
+      "url": "https://gcaptain.com/iran-deal-opens-door-to-hormuz-reopening-but-shipping-industry-warns-of-long-road-ahead/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Crude Oil Slides As Strait Of Hormuz Reopens Following U . S .- Iran Interim Peace Deal",
+      "url": "https://www.finanzen.ch/nachrichten/aktien/crude-oil-slides-as-strait-of-hormuz-reopens-following-u-s-iran-interim-peace-deal-1036261014",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Iran War Day 111 : U . S . and Iran Sign Framework Peace Deal",
+      "url": "https://www.theamericanconservative.com/iran-war-day-111-u-s-and-iran-sign-framework-peace-deal/",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Vance : US eases blockade , clears passage for ships bound for Iranian ports",
+      "url": "https://www.manilatimes.net/2026/06/19/world/vance-us-eases-blockade-clears-passage-for-ships-bound-for-iranian-ports/2368732",
+      "type": "intl"
+    },
+    "8": {
+      "title": "US Navy lifts blockade on Iranian ports as part of new agreement",
+      "url": "https://www.courant.com/2026/06/18/us-navy-lifts-iranian-port-blockade-agreement/",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Vance says US allows more than dozen ships through to Iranian ports , lifting blockade under deal – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/business/2026/06/18/vance-says-us-allows-more-than-dozen-ships-through-to-iranian-ports-lifting-blockade-under-deal",
+      "type": "intl"
+    },
+    "10": {
+      "title": "How the 14 - Point U . S .- Iran MOU Could Reshape Global Supply Chains",
+      "url": "https://finance.yahoo.com/energy/articles/14-point-u-iran-mou-134426961.html",
+      "type": "intl"
+    },
+    "11": {
+      "title": "US , Iran Put 14 - Point Ceasefire Memo into Effect",
+      "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=202259",
+      "type": "dom"
+    },
+    "12": {
+      "title": "美언론도 부글…'60일만 호르무즈 무료통행' 합의에 \"갈취 공식화\"",
+      "url": "https://n.news.naver.com/mnews/article/001/0016147013?sid=104",
+      "type": "dom"
+    },
+    "13": {
+      "title": "[W 언박싱] MOU 뜯어보니 ‘이란 퍼주기’?…‘핵’보다 강한 ‘호르무...",
+      "url": "https://n.news.naver.com/mnews/article/056/0012202880?sid=104",
+      "type": "dom"
+    },
+    "14": {
+      "title": "미-이란 종전 MOU 서명·발효…트럼프 “합의 안 지키면 폭격”",
+      "url": "https://n.news.naver.com/mnews/article/056/0012202879?sid=104",
+      "type": "dom"
+    },
+    "15": {
+      "title": "스위스 \"美·이란 내일 뷔르겐슈토크에서 초기 협상 진행\"",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420784",
+      "type": "dom"
+    },
+    "16": {
+      "title": "이란 대통령 “역사적 합의”…美와 종전 합의에 만족감",
+      "url": "https://n.news.naver.com/mnews/article/119/0003102506?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "美·이란, '종전 MOU' 조기 서명… 예정보다 앞당겨 '전쟁 즉각 종료' 선...",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3410446",
+      "type": "dom"
+    },
+    "18": {
+      "title": "트럼프, 이란과 종전 MOU 전자 서명",
+      "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=551518",
+      "type": "dom"
+    },
+    "19": {
+      "title": "“핵보다 무서운 호르무즈 통제권 내줬다, 미국의 완패”…트럼프만 정...",
+      "url": "https://n.news.naver.com/mnews/article/030/0003439196?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "‘핵’ 미루고, 탄도미사일 쥐고, 호르무즈 통제권까지 챙긴 이란",
+      "url": "https://n.news.naver.com/mnews/article/032/0003453023?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "Vance says 12 . 5 million barrels of oil passed through Strait of Hormuz as US - Iran deal takes effect",
+      "url": "https://www.moneycontrol.com/world/vance-says-12-5-million-barrels-of-oil-passed-through-strait-of-hormuz-as-us-iran-deal-takes-effect-article-13953431.html",
+      "type": "intl"
+    },
+    "22": {
+      "title": "Hormuz reopening to release wave of oil supply , depress prices",
+      "url": "https://www.al-monitor.com/originals/2026/06/hormuz-reopening-release-wave-oil-supply-depress-prices",
+      "type": "intl"
+    },
+    "23": {
+      "title": "US - Iran peace deal comes into effect ; ships crossing Hormuz get 60 - day fee - free period",
+      "url": "https://article.wn.com/view/2026/06/18/USIran_peace_deal_comes_into_effect_ships_crossing_Hormuz_ge/",
+      "type": "intl"
+    },
+    "24": {
+      "title": "Goldman Sachs Warns Strait of Hormuz Traffic May Never Fully Recover",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Warns-Strait-of-Hormuz-Traffic-May-Never-Fully-Recover.html",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Iran Reaffirms Plan to Charge Ships Crossing Strait of Hormuz after 60 Days",
+      "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=202264",
+      "type": "dom"
+    },
+    "26": {
+      "title": "종전 합의에도 해상물류 정상화 지연…SCFI 3천선 돌파하며 운임 상승 지...",
+      "url": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=429969",
+      "type": "dom"
+    },
+    "27": {
+      "title": "중동전쟁 여진에서 벗어나지 못한 해운 운임...컨테이너 운임지수, 3천선...",
+      "url": "https://www.livebiz.today/news/articleView.html?idxno=202730",
+      "type": "dom"
+    },
+    "28": {
+      "title": "“호르무즈 통행료 60일만 면제”…종전 MOU 향후 논란 쟁점은?",
+      "url": "https://n.news.naver.com/mnews/article/056/0012202712?sid=104",
+      "type": "dom"
+    },
+    "29": {
+      "title": "미-이란 MOU체결...호르무즈 통행료 논란",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527946",
+      "type": "dom"
+    },
+    "30": {
+      "title": "“호르무즈, 국제사회 관심에 답해야”…중국 ‘이란 통항료 부과 반대...",
+      "url": "https://n.news.naver.com/mnews/article/032/0003452972?sid=104",
+      "type": "dom"
+    },
+    "31": {
+      "title": "\"호르무즈 통행료 없다\"던 트럼프…까보니 '60일만 무료'",
+      "url": "https://n.news.naver.com/mnews/article/437/0000496878?sid=104",
+      "type": "dom"
+    },
+    "32": {
+      "title": "호르무즈 이젠 열려도 안 간다? 골드만삭스 \"원유 통행량 70%\" 전망",
+      "url": "https://n.news.naver.com/mnews/article/008/0005374104?sid=104",
+      "type": "dom"
+    },
+    "33": {
+      "title": "통행료 날벼락에 해운사들 ‘당황’… 무료기간 내 탈출도 어려워",
+      "url": "https://n.news.naver.com/mnews/article/081/0003653924?sid=101",
+      "type": "dom"
+    },
+    "34": {
+      "title": "60일만 통행료 면제?…정부 \"어떤 수수료도 안 돼\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000876173?sid=100",
+      "type": "dom"
+    },
+    "35": {
+      "title": "Hormuz Normalization Begins As Saudi Supertankers Exit And A Flood Of Persian Gulf Oil Heads For Asia",
+      "url": "https://www.zerohedge.com/energy/hormuz-normalization-begins-saudi-supertankers-exit-and-flood-persian-gulf-oil-heads-asia",
+      "type": "intl"
+    },
+    "36": {
+      "title": "More Than 60 Million Barrels of Oil Ready to Head to Asia as Hormuz Reopens",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/More-Than-60-Million-Barrels-of-Oil-Ready-to-Head-to-Asia-as-Hormuz-Reopens.html",
+      "type": "intl"
+    },
+    "37": {
+      "title": "First Iranian Crude Exports In 2 Months Leave Hormuz",
+      "url": "http://www.parisguardian.com/news/279129315/first-iranian-crude-exports-in-2-months-leave-hormuz",
+      "type": "intl"
+    },
+    "38": {
+      "title": "Russian crude imports to continue despite Hormuz easing : Indonesia",
+      "url": "https://en.antaranews.com/news/419504/russian-crude-imports-to-continue-despite-hormuz-easing-indonesia",
+      "type": "intl"
+    },
+    "39": {
+      "title": "사우디 초대형 유조선 3척, 호르무즈 해협 통과…1척은 울산행",
+      "url": "https://n.news.naver.com/mnews/article/448/0000620682?sid=104",
+      "type": "dom"
+    },
+    "40": {
+      "title": "\"사우디 초대형 유조선 3척 호르무즈 통과…울산행도 포함\"",
+      "url": "https://n.news.naver.com/mnews/article/055/0001365525?sid=104",
+      "type": "dom"
+    },
+    "41": {
+      "title": "사우디 초대형 유조선 호르무즈 통과…\"3척 중 1척은 울산행\"",
+      "url": "https://n.news.naver.com/mnews/article/215/0001255888?sid=104",
+      "type": "dom"
+    },
+    "42": {
+      "title": "\"사우디 초대형 유조선 3척 호르무즈 통과…울산행 포함\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000876170?sid=104",
+      "type": "dom"
+    },
+    "43": {
+      "title": "\"사우디 초대형 유조선 3척 호르무즈 통과‥울산행도 포함\"",
+      "url": "https://n.news.naver.com/mnews/article/214/0001506369?sid=104",
+      "type": "dom"
+    },
+    "44": {
+      "title": "LNG·LPG 할당관세율 하반기 0%… 물가 방어 총력전",
+      "url": "https://n.news.naver.com/mnews/article/022/0004136555?sid=101",
+      "type": "dom"
+    },
+    "45": {
+      "title": "하반기부터 ‘LPG·LNG 할당관세율’ 제로 적용",
+      "url": "https://n.news.naver.com/mnews/article/082/0001386074?sid=101",
+      "type": "dom"
+    },
+    "46": {
+      "title": "U . S . gas prices drop below $4 a gallon after Iran deal",
+      "url": "https://finance.yahoo.com/energy/articles/u-gas-prices-drop-below-122246872.html",
+      "type": "intl"
+    },
+    "47": {
+      "title": "Oil Prices Fall After Trump and Pezeshkian Sign US - Iran Deal",
+      "url": "https://www.khaama.com/oil-prices-fall-after-trump-and-pezeshkian-sign-us-iran-deal/",
+      "type": "intl"
+    },
+    "48": {
+      "title": "Oil prices fall after US , Iran sign ceasefire deal",
+      "url": "https://www.rte.ie/news/business/2026/0618/1579051-world-oil-prices/",
+      "type": "intl"
+    },
+    "49": {
+      "title": "Oil slips again after landmark US - Iran agreement",
+      "url": "https://www.geo.tv/latest/669226-oil-slips-again-as-us-iran-sign-peace-deal",
+      "type": "intl"
+    },
+    "50": {
+      "title": "Global crude oil prices fall further as U . S .- Iran peace deal eases supply fears - Breaking News",
+      "url": "https://www.dailymirror.lk/breaking-news/Global-crude-oil-prices-fall-further-as-U-S-Iran-peace-deal-eases-supply-fears/108-343247",
+      "type": "intl"
+    },
+    "51": {
+      "title": "Oil down 2 % after US , Iran sign ceasefire agreement",
+      "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/oil-down-2-after-us-iran-sign-ceasefire-agreement",
+      "type": "intl"
+    },
+    "52": {
+      "title": "Where will oil prices go after the Hormuz reopening deal ? Goldman Sachs sees Brent at $80",
+      "url": "https://www.businesstoday.in/latest/economy/story/where-will-oil-prices-go-after-the-hormuz-reopening-deal-goldman-sachs-sees-brent-at-80-537662-2026-06-18",
+      "type": "intl"
+    },
+    "53": {
+      "title": "Crude prices fall as US - Iran deal reopens Hormuz after over 100 days",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/crude-prices-fall-as-us-iran-deal-reopens-hormuz-after-over-100-days/articleshow/131815327.cms",
+      "type": "intl"
+    },
+    "54": {
+      "title": "Average 30 - year U . S . mortgage rate falls to 6 . 47 %, tracking lower bond yields as Iran war winds down",
+      "url": "https://www.newsday.com/business/mortgages-interest-rates-economy-housing-real-estate-f40510",
+      "type": "intl"
+    },
+    "55": {
+      "title": "Why strategic oil reserve refills will take  a lot of time  after Iran deal - National",
+      "url": "https://globalnews.ca/news/11911825/iran-oil-strategic-reserves/",
+      "type": "intl"
+    },
+    "56": {
+      "title": "Korea to apply zero tariffs on LNG , LPG under quota scheme to tackle inflation",
+      "url": "https://www.koreatimes.co.kr/southkorea/20260618/korea-to-apply-zero-tariffs-on-lng-lpg-under-quota-scheme-to-tackle-inflation",
+      "type": "dom"
+    },
+    "57": {
+      "title": "정부, 6차 석유 최고가격 일단 연장…\"호르무즈 통항 재개 주시\"",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1713114",
+      "type": "dom"
+    },
+    "58": {
+      "title": "미 원유 재고 41년 만에 최저···호르무즈 봉쇄 여파",
+      "url": "https://n.news.naver.com/mnews/article/032/0003452776?sid=101",
+      "type": "dom"
+    },
+    "59": {
+      "title": "코스피, 9,000선 돌파하며 사상 최대 상승 기록",
+      "url": "https://www.tokenpost.kr/news/market/370850",
+      "type": "dom"
+    },
+    "60": {
+      "title": "미·이란 종전 MOU 서명에 뉴욕증시 상승 출발…기술주 강세",
+      "url": "https://n.news.naver.com/mnews/article/654/0000186290?sid=101",
+      "type": "dom"
+    },
+    "61": {
+      "title": "美휘발유 가격, 종전 기대감에 3월 이후 첫 4달러 하회",
+      "url": "https://n.news.naver.com/mnews/article/421/0009011856?sid=104",
+      "type": "dom"
+    },
+    "62": {
+      "title": "트럼프 \"합의 깨면 폭격\"...브렌트유 126달러·비트코인(BTC) 추락 경고등",
+      "url": "http://coinreaders.com/243161",
+      "type": "dom"
+    },
+    "63": {
+      "title": "뉴욕 증시, 미국·이란 MOU 서명 소식에 상승 출발",
+      "url": "https://n.news.naver.com/mnews/article/052/0002368366?sid=104",
+      "type": "dom"
+    },
+    "64": {
+      "title": "미 달러화 강세…연준 '매파적 동결'에 DXY 13개월만에 최고",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4420782",
+      "type": "dom"
+    },
+    "65": {
+      "title": "뉴욕증시, 유가 급락에 반등…엔비디아·반도체주 쏠림",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16100783",
+      "type": "dom"
+    },
+    "66": {
+      "title": "수협, 고유가 부담 어업인에 유류비 100억원 지원",
+      "url": "https://n.news.naver.com/mnews/article/448/0000620657?sid=101",
+      "type": "dom"
+    },
+    "67": {
+      "title": "Stranded ships have begun transiting the Strait of Hormuz , maritime data company says",
+      "url": "https://www.ksat.com/news/2026/06/18/maritime-data-company-says-stranded-ships-have-begun-transiting-the-strait-of-hormuz/",
+      "type": "intl"
+    },
+    "68": {
+      "title": "Maritime data shows stranded vessels resuming passage through Strait of Hormuz",
+      "url": "https://www.manilatimes.net/2026/06/19/world/maritime-data-shows-stranded-vessels-resuming-passage-through-strait-of-hormuz/2368817",
+      "type": "intl"
+    },
+    "69": {
+      "title": "US is  honouring  Iran deal as oil flows through Strait of Hormuz – Vance",
+      "url": "https://www.thetelegraphandargus.co.uk/news/national/26208317.us-honouring-iran-deal-oil-flows-strait-hormuz---vance/",
+      "type": "intl"
+    },
+    "70": {
+      "title": "Maritime data company says stranded ships have begun transiting Strait of Hormuz",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/maritime-data-company-says-stranded-ships-have-begun-transiting-strait-of-hormuz/articleshow/131835680.cms",
+      "type": "intl"
+    },
+    "71": {
+      "title": "Maritime data company says stranded ships have begun transiting the Strait of Hormuz – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/business/2026/06/18/maritime-data-company-says-stranded-ships-have-begun-transiting-the-strait-of-hormuz",
+      "type": "intl"
+    },
+    "72": {
+      "title": "Three Saudi - Flagged Supertankers Sail Through Hormuz After Iran Deal Signed , Data Shows",
+      "url": "https://gcaptain.com/three-saudi-flagged-supertankers-sail-through-hormuz-after-iran-deal-signed-data-shows/",
+      "type": "intl"
+    },
+    "73": {
+      "title": "Three Saudi oil tankers transit Strait of Hormuz following U . S .- Iran accord",
+      "url": "https://sana.sy/en/international/2324089/",
+      "type": "intl"
+    },
+    "74": {
+      "title": "Live Updates : U . S .- Iran deal signing gets more ships moving in Strait of Hormuz , but big challenges remain",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-deal-strait-of-hormuz/",
+      "type": "intl"
+    },
+    "75": {
+      "title": "Saudi supertankers sail through Strait of Hormuz following Iran deal",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-supertankers-sail-through-strait-hormuz-following-iran-deal",
+      "type": "intl"
+    },
+    "76": {
+      "title": "Shipping industry wary of resuming Strait of Hormuz navigation",
+      "url": "https://www.euronews.com/my-europe/2026/06/18/shipping-industry-wary-of-resuming-strait-of-hormuz-navigation-despite-imminent-deal",
+      "type": "intl"
+    },
+    "77": {
+      "title": "“울산행도 있다”…원유 실은 사우디 유조선 3척 호르무즈 통과",
+      "url": "https://n.news.naver.com/mnews/article/025/0003531540?sid=104",
+      "type": "dom"
+    },
+    "78": {
+      "title": "\"사우디 유조선 3척 호르무즈 통과…울산행 포함\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000876205?sid=104",
+      "type": "dom"
+    },
+    "79": {
+      "title": "‘호르무즈 통과’ 사우디 유조선, 울산으로도 온다…종전 MOU 체결 후 ...",
+      "url": "https://n.news.naver.com/mnews/article/009/0005695914?sid=101",
+      "type": "dom"
+    },
+    "80": {
+      "title": "사우디 초대형 유조선 세 척 호르무즈 통과…한 척은 울산으로",
+      "url": "https://n.news.naver.com/mnews/article/008/0005374116?sid=104",
+      "type": "dom"
+    },
+    "81": {
+      "title": "[중동戰 그 후] 한국행 아우타드호 등 사우디 선적 유조선 3척 호르무즈...",
+      "url": "https://n.news.naver.com/mnews/article/003/0014015153?sid=104",
+      "type": "dom"
+    },
+    "82": {
+      "title": "사우디 초대형 유조선 호르무즈 통과…울산행도 포함",
+      "url": "https://n.news.naver.com/mnews/article/079/0004159513?sid=104",
+      "type": "dom"
+    },
+    "83": {
+      "title": "\"사우디 초대형 유조선 3척 호르무즈 통과...울산행도 포함\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002368322?sid=104",
+      "type": "dom"
+    },
+    "84": {
+      "title": "원유 최대수출국 사우디 초대형유조선 3척 호르무즈해협 첫 통과…이란...",
+      "url": "https://n.news.naver.com/mnews/article/029/0003032582?sid=104",
+      "type": "dom"
+    },
+    "85": {
+      "title": "사우디 초대형 유조선 3척 호르무즈 통과…\"울산행 1척도 포함돼\"",
+      "url": "https://n.news.naver.com/mnews/article/656/0000179418?sid=102",
+      "type": "dom"
+    },
+    "86": {
+      "title": "사우디 초대형 유조선 3척, 美·이란 합의 서명 뒤 호르무즈 통과",
+      "url": "https://n.news.naver.com/mnews/article/421/0009011771?sid=104",
+      "type": "dom"
+    },
+    "87": {
+      "title": "울산세관, 중동발 수출기업 피해 대응 총력",
+      "url": "http://www.ujeil.com/news/articleView.html?idxno=387478",
+      "type": "dom"
+    },
+    "88": {
+      "title": "인니 지역 신규항로 확대… 서인도 잇는 물류 네트워크 구축 [한-인니 협...",
+      "url": "https://n.news.naver.com/mnews/article/014/0005536940?sid=101",
+      "type": "dom"
+    },
+    "89": {
+      "title": "Major reduction in petroleum product prices expected from June 20",
+      "url": "https://dailythepatriot.com/major-reduction-in-petroleum-product-prices-expected-from-june-20/",
+      "type": "intl"
+    },
+    "90": {
+      "title": "Moscow oil refinery on fire after  large - scale  Ukrainian drone strike | Russia",
+      "url": "https://www.theguardian.com/world/2026/jun/18/moscow-oil-refinery-on-fire-ukraine-drone-stikes",
+      "type": "intl"
+    },
+    "91": {
+      "title": "Markets Will Recover Gradually from War , IEA Says",
+      "url": "https://www.industrialinfo.com/news/article/markets-will-recover-gradually-from-war-iea-says--359168",
+      "type": "intl"
+    },
+    "92": {
+      "title": "US - Iran war linked to world energy crisis Oluwo",
+      "url": "https://dailypost.ng/2026/06/18/us-iran-war-linked-to-world-energy-crisis-oluwo/",
+      "type": "intl"
+    },
+    "93": {
+      "title": "Fertilizer Shipments Should Bounce Back with U . S .- Iran Deal",
+      "url": "http://www.maritimeprofessional.com/news/fertilizer-shipments-should-bounce-back-420392",
+      "type": "intl"
+    },
+    "94": {
+      "title": "Global Fertiliser Trade Drops 30 % Amid Mideast War : UN",
+      "url": "https://www.deccanchronicle.com/world/global-fertiliser-trade-drops-30-amid-mideast-war-un-1964503",
+      "type": "intl"
+    },
+    "95": {
+      "title": "Emergency fuel supply measures to be rolled back once govt feels confident of West Asia supply stability",
+      "url": "https://indianexpress.com/article/business/us-iran-peace-deal-strait-of-hormuz-india-fuel-lpg-rationing-10746533/",
+      "type": "intl"
+    },
+    "96": {
+      "title": "Russian oil refinery on fire after barrage of Ukrainian drones strike Moscow",
+      "url": "https://www.aol.co.uk/articles/moscow-oil-refinery-fire-large-054749000.html",
+      "type": "intl"
+    },
+    "97": {
+      "title": "Global chemical industry seen on gradual recovery path ; Iran - US peace deal key catalyst : Report",
+      "url": "https://aninews.in/news/business/global-chemical-industry-seen-on-gradual-recovery-path-iran-us-peace-deal-key-catalyst-report20260618153243/",
+      "type": "intl"
+    },
+    "98": {
+      "title": "Americas , Asia could bear brunt of most powerful El Niño in 70 years",
+      "url": "https://www.2lt.com.au/americas-asia-could-bear-brunt-of-most-powerful-el-nino-in-70-years/",
+      "type": "intl"
+    },
+    "99": {
+      "title": "정부, 6차 석유 최고가격 적용 기간 연장…“주말 중동전 상황 보고 조...",
+      "url": "https://n.news.naver.com/mnews/article/032/0003453015?sid=101",
+      "type": "dom"
+    },
+    "100": {
+      "title": "중동 전쟁 끝나도 식량난 온다…유엔, 국제사회 긴급 지원 호소",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1527954",
+      "type": "dom"
+    },
+    "101": {
+      "title": "우크라이나, 모스크바 최대 드론 공습…정유시설 화재·공항 운영 차질",
+      "url": "https://www.kbmaeil.com/article/20260618500735",
+      "type": "dom"
+    },
+    "102": {
+      "title": "[미궁 속 K-석화] 중동 종전에 정부 나프타 보조금 6월 종료 확정...범용...",
+      "url": "https://www.ajunews.com/view/20260618155054093",
+      "type": "dom"
+    },
+    "103": {
+      "title": "2028년 한국산 2천㎥급 액화수소 운반선 출항한다…세계 최대 규모",
+      "url": "https://kidd.co.kr/news/246383",
+      "type": "dom"
+    }
+  }
+}
