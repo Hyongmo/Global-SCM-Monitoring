@@ -92,7 +92,8 @@ jobs:
           echo "=== git status ==="
           git status --short monitoring/${DATE_TAG}/ || true
 
-          git add \
+          # 파일별 개별 add (일부 파일 미생성 시에도 나머지 커밋되도록)
+          for f in \
             "monitoring/${DATE_TAG}/gdelt_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/naver_mon_classified_daily_${DATE_TAG}.csv" \
             "monitoring/${DATE_TAG}/gdelt_mon_daily_${DATE_TAG}.csv" \
@@ -101,9 +102,10 @@ jobs:
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.md" \
             "monitoring/${DATE_TAG}/daily_report_llm_${DATE_TAG}.docx" \
             "monitoring/${DATE_TAG}/daily_report_${DATE_TAG}.xlsx" \
-            docs/index.html \
-            monitoring/weekly/ \
-            || true
+            docs/index.html; do
+            [ -f "$f" ] && git add "$f"
+          done
+          git add monitoring/weekly/ 2>/dev/null || true
 
           echo "=== staged files ==="
           git diff --cached --name-only || true
