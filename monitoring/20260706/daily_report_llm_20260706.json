@@ -1,0 +1,2017 @@
+{
+  "date": "2026-07-06",
+  "date_key": "20260706",
+  "n_total": 2515,
+  "n_high": 38,
+  "n_med": 238,
+  "n_low": 339,
+  "n_none": 1900,
+  "n_intl": 150,
+  "n_dom": 126,
+  "llm_result": {
+    "executive_summary": "호르무즈 해협 선박 통항이 완만하게 회복되는 가운데[81], 아시아-미국 노선 컨테이너 운임이 $7,900을 돌파하며 급등세를 이어가고 있다[21]. 사우디아라비아는 8월 아시아향 원유 판매가를 20년 만에 최대 폭인 배럴당 $11 인하했으며[50][68], OPEC+는 5개월 연속 증산에 합의해 국제유가가 4개월 만의 저점 수준으로 하락했다[53][69]. 국내에서는 4대 정유사가 미-이란 전쟁 발발 이후 약 26조 원 규모의 유가 담합을 저질렀다는 혐의로 기소되는 초유의 사태가 발생했다[62][63][65]. 한국석유공사는 캐나다·UAE산 원유 약 155만 배럴을 국내에 반입해 원유 수급 안정성을 강화했으며[42][45], 해수부는 고등어 가격 급등에 대응해 노르웨이에 특사단을 파견했다[73][74].",
+    "categories": {
+      "1_Security": {
+        "overseas": "영국 군은 예멘 인근 홍해에서 화물선이 피격 신고를 했다고 밝혔으며[1][3], 카타르는 모든 해상 활동이 정상화됐다고 선언했음에도 홍해에서는 화물선 피격 신고가 이어지고 있다[13]. 바레인이 이란의 미사일·드론 공격을 받았다는 보도가 나오는 등 호르무즈 해협 인근 긴장이 지속되고 있으며[2], 트럼프 미국 대통령은 이란에 대해 협상 또는 무력 사용을 경고했다[5]. 우크라이나 특수부대는 러시아 유조선과 케르치 석유 터미널을 타격했고[7], 미국은 이란의 호르무즈 레버리지를 무력화하는 방안을 검토 중인 것으로 보도됐다[6]. 이스라엘 매체는 호르무즈 해협의 지정학적 통제권 문제를 다루는 분석을 게재했다[4].",
+        "korea_impact": "호르무즈 해협에 억류됐던 한국 선원 중 5명이 빠져나왔으나 23명이 여전히 해협 내에 남아 있는 것으로 확인됐다[11]. 후티 반군의 홍해 화물선 피격 신고가 국내 언론에도 보도되며 해상 안전 우려가 지속되고 있다[14]. 중국과 러시아는 칭다오에서 실사격·미사일 요격 훈련을 포함한 해상 연합훈련에 돌입했다[17][18][19][20]. 전문건설공제조합은 중동 리스크에 대응해 조합원 지원을 확대하기로 했다[15]."
+      },
+      "3_Freight": {
+        "overseas": "아시아-미국 노선 해상 컨테이너 운임이 $7,900을 돌파하며 급등했다[21]. 세계 컨테이너 지수(World Container Index)는 전주 대비 9% 상승했다[29]. 호르무즈 해협 선박 통항이 회복되면서 유가는 4개월 만의 저점 수준으로 하락했으며[24], 사우디아라비아는 미-이란 합의 이후 호르무즈를 통한 원유 수출을 확대했다[28]. 지브롤터에서는 홍해 사태의 영향이 서부 지중해 벙커 시장에 미치는 파급을 우려하는 목소리가 나왔다[27].",
+        "korea_impact": "부산항 발 컨테이너 운임이 9주 연속 상승하며 KCCI 지수가 4,330포인트를 기록했고, 건화물 운임도 반등했다[34]. 호르무즈 해협 통과 선박의 3분의 1이 오만 연안 항로를 이용하고 있는 것으로 나타났다[31]. 국내선 유류할증료는 8월 기준 편도 7,700원 인하되어 1만 6,500원 수준으로 31% 하락했다[32][33][35]."
+      },
+      "4_PortCargo": {
+        "overseas": "호르무즈 해협에 묶여 있던 황(sulphur) 화물이 부식 위험에 처해 있다는 전문가 경고가 나왔다[37]. 인도 정부는 비료 선박 15척이 호르무즈를 통과해 카리프 시즌 공급 우려가 완화됐다고 밝혔으며[40], 인도 정부는 긴급 천연가스 공급 제한 조치를 철회했다[39]. 인도 BPCL은 이란산 원유 수입 재개를 준비하며 공급업체와 협의를 시작했다[38].",
+        "korea_impact": "한국석유공사는 중동 위기 속에서 캐나다·UAE산 원유 약 154~155만 배럴을 국내에 반입해 원유 수급 안정성을 강화했다[42][43][44][45]. 가덕도 신공항 건설이 중동 사태로 인해 또다시 지연될 우려가 제기됐으며[46], 경남·부산 건설사들은 가덕 신공항 사업 보이콧도 불사하겠다는 입장을 밝혔다[47]. 부산항만공사(BPA)는 중국 산동성항만그룹과 동북아 항만·물류 협력 강화에 합의했다[48][49]."
+      },
+      "5_EconFinance": {
+        "overseas": "사우디아라비아가 8월 아시아향 원유 판매가를 배럴당 $11 인하했으며, 이는 20년 만에 최대 폭의 인하로 보도됐다[50]. OPEC+는 국제유가 하락 속에서 8월 하루 18만 8,000배럴 추가 증산에 합의했으며[59][92], 국제유가는 이란 분쟁 이전 수준으로 회귀하는 흐름을 보이고 있다[55]. 한국 4대 정유사가 싱가포르 및 미국 언론에 의해 가스 가격 담합 혐의로 기소됐다는 사실이 해외에서도 보도됐다[51][52]. 지정학적 리스크와 미국 자산 매각이 겹칠 경우 경기침체 가능성이 있다는 분석도 제기됐다[8].",
+        "korea_impact": "국내 4대 정유사(HD현대오일뱅크 포함)가 미-이란 전쟁 발발 이후 약 26조 원 규모의 유가 담합을 저질렀다는 혐의로 검찰에 기소됐다[60][61][62][63][65][66]. 검찰은 정유사들이 전쟁을 빌미로 가격을 인상하고 허위 보고까지 했다고 밝혔으며[65], 이는 역대 최대 규모의 담합 사건으로 보도됐다[63]. 사우디아라비아의 8월 아시아향 원유 가격 대폭 인하 소식이 국내에도 전해졌으며[68], OPEC+의 5개월 연속 증산 합의로 국제유가가 60달러대로 하락했다[69]."
+      },
+      "6_Seafood": {
+        "overseas": "",
+        "korea_impact": "수입 고등어 가격이 급등하자 해양수산부가 노르웨이에 특사단을 파견했다[71][72][73][74]. 이는 고등어 수급 안정을 위한 긴급 대응 조치로 보인다[72][74]."
+      },
+      "7_Shipping": {
+        "overseas": "호르무즈 해협에서 유조선 운항이 완만하게 회복되고 있으나 에너지 공급 불안은 지속되고 있다[81]. 일본 관련 선박 10척이 호르무즈 해협을 통과해 빠져나온 것으로 데이터에서 확인됐다[79][80]. UAE는 이란 전쟁 기간 중 '다크 탱커' 전술을 활용해 호르무즈를 우회하는 방식으로 원유를 수출했던 것으로 보도됐다[78]. 유조선들은 호르무즈 통과 시 오만 연안 항로를 이용하는 방식으로 운항하고 있다[76].",
+        "korea_impact": "한국 해운사가 전쟁 중 원유 셔틀 운항으로 막대한 수익을 올렸다는 사실이 외신에 잇따라 조명됐다[82]. K-조선은 상반기 선박 수주가 전년 대비 60% 증가하며 고부가 선박 분야에서 세계 1위를 유지하고 있으나[85], 6월 수주 점유율은 10% 아래로 하락했다[86]. 국내 해상운송 인력 중 외국인 노동자 비율이 내국인을 추월한 것으로 나타났다[84]. 대한항공은 200억 엔 규모의 사무라이본드 발행에 성공했다[83]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "우크라이나가 3,000km 드론 공격으로 러시아 최대 정유공장인 옴스크 정유공장을 타격했다[88][89]. QatarEnergy는 방글라데시에 대한 2026년 LNG 예정 공급량을 절반으로 줄였다[87]. OPEC+는 8월 하루 18만 8,000배럴 추가 증산을 발표했으며[92], 중동발 석유 수출이 증가하고 있으나 위험 요인은 여전히 남아 있다는 IEA 분석이 나왔다[95]. 독일은 미국산 LNG 의존도를 높이며 에너지 위기를 극복하고 있는 것으로 보도됐다[93].",
+        "korea_impact": "국내 4대 정유사 중 HD현대오일뱅크와 SK가 가격을 인상하자 GS와 에쓰오일도 뒤따라 인상했으며, 정유사들은 '통상적 영업활동'이라고 해명했다[99]. 요소수 품귀 우려가 제기되며 관련 주식이 일제히 급등했다[106]. 한전은 폭염과 대정전 복합위기를 가정한 전력 수급 비상 훈련을 실시했다[97]. 프랑스의 최악 폭염으로 옥수수 생산량이 30% 감소하며 국제 곡물시장에 비상이 걸렸다[102]. 중동 전쟁으로 피해를 입은 중소기업들의 애로 접수가 10건을 넘어선 것으로 보도됐다[103]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "홍해에서 화물선 피격 신고가 이어지고 있으며[1][3], 호르무즈 해협 통과 선박의 3분의 1이 오만 연안 우회 항로를 이용하고 있다[76]. 일본 관련 선박 10척이 호르무즈를 통과해 빠져나왔으며[79][80], UAE는 전쟁 기간 중 다크 탱커 전술로 호르무즈를 우회했던 것으로 밝혀졌다[78]. 호르무즈 해협 선박 통항은 완만하게 회복되고 있으나 에너지 공급 불안은 지속되고 있다[81].",
+          "korea_impact": "호르무즈 해협에 한국 선원 23명이 여전히 남아 있어 인명 안전 우려가 지속되고 있다[11]. 한국석유공사는 중동 위기 속에서 캐나다·UAE산 원유 약 155만 배럴을 국내에 반입해 수급 안정을 도모했다[42][45]. 부산항 발 컨테이너 운임이 9주 연속 상승하며 KCCI 4,330포인트를 기록했다[34]."
+        },
+        "source": {
+          "overseas": "사우디아라비아는 미-이란 합의 이후 호르무즈를 통한 원유 수출을 확대했으며[28], 8월 아시아향 원유 판매가를 배럴당 $11 인하했다[50]. OPEC+는 8월 하루 18만 8,000배럴 추가 증산에 합의해 5개월 연속 증산을 이어가고 있다[59][92]. 인도 BPCL은 이란산 원유 수입 재개를 준비하며 공급업체와 협의를 시작했다[38].",
+          "korea_impact": "국제유가가 이란 분쟁 이전 수준으로 회귀하는 흐름 속에서[55], 사우디의 아시아향 원유 가격 대폭 인하 소식이 국내에 전해졌다[68]. OPEC+의 5개월 연속 증산 합의로 국제유가가 60달러대로 하락했다[69]. 국내선 유류할증료는 8월 기준 31% 인하됐다[32][35]."
+        },
+        "logistics": {
+          "overseas": "아시아-미국 노선 컨테이너 운임이 $7,900을 돌파했으며[21], 세계 컨테이너 지수(World Container Index)는 전주 대비 9% 상승했다[29]. 호르무즈 해협에 묶인 황 화물이 부식 위험에 처해 있다는 전문가 경고가 나왔다[37]. 지브롤터에서는 홍해 사태의 영향이 서부 지중해 벙커 시장에 미칠 파급을 우려하는 목소리가 나왔다[27].",
+          "korea_impact": "한국 해운사가 전쟁 중 원유 셔틀 운항으로 막대한 수익을 올렸다는 사실이 외신에 잇따라 조명됐다[82]. K-조선은 상반기 선박 수주가 60% 증가했으나 6월 수주 점유율은 10% 아래로 하락했다[85][86]. 국내 해상운송 인력 중 외국인 노동자 비율이 내국인을 추월한 것으로 나타났다[84]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "국내 4대 정유사가 미-이란 전쟁 발발 이후 약 26조 원 규모의 유가 담합을 저질렀다는 혐의로 검찰에 기소됐으며[62][63][65], 이는 역대 최대 규모의 담합 사건으로 보도됐다[63]. OPEC+의 5개월 연속 증산 합의로 국제유가가 60달러대로 하락했으며[69], 사우디의 8월 아시아향 원유 가격 대폭 인하 소식도 전해졌다[68]. 국내선 유류할증료는 8월 기준 31% 인하됐다[32][35].",
+        "정유·화학": "4대 정유사가 26조 원 규모 유가 담합 혐의로 기소된 가운데[62][65], HD현대오일뱅크·SK에 이어 GS·에쓰오일도 가격 인상에 동참했다[99]. 정유·석화업계는 가격 인하와 공급가 투명화를 통한 상생 방안을 내놓았다[104]. 석유화학 업계는 800조 원 규모 투자 유치를 앞두고 체질 개선이 시급하다는 지적이 나왔으며[100], LG화학은 고부가 사업 집중 및 석화 의존도 축소 전략을 발표했다[101].",
+        "해운·물류": "한국 해운사가 전쟁 중 원유 셔틀 운항으로 막대한 수익을 올렸다는 사실이 외신에 잇따라 조명됐다[82]. K-조선은 상반기 선박 수주가 60% 증가하며 고부가 선박 분야 세계 1위를 유지했으나[85], 6월 수주 점유율은 10% 아래로 하락했다[86]. 부산항 발 컨테이너 운임은 9주 연속 상승해 KCCI 4,330포인트를 기록했다[34].",
+        "식품·농업": "수입 고등어 가격이 급등하자 해양수산부가 노르웨이에 특사단을 파견했다[71][72][73][74]. 프랑스의 최악 폭염으로 옥수수 생산량이 30% 감소하며 국제 곡물시장에 비상이 걸렸다[102]. 요소수 품귀 우려가 제기되며 관련 주식이 일제히 급등했다[106].",
+        "기타산업": "한전은 폭염과 대정전 복합위기를 가정한 전력 수급 비상 훈련을 실시했다[97]. 중동 전쟁으로 피해를 입은 중소기업들의 애로 접수가 10건을 넘어섰다[103]. 가덕도 신공항 건설이 중동 사태로 인해 또다시 지연될 우려가 제기됐으며 경남·부산 건설사들은 보이콧도 불사하겠다는 입장을 밝혔다[46][47]."
+      }
+    },
+    "changes": {
+      "new": [
+        "국내 4대 정유사, 미-이란 전쟁 발발 이후 약 26조 원 규모 유가 담합 혐의로 검찰 기소 (역대 최대 규모)[62][63][65]",
+        "해양수산부, 수입 고등어 가격 급등 대응을 위해 노르웨이에 특사단 파견[73][74]",
+        "사우디아라비아, 8월 아시아향 원유 판매가 배럴당 $11 인하 (20년 만에 최대 폭)[50][68]",
+        "우크라이나, 3,000km 드론 공격으로 러시아 옴스크 정유공장 타격[88][98]",
+        "중국·러시아, 칭다오에서 실사격·미사일 요격 포함 해상 연합훈련 돌입[17][18][19][20]",
+        "요소수 품귀 우려 제기, 관련 주식 급등[106]"
+      ],
+      "escalated": [
+        "아시아-미국 노선 컨테이너 운임 $7,900 돌파, 세계 컨테이너 지수 전주 대비 9% 상승[21][29]",
+        "부산항 발 컨테이너 운임 9주 연속 상승, KCCI 4,330포인트 기록[34]",
+        "호르무즈 해협 내 한국 선원 23명 여전히 잔류[11]",
+        "홍해 화물선 피격 신고 지속[1][3][14]"
+      ],
+      "resolved": [
+        "호르무즈 해협 선박 통항 완만하게 회복, 유가 4개월 만의 저점 수준으로 하락[24][81]",
+        "인도 정부, 긴급 천연가스 공급 제한 조치 철회[39]",
+        "OPEC+ 5개월 연속 증산 합의로 국제유가 60달러대 하락[69]",
+        "한국석유공사, 캐나다·UAE산 원유 약 155만 배럴 국내 반입 완료[42][45]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "British military says cargo ship reports attack in the Red Sea off Yemen",
+        "url": "https://www.yahoo.com/news/world/articles/british-military-says-cargo-ship-090250437.html",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East , tension rises in the Strait of Hormuz . Bahrain :  Attacked by Iranian missiles and drones  ",
+        "url": "https://www.odnako.org/middle-east-tension-rises-in-the-strait-of-hormuz-bahrain-attacked-by-iranian-missiles-and-drones/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship attacked in Red Sea off Yemen coast : British military",
+        "url": "https://navhindtimes.in/worldnews/cargo-ship-attacked-in-red-sea-off-yemen-coast-british-military/",
+        "type": "intl"
+      },
+      {
+        "title": "Handing the Strait of Hormuz to Iran and the Gulf",
+        "url": "https://themedialine.org/mideast-mindset/handing-the-strait-of-hormuz-to-iran-and-the-gulf/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Iran faces deal or force",
+        "url": "https://www.prokerala.com/news/articles/a1784655.html",
+        "type": "intl"
+      },
+      {
+        "title": "Washington Plan to Neutralize Iran Hormuz Leverage",
+        "url": "https://oilprice.com/Energy/Energy-General/Washingtons-Plan-to-Neutralize-Irans-Hormuz-Leverage.html",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine Special Forces Strike Russian Oil Tanker , Kerch Oil Terminal",
+        "url": "https://www.kyivpost.com/post/79697",
+        "type": "intl"
+      },
+      {
+        "title": "ESM sees recession if US sell - off , new MidEast war hit",
+        "url": "https://www.rte.ie/news/business/2026/0706/1581987-esm-sees-recession-if-us-sell-off-new-mideast-war-hit/",
+        "type": "intl"
+      },
+      {
+        "title": "Iranians call for vengeance on Trump during Khamenei funeral",
+        "url": "https://www.samaa.tv/2087353130-iranians-call-for-vengeance-on-trump-during-khamenei-funeral",
+        "type": "intl"
+      },
+      {
+        "title": "The  navalization  of economic warfare sees trade routes become zones of force rather than rules | The Conversation",
+        "url": "http://www.bozemandailychronicle.com/ap_news/conversation/the-navalization-of-economic-warfare-sees-trade-routes-become-zones-of-force-rather-than-rules/article_1b31fffc-048b-5c8a-a729-eb40029f2295.html",
+        "type": "intl"
+      },
+      {
+        "title": "  Strategically aligned : Singapore , Indonesia pledge to keep Strait of Malacca open and free",
+        "url": "https://timesofindia.indiatimes.com/world/rest-of-world/strategically-aligned-singapore-indonesia-pledge-to-keep-strait-of-malacca-open-and-free/articleshow/132215725.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Today . Az - NATO members may discuss protection of Strait of Hormuz at upcoming summit",
+        "url": "http://today.az/news/regions/268745.html",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz Service Fee Explained : How Iran Plan Could Raise India Oil and Fuel Prices",
+        "url": "https://www.outlookindia.com/national/hormuz-service-fee-explained-will-india-pay-more-for-oil-if-iran-starts-charging-ships",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran peace deal - Khamenei killers will not die  a natural death , says Iranian official amid funeral processions",
+        "url": "https://dunyanews.tv/en/Event-Reporting/265",
+        "type": "intl"
+      },
+      {
+        "title": "German Prosecutors Charge Ukrainian In Nord Stream",
+        "url": "https://www.marinelink.com/news/german-prosecutors-charge-ukrainian-nord-540859",
+        "type": "intl"
+      },
+      {
+        "title": "Super Typhoon Bavi batters Guam and Northern Mariana Islands",
+        "url": "https://www.koat.com/article/super-typhoon-bavi-hits-guam-and-marianas/71828439",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns Hormuz Strait not  theatre  for transregional power military display",
+        "url": "https://www.sentinelassam.com/more-news/international/iran-warns-hormuz-strait-not-theatre-for-transregional-powers-military-display",
+        "type": "intl"
+      },
+      {
+        "title": "Jaishankar Meets Qatar PM , Hails Mediation as US - Iran Talks Resume",
+        "url": "https://www.siliconindia.com/news/general/jaishankar-meets-qatar-pm-hails-mediation-as-usiran-talks-resume-nid-241370-cid-1.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran begins procession for supreme leader funeral",
+        "url": "https://www.standard.net.au/story/9305057/iran-begins-procession-for-supreme-leaders-funeral/",
+        "type": "intl"
+      },
+      {
+        "title": "Islamabad Emerges as Likely Venue for US - Iran Technical Talks on Nuclear Deal",
+        "url": "https://dailypioneer.com/news/next-round-of-us-iran-talks-likely-to-be-held-at-islamabad-report",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Holds Massive Funeral for Ayatollah Khamenei Amid Rising Anti - US and Anti - Israel Tensions",
+        "url": "https://dailypioneer.com/news/irans-top-officials-attend-prayer-for-late-supreme-leader-khamenei-in-tehran",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Envoy to China Says Beijing to Get Hormuz Concessions",
+        "url": "https://drudge.com/news/293050/irans-envoy-china-says-beijing-get",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War supplemental deepens FY27 budget uncertainty",
+        "url": "https://www.defenseone.com/threats/2026/07/iran-war-supplemental-deepens-fy27-budget-uncertainty/414588/",
+        "type": "intl"
+      },
+      {
+        "title": "Super Typhoon Bavi smacks into US Pacific island territories home to key military bases",
+        "url": "https://www.cnn.com/2026/07/05/asia/super-typhoon-pacific-islands-us-military-intl-hnk",
+        "type": "intl"
+      },
+      {
+        "title": "Islamabad frontrunner to host US - Iran talks",
+        "url": "https://phnompenhpost.com/international/islamabad-frontrunner-to-host-us-iran-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Next round of US - Iran talks likely in Islamabad : Report",
+        "url": "https://timesofindia.indiatimes.com/world/pakistan/next-round-of-us-iran-talks-likely-in-islamabad-report/articleshow/132205230.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Jaishankar meets Qatar PM , lauds mediation efforts as US , Iran return to negotiating table",
+        "url": "https://timesofindia.indiatimes.com/india/jaishankar-meets-qatar-pm-lauds-mediation-efforts-as-us-iran-return-to-negotiating-table/articleshow/132205303.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Trump To Discuss Iran Maritime Security At NATO Summit",
+        "url": "http://www.asiabulletin.com/news/279168668/trump-to-discuss-iran-maritime-security-at-nato-summit",
+        "type": "intl"
+      },
+      {
+        "title": "Iran To Grant China ,  Friendly  Countries  Special Consideration  On Hormuz Fees",
+        "url": "https://www.zerohedge.com/geopolitical/iran-grant-china-friendly-countries-special-consideration-hormuz-fees",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Begins Oil Sale Talks With Japan Under U . S . Sanctions Waiver Amid Shipping Risks",
+        "url": "http://www.econotimes.com/Iran-Begins-Oil-Sale-Talks-With-Japan-Under-US-Sanctions-Waiver-Amid-Shipping-Risks-1745954",
+        "type": "intl"
+      },
+      {
+        "title": "호르무즈 해협 내 韓 선원 5명 빠져나와…23명 남아",
+        "url": "https://n.news.naver.com/mnews/article/003/0014049420?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "\"예멘 홍해서 화물선, 무장세력에 피격 신고\"",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1529754",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 “모든 해상 활동 정상화”…홍해선 화물선 피격 신고",
+        "url": "https://n.news.naver.com/mnews/article/056/0012212169?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티반군 움직이나…英 \"홍해 지나던 화물선 피격\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000624490?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "전문건설공제조합, 중동 리스크 대응 조합원 지원 확대",
+        "url": "http://www.ikld.kr/news/articleView.html?idxno=337133",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란 종전 이후 주목받을 고압경제로 본 올해 하반기 이후 세계 주...",
+        "url": "https://n.news.naver.com/mnews/article/215/0001257800?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중·러, 칭다오서 연합훈련 돌입...\"미사일 요격 훈련\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002375490?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중러, 칭다오서 '연합 훈련'…\"실사격·미사일 요격 실시\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000882065?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중러, 칭다오서 연합훈련 돌입…\"실사격·미사일 요격 실시\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001370087?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중러, 칭다오서 해상 연합훈련 돌입…미사일 요격·실사격 전개",
+        "url": "https://n.news.naver.com/mnews/article/016/0002666451?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 휴전 60일 시험대…핵·제재·이스라엘 충돌",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16125638",
+        "type": "dom"
+      },
+      {
+        "title": "이란 의장 \"美와 휴전 이행 어렵지만 가능…이스라엘 인정 안 해\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014049565?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "샤를드골호, 집으로 간다…미·이란 해빙에 핵항모 철수",
+        "url": "https://n.news.naver.com/mnews/article/215/0001257795?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "프랑스 핵항모, 중동서 철수…호르무즈 전력은 유지",
+        "url": "https://www.newspim.com/news/view/20260706001193",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 종전 국면에…프랑스, 중동서 핵항모 철수",
+        "url": "https://n.news.naver.com/mnews/article/422/0000882095?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란 종전 국면에 프랑스, 중동서 핵항모 철수…기뢰제거함은 유지",
+        "url": "https://n.news.naver.com/mnews/article/448/0000624740?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 종전 국면에…프랑스 핵항모 중동서 철수",
+        "url": "https://n.news.naver.com/mnews/article/056/0012212573?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中, 태평양 향해 전략미사일 발사…美전문가 \"미 본토 사정권 SLBM 추정...",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260706010002183",
+        "type": "dom"
+      },
+      {
+        "title": "중국 \"핵잠수함, 태평양 공해상에 전략미사일 발사\"…일본, 우려 표명",
+        "url": "https://n.news.naver.com/mnews/article/055/0001370100?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "일본 정부 \"중국 군사 동향...국제사회 심각한 우려\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002375481?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中 “핵잠수함, 태평양 공해상에 전략미사일 시험 발사”",
+        "url": "https://n.news.naver.com/mnews/article/005/0001859254?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중국, 태평양 공해상에 SLBM 쐈다... 美 동맹 향한 무력 과시",
+        "url": "https://n.news.naver.com/mnews/article/469/0000940732?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中 핵잠수함, 태평양에 전략미사일 발사…日 \"심각한 우려\"",
+        "url": "https://n.news.naver.com/mnews/article/079/0004165431?sid=104",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Hormuz In The Rearview As Asia - US Ocean Container Rates Soar Past $7 , 900",
+        "url": "https://www.zerohedge.com/geopolitical/hormuz-rearview-asia-us-ocean-container-rates-soar-past-7900",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ approves further oil output increase as Hormuz exports start to recover",
+        "url": "https://www.cnbcafrica.com/2026/opec-approves-further-oil-output-increase-as-hormuz-exports-start-to-recover",
+        "type": "intl"
+      },
+      {
+        "title": "The Korean tanker tycoon behind UAE secret Hormuz oil runs",
+        "url": "https://www.moneycontrol.com/world/the-korean-tanker-tycoon-behind-uae-s-secret-hormuz-oil-runs-article-13966921.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Hold Near 4 - Month Lows as Hormuz Shipping Recovery Raises Glut Fears",
+        "url": "https://www.hngn.com/articles/271907/20260705/oil-prices-hold-near-4-month-lows-hormuz-shipping-recovery-raises-glut-fears.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran … Trump … Conflict … Midday … 7 / 6 / 2026 …. The Strait of Hormuz see rising Ship traffic",
+        "url": "https://politicaldog101.com/2026/07/irantrumpconflictmidday-7-6-2026-the-strait-of-hormuz-sees-rising-ship-traffic/",
+        "type": "intl"
+      },
+      {
+        "title": "The supertanker tycoon making millions on Hormuz shuttle runs",
+        "url": "https://www.livemint.com/companies/the-supertanker-tycoon-making-millions-on-hormuz-shuttle-runs-11783336873303.html",
+        "type": "intl"
+      },
+      {
+        "title": "Gibraltar worried about RED impact on West Med bunker markets | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/gibraltar-worried-about-red-impact-on-west-med-bunker-markets/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U . S .- Iran deal",
+        "url": "https://www.hellenicshippingnews.com/saudi-arabia-has-ramped-up-oil-shipments-through-the-strait-of-hormuz-since-u-s-iran-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Drery : World Container Index Up 9 % Last Week | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/drery-world-container-index-up-9-last-week/",
+        "type": "intl"
+      },
+      {
+        "title": "Supertanker Empire , Dark Transits , and a Billion - Dollar Gamble in the Strait of Hormuz",
+        "url": "https://slguardian.org/supertanker-empire-dark-transits-and-a-billion-dollar-gamble-in-the-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "One tycoon makes millions from  dark  journeys on a dangerous oil route while others feared Hormuz",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/one-tycoon-makes-millions-from-dark-journeys-on-a-dangerous-oil-route-while-others-feared-hormuz-sinokor-supertankers-korea-ga-hyun-chung/articleshow/132207302.cms",
+        "type": "intl"
+      },
+      {
+        "title": "호르무즈 해협 통과 선박 3분의 1 '오만 연안 항로' 이용",
+        "url": "https://n.news.naver.com/mnews/article/003/0014049583?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "8월 국내선 유류할증료 1만 6천500원‥31% 인하",
+        "url": "https://jejumbc.com/NewsArticle/849452",
+        "type": "dom"
+      },
+      {
+        "title": "국내선 유류할증료 하락…여름휴가철 기대감 증폭",
+        "url": "https://www.jemin.com/news/articleView.html?idxno=839893",
+        "type": "dom"
+      },
+      {
+        "title": "부산항발 컨 운임 9주째 상승…KCCI 4330p·건화물도 반등",
+        "url": "https://n.news.naver.com/mnews/article/629/0000513671?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "국내항공 8월 국내선 유류할증료 '편도 7700원' 인하",
+        "url": "https://www.hidomin.com/news/articleView.html?idxno=712187",
+        "type": "dom"
+      },
+      {
+        "title": "Ships Are Moving In and Out of the Persian Gulf, Easing Oil Prices",
+        "url": "https://www.nytimes.com/2026/07/06/business/hormuz-strait-shipping-oil.html?partner=naver",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Stranded sulphur cargoes in Hormuz face mounting corrosion risk , warns expert",
+        "url": "https://tradearabia.com:443/News/464721/Stranded-sulphur-cargoes-in-Hormuz-face-mounting-corrosion-risk,-warns-expert",
+        "type": "intl"
+      },
+      {
+        "title": "BPCL prepares for return of Iranian crude , starts supplier talks",
+        "url": "https://www.moneycontrol.com/news/business/bpcl-prepares-for-return-of-iranian-crude-starts-supplier-talks-13966463.html",
+        "type": "intl"
+      },
+      {
+        "title": "Govt withdraws emergency natural gas supply curbs as Strait",
+        "url": "https://www.easternmirrornagaland.com:443/govt-withdraws-emergency-natural-gas-supply-curbs-as-strait-of-hormuz-lng-shipments-resume",
+        "type": "intl"
+      },
+      {
+        "title": "Centre says 15 fertiliser ships have cleared Hormuz , easing Kharif supply concerns",
+        "url": "https://www.hindustantimes.com/india-news/centre-says-15-fertiliser-ships-have-cleared-hormuz-easing-kharif-supply-concerns-101783301197505.html",
+        "type": "intl"
+      },
+      {
+        "title": "석유公, 중동 위기에 원유 150만 배럴 도입",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=388386",
+        "type": "dom"
+      },
+      {
+        "title": "석유공사, 캐나다·UAE산 원유 155만 배럴 반입…원유수급 안정정↑",
+        "url": "https://n.news.naver.com/mnews/article/082/0001388572?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "석유공사, 해외 원유 반입…울산 기름값 안정 힘 보탰다",
+        "url": "https://www.iusm.co.kr/news/articleView.html?idxno=1064984",
+        "type": "dom"
+      },
+      {
+        "title": "석유공사, 해외 생산원유 국내 반입…원유 수급 안정성 강화",
+        "url": "http://www.ikld.kr/news/articleView.html?idxno=337138",
+        "type": "dom"
+      },
+      {
+        "title": "석유공사, 중동 위기 뚫고 캐나다·UAE 생산 원유 154만여배럴 국내 반입",
+        "url": "https://www.cnbnews.com/news/articleView.html?idxno=1007091",
+        "type": "dom"
+      },
+      {
+        "title": "가덕도신공항 중동사태에 또 지연 우려?",
+        "url": "https://busanmbc.co.kr/01_new/new01_view.asp?idx=286838",
+        "type": "dom"
+      },
+      {
+        "title": "경남·부산 건설사, 가덕신공항 ‘보이콧’ 불사",
+        "url": "http://www.knnews.co.kr/news/articleView.php?idxno=1545740",
+        "type": "dom"
+      },
+      {
+        "title": "BPA, 중국과 항만·물류 협력 확대한다",
+        "url": "http://www.gnmaeil.com/news/articleView.html?idxno=590139",
+        "type": "dom"
+      },
+      {
+        "title": "부산항만공사, 중국 산동성항만그룹과 동북아 항만·물류 협력 강화",
+        "url": "http://www.newstown.co.kr/news/articleView.html?idxno=708311",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Saudi Arabia slashes August crude prices for Asia by $11 a barrel in biggest cut in over 20 years",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/saudi-arabia-slashes-august-crude-prices-for-asia-by-11-a-barrel-in-biggest-cut-in-over-20-years/articleshow/132217320.cms",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea four oil refiners charged with price collusion",
+        "url": "https://www.asiaone.com:443/asia/south-koreas-four-oil-refiners-charged-price-collusion",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea Charges Refiners With Gas Price Gouging",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Charges-Refiners-With-Gas-Price-Gouging.html",
+        "type": "intl"
+      },
+      {
+        "title": "Prosecutors indict HD Hyundai Oilbank in $17 bil . price - fixing case after US - Iran war outbreak",
+        "url": "https://www.koreatimes.co.kr/southkorea/law-crime/20260706/prosecutors-indict-hd-hyundai-oilbank-in-17-bil-price-fixing-case-after-us-iran-war-outbreak",
+        "type": "dom"
+      },
+      {
+        "title": "Prosecutors indict 4 major refiners in W26tr price - fixing case after US - Iran war outbreak",
+        "url": "https://www.koreaherald.com/article/10799245",
+        "type": "dom"
+      },
+      {
+        "title": "Opec+ countries to raise oil output after prices fall",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opec-countries-raise-oil-output-after-prices-fall",
+        "type": "intl"
+      },
+      {
+        "title": "Crude oil prices drop to prices from nearly a year ago",
+        "url": "https://www.kmvt.com/2026/07/06/crude-oil-prices-drop-prices-nearly-year-ago/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices head back to pre - Iran conflict levels : report",
+        "url": "https://wcti12.com/news/nation-world/oil-prices-head-back-to-pre-iran-conflict-levels-report-donald-trump-strait-of-hormuz-white-house-jared-kushner",
+        "type": "intl"
+      },
+      {
+        "title": "Stocks inch up as oil weighed by supply while earnings loom",
+        "url": "https://www.zawya.com/en/capital-markets/equities/stocks-inch-up-as-oil-weighed-by-supply-while-earnings-loom-c9ruc5bc",
+        "type": "intl"
+      },
+      {
+        "title": "Stock markets rise for 4th day , close at over 2 - month high on gains in bank , oil shares",
+        "url": "https://www.tribuneindia.com/news/business/stock-markets-rise-for-4th-day-close-at-over-2-month-high-on-gains-in-bank-oil-shares/",
+        "type": "intl"
+      },
+      {
+        "title": "Crude oil relief : OMCs may break even on petrol , diesel rates soon ; what it means for retail prices",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/crude-oil-relief-omcs-may-break-even-on-petrol-diesel-rates-soon-what-it-means-for-retail-prices/articleshow/132215124.cms",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | Newsradio 92 . 7 WBEX",
+        "url": "https://wbex.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "World weathers historic oil shock , but depleted reserves bring risks",
+        "url": "https://www.dailysabah.com/business/economy/world-weathers-historic-oil-shock-but-depleted-reserves-bring-risks",
+        "type": "intl"
+      },
+      {
+        "title": "Markets on Wall Street quietly mixed while oil prices slip",
+        "url": "https://www.baltimoresun.com/2026/07/06/wall-street-markets-oil-prices/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC Oil Output Rises 188K bpd as Crude Drops Below $70",
+        "url": "https://www.riotimesonline.com/opec-oil-output-increase-august-2026-latin-america/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil slips after OPEC+ plans August output hike",
+        "url": "https://www.thetrucker.com/trucking-news/business/oil-slips-after-opec-plans-august-output-hike",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | WJBO Newsradio 1150 AM & 98 . 7 FM",
+        "url": "https://wjbo.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | Newsradio WFLA Orlando",
+        "url": "https://wflaorlando.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Markets on Wall Street quietly mixed while oil prices slip after OPEC+ plans August output hike",
+        "url": "https://www.smdailyjournal.com/business/markets-on-wall-street-quietly-mixed-while-oil-prices-slip-after-opec-plans-august-output/article_21db4350-9f7a-57b7-854e-4b5f1cc38132.html",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ to prioritise oil supply over price floor , says Kotak Securities analyst",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/opec-to-prioritise-oil-supply-over-price-floor-until-hormuz-normalises-brent-likely-to-stay-below-85-analyst/article71188809.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Rupee falls 20 paise to 95 . 38 against US dollar as greenback strengthens",
+        "url": "https://www.thehindubusinessline.com/markets/forex/rupee-slips-20-paise-as-stronger-dollar-offsets-gains-from-lower-crude-prices/article71188960.ece",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | Newstalk 1400 , 104 . 5 , and 105 . 9 WJMX",
+        "url": "https://newstalk1400online.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 1410 AM & 100 . 9 FM",
+        "url": "https://newsradio1410.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Can the World Withstand Another Oil Shock After the Iran War ?  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/publicpolicy/can-the-world-withstand-another-oil-shock-after-the-iran-war",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 1410 WDOV",
+        "url": "https://wdov.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Gold steady , silver slips as easing Fed rate hike expectations , lower crude prices support bullion",
+        "url": "https://www.ibtimes.co.in/gold-steady-silver-slips-easing-fed-rate-hike-expectations-lower-crude-prices-support-bullion-903595",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ approves 188 , 000bpd oil output increase - The Nation Newspaper",
+        "url": "https://thenationonlineng.net/opec-approves-188000bpd-oil-output-increase/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices decline after OPEC+ agrees to increase output",
+        "url": "https://sana.sy/en/economic/2327609/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 570 WWNC",
+        "url": "https://wwnc.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 830 KHVH",
+        "url": "https://khvhradio.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | Newsradio WOOD 1300 and 106 . 9 FM",
+        "url": "https://woodradio.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil drops more than 1 % after Opec+ raises August output targets",
+        "url": "https://www.offshore-technology.com/news/oil-drops-opec-raises-august-output-targets/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Edges Lower On Supply Glut Fears",
+        "url": "https://www.rttnews.com/story.aspx?Id=3664729",
+        "type": "intl"
+      },
+      {
+        "title": "Stock market today : Sensex jumps 500 points , Nifty 50 closes above 24 , 400 ; investors earn ₹2 lakh crore in a day",
+        "url": "https://www.livemint.com/market/stock-market-news/stock-market-today-sensex-jumps-500-points-nifty-50-closes-above-24-400-investors-earn-2-lakh-crore-in-a-day-11783330973420.html",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | Talk Radio 98 . 3 WLAC",
+        "url": "https://wlac.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 920 AM & 104 . 7 FM",
+        "url": "https://newsradiori.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Global shares are mixed and oil slips after OPEC+ plans August output hike",
+        "url": "https://www.ksat.com/business/2026/07/06/us-futures-rise-and-asian-shares-trade-mixed-as-oil-prices-decline-with-increased-output/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ agrees another modest output rise as oil prices fall back to pre - war levels",
+        "url": "https://www.euronews.com/business/2026/07/06/opec-agrees-another-modest-output-rise-as-oil-prices-fall-back-to-pre-war-levels",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ will prioritize market availability over price floor till Hormuz normalizes , Brent likely to stay under $85 : Analyst",
+        "url": "https://aninews.in/news/business/opec-will-prioritize-market-availability-over-price-floor-till-hormuz-normalizes-brent-likely-to-stay-under-85-analyst20260706152259/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 98 . 3 WMAN",
+        "url": "https://wmanfm.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop",
+        "url": "https://talkradio1059.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | NewsRadio WKCY",
+        "url": "https://newsradiowkcy.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | NewsRadio 1170 WWVA",
+        "url": "https://newsradio1170.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices mixed as OPEC+ output hike meets lingering Hormuz uncertainty | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/oil-prices-mixed-as-opec-output-hike-meets-lingering-hormuz-uncertainty/",
+        "type": "intl"
+      },
+      {
+        "title": "Sensex touches 78 , 370 , Nifty tops 24 , 450 as bank stocks , lower crude lift markets",
+        "url": "https://www.thehindubusinessline.com/markets/sensex-touches-78350-nifty-tops-24440-as-bank-stocks-lower-crude-lift-markets/article71188323.ece",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | NewsRadio 1000 KTOK",
+        "url": "https://ktok.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | NewsRadio 1360 KKTX",
+        "url": "https://1360kktx.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Talk 1090 WKBZ - AM",
+        "url": "https://newstalk1090.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil slips after OPEC+ agrees to raise output targets",
+        "url": "https://dunyanews.tv/en/Business/961027-oil-slips-after-opec-agrees-to-raise-output-targets",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | News Radio 105 . 5 WERC",
+        "url": "https://wercfm.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | NewsRadio WHAM 1180",
+        "url": "https://wham1180.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Slip as OPEC+ Boosts August Output , Oversupply Concerns Weigh on Crude Market",
+        "url": "http://www.econotimes.com/Oil-Prices-Slip-as-OPEC-Boosts-August-Output-Oversupply-Concerns-Weigh-on-Crude-Market-1745967",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices drop as OPEC+ boosts output – Shafaqna English | International Shia News & Fatwas",
+        "url": "https://en.shafaqna.com/461192/oil-prices-drop-as-opec-boosts-output/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Increases Oil Production Amid Price Drop | KFYR 550 AM / 99 . 7 FM",
+        "url": "https://kfyr.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+        "type": "intl"
+      },
+      {
+        "title": "US futures rise and Asian shares trade mixed as oil prices decline with increased output",
+        "url": "https://www.news4jax.com/business/2026/07/06/us-futures-and-asian-shares-are-mixed-while-oil-prices-decline-as-some-exporters-opt-to-raise-output/",
+        "type": "intl"
+      },
+      {
+        "title": "Asian Markets Slip as AI Earnings Season Looms , Oil Prices Fall Ahead of Key Fed Signals",
+        "url": "http://www.econotimes.com/Asian-Markets-Slip-as-AI-Earnings-Season-Looms-Oil-Prices-Fall-Ahead-of-Key-Fed-Signals-1745963",
+        "type": "intl"
+      },
+      {
+        "title": "Dow , S & P 500 , Nasdaq turn higher , oil slides as Trump says war could be over soon",
+        "url": "https://bitacora.com.uy/dow-sp-500-nasdaq-turn-higher-oil-slides-as-trump-says-war-could-be-over-soon/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices dip after OPEC+ decision to raise output",
+        "url": "https://paktribune.com/oil-prices-dip-after-opec-decision-to-raise-output/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil drifts down after OPEC+ agrees to raise output targets",
+        "url": "https://www.arabnews.com/node/2649816/business-economy",
+        "type": "intl"
+      },
+      {
+        "title": "Stock market outlook : TCS Q1 results , crude oil and global cues to steer markets this week",
+        "url": "https://dailypioneer.com/news/stock-markets-to-track-crude-oil-prices-global-trends",
+        "type": "intl"
+      },
+      {
+        "title": "Asian shares rise on tech , oil slips after OPEC : Markets wrap",
+        "url": "https://www.thehindubusinessline.com/markets/asian-shares-rise-on-tech-oil-slips-after-opec-markets-wrap/article71187813.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Markets climb in early trade on buying in blue - chip bank stocks , lower oil prices",
+        "url": "https://www.tribuneindia.com/news/business/markets-climb-in-early-trade-on-buying-in-blue-chip-bank-stocks-lower-oil-prices/",
+        "type": "intl"
+      },
+      {
+        "title": "Opec+ seen raising oil quotas again - Pakistan Today",
+        "url": "https://www.pakistantoday.com.pk/2026/07/06/opec-expected-to-raise-oil-quotas-again-as-gulf-exports-recover",
+        "type": "intl"
+      },
+      {
+        "title": "Oil slips after Opec+ raises August output targets",
+        "url": "https://www.pakistantoday.com.pk/2026/07/06/oil-edges-lower-after-opec-raises-august-output-targets",
+        "type": "intl"
+      },
+      {
+        "title": "US futures and Asian shares are mixed while oil prices decline as some exporters opt to raise output",
+        "url": "https://www.wral.com/news/ap/9563a-us-futures-and-asian-shares-are-mixed-while-oil-prices-decline-as-some-exporters-opt-to-raise-output/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ To Add 188 , 000 Barrels Per Day From August Will More Supply Cool Global Crude Oil Prices ? ",
+        "url": "https://www.newsx.com/business/opec-plus-to-add-188000-barrels-per-day-from-august-as-strait-of-hormuz-reopens-will-more-supply-cool-global-crude-oil-prices-245203/",
+        "type": "intl"
+      },
+      {
+        "title": "Fuel prices rise again with diesel , kerosene hikes on July 7",
+        "url": "https://www.rappler.com/business/fuel-prices-adjustments-july-7-2026/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ to raise August oil production by 188 , 000 bpd , reiterates commitment to market stability",
+        "url": "https://aninews.in/news/business/opec-to-raise-august-oil-production-by-188000-bpd-reiterates-commitment-to-market-stability20260706100722/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ agrees fresh oil output increase as crude prices continue to fall",
+        "url": "https://www.azernews.az/region/260674.html",
+        "type": "intl"
+      },
+      {
+        "title": "Stock Market , Sensex Today : Sensex , Nifty Open Higher Rupee Falls to 95 . 28 Against US Dollar as Brent Crude Stays Below $72",
+        "url": "https://indianexpress.com/article/business/rupee-fallus-dollar-indian-markets-sensex-nifty-crude-oil-shares-opec-10773197/",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ countries say they will expand monthly oil production",
+        "url": "https://www.aljazeera.com/economy/2026/7/6/opec-countries-say-they-will-expand-monthly-oil-production",
+        "type": "intl"
+      },
+      {
+        "title": "Global oil prices fall up to 1 pc as OPEC+ raises August output targets",
+        "url": "https://ianslive.in/global-oil-prices-fall-up-to-1-pc-as-opec-raises-august-output-targets--20260706095729",
+        "type": "intl"
+      },
+      {
+        "title": "Commodity Corner : Oil slips on OPEC+ output hike ; gold shines as dollar weakens",
+        "url": "https://www.moneycontrol.com/news/business/markets/commodity-corner-oil-slips-on-opec-output-hike-gold-shines-as-dollar-weakens-13966613.html",
+        "type": "intl"
+      },
+      {
+        "title": "Asian shares slip as earnings loom , oil weighed by supply - Markets",
+        "url": "http://www.thejakartapost.com/business/2026/07/06/asian-shares-slip-as-earnings-loom-oil-weighed-by-supply",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ August Output Hike : What the 188 , 000 bpd Increase Means for Oil Prices , Gulf Exports and the UAE",
+        "url": "https://gulfnews.com/business/energy/oil-prices-and-opec-what-the-august-production-increase-really-means-1.500597628",
+        "type": "intl"
+      },
+      {
+        "title": "Brent slips below $72 as OPEC+ agrees to raise August oil output targets",
+        "url": "https://www.moneycontrol.com/news/business/oil-slips-after-opec-agrees-to-raise-output-targets-13966574.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil price today : Crude slips after OPEC+ announces raising output targets from August",
+        "url": "https://timesofindia.indiatimes.com/business/international-business/oil-price-today-on-july-06-2026-crude-slips-after-opec-raises-output-targets-from-august/articleshow/132205540.cms",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ to boost crude output , but can it deliver and who will buy ? ",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/opec-to-boost-crude-output-but-can-it-deliver-and-who-will-buy/articleshow/132205370.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Stock market live updates today : Will Sensex , Nifty extend last week rally ? All eyes on earnings , crude oil , Fed minutes and more",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-06-july-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/liveblog/132205311.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Moneycontrol Pro Market Outlook | As oil slips , corporate results take centre stage",
+        "url": "https://www.moneycontrol.com/news/business/economy/moneycontrol-pro-market-outlook-as-oil-slips-corporate-results-take-centre-stage-13966428.html",
+        "type": "intl"
+      },
+      {
+        "title": "Some in OPEC to expand monthly oil production as prices slide",
+        "url": "https://www.siasat.com/some-in-opec-to-expand-monthly-oil-production-as-prices-slide-3502057/",
+        "type": "intl"
+      },
+      {
+        "title": "7 OPEC+ countries agree to expand monthly oil production modestly as prices slide",
+        "url": "https://www.wral.com/news/ap/bae40-7-opec-countries-agree-to-expand-monthly-oil-production-modestly-as-prices-slide/",
+        "type": "intl"
+      },
+      {
+        "title": "International Business : Opec plus approves further oil production increase",
+        "url": "https://www.gdnonline.com:443/Details/1399760",
+        "type": "intl"
+      },
+      {
+        "title": "'26조 기름값 담합' 정유4사 기소…정성호 \"국민 고통 제물로 폭리\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006324116?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁 핑계 가격인상, 정유 4사 26조 담합…역대 최대 규모",
+        "url": "https://n.news.naver.com/mnews/article/018/0006324114?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[사설]전쟁을 돈벌이 기회로 삼은 정유사들의 26조원대 담합·갑질",
+        "url": "https://n.news.naver.com/mnews/article/032/0003456402?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "4대 정유사 26조원대 유가 담합 적발…허위 보고까지",
+        "url": "https://www.newsgn.com/news/articleView.html?idxno=560856",
+        "type": "dom"
+      },
+      {
+        "title": "'유가 담합' 정유사 재판행…\"약 26조 경쟁제한\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000882057?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "“전쟁으로 먹고산다. 2조 벌 듯”…이란 전쟁 ‘유가담합’ 정유사 4사...",
+        "url": "https://n.news.naver.com/mnews/article/056/0012212475?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "사우디, 8월 아시아 원유 판매가 대폭 인하",
+        "url": "https://www.tokenpost.kr/news/breaking/375391",
+        "type": "dom"
+      },
+      {
+        "title": "[월드 e 브리핑] OPEC+, 5개월 연속 증산 합의…국제유가 60달러대",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1529752",
+        "type": "dom"
+      },
+      {
+        "title": "달러-원, 뉴욕장서 1,530원 초반대 거래",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423591",
+        "type": "dom"
+      },
+      {
+        "title": "한국 외환시장, 24시간 체제 첫날 원/달러 환율 1,530원대 상승",
+        "url": "https://www.tokenpost.kr/news/economy/375395",
+        "type": "dom"
+      },
+      {
+        "title": "'24시간 외환시장' 첫 날, 환율 4.7원 올라 1530.3원",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=553105",
+        "type": "dom"
+      },
+      {
+        "title": "고유가 피해지원금 3540만 명, 6조1123억 원 지급",
+        "url": "https://bravo.etoday.co.kr/view/atc_view/19597",
+        "type": "dom"
+      },
+      {
+        "title": "\"전쟁으로 먹고사는 정유사\" 유가 폭등 담합 철퇴",
+        "url": "https://n.news.naver.com/mnews/article/088/0001017782?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "'정유사 폭리' 의심 사실로?‥\"서민 주머니 1백 원도 어려운데…\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001509914?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "유가 내려도 못 웃는 LCC...문제는 유류비 아닌 '고정비 청구서'",
+        "url": "https://www.newstopkorea.com/news/articleView.html?idxno=46060",
+        "type": "dom"
+      },
+      {
+        "title": "\"전쟁으로 먹고사네\"…정유사들 26조원대 담합",
+        "url": "https://n.news.naver.com/mnews/article/422/0000882089?sid=161",
+        "type": "dom"
+      },
+      {
+        "title": "\"트럼프 만세\" 검찰, 26조 원대 정유사 유가담합 적발",
+        "url": "https://n.news.naver.com/mnews/article/057/0001957203?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[포토뉴스] 기름값 3개월여 만에 1,800원대로 하락",
+        "url": "https://www.idaegu.com/news/articleView.html?idxno=664135",
+        "type": "dom"
+      },
+      {
+        "title": "현대오일·SK, 전쟁 틈타 ‘유가 짬짜미’",
+        "url": "https://n.news.naver.com/mnews/article/082/0001388575?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "정유 4사, 26조원대 유가담합 적발…법인·실무진 재판행",
+        "url": "https://n.news.naver.com/mnews/article/030/0003444952?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "HD현대오일뱅크·SK에너지·GS칼텍스·에쓰오일, '14조 유가 담합' 정유...",
+        "url": "http://www.queen.co.kr/news/articleView.html?idxno=459852",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁 터지자마자 기름값 올렸다... 檢, 정유4사 유가 14兆 담합 기소",
+        "url": "https://n.news.naver.com/mnews/article/014/0005544420?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "전국 휘발유 가격 석 달 만에 1,800원대",
+        "url": "https://n.news.naver.com/mnews/article/422/0000882058?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "\"트럼프 만세\" 담합 정유사들…檢 \"최고가격제 손실도 없었다\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014049373?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "\"美·이란戰 직후 14조 유가 담합\" 檢, 정유사 기소",
+        "url": "https://n.news.naver.com/mnews/article/009/0005703534?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "이란전쟁 틈타 26조 '유가담합 의혹'…檢, 4대 정유사 기소",
+        "url": "https://n.news.naver.com/mnews/article/015/0005306804?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "검찰, 정유 4사 '유가 담합' 기소… 전쟁 국면 악용해 14조 규모 가격 왜...",
+        "url": "https://www.koreaittimes.com/news/articleView.html?idxno=154970",
+        "type": "dom"
+      },
+      {
+        "title": "'중동전쟁 여파' 매달 오르는 건설공사비…분양가 상승 이어지나",
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=916017",
+        "type": "dom"
+      },
+      {
+        "title": "FGE “석유 공급과잉 우려 과도…미·이란 장기 평화 가능성 낮아”",
+        "url": "https://www.tokenpost.kr/news/breaking/375416",
+        "type": "dom"
+      },
+      {
+        "title": "[사설]이란전에 ‘트럼프 만세’ ‘2조 벌 듯’… 정유사들의 추한 짬짜...",
+        "url": "https://n.news.naver.com/mnews/article/020/0003731903?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁에 “트럼프 만세” “2조 벌듯”…4대 정유사 ‘유가 담합’ 기소",
+        "url": "https://n.news.naver.com/mnews/article/056/0012212822?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "정유사들, 전쟁 틈타 14조 담합·갑질",
+        "url": "https://n.news.naver.com/mnews/article/032/0003456485?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "정유 4사, 미-이란 전쟁 틈타 26조 규모 유가 담합 적발",
+        "url": "https://www.ulsanpress.net/news/articleView.html?idxno=578536",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁 전후 14조원대 유가 담합한 정유사들",
+        "url": "https://n.news.naver.com/mnews/article/028/0002812934?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "“전쟁으로 올해 2조 벌듯”…정유사 담합에 기름값 일주일새 40% 폭등",
+        "url": "https://n.news.naver.com/mnews/article/020/0003731882?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "서민들 울상인데 \"우리 2조 벌듯…가격 더 올린다\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001370134?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "\"전쟁으로 먹고 사는 회사. 트럼프 만세\"…검찰, 정유4사 26조원대 유가...",
+        "url": "http://www.dynews.co.kr/news/articleView.html?idxno=856998",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁 나자 단톡방에서 \"트럼프 만세\"‥4대 정유사 \"26조 짬짜미\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001509913?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "검찰, '정유 4사' 기소…\"최대 26조 원대 유가 담합\"",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1529722",
+        "type": "dom"
+      },
+      {
+        "title": "'전쟁 특수' 노린 정유업계 … SK에너지 등 4개사 기소",
+        "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=243998",
+        "type": "dom"
+      },
+      {
+        "title": "'유가 담합' 기소한 검찰, 정유사 4조 원 대 손실보상 자료도 확보",
+        "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=223145",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁통에 26조 담합 혐의…檢, 정유4사 기소",
+        "url": "https://n.news.naver.com/mnews/article/658/0000148778?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "“중동發 동남권 경제충격, 타지보다 커…경기둔화 이어질 듯”",
+        "url": "https://n.news.naver.com/mnews/article/658/0000148777?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "BNK경영연구원 \"이란전쟁 여파, 동남권 경제 직격…회복까지 장기전\"",
+        "url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=264279",
+        "type": "dom"
+      },
+      {
+        "title": "BNK경영연구원 \"이란전쟁 충격에 동남권 경제 직격탄\"…전국보다 큰 타...",
+        "url": "https://www.etoday.co.kr/news/view/2600809",
+        "type": "dom"
+      },
+      {
+        "title": "중동발 공급망 쇼크…동남권 성장격차 5년간 최대 3배 벌어진다",
+        "url": "https://www.iusm.co.kr/news/articleView.html?idxno=1064983",
+        "type": "dom"
+      },
+      {
+        "title": "동남권 경제 덮친 중동발 충격…생산·수출·고용 ‘비상’",
+        "url": "https://www.ekn.kr/web/view.php?key=20260706024109768",
+        "type": "dom"
+      },
+      {
+        "title": "BNK경영연구원, '이란전쟁 여파와 동남권 경제 영향' 발간",
+        "url": "https://www.newsgn.com/news/articleView.html?idxno=560841",
+        "type": "dom"
+      },
+      {
+        "title": "檢 \"싸게 산 원유 놔두고 인상\"…업계 \"국제유가 반영\"",
+        "url": "https://n.news.naver.com/mnews/article/009/0005703517?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "하반기 동남권 경제 '빨간불'…중동 사태 악재 여파",
+        "url": "https://n.news.naver.com/mnews/article/421/0009043587?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "BNK경영연구원 보고서 발간...\"중동 리스크 여파로 동남권 경기 둔화 지...",
+        "url": "https://www.redian.org/news/articleView.html?idxno=256928",
+        "type": "dom"
+      },
+      {
+        "title": "이란戰 이전 유가에도 밀어내기 증산…내년 ‘과잉 공급’ 전망도",
+        "url": "https://n.news.naver.com/mnews/article/011/0004638691?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "OPEC+ 5달 연속 증산에도 국제유가 하락 않고 그대로",
+        "url": "https://n.news.naver.com/mnews/article/009/0005703547?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "달러·엔, 다시 162엔대로…日장기금리도 30년래 최고",
+        "url": "https://n.news.naver.com/mnews/article/018/0006324085?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "호주 LNG 업계, 횡재세 폭탄 맞나",
+        "url": "https://n.news.naver.com/mnews/article/015/0005306776?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "아시아 LNG 가격 강세에 일본 수입 7% 감소… 석탄발전 확대",
+        "url": "http://www.e-platform.net/news/articleView.html?idxno=103600",
+        "type": "dom"
+      },
+      {
+        "title": "경남도, 7089억원 규모 2차 추경안 제출 … 고유가 대응·현안 추진",
+        "url": "https://n.news.naver.com/mnews/article/277/0005786243?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "경남도, 고유가·민생안정 7098억 추경 편성",
+        "url": "http://www.knnews.co.kr/news/articleView.php?idxno=1545750",
+        "type": "dom"
+      },
+      {
+        "title": "경남도, 제2회 추경안 7,098억원 편성…민생안정·미래산업 투자 확대",
+        "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2446001",
+        "type": "dom"
+      },
+      {
+        "title": "경남도, 7098억 규모 제2회 추경 편성",
+        "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=698120",
+        "type": "dom"
+      },
+      {
+        "title": "경남도, 7,098억원 규모 제2회 추경 편성…총예산 15조5,346억원",
+        "url": "http://www.breaknews.com/1219639",
+        "type": "dom"
+      },
+      {
+        "title": "새벽에도 원화 사고 판다…외환시장 29년만에 대전환",
+        "url": "http://www.dailypop.kr/news/articleView.html?idxno=100341",
+        "type": "dom"
+      },
+      {
+        "title": "[사설] 고환율 속 24시간 외환거래, 새로운 위험에 대비해야",
+        "url": "https://n.news.naver.com/mnews/article/016/0002666153?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "국제 유가 하락에 8월부터 국내선 유류할증료 인하... 편도 7700원 더 저...",
+        "url": "https://www.insight.co.kr/news/561738",
+        "type": "dom"
+      },
+      {
+        "title": "정유사들, 중동전 터지자 기름값 대폭 올려…“트럼프 만세”까지",
+        "url": "https://n.news.naver.com/mnews/article/028/0002812937?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "World News: OPEC+ increases oil production as global prices crash below p...",
+        "url": "https://www.arirang.com/news/view?id=298092",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "Audit reveals alarming increase in number of New Orleans restaurants serving imported shrimp",
+        "url": "https://louisianaradionetwork.com/2026/07/06/47266/",
+        "type": "intl"
+      },
+      {
+        "title": "[포토] 정부, 노르웨이로 고등어 특사단 파견",
+        "url": "https://n.news.naver.com/mnews/article/005/0001859292?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "“고등어값 잡아라” 특사단 유럽 파견",
+        "url": "https://n.news.naver.com/mnews/article/658/0000148750?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "수입 고등어 가격 급등···해수부, 특사단 파견",
+        "url": "https://www.ktv.go.kr/content/view?content_id=757522",
+        "type": "dom"
+      },
+      {
+        "title": "고등어 찾아 삼만리···노르웨이행",
+        "url": "https://www.thereport.co.kr/news/articleView.html?idxno=89364",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "15 ships carrying fertilizer , raw materials cross Strait of Hormuz safely , says Govt",
+        "url": "https://www.thehitavada.com/Encyc/2026/7/6/15-ships-carrying-fertilizer-raw-materials-cross-strait-of-hormuz-safely-says-govt.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil , gas tankers cross Hormuz via Oman - Side route after u - turns",
+        "url": "https://www.thehindubusinessline.com/news/world/oil-gas-tankers-cross-hormuz-via-oman-side-route-after-u-turns/article71187800.ece",
+        "type": "intl"
+      },
+      {
+        "title": "15 India - bound fertiliser ships cross Hormuz safely , stocks",
+        "url": "https://www.easternmirrornagaland.com:443/15-india-bound-fertiliser-ships-cross-hormuz-safely-stocks-set-to-rise",
+        "type": "intl"
+      },
+      {
+        "title": "UAE oil exports : How the United Arab Emirates used  dark  tanker tactics to bypass the Strait of Hormuz during the Iran war",
+        "url": "https://www.smh.com.au/business/markets/supertanker-tycoon-is-making-millions-from-dark-hormuz-shuttle-runs-20260706-p60cue.html",
+        "type": "intl"
+      },
+      {
+        "title": "Ten Japan - linked vessels exit Strait of Hormuz , data show",
+        "url": "https://sana.sy/en/international/2327672/",
+        "type": "intl"
+      },
+      {
+        "title": "Fleet of 10 Japan - related Ships Exit Hormuz , Data Shows",
+        "url": "https://english.aawsat.com/world/5292673-fleet-10-japan-related-ships-exit-hormuz-data-shows",
+        "type": "intl"
+      },
+      {
+        "title": "호르무즈 탱커 운항 완만한 회복…에너지 공급 불안은 지속",
+        "url": "https://www.tokenpost.kr/news/breaking/375400",
+        "type": "dom"
+      },
+      {
+        "title": "외신 \"전쟁 중 원유셔틀로 떼돈 번 한국 해운사\" 잇따라 조명",
+        "url": "https://n.news.naver.com/mnews/article/015/0005306896?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "대한항공, 200억엔 사무라이본드 발행 성공-차세대 항공기 도입도 7000억...",
+        "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=82812",
+        "type": "dom"
+      },
+      {
+        "title": "국내 해상운송인력 비율 외국인 노동자에 추월",
+        "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000048111",
+        "type": "dom"
+      },
+      {
+        "title": "고부가 선박은 한국이 1위…K-조선 상반기 선박 수주 60%↑",
+        "url": "https://n.news.naver.com/mnews/article/138/0002233316?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "K조선, 6월 수주 점유율 10% 아래로",
+        "url": "https://n.news.naver.com/mnews/article/015/0005306755?sid=101",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "QatarEnergy halves 2026 scheduled deliveries of LNG to Bangladesh , says Petrobangla acting chairman",
+        "url": "https://www.zawya.com/en/business/energy/qatarenergy-halves-2026-scheduled-deliveries-of-lng-to-bangladesh-says-petrobangla-acting-chairman-dydiqeou",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine Hits Russia Largest Oil Refinery for First Time in Record 3 , 000 Km Drone Strike",
+        "url": "https://www.kyivpost.com/post/79696",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine Strikes Omsk Refinery , Baltic Ports",
+        "url": "https://athens-times.com/ukrainian-drones-strike-russias-largest-refinery-in-omsk-hit-baltic-ports/",
+        "type": "intl"
+      },
+      {
+        "title": "Turkish Central Bank says strong exports offset energy import surge despite geopolitical risks",
+        "url": "https://aa.com.tr/en/economy/turkish-central-bank-says-strong-exports-offset-energy-import-surge-despite-geopolitical-risks/3987114",
+        "type": "intl"
+      },
+      {
+        "title": "CBRT says strong exports offset Iran war - driven energy import surge",
+        "url": "https://www.dailysabah.com/business/economy/cbrt-says-strong-exports-offset-iran-war-driven-energy-import-surge",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ Announces A Fresh Output Hike Of 188 , 000 Barrels Per Day For August As Global Oil Prices Ease . ",
+        "url": "https://www.freepressjournal.in/world/opec-announces-a-fresh-output-hike-of-188000-barrels-per-day-for-august-as-global-oil-prices-ease",
+        "type": "intl"
+      },
+      {
+        "title": "Baystreet . ca - Germany Weathers Energy Crisis With Growing Dependence on American LNG",
+        "url": "http://baystreet.ca/commodities/8809/Germany-Weathers-Energy-Crisis-With-Growing-Dependence-on-American-LNG",
+        "type": "intl"
+      },
+      {
+        "title": "CLARENCE TSHITEREKE | Emerging LNG corridor set to rewire Southern Africa economic future",
+        "url": "https://www.timeslive.co.za/news/africa/2026-07-06-clarence-tshitereke-emerging-lng-corridor-set-to-rewire-southern-africas-economic-future/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil exports from the Middle East rising , but risks remain – IEA",
+        "url": "https://www.offshore-technology.com/news/oil-exports-from-the-middle-east-rising-but-risks-remain-iea/",
+        "type": "intl"
+      },
+      {
+        "title": "Today . Az - Black Sea Petroleum announces end to Russian crude refining",
+        "url": "http://today.az/news/regions/268743.html",
+        "type": "intl"
+      },
+      {
+        "title": "Analysis - World absorbs historic Iran war oil supply loss , but depleted stocks bring risks",
+        "url": "https://finance.yahoo.com/energy/articles/analysis-world-absorbs-historic-iran-073926094.html",
+        "type": "intl"
+      },
+      {
+        "title": "Glenfarne , BGN sign HoA for LNG supply from Texas LNG",
+        "url": "https://finance.yahoo.com/energy/articles/glenfarne-bgn-sign-hoa-lng-102727309.html",
+        "type": "intl"
+      },
+      {
+        "title": "US LNG exports to Latin America surge to three - year high | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/us-lng-exports-to-latin-america-surge-to-three-year-high/",
+        "type": "intl"
+      },
+      {
+        "title": "Black Sea Petroleum announces end to Russian crude refining",
+        "url": "https://www.azernews.az/region/260675.html",
+        "type": "intl"
+      },
+      {
+        "title": "Weekly Update – Global Fertiliser Markets – w / e 03 . 07 . 2026 | Empower Stories | Build Authority",
+        "url": "https://econews.com.au/weekly-update-global-fertiliser-markets-w-e-03-07-2026/",
+        "type": "intl"
+      },
+      {
+        "title": "Cheniere Energy Partners , L . P . ( CQP ) Strengthens Financial Position with $2B Offering Amid LNG Expansion Plans",
+        "url": "https://www.insidermonkey.com/blog/cheniere-energy-partners-l-p-cqp-strengthens-financial-position-with-2b-offering-amid-lng-expansion-plans-1795830/",
+        "type": "intl"
+      },
+      {
+        "title": "East coast gas reservation scheme could underwrite new gas fields in southern states instead of diverting LNG cargoes to domestic market",
+        "url": "https://www.afr.com/policy/energy-and-climate/gas-reservation-scheme-should-focus-on-the-carrot-not-the-stick-20260702-p60byb",
+        "type": "intl"
+      },
+      {
+        "title": "한전, 폭염·대정전 복합위기 가정 전력 수급 비상 훈련",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3414988",
+        "type": "dom"
+      },
+      {
+        "title": "2천700㎞ 날아간 우크라 드론…러 옴스크 정유공장 타격",
+        "url": "https://n.news.naver.com/mnews/article/001/0016178972?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "HD·SK 올리자 GS·에쓰오일도 뒤따라...정유사 “통상적 영업활동”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004638708?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "800조 투자 오는데…석유화학 '체질 개선' 시급",
+        "url": "https://ysmbc.co.kr/NewsArticle/1526269",
+        "type": "dom"
+      },
+      {
+        "title": "김동춘 LG화학 사장 \"고부가 사업에 집중\"…석화 의존도 축소",
+        "url": "https://n.news.naver.com/mnews/article/293/0000087284?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "'최악 폭염' 佛, 옥수수 생산량 30% 뚝…국제 곡물시장 비상",
+        "url": "https://n.news.naver.com/mnews/article/018/0006324072?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "포성 멎었지만 진짜 전쟁은 지금부터…중동전, 중기 피해·애로 접수 10...",
+        "url": "https://n.news.naver.com/mnews/article/021/0002802724?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "상생 나선 정유·석화업계…가격 낮추고 공급가 투명화",
+        "url": "https://www.g-enews.com/view.php?ud=20260706145125726224debea800_1",
+        "type": "dom"
+      },
+      {
+        "title": "BS한양, 삼성 17조 투자 소식에 반색…'묘도 LNG 열병합발전' 탄력 전망",
+        "url": "http://www.lkp.news/news/articleView.html?idxno=81568",
+        "type": "dom"
+      },
+      {
+        "title": "요소수 품귀 우려에 관련주 일제히 들썩…유니온머티리얼 주가 휘파람",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=465892",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "British military says cargo ship reports attack in the Red Sea off Yemen",
+      "url": "https://www.yahoo.com/news/world/articles/british-military-says-cargo-ship-090250437.html",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Middle East , tension rises in the Strait of Hormuz . Bahrain :  Attacked by Iranian missiles and drones  ",
+      "url": "https://www.odnako.org/middle-east-tension-rises-in-the-strait-of-hormuz-bahrain-attacked-by-iranian-missiles-and-drones/",
+      "type": "intl"
+    },
+    "3": {
+      "title": "Cargo ship attacked in Red Sea off Yemen coast : British military",
+      "url": "https://navhindtimes.in/worldnews/cargo-ship-attacked-in-red-sea-off-yemen-coast-british-military/",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Handing the Strait of Hormuz to Iran and the Gulf",
+      "url": "https://themedialine.org/mideast-mindset/handing-the-strait-of-hormuz-to-iran-and-the-gulf/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Trump says Iran faces deal or force",
+      "url": "https://www.prokerala.com/news/articles/a1784655.html",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Washington Plan to Neutralize Iran Hormuz Leverage",
+      "url": "https://oilprice.com/Energy/Energy-General/Washingtons-Plan-to-Neutralize-Irans-Hormuz-Leverage.html",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Ukraine Special Forces Strike Russian Oil Tanker , Kerch Oil Terminal",
+      "url": "https://www.kyivpost.com/post/79697",
+      "type": "intl"
+    },
+    "8": {
+      "title": "ESM sees recession if US sell - off , new MidEast war hit",
+      "url": "https://www.rte.ie/news/business/2026/0706/1581987-esm-sees-recession-if-us-sell-off-new-mideast-war-hit/",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Iranians call for vengeance on Trump during Khamenei funeral",
+      "url": "https://www.samaa.tv/2087353130-iranians-call-for-vengeance-on-trump-during-khamenei-funeral",
+      "type": "intl"
+    },
+    "10": {
+      "title": "The  navalization  of economic warfare sees trade routes become zones of force rather than rules | The Conversation",
+      "url": "http://www.bozemandailychronicle.com/ap_news/conversation/the-navalization-of-economic-warfare-sees-trade-routes-become-zones-of-force-rather-than-rules/article_1b31fffc-048b-5c8a-a729-eb40029f2295.html",
+      "type": "intl"
+    },
+    "11": {
+      "title": "호르무즈 해협 내 韓 선원 5명 빠져나와…23명 남아",
+      "url": "https://n.news.naver.com/mnews/article/003/0014049420?sid=101",
+      "type": "dom"
+    },
+    "12": {
+      "title": "\"예멘 홍해서 화물선, 무장세력에 피격 신고\"",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1529754",
+      "type": "dom"
+    },
+    "13": {
+      "title": "카타르 “모든 해상 활동 정상화”…홍해선 화물선 피격 신고",
+      "url": "https://n.news.naver.com/mnews/article/056/0012212169?sid=104",
+      "type": "dom"
+    },
+    "14": {
+      "title": "후티반군 움직이나…英 \"홍해 지나던 화물선 피격\"",
+      "url": "https://n.news.naver.com/mnews/article/448/0000624490?sid=104",
+      "type": "dom"
+    },
+    "15": {
+      "title": "전문건설공제조합, 중동 리스크 대응 조합원 지원 확대",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=337133",
+      "type": "dom"
+    },
+    "16": {
+      "title": "美·이란 종전 이후 주목받을 고압경제로 본 올해 하반기 이후 세계 주...",
+      "url": "https://n.news.naver.com/mnews/article/215/0001257800?sid=101",
+      "type": "dom"
+    },
+    "17": {
+      "title": "중·러, 칭다오서 연합훈련 돌입...\"미사일 요격 훈련\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002375490?sid=104",
+      "type": "dom"
+    },
+    "18": {
+      "title": "중러, 칭다오서 '연합 훈련'…\"실사격·미사일 요격 실시\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000882065?sid=104",
+      "type": "dom"
+    },
+    "19": {
+      "title": "중러, 칭다오서 연합훈련 돌입…\"실사격·미사일 요격 실시\"",
+      "url": "https://n.news.naver.com/mnews/article/055/0001370087?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "중러, 칭다오서 해상 연합훈련 돌입…미사일 요격·실사격 전개",
+      "url": "https://n.news.naver.com/mnews/article/016/0002666451?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "Hormuz In The Rearview As Asia - US Ocean Container Rates Soar Past $7 , 900",
+      "url": "https://www.zerohedge.com/geopolitical/hormuz-rearview-asia-us-ocean-container-rates-soar-past-7900",
+      "type": "intl"
+    },
+    "22": {
+      "title": "OPEC+ approves further oil output increase as Hormuz exports start to recover",
+      "url": "https://www.cnbcafrica.com/2026/opec-approves-further-oil-output-increase-as-hormuz-exports-start-to-recover",
+      "type": "intl"
+    },
+    "23": {
+      "title": "The Korean tanker tycoon behind UAE secret Hormuz oil runs",
+      "url": "https://www.moneycontrol.com/world/the-korean-tanker-tycoon-behind-uae-s-secret-hormuz-oil-runs-article-13966921.html",
+      "type": "intl"
+    },
+    "24": {
+      "title": "Oil Prices Hold Near 4 - Month Lows as Hormuz Shipping Recovery Raises Glut Fears",
+      "url": "https://www.hngn.com/articles/271907/20260705/oil-prices-hold-near-4-month-lows-hormuz-shipping-recovery-raises-glut-fears.htm",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Iran … Trump … Conflict … Midday … 7 / 6 / 2026 …. The Strait of Hormuz see rising Ship traffic",
+      "url": "https://politicaldog101.com/2026/07/irantrumpconflictmidday-7-6-2026-the-strait-of-hormuz-sees-rising-ship-traffic/",
+      "type": "intl"
+    },
+    "26": {
+      "title": "The supertanker tycoon making millions on Hormuz shuttle runs",
+      "url": "https://www.livemint.com/companies/the-supertanker-tycoon-making-millions-on-hormuz-shuttle-runs-11783336873303.html",
+      "type": "intl"
+    },
+    "27": {
+      "title": "Gibraltar worried about RED impact on West Med bunker markets | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/gibraltar-worried-about-red-impact-on-west-med-bunker-markets/",
+      "type": "intl"
+    },
+    "28": {
+      "title": "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U . S .- Iran deal",
+      "url": "https://www.hellenicshippingnews.com/saudi-arabia-has-ramped-up-oil-shipments-through-the-strait-of-hormuz-since-u-s-iran-deal/",
+      "type": "intl"
+    },
+    "29": {
+      "title": "Drery : World Container Index Up 9 % Last Week | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/drery-world-container-index-up-9-last-week/",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Supertanker Empire , Dark Transits , and a Billion - Dollar Gamble in the Strait of Hormuz",
+      "url": "https://slguardian.org/supertanker-empire-dark-transits-and-a-billion-dollar-gamble-in-the-strait-of-hormuz/",
+      "type": "intl"
+    },
+    "31": {
+      "title": "호르무즈 해협 통과 선박 3분의 1 '오만 연안 항로' 이용",
+      "url": "https://n.news.naver.com/mnews/article/003/0014049583?sid=104",
+      "type": "dom"
+    },
+    "32": {
+      "title": "8월 국내선 유류할증료 1만 6천500원‥31% 인하",
+      "url": "https://jejumbc.com/NewsArticle/849452",
+      "type": "dom"
+    },
+    "33": {
+      "title": "국내선 유류할증료 하락…여름휴가철 기대감 증폭",
+      "url": "https://www.jemin.com/news/articleView.html?idxno=839893",
+      "type": "dom"
+    },
+    "34": {
+      "title": "부산항발 컨 운임 9주째 상승…KCCI 4330p·건화물도 반등",
+      "url": "https://n.news.naver.com/mnews/article/629/0000513671?sid=102",
+      "type": "dom"
+    },
+    "35": {
+      "title": "국내항공 8월 국내선 유류할증료 '편도 7700원' 인하",
+      "url": "https://www.hidomin.com/news/articleView.html?idxno=712187",
+      "type": "dom"
+    },
+    "36": {
+      "title": "Ships Are Moving In and Out of the Persian Gulf, Easing Oil Prices",
+      "url": "https://www.nytimes.com/2026/07/06/business/hormuz-strait-shipping-oil.html?partner=naver",
+      "type": "dom"
+    },
+    "37": {
+      "title": "Stranded sulphur cargoes in Hormuz face mounting corrosion risk , warns expert",
+      "url": "https://tradearabia.com:443/News/464721/Stranded-sulphur-cargoes-in-Hormuz-face-mounting-corrosion-risk,-warns-expert",
+      "type": "intl"
+    },
+    "38": {
+      "title": "BPCL prepares for return of Iranian crude , starts supplier talks",
+      "url": "https://www.moneycontrol.com/news/business/bpcl-prepares-for-return-of-iranian-crude-starts-supplier-talks-13966463.html",
+      "type": "intl"
+    },
+    "39": {
+      "title": "Govt withdraws emergency natural gas supply curbs as Strait",
+      "url": "https://www.easternmirrornagaland.com:443/govt-withdraws-emergency-natural-gas-supply-curbs-as-strait-of-hormuz-lng-shipments-resume",
+      "type": "intl"
+    },
+    "40": {
+      "title": "Centre says 15 fertiliser ships have cleared Hormuz , easing Kharif supply concerns",
+      "url": "https://www.hindustantimes.com/india-news/centre-says-15-fertiliser-ships-have-cleared-hormuz-easing-kharif-supply-concerns-101783301197505.html",
+      "type": "intl"
+    },
+    "41": {
+      "title": "석유公, 중동 위기에 원유 150만 배럴 도입",
+      "url": "http://www.ujeil.com/news/articleView.html?idxno=388386",
+      "type": "dom"
+    },
+    "42": {
+      "title": "석유공사, 캐나다·UAE산 원유 155만 배럴 반입…원유수급 안정정↑",
+      "url": "https://n.news.naver.com/mnews/article/082/0001388572?sid=101",
+      "type": "dom"
+    },
+    "43": {
+      "title": "석유공사, 해외 원유 반입…울산 기름값 안정 힘 보탰다",
+      "url": "https://www.iusm.co.kr/news/articleView.html?idxno=1064984",
+      "type": "dom"
+    },
+    "44": {
+      "title": "석유공사, 해외 생산원유 국내 반입…원유 수급 안정성 강화",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=337138",
+      "type": "dom"
+    },
+    "45": {
+      "title": "석유공사, 중동 위기 뚫고 캐나다·UAE 생산 원유 154만여배럴 국내 반입",
+      "url": "https://www.cnbnews.com/news/articleView.html?idxno=1007091",
+      "type": "dom"
+    },
+    "46": {
+      "title": "가덕도신공항 중동사태에 또 지연 우려?",
+      "url": "https://busanmbc.co.kr/01_new/new01_view.asp?idx=286838",
+      "type": "dom"
+    },
+    "47": {
+      "title": "경남·부산 건설사, 가덕신공항 ‘보이콧’ 불사",
+      "url": "http://www.knnews.co.kr/news/articleView.php?idxno=1545740",
+      "type": "dom"
+    },
+    "48": {
+      "title": "BPA, 중국과 항만·물류 협력 확대한다",
+      "url": "http://www.gnmaeil.com/news/articleView.html?idxno=590139",
+      "type": "dom"
+    },
+    "49": {
+      "title": "부산항만공사, 중국 산동성항만그룹과 동북아 항만·물류 협력 강화",
+      "url": "http://www.newstown.co.kr/news/articleView.html?idxno=708311",
+      "type": "dom"
+    },
+    "50": {
+      "title": "Saudi Arabia slashes August crude prices for Asia by $11 a barrel in biggest cut in over 20 years",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/saudi-arabia-slashes-august-crude-prices-for-asia-by-11-a-barrel-in-biggest-cut-in-over-20-years/articleshow/132217320.cms",
+      "type": "intl"
+    },
+    "51": {
+      "title": "South Korea four oil refiners charged with price collusion",
+      "url": "https://www.asiaone.com:443/asia/south-koreas-four-oil-refiners-charged-price-collusion",
+      "type": "intl"
+    },
+    "52": {
+      "title": "South Korea Charges Refiners With Gas Price Gouging",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Charges-Refiners-With-Gas-Price-Gouging.html",
+      "type": "intl"
+    },
+    "53": {
+      "title": "Opec+ countries to raise oil output after prices fall",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/opec-countries-raise-oil-output-after-prices-fall",
+      "type": "intl"
+    },
+    "54": {
+      "title": "Crude oil prices drop to prices from nearly a year ago",
+      "url": "https://www.kmvt.com/2026/07/06/crude-oil-prices-drop-prices-nearly-year-ago/",
+      "type": "intl"
+    },
+    "55": {
+      "title": "Oil prices head back to pre - Iran conflict levels : report",
+      "url": "https://wcti12.com/news/nation-world/oil-prices-head-back-to-pre-iran-conflict-levels-report-donald-trump-strait-of-hormuz-white-house-jared-kushner",
+      "type": "intl"
+    },
+    "56": {
+      "title": "Stocks inch up as oil weighed by supply while earnings loom",
+      "url": "https://www.zawya.com/en/capital-markets/equities/stocks-inch-up-as-oil-weighed-by-supply-while-earnings-loom-c9ruc5bc",
+      "type": "intl"
+    },
+    "57": {
+      "title": "Stock markets rise for 4th day , close at over 2 - month high on gains in bank , oil shares",
+      "url": "https://www.tribuneindia.com/news/business/stock-markets-rise-for-4th-day-close-at-over-2-month-high-on-gains-in-bank-oil-shares/",
+      "type": "intl"
+    },
+    "58": {
+      "title": "Crude oil relief : OMCs may break even on petrol , diesel rates soon ; what it means for retail prices",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/crude-oil-relief-omcs-may-break-even-on-petrol-diesel-rates-soon-what-it-means-for-retail-prices/articleshow/132215124.cms",
+      "type": "intl"
+    },
+    "59": {
+      "title": "OPEC+ Increases Oil Production Amid Price Drop | Newsradio 92 . 7 WBEX",
+      "url": "https://wbex.iheart.com/content/2026-07-06-opec-increases-oil-production-amid-price-drop/",
+      "type": "intl"
+    },
+    "60": {
+      "title": "Prosecutors indict HD Hyundai Oilbank in $17 bil . price - fixing case after US - Iran war outbreak",
+      "url": "https://www.koreatimes.co.kr/southkorea/law-crime/20260706/prosecutors-indict-hd-hyundai-oilbank-in-17-bil-price-fixing-case-after-us-iran-war-outbreak",
+      "type": "dom"
+    },
+    "61": {
+      "title": "Prosecutors indict 4 major refiners in W26tr price - fixing case after US - Iran war outbreak",
+      "url": "https://www.koreaherald.com/article/10799245",
+      "type": "dom"
+    },
+    "62": {
+      "title": "'26조 기름값 담합' 정유4사 기소…정성호 \"국민 고통 제물로 폭리\"",
+      "url": "https://n.news.naver.com/mnews/article/018/0006324116?sid=102",
+      "type": "dom"
+    },
+    "63": {
+      "title": "전쟁 핑계 가격인상, 정유 4사 26조 담합…역대 최대 규모",
+      "url": "https://n.news.naver.com/mnews/article/018/0006324114?sid=102",
+      "type": "dom"
+    },
+    "64": {
+      "title": "[사설]전쟁을 돈벌이 기회로 삼은 정유사들의 26조원대 담합·갑질",
+      "url": "https://n.news.naver.com/mnews/article/032/0003456402?sid=110",
+      "type": "dom"
+    },
+    "65": {
+      "title": "4대 정유사 26조원대 유가 담합 적발…허위 보고까지",
+      "url": "https://www.newsgn.com/news/articleView.html?idxno=560856",
+      "type": "dom"
+    },
+    "66": {
+      "title": "'유가 담합' 정유사 재판행…\"약 26조 경쟁제한\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000882057?sid=102",
+      "type": "dom"
+    },
+    "67": {
+      "title": "“전쟁으로 먹고산다. 2조 벌 듯”…이란 전쟁 ‘유가담합’ 정유사 4사...",
+      "url": "https://n.news.naver.com/mnews/article/056/0012212475?sid=102",
+      "type": "dom"
+    },
+    "68": {
+      "title": "사우디, 8월 아시아 원유 판매가 대폭 인하",
+      "url": "https://www.tokenpost.kr/news/breaking/375391",
+      "type": "dom"
+    },
+    "69": {
+      "title": "[월드 e 브리핑] OPEC+, 5개월 연속 증산 합의…국제유가 60달러대",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1529752",
+      "type": "dom"
+    },
+    "70": {
+      "title": "Audit reveals alarming increase in number of New Orleans restaurants serving imported shrimp",
+      "url": "https://louisianaradionetwork.com/2026/07/06/47266/",
+      "type": "intl"
+    },
+    "71": {
+      "title": "[포토] 정부, 노르웨이로 고등어 특사단 파견",
+      "url": "https://n.news.naver.com/mnews/article/005/0001859292?sid=101",
+      "type": "dom"
+    },
+    "72": {
+      "title": "“고등어값 잡아라” 특사단 유럽 파견",
+      "url": "https://n.news.naver.com/mnews/article/658/0000148750?sid=101",
+      "type": "dom"
+    },
+    "73": {
+      "title": "수입 고등어 가격 급등···해수부, 특사단 파견",
+      "url": "https://www.ktv.go.kr/content/view?content_id=757522",
+      "type": "dom"
+    },
+    "74": {
+      "title": "고등어 찾아 삼만리···노르웨이행",
+      "url": "https://www.thereport.co.kr/news/articleView.html?idxno=89364",
+      "type": "dom"
+    },
+    "75": {
+      "title": "15 ships carrying fertilizer , raw materials cross Strait of Hormuz safely , says Govt",
+      "url": "https://www.thehitavada.com/Encyc/2026/7/6/15-ships-carrying-fertilizer-raw-materials-cross-strait-of-hormuz-safely-says-govt.html",
+      "type": "intl"
+    },
+    "76": {
+      "title": "Oil , gas tankers cross Hormuz via Oman - Side route after u - turns",
+      "url": "https://www.thehindubusinessline.com/news/world/oil-gas-tankers-cross-hormuz-via-oman-side-route-after-u-turns/article71187800.ece",
+      "type": "intl"
+    },
+    "77": {
+      "title": "15 India - bound fertiliser ships cross Hormuz safely , stocks",
+      "url": "https://www.easternmirrornagaland.com:443/15-india-bound-fertiliser-ships-cross-hormuz-safely-stocks-set-to-rise",
+      "type": "intl"
+    },
+    "78": {
+      "title": "UAE oil exports : How the United Arab Emirates used  dark  tanker tactics to bypass the Strait of Hormuz during the Iran war",
+      "url": "https://www.smh.com.au/business/markets/supertanker-tycoon-is-making-millions-from-dark-hormuz-shuttle-runs-20260706-p60cue.html",
+      "type": "intl"
+    },
+    "79": {
+      "title": "Ten Japan - linked vessels exit Strait of Hormuz , data show",
+      "url": "https://sana.sy/en/international/2327672/",
+      "type": "intl"
+    },
+    "80": {
+      "title": "Fleet of 10 Japan - related Ships Exit Hormuz , Data Shows",
+      "url": "https://english.aawsat.com/world/5292673-fleet-10-japan-related-ships-exit-hormuz-data-shows",
+      "type": "intl"
+    },
+    "81": {
+      "title": "호르무즈 탱커 운항 완만한 회복…에너지 공급 불안은 지속",
+      "url": "https://www.tokenpost.kr/news/breaking/375400",
+      "type": "dom"
+    },
+    "82": {
+      "title": "외신 \"전쟁 중 원유셔틀로 떼돈 번 한국 해운사\" 잇따라 조명",
+      "url": "https://n.news.naver.com/mnews/article/015/0005306896?sid=101",
+      "type": "dom"
+    },
+    "83": {
+      "title": "대한항공, 200억엔 사무라이본드 발행 성공-차세대 항공기 도입도 7000억...",
+      "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=82812",
+      "type": "dom"
+    },
+    "84": {
+      "title": "국내 해상운송인력 비율 외국인 노동자에 추월",
+      "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000048111",
+      "type": "dom"
+    },
+    "85": {
+      "title": "고부가 선박은 한국이 1위…K-조선 상반기 선박 수주 60%↑",
+      "url": "https://n.news.naver.com/mnews/article/138/0002233316?sid=101",
+      "type": "dom"
+    },
+    "86": {
+      "title": "K조선, 6월 수주 점유율 10% 아래로",
+      "url": "https://n.news.naver.com/mnews/article/015/0005306755?sid=101",
+      "type": "dom"
+    },
+    "87": {
+      "title": "QatarEnergy halves 2026 scheduled deliveries of LNG to Bangladesh , says Petrobangla acting chairman",
+      "url": "https://www.zawya.com/en/business/energy/qatarenergy-halves-2026-scheduled-deliveries-of-lng-to-bangladesh-says-petrobangla-acting-chairman-dydiqeou",
+      "type": "intl"
+    },
+    "88": {
+      "title": "Ukraine Hits Russia Largest Oil Refinery for First Time in Record 3 , 000 Km Drone Strike",
+      "url": "https://www.kyivpost.com/post/79696",
+      "type": "intl"
+    },
+    "89": {
+      "title": "Ukraine Strikes Omsk Refinery , Baltic Ports",
+      "url": "https://athens-times.com/ukrainian-drones-strike-russias-largest-refinery-in-omsk-hit-baltic-ports/",
+      "type": "intl"
+    },
+    "90": {
+      "title": "Turkish Central Bank says strong exports offset energy import surge despite geopolitical risks",
+      "url": "https://aa.com.tr/en/economy/turkish-central-bank-says-strong-exports-offset-energy-import-surge-despite-geopolitical-risks/3987114",
+      "type": "intl"
+    },
+    "91": {
+      "title": "CBRT says strong exports offset Iran war - driven energy import surge",
+      "url": "https://www.dailysabah.com/business/economy/cbrt-says-strong-exports-offset-iran-war-driven-energy-import-surge",
+      "type": "intl"
+    },
+    "92": {
+      "title": "OPEC+ Announces A Fresh Output Hike Of 188 , 000 Barrels Per Day For August As Global Oil Prices Ease . ",
+      "url": "https://www.freepressjournal.in/world/opec-announces-a-fresh-output-hike-of-188000-barrels-per-day-for-august-as-global-oil-prices-ease",
+      "type": "intl"
+    },
+    "93": {
+      "title": "Baystreet . ca - Germany Weathers Energy Crisis With Growing Dependence on American LNG",
+      "url": "http://baystreet.ca/commodities/8809/Germany-Weathers-Energy-Crisis-With-Growing-Dependence-on-American-LNG",
+      "type": "intl"
+    },
+    "94": {
+      "title": "CLARENCE TSHITEREKE | Emerging LNG corridor set to rewire Southern Africa economic future",
+      "url": "https://www.timeslive.co.za/news/africa/2026-07-06-clarence-tshitereke-emerging-lng-corridor-set-to-rewire-southern-africas-economic-future/",
+      "type": "intl"
+    },
+    "95": {
+      "title": "Oil exports from the Middle East rising , but risks remain – IEA",
+      "url": "https://www.offshore-technology.com/news/oil-exports-from-the-middle-east-rising-but-risks-remain-iea/",
+      "type": "intl"
+    },
+    "96": {
+      "title": "Today . Az - Black Sea Petroleum announces end to Russian crude refining",
+      "url": "http://today.az/news/regions/268743.html",
+      "type": "intl"
+    },
+    "97": {
+      "title": "한전, 폭염·대정전 복합위기 가정 전력 수급 비상 훈련",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3414988",
+      "type": "dom"
+    },
+    "98": {
+      "title": "2천700㎞ 날아간 우크라 드론…러 옴스크 정유공장 타격",
+      "url": "https://n.news.naver.com/mnews/article/001/0016178972?sid=104",
+      "type": "dom"
+    },
+    "99": {
+      "title": "HD·SK 올리자 GS·에쓰오일도 뒤따라...정유사 “통상적 영업활동”",
+      "url": "https://n.news.naver.com/mnews/article/011/0004638708?sid=102",
+      "type": "dom"
+    },
+    "100": {
+      "title": "800조 투자 오는데…석유화학 '체질 개선' 시급",
+      "url": "https://ysmbc.co.kr/NewsArticle/1526269",
+      "type": "dom"
+    },
+    "101": {
+      "title": "김동춘 LG화학 사장 \"고부가 사업에 집중\"…석화 의존도 축소",
+      "url": "https://n.news.naver.com/mnews/article/293/0000087284?sid=101",
+      "type": "dom"
+    },
+    "102": {
+      "title": "'최악 폭염' 佛, 옥수수 생산량 30% 뚝…국제 곡물시장 비상",
+      "url": "https://n.news.naver.com/mnews/article/018/0006324072?sid=101",
+      "type": "dom"
+    },
+    "103": {
+      "title": "포성 멎었지만 진짜 전쟁은 지금부터…중동전, 중기 피해·애로 접수 10...",
+      "url": "https://n.news.naver.com/mnews/article/021/0002802724?sid=101",
+      "type": "dom"
+    },
+    "104": {
+      "title": "상생 나선 정유·석화업계…가격 낮추고 공급가 투명화",
+      "url": "https://www.g-enews.com/view.php?ud=20260706145125726224debea800_1",
+      "type": "dom"
+    },
+    "105": {
+      "title": "BS한양, 삼성 17조 투자 소식에 반색…'묘도 LNG 열병합발전' 탄력 전망",
+      "url": "http://www.lkp.news/news/articleView.html?idxno=81568",
+      "type": "dom"
+    },
+    "106": {
+      "title": "요소수 품귀 우려에 관련주 일제히 들썩…유니온머티리얼 주가 휘파람",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=465892",
+      "type": "dom"
+    }
+  }
+}
