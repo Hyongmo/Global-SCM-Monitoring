@@ -1,0 +1,2526 @@
+{
+  "date": "2026-07-19",
+  "date_key": "20260719",
+  "n_total": 2454,
+  "n_high": 94,
+  "n_med": 314,
+  "n_low": 284,
+  "n_none": 1762,
+  "n_intl": 233,
+  "n_dom": 175,
+  "llm_result": {
+    "executive_summary": "미국이 이란 아바단 및 해안·미사일 시설에 추가 공습을 단행하고[14][7][10], 이란혁명수비대는 호르무즈 해협 '안전하지 않은 항로'에서 선박 2척을 제지·사고 처리하는 등 호르무즈 봉쇄 위기가 군사 충돌 국면으로 격화되고 있다[15][16][19]. 브렌트유는 미-이란 전쟁 확대 우려로 배럴당 88달러를 돌파했으며[34][33], 각국 중앙은행의 고금리 장기화 압박이 커지고 있다[44]. 이라크는 호르무즈 우회를 위해 시리아 항구를 통한 원유 수출 거점 확대를 추진 중이며[22][23][24], 이라크-시리아 간 송유관 복원 협정도 체결됐다[1][27]. 한국은 7~8월 원유 도입 물량 100%를 확보한 상태이나[30], 대한항공이 연료비 급등으로 국내선 구조조정에 나서는 등 산업 전반에 비용 압박이 가시화되고 있다[46]. 호르무즈 봉쇄 이후 15번째 한국 유조선이 홍해를 통해 원유를 수송하는 등 대체 항로 운용이 지속되고 있다[55][57][59].",
+    "categories": {
+      "1_Security": {
+        "overseas": "미국은 요르단에서 미군 사망 사건에 대한 보복으로 이란 아바단을 미사일로 타격했으며[7][10], 이란 해안 및 미사일 시설에 대한 추가 공습도 완료했다[6][14]. 이란혁명수비대는 호르무즈 해협 '안전하지 않은 항로'에서 선박 2척이 사고를 당했다고 발표하며 미국에 속아 진입한 선박이라고 주장했다[5][21]. 후티 반군은 사나 공항 분쟁과 관련해 사우디아라비아의 '가치 있는 표적'이 사정권 내에 있다고 경고했으며[4], 미-이란 휴전이 사실상 종료되고 호르무즈 봉쇄가 재개됐다는 보도도 나왔다[8]. 퇴역 미 해군 제독은 수에즈 운하 위험에도 주목해야 한다고 경고했다[9]. 이라크와 시리아는 호르무즈 대안 송유관 복원 협정을 체결했다[1].",
+        "korea_impact": "외교부는 중동 긴장 고조를 이유로 단기체류자의 조속한 출국을 권고했다[13]. 미군의 이란 추가 공습 및 이란의 걸프 동맹국 민간 인프라 타격 보도가 이어지며 한국 정부도 상황을 예의주시하고 있다[11][12]. 한국 해군 청해부대의 호르무즈 파견 가능성이 거론되고 있다[18]. 첫 미군 전사자 발생 이후 중동 긴장이 고조됐으나 한국 정부는 원유 수급에 당장 문제가 없다는 입장을 밝혔다[29]."
+      },
+      "2_Safety": {
+        "overseas": "이란혁명수비대는 호르무즈 해협 '안전하지 않은 항로'에서 선박 2척이 사고를 당했다고 발표했으며, 미국에 속아 해당 항로에 진입한 선박이라고 주장했다[5][21]. 이란은 해당 사건을 '사고'로 규정했으나 실질적인 선박 제지 행위가 포함된 것으로 보인다[15][16].",
+        "korea_impact": ""
+      },
+      "3_Freight": {
+        "overseas": "이라크와 시리아는 호르무즈 해협을 우회하는 송유관 복원 협정을 체결했으며[1], 이라크는 시리아 항구를 중유 수출 거점으로 활용하는 방안을 확대 추진 중이다[22][23][24]. 이라크는 지중해 수출을 위한 호르무즈 우회 송유관 건설도 검토하고 있다[27].",
+        "korea_impact": "호르무즈 봉쇄 및 홍해 봉쇄 위기가 겹치며 희망봉 우회 가능성이 다시 부각되고 있다[25]. 중동 원유 수송 경로 재편 과정에서 트럭 수천 대를 동원한 육상 운반 방식도 등장하는 등 물류 비용 상승 압박이 커지고 있다[26]."
+      },
+      "4_PortCargo": {
+        "overseas": "앤트워프-브뤼헤 항만의 2026년 상반기 화물 처리량이 지정학적 긴장과 수요 약세로 감소했다[28].",
+        "korea_impact": "한국 정부는 7~8월 원유 도입 물량이 100% 확보됐으며 9월도 74% 수준이라고 밝혔다[30]. DP월드는 부산항을 고부가 물류 허브로 육성해야 한다고 제언했다[31]. 광양제철소는 원료부두 하역기에 AI 기반 고장 예측 시스템을 도입했다[32]."
+      },
+      "5_EconFinance": {
+        "overseas": "브렌트유는 미-이란 전쟁 확대 및 호르무즈 봉쇄 재개 우려로 배럴당 88달러를 돌파했으며[34][33], 쿠싱 원유 재고 감소도 유가 상승 압력을 더하고 있다[35]. 미 연준은 인플레이션 재점화 위협을 경고했으며[36], 서아시아 분쟁발 유가 상승이 인도 루피화, 기업 실적, PMI 등 주요 시장 지표에 영향을 미칠 변수로 꼽히고 있다[37][42]. 나이지리아는 브렌트유 급등으로 오일 수입 증가가 예상된다[41]. 호르무즈 유가 충격이 미국 사회보장 급여 조정(COLA)에도 영향을 미칠 수 있다는 분석이 나왔다[40].",
+        "korea_impact": "걸프 지역 확전 공포로 국내 유가가 급등하고 있으며[43], 호르무즈 사태로 인한 물가 상승이 각국 중앙은행의 고금리 장기화를 압박하고 있다[44]. 중동 전쟁 격화로 석유 최고가격제 등 비상조치가 장기화될 가능성이 제기됐다[45]. 대한항공은 연료비 급등으로 국내선 구조조정에 나섰다[46]. 원화는 이달 들어 주요국 통화 중 절상률이 가장 높은 나홀로 강세를 보이고 있다[52]. 중국의 AI 모델 '키미' 등장으로 월요일 코스피 시장이 시험대에 오를 것으로 전망된다[47][51]."
+      },
+      "7_Shipping": {
+        "overseas": "필리핀 선박 4척과 필리핀 선원 81명이 호르무즈 해협을 안전하게 통과했다고 필리핀 외교부가 발표했다[53][54].",
+        "korea_impact": "호르무즈 봉쇄 이후 15번째 한국 유조선이 홍해를 통해 원유를 수송했으며, 해수부는 24시간 모니터링과 안전 지원을 지속하고 있다[55][56][57][58][59]. 중동 불안을 배경으로 중국 조선업이 전 세계 선박 주문을 대거 수주하고 있다[61]. HD현대는 미국 EPC 기업과 전략적 파트너십을 체결해 현지 선박 건조 협력을 확대한다[64]. KRISO의 SMR 추진 컨테이너선 개념설계가 ABS 기본승인을 획득했다[63]. 북극항로 시범운항이 글로벌 해양 경쟁력 확대 기회로 주목받고 있다[62]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "우크라이나가 카스피해 원유 허브를 타격해 유조선에 화재가 발생했으며[66], 유럽 가스 가격 급등으로 천연가스 가격도 지지를 받고 있다[67]. 미국 걸프만에서 열대성 기상 위협이 발생해 미국 정유시설이 잠재적 위험에 노출됐다[65].",
+        "korea_impact": "이란이 휴전 기간 약 9조 원어치(약 60억 달러) 규모의 원유를 수출했으며 목적지는 중국으로 유력하다[68][69][71][75]. 이란 봉쇄 해제 한 달 만에 원유 7000만 배럴이 중국으로 향한 것으로 보도됐다[70]. 러시아 정유시설 셧다운으로 디젤 공급 차질 우려가 제기됐다[74]. 햇반·참치캔 등 식품업계가 줄인상에 나서며 소비자 장바구니 부담이 확대되고 있다[73]. SK그룹 최태원 회장은 내년 메모리 반도체 수요가 최소 50~60% 증가하고 공급난이 심화될 것이라고 경고했다[48][49][50][72]. GS칼텍스 여수공장은 상반기 대정비를 완료하고 디지털·AI를 접목해 안전·효율을 높였다[77]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "미-이란 군사 충돌이 격화되며 호르무즈 해협 봉쇄가 재개됐으며[8], 이란혁명수비대는 해협 내 '안전하지 않은 항로'에서 선박 2척을 제지·사고 처리했다[5][16][21]. 후티 반군은 홍해에서도 사우디 표적 위협을 재개해 홍해 봉쇄 위기가 동시에 부각되고 있다[4][25]. 퇴역 미 해군 제독은 수에즈 운하 위험에도 주목해야 한다고 경고했다[9].",
+          "korea_impact": "호르무즈 봉쇄 이후 한국 유조선들은 홍해 대체 항로를 통해 원유를 수송하고 있으며, 15번째 한국 유조선이 홍해를 통과했다[55][57][59]. 홍해 봉쇄 위기까지 겹칠 경우 희망봉 우회 가능성이 재부상하고 있다[25]. 해수부는 24시간 모니터링과 안전 지원을 지속하고 있다[56]."
+        },
+        "source": {
+          "overseas": "이란은 휴전 기간 약 9조 원어치 원유를 수출했으며 목적지는 중국으로 유력하다[68][71][75]. 이라크는 호르무즈 우회를 위해 시리아 항구를 통한 수출 거점 확대 및 지중해 송유관 건설을 추진 중이다[1][22][27]. 우크라이나의 카스피해 원유 허브 타격으로 러시아 원유 공급에도 차질이 발생했다[66].",
+          "korea_impact": "한국 정부는 7~8월 원유 도입 물량 100%, 9월 74% 수준을 확보했다고 밝혔다[30]. 중동 전쟁 격화로 석유 최고가격제 등 비상조치 장기화 가능성이 제기됐다[45]. 러시아 정유시설 셧다운으로 디젤 공급 차질 우려도 추가됐다[74]."
+        },
+        "logistics": {
+          "overseas": "앤트워프-브뤼헤 항만의 2026년 상반기 화물 처리량이 지정학적 긴장과 수요 약세로 감소했다[28]. 중동 불안을 배경으로 중국 조선업이 전 세계 선박 주문을 대거 수주하고 있다[61]. 필리핀 선박 4척과 선원 81명이 호르무즈 해협을 안전하게 통과했다[53][54].",
+          "korea_impact": "호르무즈 봉쇄 및 홍해 위기로 물길이 막히자 트럭 수천 대를 동원한 육상 운반 방식이 등장하는 등 물류 비용 상승 압박이 커지고 있다[26]. HD현대는 미국 EPC 기업과 전략적 파트너십을 체결해 현지 선박 건조 협력을 확대한다[64]. DP월드는 부산항을 고부가 물류 허브로 육성해야 한다고 제언했다[31]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "브렌트유가 배럴당 88달러를 돌파하며 국내 유가 급등 및 물가 상승 압박이 가중되고 있다[34][43]. 호르무즈 사태로 인한 인플레이션 우려로 고금리 장기화 가능성이 제기됐다[44]. 원화는 이달 들어 주요국 통화 중 절상률이 가장 높은 나홀로 강세를 보이고 있다[52]. 중국 AI 모델 '키미' 등장으로 코스피 시장에 추가 변동성이 예상된다[47][51].",
+        "정유·화학": "중동 전쟁 격화로 석유 최고가격제 등 비상조치 장기화 가능성이 제기됐다[45]. 러시아 정유시설 셧다운으로 디젤 공급 차질 우려가 추가됐다[74]. GS칼텍스 여수공장은 상반기 대정비를 완료하고 디지털·AI를 접목해 안전·효율을 높였다[77].",
+        "해운·물류": "호르무즈 봉쇄 이후 15번째 한국 유조선이 홍해를 통해 원유를 수송했으며 해수부가 24시간 모니터링을 지속하고 있다[55][56][59]. 물길 차단으로 트럭 수천 대를 동원한 육상 운반 방식이 등장하는 등 대체 물류 비용이 상승하고 있다[26]. HD현대는 미국 EPC 기업과 현지 선박 건조 협력을 확대한다[64].",
+        "식품·농업": "햇반·참치캔 등 식품업계가 줄인상에 나서며 소비자 장바구니 부담이 확대되고 있다[73].",
+        "기타산업": "SK그룹 최태원 회장은 내년 메모리 반도체 수요가 최소 50~60% 증가하고 공급난이 심화될 것이라고 경고했다[48][49][50]. 대한항공은 연료비 급등으로 국내선 구조조정에 나섰다[46]."
+      }
+    },
+    "changes": {
+      "new": [
+        "미국의 이란 아바단 및 해안·미사일 시설 추가 공습 단행[7][10][14]",
+        "이란혁명수비대의 호르무즈 해협 선박 2척 제지·사고 처리 발표[15][16][19]",
+        "미-이란 휴전 종료 및 호르무즈 봉쇄 재개 보도[8]",
+        "이라크-시리아 호르무즈 대안 송유관 복원 협정 체결[1]",
+        "브렌트유 배럴당 88달러 돌파[34]",
+        "외교부 중동 단기체류자 조속 출국 권고[13]",
+        "필리핀 선박 4척·선원 81명 호르무즈 안전 통과[53][54]",
+        "우크라이나의 카스피해 원유 허브 타격[66]"
+      ],
+      "escalated": [
+        "미-이란 군사 충돌 격화: 미군 사망 → 미국 보복 공습 → 이란 걸프 동맹국 민간 인프라 타격[11][12][6]",
+        "호르무즈 해협 선박 통항 위협 심화: 이란의 선박 제지 행위 지속[15][16][19]",
+        "후티 반군의 홍해·사우디 표적 위협 재개[4][25]",
+        "중동발 유가 급등 및 인플레이션 압박 심화[33][34][43][44]",
+        "한국 유조선 홍해 대체 항로 운용 지속(15번째)[55][57][59]",
+        "이란의 휴전 기간 대규모 원유 수출(약 9조 원어치)[68][70][75]"
+      ],
+      "resolved": []
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "Iraq and Syria sign agreement to restore oil pipeline that would provide alternative to Strait of Hormuz",
+        "url": "https://www.hellenicshippingnews.com/iraq-and-syria-sign-agreement-to-restore-oil-pipeline-that-would-provide-alternative-to-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . and Iran inch closer to broader war after American troops are killed",
+        "url": "https://www.yahoo.com/news/politics/articles/u-iran-inch-closer-broader-191401678.html",
+        "type": "intl"
+      },
+      {
+        "title": "US vs Iran war : How Strait of Hormuz crisis triggered 8 days of strikes | Full timeline",
+        "url": "https://www.livemint.com/news/world/us-vs-iran-war-how-strait-of-hormuz-crisis-triggered-8-days-of-strikes-full-timeline-11784483149631.html",
+        "type": "intl"
+      },
+      {
+        "title": "Senior Houthi official warns Saudi  valuable  targets within range over Sanaa airport row",
+        "url": "https://www.prokerala.com/news/articles/a1789985.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims two ships involved in  accident  on  unsafe route  in Strait of Hormuz",
+        "url": "https://news.webindia123.com/news/Articles/World/20260719/4476710.html",
+        "type": "intl"
+      },
+      {
+        "title": "US launches revenge attacks to  punish  Iran over soldier deaths in Jordan",
+        "url": "https://www.nzherald.co.nz/world/us-launch-revenge-attacks-to-punish-iran-over-soldier-deaths-in-jordan/4NAB77TWDRD7BJUJ3I5SL7454M/",
+        "type": "intl"
+      },
+      {
+        "title": "US Missiles Strike Iran Abadan : No Casualties Reported",
+        "url": "https://www.newkerala.com/news/a/irans-abadan-attacked-us-missile-531.htm",
+        "type": "intl"
+      },
+      {
+        "title": "The week that was in international affairs : US - Iran ceasefire dead , Hormuz blockade back on ; China flexes with missile test",
+        "url": "https://timesofindia.indiatimes.com/world/rest-of-world/the-week-that-was-in-international-affairs-us-iran-ceasefire-dead-hormuz-blockade-back-on-china-flexes-with-missile-test/articleshow/132497920.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Retired US Navy admiral on Iran moves :  Watch the Suez Canal  ",
+        "url": "https://www.yahoo.com/news/politics/articles/retired-us-navy-admiral-iran-144153220.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Abadan attacked by US missile",
+        "url": "https://www.prokerala.com/news/articles/a1789961.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran attacks US Gulf allies , causing a fire at Kuwait power plant - Breaking News",
+        "url": "https://www.dailymirror.lk/breaking-news/Iran-attacks-US-Gulf-allies-causing-a-fire-at-Kuwait-power-plant/108-346032",
+        "type": "intl"
+      },
+      {
+        "title": "Iran hits US allies as Israel warns of missile threat",
+        "url": "https://www.perthnow.com.au/news/conflict/iran-hits-us-allies-as-israel-warns-of-missile-threat-c-22598369",
+        "type": "intl"
+      },
+      {
+        "title": "World : US launches strikes to  punish  Iran after troops kil",
+        "url": "https://www.newvision.co.ug/category/world/us-launches-strikes-to-punish-iran-after-troo-NV_237311_072026",
+        "type": "intl"
+      },
+      {
+        "title": "The Strait of Hormuz War : Escalation , Iranian Resilience , and the Risk of a Wider Regional Conflict – NIAC",
+        "url": "https://niacouncil.org/the-strait-of-hormuz-war-escalation-iranian-resilience-and-the-risk-of-a-wider-regional-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "IU Special Edition ; The War for the Strait of Hormuz ; Internal Debates on Negotiations Amid War , and More – NIAC",
+        "url": "https://niacouncil.org/iu-special-edition-the-war-for-the-strait-of-hormuz-internal-debates-on-negotiations-amid-war-and-more/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Says Two Vessels Attempting to Cross Strait Were Halted",
+        "url": "https://jowhar.com/iran-says-two-vessels-attempting-to-cross-strait-were-halted/",
+        "type": "intl"
+      },
+      {
+        "title": "US reimposes its blockade on Iran after Tehran attacks on ships in the Strait of Hormuz",
+        "url": "http://www.dhakacourier.com.bd/news/Global/US-reimposes-its-blockade-on-Iran-after-Tehran%E2%80%99s-attacks-on-ships-in-the-Strait-of-Hormuz/10338",
+        "type": "intl"
+      },
+      {
+        "title": "Iran shadow fleet rushed $6 billion of oil to China during brief US truce : Report",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/irans-shadow-fleet-rushed-6-billion-of-oil-to-china-during-brief-us-truce-report/articleshow/132495532.cms",
+        "type": "intl"
+      },
+      {
+        "title": "At least 6 missiles hit Iran Qeshm Island amid new US strikes – Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20260719-at-least-6-missiles-hit-irans-qeshm-island-amid-new-us-strikes/",
+        "type": "intl"
+      },
+      {
+        "title": "Caspian Pipeline Consortium : Oil loadings halted after tanker attack at Black Sea terminal",
+        "url": "https://timesofindia.indiatimes.com/world/europe/caspian-pipeline-consortium-oil-loadings-halted-after-tanker-attack-at-black-sea-terminal/articleshow/132493165.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Iran counterstrikes crush US hopes for quick victory as Middle East brinkmanship reaches critical flashpoint",
+        "url": "https://www.bankingnews.gr/diethni/articles/889075/iran-counterstrikes-crush-us-hopes-for-quick-victory-as-middle-east-brinkmanship-reaches-critical-flashpoint%20title=",
+        "type": "intl"
+      },
+      {
+        "title": "US launches strikes to  punish  Iran after troops killed",
+        "url": "https://www.aol.co.uk/articles/us-launches-strikes-punish-iran-091019000.html",
+        "type": "intl"
+      },
+      {
+        "title": "US says naval blockade of Iran remains in effect",
+        "url": "https://www.middleeastmonitor.com/20260719-us-says-naval-blockade-of-iran-remains-in-effect/",
+        "type": "intl"
+      },
+      {
+        "title": "Caspian Pipeline Consortium Oil Loadings Suspended After Drone Attacks on Tankers , CPC Says",
+        "url": "https://english.aawsat.com/business/5297660-caspian-pipeline-consortium-oil-loadings-suspended-after-drone-attacks-tankers-cpc",
+        "type": "intl"
+      },
+      {
+        "title": "𝗨 . 𝗦 . Launches 𝗙𝗿𝗲𝘀𝗵 𝗦𝘁𝗿𝗶𝗸𝗲𝘀 𝗢𝗻 𝗜𝗿𝗮𝗻 𝗔𝗳𝘁𝗲𝗿 Death Of 2 𝗦𝗼𝗹𝗱𝗶𝗲𝗿𝘀",
+        "url": "https://leadership.ng/%F0%9D%97%A8-%F0%9D%97%A6-launches-%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%B2%F0%9D%98%80%F0%9D%97%B5-%F0%9D%97%A6%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%B8%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%A2/",
+        "type": "intl"
+      },
+      {
+        "title": "  Clear war crime : Iraninan Embassy in India condemns US strikes on Chabahar Port",
+        "url": "https://www.thehindubusinessline.com/news/world/clear-war-crime-iraninan-embassy-in-india-condemns-us-strikes-on-chabahar-port/article71240613.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Live updates : Fresh strikes hit Iran after US vow to  swiftly punish  Tehran for service member deaths",
+        "url": "https://us.cnn.com/2026/07/19/world/live-news/iran-war-trump",
+        "type": "intl"
+      },
+      {
+        "title": "US continues strikes on Iran after confirming death of American soldiers",
+        "url": "https://www.premiumtimesng.com/news/headlines/896457-us-continues-strikes-on-iran-after-confirming-death-of-american-soldiers.html",
+        "type": "intl"
+      },
+      {
+        "title": "Live updates : Explosions heard as US strikes Iran for eighth night in a row",
+        "url": "https://edition.cnn.com/2026/07/19/world/live-news/iran-war-trump",
+        "type": "intl"
+      },
+      {
+        "title": "US military launches new air strikes to  swiftly punish  Iran for deaths of US troops | ABC News Top Stories",
+        "url": "https://www.abc.net.au/listen/programs/abc-news-top-stories/latest-news-just-in-us-strikes-on-iran-ukraine-drones-hit-russia/106933222",
+        "type": "intl"
+      },
+      {
+        "title": "  Nobody is willing to move : Iran ship attacks push Strait of Hormuz into  worst - case scenario , says maritime risk CEO",
+        "url": "https://www.moneycontrol.com/world/nobody-is-willing-to-move-iran-s-ship-attacks-push-strait-of-hormuz-into-worst-case-scenario-says-maritime-risk-ceo-article-13977644.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Supreme Leader Says Trump Signature Is  Worthles as US Launches New Strikes",
+        "url": "https://www.benzinga.com/news/politics/26/07/60542297/irans-supreme-leader-says-trumps-signature-is-worthless-as-us-launches-new-strikes",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran exchange strikes , Kuwait infrastructure hit",
+        "url": "https://theshillongtimes.com/2026/07/19/us-iran-exchange-strikes-kuwait-infrastructure-hit/",
+        "type": "intl"
+      },
+      {
+        "title": "World News : GCC - EU condemn attacks on Hormuz",
+        "url": "https://www.gdnonline.com:443/Details/1401055",
+        "type": "intl"
+      },
+      {
+        "title": "Iran strike damages Kuwait desalination plant , exposing vulnerability",
+        "url": "https://www.redlandsdailyfacts.com/2026/07/17/iranian-strik-kuwait-desalination-plant/",
+        "type": "intl"
+      },
+      {
+        "title": "US forces redirect 5 commercial vessels , disable 1 after resumption of naval blockade on Iran",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/us-forces-redirect-5-commercial-vessels-disable-1-after-resumption-of-naval-blockade-on-iran/articleshow/132488868.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Escalation of US - Iran Hostilities Pushes Crude Oil Sharply Higher",
+        "url": "https://finance.yahoo.com/energy/articles/escalation-us-iran-hostilities-pushes-191505747.html",
+        "type": "intl"
+      },
+      {
+        "title": "US Navy Redirects 5 Ships , Disables 1 in Iran Blockade",
+        "url": "https://www.newkerala.com/news/a/us-forces-redirect-commercial-vessels-disable-after-resumption-558.htm",
+        "type": "intl"
+      },
+      {
+        "title": "US launches fresh strikes on Iran in revenge for US soldiers being killed",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-902889",
+        "type": "intl"
+      },
+      {
+        "title": "After Hormuz , Iran Turns to Red Sea Gateway as Pressure Point",
+        "url": "https://drudge.com/news/293290/after-hormuz-iran-turns-red-sea-gateway",
+        "type": "intl"
+      },
+      {
+        "title": "The Strait of Hormuz and the New Geography of Power",
+        "url": "https://www.ibtimes.co.in/strait-hormuz-new-geography-power-904010",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran war news LIVE : Israel warns Iran of massive retaliation after missile intercepted near Jordan Aqaba",
+        "url": "https://www.livemint.com/news/world/us-iran-war-latest-news-updates-donald-trump-jordan-kuwait-bahrain-abu-dhabi-irgc-abbas-araghchi-ceasefire-deal-11784417738998.html",
+        "type": "intl"
+      },
+      {
+        "title": "Israeli military says missiles have been launched from Iran toward Jordanian city of Aqaba - 20 - Jul - 2026",
+        "url": "https://home.nzcity.co.nz/news/article.aspx?id=450211&fm=psp,tsf",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over attack that killed American troops in Jordan",
+        "url": "https://www.wistv.com/2026/07/19/us-strikes-irans-revolutionary-guard-over-attack-that-killed-american-troops-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "Tensions rise in Iran war after latest US troop deaths",
+        "url": "https://www.yahoo.com/news/politics/articles/tensions-rise-iran-war-latest-181644287.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims US strikes on nuclear power plant ; Tehran attacks against Washington allies in West Asia continue",
+        "url": "https://news.webindia123.com/news/Articles/World/20260719/4476718.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over troop deaths as campaign against Tehran continues - National",
+        "url": "https://globalnews.ca/news/11971735/us-airstrikes-iran-war-continues/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran over troop deaths as Israel warns Tehran attacks are coming close – Daily Press",
+        "url": "https://www.dailypress.com/2026/07/18/us-strikes-iran-over-troop-deaths-as-israel-warns-tehrans-attacks-are-coming-close/",
+        "type": "intl"
+      },
+      {
+        "title": "Araghchi says Iran faced bombing threat during US talks",
+        "url": "https://www.siasat.com/araghchi-says-iran-faced-bombing-threat-during-us-talks-3509492/",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz Closure Exposes Africa Energy Dependence on Iran and China",
+        "url": "https://oilprice.com/Energy/Energy-General/Hormuz-Closure-Exposes-Africas-Energy-Dependence-on-Iran-and-China.html",
+        "type": "intl"
+      },
+      {
+        "title": "  We shot down US drone  - Iran",
+        "url": "https://dailypost.ng/2026/07/19/we-shot-down-us-drone-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran over troop deaths as Israel warns Tehran attacks are coming close - WSVN 7News | Miami News , Weather , Sports",
+        "url": "https://wsvn.com/news/us-world/us-strikes-iran-over-troop-deaths-as-israel-warns-tehrans-attacks-are-coming-close/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran over troop deaths as Israel warns Tehran attacks are coming close – San Diego Union - Tribune",
+        "url": "https://www.sandiegouniontribune.com/2026/07/18/us-strikes-iran-over-troop-deaths-as-israel-warns-tehrans-attacks-are-coming-close/",
+        "type": "intl"
+      },
+      {
+        "title": "US Strikes Iran Again : 8th Night of Devastating Precision Hits",
+        "url": "https://redstate.com/wardclark/2026/07/19/us-strikes-iran-again-8th-night-of-devastating-precision-hits-n2204497",
+        "type": "intl"
+      },
+      {
+        "title": "US attacked under - construction Darkhovin nuclear power plant , says Iran Atomic Energy Organisation",
+        "url": "https://news.webindia123.com/news/Articles/World/20260719/4476659.html",
+        "type": "intl"
+      },
+      {
+        "title": "Israel threatens  full force  response if Iran fires missiles towards it | Iran",
+        "url": "https://www.theguardian.com/world/2026/jul/19/israel-threatens-full-force-response-iran-fires-missiles",
+        "type": "intl"
+      },
+      {
+        "title": "Israel threatens  full force  response if Iran fires missiles towards it",
+        "url": "https://www.aol.co.uk/articles/israel-threatens-full-force-response-162733000.html",
+        "type": "intl"
+      },
+      {
+        "title": "US hits Iran anew after two troops slain in Jordan",
+        "url": "https://www.manilatimes.net/2026/07/20/world/us-hits-iran-anew-after-two-troops-slain-in-jordan/2387140",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after 2 American soldiers killed in drone attack",
+        "url": "https://www.christianpost.com/news/us-strikes-iran-after-2-american-soldiers-killed-in-drone-attack.html",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran escalate strikes across Mideast ; bridges and a water plant hit - Associated Press",
+        "url": "https://prescottenews.com/2026/07/17/us-and-iran-escalate-strikes-across-mideast-bridges-and-a-water-plant-hit-associated-press/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran hits US allies as Israel warns missiles could land on its territory",
+        "url": "https://www.edp24.co.uk/news/national/26292736.iran-hits-us-allies-israel-warns-missiles-land-territory/",
+        "type": "intl"
+      },
+      {
+        "title": "Experts : How US - Iran clashes trigger fuel price anxiety",
+        "url": "https://www.thecitizen.co.tz/tanzania/business/experts-how-us-iran-clashes-trigger-fuel-price-anxiety-5531792",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump is  risking all out war  in the Middle East with US air strikes on Iran",
+        "url": "https://www.mirror.co.uk/news/world-news/donald-trump-air-strikes-iran-37450480",
+        "type": "intl"
+      },
+      {
+        "title": "Iran hits US allies ; missiles headed for Jordan could land in Israel",
+        "url": "https://www.chicagotribune.com/2026/07/19/iran-strikes-israel-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "US hits under - construction nuke plant in Iran : Tehran",
+        "url": "https://nypost.com/2026/07/19/world-news/us-hits-under-construction-nuke-plant-in-iran-tehran/",
+        "type": "intl"
+      },
+      {
+        "title": "Why did US - Iran ceasefire collapse ? Timeline of peace deal that unravelled",
+        "url": "https://indianexpress.com/article/world/us-iran-conflict-timeline-ceasefire-breakdown-july-2026-10793917/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC 5 Dallas - Fort Worth",
+        "url": "https://www.nbcdfw.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/4051491/",
+        "type": "intl"
+      },
+      {
+        "title": "Why Iran Islamic Regime is entering the final stage of strategic attrition",
+        "url": "https://www.jpost.com/opinion/article-902922",
+        "type": "intl"
+      },
+      {
+        "title": "US launches strikes to  swiftly punish  Iran for deadly attacks",
+        "url": "https://www.fox29.com/news/us-launches-strikes-swiftly-punish-iran-deadly-attacks",
+        "type": "intl"
+      },
+      {
+        "title": "Iraq eyes Mediterranean pipeline to reduce Hormuz reliance",
+        "url": "https://finance.yahoo.com/energy/articles/iraq-eyes-mediterranean-pipeline-reduce-143327269.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran accuses US of violating international law after strike on nuclear plant",
+        "url": "https://www.middleeasteye.net/news/iran-accuses-us-violating-international-law-after-strike-nuclear-plant",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran over troop deaths as Israel warns Tehran attacks are coming close",
+        "url": "https://www.newsday.com/news/nation/iran-us-hormuz-strait-war-july-19-2026-e67534",
+        "type": "intl"
+      },
+      {
+        "title": "US renews strikes on Iran after military personnel killed",
+        "url": "https://www.businesstimes.com.sg/international/us-renews-strikes-iran-after-two-military-personnel-killed",
+        "type": "intl"
+      },
+      {
+        "title": "US Troop Deaths Escalate Iran Conflict Into Dangerous New Phase Across Middle East",
+        "url": "https://gulfnews.com/world/mena/us-troop-deaths-push-iran-war-into-dangerous-new-phase-1.500613191",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard targets over an attack that killed troops in Jordan",
+        "url": "https://www.newindianexpress.com/world/2026/Jul/19/us-strikes-irans-revolutionary-guard-targets-over-an-attack-that-killed-troops-in-jordan",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Hits Saudi Arabia For First Time In Months As US Strikes Iran For Seventh Straight Night",
+        "url": "https://www.hngn.com/articles/272179/20260719/iran-hits-saudi-arabia-first-time-months-us-strikes-iran-seventh-straight-night.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran hits middle eastern U . S . allies in latest exchange of fire",
+        "url": "https://www.theglobeandmail.com/world/article-iran-strikes-us-allies-in-latest-exchange-of-fire/",
+        "type": "intl"
+      },
+      {
+        "title": "US ready to let Saudi Arabia enrich uranium",
+        "url": "http://www.arabherald.com/news/279197042/us-ready-to-let-saudi-arabia-enrich-uranium-cnn",
+        "type": "intl"
+      },
+      {
+        "title": "Deadly strikes hit Lebanon hours after ceasefire ; 89 killed as Gulf tensions persist",
+        "url": "https://sahilonline.org/deadly-strikes-hit-lebanon-hours-after-ceasefire-89-killed-as-gulf-tensions-persist",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Says MoU  Suspended  After U . S . Strikes Kill 50 in July",
+        "url": "https://en.tempo.co/read/2114435/iran-says-mou-suspended-after-u-s-strikes-kill-50-in-july",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Revolutionary Guard as Iran conflict escalates across Gulf",
+        "url": "https://www.timeslive.co.za/news/world/2026-07-19-us-strikes-revolutionary-guard-as-iran-conflict-escalates-across-gulf/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran hits US allies as Israel warns missiles headed for Jordan could land on its territory",
+        "url": "https://economictimes.indiatimes.com/news/defence/iran-hits-us-allies-as-israel-warns-missiles-headed-for-jordan-could-land-on-its-territory/articleshow/132494836.cms",
+        "type": "intl"
+      },
+      {
+        "title": "16 US service members have died in the Iran war , reflecting a conflict fought largely in the air",
+        "url": "https://abc7chicago.com/post/16-us-service-members-have-died-iran-war-reflecting-conflict-fought-largely-air/19537509/",
+        "type": "intl"
+      },
+      {
+        "title": "  Chance of being bombed at any moment : What Iran Araghchi told Trump envoy during talks",
+        "url": "https://www.hindustantimes.com/world-news/chance-of-being-bombed-at-any-moment-what-irans-araghchi-told-trumps-envoy-during-talks-101784463851597.html",
+        "type": "intl"
+      },
+      {
+        "title": "Spiraling US - Iran conflict risks turning into a broader regional war",
+        "url": "https://www.egyptindependent.com/spiraling-us-iran-conflict-risks-turning-into-a-broader-regional-war/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over an attack that killed troops in Jordan - WSVN 7News | Miami News , Weather , Sports",
+        "url": "https://wsvn.com/news/us-world/us-strikes-irans-revolutionary-guard-over-an-attack-that-killed-troops-in-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "What remains of the Iran deal as fighting rages",
+        "url": "https://jamaica-gleaner.com/article/world-news/20260719/what-remains-iran-deal-fighting-rages",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over an attack that killed troops",
+        "url": "https://salinapost.com/posts/635a40da-b52e-4e47-9dff-4460dc840702",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over an attack that killed troops in Jordan – KTBB News , Weather , Talk",
+        "url": "https://ktbb.com/post/?p=1525804",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran strikes : latest developments",
+        "url": "https://www.yahoo.com/news/world/articles/us-iran-strikes-latest-developments-112735324.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC4 Washington",
+        "url": "https://www.nbcwashington.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/4131829/",
+        "type": "intl"
+      },
+      {
+        "title": "US renews strikes on Iran after two military personnel killed by Iranian attack",
+        "url": "https://economictimes.indiatimes.com/news/defence/us-renews-strikes-on-iran-after-two-military-personnel-killed-by-iranian-attack/articleshow/132493396.cms",
+        "type": "intl"
+      },
+      {
+        "title": "UPDATED : US continues strikes on Iran after confirming death of American soldiers",
+        "url": "https://www.premiumtimesng.com/news/headlines/896457-updated-us-continues-strikes-on-iran-after-confirming-death-of-american-soldiers.html",
+        "type": "intl"
+      },
+      {
+        "title": "US Soldiers Killed in Iranian Attack on Jordan . Middle East Conflict Spreads",
+        "url": "https://www.ibtimes.com/us-soldiers-killed-iranian-attack-jordan-middle-east-conflict-spreads-3805473",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over an attack that killed troops in Jordan",
+        "url": "https://wtop.com/world/2026/07/us-strikes-irans-revolutionary-guard-over-attack-that-killed-troops-in-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC Bay Area",
+        "url": "https://www.nbcbayarea.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/4115754/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC Chicago",
+        "url": "https://www.nbcchicago.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/3963452/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after 2 troops killed in attack | The Arkansas Democrat - Gazette",
+        "url": "https://www.arkansasonline.com/news/2026/jul/19/us-strikes-iran-after-2-troops-killed-in-attack/",
+        "type": "intl"
+      },
+      {
+        "title": "US renews strikes on Iran after 2 servicemen killed by Iranian attack",
+        "url": "https://bworldonline.com/world/2026/07/19/764352/us-renews-strikes-on-iran-after-2-servicemen-killed-by-iranian-attack/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran IRGC claims interception of US MQ - 9 drone over Khuzestan region Ahvaz",
+        "url": "https://news.webindia123.com/news/Articles/World/20260719/4476593.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Dismisses Iran Withdrawal from Nuclear Deal",
+        "url": "https://www.newkerala.com/news/a/couldnt-care-less-trump-dismisses-irans-withdrawal-from-968.htm",
+        "type": "intl"
+      },
+      {
+        "title": "US ready to let Saudi Arabia enrich uranium CNN",
+        "url": "http://www.bignewsnetwork.com/news/279196907/us-ready-to-let-saudi-arabia-enrich-uranium-cnn",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after 2 troops killed in attack | Northwest Arkansas Democrat - Gazette",
+        "url": "https://www.nwaonline.com/news/2026/jul/19/us-strikes-iran-after-2-troops-killed-in-attack/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims drone strikes on US military bases in Kuwait",
+        "url": "https://news.az/news/iran-claims-drone-strikes-on-us-military-bases-in-kuwait",
+        "type": "intl"
+      },
+      {
+        "title": "How Yunnan mineral wealth and border corridors could solve China  Malacca dilemma  ",
+        "url": "https://www.scmp.com/news/china/military/article/3361079/how-yunnans-mineral-wealth-and-border-corridors-could-solve-chinas-malacca-dilemma",
+        "type": "intl"
+      },
+      {
+        "title": "US launches fresh strikes on Iran ; Tehran says 50 killed , 500 injured in latest escalation",
+        "url": "https://www.ibtimes.co.in/us-launches-fresh-strikes-iran-tehran-says-50-killed-500-injured-latest-escalation-903988",
+        "type": "intl"
+      },
+      {
+        "title": "8th Consecutive Night : US Strikes IRGC Forces ; 50 , 000 US Troops On Alert",
+        "url": "https://www.theyeshivaworld.com/news/general/2576158/8th-consecutive-night-us-strikes-irgc-forces-50000-us-troops-on-alert.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Hits US Bases in Kuwait After American Airstrikes",
+        "url": "https://pakobserver.net/iran-hits-us-bases-in-kuwait-after-american-airstrikes/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC New York",
+        "url": "https://www.nbcnewyork.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/6527295/",
+        "type": "intl"
+      },
+      {
+        "title": "Why the Strait of Hormuz has become Iran biggest bargaining chip",
+        "url": "https://www.moneycontrol.com/world/why-the-strait-of-hormuz-has-become-iran-s-biggest-bargaining-chip-2-article-13977726.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sirens sound in Kuwait , Bahrain as Iran renews strikes on Gulf states",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-902936",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran trade more strikes after 2 US troops killed by attack in Jordan",
+        "url": "https://www.businesstimes.com.sg/international/us-and-iran-trade-more-strikes-after-2-us-troops-killed-attack-jordan",
+        "type": "intl"
+      },
+      {
+        "title": "US launches new Iran strikes after two soldiers killed : What the latest ? | US - Israel war on Iran News",
+        "url": "https://www.aljazeera.com/news/2026/7/19/us-launches-new-iran-strikes-after-two-soldiers-killed-whats-the-latest",
+        "type": "intl"
+      },
+      {
+        "title": "US begins new airstrikes on Iran",
+        "url": "https://en.apa.az/asia/us-begins-new-airstrikes-on-iran-516813",
+        "type": "intl"
+      },
+      {
+        "title": "Time for all US service personnel in Middle East to disobey illegal Trump orders to wage criminal war on Iran",
+        "url": "https://nuclear-news.net/2026/07/19/2-b1-time-for-all-us-service-personnel-in-middle-east-to-disobey-illegal-trump-orders-to-wage-criminal-war-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Duckworth warns China may opt for economic blockade of Taiwan in 2028",
+        "url": "https://focustaiwan.tw:443/politics/202607190004",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC10 Philadelphia",
+        "url": "https://www.nbcphiladelphia.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/4435485/",
+        "type": "intl"
+      },
+      {
+        "title": "US and Israel plan shock strike as situation deteriorates : Hell breaks loose at American bases in Jordan with 5 dead and 16 wounded",
+        "url": "https://www.bankingnews.gr/diethni/articles/889054/us-and-israel-plan-shock-strike-as-situation-deteriorates-hell-breaks-loose-at-american-bases-in-jordan-with-5-dead-and-16-wounded",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warning Shot",
+        "url": "https://www.americanthinker.com/articles/2026/07/iran-s-warning-shot/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says MoU no longer matters as US - Iran war escalates",
+        "url": "https://www.siasat.com/trump-says-iran-mou-no-longer-matters-as-us-iran-war-escalates-3509158/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . strikes Iran over attack that killed troops in Jordan – NBC 7 San Diego",
+        "url": "https://www.nbcsandiego.com/news/national-international/us-strikes-iran-revolutionary-guard-over-killed-troops-in-jordan/4050658/",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran war - Top Iranian commander warns US of strong response to any future attack",
+        "url": "https://dunyanews.tv/en/Event-Reporting/267",
+        "type": "intl"
+      },
+      {
+        "title": "US Launches Fresh Airstrikes on Iran After Deadly Attack on Troops in Jordan , CENTCOM Says",
+        "url": "https://kashmirlife.net/us-launches-fresh-airstrikes-on-iran-after-deadly-attack-on-troops-in-jordan-centcom-says-443813/",
+        "type": "intl"
+      },
+      {
+        "title": "The US has offered few clues on how long its renewed military campaign will last",
+        "url": "https://www.egyptindependent.com/the-us-has-offered-few-clues-on-how-long-its-renewed-military-campaign-will-last/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed",
+        "url": "https://55krc.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | PowerTalk 1460 AM & 101 . 1 FM",
+        "url": "https://powertalk1460.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Orders  Gates of Hell  Against Iran",
+        "url": "https://athens-times.com/trump-orders-gates-of-hell-opened-against-iran-amid-escalating-strikes/",
+        "type": "intl"
+      },
+      {
+        "title": "US attacks Iran Revolutionary Guard over troops killed in Jordan | The Wiltshire Gazette and Herald",
+        "url": "https://www.gazetteandherald.co.uk/news/national/26292315.us-attacks-irans-revolutionary-guard-troops-killed-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East crisis live : US launches new round of airstrikes to  swiftly punish  Iran after American troops killed | US - Israel war on Iran",
+        "url": "https://www.theguardian.com/world/live/2026/jul/19/middle-east-crisis-live-us-launches-new-round-of-airstrikes-to-swiftly-punish-iran-after-american-troops-killed",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | WJBO Newsradio 1150 AM & 98 . 7 FM",
+        "url": "https://wjbo.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | NewsRadio 1450 / 1370 WKIP",
+        "url": "https://1450wkip.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | News Radio 1410 WDOV",
+        "url": "https://wdov.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US says two military personnel killed by Iranian attack in Jordan - Breaking News",
+        "url": "https://www.dailymirror.lk/breaking-news/US-says-two-military-personnel-killed-by-Iranian-attack-in-Jordan/108-346021",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | News Radio 920 AM & 104 . 7 FM",
+        "url": "https://newsradiori.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | News Radio 1450 WILM",
+        "url": "https://wilm.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US batters Iran for 8th Straight Night ; Tehran hits back at Kuwait Ali Al Salem Air Base",
+        "url": "https://en.dailypakistan.com.pk/19-Jul-2026/us-batters-iran-for-8th-straight-night-tehran-hits-back-at-kuwaits-ali-al-salem-air-base",
+        "type": "intl"
+      },
+      {
+        "title": "US Launches Airstrikes on Iran Following Fatal Attack on Troops in Jordan – GLOBE & NATION – 19 July 2026",
+        "url": "https://www.heraldgoa.in/globe-nation/us-launches-airstrikes-on-iran-following-fatal-attack-on-troops-in-jordan/482314/",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran exchange strikes after two US soldiers killed in Jordan",
+        "url": "https://www.bbc.co.uk/news/articles/cgk417jp83po",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran after 2 service members killed in Jordan",
+        "url": "https://www.dw.com/en/us-strikes-iran-after-2-service-members-killed-in-jordan/live-78015388",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | News Talk 1090 WKBZ - AM",
+        "url": "https://newstalk1090.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . military launches new airstrikes to punish Iran for deaths of U . S . troops",
+        "url": "https://kaieteurnewsonline.com/2026/07/19/u-s-military-launches-new-airstrikes-to-punish-iran-for-deaths-of-u-s-troops/",
+        "type": "intl"
+      },
+      {
+        "title": "US attacks Iran Revolutionary Guard over troops killed in Jordan | East London and West Essex Guardian Series",
+        "url": "https://www.guardian-series.co.uk/news/national/26292315.us-attacks-irans-revolutionary-guard-troops-killed-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "US launches  new airstrike on Iran after Iran attack kills 2 American soldiers",
+        "url": "https://www.rediff.com/news/report/us-launches-new-airstrikes-on-iran-after-iran-attack-kills-2-american-soldiers/20260719.htm",
+        "type": "intl"
+      },
+      {
+        "title": "US renews strikes on Iran to  punish  IRGC for troop killing ; Tehran targets American bases in Kuwait - World",
+        "url": "https://www.dawn.com/news/2016645/us-renews-strikes-on-iran-to-punish-irgc-for-troops-killing-tehran-targets-american-bases-in-kuwait",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran exchange strikes after two US deaths in Jordan attack – Ghanamma . com",
+        "url": "https://www.ghanamma.com/2026/07/19/us-and-iran-exchange-strikes-after-two-us-deaths-in-jordan-attack/",
+        "type": "intl"
+      },
+      {
+        "title": "US unleashes devastation on Iranian missile depots and air defenses in  swift punishment  for the death of two service members as Tehran claims new strikes on American bases in Kuwait",
+        "url": "https://www.dailymail.com/news/article-15988245/iranian-missiles-kuwait-american-bases.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | Newsradio WOOD 1300 and 106 . 9 FM",
+        "url": "https://woodradio.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US hits Iran for eighth consecutive night , Iran returns fire on Gulf bases - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+        "url": "https://dominicanrepublicpost.com/us-hits-iran-for-eighth-consecutive-night-iran-returns-fire-on-gulf-bases/",
+        "type": "intl"
+      },
+      {
+        "title": "US attacks Iran Revolutionary Guard over troops killed in Jordan | Chester and District Standard",
+        "url": "https://www.chesterstandard.co.uk/news/national/26292315.us-attacks-irans-revolutionary-guard-troops-killed-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "Fresh US strikes reported on Iran Qeshm Island",
+        "url": "https://news.webindia123.com/news/Articles/World/20260719/4476505.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | KOA 850 AM & 94 . 1 FM",
+        "url": "https://koacolorado.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | Twin Cities News Talk",
+        "url": "https://twincitiesnewstalk.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US launches eighth straight night of strikes on Iran",
+        "url": "https://news.az/news/us-launches-eighth-straight-night-of-strikes-on-iran",
+        "type": "intl"
+      },
+      {
+        "title": "US attacks Iran Revolutionary Guard over troops killed in Jordan",
+        "url": "https://www.eadt.co.uk/news/national/26292315.us-attacks-irans-revolutionary-guard-troops-killed-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "US hits Iran for eighth consecutive night , Iran returns fire on Gulf bases",
+        "url": "https://www.aljazeera.com/news/2026/7/19/us-launches-eighth-consecutive-night-of-attacks-on-iran",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | Newsradio WFLA Orlando",
+        "url": "https://wflaorlando.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran over attack that killed troops in Jordan",
+        "url": "https://www.bostonglobe.com/2026/07/19/world/us-strikes-iran-over-attack-that-killed-troops-in-jordan/",
+        "type": "intl"
+      },
+      {
+        "title": "Jobs data tops economic agenda as Iran war re - escalates",
+        "url": "https://www.standard.net.au/story/9313250/jobs-data-tops-economic-agenda-as-iran-war-re-escalates/",
+        "type": "intl"
+      },
+      {
+        "title": "US Military Launches New Airstrikes to  Swiftly Punish  Iran for Deaths of US Troops",
+        "url": "https://english.aawsat.com/world/5297587-us-military-launches-new-airstrikes-swiftly-punish-iran-deaths-us-troops",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . launches new airstrikes to  punish  Iran for troop deaths",
+        "url": "https://www.tpr.org/news/2026-07-18/u-s-launches-new-airstrikes-to-punish-iran-for-troop-deaths",
+        "type": "intl"
+      },
+      {
+        "title": "US launches new airstrikes to  punish  Iran after two troops killed",
+        "url": "https://www.al-monitor.com/originals/2026/07/us-launches-new-airstrikes-punish-iran-after-two-troops-killed",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over US deaths",
+        "url": "https://www.standard.net.au/story/9313137/us-strikes-irans-revolutionary-guard-over-us-deaths/",
+        "type": "intl"
+      },
+      {
+        "title": "Q1 Earnings , US - Iran Tensions to Drive Dalal Street",
+        "url": "https://www.newkerala.com/news/a/q1-earnings-us-iran-tensions-likely-drive-dalal-street-755.htm",
+        "type": "intl"
+      },
+      {
+        "title": "How the second phase of the Iran - U . S . war started and why it is raging | Explained",
+        "url": "https://www.thehindu.com/business/how-the-second-phase-of-the-iran-us-war-started-and-why-it-is-raging-explained/article71234575.ece",
+        "type": "intl"
+      },
+      {
+        "title": "State Department issues worldwide caution to Americans amid Middle East tensions",
+        "url": "https://www.israelnationalnews.com/news/430369",
+        "type": "intl"
+      },
+      {
+        "title": "Centcom : IRGC forces behind Jordan attack targeted in eighth round of strikes",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-us-completes-eighth-consecutive-night-strikes-against-iran",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | News Radio 1410 AM & 100 . 9 FM",
+        "url": "https://newsradio1410.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes Iran Revolutionary Guard over attack that killed troops in Jordan",
+        "url": "https://www.yahoo.com/news/politics/articles/us-strikes-irans-revolutionary-guard-035202329.html",
+        "type": "intl"
+      },
+      {
+        "title": "US attacking Iran to  swiftly punish  Islamic Republic for killing two American soldiers in Jordan",
+        "url": "https://www.clevelandjewishnews.com/news/national_news/us-attacking-iran-to-swiftly-punish-islamic-republic-for-killing-two-american-soldiers-in-jordan/article_9119334f-db8d-5a0c-adb1-21295a369383.html",
+        "type": "intl"
+      },
+      {
+        "title": "US resumes attacks on Iran CENTCOM",
+        "url": "https://en.apa.az/america/us-resumes-attacks-on-iran-centcom-516809",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . Strikes Iran After Two Service Members Killed | NewsRadio 1370 AM & 92 . 9 FM WSPD",
+        "url": "https://wspd.iheart.com/content/2026-07-19-us-strikes-iran-after-two-service-members-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "Two US Troops Dead , One Missing in Jordan After Iranian Attacks",
+        "url": "https://www.deccanchronicle.com/west-asia/two-us-troops-dead-one-missing-in-jordan-after-iranian-attacks-1972136",
+        "type": "intl"
+      },
+      {
+        "title": "US launches airstrikes against Iran",
+        "url": "https://kvia.com/news/2026/07/18/us-launches-airstrikes-against-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "US begins new strikes to  swiftly punish  Iran over troop deaths",
+        "url": "https://dunyanews.tv/en/World/963445-us-begins-new-strikes-to-swiftly-punish-iran-over-troop-deaths",
+        "type": "intl"
+      },
+      {
+        "title": "Iran - linked attack in Jordan kills 2 U . S . troops , CENTCOM says",
+        "url": "https://www.turnto23.com/us-news/iran-war/iran-linked-attack-in-jordan-kills-2-u-s-troops-centcom-says",
+        "type": "intl"
+      },
+      {
+        "title": "Two US Troops Killed In Iranian Attacks On Jordan , Another Missing | LIVE BLOG",
+        "url": "https://www.i24news.tv/en/news/international/artc-two-us-troops-killed-in-iranian-attacks-on-jordan-another-missing-live-blog",
+        "type": "intl"
+      },
+      {
+        "title": "US airstrikes target Iran after troop deaths",
+        "url": "https://www.straitstimes.com/world/middle-east/iran-threatens-unforgettable-lessons-as-two-us-troops-killed-in-strikes-on-jordan",
+        "type": "intl"
+      },
+      {
+        "title": "LIVE : US Launches New Strikes After Iranian Attacks Kill Two Troops",
+        "url": "https://www.deccanchronicle.com/west-asia/live-us-launches-new-strikes-after-two-troops-killed-in-iranian-attacks-1972140",
+        "type": "intl"
+      },
+      {
+        "title": "US Hits Iran With New Wave of Airstrikes Following Jordan Attack",
+        "url": "https://wcbm.com/national-headline/us-hits-iran-with-new-wave-of-airstrikes-following-jordan-attack/",
+        "type": "intl"
+      },
+      {
+        "title": "US launches new airstrikes against Iran : military",
+        "url": "https://www.koreatimes.co.kr/world/20260719/us-launches-new-airstrikes-against-iran-military",
+        "type": "dom"
+      },
+      {
+        "title": "US launches fresh strikes on Iran after two American troops killed",
+        "url": "https://www.samaa.tv/2087353827-us-launches-fresh-strikes-on-iran-after-two-american-troops-killed",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East News : WAR CRIMINALS : GCC Secretary General Jasem Mohamed Al Budaiwi condemns Iran attacks",
+        "url": "https://www.gdnonline.com:443/Details/1401012",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . renews strikes on Iran after Iranian attacks killed two military personnel",
+        "url": "https://www.spokesman.com/stories/2026/jul/17/us-says-two-military-personnel-killed-one-missing-/",
+        "type": "intl"
+      },
+      {
+        "title": "US forces launch new wave of strikes against Iran",
+        "url": "https://ianslive.in/us-forces-launch-new-wave-of-strikes-against-iran--20260719062923",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . forces launch new wave of strikes against Iran - Xinhua",
+        "url": "https://english.news.cn/northamerica/20260719/9e54b70b22b14a7081459538550673e6/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "US strikes bridges in Iran , which targets a water desalination plant",
+        "url": "https://www.redlandsdailyfacts.com/2026/07/17/us-strikes-bridges-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Two services members killed , one missing in Iranian strike",
+        "url": "https://www.wyomingnewsnow.tv/news/national/two-services-members-killed-one-missing-in-iranian-strike/article_b7479be7-26a2-54ea-973f-05e31382f1b2.html",
+        "type": "intl"
+      },
+      {
+        "title": "US military launches new airstrikes to  swiftly punish  Iran for deaths of US troops – Twin Cities",
+        "url": "https://www.twincities.com/2026/07/18/us-military-launches-new-airstrikes-to-swiftly-punish-iran-for-deaths-of-us-troops/",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran War LIVE : US launches new airstrikes on Iran to  swiftly punish  Revolutionary Guard after deadly attack on US troops",
+        "url": "https://economictimes.indiatimes.com/news/newsblogs/us-iran-war-live-updates-us-airstrikes-iran-tehran-donald-trump-strait-of-hormuz-ceasefire-middle-east-tension-kuwait-latest-news-updates-oil-prices-crude-oil/liveblog/132488826.cms",
+        "type": "intl"
+      },
+      {
+        "title": "US Launches New Strikes on Iran After Deadly Attack on American Troops in Jordan",
+        "url": "http://www.econotimes.com/US-Launches-New-Strikes-on-Iran-After-Deadly-Attack-on-American-Troops-in-Jordan-1747108",
+        "type": "intl"
+      },
+      {
+        "title": "2 US troops killed after Iranian attack in Jordan ; US launches new strikes",
+        "url": "https://www.businesstimes.com.sg/international/2-us-troops-killed-after-iranian-attack-jordan-us-launches-new-strikes",
+        "type": "intl"
+      },
+      {
+        "title": "US renews strikes on Iran after two military personnel were killed by Iranian attack",
+        "url": "https://www.channelnewsasia.com/world/iran-war-us-strikes-military-deaths-hormuz-6263116",
+        "type": "intl"
+      },
+      {
+        "title": "Two US service members killed , one missing after Iranian strikes in Jordan",
+        "url": "https://tribune.com.pk/story/2619092/two-us-service-members-killed-one-missing-after-iranian-strikes-in-jordan",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warns of  Unforgettable  Retaliation After Two U . S . Troops Killed - Jowhar News Leader",
+        "url": "https://jowhar.com/iran-warns-of-unforgettable-retaliation-after-two-u-s-troops-killed/",
+        "type": "intl"
+      },
+      {
+        "title": "US military launches new airstrikes to  swiftly punish  Iran for deaths of US troops – Lowell Sun",
+        "url": "https://www.lowellsun.com/2026/07/18/us-military-launches-new-airstrikes-to-swiftly-punish-iran-for-deaths-of-us-troops/",
+        "type": "intl"
+      },
+      {
+        "title": "US military says 2 troops are dead and 1 is missing after Iran attacks a base in Jordan",
+        "url": "https://www.eldoradonews.com/news/2026/jul/18/us-military-says-2-troops-are-dead-and-1-is/",
+        "type": "intl"
+      },
+      {
+        "title": "US Firms Sign $60Bn Deals With Iraq to Build Oil Routes Bypassing Strait of Hormuz",
+        "url": "https://www.outlookindia.com/international/us-firms-sign-60bn-deals-with-iraq-to-build-oil-routes-bypassing-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "US launches  new airstrikes  on Iran to  swiftly punish  IRGC forces after strikes in Jordan killed two",
+        "url": "https://news.webindia123.com/news/Articles/World/20260719/4476468.html",
+        "type": "intl"
+      },
+      {
+        "title": "Two U . S . Service Members Killed , One Missing in Iran Strike on Jordan",
+        "url": "https://www.breitbart.com/middle-east/2026/07/18/us-service-members-killed-iran-strike-jordan-centcom/",
+        "type": "intl"
+      },
+      {
+        "title": "Manila Bulletin - US military launches new airstrikes to  punish  Iran for deaths of US troops",
+        "url": "https://mb.com.ph/2026/07/19/us-military-launches-new-airstrikes-to-punish-iran-for-deaths-of-us-troops",
+        "type": "intl"
+      },
+      {
+        "title": "US military launches new airstrikes to punish Iran for deaths of US troops - Boston News , Weather , Sports",
+        "url": "https://whdh.com/news/us-military-launches-new-airstrikes-to-punish-iran-for-deaths-of-us-troops/",
+        "type": "intl"
+      },
+      {
+        "title": "US military launches new airstrikes to punish Iran for deaths of US troops",
+        "url": "https://www.wndu.com/2026/07/18/2-troops-are-dead-1-is-missing-after-iranian-attacks-base-jordan-us-military-says/",
+        "type": "intl"
+      },
+      {
+        "title": "US Airstrikes on Iran : Trump Orders Swift Punishment After Jordan Deaths",
+        "url": "https://www.newkerala.com/news/a/us-launches-new-airstrikes-iran-swiftly-punish-irgc-278.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Two US troops killed in Jordan , one missing as fears of all - out war grow",
+        "url": "https://www.sbs.com.au/news/article/two-us-troops-killed-in-jordan-one-missing-as-fears-of-all-out-war-grow/tdui30b32",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War : Two US troops dead , one missing after Iran attacks Jordan base",
+        "url": "https://www.watoday.com.au/world/middle-east/two-us-troops-dead-one-missing-after-iran-attacks-jordan-base-20260719-p60gin.html",
+        "type": "intl"
+      },
+      {
+        "title": "US launches new strikes on Iran after deaths of service members in Jordan",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-launches-new-strikes-iran-after-deaths-service-members-jordan",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . fires on Iran after attack in Jordan leaves 2 troops killed , 1 missing",
+        "url": "https://www.kalw.org/npr-news/2026-07-18/u-s-fires-on-iran-after-attack-in-jordan-leaves-2-troops-killed-1-missing",
+        "type": "intl"
+      },
+      {
+        "title": "美, 미군 사망에 이란 보복 공습…이란, 美 걸프 동맹국 민간 인프라 타...",
+        "url": "https://n.news.naver.com/mnews/article/003/0014074682?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "외교부 \"중동 긴장 고조...단기체류자 조속히 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381592?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "미군 \"이란 추가 공습 완료...해안·미사일 시설 타격\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381589?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"호르무즈서 배 2척 멈춰서…미국에 속아 진입시 사고\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001373642?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란혁명수비대 \"호르무즈 '안전하지 않은' 항로서 선박 2척 사고\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014074679?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “미군, 건설 중인 발전소 타격”…호르무즈선 “선박 제지”",
+        "url": "https://n.news.naver.com/mnews/article/028/0002814785?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“한국 군함 출동했다”…해적 잡는 청해부대, 호르무즈 향하는 날 오나...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003662352?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군, 이란 원전 건설현장에 미사일…혁수대는 호르무즈 상선 또 쐈다",
+        "url": "https://n.news.naver.com/mnews/article/029/0003037667?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"호르무즈서 배 2척 멈춰서⋯미국에 속아 진입시 사고\"",
+        "url": "https://n.news.naver.com/mnews/article/031/0001043067?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 이어… ‘우회로’ 홍해도 봉쇄 위기",
+        "url": "https://n.news.naver.com/mnews/article/022/0004144193?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"호르무즈서 배 2척 멈춰서...미에 속아 진입 시 사고\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381546?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “미국에 속아 호르무즈 무허가 통과 땐 사고 겪게될 것”",
+        "url": "https://n.news.naver.com/mnews/article/009/0005709280?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “미국 지원받은 선박, 호르무즈 해협 통과 저지\"",
+        "url": "https://n.news.naver.com/mnews/article/008/0005387703?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"호르무즈 무허가 통과 선박 2척 저지…2척은 운항 포기\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009067162?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 혁명수비대 \"호르무즈 배 2척 멈춰…美에 속아 진입하면 사고\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006332703?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 이란 “호르무즈서 배 2척 멈춰서…美에 속아 진입시 사고”",
+        "url": "https://n.news.naver.com/mnews/article/016/0002671975?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"호르무즈서 배 2척 멈춰서…美에 속아 진입시 사고\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202355?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美, 이란 군사시설 대규모 공습…이란은 쿠웨이트 미군기지 맞보복",
+        "url": "https://n.news.naver.com/mnews/article/030/0003448845?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[일요와이드] 미·이란 공습 확대…MOU 백지화·호르무즈 봉쇄",
+        "url": "https://n.news.naver.com/mnews/article/422/0000886602?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 갈등 다시 최고조… 중동 맹폭에 미군 2명 전사",
+        "url": "https://n.news.naver.com/mnews/article/082/0001390303?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 긴장 고조에…'석유 최고가격제' 종료 시점 늦춰지나",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026071917533829061",
+        "type": "dom"
+      },
+      {
+        "title": "요르단기지 미군 사망에…美, 이란 응징공습",
+        "url": "https://n.news.naver.com/mnews/article/009/0005709242?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 전투기 집결, 이란은 걸프국 발전소 타격…전쟁 초기로 회귀",
+        "url": "https://n.news.naver.com/mnews/article/011/0004642849?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 2명 전사, 이란 MOU 파기…포성 커지는 중동",
+        "url": "https://n.news.naver.com/mnews/article/011/0004642825?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군, 전사자 발생에 이란 보복 폭격…중동 전면전 위기 최고조",
+        "url": "https://www.newsgn.com/news/articleView.html?idxno=562969",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 봉쇄 뒤 한국 유조선 15척 통과한 홍해도 막히나",
+        "url": "https://n.news.naver.com/mnews/article/081/0003662320?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美-이란, 8일 연속 교전…홍해마저 봉쇄 위기",
+        "url": "https://n.news.naver.com/mnews/article/088/0001019663?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"아카바 공항·항구 피해야\"…경고 직후 이란 미사일(종합2보)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202410?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 앞바다 유조선에 무장단체 승선…한국 군함 현장 급파",
+        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=590101",
+        "type": "dom"
+      },
+      {
+        "title": "이란 공격에 휴전이후 미군 첫 사망…美 보복나서",
+        "url": "https://n.news.naver.com/mnews/article/020/0003734875?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美-이란, 전면전 일촉즉발...'공격-보복-맞보복' 악순환",
+        "url": "https://www.newsverse.kr/news/articleView.html?idxno=10966",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란 미사일 능력 건재...탄도미사일·드론으로 미 방공망 압박\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381565?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "김진아 외교2차관 \"중동 긴장 고조…단기체류자 조속히 출국 권고\"",
+        "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4095784",
+        "type": "dom"
+      },
+      {
+        "title": "전력·식수 ‘민간 생명줄’까지 공격 타깃… 美·이란 확전 양상",
+        "url": "https://n.news.naver.com/mnews/article/022/0004144194?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이란 충돌 격화…美 “요르단 공항·항구 소개령”",
+        "url": "https://www.kukinews.com/article/view/kuk202607190039",
+        "type": "dom"
+      },
+      {
+        "title": "외교부 \"중동 체류 국민에 조속 출국 권고\"",
+        "url": "https://www.ajunews.com/view/20260719205025824",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 충돌 호르무즈까지 확산...중동 긴장 최고조, 전면전 재점화 ...",
+        "url": "https://www.m-economynews.com/news/article.html?no=68873",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 美·이란 재충돌에 \"단기체류자 조속 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/629/0000517067?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "\"불필요한 중동 여행 자제\"…외교부, 체류 국민 안전 점검",
+        "url": "https://n.news.naver.com/mnews/article/008/0005387700?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"중동 단기체류자 조속출국 권고‥영공폐쇄 가능성 각별 유의\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001512496?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "중동 긴장 높아지자, 외교 2차관 \"단기체류자 조속한 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/014/0005549853?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "외교2차관 \"중동 긴장 고조…단기체류자 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006332690?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "외교부 “중동 긴장 고조… 단기 체류자 조속히 출국 권고”",
+        "url": "https://n.news.naver.com/mnews/article/366/0001180196?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동 긴장 고조…정부, 단기체류자 출국 권고·미국은 요르단 아카바 소...",
+        "url": "https://www.wikitree.co.kr/articles/1147225",
+        "type": "dom"
+      },
+      {
+        "title": "美, 이란 보복 공습 확대…이란도 쿠웨이트 미군기지 재공격",
+        "url": "https://n.news.naver.com/mnews/article/018/0006332686?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "외교2차관 \"중동 긴장 고조, 단기체류자 조속히 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000886618?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 중동 상황점검회의…\"단기체류자 조속히 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014074604?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "“중동 전역 위험 커진다”… 정부, 단기체류자 출국 권고·美는 요르단...",
+        "url": "https://www.kbmaeil.com/article/20260719500744",
+        "type": "dom"
+      },
+      {
+        "title": "외교2차관 \"중동 긴장 고조…단기체류자 조속히 출국 권고\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311443?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "미군 '전사자 응징'에 이란 재보복…모즈타바 \"잊지 못할 교훈 줄 것\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000627849?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘군인 2명 전사’ 美, 이란에 공습… “혁명수비대 응징”",
+        "url": "https://n.news.naver.com/mnews/article/366/0001180195?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 중동 공관 긴급 점검회의…\"불필요한 중동 여행 자제\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009067110?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "美, 전사자 발생에 응징…이란, 쿠웨이트 등 미군기지 재보복(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202329?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[기고]중동전쟁, 해상통제권 경쟁이 왜 인내력 경쟁으로 바뀌었는가…김...",
+        "url": "https://n.news.naver.com/mnews/article/021/0002805511?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "美 공중전 심장부 찌른 이란… ‘레드라인’ 넘은 전면전 위기",
+        "url": "https://n.news.naver.com/mnews/article/005/0001861826?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 공격에 미군 2명 사망… 美, 담수화시설 보복",
+        "url": "https://n.news.naver.com/mnews/article/005/0001861815?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 미군 사망에 도리어 ‘힘 얻은’ 이유…“지상전·핵시설 폭격...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003662337?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미, 이란 보복 공습 확대…이란도 쿠웨이트 미군기지 드론 공격",
+        "url": "https://www.sentv.co.kr/article/view/sentv202607190020",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 종전 MOU 파기… 드론 공격에 미군 2명 사망",
+        "url": "https://n.news.naver.com/mnews/article/014/0005549818?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 우회 나선 이라크…시리아 '중유 수출 거점' 부상",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202264?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 공격에 처음으로 미군 사망…1명은 실종, 미·이란 공방 가열",
+        "url": "https://n.news.naver.com/mnews/article/021/0002805506?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "선 넘은 美·이란…전면전 치닫나",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311409?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 2명 사망, 강한 응징과 제한적 대응 사이…또 딜레마에 빠진 트럼...",
+        "url": "https://n.news.naver.com/mnews/article/028/0002814749?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "밤만 되면 시작되는 폭격…이란 남부 주민들 \"온몸이 떨린다\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202208?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "홍해 봉쇄 직전 미군 첫 사망…'지상군' 투입 땐 전면전",
+        "url": "http://www.newstomato.com/ReadNews.aspx?no=1307534&inflow=N",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 위기 아랑곳·AI 강국 야심까지···중국, 생명줄은 결국 석탄...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003458993?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 2명 전사·1명 실종…미군도 보복 공격",
+        "url": "https://n.news.naver.com/mnews/article/056/0012220744?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이란 \"레드라인 넘었다\"… '생명줄' 담수화 시설까지 공격",
+        "url": "https://n.news.naver.com/mnews/article/469/0000943026?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디·후티 반군 간 휴전 균열에… 호르무즈 이어 홍해도 봉쇄 위기",
+        "url": "https://n.news.naver.com/mnews/article/469/0000943024?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란군 사령관 \"미국은 대악마…더 큰 대가 치를 것\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014074450?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군기지 전사자 발생에 확전 양상...주말새 보복·재보복 난무",
+        "url": "http://www.metroseoul.co.kr/article/20260719500238",
+        "type": "dom"
+      },
+      {
+        "title": "“완벽 방어” 美방공망 뚫렸나…‘90% 궤멸’ 이란 미사일에 미군 전사",
+        "url": "https://n.news.naver.com/mnews/article/025/0003538516?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "하메네이 \"미국은 '위대한 사탄'\"…갈등 재점화에 비난 격화",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4425680",
+        "type": "dom"
+      },
+      {
+        "title": "이란 직접 공격에 첫 미군 사망…美, 보복 공습",
+        "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607191550597570602",
+        "type": "dom"
+      },
+      {
+        "title": "미군 평가와 달랐던 이란 능력...트럼프, '총공세' 예고 [자막뉴스]",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381488?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국 전사자 발생해 보복 공습하자 이란도 재반격, 무력 충돌 격화 양상",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=442597",
+        "type": "dom"
+      },
+      {
+        "title": "美, 미군 전사에 보복 공습 확대…이란도 미군기지 재공격",
+        "url": "https://www.news2day.co.kr/article/20260719500062",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 방공망 회피 능력 강화…미군, 장기전에 부담\"",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260719010006568",
+        "type": "dom"
+      },
+      {
+        "title": "\"휴전 끝났다\"…미군 2명 전사 美 보복폭격, 이란도 MOU 파기",
+        "url": "https://n.news.naver.com/mnews/article/014/0005549734?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘레드라인’ 넘은 미·이란…다시 전면전 기로",
+        "url": "https://n.news.naver.com/mnews/article/032/0003459055?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국, 요르단 공항 접근 자제 권고…한국 정부도 중동 체류 국민 안전 ...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002671973?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "日, 무인 순시선 연구 개발 착수…中 해양 진출 감시 강화",
+        "url": "https://n.news.naver.com/mnews/article/421/0009066959?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "일, '해상감시 무인선' 내년 개발 착수...중국 해상 도발 대응",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381497?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 공격에 미군 2명 전사···‘레드라인’ 넘긴 미·이란 충돌, 전면...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003458984?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"러시아 제재 법안에 이란도 추가해야\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009067194?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 미사일에 美 사드 방어망도 뚫렸다",
+        "url": "https://n.news.naver.com/mnews/article/022/0004144148?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"대러 제재 법안에 이란도 추가해야\"‥경제 압박 강조",
+        "url": "https://n.news.naver.com/mnews/article/214/0001512516?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"대러 제재 법안에 이란 추가해야\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381578?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“대러 제재 법안에 이란도 추가해야”…트란프, 경제 압박 강조",
+        "url": "https://n.news.naver.com/mnews/article/009/0005709287?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 대러 제재안에 '이란 추가' 압박…백악관 기류 바뀌나",
+        "url": "https://n.news.naver.com/mnews/article/079/0004169686?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “대러 제재 법안에 이란도 추가해야”…관세 압박 강조",
+        "url": "https://n.news.naver.com/mnews/article/016/0002671987?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 대러 제재법 입장 바꾸나…“이란도 추가해야”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012220836?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “대러시아 제재 법안에 이란도 추가해야”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004642904?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"대러 제재 법안에 이란도 추가해야\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014074674?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 대러 제재안에 이란 포함 촉구…관세 압박 확대",
+        "url": "https://n.news.naver.com/mnews/article/018/0006332713?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “대러 제재 법안에 이란 추가해야” 압박 나서",
+        "url": "https://n.news.naver.com/mnews/article/032/0003459089?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"대러 제재 법안에 이란도 추가해야\"…경제 압박 강조",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202393?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[주간환율전망] 중동 긴장에 금리·유가 반등···관망 속 1490원대 공방",
+        "url": "https://www.seoulfn.com/news/articleView.html?idxno=633621",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴욕환시-주간] 중동 불안 고조 속 ECB 회의…9월 인상 가능성 열어둘...",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4425684",
+        "type": "dom"
+      },
+      {
+        "title": "[WT논평] War with Iran not like other wars",
+        "url": "https://n.news.naver.com/mnews/article/022/0004144201?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "美방공망 뚫렸나…“이란 ‘날개 단 첨단 미사일’ 쏜듯”",
+        "url": "https://n.news.naver.com/mnews/article/029/0003037669?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "요르단 주둔 미군 2명 전사·1명 실종…미군 “이란에 응징”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012220777?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美, 전사자 발생에 보복 공습…이란, 쿠웨이트 등 미군기지 공격(종합)",
+        "url": "https://n.news.naver.com/mnews/article/277/0005791549?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란 '날개 단 미사일' 쏜듯…美방공망 '기동형 재진입' 우회\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202351?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 직접 공격에 첫 미군 전사…중동 '확전 뇌관' 되나",
+        "url": "https://n.news.naver.com/mnews/article/437/0000501893?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 전사자 발생하자 이란에 ‘보복 공습’",
+        "url": "https://n.news.naver.com/mnews/article/056/0012220762?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군, 5시간 반 응징 공격…“혁명수비대 표적”",
+        "url": "https://n.news.naver.com/mnews/article/449/0000353432?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 능력, 이 정도였나…‘미군 2명 사망’ 공격 영상 공개 “요격 회...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003662318?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"이란 추가 공습 완료\"…이란 \"미국은 대악마, 큰 대가 치를 것\"(종합...",
+        "url": "https://n.news.naver.com/mnews/article/421/0009066867?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중국, 대만 해협 막고 美 본토 겨냥한 'HQ-16F·SLBM' 쌍끌이 무력시위 [...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005549831?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "[천지일보 사설] '자동개입' 꺼내든 북·중, 대만과 한반도 겨눈 쌍방향...",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3418097",
+        "type": "dom"
+      },
+      {
+        "title": "필리핀 ‘바탄 제도’ 호시탐탐 넘보는 중국 [김규환의 핸디 차이나]",
+        "url": "https://n.news.naver.com/mnews/article/119/0003112542?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 공습에 미군 2명 사망…중동 전운 최고조",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1531151",
+        "type": "dom"
+      },
+      {
+        "title": "모즈타바 “‘대악마’ 미국에 못 잊을 교훈 안겨줄 것”",
+        "url": "https://n.news.naver.com/mnews/article/449/0000353427?sid=115",
+        "type": "dom"
+      },
+      {
+        "title": "\"요르단 항구도시 아카바 위험…인프라 전원 대피중\"…미 대사관",
+        "url": "https://n.news.naver.com/mnews/article/003/0014074617?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중동 전쟁 후폭풍⋯ 中企 피해 접수 1000건 돌파",
+        "url": "https://www.viva100.com/article/20260719500032",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "Iran : Two Ships in  Accident  on Unsafe Strait of Hormuz Route",
+        "url": "https://www.newkerala.com/news/a/iran-claims-two-ships-involved-accident-unsafe-route-337.htm",
+        "type": "intl"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "이라크, 호르무즈 해협 우회…시리아 ‘중유 수출 거점’으로",
+        "url": "https://n.news.naver.com/mnews/article/056/0012220768?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 우회 나선 이라크...시리아 '중유 수출 거점' 부상",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381525?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 긴장에 시리아 항구 부상…이라크, 우회 수출 확대",
+        "url": "https://www.sentv.co.kr/article/view/sentv202607190022",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 이어 홍해 봉쇄 위기... 다시 희망봉 돌아야 하나",
+        "url": "https://weeklytrade.co.kr/news/view.html?section=1&category=136&item=&no=100680",
+        "type": "dom"
+      },
+      {
+        "title": "물길 막히자 트럭 수천 대에 실어 운반⋯중동 원유길 다시 그린다 [호르...",
+        "url": "https://www.etoday.co.kr/news/view/2604892",
+        "type": "dom"
+      },
+      {
+        "title": "이라크, 호르무즈 우회 송유관 건설 검토…지중해 수출 추진",
+        "url": "https://n.news.naver.com/mnews/article/421/0009066944?sid=104",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Cargo throughput at Port of Antwerp - Bruges dips in H1 2026 on geopolitical tensions , weak demand",
+        "url": "https://www.hellenicshippingnews.com/cargo-throughput-at-port-of-antwerp-bruges-dips-in-h1-2026-on-geopolitical-tensions-weak-demand/",
+        "type": "intl"
+      },
+      {
+        "title": "첫 미군 전사자에 중동 긴장 고조…정부 \"원유 수급 당장 문제없다\"",
+        "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000050720",
+        "type": "dom"
+      },
+      {
+        "title": "원유 도입 물량 7~8월 100%…9월도 74% 수준",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1531144",
+        "type": "dom"
+      },
+      {
+        "title": "DP월드 \"부산항, 고부가 물류 허브로 키워야\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311412?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "광양제철소, 하역기 고장 전에 잡는다…원료부두에 ‘AI 눈’ 달아",
+        "url": "https://www.geconomy.co.kr/news/article.html?no=321887",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Strait of Hormuz Update : US Blockade Holds as Renewed Fighting Sends Oil Prices Surging Sharply This Week",
+        "url": "https://www.ibtimes.com.au/us-iran-ceasefire-collapse-strait-hormuz-crisis-1872556",
+        "type": "intl"
+      },
+      {
+        "title": "Brent Crude Hits $88 as Iran Extends War From Hormuz to Kuwait Drinking Water",
+        "url": "https://www.techtimes.com/articles/320922/20260718/brent-crude-hits-88-iran-extends-war-hormuz-kuwait-drinking-water.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Cushing Crude Oil Inventories Dip , Impacting Prices and Storage Capacity",
+        "url": "https://smallbiztrends.com/cushing-crude-oil-inventories-dip-impacting-prices-and-storage-capacity/",
+        "type": "intl"
+      },
+      {
+        "title": "Fed Flags a Fresh Inflation Threat That Could Rattle Markets",
+        "url": "https://finance.yahoo.com/economy/policy/articles/fed-flags-fresh-inflation-threat-182000339.html",
+        "type": "intl"
+      },
+      {
+        "title": "Dalal Street Week Ahead : West Asia conflict - led oil prices , Q1 earnings , rupee , flash PMI among 10 key factors to watch",
+        "url": "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-west-asia-conflict-led-oil-prices-q1-earnings-rupee-flash-pmi-among-10-key-factors-to-watch-13977831.html",
+        "type": "intl"
+      },
+      {
+        "title": "The sell - off for AI stars worsens , while oil prices keep jumping",
+        "url": "https://www.latimes.com/business/story/2026-07-17/sell-off-for-ai-stars-worsens-while-oil-prices-keep-jumping",
+        "type": "intl"
+      },
+      {
+        "title": "Second Oil Spike Coming ? Consider These 7 High Yields Before It Hits",
+        "url": "https://www.forbes.com/sites/brettowens/2026/07/19/second-oil-spike-coming-consider-these-7-high-yields-before-it-hits/",
+        "type": "intl"
+      },
+      {
+        "title": "How the Strait of Hormuz could affect Social Security checks as rising oil prices may boost 2027 COLA",
+        "url": "https://www.hindustantimes.com/world-news/us-news/how-the-strait-of-hormuz-could-affect-social-security-checks-as-rising-oil-prices-may-boost-2027-cola-101784470230382.html",
+        "type": "intl"
+      },
+      {
+        "title": "Nigeria set for oil windfall as Brent surges above $88 on US - Iran conflict",
+        "url": "https://www.vanguardngr.com/2026/07/nigeria-set-for-oil-windfall-as-brent-surges-above-88-on-us-iran-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "Q1 earnings , developments in West Asia , crude oil key drivers for markets this week : Analysts",
+        "url": "https://www.orissapost.com/q1-earnings-developments-in-west-asia-crude-oil-key-drivers-for-markets-this-week-analysts/",
+        "type": "intl"
+      },
+      {
+        "title": "Gold , Silver Face Another Volatile Week , West Asia Tensions & Oil Surge Cloud Bullion Outlook",
+        "url": "https://www.freepressjournal.in/business/gold-silver-face-another-volatile-week-west-asia-tensions-oil-surge-cloud-bullion-outlook",
+        "type": "intl"
+      },
+      {
+        "title": "Q1 Earnings Season Takes Centre Stage , West Asia Tensions And Crude Oil To Steer Market Direction This Week",
+        "url": "https://www.freepressjournal.in/business/q1-earnings-season-takes-centre-stage-west-asia-tensions-and-crude-oil-to-steer-market-direction-this-week",
+        "type": "intl"
+      },
+      {
+        "title": "Markets to track Q1 earnings , West Asia developments , crude oil this week",
+        "url": "https://www.thehindubusinessline.com/markets/markets-to-track-q1-earnings-west-asia-developments-crude-oil-this-week/article71240779.ece",
+        "type": "intl"
+      },
+      {
+        "title": "PSX extends losing streak on regional tensions",
+        "url": "https://tribune.com.pk/story/2619043/psx-extends-losing-streak-on-regional-tensions",
+        "type": "intl"
+      },
+      {
+        "title": "Q1 earnings , US - Iran tensions likely to drive Dalal Street next week",
+        "url": "https://www.prokerala.com/news/articles/a1789720.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . refiner margins spiked to record highs this week as fuel shortage concerns grow ( VLO : NYSE ) ",
+        "url": "https://seekingalpha.com/news/4615096-u-s-refiner-margins-spiked-to-record-highs-this-week-as-fuel-shortage-concerns-grow",
+        "type": "intl"
+      },
+      {
+        "title": "ECB Expected to Hold Rates as Middle East Tensions Keep September Hike in Focus",
+        "url": "http://www.econotimes.com/ECB-Expected-to-Hold-Rates-as-Middle-East-Tensions-Keep-September-Hike-in-Focus-1747115",
+        "type": "intl"
+      },
+      {
+        "title": "Dollar Little Changed as Crude Prices Soar and T - note Yields Fall",
+        "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-little-changed-crude-prices-193631621.html",
+        "type": "intl"
+      },
+      {
+        "title": "Porter bumps surcharge back up to $40 amid oil price hike",
+        "url": "https://www.stcatharinesstandard.ca/life/travel/porter-bumps-fuel-surcharge-back-up-to-40-amid-unexpected-and-sharp-oil-price-increase/article_58bd583e-d628-5361-b4d1-f2800e2645dc.html",
+        "type": "intl"
+      },
+      {
+        "title": "TSX : HOD Forum Post | Letstryagain - 37056691 | Oil back to 100 soon | BetaPro Crude Oil Inverse Leveraged Daily Bear ETF",
+        "url": "https://stockhouse.com/companies/bullboard?symbol=t.hod&postid=37056691",
+        "type": "intl"
+      },
+      {
+        "title": "기로에 선 美·이란전…걸프전역 확전 공포에 유가 급등",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311408?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈에 발목 잡힌 물가…각국 중앙은행 '고금리 장기전'",
+        "url": "https://n.news.naver.com/mnews/article/018/0006332653?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동 전쟁 격화…석유 최고가격제 등 비상조치 길어지나",
+        "url": "https://n.news.naver.com/mnews/article/001/0016202163?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동발 기름값 폭탄 맞은 대한항공, 결국 국내선에 메스 댔다",
+        "url": "https://n.news.naver.com/mnews/article/661/0000080092?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "이번엔 中 ‘키미’ 쇼크… 월요일 코스피 시험대",
+        "url": "https://n.news.naver.com/mnews/article/029/0003037659?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "최태원 “반도체 확보 엄청 로비… 내년 수요 최소 50~60% 늘 것”",
+        "url": "https://n.news.naver.com/mnews/article/005/0001861818?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "최태원 \"메모리 반도체 확보 전쟁 시작, 내년 공급난 더 심해질 것\"",
+        "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=83964",
+        "type": "dom"
+      },
+      {
+        "title": "최태원 회장 \"반도체 수요 최소 50% 증가…공급 늘리고, 가격 떨어뜨려...",
+        "url": "https://n.news.naver.com/mnews/article/657/0000053493?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중국, 딥시크 이어 ‘키미 쇼크’…“미국 AI와 격차 단 2~3개월” [팩플...",
+        "url": "https://n.news.naver.com/mnews/article/025/0003538541?sid=105",
+        "type": "dom"
+      },
+      {
+        "title": "원화 가치 이달 들어 '나홀로 강세'…절상률 주요국 통화 중 최고",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1716871",
+        "type": "dom"
+      },
+      {
+        "title": "최태원 \"반도체 확보 아비규환…생산능력 확대 서둘러야\"",
+        "url": "https://www.news2day.co.kr/article/20260719500078",
+        "type": "dom"
+      },
+      {
+        "title": "중동 전쟁 재격화에 세계 주요국 ‘고금리 장기전’ 돌입 가능성 커져",
+        "url": "https://www.m-economynews.com/news/article.html?no=68872",
+        "type": "dom"
+      },
+      {
+        "title": "中, 초대형 유조선 수주 싹쓸이…美·이란 전쟁 최대 수혜자 됐다",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311423?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 충돌 격화…시장, '유가→금리' 파급효과 주목",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4425679",
+        "type": "dom"
+      },
+      {
+        "title": "중동 불안 장기화에 유가 다시 '꿈틀'…석유 최고가격제 연장되나",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1716869",
+        "type": "dom"
+      },
+      {
+        "title": "중동 전쟁 다시 격화… 석유 최고가격제 장기화 가능성 커졌다",
+        "url": "https://www.kbmaeil.com/article/20260719500675",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁불씨 다시 붙는 美-이란…석유 최고가격제 지속되나",
+        "url": "https://www.g-enews.com/view.php?ud=2026071916143660203d7a510102_1",
+        "type": "dom"
+      },
+      {
+        "title": "“기름값 더 오를까요?”…중동전 격화에 최고가격제 출구전략 ‘안갯...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002671926?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 휘발유 1873원·경유 1857원...나란히 하락",
+        "url": "https://www.getnews.co.kr/news/articleView.html?idxno=875446",
+        "type": "dom"
+      },
+      {
+        "title": "고물가·고유가에 날개 단 중고차 시장…경차·친환경차 ‘불티’",
+        "url": "https://n.news.naver.com/mnews/article/119/0003112625?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "글로벌 10% 관세 만료 눈앞…트럼프 무역장벽 더 높이나",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311383?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "유가 올라 원유ETF 상위권… 변동성 방어 커버드콜도 강세[ETF 스퀘어]",
+        "url": "https://n.news.naver.com/mnews/article/014/0005549797?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "길어지는 중동전쟁에 … 국내상장사 10곳 중 4곳 실적 전망 뚝",
+        "url": "https://n.news.naver.com/mnews/article/009/0005709182?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "‘고철’도 자원무기화… 철강업계 이중고",
+        "url": "https://n.news.naver.com/mnews/article/029/0003037610?sid=101",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "DFA : 4 Philippine ships safely exit Strait of Hormuz",
+        "url": "https://www.philstar.com/headlines/2026/07/20/2543292/dfa-4-philippine-ships-safely-exit-strait-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "81 Filipino seafarers safe after vessels exit Strait of Hormuz",
+        "url": "https://www.manilatimes.net/2026/07/19/news/81-filipino-seafarers-safe-after-vessels-exit-strait-of-hormuz/2387052",
+        "type": "intl"
+      },
+      {
+        "title": "홍해 우회 한국행 원유 수송 15번째…한국 선박 1척 통과",
+        "url": "http://www.segyebiz.com/newsView/20260719514068?OutUrl=naver",
+        "type": "dom"
+      },
+      {
+        "title": "원유운반선 15번째 홍해 통과…해수부 \"24시간 모니터링, 안전 지원\"",
+        "url": "https://www.etoday.co.kr/news/view/2604925",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 봉쇄 후 15번째 한국선박 홍해 통해 원유 운송",
+        "url": "https://n.news.naver.com/mnews/article/022/0004144136?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 봉쇄 후 15번째 한국 유조선 홍해 통과",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1531117",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 막히니 홍해로…15번째 한국 유조선 원유 수송",
+        "url": "https://n.news.naver.com/mnews/article/057/0001959224?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "제주-칭다오 화물선 협정, \"추경 전에 검증부터\"",
+        "url": "https://n.news.naver.com/mnews/article/661/0000080104?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "중동 불안에 닻 올린 중국 조선…전 세계 주문 싹쓸이",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311348?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[사설] 북극항로 시범운항, 글로벌 해양 경쟁력 넓힐 기회다",
+        "url": "https://n.news.naver.com/mnews/article/658/0000149932?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "KRISO 'SMR 추진 컨테이너선 개념설계', ABS 기본승인 획득",
+        "url": "https://n.news.naver.com/mnews/article/030/0003448816?sid=105",
+        "type": "dom"
+      },
+      {
+        "title": "HD현대 미국 EPC 기업과 전략적 파트너십 체결, 현지 선박 건조 협력 확...",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=442593",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "Tropical Threat Emerges In Gulf Of America With US Refineries In Potential Crosshairs",
+        "url": "https://www.zerohedge.com/weather/tropical-threat-emerges-gulf-america-us-refineries-potential-crosshairs",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine strikes Caspian oil hub setting tankers ablaze as Russian defenses intercept massive 140 drone raid",
+        "url": "https://www.bankingnews.gr/diethni/articles/889098/ukraine-strikes-caspian-oil-hub-setting-tankers-ablaze-as-russian-defenses-intercept-massive-140-drone-raid",
+        "type": "intl"
+      },
+      {
+        "title": "Nat - Gas Prices Supported by a Surge in European Gas Prices",
+        "url": "https://finance.yahoo.com/markets/commodities/articles/nat-gas-prices-supported-surge-191329091.html",
+        "type": "intl"
+      },
+      {
+        "title": "\"이란, 휴전 틈타 원유 9조 원어치 수출...중국행 유력\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002381564?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 한달 휴전 틈타 원유 9조원어치 수출\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311436?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 봉쇄 해제 한 달 만에 원유 7000만배럴 중국으로 향했다",
+        "url": "https://n.news.naver.com/mnews/article/005/0001861787?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 휴전 기간 원유 9조원어치 수출…목적지 '중국' 유력\"",
+        "url": "https://n.news.naver.com/mnews/article/119/0003112649?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "최태원 “내년 반도체 공급 부족 ‘아비규환’…통상 압박에 미국 공장...",
+        "url": "https://n.news.naver.com/mnews/article/468/0001254441?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "햇반도 참치캔도 오른다…식품업계 줄인상에 장바구니 부담 확대",
+        "url": "https://www.ajunews.com/view/20260719144409552",
+        "type": "dom"
+      },
+      {
+        "title": "러시아 정유시설 셧다운…'디젤 대란' 온다",
+        "url": "https://n.news.naver.com/mnews/article/015/0005311373?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 美 봉쇄 풀린 한 달 새 원유 대거 수출…‘60억달러 실탄’ 확보...",
+        "url": "https://www.etoday.co.kr/news/view/2604911",
+        "type": "dom"
+      },
+      {
+        "title": "전쟁에 폭염, 쿠데타설까지…복합위기 이란, \"휴전 틈타 원유 9조원어치...",
+        "url": "https://n.news.naver.com/mnews/article/025/0003538521?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "GS칼텍스 여수공장 상반기 대정비 완료...디지털·AI 접목, 안전·효율 높...",
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=917284",
+        "type": "dom"
+      },
+      {
+        "title": "1호 대미투자 ‘에너지·조선’ 중 최종 조율",
+        "url": "https://n.news.naver.com/mnews/article/032/0003459043?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[석화산업 활로 재편] 대산 합치고 여수 줄인다…석화 구조재편 실행 돌...",
+        "url": "https://www.g-enews.com/view.php?ud=202607190516052828112616b072_1",
+        "type": "dom"
+      },
+      {
+        "title": "[석화산업 활로 재편] 구조재편 속도 내도…석화업계 하반기 ‘복합 변...",
+        "url": "https://www.g-enews.com/view.php?ud=2026071909481718224debea800_1",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "Iraq and Syria sign agreement to restore oil pipeline that would provide alternative to Strait of Hormuz",
+      "url": "https://www.hellenicshippingnews.com/iraq-and-syria-sign-agreement-to-restore-oil-pipeline-that-would-provide-alternative-to-strait-of-hormuz/",
+      "type": "intl"
+    },
+    "2": {
+      "title": "U . S . and Iran inch closer to broader war after American troops are killed",
+      "url": "https://www.yahoo.com/news/politics/articles/u-iran-inch-closer-broader-191401678.html",
+      "type": "intl"
+    },
+    "3": {
+      "title": "US vs Iran war : How Strait of Hormuz crisis triggered 8 days of strikes | Full timeline",
+      "url": "https://www.livemint.com/news/world/us-vs-iran-war-how-strait-of-hormuz-crisis-triggered-8-days-of-strikes-full-timeline-11784483149631.html",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Senior Houthi official warns Saudi  valuable  targets within range over Sanaa airport row",
+      "url": "https://www.prokerala.com/news/articles/a1789985.html",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Iran claims two ships involved in  accident  on  unsafe route  in Strait of Hormuz",
+      "url": "https://news.webindia123.com/news/Articles/World/20260719/4476710.html",
+      "type": "intl"
+    },
+    "6": {
+      "title": "US launches revenge attacks to  punish  Iran over soldier deaths in Jordan",
+      "url": "https://www.nzherald.co.nz/world/us-launch-revenge-attacks-to-punish-iran-over-soldier-deaths-in-jordan/4NAB77TWDRD7BJUJ3I5SL7454M/",
+      "type": "intl"
+    },
+    "7": {
+      "title": "US Missiles Strike Iran Abadan : No Casualties Reported",
+      "url": "https://www.newkerala.com/news/a/irans-abadan-attacked-us-missile-531.htm",
+      "type": "intl"
+    },
+    "8": {
+      "title": "The week that was in international affairs : US - Iran ceasefire dead , Hormuz blockade back on ; China flexes with missile test",
+      "url": "https://timesofindia.indiatimes.com/world/rest-of-world/the-week-that-was-in-international-affairs-us-iran-ceasefire-dead-hormuz-blockade-back-on-china-flexes-with-missile-test/articleshow/132497920.cms",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Retired US Navy admiral on Iran moves :  Watch the Suez Canal  ",
+      "url": "https://www.yahoo.com/news/politics/articles/retired-us-navy-admiral-iran-144153220.html",
+      "type": "intl"
+    },
+    "10": {
+      "title": "Iran Abadan attacked by US missile",
+      "url": "https://www.prokerala.com/news/articles/a1789961.html",
+      "type": "intl"
+    },
+    "11": {
+      "title": "US launches new airstrikes against Iran : military",
+      "url": "https://www.koreatimes.co.kr/world/20260719/us-launches-new-airstrikes-against-iran-military",
+      "type": "dom"
+    },
+    "12": {
+      "title": "美, 미군 사망에 이란 보복 공습…이란, 美 걸프 동맹국 민간 인프라 타...",
+      "url": "https://n.news.naver.com/mnews/article/003/0014074682?sid=104",
+      "type": "dom"
+    },
+    "13": {
+      "title": "외교부 \"중동 긴장 고조...단기체류자 조속히 출국 권고\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002381592?sid=100",
+      "type": "dom"
+    },
+    "14": {
+      "title": "미군 \"이란 추가 공습 완료...해안·미사일 시설 타격\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002381589?sid=104",
+      "type": "dom"
+    },
+    "15": {
+      "title": "이란 \"호르무즈서 배 2척 멈춰서…미국에 속아 진입시 사고\"",
+      "url": "https://n.news.naver.com/mnews/article/055/0001373642?sid=104",
+      "type": "dom"
+    },
+    "16": {
+      "title": "이란혁명수비대 \"호르무즈 '안전하지 않은' 항로서 선박 2척 사고\"",
+      "url": "https://n.news.naver.com/mnews/article/003/0014074679?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "이란 “미군, 건설 중인 발전소 타격”…호르무즈선 “선박 제지”",
+      "url": "https://n.news.naver.com/mnews/article/028/0002814785?sid=104",
+      "type": "dom"
+    },
+    "18": {
+      "title": "“한국 군함 출동했다”…해적 잡는 청해부대, 호르무즈 향하는 날 오나...",
+      "url": "https://n.news.naver.com/mnews/article/081/0003662352?sid=104",
+      "type": "dom"
+    },
+    "19": {
+      "title": "미군, 이란 원전 건설현장에 미사일…혁수대는 호르무즈 상선 또 쐈다",
+      "url": "https://n.news.naver.com/mnews/article/029/0003037667?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "이란 \"호르무즈서 배 2척 멈춰서⋯미국에 속아 진입시 사고\"",
+      "url": "https://n.news.naver.com/mnews/article/031/0001043067?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "Iran : Two Ships in  Accident  on Unsafe Strait of Hormuz Route",
+      "url": "https://www.newkerala.com/news/a/iran-claims-two-ships-involved-accident-unsafe-route-337.htm",
+      "type": "intl"
+    },
+    "22": {
+      "title": "이라크, 호르무즈 해협 우회…시리아 ‘중유 수출 거점’으로",
+      "url": "https://n.news.naver.com/mnews/article/056/0012220768?sid=104",
+      "type": "dom"
+    },
+    "23": {
+      "title": "호르무즈 우회 나선 이라크...시리아 '중유 수출 거점' 부상",
+      "url": "https://n.news.naver.com/mnews/article/052/0002381525?sid=104",
+      "type": "dom"
+    },
+    "24": {
+      "title": "호르무즈 긴장에 시리아 항구 부상…이라크, 우회 수출 확대",
+      "url": "https://www.sentv.co.kr/article/view/sentv202607190022",
+      "type": "dom"
+    },
+    "25": {
+      "title": "호르무즈 이어 홍해 봉쇄 위기... 다시 희망봉 돌아야 하나",
+      "url": "https://weeklytrade.co.kr/news/view.html?section=1&category=136&item=&no=100680",
+      "type": "dom"
+    },
+    "26": {
+      "title": "물길 막히자 트럭 수천 대에 실어 운반⋯중동 원유길 다시 그린다 [호르...",
+      "url": "https://www.etoday.co.kr/news/view/2604892",
+      "type": "dom"
+    },
+    "27": {
+      "title": "이라크, 호르무즈 우회 송유관 건설 검토…지중해 수출 추진",
+      "url": "https://n.news.naver.com/mnews/article/421/0009066944?sid=104",
+      "type": "dom"
+    },
+    "28": {
+      "title": "Cargo throughput at Port of Antwerp - Bruges dips in H1 2026 on geopolitical tensions , weak demand",
+      "url": "https://www.hellenicshippingnews.com/cargo-throughput-at-port-of-antwerp-bruges-dips-in-h1-2026-on-geopolitical-tensions-weak-demand/",
+      "type": "intl"
+    },
+    "29": {
+      "title": "첫 미군 전사자에 중동 긴장 고조…정부 \"원유 수급 당장 문제없다\"",
+      "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000050720",
+      "type": "dom"
+    },
+    "30": {
+      "title": "원유 도입 물량 7~8월 100%…9월도 74% 수준",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1531144",
+      "type": "dom"
+    },
+    "31": {
+      "title": "DP월드 \"부산항, 고부가 물류 허브로 키워야\"",
+      "url": "https://n.news.naver.com/mnews/article/015/0005311412?sid=101",
+      "type": "dom"
+    },
+    "32": {
+      "title": "광양제철소, 하역기 고장 전에 잡는다…원료부두에 ‘AI 눈’ 달아",
+      "url": "https://www.geconomy.co.kr/news/article.html?no=321887",
+      "type": "dom"
+    },
+    "33": {
+      "title": "Strait of Hormuz Update : US Blockade Holds as Renewed Fighting Sends Oil Prices Surging Sharply This Week",
+      "url": "https://www.ibtimes.com.au/us-iran-ceasefire-collapse-strait-hormuz-crisis-1872556",
+      "type": "intl"
+    },
+    "34": {
+      "title": "Brent Crude Hits $88 as Iran Extends War From Hormuz to Kuwait Drinking Water",
+      "url": "https://www.techtimes.com/articles/320922/20260718/brent-crude-hits-88-iran-extends-war-hormuz-kuwait-drinking-water.htm",
+      "type": "intl"
+    },
+    "35": {
+      "title": "Cushing Crude Oil Inventories Dip , Impacting Prices and Storage Capacity",
+      "url": "https://smallbiztrends.com/cushing-crude-oil-inventories-dip-impacting-prices-and-storage-capacity/",
+      "type": "intl"
+    },
+    "36": {
+      "title": "Fed Flags a Fresh Inflation Threat That Could Rattle Markets",
+      "url": "https://finance.yahoo.com/economy/policy/articles/fed-flags-fresh-inflation-threat-182000339.html",
+      "type": "intl"
+    },
+    "37": {
+      "title": "Dalal Street Week Ahead : West Asia conflict - led oil prices , Q1 earnings , rupee , flash PMI among 10 key factors to watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-west-asia-conflict-led-oil-prices-q1-earnings-rupee-flash-pmi-among-10-key-factors-to-watch-13977831.html",
+      "type": "intl"
+    },
+    "38": {
+      "title": "The sell - off for AI stars worsens , while oil prices keep jumping",
+      "url": "https://www.latimes.com/business/story/2026-07-17/sell-off-for-ai-stars-worsens-while-oil-prices-keep-jumping",
+      "type": "intl"
+    },
+    "39": {
+      "title": "Second Oil Spike Coming ? Consider These 7 High Yields Before It Hits",
+      "url": "https://www.forbes.com/sites/brettowens/2026/07/19/second-oil-spike-coming-consider-these-7-high-yields-before-it-hits/",
+      "type": "intl"
+    },
+    "40": {
+      "title": "How the Strait of Hormuz could affect Social Security checks as rising oil prices may boost 2027 COLA",
+      "url": "https://www.hindustantimes.com/world-news/us-news/how-the-strait-of-hormuz-could-affect-social-security-checks-as-rising-oil-prices-may-boost-2027-cola-101784470230382.html",
+      "type": "intl"
+    },
+    "41": {
+      "title": "Nigeria set for oil windfall as Brent surges above $88 on US - Iran conflict",
+      "url": "https://www.vanguardngr.com/2026/07/nigeria-set-for-oil-windfall-as-brent-surges-above-88-on-us-iran-conflict/",
+      "type": "intl"
+    },
+    "42": {
+      "title": "Q1 earnings , developments in West Asia , crude oil key drivers for markets this week : Analysts",
+      "url": "https://www.orissapost.com/q1-earnings-developments-in-west-asia-crude-oil-key-drivers-for-markets-this-week-analysts/",
+      "type": "intl"
+    },
+    "43": {
+      "title": "기로에 선 美·이란전…걸프전역 확전 공포에 유가 급등",
+      "url": "https://n.news.naver.com/mnews/article/015/0005311408?sid=104",
+      "type": "dom"
+    },
+    "44": {
+      "title": "호르무즈에 발목 잡힌 물가…각국 중앙은행 '고금리 장기전'",
+      "url": "https://n.news.naver.com/mnews/article/018/0006332653?sid=101",
+      "type": "dom"
+    },
+    "45": {
+      "title": "중동 전쟁 격화…석유 최고가격제 등 비상조치 길어지나",
+      "url": "https://n.news.naver.com/mnews/article/001/0016202163?sid=101",
+      "type": "dom"
+    },
+    "46": {
+      "title": "중동발 기름값 폭탄 맞은 대한항공, 결국 국내선에 메스 댔다",
+      "url": "https://n.news.naver.com/mnews/article/661/0000080092?sid=101",
+      "type": "dom"
+    },
+    "47": {
+      "title": "이번엔 中 ‘키미’ 쇼크… 월요일 코스피 시험대",
+      "url": "https://n.news.naver.com/mnews/article/029/0003037659?sid=101",
+      "type": "dom"
+    },
+    "48": {
+      "title": "최태원 “반도체 확보 엄청 로비… 내년 수요 최소 50~60% 늘 것”",
+      "url": "https://n.news.naver.com/mnews/article/005/0001861818?sid=101",
+      "type": "dom"
+    },
+    "49": {
+      "title": "최태원 \"메모리 반도체 확보 전쟁 시작, 내년 공급난 더 심해질 것\"",
+      "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=83964",
+      "type": "dom"
+    },
+    "50": {
+      "title": "최태원 회장 \"반도체 수요 최소 50% 증가…공급 늘리고, 가격 떨어뜨려...",
+      "url": "https://n.news.naver.com/mnews/article/657/0000053493?sid=101",
+      "type": "dom"
+    },
+    "51": {
+      "title": "중국, 딥시크 이어 ‘키미 쇼크’…“미국 AI와 격차 단 2~3개월” [팩플...",
+      "url": "https://n.news.naver.com/mnews/article/025/0003538541?sid=105",
+      "type": "dom"
+    },
+    "52": {
+      "title": "원화 가치 이달 들어 '나홀로 강세'…절상률 주요국 통화 중 최고",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1716871",
+      "type": "dom"
+    },
+    "53": {
+      "title": "DFA : 4 Philippine ships safely exit Strait of Hormuz",
+      "url": "https://www.philstar.com/headlines/2026/07/20/2543292/dfa-4-philippine-ships-safely-exit-strait-hormuz",
+      "type": "intl"
+    },
+    "54": {
+      "title": "81 Filipino seafarers safe after vessels exit Strait of Hormuz",
+      "url": "https://www.manilatimes.net/2026/07/19/news/81-filipino-seafarers-safe-after-vessels-exit-strait-of-hormuz/2387052",
+      "type": "intl"
+    },
+    "55": {
+      "title": "홍해 우회 한국행 원유 수송 15번째…한국 선박 1척 통과",
+      "url": "http://www.segyebiz.com/newsView/20260719514068?OutUrl=naver",
+      "type": "dom"
+    },
+    "56": {
+      "title": "원유운반선 15번째 홍해 통과…해수부 \"24시간 모니터링, 안전 지원\"",
+      "url": "https://www.etoday.co.kr/news/view/2604925",
+      "type": "dom"
+    },
+    "57": {
+      "title": "호르무즈 봉쇄 후 15번째 한국선박 홍해 통해 원유 운송",
+      "url": "https://n.news.naver.com/mnews/article/022/0004144136?sid=104",
+      "type": "dom"
+    },
+    "58": {
+      "title": "호르무즈 봉쇄 후 15번째 한국 유조선 홍해 통과",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1531117",
+      "type": "dom"
+    },
+    "59": {
+      "title": "호르무즈 막히니 홍해로…15번째 한국 유조선 원유 수송",
+      "url": "https://n.news.naver.com/mnews/article/057/0001959224?sid=101",
+      "type": "dom"
+    },
+    "60": {
+      "title": "제주-칭다오 화물선 협정, \"추경 전에 검증부터\"",
+      "url": "https://n.news.naver.com/mnews/article/661/0000080104?sid=100",
+      "type": "dom"
+    },
+    "61": {
+      "title": "중동 불안에 닻 올린 중국 조선…전 세계 주문 싹쓸이",
+      "url": "https://n.news.naver.com/mnews/article/015/0005311348?sid=101",
+      "type": "dom"
+    },
+    "62": {
+      "title": "[사설] 북극항로 시범운항, 글로벌 해양 경쟁력 넓힐 기회다",
+      "url": "https://n.news.naver.com/mnews/article/658/0000149932?sid=110",
+      "type": "dom"
+    },
+    "63": {
+      "title": "KRISO 'SMR 추진 컨테이너선 개념설계', ABS 기본승인 획득",
+      "url": "https://n.news.naver.com/mnews/article/030/0003448816?sid=105",
+      "type": "dom"
+    },
+    "64": {
+      "title": "HD현대 미국 EPC 기업과 전략적 파트너십 체결, 현지 선박 건조 협력 확...",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=442593",
+      "type": "dom"
+    },
+    "65": {
+      "title": "Tropical Threat Emerges In Gulf Of America With US Refineries In Potential Crosshairs",
+      "url": "https://www.zerohedge.com/weather/tropical-threat-emerges-gulf-america-us-refineries-potential-crosshairs",
+      "type": "intl"
+    },
+    "66": {
+      "title": "Ukraine strikes Caspian oil hub setting tankers ablaze as Russian defenses intercept massive 140 drone raid",
+      "url": "https://www.bankingnews.gr/diethni/articles/889098/ukraine-strikes-caspian-oil-hub-setting-tankers-ablaze-as-russian-defenses-intercept-massive-140-drone-raid",
+      "type": "intl"
+    },
+    "67": {
+      "title": "Nat - Gas Prices Supported by a Surge in European Gas Prices",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/nat-gas-prices-supported-surge-191329091.html",
+      "type": "intl"
+    },
+    "68": {
+      "title": "\"이란, 휴전 틈타 원유 9조 원어치 수출...중국행 유력\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002381564?sid=104",
+      "type": "dom"
+    },
+    "69": {
+      "title": "\"이란, 한달 휴전 틈타 원유 9조원어치 수출\"",
+      "url": "https://n.news.naver.com/mnews/article/015/0005311436?sid=104",
+      "type": "dom"
+    },
+    "70": {
+      "title": "이란 봉쇄 해제 한 달 만에 원유 7000만배럴 중국으로 향했다",
+      "url": "https://n.news.naver.com/mnews/article/005/0001861787?sid=104",
+      "type": "dom"
+    },
+    "71": {
+      "title": "\"이란, 휴전 기간 원유 9조원어치 수출…목적지 '중국' 유력\"",
+      "url": "https://n.news.naver.com/mnews/article/119/0003112649?sid=104",
+      "type": "dom"
+    },
+    "72": {
+      "title": "최태원 “내년 반도체 공급 부족 ‘아비규환’…통상 압박에 미국 공장...",
+      "url": "https://n.news.naver.com/mnews/article/468/0001254441?sid=101",
+      "type": "dom"
+    },
+    "73": {
+      "title": "햇반도 참치캔도 오른다…식품업계 줄인상에 장바구니 부담 확대",
+      "url": "https://www.ajunews.com/view/20260719144409552",
+      "type": "dom"
+    },
+    "74": {
+      "title": "러시아 정유시설 셧다운…'디젤 대란' 온다",
+      "url": "https://n.news.naver.com/mnews/article/015/0005311373?sid=101",
+      "type": "dom"
+    },
+    "75": {
+      "title": "이란, 美 봉쇄 풀린 한 달 새 원유 대거 수출…‘60억달러 실탄’ 확보...",
+      "url": "https://www.etoday.co.kr/news/view/2604911",
+      "type": "dom"
+    },
+    "76": {
+      "title": "전쟁에 폭염, 쿠데타설까지…복합위기 이란, \"휴전 틈타 원유 9조원어치...",
+      "url": "https://n.news.naver.com/mnews/article/025/0003538521?sid=104",
+      "type": "dom"
+    },
+    "77": {
+      "title": "GS칼텍스 여수공장 상반기 대정비 완료...디지털·AI 접목, 안전·효율 높...",
+      "url": "https://www.namdonews.com/news/articleView.html?idxno=917284",
+      "type": "dom"
+    }
+  }
+}
