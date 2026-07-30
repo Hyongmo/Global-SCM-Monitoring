@@ -1,0 +1,2100 @@
+{
+  "date": "2026-07-30",
+  "date_key": "20260730",
+  "n_total": 2511,
+  "n_high": 78,
+  "n_med": 207,
+  "n_low": 397,
+  "n_none": 1829,
+  "n_intl": 149,
+  "n_dom": 136,
+  "llm_result": {
+    "executive_summary": "미국이 이란 혁명수비대 수십 개 거점을 공습하고[14], 이란은 요르단 미군기지를 공격해 F-35 전투기 3대를 파괴했다고 주장하는 등[13][15][16][17] 미-이란 군사 충돌이 전면 확대되고 있다. 이집트 다미에타항에서는 드론 공격으로 미국 연계 가스 탱커에 화재가 발생했으며[5][10][36][37][38], 이란은 호르무즈 해협을 열지 않겠다는 초강수를 두고 있어[19] 봉쇄 장기화 우려가 커지고 있다. 한편 카타르 LNG 운반선이 약 20여 일 만에 처음으로 호르무즈 해협을 통과하는 등[87][91] 제한적 해협 통항 재개 신호가 나타났으나, 이란 혁명수비대는 호르무즈 스웜 공격용 고속정 함대가 완전히 유지되고 있다고 과시했다[7]. 국내에서는 2분기 유류 항만 물동량이 역대 최대 폭으로 감소했으며[46][47], 국제유가 급등으로 국내 기름값 인상 가능성이 제기되고 있다[64].",
+    "categories": {
+      "1_Security": {
+        "overseas": "미국은 이란 혁명수비대 수십 개 거점을 공습했으며[14], 트럼프 대통령은 이란에 대한 추가 대응을 예고했다[20]. 이란은 요르단 내 미군기지를 공격해 F-35 전투기 3대를 파괴하고 미군 여러 명이 사망했다고 주장했다[13][15][16][17]. 이집트 다미에타항에서는 드론이 미국 연계 가스 탱커를 타격해 화재가 발생했으며[5][10][36][37][38][40][41][42][43], 이집트 총리실은 드론 공격이 원인임을 공식 확인했다[38][39]. 후티 반군은 이라크 내 동맹 민병대와 함께 사우디아라비아를 공격했고[9], 수에즈 운하 인근에서도 드론 공격으로 새로운 안보 위협이 제기됐다[2]. 이란 혁명수비대는 호르무즈 스웜 공격용 고속정 함대가 완전히 유지되고 있다고 공언했으며[7], 미국의 공습으로 이란 영공이 개방됐음에도 호르무즈 해협이 재개되지 않는 이유에 대한 의문이 제기되고 있다[8].",
+        "korea_impact": "한국 정부는 호르무즈 해협 관련 '실질적 기여' 방안이 이란-오만 협상 결과에 달려 있다고 밝혔다[18]. 이란은 호르무즈를 열지 않겠다는 초강수를 두고 있어[19] 한국의 중동산 원유 수입 차질이 지속될 가능성이 있다. 미국이 이란 공습을 재개하면서 국제유가가 다시 급등했으며[20][64], 한국 내 기름값 인상 가능성이 제기되고 있다[64]. 이란은 미국의 이란산 원유 대중국·UAE 판매 관련 해운사에 대한 제재에도 불구하고[6] 강경 입장을 유지하고 있어 중동 정세 불안이 장기화될 가능성이 있다."
+      },
+      "2_Safety": {
+        "overseas": "인도 외무장관 자이샨카르는 우크라이나 외무장관과 회담을 갖고 우크라이나 항구에 억류된 인도 선원 13명에 대한 공격이 절대 용납할 수 없다고 강조했다[21][22]. 우크라이나 항구 선박에 억류된 인도 선원 13명은 직격탄 공포 속에 생활하고 있으며, 인도 대사관이 개입해 상황을 모니터링 중이다[23][24]. 이집트 다미에타항 가스 선박 화재에서는 인명 피해가 없었다고 이집트 당국이 확인했다[25].",
+        "korea_impact": "광양항 예인선에서 작업 중이던 60대 선원이 바다로 추락해 숨지는 사고가 발생했다[27][28]."
+      },
+      "3_Freight": {
+        "overseas": "홍해 유조선 교통량이 후티 위협 이후 수개월 만에 최저 수준으로 떨어졌다[29]. 컨테이너 현물 운임은 3주 연속 하락하며 수요 둔화가 지속되고 있다[31]. 발틱건화물운임지수(BDI)는 목요일 반등했다[33]. 터키 벌크선이 러시아로 향하던 중 고장을 일으켜 다르다넬스 해협을 봉쇄하는 사태가 발생했다[32].",
+        "korea_impact": "후티 반군이 홍해 통행 선박에 통행료 부과 방안을 검토 중이며[34][35], 사우디아라비아는 다국적 연합 구성을 구상하고 있는 것으로 보인다[35]. 홍해 통행료가 실제로 부과될 경우 한국 수출입 물류비 추가 상승 가능성이 있다."
+      },
+      "4_PortCargo": {
+        "overseas": "이집트 다미에타항에서 드론이 가스 저장 탱커를 타격해 화재가 발생했으며[36][37][38][39][40][41][42][43], 이집트는 에너지 대안이 있다고 밝혔다[95]. 미국 전략비축유(SPR)가 1983년 이후 최저 수준으로 고갈되고 있다는 경고가 나왔다[44][45].",
+        "korea_impact": "2분기 유류 항만 물동량이 역대 최대 폭으로 감소했으며, 기사는 호르무즈 봉쇄 영향을 직접 언급했다[46]. 중동전쟁 여파로 유류 물동량이 19% 급감했으나, 부산항 환적 물동량은 나 홀로 성장세를 보였다[47]. 전국 항만 전체 물동량은 4.8% 감소했으나 컨테이너 물동량은 증가세로 전환됐다[49]. 인천항 수출은 상반기 처음으로 300억 달러를 돌파하며 신기록을 세웠다[50]. SK이노베이션은 원유 조달이 당분간 이상 없다고 밝히며 조달선 다변화로 하반기를 방어하겠다고 했고[48], 카타르는 불가항력을 선언했음에도 고객 신뢰 유지를 위해 미국산 LNG를 구매해 공급하고 있다[51]. 광양항은 스마트항만 자동화 테스트베드 구축에 착수해 2029년 개장을 목표로 하고 있다[52][53]."
+      },
+      "5_EconFinance": {
+        "overseas": "중동 적대 행위 확대와 미국 원유 재고 급감으로 국제 원유 가격이 급등했다[54]. 트럼프의 이란 위협 발언으로 중동 공급 우려가 재부각되며 유가가 추가 상승했고[59], 호르무즈 협상 소식에는 유가가 하락하는 등[57] 유가 변동성이 확대되고 있다. 러시아산 원유가 공급 차질 지속 시 인도 수입 바스켓에서 하루 300만 배럴 기록을 세울 수 있다는 보고서가 나왔다[60]. 영국 셸은 이란 전쟁 기간인 2분기에 14조 원의 순이익을 기록해 전년 대비 두 배 수준을 달성했다[69].",
+        "korea_impact": "미-이란 전쟁 확대로 국제유가가 급등하면서 국내 기름값 하락세에 급브레이크가 걸리고 인상 가능성이 제기됐다[64][65]. 코스피는 사흘 새 17% 폭락하며 반대매매 우려가 나오는 등 금융시장 충격이 지속되고 있다[71]. SK이노베이션은 2분기 영업이익 3조 4,873억 원을 기록하며 흑자 전환에 성공했고[70][73], 포스코홀딩스는 2분기 영업이익이 35% 성장하며 철강·이차전지소재·인프라 부문 고른 성장을 보였다[72]. 반도체 관련주는 지수를 주도하는 가운데 원전·전력설비주는 고점 이탈 후 폭락장에 동반 추락했다[66][67]."
+      },
+      "6_Seafood": {
+        "overseas": "",
+        "korea_impact": "전북 해역에 고수온 주의보가 발령됐으며[74][79], 경남 지역은 이틀째 40도에 달하는 폭염 속에 바다 고수온이 지속되고 있다[75]. 하동 양식장에서는 가숭어 5,000마리가 집단 폐사했으며[76][81][82], 해수부 장관은 고수온 양식장 피해 예방에 총력을 기울이겠다고 밝혔다[77]. 폭염으로 광어 등 양식 어류의 떼죽음이 발생하고 있으며 적조 우려까지 더해지고 있다[78][80]. 경남도지사는 통영을 방문해 폭염·고수온 상황을 직접 점검했다[83]."
+      },
+      "7_Shipping": {
+        "overseas": "카타르에너지 통제 LNG 운반선이 약 3주 만에 처음으로 호르무즈 해협을 통과했으며[87], 이란은 파키스탄의 카타르산 LNG 화물에 대해 안전 통항을 허용했다[84][85]. 호르무즈 해협 선박 통항이 중동 긴장 지속에도 불구하고 일부 반등하는 신호가 나타났다[86]. 유조선들은 중동 분쟁 지역을 계속 운항하고 있으며[89], 한국 선사의 신규 선박 발주 중단이 경고 신호인지에 대한 분석이 제기됐다[88].",
+        "korea_impact": "카타르 LNG 운반선이 20여 일 만에 처음으로 호르무즈 해협을 통과했다[91]. STX엔진은 덴마크 머스크사 초대형 컨테이너선용 친환경 엔진을 처음으로 수출했다[92]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "골드만삭스는 디젤 부족이 현재 원유 시장에서 가장 큰 위협이라고 경고했다[97]. 우크라이나의 정밀 타격으로 러시아 정유 처리 능력의 30% 이상이 마비됐다[98]. 일본은 호르무즈 공급 차질로 아시아가 압박을 받는 가운데 캐나다산 원유로 전환하고 있다[101]. 루마니아 콘스탄차항이 투르크메니스탄산 천연가스의 유럽 진입 거점이 될 가능성이 제기됐다[99].",
+        "korea_impact": "이집트 LNG 허브가 드론 공격을 받으면서 중동 에너지 인프라 타격이 확산되고 있다[103]. SK에너지는 중동산 원유 비중을 절반 수준으로 낮추고 미국·캐나다·아프리카 등으로 조달선을 다변화하고 있다[105]. 국제 LPG 가격은 큰 폭 하락 이후 8월 들어 상승 전환하며 톤당 평균 40달러 상승했다[104]. 정제마진 강세로 정유사들은 역래깅 우려에도 불구하고 하반기 실적 개선이 전망되고 있다[108]. 폭염으로 원전 가동 중단과 화물선 운항 차질 등 글로벌 공급망이 열파 피해를 입고 있다[111]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "이란은 호르무즈를 열지 않겠다는 강경 입장을 유지하고 있으며[19], 이란 혁명수비대는 스웜 공격용 고속정 함대가 완전히 유지되고 있다고 과시했다[7]. 미국의 공습으로 이란 영공이 개방됐음에도 호르무즈 해협 재개가 이루어지지 않고 있다는 분석이 나왔다[8]. 이집트 다미에타항 드론 공격으로 지중해 항만 안보 위협도 확대됐다[36][37][38]. 수에즈 운하 인근에서도 드론 공격으로 새로운 안보 위협이 제기됐다[2]. 아랍 세계가 두 개의 핵심 해상 동맥(호르무즈·수에즈)이 동시에 위협받는 상황을 감당할 수 있는지에 대한 우려가 제기됐다[1].",
+          "korea_impact": "2분기 유류 항만 물동량이 역대 최대 폭으로 감소했으며, 기사는 호르무즈 봉쇄 영향을 직접 언급했다[46]. 유류 물동량은 19% 급감했으나[47], 카타르 LNG 운반선이 20여 일 만에 처음으로 호르무즈를 통과하는 등[91] 제한적 통항 재개 신호가 나타났다. 한국 정부는 호르무즈 관련 실질적 기여 방안이 이란-오만 협상에 달려 있다고 밝혔다[18]. SK에너지는 중동산 원유 비중을 절반 수준으로 낮추고 미국·캐나다·아프리카로 조달선을 다변화하고 있다[105]."
+        },
+        "source": {
+          "overseas": "미국은 이란산 원유를 중국·UAE에 판매한 해운사들에 제재를 부과했다[6]. 러시아 정유 처리 능력의 30% 이상이 우크라이나 정밀 타격으로 마비됐으며[98], 러시아산 원유가 공급 차질 지속 시 인도 수입 바스켓에서 하루 300만 배럴 기록을 세울 수 있다는 전망이 나왔다[60]. 나이지리아 에르하 원유 수출에서 엑슨모빌이 불가항력을 선언했다[102]. 골드만삭스는 디젤 부족이 현재 원유 시장에서 가장 큰 위협이라고 경고했다[97].",
+          "korea_impact": "SK이노베이션은 원유 조달이 당분간 이상 없다고 밝히며 조달선 다변화로 하반기를 방어하겠다고 했다[48]. 카타르는 불가항력을 선언했음에도 고객 신뢰 유지를 위해 미국산 LNG를 구매해 공급하고 있다[51]. 국제 LPG 가격은 8월 들어 상승 전환하며 톤당 평균 40달러 올랐다[104]. 한국과 칠레는 자원 공급망 및 FTA 현대화 협력을 추진하고 있다[109]."
+        },
+        "logistics": {
+          "overseas": "홍해 유조선 교통량이 후티 위협 이후 수개월 만에 최저 수준으로 떨어졌다[29]. 후티 반군은 홍해 통행 선박에 통행료 부과 방안을 검토 중이다[34][35]. 컨테이너 현물 운임은 3주 연속 하락했으며[31], BDI는 목요일 반등했다[33]. 터키 벌크선이 다르다넬스 해협을 봉쇄하는 사태가 발생했다[32].",
+          "korea_impact": "전국 항만 물동량은 4.8% 감소했으나 컨테이너 물동량은 증가세로 전환됐다[49]. 인천항 수출은 상반기 처음으로 300억 달러를 돌파하며 신기록을 세웠다[50]. 부산항 환적 물동량은 유류 물동량 급감 속에서도 나 홀로 성장세를 보였다[47]. STX엔진은 머스크사 초대형 컨테이너선용 친환경 엔진을 처음으로 수출했다[92]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "미-이란 군사 충돌 확대로 국제유가가 급등하면서 국내 기름값 인상 가능성이 제기됐다[64][65]. 코스피는 사흘 새 17% 폭락하며 반대매매 우려가 나오는 등 금융시장 충격이 지속되고 있다[71]. SK이노베이션은 2분기 영업이익 3조 4,873억 원으로 흑자 전환했고[70][73], 포스코홀딩스는 2분기 영업이익 35% 성장을 기록했다[72]. 영국 셸은 이란 전쟁 기간인 2분기에 14조 원 순이익을 기록해 전년 대비 두 배 수준을 달성했다[69].",
+        "정유·화학": "SK에너지는 중동산 원유 비중을 절반 수준으로 낮추고 미국·캐나다·아프리카로 조달선을 다변화하고 있다[105]. 정제마진 강세로 정유사들은 역래깅 우려에도 불구하고 하반기 실적 개선이 전망된다[108]. 국제 LPG 가격은 8월 들어 상승 전환하며 톤당 평균 40달러 올랐다[104]. 에너지 인프라까지 번진 중동 분쟁 속에서도 정유업계 실적은 개선세를 보이고 있다[107].",
+        "해운·물류": "2분기 유류 항만 물동량이 역대 최대 폭으로 감소했으며[46], 유류 물동량은 19% 급감했다[47]. 전국 항만 물동량은 4.8% 감소했으나 컨테이너 물동량은 증가세로 전환됐고[49], 부산항 환적은 나 홀로 성장세를 유지했다[47]. 한국 선사의 신규 선박 발주 중단이 경고 신호인지에 대한 분석이 제기됐다[88]. 광양항은 스마트항만 자동화 테스트베드 구축에 착수해 2029년 개장을 목표로 하고 있다[52][53].",
+        "식품·농업": "전북 해역과 경남 해역에 고수온 주의보가 발령됐으며[74][75][79], 하동 양식장에서 가숭어 5,000마리가 집단 폐사했다[76][81][82]. 폭염으로 광어 등 양식 어류의 떼죽음이 발생하고 있으며 적조 우려까지 더해지고 있다[78][80]. 해수부 장관은 고수온 양식장 피해 예방에 총력을 기울이겠다고 밝혔다[77].",
+        "기타산업": "이집트 LNG 허브 드론 공격으로 중동 에너지 인프라 타격이 확산되고 있다[103]. 폭염으로 원전 가동 중단과 화물선 운항 차질 등 글로벌 공급망이 열파 피해를 입고 있다[111]. 한국과 칠레는 자원 공급망 및 FTA 현대화 협력을 추진하고 있다[109]."
+      }
+    },
+    "changes": {
+      "new": [
+        "이집트 다미에타항 드론 공격으로 미국 연계 가스 탱커 화재 발생 - 지중해 항만 안보 위협 신규 등장[5][36][37][38]",
+        "이란, 요르단 미군기지 공격 및 F-35 전투기 3대 파괴 주장[13][15][16][17]",
+        "카타르 LNG 운반선, 약 20여 일 만에 처음으로 호르무즈 해협 통과[87][91]",
+        "이란, 파키스탄의 카타르산 LNG 화물에 안전 통항 허용[84][85]",
+        "후티 반군, 홍해 통행 선박에 통행료 부과 방안 검토[34][35]",
+        "2분기 유류 항만 물동량 역대 최대 감소 공식 확인[46][47]",
+        "국제 LPG 가격 8월 들어 상승 전환, 톤당 평균 40달러 상승[104]",
+        "미국 전략비축유(SPR) 1983년 이후 최저 수준 경고[44][45]"
+      ],
+      "escalated": [
+        "미-이란 군사 충돌 확대: 미국 이란 혁명수비대 수십 개 거점 공습, 이란 미군기지 반격[14][20]",
+        "이란 호르무즈 봉쇄 강경 입장 유지 - '열지 않겠다' 초강수[19]",
+        "중동 에너지 인프라 타격 확산 - 이집트 다미에타 LNG 허브까지 드론 공격[103]",
+        "수에즈 운하 인근 드론 공격으로 홍해·지중해 동시 안보 위협 확대[2]",
+        "국제유가 급등 재개 및 국내 기름값 인상 압력 심화[64][65]",
+        "코스피 사흘 새 17% 폭락 등 금융시장 충격 지속[71]",
+        "고수온 피해 확산 - 전북·경남 주의보 발령 및 양식장 집단 폐사[74][75][76][81][82]"
+      ],
+      "resolved": [
+        "카타르 LNG 운반선 호르무즈 통과 성공으로 완전 봉쇄 상태에서 제한적 통항 재개 신호[87][91]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "Can the Arab world afford to have both of its critical maritime arteries under threat at once ? ",
+        "url": "https://www.arabnews.com/node/2652854",
+        "type": "intl"
+      },
+      {
+        "title": "Drone Strike Near Suez Canal in Egypt Raises New Security Threat in Widening War",
+        "url": "https://gcaptain.com/drone-strike-near-suez-canal-in-egypt-raises-new-security-threat-in-widening-war/",
+        "type": "intl"
+      },
+      {
+        "title": "CCS Meet : PM Reviews Situation During Ongoing West Asia Conflict",
+        "url": "https://www.deccanchronicle.com/nation/ccs-meet-pm-reviews-situation-during-ongoing-west-asia-conflict-1975309",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump drags Egypt into Iran war as US blitzes Tehran military targets",
+        "url": "https://www.aol.co.uk/articles/donald-trump-drags-egypt-iran-182605000.html",
+        "type": "intl"
+      },
+      {
+        "title": "US - owned gas tanker catches fire after drone attack at Egypt port",
+        "url": "https://www.independent.co.uk/news/world/middle-east/egypt-gas-fire-drone-attack-damietta-energos-winter-b3024606.html",
+        "type": "intl"
+      },
+      {
+        "title": "US Sanctions Shipping Companies Over Iranian Oil Sales to China , UAE",
+        "url": "https://www.theepochtimes.com/world/us-sanctions-shipping-companies-over-iranian-oil-sales-to-china-uae-6069358",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC Boasts Of Fully Intact Speedboat Fleet For  Swarm Attack In Hormuz",
+        "url": "https://www.zerohedge.com/military/irgc-boasts-fully-intact-speedboat-fleet-swarm-attacks-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Airpower opened Iran skies . Why hasnt it reopened Hormuz ? ",
+        "url": "https://breakingdefense.com/2026/07/airpower-opened-irans-skies-why-hasnt-it-reopened-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Houthis attacked Saudi Arabia from Iraq with allied militias",
+        "url": "https://www.jpost.com/middle-east/article-904157",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt confirms drone caused fire on two gas vessels at Damietta",
+        "url": "https://tribune.com.pk/story/2621136/egypt-confirms-drone-caused-fire-on-two-gas-vessels-at-damietta",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Red Sea Attacks Prompt London Insurers to Widen High - Risk Zone",
+        "url": "https://www.insurancejournal.com/news/international/2026/07/30/879653.htm",
+        "type": "intl"
+      },
+      {
+        "title": "PM Modi chairs 4th CCS meeting on West Asia conflict ; directs measures for energy security and seafarer safety",
+        "url": "https://news.webindia123.com/news/Articles/India/20260730/4481200.html",
+        "type": "intl"
+      },
+      {
+        "title": "  Strait of Hormuz is our land : IRGC warns countries aiding US of  harsh response  ",
+        "url": "http://www.iraqsun.com/news/279216426/strait-of-hormuz-is-our-land-irgc-warns-countries-aiding-us-of-harsh-response",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Says Two Oil Tankers Ditched Attempt to Transit Hormuz",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Two-Oil-Tankers-Ditched-Attempt-to-Transit-Hormuz.html",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt says fire on 2 vessels at Damietta Port caused by drone - Xinhua",
+        "url": "https://english.news.cn/africa/20260730/3511fdf217344d15979d0b377911d721/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "Egyptian port attacked by unidentified drone as Middle East fighting continues",
+        "url": "https://reason.com/2026/07/30/drones-over-egypt/",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC Strikes Jordan Again After 2 - Hour US Bombardment Kills Iranian Troops , Civilians - Hormuz Traffic Creeps Higher",
+        "url": "https://www.zerohedge.com/geopolitical/2-hour-us-bombardment-kills-iranian-troops-civilians-hormuz-traffic-creeps-higher-irgc",
+        "type": "intl"
+      },
+      {
+        "title": "Drone hits gas vessel near Suez Canal , threatening to expand Iran war",
+        "url": "https://globalnews.ca/news/12002675/drone-hits-gas-vessel-near-suez-canal-threatening-to-expand-iran-war/",
+        "type": "intl"
+      },
+      {
+        "title": "Drone strike near Suez Canal in Egypt raises new security threat in widening war",
+        "url": "https://www.businesstimes.com.sg/international/drone-strike-near-suez-canal-egypt-raises-new-security-threat-widening-war",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt confirms US - owned tanker fire a result of drone attack",
+        "url": "https://www.clevelandjewishnews.com/news/world_news/egypt-confirms-us-owned-tanker-fire-a-result-of-drone-attack/article_54a3a00a-14b9-512a-ab10-959babdede9c.html",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt says drone attack caused fire on gas ships at Mediterranean port",
+        "url": "https://www.bbc.co.uk/news/articles/c39ez3klwmro",
+        "type": "intl"
+      },
+      {
+        "title": "New proposal from Oman aims to regulate Hormuz shipping route",
+        "url": "https://www.2lt.com.au/new-proposal-from-oman-aims-to-regulate-hormuz-shipping-route/",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt downplays Damietta drone strike as fears grow for Suez Canal lifeline",
+        "url": "https://www.ynetnews.com/article/rktxgj00rfg",
+        "type": "intl"
+      },
+      {
+        "title": "Oman , backed by Middle East states , proposes plan for waterway",
+        "url": "http://www.brazilsun.com/news/279213780/oman-suggests-middle-east-backed-plan-of-voluntary-fees-in-waterway",
+        "type": "intl"
+      },
+      {
+        "title": "Drone hits US LNG vessel at Damietta in first attack on Egyptian soil",
+        "url": "https://www.euronews.com/2026/07/30/drone-hits-us-lng-vessel-at-damietta-in-first-attack-on-egyptian-soil",
+        "type": "intl"
+      },
+      {
+        "title": "As the US and Iran trade blows over Hormuz , how long before the nuclear threat forces Israel to go back to war ? ",
+        "url": "https://www.thejc.com/news/world/as-the-us-and-iran-trade-blows-over-hormuz-how-long-before-the-nuclear-threat-forces-israel-to-go-back-to-war-xudxfn2q",
+        "type": "intl"
+      },
+      {
+        "title": "Breaking : CPC Halts Oil Loadings Again After Two More Tankers Attacked Near Novorossiysk",
+        "url": "https://timesca.com/breaking-cpc-halts-oil-loadings-again-after-two-more-tankers-attacked-near-novorossiysk/",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt drone strike was warning of worse disruption , Iranian officials say",
+        "url": "https://www.ynetnews.com/article/rkk85pdsml",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz will not reopen as long as US threats and interference continue : IRGC",
+        "url": "https://www.presstv.co.uk/Detail/2026/07/30/773358/IRGC-Hormuz-US-interference-threats",
+        "type": "intl"
+      },
+      {
+        "title": "Oman Proposes Strait of Hormuz Plan as U . S . Rejects Iran Shipping Fee Idea",
+        "url": "http://www.econotimes.com/Oman-Proposes-Strait-of-Hormuz-Plan-as-US-Rejects-Iran-Shipping-Fee-Idea-1748126",
+        "type": "intl"
+      },
+      {
+        "title": "Houthis consider charging ships in Red Sea , sources say",
+        "url": "https://www.middle-east-online.com/en/houthis-consider-charging-ships-red-sea-sources-say",
+        "type": "intl"
+      },
+      {
+        "title": "Japan turns to Canadian crude as Asia feels Hormuz supply pinch",
+        "url": "https://www.aljazeera.com/news/2026/7/30/japan-turns-to-canadian-crude-as-asia-feels-hormuz-supply-pinch",
+        "type": "intl"
+      },
+      {
+        "title": "Drone strike hits US - owned LNG vessel at key Egyptian gas hub",
+        "url": "https://www.middle-east-online.com/en/drone-strike-hits-us-owned-lng-vessel-key-egyptian-gas-hub",
+        "type": "intl"
+      },
+      {
+        "title": "Oman presents Iran with Gulf - backed plan to ease Strait of Hormuz tensions – Ya Libnan",
+        "url": "https://yalibnan.com/2026/07/30/oman-presents-iran-with-gulf-backed-plan-to-ease-strait-of-hormuz-tensions/",
+        "type": "intl"
+      },
+      {
+        "title": "Drone Strikes US - Owned LNG Tanker at Egypt Damietta Port",
+        "url": "https://themedialine.org/headlines/drone-strikes-us-owned-lng-tanker-at-egypts-damietta-port/",
+        "type": "intl"
+      },
+      {
+        "title": "World News : Drone  hits tanker at Egyptian port  ",
+        "url": "https://www.gdnonline.com:443/Details/1402041",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Iran - Backed Houthis Plan to Extort  Fee for Red Sea Shipping",
+        "url": "https://www.breitbart.com/middle-east/2026/07/29/report-yemens-iran-backed-houthis-plan-to-extort-fees-for-red-sea-shipping/",
+        "type": "intl"
+      },
+      {
+        "title": "Drone attack triggers explosion on US - owned LNG tanker at Egyptian port",
+        "url": "http://www.afghanistannews.net/news/279215450/drone-attack-triggers-explosion-on-us-owned-lng-tanker-at-egyptian-port",
+        "type": "intl"
+      },
+      {
+        "title": "How the Houthis helped revive Somali piracy",
+        "url": "https://www.arabnews.com/node/2652852",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt struck by explosive drones as yet more countries are dragged into Iran war",
+        "url": "https://www.aol.co.uk/articles/egypt-struck-explosive-drones-yet-191328000.html",
+        "type": "intl"
+      },
+      {
+        "title": "Jaishankar tells Ukraine FM Black Sea attacks on Indian seafarers  absolutely unacceptable  ",
+        "url": "https://www.livemint.com/news/india/jaishankar-tells-ukraine-fm-black-sea-attacks-on-indian-seafarers-absolutely-unacceptable-11785430536081.html",
+        "type": "intl"
+      },
+      {
+        "title": "Crude Oil Dips Amid Profit Taking As Iran , Oman Discuss Strait Of Hormuz Management",
+        "url": "https://www.rttnews.com/story.aspx?Id=3673273",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says its army struck US assets at Bahrain Sheikh Isa base",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-its-army-struck-us-assets-bahrains-sheikh-isa-base",
+        "type": "intl"
+      },
+      {
+        "title": "Is the Iran War expanding ? ",
+        "url": "https://www.wtae.com/article/is-iran-war-expanding-new-fronts-middle-east/73309661",
+        "type": "intl"
+      },
+      {
+        "title": "US issues sanctions targeting support networks for Iran Mahan Air",
+        "url": "https://www.arabnews.com/node/2652846/middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "Maritime Expert Warns Against Underestimating the Houthi Resolve",
+        "url": "https://gcaptain.com/maritime-expert-warns-against-underestimating-the-houthis-resolve/",
+        "type": "intl"
+      },
+      {
+        "title": "US - Saudi consortium eyes Hormuz bypass export hub",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2858277-us-saudi-consortium-eyes-hormuz-bypass-export-hub",
+        "type": "intl"
+      },
+      {
+        "title": "New fronts are opening across the Mideast as Iran war widens",
+        "url": "https://www.wsbradio.com/news/world/heres-why-new-fronts/P4FWEUPTAE7ANANZBRU6Z5TM4U/",
+        "type": "intl"
+      },
+      {
+        "title": "India says Black Sea attacks  by any party  unacceptable as Jaishankar , Ukraine FM hold talks",
+        "url": "https://www.tribuneindia.com/news/india/india-says-black-sea-attacks-by-any-party-unacceptable-as-jaishankar-ukraine-fm-hold-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Here why new fronts seem to be opening up across the Middle East",
+        "url": "https://www.therecord.com/news/world/middle-east/heres-why-new-fronts-seem-to-be-opening-up-across-the-middle-east/article_9c267f2e-d102-5133-8fd1-8c0d1a3f2667.html",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM rebuts Iranian claims : Strait of Hormuz remains open , no US aircraft lost",
+        "url": "https://www.israelnationalnews.com/news/431017",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis deny drone attack on gas vessels at Egypt Damietta Port",
+        "url": "https://aa.com.tr/en/middle-east/yemen-s-houthis-deny-drone-attack-on-gas-vessels-at-egypt-s-damietta-port/4014058",
+        "type": "intl"
+      },
+      {
+        "title": "PM Modi Meets President Murmu , Chairs CCS on West Asia Crisis META _ TITLE : PM Modi meets President Murmu , chairs CCS meeting on West Asia crisis",
+        "url": "https://www.newkerala.com/news/a/pm-modi-calls-president-droupadi-murmu-rashtrapati-bhavan-406.htm",
+        "type": "intl"
+      },
+      {
+        "title": "PM Modi Reviews West Asia Crisis , Directs Ministries To Secure India Energy And Fertiliser Supplies",
+        "url": "https://www.freepressjournal.in/india/pm-modi-reviews-west-asia-crisis-directs-ministries-to-secure-indias-energy-and-fertiliser-supplies",
+        "type": "intl"
+      },
+      {
+        "title": "Drone Reportedly Hits US - Owned Gas Vessel At Egyptian Port",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/07/iran-260729-rferl05.htm",
+        "type": "intl"
+      },
+      {
+        "title": "  Focus on renewables to ensure energy independence : PM Modi tells CCS amid Hormuz tensions",
+        "url": "https://www.businesstoday.in/latest/economy/story/focus-on-renewables-ensure-energy-independence-pm-modi-tells-ccs-amid-hormuz-disruptions-546380-2026-07-30",
+        "type": "intl"
+      },
+      {
+        "title": "Kazakh oil exports halted again after more Black Sea tanker strikes",
+        "url": "https://www.upstreamonline.com/energy-security/kazakh-oil-exports-halted-again-after-more-black-sea-tanker-strikes/2-1-2022673",
+        "type": "intl"
+      },
+      {
+        "title": "US Military Completes  Heavy Wave  Of Strikes Against Iran",
+        "url": "http://www.middleeaststar.com/news/279216230/us-military-completes-heavy-wave-of-strikes-against-iran",
+        "type": "intl"
+      },
+      {
+        "title": "  They Know It Coming : US Strikes Intensify as Iran Fires Drones , Missiles Across Middle East",
+        "url": "https://cbn.com/news/israel/they-know-its-coming-us-strikes-intensify-iran-fires-drones-missiles-across-middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "Ship carrying Azerbaijani seafarers comes under UAV attack off Odesa coast",
+        "url": "https://en.apa.az/europe/ship-carrying-azerbaijani-seafarers-comes-under-uav-attack-off-odesa-coast-518268",
+        "type": "intl"
+      },
+      {
+        "title": "Waterways , Canals , And Straits , And What Clear Passage Means To Global Trade Survival",
+        "url": "https://www.mondaq.com:443/unitedstates/international-trade-investment/1824116/waterways-canals-and-straits-and-what-clear-passage-means-to-global-trade-survival",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwaiti worker killed as U . S .- Iran conflict widens",
+        "url": "https://www.cbc.ca/news/world/iran-war-us-saudi-iraq-9.7290235",
+        "type": "intl"
+      },
+      {
+        "title": "Hyundai Motor Q1 net dips 35 % on production constraints and West Asia conflict",
+        "url": "https://www.thehindu.com/business/Industry/hyundai-motor-q1-net-dips-35-on-production-constraints-and-west-asia-conflict/article71285541.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Mediator Pakistan says US - Iran talks ongoing as foes trade attacks",
+        "url": "https://www.al-monitor.com/originals/2026/07/mediator-pakistan-says-us-iran-talks-ongoing-foes-trade-attacks",
+        "type": "intl"
+      },
+      {
+        "title": "US Launches Strikes On Iran After Reported Attack On Base In Jordan",
+        "url": "http://www.shanghaisun.com/news/279215893/us-launches-strikes-on-iran-after-reported-attack-on-base-in-jordan",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Climbs as US Resumes Military Strikes on Iran",
+        "url": "https://www.oedigital.com/news/541626-oil-climbs-as-us-resumes-military-strikes-on-iran",
+        "type": "intl"
+      },
+      {
+        "title": "US and Iran exchange attacks , Egypt investigates port fire and UAE supports outdoor workers",
+        "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/07/30/us-and-iran-exchange-attacks-egypt-investigates-port-fire-and-uae-supports-outdoor-workers/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran conflict leaves US with reduced missile interceptor inventories",
+        "url": "https://www.samaa.tv/2087354407-iran-conflict-leaves-us-with-reduced-missile-interceptor-inventories",
+        "type": "intl"
+      },
+      {
+        "title": "Trump is stuck in Iran . Here one idea that could offer a way out",
+        "url": "https://us.cnn.com/2026/07/30/politics/trump-iran-strait-of-hormuz-tolls",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East powder keg inches closer to blast",
+        "url": "https://tribune.com.pk/story/2621059/middle-east-powder-keg-inches-closer-to-blast",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war : U . S . strikes Iran in response to missile attack",
+        "url": "https://www.cp24.com/news/world/2026/07/30/us-strikes-iranian-targets-in-retaliation-for-missile-attack-on-american-forces/",
+        "type": "intl"
+      },
+      {
+        "title": "Commercial sea drone captures footage of Chinese warship in Philippine waters",
+        "url": "https://www.asiaone.com/china/commercial-sea-drone-captures-footage-chinese-warship-philippine-waters",
+        "type": "intl"
+      },
+      {
+        "title": "US launches new strikes on Iran amid fears of widening conflict",
+        "url": "https://www.sbs.com.au/news/podcast-episode/us-launches-new-strikes-on-iran-amid-fears-of-widening-conflict/cotx4ipl7",
+        "type": "intl"
+      },
+      {
+        "title": "US Strikes Dozens of IRGC Targets in Iran",
+        "url": "https://www.newkerala.com/news/a/us-claims-strike-dozens-irgc-targets-iran-alleges-146.htm",
+        "type": "intl"
+      },
+      {
+        "title": "US military launches strikes on Iranian targets a day after it foiled missile attack on US forces - Las Vegas Sun News",
+        "url": "https://lasvegassun.com/news/2026/jul/29/us-military-launches-strikes-on-iranian-targets-a-/",
+        "type": "intl"
+      },
+      {
+        "title": "US claims to strike dozens of IRGC targets in Iran ; alleges Iran attempted missile strikes",
+        "url": "https://economictimes.indiatimes.com/news/defence/us-claims-to-strike-dozens-of-irgc-targets-in-iran-alleges-iran-attempted-missile-strikes/articleshow/132725641.cms",
+        "type": "intl"
+      },
+      {
+        "title": "China puts the  squeeze  on Taiwan with new maritime patrols",
+        "url": "https://thechronicle.com.gh/china-puts-the-squeeze-on-taiwan-with-new-maritime-patrols/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran launches new missile attacks as US and Saudi Arabia strike Tehran - backed militias in Iraq – Ya Libnan",
+        "url": "https://yalibnan.com/2026/07/30/iran-launches-new-missile-attacks-as-us-and-saudi-arabia-strike-tehran-backed-militias-in-iraq/",
+        "type": "intl"
+      },
+      {
+        "title": "US launches new strikes on Iran after six days of calm as Trump signals escalation",
+        "url": "https://www.ynetnews.com/article/hjgyfgobfl",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war updates : United States military launches strikes on Iranian targets a day after it foiled missile attack on US forces",
+        "url": "https://abc11.com/post/jordan-intercepts-iranian-missiles-us-saudi-arabia-launch-strikes-militias-iraq/19595522/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump previews upcoming attack on Iran :  Weve got to smack them a little bit  ",
+        "url": "https://wjla.com/news/nation-world/trump-previews-upcoming-attack-on-iran-weve-got-to-smack-them-a-little-bit-jordan-american-forces-attack-strait-hormuz-shipping-traffic",
+        "type": "intl"
+      },
+      {
+        "title": "Drone strikes US - owned tanker in Nile Delta",
+        "url": "https://www.clevelandjewishnews.com/news/national_news/drone-strikes-us-owned-tanker-in-nile-delta/article_64373a1b-fdc7-51f2-8d66-9bf4c8cd84a6.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran launches renewed missile attacks as US and Saudis strike Tehran - backed militias in Iraq",
+        "url": "https://www.asiaone.com:443/world/iran-launches-renewed-missile-attacks-us-and-saudis-strike-tehran-backed-militias-iraq",
+        "type": "intl"
+      },
+      {
+        "title": "Iran launches renewed missile attacks as US , Saudis strike Tehran - backed militias in Iraq",
+        "url": "https://www.koreatimes.co.kr/world/20260730/iran-launches-renewed-missile-attacks-as-us-saudis-strike-tehran-backed-militias-in-iraq",
+        "type": "dom"
+      },
+      {
+        "title": "US Central Command highlights military assets used in Iran blockade",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-904054",
+        "type": "intl"
+      },
+      {
+        "title": "  Stop war actions right away : German Envoy calls for diplomatic solution to West Asia conflict",
+        "url": "https://news.webindia123.com/news/Articles/World/20260730/4480837.html",
+        "type": "intl"
+      },
+      {
+        "title": "Russia Claims Strikes on Two More Ships Near Odesa",
+        "url": "https://maritime-executive.com/article/russia-claims-strikes-on-two-more-ships-near-odesa",
+        "type": "intl"
+      },
+      {
+        "title": "Taiwan drills to test relocating arms production under Chinese attack",
+        "url": "https://www.yahoo.com/news/world/articles/taiwan-drills-test-relocating-arms-042509612.html",
+        "type": "intl"
+      },
+      {
+        "title": "West Asia Crisis : German Envoy Calls for Diplomatic Solution",
+        "url": "https://www.newkerala.com/news/a/stop-war-actions-right-away-german-envoy-calls-563.htm",
+        "type": "intl"
+      },
+      {
+        "title": "이집트 \"다미에타항 LNG 선박 화재, 드론 공격이 원인\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016225713?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"요르단 미군기지 공격… F-35 전투기 3대 파괴\"",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3421403",
+        "type": "dom"
+      },
+      {
+        "title": "미군, 이란 혁명수비대 수십 개 거점 공습… 트럼프 대통령 \"이제 우리...",
+        "url": "https://www.voakorea.com/a/u-s-military-strikes-dozens-of-iranian-revolutionary-guard-bases-073026/8180797.html",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “요르단 미군 기지 공격해 F-35 전투기 3대 파괴” 주장",
+        "url": "https://n.news.naver.com/mnews/article/009/0005714676?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “요르단 내 미군 공격, F-35 3대 격파” 주장",
+        "url": "https://n.news.naver.com/mnews/article/021/0002808147?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란혁명수비대, \"요르단의 공군 기지 공격…미군 여러 명 사망해\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014099613?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "정부 호르무즈해협 ‘실질적 기여’, 이란-오만 협상에 달려",
+        "url": "https://n.news.naver.com/mnews/article/028/0002816504?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 역풍 맞나…이란 “호르무즈 안 연다” 초강수 [핫이슈]",
+        "url": "https://n.news.naver.com/mnews/article/081/0003666249?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"두드려 팰 것\" 미, 이란 공습 재개…국제유가 다시 급등",
+        "url": "https://n.news.naver.com/mnews/article/055/0001376858?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"두들겨 팰 것\" 공습 재개…이란은 中 미사일 400기 구매",
+        "url": "https://n.news.naver.com/mnews/article/015/0005315818?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이집트 지중해 美 LNG 시설서 화재… 이란 드론공격 추정",
+        "url": "https://n.news.naver.com/mnews/article/022/0004147273?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이집트 항구에서도 포성... 美LNG 저장 설비 드론 공격, 누구 소행?",
+        "url": "https://n.news.naver.com/mnews/article/469/0000945384?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 무인정, 남중국해서 中함정 추적…\"위험한 접근말라\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000890761?sid=161",
+        "type": "dom"
+      },
+      {
+        "title": "日, 이지스함서 토마호크 첫 발사…‘북중러 사정권’ 능력 본격화",
+        "url": "https://n.news.naver.com/mnews/article/025/0003541355?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“일본 바다 훑었다”…중러 해군, 대한해협 등 일본열도 일주",
+        "url": "https://n.news.naver.com/mnews/article/029/0003039956?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "日, 태평양서 ‘북중러 사정권’ 토마호크 첫 발사…“中 의식한 것 아...",
+        "url": "https://n.news.naver.com/mnews/article/022/0004147233?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중러 함대, 오키나와도 순찰 경로에 넣어…일본 일주하듯 훑고 갔다",
+        "url": "https://n.news.naver.com/mnews/article/016/0002677617?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "일본, '북·중·러 사정권' 토마호크 미사일 태평양서 첫 시험 발사",
+        "url": "https://n.news.naver.com/mnews/article/055/0001376830?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“북한·중국 사정권 겨냥”… 日, 토마호크 첫 발사 시험",
+        "url": "https://www.kbmaeil.com/article/20260730500708",
+        "type": "dom"
+      },
+      {
+        "title": "이집트 \"지중해항구 드론 피격\" 확인…이란·대리세력 배후 추정",
+        "url": "https://n.news.naver.com/mnews/article/421/0009089231?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "일주일도 못간 미·이란 휴전…중동 곳곳으로 전선 확대",
+        "url": "https://n.news.naver.com/mnews/article/032/0003461490?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 정신 못 차리네…“이란 공격 영상 SNS에 공개한 美장병, 2차 공격...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003666273?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“美 중부사령관, 이란에 최장 2주간 ‘융단 폭격’ 주장”",
+        "url": "https://n.news.naver.com/mnews/article/119/0003116758?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미, 엿새만에 이란 공습...지중해에도 화염",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532462",
+        "type": "dom"
+      },
+      {
+        "title": "미-이란 전쟁, 사우디 넘어 이집트로 확전되나…美 보유 이집트 가스시...",
+        "url": "https://n.news.naver.com/mnews/article/002/0002450409?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미, 엿새 만에 이란 공격 재개…대이란 추가 제재",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228424?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美, 대담해진 이란에 공습 재개… 홍해 넘어 지중해로 전선 확대",
+        "url": "https://n.news.naver.com/mnews/article/005/0001864093?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 혁명수비대 “오늘 미국 시설에 보복 공격할 것”",
+        "url": "https://n.news.naver.com/mnews/article/025/0003541340?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "파키스탄 대변인 \"미국과 이란 간 협상은 여전히 진행 중… 협상 테이블...",
+        "url": "https://www.newspim.com/news/view/20260730001461",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"오늘 침략자 응징\"…美 보복 공습에 중동 위기 고조",
+        "url": "https://www.g-enews.com/view.php?ud=202607301821115768153ddfb15a_1",
+        "type": "dom"
+      },
+      {
+        "title": "이란 IRGC \"오늘 침략자들 처벌할 것\"…美에 보복 경고",
+        "url": "https://n.news.naver.com/mnews/article/421/0009089277?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국, 이란에 '대규모' 공습 단행... 다시 고조되는 중동 갈등",
+        "url": "https://www.bbc.com/korean/articles/cq563029g90o?xtor=AL-73-%5Bpartner%5D-%5Bnaver%5D-%5Bheadline%5D-%5Bkorean%5D-%5Bbizdev%5D-%5Bisapi%5D",
+        "type": "dom"
+      },
+      {
+        "title": "[사설]호르무즈 군함 파견, 국익 훼손 없도록 신중해야",
+        "url": "https://n.news.naver.com/mnews/article/032/0003461427?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "美, 엿새 만에 이란 공습… 중동 갈등 ‘도돌이표’",
+        "url": "https://n.news.naver.com/mnews/article/082/0001392033?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "선제공격 없다던 이란이 먼저 때리자…트럼프 “두들겨 팰 것”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647042?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "전장 넓어지는 미·이란 충돌…‘안전지대’ 이집트마저 흔들",
+        "url": "https://n.news.naver.com/mnews/article/123/0002387562?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란 두들겨 팰 것”…“2주간 집중공습 검토”",
+        "url": "https://n.news.naver.com/mnews/article/449/0000354997?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "FT \"우크라이나·이란 전쟁, 하나로 연결되고 있다\"…'제3차 세계대전' ...",
+        "url": "https://www.ilemonde.com/news/articleView.html?idxno=30410",
+        "type": "dom"
+      },
+      {
+        "title": "\"중러 해군, 순찰 경로 확대…대한해협 등 일본열도 일주\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016225603?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美, 6일만에 이란 공습 재개…트럼프 “이제는 우리의 차례”",
+        "url": "https://n.news.naver.com/mnews/article/020/0003737732?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘홍해 통항하는 선박 보호’…사우디, 국제연합 창설 추진",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228117?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "3000번 공격 받았지만, 이란에 경제·외교 문 연다…UAE의 승부수",
+        "url": "https://n.news.naver.com/mnews/article/025/0003541125?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 국방장관, 밴스 부통령과 회담…\"이란전 논의\"",
+        "url": "https://www.newspim.com/news/view/20260730000119",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "  Absolutely unacceptable : EAM Jaishankar discusses attacks on Indian seafarers with Ukraine FM",
+        "url": "https://www.prokerala.com/news/articles/a1794517.html",
+        "type": "intl"
+      },
+      {
+        "title": "Jaishankar tells Ukraine attacks on Indian seafarers are unacceptable",
+        "url": "https://economictimes.indiatimes.com/news/india/jaishankar-to-ukraines-sybiha-attacks-on-commercial-shipping-and-indian-seafarers-in-black-sea-unacceptable/articleshow/132746242.cms",
+        "type": "intl"
+      },
+      {
+        "title": "  Constant fear of a direct hit : 13 Indian seafarers trapped aboard ship at Ukraine port ; embassy steps in – Asia News Network",
+        "url": "https://asianews.network/constant-fear-of-a-direct-hit-13-indian-seafarers-trapped-aboard-ship-at-ukraine-port-embassy-steps-in/",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine vessel seafarers being monitored : Indian Embassy",
+        "url": "https://theshillongtimes.com/2026/07/30/ukraine-vessel-seafarers-being-monitored-indian-embassy/",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt Reports No Casualties After Damietta Port Gas Vessel Fire",
+        "url": "https://egyptianstreets.com/2026/07/30/egypt-reports-no-casualties-after-damietta-port-gas-vessel-fire/",
+        "type": "intl"
+      },
+      {
+        "title": "이집트 “LNG 선박 화재, 드론에 의해 발생”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228358?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "광양 부두서 60대 선원 해상 추락해 숨져",
+        "url": "https://ysmbc.co.kr/NewsArticle/1529983",
+        "type": "dom"
+      },
+      {
+        "title": "광양항 예인선서 작업 중 60대 선원, 바다로 추락 숨져",
+        "url": "https://n.news.naver.com/mnews/article/660/0000114226?sid=102",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Baystreet . ca - Red Sea Tanker Traffic Falls to Multi - Month Low After Houthi Threats",
+        "url": "http://baystreet.ca/articles/commodities/122624/Red-Sea-Tanker-Traffic-Falls-to-Multi-Month-Low-After-Houthi-Threats",
+        "type": "intl"
+      },
+      {
+        "title": "Saskatchewan exporters still opt for Vancouver shipping route despite a newer , closer alternative",
+        "url": "https://edmontonjournal.com/business/saskatchewan-exporters-still-opt-for-vancouver-shipping-route-despite-a-newer-closer-alternative/wcm/e47dd845-3eb8-4b19-86c2-d1d508442d0a",
+        "type": "intl"
+      },
+      {
+        "title": "Container Spot Rates Fall for Third Straight Week as Demand Continues to Ease",
+        "url": "https://gcaptain.com/container-spot-rates-fall-for-third-straight-week-as-demand-continues-to-ease/",
+        "type": "intl"
+      },
+      {
+        "title": "Turkish Bulker Heading to Russia Breaks Down and Blocks the Dardanelles",
+        "url": "https://maritime-executive.com/article/turkish-bulker-heading-to-russia-breaks-down-and-blocks-the-dardanelles",
+        "type": "intl"
+      },
+      {
+        "title": "Baltic Dry Rebounds on Thursday | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/baltic-dry-rebounds-on-thursday/",
+        "type": "intl"
+      },
+      {
+        "title": "예멘 후티 반군, 홍해에 통행료 부과 방안 검토",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532465",
+        "type": "dom"
+      },
+      {
+        "title": "‘홍해 통행료’ 검토 나선 후티… 사우디, 다국적 연합 카드 구상",
+        "url": "https://n.news.naver.com/mnews/article/005/0001864096?sid=104",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Drone attack sparks fire at Mediterranean port in Egypt",
+        "url": "https://www.upi.com/Top_News/World-News/2026/07/30/drone-attack-port-damietta/9171785430838/",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt Confirms Drone Hit Damietta Gas Vessels",
+        "url": "https://www.marinelink.com/news/egypt-confirms-drone-hit-damietta-gas-541629",
+        "type": "intl"
+      },
+      {
+        "title": "Fire at Egypt Damietta port caused by drone attack : PM office",
+        "url": "https://www.channelnewsasia.com/world/egypt-damietta-port-drone-attack-ship-struck-6286951",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt confirms unidentified drone caused fire at Mediterranean port",
+        "url": "https://www.africanews.com/2026/07/30/egypt-confirms-unidentified-drone-caused-fire-at-mediterranean-port/",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt Confirms Drone Caused Damietta Port Vessel Fire",
+        "url": "https://egyptianstreets.com/2026/07/30/egypt-confirms-drone-caused-damietta-port-vessel-fire/",
+        "type": "intl"
+      },
+      {
+        "title": "Drone hits US - linked gas tanker at Egypt Damietta port",
+        "url": "https://www.samaa.tv/2087354404-drone-hits-us-linked-gas-tanker-at-egypt-s-damietta-port",
+        "type": "intl"
+      },
+      {
+        "title": "Gas tanker explosion at Egyptian port reportedly Iranian drone attack",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-904072",
+        "type": "intl"
+      },
+      {
+        "title": "Drone hits gas storage tanker at Egypt Mediterranean port : British maritime security firm",
+        "url": "https://www.thehindu.com/news/international/drone-hits-gas-storage-tanker-at-egypts-mediterranean-port-british-maritime-security-firm/article71284161.ece",
+        "type": "intl"
+      },
+      {
+        "title": "\"1983년 이후 최저\" 美 전략비축유 고갈 경고등 켜졌다",
+        "url": "https://n.news.naver.com/mnews/article/008/0005393646?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[월드 e 브리핑] 미국 전략비축유 43년 만에 최저…에너지 안보 비상",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532467",
+        "type": "dom"
+      },
+      {
+        "title": "2분기 유류 항만 물동량 ‘역대 최대 감소’···호르무즈 봉쇄 영향",
+        "url": "https://n.news.naver.com/mnews/article/032/0003461446?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동전쟁에 유류 물동량 19% 급감…부산항 환적은 ‘나 홀로 성장’",
+        "url": "https://n.news.naver.com/mnews/article/081/0003666239?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노 \"원유 조달 당분간 이상 無\"…조달선 다변화로 하반기 방어",
+        "url": "https://n.news.naver.com/mnews/article/421/0009089296?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "전국 항만 물동량 4.8% 감소…컨테이너는 증가세 전환",
+        "url": "https://n.news.naver.com/mnews/article/277/0005797002?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "인천 수출 또 신기록…상반기 첫 300억 달러 돌파",
+        "url": "https://news.ifm.kr/news/articleView.html?idxno=476137",
+        "type": "dom"
+      },
+      {
+        "title": "카타르, 불가항력 선언했지만 고객에 신뢰 지키려 미 LNG 구매해 제공…...",
+        "url": "https://www.newspim.com/news/view/20260730001484",
+        "type": "dom"
+      },
+      {
+        "title": "여수광양항만공사, 광양항 스마트항만 첫 삽 '피지컬 AI' 테스트베드 착...",
+        "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=701816",
+        "type": "dom"
+      },
+      {
+        "title": "광양항 '항만자동화 테스트베드' 구축..2029년 개장",
+        "url": "https://n.news.naver.com/mnews/article/660/0000114249?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "AI로 움직이는 광양항.. \"첨단 항만 거점으로\"",
+        "url": "https://ysmbc.co.kr/NewsArticle/1529980",
+        "type": "dom"
+      },
+      {
+        "title": "[여기는 전남] “피지컬 AI로 자동화”…광양항 스마트항만 착공",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228490?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "광양항 자동화 테스트베드 착공…2029년까지 7724억 투입",
+        "url": "https://www.ksg.co.kr/news/main_newsView.jsp?pNum=147733",
+        "type": "dom"
+      },
+      {
+        "title": "광양항, 차세대 'K-스마트 항만' 첫삽…7724억 투입",
+        "url": "https://news.mtn.co.kr/news-detail/2026073016430173004",
+        "type": "dom"
+      },
+      {
+        "title": "광양항 '항만자동화 테스트베드' 착공식…AI스마트 항만 혁신 시작",
+        "url": "https://n.news.naver.com/mnews/article/002/0002450381?sid=102",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Crude oil surges as Middle East hostilities escalate , U . S . oil stockpiles  rapidly depleting  ",
+        "url": "https://seekingalpha.com/news/4621095-crude-oil-surges-as-middle-east-hostilities-escalate-us-oil-stockpiles-rapidly-depleting",
+        "type": "intl"
+      },
+      {
+        "title": "Xclusiv Shipbrokers Inc .: Saudi Arabia Energy Pivot Faces a New Threat",
+        "url": "https://www.theseanation.gr/news-in-english/67086-xclusiv-shipbrokers-inc-saudi-arabia-s-energy-pivot-faces-a-new-threat.html",
+        "type": "intl"
+      },
+      {
+        "title": "Intervention or Positioning ? Or Both ? USD / JPY Slide Through 160 Has Traders Guessing",
+        "url": "https://www.actionforex.com/action-insight/market-overview/649007-intervention-or-positioning-or-both-usd-jpys-slide-through-160-has-traders-guessing/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil falls on Hormuz talks",
+        "url": "https://finance.yahoo.com/news/oil-prices-slip-tankers-continue-003657966.html",
+        "type": "intl"
+      },
+      {
+        "title": "Futures Rise As Oil Drops , Bond Selling Slows , Meta Tumbles And Microsoft Soars",
+        "url": "https://www.zerohedge.com/markets/futures-rise-oil-drops-bond-selling-slows-meta-tumbles-and-microsoft-soars",
+        "type": "intl"
+      },
+      {
+        "title": "Oil ticks up as Trump threats revive Middle East supply concerns",
+        "url": "https://finance.yahoo.com/energy/articles/oil-ticks-trump-threats-revive-110454461.html",
+        "type": "intl"
+      },
+      {
+        "title": "Russian oil could hit record 3 million bpd in India import basket if disruptions persist : Report",
+        "url": "https://www.dailyexcelsior.com/russian-oil-could-hit-record-3-million-bpd-in-indias-import-basket-if-disruptions-persist-report/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Hold Steady After Rally",
+        "url": "https://www.rttnews.com/3672834/oil-prices-hold-steady-after-rally.aspx",
+        "type": "intl"
+      },
+      {
+        "title": "EU oil stocks reform unlikely to revise 90 - day storage target : sources | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/eu-oil-stocks-reform-unlikely-to-revise-90-day-storage-target-sources/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil slips as markets look for cues on Gulf supplies",
+        "url": "https://www.thedailystar.net/business/news/oil-slips-markets-look-cues-gulf-supplies-4236111",
+        "type": "intl"
+      },
+      {
+        "title": "Shell half - year earnings soar to £12 . 6bn on Iran war oil price volatility",
+        "url": "https://www.kentonline.co.uk/news/national/shell-half-year-earnings-soar-to-12-6bn-on-iran-war-oil-price-volatility-169979/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil edges lower as US wraps up strikes on Iran military targets",
+        "url": "https://www.straitstimes.com/business/oil-holds-gain-as-us-military-launches-fresh-strike-against-iran",
+        "type": "intl"
+      },
+      {
+        "title": "Shell profit surges as Mideast war fuels oil prices",
+        "url": "https://finance.yahoo.com/energy/articles/shell-profit-surges-mideast-war-081901589.html",
+        "type": "intl"
+      },
+      {
+        "title": "Petrol prices : Why Australian motorists are facing another price surge amid Middle East conflict and fuel excise changes",
+        "url": "https://www.smh.com.au/business/companies/australia-faces-new-fuel-warning-as-iran-war-spreads-to-red-sea-20260730-p60jyn.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Ease After Sharp Rally as Trump Warns of More Action Against Iran",
+        "url": "http://www.econotimes.com/Oil-Prices-Ease-After-Sharp-Rally-as-Trump-Warns-of-More-Action-Against-Iran-1748131",
+        "type": "intl"
+      },
+      {
+        "title": "Commodity Corner : Oil slips after sharp rally ; gold edges higher",
+        "url": "https://www.moneycontrol.com/news/business/commodities/commodity-corner-oil-slips-after-sharp-rally-gold-edges-higher-13987706.html",
+        "type": "intl"
+      },
+      {
+        "title": "Aussie shares retreat from rally as oil price rebounds",
+        "url": "https://www.perthnow.com.au/news/business/aussie-shares-retreat-from-rally-as-oil-price-rebounds-c-22650818",
+        "type": "intl"
+      },
+      {
+        "title": "Fuel seller eyes massive earnings lift due to conflict",
+        "url": "https://www.perthnow.com.au/news/business/fuel-seller-eyes-massive-earnings-lift-due-to-conflict-c-22650410",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Price Today ( July 30 ): Crude oil dips below $90 after 8 % surge on Wednesday . Here why",
+        "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-july-30-crude-oil-dips-below-90-after-8-surge-on-wednesday-heres-why/articleshow/132724990.cms",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ set to pause monthly output increases after September",
+        "url": "https://pmnewsnigeria.com/2026/07/29/opec-set-to-pause-monthly-output-increases-after-september/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Jump 6 %: Brent and WTI Near $90",
+        "url": "https://zalebs.com/news/oil-rebounds-sharply-lifts-brent-and-wti-more-than-6-toward-90/",
+        "type": "intl"
+      },
+      {
+        "title": "Aramco Mulls New Oil Pricing for Asia",
+        "url": "https://www.rigzone.com/news/wire/aramco_mulls_new_oil_pricing_for_asia-29-jul-2026-184245-article/",
+        "type": "intl"
+      },
+      {
+        "title": "美·이란 전쟁, 국제유가 급등…기름값 하락에 급브레이크·인상 가능성...",
+        "url": "https://n.news.naver.com/mnews/article/022/0004147219?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "Oil Prices Jump as Trump Vows Response to Iran Attack, Supply Risks Retur...",
+        "url": "https://www.econotimes.com/Oil-Prices-Jump-as-Trump-Vows-Response-to-Iran-Attack-Supply-Risks-Return-1748116",
+        "type": "dom"
+      },
+      {
+        "title": "반도체가 삼킨 지수…원전·전력설비, 고점 이탈 뒤 폭락장 동반 추락",
+        "url": "http://www.knpnews.com/news/articleView.html?idxno=34198",
+        "type": "dom"
+      },
+      {
+        "title": "\"애플은 안전자산\" vs \"반도체 오르면 끝난다\" [박신영의 개장전 요것만...",
+        "url": "https://n.news.naver.com/mnews/article/015/0005315859?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"가만 두면 오른다\"…최태원, SK하이닉스 주식 첫 매입",
+        "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7176808",
+        "type": "dom"
+      },
+      {
+        "title": "영국 셸, 이란전쟁 기간의 2분기에 14조원 순익…전년의 배",
+        "url": "https://n.news.naver.com/mnews/article/003/0014099618?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노, 2Q 영업익 3.48조…흑자전환",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=853568",
+        "type": "dom"
+      },
+      {
+        "title": "[집중진단] \"코스피 진짜 바닥은 어디인가?\"…사흘 새 17% 폭락, 반대매...",
+        "url": "https://n.news.naver.com/mnews/article/374/0000524746?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "\"철강·이차전지소재·인프라 고른성장\" 포스코홀딩스, 2분기 영업익 35...",
+        "url": "https://www.catchnews.kr/news/articleView.html?idxno=126792",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노베이션, 2분기 영업익 3조4873억원…윤활유·배터리 힘입어 흑자 ...",
+        "url": "https://www.pointe.co.kr/news/articleView.html?idxno=82585",
+        "type": "dom"
+      },
+      {
+        "title": "중동 전쟁에 전력 도매가↑…한전 재무부담 ‘경계’ 경보",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647067?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "러, 휘발유 수출금지 내년 1월까지 연장",
+        "url": "https://n.news.naver.com/mnews/article/001/0016225715?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "가뭄·폭염·산불 '3중고' 유럽‥기록적 저수위에 원전까지 멈춰",
+        "url": "https://n.news.naver.com/mnews/article/214/0001514959?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "가뭄·폭염·산불 '3중고' 유럽…기록적 저수위에 원전까지 멈춰",
+        "url": "https://n.news.naver.com/mnews/article/001/0016225520?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 2분기 GDP 성장률 -4.8%… 석유 부문 24.7% 위축이 주요 원인",
+        "url": "https://www.newspim.com/news/view/20260730001512",
+        "type": "dom"
+      },
+      {
+        "title": "英, 기준금리 3.75%로 5연속 동결…중동 리스크·물가 주시",
+        "url": "https://www.ajunews.com/view/20260730210901522",
+        "type": "dom"
+      },
+      {
+        "title": "'공포의 7월' 코스피 사흘 연속 하락...이유는? [이슈플러스]",
+        "url": "https://n.news.naver.com/mnews/article/052/0002386842?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노베이션, 올해 2분기 영업이익 3조4873억원 달성…사상 최대 수준",
+        "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=205819",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노, 영업익 3.5조 '깜짝 실적'…'아픈 손가락' SK온의 반전",
+        "url": "https://n.news.naver.com/mnews/article/648/0000049383?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "'3.5조 흑자' SK이노베이션…중동·정부 규제 하반기 변수",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026073017514297762",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노베이션, 2분기 3조원대 영업이익…윤활유·배터리가 끌었다",
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=128485",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노, 2Q 영업이익 3조4873억원···윤활유·배터리 실적 개선",
+        "url": "https://www.seoulfn.com/news/articleView.html?idxno=634584",
+        "type": "dom"
+      },
+      {
+        "title": "SK이노, 2Q 영업익 3.5조…2분기 연속 흑자",
+        "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=661610",
+        "type": "dom"
+      },
+      {
+        "title": "중동전쟁 장기화에 중소 제조업 생산·고용 동반 위축",
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=918576",
+        "type": "dom"
+      },
+      {
+        "title": "미국 기준금리 5번째 동결했지만 불확실성 커지자 한국은행 셈법은 더욱...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003461437?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "韓 국고채 금리도 일제히 올라…‘3高’ 거세지면 도미노 경기 위축",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647058?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美연준 5연속 금리동결… 뉴욕증시·채권값 동반 급락 [美 금리 5연속 동...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005555374?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "금리 동결에도 안도랠리 없었다…유가 급등에 뉴욕증시 '휘청'",
+        "url": "https://www.thepublic.kr/news/articleView.html?idxno=313268",
+        "type": "dom"
+      },
+      {
+        "title": "제조·부동산·도소매 연체율 상승…금리·유가 악재에 은행권 긴장",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260730010011460",
+        "type": "dom"
+      },
+      {
+        "title": "공습 재개·전선 확대로 유가 급등‥\"14일간 가혹한 공격\" 제안까지",
+        "url": "https://n.news.naver.com/mnews/article/214/0001514989?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국 2분기 성장률 속보치 1.5%…전망치 하회",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026073021504073487",
+        "type": "dom"
+      },
+      {
+        "title": "美 올해 2분기 성장률 1.5%…전망치 하회",
+        "url": "https://n.news.naver.com/mnews/article/277/0005797046?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美 2분기 성장률 1.5%…정부지출 감소에 '경기 둔화'",
+        "url": "https://www.g-enews.com/view.php?ud=202607302142076181153ddfb15a_1",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 미국 2분기 성장률 속보치 1.5%…전망치 밑돌아",
+        "url": "https://n.news.naver.com/mnews/article/009/0005714677?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미국 2분기 성장률 1.5%로 둔화…전망치 하회",
+        "url": "https://n.news.naver.com/mnews/article/001/0016225677?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[전혜은 시선] 중동전쟁이 덮친 '공사비 쇼크'…건설사 손실 우려",
+        "url": "http://www.weeklytoday.com/news/articleView.html?idxno=788085",
+        "type": "dom"
+      },
+      {
+        "title": "원·달러환율, 1450원 하회 후 FOMC도 소화…장기금리·유가가 '안착' 변...",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026073010084897838",
+        "type": "dom"
+      },
+      {
+        "title": "원가 부담 넘은 포스코홀딩스…하반기엔 ‘철강·리튬’ 날개 단다",
+        "url": "https://www.mediapen.com/news/view/1113392",
+        "type": "dom"
+      },
+      {
+        "title": "[이슈] 조선 3사, 2분기 영업익 2.7조…차세대 승부처는",
+        "url": "http://www.sisafocus.co.kr/news/articleView.html?idxno=363249",
+        "type": "dom"
+      },
+      {
+        "title": "조선 슈퍼사이클로 '실탄' 장전한 HD현대...차세대 에너지로 성장축 확...",
+        "url": "https://www.joongangenews.com/news/articleView.html?idxno=536718",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 미국 선제공격에 정유주 급등…GS, 7%대↑",
+        "url": "https://n.news.naver.com/mnews/article/009/0005714204?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "중동 공격 확대에도 유가 하락…해상 운항 이어졌다",
+        "url": "https://www.tokenpost.kr/news/breaking/382926",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "전북 해역에 ‘고수온 주의보’ 발령",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228589?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "경남 이틀째 40도… 농업용수 바닥·바다는 고수온",
+        "url": "http://www.gnmaeil.com/news/articleView.html?idxno=591774",
+        "type": "dom"
+      },
+      {
+        "title": "하동 양식장 숭어 5천 마리 폐사…‘고수온’ 조사",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228628?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "해수부 장관 “고수온 양식장 피해 예방 총력”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012228563?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "폭염에 바닷물도 '펄펄'...고수온에 적조 우려까지",
+        "url": "https://n.news.naver.com/mnews/article/660/0000114238?sid=103",
+        "type": "dom"
+      },
+      {
+        "title": "전북 앞바다에 '고수온주의보' 발표",
+        "url": "https://jtv.co.kr/news/article.php?id=70329",
+        "type": "dom"
+      },
+      {
+        "title": "광어·오리는 떼죽음..사람 잡는 더위에 비상",
+        "url": "https://mpmbc.co.kr/NewsArticle/1529934",
+        "type": "dom"
+      },
+      {
+        "title": "하동 양식장 가숭어 5천 마리 집단 폐사",
+        "url": "https://news.knn.co.kr/news/article/190721",
+        "type": "dom"
+      },
+      {
+        "title": "하동 가두리 가숭어 집단 폐사",
+        "url": "http://www.gnmaeil.com/news/articleView.html?idxno=591786",
+        "type": "dom"
+      },
+      {
+        "title": "박완수 지사, 통영 찾아 폭염·고수온 점검",
+        "url": "https://www.ulsanpress.net/news/articleView.html?idxno=580130",
+        "type": "dom"
+      },
+      {
+        "title": "해수부, 고수온 위기경보 '심각 1단계' 발령",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=848943",
+        "type": "dom"
+      },
+      {
+        "title": "고수온 위기경보 '심각Ⅰ' 발령…양식장 피해 선제 대응",
+        "url": "https://n.news.naver.com/mnews/article/088/0001021491?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "고수온 위기경보 '심각Ⅰ' 발령",
+        "url": "http://www.paxetv.com/news/articleView.html?idxno=278283",
+        "type": "dom"
+      },
+      {
+        "title": "전남광주 함평만 등 6개 해역에 고수온 경보 발령…“양식 어가 피해 방...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003666250?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "해수부, 고수온 재난 '심각Ⅰ' 발령… 양식장 피해 대응 총력",
+        "url": "https://www.mhns.co.kr/news/articleView.html?idxno=755009",
+        "type": "dom"
+      },
+      {
+        "title": "사천시, 고수온 피해 최소화 위해 현장 대응 총력",
+        "url": "http://www.gndomin.com/news/articleView.html?idxno=484033",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "Iran Allows Pakistan Safe Passage for LNG Cargo from Qatar",
+        "url": "https://propakistani.pk/2026/07/30/iran-allows-pakistan-safe-passage-for-lng-cargo-from-qatar/",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan gets LNG boost as Qatar Tanker clears Hormuz amid Tensions",
+        "url": "https://en.dailypakistan.com.pk/30-Jul-2026/pakistan-gets-lng-boost-as-qatar-tanker-clears-hormuz-amid-tensions",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz shipping rebounds despite ongoing Middle East tensions",
+        "url": "https://www.dailysabah.com/business/energy/hormuz-shipping-rebounds-despite-ongoing-middle-east-tensions",
+        "type": "intl"
+      },
+      {
+        "title": "QatarEnergy - controlled LNG tanker exits Hormuz , first in nearly three weeks",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/qatarenergy-controlled-lng-tanker-exits-strait-of-hormuz-first-in-nearly-three-weeks/articleshow/132726244.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Is pause in new ship orders by South Korean flag carrier a warning ? ",
+        "url": "https://finance.yahoo.com/energy/articles/pause-ship-orders-south-korean-120000237.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices slip as tankers continue to ply Middle East conflict zones",
+        "url": "https://dunyanews.tv/en/Business/965359-oil-prices-slip-as-tankers-continue-to-ply-middle-east-conflict-zones",
+        "type": "intl"
+      },
+      {
+        "title": "A new fuel refinery is a start . But Australia is still vulnerable to shipping disruptions without a clear strategy",
+        "url": "https://theconversation.com/a-new-fuel-refinery-is-a-start-but-australia-is-still-vulnerable-to-shipping-disruptions-without-a-clear-strategy-288703",
+        "type": "intl"
+      },
+      {
+        "title": "카타르 LNG운반선, 호르무즈 해협 통과… 20여일 만에 처음",
+        "url": "https://www.newspim.com/news/view/20260730001449",
+        "type": "dom"
+      },
+      {
+        "title": "STX엔진, 덴마크 머스크사 초대형 컨테이너선 친환경 엔진 첫 수출",
+        "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=642236",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "Crews safe after fire incident at Egypt Damietta LNG terminal",
+        "url": "https://www.naftemporiki.gr/english/2144640/crews-safe-after-fire-incident-at-egypts-damietta-lng-terminal/",
+        "type": "intl"
+      },
+      {
+        "title": "Drone hits gas storage tanker at Egypt Mediterranean port , Ambrey reports",
+        "url": "https://www.al-monitor.com/originals/2026/07/drone-hits-gas-storage-tanker-egypts-mediterranean-port-ambrey-reports",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt says it has energy alternatives after drone attack on Damietta gas vessel",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/egypt-says-it-has-energy-alternatives-after-drone-attack-damietta-gas",
+        "type": "intl"
+      },
+      {
+        "title": "DRONE CAMPAIGN : Ukraine Cripples Russia Fuel Industry With Precision Strikes – The Yeshiva World",
+        "url": "https://www.theyeshivaworld.com/news/general/2580730/drone-campaign-ukraine-cripples-russias-fuel-industry-with-precision-strikes.html",
+        "type": "intl"
+      },
+      {
+        "title": "Goldman Sachs : Diesel Crunch Is Now the Biggest Threat in Oil Markets",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Diesel-Crunch-Is-Now-the-Biggest-Threat-in-Oil-Markets.html",
+        "type": "intl"
+      },
+      {
+        "title": "FT : Ukrainian strikes disable more than 30 % of Russia oil refining capacity",
+        "url": "https://en.apa.az/cis-countries/ft-ukrainian-strikes-disable-more-than-30-of-russias-oil-refining-capacity-518259",
+        "type": "intl"
+      },
+      {
+        "title": "Constanta Port may become entry point for natural gas from Turkmenistan to Europe",
+        "url": "https://actmedia.eu/daily/constanta-port-may-become-entry-point-for-natural-gas-from-turkmenistan-to-europe/120949",
+        "type": "intl"
+      },
+      {
+        "title": "Armenia Supports Tehran Proposal to At Least Double Iranian Gas Exports , Khudatyan Says • MassisPost",
+        "url": "https://massispost.com/2026/07/armenia-supports-tehrans-proposal-to-at-least-double-iranian-gas-exports-khudatyan-says/",
+        "type": "intl"
+      },
+      {
+        "title": "Japan turns to Canadian crude as Asia feels Hormuz supply pinch - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+        "url": "https://dominicanrepublicpost.com/japan-turns-to-canadian-crude-as-asia-feels-hormuz-supply-pinch/",
+        "type": "intl"
+      },
+      {
+        "title": "Erha Crude Exports : ExxonMobil Declares Force Majeure",
+        "url": "https://punchng.com/exxonmobil-declares-force-majeure-on-erha-crude-exports/",
+        "type": "intl"
+      },
+      {
+        "title": "Gas prices up $0 . 47 , diesel up $6 - Jamaica Observer",
+        "url": "https://www.jamaicaobserver.com/2026/07/29/gas-prices-0-47-diesel-6/",
+        "type": "intl"
+      },
+      {
+        "title": "Varcoe : Cenovus touts  milestone , set for million - barrel - a - day mark",
+        "url": "https://calgarysun.com/opinion/columnists/varcoe-cenovus-milestone-set-hit-million-barrel-a-day-mark",
+        "type": "intl"
+      },
+      {
+        "title": "Ksi Lisims signs another LNG supply deal with German utility Uniper",
+        "url": "https://calgarysun.com/news/bc-north-coast-ksi-lisims-lng-supply-deal-german-utility/wcm/74f1a2ea-202a-401e-939b-e169be2cacfd",
+        "type": "intl"
+      },
+      {
+        "title": "Ukrainian Drone Attacks in Russia Target Wildberries , Oil Refineries , and Kill at Least Three People",
+        "url": "https://news.antiwar.com/2026/07/29/ukrainian-drone-attacks-in-russia-target-wildberries-oil-refineries-and-kill-at-least-three-people/",
+        "type": "intl"
+      },
+      {
+        "title": "이집트 LNG 허브도 '드론 공격'…중동 에너지 인프라 타격 확산",
+        "url": "https://www.g-enews.com/view.php?ud=202607302132453389153ddfb15a_1",
+        "type": "dom"
+      },
+      {
+        "title": "큰 폭 내렸던 국제LPG가격 8월 상승 전환…톤당 평균 40달러",
+        "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227148",
+        "type": "dom"
+      },
+      {
+        "title": "[컨콜] SK에너지 “중동산 원유 비중 절반 수준으로…美·캐나다·아프리...",
+        "url": "https://www.g-enews.com/view.php?ud=2026073016343578024debea800_1",
+        "type": "dom"
+      },
+      {
+        "title": "KG에코솔루션, 국내 정유사 3곳 공급망 확보…바이오연료 사업 확대",
+        "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=308047",
+        "type": "dom"
+      },
+      {
+        "title": "에너지 인프라까지 번진 중동 분쟁…정유업계 실적은 ‘맑음’",
+        "url": "http://www.newstomato.com/ReadNews.aspx?no=1308828&inflow=N",
+        "type": "dom"
+      },
+      {
+        "title": "정제마진 강세에… 정유사 ‘逆래깅’ 공포에도 하반기 실적 개선 전망...",
+        "url": "https://n.news.naver.com/mnews/article/366/0001183300?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "韓·칠레, 자원 공급망·FTA 현대화 협력",
+        "url": "https://n.news.naver.com/mnews/article/658/0000151054?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "[자정 뉴스브리핑] 에니와 토탈에너지스, 키프로스 첫 가스전 개발 승인...",
+        "url": "https://www.tokenpost.kr/news/briefing/383041",
+        "type": "dom"
+      },
+      {
+        "title": "원전 멈추고 화물선 중단…글로벌 공급망 폭염 몸살",
+        "url": "https://n.news.naver.com/mnews/article/018/0006340392?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[김경식의 이세계 ESG]저탄소 철강, 모두 원하지만 누구도 비용은 얘기...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003461448?sid=110",
+        "type": "dom"
+      },
+      {
+        "title": "포스코인터내셔널, 상반기 영업익 7865억원…LNG·에너지 사업 탄력",
+        "url": "https://n.news.naver.com/mnews/article/003/0014098659?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "원자재 직수급 공급망 구축… 롯데정밀화학, 요소수 시장 리더십 입증",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=472956",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "Can the Arab world afford to have both of its critical maritime arteries under threat at once ? ",
+      "url": "https://www.arabnews.com/node/2652854",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Drone Strike Near Suez Canal in Egypt Raises New Security Threat in Widening War",
+      "url": "https://gcaptain.com/drone-strike-near-suez-canal-in-egypt-raises-new-security-threat-in-widening-war/",
+      "type": "intl"
+    },
+    "3": {
+      "title": "CCS Meet : PM Reviews Situation During Ongoing West Asia Conflict",
+      "url": "https://www.deccanchronicle.com/nation/ccs-meet-pm-reviews-situation-during-ongoing-west-asia-conflict-1975309",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Donald Trump drags Egypt into Iran war as US blitzes Tehran military targets",
+      "url": "https://www.aol.co.uk/articles/donald-trump-drags-egypt-iran-182605000.html",
+      "type": "intl"
+    },
+    "5": {
+      "title": "US - owned gas tanker catches fire after drone attack at Egypt port",
+      "url": "https://www.independent.co.uk/news/world/middle-east/egypt-gas-fire-drone-attack-damietta-energos-winter-b3024606.html",
+      "type": "intl"
+    },
+    "6": {
+      "title": "US Sanctions Shipping Companies Over Iranian Oil Sales to China , UAE",
+      "url": "https://www.theepochtimes.com/world/us-sanctions-shipping-companies-over-iranian-oil-sales-to-china-uae-6069358",
+      "type": "intl"
+    },
+    "7": {
+      "title": "IRGC Boasts Of Fully Intact Speedboat Fleet For  Swarm Attack In Hormuz",
+      "url": "https://www.zerohedge.com/military/irgc-boasts-fully-intact-speedboat-fleet-swarm-attacks-hormuz",
+      "type": "intl"
+    },
+    "8": {
+      "title": "Airpower opened Iran skies . Why hasnt it reopened Hormuz ? ",
+      "url": "https://breakingdefense.com/2026/07/airpower-opened-irans-skies-why-hasnt-it-reopened-hormuz/",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Houthis attacked Saudi Arabia from Iraq with allied militias",
+      "url": "https://www.jpost.com/middle-east/article-904157",
+      "type": "intl"
+    },
+    "10": {
+      "title": "Egypt confirms drone caused fire on two gas vessels at Damietta",
+      "url": "https://tribune.com.pk/story/2621136/egypt-confirms-drone-caused-fire-on-two-gas-vessels-at-damietta",
+      "type": "intl"
+    },
+    "11": {
+      "title": "Iran launches renewed missile attacks as US , Saudis strike Tehran - backed militias in Iraq",
+      "url": "https://www.koreatimes.co.kr/world/20260730/iran-launches-renewed-missile-attacks-as-us-saudis-strike-tehran-backed-militias-in-iraq",
+      "type": "dom"
+    },
+    "12": {
+      "title": "이집트 \"다미에타항 LNG 선박 화재, 드론 공격이 원인\"(종합)",
+      "url": "https://n.news.naver.com/mnews/article/001/0016225713?sid=104",
+      "type": "dom"
+    },
+    "13": {
+      "title": "이란 \"요르단 미군기지 공격… F-35 전투기 3대 파괴\"",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3421403",
+      "type": "dom"
+    },
+    "14": {
+      "title": "미군, 이란 혁명수비대 수십 개 거점 공습… 트럼프 대통령 \"이제 우리...",
+      "url": "https://www.voakorea.com/a/u-s-military-strikes-dozens-of-iranian-revolutionary-guard-bases-073026/8180797.html",
+      "type": "dom"
+    },
+    "15": {
+      "title": "이란 “요르단 미군 기지 공격해 F-35 전투기 3대 파괴” 주장",
+      "url": "https://n.news.naver.com/mnews/article/009/0005714676?sid=104",
+      "type": "dom"
+    },
+    "16": {
+      "title": "이란 “요르단 내 미군 공격, F-35 3대 격파” 주장",
+      "url": "https://n.news.naver.com/mnews/article/021/0002808147?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "이란혁명수비대, \"요르단의 공군 기지 공격…미군 여러 명 사망해\"",
+      "url": "https://n.news.naver.com/mnews/article/003/0014099613?sid=104",
+      "type": "dom"
+    },
+    "18": {
+      "title": "정부 호르무즈해협 ‘실질적 기여’, 이란-오만 협상에 달려",
+      "url": "https://n.news.naver.com/mnews/article/028/0002816504?sid=100",
+      "type": "dom"
+    },
+    "19": {
+      "title": "트럼프, 역풍 맞나…이란 “호르무즈 안 연다” 초강수 [핫이슈]",
+      "url": "https://n.news.naver.com/mnews/article/081/0003666249?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "\"두드려 팰 것\" 미, 이란 공습 재개…국제유가 다시 급등",
+      "url": "https://n.news.naver.com/mnews/article/055/0001376858?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "  Absolutely unacceptable : EAM Jaishankar discusses attacks on Indian seafarers with Ukraine FM",
+      "url": "https://www.prokerala.com/news/articles/a1794517.html",
+      "type": "intl"
+    },
+    "22": {
+      "title": "Jaishankar tells Ukraine attacks on Indian seafarers are unacceptable",
+      "url": "https://economictimes.indiatimes.com/news/india/jaishankar-to-ukraines-sybiha-attacks-on-commercial-shipping-and-indian-seafarers-in-black-sea-unacceptable/articleshow/132746242.cms",
+      "type": "intl"
+    },
+    "23": {
+      "title": "  Constant fear of a direct hit : 13 Indian seafarers trapped aboard ship at Ukraine port ; embassy steps in – Asia News Network",
+      "url": "https://asianews.network/constant-fear-of-a-direct-hit-13-indian-seafarers-trapped-aboard-ship-at-ukraine-port-embassy-steps-in/",
+      "type": "intl"
+    },
+    "24": {
+      "title": "Ukraine vessel seafarers being monitored : Indian Embassy",
+      "url": "https://theshillongtimes.com/2026/07/30/ukraine-vessel-seafarers-being-monitored-indian-embassy/",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Egypt Reports No Casualties After Damietta Port Gas Vessel Fire",
+      "url": "https://egyptianstreets.com/2026/07/30/egypt-reports-no-casualties-after-damietta-port-gas-vessel-fire/",
+      "type": "intl"
+    },
+    "26": {
+      "title": "이집트 “LNG 선박 화재, 드론에 의해 발생”",
+      "url": "https://n.news.naver.com/mnews/article/056/0012228358?sid=104",
+      "type": "dom"
+    },
+    "27": {
+      "title": "광양 부두서 60대 선원 해상 추락해 숨져",
+      "url": "https://ysmbc.co.kr/NewsArticle/1529983",
+      "type": "dom"
+    },
+    "28": {
+      "title": "광양항 예인선서 작업 중 60대 선원, 바다로 추락 숨져",
+      "url": "https://n.news.naver.com/mnews/article/660/0000114226?sid=102",
+      "type": "dom"
+    },
+    "29": {
+      "title": "Baystreet . ca - Red Sea Tanker Traffic Falls to Multi - Month Low After Houthi Threats",
+      "url": "http://baystreet.ca/articles/commodities/122624/Red-Sea-Tanker-Traffic-Falls-to-Multi-Month-Low-After-Houthi-Threats",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Saskatchewan exporters still opt for Vancouver shipping route despite a newer , closer alternative",
+      "url": "https://edmontonjournal.com/business/saskatchewan-exporters-still-opt-for-vancouver-shipping-route-despite-a-newer-closer-alternative/wcm/e47dd845-3eb8-4b19-86c2-d1d508442d0a",
+      "type": "intl"
+    },
+    "31": {
+      "title": "Container Spot Rates Fall for Third Straight Week as Demand Continues to Ease",
+      "url": "https://gcaptain.com/container-spot-rates-fall-for-third-straight-week-as-demand-continues-to-ease/",
+      "type": "intl"
+    },
+    "32": {
+      "title": "Turkish Bulker Heading to Russia Breaks Down and Blocks the Dardanelles",
+      "url": "https://maritime-executive.com/article/turkish-bulker-heading-to-russia-breaks-down-and-blocks-the-dardanelles",
+      "type": "intl"
+    },
+    "33": {
+      "title": "Baltic Dry Rebounds on Thursday | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/baltic-dry-rebounds-on-thursday/",
+      "type": "intl"
+    },
+    "34": {
+      "title": "예멘 후티 반군, 홍해에 통행료 부과 방안 검토",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532465",
+      "type": "dom"
+    },
+    "35": {
+      "title": "‘홍해 통행료’ 검토 나선 후티… 사우디, 다국적 연합 카드 구상",
+      "url": "https://n.news.naver.com/mnews/article/005/0001864096?sid=104",
+      "type": "dom"
+    },
+    "36": {
+      "title": "Drone attack sparks fire at Mediterranean port in Egypt",
+      "url": "https://www.upi.com/Top_News/World-News/2026/07/30/drone-attack-port-damietta/9171785430838/",
+      "type": "intl"
+    },
+    "37": {
+      "title": "Egypt Confirms Drone Hit Damietta Gas Vessels",
+      "url": "https://www.marinelink.com/news/egypt-confirms-drone-hit-damietta-gas-541629",
+      "type": "intl"
+    },
+    "38": {
+      "title": "Fire at Egypt Damietta port caused by drone attack : PM office",
+      "url": "https://www.channelnewsasia.com/world/egypt-damietta-port-drone-attack-ship-struck-6286951",
+      "type": "intl"
+    },
+    "39": {
+      "title": "Egypt confirms unidentified drone caused fire at Mediterranean port",
+      "url": "https://www.africanews.com/2026/07/30/egypt-confirms-unidentified-drone-caused-fire-at-mediterranean-port/",
+      "type": "intl"
+    },
+    "40": {
+      "title": "Egypt Confirms Drone Caused Damietta Port Vessel Fire",
+      "url": "https://egyptianstreets.com/2026/07/30/egypt-confirms-drone-caused-damietta-port-vessel-fire/",
+      "type": "intl"
+    },
+    "41": {
+      "title": "Drone hits US - linked gas tanker at Egypt Damietta port",
+      "url": "https://www.samaa.tv/2087354404-drone-hits-us-linked-gas-tanker-at-egypt-s-damietta-port",
+      "type": "intl"
+    },
+    "42": {
+      "title": "Gas tanker explosion at Egyptian port reportedly Iranian drone attack",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-904072",
+      "type": "intl"
+    },
+    "43": {
+      "title": "Drone hits gas storage tanker at Egypt Mediterranean port : British maritime security firm",
+      "url": "https://www.thehindu.com/news/international/drone-hits-gas-storage-tanker-at-egypts-mediterranean-port-british-maritime-security-firm/article71284161.ece",
+      "type": "intl"
+    },
+    "44": {
+      "title": "\"1983년 이후 최저\" 美 전략비축유 고갈 경고등 켜졌다",
+      "url": "https://n.news.naver.com/mnews/article/008/0005393646?sid=104",
+      "type": "dom"
+    },
+    "45": {
+      "title": "[월드 e 브리핑] 미국 전략비축유 43년 만에 최저…에너지 안보 비상",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532467",
+      "type": "dom"
+    },
+    "46": {
+      "title": "2분기 유류 항만 물동량 ‘역대 최대 감소’···호르무즈 봉쇄 영향",
+      "url": "https://n.news.naver.com/mnews/article/032/0003461446?sid=101",
+      "type": "dom"
+    },
+    "47": {
+      "title": "중동전쟁에 유류 물동량 19% 급감…부산항 환적은 ‘나 홀로 성장’",
+      "url": "https://n.news.naver.com/mnews/article/081/0003666239?sid=101",
+      "type": "dom"
+    },
+    "48": {
+      "title": "SK이노 \"원유 조달 당분간 이상 無\"…조달선 다변화로 하반기 방어",
+      "url": "https://n.news.naver.com/mnews/article/421/0009089296?sid=101",
+      "type": "dom"
+    },
+    "49": {
+      "title": "전국 항만 물동량 4.8% 감소…컨테이너는 증가세 전환",
+      "url": "https://n.news.naver.com/mnews/article/277/0005797002?sid=101",
+      "type": "dom"
+    },
+    "50": {
+      "title": "인천 수출 또 신기록…상반기 첫 300억 달러 돌파",
+      "url": "https://news.ifm.kr/news/articleView.html?idxno=476137",
+      "type": "dom"
+    },
+    "51": {
+      "title": "카타르, 불가항력 선언했지만 고객에 신뢰 지키려 미 LNG 구매해 제공…...",
+      "url": "https://www.newspim.com/news/view/20260730001484",
+      "type": "dom"
+    },
+    "52": {
+      "title": "여수광양항만공사, 광양항 스마트항만 첫 삽 '피지컬 AI' 테스트베드 착...",
+      "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=701816",
+      "type": "dom"
+    },
+    "53": {
+      "title": "광양항 '항만자동화 테스트베드' 구축..2029년 개장",
+      "url": "https://n.news.naver.com/mnews/article/660/0000114249?sid=102",
+      "type": "dom"
+    },
+    "54": {
+      "title": "Crude oil surges as Middle East hostilities escalate , U . S . oil stockpiles  rapidly depleting  ",
+      "url": "https://seekingalpha.com/news/4621095-crude-oil-surges-as-middle-east-hostilities-escalate-us-oil-stockpiles-rapidly-depleting",
+      "type": "intl"
+    },
+    "55": {
+      "title": "Xclusiv Shipbrokers Inc .: Saudi Arabia Energy Pivot Faces a New Threat",
+      "url": "https://www.theseanation.gr/news-in-english/67086-xclusiv-shipbrokers-inc-saudi-arabia-s-energy-pivot-faces-a-new-threat.html",
+      "type": "intl"
+    },
+    "56": {
+      "title": "Intervention or Positioning ? Or Both ? USD / JPY Slide Through 160 Has Traders Guessing",
+      "url": "https://www.actionforex.com/action-insight/market-overview/649007-intervention-or-positioning-or-both-usd-jpys-slide-through-160-has-traders-guessing/",
+      "type": "intl"
+    },
+    "57": {
+      "title": "Oil falls on Hormuz talks",
+      "url": "https://finance.yahoo.com/news/oil-prices-slip-tankers-continue-003657966.html",
+      "type": "intl"
+    },
+    "58": {
+      "title": "Futures Rise As Oil Drops , Bond Selling Slows , Meta Tumbles And Microsoft Soars",
+      "url": "https://www.zerohedge.com/markets/futures-rise-oil-drops-bond-selling-slows-meta-tumbles-and-microsoft-soars",
+      "type": "intl"
+    },
+    "59": {
+      "title": "Oil ticks up as Trump threats revive Middle East supply concerns",
+      "url": "https://finance.yahoo.com/energy/articles/oil-ticks-trump-threats-revive-110454461.html",
+      "type": "intl"
+    },
+    "60": {
+      "title": "Russian oil could hit record 3 million bpd in India import basket if disruptions persist : Report",
+      "url": "https://www.dailyexcelsior.com/russian-oil-could-hit-record-3-million-bpd-in-indias-import-basket-if-disruptions-persist-report/",
+      "type": "intl"
+    },
+    "61": {
+      "title": "Oil Prices Hold Steady After Rally",
+      "url": "https://www.rttnews.com/3672834/oil-prices-hold-steady-after-rally.aspx",
+      "type": "intl"
+    },
+    "62": {
+      "title": "EU oil stocks reform unlikely to revise 90 - day storage target : sources | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/eu-oil-stocks-reform-unlikely-to-revise-90-day-storage-target-sources/",
+      "type": "intl"
+    },
+    "63": {
+      "title": "Oil slips as markets look for cues on Gulf supplies",
+      "url": "https://www.thedailystar.net/business/news/oil-slips-markets-look-cues-gulf-supplies-4236111",
+      "type": "intl"
+    },
+    "64": {
+      "title": "美·이란 전쟁, 국제유가 급등…기름값 하락에 급브레이크·인상 가능성...",
+      "url": "https://n.news.naver.com/mnews/article/022/0004147219?sid=101",
+      "type": "dom"
+    },
+    "65": {
+      "title": "Oil Prices Jump as Trump Vows Response to Iran Attack, Supply Risks Retur...",
+      "url": "https://www.econotimes.com/Oil-Prices-Jump-as-Trump-Vows-Response-to-Iran-Attack-Supply-Risks-Return-1748116",
+      "type": "dom"
+    },
+    "66": {
+      "title": "반도체가 삼킨 지수…원전·전력설비, 고점 이탈 뒤 폭락장 동반 추락",
+      "url": "http://www.knpnews.com/news/articleView.html?idxno=34198",
+      "type": "dom"
+    },
+    "67": {
+      "title": "\"애플은 안전자산\" vs \"반도체 오르면 끝난다\" [박신영의 개장전 요것만...",
+      "url": "https://n.news.naver.com/mnews/article/015/0005315859?sid=104",
+      "type": "dom"
+    },
+    "68": {
+      "title": "\"가만 두면 오른다\"…최태원, SK하이닉스 주식 첫 매입",
+      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7176808",
+      "type": "dom"
+    },
+    "69": {
+      "title": "영국 셸, 이란전쟁 기간의 2분기에 14조원 순익…전년의 배",
+      "url": "https://n.news.naver.com/mnews/article/003/0014099618?sid=104",
+      "type": "dom"
+    },
+    "70": {
+      "title": "SK이노, 2Q 영업익 3.48조…흑자전환",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=853568",
+      "type": "dom"
+    },
+    "71": {
+      "title": "[집중진단] \"코스피 진짜 바닥은 어디인가?\"…사흘 새 17% 폭락, 반대매...",
+      "url": "https://n.news.naver.com/mnews/article/374/0000524746?sid=101",
+      "type": "dom"
+    },
+    "72": {
+      "title": "\"철강·이차전지소재·인프라 고른성장\" 포스코홀딩스, 2분기 영업익 35...",
+      "url": "https://www.catchnews.kr/news/articleView.html?idxno=126792",
+      "type": "dom"
+    },
+    "73": {
+      "title": "SK이노베이션, 2분기 영업익 3조4873억원…윤활유·배터리 힘입어 흑자 ...",
+      "url": "https://www.pointe.co.kr/news/articleView.html?idxno=82585",
+      "type": "dom"
+    },
+    "74": {
+      "title": "전북 해역에 ‘고수온 주의보’ 발령",
+      "url": "https://n.news.naver.com/mnews/article/056/0012228589?sid=102",
+      "type": "dom"
+    },
+    "75": {
+      "title": "경남 이틀째 40도… 농업용수 바닥·바다는 고수온",
+      "url": "http://www.gnmaeil.com/news/articleView.html?idxno=591774",
+      "type": "dom"
+    },
+    "76": {
+      "title": "하동 양식장 숭어 5천 마리 폐사…‘고수온’ 조사",
+      "url": "https://n.news.naver.com/mnews/article/056/0012228628?sid=101",
+      "type": "dom"
+    },
+    "77": {
+      "title": "해수부 장관 “고수온 양식장 피해 예방 총력”",
+      "url": "https://n.news.naver.com/mnews/article/056/0012228563?sid=100",
+      "type": "dom"
+    },
+    "78": {
+      "title": "폭염에 바닷물도 '펄펄'...고수온에 적조 우려까지",
+      "url": "https://n.news.naver.com/mnews/article/660/0000114238?sid=103",
+      "type": "dom"
+    },
+    "79": {
+      "title": "전북 앞바다에 '고수온주의보' 발표",
+      "url": "https://jtv.co.kr/news/article.php?id=70329",
+      "type": "dom"
+    },
+    "80": {
+      "title": "광어·오리는 떼죽음..사람 잡는 더위에 비상",
+      "url": "https://mpmbc.co.kr/NewsArticle/1529934",
+      "type": "dom"
+    },
+    "81": {
+      "title": "하동 양식장 가숭어 5천 마리 집단 폐사",
+      "url": "https://news.knn.co.kr/news/article/190721",
+      "type": "dom"
+    },
+    "82": {
+      "title": "하동 가두리 가숭어 집단 폐사",
+      "url": "http://www.gnmaeil.com/news/articleView.html?idxno=591786",
+      "type": "dom"
+    },
+    "83": {
+      "title": "박완수 지사, 통영 찾아 폭염·고수온 점검",
+      "url": "https://www.ulsanpress.net/news/articleView.html?idxno=580130",
+      "type": "dom"
+    },
+    "84": {
+      "title": "Iran Allows Pakistan Safe Passage for LNG Cargo from Qatar",
+      "url": "https://propakistani.pk/2026/07/30/iran-allows-pakistan-safe-passage-for-lng-cargo-from-qatar/",
+      "type": "intl"
+    },
+    "85": {
+      "title": "Pakistan gets LNG boost as Qatar Tanker clears Hormuz amid Tensions",
+      "url": "https://en.dailypakistan.com.pk/30-Jul-2026/pakistan-gets-lng-boost-as-qatar-tanker-clears-hormuz-amid-tensions",
+      "type": "intl"
+    },
+    "86": {
+      "title": "Hormuz shipping rebounds despite ongoing Middle East tensions",
+      "url": "https://www.dailysabah.com/business/energy/hormuz-shipping-rebounds-despite-ongoing-middle-east-tensions",
+      "type": "intl"
+    },
+    "87": {
+      "title": "QatarEnergy - controlled LNG tanker exits Hormuz , first in nearly three weeks",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/qatarenergy-controlled-lng-tanker-exits-strait-of-hormuz-first-in-nearly-three-weeks/articleshow/132726244.cms",
+      "type": "intl"
+    },
+    "88": {
+      "title": "Is pause in new ship orders by South Korean flag carrier a warning ? ",
+      "url": "https://finance.yahoo.com/energy/articles/pause-ship-orders-south-korean-120000237.html",
+      "type": "intl"
+    },
+    "89": {
+      "title": "Oil prices slip as tankers continue to ply Middle East conflict zones",
+      "url": "https://dunyanews.tv/en/Business/965359-oil-prices-slip-as-tankers-continue-to-ply-middle-east-conflict-zones",
+      "type": "intl"
+    },
+    "90": {
+      "title": "A new fuel refinery is a start . But Australia is still vulnerable to shipping disruptions without a clear strategy",
+      "url": "https://theconversation.com/a-new-fuel-refinery-is-a-start-but-australia-is-still-vulnerable-to-shipping-disruptions-without-a-clear-strategy-288703",
+      "type": "intl"
+    },
+    "91": {
+      "title": "카타르 LNG운반선, 호르무즈 해협 통과… 20여일 만에 처음",
+      "url": "https://www.newspim.com/news/view/20260730001449",
+      "type": "dom"
+    },
+    "92": {
+      "title": "STX엔진, 덴마크 머스크사 초대형 컨테이너선 친환경 엔진 첫 수출",
+      "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=642236",
+      "type": "dom"
+    },
+    "93": {
+      "title": "Crews safe after fire incident at Egypt Damietta LNG terminal",
+      "url": "https://www.naftemporiki.gr/english/2144640/crews-safe-after-fire-incident-at-egypts-damietta-lng-terminal/",
+      "type": "intl"
+    },
+    "94": {
+      "title": "Drone hits gas storage tanker at Egypt Mediterranean port , Ambrey reports",
+      "url": "https://www.al-monitor.com/originals/2026/07/drone-hits-gas-storage-tanker-egypts-mediterranean-port-ambrey-reports",
+      "type": "intl"
+    },
+    "95": {
+      "title": "Egypt says it has energy alternatives after drone attack on Damietta gas vessel",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/egypt-says-it-has-energy-alternatives-after-drone-attack-damietta-gas",
+      "type": "intl"
+    },
+    "96": {
+      "title": "DRONE CAMPAIGN : Ukraine Cripples Russia Fuel Industry With Precision Strikes – The Yeshiva World",
+      "url": "https://www.theyeshivaworld.com/news/general/2580730/drone-campaign-ukraine-cripples-russias-fuel-industry-with-precision-strikes.html",
+      "type": "intl"
+    },
+    "97": {
+      "title": "Goldman Sachs : Diesel Crunch Is Now the Biggest Threat in Oil Markets",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Diesel-Crunch-Is-Now-the-Biggest-Threat-in-Oil-Markets.html",
+      "type": "intl"
+    },
+    "98": {
+      "title": "FT : Ukrainian strikes disable more than 30 % of Russia oil refining capacity",
+      "url": "https://en.apa.az/cis-countries/ft-ukrainian-strikes-disable-more-than-30-of-russias-oil-refining-capacity-518259",
+      "type": "intl"
+    },
+    "99": {
+      "title": "Constanta Port may become entry point for natural gas from Turkmenistan to Europe",
+      "url": "https://actmedia.eu/daily/constanta-port-may-become-entry-point-for-natural-gas-from-turkmenistan-to-europe/120949",
+      "type": "intl"
+    },
+    "100": {
+      "title": "Armenia Supports Tehran Proposal to At Least Double Iranian Gas Exports , Khudatyan Says • MassisPost",
+      "url": "https://massispost.com/2026/07/armenia-supports-tehrans-proposal-to-at-least-double-iranian-gas-exports-khudatyan-says/",
+      "type": "intl"
+    },
+    "101": {
+      "title": "Japan turns to Canadian crude as Asia feels Hormuz supply pinch - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+      "url": "https://dominicanrepublicpost.com/japan-turns-to-canadian-crude-as-asia-feels-hormuz-supply-pinch/",
+      "type": "intl"
+    },
+    "102": {
+      "title": "Erha Crude Exports : ExxonMobil Declares Force Majeure",
+      "url": "https://punchng.com/exxonmobil-declares-force-majeure-on-erha-crude-exports/",
+      "type": "intl"
+    },
+    "103": {
+      "title": "이집트 LNG 허브도 '드론 공격'…중동 에너지 인프라 타격 확산",
+      "url": "https://www.g-enews.com/view.php?ud=202607302132453389153ddfb15a_1",
+      "type": "dom"
+    },
+    "104": {
+      "title": "큰 폭 내렸던 국제LPG가격 8월 상승 전환…톤당 평균 40달러",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227148",
+      "type": "dom"
+    },
+    "105": {
+      "title": "[컨콜] SK에너지 “중동산 원유 비중 절반 수준으로…美·캐나다·아프리...",
+      "url": "https://www.g-enews.com/view.php?ud=2026073016343578024debea800_1",
+      "type": "dom"
+    },
+    "106": {
+      "title": "KG에코솔루션, 국내 정유사 3곳 공급망 확보…바이오연료 사업 확대",
+      "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=308047",
+      "type": "dom"
+    },
+    "107": {
+      "title": "에너지 인프라까지 번진 중동 분쟁…정유업계 실적은 ‘맑음’",
+      "url": "http://www.newstomato.com/ReadNews.aspx?no=1308828&inflow=N",
+      "type": "dom"
+    },
+    "108": {
+      "title": "정제마진 강세에… 정유사 ‘逆래깅’ 공포에도 하반기 실적 개선 전망...",
+      "url": "https://n.news.naver.com/mnews/article/366/0001183300?sid=101",
+      "type": "dom"
+    },
+    "109": {
+      "title": "韓·칠레, 자원 공급망·FTA 현대화 협력",
+      "url": "https://n.news.naver.com/mnews/article/658/0000151054?sid=100",
+      "type": "dom"
+    },
+    "110": {
+      "title": "[자정 뉴스브리핑] 에니와 토탈에너지스, 키프로스 첫 가스전 개발 승인...",
+      "url": "https://www.tokenpost.kr/news/briefing/383041",
+      "type": "dom"
+    },
+    "111": {
+      "title": "원전 멈추고 화물선 중단…글로벌 공급망 폭염 몸살",
+      "url": "https://n.news.naver.com/mnews/article/018/0006340392?sid=101",
+      "type": "dom"
+    },
+    "112": {
+      "title": "[김경식의 이세계 ESG]저탄소 철강, 모두 원하지만 누구도 비용은 얘기...",
+      "url": "https://n.news.naver.com/mnews/article/032/0003461448?sid=110",
+      "type": "dom"
+    }
+  }
+}
