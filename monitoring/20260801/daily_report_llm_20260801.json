@@ -1,0 +1,2583 @@
+{
+  "date": "2026-08-01",
+  "date_key": "20260801",
+  "n_total": 2110,
+  "n_high": 163,
+  "n_med": 233,
+  "n_low": 257,
+  "n_none": 1457,
+  "n_intl": 153,
+  "n_dom": 243,
+  "llm_result": {
+    "executive_summary": "호르무즈 해협 입구에서 카타르 LNG 운반선을 포함한 유조선들이 잇따라 피격·폭발하는 사태가 발생하였으며[6][8][15][16][18][19][20], 미국과 이스라엘이 이란 에너지 인프라에 대한 공습을 이번 주말 단행할 계획이라는 보도가 나오면서 중동 긴장이 최고조에 달하고 있다[10][90][93][95]. 이란은 미국의 공격 시 에너지 시설을 조준하겠다고 경고하였고[18], 트럼프 대통령은 추가 이란 공습을 검토 중인 것으로 알려졌다[4][7]. 호르무즈 해협 통항량이 급감한 가운데[31] 이라크와 터키는 호르무즈 봉쇄 기간 수출을 늘리기 위한 1년짜리 석유 파이프라인 협정을 체결하였고[5][27][28], ADNOC은 위기 대응을 위해 초대형 유조선 5척을 구매하였다[29]. 한국은 호르무즈 기여 방안을 다양한 가능성 차원에서 검토 중이며[14], 중동 원유 의존도를 낮추기 위해 아르헨티나와 내년부터 원유 수입을 개시하기로 합의하였다[40][41][42][43][44][45][46].",
+    "categories": {
+      "1_Security": {
+        "overseas": "트럼프 대통령이 이란에 대한 추가 공습을 검토 중이며[1][4][7], 미국과 이스라엘이 이란 에너지 인프라를 이번 주말 공습할 계획이라는 보도가 나왔다[10][85][87][88]. 이란은 미국·이스라엘의 주요 시설에 대한 보복을 경고하였고[86][92], 호르무즈 해협 입구에서 카타르 LNG 운반선이 피격되는 등 유조선 공격이 잇따르고 있다[6][8][21]. 이라크와 터키는 호르무즈 봉쇄가 지속되는 상황에서 석유 수출을 늘리기 위한 1년짜리 파이프라인 협정을 체결하였다[5]. 오만 인근 해상에서도 미상 발사체에 의한 유조선 피격 사건이 발생하였다[3][23].",
+        "korea_impact": "한국 정부는 호르무즈 해협에 대한 기여 방안을 다양한 가능성 차원에서 검토하는 단계라고 밝혔다[14]. 서울은 미국이 경합 중인 호르무즈 해협에서 지원 방안을 저울질하고 있는 것으로 보도되었다[11]. 호르무즈 해협 입구에서 유조선이 잇따라 피격·폭발하는 사태가 국내 언론에도 집중 보도되었으며[15][16][18][19][20], 미국·이스라엘의 이란 에너지 시설 공습 임박 보도가 이어지고 있다[12][13][90][91][93][94][95]."
+      },
+      "2_Safety": {
+        "overseas": "GasLog 소속 LNG 운반선이 호르무즈 해협을 통과하다 피격·손상되었으며, 영국 해양무역작전(UKMTO)은 오만 인근에서 두 건의 유조선 피격 사건을 보고하였다[22][24]. 카타르산 LNG를 운반하던 유조선이 호르무즈 해협 통과 중 피격되었고[21][6][8], 오만 인근에서는 미상 발사체에 의해 유조선 기관실이 손상되는 사건도 발생하였다[23]. 아울러 제재 대상 유조선이 오만 인근에서 좌초되어 기름 유출이 확산되고 있는 것으로 위성 이미지를 통해 확인되었다[25][26].",
+        "korea_impact": ""
+      },
+      "3_Freight": {
+        "overseas": "Kpler 데이터에 따르면 호르무즈 해협 통항량이 급감하였으며, 밥엘만데브 해협 통항량은 상대적으로 안정세를 유지하고 있다[31]. 이라크와 터키는 호르무즈 봉쇄 기간 석유 수출 대안으로 1년짜리 파이프라인 협정을 체결하였고[27][28], ADNOC은 위기 심화에 대응해 초대형 유조선 5척을 추가 구매하였다[29]. 예멘 후티 세력은 사우디 유조선 8척을 항로 변경하도록 강제하였다고 밝혔다[32][80]. 호르무즈 석유 수출 대안 경로 확보를 위한 움직임이 가속화되고 있다[30][33].",
+        "korea_impact": "한국해양진흥공사(해진공)는 공급 과잉 우려로 운임과 선가 하락이 불가피하다고 전망하였다[34]. 해운 탄소세 도입 논의가 진행 중이며[35], BNK금융은 해운협회와 해양금융 협력을 강화하고 선박금융 지원을 확대하기로 하였다[36]."
+      },
+      "4_PortCargo": {
+        "overseas": "인도 인디언오일은 중동 공급 차질에 대응해 현물 원유 구매를 확대하였으며[37][55], 인도는 서아시아 전쟁 재확산 속에서도 9월까지 LNG 공급을 확보하였다[39]. 오만은 라스마르카즈 원유 저장 시설 확장을 위한 입찰을 개시하였다[38].",
+        "korea_impact": "한국은 아르헨티나와 정상회담을 통해 내년부터 아르헨티나산 원유 수입을 개시하기로 합의하였으며[40][41][42][43][44], 올해 88만 배럴 시범 수입도 추진된다[45]. 이를 통해 중동 원유 의존도를 낮추는 공급선 다변화 전략이 본격화되고 있다[46][47][48][49]. 한국과 아르헨티나는 첫 자원 MOU를 체결하고 리튬 등 핵심광물 공급망 협력 체계도 마련하였다[97][98][99]."
+      },
+      "5_EconFinance": {
+        "overseas": "이란의 호르무즈 선박 통제 발표 이후 국제유가가 상승하였으며[50], 7월 국제유가는 3월 이후 가장 강한 월간 상승폭을 기록하였다[51]. 지정학적 혼란이 국제유가를 신고점으로 밀어올리고 있으며[52], 엑슨모빌·셰브런 등 석유 기업들은 전시 원유 가격 덕분에 수년 만에 최고 수준의 이익을 기록하였다[53][56][58]. UAE는 자국 원유 전체의 가격 산정 방식을 개편하기로 하였다[54].",
+        "korea_impact": "호르무즈 해협 유조선 피격 소식에 국제유가가 반등 조짐을 보이면서 국내 기름값 반등 가능성이 제기되었다[60]. 그러나 전국 주유소 휘발유·경유 가격은 11주 연속 하락세를 이어가며 1800원대를 기록하고 있다[62][63][64][65][66][67][68]. 7월 소비자물가 상승률이 3% 아래를 기록할지 여부가 한국은행의 8월 금리 결정에 영향을 미칠 것으로 보인다[61]. 중동 전쟁 고조와 8월 CP(계약가격) 인상에도 불구하고 이달 국내 LPG 가격은 동결된 것으로 보도되었다[69]."
+      },
+      "6_Seafood": {
+        "overseas": "",
+        "korea_impact": "제주 연안 수온이 29도(최고 29.3도)까지 상승하는 역대급 폭염으로 인해 제주 양식장에서 광어·넙치 3만여 마리가 집단 폐사하였다[70][75][76][77][78][79]. 제주도지사가 고수온 피해 양식장을 직접 방문하고 간담회를 개최하는 등 대응에 나섰으며[72][73][74], 수산과학원은 양식수협과 함께 고수온·질병 등 현장 현안을 점검하였다[71]."
+      },
+      "7_Shipping": {
+        "overseas": "호르무즈 해협에서 VLCC 2척이 출항하였으나 전반적인 통항량은 여전히 저조한 수준을 유지하고 있다[81]. 후티 세력은 사우디 유조선 8척을 항로 변경하도록 강제하였다고 밝혔다[80].",
+        "korea_impact": "미국 중부사령부는 호르무즈 해협 폐쇄를 부인하며 상선 항로가 열려 있다고 밝혔다[82]. SK오션플랜트는 6,800DWT급 스테인리스 화학제품운반선 2척을 수주하였다[83]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "엑슨모빌·셰브런은 전쟁으로 인한 정제 부문 영향으로 연료 가격 고공행진이 지속될 것이라고 경고하였다[84]. 미국과 이스라엘이 이란 에너지 인프라 공습을 검토 중이라는 보도가 잇따랐으며[85][87][88], 이란은 광범위한 보복을 경고하였다[86]. 가이아나에서는 FPSO 에레아 위투가 일산 25만 배럴 목표를 향해 항진 중이다[89].",
+        "korea_impact": "미국·이스라엘의 이란 에너지 시설 공습 계획 보도가 국내에서도 집중 조명되었다[90][91][92][93][94][95]. 구리 가격이 칠레 폭풍으로 인한 공급 차질로 사상 최고치를 기록하였다[96]. 한국과 아르헨티나는 첫 자원 MOU를 체결하고 리튬 공급망 협력을 강화하기로 하였다[97][98][99]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "호르무즈 해협 입구에서 카타르 LNG 운반선을 포함한 유조선들이 잇따라 피격·폭발하였으며[6][8][21][22], UKMTO는 오만 인근에서 두 건의 유조선 피격 사건을 공식 보고하였다[24]. Kpler 데이터에 따르면 호르무즈 해협 통항량이 급감하였고[31], VLCC 2척이 출항하였으나 전반적 통항은 여전히 저조하다[81]. 후티 세력은 사우디 유조선 8척을 항로 변경하도록 강제하였다고 밝혔다[32][80]. 이라크와 터키는 호르무즈 봉쇄 기간 수출 대안으로 1년짜리 파이프라인 협정을 체결하였다[5][27][28].",
+          "korea_impact": "미국 중부사령부는 호르무즈 해협 폐쇄를 공식 부인하며 상선 항로가 열려 있다고 밝혔으나[82], 한국 정부는 호르무즈 기여 방안을 다양한 가능성 차원에서 검토 중이다[14]. 호르무즈 해협 유조선 피격 소식이 국내 기름값 반등 가능성으로 이어질 수 있다는 우려가 제기되었다[60]. 한국은 중동 원유 의존도를 낮추기 위해 아르헨티나와 내년부터 원유 수입을 개시하기로 합의하는 등 공급선 다변화를 추진하고 있다[46][47][48]."
+        },
+        "source": {
+          "overseas": "미국과 이스라엘이 이란 에너지 인프라를 이번 주말 공습할 계획이라는 보도가 나왔으며[10][87][88], 이란은 미국의 공격 시 에너지 시설을 조준하겠다고 경고하였다[86]. 인도 인디언오일은 중동 공급 차질에 대응해 현물 원유 구매를 확대하였고[37][55], 인도는 9월까지 LNG 공급을 확보하였다[39]. ADNOC은 위기 심화에 대응해 초대형 유조선 5척을 추가 구매하였으며[29], 오만은 라스마르카즈 원유 저장 시설 확장 입찰을 개시하였다[38].",
+          "korea_impact": "한국은 아르헨티나와 정상회담을 통해 내년부터 원유 수입을 개시하고 올해 88만 배럴 시범 수입을 추진하기로 합의하였다[40][41][42][43][44][45]. 한국과 아르헨티나는 첫 자원 MOU를 체결하고 리튬 등 핵심광물 공급망 협력 체계도 마련하였다[97][98][99]. 구리 가격은 칠레 폭풍으로 인한 공급 차질로 사상 최고치를 기록하였다[96]."
+        },
+        "logistics": {
+          "overseas": "호르무즈 해협 통항량이 급감하면서 석유 수출 대안 경로 확보 움직임이 가속화되고 있으며[30][31], 이라크·터키 파이프라인 협정이 그 일환으로 체결되었다[5][27][28]. ADNOC은 초대형 유조선 5척을 추가 구매하여 위기 대응 수송 능력을 확충하였다[29]. 후티 세력의 사우디 유조선 항로 변경 강제[32][80]와 오만 인근 유조선 피격[23][24]으로 인해 중동 해역 물류 교란이 복합적으로 발생하고 있다.",
+          "korea_impact": "한국해양진흥공사는 공급 과잉 우려로 운임과 선가 하락이 불가피하다고 전망하였다[34]. BNK금융은 해운협회와 해양금융 협력을 강화하고 선박금융 지원을 확대하기로 하였다[36]. SK오션플랜트는 6,800DWT급 화학제품운반선 2척을 수주하였다[83]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "전국 주유소 휘발유·경유 가격은 11주 연속 하락세를 이어가며 각각 1869.1원, 1852.8원을 기록하였다[62][63][64][65][66][67][68]. 호르무즈 해협 유조선 피격 소식에 국제유가가 반등 조짐을 보이면서 국내 기름값 반등 가능성이 제기되었다[60]. 7월 소비자물가 상승률이 3% 아래를 기록할지 여부가 한국은행의 8월 금리 결정 향방에 영향을 미칠 것으로 보인다[61]. 중동 전쟁 고조와 8월 CP 인상에도 불구하고 이달 국내 LPG 가격은 동결된 것으로 보도되었다[69].",
+        "정유·화학": "호르무즈 해협 유조선 피격과 미국·이스라엘의 이란 에너지 시설 공습 임박 보도로 국제유가 불안이 재점화되고 있다[60][90][91]. 한국은 아르헨티나와 내년부터 원유 수입을 개시하기로 합의하여 중동 의존도를 낮추는 공급선 다변화를 추진하고 있다[46][47][48][49]. 엑슨모빌·셰브런은 전쟁으로 인한 정제 부문 영향으로 연료 가격 고공행진이 지속될 것이라고 경고하였다[84].",
+        "해운·물류": "미국 중부사령부가 호르무즈 해협 폐쇄를 부인하며 상선 항로가 열려 있다고 밝혔으나[82], 실제 통항량은 급감한 상태이다[31]. 한국해양진흥공사는 공급 과잉 우려로 운임과 선가 하락이 불가피하다고 전망하였으며[34], 해운 탄소세 도입 논의도 진행 중이다[35]. SK오션플랜트는 6,800DWT급 화학제품운반선 2척을 수주하였다[83].",
+        "식품·농업": "제주 연안 수온이 29.3도까지 상승하는 역대급 폭염으로 제주 양식장에서 광어·넙치 3만여 마리가 집단 폐사하였다[70][75][76][77][78][79]. 제주도지사가 피해 양식장을 직접 방문하고 간담회를 개최하는 등 대응에 나섰으며[72][73][74], 수산과학원은 양식수협과 함께 고수온·질병 현장 현안을 점검하였다[71].",
+        "기타산업": "구리 가격이 칠레 폭풍으로 인한 공급 차질로 사상 최고치를 기록하였다[96]. 한국과 아르헨티나는 첫 자원 MOU를 체결하고 리튬 공급망 협력을 강화하기로 하였다[97][98][99]."
+      }
+    },
+    "changes": {
+      "new": [
+        "카타르 LNG 운반선(GasLog 소속) 호르무즈 해협 통과 중 피격·손상 사건 발생[6][8][22]",
+        "미국·이스라엘의 이란 에너지 인프라 이번 주말 공습 계획 보도 등장[10][87][88][90][93]",
+        "이라크·터키, 호르무즈 봉쇄 기간 석유 수출을 위한 1년짜리 파이프라인 협정 체결[5][27][28]",
+        "ADNOC, 위기 대응을 위해 초대형 유조선 5척 추가 구매[29]",
+        "한국-아르헨티나 정상회담에서 내년부터 원유 수입 개시 및 첫 자원 MOU 체결 합의[40][41][42][97][98]",
+        "제재 대상 유조선 오만 인근 좌초로 기름 유출 확산[25][26]"
+      ],
+      "escalated": [
+        "호르무즈 해협 입구 유조선 피격 사건 반복·확대(오만 인근 포함)[15][16][18][19][20][23][24]",
+        "트럼프 대통령의 이란 추가 공습 검토 및 이란의 에너지 시설 보복 경고로 군사적 긴장 고조[1][4][7][18][86]",
+        "호르무즈 해협 통항량 급감 지속[31][81]",
+        "제주 고수온 피해 양식장 넙치 3만여 마리 집단 폐사로 피해 규모 확대[70][75][76][77][78][79]"
+      ],
+      "resolved": []
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "Trump threatens more strikes on Iran , tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+        "url": "https://www.vaildaily.com/news/nation-world/trump-threatens-more-strikes-on-iran-tensions-from-hormuz-to-kuwait-and-gaza-lead-to-more-warnings/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Uses Diplomacy and Coercion to Perpetuate Control of the Strait of Hormuz • Stimson Center",
+        "url": "https://www.stimson.org/2026/iran-uses-diplomacy-and-coercion-to-perpetuate-control-of-the-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "  Unknown projectile  hits tanker off Oman | The Manila Times",
+        "url": "https://www.manilatimes.net/2026/08/02/world/americas-emea/unknown-projectile-hits-tanker-off-oman/2396375",
+        "type": "intl"
+      },
+      {
+        "title": "White House Indicates Trump Is Weighing Another Round of Iran Strikes",
+        "url": "https://www.deccanchronicle.com/world/white-house-indicates-trump-is-weighing-another-round-of-iran-strikes-1975841",
+        "type": "intl"
+      },
+      {
+        "title": "Iraq and Turkey strike a 1 - year oil pipeline deal to boost exports during ongoing Hormuz closures – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/world/2026/08/01/iraq-and-turkey-strike-a-1-year-oil-pipeline-deal-to-boost-exports-during-ongoing-hormuz-closures",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker Carrying Qatari LNG Struck While Transiting Strait of Hormuz  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/publicpolicy/tanker-carrying-qatari-lng-struck-while-transiting-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran , and other developments in the Middle East",
+        "url": "https://www.breitbart.com/news/trump-threatens-more-strikes-on-iran-and-other-developments-in-the-middle-east/",
+        "type": "intl"
+      },
+      {
+        "title": "Qatari LNG tanker struck while transiting Strait of Hormuz",
+        "url": "https://en.apa.az/asia/qatari-lng-tanker-struck-while-transiting-strait-of-hormuz-bloomberg-518623",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran . Tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+        "url": "https://www.sun-sentinel.com/2026/08/01/trump-threatens-more-strikes-on-iran-tensions-from-hormuz-to-kuwait-and-gaza-lead-to-more-warnings/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Israel preparing to bombard energy targets in Iran , says report",
+        "url": "https://tradearabia.com:443/News/466043/US-Israel-preparing-to-bombard-energy-targets-in-Iran-says-report",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis Deny Charging Ships for Using Red Sea Route",
+        "url": "https://www.theepochtimes.com/world/yemens-houthis-denied-charging-ships-using-key-red-sea-route-6070139",
+        "type": "intl"
+      },
+      {
+        "title": "  Be Prepared To Depart : US Embassies Warn Americans Amid West Asia Tensions",
+        "url": "https://www.outlookindia.com/international/be-prepared-to-depart-us-embassies-warn-americans-amid-west-asia-tensions",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns against  fire of war  amid US strike threats on energy sites - Grenada Chronicle – Daily Grenada And Caribbean News",
+        "url": "https://grenadachronicle.com/iran-warns-against-fire-of-war-amid-us-strike-threats-on-energy-sites/",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker carrying natural gas through Strait of Hormuz struck by missile overnight : report",
+        "url": "https://nypost.com/2026/08/01/world-news/tanker-carrying-natural-gas-through-strait-of-hormuz-struck-by-missile-overnight-report/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns against  fire of war  amid US strike threats on energy sites - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+        "url": "https://dominicanrepublicpost.com/iran-warns-against-fire-of-war-amid-us-strike-threats-on-energy-sites/",
+        "type": "intl"
+      },
+      {
+        "title": "US president Donald Trump threatens more strikes on Iran",
+        "url": "https://www.thenational.scot/news/26428714.us-president-donald-trump-threatens-strikes-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "US embassies in Middle East warn Americans as Trump weighs fresh strikes on Iran",
+        "url": "https://www.moneycontrol.com/world/us-embassies-in-middle-east-warn-americans-as-trump-weighs-fresh-strikes-on-iran-article-13990944.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns against  flames of war  amid US strike threats on energy sites | US - Israel war on Iran News",
+        "url": "https://www.aljazeera.com/news/2026/8/1/iran-warns-against-fire-of-war-amid-us-strike-threats-on-energy-sites",
+        "type": "intl"
+      },
+      {
+        "title": "Drone strike on U . S .- owned gas tanker at Egyptian port escalates Middle East conflict – NaturalNews . com",
+        "url": "https://www.naturalnews.com/2026-08-01-drone-strike-egyptian-port-escalates-middle-east-conflict.html",
+        "type": "intl"
+      },
+      {
+        "title": "US tells citizens in West Asia to  be ready to leave  amid escalation fears : What happening in the Middle East ? ",
+        "url": "https://www.hindustantimes.com/world-news/us-embassies-urge-citizens-to-be-ready-to-depart-west-asia-amid-escalation-fears-whats-happening-in-the-middle-east-101785587480649.html",
+        "type": "intl"
+      },
+      {
+        "title": "Tankers Near Oman Come Under Fire",
+        "url": "https://politicalwire.com/2026/08/01/tankers-near-oman-come-under-fire/",
+        "type": "intl"
+      },
+      {
+        "title": "Reports : US , Israel planning heavy strikes on Iran energy targets",
+        "url": "https://www.naharnet.com:443/stories/en/321596-reports-us-israel-planning-heavy-strikes-on-iran-energy-targets",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says struck two tankers under US  air escort  trying to pass Hormuz",
+        "url": "https://naharnet.com/stories/en/321581-iran-says-struck-two-tankers-under-us-air-escort-trying-to-pass-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Iraq oil lifeline snaps as Hormuz crisis threatens economic collapse",
+        "url": "https://www.middle-east-online.com/en/iraq%E2%80%99s-oil-lifeline-snaps-hormuz-crisis-threatens-economic-collapse",
+        "type": "intl"
+      },
+      {
+        "title": "From Hormuz to Bab el - Mandeb to Suez : Iran war machine is threatening global shipping – Ya Libnan",
+        "url": "https://yalibnan.com/2026/08/01/from-hormuz-to-bab-el-mandeb-to-suez-irans-war-machine-is-threatening-global-shipping/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns continued US maritime blockade could shut Strait of Hormuz , other waterways",
+        "url": "https://aa.com.tr/en/americas/iran-warns-continued-us-maritime-blockade-could-shut-strait-of-hormuz-other-waterways/4015491",
+        "type": "intl"
+      },
+      {
+        "title": "Iran has plan ready for responding to potential attacks on infrastructure : Report",
+        "url": "https://www.prokerala.com/news/articles/a1795156.html",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran war latest update : Trump accuses Tehran of  terrorist behaviour , vessels in Hormuz Strait still being hit",
+        "url": "https://www.hindustantimes.com/world-news/usiran-war-latest-update-trump-accuses-tehran-of-terrorist-behaviour-vessels-in-hormuz-strait-still-being-hit-101785577159113.html",
+        "type": "intl"
+      },
+      {
+        "title": "Tankers near Oman come under fire as Iran threatens shipping routes",
+        "url": "https://www.cnbc.com/2026/08/01/tankers-near-oman-come-under-fire.html",
+        "type": "intl"
+      },
+      {
+        "title": "  Extensive response plan : Iran threatens US energy sites after Trump  hit very hard  warning",
+        "url": "https://www.moneycontrol.com/world/extensive-response-plans-iran-threatens-us-energy-sites-after-trump-s-hit-very-hard-warning-article-13990857.html",
+        "type": "intl"
+      },
+      {
+        "title": "خطة أمريكية إسرائيلية لاستهداف منشآت الطاقة الإيرانية",
+        "url": "https://www.okaz.com.sa/politics/na/2259437",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Keeps Strait of Hormuz Closed , Citing Continued US Military Actions",
+        "url": "https://voiceofvienna.org/iran-keeps-strait-of-hormuz-closed-citing-continued-us-military-actions/",
+        "type": "intl"
+      },
+      {
+        "title": "  Extensive response plan : Iran threatens US energy sites after Trump warning",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/extensive-response-plans-iran-threatens-us-energy-sites-after-trump-warning/articleshow/132784694.cms",
+        "type": "intl"
+      },
+      {
+        "title": "US says Strait of Hormuz open as 30 ships rerouted in Iran blockade",
+        "url": "https://sana.sy/en/international/2333421/",
+        "type": "intl"
+      },
+      {
+        "title": "War On Iran : – U . S . ( Again ) Blocks Strait Traffic – Moon of Alabama",
+        "url": "https://www.moonofalabama.org/2026/07/war-on-iran-u-s-again-blocks-strait-traffic.html/comment-page-3",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker struck by projectile off Oman , UKMTO says",
+        "url": "https://whbl.com/2026/07/31/tanker-struck-by-projectile-off-oman-ukmto-says/",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul Weighs Options to Help US in Contested Strait of Hormuz",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=203286",
+        "type": "dom"
+      },
+      {
+        "title": "US Says Strait of Hormuz Stays Open as 30 Ships Rerouted in Iran Port Blockade",
+        "url": "https://gulfnews.com/world/mena/us-says-strait-of-hormuz-open-as-30-ships-rerouted-in-iran-blockade-1.500627308",
+        "type": "intl"
+      },
+      {
+        "title": "Trump weighs fresh strikes on Iran as White House warns Tehran over Hormuz attacks , truce violations",
+        "url": "https://www.newindianexpress.com/world/2026/Aug/01/trump-weighs-fresh-strikes-on-iran-as-white-house-warns-tehran-over-hormuz-attacks-truce-violations",
+        "type": "intl"
+      },
+      {
+        "title": "US warmongering to tighten closure of Strait of Hormuz : Iran security chief",
+        "url": "https://www.presstv.co.uk/Detail/2026/08/01/773473/Iran-United-States-Strait-of-Hormuz-warning",
+        "type": "intl"
+      },
+      {
+        "title": "US , israel considering Iran land blockade as economic isolation method",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-904246",
+        "type": "intl"
+      },
+      {
+        "title": "Drone strike in Egypt raises fears for shipping in Suez Canal",
+        "url": "http://www.newjerseytelegraph.com/news/279216755/attack-on-ship-in-egypt-s-damietta-port-signals-wider-us-iran-conflict",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker struck by  unknown projectile  off Oman : UKMTO",
+        "url": "https://www.arabnews.com/node/2652982/middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "Trump weighing new strikes on Iran : White House",
+        "url": "https://www.canberratimes.com.au/story/9321833/trump-weighing-new-strikes-on-iran-white-house/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran Threaten Vital Infrastructure As Rhetoric Heats Up Again",
+        "url": "http://www.malaysiasun.com/news/279218216/us-iran-threaten-vital-infrastructure-as-rhetoric-heats-up-again",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM says  30 commercial vessel redirected so far during Iran blockade",
+        "url": "https://news.webindia123.com/news/Articles/World/20260801/4481766.html",
+        "type": "intl"
+      },
+      {
+        "title": "US weighs strikes on Iran energy infrastructure within days , Israel may join : Report",
+        "url": "https://news.webindia123.com/news/Articles/World/20260801/4481770.html",
+        "type": "intl"
+      },
+      {
+        "title": "What new military plans does the US have against Iran ? Electricity cutoff proposal among plans under consideration",
+        "url": "https://www.hindustantimes.com/world-news/us-news/what-new-military-plans-does-the-us-have-against-iran-electricity-cutoff-proposal-among-plans-under-consideration-101785542295371.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump orders Iran strikes as soon as this weekend : WSJ report",
+        "url": "https://news.webindia123.com/news/Articles/World/20260801/4481767.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump orders Iran attack as soon as this weekend , WSJ says",
+        "url": "https://fortune.com/2026/07/31/trump-iran-attack-weekend-energy-infrastructure/",
+        "type": "intl"
+      },
+      {
+        "title": "Houthis say transit through Bab el - Mandeb free of charge",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-transit-through-bab-el-mandeb-free-charge",
+        "type": "intl"
+      },
+      {
+        "title": "How Houthi instability is fueling the return of Somali piracy",
+        "url": "https://weeklyblitz.net/2026/08/01/how-houthi-instability-is-fueling-the-return-of-somali-piracy/",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian arrangement for Hurmuz passage is  only option , says MP amid US threats",
+        "url": "https://www.presstv.co.uk/Detail/2026/08/01/773528/Iran-US-Qashqavi-Hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran as Israel carries out attacks in Gaza",
+        "url": "https://www.koaa.com/us-news/iran-war/trump-threatens-more-strikes-on-iran-as-israel-carries-out-attacks-in-gaza",
+        "type": "intl"
+      },
+      {
+        "title": "Welcome to the mega - war : Mideast and European conflicts merge , sucking in more countries",
+        "url": "https://fortune.com/2026/08/01/iran-ukraine-mega-war-mideast-european-conflicts-merge-russia-nato-egypt-saudi-coalition/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump  losing faith  in talks , threatens to  hit Iran hard  ",
+        "url": "https://www.jns.org/news/u-s-news/trump-angry-at-iranian-negotiators-says-losing-faith-in-talks",
+        "type": "intl"
+      },
+      {
+        "title": "US urges its nationals to leave West Asia amid  complex security situation  ",
+        "url": "https://www.deccanchronicle.com/world/us-urges-its-nationals-to-leave-west-asia-amid-complex-security-situation-1975842",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Tensions :  Prepare to depart : US embassies issue alert across Middle East amid Iran tensions",
+        "url": "https://timesofindia.indiatimes.com/world/us/prepare-to-depart-us-embassies-issue-alert-across-middle-east-amid-iran-tensions/articleshow/132794132.cms",
+        "type": "intl"
+      },
+      {
+        "title": "US Urges Citizens to Leave Parts of West Asia as Iran Tensions Escalate : What Happening ? ",
+        "url": "https://www.oneindia.com/international/us-urges-citizens-to-leave-parts-of-west-asia-as-iran-tensions-escalate-whats-happening-8164055.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War Day 155 : U . S . and Israel Planning Massive Attack , CBS News Reports",
+        "url": "https://www.theamericanconservative.com/iran-war-day-155-u-s-and-israel-planning-massive-attack-cbs-news-reports/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump  angry  at Iranian negotiators , says  losing faith  in talks | National News",
+        "url": "https://www.clevelandjewishnews.com/news/national_news/trump-angry-at-iranian-negotiators-says-losing-faith-in-talks/article_9fe04e3c-f70c-5912-8087-4040fb708fa8.html",
+        "type": "intl"
+      },
+      {
+        "title": "UN warns Middle East cannot withstand further conflict – Channel Africa",
+        "url": "https://www.channelafrica.co.za/channelafrica/news/un-warns-middle-east-cannot-withstand-further-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump orders fresh attack on Iran : Media reports – Channel Africa",
+        "url": "https://www.channelafrica.co.za/channelafrica/news/trump-orders-fresh-attack-on-iran-media-reports/",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . embassies across Middle East urged Americans to exercise caution",
+        "url": "https://nationalpost.com/news/world/u-s-embassies-warn-americans-as-iran-threatens-more-choke-points",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens strikes on Iran , other Mideast developments",
+        "url": "https://www.wsbradio.com/news/world/trump-threatens-more/WRLSS3MNRAYANBHUC66UF4WURE/",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwait air defences respond to Iranian drone attacks",
+        "url": "https://www.thenationalnews.com/news/mena/2026/08/01/kuwaits-air-defences-respond-to-iranian-drone-attacks/",
+        "type": "intl"
+      },
+      {
+        "title": "  Donald Trump chaotic Iran war is a disaster for the world and exposes all  ",
+        "url": "https://www.aol.co.uk/articles/donald-trumps-chaotic-iran-war-154048000.html",
+        "type": "intl"
+      },
+      {
+        "title": "Top US General warns Pentagon it lacks enough naval forces to keep defending Israel from Iranian attacks : Report",
+        "url": "https://www.livemint.com/news/us-news/top-us-general-warns-pentagon-it-lacks-enough-naval-forces-to-keep-defending-israel-from-iranian-attacks-report-11785594943756.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Threatens Further Strikes as Iran Conflict Deepens",
+        "url": "https://www.1290wlby.com/2026/08/01/trump-threatens-further-strikes-as-iran-conflict-deepens/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis deny plan to charge ships transiting Red Sea – The Times Of Earth",
+        "url": "https://www.timesofearth.com/2026/08/01/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea/",
+        "type": "intl"
+      },
+      {
+        "title": "Regional states serving as US shield will  burn in fire of war : Top Iranian commander",
+        "url": "https://www.presstv.co.uk/Detail/2026/08/01/773502/Regional-states-shielding-US-will-burn-in-fire-of-war-Top-Iranian-commander",
+        "type": "intl"
+      },
+      {
+        "title": "Bangladesh says it joined Saudi - led maritime coalition to support regional stability",
+        "url": "https://www.arabnews.com/node/2653025/world",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran , and other developments in the Middle East – KTBB News , Weather , Talk",
+        "url": "https://ktbb.com/post/?p=1530256",
+        "type": "intl"
+      },
+      {
+        "title": "President Trump threatens more strikes on Iran",
+        "url": "https://www.breakingnews.ie/world/president-trump-threatens-more-strikes-on-iran-1934765.html",
+        "type": "intl"
+      },
+      {
+        "title": "US Embassies In Middle East Warn Of  Potential Unforeseen Escalation  ",
+        "url": "http://www.theuknews.com/news/279218563/us-embassies-in-middle-east-warn-of-potential-unforeseen-escalation",
+        "type": "intl"
+      },
+      {
+        "title": "US embassies urge Americans to prepare to leave as Iran tensions intensifies",
+        "url": "https://www.thenews.com.pk/latest/1410918-us-embassies-urge-americans-to-prepare-to-leave-as-iran-tensions-intensifies",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Security Chief Accuses US of Warmongering and Intensifying Control Over Strait of Hormuz",
+        "url": "https://www.islamicinvitationturkey.com/irans-security-chief-accuses-us-of-warmongering-and-intensifying-control-over-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Turkey counters Greater Israel strategy : Why Ankara is dumping US Treasuries and building energy alliance with Russia",
+        "url": "https://www.bankingnews.gr/analyseis-ektheseis/articles/891727/turkey-counters-greater-israel-strategy-why-ankara-is-dumping-us-treasuries-and-building-energy-alliance-with-russia",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Is Ready for a Major New Assault on Iran",
+        "url": "https://www.newser.com/story/393905/trump-is-ready-for-a-major-new-assault-on-iran.html",
+        "type": "intl"
+      },
+      {
+        "title": "The long shadow of 1973 : Why  energy memory  is reshaping global diplomacy – Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20260801-the-long-shadow-of-1973-why-energy-memory-is-reshaping-global-diplomacy/",
+        "type": "intl"
+      },
+      {
+        "title": "Here why new fronts seem to be opening up across the Middle East",
+        "url": "https://naharnet.com/stories/en/321571-here-s-why-new-fronts-seem-to-be-opening-up-across-the-middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "Reconfiguring US - Ethiopia Military Logistics Alliance Amid Widening Regional Instability",
+        "url": "https://www.thereporterethiopia.com/52108/",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwait Reports Drone Attack as Iran Warns US Allies of Expanding Regional Conflict",
+        "url": "https://countercurrents.org/2026/08/kuwait-reports-drone-attack-as-iran-warns-us-allies-of-expanding-regional-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "Iranian military adviser questions U . S . role in Strait of Hormuz",
+        "url": "https://en.apa.az/asia/iranian-military-adviser-questions-us-role-in-strait-of-hormuz-518598",
+        "type": "intl"
+      },
+      {
+        "title": "US Embassy in Jordan urges citizens to consider leaving Middle East",
+        "url": "https://aa.com.tr/en/americas/us-embassy-in-jordan-urges-citizens-to-consider-leaving-middle-east/4015664",
+        "type": "intl"
+      },
+      {
+        "title": "Iran live updates : Trump weighs strikes on Iranian energy sites , US officials say",
+        "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-progress-made-strait-hormuz/?id=135110405&entryId=135282589",
+        "type": "intl"
+      },
+      {
+        "title": "US sanctions Iranian firms over Strait of Hormuz  insurance  scheme accepting Bitcoin | Indiablooms",
+        "url": "https://www.indiablooms.com/world/us-sanctions-iranian-firms-over-strait-of-hormuz-insurance-scheme-accepting-bitcoin/details",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Prepares Response Plan for Potential US - Israel Attacks",
+        "url": "https://www.newkerala.com/news/a/iran-plan-ready-responding-potential-attacks-infrastructure-report-808.htm",
+        "type": "intl"
+      },
+      {
+        "title": "What to Know About the Russia and Iran Sanctions Bill",
+        "url": "https://www.theepochtimes.com/world/what-to-know-about-the-russia-and-iran-sanctions-bill-6069408",
+        "type": "intl"
+      },
+      {
+        "title": "  We will kill you . Iran defiant as Trump moves to  smack them . ",
+        "url": "https://www.yahoo.com/news/politics/articles/kill-iran-defiant-trump-moves-180848313.html",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis deny plan to charge ships transiting Red Sea - Grenada Chronicle – Daily Grenada And Caribbean News",
+        "url": "https://grenadachronicle.com/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran prepares plan in response to potential attacks on infrastructure : Tasnim news agency - Xinhua",
+        "url": "https://english.news.cn/20260801/c24b1464a73e4055a894d40bc346c100/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "UPDATES : US War on Iran , Day 156 - American Attacks Resume",
+        "url": "https://eaworldview.com/2026/08/us-iran-american-attacks-resume/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Has Surrounded Saudi Arabia And Threats Are Closing in",
+        "url": "https://www.newsweek.com/iran-has-surrounded-saudi-arabia-and-threats-are-closing-in-12266153",
+        "type": "intl"
+      },
+      {
+        "title": "US Senate bill on Russia sanctions risks backfiring against Europe",
+        "url": "https://www.euronews.com/my-europe/2026/08/01/us-senate-bill-on-russia-sanctions-risks-backfiring-against-european-allies",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran",
+        "url": "https://www.bostonglobe.com/2026/08/01/world/trump-threatens-more-strikes-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia Unveils 43 - Nation Maritime Alliance to Guard Red Sea",
+        "url": "https://voiceofvienna.org/saudi-arabia-unveils-43-nation-maritime-alliance-to-guard-red-sea/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Israel Considering Land Blockade to Pressure Iran Economy : Report",
+        "url": "https://www.khaama.com/us-israel-considering-land-blockade-to-pressure-irans-economy-report/",
+        "type": "intl"
+      },
+      {
+        "title": "Live updates : US plans fresh strikes on Iran as soon as this weekend , officials say",
+        "url": "https://edition.cnn.com/2026/08/01/world/live-news/iran-war-trump",
+        "type": "intl"
+      },
+      {
+        "title": "Tehran working with Oman to establish mechanisms for managing Strait of Hormuz navigation : Iran",
+        "url": "https://aa.com.tr/en/middle-east/tehran-working-with-oman-to-establish-mechanisms-for-managing-strait-of-hormuz-navigation-iran/4015447",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi - led maritime defense alliance underscores shift in regional security calculus -- China Economic Net",
+        "url": "http://en.ce.cn/main/latest/202608/t20260801_3122067.shtml",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis deny plans to impose fees on ships sailing through Red Sea",
+        "url": "https://dunyanews.tv/en/World/965717-yemens-houthis-deny-plans-to-impose-fees-on-ships-sailing-through-red",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis say no plans to tax vessels in Red Sea despite blockade",
+        "url": "http://www.jpost.com/middle-east/article-904251",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis deny plan to charge ships transiting Red Sea | Houthis News",
+        "url": "https://www.aljazeera.com/news/2026/8/1/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Iran conundrum | Top News",
+        "url": "https://www.bssnews.net/news/top-news/410633",
+        "type": "intl"
+      },
+      {
+        "title": "White House Signals Trump is Weighing New Strikes on Iran",
+        "url": "https://www.oneindia.com/international/white-house-signals-trump-is-weighing-new-strikes-on-iran-8163445.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war LIVE Updates : Trump considering new strikes within days , says  we just want to win  ",
+        "url": "https://www.livemint.com/news/world/us-iran-war-live-updates-donald-trump-new-strikes-weekend-tehran-strait-of-hormuz-kuwait-drone-attacks-11785542608064.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens to hit Iran  very hard  ",
+        "url": "https://www.thedailystar.net/news/world/us-israel-war-iran/news/trump-threatens-hit-iran-very-hard-4237406",
+        "type": "intl"
+      },
+      {
+        "title": "Protecting Red Sea : Bangladesh joins KSA - led coalition",
+        "url": "https://www.thedailystar.net/news/bangladesh/news/protecting-red-sea-bangladesh-joins-ksa-led-coalition-4237331",
+        "type": "intl"
+      },
+      {
+        "title": "UK , UAE discuss situation in the Middle East , Strait of Hormuz",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-uae-discuss-situation-middle-east-strait-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "White House signals Trump is weighing new strikes on Iran , and other developments in the Middle East",
+        "url": "https://www.wral.com/news/ap/93048-hamas-says-a-deal-has-been-reached-in-gaza-and-other-developments-in-the-middle-east/",
+        "type": "intl"
+      },
+      {
+        "title": "미·이스라엘, 이란 에너지시설 공습 임박…중동 다시 전운",
+        "url": "https://n.news.naver.com/mnews/article/018/0006341886?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국, 이번 주말 이란 역대 최강 공습\"…국제유가 다시 불안",
+        "url": "https://n.news.naver.com/mnews/article/057/0001961565?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "청와대 \"호르무즈 기여 방안, 다양한 가능성 검토하는 단계\"",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532645",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 대치 속 호르무즈 입구서 유조선 잇따라 불길",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532627",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구에서 또 유조선 피격",
+        "url": "https://n.news.naver.com/mnews/article/056/0012229564?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이스라엘 이란 공습설…호르무즈 유조선 피격",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16152296",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 유조선 또 피격…이란 “美 공격 시 에너지시설 조준”",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355196?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 유조선 잇단 피격·폭발",
+        "url": "https://n.news.naver.com/mnews/article/658/0000151131?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"큰 물보라와 함께 폭발\"…호르무즈 입구서 유조선 피격·폭발",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630792?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국-이란 갈등 속 호르무즈 해협서 유조선 또 피격…'항해 불능 상태'",
+        "url": "https://n.news.naver.com/mnews/article/656/0000182998?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "\"물보라 치며 폭발\"…호르무즈 해협 입구서 잇따라 불길",
+        "url": "https://n.news.naver.com/mnews/article/215/0001260807?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 확전시사 속…\"호르무즈 유조선 피격·쿠웨이트 방공망 가동\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014102544?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 대치 장기화 국면 속 호르무즈 해협에서 유조선 잇따라 피격",
+        "url": "https://www.ajunews.com/view/20260801165425667",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈해협서 유조선 피격·폭발 잇따라…미·이란 긴장 고조",
+        "url": "https://www.etoday.co.kr/news/view/2609981",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 유조선 잇단 피격·폭발…“기관실 손상, 항해 불능 상...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003461708?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 유조선 피격·폭발 잇따라",
+        "url": "https://www.namdonews.com/news/articleView.html?idxno=918670",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈서 또 유조선 피격·폭발...전면전 재개 우려 고조",
+        "url": "https://n.news.naver.com/mnews/article/018/0006342193?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈해협서 유조선 2척 피격·폭발... 군사 긴장 고조",
+        "url": "https://www.hidomin.com/news/articleView.html?idxno=715538",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구 유조선 잇따라 피격",
+        "url": "https://n.news.naver.com/mnews/article/052/0002387596?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"큰 물보라와 함께 폭발\"…호르무즈 입구서 유조선 피격·폭발(종합)",
+        "url": "https://n.news.naver.com/mnews/article/079/0004174513?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈서 유조선 2척 폭발…미 인프라 타격 경고 속 긴장감 최고조",
+        "url": "https://n.news.naver.com/mnews/article/029/0003040089?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 유조선 또 피격…운항 불능 상태",
+        "url": "https://n.news.naver.com/mnews/article/020/0003738158?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美-이란 갈등 고조… 호르무즈 인근 유조선 피격",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3421718",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 대립각 속...호르무즈 해협 유조선 사고 '불길'",
+        "url": "https://n.news.naver.com/mnews/article/374/0000525004?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "“큰 물보라와 함께 폭발했다”…호르무즈 입구서 유조선 잇따라 불길",
+        "url": "https://n.news.naver.com/mnews/article/009/0005715319?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 유조선 또 피격…다른 한척엔 원인미상 폭발도",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630782?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘, 이란 에너지시설 공습 임박⋯호르무즈해협 유조선도 피격",
+        "url": "https://n.news.naver.com/mnews/article/031/0001046539?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美, 이르면 주말 이란 에너지시설 공습 재개…전면전 재확산 우려",
+        "url": "https://www.kukinews.com/article/view/kuk202608010021",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 대치 속 호르무즈 입구서 유조선 잇따라 불길(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228354?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈해협 입구서 유조선 겨냥 공격·폭발 잇따라(종합)",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091745?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이란 갈등 속 호르무즈 해협 입구서 유조선 또 피격",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532623",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 대이란 공습 재개 초읽기...이란 “미국 에너지시설 보복” 경...",
+        "url": "https://www.m-economynews.com/news/article.html?no=69308",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 유조선 또 피격…\"미확인 발사체 맞아\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630766?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]“美·이스라엘, 주말 이란 에너지시설 역대 가장 강력한 공습 계...",
+        "url": "https://n.news.naver.com/mnews/article/021/0002808467?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“호르무즈서 유조선 1척 피격”…확전 우려",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355169?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 긴장 속 호르무즈 해협 입구 유조선 또 피격",
+        "url": "https://n.news.naver.com/mnews/article/005/0001864349?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 또 유조선 피격…\"항해 불능 상태\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891294?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구 유조선 피격…기관실 손상에 항해 불능",
+        "url": "https://n.news.naver.com/mnews/article/119/0003117222?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 대치 속 호르무즈 입구에서 유조선 잇따라 불길",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515298?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "또 호르무즈 해협 입구서 유조선 피격...전면전 재개 '우려'",
+        "url": "https://n.news.naver.com/mnews/article/660/0000114341?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 확전시사 속…\"호르무즈 해협서 유조선 1척 피격 확인\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014102380?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 유조선 또 피격…\"운항 불능 상태\"",
+        "url": "https://n.news.naver.com/mnews/article/057/0001961514?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 유조선 또 피격",
+        "url": "https://n.news.naver.com/mnews/article/014/0005555863?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 유조선 또 피격…항해 불능에 긴장 최고조",
+        "url": "https://n.news.naver.com/mnews/article/029/0003040081?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 긴장 고조 속 호르무즈 해협 입구서 유조선 피격",
+        "url": "https://n.news.naver.com/mnews/article/079/0004174505?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 입구서 유조선 또 피격…기관실 파손 ‘운항 불능’",
+        "url": "https://www.kbmaeil.com/article/20260801500082",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈해협 오만 연안서 유조선 피격…\"기관실 파손돼 운항 불능\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091661?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 유조선 또 피격…항해 불능 상태",
+        "url": "https://n.news.naver.com/mnews/article/015/0005316276?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 입구서 또 유조선 피격",
+        "url": "https://n.news.naver.com/mnews/article/374/0000524993?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “이란 세게 때릴 것”…美 추가 공습 검토에 중동 긴장 고조",
+        "url": "https://n.news.naver.com/mnews/article/018/0006341903?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 이란, 호르무즈해협 유조선 공격…국제 유가 다시 올랐다",
+        "url": "https://n.news.naver.com/mnews/article/021/0002808452?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국·이스라엘, 이번 주말 이란 에너지 시설 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005797555?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “강하게 타격할 것”…美, 이란 에너지시설 공습 예고",
+        "url": "https://n.news.naver.com/mnews/article/366/0001183654?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이스라엘, 주말 이란 공습 채비…이란 \"미국 시설도 보복\"",
+        "url": "https://n.news.naver.com/mnews/article/119/0003117207?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미, 이란 에너지시설 타격하나…\"주말 대규모 공습\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891247?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘, 이란 에너지 시설 대규모 공습 추진…중동 긴장 다시 최...",
+        "url": "https://www.kgnews.co.kr/news/article.html?no=905980",
+        "type": "dom"
+      },
+      {
+        "title": "“역대 가장 강력한 공습”…주말 이란 에너지 시설 타격 예고한 미국",
+        "url": "https://n.news.naver.com/mnews/article/009/0005715289?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘, 이란 에너지시설 정조준…원유 공급망 긴장 고조",
+        "url": "https://www.g-enews.com/view.php?ud=2026080111014139133084322ec9_1",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국·이스라엘, 이번 주말 이란 에너지 인프라 공습 계획\"",
+        "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000053756",
+        "type": "dom"
+      },
+      {
+        "title": "美·이스라엘, 이란 에너지 시설 공습 검토…중동 긴장 재점화",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647560?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국·이스라엘, 이번 주말 이란 에너지 인프라 대규모 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001377199?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"더는 못 견딜 때까지 타격\"... 이르면 이번 주말 이란 공격 개시...",
+        "url": "https://www.insight.co.kr/news/565903",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국·이스라엘, 이란 에너지시설 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/656/0000182979?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국·이스라엘, 이란 에너지 인프라 대규모 공습 계획\"",
+        "url": "https://www.ajunews.com/view/20260801103928515",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] \"트럼프, 주말 이란 에너지 시설 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/243/0000101148?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란 '에너지 인프라' 공습 계획\" … 전면전 재개되나",
+        "url": "https://www.newdaily.co.kr/site/data/html/2026/08/01/2026080100021.html",
+        "type": "dom"
+      },
+      {
+        "title": "\"미국·이스라엘, 이번 주말 이란 에너지 인프라 공습 계획\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228121?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이스라엘, 이란 에너지 시설 공습 검토…주말 군사행동 가능성",
+        "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=83857",
+        "type": "dom"
+      },
+      {
+        "title": "미, 이란 에너지시설 타격하나…\"주말 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891222?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이스라엘, 이란 에너지 심장부 때리나…“주말 역대급 공습”",
+        "url": "https://n.news.naver.com/mnews/article/666/0000117430?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국, 이란 에너지 시설 노리나…주말 대규모 공습 검토",
+        "url": "https://n.news.naver.com/mnews/article/005/0001864335?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"美·이, 주말 이란 에너지시설 공습계획\"…종전 국면 위태",
+        "url": "https://n.news.naver.com/mnews/article/469/0000945641?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘 주말 내내 이란 에너지 시설 공습 계획",
+        "url": "https://n.news.naver.com/mnews/article/003/0014102196?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"호르무즈 해협 폐쇄 안 됐다\"…이란 주장 정면 반박",
+        "url": "https://www.sentv.co.kr/article/view/sentv202608010004",
+        "type": "dom"
+      },
+      {
+        "title": "\"美·이스라엘, 이번 주말 이란 에너지 인프라 대규모 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630706?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"이란의 호르무즈 폐쇄 주장은 거짓\"",
+        "url": "https://n.news.naver.com/mnews/article/014/0005555832?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이번 주말 이란 공습 재개 승인…에너지시설 타격 검토",
+        "url": "https://n.news.naver.com/mnews/article/417/0001153998?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"美, 이르면 주말 대이란 공습 재개\"…트럼프 승인",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091614?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"이번 주말 이란 에너지시설 공습 가능성\"…이란 \"광범위 대응할 것...",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630730?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"美·이스라엘, 주말 이란 에너지 시설 대규모 공습 \"...전면전 재점화...",
+        "url": "https://www.hidomin.com/news/articleView.html?idxno=715523",
+        "type": "dom"
+      },
+      {
+        "title": "\"미·이스라엘, 주말 이란 에너지시설 역대급 공습 계획\"",
+        "url": "https://n.news.naver.com/mnews/article/057/0001961497?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘, 주말 내 이란 에너지 시설 타격할 수도…“역대 가장 강...",
+        "url": "https://n.news.naver.com/mnews/article/028/0002816700?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 \"에너지 시설 공격하면 중동 내 미국·이스라엘 시설 타격\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002387476?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "CBS \"美·이스라엘, 이란 에너지 시설 폭격 준비…이르면 주말\"(상보)",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428148",
+        "type": "dom"
+      },
+      {
+        "title": "\"지켜보자\"던 트럼프, 닷새 만에 공격 승인…이란도 즉각 경고",
+        "url": "https://n.news.naver.com/mnews/article/437/0000504116?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란군 \"미국이 역내 긴장 고조시켜\"…협력국에 경고",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091894?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"호르무즈 기여 방안, 다양한 가능성 검토 단계\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630751?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "美 요청 일주일 지났는데···靑 \"호르무즈 기여 방안, 여러 가능성 검...",
+        "url": "https://www.pennmike.com/news/articleView.html?idxno=124839",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 안정성 위한 한국의 전략…군사 자산 파견 논의 중",
+        "url": "https://www.gokorea.kr/news/articleView.html?idxno=873750",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"호르무즈 기여 방안, 다양한 가능성 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891252?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 이란전 출구 전략… '휴전 촉구' 사우디 vs '강경 대응' 이스라엘",
+        "url": "https://www.gukjenews.com/news/articleView.html?idxno=3652822",
+        "type": "dom"
+      },
+      {
+        "title": "청와대 \"호르무즈 기여, 다양한 방안 검토하는 단계\"",
+        "url": "https://n.news.naver.com/mnews/article/057/0001961498?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "위성락 “호르무즈 기여, 가능한 옵션 검토 중…美 구체적 요구 없어”",
+        "url": "https://n.news.naver.com/mnews/article/366/0001183651?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "위성락 \"美, 호르무즈 특정 군자산 파견 요구 안 해\"",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3421655",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무부, 이란 해상보험 관련 2개사 제재…비트코인 결제 걸림돌",
+        "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689058",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협 지원 관련 靑 “美, 구체적 요구 하지 않고 있어…다양한...",
+        "url": "https://n.news.naver.com/mnews/article/022/0004147567?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무장관, 이란 자산 전 세계 추적…대상·규모 미확인",
+        "url": "https://www.tokenpost.kr/news/breaking/383667",
+        "type": "dom"
+      },
+      {
+        "title": "두바이 미인가 거래소, 이란 40억달러 통로로 지목",
+        "url": "https://www.tokenpost.kr/news/breaking/383571",
+        "type": "dom"
+      },
+      {
+        "title": "이란 공습 초읽기?…美, 중동 자국민에 “대피 준비” 잇단 경고",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647624?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“미국, 이란 에너지시설 주말에 공습계획”…전쟁 격화 가능성",
+        "url": "https://n.news.naver.com/mnews/article/056/0012229582?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中, 남중국해 분쟁 해역서 군사훈련…\"필리핀 영해기선은 불법\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228448?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중국, 남중국해서 해·공군 군사훈련...\"필리핀 영해기선은 불법\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002387551?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중국군, 스카버러 암초서 해·공군 합동훈련…필리핀과 긴장",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091655?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "러, 연일 키이우 공습…우크라는 러 컨테이너선 격침",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228523?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중동 美 대사관, 무력 충돌 가능성에 교민들에게 대피 권고...\"출국 준비...",
+        "url": "https://www.ajunews.com/view/20260801213056764",
+        "type": "dom"
+      },
+      {
+        "title": "\"미, 주말 이란 대규모 공습\"…중동 긴장 격화",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891350?sid=161",
+        "type": "dom"
+      },
+      {
+        "title": "중국, 대만 침공 현실화되나",
+        "url": "https://www.bigtanews.co.kr/article/view/big202608010003",
+        "type": "dom"
+      },
+      {
+        "title": "中 국방부장 둥쥔, 대만독립·외부개입 경고....\"단호히 좌절시킬 것\"",
+        "url": "https://www.ajunews.com/view/20260801150935637",
+        "type": "dom"
+      },
+      {
+        "title": "中 국방장관 \"대만 독립 시도, 단호히 저지하겠다\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005797576?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "우크라 해상드론에 러 로사톰 화물선 침몰…17명 전원 구조",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091947?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "쿠웨이트 \"이란 드론 공격에 정부시설 1곳 피격…인명 피해 없어\"",
+        "url": "https://n.news.naver.com/mnews/article/008/0005394294?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "쿠웨이트 \"이란 드론 격추…정부시설·민간차량 피격\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009091882?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란 압박 위해 추가 군사공격 준비 지시…\"협상 복귀 유도\"",
+        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=389418",
+        "type": "dom"
+      },
+      {
+        "title": "이란전 어디까지 번지나? 이제 튀르키예까지?",
+        "url": "https://n.news.naver.com/mnews/article/374/0000524989?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "Korea, Argentina leaders agree to energy supply chains cooperation in sum...",
+        "url": "https://n.news.naver.com/mnews/article/640/0000092067?sid=100",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "Tanker carrying Qatari LNG struck while transiting Strait of Hormuz",
+        "url": "https://www.moneycontrol.com/news/business/tanker-carrying-qatari-lng-struck-while-transiting-strait-of-hormuz-13990983.html",
+        "type": "intl"
+      },
+      {
+        "title": "GasLog LNG Carrier Damaged Exiting Hormuz as UKMTO Reports Two New Attacks",
+        "url": "https://gcaptain.com/gaslog-lng-carrier-damaged-exiting-hormuz-as-ukmto-reports-two-new-attacks/",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker struck by unknown projectile off Oman , engine room damaged : united kingdom maritime agency",
+        "url": "https://aa.com.tr/en/world/tanker-struck-by-unknown-projectile-off-oman-engine-room-damaged-uk-maritime-agency/4015459",
+        "type": "intl"
+      },
+      {
+        "title": "UKMTO Reports Two Tanker Incidents Off Oman",
+        "url": "https://english.aawsat.com/gulf/5302260-ukmto-reports-two-tanker-incidents-oman",
+        "type": "intl"
+      },
+      {
+        "title": "Oil leak spreads from a sanctioned tanker grounded off Oman , images show",
+        "url": "https://www.yahoo.com/news/world/articles/oil-leak-spreads-sanctioned-tanker-183928205.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil leak spreads from a sanctioned tanker grounded off Oman , images show – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/08/01/oil-leak-spreads-from-a-sanctioned-tanker-grounded-off-oman-images-show",
+        "type": "intl"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Iraq and Turkey strike pipeline deal to boost exports during Hormuz closures",
+        "url": "https://www.timeslive.co.za/news/2026-08-01-iraq-and-turkey-strike-pipeline-deal-to-boost-exports-during-hormuz-closures/",
+        "type": "intl"
+      },
+      {
+        "title": "Iraq and Turkey strike a 1 - year oil pipeline deal to boost exports during ongoing Hormuz closures",
+        "url": "https://www.yahoo.com/news/world/articles/iraq-turkey-strike-1-oil-174014581.html",
+        "type": "intl"
+      },
+      {
+        "title": "ADNOC Buys Five Supertankers as Hormuz Crisis Tightens Shipping",
+        "url": "https://finance.yahoo.com/energy/articles/adnoc-buys-five-supertankers-hormuz-094500808.html",
+        "type": "intl"
+      },
+      {
+        "title": "Figures behind rush for Hormuz oil export alternatives",
+        "url": "https://www.bssnews.net/news/top-news/410620",
+        "type": "intl"
+      },
+      {
+        "title": "Kpler says Hormuz traffic drops sharply , remains steady through Bab el - Mandeb",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/kpler-says-hormuz-traffic-drops-sharply-remains-steady-through-bab-el",
+        "type": "intl"
+      },
+      {
+        "title": "Yemeni forces say eight Saudi tankers forced to reroute",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-say-eight-saudi-tankers-forced-reroute",
+        "type": "intl"
+      },
+      {
+        "title": "How many ships are transiting through Hormuz and Bab Al Mandeb ? ",
+        "url": "https://www.thenationalnews.com/business/energy/2026/08/01/how-many-ships-are-transiting-through-hormuz-and-bab-al-mandeb/",
+        "type": "intl"
+      },
+      {
+        "title": "해진공, “공급과잉 우려…운임·선가 하락 불가피”",
+        "url": "https://www.ekn.kr/web/view.php?key=20260801023278548",
+        "type": "dom"
+      },
+      {
+        "title": "[정책돋보기] ‘해운 탄소세’가 온다",
+        "url": "https://n.news.naver.com/mnews/article/022/0004147632?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "BNK금융, 해운협회와 해양금융 협력 강화…선박금융 지원 확대",
+        "url": "https://www.viva100.com/article/20260801500218",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Indian Oil ramps up spot crude purchases as Middle East disruptions hit supplies",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/indian-oil-ramps-up-spot-crude-purchases-as-middle-east-disruptions-hit-supplies/articleshow/132786908.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Oman launches tender for Ras Markaz oil storage expansion",
+        "url": "https://www.muscatdaily.com/2026/08/01/oman-launches-tender-for-ras-markaz-oil-storage-expansion/",
+        "type": "intl"
+      },
+      {
+        "title": "India secures LNG supplies till September amid fresh escalation in West Asia war",
+        "url": "https://www.livemint.com/industry/energy/india-lng-supplies-west-asia-war-europe-winter-lng-demand-qatar-us-uae-angola-trinidad-oman-nigeria-india-lng-imports-11785493145463.html",
+        "type": "intl"
+      },
+      {
+        "title": "아르헨서 내년부터 원유 수입…이중과세 방지협정 최종 타결",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532647",
+        "type": "dom"
+      },
+      {
+        "title": "韓, 내년부터 아르헨 원유 수입 개시…리튬 개발 협력도 강화",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630810?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 정상회담…“내년부터 원유 수입”",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355205?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "아르헨서 내년부터 원유 수입…이중과세 방지협정 타결",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=83949",
+        "type": "dom"
+      },
+      {
+        "title": "'아르헨티나 원유 시대' 열린다…내년부터 본격 수입",
+        "url": "https://news.cpbc.co.kr/article/1174684?division=NAVER",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨 정상회담…올해 원유 88만배럴 시범 수입",
+        "url": "https://n.news.naver.com/mnews/article/437/0000504087?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨티나산 원유 도입…중동 의존 낮춘다",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=849080",
+        "type": "dom"
+      },
+      {
+        "title": "‘원유 공급선’ 남미로 확대…美서 ‘AI 허브’ 공표하고 3개국 공급망...",
+        "url": "https://www.mediapen.com/news/view/1113749",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨산 원유 수입…핵심광물 공급망 협력 체계 마련",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148969192&call_from=naver_news",
+        "type": "dom"
+      },
+      {
+        "title": "22년 만에 아르헨 방문‥리튬·원유 공급 협력",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515291?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨티나, 정상 방문 계기 첫 자원 MOU…중남미 핵심광물 공급망...",
+        "url": "https://n.news.naver.com/mnews/article/082/0001392173?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨 원유 수입…한·아르헨 이중과세방지협정 최종 타결",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355152?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 정상회담…\"내년부터 원유 수입\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891196?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 정상회담 \"내년부터 아르헨 원유 수입 개시..88만 배럴 시범...",
+        "url": "http://www.breaknews.com/1226052",
+        "type": "dom"
+      },
+      {
+        "title": "BPA·HD현대삼호, AI 항만기술 공동개발 협약 체결",
+        "url": "https://www.hdhy.co.kr/news/articleView.html?idxno=34996",
+        "type": "dom"
+      },
+      {
+        "title": "철광석 거물 레이디언트 월드 서류 위조 의혹 직격탄",
+        "url": "https://www.g-enews.com/view.php?ud=2026080115072726132bd56fbc3c_1",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Oil price rises after Iran says it stops ships in Hormuz",
+        "url": "https://kaieteurnewsonline.com/2026/08/01/oil-price-rises-after-iran-says-it-stops-ships-in-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices settle more than 1 % higher , log strongest month since March",
+        "url": "https://www.asiaone.com:443/money/oil-prices-settle-more-1-higher-log-strongest-month-march",
+        "type": "intl"
+      },
+      {
+        "title": "Geopolitical turmoil pushes global oil prices to new highs",
+        "url": "https://www.azernews.az/oil_and_gas/261876.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil companies report sky - high profits thanks to wartime crude prices",
+        "url": "https://www.npr.org/2026/07/31/nx-s1-5910660/big-oil-earnings-q2-2026",
+        "type": "intl"
+      },
+      {
+        "title": "UAE to Overhaul How It Prices All Crude Oil",
+        "url": "https://www.rigzone.com/news/wire/uae_to_overhaul_how_it_prices_all_crude_oil-01-aug-2026-184272-article/",
+        "type": "intl"
+      },
+      {
+        "title": "Indian Oil Corp boost spot oil buy amid Middle East crisis",
+        "url": "https://arynews.tv/indian-oil-corp-boost-spot-oil-buy-amid-middle-east-crisis",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war drives oil profits to highest levels in years - Hawaii Tribune - Herald",
+        "url": "https://www.hawaiitribune-herald.com/2026/08/01/nation-world-news/iran-war-drives-oil-profits-to-highest-levels-in-years/",
+        "type": "intl"
+      },
+      {
+        "title": "Trumpflation Is Evolving Into a 3 - Headed Monster , and Wall Street Will End Up Paying the Price",
+        "url": "https://www.fool.com/investing/2026/08/01/trumpflation-3-headed-monster-wall-st-pay-price/?source=iedfolrf0000001",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war drives oil profits to highest levels in years",
+        "url": "https://www.westhawaiitoday.com/2026/08/01/nation-world-news/iran-war-drives-oil-profits-to-highest-levels-in-years/",
+        "type": "intl"
+      },
+      {
+        "title": "Indian Oil rules out shift from Gulf crude despite regional conflict",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/indian-oil-rules-out-shift-from-gulf-crude-despite-regional-conflict/articleshow/132785229.cms",
+        "type": "intl"
+      },
+      {
+        "title": "US - Iran war fuels record oil profits as consumers struggle with soaring costs",
+        "url": "https://www.theweek.in/news/middle-east/2026/08/01/us-iran-war-fuels-record-oil-profits-as-consumers-struggle-with-soaring-costs.html",
+        "type": "intl"
+      },
+      {
+        "title": "Asia Roundup : Yen weakens after Bank of Japan rate decision , Asian stocks gain , Gold slips , Oil eases - July 31st , 2026",
+        "url": "http://www.econotimes.com/Asias-Roundup-Yen-weakens-after-Bank-of-Japan-rate-decision-Asian-stocks-gain-Gold-slips-Oil-eases-July-31st2026-1748271",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East Oil Shock Could Hand Upstream Sector a $495 Billion Windfall",
+        "url": "https://finance.yahoo.com/energy/articles/middle-east-oil-shock-could-220000904.html",
+        "type": "intl"
+      },
+      {
+        "title": "Relief for Businesses as Commercial LPG Prices Drop",
+        "url": "https://www.deccanchronicle.com/nation/commercial-lpg-cylinder-rates-slashed-by-up-to-rs-209-1975679",
+        "type": "intl"
+      },
+      {
+        "title": "Closely Monitoring : India on US Bill Seeking 100 % Tariffs on Russian Oil Buyers",
+        "url": "https://www.deccanchronicle.com/nation/world/closely-monitoring-india-on-us-bill-seeking-100-tariffs-on-russian-oil-buyers-1975672",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Jump , Dow Just Lost 1 , 100 Points As AI Stocks Are Cracking",
+        "url": "https://memeburn.com/ai-stocks-crash-oil-spike-fed-hold-crypto/",
+        "type": "intl"
+      },
+      {
+        "title": "Petrol , diesel prices today , 1 August : Fuel rates in Delhi , Mumbai , Bengaluru as Brent posts biggest monthly jump",
+        "url": "https://www.livemint.com/news/india/petrol-diesel-prices-today-1-august-fuel-rates-in-delhi-mumbai-bengaluru-as-brent-posts-biggest-monthly-jump-11785545020240.html",
+        "type": "intl"
+      },
+      {
+        "title": "Gas prices climb as oil companies report soaring profits",
+        "url": "https://www.wmur.com/article/gas-prices-oil-companies-soaring-profits/73320141",
+        "type": "intl"
+      },
+      {
+        "title": "  Closely monitoring : India on US bill seeking upto 100 % tariffs on Russian oil buyers",
+        "url": "https://news.webindia123.com/news/Articles/World/20260801/4481762.html",
+        "type": "intl"
+      },
+      {
+        "title": "호르무즈 해협 유조선 피격에 국제유가 꿈틀…국내 기름값 반등하나",
+        "url": "https://news.mtn.co.kr/news-detail/2026080109514175372",
+        "type": "dom"
+      },
+      {
+        "title": "7월 물가 3% 밑돌까…한은 ‘8월 연속 인상’ 향방 가른다",
+        "url": "https://n.news.naver.com/mnews/article/016/0002678230?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "휘발유·경유 1800원대···전국 주유소 기름값 11주 연속 내림세",
+        "url": "https://www.ekn.kr/web/view.php?key=20260801021348616",
+        "type": "dom"
+      },
+      {
+        "title": "11주째 떨어진 기름값…휘발유·경유 1천800원대 '숨통'",
+        "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=62298",
+        "type": "dom"
+      },
+      {
+        "title": "전국 기름값 11주 연속 하락세…가장 싼 지역은?",
+        "url": "http://www.segyebiz.com/newsView/20260801507753?OutUrl=naver",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 11주째 하락세…1800원대 기록",
+        "url": "https://n.news.naver.com/mnews/article/022/0004147594?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "기름값 11주 연속 하락…휘발유·경유 1800원대",
+        "url": "https://n.news.naver.com/mnews/article/448/0000630740?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "전국 주유소 평균 휘발유 1869.1원, 경유 1852.8원...기름값 11주째 하락",
+        "url": "https://www.livebiz.today/news/articleView.html?idxno=203755",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 11주째 하락…휘발유·경유 1800원대",
+        "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=362908",
+        "type": "dom"
+      },
+      {
+        "title": "[분석] 중동 전쟁 고조 · 8월 CP 인상 속 이달 LPG 국내 가격 '동결'",
+        "url": "https://www.todayenergy.kr/news/articleView.html?idxno=301124",
+        "type": "dom"
+      },
+      {
+        "title": "휘발유 경유 가격 11주 연속 하락세…국제유가 변동, 국내 유류 가격에...",
+        "url": "https://www.gokorea.kr/news/articleView.html?idxno=873752",
+        "type": "dom"
+      },
+      {
+        "title": "부산 주유소 휘발유 평균가 ℓ당 1852원… 지난주보다 3.1원 ↓",
+        "url": "https://n.news.naver.com/mnews/article/658/0000151121?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값, 11주 연속 하락…휘발유·경유 1800원대",
+        "url": "https://n.news.naver.com/mnews/article/005/0001864343?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "기름값 11주째 내리막…국제유가 하락에 추가 인하 기대",
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=128524",
+        "type": "dom"
+      },
+      {
+        "title": "국내 기름값 11주 연속 내림세…휘발유·경유 1800원대 유지",
+        "url": "https://news.mtn.co.kr/news-detail/2026080110152022690",
+        "type": "dom"
+      },
+      {
+        "title": "국내 기름값 11주째 하락세…휘발유·경유 1,800원대 유지",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891225?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 11주째 내림세…휘발유 리터당 1869.1원",
+        "url": "http://www.newstomato.com/ReadNews.aspx?no=1308934&inflow=N",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 11주 연속 하락…원달러 환율부터 최고가격제 시너지",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=849077",
+        "type": "dom"
+      },
+      {
+        "title": "원유 수송 위험 확대 우려 등에 7월31일 국제유가 상승",
+        "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227181",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 내렸지만…국제유가 다시 들썩 '물가 불안' 확대",
+        "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5046799",
+        "type": "dom"
+      },
+      {
+        "title": "“내 계좌만 왜 이래” 코스피 20% 급락에도...‘이곳’ 투자한 개미들...",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647583?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 이란 에너지 시설 폭격 가능성…국제유가 다시 오르나",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=849081",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴스초점] 하루에 1,001p↑…코스피, 역대 최대폭 상승",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891291?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "국제 LPG가격 반등...9월 국내 공급가 ㎏당 50원 인상요인",
+        "url": "http://www.e-platform.net/news/articleView.html?idxno=104296",
+        "type": "dom"
+      },
+      {
+        "title": "기름값 하락세...4달 만에 1,800원대로",
+        "url": "https://n.news.naver.com/mnews/article/661/0000080916?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 11주째 하락…휘발유 1천869.1원",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532642",
+        "type": "dom"
+      },
+      {
+        "title": "\"어정쩡한 美연준 보다 유가·이란이 금융시장에 더 영향\" [주末머니]",
+        "url": "https://n.news.naver.com/mnews/article/277/0005797579?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "기름값 11주째 내렸다… 휘발유 1869원·경유 1853원",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3421709",
+        "type": "dom"
+      },
+      {
+        "title": "다시 뛰는 유가에 금리·환율·관세 '빨간불'… 불안한 하반기 물가",
+        "url": "https://n.news.naver.com/mnews/article/665/0000007857?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "기름값 연속 하락…휘발유·경유 1,800원대 유지",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891278?sid=101",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "29도까지 오른 수온…제주서 광어·넙치 3만마리 폐사",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355166?sid=103",
+        "type": "dom"
+      },
+      {
+        "title": "수과원, 양식수협과 머리 맞대…고수온·질병 등 현장 현안 점검",
+        "url": "https://www.mhns.co.kr/news/articleView.html?idxno=755174",
+        "type": "dom"
+      },
+      {
+        "title": "위성곤 제주지사, 고수온 피해 양식장 방문",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228153?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "위성곤 제주지사, 고수온 피해 양식장 간담회",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228154?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "고수온 피해 양식장 찾은 위성곤 제주지사",
+        "url": "https://n.news.naver.com/mnews/article/001/0016228152?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "펄펄 끓는 바다...양식 넙치 3만 마리 폐사",
+        "url": "https://n.news.naver.com/mnews/article/661/0000080913?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "제주, 고수온에 넙치 3만여 마리 폐사…서부지역 수온 상승에 '직격탄'",
+        "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4098316",
+        "type": "dom"
+      },
+      {
+        "title": "역대급 폭염에 제주 양식장 광어 3만 마리 폐사...수온 29.3도까지 상승",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647612?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "\"바닷물이 29도까지 치솟았다\"... 제주 고수온에 어류 3만 마리 집단 폐...",
+        "url": "https://www.insight.co.kr/news/565935",
+        "type": "dom"
+      },
+      {
+        "title": "폭염에 달궈진 제주 연안 '29.3도'…넙치 3만여마리 폐사",
+        "url": "https://n.news.naver.com/mnews/article/003/0014102399?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "제주 연안 고수온 양식 피해 잇따라...넙치 3만 마리↑ 폐사",
+        "url": "https://www.newsjeju.net/news/articleView.html?idxno=424053",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "Houthis say they forced eight Saudi oil tankers to change course",
+        "url": "https://www.yahoo.com/news/world/articles/houthis-forced-eight-saudi-oil-090332617.html",
+        "type": "intl"
+      },
+      {
+        "title": "Two VLCCs exit Strait of Hormuz , where traffic remains thin",
+        "url": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/two-vlccs-exit-strait-of-hormuz-where-traffic-remains-thin/articleshow/132781716.cms",
+        "type": "intl"
+      },
+      {
+        "title": "미 중부사령부, 호르무즈 폐쇄 부인…상선 항로 열렸다",
+        "url": "https://www.tokenpost.kr/news/breaking/383553",
+        "type": "dom"
+      },
+      {
+        "title": "SK오션플랜트, 6,800DWT급 SUS 화학제품운반선 2척 수주",
+        "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=90593",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "Exxon , Chevron warn fuel prices to endure as war knocks refining",
+        "url": "https://fortune.com/2026/08/01/exxon-chevron-fuel-prices-diesel-gasoline-refining-capacity/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump considering attacks on Iran energy infrastructure , report says",
+        "url": "https://www.livemint.com/news/us-news/trump-considering-attacks-on-irans-energy-infrastructure-report-says-11785587578235.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns of broad retaliation amid reports of possible US - Israeli strikes on energy infrastructure",
+        "url": "https://pakobserver.net/iran-warns-of-broad-retaliation-amid-reports-of-possible-us-israeli-strikes-on-energy-infrastructure/",
+        "type": "intl"
+      },
+      {
+        "title": "US , Israel weigh bombarding Iran energy infrastructure through the weekend : Report",
+        "url": "https://timesofindia.indiatimes.com/world/us/us-israel-weigh-bombarding-irans-energy-infrastructure-through-the-weekend-report/articleshow/132781485.cms",
+        "type": "intl"
+      },
+      {
+        "title": "US , Israel planning to bombard energy - related targets in Iran : Report",
+        "url": "https://news.webindia123.com/news/Articles/World/20260801/4481769.html",
+        "type": "intl"
+      },
+      {
+        "title": "Guyana FPSO Errea Wittu Sails Toward 250 , 000 Bpd Target",
+        "url": "https://www.riotimesonline.com/guyana-fpso-errea-wittu-sails-250000-bpd/",
+        "type": "intl"
+      },
+      {
+        "title": "\"미·이, 이번 주말 이란 에너지시설 공습 계획\"…전쟁 격화되나",
+        "url": "https://n.news.naver.com/mnews/article/079/0004174504?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘, 이란 에너지 시설 대규모 공습 추진-중동 긴장 다시 전면...",
+        "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=85271",
+        "type": "dom"
+      },
+      {
+        "title": "\"미·이, 주말 이란 에너지시설 공습 계획\"vs이란 \"미·이 주요시설 타격...",
+        "url": "https://n.news.naver.com/mnews/article/052/0002387532?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "CBS \"美·이스라엘, 이번 주말 이란 에너지 인프라 공습 계획\"",
+        "url": "https://www.getnews.co.kr/news/articleView.html?idxno=876747",
+        "type": "dom"
+      },
+      {
+        "title": "미·이스라엘, 이란 에너지시설 공습 추진…이란 \"미군 시설 보복\"",
+        "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1279927",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이스라엘, 이란 에너지 인프라 공습 준비… 중동 긴장 최고조",
+        "url": "https://www.gokorea.kr/news/articleView.html?idxno=873748",
+        "type": "dom"
+      },
+      {
+        "title": "구리값 사상 최고…칠레 폭풍에 공급난 가중",
+        "url": "https://www.g-enews.com/view.php?ud=202608010942176347fbbec65dfb_1",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨티나, 첫 자원 MOU…중남미 핵심광물 공급망 협력",
+        "url": "https://www.goodnews1.com/news/articleView.html?idxno=462634",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨, 첫 자원 MOU... 리튬 공급망 협력·내년 원유 수입 개시",
+        "url": "https://www.meconomynews.com/news/articleView.html?idxno=200165",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"내년부터 아르헨산 원유 수입…핵심광물 공급망 협력 체계 마련\"",
+        "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7177062",
+        "type": "dom"
+      },
+      {
+        "title": "[경제외교 新실크로드 ③] 美선 AI·南美선 광물… 李, 글로벌 '경제안보...",
+        "url": "https://daily.hankooki.com/news/articleView.html?idxno=1391799",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 정상회담…“내년부터 원유 수입·리툼 채굴 공동 프로젝트...",
+        "url": "https://n.news.naver.com/mnews/article/056/0012229573?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "아르헨 원유 수입…핵심 광물 협력 확대",
+        "url": "https://n.news.naver.com/mnews/article/055/0001377254?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "'AI부터 리튬까지'…李 남미외교, 시장 개척 넘어 '경제안보 벨트' 구축",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428166",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨 정상회담 결실…'에너지 공급망' 남미로 확대",
+        "url": "https://n.news.naver.com/mnews/article/437/0000504114?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "李대통령, 아르헨과 공급망 협력 강화…원유·리튬 확보 성과",
+        "url": "https://www.asiatime.co.kr/article/20260801500006",
+        "type": "dom"
+      },
+      {
+        "title": "인디언오일 현물 원유 확대…중동 차질 대응했다",
+        "url": "https://www.tokenpost.kr/news/breaking/383602",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 정상회담…“원유 수입·리튬 채굴 공동프로젝트”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012229562?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨티나, 중남미 핵심광물 공급망 협력‥자원분야 양해각서 체결",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515310?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 자원협력 확장…리튬 넘어 구리·LNG까지",
+        "url": "https://www.g-enews.com/view.php?ud=202608011618586104112616b072_1",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨티나, 핵심광물 협력 MOU…중남미 공급망 협력 강화",
+        "url": "https://www.newspim.com/news/view/20260801000102",
+        "type": "dom"
+      },
+      {
+        "title": "이재명 남미 순방 마무리, 민주당 \"원유·핵심광물 확보 성과... 실용외...",
+        "url": "https://www.insight.co.kr/news/565920",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨, 핵심광물 협력 강화…리튬 공급망 공동 프로젝트 추진",
+        "url": "https://www.kgnews.co.kr/news/article.html?no=905986",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨 정상회담…\"원유 수입·리튬 공동 프로젝트\" 합의",
+        "url": "https://n.news.naver.com/mnews/article/057/0001961513?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨티나, 핵심광물 협력 MOU 체결…중남미 공급망 협력",
+        "url": "https://n.news.naver.com/mnews/article/366/0001183676?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨, 핵심광물 협력 MOU 체결…중남미 공급망 협력 본격화",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148969203&call_from=naver_news",
+        "type": "dom"
+      },
+      {
+        "title": "李대통령 “한·아르헨 새 협력시대 열 것”...원유·리튬 협력 확대 합...",
+        "url": "https://www.m-economynews.com/news/article.html?no=69304",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨 원유 수입…이중과세 방지협정도",
+        "url": "https://n.news.naver.com/mnews/article/422/0000891251?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨서 원유 수입한다…에너지·투자 등 협력 도모",
+        "url": "https://n.news.naver.com/mnews/article/057/0001961503?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨티나 정상회담…靑 \"내년부터 아르헨 원유 수입\"",
+        "url": "https://n.news.naver.com/mnews/article/002/0002450587?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "이재명 대통령, 아르헨과 에너지·핵심광물 협력 강화…원유 수입 다변...",
+        "url": "https://www.kgnews.co.kr/news/article.html?no=905979",
+        "type": "dom"
+      },
+      {
+        "title": "韓·아르헨, 핵심광물 동맹 구축…리튬 넘어 구리·LNG까지 협력 확대",
+        "url": "https://n.news.naver.com/mnews/article/277/0005797552?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨티나, 핵심광물 동맹 구축…리튬 공급망 협력 본격화",
+        "url": "https://n.news.naver.com/mnews/article/018/0006341890?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨, 첫 자원 MOU 체결…핵심광물 공급망 협력 본격화",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428164",
+        "type": "dom"
+      },
+      {
+        "title": "셰일 기반 아르헨티나산 원유·LNG, 한국 도입선 확장 기회",
+        "url": "http://www.e-platform.net/news/articleView.html?idxno=104295",
+        "type": "dom"
+      },
+      {
+        "title": "\"중동 의존 줄이자\"···남미로 넓히는 에너지 공급망",
+        "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=422827",
+        "type": "dom"
+      },
+      {
+        "title": "아르헨서 내년부터 원유 수입…리튬 채굴 공동프로젝트 추진",
+        "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005892113",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨티나, 핵심광물 협력 MOU 체결…중남미 공급망 협력",
+        "url": "https://n.news.naver.com/mnews/article/003/0014102246?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨산 원유 수입 개시…靑 \"원유공급선 남미 확대\"",
+        "url": "https://n.news.naver.com/mnews/article/031/0001046533?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "정부, 아르헨티나와 첫 '핵심광물 협력 MOU' 체결… 중남미 공급망 다변...",
+        "url": "https://n.news.naver.com/mnews/article/119/0003117192?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "한-아르헨 정상 \"아르헨 원유 수입 확대키로\"",
+        "url": "https://www.viewsnnews.com/article?q=237595",
+        "type": "dom"
+      },
+      {
+        "title": "원유 수입선 다원화, 아르헨티나서 내년부터 수입",
+        "url": "http://www.newstown.co.kr/news/articleView.html?idxno=711017",
+        "type": "dom"
+      },
+      {
+        "title": "한국, 내년 아르헨산 원유 수입…중동 편중 낮춘다",
+        "url": "https://www.g-enews.com/view.php?ud=2026080109381421733084322ec9_1",
+        "type": "dom"
+      },
+      {
+        "title": "내년부터 아르헨티나산 원유 수입 … 한-아르헨 정상회담 결과 발표",
+        "url": "https://www.newdaily.co.kr/site/data/html/2026/08/01/2026080100019.html",
+        "type": "dom"
+      },
+      {
+        "title": "이 대통령, 아르헨 원유 수입길 열었다…내년부터 공급선 남미로 확대",
+        "url": "https://n.news.naver.com/mnews/article/417/0001153983?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한·아르헨티나 정상회담…“광물 협력체계 마련·원유 수입 다변화”",
+        "url": "https://n.news.naver.com/mnews/article/243/0000101141?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "대통령실 “한-메르코수르 무역협상 연내 재개 합의…핵심광물 협력 확...",
+        "url": "http://www.segyebiz.com/newsView/20260801504863?OutUrl=naver",
+        "type": "dom"
+      },
+      {
+        "title": "올해 아르헨 원유 88만 배럴 들어온다",
+        "url": "https://n.news.naver.com/mnews/article/082/0001392164?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "李 대통령, 아르헨티나와 리튬·원유 협력 MOU 체결... 남미 시장 수출길...",
+        "url": "https://www.insight.co.kr/news/565890",
+        "type": "dom"
+      },
+      {
+        "title": "아르헨서 내년부터 원유 들여온다…올해 88만배럴 시범 도입",
+        "url": "https://n.news.naver.com/mnews/article/374/0000524981?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "에틸렌 스프레드 계속 ‘뚝뚝’…석화 하반기 전망 ‘먹구름’ [비즈36...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002678211?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "핵심광물 공급망 협력...한·아르헨 첫 자원 MOU",
+        "url": "https://n.news.naver.com/mnews/article/374/0000524992?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "李대통령 \"한·아르헨티나 새 협력 시대 열릴 것…실질 성과 단계\"",
+        "url": "https://n.news.naver.com/mnews/article/586/0000135008?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "李대통령 “韓·아르헨, 새로운 협력 시대 열린다\"",
+        "url": "https://n.news.naver.com/mnews/article/023/0003990868?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "李대통령 \"아르헨티나와 새로운 협력 시대…광물·에너지·인프라\"",
+        "url": "https://n.news.naver.com/mnews/article/374/0000524988?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "포스코이앤씨, 글로벌 LNG 시장 공략 속도[짤막영상]",
+        "url": "https://n.news.naver.com/mnews/article/003/0014102276?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "하나증권 \"호주 가스·팜사업 쌍끌이…포스코인터내셔널, 성장 엔진 더...",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=473445",
+        "type": "dom"
+      },
+      {
+        "title": "풍년인데 '못 판다'...우크라이나의 결정적 한 방 [자막뉴스]",
+        "url": "https://n.news.naver.com/mnews/article/052/0002387571?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "남미선 FTA·희토류 외교 성과냈는데…국내선 다섯 글자 요구받는 李",
+        "url": "https://n.news.naver.com/mnews/article/009/0005715351?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "​[K-사절단 新실크로드 ⑦] 南美 3국 광물길 뚫은 李… 최윤범·구자은...",
+        "url": "https://daily.hankooki.com/news/articleView.html?idxno=1391789",
+        "type": "dom"
+      },
+      {
+        "title": "도널드 트럼프, 국방물자생산법 가동해 핵심 광물 수출 제한 권한 위임",
+        "url": "https://www.g-enews.com/view.php?ud=2026080107124972832bd56fbc3c_1",
+        "type": "dom"
+      },
+      {
+        "title": "브라질·칠레 이어 아르헨까지…李 ‘남미 광물 공급망’ 구축",
+        "url": "https://n.news.naver.com/mnews/article/011/0004647486?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "[마켓타임스] '고난의 7월' 식품가, 원가·환율에 결국 한계···'인상 릴...",
+        "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2454591",
+        "type": "dom"
+      },
+      {
+        "title": "나프타發 충격 현실화…빵·과자·식음료 가격 인상 도미노 예고",
+        "url": "https://n.news.naver.com/mnews/article/138/0002236231?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "'정유업황, 반도체 D램 설비 부족 닮아간다' 무서운 경고!",
+        "url": "http://www.e-platform.net/news/articleView.html?idxno=104293",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "Trump threatens more strikes on Iran , tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+      "url": "https://www.vaildaily.com/news/nation-world/trump-threatens-more-strikes-on-iran-tensions-from-hormuz-to-kuwait-and-gaza-lead-to-more-warnings/",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Iran Uses Diplomacy and Coercion to Perpetuate Control of the Strait of Hormuz • Stimson Center",
+      "url": "https://www.stimson.org/2026/iran-uses-diplomacy-and-coercion-to-perpetuate-control-of-the-strait-of-hormuz/",
+      "type": "intl"
+    },
+    "3": {
+      "title": "  Unknown projectile  hits tanker off Oman | The Manila Times",
+      "url": "https://www.manilatimes.net/2026/08/02/world/americas-emea/unknown-projectile-hits-tanker-off-oman/2396375",
+      "type": "intl"
+    },
+    "4": {
+      "title": "White House Indicates Trump Is Weighing Another Round of Iran Strikes",
+      "url": "https://www.deccanchronicle.com/world/white-house-indicates-trump-is-weighing-another-round-of-iran-strikes-1975841",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Iraq and Turkey strike a 1 - year oil pipeline deal to boost exports during ongoing Hormuz closures – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/world/2026/08/01/iraq-and-turkey-strike-a-1-year-oil-pipeline-deal-to-boost-exports-during-ongoing-hormuz-closures",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Tanker Carrying Qatari LNG Struck While Transiting Strait of Hormuz  | Peak Oil News and Message Boards",
+      "url": "https://peakoil.com/publicpolicy/tanker-carrying-qatari-lng-struck-while-transiting-strait-of-hormuz",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Trump threatens more strikes on Iran , and other developments in the Middle East",
+      "url": "https://www.breitbart.com/news/trump-threatens-more-strikes-on-iran-and-other-developments-in-the-middle-east/",
+      "type": "intl"
+    },
+    "8": {
+      "title": "Qatari LNG tanker struck while transiting Strait of Hormuz",
+      "url": "https://en.apa.az/asia/qatari-lng-tanker-struck-while-transiting-strait-of-hormuz-bloomberg-518623",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Trump threatens more strikes on Iran . Tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+      "url": "https://www.sun-sentinel.com/2026/08/01/trump-threatens-more-strikes-on-iran-tensions-from-hormuz-to-kuwait-and-gaza-lead-to-more-warnings/",
+      "type": "intl"
+    },
+    "10": {
+      "title": "US , Israel preparing to bombard energy targets in Iran , says report",
+      "url": "https://tradearabia.com:443/News/466043/US-Israel-preparing-to-bombard-energy-targets-in-Iran-says-report",
+      "type": "intl"
+    },
+    "11": {
+      "title": "Seoul Weighs Options to Help US in Contested Strait of Hormuz",
+      "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=203286",
+      "type": "dom"
+    },
+    "12": {
+      "title": "미·이스라엘, 이란 에너지시설 공습 임박…중동 다시 전운",
+      "url": "https://n.news.naver.com/mnews/article/018/0006341886?sid=104",
+      "type": "dom"
+    },
+    "13": {
+      "title": "\"미국, 이번 주말 이란 역대 최강 공습\"…국제유가 다시 불안",
+      "url": "https://n.news.naver.com/mnews/article/057/0001961565?sid=104",
+      "type": "dom"
+    },
+    "14": {
+      "title": "청와대 \"호르무즈 기여 방안, 다양한 가능성 검토하는 단계\"",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532645",
+      "type": "dom"
+    },
+    "15": {
+      "title": "미·이란 대치 속 호르무즈 입구서 유조선 잇따라 불길",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532627",
+      "type": "dom"
+    },
+    "16": {
+      "title": "호르무즈 해협 입구에서 또 유조선 피격",
+      "url": "https://n.news.naver.com/mnews/article/056/0012229564?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "미국·이스라엘 이란 공습설…호르무즈 유조선 피격",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16152296",
+      "type": "dom"
+    },
+    "18": {
+      "title": "호르무즈 해협서 유조선 또 피격…이란 “美 공격 시 에너지시설 조준”",
+      "url": "https://n.news.naver.com/mnews/article/449/0000355196?sid=104",
+      "type": "dom"
+    },
+    "19": {
+      "title": "호르무즈 해협 입구서 유조선 잇단 피격·폭발",
+      "url": "https://n.news.naver.com/mnews/article/658/0000151131?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "\"큰 물보라와 함께 폭발\"…호르무즈 입구서 유조선 피격·폭발",
+      "url": "https://n.news.naver.com/mnews/article/448/0000630792?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "Tanker carrying Qatari LNG struck while transiting Strait of Hormuz",
+      "url": "https://www.moneycontrol.com/news/business/tanker-carrying-qatari-lng-struck-while-transiting-strait-of-hormuz-13990983.html",
+      "type": "intl"
+    },
+    "22": {
+      "title": "GasLog LNG Carrier Damaged Exiting Hormuz as UKMTO Reports Two New Attacks",
+      "url": "https://gcaptain.com/gaslog-lng-carrier-damaged-exiting-hormuz-as-ukmto-reports-two-new-attacks/",
+      "type": "intl"
+    },
+    "23": {
+      "title": "Tanker struck by unknown projectile off Oman , engine room damaged : united kingdom maritime agency",
+      "url": "https://aa.com.tr/en/world/tanker-struck-by-unknown-projectile-off-oman-engine-room-damaged-uk-maritime-agency/4015459",
+      "type": "intl"
+    },
+    "24": {
+      "title": "UKMTO Reports Two Tanker Incidents Off Oman",
+      "url": "https://english.aawsat.com/gulf/5302260-ukmto-reports-two-tanker-incidents-oman",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Oil leak spreads from a sanctioned tanker grounded off Oman , images show",
+      "url": "https://www.yahoo.com/news/world/articles/oil-leak-spreads-sanctioned-tanker-183928205.html",
+      "type": "intl"
+    },
+    "26": {
+      "title": "Oil leak spreads from a sanctioned tanker grounded off Oman , images show – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/08/01/oil-leak-spreads-from-a-sanctioned-tanker-grounded-off-oman-images-show",
+      "type": "intl"
+    },
+    "27": {
+      "title": "Iraq and Turkey strike pipeline deal to boost exports during Hormuz closures",
+      "url": "https://www.timeslive.co.za/news/2026-08-01-iraq-and-turkey-strike-pipeline-deal-to-boost-exports-during-hormuz-closures/",
+      "type": "intl"
+    },
+    "28": {
+      "title": "Iraq and Turkey strike a 1 - year oil pipeline deal to boost exports during ongoing Hormuz closures",
+      "url": "https://www.yahoo.com/news/world/articles/iraq-turkey-strike-1-oil-174014581.html",
+      "type": "intl"
+    },
+    "29": {
+      "title": "ADNOC Buys Five Supertankers as Hormuz Crisis Tightens Shipping",
+      "url": "https://finance.yahoo.com/energy/articles/adnoc-buys-five-supertankers-hormuz-094500808.html",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Figures behind rush for Hormuz oil export alternatives",
+      "url": "https://www.bssnews.net/news/top-news/410620",
+      "type": "intl"
+    },
+    "31": {
+      "title": "Kpler says Hormuz traffic drops sharply , remains steady through Bab el - Mandeb",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/kpler-says-hormuz-traffic-drops-sharply-remains-steady-through-bab-el",
+      "type": "intl"
+    },
+    "32": {
+      "title": "Yemeni forces say eight Saudi tankers forced to reroute",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-say-eight-saudi-tankers-forced-reroute",
+      "type": "intl"
+    },
+    "33": {
+      "title": "How many ships are transiting through Hormuz and Bab Al Mandeb ? ",
+      "url": "https://www.thenationalnews.com/business/energy/2026/08/01/how-many-ships-are-transiting-through-hormuz-and-bab-al-mandeb/",
+      "type": "intl"
+    },
+    "34": {
+      "title": "해진공, “공급과잉 우려…운임·선가 하락 불가피”",
+      "url": "https://www.ekn.kr/web/view.php?key=20260801023278548",
+      "type": "dom"
+    },
+    "35": {
+      "title": "[정책돋보기] ‘해운 탄소세’가 온다",
+      "url": "https://n.news.naver.com/mnews/article/022/0004147632?sid=102",
+      "type": "dom"
+    },
+    "36": {
+      "title": "BNK금융, 해운협회와 해양금융 협력 강화…선박금융 지원 확대",
+      "url": "https://www.viva100.com/article/20260801500218",
+      "type": "dom"
+    },
+    "37": {
+      "title": "Indian Oil ramps up spot crude purchases as Middle East disruptions hit supplies",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/indian-oil-ramps-up-spot-crude-purchases-as-middle-east-disruptions-hit-supplies/articleshow/132786908.cms",
+      "type": "intl"
+    },
+    "38": {
+      "title": "Oman launches tender for Ras Markaz oil storage expansion",
+      "url": "https://www.muscatdaily.com/2026/08/01/oman-launches-tender-for-ras-markaz-oil-storage-expansion/",
+      "type": "intl"
+    },
+    "39": {
+      "title": "India secures LNG supplies till September amid fresh escalation in West Asia war",
+      "url": "https://www.livemint.com/industry/energy/india-lng-supplies-west-asia-war-europe-winter-lng-demand-qatar-us-uae-angola-trinidad-oman-nigeria-india-lng-imports-11785493145463.html",
+      "type": "intl"
+    },
+    "40": {
+      "title": "아르헨서 내년부터 원유 수입…이중과세 방지협정 최종 타결",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532647",
+      "type": "dom"
+    },
+    "41": {
+      "title": "韓, 내년부터 아르헨 원유 수입 개시…리튬 개발 협력도 강화",
+      "url": "https://n.news.naver.com/mnews/article/448/0000630810?sid=100",
+      "type": "dom"
+    },
+    "42": {
+      "title": "한·아르헨 정상회담…“내년부터 원유 수입”",
+      "url": "https://n.news.naver.com/mnews/article/449/0000355205?sid=100",
+      "type": "dom"
+    },
+    "43": {
+      "title": "아르헨서 내년부터 원유 수입…이중과세 방지협정 타결",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=83949",
+      "type": "dom"
+    },
+    "44": {
+      "title": "'아르헨티나 원유 시대' 열린다…내년부터 본격 수입",
+      "url": "https://news.cpbc.co.kr/article/1174684?division=NAVER",
+      "type": "dom"
+    },
+    "45": {
+      "title": "한-아르헨 정상회담…올해 원유 88만배럴 시범 수입",
+      "url": "https://n.news.naver.com/mnews/article/437/0000504087?sid=100",
+      "type": "dom"
+    },
+    "46": {
+      "title": "내년부터 아르헨티나산 원유 도입…중동 의존 낮춘다",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=849080",
+      "type": "dom"
+    },
+    "47": {
+      "title": "‘원유 공급선’ 남미로 확대…美서 ‘AI 허브’ 공표하고 3개국 공급망...",
+      "url": "https://www.mediapen.com/news/view/1113749",
+      "type": "dom"
+    },
+    "48": {
+      "title": "내년부터 아르헨산 원유 수입…핵심광물 공급망 협력 체계 마련",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148969192&call_from=naver_news",
+      "type": "dom"
+    },
+    "49": {
+      "title": "22년 만에 아르헨 방문‥리튬·원유 공급 협력",
+      "url": "https://n.news.naver.com/mnews/article/214/0001515291?sid=100",
+      "type": "dom"
+    },
+    "50": {
+      "title": "Oil price rises after Iran says it stops ships in Hormuz",
+      "url": "https://kaieteurnewsonline.com/2026/08/01/oil-price-rises-after-iran-says-it-stops-ships-in-hormuz/",
+      "type": "intl"
+    },
+    "51": {
+      "title": "Oil prices settle more than 1 % higher , log strongest month since March",
+      "url": "https://www.asiaone.com:443/money/oil-prices-settle-more-1-higher-log-strongest-month-march",
+      "type": "intl"
+    },
+    "52": {
+      "title": "Geopolitical turmoil pushes global oil prices to new highs",
+      "url": "https://www.azernews.az/oil_and_gas/261876.html",
+      "type": "intl"
+    },
+    "53": {
+      "title": "Oil companies report sky - high profits thanks to wartime crude prices",
+      "url": "https://www.npr.org/2026/07/31/nx-s1-5910660/big-oil-earnings-q2-2026",
+      "type": "intl"
+    },
+    "54": {
+      "title": "UAE to Overhaul How It Prices All Crude Oil",
+      "url": "https://www.rigzone.com/news/wire/uae_to_overhaul_how_it_prices_all_crude_oil-01-aug-2026-184272-article/",
+      "type": "intl"
+    },
+    "55": {
+      "title": "Indian Oil Corp boost spot oil buy amid Middle East crisis",
+      "url": "https://arynews.tv/indian-oil-corp-boost-spot-oil-buy-amid-middle-east-crisis",
+      "type": "intl"
+    },
+    "56": {
+      "title": "Iran war drives oil profits to highest levels in years - Hawaii Tribune - Herald",
+      "url": "https://www.hawaiitribune-herald.com/2026/08/01/nation-world-news/iran-war-drives-oil-profits-to-highest-levels-in-years/",
+      "type": "intl"
+    },
+    "57": {
+      "title": "Trumpflation Is Evolving Into a 3 - Headed Monster , and Wall Street Will End Up Paying the Price",
+      "url": "https://www.fool.com/investing/2026/08/01/trumpflation-3-headed-monster-wall-st-pay-price/?source=iedfolrf0000001",
+      "type": "intl"
+    },
+    "58": {
+      "title": "Iran war drives oil profits to highest levels in years",
+      "url": "https://www.westhawaiitoday.com/2026/08/01/nation-world-news/iran-war-drives-oil-profits-to-highest-levels-in-years/",
+      "type": "intl"
+    },
+    "59": {
+      "title": "Indian Oil rules out shift from Gulf crude despite regional conflict",
+      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/indian-oil-rules-out-shift-from-gulf-crude-despite-regional-conflict/articleshow/132785229.cms",
+      "type": "intl"
+    },
+    "60": {
+      "title": "호르무즈 해협 유조선 피격에 국제유가 꿈틀…국내 기름값 반등하나",
+      "url": "https://news.mtn.co.kr/news-detail/2026080109514175372",
+      "type": "dom"
+    },
+    "61": {
+      "title": "7월 물가 3% 밑돌까…한은 ‘8월 연속 인상’ 향방 가른다",
+      "url": "https://n.news.naver.com/mnews/article/016/0002678230?sid=101",
+      "type": "dom"
+    },
+    "62": {
+      "title": "휘발유·경유 1800원대···전국 주유소 기름값 11주 연속 내림세",
+      "url": "https://www.ekn.kr/web/view.php?key=20260801021348616",
+      "type": "dom"
+    },
+    "63": {
+      "title": "11주째 떨어진 기름값…휘발유·경유 1천800원대 '숨통'",
+      "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=62298",
+      "type": "dom"
+    },
+    "64": {
+      "title": "전국 기름값 11주 연속 하락세…가장 싼 지역은?",
+      "url": "http://www.segyebiz.com/newsView/20260801507753?OutUrl=naver",
+      "type": "dom"
+    },
+    "65": {
+      "title": "주유소 기름값 11주째 하락세…1800원대 기록",
+      "url": "https://n.news.naver.com/mnews/article/022/0004147594?sid=101",
+      "type": "dom"
+    },
+    "66": {
+      "title": "기름값 11주 연속 하락…휘발유·경유 1800원대",
+      "url": "https://n.news.naver.com/mnews/article/448/0000630740?sid=101",
+      "type": "dom"
+    },
+    "67": {
+      "title": "전국 주유소 평균 휘발유 1869.1원, 경유 1852.8원...기름값 11주째 하락",
+      "url": "https://www.livebiz.today/news/articleView.html?idxno=203755",
+      "type": "dom"
+    },
+    "68": {
+      "title": "주유소 기름값 11주째 하락…휘발유·경유 1800원대",
+      "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=362908",
+      "type": "dom"
+    },
+    "69": {
+      "title": "[분석] 중동 전쟁 고조 · 8월 CP 인상 속 이달 LPG 국내 가격 '동결'",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=301124",
+      "type": "dom"
+    },
+    "70": {
+      "title": "29도까지 오른 수온…제주서 광어·넙치 3만마리 폐사",
+      "url": "https://n.news.naver.com/mnews/article/449/0000355166?sid=103",
+      "type": "dom"
+    },
+    "71": {
+      "title": "수과원, 양식수협과 머리 맞대…고수온·질병 등 현장 현안 점검",
+      "url": "https://www.mhns.co.kr/news/articleView.html?idxno=755174",
+      "type": "dom"
+    },
+    "72": {
+      "title": "위성곤 제주지사, 고수온 피해 양식장 방문",
+      "url": "https://n.news.naver.com/mnews/article/001/0016228153?sid=102",
+      "type": "dom"
+    },
+    "73": {
+      "title": "위성곤 제주지사, 고수온 피해 양식장 간담회",
+      "url": "https://n.news.naver.com/mnews/article/001/0016228154?sid=102",
+      "type": "dom"
+    },
+    "74": {
+      "title": "고수온 피해 양식장 찾은 위성곤 제주지사",
+      "url": "https://n.news.naver.com/mnews/article/001/0016228152?sid=102",
+      "type": "dom"
+    },
+    "75": {
+      "title": "펄펄 끓는 바다...양식 넙치 3만 마리 폐사",
+      "url": "https://n.news.naver.com/mnews/article/661/0000080913?sid=102",
+      "type": "dom"
+    },
+    "76": {
+      "title": "제주, 고수온에 넙치 3만여 마리 폐사…서부지역 수온 상승에 '직격탄'",
+      "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4098316",
+      "type": "dom"
+    },
+    "77": {
+      "title": "역대급 폭염에 제주 양식장 광어 3만 마리 폐사...수온 29.3도까지 상승",
+      "url": "https://n.news.naver.com/mnews/article/011/0004647612?sid=102",
+      "type": "dom"
+    },
+    "78": {
+      "title": "\"바닷물이 29도까지 치솟았다\"... 제주 고수온에 어류 3만 마리 집단 폐...",
+      "url": "https://www.insight.co.kr/news/565935",
+      "type": "dom"
+    },
+    "79": {
+      "title": "폭염에 달궈진 제주 연안 '29.3도'…넙치 3만여마리 폐사",
+      "url": "https://n.news.naver.com/mnews/article/003/0014102399?sid=102",
+      "type": "dom"
+    },
+    "80": {
+      "title": "Houthis say they forced eight Saudi oil tankers to change course",
+      "url": "https://www.yahoo.com/news/world/articles/houthis-forced-eight-saudi-oil-090332617.html",
+      "type": "intl"
+    },
+    "81": {
+      "title": "Two VLCCs exit Strait of Hormuz , where traffic remains thin",
+      "url": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/two-vlccs-exit-strait-of-hormuz-where-traffic-remains-thin/articleshow/132781716.cms",
+      "type": "intl"
+    },
+    "82": {
+      "title": "미 중부사령부, 호르무즈 폐쇄 부인…상선 항로 열렸다",
+      "url": "https://www.tokenpost.kr/news/breaking/383553",
+      "type": "dom"
+    },
+    "83": {
+      "title": "SK오션플랜트, 6,800DWT급 SUS 화학제품운반선 2척 수주",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=90593",
+      "type": "dom"
+    },
+    "84": {
+      "title": "Exxon , Chevron warn fuel prices to endure as war knocks refining",
+      "url": "https://fortune.com/2026/08/01/exxon-chevron-fuel-prices-diesel-gasoline-refining-capacity/",
+      "type": "intl"
+    },
+    "85": {
+      "title": "Trump considering attacks on Iran energy infrastructure , report says",
+      "url": "https://www.livemint.com/news/us-news/trump-considering-attacks-on-irans-energy-infrastructure-report-says-11785587578235.html",
+      "type": "intl"
+    },
+    "86": {
+      "title": "Iran warns of broad retaliation amid reports of possible US - Israeli strikes on energy infrastructure",
+      "url": "https://pakobserver.net/iran-warns-of-broad-retaliation-amid-reports-of-possible-us-israeli-strikes-on-energy-infrastructure/",
+      "type": "intl"
+    },
+    "87": {
+      "title": "US , Israel weigh bombarding Iran energy infrastructure through the weekend : Report",
+      "url": "https://timesofindia.indiatimes.com/world/us/us-israel-weigh-bombarding-irans-energy-infrastructure-through-the-weekend-report/articleshow/132781485.cms",
+      "type": "intl"
+    },
+    "88": {
+      "title": "US , Israel planning to bombard energy - related targets in Iran : Report",
+      "url": "https://news.webindia123.com/news/Articles/World/20260801/4481769.html",
+      "type": "intl"
+    },
+    "89": {
+      "title": "Guyana FPSO Errea Wittu Sails Toward 250 , 000 Bpd Target",
+      "url": "https://www.riotimesonline.com/guyana-fpso-errea-wittu-sails-250000-bpd/",
+      "type": "intl"
+    },
+    "90": {
+      "title": "\"미·이, 이번 주말 이란 에너지시설 공습 계획\"…전쟁 격화되나",
+      "url": "https://n.news.naver.com/mnews/article/079/0004174504?sid=104",
+      "type": "dom"
+    },
+    "91": {
+      "title": "미·이스라엘, 이란 에너지 시설 대규모 공습 추진-중동 긴장 다시 전면...",
+      "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=85271",
+      "type": "dom"
+    },
+    "92": {
+      "title": "\"미·이, 주말 이란 에너지시설 공습 계획\"vs이란 \"미·이 주요시설 타격...",
+      "url": "https://n.news.naver.com/mnews/article/052/0002387532?sid=104",
+      "type": "dom"
+    },
+    "93": {
+      "title": "CBS \"美·이스라엘, 이번 주말 이란 에너지 인프라 공습 계획\"",
+      "url": "https://www.getnews.co.kr/news/articleView.html?idxno=876747",
+      "type": "dom"
+    },
+    "94": {
+      "title": "미·이스라엘, 이란 에너지시설 공습 추진…이란 \"미군 시설 보복\"",
+      "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1279927",
+      "type": "dom"
+    },
+    "95": {
+      "title": "미국·이스라엘, 이란 에너지 인프라 공습 준비… 중동 긴장 최고조",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=873748",
+      "type": "dom"
+    },
+    "96": {
+      "title": "구리값 사상 최고…칠레 폭풍에 공급난 가중",
+      "url": "https://www.g-enews.com/view.php?ud=202608010942176347fbbec65dfb_1",
+      "type": "dom"
+    },
+    "97": {
+      "title": "한·아르헨티나, 첫 자원 MOU…중남미 핵심광물 공급망 협력",
+      "url": "https://www.goodnews1.com/news/articleView.html?idxno=462634",
+      "type": "dom"
+    },
+    "98": {
+      "title": "한-아르헨, 첫 자원 MOU... 리튬 공급망 협력·내년 원유 수입 개시",
+      "url": "https://www.meconomynews.com/news/articleView.html?idxno=200165",
+      "type": "dom"
+    },
+    "99": {
+      "title": "靑 \"내년부터 아르헨산 원유 수입…핵심광물 공급망 협력 체계 마련\"",
+      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7177062",
+      "type": "dom"
+    }
+  }
+}
