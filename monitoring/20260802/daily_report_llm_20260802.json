@@ -1,0 +1,861 @@
+{
+  "date": "2026-08-02",
+  "date_key": "20260802",
+  "n_total": 720,
+  "n_high": 20,
+  "n_med": 98,
+  "n_low": 110,
+  "n_none": 492,
+  "n_intl": 118,
+  "n_dom": 0,
+  "llm_result": {
+    "executive_summary": "트럼프 대통령이 이란에 대한 추가 공습 계획을 일시 중단하고 호르무즈 해협 재개방 협상 가능성을 시사했으나[1][3][10], 이란은 해당 합의를 거부하며 협상 타결 여부가 불투명한 상태다[4]. 이라크와 터키는 호르무즈 봉쇄 지속에 대응해 세이한(Ceyhan) 항구를 통한 1년짜리 석유 파이프라인 임시 협정을 체결하고, 이라크는 터키 경유 원유 수출을 현재의 두 배인 150만 배럴/일(bpd)로 늘릴 계획을 발표했다[8][18]. 오만 해안에서는 제재 대상 탱커가 좌초해 원유 유출이 확산되고 있으며, 위성 이미지로 유출 범위가 확인되고 있다[11][12][14]. 글로벌 에너지 시장에서는 7월 한 달간 유가가 20% 급등한 것으로 보고되며[26], 엑슨모빌·셰브런 등 주요 정유사들은 막대한 이익을 거두고 있는 반면[27][29], 파키스탄·방글라데시 등 취약 신흥국은 경제적 위험이 가중되고 있다[19]. 러시아는 디젤·휘발유 수출 금지를 2027년까지 연장하고[25], 우크라이나는 러시아 정유시설 3곳을 타격해 글로벌 정제 공급 차질 우려가 복합적으로 작용하고 있다[33].",
+    "categories": {
+      "1_Security": {
+        "overseas": "트럼프 대통령은 이란에 대한 주말 공습 계획을 취소하고 호르무즈 해협 재개방 및 핵 위협 관련 협상 타결 가능성을 언급했다[3][10][6]. 그러나 이란은 해당 재개방 합의를 거부했으며, 협상 돌파구는 마련되지 않은 상태다[4][2]. 트럼프는 동시에 추가 이란 공습 가능성을 위협하며 호르무즈 재개방을 요구하고 있어 긴장이 지속되고 있다[9][7]. 예멘 후티 세력은 홍해에서 지속적인 위협을 유지하고 있어 복수의 해상 초크포인트에서 동시 위험이 이어지고 있다[5]. 이라크와 터키는 호르무즈 봉쇄 지속 상황에서 세이한 항구를 통한 1년짜리 석유 파이프라인 협정을 체결해 대체 수출 경로를 확보했다[8][30][35].",
+        "korea_impact": ""
+      },
+      "2_Safety": {
+        "overseas": "오만 해안 인근에서 제재 대상 탱커(소위 '그림자 선단' 소속)가 좌초해 원유 유출이 발생했으며, 위성 이미지를 통해 유출 범위가 확산되고 있음이 확인됐다[11][12][13][14][15][16]. 몬순 시즌과 맞물려 유출 확산 위협이 가중되고 있는 것으로 보인다[12]. 해당 선박은 제재 대상 탱커로, 그림자 선단의 해양 안전 위험이 현실화된 사례로 주목된다[14].",
+        "korea_impact": ""
+      },
+      "3_Freight": {
+        "overseas": "이라크와 터키는 세이한(Ceyhan) 석유 수출 회랑을 복원하는 임시 파이프라인 협정을 체결했다[17]. 이는 호르무즈 봉쇄 장기화에 따른 대체 물류 경로 확보 차원으로 보인다[8].",
+        "korea_impact": ""
+      },
+      "4_PortCargo": {
+        "overseas": "이라크는 터키 세이한(Ceyhan) 항구를 통한 원유 수출을 현재의 두 배 수준인 150만 배럴/일(bpd)로 확대할 계획을 발표했다[18]. 이는 호르무즈 봉쇄 지속에 따른 대체 수출 경로 활용 확대 전략으로 보인다[8].",
+        "korea_impact": ""
+      },
+      "5_EconFinance": {
+        "overseas": "7월 한 달간 유가가 20% 급등한 것으로 보고되며[26], 중국은 휘발유·디젤 소매가격을 인상했다[21]. 엑슨모빌·셰브런 등 주요 정유사들은 에너지 가격 상승으로 막대한 이익을 거두고 있으며[27][20], 고유가가 장기화될 것이라는 경고도 나오고 있다[29][34]. 파키스탄·방글라데시 등 신흥국은 미-이란 갈등 장기화에 따른 유가 급등으로 경제적 위험이 가중되고 있다[19]. 러시아는 디젤·휘발유 수출 금지를 2027년까지 연장해 글로벌 연료 공급 압박이 심화될 가능성이 있다[25]. 인도 루피화는 7월 유가 20% 급등에도 불구하고 자본 유입과 인도중앙은행(RBI) 지원으로 하락이 제한됐다[26]. 인도 기업들은 원자재 가격 상승과 공급망 위험에 대응해 재고 확충에 나서고 있다[28].",
+        "korea_impact": ""
+      },
+      "10_OtherIndustry": {
+        "overseas": "엑슨모빌·셰브런은 글로벌 분쟁이 정제 능력에 타격을 주면서 고유가가 장기화될 것이라고 경고했다[29]. 우크라이나는 러시아 정유시설 3곳과 제재 대상 선박을 타격했으며[33], 드론이 사라토프 정유시설과 사마라 물류 허브를 공격했다[32]. 인도의 7월 석탄 생산량은 전년 동기 대비 7.51% 증가한 6,975만 톤(MT)을 기록했으며, 출하량은 17.34% 늘었다[31].",
+        "korea_impact": ""
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "호르무즈 해협은 이란의 봉쇄가 지속되는 가운데 트럼프-이란 간 협상이 진행 중이나 이란이 합의를 거부해 재개방 시점이 불투명하다[2][4][6]. 홍해에서는 후티 세력의 위협이 지속되어 복수의 핵심 해상 초크포인트가 동시에 위험에 처해 있다[5]. 이라크와 터키는 호르무즈 대체 경로로 세이한 파이프라인 협정을 체결해 육상 우회 수출을 확대하고 있다[8][17][30].",
+          "korea_impact": "호르무즈 해협 봉쇄가 지속될 경우 한국의 중동산 원유 수입 항로가 직접적으로 차단된 상태로, 대체 공급원 및 항로 확보가 시급한 과제로 보인다. 이라크의 세이한 항구 경유 수출 확대[18]는 한국 정유사들의 대체 원유 조달 가능성을 일부 높일 수 있으나, 물량 및 운송 조건은 기사에서 특정되지 않는다. 홍해 후티 위협[5]까지 겹쳐 수에즈 운하 경유 항로도 제한될 가능성이 있어 한국 수입 항로 선택지가 좁아지고 있는 것으로 보인다."
+        },
+        "source": {
+          "overseas": "러시아는 디젤·휘발유 수출 금지를 2027년까지 연장해 글로벌 연료 공급원이 추가로 축소됐다[25]. 우크라이나의 러시아 정유시설 3곳 타격[33]과 드론의 사라토프 정유시설 공격[32]으로 러시아 정제 공급 차질이 심화될 가능성이 있다. 이라크는 터키 경유 수출을 150만 bpd로 확대해 호르무즈 우회 공급원을 늘리고 있다[18][8].",
+          "korea_impact": "러시아산 연료 수출 금지 연장[25]은 글로벌 연료 공급 감소 요인으로, 한국의 에너지 수입 비용 상승 압력으로 작용할 가능성이 있다. 러시아 정유시설 피격[33][32]으로 러시아산 석유제품 공급이 추가 감소할 경우 한국 정유·화학 업계의 원료 조달 다변화 필요성이 높아질 것으로 보인다."
+        },
+        "logistics": {
+          "overseas": "오만 해안에서 제재 대상 그림자 선단 탱커가 좌초해 원유 유출이 확산되고 있으며[11][12][14], 몬순 시즌과 맞물려 해상 오염 위험이 가중되고 있다[12]. 이라크-터키 세이한 파이프라인 협정 체결로 호르무즈 우회 육상 물류 경로가 일부 복원됐다[17][30][35].",
+          "korea_impact": "오만 해안 탱커 원유 유출[11][13][15]은 인근 해역 항행 안전과 환경 위험을 높이며, 해당 해역을 통과하는 한국 선박 운항에 영향을 줄 가능성이 있다. 이라크-터키 파이프라인 협정[8][17]은 중동 원유의 대체 수출 경로를 일부 확보하는 것이나, 한국까지의 해상 운송 경로 변화 여부는 기사에서 특정되지 않는다."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "7월 한 달간 유가가 20% 급등한 것으로 보고되며[26], 중국의 연료 소매가 인상[21]과 러시아 수출 금지 연장[25]이 글로벌 에너지 가격 상승 압력을 높이고 있어 한국의 수입 물가 및 무역수지에 부정적 영향이 예상된다. 파키스탄·방글라데시 등 신흥국의 경제 위험 가중[19]은 한국의 해당 지역 수출 시장 수요 위축 가능성을 시사한다.",
+        "정유·화학": "엑슨모빌·셰브런 등 글로벌 정유사들이 에너지 가격 급등으로 막대한 이익을 거두고 있는 반면[27][20], 고유가 장기화 경고[29]는 한국 정유사들의 원료비 부담 증가 요인이다. 러시아 정유시설 피격[33][32]과 러시아 연료 수출 금지 연장[25]은 글로벌 정제 공급 차질을 심화시켜 한국 정유·화학 업계의 원료 조달 비용 상승으로 이어질 가능성이 있다.",
+        "해운·물류": "호르무즈 봉쇄 지속과 홍해 후티 위협[5]으로 한국 해운사들의 중동·유럽 항로 운항 비용 및 위험이 높아진 상태로 보인다. 오만 해안 탱커 원유 유출[11][14]은 인근 해역 항행 안전 위험을 추가하고 있다.",
+        "식품·농업": "",
+        "기타산업": "인도의 7월 석탄 생산량이 전년 동기 대비 7.51% 증가한 6,975만 톤을 기록하고 출하량도 17.34% 늘었다[31]. 이는 인도의 에너지 자립 강화 움직임으로 보이며, 한국의 인도 석탄 수입 여건에 간접적 영향을 줄 가능성이 있다."
+      }
+    },
+    "changes": {
+      "new": [
+        "트럼프, 이란 공습 계획 일시 중단 및 호르무즈 재개방 협상 가능성 시사[3][10]",
+        "이란, 호르무즈 재개방 합의 공식 거부[4]",
+        "이라크-터키, 세이한 항구 경유 1년짜리 석유 파이프라인 임시 협정 체결[8][30]",
+        "이라크, 터키 경유 원유 수출 150만 bpd로 확대 계획 발표[18]",
+        "오만 해안 제재 대상 그림자 선단 탱커 좌초 및 원유 유출 확산[11][12][14]",
+        "러시아, 디젤·휘발유 수출 금지 2027년까지 연장[25]",
+        "우크라이나, 러시아 정유시설 3곳 및 제재 대상 선박 타격[33]"
+      ],
+      "escalated": [
+        "7월 한 달간 유가 20% 급등 보고[26]",
+        "홍해 후티 세력 위협 지속[5]",
+        "글로벌 정제 공급 차질 심화: 러시아 시설 피격[32][33] + 수출 금지 연장[25]"
+      ],
+      "resolved": []
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "New Strait of Hormuz plan puts Iran in control as Trump calls off strikes",
+        "url": "https://www.nzherald.co.nz/world/new-strait-of-hormuz-plan-puts-iran-in-control-as-trump-calls-off-strikes/Q2RYJ4Y2VFF7HHUJ2JZWJWI7HQ/",
+        "type": "intl"
+      },
+      {
+        "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
+        "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Says Hell Halt Planned Iran Strikes , Citing Deal On Hormuz Reopening , Nuclear Threat",
+        "url": "https://www.hngn.com/articles/272531/20260802/trump-says-hell-halt-planned-iran-strikes-citing-deal-hormuz-reopening-nuclear-threat.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran rejects Hormuz reopening deal as Trump claims breakthrough",
+        "url": "https://www.siasat.com/iran-rejects-hormuz-reopening-deal-as-trump-claims-breakthrough-3517656/",
+        "type": "intl"
+      },
+      {
+        "title": "Renewed Red Sea Standoff Underscores Persistent Threat Posed By Yemen Houthis",
+        "url": "https://www.theepochtimes.com/world/renewed-red-sea-standoff-underscores-persistent-threat-posed-by-yemens-houthis-6069379",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will hold off on fresh Iran attack in hope of a quick deal on nuclear threat , Hormuz",
+        "url": "https://www.businesstimes.com.sg/international/global/trump-says-he-will-hold-fresh-iran-attack-hope-quick-deal-nuclear-threat-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Trump weighs Iran strikes as Strait of Hormuz threatens oil markets",
+        "url": "https://www.moneycontrol.com/world/trump-weighs-iran-strikes-as-strait-of-hormuz-threatens-oil-markets-article-13991222.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iraq and Turkey strike a 1 - year oil pipeline deal to boost exports during ongoing Hormuz closures",
+        "url": "https://peakoil.com/publicpolicy/iraq-and-turkey-strike-a-1-year-oil-pipeline-deal-to-boost-exports-during-ongoing-hormuz-closures",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran ; US wants Hormuz reopened",
+        "url": "https://theshillongtimes.com/2026/08/02/trump-threatens-more-strikes-on-iran-us-wants-hormuz-reopened/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls off planned weekend strikes on new Iran targets as he hints at shock deal to REOPEN Strait of Hormuz",
+        "url": "https://www.dailymail.com/news/article-16022553/Trump-Iran-strikes-deal-Truth-Social-Israel.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran threatens to target Gulf energy fields if US attacks again",
+        "url": "https://www.middle-east-online.com/en/iran-threatens-target-gulf-energy-fields-if-us-attacks-again",
+        "type": "intl"
+      },
+      {
+        "title": "War On Iran : – U . S . ( Again ) Blocks Strait Traffic – Moon of Alabama",
+        "url": "https://www.moonofalabama.org/2026/07/war-on-iran-u-s-again-blocks-strait-traffic.html/comment-page-4",
+        "type": "intl"
+      },
+      {
+        "title": "Iran identifies Gulf , Israeli energy facilities for possible retaliation targets in event of US attack : Report",
+        "url": "https://aa.com.tr/en/middle-east/iran-identifies-gulf-israeli-energy-facilities-for-possible-retaliation-targets-in-event-of-us-attack-report/4016059",
+        "type": "intl"
+      },
+      {
+        "title": "EU Forces Board Sanctioned Russian  Shadow Fleet  Tanker",
+        "url": "https://gcaptain.com/eu-forces-board-sanctioned-russian-shadow-fleet-tanker/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Ridicules Trump Warnings as  Psychological Warfare  After He Cancels Planned Strikes",
+        "url": "https://www.ibtimes.co.uk/iran-dismisses-trumps-military-threats-1811921",
+        "type": "intl"
+      },
+      {
+        "title": "China patrols  deeply destabilizing : US",
+        "url": "https://www.taipeitimes.com/News/front/archives/2026/08/03/2003861830",
+        "type": "intl"
+      },
+      {
+        "title": "Guermantes Lailari On Taiwan : The Cross - Strait  Status Quo  Myth",
+        "url": "https://www.taipeitimes.com/News/editorials/archives/2026/08/03/2003861824",
+        "type": "intl"
+      },
+      {
+        "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+        "url": "https://dominicanrepublicpost.com/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Heeding a Saudi plea , Trump says he canceled a joint U . S .- Israel assault on Iran",
+        "url": "https://forward.com/fast-forward/842468/heeding-a-saudi-plea-trump-says-he-canceled-a-joint-u-s-israel-assault-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Italian - led EU Force Boards Sanctioned Tanker from Russia  Shadow Fleet  in Mediterranean",
+        "url": "https://english.aawsat.com/world/5302674-italian-led-eu-force-boards-sanctioned-tanker-russia%E2%80%99s-%E2%80%98shadow-fleet%E2%80%99-mediterranean",
+        "type": "intl"
+      },
+      {
+        "title": "Trump cancels Iran strikes , reports progress on potential deal",
+        "url": "https://www.koat.com/article/trump-iran-strikes-potential-deal/73326225",
+        "type": "intl"
+      },
+      {
+        "title": "China Enables Israel Adversaries : Report",
+        "url": "https://www.newkerala.com/news/a/china-became-principal-enabler-military-capabilities-israels-adversaries-505.htm",
+        "type": "intl"
+      },
+      {
+        "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran - Grenada Chronicle – Daily Grenada And Caribbean News",
+        "url": "https://grenadachronicle.com/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "China became principal enabler of military capabilities of Israel adversaries : Report",
+        "url": "https://www.prokerala.com/news/articles/a1795588.html",
+        "type": "intl"
+      },
+      {
+        "title": "TBC Capital : Renewed Middle East Tensions Increase Inflationary Pressure , While Georgia Economic Growth Outlook Remains Unchanged",
+        "url": "https://georgiatoday.ge/tbc-capital-renewed-middle-east-tensions-increase-inflationary-pressure-while-georgias-economic-growth-outlook-remains-unchanged/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says deal to end Iran war may be imminent , agrees to  cancel the attack  ",
+        "url": "https://www.yahoo.com/news/politics/articles/trump-says-deal-end-iran-031144196.html",
+        "type": "intl"
+      },
+      {
+        "title": "Europe facing winter gas squeeze due to Iran conflict",
+        "url": "https://www.irishtimes.com/world/middle-east/2026/08/02/europe-facing-winter-gas-squeeze-due-to-iran-conflict/",
+        "type": "intl"
+      },
+      {
+        "title": "Washington Wants Iraq , But Tehran And Beijing Wont Let Go",
+        "url": "https://www.forbes.com/sites/kensilverstein/2026/08/02/washington-wants-iraq-but-tehran-and-beijing-wont-let-go/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump cancels planned attack on Iran , saying he reached an agreement over the  perimeters of a deal  – Ya Libnan",
+        "url": "https://yalibnan.com/2026/08/02/trump-cancels-planned-attack-on-iran-saying-he-reached-an-agreement-over-the-perimeters-of-a-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump agenda now : Deliver crushing blow to Iran regime",
+        "url": "https://www.jpost.com/opinion/article-904308",
+        "type": "intl"
+      },
+      {
+        "title": "US embassies warn Americans as Iran threatens more choke points | Jefferson City News Tribune",
+        "url": "https://www.newstribune.com/news/2026/aug/02/us-embassies-warn-americans-as-iran-threatens/",
+        "type": "intl"
+      },
+      {
+        "title": "Zelensky Seeks UAE Help to Secure Black Sea Routes",
+        "url": "https://www.kyivpost.com/post/81574",
+        "type": "intl"
+      },
+      {
+        "title": "Coward Trump Suspends so - called  WWII - Level  Attack Plans on Iran as Diplomatic Efforts Intensify ; Tehran Issues Threat of Unrestrained Counteraction",
+        "url": "https://www.islamicinvitationturkey.com/coward-trump-suspends-so-called-wwii-level-attack-plans-on-iran-as-diplomatic-efforts-intensify-tehran-issues-threat-of-unrestrained-counteraction/",
+        "type": "intl"
+      },
+      {
+        "title": "US - Israel to hold back fire as Trump hopes for quick Iran deal",
+        "url": "https://www.dailysabah.com/world/mid-east/us-israel-to-hold-back-fire-as-trump-hopes-for-quick-iran-deal",
+        "type": "intl"
+      },
+      {
+        "title": "Al - Zaidi Ankara visit and Iraq multi - partner foreign policy",
+        "url": "https://www.dailysabah.com/opinion/op-ed/al-zaidis-ankara-visit-and-iraqs-multi-partner-foreign-policy",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will hold off fresh Iran attack in hope of quick deal",
+        "url": "https://bworldonline.com/world/2026/08/02/767502/trump-says-he-will-hold-off-fresh-iran-attack-in-hope-of-quick-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Cancels Iran Strikes , Cites Progress Toward  Rapid  Deal",
+        "url": "https://www.benzinga.com/news/politics/26/08/60861664/trump-cancels-iran-strikes-rapid-deal-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Mike Pompeo :  Gulf states will have to join US to finish the job on Iran  ",
+        "url": "https://www.thenationalnews.com/business/2026/08/02/mike-pompeo-gulf-states-will-have-to-join-us-to-finish-the-job-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "US embassies warn Americans as Iran threatens more choke points",
+        "url": "https://bworldonline.com/bloomberg/2026/08/02/767445/us-embassies-warn-americans-as-iran-threatens-more-choke-points/",
+        "type": "intl"
+      },
+      {
+        "title": "Column : Some countries stirring up tensions in South China Sea only make fool of themselves",
+        "url": "http://www.austinglobe.com/news/279219478/column-some-countries-stirring-up-tensions-in-south-china-sea-only-make-fool-of-themselves",
+        "type": "intl"
+      },
+      {
+        "title": "Turkish stealth jet KAAN and AI drones threaten Greek air defenses in Aegean power shift",
+        "url": "https://www.bankingnews.gr/amyna-diplomatia/articles/891809/turkish-stealth-jet-kaan-and-ai-drones-threaten-greek-air-defenses-in-aegean-power-shift",
+        "type": "intl"
+      },
+      {
+        "title": "US Warns Americans To Leave Middle - East As Trump Threatens Iran , Regional War Escalates",
+        "url": "https://saharareporters.com/2026/08/01/us-warns-americans-leave-middle-east-trump-threatens-iran-regional-war-escalates",
+        "type": "intl"
+      },
+      {
+        "title": "Iran secret war plan exposed as proxy attacks spread across Middle East",
+        "url": "https://www.moneycontrol.com/world/iran-s-secret-war-plan-exposed-as-proxy-attacks-spread-across-middle-east-article-13991224.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will hold off on fresh Iran attack in hope of quick deal | Ariana News",
+        "url": "https://www.ariananews.af/trump-says-he-will-hold-off-on-fresh-iran-attack-in-hope-of-quick-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Roundup : Trump says U . S . to hold off attack on Iran amid conflicting claims - Xinhua",
+        "url": "https://english.news.cn/20260802/aaab56d3ae964ce586aca93dafdc8dde/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "Roundup : Trump says U . S . to hold off attack on Iran amid conflicting claims",
+        "url": "http://www.bignewsnetwork.com/news/279219230/roundup-trump-says-us-to-hold-off-attack-on-iran-amid-conflicting-claims",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says US , Israel to hold off on Iran strikes",
+        "url": "https://www.naharnet.com/stories/en/321602-trump-says-us-israel-to-hold-off-on-iran-strikes",
+        "type": "intl"
+      },
+      {
+        "title": "US Urges Citizens to Leave Middle East Amid Iran Threats",
+        "url": "https://www.kyivpost.com/post/81563",
+        "type": "intl"
+      },
+      {
+        "title": "China patrols in Taiwan - managed waters  destabilizing : U . S . ",
+        "url": "https://focustaiwan.tw/politics/202608020003",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine and Gulf conflicts increasingly intertwined , says Russia - Iran analyst",
+        "url": "https://www.lrt.lt/en/news-in-english/19/3005131/ukraine-and-gulf-conflicts-increasingly-intertwined-says-russia-iran-analyst",
+        "type": "intl"
+      },
+      {
+        "title": "Rubio : Iran  Regime Has To Change  Its Ways",
+        "url": "http://www.middleeaststar.com/news/279219178/rubio-iran-regime-has-to-change-its-ways",
+        "type": "intl"
+      },
+      {
+        "title": "Iran urges regional countries to reconsider ties with Washington",
+        "url": "https://dunyanews.tv/en/World/965784-iran-urges-regional-countries-to-reconsider-ties-with-washington",
+        "type": "intl"
+      },
+      {
+        "title": "Iran - US War Updates : Trump Deal Plan , Saudi Concerns and Iran Latest Warning in 10 Points",
+        "url": "https://www.oneindia.com/international/iran-us-war-updates-trumps-deal-plan-saudi-concerns-and-irans-latest-warning-in-10-points-8164407.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump suspends fresh Iran strike , cites hope to reach quick deal",
+        "url": "https://www.middle-east-online.com/en/trump-suspends-fresh-iran-strike-cites-hope-reach-quick-deal",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Pauses Iran Strike Amid Push for Nuclear Deal",
+        "url": "https://paktribune.com/trump-pauses-iran-strike-amid-push-for-nuclear-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "US weighs strikes on Iranian energy sites as Trump authorises fresh attack",
+        "url": "https://kashmirreader.com/2026/08/02/us-weighs-strikes-on-iranian-energy-sites-as-trump-authorises-fresh-attack/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Mideast allies have reached outlines of deal to end Iran war , says US to stop new strikes",
+        "url": "https://www.azfamily.com/2026/08/02/saudi-crown-prince-urges-trump-not-escalate-iran-war-us-leader-weighs-new-strikes-ap-source/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will hold off on fresh Iran attack in hope of quick deal",
+        "url": "https://www.asiaone.com:443/world/trump-says-he-will-hold-fresh-iran-attack-hope-quick-deal",
+        "type": "intl"
+      },
+      {
+        "title": "Trump : Mideast Allies Near Iran Deal , US , Israel to Stop Strikes",
+        "url": "https://www.deccanchronicle.com/west-asia/trump-mideast-allies-near-iran-deal-us-israel-to-stop-strikes-1975917",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will order halt to Iran strikes after parameters reached for deal to end war",
+        "url": "http://www.thegazette.com/news/world/trump-says-he-will-order-halt-to-iran-strikes-after-parameters-reached-for-deal-to/article_f29a7ded-8ba4-5ab1-b8d8-581c92d01974.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will hold off on fresh Iran attack in hope of quick deal - Middle East and Africa",
+        "url": "http://www.thejakartapost.com/world/2026/08/02/trump-says-he-will-hold-off-on-fresh-iran-attack-in-hope-of-quick-deal",
+        "type": "intl"
+      },
+      {
+        "title": "US will hold off on Iran attacks in hope of quick deal",
+        "url": "https://www.dailyadvertiser.com.au/story/9322027/us-will-hold-off-on-iran-attacks-in-hope-of-quick-deal/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran ; Iranian FM warns US",
+        "url": "https://www.siasat.com/trump-threatens-more-strikes-on-iran-iranian-fm-warns-us-3517323/",
+        "type": "intl"
+      },
+      {
+        "title": "US Embassies In Middle East Warn Of  Potential Unforeseen Escalation  ",
+        "url": "http://www.southeastasiapost.com/news/279218563/us-embassies-in-middle-east-warn-of-potential-unforeseen-escalation",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says he will order halt to Iran strikes after parameters reached for deal to end war – Brandon Sun",
+        "url": "https://www.brandonsun.com/lifestyles/2026/08/01/trump-says-he-will-order-halt-to-iran-strikes-after-parameters-reached-for-deal-to-end-war",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warns US Against Fresh Strikes in Talks with Pakistan and Turkey",
+        "url": "https://www.deccanchronicle.com/west-asia/iran-warns-us-against-fresh-strikes-during-talks-with-pakistan-and-turkey-1975909",
+        "type": "intl"
+      },
+      {
+        "title": "Bangkok Post - US embassies urge citizens to consider departing Middle East",
+        "url": "https://www.bangkokpost.com/world/3295065/us-embassies-urge-citizens-to-consider-departing-middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "A new arms race ? How Trump Saudi nuclear deal could destabilise Middle East",
+        "url": "https://www.theweek.in/theweek/more/2026/08/01/a-new-arms-race-how-trumps-saudi-nuclear-deal-could-destabilise-middle-east.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns against further US attacks in talks with Pakistan and Turkey",
+        "url": "https://news.webindia123.com/news/Articles/World/20260802/4482147.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran threatens to strike other nation energy fields if US launches fresh attacks",
+        "url": "https://www.asiaone.com:443/world/iran-threatens-strike-other-nations-energy-fields-if-us-launches-fresh-attacks",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran , and other developments in the Middle East",
+        "url": "https://www.asiaone.com:443/world/trump-threatens-more-strikes-iran-and-other-developments-middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran",
+        "url": "https://www.wxii12.com/article/trump-threatens-more-strikes-iran/73324781",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warns US Against Fresh Attacks in Talks With Allies",
+        "url": "https://www.newkerala.com/news/a/iran-warns-against-further-us-attacks-talks-pakistan-935.htm",
+        "type": "intl"
+      },
+      {
+        "title": "China says it held drills near Panatag days of sea tensions",
+        "url": "https://www.philstar.com/headlines/2026/08/02/2546476/china-says-it-held-drills-near-scarborough-after-days-sea-tensions",
+        "type": "intl"
+      },
+      {
+        "title": "US Embassies Urge Americans to Leave Middle East as Iran Tensions Escalate",
+        "url": "http://www.econotimes.com/US-Embassies-Urge-Americans-to-Leave-Middle-East-as-Iran-Tensions-Escalate-1748358",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Weighs Iran Strikes as U . S . Embassies Issue Emergency Security Alerts",
+        "url": "http://www.econotimes.com/Trump-Weighs-Iran-Strikes-as-US-Embassies-Issue-Emergency-Security-Alerts-1748352",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump threatens more strikes on Iran as Israel attacks Gaza",
+        "url": "https://www.abc.net.au/news/2026-08-02/donald-trump-threatens-more-strikes-on-iran/106987064",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns of strikes on other nation energy fields if U . S . attacks",
+        "url": "https://www.theglobeandmail.com/world/article-iran-strikes-us-attacks-energy-fields-other-nations/",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East war : US State Department warns Americans to be ready to leave Middle East as Iran tensions boil",
+        "url": "https://www.theage.com.au/world/middle-east/state-department-warns-us-citizens-to-be-ready-to-leave-middle-east-as-iran-tensions-boil-20260802-p60kn2.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war updates : US President Trump threatens more strikes on Iran ; tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+        "url": "https://abc11.com/post/iran-war-updates-us-president-trump-threatens-more-strikes-tensions-hormuz-kuwait-gaza-lead-warnings/19612862/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia gearing up for major assault on Houthis",
+        "url": "https://nypost.com/2026/08/01/world-news/saudi-arabia-gearing-up-for-major-assault-on-houthis/",
+        "type": "intl"
+      },
+      {
+        "title": "US advises citizens to  consider leaving Middle East  as Trump vows to hit Iran  very hard  ",
+        "url": "http://www.britainnews.net/news/279218911/us-advises-citizens-to-consider-leaving-middle-east-as-trump-vows-to-hit-iran-very-hard",
+        "type": "intl"
+      },
+      {
+        "title": "Iran threatens to strike other nation energy fields",
+        "url": "https://www.theadvocate.com.au/story/9322027/iran-threatens-to-strike-other-nations-energy-fields/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns against  flames of war  amid US strike threats on energy sites – The Frontier Post",
+        "url": "https://thefrontierpost.com/iran-warns-against-flames-of-war-amid-us-strike-threats-on-energy-sites/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump threatens more strikes on Iran . Tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+        "url": "http://www.thegazette.com/news/world/trump-threatens-more-strikes-on-iran-tensions-from-hormuz-to-kuwait-and-gaza-lead-to/article_f29a7ded-8ba4-5ab1-b8d8-581c92d01974.html",
+        "type": "intl"
+      },
+      {
+        "title": "US citizens in Middle East urged to leave before  escalation  in Iran war",
+        "url": "https://www.newstalkzb.co.nz/news/world/us-citizens-in-middle-east-urged-to-leave-before-escalation-in-iran-war/",
+        "type": "intl"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "Satellite images show evidence of oil leak spreading from sanctioned vessel near Oman",
+        "url": "https://www.yahoo.com/news/world/articles/satellite-images-show-evidence-oil-123553596.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sanctioned tanker leaks crude oil off Oman coast amid monsoon threat",
+        "url": "https://www.foxnews.com/world/satellite-images-show-evidence-oil-leak-spreading-sanctioned-vessel-near-oman",
+        "type": "intl"
+      },
+      {
+        "title": "Oil leak spreads from sanctioned tanker grounded off Oman",
+        "url": "https://www.businessday.co.za/world/2026-08-02-oil-leak-spreads-from-sanctioned-tanker-grounded-off-oman/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil spill from shadow fleet tanker spreading off Oman , satellite images show",
+        "url": "https://www.yahoo.com/news/articles/oil-spill-shadow-fleet-tanker-185427254.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil leak spreads from a sanctioned tanker grounded off Oman , images show",
+        "url": "https://www.pressdemocrat.com/2026/08/01/oil-leak-spreads-from-a-sanctioned-tanker-grounded-off-oman-images-show/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil leak spreads from sanctioned tanker grounded off Oman coast",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/oil-leak-spreads-from-sanctioned-tanker-grounded-off-oman-coast/articleshow/132798933.cms",
+        "type": "intl"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Iraq , Turkey revive Ceyhan oil corridor with interim pipeline deal",
+        "url": "https://www.middle-east-online.com/en/iraq-turkey-revive-ceyhan-oil-corridor-interim-pipeline-deal",
+        "type": "intl"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Iraq plans to double oil exports via Türkiye Ceyhan port to 1 . 5 mln bpd",
+        "url": "https://www.azernews.az/region/261893.html",
+        "type": "intl"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Pakistan , Bangladesh face mounting economic risks as prolonged US - Iran conflict fuels oil price surge",
+        "url": "https://www.prokerala.com/news/articles/a1795530.html",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . refiners see billions in profits from global fuel crunch",
+        "url": "https://www.spokesman.com/stories/2026/aug/02/us-refiners-see-billions-in-profits-from-global-fu/",
+        "type": "intl"
+      },
+      {
+        "title": "China to increase gasoline , diesel retail prices",
+        "url": "http://www.shanghaisun.com/news/279219341/china-to-increase-gasoline-diesel-retail-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Market scored on Iran war oil price boom . Staying long may not be wise",
+        "url": "https://www.cnbc.com/2026/08/02/oil-prices-iran-war-energy-market.html",
+        "type": "intl"
+      },
+      {
+        "title": "Disruptions on multiple fronts put oil markets on the brink  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/publicpolicy/disruptions-on-multiple-fronts-put-oil-markets-on-the-brink",
+        "type": "intl"
+      },
+      {
+        "title": "RBI interest rate decision , developments in West Asia , oil to drive market sentiments : Analysts",
+        "url": "https://www.orissapost.com/rbis-interest-rate-decision-developments-in-west-asia-oil-to-drive-market-sentiments-analysts/",
+        "type": "intl"
+      },
+      {
+        "title": "Russia Extends Diesel and Gasoline Export Ban Until 2027 : What Driving the Decision ? ",
+        "url": "https://www.cubaheadlines.com/articles/336820",
+        "type": "intl"
+      },
+      {
+        "title": "Capital inflows , RBI support limit rupee decline despite 20 % oil price surge in July : Report",
+        "url": "https://www.thehindubusinessline.com/markets/forex/capital-inflows-rbi-support-limit-rupees-decline-despite-20-oil-price-surge-in-july-report/article71297426.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Major oil companies reap massive profits as energy prices climb",
+        "url": "https://www.investmentexecutive.com/news/major-oil-companies-reap-massive-profits-as-energy-prices-climb/",
+        "type": "intl"
+      },
+      {
+        "title": "Indian companies build inventories amid rising commodity prices , supply chain risks : Report",
+        "url": "https://economictimes.indiatimes.com/news/economy/indicators/indian-companies-ramp-up-inventories-to-combat-rising-commodity-prices-and-supply-chain-challenges-amid-geopolitical-tensions/articleshow/132804364.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Indian Companies Build Inventories Amid Price , Supply Risks",
+        "url": "https://www.newkerala.com/news/a/indian-companies-build-inventories-amid-rising-commodity-prices-626.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Rupee Decline Limited Despite 20 % Oil Price Jump",
+        "url": "https://www.newkerala.com/news/a/capital-inflows-rbi-support-limit-rupees-decline-despite-136.htm",
+        "type": "intl"
+      },
+      {
+        "title": "OPEC+ tipped to raise production again but new quotas loom",
+        "url": "https://www.hurriyetdailynews.com/opec-tipped-to-raise-production-again-but-new-quotas-loom-225105",
+        "type": "intl"
+      },
+      {
+        "title": "Volatile week ahead for commodities as Iran strikes and US jobs data loom",
+        "url": "https://www.moneycontrol.com/news/opinion/volatile-week-ahead-for-commodities-as-iran-strikes-and-us-jobs-data-loom-13991063.html",
+        "type": "intl"
+      },
+      {
+        "title": "Abqaiq Is a Warning That Oil Markets May Be Misreading",
+        "url": "https://finance.yahoo.com/energy/articles/abqaiq-warning-oil-markets-may-200000359.html",
+        "type": "intl"
+      },
+      {
+        "title": "SPR Gets Drained to Dump Crude Oil on Global Markets : US Exports of Crude Oil & Petroleum Products Spike",
+        "url": "https://peakoil.com/production/spr-gets-drained-to-dump-crude-oil-on-global-markets-us-exports-of-crude-oil-petroleum-products-spike",
+        "type": "intl"
+      },
+      {
+        "title": "UAE to Overhaul How It Prices All Crude Oil  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/business/uae-to-overhaul-how-it-prices-all-crude-oil",
+        "type": "intl"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "High fuel prices to endure as global conflicts hit refining capacity , warn Exxon and Chevron",
+        "url": "https://peakoil.com/production/high-fuel-prices-to-endure-as-global-conflicts-hit-refining-capacity-warn-exxon-and-chevron",
+        "type": "intl"
+      },
+      {
+        "title": "Turkey and Iraq sign one - year oil pipeline deal",
+        "url": "https://www.iranoilgas.com/news/details.aspx?id=28909&title=Turkey+and+Iraq+sign+one-year+oil+pipeline+deal+",
+        "type": "intl"
+      },
+      {
+        "title": "India coal production surges 7 . 51 % in July 2026 to 69 . 75 MT , dispatch up 17 . 34 % ",
+        "url": "https://economictimes.indiatimes.com/industry/energy/indias-coal-production-surges-7-51-in-july-2026-to-69-75-mt-dispatch-up-17-34/articleshow/132803673.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Drones Strike Saratov Refinery and Samara Wildberries Hub",
+        "url": "https://www.kyivpost.com/post/81561",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine war briefing : Strikes on three Russian oil refineries and sanctioned ship",
+        "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-strikes-three-015419000.html",
+        "type": "intl"
+      },
+      {
+        "title": "Gas prices climb as oil companies report soaring profits",
+        "url": "https://www.wtae.com/article/gas-prices-oil-companies-soaring-profits/73320141",
+        "type": "intl"
+      },
+      {
+        "title": "Turkiye , Iraq sign one - year oil pipeline deal",
+        "url": "https://thefrontierpost.com/turkiye-iraq-sign-one-year-oil-pipeline-deal/",
+        "type": "intl"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "New Strait of Hormuz plan puts Iran in control as Trump calls off strikes",
+      "url": "https://www.nzherald.co.nz/world/new-strait-of-hormuz-plan-puts-iran-in-control-as-trump-calls-off-strikes/Q2RYJ4Y2VFF7HHUJ2JZWJWI7HQ/",
+      "type": "intl"
+    },
+    "2": {
+      "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
+      "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran",
+      "type": "intl"
+    },
+    "3": {
+      "title": "Trump Says Hell Halt Planned Iran Strikes , Citing Deal On Hormuz Reopening , Nuclear Threat",
+      "url": "https://www.hngn.com/articles/272531/20260802/trump-says-hell-halt-planned-iran-strikes-citing-deal-hormuz-reopening-nuclear-threat.htm",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Iran rejects Hormuz reopening deal as Trump claims breakthrough",
+      "url": "https://www.siasat.com/iran-rejects-hormuz-reopening-deal-as-trump-claims-breakthrough-3517656/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Renewed Red Sea Standoff Underscores Persistent Threat Posed By Yemen Houthis",
+      "url": "https://www.theepochtimes.com/world/renewed-red-sea-standoff-underscores-persistent-threat-posed-by-yemens-houthis-6069379",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Trump says he will hold off on fresh Iran attack in hope of a quick deal on nuclear threat , Hormuz",
+      "url": "https://www.businesstimes.com.sg/international/global/trump-says-he-will-hold-fresh-iran-attack-hope-quick-deal-nuclear-threat-hormuz",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Trump weighs Iran strikes as Strait of Hormuz threatens oil markets",
+      "url": "https://www.moneycontrol.com/world/trump-weighs-iran-strikes-as-strait-of-hormuz-threatens-oil-markets-article-13991222.html",
+      "type": "intl"
+    },
+    "8": {
+      "title": "Iraq and Turkey strike a 1 - year oil pipeline deal to boost exports during ongoing Hormuz closures",
+      "url": "https://peakoil.com/publicpolicy/iraq-and-turkey-strike-a-1-year-oil-pipeline-deal-to-boost-exports-during-ongoing-hormuz-closures",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Trump threatens more strikes on Iran ; US wants Hormuz reopened",
+      "url": "https://theshillongtimes.com/2026/08/02/trump-threatens-more-strikes-on-iran-us-wants-hormuz-reopened/",
+      "type": "intl"
+    },
+    "10": {
+      "title": "Trump calls off planned weekend strikes on new Iran targets as he hints at shock deal to REOPEN Strait of Hormuz",
+      "url": "https://www.dailymail.com/news/article-16022553/Trump-Iran-strikes-deal-Truth-Social-Israel.html",
+      "type": "intl"
+    },
+    "11": {
+      "title": "Satellite images show evidence of oil leak spreading from sanctioned vessel near Oman",
+      "url": "https://www.yahoo.com/news/world/articles/satellite-images-show-evidence-oil-123553596.html",
+      "type": "intl"
+    },
+    "12": {
+      "title": "Sanctioned tanker leaks crude oil off Oman coast amid monsoon threat",
+      "url": "https://www.foxnews.com/world/satellite-images-show-evidence-oil-leak-spreading-sanctioned-vessel-near-oman",
+      "type": "intl"
+    },
+    "13": {
+      "title": "Oil leak spreads from sanctioned tanker grounded off Oman",
+      "url": "https://www.businessday.co.za/world/2026-08-02-oil-leak-spreads-from-sanctioned-tanker-grounded-off-oman/",
+      "type": "intl"
+    },
+    "14": {
+      "title": "Oil spill from shadow fleet tanker spreading off Oman , satellite images show",
+      "url": "https://www.yahoo.com/news/articles/oil-spill-shadow-fleet-tanker-185427254.html",
+      "type": "intl"
+    },
+    "15": {
+      "title": "Oil leak spreads from a sanctioned tanker grounded off Oman , images show",
+      "url": "https://www.pressdemocrat.com/2026/08/01/oil-leak-spreads-from-a-sanctioned-tanker-grounded-off-oman-images-show/",
+      "type": "intl"
+    },
+    "16": {
+      "title": "Oil leak spreads from sanctioned tanker grounded off Oman coast",
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/oil-leak-spreads-from-sanctioned-tanker-grounded-off-oman-coast/articleshow/132798933.cms",
+      "type": "intl"
+    },
+    "17": {
+      "title": "Iraq , Turkey revive Ceyhan oil corridor with interim pipeline deal",
+      "url": "https://www.middle-east-online.com/en/iraq-turkey-revive-ceyhan-oil-corridor-interim-pipeline-deal",
+      "type": "intl"
+    },
+    "18": {
+      "title": "Iraq plans to double oil exports via Türkiye Ceyhan port to 1 . 5 mln bpd",
+      "url": "https://www.azernews.az/region/261893.html",
+      "type": "intl"
+    },
+    "19": {
+      "title": "Pakistan , Bangladesh face mounting economic risks as prolonged US - Iran conflict fuels oil price surge",
+      "url": "https://www.prokerala.com/news/articles/a1795530.html",
+      "type": "intl"
+    },
+    "20": {
+      "title": "U . S . refiners see billions in profits from global fuel crunch",
+      "url": "https://www.spokesman.com/stories/2026/aug/02/us-refiners-see-billions-in-profits-from-global-fu/",
+      "type": "intl"
+    },
+    "21": {
+      "title": "China to increase gasoline , diesel retail prices",
+      "url": "http://www.shanghaisun.com/news/279219341/china-to-increase-gasoline-diesel-retail-prices",
+      "type": "intl"
+    },
+    "22": {
+      "title": "Market scored on Iran war oil price boom . Staying long may not be wise",
+      "url": "https://www.cnbc.com/2026/08/02/oil-prices-iran-war-energy-market.html",
+      "type": "intl"
+    },
+    "23": {
+      "title": "Disruptions on multiple fronts put oil markets on the brink  | Peak Oil News and Message Boards",
+      "url": "https://peakoil.com/publicpolicy/disruptions-on-multiple-fronts-put-oil-markets-on-the-brink",
+      "type": "intl"
+    },
+    "24": {
+      "title": "RBI interest rate decision , developments in West Asia , oil to drive market sentiments : Analysts",
+      "url": "https://www.orissapost.com/rbis-interest-rate-decision-developments-in-west-asia-oil-to-drive-market-sentiments-analysts/",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Russia Extends Diesel and Gasoline Export Ban Until 2027 : What Driving the Decision ? ",
+      "url": "https://www.cubaheadlines.com/articles/336820",
+      "type": "intl"
+    },
+    "26": {
+      "title": "Capital inflows , RBI support limit rupee decline despite 20 % oil price surge in July : Report",
+      "url": "https://www.thehindubusinessline.com/markets/forex/capital-inflows-rbi-support-limit-rupees-decline-despite-20-oil-price-surge-in-july-report/article71297426.ece",
+      "type": "intl"
+    },
+    "27": {
+      "title": "Major oil companies reap massive profits as energy prices climb",
+      "url": "https://www.investmentexecutive.com/news/major-oil-companies-reap-massive-profits-as-energy-prices-climb/",
+      "type": "intl"
+    },
+    "28": {
+      "title": "Indian companies build inventories amid rising commodity prices , supply chain risks : Report",
+      "url": "https://economictimes.indiatimes.com/news/economy/indicators/indian-companies-ramp-up-inventories-to-combat-rising-commodity-prices-and-supply-chain-challenges-amid-geopolitical-tensions/articleshow/132804364.cms",
+      "type": "intl"
+    },
+    "29": {
+      "title": "High fuel prices to endure as global conflicts hit refining capacity , warn Exxon and Chevron",
+      "url": "https://peakoil.com/production/high-fuel-prices-to-endure-as-global-conflicts-hit-refining-capacity-warn-exxon-and-chevron",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Turkey and Iraq sign one - year oil pipeline deal",
+      "url": "https://www.iranoilgas.com/news/details.aspx?id=28909&title=Turkey+and+Iraq+sign+one-year+oil+pipeline+deal+",
+      "type": "intl"
+    },
+    "31": {
+      "title": "India coal production surges 7 . 51 % in July 2026 to 69 . 75 MT , dispatch up 17 . 34 % ",
+      "url": "https://economictimes.indiatimes.com/industry/energy/indias-coal-production-surges-7-51-in-july-2026-to-69-75-mt-dispatch-up-17-34/articleshow/132803673.cms",
+      "type": "intl"
+    },
+    "32": {
+      "title": "Drones Strike Saratov Refinery and Samara Wildberries Hub",
+      "url": "https://www.kyivpost.com/post/81561",
+      "type": "intl"
+    },
+    "33": {
+      "title": "Ukraine war briefing : Strikes on three Russian oil refineries and sanctioned ship",
+      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-strikes-three-015419000.html",
+      "type": "intl"
+    },
+    "34": {
+      "title": "Gas prices climb as oil companies report soaring profits",
+      "url": "https://www.wtae.com/article/gas-prices-oil-companies-soaring-profits/73320141",
+      "type": "intl"
+    },
+    "35": {
+      "title": "Turkiye , Iraq sign one - year oil pipeline deal",
+      "url": "https://thefrontierpost.com/turkiye-iraq-sign-one-year-oil-pipeline-deal/",
+      "type": "intl"
+    }
+  }
+}
