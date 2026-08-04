@@ -1,0 +1,2501 @@
+{
+  "date": "2026-08-04",
+  "date_key": "20260804",
+  "n_total": 2618,
+  "n_high": 129,
+  "n_med": 242,
+  "n_low": 302,
+  "n_none": 1945,
+  "n_intl": 203,
+  "n_dom": 168,
+  "llm_result": {
+    "executive_summary": "미국 재무장관이 이란·오만과의 호르무즈 재개방 합의가 8월 5일(화~수) 내 가능하다고 밝혔으며[11][12][19], 카타르도 미국·이란 양측에 협상 재개 합의안 초안을 전달한 것으로 알려졌다[16]. 다만 이란은 호르무즈 해협 인바운드 통제권과 아웃바운드 감독권을 요구하며 강경 기류를 유지하고 있고[7][14], 협상 진행 중에도 호르무즈 인근에서 화물선 피격 사건이 발생해 긴장이 지속되고 있다[3][21]. 이란·오만 간 합의 근접 소식에 국제 유가가 하락하며 미국 증시(다우존스 1,000포인트 급등, S&P500 2% 상승)가 강세를 보였고[50][53][54], 국내 소비자물가 상승폭도 유가 안정세에 따라 둔화되는 흐름이 나타났다[62]. 한편 사우디 국영 아람코 최고경영자는 호르무즈 봉쇄가 역사상 최대 원유 공급 충격을 야기했다고 밝혔으며[88], 국내에서는 구윤철 장관이 10월 이후 원유 수급 차질 가능성에 대한 철저한 대비를 촉구했다[48].",
+    "categories": {
+      "1_Security": {
+        "overseas": "미국 재무장관은 호르무즈 재개방 합의가 오늘 내일 중 가능하다고 밝혔으며[6][2][4], 이란과 오만이 합의에 근접했다는 보도가 복수의 매체에서 나왔다[9][10]. WSJ은 합의안이 이란을 경유해 페르시아만에 진입하는 선박 통항 방식을 포함한다고 보도했다[1]. 그러나 이란은 호르무즈 해협 인바운드 통제권과 아웃바운드 감독권을 요구하며 협상에서 강경 입장을 유지하고 있다[7]. 협상이 진행되는 가운데 트럼프 대통령의 '참수 위협' 발언 이후 호르무즈에서 화물선 피격 사건이 보고되었다[3][21].",
+        "korea_impact": "국내 언론은 미국 재무장관의 '금명간 합의 가능' 발언을 집중 보도했으나, 이란의 호르무즈 통행료 부과 여부에 대해서는 확답이 없는 상태임을 지적했다[11][15]. 카타르가 미국·이란 양측에 협상 재개 합의안 초안을 전달했으며 양측이 검토 중인 것으로 알려졌다[16]. 이란·오만 간 합의가 서비스료를 나누는 방식으로 근접하고 있다는 보도도 나왔다[36][40]. 트럼프 대통령의 '마지막 기회' 압박에도 이란이 수수료 부과 입장을 고수하면서 삼성·LG 등 국내 기업의 호르무즈 운임 부담이 장기화될 가능성이 제기되었다[37][38]."
+      },
+      "2_Safety": {
+        "overseas": "호르무즈 해협에서 화물선이 피격되었으며, 선박 화재로 선원 1명이 실종된 사건이 발생했다[22][23]. 트럼프 대통령의 '참수 위협' 발언 이후 호르무즈에서 선박 공격이 보고되었다[21]. 홍해에서는 인도 선적 선박이 예멘 인근에서 침몰하였으며 선원 13명이 구조되었고[25][26], 인도 정부는 홍해 선박 공격을 규탄하며 선원 14명 전원 구조를 확인했다[24].",
+        "korea_impact": "해양수산부는 소말리아·아덴만 해역의 해적 사건이 전년 대비 3배 증가했다며 선사에 정보 제공 및 안전 운항을 당부했다[27]."
+      },
+      "3_Freight": {
+        "overseas": "사우디 국적 유조선 6척이 바브엘만데브를 피해 아프리카 희망봉 우회 항로로 전환했으며[28], 미국은 봉쇄 이후 상업 선박 44척이 항로를 변경했다고 밝혔다[29]. S&P 글로벌은 외교 협상 재개에도 불구하고 호르무즈 선박 통항량이 여전히 저조하며 보안 사건으로 해운이 압박을 받고 있다고 분석했다[30]. 발틱건화물운임지수(BDI)는 93포인트 상승한 2,936을 기록했으며[34], 벙커 시장 변동성은 8월에도 지속될 것으로 전망되었다[35]. 곡물 운임도 기록적인 이동량 속에 상승세를 보였다[32].",
+        "korea_impact": "부산항 발 컨테이너 운임이 4주 만에 반등했으며, 미주·중동 항로가 상승을 견인한 것으로 보도되었다[41]. 이란·오만 합의가 서비스료 부과 방식으로 근접하면서 호르무즈 통과 비용이 유료화될 가능성이 제기되었다[39][40]. 칭다오 항로 운임 부담을 낮출 새로운 해법이 필요하다는 사설도 게재되었다[42]. 파나마 리오 인디오 저수지 건설에 반대하는 농민 시위가 보도되어 파나마 운하 초크포인트 관련 동향도 주목받았다[43][44]."
+      },
+      "4_PortCargo": {
+        "overseas": "상하이항이 월간 처리량 203,881 TEU로 사상 최고치를 기록했다[45].",
+        "korea_impact": "인도 국영 정유사 HPCL이 호르무즈 피해를 대체하기 위해 나이지리아 원유 200만 배럴을 매입했다[46]. 호주 철광석 수출항이 또다시 운영을 중단하면서 철강 원료 공급망에 비상이 걸렸다[47]. 구윤철 장관은 원유 수급 안정에 최선을 다하겠다면서 10월 이후 수급 차질 가능성에 대한 철저한 대비를 촉구했다[48]. 울산항 원유 반입량은 579만 톤으로 4개월 연속 증가세를 이어갔다[49]."
+      },
+      "5_EconFinance": {
+        "overseas": "이란·오만 합의 기대감에 국제 유가가 급락했으며[50][51][52], 미국 증시는 다우존스가 1,000포인트 급등하고 S&P500이 2% 상승하는 강세를 보였다[53][54]. 아람코 최고경영자는 호르무즈 봉쇄로 시장에서 26억 배럴의 원유 공급이 손실되었다고 밝혔다[55]. 독일 루프트한자는 중동 전쟁으로 인한 비용 압박을 이유로 실적 전망을 하향 조정했으며 주가가 급락했다[58].",
+        "korea_impact": "서울 증시는 AI 우려와 이란 위기 속에서도 소폭 상승 마감했다[60]. 한국은행은 기저효과로 8월 소비자물가가 소폭 상승할 것으로 전망했다[61]. 유가 안정세에 따라 소비자물가 상승폭이 둔화되는 흐름이 나타났다[62]. 제주항공은 2분기 영업손실 524억 원을 기록했으며, 매출은 4,417억 원으로 역대 최대를 달성했으나 고유가·고환율 영향으로 적자폭이 확대되었다[64][65][67]."
+      },
+      "6_Seafood": {
+        "overseas": "",
+        "korea_impact": "남해안·서해안(가로림만·천수만)·동해안 등 전국 주요 해역에 고수온 경보 및 주의보가 발령되었으며, 양식장 어류 폐사 위기가 확대되고 있다[73][74][75][76]. 전남·광주특별시는 전국 최초로 고수온 경보를 발령하고 양식 어류를 긴급 방류했다[77]. 경북 동해안에서는 치어 폐사 위기가 확대되고 있으며[79], 통영시는 고수온·적조 피해 최소화를 위한 선제 대응에 나섰다[80]. 해양수산부의 지원이 완벽하다는 입장과 어민들의 폐업 위기 호소 사이에 서류와 현장의 괴리가 심각하다는 지적도 제기되었다[72]."
+      },
+      "7_Shipping": {
+        "overseas": "주요 해운사들이 2분기 실적 전망을 200% 상향 조정하는 등 강한 수익성을 보였으며[82], CMA CGM은 재고 비축 수요에 힘입어 매출이 19% 급증했다[83]. 러시아는 EU의 완전한 원유 수입 금지에 앞서 그림자 선단을 준비 중인 것으로 알려졌다[84]. 머스크는 드래곤 서비스에서 상하이를 제외하는 항로 변경을 단행했다[85].",
+        "korea_impact": "인천 장봉도 배편이 13회로 유지되며 옹진군이 선사 적자를 지원하기로 했다[86]."
+      },
+      "8_Logistics": {
+        "overseas": "인도 제약 업계는 관세 및 해운 문제로 2030년 매출 목표 달성이 어려울 것이라고 무역 단체가 밝혔다[87].",
+        "korea_impact": ""
+      },
+      "10_OtherIndustry": {
+        "overseas": "아람코 최고경영자는 호르무즈 봉쇄가 역사상 최대 원유 공급 충격을 야기했다고 밝혔으나[88], 후티 공격이 원유 수출에 영향을 미치지 않았다고도 언급했다[96][97]. 철광석 가격은 중국 수요 부진으로 1년 만에 최저치를 기록했으며[91][94], 우크라이나 공격으로 러시아 흑해 및 아조우해 곡물 수출에 차질이 발생했다[106][107]. 바브엘만데브 교란이 아시아의 휘발유·항공료·식료품 비용 상승으로 이어질 수 있다는 분석도 나왔다[89].",
+        "korea_impact": "아람코는 중동 리스크에도 동서 송유관 활용을 확대해 공급망을 유지하고 있다고 밝혔다[98][99]. 국내에서는 폐플라스틱에서 추출한 재생 나프타를 처음으로 해외에 수출하는 성과가 있었다[101][102][104]. 러시아산 원유 공급이 75% 증가하고 시리아가 하루 6만 배럴을 의존하는 것으로 보도되었다[103]. LX인터내셔널의 석탄 자원 사업에 차질이 발생하고 있다는 보도도 나왔다[100]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "호르무즈 해협은 봉쇄가 지속되는 가운데 이란·오만 간 재개방 협상이 진행 중이며, S&P 글로벌은 협상 재개에도 선박 통항량이 여전히 저조하다고 분석했다[30]. 사우디 국적 유조선 6척이 바브엘만데브를 피해 아프리카 희망봉 우회 항로로 전환했으며[28], 미국은 봉쇄 이후 상업 선박 44척이 항로를 변경했다고 밝혔다[29]. 협상 중에도 호르무즈 인근에서 화물선 피격 및 선박 화재 사건이 발생해 항로 안전이 위협받고 있다[3][21][22].",
+          "korea_impact": "부산항 발 컨테이너 운임이 4주 만에 반등했으며 미주·중동 항로가 상승을 견인했다[41]. 이란이 호르무즈 통행료 부과를 요구하면서 삼성·LG 등 국내 기업의 운임 부담이 장기화될 가능성이 제기되었다[37][38]. 구윤철 장관은 10월 이후 원유 수급 차질 가능성에 대한 철저한 대비를 촉구했다[48]."
+        },
+        "source": {
+          "overseas": "아람코 최고경영자는 호르무즈 봉쇄로 시장에서 26억 배럴의 원유 공급이 손실되었다고 밝혔다[55][88]. 우크라이나 공격으로 러시아 흑해 및 아조우해 곡물 수출에 차질이 발생했으며 대체 경로 모색이 필요한 상황이다[106][107]. 철광석 가격은 중국 수요 부진으로 1년 만에 최저치를 기록했다[91][94].",
+          "korea_impact": "인도 국영 정유사 HPCL이 호르무즈 피해를 대체하기 위해 나이지리아 원유 200만 배럴을 매입했다[46]. 아람코는 동서 송유관 활용을 확대해 공급망을 유지하고 있다고 밝혔다[98]. 울산항 원유 반입량은 579만 톤으로 4개월 연속 증가세를 이어갔다[49]."
+        },
+        "logistics": {
+          "overseas": "BDI가 93포인트 상승한 2,936을 기록했으며[34], 주요 해운사들은 2분기 실적 전망을 200% 상향 조정했다[82]. CMA CGM은 재고 비축 수요에 힘입어 매출이 19% 급증했으며[83], 벙커 시장 변동성은 8월에도 지속될 것으로 전망되었다[35]. 머스크는 드래곤 서비스에서 상하이를 제외하는 항로 변경을 단행했다[85].",
+          "korea_impact": "부산항 발 컨테이너 운임이 4주 만에 반등했으며 미주·중동 항로가 상승을 견인했다[41]. 호주 철광석 수출항이 또다시 운영을 중단하면서 철강 원료 공급망에 비상이 걸렸다[47]. 상하이항은 월간 처리량 203,881 TEU로 사상 최고치를 기록해 동북아 물동량 집중 현상이 지속되고 있다[45]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "서울 증시는 AI 우려와 이란 위기 속에서도 소폭 상승 마감했다[60]. 한국은행은 기저효과로 8월 소비자물가가 소폭 상승할 것으로 전망했으나[61], 유가 안정세에 따라 소비자물가 상승폭이 둔화되는 흐름도 나타났다[62]. 제주항공은 2분기 영업손실 524억 원을 기록했으며, 고유가·고환율이 주요 원인으로 지목되었다[67][68].",
+        "정유·화학": "구윤철 장관은 원유 수급 안정에 최선을 다하겠다면서 10월 이후 수급 차질 가능성에 대한 철저한 대비를 촉구했다[48]. 울산항 원유 반입량은 579만 톤으로 4개월 연속 증가세를 이어갔다[49]. 국내에서는 폐플라스틱에서 추출한 재생 나프타를 처음으로 해외에 수출하는 성과가 있었다[101][102][104].",
+        "해운·물류": "부산항 발 컨테이너 운임이 4주 만에 반등했으며 미주·중동 항로가 상승을 견인했다[41]. 소말리아·아덴만 해역의 해적 사건이 전년 대비 3배 증가해 해양수산부가 안전 운항을 당부했다[27]. 인천 장봉도 배편은 13회로 유지되며 옹진군이 선사 적자를 지원하기로 했다[86].",
+        "식품·농업": "전국 주요 해역에 고수온 경보 및 주의보가 발령되어 양식장 어류 폐사 위기가 확대되고 있다[73][74][75][76]. 전남·광주특별시는 전국 최초로 고수온 경보를 발령하고 양식 어류를 긴급 방류했다[77]. 우크라이나 공격으로 러시아 흑해·아조우해 곡물 수출에 차질이 발생해 국제 곡물 공급망에도 영향이 우려된다[106][107].",
+        "기타산업": "LX인터내셔널의 석탄 자원 사업에 차질이 발생하고 있다는 보도가 나왔다[100]. 호주 철광석 수출항 운영 중단으로 국내 철강 원료 공급망에 비상이 걸렸다[47]. 러시아산 원유 공급이 75% 증가한 것으로 보도되었다[103]."
+      }
+    },
+    "changes": {
+      "new": [
+        "카타르가 미국·이란 양측에 호르무즈 협상 재개 합의안 초안을 전달했으며 양측이 검토 중[16]",
+        "호르무즈 협상 진행 중 화물선 피격 및 선원 실종 사건 발생[21][22][23]",
+        "전남·광주특별시 전국 최초 고수온 경보 발령 및 양식 어류 긴급 방류[77]",
+        "국내 폐플라스틱 기반 재생 나프타 첫 해외 수출[101][102][104]",
+        "상하이항 월간 처리량 203,881 TEU 사상 최고치 기록[45]"
+      ],
+      "escalated": [
+        "이란이 호르무즈 인바운드 통제권·아웃바운드 감독권 요구하며 협상 강경 기류 심화[7][14]",
+        "이란의 호르무즈 통행료(서비스료) 부과 방식 합의 근접으로 유료화 가능성 고조[36][39][40]",
+        "전국 주요 해역 고수온 경보·주의보 확대 및 양식장 피해 위기 심화[73][74][75][76][79]",
+        "소말리아·아덴만 해적 사건 전년 대비 3배 증가[27]",
+        "제주항공 2분기 영업손실 524억 원으로 적자폭 확대[64][67]"
+      ],
+      "resolved": [
+        "이란·오만 합의 기대감에 국제 유가 하락세 전환으로 단기 유가 압박 완화 가능성[50][51][52]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "WSJ : Hormuz deal involves ships entering the Persian Gulf via Iran",
+        "url": "https://en.apa.az/asia/wsj-hormuz-deal-involves-ships-entering-the-persian-gulf-via-iran-519000",
+        "type": "intl"
+      },
+      {
+        "title": "officials : Iran and Oman make progress on a deal to reopen the Strait of Hormuz | Politics and Government",
+        "url": "https://www.reviewjournal.com/news/politics-and-government/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say-3859043/",
+        "type": "intl"
+      },
+      {
+        "title": "STRAIT OF HORMUZ : Cargo Ship Reports Attack As U . S ., Iran Clash Over Talks",
+        "url": "https://www.theyeshivaworld.com/news/general/2582236/strait-of-hormuz-cargo-ship-reports-attack-as-u-s-iran-clash-over-talks.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran and Oman make progress on deal to reopen Strait of Hormuz , officials say",
+        "url": "https://www.adn.com/nation-world/2026/08/04/iran-and-oman-make-progress-on-deal-to-reopen-strait-of-hormuz-officials-say/",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East : India says commercial ship sunk off Yemen",
+        "url": "https://www.dw.com/en/middle-east-india-says-commercial-ship-sunk-off-yemen/live-78235099",
+        "type": "intl"
+      },
+      {
+        "title": "US says Hormuz deal possible by  today  ",
+        "url": "https://www.omanobserver.om/article/1193983/world/region/us-says-hormuz-deal-possible-by-today",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Demands Hormuz Inbound Control , Outbound Oversight",
+        "url": "https://www.pakistantoday.com.pk/2026/08/04/iran-demands-hormuz-inbound-control-outbound-oversight-says-source",
+        "type": "intl"
+      },
+      {
+        "title": "Iran and Oman make progress on a deal to reopen the Strait of Hormuz , officials say",
+        "url": "https://www.news4jax.com/news/world/2026/08/04/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say/",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz : Iran , Oman make progress on deal",
+        "url": "https://www.bnnbloomberg.ca/business/international/2026/08/04/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran , Oman make progress on deal to reopen Strait of Hormuz : officials",
+        "url": "https://www.dailypress.com/2026/08/04/iran-strait-of-hormuz-deal-progress/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump still upbeat about Iran talks as cargo ship hit",
+        "url": "https://www.manilatimes.net/2026/08/05/world/americas-emea/trump-still-upbeat-about-iran-talks-as-cargo-ship-hit/2398054",
+        "type": "intl"
+      },
+      {
+        "title": "Scott Bessent Says Deal to Reopen Strait Is Imminent",
+        "url": "https://politicalwire.com/2026/08/04/scott-bessent-says-deal-to-reopen-strait-is-imminent/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo Ship Struck In Hormuz , Crew Member Missing , As Trump - Iran Talks Dispute Deepens",
+        "url": "https://www.hngn.com/articles/272531/20260804/trump-says-hell-halt-planned-iran-strikes-citing-deal-hormuz-reopening-nuclear-threat.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship reportedly struck as Bessent says deal is coming to reopen Strait of Hormuz",
+        "url": "https://kfdm.com/news/nation-world/cargo-ship-reportedly-struck-in-strait-of-hormuz-as-trump-states-us-iran-talks-ongoing-maritime-trade-projectile-oman-coast-negotiations-houthis-yemen-saudi-arabia",
+        "type": "intl"
+      },
+      {
+        "title": "US , Iran could reach Hormuz reopening deal by Wednesday , Treasury Secretary says",
+        "url": "https://en.apa.az/america/us-iran-could-reach-hormuz-reopening-deal-by-wednesday-treasury-secretary-says-518962",
+        "type": "intl"
+      },
+      {
+        "title": "Third Hormuz incident in 48 hours puts underwriters back on alert",
+        "url": "https://www.insurancebusinessmag.com/us/news/marine/third-hormuz-incident-in-48-hours-puts-underwriters-back-on-alert-584803.aspx",
+        "type": "intl"
+      },
+      {
+        "title": "US hopeful Hormuz strait deal will be done  today or tomorrow  after ship hit",
+        "url": "https://www.citizen.co.za/news/us-hopeful-hormuz-strait-deal-will-be-done-today-or-tomorrow-after-ship-hit/",
+        "type": "intl"
+      },
+      {
+        "title": "Status of US - Iran talks uncertain as ship struck in Hormuz",
+        "url": "https://www.hurriyetdailynews.com/status-of-us-iran-talks-uncertain-as-ship-struck-in-hormuz-225212",
+        "type": "intl"
+      },
+      {
+        "title": "Defiant Tehran digs in over Trump latest threat to attack over Strait",
+        "url": "https://www.mirror.co.uk/news/world-news/iran-war-trump-tehran-missiles-37512943",
+        "type": "intl"
+      },
+      {
+        "title": "How long can Iran weaponise Hormuz ? ",
+        "url": "https://www.hindustantimes.com/world-news/how-long-can-iran-weaponise-hormuz-101785833011637.html",
+        "type": "intl"
+      },
+      {
+        "title": "US may have deal with Iran to reopen Strait of Hormuz  today or tomorrow , Bessent says",
+        "url": "https://nypost.com/2026/08/04/us-news/us-may-have-deal-with-iran-to-reopen-strait-of-hormuz-today-or-tomorrow-bessent-says/",
+        "type": "intl"
+      },
+      {
+        "title": "Status of US - Iran talks uncertain as ship hit in Hormuz",
+        "url": "https://www.canberratimes.com.au/story/9323205/status-of-us-iran-talks-uncertain-as-ship-hit-in-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Ship struck in Strait of Hormuz as U . S . and Iran dispute talks – NBC 5 Dallas - Fort Worth",
+        "url": "https://www.nbcdfw.com/news/national-international/cargo-ship-struck-strait-hormuz-us-iran-talks/4058085/",
+        "type": "intl"
+      },
+      {
+        "title": "US could have deal with Iran to open Strait of Hormuz within  two day with  freedom of movement  for commercial ships",
+        "url": "https://www.lbc.co.uk/article/us-deal-iran-strait-of-hormuz-bessent-5HjdfbY_2/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship reports being hit in Strait of Hormuz as US , Iran diverge",
+        "url": "https://www.troyrecord.com/2026/08/04/strait-of-hormuz-us-iran-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Greek - owned vessel hit in the Strait of Hormuz – One seafarer missing",
+        "url": "https://sofokleous10.gr/2026/08/04/greek-owned-vessel-hit-in-the-strait-of-hormuz-one-seafarer-missing/",
+        "type": "intl"
+      },
+      {
+        "title": "Crude rises as a US base in Kuwait and multiple vessels in the Gulf gets struck - Newsquawk US Market Open",
+        "url": "https://www.zerohedge.com/markets/crude-rises-us-base-kuwait-and-multiple-vessels-gulf-gets-struck-newsquawk-us-market-open",
+        "type": "intl"
+      },
+      {
+        "title": "Futures Hit Record High As Oil Tumbles After Bessent Says Hormuz May  Reopen Tomorrow  ",
+        "url": "https://www.zerohedge.com/markets/futures-hit-record-high-oil-tumbles-after-bessent-says-hormuz-may-reopen-tomorrow",
+        "type": "intl"
+      },
+      {
+        "title": "US Treasury Secretary says chance of Hormuz deal with Iran by Wednesday",
+        "url": "https://jordantimes.com/news/region/one-missing-as-crew-fights-fire-aboard-ship-hit-in-hormuz-maritime-security-firm",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz Opening Uncertain After New Strike , Hurdles in Talks",
+        "url": "https://www.livemint.com/global/hormuz-opening-uncertain-after-new-strike-hurdles-in-talks-11785843546683.html",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship reportedly struck in Strait of Hormuz as Trump states US , Iran talks ongoing",
+        "url": "https://wcti12.com/news/nation-world/cargo-ship-reportedly-struck-in-strait-of-hormuz-as-trump-states-us-iran-talks-ongoing-maritime-trade-projectile-oman-coast-negotiations-houthis-yemen-saudi-arabia",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship reports being struck in Strait of Hormuz as US , Iran claims about talks diverge - WSVN 7News | Miami News , Weather , Sports",
+        "url": "https://wsvn.com/news/us-world/cargo-ship-reports-being-struck-in-strait-of-hormuz-as-us-iran-claims-about-talks-diverge/",
+        "type": "intl"
+      },
+      {
+        "title": "US says Iran deal on Hormuz to happen  today or tomorrow  ",
+        "url": "https://www.siasat.com/us-says-iran-deal-on-hormuz-to-happen-today-or-tomorrow-3518649/",
+        "type": "intl"
+      },
+      {
+        "title": "Qatar says draft US - Iran talks proposal in circulation as mediators push to ease tensions",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/qatar-says-draft-us-iran-talks-proposal-in-circulation-as-mediators-push-to-ease-tensions/articleshow/132860252.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Explainer : U . S ., Iran at odds over talks as Hormuz standoff persists",
+        "url": "http://www.theuknews.com/news/279221766/explainer-us-iran-at-odds-over-talks-as-hormuz-standoff-persists",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Aramco Profit Soars As CEO Warns Hormuz Closure Removes 100 Million Barrels A Week",
+        "url": "https://www.zerohedge.com/energy/saudi-aramco-profit-soars-ceo-warns-hormuz-closure-removes-100-million-barrels-week",
+        "type": "intl"
+      },
+      {
+        "title": "US says Iran deal on Hormuz likely  today or tomorrow  ",
+        "url": "https://www.siasat.com/pakistan-invites-iranian-fm-at-the-earliest-for-us-iran-talks-3518649/",
+        "type": "intl"
+      },
+      {
+        "title": "Ship struck in Strait of Hormuz as U . S . and Iran dispute talks – NBC Los Angeles",
+        "url": "https://www.nbclosangeles.com/news/national-international/cargo-ship-struck-strait-hormuz-us-iran-talks/3925313/",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz Traffic at a Trickle as Ship Attacks Heighten Concerns",
+        "url": "https://www.insurancejournal.com/news/international/2026/08/04/880135.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Could a UN - backed plan to reopen Hormuz break the deadlock ? ",
+        "url": "https://fortune.com/2026/08/04/could-a-un-backed-plan-to-reopen-hormuz-break-the-deadlock/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship struck in Strait of Hormuz as U . S . and Iran talks remain uncertain",
+        "url": "https://www.theglobeandmail.com/world/article-cargo-struck-in-hormuz-as-us-and-iran-talks-remain-uncertain/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship hit after Trump insists Iran talks could reopen Hormuz today",
+        "url": "https://www.freemalaysiatoday.com/category/world/2026/08/04/cargo-ship-hit-after-trump-insists-iran-talks-could-reopen-hormuz-today",
+        "type": "intl"
+      },
+      {
+        "title": "Ship struck in Strait of Hormuz as U . S . and Iran dispute talks – NBC4 Washington",
+        "url": "https://www.nbcwashington.com/news/national-international/cargo-ship-struck-strait-hormuz-us-iran-talks/4138004/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | Harwich and Manningtree Standard",
+        "url": "https://www.harwichandmanningtreestandard.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks",
+        "url": "https://www.theargus.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz Waterway : Cargo Ship Hit Amid US - Iran Tensions",
+        "url": "https://punchng.com/cargo-ship-hit-after-trump-insists-iran-talks-could-reopen-hormuz-waterway/",
+        "type": "intl"
+      },
+      {
+        "title": "Ship struck in Strait of Hormuz , U . S . and Iran claims about talks diverge – NBC Bay Area",
+        "url": "https://www.nbcbayarea.com/news/national-international/cargo-ship-struck-strait-hormuz-us-iran-talks/4123256/",
+        "type": "intl"
+      },
+      {
+        "title": "Ship struck in Strait of Hormuz , U . S . and Iran claims about talks diverge – NBC10 Philadelphia",
+        "url": "https://www.nbcphiladelphia.com/news/national-international/cargo-ship-struck-strait-hormuz-us-iran-talks/4443083/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship reports being struck in Strait of  Hormuz as US , Iran claims about talks diverge",
+        "url": "https://www.dailyexcelsior.com/cargo-ship-reports-being-struck-in-strait-of-hormuz-as-us-iran-claims-about-talks-diverge/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | Chester and District Standard",
+        "url": "https://www.chesterstandard.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Ship struck in Strait of Hormuz , U . S . and Iran claims about talks diverge – NBC Chicago",
+        "url": "https://www.nbcchicago.com/news/national-international/cargo-ship-struck-strait-hormuz-us-iran-talks/3970261/",
+        "type": "intl"
+      },
+      {
+        "title": "An emerging deal could cement Iran control of Hormuz",
+        "url": "https://www.omanobserver.om/article/1193930/world/region/an-emerging-deal-could-cement-irans-control-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | Darlington and Stockton Times",
+        "url": "https://www.darlingtonandstocktontimes.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Middle - East Crisis : US Military Enforces Blockade Against Iran , Redirects 44 Commercial Vessels , Disables Two Others",
+        "url": "https://saharareporters.com/2026/08/03/middle-east-crisis-us-military-enforces-blockade-against-iran-redirects-44-commercial",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | The Wiltshire Gazette and Herald",
+        "url": "https://www.gazetteandherald.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | Clacton and Frinton Gazette",
+        "url": "https://www.clactonandfrintongazette.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Senior Iranian official says US will  face serious risks and casualtie if naval blockade continues",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/senior-iranian-official-says-us-will-face-serious-risks-and-casualties",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | Richmond and Twickenham Times",
+        "url": "https://www.richmondandtwickenhamtimes.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Warns Against New Hormuz Corridor as Gulf Naval Tensions Rise",
+        "url": "https://www.khaama.com/iran-warns-against-new-hormuz-corridor-as-gulf-naval-tensions-rise/",
+        "type": "intl"
+      },
+      {
+        "title": "Cargo ship reports being struck in Strait of Hormuz as US , Iran claims about talks diverge",
+        "url": "https://www.independent.co.uk/news/world/europe/strait-of-hormuz-oman-iran-cairo-british-b3026932.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Hormuz will not reopen on US terms as Trump renews warning",
+        "url": "https://en.dailypakistan.com.pk/04-Aug-2026/iran-says-hormuz-will-not-reopen-on-us-terms-as-trump-renews-warning",
+        "type": "intl"
+      },
+      {
+        "title": "investingLive Asia - Pacific market moving news : Hormuz incident and Iran threats",
+        "url": "https://investinglive.com/news/investinglive-asia-pacific-market-moving-news-hormuz-incident-and-iran-threats/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war live : Tehran slams US blockade as Trump warns of  last chance  | US - Israel war on Iran News",
+        "url": "https://www.aljazeera.com/news/liveblog/2026/8/4/iran-war-live-tehran-denies-us-talks-as-trump-warns-of-last-chance?update=4827441",
+        "type": "intl"
+      },
+      {
+        "title": "Trump optimistic Iran talks will reopen strait , and other developments in the Middle East",
+        "url": "https://www.timesfreepress.com/news/2026/aug/03/trump-optimistic-iran-talks-will-reopen-strait-and-other-developments-in-the-middle-east/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Says US - Iran Talks Underway , Warns Tehran of  Last Chance  as Hormuz Tensions Rise and Oil Majors Reap $26 . 5bn Windfall",
+        "url": "https://gulfnews.com/world/mena/trump-says-us-iran-talks-underway-calls-it-irans-last-chance-before-decapitation-1.500629793",
+        "type": "intl"
+      },
+      {
+        "title": "Iran warns US warships over altering routes in the Strait of Hormuz",
+        "url": "https://www.euronews.com/2026/08/04/iran-warns-us-warships-over-altering-routes-in-the-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Warns Iran of  Last Chance Before Decapitation  as Secret Talks , Hormuz Standoff and Denuclearization Dispute Intensify",
+        "url": "https://gulfnews.com/world/americas/trump-says-iran-facing-last-chance-before-decapitation-1.500629043",
+        "type": "intl"
+      },
+      {
+        "title": "Qatar says US - Iran talks effort advances",
+        "url": "https://www.pakistantoday.com.pk/2026/08/04/qatar-sees-movement-in-efforts-to-open-us-iran-talks-as-hormuz-stays-disrupted",
+        "type": "intl"
+      },
+      {
+        "title": "Qatar says progress made toward US - Iran talks",
+        "url": "https://www.illawarramercury.com.au/story/9324092/qatar-says-progress-made-toward-us-iran-talks/",
+        "type": "intl"
+      },
+      {
+        "title": "Turkey Calls on Russia and Ukraine to Ensure Safe Navigation in Black Sea",
+        "url": "https://maritime-executive.com/article/turkey-calls-on-russia-and-ukraine-to-ensure-safe-navigation-in-black-sea",
+        "type": "intl"
+      },
+      {
+        "title": "Qatar says progress made toward US - Iran talks on ending war",
+        "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/08/04/status-of-us-iran-talks-uncertain-as-ship-struck-in-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Regional naval alliance formed to secure Red Sea",
+        "url": "https://defenceweb.co.za/sea/sea-sea/regional-naval-alliance-formed-to-secure-red-sea/",
+        "type": "intl"
+      },
+      {
+        "title": "Scott Bessent Says Hormuz Deal Could Come by Tomorrow : Do Prediction Markets Agree ? - ExxonMobil Holdings",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/08/60909398/scott-bessent-says-hormuz-deal-could-come-by-tomorrow-do-prediction-markets-agree",
+        "type": "intl"
+      },
+      {
+        "title": "Mixed Market Sentiment Amidst Middle East Uncertainty",
+        "url": "https://www.rttnews.com/3675104/mixed-market-sentiment-amidst-middle-east-uncertainty.aspx",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen Houthis claim drone strike on Saudi airport - Xinhua",
+        "url": "https://english.news.cn/20260804/c1827d92a5b54ae38a360258cf8c46a3/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump claims active ceasefire talks , but Iran denies direct negotiations",
+        "url": "https://www.inquirer.com/news/nation-world/trump-iran-ceasefire-talks-20260804.html",
+        "type": "intl"
+      },
+      {
+        "title": "Russia begins Pacific Fleet exercises with 13 , 000 troops",
+        "url": "https://www.azernews.az/region/261974.html",
+        "type": "intl"
+      },
+      {
+        "title": "Northern Fleet conducts multiple missile launches near Norway in the Barents Sea",
+        "url": "https://www.thebarentsobserver.com/security/northern-fleet-conducts-multiple-missile-launches-near-norway-in-the-barents-sea/455152",
+        "type": "intl"
+      },
+      {
+        "title": "US posts photo of Coast Guard working with Taiwan after Beijing starts patrols",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/04/us-posts-photo-of-coast-guard-working-with-taiwan-after-beijing-starts-patrols",
+        "type": "intl"
+      },
+      {
+        "title": "Millions join Arbaeen pilgrimage in Iraq amid regional tensions",
+        "url": "https://www.siasat.com/millions-join-arbaeen-pilgrimage-in-iraq-amid-regional-tensions-3518585/",
+        "type": "intl"
+      },
+      {
+        "title": "Global markets trade mixed amid no concrete results in Middle East , dampening risk appetite",
+        "url": "https://aa.com.tr/en/economy/global-markets-trade-mixed-amid-no-concrete-results-in-middle-east-dampening-risk-appetite/4017726",
+        "type": "intl"
+      },
+      {
+        "title": "Millions join Arbaeen pilgrimage in Iraq amid  regional tensions , fears of US - Iran escalation",
+        "url": "https://www.dailyexcelsior.com/millions-join-arbaeen-pilgrimage-in-iraq-amid-regional-tensions-fears-of-us-iran-escalation/",
+        "type": "intl"
+      },
+      {
+        "title": "How Israel Armed Iran Neighbor , the UAE",
+        "url": "https://www.haaretz.com/israel-news/security-aviation/2026-08-03/ty-article-magazine/israel-iran-elbit-armed-uae/0000019f-c256-d2d0-af9f-faf6c5730000",
+        "type": "intl"
+      },
+      {
+        "title": "Asian Shares Mostly Higher Despite Uncertainty Over US - Iran Talks",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69208615-asian-shares-mostly-higher-despite-uncertainty-over-us-iran-talks-020.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Iran is facing  last chance",
+        "url": "https://www.omanobserver.om/article/1193934/world/trump-says-iran-is-facing-last-chance",
+        "type": "intl"
+      },
+      {
+        "title": "Millions join Arbaeen pilgrimage in Iraq amid regional tensions and fears of US - Iran escalation – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/world/2026/08/04/millions-join-arbaeen-pilgrimage-in-iraq-amid-regional-tensions-and-fears-of-us-iran-escalation",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Insists Iran  Will Never Have A Nuclear Weapon , Claims Tehran Secretly Seeking Talks",
+        "url": "https://saharareporters.com/2026/08/03/trump-insists-iran-will-never-have-nuclear-weapon-claims-tehran-secretly-seeking-talks",
+        "type": "intl"
+      },
+      {
+        "title": "Live updates : Trump calls off Iran strikes , warns of  last chance  to sign a deal",
+        "url": "https://us.cnn.com/2026/08/04/world/live-news/iran-war-trump",
+        "type": "intl"
+      },
+      {
+        "title": "Trump warns Iran , Gulf diplomacy intensifies and regional flights remain disrupted",
+        "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/08/04/trump-warns-iran-gulf-diplomacy-intensifies-and-regional-flights-remain-disrupted/",
+        "type": "intl"
+      },
+      {
+        "title": "Diplomacy stalls across Middle East as Iran flags plan for Hormuz",
+        "url": "https://www.sbs.com.au/news/podcast-episode/diplomacy-stalls-across-middle-east-as-iran-flags-plan-for-hormuz/uaov8gpsa",
+        "type": "intl"
+      },
+      {
+        "title": "Fortunes Buoyed by Hormuz Crisis , Clarksons Posts a Record First Half",
+        "url": "https://maritime-executive.com/article/fortunes-buoyed-by-hormuz-crisis-clarksons-posts-a-record-first-half",
+        "type": "intl"
+      },
+      {
+        "title": "US Navy is reclassifying 19 Virginia - class submarines to reflect increased attack capabilities",
+        "url": "https://www.navytimes.com/news/your-navy/2026/08/04/us-navy-is-reclassifying-19-virginia-class-submarines-to-reflect-increased-attack-capabilities/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Oman talks focused on temporary Hormuz route",
+        "url": "https://theshillongtimes.com/2026/08/04/iran-says-oman-talks-focused-on-temporary-hormuz-route/",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump says Iran facing  last chance before decapitation  ",
+        "url": "https://arynews.tv/donald-trump-says-iran-facing-last-chance-before-decapitation",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Calls Iran Deal a  Last Chance  as Tehran Denies Talks ; Dow Futures Gain 95 Points , Oil Prices Clim",
+        "url": "https://www.benzinga.com/markets/equities/26/08/60894610/trump-iran-talks-dow-futures-oil-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Make deal or surrender , Trump tells Iranians",
+        "url": "https://dailytrust.com/make-deal-or-surrender-trump-tells-iranians/",
+        "type": "intl"
+      },
+      {
+        "title": "Can Iran outlast the US ? How Teheran is widening its pressure campaign to force concessions",
+        "url": "https://www.businesstimes.com.sg/international/global/can-iran-outlast-us-how-teheran-widening-its-pressure-campaign-force-concessions",
+        "type": "intl"
+      },
+      {
+        "title": "US stocks near record high , oil falls as Trump claims Iran talks under way",
+        "url": "https://www.aljazeera.com/economy/2026/8/4/us-stocks-near-record-high-oil-falls-as-trump-claims-iran-talks-underway",
+        "type": "intl"
+      },
+      {
+        "title": "Bangkok Post - Trump says Iran facing  last chance before decapitation  ",
+        "url": "https://www.bangkokpost.com/world/3296287/trump-says-iran-facing-last-chance-before-decapitation",
+        "type": "intl"
+      },
+      {
+        "title": "Iran power struggle over Strait of Hormuz : Is Mojtaba Khamenei sidelining President Pezeshkian in US strategy clash ? ",
+        "url": "https://gulfnews.com/world/mena/irans-power-struggle-is-mojtaba-khamenei-sidelining-pezeshkian-over-the-strait-of-hormuz-dispute-over-approach-to-us-1.500629776",
+        "type": "intl"
+      },
+      {
+        "title": "Trump : New talks are Iran  last chance  before escalation",
+        "url": "http://www.bgnes.com/politics/trump-new-talks-are-iran-s-last-chance-before-escalation",
+        "type": "intl"
+      },
+      {
+        "title": "Carry out the peace deal ! – Iran demands of US - Workers Revolutionary Party",
+        "url": "https://wrp.org.uk/news/carry-out-the-peace-deal-iran-demands-of-us/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says US - Iran talks continue , warns Tehran faces  last chance  ",
+        "url": "http://www.theuknews.com/news/279221360/trump-says-us-iran-talks-continue-warns-tehran-faces-last-chance",
+        "type": "intl"
+      },
+      {
+        "title": "Who Is Destabilizing the South China Sea ? ",
+        "url": "https://www.theepochtimes.com/opinion/who-is-destabilizing-the-south-china-sea-6066724",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Iran facing  last chance before decapitation  ",
+        "url": "https://www.thedailystar.net/news/world/us-israel-war-iran/news/trump-says-iran-facing-last-chance-decapitation-4239676",
+        "type": "intl"
+      },
+      {
+        "title": "How Iran is widening its pressure campaign to force US concessions",
+        "url": "https://www.thedailystar.net/news/world/us-israel-war-iran/news/how-iran-widening-its-pressure-campaign-force-us-concessions-4239671",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war : Trump tells Iranians to make deal or surrender",
+        "url": "https://timesofoman.com/article/175217-iran-war-trump-tells-iranians-to-make-deal-or-surrender",
+        "type": "intl"
+      },
+      {
+        "title": "IDF alert for escalation between US , Iran as Donald Trump escalates threats to Tehran",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-904493",
+        "type": "intl"
+      },
+      {
+        "title": "News Analysis : Iraq - Trkiye corridor aims to offer trade alternative amid Hormuz crisis , but hurdles remain",
+        "url": "http://www.iraqsun.com/news/279221171/news-analysis-iraq-trkiye-corridor-aims-to-offer-trade-alternative-amid-hormuz-crisis-but-hurdles-remain",
+        "type": "intl"
+      },
+      {
+        "title": "Despite Houthi Threats , Saudi Tanker Terminal Carries On",
+        "url": "https://maritime-executive.com/article/despite-houthi-threats-saudi-tanker-terminal-carries-on",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Calls Iran  Duplicitous , Warns Of  Last Chance  After Tehran Denies US Talks",
+        "url": "https://www.hngn.com/articles/272531/20260803/trump-says-hell-halt-planned-iran-strikes-citing-deal-hormuz-reopening-nuclear-threat.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Russia warns Ireland of  serious consequence if shadow fleet vessels boarded in country waters",
+        "url": "https://www.echolive.ie/nationalnews/arid-41890651.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Tells Iran To Make A Deal Or Surrender",
+        "url": "http://www.middleeaststar.com/news/279221039/trump-tells-iran-to-make-a-deal-or-surrender",
+        "type": "intl"
+      },
+      {
+        "title": "US ramps up sanctions against Iran Mahan Air - ch - aviation",
+        "url": "https://www.ch-aviation.com/news/170159-us-ramps-up-sanctions-against-irans-mahan-air",
+        "type": "intl"
+      },
+      {
+        "title": "미 재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001378082?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美재무 \"호르무즈 개방 합의, 화요일이나 수요일 가능\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006344653?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美재무 \"이란과 오늘 내일 중 호르무즈 개방 합의 가능성\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108527?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 호르무즈 해협 통제권 요구…협상 강경 기류",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108526?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515910?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 \"미국-이란에 '협상 재개' 합의안 초안 전달…양측 검토 중\"",
+        "url": "https://n.news.naver.com/mnews/article/008/0005395660?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美재무 “조만간 이란과 호르무즈 해협 개방 합의 가능”",
+        "url": "https://n.news.naver.com/mnews/article/366/0001184311?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 “조만간 호르무즈 합의 기대…이란·오만 협상에 관여중”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231437?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美재무 \"이란과 5일에 호르무즈 관련 합의 도달 가능성\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097263?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무 \"이란과 이틀내 호르무즈 재개방 합의 가능\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892390?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“이란, 호르무즈 선박 통제권·감시권 요구”",
+        "url": "https://n.news.naver.com/mnews/article/366/0001184309?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "베선트 “호르무즈 해협 합의 오늘이나 내일 나올 가능성”···카타르...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003462362?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 걸프 공격 지속, 미국은 테헤란 외교 해법 모색",
+        "url": "https://www.tokenpost.kr/news/breaking/385123",
+        "type": "dom"
+      },
+      {
+        "title": "美 재무 \"美·이란 합의 1, 2일 내 극적 타결 기대\"",
+        "url": "https://n.news.naver.com/mnews/article/469/0000946245?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무 \"4일 또는 5일 호르무즈 재개방 합의\"…WTI, 한때 77달러 붕괴",
+        "url": "https://n.news.naver.com/mnews/article/008/0005395658?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "베선트 \"호르무즈 곧 열릴 수도\"...유가 4%↓·공급망 정상화 기대",
+        "url": "https://n.news.naver.com/mnews/article/014/0005557266?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "카타르, \"미-이란 협상 재개 합의안 마련중\" (1보)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108459?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "베선트 \"4일이나 5일 호르무즈 재개방 합의 가능\"…유가 3%대 하락",
+        "url": "https://www.newspim.com/news/view/20260804001452",
+        "type": "dom"
+      },
+      {
+        "title": "美 재무 \"오늘이나 내일 호르무즈 해협 재개방 합의 가능성\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005317386?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 호르무즈 진입 선박 통제 요구…빠져나가는 선박도 감시\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892372?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "베선트 “이란과 내일이라도 합의 가능…호르무즈 개방 목적”",
+        "url": "https://www.tokenpost.kr/news/breaking/385087",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 “미·이란 당장 대화 일정 없어…중재국 통해 접촉”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231312?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 \"美·이란 직접 대화 계획 없어‥중재국 통해 접촉\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515889?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 \"미·이란, 직접대화 계획 없어…중재국 통해 접촉\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892364?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 호르무즈 진입 선박 통제권 요구‥빠져나가는 선박도 감시\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515888?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 \"美·이란 직접 대화 계획 없어…중재국 통해 접촉\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016233831?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 개방 협상 막바지‥\"결렬 땐 '참수' 각오\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515886?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016233826?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 해협서 라이베리아 벌크선 피격…화재 발생 후 선원 1명 실종",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108387?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 측 \"호르무즈 입항 통제·출항 감시 원해\" 오만과 논의 확인",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097116?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "오만 해안 호르무즈해협서 화물선 1척, 발사체에 피격당해…UKMTO",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108371?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 지나던 건화물선, 미상 발사체에 피격…항해사 실종",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097105?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 호르무즈 임시안, 입항 선박 완전 통제권 부여 보도",
+        "url": "https://www.tokenpost.kr/news/breaking/384991",
+        "type": "dom"
+      },
+      {
+        "title": "끝까지 버티기 돌입했던 이란, 호르무즈 통제권 눈앞에 두다",
+        "url": "https://n.news.naver.com/mnews/article/025/0003542284?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"이란, 참수 전 마지막 기회 … 오늘 안에 해협 완전 개방하라\"",
+        "url": "https://n.news.naver.com/mnews/article/009/0005716633?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "협상 부인한 이란에 “참수 전 마지막 기회” 트럼프, 또 최후통첩",
+        "url": "https://n.news.naver.com/mnews/article/011/0004648481?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "공습 취소한 트럼프 “참수 전 마지막 기회”…이란 압박",
+        "url": "https://news.knn.co.kr/news/article_sns/1561",
+        "type": "dom"
+      },
+      {
+        "title": "대만, 9박10일 ‘中침공전’ 돌입… 중국군 전투기 띄워 맞불",
+        "url": "https://www.kbmaeil.com/article/20260804500726",
+        "type": "dom"
+      },
+      {
+        "title": "타이완, 내일부터 '중국 침공 대비' 훈련…중국은 공중 순찰로 압박",
+        "url": "https://n.news.naver.com/mnews/article/055/0001378036?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘중국 보란 듯’…대만, 내일부터 중국군 침공 대비 ‘한광훈련’ 시작",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355539?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르, 잠재적 미·이란 합의문 초안 마련",
+        "url": "https://www.tokenpost.kr/news/breaking/385053",
+        "type": "dom"
+      },
+      {
+        "title": "美 재무 \"5일까지 이란과 합의 가능성 커\"…호르무즈 긴장 완화 기대",
+        "url": "https://n.news.naver.com/mnews/article/119/0003118180?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “참수 전 마지막 기회”…이란 “대화 없어”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231492?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 재무 \"오늘이나 내일 호르무즈 통합 합의 가능성 있어\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005798899?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무장관 “조만간 호르무즈 해협 개방 합의 가능성 있어”",
+        "url": "https://www.voakorea.com/a/us-iran-080426/8182518.html",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 외교부 \"미·이란 외교적 접촉, 매우 진전된 단계에 도달\"",
+        "url": "https://www.newspim.com/news/view/20260804001478",
+        "type": "dom"
+      },
+      {
+        "title": "[뉴욕증시]베선트 \"호르무즈 통항 곧 합의\"…일제히 상승세",
+        "url": "https://n.news.naver.com/mnews/article/277/0005798898?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무 \"하루 이틀 안에 호르무즈 개방 합의 가능\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002388925?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 \"미·이란 직접 대화 계획 없어...중재 중\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002388922?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국·이란, 협상 재개 급물살…카타르 “합의 초안 마련”",
+        "url": "https://n.news.naver.com/mnews/article/011/0004648560?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "카타르 \"미국·이란 직접 대화 계획 없어…중재국 통해 접촉\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001378081?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "협상도 협박도 막힌 미국 “이란 압박 아이디어 구합니다”",
+        "url": "https://n.news.naver.com/mnews/article/032/0003462327?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 이란과 대화 \"참수 전 마지막 기회\"...이란 대화 부인",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532929",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 후티반군 \"사우디 나즈란 공항 공격…드론 영공침범 대응\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097153?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "해상 이어 이란 육상 봉쇄?…주변 7개국 설득이 관건",
+        "url": "https://n.news.naver.com/mnews/article/449/0000355572?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘美 패싱’ 이란, 오만과 중간항로 빅딜 초읽기",
+        "url": "https://n.news.naver.com/mnews/article/022/0004148413?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “참수 전 마지막 기회”…이란에 고강도 압박",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231151?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "아람코 \"후티의 위협, 수출에 실질적 영향 없어…대책 마련중\"",
+        "url": "https://n.news.naver.com/mnews/article/374/0000525575?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 아람코 “후티 위협, 수출에 실질적 영향 없어…대책 마련중”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231130?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "시리아, 러시아산 원유 감축 신호로 미국 제재 완화 모색",
+        "url": "https://www.tokenpost.kr/news/policy/385192",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 후티 반군 “사우디 나즈란 공항에 드론 공격”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231424?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892362?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 나즈란 공항 드론 공격\"…후티 \"영공 침범 대응\"",
+        "url": "https://n.news.naver.com/mnews/article/215/0001261152?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000631405?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티 반군, 드론으로 사우디 나즈란공항 공격 주장",
+        "url": "https://n.news.naver.com/mnews/article/014/0005557263?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "튀르키예, 자국 화물선 피격에 러·우크라 모두에 흑해 안전 촉구",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097230?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "러, 'LNG 그림자 선단' 대거 확충 중… 내년 EU 전면 수입 차단에 대비해",
+        "url": "https://www.newspim.com/news/view/20260804001425",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 중동전쟁 이후 걸프 안보질서 점검…대중동 정책 논의",
+        "url": "https://n.news.naver.com/mnews/article/421/0009096942?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 후티 \"사우디 나즈란 공항 공격…보복 차원\"",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428606",
+        "type": "dom"
+      },
+      {
+        "title": "사표만 28번 낸 이란 대통령에…“모즈타바, 다음번엔 승인하겠다며 경...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003462328?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프와 MOU 서명했는데…이란 대통령, ‘사임설’ 강경파 공세에 “버...",
+        "url": "https://n.news.naver.com/mnews/article/029/0003040693?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“모즈타바, ‘페제시키안 다음 사표는 수리’ 경고”···내부 균열 노...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003462267?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란 전쟁 중 표적된 AI 데이터센터…5곳 피격",
+        "url": "https://n.news.naver.com/mnews/article/088/0001022126?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중동 사막의 AI 데이터센터, 이란 미사일의 표적 되다 : 미국의 새로운...",
+        "url": "https://www.huffingtonpost.kr/article/259248",
+        "type": "dom"
+      },
+      {
+        "title": "'중동불안 재점화' 코트라, 기업지원 확대 등 대응 강화",
+        "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1063718",
+        "type": "dom"
+      },
+      {
+        "title": "후티반군, 사우디 남서부 나즈란 공항 공격",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108388?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]예멘 후티 반군 \"사우디 공항 공격\" 주장",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108380?sid=104",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "argo ship struck in Hormuz after Trumps decapitation threat",
+        "url": "http://www.bignewsnetwork.com/news/279221911/argo-ship-struck-in-hormuz-after-trumps-decapitation-threat",
+        "type": "intl"
+      },
+      {
+        "title": "Seafarer Missing After Ship Fire Near Strait of Hormuz",
+        "url": "https://www.newkerala.com/news/a/one-seafarer-missing-after-bulk-carrier-catches-fire-836.htm",
+        "type": "intl"
+      },
+      {
+        "title": "One missing as crew fights fire aboard ship hit in Hormuz maritime security firm",
+        "url": "https://www.manilatimes.net/2026/08/04/world/one-missing-as-crew-fights-fire-aboard-ship-hit-in-hormuz-maritime-security-firm/2397862",
+        "type": "intl"
+      },
+      {
+        "title": "India Condemns Red Sea Attack on Vessel ; All 14 Crew Saved",
+        "url": "https://www.newkerala.com/news/a/india-condemns-this-unprovoked-attack-shipping-minister-sonowal-738.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Indian vessel sinks in Red Sea ; 13 sailors rescued",
+        "url": "https://www.orissapost.com/indian-vessel-sinks-in-red-sea-13-sailors-rescued/",
+        "type": "intl"
+      },
+      {
+        "title": "Indian Ship Sinks in Red Sea Attack , Crew Rescued",
+        "url": "https://www.newkerala.com/news/a/indian-vessel-sinks-after-attack-red-sea-13-479.htm",
+        "type": "intl"
+      },
+      {
+        "title": "소말리아·아덴만 해적사건 3배↑...해수부, 정보 제공·안전운항 당부",
+        "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1063717",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "6 Saudi - flagged oil carriers reroute around Africa , avoiding Bab el - Mandeb",
+        "url": "https://aa.com.tr/en/middle-east/6-saudi-flagged-oil-carriers-reroute-around-africa-avoiding-bab-el-mandeb/4018261",
+        "type": "intl"
+      },
+      {
+        "title": "US says 44 commercial ships redirected under blockade , Iran warns on Hormuz routes",
+        "url": "https://www.arabnews.com/node/2653303/middle-east",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz vessel traffic remains subdued despite renewed diplomacy ; security incidents keep shipping under pressure : S & P Global",
+        "url": "https://timesofoman.com/article/175223-hormuz-vessel-traffic-remains-subdued-despite-renewed-diplomacy-sp-global",
+        "type": "intl"
+      },
+      {
+        "title": "Tanker Shipping Under Fire from Middle East Tensions | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/tanker-shipping-under-fire-from-middle-east-tensions/",
+        "type": "intl"
+      },
+      {
+        "title": "Record Grain Movement Meets Rising Harvest Freight Costs",
+        "url": "https://www.rfdtv.com/record-grain-movement-meets-rising-harvest-freight-costs",
+        "type": "intl"
+      },
+      {
+        "title": "SWR posts record July freight loading , revenue growth on track",
+        "url": "https://timesofindia.indiatimes.com/city/hubballi/swr-posts-record-july-freight-loading-revenue-growth-on-track/articleshow/132861378.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Baltic Dry Index climbs to 2936 up 93 points | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/baltic-dry-index-climbs-to-2936-up-93-points/",
+        "type": "intl"
+      },
+      {
+        "title": "MABUX : Bunker Market Volatility to Persist in August | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/mabux-bunker-market-volatility-to-persist-in-august/",
+        "type": "intl"
+      },
+      {
+        "title": "“이란·오만, 호르무즈 통항 방식 합의 근접…서비스료 부과”",
+        "url": "https://n.news.naver.com/mnews/article/119/0003118171?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"참수 전 마지막 기회\" 트럼프 협박 아랑곳 않는 이란…호르무즈 수수료...",
+        "url": "https://n.news.naver.com/mnews/article/002/0002451002?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 \"마지막 기회\" 압박…삼성·LG 호르무즈 운임 부담 길어지나",
+        "url": "https://www.ajunews.com/view/20260804145839506",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 결국 유료화? \"이란-오만 합의 근접, 수수료 부과 예상\"",
+        "url": "https://n.news.naver.com/mnews/article/008/0005395618?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“이란·오만, 호르무즈 통과 합의 접근… 서비스료 나누는 방식”",
+        "url": "https://n.news.naver.com/mnews/article/082/0001392589?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "부산항발 '컨' 운임 4주만에 반등…\"미주·중동항로가 상승견인\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009096024?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "[사설] 칭다오 항로, 부담 낮출 새 해법 찾아야",
+        "url": "https://www.jemin.com/news/articleView.html?idxno=841320",
+        "type": "dom"
+      },
+      {
+        "title": "리오 인디오 저수지 건설 반대하는 파나마 농부",
+        "url": "https://www.gukjenews.com/news/articleView.html?idxno=3654954",
+        "type": "dom"
+      },
+      {
+        "title": "'리오 인디오 댐 반대'",
+        "url": "https://www.gukjenews.com/news/articleView.html?idxno=3654951",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "Shanghai Port hits record - high 203 , 881 TEUs",
+        "url": "https://www.manilatimes.net/2026/08/04/business/foreign-business/shanghai-port-hits-record-high-203881-teus/2397889",
+        "type": "intl"
+      },
+      {
+        "title": "HPCL, 호르무스 피해 나이지리아 원유 200만배럴 매입",
+        "url": "https://www.tokenpost.kr/news/breaking/385187",
+        "type": "dom"
+      },
+      {
+        "title": "호주 철광석 수출항 또 멈춘다…철강 원료 공급망 ‘비상’",
+        "url": "https://www.g-enews.com/view.php?ud=202608041739282890fda4f5ab74_1",
+        "type": "dom"
+      },
+      {
+        "title": "구윤철 \"원유 수급 안정 최선…10월 이후 수급 차질 가능성 철저히 대비...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005556891?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "울산항 원유 반입 '579만t' 4개월 연속 증가세",
+        "url": "http://www.ujeil.com/news/articleView.html?idxno=389872",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Crude Oil Nosedives Amid Prospects Of U . S .- Iran Deal , Reopening Of Strait Of Hormuz",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69215448-crude-oil-nosedives-amid-prospects-of-u-s-iran-deal-reopening-of-strait-of-hormuz-020.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Breakfast briefing : Oil prices fall on expectation a Hormuz deal is close",
+        "url": "https://www.interest.co.nz/economy/139667/bessent-moves-markets-us-data-lackluster-canada-trade-rises-china-sets-tight-fuel",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Slides As Qatar Floats New Iran Deal , Bessent Promises Hormuz Breakthrough :  May Have Deal Tomorrow  ",
+        "url": "https://www.zerohedge.com/geopolitical/qatar-floats-new-iran-deal-bessent-promises-hormuz-breakthrough-oil-slides-may-have",
+        "type": "intl"
+      },
+      {
+        "title": "US stocks rush toward records , and Dow soars 1 , 000 as profits keep piling up and oil prices ease",
+        "url": "http://www.reflector.com/news/national/us-stocks-rush-toward-records-and-dow-soars-1-000-as-profits-keep-piling-up/article_7ea89061-c928-5216-9c23-10c2414e22b1.html",
+        "type": "intl"
+      },
+      {
+        "title": "S & P 500 rises 2 %, Dow jumps 1 , 000 points as profits keep piling up and oil prices ease",
+        "url": "http://www.postregister.com/businessreport/healthcare/s-p-500-rises-2-dow-jumps-1-000-points-as-profits-keep-piling-up/article_aba99138-a072-5f33-b9ca-3d9a03da135f.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war has cost market 2 . 6 billion barrels of oil",
+        "url": "https://www.rte.ie/news/business/2026/0804/1586444-iran-war-has-cost-market-2-6-billion-barrels-of-oil/",
+        "type": "intl"
+      },
+      {
+        "title": "Petron income down to P3 . 8 billion on high oil prices",
+        "url": "https://www.philstar.com/business/2026/08/05/2546970/petron-income-down-p38-billion-high-oil-prices",
+        "type": "intl"
+      },
+      {
+        "title": "US stocks leap toward a record as profits keep piling up and oil prices ease",
+        "url": "https://www.local10.com/news/2026/08/04/us-stocks-leap-toward-a-record-as-profits-keep-piling-up-and-oil-prices-ease/",
+        "type": "intl"
+      },
+      {
+        "title": "Lufthansa shares nosedive as Germany biggest airline cuts outlook on Mideast war",
+        "url": "https://www.thelocal.de/20260804/lufthansa-shares-nosedive-as-germanys-biggest-airline-cuts-outlook-on-mideast-war",
+        "type": "intl"
+      },
+      {
+        "title": "Hormuz Oil Recovery Bets Sparks New All - Time Highs For S & P 500",
+        "url": "https://cointelegraph.com/markets/bitcoin-coils-as-hormuz-reopening-time-line-sends-sp-500-to-new-record-high",
+        "type": "intl"
+      },
+      {
+        "title": "Govt to keep fuel prices under control amid Middle East tensions",
+        "url": "https://www.siasat.com/govt-to-keep-fuel-prices-under-control-amid-middle-east-tensions-3518795/",
+        "type": "intl"
+      },
+      {
+        "title": "As diesel futures markets plummet , benchmark retail price rises",
+        "url": "https://finance.yahoo.com/energy/articles/diesel-futures-markets-plummet-benchmark-142014680.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil companies are making a fortune from the US - Iran war . That a problem for Trump",
+        "url": "https://www.cnn.com/2026/08/04/business/saudi-aramco-profits-soar-trump",
+        "type": "intl"
+      },
+      {
+        "title": "US stocks climb toward a record as companies keep piling up profits and oil prices ease",
+        "url": "https://www.elpasoinc.com/news/ap_wire/us-stocks-climb-toward-a-record-as-companies-keep-piling-up-profits-and-oil-prices/article_72176554-cec5-5561-8213-529a408b7333.html",
+        "type": "intl"
+      },
+      {
+        "title": "Aramco Profit Jumps 33 Pct",
+        "url": "https://www.rigzone.com/news/wire/aramco_profit_jumps_33_pct-04-aug-2026-184292-article/",
+        "type": "intl"
+      },
+      {
+        "title": "Lufthansa Slashes Profit Outlook Over Jet Fuel Costs",
+        "url": "https://www.theepochtimes.com/business/lufthansa-slashes-profit-outlook-over-jet-fuel-costs-6070976",
+        "type": "intl"
+      },
+      {
+        "title": "Govt to continue with steps to keep fuel prices in check",
+        "url": "https://www.prokerala.com/news/articles/a1796356.html",
+        "type": "intl"
+      },
+      {
+        "title": "Fx hedges split Korea shipbuilding big three profitability | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/fx-hedges-split-koreas-shipbuilding-big-three-profitability/",
+        "type": "intl"
+      },
+      {
+        "title": "Govt optimistic monthly trade surplus returns as oil prices stabilize",
+        "url": "https://en.antaranews.com/news/425485/govt-optimistic-monthly-trade-surplus-returns-as-oil-prices-stabilize",
+        "type": "intl"
+      },
+      {
+        "title": "ONE quarterly net profit falls to $31 million",
+        "url": "https://www.porttechnology.org/one-profit-31-million-loss/",
+        "type": "intl"
+      },
+      {
+        "title": "Aramco posts 44 percent rise in net profit as Iran war drives up oil prices",
+        "url": "https://thefrontierpost.com/aramco-posts-44-percent-rise-in-net-profit-as-iran-war-drives-up-oil-prices/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Aramco Profit Jumps 33 % on Higher Oil Prices Amid Iran War 2nd Update",
+        "url": "https://www.morningstar.com/news/dow-jones/202608043516/saudi-aramco-profit-jumps-33-on-higher-oil-prices-amid-iran-war-2nd-update",
+        "type": "intl"
+      },
+      {
+        "title": "Marathon Petroleum Corp . Reports Second - Quarter 2026 Results",
+        "url": "http://www.prnewswire.com/news-releases/marathon-petroleum-corp-reports-second-quarter-2026-results-302842185.html",
+        "type": "intl"
+      },
+      {
+        "title": "Higher jet fuel costs hit Lufthansa profit | The Peninsula Qatar",
+        "url": "http://thepeninsulaqatar.com/article/04/08/2026/higher-jet-fuel-costs-hit-lufthansa-profit",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Aramco Adjusted Profit Jumps 33 % as Oil Prices Surge",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramcos-Adjusted-Profit-Jumps-33-as-Oil-Prices-Surge.html",
+        "type": "intl"
+      },
+      {
+        "title": "BP $5 . 7bn profit highest since 2022 as Iran war pushes up oil price",
+        "url": "https://finance.yahoo.com/energy/articles/bp-profits-highest-four-years-090451464.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil giant Aramco profits soar 44 pct as war boosts prices",
+        "url": "http://thepeninsulaqatar.com/article/04/08/2026/oil-giant-aramcos-profits-soar-44-pct-as-war-boosts-prices",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Aramco profits soar 44 % despite war",
+        "url": "https://www.omanobserver.om/article/1193935/business/energy/saudi-aramco-profits-soar-44-despite-war",
+        "type": "intl"
+      },
+      {
+        "title": "Aviation fuel prices continue to surge over Mideast tensions",
+        "url": "https://www.omanobserver.om/article/1193880/business/aviation/aviation-fuel-prices-continue-to-surge-over-mideast-tensions",
+        "type": "intl"
+      },
+      {
+        "title": "Global Market : Saudi Aramco Q2 profit jumps 44 % as Middle East conflict boosts oil prices",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-saudi-aramco-q2-profit-jumps-44-as-middle-east-conflict-boosts-oil-prices/articleshow/132853429.cms",
+        "type": "intl"
+      },
+      {
+        "title": "The Iran war is fuelling the next oil , gold and silver rally",
+        "url": "https://www.thenationalnews.com/business/markets/2026/08/04/is-iran-war-creating-new-commodity-winners/",
+        "type": "intl"
+      },
+      {
+        "title": "US stocks rally near a record as falling oil prices ease Wall Street worries about inflation",
+        "url": "http://www.greenevillesun.com/business/ap_business/us-stocks-rally-near-a-record-as-falling-oil-prices-ease-wall-streets-worries-about/article_3aa12c16-fd46-5f33-9e0e-f3a4d00e7618.html",
+        "type": "intl"
+      },
+      {
+        "title": "Aramco posts 42 % jump in second - quarter profit despite supply disruptions",
+        "url": "https://www.thenationalnews.com/business/energy/2026/08/04/aramco-posts-42-jump-in-q2-profit-despite-supply-disruptions/",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul shares end higher amid lingering woes over AI , Iran crisis",
+        "url": "https://www.koreaherald.com/article/10830715",
+        "type": "dom"
+      },
+      {
+        "title": "Higher jet fuel costs hit Lufthansa profit",
+        "url": "https://www.hurriyetdailynews.com/higher-jet-fuel-costs-hit-lufthansa-profit-225192",
+        "type": "intl"
+      },
+      {
+        "title": "Aramco posts 44 % profit jump despite Strait of Hormuz disruption",
+        "url": "https://www.middle-east-online.com/en/aramco-posts-44-profit-jump-despite-strait-hormuz-disruption",
+        "type": "intl"
+      },
+      {
+        "title": "Exxon CEO delivers blunt message on what coming for gas prices",
+        "url": "https://finance.yahoo.com/energy/articles/exxon-ceo-delivers-blunt-message-064700522.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sensex Jumps 544 Points , Nifty Soars 1 . 6 % as Falling Crude Lifts Market Sentiment",
+        "url": "https://dailypioneer.com/news/stock-markets-rally-for-4th-straight-day",
+        "type": "intl"
+      },
+      {
+        "title": "US stocks rally near record as falling oil prices ease Wall Street worries about inflation | Business",
+        "url": "https://jamaica-gleaner.com/article/business/20260804/us-stocks-rally-near-record-falling-oil-prices-ease-wall-streets-worries",
+        "type": "intl"
+      },
+      {
+        "title": "Oil rebounds as markets trade mixed following Wall Street rally",
+        "url": "https://finance.yahoo.com/markets/currencies/articles/oil-rebounds-markets-trade-mixed-060940534.html",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul stocks down on tech losses , inflation up in July",
+        "url": "https://www.prokerala.com/news/articles/a1796083.html",
+        "type": "intl"
+      },
+      {
+        "title": "Stocks mixed as Seoul stabilizes , oil prices rise with eyes on Mideast - Markets",
+        "url": "http://www.thejakartapost.com/business/2026/08/04/stocks-mixed-as-seoul-stabilizes-oil-prices-rise-with-eyes-on-mideast",
+        "type": "intl"
+      },
+      {
+        "title": "U . S . stocks rally near a record as falling oil prices ease Wall Street worries about inflation | The Asahi Shimbun : Breaking News , Japan News and Analysis",
+        "url": "https://www.asahi.com/ajw/articles/16782447",
+        "type": "intl"
+      },
+      {
+        "title": "India LNG imports rise as it diversifies supplies away from Hormuz : Report",
+        "url": "https://www.businesstoday.in/india/story/indias-lng-imports-rise-as-it-diversifies-supplies-away-from-hormuz-report-547013-2026-08-04",
+        "type": "intl"
+      },
+      {
+        "title": "S . Korea consumer price inflation eases to 2 . 8 pct in July - Xinhua",
+        "url": "https://english.news.cn/20260804/108cbf210b414ecfaff1d30e25590883/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "Roundup : S . Korea consumer price inflation eases to 2 . 8 pct in July",
+        "url": "http://www.bignewsnetwork.com/news/279221552/roundup-s-korea-consumer-price-inflation-eases-to-28-pct-in-july",
+        "type": "intl"
+      },
+      {
+        "title": "Stocks mixed as Seoul stabilises , oil prices rise with eyes on Mideast",
+        "url": "https://www.bssnews.net/business/411502",
+        "type": "intl"
+      },
+      {
+        "title": "Dow hits fresh record as oil prices tumble",
+        "url": "https://www.bssnews.net/business/411484",
+        "type": "intl"
+      },
+      {
+        "title": "ASX set for flat start as Wall Street rallies and oil prices retreat",
+        "url": "https://www.proactiveinvestors.com.au/companies/news/1096455/asx-set-for-flat-start-as-wall-street-rallies-and-oil-prices-retreat-1096455.html",
+        "type": "intl"
+      },
+      {
+        "title": "Stocks surge 2 , 100 points on oil price dip",
+        "url": "https://tribune.com.pk/story/2621985/stocks-surge-2100-points-on-oil-price-dip",
+        "type": "intl"
+      },
+      {
+        "title": "Big Oil Warns Global Fuel Stocks Are Running Dangerously Low",
+        "url": "https://oilprice.com/Energy/Energy-General/Big-Oil-Warns-Global-Fuel-Stocks-Are-Running-Dangerously-Low.html",
+        "type": "intl"
+      },
+      {
+        "title": "Inflation expected to edge up in Aug . on base effect : BOK",
+        "url": "https://www.koreaherald.com/article/10829996",
+        "type": "dom"
+      },
+      {
+        "title": "NextDecade ( NEXT ) Q2 2026 Earnings Call Transcript",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/08/03/nextdecade-next-q2-2026-earnings-call-transcript/?source=iedfolrf0000001",
+        "type": "intl"
+      },
+      {
+        "title": "ASX 200 LIVE : ASX futures unchanged , oil slides on US - Iran peace hopes , Credit Corp profit surge on US debt buying , REIT profits soar , Atlas Arteria abandons motorway sale",
+        "url": "https://www.afr.com/markets/equity-markets/asx-to-open-flat-as-oil-slides-credit-corp-profits-up-12pc-20260804-p60l4j",
+        "type": "intl"
+      },
+      {
+        "title": "What the Strait of Hormuz fragile recovery signal means for oil flows and prices",
+        "url": "https://www.hellenicshippingnews.com/what-the-strait-of-hormuzs-fragile-recovery-signal-means-for-oil-flows-and-prices/",
+        "type": "intl"
+      },
+      {
+        "title": "유가 안정세에 소비자물가 상승폭 둔화",
+        "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=555821",
+        "type": "dom"
+      },
+      {
+        "title": "[월드 e-브리핑] 트럼프, 미 석유업계 압박…\"휘발유값 내려라\"",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532936",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공 2분기 영업손실 524억으로 적자폭 확대, 유가 상승에 수익성 ...",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443949",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 영업손실 524억원…매출 4417억원 '역대 최대'",
+        "url": "https://www.g-enews.com/view.php?ud=202608041850293632ea14faf6f5_1",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 영업손실 524억원…하반기 내실경영 집중",
+        "url": "http://www.metroseoul.co.kr/article/20260804500467",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2Q 적자폭 확대…고유가·고환율 타격",
+        "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5047931",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공 2분기 매출 4417억 원 '역대 최대'…적자는 524억 원",
+        "url": "https://www.newsjeju.net/news/articleView.html?idxno=424175",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 영업손실 524억… 매출은 역대 최대",
+        "url": "https://it.chosun.com/news/articleView.html?idxno=2023092167307",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 영업손실 524억원…적자 확대",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=854530",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 진정에 물가 한풀 꺾였다",
+        "url": "http://www.kwangju.co.kr/article.php?aid=1785834600801923005",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 매출 4417억원 ‘역대 최대’…고유가·고환율에 영업...",
+        "url": "https://www.viva100.com/article/20260804501316",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 역대 최대 매출…영업손실은 소폭 ↑",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=849389",
+        "type": "dom"
+      },
+      {
+        "title": "석유류 가격 주춤하자… 7월 물가 3% 아래로",
+        "url": "https://n.news.naver.com/mnews/article/009/0005716611?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 영업손실 524억원…매출은 역대 최대",
+        "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608041744157650786",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 매출 4417억원 '역대 최대'…영업손실은 524억원",
+        "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=316026",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 매출 4417억원 '역대 최대'…상반기 흑자전환",
+        "url": "https://n.news.naver.com/mnews/article/014/0005557147?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2Q 영업손실 524억…고환율·고유가 직격탄",
+        "url": "https://www.ekn.kr/web/view.php?key=20260804029369487",
+        "type": "dom"
+      },
+      {
+        "title": "7월 소비자물가 2.8%…석 달 만에 2%대 복귀",
+        "url": "https://news.knn.co.kr/news/article_sns/1562",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 영업손실 524억원…\"고유가 영향\"",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=84046",
+        "type": "dom"
+      },
+      {
+        "title": "7월 소비자 물가 2.8%↑…국제 유가 안정세에 석 달 만에 2%대",
+        "url": "https://news.mtn.co.kr/news-detail/2026080416050998373",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 매출 4,417억 원 '역대 최대'…고유가·고환율에 영업손...",
+        "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4098864",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2분기 역대 최대 매출 4417억원..고유가 영향 영업익은 마이...",
+        "url": "https://n.news.naver.com/mnews/article/008/0005395590?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 2Q 역대 최대 매출에도 적자 확대…고유가·고환율 영향(종합...",
+        "url": "https://n.news.naver.com/mnews/article/421/0009096973?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "제주항공, 고유가‧환율 여파에 2Q 적자 지속",
+        "url": "https://news.dealsitetv.com/articles/174253",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕 증시, 미국·이란 합의 기대감에 상승 출발",
+        "url": "https://n.news.naver.com/mnews/article/052/0002388930?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 증시, 호르무즈개방 기대에 실적 잔치…S&P사상 최고치",
+        "url": "https://n.news.naver.com/mnews/article/015/0005317401?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시, 호르무즈 해협 개방 기대에 상승 출발…나스닥 1.2%↑",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108536?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미국증시, 호르무즈 재개방 기대에 강세…엔비디아·반도체주 상승",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16154905",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시, 美·이란 협상 타결 기대감에 상승 출발",
+        "url": "https://n.news.naver.com/mnews/article/366/0001184312?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중동발 긴장 완화에도 원/달러 환율 1,430원 박스권 횡보",
+        "url": "https://www.tokenpost.kr/news/economy/385121",
+        "type": "dom"
+      },
+      {
+        "title": "슈퍼 엘니뇨 끝나면 천연가스 뜬다… AI 수요·공급 부족에 상승 전망",
+        "url": "https://m.skyedaily.com/news_view.html?ID=309178",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 아람코, 호르무즈 봉쇄에도 순이익 33%↑…\"수출 영향 없다\"",
+        "url": "https://n.news.naver.com/mnews/article/008/0005395639?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "아람코 2분기 순이익 44% 급증…유가 상승·공급 차질 수혜",
+        "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=84136",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가, 트럼프 \"이란 협상 마지막 기회\" 발언에 유가 반등",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=84055",
+        "type": "dom"
+      },
+      {
+        "title": "유가 상승·우회로 확보의 힘...아람코, 2분기 순이익 33% 증가",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026080417334134481",
+        "type": "dom"
+      },
+      {
+        "title": "뉴욕증시, 美-이란 합의 기대감에 상승 출발",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428608",
+        "type": "dom"
+      },
+      {
+        "title": "백악관 “원유·가스 수출 제한 검토 안 해”",
+        "url": "https://www.tokenpost.kr/news/policy/385032",
+        "type": "dom"
+      },
+      {
+        "title": "유가 하락에도 저가매수 수요에...원·달러 환율, 2.7원 오른 1432.5원 마...",
+        "url": "https://www.betanews.net/article/view/beta202608040094",
+        "type": "dom"
+      },
+      {
+        "title": "정부 \"석유 최고가격제, 7월 물가 0.3%p 낮춰\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892401?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "기준금리 3.50~3.75% 동결한 연준, 인하 신중론 유지",
+        "url": "https://www.tokenpost.kr/news/cryptocurrency/385105",
+        "type": "dom"
+      },
+      {
+        "title": "강제노동 관세 제동 걸까… 美 민주 소속 25개 州, 무효 소송",
+        "url": "https://n.news.naver.com/mnews/article/014/0005557193?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美재무 \"엔화 약세, 다른 통화에 영향…원화 변동성 과도\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108537?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "철광석 13개월 만에 최저…웃지 못하는 韓 철강사",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719107",
+        "type": "dom"
+      },
+      {
+        "title": "\"석유화학 적자 쯤이야… S-Oil, 윤활유·정유 '쌍끌이'로 3분기 영업이...",
+        "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=271087",
+        "type": "dom"
+      },
+      {
+        "title": "에쓰오일, 2분기 '흑자 전환' 성공…영업익 9650억원",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=84007",
+        "type": "dom"
+      },
+      {
+        "title": "신영證 \"S-Oil, 종전 후에도 정제마진 강세…목표가 18만원↑\"",
+        "url": "https://www.widedaily.com/news/articleView.html?idxno=298727",
+        "type": "dom"
+      },
+      {
+        "title": "증권가 목표가 줄상향…S-Oil, 장 초반 2%↑",
+        "url": "https://n.news.naver.com/mnews/article/003/0014106331?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "이란전쟁 수혜?…英'석유공룡' BP, 2분기 순이익 2배 '껑충'",
+        "url": "https://n.news.naver.com/mnews/article/018/0006344330?sid=101",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "Gulf ordeal of a Bangladesh seafarer",
+        "url": "https://www.straitstimes.com/world/middle-east/trapped-after-war-breaks-out-in-iran-bangladesh-seafarer-recounts-gulf-ordeal",
+        "type": "intl"
+      },
+      {
+        "title": "Trapped by war , Bangladesh seafarer recounts Gulf ordeal",
+        "url": "https://www.al-monitor.com/originals/2026/08/trapped-war-bangladesh-seafarer-recounts-gulf-ordeal",
+        "type": "intl"
+      },
+      {
+        "title": "\"지원 완벽\" 해수부 vs \"폐업 위기\" 어민…서류와 현장 괴리 '심각'",
+        "url": "https://n.news.naver.com/mnews/article/277/0005798798?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "남해안 고수온 경보 발령..양식장 어류 방류",
+        "url": "https://ysmbc.co.kr/NewsArticle/1530652",
+        "type": "dom"
+      },
+      {
+        "title": "가로림만·천수만 일대 고수온 경보...양식 어류 피해 우려",
+        "url": "https://tjmbc.co.kr/NewsArticle/854810",
+        "type": "dom"
+      },
+      {
+        "title": "[여기는 포항] 동해 연안 ‘고수온 주의보’…양식장 비상 외",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231256?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "동해안 고수온 주의보…양식어가 폐사 우려 '비상'",
+        "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4080282",
+        "type": "dom"
+      },
+      {
+        "title": "전남광주특별시 고수온 경보 전국 첫 양식어류 긴급방류",
+        "url": "https://n.news.naver.com/mnews/article/660/0000114534?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "'수온 상승' 동해안, 양식 어류 폐사 시작",
+        "url": "https://www.tbc.co.kr/news/view?pno=20260804183426AE03445&id=209316",
+        "type": "dom"
+      },
+      {
+        "title": "경북 동해안 고수온 비상…양식장 치어 폐사 위기 확대",
+        "url": "https://www.gokorea.kr/news/articleView.html?idxno=874118",
+        "type": "dom"
+      },
+      {
+        "title": "통영시 고수온·적조 피해 최소화 위한 선제 대응 총력",
+        "url": "http://www.gndomin.com/news/articleView.html?idxno=484358",
+        "type": "dom"
+      },
+      {
+        "title": "수온 '1도'가 생사 가른다…물고기도 대거 피난",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892345?sid=161",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "Strong finish : Ocean lines raise profit outlook by 200 % ",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/strong-finish-ocean-lines-raise-143405426.html",
+        "type": "intl"
+      },
+      {
+        "title": "Inventory Stockpiling Drives 19 % Revenue Surge at CMA CGM",
+        "url": "https://finance.yahoo.com/economy/articles/inventory-stockpiling-drives-19-revenue-123000158.html",
+        "type": "intl"
+      },
+      {
+        "title": "Russia preparing shadow fleet ahead of complete EU oil import ban",
+        "url": "https://www.albawaba.com/business/russia-preparing-shadow-fleet-ahead-1634436",
+        "type": "intl"
+      },
+      {
+        "title": "Maersk removes Shanghai from Dragon service",
+        "url": "https://www.porttechnology.org/maersk-shanghai-dragon/",
+        "type": "intl"
+      },
+      {
+        "title": "인천 장봉도 배편 13회 유지…옹진군, 선사 적자 지원",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532915",
+        "type": "dom"
+      }
+    ],
+    "8_Logistics": [
+      {
+        "title": "India pharma sector to miss 2030 sales target amid tariff and shipping woes , trade body says",
+        "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/india-pharma-sector-to-miss-2030-sales-target-amid-tariff-and-shipping-woes-trade-body-says/articleshow/132847469.cms",
+        "type": "intl"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "Hormuz closure creates  largest oil supply shock in history : Aramco chief",
+        "url": "https://www.presstv.co.uk/Detail/2026/08/04/773716/Saudi-oil-Aramco-Hormuz-closure-Iran",
+        "type": "intl"
+      },
+      {
+        "title": "Bab al - Mandab Disruption : How Asia Could Face Higher Petrol , Airfares and Grocery Costs",
+        "url": "https://gulfnews.com/business/markets/bab-al-mandab-disruption-could-raise-petrol-airfares-and-grocery-costs-across-asia-1.500629242",
+        "type": "intl"
+      },
+      {
+        "title": "Syria Says will Restore Iraq Oil Pipeline Link within Three Years",
+        "url": "https://english.aawsat.com/arab-world/5303391-syria-says-will-restore-iraq-oil-pipeline-link-within-three-years",
+        "type": "intl"
+      },
+      {
+        "title": "Iron Ore Prices Hit One - Year Low as China Demand Slump Deepens",
+        "url": "https://oilprice.com/Metals/Commodities/Iron-Ore-Prices-Hit-One-Year-Low-as-China-Demand-Slump-Deepens.html",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwait KPC drops August sulphur price by $85 / t",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2860769-kuwait-s-kpc-drops-august-sulphur-price-by-85-t",
+        "type": "intl"
+      },
+      {
+        "title": "QP Foods united kingdom Reports Higher Sunflower Oil Costs Amid Black Sea Shipping Disruptions",
+        "url": "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/qp-foods-uk-reports-higher-sunflower-oil-costs-amid-black-sea-shipping-disruptions/2398068",
+        "type": "intl"
+      },
+      {
+        "title": "Iron ore markets rattled by Radiant World concerns and weak steel demand",
+        "url": "https://www.afr.com/markets/commodities/iron-ore-teeters-after-major-trader-accused-of-fake-invoices-20260804-p60l8h",
+        "type": "intl"
+      },
+      {
+        "title": "MMI Daily Iron Ore Index Report August 4 2026 | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/mmi-daily-iron-ore-index-report-august-4-2026/",
+        "type": "intl"
+      },
+      {
+        "title": "CEO Plays Down Impact of Attacks on Aramco  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/publicpolicy/ceo-plays-down-impact-of-attacks-on-aramco",
+        "type": "intl"
+      },
+      {
+        "title": "CEO Plays Down Impact of Attacks on Aramco",
+        "url": "https://www.rigzone.com/news/wire/ceo_plays_down_impact_of_attacks_on_aramco-04-aug-2026-184285-article/",
+        "type": "intl"
+      },
+      {
+        "title": "Russia Expands Shadow LNG Fleet Ahead of EU Import Ban",
+        "url": "https://slguardian.org/russia-expands-shadow-lng-fleet-ahead-of-eu-import-ban/",
+        "type": "intl"
+      },
+      {
+        "title": "Iron Ore Slides as Vale ADR Falls 3 . 19 % to US$14 . 58",
+        "url": "https://www.riotimesonline.com/iron-ore-markets-latam-tuesday-august-4-2026/",
+        "type": "intl"
+      },
+      {
+        "title": "Big Oil Warns Global Fuel Stocks Are Running Dangerously Low  | Peak Oil News and Message Boards",
+        "url": "https://peakoil.com/production/big-oil-warns-global-fuel-stocks-are-running-dangerously-low",
+        "type": "intl"
+      },
+      {
+        "title": "아람코, 중동 리스크에도 공급망 유지 … 동서 송유관 활용 확대",
+        "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=244679",
+        "type": "dom"
+      },
+      {
+        "title": "아람코 \"후티 공격, 원유 수출에 영향 없어\"‥순이익 급등",
+        "url": "https://n.news.naver.com/mnews/article/214/0001515859?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"믿었던 석탄마저 삐걱…LX인터내셔널, 자원 사업에 '빨간불'\"",
+        "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=271088",
+        "type": "dom"
+      },
+      {
+        "title": "한국, 재생 원료 수출국…폐플라스틱서 뽑아낸 '재생 나프타' 첫 수출",
+        "url": "https://n.news.naver.com/mnews/article/057/0001962023?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "폐플라스틱이 석유화학 원료로…도시유전, 나프타급 재생원료 첫 해외 ...",
+        "url": "https://n.news.naver.com/mnews/article/009/0005716666?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "러시아산 원유 공급 75% 증가, 시리아 하루 6만배럴 의존",
+        "url": "https://www.tokenpost.kr/news/market/385020",
+        "type": "dom"
+      },
+      {
+        "title": "국내 기술로 폐플라스틱을 ‘나프타’로…도시유전, 재생원료 첫 해외 ...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002679527?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "소형LPG저장탱크 생산량 소폭 감소…전년동기比 702기 ↓",
+        "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227227",
+        "type": "dom"
+      },
+      {
+        "title": "우크라 공격에 러 곡물 수출 차질…아조우해 중단·흑해도 병목(종합)",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097282?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "러 흑해 공격에 우크라이나 곡물 수출 비상…\"대체 경로 모색\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000892412?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "러 흑해 공격에 우크라 곡물 수출 비상…“식량 가격 더 오를 것”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012231473?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "러 흑해 공격에 우크라 곡물 수출 비상…\"식량 가격 더 오를 것\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016233908?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "우크라 공격에 러 곡물 수출 차질…아조우해 중단·흑해도 병목",
+        "url": "https://n.news.naver.com/mnews/article/421/0009097083?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "유럽 폭염·가뭄에 원전 중단 사태...물류·농업도 비상",
+        "url": "https://n.news.naver.com/mnews/article/052/0002388872?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "도시유전, 나프타급 재생원료 수출 첫 선적 개시",
+        "url": "https://n.news.naver.com/mnews/article/003/0014108372?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[단독] SK엔무브, '중동발 호황' 올라탔다…HF싱클레어와 북미 장기 공급...",
+        "url": "https://www.theguru.co.kr/news/article.html?no=105291",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "WSJ : Hormuz deal involves ships entering the Persian Gulf via Iran",
+      "url": "https://en.apa.az/asia/wsj-hormuz-deal-involves-ships-entering-the-persian-gulf-via-iran-519000",
+      "type": "intl"
+    },
+    "2": {
+      "title": "officials : Iran and Oman make progress on a deal to reopen the Strait of Hormuz | Politics and Government",
+      "url": "https://www.reviewjournal.com/news/politics-and-government/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say-3859043/",
+      "type": "intl"
+    },
+    "3": {
+      "title": "STRAIT OF HORMUZ : Cargo Ship Reports Attack As U . S ., Iran Clash Over Talks",
+      "url": "https://www.theyeshivaworld.com/news/general/2582236/strait-of-hormuz-cargo-ship-reports-attack-as-u-s-iran-clash-over-talks.html",
+      "type": "intl"
+    },
+    "4": {
+      "title": "Iran and Oman make progress on deal to reopen Strait of Hormuz , officials say",
+      "url": "https://www.adn.com/nation-world/2026/08/04/iran-and-oman-make-progress-on-deal-to-reopen-strait-of-hormuz-officials-say/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Middle East : India says commercial ship sunk off Yemen",
+      "url": "https://www.dw.com/en/middle-east-india-says-commercial-ship-sunk-off-yemen/live-78235099",
+      "type": "intl"
+    },
+    "6": {
+      "title": "US says Hormuz deal possible by  today  ",
+      "url": "https://www.omanobserver.om/article/1193983/world/region/us-says-hormuz-deal-possible-by-today",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Iran Demands Hormuz Inbound Control , Outbound Oversight",
+      "url": "https://www.pakistantoday.com.pk/2026/08/04/iran-demands-hormuz-inbound-control-outbound-oversight-says-source",
+      "type": "intl"
+    },
+    "8": {
+      "title": "Iran and Oman make progress on a deal to reopen the Strait of Hormuz , officials say",
+      "url": "https://www.news4jax.com/news/world/2026/08/04/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say/",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Strait of Hormuz : Iran , Oman make progress on deal",
+      "url": "https://www.bnnbloomberg.ca/business/international/2026/08/04/iran-and-oman-make-progress-on-a-deal-to-reopen-the-strait-of-hormuz-officials-say/",
+      "type": "intl"
+    },
+    "10": {
+      "title": "Iran , Oman make progress on deal to reopen Strait of Hormuz : officials",
+      "url": "https://www.dailypress.com/2026/08/04/iran-strait-of-hormuz-deal-progress/",
+      "type": "intl"
+    },
+    "11": {
+      "title": "미 재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+      "url": "https://n.news.naver.com/mnews/article/055/0001378082?sid=104",
+      "type": "dom"
+    },
+    "12": {
+      "title": "美재무 \"호르무즈 개방 합의, 화요일이나 수요일 가능\"",
+      "url": "https://n.news.naver.com/mnews/article/018/0006344653?sid=104",
+      "type": "dom"
+    },
+    "13": {
+      "title": "美재무 \"이란과 오늘 내일 중 호르무즈 개방 합의 가능성\"",
+      "url": "https://n.news.naver.com/mnews/article/003/0014108527?sid=104",
+      "type": "dom"
+    },
+    "14": {
+      "title": "이란, 호르무즈 해협 통제권 요구…협상 강경 기류",
+      "url": "https://n.news.naver.com/mnews/article/003/0014108526?sid=104",
+      "type": "dom"
+    },
+    "15": {
+      "title": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+      "url": "https://n.news.naver.com/mnews/article/214/0001515910?sid=104",
+      "type": "dom"
+    },
+    "16": {
+      "title": "카타르 \"미국-이란에 '협상 재개' 합의안 초안 전달…양측 검토 중\"",
+      "url": "https://n.news.naver.com/mnews/article/008/0005395660?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "美재무 “조만간 이란과 호르무즈 해협 개방 합의 가능”",
+      "url": "https://n.news.naver.com/mnews/article/366/0001184311?sid=104",
+      "type": "dom"
+    },
+    "18": {
+      "title": "미 “조만간 호르무즈 합의 기대…이란·오만 협상에 관여중”",
+      "url": "https://n.news.naver.com/mnews/article/056/0012231437?sid=104",
+      "type": "dom"
+    },
+    "19": {
+      "title": "美재무 \"이란과 5일에 호르무즈 관련 합의 도달 가능성\"",
+      "url": "https://n.news.naver.com/mnews/article/421/0009097263?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "미 재무 \"이란과 이틀내 호르무즈 재개방 합의 가능\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000892390?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "argo ship struck in Hormuz after Trumps decapitation threat",
+      "url": "http://www.bignewsnetwork.com/news/279221911/argo-ship-struck-in-hormuz-after-trumps-decapitation-threat",
+      "type": "intl"
+    },
+    "22": {
+      "title": "Seafarer Missing After Ship Fire Near Strait of Hormuz",
+      "url": "https://www.newkerala.com/news/a/one-seafarer-missing-after-bulk-carrier-catches-fire-836.htm",
+      "type": "intl"
+    },
+    "23": {
+      "title": "One missing as crew fights fire aboard ship hit in Hormuz maritime security firm",
+      "url": "https://www.manilatimes.net/2026/08/04/world/one-missing-as-crew-fights-fire-aboard-ship-hit-in-hormuz-maritime-security-firm/2397862",
+      "type": "intl"
+    },
+    "24": {
+      "title": "India Condemns Red Sea Attack on Vessel ; All 14 Crew Saved",
+      "url": "https://www.newkerala.com/news/a/india-condemns-this-unprovoked-attack-shipping-minister-sonowal-738.htm",
+      "type": "intl"
+    },
+    "25": {
+      "title": "Indian vessel sinks in Red Sea ; 13 sailors rescued",
+      "url": "https://www.orissapost.com/indian-vessel-sinks-in-red-sea-13-sailors-rescued/",
+      "type": "intl"
+    },
+    "26": {
+      "title": "Indian Ship Sinks in Red Sea Attack , Crew Rescued",
+      "url": "https://www.newkerala.com/news/a/indian-vessel-sinks-after-attack-red-sea-13-479.htm",
+      "type": "intl"
+    },
+    "27": {
+      "title": "소말리아·아덴만 해적사건 3배↑...해수부, 정보 제공·안전운항 당부",
+      "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1063717",
+      "type": "dom"
+    },
+    "28": {
+      "title": "6 Saudi - flagged oil carriers reroute around Africa , avoiding Bab el - Mandeb",
+      "url": "https://aa.com.tr/en/middle-east/6-saudi-flagged-oil-carriers-reroute-around-africa-avoiding-bab-el-mandeb/4018261",
+      "type": "intl"
+    },
+    "29": {
+      "title": "US says 44 commercial ships redirected under blockade , Iran warns on Hormuz routes",
+      "url": "https://www.arabnews.com/node/2653303/middle-east",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Hormuz vessel traffic remains subdued despite renewed diplomacy ; security incidents keep shipping under pressure : S & P Global",
+      "url": "https://timesofoman.com/article/175223-hormuz-vessel-traffic-remains-subdued-despite-renewed-diplomacy-sp-global",
+      "type": "intl"
+    },
+    "31": {
+      "title": "Tanker Shipping Under Fire from Middle East Tensions | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/tanker-shipping-under-fire-from-middle-east-tensions/",
+      "type": "intl"
+    },
+    "32": {
+      "title": "Record Grain Movement Meets Rising Harvest Freight Costs",
+      "url": "https://www.rfdtv.com/record-grain-movement-meets-rising-harvest-freight-costs",
+      "type": "intl"
+    },
+    "33": {
+      "title": "SWR posts record July freight loading , revenue growth on track",
+      "url": "https://timesofindia.indiatimes.com/city/hubballi/swr-posts-record-july-freight-loading-revenue-growth-on-track/articleshow/132861378.cms",
+      "type": "intl"
+    },
+    "34": {
+      "title": "Baltic Dry Index climbs to 2936 up 93 points | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/baltic-dry-index-climbs-to-2936-up-93-points/",
+      "type": "intl"
+    },
+    "35": {
+      "title": "MABUX : Bunker Market Volatility to Persist in August | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/mabux-bunker-market-volatility-to-persist-in-august/",
+      "type": "intl"
+    },
+    "36": {
+      "title": "“이란·오만, 호르무즈 통항 방식 합의 근접…서비스료 부과”",
+      "url": "https://n.news.naver.com/mnews/article/119/0003118171?sid=104",
+      "type": "dom"
+    },
+    "37": {
+      "title": "\"참수 전 마지막 기회\" 트럼프 협박 아랑곳 않는 이란…호르무즈 수수료...",
+      "url": "https://n.news.naver.com/mnews/article/002/0002451002?sid=104",
+      "type": "dom"
+    },
+    "38": {
+      "title": "트럼프 \"마지막 기회\" 압박…삼성·LG 호르무즈 운임 부담 길어지나",
+      "url": "https://www.ajunews.com/view/20260804145839506",
+      "type": "dom"
+    },
+    "39": {
+      "title": "호르무즈 결국 유료화? \"이란-오만 합의 근접, 수수료 부과 예상\"",
+      "url": "https://n.news.naver.com/mnews/article/008/0005395618?sid=104",
+      "type": "dom"
+    },
+    "40": {
+      "title": "“이란·오만, 호르무즈 통과 합의 접근… 서비스료 나누는 방식”",
+      "url": "https://n.news.naver.com/mnews/article/082/0001392589?sid=104",
+      "type": "dom"
+    },
+    "41": {
+      "title": "부산항발 '컨' 운임 4주만에 반등…\"미주·중동항로가 상승견인\"",
+      "url": "https://n.news.naver.com/mnews/article/421/0009096024?sid=102",
+      "type": "dom"
+    },
+    "42": {
+      "title": "[사설] 칭다오 항로, 부담 낮출 새 해법 찾아야",
+      "url": "https://www.jemin.com/news/articleView.html?idxno=841320",
+      "type": "dom"
+    },
+    "43": {
+      "title": "리오 인디오 저수지 건설 반대하는 파나마 농부",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3654954",
+      "type": "dom"
+    },
+    "44": {
+      "title": "'리오 인디오 댐 반대'",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3654951",
+      "type": "dom"
+    },
+    "45": {
+      "title": "Shanghai Port hits record - high 203 , 881 TEUs",
+      "url": "https://www.manilatimes.net/2026/08/04/business/foreign-business/shanghai-port-hits-record-high-203881-teus/2397889",
+      "type": "intl"
+    },
+    "46": {
+      "title": "HPCL, 호르무스 피해 나이지리아 원유 200만배럴 매입",
+      "url": "https://www.tokenpost.kr/news/breaking/385187",
+      "type": "dom"
+    },
+    "47": {
+      "title": "호주 철광석 수출항 또 멈춘다…철강 원료 공급망 ‘비상’",
+      "url": "https://www.g-enews.com/view.php?ud=202608041739282890fda4f5ab74_1",
+      "type": "dom"
+    },
+    "48": {
+      "title": "구윤철 \"원유 수급 안정 최선…10월 이후 수급 차질 가능성 철저히 대비...",
+      "url": "https://n.news.naver.com/mnews/article/014/0005556891?sid=101",
+      "type": "dom"
+    },
+    "49": {
+      "title": "울산항 원유 반입 '579만t' 4개월 연속 증가세",
+      "url": "http://www.ujeil.com/news/articleView.html?idxno=389872",
+      "type": "dom"
+    },
+    "50": {
+      "title": "Crude Oil Nosedives Amid Prospects Of U . S .- Iran Deal , Reopening Of Strait Of Hormuz",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-08/69215448-crude-oil-nosedives-amid-prospects-of-u-s-iran-deal-reopening-of-strait-of-hormuz-020.htm",
+      "type": "intl"
+    },
+    "51": {
+      "title": "Breakfast briefing : Oil prices fall on expectation a Hormuz deal is close",
+      "url": "https://www.interest.co.nz/economy/139667/bessent-moves-markets-us-data-lackluster-canada-trade-rises-china-sets-tight-fuel",
+      "type": "intl"
+    },
+    "52": {
+      "title": "Oil Slides As Qatar Floats New Iran Deal , Bessent Promises Hormuz Breakthrough :  May Have Deal Tomorrow  ",
+      "url": "https://www.zerohedge.com/geopolitical/qatar-floats-new-iran-deal-bessent-promises-hormuz-breakthrough-oil-slides-may-have",
+      "type": "intl"
+    },
+    "53": {
+      "title": "US stocks rush toward records , and Dow soars 1 , 000 as profits keep piling up and oil prices ease",
+      "url": "http://www.reflector.com/news/national/us-stocks-rush-toward-records-and-dow-soars-1-000-as-profits-keep-piling-up/article_7ea89061-c928-5216-9c23-10c2414e22b1.html",
+      "type": "intl"
+    },
+    "54": {
+      "title": "S & P 500 rises 2 %, Dow jumps 1 , 000 points as profits keep piling up and oil prices ease",
+      "url": "http://www.postregister.com/businessreport/healthcare/s-p-500-rises-2-dow-jumps-1-000-points-as-profits-keep-piling-up/article_aba99138-a072-5f33-b9ca-3d9a03da135f.html",
+      "type": "intl"
+    },
+    "55": {
+      "title": "Iran war has cost market 2 . 6 billion barrels of oil",
+      "url": "https://www.rte.ie/news/business/2026/0804/1586444-iran-war-has-cost-market-2-6-billion-barrels-of-oil/",
+      "type": "intl"
+    },
+    "56": {
+      "title": "Petron income down to P3 . 8 billion on high oil prices",
+      "url": "https://www.philstar.com/business/2026/08/05/2546970/petron-income-down-p38-billion-high-oil-prices",
+      "type": "intl"
+    },
+    "57": {
+      "title": "US stocks leap toward a record as profits keep piling up and oil prices ease",
+      "url": "https://www.local10.com/news/2026/08/04/us-stocks-leap-toward-a-record-as-profits-keep-piling-up-and-oil-prices-ease/",
+      "type": "intl"
+    },
+    "58": {
+      "title": "Lufthansa shares nosedive as Germany biggest airline cuts outlook on Mideast war",
+      "url": "https://www.thelocal.de/20260804/lufthansa-shares-nosedive-as-germanys-biggest-airline-cuts-outlook-on-mideast-war",
+      "type": "intl"
+    },
+    "59": {
+      "title": "Hormuz Oil Recovery Bets Sparks New All - Time Highs For S & P 500",
+      "url": "https://cointelegraph.com/markets/bitcoin-coils-as-hormuz-reopening-time-line-sends-sp-500-to-new-record-high",
+      "type": "intl"
+    },
+    "60": {
+      "title": "Seoul shares end higher amid lingering woes over AI , Iran crisis",
+      "url": "https://www.koreaherald.com/article/10830715",
+      "type": "dom"
+    },
+    "61": {
+      "title": "Inflation expected to edge up in Aug . on base effect : BOK",
+      "url": "https://www.koreaherald.com/article/10829996",
+      "type": "dom"
+    },
+    "62": {
+      "title": "유가 안정세에 소비자물가 상승폭 둔화",
+      "url": "https://www.idaegu.co.kr/news/articleView.html?idxno=555821",
+      "type": "dom"
+    },
+    "63": {
+      "title": "[월드 e-브리핑] 트럼프, 미 석유업계 압박…\"휘발유값 내려라\"",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532936",
+      "type": "dom"
+    },
+    "64": {
+      "title": "제주항공 2분기 영업손실 524억으로 적자폭 확대, 유가 상승에 수익성 ...",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443949",
+      "type": "dom"
+    },
+    "65": {
+      "title": "제주항공, 2분기 영업손실 524억원…매출 4417억원 '역대 최대'",
+      "url": "https://www.g-enews.com/view.php?ud=202608041850293632ea14faf6f5_1",
+      "type": "dom"
+    },
+    "66": {
+      "title": "제주항공, 2분기 영업손실 524억원…하반기 내실경영 집중",
+      "url": "http://www.metroseoul.co.kr/article/20260804500467",
+      "type": "dom"
+    },
+    "67": {
+      "title": "제주항공, 2Q 적자폭 확대…고유가·고환율 타격",
+      "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5047931",
+      "type": "dom"
+    },
+    "68": {
+      "title": "제주항공 2분기 매출 4417억 원 '역대 최대'…적자는 524억 원",
+      "url": "https://www.newsjeju.net/news/articleView.html?idxno=424175",
+      "type": "dom"
+    },
+    "69": {
+      "title": "제주항공, 2분기 영업손실 524억… 매출은 역대 최대",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092167307",
+      "type": "dom"
+    },
+    "70": {
+      "title": "Gulf ordeal of a Bangladesh seafarer",
+      "url": "https://www.straitstimes.com/world/middle-east/trapped-after-war-breaks-out-in-iran-bangladesh-seafarer-recounts-gulf-ordeal",
+      "type": "intl"
+    },
+    "71": {
+      "title": "Trapped by war , Bangladesh seafarer recounts Gulf ordeal",
+      "url": "https://www.al-monitor.com/originals/2026/08/trapped-war-bangladesh-seafarer-recounts-gulf-ordeal",
+      "type": "intl"
+    },
+    "72": {
+      "title": "\"지원 완벽\" 해수부 vs \"폐업 위기\" 어민…서류와 현장 괴리 '심각'",
+      "url": "https://n.news.naver.com/mnews/article/277/0005798798?sid=102",
+      "type": "dom"
+    },
+    "73": {
+      "title": "남해안 고수온 경보 발령..양식장 어류 방류",
+      "url": "https://ysmbc.co.kr/NewsArticle/1530652",
+      "type": "dom"
+    },
+    "74": {
+      "title": "가로림만·천수만 일대 고수온 경보...양식 어류 피해 우려",
+      "url": "https://tjmbc.co.kr/NewsArticle/854810",
+      "type": "dom"
+    },
+    "75": {
+      "title": "[여기는 포항] 동해 연안 ‘고수온 주의보’…양식장 비상 외",
+      "url": "https://n.news.naver.com/mnews/article/056/0012231256?sid=101",
+      "type": "dom"
+    },
+    "76": {
+      "title": "동해안 고수온 주의보…양식어가 폐사 우려 '비상'",
+      "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4080282",
+      "type": "dom"
+    },
+    "77": {
+      "title": "전남광주특별시 고수온 경보 전국 첫 양식어류 긴급방류",
+      "url": "https://n.news.naver.com/mnews/article/660/0000114534?sid=102",
+      "type": "dom"
+    },
+    "78": {
+      "title": "'수온 상승' 동해안, 양식 어류 폐사 시작",
+      "url": "https://www.tbc.co.kr/news/view?pno=20260804183426AE03445&id=209316",
+      "type": "dom"
+    },
+    "79": {
+      "title": "경북 동해안 고수온 비상…양식장 치어 폐사 위기 확대",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=874118",
+      "type": "dom"
+    },
+    "80": {
+      "title": "통영시 고수온·적조 피해 최소화 위한 선제 대응 총력",
+      "url": "http://www.gndomin.com/news/articleView.html?idxno=484358",
+      "type": "dom"
+    },
+    "81": {
+      "title": "수온 '1도'가 생사 가른다…물고기도 대거 피난",
+      "url": "https://n.news.naver.com/mnews/article/422/0000892345?sid=161",
+      "type": "dom"
+    },
+    "82": {
+      "title": "Strong finish : Ocean lines raise profit outlook by 200 % ",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/strong-finish-ocean-lines-raise-143405426.html",
+      "type": "intl"
+    },
+    "83": {
+      "title": "Inventory Stockpiling Drives 19 % Revenue Surge at CMA CGM",
+      "url": "https://finance.yahoo.com/economy/articles/inventory-stockpiling-drives-19-revenue-123000158.html",
+      "type": "intl"
+    },
+    "84": {
+      "title": "Russia preparing shadow fleet ahead of complete EU oil import ban",
+      "url": "https://www.albawaba.com/business/russia-preparing-shadow-fleet-ahead-1634436",
+      "type": "intl"
+    },
+    "85": {
+      "title": "Maersk removes Shanghai from Dragon service",
+      "url": "https://www.porttechnology.org/maersk-shanghai-dragon/",
+      "type": "intl"
+    },
+    "86": {
+      "title": "인천 장봉도 배편 13회 유지…옹진군, 선사 적자 지원",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1532915",
+      "type": "dom"
+    },
+    "87": {
+      "title": "India pharma sector to miss 2030 sales target amid tariff and shipping woes , trade body says",
+      "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/india-pharma-sector-to-miss-2030-sales-target-amid-tariff-and-shipping-woes-trade-body-says/articleshow/132847469.cms",
+      "type": "intl"
+    },
+    "88": {
+      "title": "Hormuz closure creates  largest oil supply shock in history : Aramco chief",
+      "url": "https://www.presstv.co.uk/Detail/2026/08/04/773716/Saudi-oil-Aramco-Hormuz-closure-Iran",
+      "type": "intl"
+    },
+    "89": {
+      "title": "Bab al - Mandab Disruption : How Asia Could Face Higher Petrol , Airfares and Grocery Costs",
+      "url": "https://gulfnews.com/business/markets/bab-al-mandab-disruption-could-raise-petrol-airfares-and-grocery-costs-across-asia-1.500629242",
+      "type": "intl"
+    },
+    "90": {
+      "title": "Syria Says will Restore Iraq Oil Pipeline Link within Three Years",
+      "url": "https://english.aawsat.com/arab-world/5303391-syria-says-will-restore-iraq-oil-pipeline-link-within-three-years",
+      "type": "intl"
+    },
+    "91": {
+      "title": "Iron Ore Prices Hit One - Year Low as China Demand Slump Deepens",
+      "url": "https://oilprice.com/Metals/Commodities/Iron-Ore-Prices-Hit-One-Year-Low-as-China-Demand-Slump-Deepens.html",
+      "type": "intl"
+    },
+    "92": {
+      "title": "Kuwait KPC drops August sulphur price by $85 / t",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2860769-kuwait-s-kpc-drops-august-sulphur-price-by-85-t",
+      "type": "intl"
+    },
+    "93": {
+      "title": "QP Foods united kingdom Reports Higher Sunflower Oil Costs Amid Black Sea Shipping Disruptions",
+      "url": "https://www.manilatimes.net/2026/08/04/tmt-newswire/globenewswire/qp-foods-uk-reports-higher-sunflower-oil-costs-amid-black-sea-shipping-disruptions/2398068",
+      "type": "intl"
+    },
+    "94": {
+      "title": "Iron ore markets rattled by Radiant World concerns and weak steel demand",
+      "url": "https://www.afr.com/markets/commodities/iron-ore-teeters-after-major-trader-accused-of-fake-invoices-20260804-p60l8h",
+      "type": "intl"
+    },
+    "95": {
+      "title": "MMI Daily Iron Ore Index Report August 4 2026 | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/mmi-daily-iron-ore-index-report-august-4-2026/",
+      "type": "intl"
+    },
+    "96": {
+      "title": "CEO Plays Down Impact of Attacks on Aramco  | Peak Oil News and Message Boards",
+      "url": "https://peakoil.com/publicpolicy/ceo-plays-down-impact-of-attacks-on-aramco",
+      "type": "intl"
+    },
+    "97": {
+      "title": "CEO Plays Down Impact of Attacks on Aramco",
+      "url": "https://www.rigzone.com/news/wire/ceo_plays_down_impact_of_attacks_on_aramco-04-aug-2026-184285-article/",
+      "type": "intl"
+    },
+    "98": {
+      "title": "아람코, 중동 리스크에도 공급망 유지 … 동서 송유관 활용 확대",
+      "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=244679",
+      "type": "dom"
+    },
+    "99": {
+      "title": "아람코 \"후티 공격, 원유 수출에 영향 없어\"‥순이익 급등",
+      "url": "https://n.news.naver.com/mnews/article/214/0001515859?sid=104",
+      "type": "dom"
+    },
+    "100": {
+      "title": "\"믿었던 석탄마저 삐걱…LX인터내셔널, 자원 사업에 '빨간불'\"",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=271088",
+      "type": "dom"
+    },
+    "101": {
+      "title": "한국, 재생 원료 수출국…폐플라스틱서 뽑아낸 '재생 나프타' 첫 수출",
+      "url": "https://n.news.naver.com/mnews/article/057/0001962023?sid=101",
+      "type": "dom"
+    },
+    "102": {
+      "title": "폐플라스틱이 석유화학 원료로…도시유전, 나프타급 재생원료 첫 해외 ...",
+      "url": "https://n.news.naver.com/mnews/article/009/0005716666?sid=101",
+      "type": "dom"
+    },
+    "103": {
+      "title": "러시아산 원유 공급 75% 증가, 시리아 하루 6만배럴 의존",
+      "url": "https://www.tokenpost.kr/news/market/385020",
+      "type": "dom"
+    },
+    "104": {
+      "title": "국내 기술로 폐플라스틱을 ‘나프타’로…도시유전, 재생원료 첫 해외 ...",
+      "url": "https://n.news.naver.com/mnews/article/016/0002679527?sid=101",
+      "type": "dom"
+    },
+    "105": {
+      "title": "소형LPG저장탱크 생산량 소폭 감소…전년동기比 702기 ↓",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227227",
+      "type": "dom"
+    },
+    "106": {
+      "title": "우크라 공격에 러 곡물 수출 차질…아조우해 중단·흑해도 병목(종합)",
+      "url": "https://n.news.naver.com/mnews/article/421/0009097282?sid=104",
+      "type": "dom"
+    },
+    "107": {
+      "title": "러 흑해 공격에 우크라이나 곡물 수출 비상…\"대체 경로 모색\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000892412?sid=104",
+      "type": "dom"
+    }
+  }
+}
