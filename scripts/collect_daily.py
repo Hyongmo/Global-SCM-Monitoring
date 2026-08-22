@@ -66,6 +66,9 @@ client = anthropic.Anthropic()  # ANTHROPIC_API_KEY 자동 사용
 # ── 테스트 모드 (환경변수 TEST_SCALE 로 스케일 축소 가능) ──
 _test_scale = int(os.environ.get('TEST_SCALE', 0))  # 0=정상, 양수=샘플 수 제한
 
+# ── 수집 건너뛰기 (기존 raw CSV로 분류+리포트만 재실행) ──
+SKIP_COLLECT = bool(int(os.environ.get('SKIP_COLLECT', 0)))
+
 # ── GDELT 파라미터 ──
 MAX_RECORDS    = 10 if _test_scale else 250
 SLEEP_SEC      = 0.5
@@ -701,182 +704,206 @@ def save_classified(classify_df, classified_csv, daily_prefix, ckpt_file):
 # 2. GDELT 수집
 # ══════════════════════════════════════════════════════════════
 
-print("\n[Step 1/7] GDELT 영문 수집")
-print("-" * 40)
+if SKIP_COLLECT:
+    print("\n[Step 1/7] GDELT 영문 수집 — ⏭ SKIP_COLLECT: 기존 raw CSV 로드")
+    print("-" * 40)
+    _raw_csv_path = os.path.join(DAILY_DIR, f'gdelt_mon_daily_{DATE_TAG}.csv')
+    if os.path.exists(_raw_csv_path):
+        gdelt_raw_df = pd.read_csv(_raw_csv_path, encoding='utf-8-sig')
+        print(f"  ✅ 기존 CSV 로드: {_raw_csv_path} ({len(gdelt_raw_df)}건)")
+    else:
+        print(f"  ⚠ {_raw_csv_path} 없음 — GDELT 분류 건너뜀")
+        gdelt_raw_df = pd.DataFrame()
+else:
 
-mon_keywords, mon_kw_source = load_keywords(MON_QUERY_FILE, lang='en')
-valid_keywords = [kw for kw in mon_keywords if len(kw) >= MIN_KEYWORD_LEN]
-print(f"키워드: {len(valid_keywords)}개")
+    print("\n[Step 1/7] GDELT 영문 수집")
+    print("-" * 40)
 
-s_date = TARGET_DATE.strftime('%Y-%m-%d')
-e_date = (TARGET_DATE + timedelta(days=1)).strftime('%Y-%m-%d')
+    mon_keywords, mon_kw_source = load_keywords(MON_QUERY_FILE, lang='en')
+    valid_keywords = [kw for kw in mon_keywords if len(kw) >= MIN_KEYWORD_LEN]
+    print(f"키워드: {len(valid_keywords)}개")
 
-gdelt_articles = []
-seen_urls = set()
-gdelt_stats, gdelt_errors = [], []
-t0 = time.time()
+    s_date = TARGET_DATE.strftime('%Y-%m-%d')
+    e_date = (TARGET_DATE + timedelta(days=1)).strftime('%Y-%m-%d')
 
-for idx, keyword in enumerate(valid_keywords):
-    qgroup = mon_kw_source[keyword]
-    n_raw = n_new = 0
-    err = None
+    gdelt_articles = []
+    seen_urls = set()
+    gdelt_stats, gdelt_errors = [], []
+    t0 = time.time()
 
-    for attempt in range(MAX_RETRIES + 1):
-        try:
-            f = Filters(keyword=keyword, start_date=s_date, end_date=e_date,
-                        num_records=MAX_RECORDS, language=LANGUAGES)
-            results = gd.article_search(f)
-            if results is not None and len(results) > 0:
-                n_raw = len(results)
-                for _, row in results.iterrows():
-                    url = row.get('url', '')
-                    url_hash = _make_hash(url)
-                    if url_hash not in seen_urls:
-                        seen_urls.add(url_hash)
-                        gdelt_articles.append({
-                            'url': url, 'url_hash': url_hash,
-                            'title': row.get('title', ''),
-                            'seendate': row.get('seendate', ''),
-                            'domain': row.get('domain', ''),
-                            'language': row.get('language', ''),
-                            'sourcecountry': row.get('sourcecountry', ''),
-                            'query_keyword': keyword,
-                            'query_group': qgroup,
-                            'collect_date': str(TARGET_DATE),
-                        })
-                        n_new += 1
-            time.sleep(SLEEP_SEC)
-            break
-        except Exception as e:
-            err = str(e)
-            is_network = any(x in err for x in ['ConnectionReset','ConnectionAborted',
-                                                  'RemoteDisconnected','timeout','Timeout'])
-            if is_network and attempt < MAX_RETRIES:
-                time.sleep(3 * (attempt + 1))
-                err = None
-                continue
-            gdelt_errors.append({'keyword': keyword, 'error': err})
-            break
+    for idx, keyword in enumerate(valid_keywords):
+        qgroup = mon_kw_source[keyword]
+        n_raw = n_new = 0
+        err = None
 
-    gdelt_stats.append({'keyword': keyword, 'query_group': qgroup,
-                        'raw': n_raw, 'new': n_new, 'error': err or ''})
+        for attempt in range(MAX_RETRIES + 1):
+            try:
+                f = Filters(keyword=keyword, start_date=s_date, end_date=e_date,
+                            num_records=MAX_RECORDS, language=LANGUAGES)
+                results = gd.article_search(f)
+                if results is not None and len(results) > 0:
+                    n_raw = len(results)
+                    for _, row in results.iterrows():
+                        url = row.get('url', '')
+                        url_hash = _make_hash(url)
+                        if url_hash not in seen_urls:
+                            seen_urls.add(url_hash)
+                            gdelt_articles.append({
+                                'url': url, 'url_hash': url_hash,
+                                'title': row.get('title', ''),
+                                'seendate': row.get('seendate', ''),
+                                'domain': row.get('domain', ''),
+                                'language': row.get('language', ''),
+                                'sourcecountry': row.get('sourcecountry', ''),
+                                'query_keyword': keyword,
+                                'query_group': qgroup,
+                                'collect_date': str(TARGET_DATE),
+                            })
+                            n_new += 1
+                time.sleep(SLEEP_SEC)
+                break
+            except Exception as e:
+                err = str(e)
+                is_network = any(x in err for x in ['ConnectionReset','ConnectionAborted',
+                                                      'RemoteDisconnected','timeout','Timeout'])
+                if is_network and attempt < MAX_RETRIES:
+                    time.sleep(3 * (attempt + 1))
+                    err = None
+                    continue
+                gdelt_errors.append({'keyword': keyword, 'error': err})
+                break
 
-    if (idx + 1) % 20 == 0:
-        print(f"  [{idx+1}/{len(valid_keywords)}] {len(gdelt_articles)}건 수집 중...")
+        gdelt_stats.append({'keyword': keyword, 'query_group': qgroup,
+                            'raw': n_raw, 'new': n_new, 'error': err or ''})
 
-elapsed = time.time() - t0
-print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초)")
+        if (idx + 1) % 20 == 0:
+            print(f"  [{idx+1}/{len(valid_keywords)}] {len(gdelt_articles)}건 수집 중...")
 
-# Raw CSV 저장
-gdelt_raw_df = pd.DataFrame(gdelt_articles)
-if len(gdelt_raw_df) > 0:
-    raw_csv = os.path.join(DAILY_DIR, f'gdelt_mon_daily_{DATE_TAG}.csv')
-    gdelt_raw_df.to_csv(raw_csv, index=False, encoding='utf-8-sig')
-    print(f"  원본 저장: {raw_csv} ({len(gdelt_raw_df)}건)")
+    elapsed = time.time() - t0
+    print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초)")
+
+    # Raw CSV 저장
+    gdelt_raw_df = pd.DataFrame(gdelt_articles)
+    if len(gdelt_raw_df) > 0:
+        raw_csv = os.path.join(DAILY_DIR, f'gdelt_mon_daily_{DATE_TAG}.csv')
+        gdelt_raw_df.to_csv(raw_csv, index=False, encoding='utf-8-sig')
+        print(f"  원본 저장: {raw_csv} ({len(gdelt_raw_df)}건)")
 
 
 # ══════════════════════════════════════════════════════════════
 # 3. 네이버 수집
 # ══════════════════════════════════════════════════════════════
 
-print("\n[Step 2/7] 네이버 한국어 수집")
-print("-" * 40)
-
-naver_articles = []
-
-if not NAVER_CLIENT_ID or not NAVER_CLIENT_SECRET:
-    print("⚠ NAVER 환경변수 미설정 — 네이버 수집 건너뜀")
-    naver_raw_df = pd.DataFrame()
+if SKIP_COLLECT:
+    print("\n[Step 2/7] 네이버 한국어 수집 — ⏭ SKIP_COLLECT: 기존 raw CSV 로드")
+    print("-" * 40)
+    _naver_raw_csv_path = os.path.join(DAILY_DIR, f'naver_mon_daily_{DATE_TAG}.csv')
+    if os.path.exists(_naver_raw_csv_path):
+        naver_raw_df = pd.read_csv(_naver_raw_csv_path, encoding='utf-8-sig')
+        print(f"  ✅ 기존 CSV 로드: {_naver_raw_csv_path} ({len(naver_raw_df)}건)")
+    else:
+        print(f"  ⚠ {_naver_raw_csv_path} 없음 — 네이버 분류 건너뜀")
+        naver_raw_df = pd.DataFrame()
 else:
-    naver_keywords, naver_kw_source = load_keywords(MON_QUERY_FILE, lang='ko')
-    print(f"키워드: {len(naver_keywords)}개")
 
-    headers = {
-        'X-Naver-Client-Id': NAVER_CLIENT_ID,
-        'X-Naver-Client-Secret': NAVER_CLIENT_SECRET,
-    }
+    print("\n[Step 2/7] 네이버 한국어 수집")
+    print("-" * 40)
 
-    def _clean(text):
-        text = re.sub(r'<[^>]+>', '', text)
-        return html.unescape(text).strip()
+    naver_articles = []
 
-    def _parse_naver_date(pub_date_str):
-        try:
-            from email.utils import parsedate_to_datetime
-            return parsedate_to_datetime(pub_date_str).date()
-        except Exception:
-            return None
+    if not NAVER_CLIENT_ID or not NAVER_CLIENT_SECRET:
+        print("⚠ NAVER 환경변수 미설정 — 네이버 수집 건너뜀")
+        naver_raw_df = pd.DataFrame()
+    else:
+        naver_keywords, naver_kw_source = load_keywords(MON_QUERY_FILE, lang='ko')
+        print(f"키워드: {len(naver_keywords)}개")
 
-    seen_naver = set()
-    naver_stats = []
-    t0 = time.time()
+        headers = {
+            'X-Naver-Client-Id': NAVER_CLIENT_ID,
+            'X-Naver-Client-Secret': NAVER_CLIENT_SECRET,
+        }
 
-    for idx, keyword in enumerate(naver_keywords):
-        qgroup = naver_kw_source[keyword]
-        n_new = 0
-        start_idx = 1
+        def _clean(text):
+            text = re.sub(r'<[^>]+>', '', text)
+            return html.unescape(text).strip()
 
-        max_start = 31 if _test_scale else 1000  # 테스트: 1페이지만, 네이버 API 한계=1000
-        while start_idx <= max_start:
+        def _parse_naver_date(pub_date_str):
             try:
-                params = {'query': keyword, 'display': NAVER_DISPLAY,
-                          'start': start_idx, 'sort': 'date'}
-                resp = requests.get(NAVER_API_URL, headers=headers, params=params, timeout=10)
-                resp.raise_for_status()
-                data = resp.json()
-                items = data.get('items', [])
-                if not items:
+                from email.utils import parsedate_to_datetime
+                return parsedate_to_datetime(pub_date_str).date()
+            except Exception:
+                return None
+
+        seen_naver = set()
+        naver_stats = []
+        t0 = time.time()
+
+        for idx, keyword in enumerate(naver_keywords):
+            qgroup = naver_kw_source[keyword]
+            n_new = 0
+            start_idx = 1
+
+            max_start = 31 if _test_scale else 1000  # 테스트: 1페이지만, 네이버 API 한계=1000
+            while start_idx <= max_start:
+                try:
+                    params = {'query': keyword, 'display': NAVER_DISPLAY,
+                              'start': start_idx, 'sort': 'date'}
+                    resp = requests.get(NAVER_API_URL, headers=headers, params=params, timeout=10)
+                    resp.raise_for_status()
+                    data = resp.json()
+                    items = data.get('items', [])
+                    if not items:
+                        break
+
+                    for item in items:
+                        pub_d = _parse_naver_date(item.get('pubDate', ''))
+                        if pub_d is None or pub_d < TARGET_DATE:
+                            break
+                        if pub_d > TARGET_DATE:
+                            continue
+
+                        url = item.get('link', item.get('originallink', ''))
+                        url_hash = _make_hash(url)
+                        if url_hash not in seen_naver:
+                            seen_naver.add(url_hash)
+                            naver_articles.append({
+                                'url': url, 'url_hash': url_hash,
+                                'title': _clean(item.get('title', '')),
+                                'seendate': str(TARGET_DATE),
+                                'domain': url.split('/')[2] if url else '',
+                                'language': 'Korean',
+                                'sourcecountry': 'South Korea',
+                                'query_keyword': keyword,
+                                'query_group': qgroup,
+                                'collect_date': str(TARGET_DATE),
+                            })
+                            n_new += 1
+                    else:
+                        if len(items) == NAVER_DISPLAY:
+                            start_idx += NAVER_DISPLAY
+                            time.sleep(NAVER_SLEEP)
+                            continue
                     break
 
-                for item in items:
-                    pub_d = _parse_naver_date(item.get('pubDate', ''))
-                    if pub_d is None or pub_d < TARGET_DATE:
-                        break
-                    if pub_d > TARGET_DATE:
-                        continue
+                    time.sleep(NAVER_SLEEP)
+                    break
+                except Exception as e:
+                    print(f"  ⚠ 네이버 에러 ({keyword}): {e}")
+                    break
 
-                    url = item.get('link', item.get('originallink', ''))
-                    url_hash = _make_hash(url)
-                    if url_hash not in seen_naver:
-                        seen_naver.add(url_hash)
-                        naver_articles.append({
-                            'url': url, 'url_hash': url_hash,
-                            'title': _clean(item.get('title', '')),
-                            'seendate': str(TARGET_DATE),
-                            'domain': url.split('/')[2] if url else '',
-                            'language': 'Korean',
-                            'sourcecountry': 'South Korea',
-                            'query_keyword': keyword,
-                            'query_group': qgroup,
-                            'collect_date': str(TARGET_DATE),
-                        })
-                        n_new += 1
-                else:
-                    if len(items) == NAVER_DISPLAY:
-                        start_idx += NAVER_DISPLAY
-                        time.sleep(NAVER_SLEEP)
-                        continue
-                break
+            naver_stats.append({'keyword': keyword, 'query_group': qgroup, 'new': n_new})
 
-                time.sleep(NAVER_SLEEP)
-                break
-            except Exception as e:
-                print(f"  ⚠ 네이버 에러 ({keyword}): {e}")
-                break
+            if (idx + 1) % 20 == 0:
+                print(f"  [{idx+1}/{len(naver_keywords)}] {len(naver_articles)}건...")
 
-        naver_stats.append({'keyword': keyword, 'query_group': qgroup, 'new': n_new})
+        elapsed = time.time() - t0
+        print(f"✅ 네이버 수집 완료: {len(naver_articles)}건 ({elapsed:.0f}초)")
 
-        if (idx + 1) % 20 == 0:
-            print(f"  [{idx+1}/{len(naver_keywords)}] {len(naver_articles)}건...")
-
-    elapsed = time.time() - t0
-    print(f"✅ 네이버 수집 완료: {len(naver_articles)}건 ({elapsed:.0f}초)")
-
-    naver_raw_df = pd.DataFrame(naver_articles)
-    if len(naver_raw_df) > 0:
-        naver_raw_csv = os.path.join(DAILY_DIR, f'naver_mon_daily_{DATE_TAG}.csv')
-        naver_raw_df.to_csv(naver_raw_csv, index=False, encoding='utf-8-sig')
-        print(f"  원본 저장: {naver_raw_csv} ({len(naver_raw_df)}건)")
+        naver_raw_df = pd.DataFrame(naver_articles)
+        if len(naver_raw_df) > 0:
+            naver_raw_csv = os.path.join(DAILY_DIR, f'naver_mon_daily_{DATE_TAG}.csv')
+            naver_raw_df.to_csv(naver_raw_csv, index=False, encoding='utf-8-sig')
+            print(f"  원본 저장: {naver_raw_csv} ({len(naver_raw_df)}건)")
 
 
 # ══════════════════════════════════════════════════════════════

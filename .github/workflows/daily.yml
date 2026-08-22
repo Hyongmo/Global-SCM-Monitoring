@@ -16,6 +16,10 @@ on:
         description: '테스트 모드 샘플 수 (0=정상, 50=각50건 축소 테스트)'
         required: false
         default: '0'
+      skip_collect:
+        description: '수집 건너뛰기 (1=기존 raw CSV로 분류+리포트만 재실행)'
+        required: false
+        default: '0'
 
 jobs:
   daily-pipeline:
@@ -69,6 +73,7 @@ jobs:
           NAVER_CLIENT_ID:      ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET:  ${{ secrets.NAVER_CLIENT_SECRET }}
           TEST_SCALE:           ${{ github.event.inputs.test_scale || '0' }}
+          SKIP_COLLECT:         ${{ github.event.inputs.skip_collect || '0' }}
         run: |
           python scripts/collect_daily.py ${{ env.TARGET_DATE }}
 
