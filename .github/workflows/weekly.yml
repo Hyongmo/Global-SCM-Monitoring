@@ -1,0 +1,119 @@
+name: KMI 주간 공급망 모니터링
+
+on:
+  # daily.yml 완료 후 월요일에만 실행
+  workflow_run:
+    workflows: ["KMI 해상공급망 일일 모니터링"]
+    types: [completed]
+
+  # 수동 실행
+  workflow_dispatch:
+    inputs:
+      week_tag:
+        description: '주간 태그 (YYYYMMDD, 기본: 자동 감지)'
+        required: false
+        default: ''
+
+jobs:
+  weekly-pipeline:
+    runs-on: ubuntu-latest
+    # workflow_dispatch는 항상 실행, workflow_run은 daily.yml이 성공했을 때만 실행
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    timeout-minutes: 180      # 최대 3시간 (LLM 분류 포함)
+
+    steps:
+      # ────────────────────────────────────────────────────────
+      # 1. 월요일 여부 확인 (workflow_dispatch는 요일 무관 실행)
+      # ────────────────────────────────────────────────────────
+      - name: Check if Monday
+        id: check_day
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+            echo "수동 실행 — 요일 무관 실행"
+          else
+            DOW=$(TZ=Asia/Seoul date '+%u')   # 1=월요일
+            if [ "$DOW" = "1" ]; then
+              echo "should_run=true" >> $GITHUB_OUTPUT
+              echo "오늘은 월요일 (KST) — 실행"
+            else
+              echo "should_run=false" >> $GITHUB_OUTPUT
+              echo "오늘은 월요일이 아님 (요일=$DOW) — 건너뜀"
+            fi
+          fi
+
+      # ────────────────────────────────────────────────────────
+      # 2. 코드 체크아웃
+      # ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        if: steps.check_day.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ────────────────────────────────────────────────────────
+      # 3. Python 환경 설정
+      # ────────────────────────────────────────────────────────
+      - name: Set up Python
+        if: steps.check_day.outputs.should_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        if: steps.check_day.outputs.should_run == 'true'
+        run: pip install -r requirements.txt
+
+      # ────────────────────────────────────────────────────────
+      # 4. 주간 태그 결정 (수동 실행 시 입력값, 자동 실행 시 오늘 날짜)
+      # ────────────────────────────────────────────────────────
+      - name: Determine week tag
+        if: steps.check_day.outputs.should_run == 'true'
+        run: |
+          if [ -n "${{ github.event.inputs.week_tag }}" ]; then
+            echo "WEEK_TAG=${{ github.event.inputs.week_tag }}" >> $GITHUB_ENV
+          else
+            echo "WEEK_TAG=$(TZ=Asia/Seoul date '+%Y%m%d')" >> $GITHUB_ENV
+          fi
+          echo "주간 태그: $WEEK_TAG"
+
+      # ────────────────────────────────────────────────────────
+      # 5. 주간 파이프라인 실행
+      #    수집 → 분류 → 시나리오 생성 등 (내부에서 순차 호출)
+      # ────────────────────────────────────────────────────────
+      - name: Run weekly pipeline
+        if: steps.check_day.outputs.should_run == 'true'
+        env:
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          python scripts/weekly_pipeline.py ${{ env.WEEK_TAG }}
+
+      # ────────────────────────────────────────────────────────
+      # 6. 검토용 이메일 발송 (담당자 검토 후 weekly_finalize.yml로 최종 게시)
+      #    이 단계에서는 커밋/푸시 없음 — 결과물은 러너 내에만 존재
+      # ────────────────────────────────────────────────────────
+      - name: Send review email
+        if: steps.check_day.outputs.should_run == 'true'
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          python scripts/send_weekly_email.py --review --week-tag ${{ env.WEEK_TAG }}
+
+      # ────────────────────────────────────────────────────────
+      # 7. 실행 요약
+      # ────────────────────────────────────────────────────────
+      - name: Pipeline summary
+        if: always() && steps.check_day.outputs.should_run == 'true'
+        run: |
+          echo "## 주간 파이프라인 실행 결과" >> $GITHUB_STEP_SUMMARY
+          echo "- 트리거: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 주간 태그: ${{ env.WEEK_TAG }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 커밋/푸시: 없음 (검토 후 weekly_finalize.yml에서 게시)" >> $GITHUB_STEP_SUMMARY

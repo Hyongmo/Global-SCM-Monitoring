@@ -1,5 +1,6 @@
-# ── KG 파일 (미공개) ──
-seed_kg_*.json
+# ── KG 파일 ──
+# seed_kg_v4.json은 주간 파이프라인(GitHub Actions)에서 필요하므로 추적 대상
+# seed_kg_*.json  ← 2026-08-23 해제 (weekly_pipeline.py step1 의존)
 *.ttl
 *.owl
 

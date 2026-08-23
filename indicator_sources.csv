@@ -1,0 +1,42 @@
+﻿category,indicator,source,verify_url,ticker,frequency,collect_method
+자동_스크래핑,BDI (Baltic Dry Index),tradingeconomics.com,https://tradingeconomics.com/commodity/baltic,,일간,fetch_bdi_auto() — 페이지 테이블에서 Baltic 행 파싱
+자동_API,SCFI (Shanghai Containerized Freight Index),en.sse.net.cn,https://en.sse.net.cn/indices/scfinew.jsp,,주간,fetch_scfi_auto() — API: en.sse.net.cn/currentIndex?indexName=scfi
+자동_스크래핑,Harpex (Harper Petersen Charter Rate Index),harperpetersen.com,https://www.harperpetersen.com/container#harpex,,주간,fetch_harpex_auto() — 페이지 테이블 첫 번째 데이터행 파싱
+자동_스크래핑,NAPMSDI (ISM Manufacturing Supplier Deliveries),tradingeconomics.com,https://tradingeconomics.com/united-states/ism-manufacturing-supplier-deliveries,,월간,fetch_napmsdi_auto() — 페이지 본문 텍스트 regex 파싱
+자동_스크래핑,RWI_ISL_CTI (Container Throughput Index),isl.org,https://www.isl.org/en/services/rwiisl-container-throughput-index,,월간,fetch_rwi_isl_cti_auto() — 보도자료 본문 regex 파싱 (URL: index-{M}{YY})
+반자동,GSCSI (Global Supply Chain Stress Index),worldbank.org,https://www.worldbank.org/en/data/interactive/2025/04/08/global-supply-chain-stress-index,,월간,Power BI 임베드 → 자동화 불가. 웹 검색으로 수집
+자동_다운로드,GPR (Geopolitical Risk Index),Matteo Iacoviello,https://www.matteoiacoviello.com/gpr.htm,,월간,fetch_gpr_auto() — 다운로드: matteoiacoviello.com/gpr_files/data_gpr_export.xls
+자동_API,KR_ExportVol (한국 수출액),관세청 (공공데이터포털),https://unipass.customs.go.kr/ets/,,월간,fetch_kr_export_customs() — API: apis.data.go.kr/1220000/retrieveTrade (API키 필요)
+자동_다운로드,GSCPI (Global Supply Chain Pressure Index),NY Fed,https://www.newyorkfed.org/research/policy/gscpi#/interactive,,월간,fetch_gscpi_auto() — 다운로드: newyorkfed.org/.../gscpi_data.xlsx
+자동_API,CP_Hormuz (호르무즈해협),IMF PortWatch,https://portwatch.imf.org/pages/cb5856222a5b4105adc6ee7e880a1730,,일간,fetch_portwatch_cp() — API: services.arcgis.com FeatureServer (초크포인트별 필터링)
+자동_API,CP_Suez (수에즈운하),IMF PortWatch,https://portwatch.imf.org/pages/c57c79bf612b4372b08a9c6ea9c97ef0,,일간,fetch_portwatch_cp() — API: services.arcgis.com FeatureServer (초크포인트별 필터링)
+자동_API,CP_BabElMandeb (바브엘만데브),IMF PortWatch,https://portwatch.imf.org/pages/6b1814d64903461b98144a6cc25eb79c,,일간,fetch_portwatch_cp() — API: services.arcgis.com FeatureServer (초크포인트별 필터링)
+자동_API,CP_Malacca (말라카해협),IMF PortWatch,https://portwatch.imf.org/pages/5f51a0d85ac44a6bad02561e25899c4a,,일간,fetch_portwatch_cp() — API: services.arcgis.com FeatureServer (초크포인트별 필터링)
+자동_API,CP_Taiwan (대만해협),IMF PortWatch,https://portwatch.imf.org/pages/e3001146dc5c4666bb36d5024f4389a7,,일간,fetch_portwatch_cp() — API: services.arcgis.com FeatureServer (초크포인트별 필터링)
+자동_API,CP_Korea (한국해협),IMF PortWatch,https://portwatch.imf.org/pages/3adbfe51b53e42e48ef5ece5a3bb12a9,,일간,fetch_portwatch_cp() — API: services.arcgis.com FeatureServer (초크포인트별 필터링)
+자동_Yahoo,Brent,Yahoo Finance,https://finance.yahoo.com/quote/BZ=F,BZ=F,일간,yfinance 라이브러리
+자동_Yahoo,WTI,Yahoo Finance,https://finance.yahoo.com/quote/CL=F,CL=F,일간,yfinance 라이브러리
+자동_Yahoo,NatGas,Yahoo Finance,https://finance.yahoo.com/quote/NG=F,NG=F,일간,yfinance 라이브러리
+자동_Yahoo,VIX,Yahoo Finance,https://finance.yahoo.com/quote/%5EVIX,^VIX,일간,yfinance 라이브러리
+자동_Yahoo,Gold,Yahoo Finance,https://finance.yahoo.com/quote/GLD,GLD,일간,yfinance 라이브러리 — ETF (SPDR Gold Shares)
+자동_Yahoo,USD_Index,Yahoo Finance,https://finance.yahoo.com/quote/UUP,UUP,일간,yfinance 라이브러리 — ETF (Invesco DB USD Index)
+자동_Yahoo,KOSPI,Yahoo Finance,https://finance.yahoo.com/quote/%5EKS11,^KS11,일간,yfinance 라이브러리
+자동_Yahoo,KRWUSD,Yahoo Finance,https://finance.yahoo.com/quote/KRW=X,KRW=X,일간,yfinance 라이브러리
+자동_Yahoo,SK이노베이션,Yahoo Finance,https://finance.yahoo.com/quote/096770.KS,096770.KS,일간,yfinance 라이브러리
+자동_Yahoo,S_Oil,Yahoo Finance,https://finance.yahoo.com/quote/010950.KS,010950.KS,일간,yfinance 라이브러리
+자동_Yahoo,롯데케미칼,Yahoo Finance,https://finance.yahoo.com/quote/011170.KS,011170.KS,일간,yfinance 라이브러리
+자동_Yahoo,LG화학,Yahoo Finance,https://finance.yahoo.com/quote/051910.KS,051910.KS,일간,yfinance 라이브러리
+자동_Yahoo,한화솔루션,Yahoo Finance,https://finance.yahoo.com/quote/009830.KS,009830.KS,일간,yfinance 라이브러리
+자동_Yahoo,HMM,Yahoo Finance,https://finance.yahoo.com/quote/011200.KS,011200.KS,일간,yfinance 라이브러리
+자동_Yahoo,팬오션,Yahoo Finance,https://finance.yahoo.com/quote/028670.KS,028670.KS,일간,yfinance 라이브러리
+자동_Yahoo,한국가스공사,Yahoo Finance,https://finance.yahoo.com/quote/036460.KS,036460.KS,일간,yfinance 라이브러리
+자동_Yahoo,대한항공,Yahoo Finance,https://finance.yahoo.com/quote/003490.KS,003490.KS,일간,yfinance 라이브러리
+자동_Yahoo,CJ제일제당,Yahoo Finance,https://finance.yahoo.com/quote/097950.KS,097950.KS,일간,yfinance 라이브러리
+자동_Yahoo,농심,Yahoo Finance,https://finance.yahoo.com/quote/004370.KS,004370.KS,일간,yfinance 라이브러리
+자동_Yahoo,에너지화학ETF,Yahoo Finance,https://finance.yahoo.com/quote/117460.KS,117460.KS,일간,yfinance 라이브러리
+자동_Yahoo,화학ETF,Yahoo Finance,https://finance.yahoo.com/quote/227550.KS,227550.KS,일간,yfinance 라이브러리
+자동_Yahoo,반도체ETF,Yahoo Finance,https://finance.yahoo.com/quote/266410.KS,266410.KS,일간,yfinance 라이브러리
+자동_Yahoo,자동차ETF,Yahoo Finance,https://finance.yahoo.com/quote/091180.KS,091180.KS,일간,yfinance 라이브러리
+자동_Yahoo,농산물종합,Yahoo Finance,https://finance.yahoo.com/quote/DBA,DBA,일간,yfinance 라이브러리 — ETF (Invesco DB Agriculture)
+자동_Yahoo,밀,Yahoo Finance,https://finance.yahoo.com/quote/WEAT,WEAT,일간,yfinance 라이브러리 — ETF (Teucrium Wheat)
+자동_Yahoo,건설ETF,Yahoo Finance,https://finance.yahoo.com/quote/117700.KS,117700.KS,일간,yfinance 라이브러리

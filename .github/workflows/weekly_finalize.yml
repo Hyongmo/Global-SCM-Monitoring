@@ -1,0 +1,102 @@
+name: KMI 주간리포트 최종 게시
+
+on:
+  # ── 수동 실행 전용 ──
+  #    weekly.yml 검토 이메일 확인 후, 담당자가 수동으로 최종 게시 트리거
+  workflow_dispatch:
+    inputs:
+      week_tag:
+        description: '주간 태그 (YYYYMMDD)'
+        required: true
+
+jobs:
+  finalize-weekly-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write         # git push 허용
+
+    steps:
+      # ────────────────────────────────────────────────────────
+      # 1. 코드 체크아웃 (scenario_results.json 등 수정본 포함)
+      # ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ────────────────────────────────────────────────────────
+      # 2. Python 환경 설정
+      # ────────────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ────────────────────────────────────────────────────────
+      # 3. HTML + PDF 재생성 (수정된 scenario_results.json 기반)
+      # ────────────────────────────────────────────────────────
+      - name: Regenerate weekly HTML + PDF
+        env:
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          python scripts/regen_weekly.py ${{ github.event.inputs.week_tag }}
+
+      # ────────────────────────────────────────────────────────
+      # 4. HTML + PDF + JSON 커밋 & 푸시 (docs/ 최종 게시)
+      # ────────────────────────────────────────────────────────
+      - name: Commit and push final report
+        if: always()
+        run: |
+          WEEK_TAG="${{ github.event.inputs.week_tag }}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          echo "=== git status (docs/) ==="
+          git status --short docs/ || true
+
+          git add docs/*.html docs/*.pdf docs/*.json 2>/dev/null || true
+
+          echo "=== staged files ==="
+          git diff --cached --name-only || true
+
+          # 변경 없으면 커밋 건너뜀
+          git diff --cached --quiet && echo "변경 없음 — 커밋 건너뜀" && exit 0
+
+          git commit -m "weekly: ${WEEK_TAG} 주간리포트 최종 게시 [skip ci]"
+          git push origin HEAD
+
+      # ────────────────────────────────────────────────────────
+      # 5. 최종 배포 이메일 발송
+      # ────────────────────────────────────────────────────────
+      - name: Send final distribution email
+        if: success()
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          python scripts/send_weekly_email.py --final --week-tag ${{ github.event.inputs.week_tag }}
+        continue-on-error: true
+
+      # ────────────────────────────────────────────────────────
+      # 6. 실행 요약
+      # ────────────────────────────────────────────────────────
+      - name: Pipeline summary
+        if: always()
+        run: |
+          echo "## 주간리포트 최종 게시 결과" >> $GITHUB_STEP_SUMMARY
+          echo "- 주간 태그: ${{ github.event.inputs.week_tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 커밋: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          if [ -f "docs/weekly_report.html" ]; then
+            echo "- HTML 뷰어: ✅ [열기](https://${GITHUB_REPOSITORY_OWNER}.github.io/$(echo ${GITHUB_REPOSITORY} | cut -d/ -f2)/weekly_report.html)" >> $GITHUB_STEP_SUMMARY
+          fi

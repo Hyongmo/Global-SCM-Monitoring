@@ -2,12 +2,20 @@
 """
 send_weekly_email.py
 ====================
-주간 리포트(docs/weekly_report.html)에서 최신 주차 섹션을 파싱하여
+주간 리포트(docs/weekly_report.html)에서 특정 주차 섹션을 파싱하여
 상황요약 / 전주 대비 주요 변화 / 향후 주시 포인트를 요약 이메일로 발송합니다.
 
 데이터 소스:
-    docs/weekly_report.html 의 첫 번째 <div class="scenario-block" id="sc_0">
-    (scenario_generator 출력은 최신주를 맨 앞에 배치)
+    docs/weekly_report.html 의 <div class="scenario-block" id="sc_N">
+    (scenario_generator 출력은 최신주를 맨 앞(sc_0)에 배치)
+
+모드:
+    --review  : hmjeon@kmi.re.kr 에게만 검토요청 메일 발송
+                제목 "[검토요청] W{nn} 해상공급망 위기 주간리포트"
+                weekly_report.html + scenario_results.json 첨부
+    --final   : 전체 수신자(DEFAULT_RECIPIENTS 또는 --to)에게 최종 배포 메일 발송
+                제목 "[최종] W{nn} 해상공급망 위기 주간리포트"
+    (미지정)  : --final 과 동일 (하위호환 — 기존 자동화가 플래그 없이도 그대로 동작)
 
 환경변수:
     GMAIL_ADDRESS        Gmail 발송 주소 (우선)
@@ -16,15 +24,19 @@ send_weekly_email.py
     KMI_SMTP_PASSWORD    폴백: KMI 비밀번호
 
 호출:
-    python scripts/send_weekly_email.py                                 # 기본 수신자
-    python scripts/send_weekly_email.py --to a@b.com c@d.com            # 수신자 지정
+    python scripts/send_weekly_email.py                                 # 기본 수신자 (final 모드)
+    python scripts/send_weekly_email.py --final                         # 위와 동일, 명시적으로 지정
+    python scripts/send_weekly_email.py --review                        # hmjeon@kmi.re.kr 에게만 검토요청
+    python scripts/send_weekly_email.py --to a@b.com c@d.com            # 수신자 지정 (final 모드에서만 적용)
     python scripts/send_weekly_email.py --html docs/weekly_report.html  # 소스 지정
+    python scripts/send_weekly_email.py --week-tag 20260817             # 특정 주차 지정 (미지정 시 최신주=sc_0)
 """
 
-import os, sys, smtplib, ssl, traceback, base64 as _b64
+import os, sys, re, smtplib, ssl, traceback, base64 as _b64
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
 
 from bs4 import BeautifulSoup
 
@@ -37,14 +49,25 @@ DEFAULT_RECIPIENTS = [
     'rheesw@kmi.re.kr',
     'pr@kmi.re.kr',
 ]
+REVIEW_RECIPIENTS = ['hmjeon@kmi.re.kr']
 DEFAULT_HTML_PATH = os.path.join('docs', 'weekly_report.html')
 VIEWER_URL = 'https://hyongmo.github.io/Global-SCM-Monitoring/weekly_report.html'
 
+# scripts/ 의 부모 디렉토리 = 프로젝트 루트 (CWD와 무관하게 scenario_results.json 위치를 찾기 위함)
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCENARIO_JSON_PATH = os.path.join(_PROJECT_ROOT, 'scenario_results.json')
+
 
 # ── 인자 파싱 ──
+# --review / --final : 발송 모드 (동시 지정 불가). 둘 다 생략 시 기존 동작과 동일하게 final 모드로 동작(하위호환).
+# --week-tag YYYYMMDD : 대상 주차 지정 (미지정 시 최신주 = <div id="sc_0"> 사용, 기존 동작과 동일)
+# --to / --html       : 기존 옵션 그대로 유지
 args = sys.argv[1:]
 custom_recipients = []
 html_path = DEFAULT_HTML_PATH
+review_mode = False
+final_mode = False
+week_tag_arg = None
 
 i = 0
 while i < len(args):
@@ -55,9 +78,34 @@ while i < len(args):
         html_path = args[i+1]
         i += 2
         continue
+    elif args[i] == '--week-tag':
+        week_tag_arg = args[i+1]
+        i += 2
+        continue
+    elif args[i] == '--review':
+        review_mode = True
+        i += 1
+        continue
+    elif args[i] == '--final':
+        final_mode = True
+        i += 1
+        continue
     i += 1
 
-RECIPIENTS = custom_recipients if custom_recipients else DEFAULT_RECIPIENTS
+if review_mode and final_mode:
+    print("❌ --review 와 --final 은 동시에 지정할 수 없습니다.")
+    sys.exit(1)
+
+# 모드 결정: 둘 다 미지정 시 기존 동작과 동일하게 'final' 모드로 동작 (하위호환)
+MODE = 'review' if review_mode else 'final'
+
+if MODE == 'review':
+    # "hmjeon@kmi.re.kr 에게만" — --to 로 지정해도 검토요청은 리뷰어 본인에게만 보낸다.
+    if custom_recipients:
+        print(f"  ℹ --review 모드에서는 --to 지정을 무시하고 {REVIEW_RECIPIENTS} 로만 발송합니다.")
+    RECIPIENTS = REVIEW_RECIPIENTS
+else:
+    RECIPIENTS = custom_recipients if custom_recipients else DEFAULT_RECIPIENTS
 
 
 # ── SMTP 설정 (Gmail 우선, 없으면 KMI 폴백) ──
@@ -87,7 +135,27 @@ with open(html_path, 'r', encoding='utf-8') as f:
     soup = BeautifulSoup(f.read(), 'html.parser')
 
 # 최신 주차는 항상 sc_0 (scenario_generator 가 reverse 순으로 저장)
-latest = soup.find('div', id='sc_0')
+# --week-tag 지정 시 해당 YYYYMMDD 날짜가 포함된 scenario-block 을 탐색
+if week_tag_arg:
+    if not re.fullmatch(r'\d{8}', week_tag_arg):
+        print(f"❌ --week-tag 형식 오류 (YYYYMMDD 8자리 필요): {week_tag_arg}")
+        sys.exit(1)
+    _target_date = f"{week_tag_arg[:4]}.{week_tag_arg[4:6]}.{week_tag_arg[6:]}"
+    latest = None
+    for _block in soup.find_all('div', class_='scenario-block'):
+        _period_span = _block.find('span', class_='period')
+        # 주의: period span에는 <small>기사수집기간: ...</small> 서브텍스트도 포함되어 있고
+        # 거기에도 날짜가 들어있어 in 연산자로는 오탐 가능 (예: 이번 주 헤더 날짜가
+        # 다음 주 수집기간 범위에 포함됨) → 맨 앞 날짜(헤더 날짜)만 비교
+        if _period_span and _period_span.get_text().strip().startswith(_target_date):
+            latest = _block
+            break
+    if latest is None:
+        print(f"❌ --week-tag={week_tag_arg} ({_target_date}) 에 해당하는 주차를 {html_path} 에서 찾을 수 없습니다.")
+        sys.exit(1)
+else:
+    latest = soup.find('div', id='sc_0')
+
 if latest is None:
     print("❌ <div id='sc_0'> 없음 — 발송 중단")
     sys.exit(1)
@@ -238,9 +306,17 @@ else:
     wp_html = f'<p {_BULLET} style="color:#999;">향후 주시 포인트 없음</p>'
 
 
-# 제목: "[KMI 글로벌 공급망 AI 주간 브리핑] 2026.04.13 (Week 15)"
+# 제목: 모드별로 다르게 구성
+#   review : "[검토요청] W{nn} 해상공급망 위기 주간리포트"
+#   final  : "[최종] W{nn} 해상공급망 위기 주간리포트"  (플래그 미지정 시에도 동일 — 하위호환)
 period_for_subject = period_main or '최신 주간'
-subject = f'[KMI 글로벌 공급망 AI 주간 브리핑] {period_for_subject}'
+_week_m = re.search(r'Week\s*(\d+)', period_main or '')
+week_num = _week_m.group(1) if _week_m else '?'
+
+if MODE == 'review':
+    subject = f'[검토요청] W{week_num} 해상공급망 위기 주간리포트'
+else:
+    subject = f'[최종] W{week_num} 해상공급망 위기 주간리포트'
 
 # 헤더 블록
 tier_tag = f'<span style="background:{tier_color}; color:#fff; padding:3px 10px; border-radius:4px; font-size:12px; font-weight:700; margin-right:8px;">{tier_badge}</span>' if tier_badge else ''
@@ -306,12 +382,27 @@ msg['To'] = ', '.join(RECIPIENTS)
 msg['Subject'] = subject
 msg.attach(MIMEText(html_body, 'html', 'utf-8'))
 
+# review 모드: weekly_report.html + scenario_results.json 첨부
+if MODE == 'review':
+    for _apath in [html_path, SCENARIO_JSON_PATH]:
+        _aname = os.path.basename(_apath)
+        if os.path.exists(_apath):
+            with open(_apath, 'rb') as _af:
+                _part = MIMEApplication(_af.read(), Name=_aname)
+            _part['Content-Disposition'] = f'attachment; filename="{_aname}"'
+            msg.attach(_part)
+        else:
+            print(f"  ⚠ 첨부 파일 없음 (건너뜀): {_apath}")
+
 
 # ── 발송 ──
-print(f"\n[주간 이메일 발송] {period_for_subject}")
+print(f"\n[주간 이메일 발송] {period_for_subject} — 모드: {MODE}")
+print(f"  제목: {subject}")
 print(f"  수신: {', '.join(RECIPIENTS)}")
 print(f"  SMTP: {SMTP_HOST}:{SMTP_PORT} ({SMTP_MODE})")
 print(f"  발신: {SMTP_ADDRESS}")
+if MODE == 'review':
+    print(f"  첨부: {os.path.basename(html_path)}, {os.path.basename(SCENARIO_JSON_PATH)}")
 print(f"  상황요약 클러스터: {len(situation_clusters)}")
 print(f"  전주 대비 변화 항목: {len(changes_items)}")
 print(f"  주시 포인트 항목: {len(wp_items)}")
