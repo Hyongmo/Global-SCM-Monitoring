@@ -63,7 +63,7 @@ jobs:
           echo "=== git status (docs/) ==="
           git status --short docs/ || true
 
-          git add docs/*.html docs/*.pdf docs/*.json 2>/dev/null || true
+          git add docs/*.html docs/pdf/*.pdf docs/*.json 2>/dev/null || true
 
           echo "=== staged files ==="
           git diff --cached --name-only || true

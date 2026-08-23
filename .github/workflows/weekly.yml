@@ -20,6 +20,8 @@ jobs:
     # workflow_dispatch는 항상 실행, workflow_run은 daily.yml이 성공했을 때만 실행
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     timeout-minutes: 180      # 최대 3시간 (LLM 분류 포함)
+    permissions:
+      contents: write           # git push 허용
 
     steps:
       # ────────────────────────────────────────────────────────
@@ -94,8 +96,34 @@ jobs:
           python scripts/weekly_pipeline.py ${{ env.WEEK_TAG }}
 
       # ────────────────────────────────────────────────────────
-      # 6. 검토용 이메일 발송 (담당자 검토 후 weekly_finalize.yml로 최종 게시)
-      #    이 단계에서는 커밋/푸시 없음 — 결과물은 러너 내에만 존재
+      # 6. 데이터 파일 커밋 & 푸시
+      #    다음 주 파이프라인의 입력이 되는 누적 데이터를 리포지토리에 반영
+      #    (indicator, cluster, phaseA 분류, scenario JSON, HTML 초안)
+      # ────────────────────────────────────────────────────────
+      - name: Commit and push pipeline data
+        if: steps.check_day.outputs.should_run == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 누적 데이터 파일 스테이징
+          git add indicator_weekly.csv indicator_weekly_dates.csv \
+                  cluster_registry_v2.json scenario_results.json \
+                  news_scored_phaseA_v7_*.csv \
+                  docs/weekly_report.html \
+                  2>/dev/null || true
+
+          echo "=== staged files ==="
+          git diff --cached --name-only || true
+
+          # 변경 없으면 커밋 건너뜀
+          git diff --cached --quiet && echo "변경 없음 — 커밋 건너뜀" && exit 0
+
+          git commit -m "weekly: ${{ env.WEEK_TAG }} 초안 데이터 커밋 [skip ci]"
+          git push origin HEAD
+
+      # ────────────────────────────────────────────────────────
+      # 7. 검토용 이메일 발송 (담당자 검토 후 weekly_finalize.yml로 최종 게시)
       # ────────────────────────────────────────────────────────
       - name: Send review email
         if: steps.check_day.outputs.should_run == 'true'
@@ -108,7 +136,7 @@ jobs:
           python scripts/send_weekly_email.py --review --week-tag ${{ env.WEEK_TAG }}
 
       # ────────────────────────────────────────────────────────
-      # 7. 실행 요약
+      # 8. 실행 요약
       # ────────────────────────────────────────────────────────
       - name: Pipeline summary
         if: always() && steps.check_day.outputs.should_run == 'true'
@@ -116,4 +144,5 @@ jobs:
           echo "## 주간 파이프라인 실행 결과" >> $GITHUB_STEP_SUMMARY
           echo "- 트리거: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
           echo "- 주간 태그: ${{ env.WEEK_TAG }}" >> $GITHUB_STEP_SUMMARY
-          echo "- 커밋/푸시: 없음 (검토 후 weekly_finalize.yml에서 게시)" >> $GITHUB_STEP_SUMMARY
+          echo "- 데이터 커밋: ✅ (indicator, cluster, phaseA, scenario, HTML 초안)" >> $GITHUB_STEP_SUMMARY
+          echo "- 최종 게시: weekly_finalize.yml에서 수동 실행" >> $GITHUB_STEP_SUMMARY
