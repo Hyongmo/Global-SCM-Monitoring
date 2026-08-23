@@ -1053,6 +1053,21 @@ def _run_html_generation():
                     pass
                 break
 
+        # ── 지도 항로 폴백 경고 (재발 조기 발견용) ──
+        #    경유점을 못 찾으면 지도는 '조용히' 직선을 그린다. 그 순간을 로그에 남긴다.
+        _MAP_WARNS = set()
+        def _map_warn(msg):
+            if msg in _MAP_WARNS:
+                return
+            _MAP_WARNS.add(msg)
+            print(f"  \u26a0 [MAP] {msg}")
+            if os.environ.get('GITHUB_ACTIONS') == 'true':
+                print(f"::warning title=\uc9c0\ub3c4 \ud56d\ub85c \ud3f4\ubc31::{msg}")
+
+        if not _SR_FILE_CACHE:
+            _map_warn("searoute_cache.json \uc744 \ucc3e\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4 \u2014 "
+                      "\uc6b0\ud68c \ud56d\ub85c\uac00 \uc9c1\uc120\uc73c\ub85c \uadf8\ub824\uc9c8 \uc218 \uc788\uc2b5\ub2c8\ub2e4")
+
         _SR_CACHE = {}  # 동적 호출 캐시
 
         def _searoute_waypoints_by_id(from_id, to_id):
@@ -1084,7 +1099,9 @@ def _run_html_generation():
                 leaflet = [[round(c[1], 2), round(c[0], 2)] for c in mid]
                 _SR_CACHE[rt_key] = leaflet
                 return leaflet
-            except Exception:
+            except Exception as _e:
+                _map_warn(f"{from_id}\u2192{to_id}: \uce90\uc2dc\uc5d0 \uc5c6\uace0 searoute \ud638\ucd9c\ub3c4 "
+                          f"\uc2e4\ud328 ({type(_e).__name__}) \u2014 \uacbd\uc720\uc810 \uc5c6\uc74c")
                 _SR_CACHE[rt_key] = []
                 return []
 
@@ -1107,6 +1124,8 @@ def _run_html_generation():
                     return _SEA_SEGMENTS.get('Malacca_to_KP', [])
                 if from_id == 'CP_Lombok':
                     return _SEA_SEGMENTS.get(('CP_Lombok', 'KP'), [])
+            _map_warn(f"{from_id}\u2192{to_id}: \uacbd\uc720\uc810 \uc5c6\uc74c \u2014 "
+                      f"\uc9c1\uc120\uc73c\ub85c \uadf8\ub824\uc9d1\ub2c8\ub2e4(\uc721\uc9c0 \uad00\ud1b5 \uac00\ub2a5)")
             return []
 
 
@@ -1397,6 +1416,8 @@ def _run_html_generation():
                                 _simp.append(_combined[-1])
                             cape_route = [[round(c[1],2), round(c[0],2)] for c in _simp]
                         except Exception:
+                            _map_warn("CAPE_ROUTE \uce90\uc2dc \uc5c6\uc74c + searoute \ubbf8\uc124\uce58 \u2014 "
+                                      "\ud76c\ub9dd\ubd09 \uc6b0\ud68c\ub85c\uac00 3\uc810 \uc9c1\uc120\uc73c\ub85c \uadf8\ub824\uc9d1\ub2c8\ub2e4")
                             cape_route = [_rot, [-34.5, 18.5], _bus]
 
                     routes_js.append(
