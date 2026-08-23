@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       week_tag:
-        description: '주간 태그 (YYYYMMDD)'
+        description: '배포일 기준 = 월요일 (YYYYMMDD). 일요일을 넣으면 메일 발송이 실패합니다.'
         required: true
 
 jobs:

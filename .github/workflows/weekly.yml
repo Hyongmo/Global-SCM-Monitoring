@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       week_tag:
-        description: '주간 태그 (YYYYMMDD, 기본: 자동 감지)'
+        description: '배포일 기준 = 월요일 (YYYYMMDD, 기본: 오늘)'
         required: false
         default: ''
 
@@ -70,15 +70,35 @@ jobs:
       # ────────────────────────────────────────────────────────
       # 4. 주간 태그 결정 (수동 실행 시 입력값, 자동 실행 시 오늘 날짜)
       # ────────────────────────────────────────────────────────
-      - name: Determine week tag
+      # 태그 계약이 소비처마다 다르므로 두 개로 분리한다.
+      #   PUB_TAG  = 배포 기준일(월요일) — 이메일 발송, 커밋 메시지, PDF 표시일
+      #   DATA_TAG = 데이터 기준일(일요일) — 주간 기사 CSV, phaseA 점수
+      # weekly_pipeline.py 는 week_tag=일요일 을 계약으로 삼고
+      # 내부에서 ref_date(월요일) = week_tag + 1일 로 파생시킨다.
+      # (weekly_pipeline.py 2563~2564행 참조)
+      - name: Determine week tags
         if: steps.check_day.outputs.should_run == 'true'
         run: |
           if [ -n "${{ github.event.inputs.week_tag }}" ]; then
-            echo "WEEK_TAG=${{ github.event.inputs.week_tag }}" >> $GITHUB_ENV
+            PUB_TAG="${{ github.event.inputs.week_tag }}"
           else
-            echo "WEEK_TAG=$(TZ=Asia/Seoul date '+%Y%m%d')" >> $GITHUB_ENV
+            PUB_TAG=$(TZ=Asia/Seoul date '+%Y%m%d')
           fi
-          echo "주간 태그: $WEEK_TAG"
+          DATA_TAG=$(TZ=Asia/Seoul date -d "${PUB_TAG:0:4}-${PUB_TAG:4:2}-${PUB_TAG:6:2} -1 day" '+%Y%m%d')
+
+          echo "PUB_TAG=$PUB_TAG"   >> $GITHUB_ENV
+          echo "DATA_TAG=$DATA_TAG" >> $GITHUB_ENV
+          echo "배포 태그(월요일): $PUB_TAG"
+          echo "데이터 태그(일요일): $DATA_TAG"
+
+          # 조기 실패 — STEP 1을 다 돌고 STEP 2에서 죽는 것을 방지
+          f="monitoring/weekly/gdelt_mon_classified_week_${DATA_TAG}.csv"
+          if [ ! -f "$f" ]; then
+            echo "::error::주간 기사 파일이 없습니다: $f"
+            echo "  daily.yml 이 해당 주의 주간 롤링 파일을 생성/커밋했는지 확인하세요."
+            exit 1
+          fi
+          echo "주간 기사 파일 확인: $f"
 
       # ────────────────────────────────────────────────────────
       # 5. 주간 파이프라인 실행
@@ -93,7 +113,7 @@ jobs:
           KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
           KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
         run: |
-          python scripts/weekly_pipeline.py ${{ env.WEEK_TAG }}
+          python scripts/weekly_pipeline.py ${{ env.DATA_TAG }}
 
       # ────────────────────────────────────────────────────────
       # 6. 데이터 파일 커밋 & 푸시
@@ -119,7 +139,7 @@ jobs:
           # 변경 없으면 커밋 건너뜀
           git diff --cached --quiet && echo "변경 없음 — 커밋 건너뜀" && exit 0
 
-          git commit -m "weekly: ${{ env.WEEK_TAG }} 초안 데이터 커밋 [skip ci]"
+          git commit -m "weekly: ${{ env.PUB_TAG }} 초안 데이터 커밋 [skip ci]"
           git push origin HEAD
 
       # ────────────────────────────────────────────────────────
@@ -133,7 +153,7 @@ jobs:
           KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
           KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
         run: |
-          python scripts/send_weekly_email.py --review --week-tag ${{ env.WEEK_TAG }}
+          python scripts/send_weekly_email.py --review --week-tag ${{ env.PUB_TAG }}
 
       # ────────────────────────────────────────────────────────
       # 8. 실행 요약
@@ -143,6 +163,7 @@ jobs:
         run: |
           echo "## 주간 파이프라인 실행 결과" >> $GITHUB_STEP_SUMMARY
           echo "- 트리거: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "- 주간 태그: ${{ env.WEEK_TAG }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 배포 태그(월요일): ${{ env.PUB_TAG }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 데이터 태그(일요일): ${{ env.DATA_TAG }}" >> $GITHUB_STEP_SUMMARY
           echo "- 데이터 커밋: ✅ (indicator, cluster, phaseA, scenario, HTML 초안)" >> $GITHUB_STEP_SUMMARY
           echo "- 최종 게시: weekly_finalize.yml에서 수동 실행" >> $GITHUB_STEP_SUMMARY
