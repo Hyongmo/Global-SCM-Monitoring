@@ -2676,6 +2676,8 @@ Signal(전체): Crisis {crisis_pct}% | Warning {warning_pct}% | 합산 {wc_pct}%
 
 ⚠ 기사 인용 규칙: 위 [주요 기사 목록]의 [N] 번호를 situation_summary 본문에서 해당 사실 뒤에 [N] 형태로 삽입하라. 모든 문장에 인용이 필요하지는 않으나, 핵심 사건·수치·정책 변화에는 반드시 출처 기사 번호를 달 것. 인용은 situation_summary에만 적용하고 다른 필드(part_a, part_d 등)에는 [N]을 넣지 말 것.
 ⚠ 문장 분리 규칙: situation_summary에서 같은 날짜에 발생한 서로 다른 사건은 반드시 별도 문장으로 분리할 것. 하나의 문장에 무관한 사건 두 개를 합치지 말 것.
+⚠ 날짜 귀속 규칙: [주요 기사 목록]에 표시된 날짜는 '보도일'이며 사건이 실제로 발생한 날이 아니다. 보도일을 발생일로 단정하지 말 것. 날짜를 언급할 때는 "8월 20일 보도에 따르면", "8월 20일 보도된 바에 따르면"처럼 보도 시점임이 드러나게 쓰거나, 기사 제목·요약에 발생일이 명시된 경우에만 발생일로 서술할 것.
+⚠ 예고·위협 구분 규칙: 기사 태그의 THREAT 는 위협·예고·경고로서 아직 발생하지 않은 사안이다. THREAT 기사를 이미 일어난 사실로 서술하지 말 것("~했다" 금지 → "~하겠다고 예고했다/위협했다/경고했다"). 실제 발생한 교란으로 취급할 수 있는 것은 DISRUPTION 뿐이다.
 {indicator_section}
 
 {ind_changes_section}
@@ -3115,6 +3117,7 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
     lines = ['=== 주요 기사 목록 (situation_summary 인용 참고용) ===']
     lines.append(f'기간: {win_start.strftime("%Y-%m-%d")} ~ {win_end.strftime("%Y-%m-%d")}')
     lines.append('⚠ 각 기사에 [N] 번호가 부여되어 있습니다. situation_summary 서술 시 해당 기사를 근거로 쓸 때 [N] 형태로 인용하세요.')
+    lines.append('⚠ 각 기사의 날짜는 \'보도일\'(기사가 보도된 날)이며 사건이 발생한 날이 아닙니다. 대괄호 안 첫 태그는 event_status 로, THREAT 는 위협·예고, DISRUPTION 은 실제 발생한 교란입니다.')
     lines.append('')
     ref_map = {}
     ref_num = 1
@@ -3140,7 +3143,7 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
             _ctag = ''
         _url = title_url_lookup.get(title.strip(), '')
         ref_map[str(ref_num)] = {'title': title, 'url': _url}
-        lines.append(f'[{ref_num}] {_ctag} {v5_tag} [{level}] {date_str} {freshness}{trig_tag}  {title}')
+        lines.append(f'[{ref_num}] {_ctag} {v5_tag} [{level}] 보도일 {date_str} {freshness}{trig_tag}  {title}')
         summary = str(row.get('event_summary', '')).strip()
         if summary and summary not in ('', 'nan', 'None'):
             lines.append(f'  → {summary[:120]}')
