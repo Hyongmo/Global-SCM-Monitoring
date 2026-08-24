@@ -4,7 +4,7 @@
 regen_weekly.py
 ================
 scenario_results.json 을 LLM 재호출 없이 그대로 읽어
-docs/weekly_report.html 과 docs/pdf/weekly_report_W{nn}_{YYYYMMDD}.pdf 를 재생성한다.
+docs/weekly_report.html 과 docs/pdf/KMI_Global_SC_AI_Weekly_Report(YYYY.MM.DD).pdf 를 재생성한다.
 
 용도
 ----
@@ -2799,8 +2799,15 @@ def _run_pdf_generation(target_scenario):
     try:
         from fpdf import FPDF
     except ImportError:
-        print("fpdf2 설치 중...")
-        os.system(f"{sys.executable} -m pip install fpdf2 -q")
+        # requirements.txt 에 fpdf2 가 선언되어 있으므로 여기 도달하면 환경 구성이 잘못된 것.
+        # 마지막 수단으로 설치를 시도하되, 반환값을 확인하여 실패를 조용히 넘기지 않는다.
+        print("\u26a0 fpdf2 \ubbf8\uc124\uce58 \u2014 \ub9c8\uc9c0\ub9c9 \uc218\ub2e8\uc73c\ub85c \uc124\uce58\ub97c \uc2dc\ub3c4\ud569\ub2c8\ub2e4 (requirements.txt \ud655\uc778 \ud544\uc694)")
+        _rc = os.system(f"{sys.executable} -m pip install fpdf2 -q")
+        if _rc != 0:
+            raise RuntimeError(
+                f"fpdf2 \uc124\uce58 \uc2e4\ud328 (exit={_rc}) \u2014 PDF\ub97c \uc0dd\uc131\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. "
+                "requirements.txt \uc758 fpdf2 \uc124\uce58\ub97c \ud655\uc778\ud558\uc138\uc694."
+            )
         from fpdf import FPDF
 
     # ══════════════════════════════════════════════════════════════
@@ -3550,14 +3557,27 @@ def _run_pdf_generation(target_scenario):
                     pdf._bullet(clean_text(r), size=8, indent=5)
 
         # ── 파일 저장 ──
-        _date_compact = date_str.replace('.', '')
-        fname = f'weekly_report_W{week_num:02d}_{_date_compact}.pdf'
+        # ⚠ 파일명은 HTML 이 거는 링크와 반드시 일치해야 한다.
+        #    HTML(_pdf_url): f'pdf/KMI_Global_SC_AI_Weekly_Report({_pdf_date}).pdf'
+        #    포팅 과정에서 PDF 파일명만 weekly_report_W{nn}_{YYYYMMDD}.pdf 로 바꾸고
+        #    링크는 그대로 두어 W34 PDF 가 404 가 되었다(2026-08-24).
+        #    과거 발행분이 모두 옛 규칙으로 올라가 있으므로 링크가 아닌 파일명을 되돌린다.
+        fname = f'KMI_Global_SC_AI_Weekly_Report({date_str}).pdf'
         fpath = os.path.join(OUTPUT_DIR, fname)
         pdf.output(fpath)
 
         # ── 보호 설정 (인쇄만 허용, 수정·복사 금지) ──
+        #    대외 배포물이므로 보호 적용은 선택이 아니다.
+        #    보호되지 않은 PDF가 배포되는 것을 막기 위해 실패 시 조용히 넘기지 않고 중단한다.
         try:
             import pikepdf
+        except ImportError:
+            raise RuntimeError(
+                "pikepdf \ubbf8\uc124\uce58 \u2014 PDF \ubcf4\ud638(\uc218\uc815\u00b7\ubcf5\uc0ac \uae08\uc9c0)\ub97c \uc801\uc6a9\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. "
+                "\ubcf4\ud638\ub418\uc9c0 \uc54a\uc740 PDF\uc758 \ubc30\ud3ec\ub97c \ub9c9\uae30 \uc704\ud574 \uc911\ub2e8\ud569\ub2c8\ub2e4. "
+                "requirements.txt \uc758 pikepdf \uc124\uce58\ub97c \ud655\uc778\ud558\uc138\uc694."
+            )
+        try:
             with pikepdf.open(fpath, allow_overwriting_input=True) as src:
                 src.save(fpath,
                          encryption=pikepdf.Encryption(
@@ -3573,10 +3593,12 @@ def _run_pdf_generation(target_scenario):
                                  extract=False,
                              ),
                          ))
-        except ImportError:
-            print("    ⚠️ pikepdf 미설치 — PDF 보호 생략 (pip install pikepdf)")
+            print("    \u2713 PDF \ubcf4\ud638 \uc801\uc6a9 \uc644\ub8cc (\uc778\uc1c4\ub9cc \ud5c8\uc6a9)")
         except Exception as e:
-            print(f"    ⚠️ PDF 보호 설정 실패: {e}")
+            raise RuntimeError(
+                f"PDF \ubcf4\ud638 \uc124\uc815 \uc2e4\ud328: {e} \u2014 "
+                "\ubcf4\ud638\ub418\uc9c0 \uc54a\uc740 PDF\uc758 \ubc30\ud3ec\ub97c \ub9c9\uae30 \uc704\ud574 \uc911\ub2e8\ud569\ub2c8\ub2e4"
+            )
 
         return fpath
 
