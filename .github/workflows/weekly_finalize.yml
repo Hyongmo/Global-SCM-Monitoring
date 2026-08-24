@@ -54,7 +54,9 @@ jobs:
       # 4. HTML + PDF + JSON 커밋 & 푸시 (docs/ 최종 게시)
       # ────────────────────────────────────────────────────────
       - name: Commit and push final report
-        if: always()
+        # regen 실패 시 커밋하지 않는다 — 보호되지 않았거나 불완전한 PDF/HTML이
+        # 게시되는 것을 막기 위함 (이전 always() 는 실패해도 커밋했음)
+        if: success()
         run: |
           WEEK_TAG="${{ github.event.inputs.week_tag }}"
           git config user.name  "github-actions[bot]"
@@ -63,16 +65,39 @@ jobs:
           echo "=== git status (docs/) ==="
           git status --short docs/ || true
 
-          git add docs/*.html docs/pdf/*.pdf docs/*.json 2>/dev/null || true
+          # ⚠ git add 에 여러 pathspec 을 한 줄로 넘기지 말 것.
+          #    하나라도 매치되는 파일이 없으면 git 이 명령 전체를 거부하여
+          #    (fatal: pathspec ... did not match any files) 나머지 파일도 스테이징되지 않는다.
+          #    이전 코드는 존재하지 않는 docs/*.json 때문에 항상 실패했고,
+          #    '2>/dev/null || true' 가 그 실패를 삼켜 "변경 없음"으로 넘어가면서
+          #    게시가 되지 않았는데도 최종 배포 메일이 발송되었다.
+          #    → daily.yml 과 동일하게 파일별로 존재를 확인하고 개별 add 한다.
+          STAGED=0
+          for f in docs/weekly_report.html docs/pdf/*.pdf; do
+            if [ -f "$f" ]; then
+              git add "$f"
+              STAGED=1
+              echo "  add: $f"
+            fi
+          done
+
+          if [ "$STAGED" = "0" ]; then
+            echo "::error::게시할 파일이 없습니다 — docs/weekly_report.html / docs/pdf/*.pdf 미생성"
+            echo "  regen_weekly.py 가 산출물을 만들었는지 이전 스텝 로그를 확인하세요."
+            exit 1
+          fi
 
           echo "=== staged files ==="
-          git diff --cached --name-only || true
+          git diff --cached --name-only
 
-          # 변경 없으면 커밋 건너뜀
-          git diff --cached --quiet && echo "변경 없음 — 커밋 건너뜀" && exit 0
-
-          git commit -m "weekly: ${WEEK_TAG} 주간리포트 최종 게시 [skip ci]"
-          git push origin HEAD
+          if git diff --cached --quiet; then
+            # 파일은 있는데 내용이 이전 게시본과 동일한 경우 (정상 — 재실행 등)
+            echo "변경 없음 — 이미 동일한 내용이 게시되어 있습니다 (커밋 건너뜀)"
+          else
+            git commit -m "weekly: ${WEEK_TAG} 주간리포트 최종 게시 [skip ci]"
+            git push origin HEAD
+            echo "PUBLISHED=1" >> $GITHUB_ENV
+          fi
 
       # ────────────────────────────────────────────────────────
       # 5. 최종 배포 이메일 발송
@@ -97,6 +122,8 @@ jobs:
           echo "## 주간리포트 최종 게시 결과" >> $GITHUB_STEP_SUMMARY
           echo "- 주간 태그: ${{ github.event.inputs.week_tag }}" >> $GITHUB_STEP_SUMMARY
           echo "- 커밋: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
-          if [ -f "docs/weekly_report.html" ]; then
-            echo "- HTML 뷰어: ✅ [열기](https://${GITHUB_REPOSITORY_OWNER}.github.io/$(echo ${GITHUB_REPOSITORY} | cut -d/ -f2)/weekly_report.html)" >> $GITHUB_STEP_SUMMARY
+          if [ "${PUBLISHED:-0}" = "1" ]; then
+            echo "- 게시: ✅ 커밋·푸시 완료 [열기](https://${GITHUB_REPOSITORY_OWNER}.github.io/$(echo ${GITHUB_REPOSITORY} | cut -d/ -f2)/weekly_report.html)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- 게시: ⚠ 새로 푸시된 내용 없음 (내용 동일이거나 이전 스텝 실패)" >> $GITHUB_STEP_SUMMARY
           fi
