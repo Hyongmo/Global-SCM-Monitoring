@@ -979,7 +979,16 @@ def fetch_kr_export_customs(start, end):
         import xml.etree.ElementTree as ET
         from urllib.request import urlopen
 
-        API_KEY = '4b9c36da54a06adc6d214fa96b18532af49c90d7a3781239d863087917e649aa'
+        # 공공데이터포털 인증키 — 반드시 환경변수/GitHub Secrets 로 주입할 것.
+        # 소스에 직접 적으면 공개 저장소에 그대로 노출된다(2026-08-23 유출 사례).
+        API_KEY = os.environ.get('CUSTOMS_API_KEY', '').strip()
+        if not API_KEY:
+            msg = ('CUSTOMS_API_KEY \ubbf8\uc124\uc815 \u2014 \uad00\uc138\uccad \uc218\ucd9c\uc561'
+                   '(KR_ExportVol) \uc218\uc9d1\uc744 \uac74\ub108\ub701\ub2c8\ub2e4')
+            print(f'    \u26a0 {msg}')
+            if os.environ.get('GITHUB_ACTIONS') == 'true':
+                print(f'::warning title=\uc9c0\ud45c \uc218\uc9d1 \ub204\ub77d::{msg}')
+            return None
         base_url = 'https://apis.data.go.kr/1220000/Newtrade/getNewtradeList'
 
         s_ts = pd.Timestamp(start)

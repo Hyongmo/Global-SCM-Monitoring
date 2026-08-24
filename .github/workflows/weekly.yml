@@ -108,6 +108,7 @@ jobs:
         if: steps.check_day.outputs.should_run == 'true'
         env:
           ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          CUSTOMS_API_KEY:    ${{ secrets.CUSTOMS_API_KEY }}
           GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
