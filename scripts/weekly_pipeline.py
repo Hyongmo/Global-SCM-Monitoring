@@ -3332,8 +3332,12 @@ def compute_ind_changes(snap, threshold=_IND_CHG_THRESHOLD):
             continue
 
         def _fmt(v, u):
+            # 소수 1자리로 줄이면 from/to 로부터 chg_pct 를 재현할 수 없어
+            # "표기값으로 계산하면 다른 값이 나온다"는 지적이 반복되었다.
+            # (2026-08-24 김태한 박사 WTI 82.2→86.1 = +4.7% vs 표기 +4.9%)
+            # chg_pct 와 동일하게 소수 2자리로 맞춘다.
             if u in ('pt', 'USD/bbl', 'KRW/USD', 'USD'):
-                return f'{v:,.1f}'
+                return f'{v:,.2f}'
             elif u == 'KRW':
                 return f'{v:,.0f}'
             elif u == '%':
@@ -3489,11 +3493,19 @@ def get_indicator_snapshot(ref_date, indicator_df, indicator_meta, prev_indicato
                 _prev_val = indicator_df.loc[prev_date, col]
                 if pd.isna(_prev_val):
                     _prev_val = None
+            # ⚠ 변동률은 반드시 '표시되는 값'끼리 계산한다.
+            #    이전에는 원시 cur_val 과 전주 스냅샷의 반올림 value(소수 2자리)를 섞어 계산해,
+            #    실제로는 변동이 없는 지표가 변동한 것처럼 표기되었다.
+            #    예) GSCPI 원시 0.8047 vs 전주 저장값 0.80 → +0.6% (실제 변동 0%)
+            #    (2026-08-24 김한나 박사 지적 — 2주 연속 동일 오류)
             if _prev_val is not None and _prev_val != 0:
-                chg = (cur_val - _prev_val) / abs(_prev_val) * 100
-                entry['chg_pct'] = round(chg, 1)
-                entry['chg_dir'] = 'up' if chg > 0.5 else ('down' if chg < -0.5 else 'flat')
-                entry['prev_value'] = round(float(_prev_val), 4)
+                _cur_disp  = round(float(cur_val), 2)
+                _prev_disp = round(float(_prev_val), 2)
+                if _prev_disp != 0:
+                    chg = (_cur_disp - _prev_disp) / abs(_prev_disp) * 100
+                    entry['chg_pct'] = round(chg, 1)
+                    entry['chg_dir'] = 'up' if chg > 0.5 else ('down' if chg < -0.5 else 'flat')
+                    entry['prev_value'] = _prev_disp
             snapshot[col] = entry
         return snapshot
     except Exception:
