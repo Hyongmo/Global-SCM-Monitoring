@@ -162,6 +162,22 @@ jobs:
           python scripts/send_weekly_email.py --review --week-tag ${{ env.PUB_TAG }}
 
       # ────────────────────────────────────────────────────────
+      # 7-b. 지표 감수 메일 발송
+      #      indicator_weekly.csv / indicator_weekly_dates.csv 를 첨부하여
+      #      지표 감수자(형모님·김한나 박사)가 값·기준일을 원본으로 대조할 수 있게 한다.
+      #      본문에는 이번 주 수집 상태(신규/값 유지/기준일 없음)를 요약해 넣는다.
+      # ────────────────────────────────────────────────────────
+      - name: Send indicator review email
+        if: steps.check_day.outputs.should_run == 'true'
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          python scripts/send_indicator_email.py --week-tag ${{ env.PUB_TAG }}
+
+      # ────────────────────────────────────────────────────────
       # 8. 실행 요약
       # ────────────────────────────────────────────────────────
       - name: Pipeline summary
