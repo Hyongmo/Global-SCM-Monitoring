@@ -313,10 +313,14 @@ period_for_subject = period_main or '최신 주간'
 _week_m = re.search(r'Week\s*(\d+)', period_main or '')
 week_num = _week_m.group(1) if _week_m else '?'
 
+# 제목 형식은 자동화 이전(노트북 발송) 규칙을 그대로 유지한다.
+#   최종 배포: "[KMI 글로벌 공급망 AI 주간 브리핑] 2026.08.24 (Week 34)"
+#   검토 요청: 위 형식에 [검토요청] 을 덧붙여 배포본과 구분
+_SUBJECT_PREFIX = '[KMI 글로벌 공급망 AI 주간 브리핑]'
 if MODE == 'review':
-    subject = f'[검토요청] W{week_num} 해상공급망 위기 주간리포트'
+    subject = f'{_SUBJECT_PREFIX}[검토요청] {period_for_subject}'
 else:
-    subject = f'[최종] W{week_num} 해상공급망 위기 주간리포트'
+    subject = f'{_SUBJECT_PREFIX} {period_for_subject}'
 
 # 헤더 블록
 tier_tag = f'<span style="background:{tier_color}; color:#fff; padding:3px 10px; border-radius:4px; font-size:12px; font-weight:700; margin-right:8px;">{tier_badge}</span>' if tier_badge else ''

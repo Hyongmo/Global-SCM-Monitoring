@@ -79,6 +79,9 @@ for c in v.columns:
     (held if same else fresh).append((c, dt))
 
 week_label = week_tag or str(row.date()).replace('-', '')
+# 제목 표기는 주간 리포트 메일과 동일한 형식으로 맞춘다: "2026.08.24 (Week 34)"
+_sun = row - pd.Timedelta(days=1)          # 주간 인덱스(월요일)의 직전 일요일 = 해당 ISO 주
+period_disp = f"{row.strftime('%Y.%m.%d')} (Week {int(_sun.strftime('%V'))})"
 period_txt = f"{row.date()} 주간"
 
 def rows(items, fmt):
@@ -128,7 +131,7 @@ html = f'''<html><body style="font-family:-apple-system,'Malgun Gothic',sans-ser
 msg = MIMEMultipart()
 msg['From'] = SMTP_ADDRESS
 msg['To'] = ', '.join(recipients)
-msg['Subject'] = f"[지표 감수] 글로벌 공급망 AI 주간 모니터링 — {period_txt} ({week_label})"
+msg['Subject'] = f"[KMI 글로벌 공급망 AI 주간 브리핑][지표 감수] {period_disp}"
 msg.attach(MIMEText(html, 'html', 'utf-8'))
 for path in (VALUES_CSV, DATES_CSV):
     name = os.path.basename(path)
@@ -138,6 +141,7 @@ for path in (VALUES_CSV, DATES_CSV):
     msg.attach(part)
 
 print(f"[지표 감수 메일] {period_txt}")
+print(f"  제목: {msg['Subject']}")
 print(f"  수신: {', '.join(recipients)}")
 print(f"  첨부: indicator_weekly.csv, indicator_weekly_dates.csv")
 print(f"  집계: 신규 {len(fresh)} / 값 유지 {len(held)} / 기준일 없음 {len(failed)}")
