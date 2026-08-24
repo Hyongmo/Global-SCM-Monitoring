@@ -1179,6 +1179,8 @@ def yf_weekly(ticker, start, end, idx, dates_dict=None, col_name=None):
             if dates_dict is not None and col_name:
                 dates_dict[col_name] = _get_last_dates(raw['Close'], idx)
             return vals
+        # 예외 없이 빈 응답이 오는 경우(야후에서 실제로 발생) — 이전에는 흔적이 전혀 남지 않았다
+        print(f"    \u26a0 {ticker} ({col_name}): 응답이 비어 있음 — 수집 실패")
     except Exception as e:
         print(f"    ⚠ {ticker}: {e}")
     return None
@@ -1609,13 +1611,38 @@ def step5_collect_indicators(kg_raw):
     print(f"\n✅ EXTEND 완료: {len(indicator_df)}주 × {len(indicator_df.columns)}개 지표")
     print(f"   전체 기간: {indicator_df.index.min().date()} ~ {indicator_df.index.max().date()}")
     print()
-    print("  지표별 실제값 / ffill 구분:")
-    ffill_cols = [c for c in ['BDI','NAPMSDI','RWI_ISL_CTI','GSCSI','GSCPI','Harpex'] if c in indicator_df.columns]
-    real_cols = [c for c in ['SCFI','CP_Hormuz','CP_Suez','Brent','WTI','NatGas',
-                              'VIX','Gold','KOSPI','KRWUSD','GPR','KR_ExportVol']
-                 if c in indicator_df.columns]
-    print(f"  실제값(신규): {real_cols}")
-    print(f"  ffill(마지막값 유지): {ffill_cols} (SCFI/CP_*/BDI/GPR/KR_ExportVol/GSCSI/GSCPI/Harpex는 실제값 시도)")
+    # ── 수집 결과 요약 ────────────────────────────────────────
+    #  ⚠ 하드코딩 후보 목록을 컬럼 존재 여부로만 거르던 이전 방식은
+    #     실제로 수집에 실패한 지표(Brent·GPR 등)까지 "실제값(신규)"로 보고했다.
+    #     이제는 이번 실행에서 기록된 기준일(_dates_ext)을 근거로 판정한다.
+    #     기준일이 없다 = 이번 실행에서 수집되지 않았다 (값은 이전 값이 남아 있음).
+    _new_row  = indicator_df.index[-1]
+    _prev_row = indicator_df.index[-2] if len(indicator_df) > 1 else None
+
+    _fresh, _held, _failed = [], [], []
+    for _c in indicator_df.columns:
+        _ser = _dates_ext.get(_c)
+        _d   = _ser.get(_new_row) if _ser is not None else None
+        _d   = '' if _d is None or pd.isna(_d) else str(pd.Timestamp(_d).date())
+        if not _d:
+            _failed.append(_c)
+            continue
+        _vn = indicator_df.at[_new_row, _c]
+        _vp = indicator_df.at[_prev_row, _c] if _prev_row is not None else None
+        _same = (pd.notna(_vn) and _vp is not None and pd.notna(_vp)
+                 and float(_vn) == float(_vp))
+        (_held if _same else _fresh).append(f"{_c}({_d})")
+
+    print(f"  ✓ 신규 수집 {len(_fresh)}개: {_fresh}")
+    print(f"  = 값 유지 {len(_held)}개: {_held}   (기준일 있음 — 월간 지표 등 정상)")
+    if _failed:
+        _msg = (f"지표 {len(_failed)}개가 이번 실행에서 수집되지 않았습니다(기준일 없음) — "
+                f"이전 값이 그대로 남아 있습니다: {_failed}")
+        print(f"  \u26a0 {_msg}")
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            print(f"::warning title=\uc9c0\ud45c \uc218\uc9d1 \uc2e4\ud328::{_msg}")
+    else:
+        print("  ⚠ 수집 실패: 없음")
 
     return indicator_df
 

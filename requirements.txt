@@ -10,6 +10,7 @@ pandas>=2.1.0
 networkx>=3.2
 python-dateutil>=2.8.2
 openpyxl>=3.1.2
+xlrd>=2.0.1        # .xls 읽기 — GPR(matteoiacoviello) / GSCPI(NY Fed) 원본이 구형 xls
 
 # ── LLM ────────────────────────────────────────────────────
 anthropic>=0.34.0,<1.0.0  # 1.0.0에서 temperature 파라미터 제거 → 분류 파이프라인 호환성 문제
@@ -18,7 +19,8 @@ json-repair>=0.30.0
 # ── 주간 파이프라인 (지표 수집 + PDF) ─────────────────────
 yfinance>=0.2.36
 beautifulsoup4>=4.12.0
-reportlab>=4.1.0
+fpdf2>=2.7.0      # PDF 생성 (regen_weekly.py)
+pikepdf>=8.0.0    # PDF 보호 — 미설치 시 regen_weekly.py 가 중단됨
 
 # ── 문서 생성 ──────────────────────────────────────────────
 python-docx>=1.1.0
