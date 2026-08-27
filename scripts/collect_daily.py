@@ -76,6 +76,16 @@ LANGUAGES      = 'English'
 MIN_KEYWORD_LEN = 5
 MAX_RETRIES    = 2
 
+# ── GDELT 장애 방어 (2026-08-26 사고) ─────────────────────────
+# gdeltdoc 1.12.0 은 requests.get() 을 타임아웃 없이 호출한다(라이브러리에 timeout 인자 없음).
+# API 가 응답하지 않으면 키워드 하나에 무한정 매달려, 240개 × 재시도로 2시간 타임아웃에 걸렸다.
+# 중단 판단은 '얼마나 오래 걸렸는가'가 아니라 '응답이 있는가'를 기준으로 한다.
+# 기사가 많은 날은 정상적으로도 오래 걸리므로, 경과시간만으로 자르면 멀쩡한 수집을 죽인다.
+GDELT_SOCKET_TIMEOUT  = 20    # 개별 요청 소켓 타임아웃(초) — 라이브러리가 지원하지 않아 socket 기본값으로 강제
+GDELT_MAX_CONSEC_FAIL = 10    # 연속 실패 N회 → API 장애로 판단하고 즉시 중단
+GDELT_STALL_SEC       = 600   # 마지막 '성공' 이후 10분간 한 건도 성공 못하면 중단 (무응답 기준)
+GDELT_BUDGET_SEC      = 3600  # 최후의 안전망(1시간). 정상 수집이 길어져도 걸리지 않도록 여유를 둠
+
 # ── 네이버 파라미터 ──
 NAVER_CLIENT_ID     = os.environ.get('NAVER_CLIENT_ID', '')
 NAVER_CLIENT_SECRET = os.environ.get('NAVER_CLIENT_SECRET', '')
@@ -704,6 +714,9 @@ def save_classified(classify_df, classified_csv, daily_prefix, ckpt_file):
 # 2. GDELT 수집
 # ══════════════════════════════════════════════════════════════
 
+# 수집 결손 표기용 — 리포트/메일에 그대로 노출된다 (조용한 결손 방지)
+COLLECTION_NOTICE = None
+
 if SKIP_COLLECT:
     print("\n[Step 1/7] GDELT 영문 수집 — ⏭ SKIP_COLLECT: 기존 raw CSV 로드")
     print("-" * 40)
@@ -731,7 +744,30 @@ else:
     gdelt_stats, gdelt_errors = [], []
     t0 = time.time()
 
+    # 라이브러리가 타임아웃을 지원하지 않으므로 소켓 기본값으로 강제한다.
+    # GDELT 단계에서만 적용하고 끝나면 원복 (이후 LLM 호출에 영향 없도록)
+    import socket as _socket
+    _old_sock_timeout = _socket.getdefaulttimeout()
+    _socket.setdefaulttimeout(GDELT_SOCKET_TIMEOUT)
+
+    _consec_fail = 0
+    _last_ok_t   = t0        # 마지막으로 응답을 받은 시각 (기사 0건이어도 응답이면 성공)
+    _aborted = None          # 조기 중단 사유
+    _done_kw = 0
+
     for idx, keyword in enumerate(valid_keywords):
+        # ── 조기 중단 판정 (수집이 진행 중이면 오래 걸려도 자르지 않는다) ──
+        _now = time.time()
+        if _consec_fail >= GDELT_MAX_CONSEC_FAIL:
+            _aborted = f'연속 {_consec_fail}회 실패 — GDELT API 장애로 판단'
+            break
+        if _now - _last_ok_t > GDELT_STALL_SEC:
+            _aborted = f'{GDELT_STALL_SEC//60}분간 응답 없음 — GDELT API 무응답으로 판단'
+            break
+        if _now - t0 > GDELT_BUDGET_SEC:
+            _aborted = f'최후 안전망 {GDELT_BUDGET_SEC//60}분 초과'
+            break
+
         qgroup = mon_kw_source[keyword]
         n_raw = n_new = 0
         err = None
@@ -775,12 +811,36 @@ else:
 
         gdelt_stats.append({'keyword': keyword, 'query_group': qgroup,
                             'raw': n_raw, 'new': n_new, 'error': err or ''})
+        _done_kw += 1
+        if err:
+            _consec_fail += 1
+        else:
+            _consec_fail = 0
+            _last_ok_t = time.time()     # 응답을 받았으므로 무응답 타이머 리셋
 
         if (idx + 1) % 20 == 0:
             print(f"  [{idx+1}/{len(valid_keywords)}] {len(gdelt_articles)}건 수집 중...")
 
+    _socket.setdefaulttimeout(_old_sock_timeout)   # 원복
     elapsed = time.time() - t0
-    print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초)")
+
+    if _aborted:
+        _skipped = len(valid_keywords) - _done_kw
+        _msg = (f'GDELT 수집 조기 중단 ({_aborted}) — '
+                f'키워드 {_done_kw}/{len(valid_keywords)} 처리, {_skipped}개 미수집. '
+                f'영문 기사가 누락된 상태로 진행합니다. GDELT 복구 후 '
+                f'target_date={TARGET_DATE} 로 재실행하면 소급 수집됩니다.')
+        print(f"\u26a0 {_msg}")
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            print(f"::warning title=GDELT \uc218\uc9d1 \ubbf8\uc644\ub8cc::{_msg}")
+        COLLECTION_NOTICE = (
+            f'\u26a0 GDELT(\uc601\ubb38 \ud574\uc678 \uae30\uc0ac) \uc218\uc9d1\uc774 \uc815\uc0c1 \uc885\ub8cc\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4 '
+            f'({_aborted}). \ud0a4\uc6cc\ub4dc {_done_kw}/{len(valid_keywords)}\uac1c\ub9cc \ucc98\ub9ac\ub418\uc5b4 '
+            f'\ud574\uc678 \uae30\uc0ac\uac00 \ud3ec\ud568\ub418\uc9c0 \uc54a\uac70\ub098 \ubd80\uc871\ud569\ub2c8\ub2e4. '
+            f'\uad6d\ub0b4(\ub124\uc774\ubc84) \uae30\uc0ac \uae30\uc900\uc73c\ub85c \uc791\uc131\ub41c \ubcf8 \ube0c\ub9ac\ud551\uc740 '
+            f'\ud574\uc678 \ub3d9\ud5a5\uc774 \uacfc\uc18c \ubc18\uc601\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.'
+        )
+    print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초, 키워드 {_done_kw}/{len(valid_keywords)})")
 
     # Raw CSV 저장
     gdelt_raw_df = pd.DataFrame(gdelt_articles)
@@ -1519,6 +1579,7 @@ else:
         'llm_result': report_json,
         'sources':    sources,
         'ref_map':    ref_map,
+        'collection_notice': COLLECTION_NOTICE,   # 수집 결손 안내 (없으면 None)
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)

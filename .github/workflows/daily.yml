@@ -72,6 +72,7 @@ jobs:
           ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
           NAVER_CLIENT_ID:      ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET:  ${{ secrets.NAVER_CLIENT_SECRET }}
+          PYTHONUNBUFFERED:     "1"   # 강제 종료 시에도 로그가 남도록(2026-08-26 사고)
           TEST_SCALE:           ${{ github.event.inputs.test_scale || '0' }}
           SKIP_COLLECT:         ${{ github.event.inputs.skip_collect || '0' }}
         run: |

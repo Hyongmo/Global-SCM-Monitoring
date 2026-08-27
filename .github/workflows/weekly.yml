@@ -107,6 +107,7 @@ jobs:
       - name: Run weekly pipeline
         if: steps.check_day.outputs.should_run == 'true'
         env:
+          PYTHONUNBUFFERED:     "1"   # 강제 종료 시에도 로그가 남도록(2026-08-26 사고)
           ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
           CUSTOMS_API_KEY:    ${{ secrets.CUSTOMS_API_KEY }}
           GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}

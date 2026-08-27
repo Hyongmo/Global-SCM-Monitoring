@@ -67,6 +67,7 @@ for jf in (json_files[:MAX_DAYS] if MAX_DAYS > 0 else json_files):
             'llm_result': llm,
             'sources':    raw.get('sources', {}),
             'ref_map':    raw.get('ref_map', {}),
+            'collection_notice': raw.get('collection_notice'),   # 수집 결손 안내
         })
         print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
     except Exception as e:
@@ -207,6 +208,13 @@ def _render_day(d, idx, is_latest=False):
     cats       = llm.get('categories', {}) or {}
     sources    = d.get('sources', {}) or {}
     rm         = d.get('ref_map', {}) or {}
+    # 수집 결손 안내 — 있으면 본문 최상단에 노출 (조용한 결손 방지)
+    _notice    = d.get('collection_notice')
+    notice_html = (
+        '<div style="background:#fdecea; border-left:4px solid #c0392b; color:#7b241c;'
+        ' padding:10px 14px; margin:0 0 14px 0; font-size:13px; line-height:1.55;'
+        f' border-radius:3px;">{_notice}</div>'
+    ) if _notice else ''
 
     # ref_map이 있으면 텍스트에 인용 링크 적용
     exec_s = _linkify_refs(exec_s, rm)
@@ -266,6 +274,7 @@ def _render_day(d, idx, is_latest=False):
 <div class="day-block" id="day_{idx}">
   <div class="day-date-header">🗓️ {pub_date_label}<span style="font-size:12px; color:#666; margin-left:12px;">기사수집일: {collect_date_label}</span></div>
   <div class="day-content">
+    {notice_html}
     <div class="section">
       <div class="section-title">📌 주요기사 요약</div>
       <p class="exec-text">{exec_s if exec_s else '<span class="empty">요약 없음</span>'}</p>

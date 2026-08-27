@@ -103,6 +103,8 @@ summary = '(요약 없음)'
 n_total = n_high = n_med = 0
 llm = {}
 
+collection_notice = None
+
 if os.path.exists(json_path):
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -111,6 +113,7 @@ if os.path.exists(json_path):
     n_total = data.get('n_total', 0)
     n_high = data.get('n_high', 0)
     n_med = data.get('n_med', 0)
+    collection_notice = data.get('collection_notice')
 
 
 # ── KMI 로고 (base64) ──
@@ -239,6 +242,12 @@ _body_sections = f"""
 {briefing_html}
 """
 
+_notice_html = (
+    '<div style="background:#fdecea; border-left:4px solid #c0392b; color:#7b241c;'
+    ' padding:11px 15px; margin:16px 0 0 0; font-size:13px; line-height:1.55;'
+    f' border-radius:3px;">{collection_notice}</div>'
+) if collection_notice else ''
+
 html_body = f"""\
 <html>
 <body style="font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif; color:#2c3e50; line-height:1.6; background:#f4f6f9; margin:0; padding:0;">
@@ -255,6 +264,7 @@ html_body = f"""\
 </div>
 
 <div style="{_content_width}">
+{_notice_html}
 
 {_body_sections}
 
