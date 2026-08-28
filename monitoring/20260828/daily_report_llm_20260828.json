@@ -1,0 +1,769 @@
+{
+  "date": "2026-08-28",
+  "date_key": "20260828",
+  "n_total": 1479,
+  "n_high": 25,
+  "n_med": 59,
+  "n_low": 222,
+  "n_none": 1173,
+  "n_intl": 0,
+  "n_dom": 84,
+  "llm_result": {
+    "executive_summary": "미 중부사령부가 호르무즈 해협 내 이란 기뢰 제거 완료를 공식 선언하며 국제항로 정상화를 발표했다[1][2][6]. 트럼프 대통령도 '호르무즈 해협이 열렸다'고 밝혔으나, 이란은 전쟁 종식을 포함한 조건 마련 중이라고 밝혀 외교적 불확실성은 지속되고 있다[3][10]. 호르무즈 통항 선박은 하루 7척, 원유 수송량은 하루 600만~800만 배럴 수준으로 보고되었으며[16], 원유 수송 회복세에 따라 유가 안정 기대감이 형성되고 있다[22]. 국내에서는 S-Oil 주가가 정제마진 강세 전망과 이란 협상 불확실성에 따른 유가 반등 기대로 9% 급등했고[26][27], SCFI는 5주 연속 상승하며 3,500선을 회복했다[17]. 인천 자월도 해상에서는 7,000톤급 석유 운반선 화재로 선원 2명이 사망하고 16명이 구조되는 사고가 발생했다[11][12].",
+    "categories": {
+      "1_Security": {
+        "overseas": "미 중부사령부는 호르무즈 해협 내 이란 기뢰 제거 임무가 성공적으로 완료되었다고 공식 발표했다[1][2][6]. 미군은 국제항로에서 이란군 기뢰를 완전 제거하고 상선 항로 정상화를 선언했으며, 이란이 기뢰를 다시 설치할 경우 파괴하겠다고 경고했다[5][33]. 트럼프 대통령은 '호르무즈 해협이 열렸다'고 선언하며 이란에 대한 압박을 강조했다[3]. 반면 이란은 호르무즈 해협을 다시 열기 위한 조건을 마련 중이며 전쟁 종식이 포함된다고 밝혔고[10], 중재국들의 호르무즈 개방 노력에도 트럼프가 거부하는 상황이 이란 전쟁 6개월째 지속되고 있다[4].",
+        "korea_impact": "미군의 호르무즈 기뢰 제거 완료 선언으로 한국의 중동산 원유 수입 항로에 대한 물리적 위협이 일부 완화될 가능성이 있다. 그러나 이란이 전쟁 종식을 조건으로 내세우고 있어[10] 항로 완전 정상화까지는 추가적인 외교적 과정이 필요한 것으로 보인다. 미군의 재기뢰 시 파괴 경고[5]는 억지력으로 작용할 수 있으나, 이란의 조건부 입장이 지속되는 한 불확실성은 남아 있다."
+      },
+      "2_Safety": {
+        "overseas": "",
+        "korea_impact": "인천 자월도 인근 해상에서 7,000톤급 석유 운반선에 화재가 발생해 선원 2명이 사망하고 16명이 구조되었다[11][12]. 당국은 화재 원인 규명에 착수했다[13]."
+      },
+      "3_Freight": {
+        "overseas": "유조선 운임은 하루 52만 달러 수준으로 보고되었으며, 보험료도 10% 안팎 수준인 것으로 나타났다[14]. 중동 원유 수송 차질 지속 등의 영향으로 8월 27일 기준 국제유가가 상승했다[15].",
+        "korea_impact": "SCFI(상하이컨테이너운임지수)가 5주 연속 상승하며 3,500선을 회복했다[17]. 호르무즈 통항 선박은 하루 7척, 원유 수송량은 하루 600만~800만 배럴 수준으로 보고되었다[16]."
+      },
+      "4_PortCargo": {
+        "overseas": "카타르의 LNG 수출량이 전쟁 이전 대비 96% 감소한 것으로 나타났다[18]. 카타르는 LNG 공급 관련 불가항력 선언을 추가 연장한 것으로 보도되었다[19].",
+        "korea_impact": "카타르 LNG 수출이 전쟁 전 대비 96% 급감한 상황에서[18] 겨울철 수요를 앞두고 LNG 공급 불안이 우려된다[19]. 아시아태평양 항만은 향후 15년간 250조 원 규모의 투자가 필요할 정도로 수요 성장이 지속될 것으로 전망되었다[21]. 칭다오 물동량 관련 중국 건축자재 공동 직수입 방안이 제안되었다[20]."
+      },
+      "5_EconFinance": {
+        "overseas": "미·이란 전쟁 장기화로 미국 내 기름값이 급등하자 트럼프 대통령이 정유·주유업계를 소집했다[25]. 미·이란 전쟁의 영향으로 OPEC+의 영향력이 약화되는 가운데 중국이 석유시장의 핵심 변수로 부상하고 있다[24]. 7월 PCE가 3.7%를 기록하며 연준의 2% 목표를 65개월 연속 상회했다[23].",
+        "korea_impact": "호르무즈 원유 수송이 3분의 2 수준으로 회복되면서 유가 안정 기대감이 형성되었고, 비트코인도 8만 달러대를 기록했다[22]. 이란 협상 불확실성에 따른 유가 반등 기대로 S-Oil 주가가 9% 급등했다[26][27]. 정제마진 강세 전망과 원유값 효과 본격화 기대에 S-Oil의 하반기 실적 기대감이 높아지고 있으며[28][30], 증권가에서는 S-Oil 목표주가로 20만 원을 제시하기도 했다[27]."
+      },
+      "7_Shipping": {
+        "overseas": "미군의 호르무즈 기뢰 제거 완료 선언으로 상선 통항이 점차 탄력을 받을 것으로 전망되었다[32][33][34].",
+        "korea_impact": "해운 상장기업 2026년 8월 브랜드평판 순위는 HMM, 팬오션, 흥아해운 순으로 나타났다[36]. HD현대, 한화오션, 삼성중공업은 무탄소선 시장의 50% 점유를 목표로 친환경 기술 경쟁을 벌이고 있다[37]. 정부는 친환경선박 889척 전환을 지원하고 녹색해운항로 기준을 마련할 계획이다[38]. 자동차운반선 시장은 중국발 수요 증가로 활황세를 보이고 있다[39]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "중동 긴장과 호주 파업에 따른 공급 우려로 철광석 가격이 상승했다[41].",
+        "korea_impact": "중동발 공급난 장기화로 윤활기유 가격이 급등세를 지속하고 있다[46]. 5개월 새 열병합용 도시가스 요금이 46% 급등했다[42]. 석유화학업계는 중국의 설비 증설과 나프타 부담이 겹치며 설비 조정에 나서고 있다[40]. 에쓰오일은 정제마진 강세와 OSP 하락 효과로 하반기 영업이익 3조 원이 전망되며[44], 연료유 중심에서 석유화학 비중을 두 배로 늘리는 사업 구조 전환을 추진 중이다[45]. HD현대오일뱅크는 OPEC 영향력 약화 속에서 중질유 처리 역량이 부각되고 있다[43]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "미 중부사령부는 호르무즈 해협 내 이란 기뢰 제거 임무가 성공적으로 완료되었다고 공식 발표하며 국제항로 정상화를 선언했다[1][6][9]. 미군은 이란이 기뢰를 재설치할 경우 파괴하겠다고 경고했다[5]. 그러나 이란은 전쟁 종식을 포함한 조건 마련 중이라고 밝혀 완전한 외교적 해결은 미완 상태다[10]. 이란 전쟁 6개월째 중재국들의 호르무즈 개방 노력이 이어지고 있으나 트럼프가 거부하는 상황도 보도되었다[4].",
+          "korea_impact": "미군의 기뢰 제거 완료 선언으로 한국의 중동산 원유 수입 주요 항로인 호르무즈 해협의 물리적 위협이 일부 완화될 가능성이 있다. 호르무즈 통항 선박은 하루 7척, 원유 수송량은 하루 600만~800만 배럴 수준으로 보고되어[16] 수송 회복세가 확인되고 있다. 원유 수송이 3분의 2 수준으로 회복되면서 유가 안정 기대감도 형성되고 있다[22]. 다만 이란의 조건부 입장이 지속되는 한 항로 완전 정상화에 대한 불확실성은 남아 있는 것으로 보인다."
+        },
+        "source": {
+          "overseas": "카타르 LNG 수출이 전쟁 이전 대비 96% 급감했으며[18], 카타르는 LNG 불가항력 선언을 추가 연장했다[19]. 미·이란 전쟁 장기화로 OPEC+의 영향력이 약화되는 가운데 중국이 석유시장의 핵심 변수로 부상하고 있다[24]. 중동발 공급난 장기화로 윤활기유 가격 급등이 지속되고 있다[46].",
+          "korea_impact": "카타르 LNG 수출 96% 급감[18]과 불가항력 연장[19]으로 겨울철을 앞두고 한국의 LNG 수급 불안이 우려된다. 포스코인터내셔널은 하반기 LNG 밸류체인 확보를 추진 중이나 수익성이 과제로 지목되었다[47]. 중동발 공급난 장기화로 국내 윤활기유 가격 급등세가 지속되고 있다[46]."
+        },
+        "logistics": {
+          "overseas": "유조선 운임이 하루 52만 달러 수준이며 보험료도 10% 안팎인 것으로 나타났다[14]. 중동 원유 수송 차질 지속 등의 영향으로 8월 27일 기준 국제유가가 상승했다[15].",
+          "korea_impact": "SCFI가 5주 연속 상승하며 3,500선을 회복했다[17]. 자동차운반선 시장은 중국발 수요 증가로 활황세를 보이고 있다[39]. 인천 자월도 해상에서 7,000톤급 석유 운반선 화재로 선원 2명이 사망하고 16명이 구조되는 사고가 발생했으며 원인 규명이 진행 중이다[11][12][13]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "호르무즈 원유 수송이 3분의 2 수준으로 회복되면서 유가 안정 기대감이 형성되었고[22], 이란 협상 불확실성에 따른 유가 반등 기대로 S-Oil 주가가 9% 급등했다[26][27]. 7월 PCE가 3.7%를 기록하며 연준의 2% 목표를 65개월 연속 상회하는 등 인플레이션 압력이 지속되고 있다[23]. 미·이란 전쟁 장기화로 미국 내 기름값이 급등하자 트럼프 대통령이 정유·주유업계를 소집했다[25].",
+        "정유·화학": "S-Oil은 정제마진 강세 전망과 원유값 효과 본격화 기대로 하반기 실적 기대감이 높아지고 있으며[28][30], 하반기 영업이익 3조 원이 전망되었다[44]. 에쓰오일은 연료유 중심에서 석유화학 비중을 두 배로 늘리는 사업 구조 전환을 추진 중이다[45]. HD현대오일뱅크는 OPEC 영향력 약화 속에서 중질유 처리 역량이 부각되고 있다[43]. 석유화학업계는 중국의 설비 증설과 나프타 부담이 겹치며 설비 조정에 나서고 있다[40].",
+        "해운·물류": "SCFI가 5주 연속 상승하며 3,500선을 회복했다[17]. 해운 상장기업 2026년 8월 브랜드평판 순위는 HMM, 팬오션, 흥아해운 순으로 나타났다[36]. 자동차운반선 시장은 중국발 수요 증가로 활황세를 보이고 있다[39]. 정부는 친환경선박 889척 전환을 지원하고 녹색해운항로 기준을 마련할 계획이다[38].",
+        "식품·농업": "",
+        "기타산업": "중동 긴장과 호주 파업에 따른 공급 우려로 철광석 가격이 상승했다[41]. 5개월 새 열병합용 도시가스 요금이 46% 급등했다[42]. 중동발 공급난 장기화로 윤활기유 가격 급등세가 지속되고 있다[46]."
+      }
+    },
+    "changes": {
+      "new": [
+        "미 중부사령부, 호르무즈 해협 이란 기뢰 완전 제거 완료 및 국제항로 정상화 공식 선언[1][2][9]",
+        "트럼프 대통령 '호르무즈 해협 열려' 공식 선언[3]",
+        "인천 자월도 해상 7,000톤급 석유 운반선 화재 발생, 선원 2명 사망·16명 구조[11][12]",
+        "SCFI 5주 연속 상승, 3,500선 회복[17]",
+        "S-Oil 주가 9% 급등, 증권가 목표주가 20만 원 제시[26][27]"
+      ],
+      "escalated": [
+        "카타르 LNG 불가항력 선언 추가 연장, 수출량 전쟁 전 대비 96% 급감 지속[18][19]",
+        "중동발 공급난 장기화로 윤활기유 가격 급등 지속[46]",
+        "열병합용 도시가스 요금 5개월 새 46% 급등[42]",
+        "유조선 운임 하루 52만 달러, 보험료 10% 안팎 수준 지속[14]"
+      ],
+      "resolved": [
+        "호르무즈 해협 내 이란 기뢰 물리적 위협 제거 완료 선언(단, 외교적 불확실성은 지속)[1][5][10]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "미 중부사령부 \"호르무즈 해협 이란 기뢰 완전 제거…항로 개방\"",
+        "url": "https://www.voakorea.com/a/8191500.html",
+        "type": "dom"
+      },
+      {
+        "title": "미군 \"호르무즈서 기뢰 제거 성공적 완료\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000900554?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 “호르무즈 해협 열려”…미, 이란 압박 강조",
+        "url": "https://www.tokenpost.kr/news/breaking/399822",
+        "type": "dom"
+      },
+      {
+        "title": "이란 전쟁 6개월…중재국들 ‘호르무즈 개방’ 노력, 트럼프는 거부",
+        "url": "https://n.news.naver.com/mnews/article/028/0002820659?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 \"호르무즈 기뢰 제거 완료\"...이란엔 \"다시 깔면 파괴\"",
+        "url": "https://n.news.naver.com/mnews/article/014/0005567915?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미 중부사령관 \"호르무즈 기뢰 제거 성공적 완료\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002399575?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 \"호르무즈서 이란군 기뢰 제거 성공적 완료\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000900457?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 중부사령관 \"호르무즈 기뢰 제거 성공적 완료\"",
+        "url": "https://n.news.naver.com/mnews/article/374/0000529969?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 중부사령부 \"호르무즈 해협 기뢰 제거 임무 완료\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005808789?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 “호르무즈 해협 다시 열 조건 마련 중”…“전쟁 종식 포함”",
+        "url": "https://news.knn.co.kr/news/article_sns/1666",
+        "type": "dom"
+      },
+      {
+        "title": "[북러 군사협력 1] \"북한군 추가 파병 시 러시아에 큰 도움 … 전황 바꿀...",
+        "url": "https://www.voakorea.com/a/north-korea-ukraine-war-contribution/8191471.html",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 美 대이란 경제제재 강화 국내 영향 점검 나서",
+        "url": "https://n.news.naver.com/mnews/article/014/0005567955?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 미국 대이란 경제제재 국내 영향 점검…유관기관 회의",
+        "url": "https://n.news.naver.com/mnews/article/003/0014155672?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "대이란 제재 유관기관 회의...대응 방안 논의",
+        "url": "https://n.news.naver.com/mnews/article/052/0002399692?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "미군 호르무즈 작전, 이란 영향력 약화 보도",
+        "url": "https://www.tokenpost.kr/news/breaking/399929",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 호르무즈 해협을 '미국 영토'로 표시한 이미지 공유…이란 반발",
+        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=391541",
+        "type": "dom"
+      },
+      {
+        "title": "하루 2000만배럴 호르무즈, 걸프 경제 우회로 넓힌다",
+        "url": "https://www.tokenpost.kr/news/international/399821",
+        "type": "dom"
+      },
+      {
+        "title": "이란 전쟁 6개월…걸프국, 호르무즈 의존 경제 뜯어고친다",
+        "url": "https://www.g-enews.com/view.php?ud=202608282021073092cd0bfacc1c_1",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무, 美와 외교적 해결 여지…\"압박은 안 통해\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000900515?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 외무 \"美와 외교적 해결 불가능하지 않아…압박으론 안돼\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016277392?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란전 6개월 세계 안보·경제 흔들…\"한반도에도 그림자\"",
+        "url": "https://www.mediajeju.com/news/articleView.html?idxno=365972",
+        "type": "dom"
+      },
+      {
+        "title": "‘이란전 6개월’ 수렁 빠진 미국…전쟁 목표 증발, 호르무즈만 막혀",
+        "url": "https://n.news.naver.com/mnews/article/028/0002820648?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 전쟁 벌써 반년… 분주한 중재국·뻣뻣한 미국",
+        "url": "https://n.news.naver.com/mnews/article/469/0000950784?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[이란戰 6개월]\"트럼프 중동 전력투구에 한국 등 안보 약화 우려\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014154996?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美·이란, '6월 MOU' 놓고 평행선···중재국 연쇄 방문도 성과 없어",
+        "url": "https://www.todaykorea.co.kr/news/articleView.html?idxno=405417",
+        "type": "dom"
+      },
+      {
+        "title": "美, 베네수엘라 OPEC 탈퇴 조건으로 ‘유전 100년 임대’ 빅딜",
+        "url": "https://n.news.naver.com/mnews/article/011/0004656309?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"美, 베네수와 유전 지분 협상\"",
+        "url": "https://n.news.naver.com/mnews/article/015/0005326033?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프 입김에…베네수, OPEC탈퇴 검토",
+        "url": "https://n.news.naver.com/mnews/article/009/0005727339?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美, G20 상대로 '이란 경제왕따 작전' 세몰이 나선다",
+        "url": "https://www.mediajeju.com/news/articleView.html?idxno=365971",
+        "type": "dom"
+      },
+      {
+        "title": "미국, 대이란 제재 디지털 자산 부문까지 확대",
+        "url": "https://www.tokenpost.kr/news/breaking/399930",
+        "type": "dom"
+      },
+      {
+        "title": "외교부, 美 대이란 '경제적 고립 작전' 대응 점검…유관기관 회의",
+        "url": "https://n.news.naver.com/mnews/article/421/0009138875?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "기상이변, 대만해협 군사활동에 차질…\"중국군에 여파 더 커\" \"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016277322?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "타이완 \"이란 전쟁으로 미 패트리엇 인도 심각하게 지연\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002399480?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "이란 최고지도자 6개월째 공개석상 불참, 역할 놓고 의문 커져",
+        "url": "https://www.ppss.kr/news/articleView.html?idxno=307867",
+        "type": "dom"
+      },
+      {
+        "title": "\"'6개월 은둔' 이란 최고지도자에 의구심 커져\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000900451?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"6개월 은둔 이란 최고지도자 모즈타바에 의구심 커져\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002399544?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "백악관 \"이란과 현재 대화 없어…호르무즈 개방 상태\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000900237?sid=104",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "인천 자월도 해상서 석유 운반선 화재…2명 사망·16명 구조",
+        "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1535671",
+        "type": "dom"
+      },
+      {
+        "title": "인천 자월도 인근 해상서 7000t급 석유 운반선 화재…선원 2명 사망",
+        "url": "https://www.newspim.com/news/view/20260828000875",
+        "type": "dom"
+      },
+      {
+        "title": "2명 숨진 자월도 석유운반선 화재…원인 규명 착수",
+        "url": "https://news.ifm.kr/news/articleView.html?idxno=478190",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "유조선 하루 52만달러, 보험료도 10% 안팎",
+        "url": "https://www.tokenpost.kr/news/international/399898",
+        "type": "dom"
+      },
+      {
+        "title": "중동 원유 수송 차질 지속 등에 8월27일 국제유가 상승",
+        "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227734",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 통항 7척, 원유는 하루 600만~800만배럴",
+        "url": "https://www.tokenpost.kr/news/economy/399664",
+        "type": "dom"
+      },
+      {
+        "title": "SCFI 5주 연속 상승..3500선 회복",
+        "url": "http://www.4th.kr/news/articleView.html?idxno=2117060",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "카타르 LNG 수출 전쟁 전보다 96% 줄었다",
+        "url": "https://www.tokenpost.kr/news/economy/399796",
+        "type": "dom"
+      },
+      {
+        "title": "“겨울 다가오는데”…카타르, LNG ‘불가항력’ 추가 연장 [이슈+]",
+        "url": "https://www.ekn.kr/web/view.php?key=20260828021167862",
+        "type": "dom"
+      },
+      {
+        "title": "“칭다오 물동량 해법, 중국 건축자재 공동 직수입 제안”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012247003?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "아태항만 수요 성장 계속된다…15년간 250조 투자 필요",
+        "url": "https://www.ksg.co.kr/news/main_newsView.jsp?pNum=147892",
+        "type": "dom"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "호르무즈 원유 수송 3분의 2 수준 회복, 유가 안정에 비트코인도 8만달...",
+        "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=88229",
+        "type": "dom"
+      },
+      {
+        "title": "7월 PCE 3.7%, 연준 2% 목표 65개월 웃돌았다",
+        "url": "https://www.tokenpost.kr/news/economy/399905",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 전쟁으로 힘빠진 OPEC+…中 석유시장 핵심변수로",
+        "url": "http://www.e2news.com/news/articleView.html?idxno=333691",
+        "type": "dom"
+      },
+      {
+        "title": "이란전 장기화에 美기름값 급등…트럼프, 정유·주유업계 소집",
+        "url": "https://n.news.naver.com/mnews/article/003/0014155030?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[특징주] 이란 협상 불확실성에 유가 반등…S-Oil 9% 급등",
+        "url": "https://www.moneystorm.kr/news/articleView.html?idxno=6066",
+        "type": "dom"
+      },
+      {
+        "title": "\"20만원 간다\" 증권가 전망에…S-Oil 9% 급등",
+        "url": "https://n.news.naver.com/mnews/article/014/0005567921?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "S-Oil, 하반기 실적 기대감↑…정제마진·원유값 효과 본격화 -유안타증...",
+        "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=358085",
+        "type": "dom"
+      },
+      {
+        "title": "원유는 풀리는데 휘발유는 없다…정유사, 하반기 '정제마진 특수'",
+        "url": "https://www.greened.kr/news/articleView.html?idxno=348675",
+        "type": "dom"
+      },
+      {
+        "title": "[특징주] 에쓰오일, 정제마진 강세 전망에 급등",
+        "url": "https://www.cstimes.com/news/articleView.html?idxno=718486",
+        "type": "dom"
+      },
+      {
+        "title": "[어바웃 에쓰오일]③ 샤힌 프로젝트 'TC2C' 원가 경쟁력 증명할까",
+        "url": "https://n.news.naver.com/mnews/article/293/0000089712?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "[특징주] 에쓰오일, 정제마진 호황 전망...8% 강세",
+        "url": "http://www.metroseoul.co.kr/article/20260828500087",
+        "type": "dom"
+      },
+      {
+        "title": "환율 하락·노사 갈등 악재까지…조선업계, 3분기 실적 '먹구름'",
+        "url": "https://www.greened.kr/news/articleView.html?idxno=348736",
+        "type": "dom"
+      },
+      {
+        "title": "美·中, 내달 정상회담 앞두고 무역전쟁 휴전 1년 연장 가닥",
+        "url": "https://n.news.naver.com/mnews/article/015/0005326032?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美中 '무역 휴전' 연장 유력 … 기간 놓고 의견 엇갈려",
+        "url": "https://n.news.naver.com/mnews/article/009/0005727338?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "\"원자재 50% 뛰고 운임 3배\"…중동發 中企 피해 1071건",
+        "url": "https://n.news.naver.com/mnews/article/421/0009138648?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "4년 적자에도 SK어드밴스드 품은 SK가스…\"2028년 이후 업황 회복 기대\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005808841?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가, 2% 상승…협상 기대 약화 [글로벌 머니플로우]",
+        "url": "https://n.news.naver.com/mnews/article/215/0001263939?sid=101",
+        "type": "dom"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "美중부사령관 \"호르무즈 내 기뢰 제거 완료…통항 점차 탄력\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014155490?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미군 \"호르무즈 국제항로 이란 기뢰 완전 제거\"…상선 항로 정상화 선언",
+        "url": "http://www.4th.kr/news/articleView.html?idxno=2117064",
+        "type": "dom"
+      },
+      {
+        "title": "미군 \"호르무즈 국제항로 기뢰 제거 완료…기뢰 위험서 해방\"",
+        "url": "https://n.news.naver.com/mnews/article/437/0000508388?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美중부사령부 \"호르무즈 기뢰 제거 성공적 완료\"",
+        "url": "https://www.etoday.co.kr/news/view/2619474",
+        "type": "dom"
+      },
+      {
+        "title": "해운 상장기업 2026년 8월 브랜드평판...HMM, 팬오션, 흥아해운 順",
+        "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227739",
+        "type": "dom"
+      },
+      {
+        "title": "무탄소선 시장 50% 노린다...HD현대·한화오션·삼성重 친환경 기술 '각...",
+        "url": "https://www.joongangenews.com/news/articleView.html?idxno=543704",
+        "type": "dom"
+      },
+      {
+        "title": "정부, 친환경선박 889척 전환 지원...녹색해운항로 기준 마련",
+        "url": "https://www.news2day.co.kr/article/20260828500256",
+        "type": "dom"
+      },
+      {
+        "title": "달아오르는 자동차운반선 시장…중국發 수요에 ‘귀한 몸’",
+        "url": "https://www.ekn.kr/web/view.php?key=20260828025137792",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "석화업계. 설비 조정…중국 증설에 나프타 부담까지",
+        "url": "https://www.polinews.co.kr/news/articleView.html?idxno=741535",
+        "type": "dom"
+      },
+      {
+        "title": "철광석價↑, 중동 긴장·호주 파업 공급 우려",
+        "url": "http://amenews.kr/news/view.php?idx=67834",
+        "type": "dom"
+      },
+      {
+        "title": "5개월 새 열병합용 도시가스요금 46% 급등",
+        "url": "http://www.e2news.com/news/articleView.html?idxno=333717",
+        "type": "dom"
+      },
+      {
+        "title": "OPEC 흔들리며 HD현대오일뱅크 중질유 처리 역량 부각 : 송명준 업계 최...",
+        "url": "https://www.huffingtonpost.kr/article/259971",
+        "type": "dom"
+      },
+      {
+        "title": "에쓰오일, 정제마진에 OSP 하락까지…하반기 영업익 3조 원 전망",
+        "url": "https://www.consumuch.com/news/articleView.html?idxno=78895",
+        "type": "dom"
+      },
+      {
+        "title": "연료유 중심 탈피하는 에쓰오일…석유화학 비중 두 배로",
+        "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16534",
+        "type": "dom"
+      },
+      {
+        "title": "중동발 공급난 길어지자 윤활기유 값 급등 지속",
+        "url": "https://n.news.naver.com/mnews/article/009/0005727350?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "포스코인터내셔널, 하반기 LNG 밸류체인 확보…수익성 과제로",
+        "url": "http://www.srtimes.kr/news/articleView.html?idxno=211112",
+        "type": "dom"
+      },
+      {
+        "title": "북중관계 개선 기류 속 北 석탄·광물 中 반입 규모 증가…제재 무색",
+        "url": "https://www.dailynk.com/20260828-5",
+        "type": "dom"
+      },
+      {
+        "title": "매출 3.4조인데 순익률 1.9%…LMP 추진에 민간 석탄 ‘울상’",
+        "url": "https://n.news.naver.com/mnews/article/119/0003126719?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "aT, '기후위기 극복' 식량안보 강화 정책토론회... 국가 경제 근간 다진...",
+        "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=501445",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "미 중부사령부 \"호르무즈 해협 이란 기뢰 완전 제거…항로 개방\"",
+      "url": "https://www.voakorea.com/a/8191500.html",
+      "type": "dom"
+    },
+    "2": {
+      "title": "미군 \"호르무즈서 기뢰 제거 성공적 완료\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000900554?sid=104",
+      "type": "dom"
+    },
+    "3": {
+      "title": "트럼프 “호르무즈 해협 열려”…미, 이란 압박 강조",
+      "url": "https://www.tokenpost.kr/news/breaking/399822",
+      "type": "dom"
+    },
+    "4": {
+      "title": "이란 전쟁 6개월…중재국들 ‘호르무즈 개방’ 노력, 트럼프는 거부",
+      "url": "https://n.news.naver.com/mnews/article/028/0002820659?sid=104",
+      "type": "dom"
+    },
+    "5": {
+      "title": "美 \"호르무즈 기뢰 제거 완료\"...이란엔 \"다시 깔면 파괴\"",
+      "url": "https://n.news.naver.com/mnews/article/014/0005567915?sid=104",
+      "type": "dom"
+    },
+    "6": {
+      "title": "미 중부사령관 \"호르무즈 기뢰 제거 성공적 완료\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002399575?sid=104",
+      "type": "dom"
+    },
+    "7": {
+      "title": "미군 \"호르무즈서 이란군 기뢰 제거 성공적 완료\"",
+      "url": "https://n.news.naver.com/mnews/article/422/0000900457?sid=104",
+      "type": "dom"
+    },
+    "8": {
+      "title": "美 중부사령관 \"호르무즈 기뢰 제거 성공적 완료\"",
+      "url": "https://n.news.naver.com/mnews/article/374/0000529969?sid=104",
+      "type": "dom"
+    },
+    "9": {
+      "title": "美 중부사령부 \"호르무즈 해협 기뢰 제거 임무 완료\"",
+      "url": "https://n.news.naver.com/mnews/article/277/0005808789?sid=104",
+      "type": "dom"
+    },
+    "10": {
+      "title": "이란 “호르무즈 해협 다시 열 조건 마련 중”…“전쟁 종식 포함”",
+      "url": "https://news.knn.co.kr/news/article_sns/1666",
+      "type": "dom"
+    },
+    "11": {
+      "title": "인천 자월도 해상서 석유 운반선 화재…2명 사망·16명 구조",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1535671",
+      "type": "dom"
+    },
+    "12": {
+      "title": "인천 자월도 인근 해상서 7000t급 석유 운반선 화재…선원 2명 사망",
+      "url": "https://www.newspim.com/news/view/20260828000875",
+      "type": "dom"
+    },
+    "13": {
+      "title": "2명 숨진 자월도 석유운반선 화재…원인 규명 착수",
+      "url": "https://news.ifm.kr/news/articleView.html?idxno=478190",
+      "type": "dom"
+    },
+    "14": {
+      "title": "유조선 하루 52만달러, 보험료도 10% 안팎",
+      "url": "https://www.tokenpost.kr/news/international/399898",
+      "type": "dom"
+    },
+    "15": {
+      "title": "중동 원유 수송 차질 지속 등에 8월27일 국제유가 상승",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227734",
+      "type": "dom"
+    },
+    "16": {
+      "title": "호르무즈 통항 7척, 원유는 하루 600만~800만배럴",
+      "url": "https://www.tokenpost.kr/news/economy/399664",
+      "type": "dom"
+    },
+    "17": {
+      "title": "SCFI 5주 연속 상승..3500선 회복",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2117060",
+      "type": "dom"
+    },
+    "18": {
+      "title": "카타르 LNG 수출 전쟁 전보다 96% 줄었다",
+      "url": "https://www.tokenpost.kr/news/economy/399796",
+      "type": "dom"
+    },
+    "19": {
+      "title": "“겨울 다가오는데”…카타르, LNG ‘불가항력’ 추가 연장 [이슈+]",
+      "url": "https://www.ekn.kr/web/view.php?key=20260828021167862",
+      "type": "dom"
+    },
+    "20": {
+      "title": "“칭다오 물동량 해법, 중국 건축자재 공동 직수입 제안”",
+      "url": "https://n.news.naver.com/mnews/article/056/0012247003?sid=101",
+      "type": "dom"
+    },
+    "21": {
+      "title": "아태항만 수요 성장 계속된다…15년간 250조 투자 필요",
+      "url": "https://www.ksg.co.kr/news/main_newsView.jsp?pNum=147892",
+      "type": "dom"
+    },
+    "22": {
+      "title": "호르무즈 원유 수송 3분의 2 수준 회복, 유가 안정에 비트코인도 8만달...",
+      "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=88229",
+      "type": "dom"
+    },
+    "23": {
+      "title": "7월 PCE 3.7%, 연준 2% 목표 65개월 웃돌았다",
+      "url": "https://www.tokenpost.kr/news/economy/399905",
+      "type": "dom"
+    },
+    "24": {
+      "title": "미·이란 전쟁으로 힘빠진 OPEC+…中 석유시장 핵심변수로",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=333691",
+      "type": "dom"
+    },
+    "25": {
+      "title": "이란전 장기화에 美기름값 급등…트럼프, 정유·주유업계 소집",
+      "url": "https://n.news.naver.com/mnews/article/003/0014155030?sid=104",
+      "type": "dom"
+    },
+    "26": {
+      "title": "[특징주] 이란 협상 불확실성에 유가 반등…S-Oil 9% 급등",
+      "url": "https://www.moneystorm.kr/news/articleView.html?idxno=6066",
+      "type": "dom"
+    },
+    "27": {
+      "title": "\"20만원 간다\" 증권가 전망에…S-Oil 9% 급등",
+      "url": "https://n.news.naver.com/mnews/article/014/0005567921?sid=101",
+      "type": "dom"
+    },
+    "28": {
+      "title": "S-Oil, 하반기 실적 기대감↑…정제마진·원유값 효과 본격화 -유안타증...",
+      "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=358085",
+      "type": "dom"
+    },
+    "29": {
+      "title": "원유는 풀리는데 휘발유는 없다…정유사, 하반기 '정제마진 특수'",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=348675",
+      "type": "dom"
+    },
+    "30": {
+      "title": "[특징주] 에쓰오일, 정제마진 강세 전망에 급등",
+      "url": "https://www.cstimes.com/news/articleView.html?idxno=718486",
+      "type": "dom"
+    },
+    "31": {
+      "title": "[어바웃 에쓰오일]③ 샤힌 프로젝트 'TC2C' 원가 경쟁력 증명할까",
+      "url": "https://n.news.naver.com/mnews/article/293/0000089712?sid=101",
+      "type": "dom"
+    },
+    "32": {
+      "title": "美중부사령관 \"호르무즈 내 기뢰 제거 완료…통항 점차 탄력\"",
+      "url": "https://n.news.naver.com/mnews/article/003/0014155490?sid=104",
+      "type": "dom"
+    },
+    "33": {
+      "title": "미군 \"호르무즈 국제항로 이란 기뢰 완전 제거\"…상선 항로 정상화 선언",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2117064",
+      "type": "dom"
+    },
+    "34": {
+      "title": "미군 \"호르무즈 국제항로 기뢰 제거 완료…기뢰 위험서 해방\"",
+      "url": "https://n.news.naver.com/mnews/article/437/0000508388?sid=104",
+      "type": "dom"
+    },
+    "35": {
+      "title": "美중부사령부 \"호르무즈 기뢰 제거 성공적 완료\"",
+      "url": "https://www.etoday.co.kr/news/view/2619474",
+      "type": "dom"
+    },
+    "36": {
+      "title": "해운 상장기업 2026년 8월 브랜드평판...HMM, 팬오션, 흥아해운 順",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=227739",
+      "type": "dom"
+    },
+    "37": {
+      "title": "무탄소선 시장 50% 노린다...HD현대·한화오션·삼성重 친환경 기술 '각...",
+      "url": "https://www.joongangenews.com/news/articleView.html?idxno=543704",
+      "type": "dom"
+    },
+    "38": {
+      "title": "정부, 친환경선박 889척 전환 지원...녹색해운항로 기준 마련",
+      "url": "https://www.news2day.co.kr/article/20260828500256",
+      "type": "dom"
+    },
+    "39": {
+      "title": "달아오르는 자동차운반선 시장…중국發 수요에 ‘귀한 몸’",
+      "url": "https://www.ekn.kr/web/view.php?key=20260828025137792",
+      "type": "dom"
+    },
+    "40": {
+      "title": "석화업계. 설비 조정…중국 증설에 나프타 부담까지",
+      "url": "https://www.polinews.co.kr/news/articleView.html?idxno=741535",
+      "type": "dom"
+    },
+    "41": {
+      "title": "철광석價↑, 중동 긴장·호주 파업 공급 우려",
+      "url": "http://amenews.kr/news/view.php?idx=67834",
+      "type": "dom"
+    },
+    "42": {
+      "title": "5개월 새 열병합용 도시가스요금 46% 급등",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=333717",
+      "type": "dom"
+    },
+    "43": {
+      "title": "OPEC 흔들리며 HD현대오일뱅크 중질유 처리 역량 부각 : 송명준 업계 최...",
+      "url": "https://www.huffingtonpost.kr/article/259971",
+      "type": "dom"
+    },
+    "44": {
+      "title": "에쓰오일, 정제마진에 OSP 하락까지…하반기 영업익 3조 원 전망",
+      "url": "https://www.consumuch.com/news/articleView.html?idxno=78895",
+      "type": "dom"
+    },
+    "45": {
+      "title": "연료유 중심 탈피하는 에쓰오일…석유화학 비중 두 배로",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16534",
+      "type": "dom"
+    },
+    "46": {
+      "title": "중동발 공급난 길어지자 윤활기유 값 급등 지속",
+      "url": "https://n.news.naver.com/mnews/article/009/0005727350?sid=101",
+      "type": "dom"
+    },
+    "47": {
+      "title": "포스코인터내셔널, 하반기 LNG 밸류체인 확보…수익성 과제로",
+      "url": "http://www.srtimes.kr/news/articleView.html?idxno=211112",
+      "type": "dom"
+    },
+    "48": {
+      "title": "북중관계 개선 기류 속 北 석탄·광물 中 반입 규모 증가…제재 무색",
+      "url": "https://www.dailynk.com/20260828-5",
+      "type": "dom"
+    },
+    "49": {
+      "title": "매출 3.4조인데 순익률 1.9%…LMP 추진에 민간 석탄 ‘울상’",
+      "url": "https://n.news.naver.com/mnews/article/119/0003126719?sid=101",
+      "type": "dom"
+    }
+  },
+  "collection_notice": "⚠ GDELT(영문 해외 기사) 수집이 정상 종료되지 않았습니다 (연속 10회 실패 — GDELT API 장애로 판단). 키워드 10/122개만 처리되어 해외 기사가 포함되지 않거나 부족합니다. 국내(네이버) 기사 기준으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다."
+}
