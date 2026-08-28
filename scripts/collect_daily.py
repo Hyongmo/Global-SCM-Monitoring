@@ -63,6 +63,9 @@ MON_QUERY_FILE = 'news_queries_monitoring_v2.json'
 gd = GdeltDoc()
 client = anthropic.Anthropic()  # ANTHROPIC_API_KEY 자동 사용
 
+# ── 스크립트 시작 시각 (잔여 예산 계산 기준) ──
+_SCRIPT_T0 = time.time()
+
 # ── 테스트 모드 (환경변수 TEST_SCALE 로 스케일 축소 가능) ──
 _test_scale = int(os.environ.get('TEST_SCALE', 0))  # 0=정상, 양수=샘플 수 제한
 
@@ -84,7 +87,14 @@ MAX_RETRIES    = 2
 GDELT_SOCKET_TIMEOUT  = 20    # 개별 요청 소켓 타임아웃(초) — 라이브러리가 지원하지 않아 socket 기본값으로 강제
 GDELT_MAX_CONSEC_FAIL = 10    # 연속 실패 N회 → API 장애로 판단하고 즉시 중단
 GDELT_STALL_SEC       = 600   # 마지막 '성공' 이후 10분간 한 건도 성공 못하면 중단 (무응답 기준)
-GDELT_BUDGET_SEC      = 3600  # 최후의 안전망(1시간). 정상 수집이 길어져도 걸리지 않도록 여유를 둠
+
+# 최후 안전망은 고정값이 아니라 '잡에 남은 시간'에서 뒷단계 몫을 뺀 값으로 잡는다.
+#   2026-08-28: GDELT 가 살아있지만 느린 날(키워드당 124초) 고정 60분 캡이
+#   정상 수집을 30/122 에서 잘랐다. 뒷단계를 보호하면서도 최대한 시간을 준다.
+#   JOB_TIMEOUT_MIN 은 daily.yml 의 timeout-minutes 와 반드시 일치시킬 것.
+JOB_TIMEOUT_MIN       = int(os.environ.get('JOB_TIMEOUT_MIN', 180))
+PIPELINE_RESERVE_MIN  = int(os.environ.get('PIPELINE_RESERVE_MIN', 70))  # 네이버 + Step 3~7 몫
+GDELT_BUDGET_MIN_SEC  = 900   # 아무리 빠듯해도 최소 15분은 보장
 
 # ── 네이버 파라미터 ──
 NAVER_CLIENT_ID     = os.environ.get('NAVER_CLIENT_ID', '')
@@ -743,6 +753,15 @@ else:
     seen_urls = set()
     gdelt_stats, gdelt_errors = [], []
     t0 = time.time()
+
+    # 잔여 예산 = (잡 타임아웃 - 뒷단계 예약분) - 여기까지 이미 쓴 시간
+    _elapsed_before = t0 - _SCRIPT_T0
+    GDELT_BUDGET_SEC = max(
+        GDELT_BUDGET_MIN_SEC,
+        int((JOB_TIMEOUT_MIN - PIPELINE_RESERVE_MIN) * 60 - _elapsed_before)
+    )
+    print(f"  수집 예산: {GDELT_BUDGET_SEC//60}분 "
+          f"(잡 {JOB_TIMEOUT_MIN}분 − 뒷단계 예약 {PIPELINE_RESERVE_MIN}분 − 경과 {_elapsed_before/60:.1f}분)")
 
     # 라이브러리가 타임아웃을 지원하지 않으므로 소켓 기본값으로 강제한다.
     # GDELT 단계에서만 적용하고 끝나면 원복 (이후 LLM 호출에 영향 없도록)

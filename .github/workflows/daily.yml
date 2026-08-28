@@ -26,7 +26,10 @@ on:
 jobs:
   daily-pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 120      # 최대 2시간 (LLM 분류 포함)
+    timeout-minutes: 180      # 최대 3시간 (LLM 분류 포함)
+                              # 2026-08-28: GDELT 응답이 느려지면(키워드당 124초 관측)
+                              # 수집 단계가 1시간을 쓰고 뒷단계(Step 3~7)에 53분만 남아
+                              # 잡 전체가 잘릴 위험이 있어 120 → 180 으로 상향.
     permissions:
       contents: write         # git push 허용
 
@@ -75,6 +78,10 @@ jobs:
           NAVER_CLIENT_ID:      ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET:  ${{ secrets.NAVER_CLIENT_SECRET }}
           PYTHONUNBUFFERED:     "1"   # 강제 종료 시에도 로그가 남도록(2026-08-26 사고)
+          # ⚠ JOB_TIMEOUT_MIN 은 위 timeout-minutes 와 반드시 같은 값을 유지할 것.
+          #    GDELT 수집 예산 = (JOB_TIMEOUT_MIN − PIPELINE_RESERVE_MIN) − 경과시간
+          JOB_TIMEOUT_MIN:      "180"
+          PIPELINE_RESERVE_MIN: "70"    # 네이버 + Step 3~7(LLM 분류·리포트) 몫
           TEST_SCALE:           ${{ github.event.inputs.test_scale || '0' }}
           SKIP_COLLECT:         ${{ github.event.inputs.skip_collect || '0' }}
         run: |
