@@ -64,7 +64,6 @@ gd = GdeltDoc()
 client = anthropic.Anthropic()  # ANTHROPIC_API_KEY 자동 사용
 
 # ── 스크립트 시작 시각 (잔여 예산 계산 기준) ──
-_SCRIPT_T0 = time.time()
 
 # ── 테스트 모드 (환경변수 TEST_SCALE 로 스케일 축소 가능) ──
 _test_scale = int(os.environ.get('TEST_SCALE', 0))  # 0=정상, 양수=샘플 수 제한
@@ -84,17 +83,19 @@ MAX_RETRIES    = 2
 # API 가 응답하지 않으면 키워드 하나에 무한정 매달려, 240개 × 재시도로 2시간 타임아웃에 걸렸다.
 # 중단 판단은 '얼마나 오래 걸렸는가'가 아니라 '응답이 있는가'를 기준으로 한다.
 # 기사가 많은 날은 정상적으로도 오래 걸리므로, 경과시간만으로 자르면 멀쩡한 수집을 죽인다.
-GDELT_SOCKET_TIMEOUT  = 20    # 개별 요청 소켓 타임아웃(초) — 라이브러리가 지원하지 않아 socket 기본값으로 강제
-GDELT_MAX_CONSEC_FAIL = 10    # 연속 실패 N회 → API 장애로 판단하고 즉시 중단
-GDELT_STALL_SEC       = 600   # 마지막 '성공' 이후 10분간 한 건도 성공 못하면 중단 (무응답 기준)
-
-# 최후 안전망은 고정값이 아니라 '잡에 남은 시간'에서 뒷단계 몫을 뺀 값으로 잡는다.
-#   2026-08-28: GDELT 가 살아있지만 느린 날(키워드당 124초) 고정 60분 캡이
-#   정상 수집을 30/122 에서 잘랐다. 뒷단계를 보호하면서도 최대한 시간을 준다.
-#   JOB_TIMEOUT_MIN 은 daily.yml 의 timeout-minutes 와 반드시 일치시킬 것.
-JOB_TIMEOUT_MIN       = int(os.environ.get('JOB_TIMEOUT_MIN', 180))
-PIPELINE_RESERVE_MIN  = int(os.environ.get('PIPELINE_RESERVE_MIN', 70))  # 네이버 + Step 3~7 몫
-GDELT_BUDGET_MIN_SEC  = 900   # 아무리 빠듯해도 최소 15분은 보장
+# 2026-08-29 재설계 — '뒷단계 몫을 빼서 GDELT 를 깎는' 방식을 폐기했다.
+#   기존: 잡 180분 − 뒷단계 예약 70분 = GDELT 109분  (뒷단계가 GDELT 를 잠식)
+#   변경: GDELT 에 150분을 고정 배정, 뒷단계는 잡의 남은 시간을 제한 없이 사용
+#         (잡 360분 = GitHub 잡 최대치. 실측 뒷단계 소요는 13분 10초 — run #171)
+#   목적: 어떤 상황에서도 네이버 수집과 리포트 생성이 반드시 완료되게 한다.
+GDELT_BUDGET_MIN = int(os.environ.get('GDELT_BUDGET_MIN', 150))   # GDELT 단계 총 예산(분)
+GDELT_STALL_SEC  = 600        # 마지막 '성공한 호출' 이후 10분간 한 건도 성공 못하면 중단.
+                              # ⚠ 이 타이머가 재는 것은 '무응답'이 아니라 '성공 부재'다.
+                              #    타임아웃·연결거부·TLS·HTTP오류·파싱실패가 모두 여기 뭉뚱그려진다.
+                              #    원인은 아래 gdelt_errors 출력으로 확인할 것.
+# 개별 호출 상한은 '고정 초'를 쓰지 않는다(20초 고정이 느린 날 정상 수집을 끊었다).
+# 매 키워드마다 '남은 예산'을 소켓 타임아웃으로 걸어, 예산이 남아 있는 한 계속 기다린다.
+# 라이브러리(gdeltdoc 1.12.0)가 timeout 인자를 지원하지 않아 socket 기본값으로 강제한다.
 
 # ── 네이버 파라미터 ──
 NAVER_CLIENT_ID     = os.environ.get('NAVER_CLIENT_ID', '')
@@ -754,22 +755,14 @@ else:
     gdelt_stats, gdelt_errors = [], []
     t0 = time.time()
 
-    # 잔여 예산 = (잡 타임아웃 - 뒷단계 예약분) - 여기까지 이미 쓴 시간
-    _elapsed_before = t0 - _SCRIPT_T0
-    GDELT_BUDGET_SEC = max(
-        GDELT_BUDGET_MIN_SEC,
-        int((JOB_TIMEOUT_MIN - PIPELINE_RESERVE_MIN) * 60 - _elapsed_before)
-    )
-    print(f"  수집 예산: {GDELT_BUDGET_SEC//60}분 "
-          f"(잡 {JOB_TIMEOUT_MIN}분 − 뒷단계 예약 {PIPELINE_RESERVE_MIN}분 − 경과 {_elapsed_before/60:.1f}분)")
+    GDELT_BUDGET_SEC = GDELT_BUDGET_MIN * 60
+    print(f"  수집 예산: {GDELT_BUDGET_MIN}분 (고정) — 뒷단계(네이버·LLM·리포트)는 잡 잔여시간을 제한 없이 사용")
 
-    # 라이브러리가 타임아웃을 지원하지 않으므로 소켓 기본값으로 강제한다.
+    # 개별 호출 상한은 키워드마다 '남은 예산'으로 다시 설정한다(루프 안 참조).
     # GDELT 단계에서만 적용하고 끝나면 원복 (이후 LLM 호출에 영향 없도록)
     import socket as _socket
     _old_sock_timeout = _socket.getdefaulttimeout()
-    _socket.setdefaulttimeout(GDELT_SOCKET_TIMEOUT)
 
-    _consec_fail = 0
     _last_ok_t   = t0        # 마지막으로 응답을 받은 시각 (기사 0건이어도 응답이면 성공)
     _aborted = None          # 조기 중단 사유
     _done_kw = 0
@@ -777,15 +770,17 @@ else:
     for idx, keyword in enumerate(valid_keywords):
         # ── 조기 중단 판정 (수집이 진행 중이면 오래 걸려도 자르지 않는다) ──
         _now = time.time()
-        if _consec_fail >= GDELT_MAX_CONSEC_FAIL:
-            _aborted = f'연속 {_consec_fail}회 실패 — GDELT API 장애로 판단'
-            break
         if _now - _last_ok_t > GDELT_STALL_SEC:
-            _aborted = f'{GDELT_STALL_SEC//60}분간 응답 없음 — GDELT API 무응답으로 판단'
+            _aborted = f'{GDELT_STALL_SEC//60}분간 성공한 호출 없음'
             break
         if _now - t0 > GDELT_BUDGET_SEC:
-            _aborted = f'최후 안전망 {GDELT_BUDGET_SEC//60}분 초과'
+            _aborted = f'GDELT 예산 {GDELT_BUDGET_SEC//60}분 소진'
             break
+
+        # 이 키워드에 쓸 수 있는 시간 = 남은 예산. 임의의 고정 상한을 두지 않는다.
+        _remain = GDELT_BUDGET_SEC - (_now - t0)
+        if _remain > 0:
+            _socket.setdefaulttimeout(_remain)
 
         qgroup = mon_kw_source[keyword]
         n_raw = n_new = 0
@@ -818,12 +813,13 @@ else:
                 time.sleep(SLEEP_SEC)
                 break
             except Exception as e:
-                err = str(e)
-                is_network = any(x in err for x in ['ConnectionReset','ConnectionAborted',
-                                                      'RemoteDisconnected','timeout','Timeout'])
-                if is_network and attempt < MAX_RETRIES:
+                err = f'{type(e).__name__}: {e}'
+                # 2026-08-29: 예외 종류로 재시도를 가리지 않는다.
+                #   기존에는 네트워크 계열 문자열만 재시도해서, 그 외 예외는
+                #   대기 없이 즉시 다음 키워드로 넘어갔다(122개가 1초에 소진).
+                if attempt < MAX_RETRIES:
                     time.sleep(3 * (attempt + 1))
-                    err = None
+                    err = None          # 재시도 후 성공하면 실패로 집계되지 않도록 초기화
                     continue
                 gdelt_errors.append({'keyword': keyword, 'error': err})
                 break
@@ -831,10 +827,7 @@ else:
         gdelt_stats.append({'keyword': keyword, 'query_group': qgroup,
                             'raw': n_raw, 'new': n_new, 'error': err or ''})
         _done_kw += 1
-        if err:
-            _consec_fail += 1
-        else:
-            _consec_fail = 0
+        if not err:
             _last_ok_t = time.time()     # 응답을 받았으므로 무응답 타이머 리셋
 
         if (idx + 1) % 20 == 0:
@@ -847,7 +840,7 @@ else:
         _skipped = len(valid_keywords) - _done_kw
         _msg = (f'GDELT 수집 조기 중단 ({_aborted}) — '
                 f'키워드 {_done_kw}/{len(valid_keywords)} 처리, {_skipped}개 미수집. '
-                f'영문 기사가 누락된 상태로 진행합니다. GDELT 복구 후 '
+                f'영문 기사가 누락된 상태로 진행합니다. 중단 원인은 아래 실패 내역을 확인할 것. '
                 f'target_date={TARGET_DATE} 로 재실행하면 소급 수집됩니다.')
         print(f"\u26a0 {_msg}")
         if os.environ.get('GITHUB_ACTIONS') == 'true':
@@ -859,6 +852,16 @@ else:
             f'\uad6d\ub0b4(\ub124\uc774\ubc84) \uae30\uc0ac \uae30\uc900\uc73c\ub85c \uc791\uc131\ub41c \ubcf8 \ube0c\ub9ac\ud551\uc740 '
             f'\ud574\uc678 \ub3d9\ud5a5\uc774 \uacfc\uc18c \ubc18\uc601\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.'
         )
+    if gdelt_errors:
+        from collections import Counter as _C
+        _kinds = _C(e['error'].split(':')[0] for e in gdelt_errors)
+        print(f"  ⚠ GDELT 실패 {len(gdelt_errors)}건 — 예외 유형별: "
+              + ', '.join(f'{k} {v}회' for k, v in _kinds.most_common()))
+        for _e in gdelt_errors[:3]:
+            print(f"     · [{_e['keyword']}] {_e['error'][:300]}")
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            _first = gdelt_errors[0]['error'][:400].replace('\n', ' ')
+            print(f"::warning title=GDELT 실패 원인::{_first}")
     print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초, 키워드 {_done_kw}/{len(valid_keywords)})")
 
     # Raw CSV 저장
