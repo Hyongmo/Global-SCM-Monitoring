@@ -15,7 +15,7 @@ collect_daily.py
     NAVER_CLIENT_SECRET  네이버 검색 API 시크릿
 """
 
-import json, os, sys, hashlib, time, re, html, glob, requests
+import json, os, sys, hashlib, time, re, html, glob, requests, ssl, socket
 import pandas as pd
 import networkx as nx
 from collections import Counter
@@ -82,6 +82,32 @@ GDELT_ONLY   = bool(int(os.environ.get('GDELT_ONLY', 0)))
 #   ⚠ 검증을 끄면 중간자 공격으로 위조된 기사가 들어올 수 있다.
 #      daily.yml 이 schedule 실행에서는 항상 '0' 을 넘기므로 자동 실행에는 켜지지 않는다.
 GDELT_INSECURE_TLS = bool(int(os.environ.get('GDELT_INSECURE_TLS', 0)))
+
+# ── GDELT TLS 사전 점검 ──
+# 인증서 문제는 느림·장애와 달리 호출 '전에' 판별할 수 있고 우회 수단도 있다.
+# 검증 실패일 때만 잡아내고, 연결 실패·타임아웃 등은 기존 흐름(무응답 감시·예산)에 맡긴다.
+# 감지되면: 경고 메일 발송 + 국내 기사로 브리핑 생성 + 외부 수신자 발송 보류.
+CERT_PROBLEM = None
+if not GDELT_INSECURE_TLS:
+    try:
+        _ctx = ssl.create_default_context()
+        with socket.create_connection(('api.gdeltproject.org', 443), timeout=10) as _s:
+            _ctx.wrap_socket(_s, server_hostname='api.gdeltproject.org').close()
+    except ssl.SSLCertVerificationError as _ce:
+        CERT_PROBLEM = str(_ce)
+    except Exception:
+        pass          # 인증서 외의 연결 실패는 여기서 판단하지 않는다
+    if CERT_PROBLEM:
+        _cw = ('GDELT TLS 인증서 검증 실패 — 영문 해외 기사 수집 불가. '
+               '국내 기사만으로 브리핑을 생성하고 외부 발송은 보류합니다. '
+               f'({CERT_PROBLEM})')
+        print(f"\u26a0 {_cw}")
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            print(f"::warning title=GDELT \uc778\uc99d\uc11c \ubb38\uc81c::{_cw}")
+            _ge = os.environ.get('GITHUB_ENV')
+            if _ge:
+                with open(_ge, 'a', encoding='utf-8') as _f:
+                    _f.write('CERT_PROBLEM=1\n')
 
 # ── GDELT 파라미터 ──
 MAX_RECORDS    = 10 if _test_scale else 250
@@ -878,12 +904,13 @@ else:
         print(f"\u26a0 {_msg}")
         if os.environ.get('GITHUB_ACTIONS') == 'true':
             print(f"::warning title=GDELT \uc218\uc9d1 \ubbf8\uc644\ub8cc::{_msg}")
+        # 독자용 문구는 내부 사정(수집원 이름·중단 사유·키워드 수)을 노출하지 않는다.
+        # 진단 정보는 위 _msg(로그·Actions 경고)에만 남긴다.
         COLLECTION_NOTICE = (
-            f'\u26a0 GDELT(\uc601\ubb38 \ud574\uc678 \uae30\uc0ac) \uc218\uc9d1\uc774 \uc815\uc0c1 \uc885\ub8cc\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4 '
-            f'({_aborted}). \ud0a4\uc6cc\ub4dc {_done_kw}/{len(valid_keywords)}\uac1c\ub9cc \ucc98\ub9ac\ub418\uc5b4 '
-            f'\ud574\uc678 \uae30\uc0ac\uac00 \ud3ec\ud568\ub418\uc9c0 \uc54a\uac70\ub098 \ubd80\uc871\ud569\ub2c8\ub2e4. '
-            f'\uad6d\ub0b4(\ub124\uc774\ubc84) \uae30\uc0ac \uae30\uc900\uc73c\ub85c \uc791\uc131\ub41c \ubcf8 \ube0c\ub9ac\ud551\uc740 '
-            f'\ud574\uc678 \ub3d9\ud5a5\uc774 \uacfc\uc18c \ubc18\uc601\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.'
+            '\u26a0 \uc601\ubb38 \ud574\uc678\uae30\uc0ac \uc218\uc9d1\uc774 \uc815\uc0c1\uc801\uc73c\ub85c '
+            '\uc885\ub8cc\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4. \uad6d\ub0b4\uae30\uc0ac \uc911\uc2ec\uc73c\ub85c '
+            '\uc791\uc131\ub41c \ubcf8 \ube0c\ub9ac\ud551\uc740 \ud574\uc678 \ub3d9\ud5a5\uc774 '
+            '\uacfc\uc18c \ubc18\uc601\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.'
         )
     if gdelt_errors:
         from collections import Counter as _C

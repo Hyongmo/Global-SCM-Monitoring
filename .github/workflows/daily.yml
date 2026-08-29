@@ -144,6 +144,18 @@ jobs:
       # ────────────────────────────────────────────────────────
       # 7. 이메일 발송 (xlsx + docx + md 첨부)
       # ────────────────────────────────────────────────────────
+      # 인증서 문제 감지 시 경고 메일 (collect_daily.py 사전 점검이 CERT_PROBLEM=1 기록)
+      - name: Send GDELT cert alert
+        if: always() && env.CERT_PROBLEM == '1'
+        env:
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          KMI_SMTP_ADDRESS:   ${{ secrets.KMI_SMTP_ADDRESS }}
+          KMI_SMTP_PASSWORD:  ${{ secrets.KMI_SMTP_PASSWORD }}
+        run: |
+          python scripts/send_cert_alert.py
+        continue-on-error: true
+
       - name: Send email report
         if: success() && env.PIPELINE_SKIPPED != '1'
         env:
@@ -155,8 +167,9 @@ jobs:
           python scripts/send_email.py ${{ env.TARGET_DATE }}
         continue-on-error: true
 
+      # ⚠ 인증서 문제로 해외 기사가 빠진 날은 외부 수신자에게 보내지 않는다.
       - name: Send summary email (external recipients)
-        if: success() && env.PIPELINE_SKIPPED != '1'
+        if: success() && env.PIPELINE_SKIPPED != '1' && env.CERT_PROBLEM != '1'
         env:
           GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
