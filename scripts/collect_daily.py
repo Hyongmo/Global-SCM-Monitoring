@@ -70,6 +70,11 @@ _test_scale = int(os.environ.get('TEST_SCALE', 0))  # 0=정상, 양수=샘플 �
 
 # ── 수집 건너뛰기 (기존 raw CSV로 분류+리포트만 재실행) ──
 SKIP_COLLECT = bool(int(os.environ.get('SKIP_COLLECT', 0)))
+# GDELT_ONLY: GDELT 만 재수집하는 보충 모드 (수동 실행 전용).
+#   - 네이버는 수집도 분류도 하지 않는다 → 기존 분류 CSV 가 그대로 보존된다
+#   - GDELT 가 한 건도 안 들어오면 아무 파일도 건드리지 않고 종료한다
+#   - 자동(schedule) 실행에서는 daily.yml 이 항상 '0' 을 넘긴다
+GDELT_ONLY   = bool(int(os.environ.get('GDELT_ONLY', 0)))
 
 # ── GDELT 파라미터 ──
 MAX_RECORDS    = 10 if _test_scale else 250
@@ -871,12 +876,33 @@ else:
         gdelt_raw_df.to_csv(raw_csv, index=False, encoding='utf-8-sig')
         print(f"  원본 저장: {raw_csv} ({len(gdelt_raw_df)}건)")
 
+# ── GDELT_ONLY 모드: 수확이 없으면 기존 결과를 보존하고 여기서 종료 ──
+#    파일을 처음 덮어쓰는 것은 Step 3 이므로, 이 지점까지는 아무것도 변경되지 않았다.
+if GDELT_ONLY and len(gdelt_raw_df) == 0:
+    print("\n" + "=" * 60)
+    print("⏹ GDELT_ONLY 모드 — 수집된 GDELT 기사가 0건입니다.")
+    print("   기존 기사·분류·리포트를 그대로 보존하고 종료합니다. (변경된 파일 없음)")
+    print("=" * 60)
+    if os.environ.get('GITHUB_ACTIONS') == 'true':
+        print("::warning title=GDELT 보충 수집 무수확::GDELT 0건 — 기존 결과 보존 후 종료. 이메일 재발송 없음.")
+        _gh_env = os.environ.get('GITHUB_ENV')
+        if _gh_env:
+            with open(_gh_env, 'a', encoding='utf-8') as _f:
+                _f.write('PIPELINE_SKIPPED=1\n')
+    sys.exit(0)
+
 
 # ══════════════════════════════════════════════════════════════
 # 3. 네이버 수집
 # ══════════════════════════════════════════════════════════════
 
-if SKIP_COLLECT:
+if GDELT_ONLY:
+    print("\n[Step 2/7] 네이버 한국어 수집 — ⏭ GDELT_ONLY: 수집·분류 모두 건너뜀")
+    print("-" * 40)
+    print("  기존 분류 결과(naver_mon_classified_daily_*.csv)를 그대로 사용합니다.")
+    print("  → Step 4 는 자동으로 건너뛰고, Step 7 리포트 생성 때 디스크에서 읽힙니다.")
+    naver_raw_df = pd.DataFrame()      # 비어 있으면 Step 4 가 실행되지 않는다
+elif SKIP_COLLECT:
     print("\n[Step 2/7] 네이버 한국어 수집 — ⏭ SKIP_COLLECT: 기존 raw CSV 로드")
     print("-" * 40)
     _naver_raw_csv_path = os.path.join(DAILY_DIR, f'naver_mon_daily_{DATE_TAG}.csv')

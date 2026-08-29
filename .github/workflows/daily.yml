@@ -22,6 +22,10 @@ on:
         description: '수집 건너뛰기 (1=기존 raw CSV로 분류+리포트만 재실행)'
         required: false
         default: '0'
+      gdelt_only:
+        description: 'GDELT만 보충 수집 (1=네이버 수집·분류 건너뜀. GDELT 0건이면 기존 결과 보존하고 종료)'
+        required: false
+        default: '0'
 
 jobs:
   daily-pipeline:
@@ -83,6 +87,7 @@ jobs:
           GDELT_BUDGET_MIN:     "150"   # GDELT 단계 총 예산(분). 뒷단계는 별도 예약 없음
           TEST_SCALE:           ${{ github.event.inputs.test_scale || '0' }}
           SKIP_COLLECT:         ${{ github.event.inputs.skip_collect || '0' }}
+          GDELT_ONLY:           ${{ github.event.inputs.gdelt_only || '0' }}
         run: |
           python scripts/collect_daily.py ${{ env.TARGET_DATE }}
 
@@ -134,7 +139,7 @@ jobs:
       # 7. 이메일 발송 (xlsx + docx + md 첨부)
       # ────────────────────────────────────────────────────────
       - name: Send email report
-        if: success()
+        if: success() && env.PIPELINE_SKIPPED != '1'
         env:
           GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -145,7 +150,7 @@ jobs:
         continue-on-error: true
 
       - name: Send summary email (external recipients)
-        if: success()
+        if: success() && env.PIPELINE_SKIPPED != '1'
         env:
           GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
