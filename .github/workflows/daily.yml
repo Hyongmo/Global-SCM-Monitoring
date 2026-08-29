@@ -26,6 +26,10 @@ on:
         description: 'GDELT만 보충 수집 (1=네이버 수집·분류 건너뜀. GDELT 0건이면 기존 결과 보존하고 종료)'
         required: false
         default: '0'
+      gdelt_insecure_tls:
+        description: '⚠ GDELT TLS 검증 끄기 (1=인증서 만료 우회. 갱신되면 반드시 0으로)'
+        required: false
+        default: '0'
 
 jobs:
   daily-pipeline:
@@ -88,6 +92,8 @@ jobs:
           TEST_SCALE:           ${{ github.event.inputs.test_scale || '0' }}
           SKIP_COLLECT:         ${{ github.event.inputs.skip_collect || '0' }}
           GDELT_ONLY:           ${{ github.event.inputs.gdelt_only || '0' }}
+          # ⚠ 인증서 만료 우회. schedule 실행에서는 inputs 가 없으므로 항상 '0'.
+          GDELT_INSECURE_TLS:   ${{ github.event.inputs.gdelt_insecure_tls || '0' }}
         run: |
           python scripts/collect_daily.py ${{ env.TARGET_DATE }}
 

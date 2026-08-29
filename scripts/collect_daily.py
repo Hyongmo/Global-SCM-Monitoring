@@ -75,6 +75,13 @@ SKIP_COLLECT = bool(int(os.environ.get('SKIP_COLLECT', 0)))
 #   - GDELT 가 한 건도 안 들어오면 아무 파일도 건드리지 않고 종료한다
 #   - 자동(schedule) 실행에서는 daily.yml 이 항상 '0' 을 넘긴다
 GDELT_ONLY   = bool(int(os.environ.get('GDELT_ONLY', 0)))
+# GDELT_INSECURE_TLS: GDELT 호출에 한해 TLS 인증서 검증을 끈다. 수동 실행 전용.
+#   2026-08-28 19:50 UTC 에 api.gdeltproject.org 인증서(Let's Encrypt)가 만료되어
+#   갱신되지 않아, 모든 호출이 CERTIFICATE_VERIFY_FAILED 로 즉시 실패한다.
+#   API 자체는 정상(curl -k 로 기사 반환 확인). 갱신되면 이 옵션은 꺼야 한다.
+#   ⚠ 검증을 끄면 중간자 공격으로 위조된 기사가 들어올 수 있다.
+#      daily.yml 이 schedule 실행에서는 항상 '0' 을 넘기므로 자동 실행에는 켜지지 않는다.
+GDELT_INSECURE_TLS = bool(int(os.environ.get('GDELT_INSECURE_TLS', 0)))
 
 # ── GDELT 파라미터 ──
 MAX_RECORDS    = 10 if _test_scale else 250
@@ -763,6 +770,25 @@ else:
     GDELT_BUDGET_SEC = GDELT_BUDGET_MIN * 60
     print(f"  수집 예산: {GDELT_BUDGET_MIN}분 (고정) — 뒷단계(네이버·LLM·리포트)는 잡 잔여시간을 제한 없이 사용")
 
+    # ── TLS 검증 비활성화 (GDELT 단계에서만, 끝나면 반드시 원복) ──
+    _orig_requests_get = None
+    if GDELT_INSECURE_TLS:
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        _orig_requests_get = requests.get
+
+        def _insecure_get(*a, **kw):
+            kw.setdefault('verify', False)
+            return _orig_requests_get(*a, **kw)
+
+        requests.get = _insecure_get
+        _w = ('GDELT TLS 인증서 검증 비활성화 상태로 수집합니다 '
+              '(api.gdeltproject.org 인증서 2026-08-28 만료). '
+              '위조 기사 유입 가능성이 있으므로 인증서 갱신 후 반드시 꺼야 합니다.')
+        print(f"  \u26a0 {_w}")
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
+            print(f"::warning title=GDELT TLS 검증 비활성화::{_w}")
+
     # 개별 호출 상한은 키워드마다 '남은 예산'으로 다시 설정한다(루프 안 참조).
     # GDELT 단계에서만 적용하고 끝나면 원복 (이후 LLM 호출에 영향 없도록)
     import socket as _socket
@@ -839,6 +865,8 @@ else:
             print(f"  [{idx+1}/{len(valid_keywords)}] {len(gdelt_articles)}건 수집 중...")
 
     _socket.setdefaulttimeout(_old_sock_timeout)   # 원복
+    if _orig_requests_get is not None:
+        requests.get = _orig_requests_get          # 네이버·LLM 호출은 TLS 검증 유지
     elapsed = time.time() - t0
 
     if _aborted:
