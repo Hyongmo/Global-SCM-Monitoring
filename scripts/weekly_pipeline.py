@@ -3108,11 +3108,16 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
             return '', {}
 
     sub['_priority'] = sub['alert_level_1st'].map(ALERT_PRIORITY).fillna(0)
-    recent_cutoff = win_end - pd.Timedelta(weeks=2)
+    # V12: (1) 컷오프를 리포트가 다루는 1주로 맞춤 (2주면 도미넌트 14일 필터와
+    #          경계가 겹쳐 _older 가 경계일 하루로 붕괴)
+    #      (2) 선택 정렬을 최신순으로 — 오름차순이면 윈도우 앞쪽(가장 오래된)
+    #          기사가 할당량을 채워 이번 주 기사가 0건이 되는 문제가 있었음
+    #      표시 순서는 아래 top.sort_values('date') 로 종전대로 날짜 오름차순
+    recent_cutoff = win_end - pd.Timedelta(weeks=1)
     _recent = sub[sub['date'] >= recent_cutoff].sort_values(
-        ['_priority', 'date'], ascending=[False, True]).head(max_articles // 2)
+        ['_priority', 'date'], ascending=[False, False]).head(max_articles // 2)
     _older  = sub[sub['date'] <  recent_cutoff].sort_values(
-        ['_priority', 'date'], ascending=[False, True]).head(max_articles - len(_recent))
+        ['_priority', 'date'], ascending=[False, False]).head(max_articles - len(_recent))
     top = pd.concat([_older, _recent]).drop_duplicates().sort_values('date')
     lines = ['=== 주요 기사 목록 (situation_summary 인용 참고용) ===']
     lines.append(f'기간: {win_start.strftime("%Y-%m-%d")} ~ {win_end.strftime("%Y-%m-%d")}')
