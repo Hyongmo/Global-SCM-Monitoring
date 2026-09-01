@@ -127,12 +127,13 @@ MAX_RETRIES    = 2
 #         (잡 360분 = GitHub 잡 최대치. 실측 뒷단계 소요는 13분 10초 — run #171)
 #   목적: 어떤 상황에서도 네이버 수집과 리포트 생성이 반드시 완료되게 한다.
 GDELT_BUDGET_MIN = int(os.environ.get('GDELT_BUDGET_MIN', 150))   # GDELT 단계 총 예산(분)
-GDELT_STALL_SEC  = 600        # 마지막 '성공한 호출' 이후 10분간 한 건도 성공 못하면 중단.
-                              # ⚠ 이 타이머가 재는 것은 '무응답'이 아니라 '성공 부재'다.
-                              #    타임아웃·연결거부·TLS·HTTP오류·파싱실패가 모두 여기 뭉뚱그려진다.
-                              #    원인은 아래 gdelt_errors 출력으로 확인할 것.
-# 개별 호출 상한은 '고정 초'를 쓰지 않는다(20초 고정이 느린 날 정상 수집을 끊었다).
-# 매 키워드마다 '남은 예산'을 소켓 타임아웃으로 걸어, 예산이 남아 있는 한 계속 기다린다.
+# (2026-08-31) '10분 무성공 중단' 폐지 — GDELT가 느리지만 살아있던 날(성공률 ~1/4,
+#   성공 호출도 ~50초)에는 10분 무성공이 정상적으로 발생해, 예산 150분 중 19분만
+#   쓰고 115개 키워드를 버렸다. 완전히 죽은 경우는 다른 장치가 잡는다:
+#     인증서 문제 → 사전 점검이 루프 전에 감지
+#     즉시 실패형 → 루프가 저절로 빨리 끝남 (8/28 실측: 122개 전멸에 49초)
+#     무한 대기형 → 루프 안 '호출당 대기 상한'이 차단
+#   따라서 시간 통제는 예산 150분 하나로 충분하다.
 # 라이브러리(gdeltdoc 1.12.0)가 timeout 인자를 지원하지 않아 socket 기본값으로 강제한다.
 
 # ── 네이버 파라미터 ──
@@ -785,6 +786,41 @@ else:
     valid_keywords = [kw for kw in mon_keywords if len(kw) >= MIN_KEYWORD_LEN]
     print(f"키워드: {len(valid_keywords)}개")
 
+    # ── 수집 순서 정렬 (2026-08-31) ──
+    # 예산이 도중에 끊기는 날에는 앞쪽 키워드만 수집된다. 즉 순서가 곧 우선순위다.
+    #   1순위: 현재 '확정' 위기 클러스터(cluster_registry_v2.json)와 KG로 연결된 키워드
+    #   2순위: 최근 4주(주간 시스템 WINDOW_WEEKS와 같은 기간)의 실제 기사 산출량
+    # 정상일에는 전 키워드를 모두 돌므로 수집 결과에 영향 없음 — 순서만 바뀐다.
+    # 레지스트리·과거 CSV가 없으면 그 기준만 조용히 생략한다(수집은 계속).
+    _crisis_nodes = set()
+    try:
+        with open('cluster_registry_v2.json', encoding='utf-8') as _f:
+            _crisis_nodes = {cid for cid, c in json.load(_f).items()
+                             if c.get('status') == 'confirmed'}
+    except Exception as _e:
+        print(f"  ⚠ 클러스터 레지스트리 읽기 실패({_e}) — 위기 연결 기준 생략")
+    _yield_cnt = Counter()
+    _yield_since = TARGET_DATE - timedelta(weeks=4)
+    for _p in glob.glob(os.path.join(MONITOR_DIR, '*', 'gdelt_mon_daily_*.csv')):
+        _tag = os.path.basename(_p)[len('gdelt_mon_daily_'):-len('.csv')]
+        try:
+            if datetime.strptime(_tag, '%Y%m%d').date() < _yield_since:
+                continue
+            for _kw in pd.read_csv(_p, usecols=['query_keyword'])['query_keyword']:
+                _yield_cnt[_kw] += 1
+        except Exception:
+            continue
+    _scored = []
+    for _kw in valid_keywords:
+        _hit = 0
+        if _crisis_nodes and _entity_patterns:
+            _m = match_entities(_kw, _entity_patterns, _kg_G, _kg_nodes)
+            _hit = int(bool(set(_m.get('matched_entities', [])) & _crisis_nodes))
+        _scored.append((_hit, _yield_cnt.get(_kw, 0), _kw))
+    _scored.sort(key=lambda t: (-t[0], -t[1]))
+    valid_keywords = [t[2] for t in _scored]
+    print(f"  수집 순서: 위기 연결 {sum(1 for t in _scored if t[0])}개 우선 → 최근 4주 산출량순")
+
     s_date = TARGET_DATE.strftime('%Y-%m-%d')
     e_date = (TARGET_DATE + timedelta(days=1)).strftime('%Y-%m-%d')
 
@@ -820,34 +856,36 @@ else:
     import socket as _socket
     _old_sock_timeout = _socket.getdefaulttimeout()
 
-    _last_ok_t   = t0        # 마지막으로 응답을 받은 시각 (기사 0건이어도 응답이면 성공)
     _aborted = None          # 조기 중단 사유
     _done_kw = 0
+    _max_ok_call = 0.0       # 이번 실행에서 성공한 호출이 걸린 최장 시간(초)
 
     for idx, keyword in enumerate(valid_keywords):
-        # ── 조기 중단 판정 (수집이 진행 중이면 오래 걸려도 자르지 않는다) ──
         _now = time.time()
-        if _now - _last_ok_t > GDELT_STALL_SEC:
-            _aborted = f'{GDELT_STALL_SEC//60}분간 성공한 호출 없음'
-            break
         if _now - t0 > GDELT_BUDGET_SEC:
             _aborted = f'GDELT 예산 {GDELT_BUDGET_SEC//60}분 소진'
             break
 
-        # 이 키워드에 쓸 수 있는 시간 = 남은 예산. 임의의 고정 상한을 두지 않는다.
-        _remain = GDELT_BUDGET_SEC - (_now - t0)
-        if _remain > 0:
-            _socket.setdefaulttimeout(_remain)
+        # 호출당 대기 상한 = 남은 예산을 남은 키워드 수로 나눈 몫.
+        #   (시작 시점 기준 9,000초 ÷ 122개 ≈ 74초 — 느린 날 성공 호출 실측 ~53초보다 여유)
+        # 단, 실제 성공한 호출이 그보다 오래 걸린 적이 있으면 그 시간만큼은 기다려준다.
+        # 임의의 고정 초는 없다 — 예산(사용자 결정)과 관측값에서만 도출.
+        _remain   = GDELT_BUDGET_SEC - (_now - t0)
+        _per_call = max(_max_ok_call, _remain / (len(valid_keywords) - idx))
+        if _per_call > 0:
+            _socket.setdefaulttimeout(_per_call)
 
         qgroup = mon_kw_source[keyword]
         n_raw = n_new = 0
         err = None
 
         for attempt in range(MAX_RETRIES + 1):
+            _t_call = time.time()
             try:
                 f = Filters(keyword=keyword, start_date=s_date, end_date=e_date,
                             num_records=MAX_RECORDS, language=LANGUAGES)
                 results = gd.article_search(f)
+                _max_ok_call = max(_max_ok_call, time.time() - _t_call)
                 if results is not None and len(results) > 0:
                     n_raw = len(results)
                     for _, row in results.iterrows():
@@ -884,8 +922,6 @@ else:
         gdelt_stats.append({'keyword': keyword, 'query_group': qgroup,
                             'raw': n_raw, 'new': n_new, 'error': err or ''})
         _done_kw += 1
-        if not err:
-            _last_ok_t = time.time()     # 응답을 받았으므로 무응답 타이머 리셋
 
         if (idx + 1) % 20 == 0:
             print(f"  [{idx+1}/{len(valid_keywords)}] {len(gdelt_articles)}건 수집 중...")
