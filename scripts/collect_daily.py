@@ -940,14 +940,48 @@ else:
         print(f"\u26a0 {_msg}")
         if os.environ.get('GITHUB_ACTIONS') == 'true':
             print(f"::warning title=GDELT \uc218\uc9d1 \ubbf8\uc644\ub8cc::{_msg}")
-        # 독자용 문구는 내부 사정(수집원 이름·중단 사유·키워드 수)을 노출하지 않는다.
+        # 독자용 배너는 '결과'가 평소에 못 미칠 때만 붙인다 (2026-09-02).
+        #   기준선 = 최근 4주 중 배너 없이 발행된 날들의 일별 수집량 최솟값.
+        #   "과소 반영되었을 수 있다"는 문구는 정상일에 관측된 적 없는 낮은
+        #   수준일 때만 사실이 된다. (9/1 사례: 예산은 소진했으나 4,244건 —
+        #   평시 중앙값의 3배 — 인데도 배너가 나갔다.)
+        #   배너가 붙었던 날은 daily_report_llm JSON 의 collection_notice 로
+        #   식별해 기준 계산에서 자동 제외한다 → 장애일이 기준선을 오염시키지
+        #   않는다. 비교할 정상일 이력이 없으면 안전하게 배너를 붙인다.
+        # 문구는 내부 사정(수집원 이름·중단 사유·키워드 수)을 노출하지 않는다.
         # 진단 정보는 위 _msg(로그·Actions 경고)에만 남긴다.
-        COLLECTION_NOTICE = (
-            '\u26a0 \uc601\ubb38 \ud574\uc678\uae30\uc0ac \uc218\uc9d1\uc774 \uc815\uc0c1\uc801\uc73c\ub85c '
-            '\uc885\ub8cc\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4. \uad6d\ub0b4\uae30\uc0ac \uc911\uc2ec\uc73c\ub85c '
-            '\uc791\uc131\ub41c \ubcf8 \ube0c\ub9ac\ud551\uc740 \ud574\uc678 \ub3d9\ud5a5\uc774 '
-            '\uacfc\uc18c \ubc18\uc601\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.'
-        )
+        _baseline = None
+        _bl_since = TARGET_DATE - timedelta(weeks=4)
+        _normals = []
+        for _jp in glob.glob(os.path.join(MONITOR_DIR, '*', 'daily_report_llm_*.json')):
+            _jt = os.path.basename(_jp)[len('daily_report_llm_'):-len('.json')]
+            try:
+                _jd = datetime.strptime(_jt, '%Y%m%d').date()
+                if not (_bl_since <= _jd < TARGET_DATE):
+                    continue
+                with open(_jp, encoding='utf-8') as _jf:
+                    if json.load(_jf).get('collection_notice'):
+                        continue                 # 배너 붙었던 날은 기준에서 제외
+                _csvp = os.path.join(MONITOR_DIR, _jt, f'gdelt_mon_daily_{_jt}.csv')
+                if os.path.exists(_csvp):
+                    _normals.append(len(pd.read_csv(_csvp, usecols=['url_hash'])))
+            except Exception:
+                continue
+        if _normals:
+            _baseline = min(_normals)
+
+        if _baseline is not None and len(gdelt_articles) >= _baseline:
+            print(f"  배너 생략: 수집 {len(gdelt_articles)}건 ≥ "
+                  f"최근 4주 정상일 최솟값 {_baseline}건 (예산은 소진, 수집량은 평소 범위)")
+        else:
+            _bl_txt = f'{_baseline}건' if _baseline is not None else '비교 이력 없음'
+            print(f"  배너 표시: 수집 {len(gdelt_articles)}건 < 기준선({_bl_txt})")
+            COLLECTION_NOTICE = (
+                '\u26a0 \uc601\ubb38 \ud574\uc678\uae30\uc0ac \uc218\uc9d1\uc774 \uc815\uc0c1\uc801\uc73c\ub85c '
+                '\uc885\ub8cc\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4. \uad6d\ub0b4\uae30\uc0ac \uc911\uc2ec\uc73c\ub85c '
+                '\uc791\uc131\ub41c \ubcf8 \ube0c\ub9ac\ud551\uc740 \ud574\uc678 \ub3d9\ud5a5\uc774 '
+                '\uacfc\uc18c \ubc18\uc601\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.'
+            )
     if gdelt_errors:
         from collections import Counter as _C
         _kinds = _C(e['error'].split(':')[0] for e in gdelt_errors)
