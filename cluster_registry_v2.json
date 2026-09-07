@@ -24,10 +24,10 @@
     "created_week": "2019-W06",
     "last_signal_week": "2026-W37",
     "rolling_crisis_pct": 40.5,
-    "rolling_wc_pct": 97.3,
-    "n_articles_rolling": 1750,
-    "n_crisis_rolling": 803,
-    "n_warning_rolling": 889
+    "rolling_wc_pct": 97.2,
+    "n_articles_rolling": 1748,
+    "n_crisis_rolling": 802,
+    "n_warning_rolling": 887
   },
   "CP_Malacca": {
     "canonical_id": "CP_Malacca",
@@ -113,11 +113,11 @@
     "peak_alert": "Crisis",
     "created_week": "2019-W29",
     "last_signal_week": "2026-W37",
-    "rolling_crisis_pct": 19.4,
-    "rolling_wc_pct": 99.4,
+    "rolling_crisis_pct": 21.3,
+    "rolling_wc_pct": 97.5,
     "n_articles_rolling": 128,
-    "n_crisis_rolling": 32,
-    "n_warning_rolling": 95
+    "n_crisis_rolling": 33,
+    "n_warning_rolling": 93
   },
   "EVT_COVID2020": {
     "canonical_id": "EVT_COVID2020",
