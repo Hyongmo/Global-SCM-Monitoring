@@ -3051,8 +3051,15 @@ def get_kg_context_brief(top_commodities, top_sectors, tier, G, nodes, max_nodes
     return '\n'.join(lines)
 
 
+def _norm_title_key(t):
+    """제목 정규화 키 — 특수문자·공백을 걷어낸 소문자 (V13: 표기 차이로
+    링크 대조가 실패하던 문제 수정. GDELT 수집분은 따옴표 제거·공백 변형으로
+    일일 리포트의 원 표기와 달라진다)."""
+    return re.sub(r'[^0-9a-z\uac00-\ud7a3]', '', str(t).lower())
+
+
 def _build_title_url_lookup():
-    """일일 모니터링 JSON → title→URL 룩업 (주간 [N] 인용용)."""
+    """일일 모니터링 JSON → 정규화제목→URL 룩업 (주간 [N] 인용용)."""
     lookup = {}
     mon_dir = BASE_DIR / 'monitoring'
     if mon_dir.is_dir():
@@ -3069,7 +3076,7 @@ def _build_title_url_lookup():
                             _t = _a.get('title', '').strip()
                             _u = _a.get('url', '')
                             if _t and _u:
-                                lookup[_t] = _u
+                                lookup[_norm_title_key(_t)] = _u
                 except Exception:
                     pass
     return lookup
@@ -3108,16 +3115,36 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
             return '', {}
 
     sub['_priority'] = sub['alert_level_1st'].map(ALERT_PRIORITY).fillna(0)
-    # V12: (1) 컷오프를 리포트가 다루는 1주로 맞춤 (2주면 도미넌트 14일 필터와
-    #          경계가 겹쳐 _older 가 경계일 하루로 붕괴)
-    #      (2) 선택 정렬을 최신순으로 — 오름차순이면 윈도우 앞쪽(가장 오래된)
-    #          기사가 할당량을 채워 이번 주 기사가 0건이 되는 문제가 있었음
-    #      표시 순서는 아래 top.sort_values('date') 로 종전대로 날짜 오름차순
+    # V13: 일자별 신호량 비례 배분 선택 (노트북 v13과 동일).
+    #   총순위 정렬 + 상위 N 방식은 입력이 쏠리면 반드시 한쪽이 독식한다
+    #   (V11까지: 가장 오래된 날 독점 → V12: 가장 최신 날 독점, W36에서
+    #    9/6 하루가 이번 주 12칸 전부 차지, 9/5 대사건 0건).
+    #   각 날짜의 신호량(경보등급 가중 기사량)에 비례해 칸을 나누면
+    #   조용한 날은 자연히 0칸(기계적 날짜 채우기 아님), 쏠린 주는 쏠린
+    #   대로 반영된다. 일일 파이프라인 proportional_sample 과 같은 원리.
+    #   표시 순서는 아래 top.sort_values('date') 로 종전대로 날짜 오름차순.
     recent_cutoff = win_end - pd.Timedelta(weeks=1)
-    _recent = sub[sub['date'] >= recent_cutoff].sort_values(
-        ['_priority', 'date'], ascending=[False, False]).head(max_articles // 2)
-    _older  = sub[sub['date'] <  recent_cutoff].sort_values(
-        ['_priority', 'date'], ascending=[False, False]).head(max_articles - len(_recent))
+
+    def _pick_prop(pool, n):
+        if len(pool) <= n:
+            return pool
+        _day = pool['date'].dt.strftime('%Y-%m-%d')
+        _w = pool.groupby(_day)['_priority'].sum()
+        _alloc = (_w / _w.sum() * n).round().astype(int)
+        _parts = []
+        for _d, _k in _alloc.items():
+            if _k > 0:
+                _parts.append(pool[_day == _d].sort_values(
+                    ['_priority', 'date'], ascending=[False, False]).head(int(_k)))
+        _out = pd.concat(_parts) if _parts else pool.head(0)
+        if len(_out) < n:   # 반올림 잔여분은 전체 우선순위순으로 보충
+            _rest = pool.drop(_out.index).sort_values(
+                ['_priority', 'date'], ascending=[False, False]).head(n - len(_out))
+            _out = pd.concat([_out, _rest])
+        return _out.head(n)
+
+    _recent = _pick_prop(sub[sub['date'] >= recent_cutoff], max_articles // 2)
+    _older  = _pick_prop(sub[sub['date'] <  recent_cutoff], max_articles - len(_recent))
     top = pd.concat([_older, _recent]).drop_duplicates().sort_values('date')
     lines = ['=== 주요 기사 목록 (situation_summary 인용 참고용) ===']
     lines.append(f'기간: {win_start.strftime("%Y-%m-%d")} ~ {win_end.strftime("%Y-%m-%d")}')
@@ -3146,7 +3173,13 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
             _ctag = f'[dominant]' if _is_dom else '[기타]'
         else:
             _ctag = ''
-        _url = title_url_lookup.get(title.strip(), '')
+        _nk = _norm_title_key(title)
+        _url = title_url_lookup.get(_nk, '')
+        if not _url and len(_nk) >= 40:   # 절단 대비 앞부분 일치 (짧은 제목 오매칭 방지 안전장치)
+            for _lk_k, _lk_v in title_url_lookup.items():
+                if _lk_k.startswith(_nk) or _nk.startswith(_lk_k):
+                    _url = _lk_v
+                    break
         ref_map[str(ref_num)] = {'title': title, 'url': _url}
         lines.append(f'[{ref_num}] {_ctag} {v5_tag} [{level}] 보도일 {date_str} {freshness}{trig_tag}  {title}')
         summary = str(row.get('event_summary', '')).strip()
@@ -3528,7 +3561,14 @@ def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df
                                         signal.get('top_sectors', []), tier, G, nodes)
     prev_summary = summarize_prev_scenario(prev_scenario)
 
-    ind_snap_prompt = get_indicator_snapshot(ref_date, indicator_df, indicator_meta) if ref_date is not None else {}
+    # V14: 변동률 규약 통일 — 프롬프트용 스냅샷도 '전주 발간값' 기준으로 계산.
+    #   종전에는 프롬프트용(CSV행끼리)과 저장용(발간값 기준)이 달라 LLM 본문과
+    #   지표표의 변동률이 매주 어긋났다(8/24 WTI, W36 GSCPI·천연가스 등).
+    #   전주 시나리오가 없으면 종전대로 CSV행 기준으로 동작한다.
+    _prev_ind_prompt = prev_scenario.get('indicators') if prev_scenario else None
+    ind_snap_prompt = (get_indicator_snapshot(ref_date, indicator_df, indicator_meta,
+                                              prev_indicators=_prev_ind_prompt)
+                       if ref_date is not None else {})
     top_sectors_set = set(signal.get('top_sectors', []))
     confirmed_cluster_ids_set = set(signal.get('confirmed_clusters', {}).keys())
     indicator_section = format_indicators_for_llm(ind_snap_prompt, top_sectors_set, indicator_meta, G,
