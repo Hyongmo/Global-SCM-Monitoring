@@ -4657,6 +4657,10 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
             for cp_id, kw in _CP_KEYWORDS.items():
                 if kw in _all_paths:
                     _active_cps.add(cp_id)
+            # 2026-09-14: 경로 본문에 직접 짚인 CP = '주요 교란'(빨강) 후보로 보관
+            #   (그간 dominant 하나만 빨강이라, W37처럼 복수 구간이 본격 위협일 때
+            #    바브엘만데브·수에즈가 부차(주황)로 보이던 문제의 수정 — 사용자 승인)
+            _direct_cps = set(_active_cps)
             # Layer 2: KG linkedTo 양방향 전파 (같은 수로 관문 — 어느 쪽 교란이든 전체 항로 차단)
             _propagated = set()
             for cp_id in list(_active_cps):
@@ -4693,14 +4697,19 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                 coord = _GEO[cp_id]
                 name = _CP_NAMES.get(cp_id, cp_id)
                 is_dominant = (cp_id == _dominant)
+                is_direct = (cp_id in _direct_cps)
                 is_secondary = (cp_id in _secondary_cps)
                 if is_dominant:
                     color, radius, opacity, status = '#c0392b', 10, 1.0, '주요 교란'
+                elif is_direct:
+                    # 그 주 전파 경로에 직접 짚인 구간 — 본격 위협 (2026-09-14)
+                    color, radius, opacity, status = '#c0392b', 8, 0.95, '주요 교란'
                 elif is_secondary:
-                    color, radius, opacity, status = '#e67e22', 8, 0.9, '교란'
+                    # KG 지리 연쇄로만 포함된 구간
+                    color, radius, opacity, status = '#e67e22', 7, 0.85, '연쇄 영향'
                 else:
                     color, radius, opacity, status = '#2980b9', 5, 0.4, '정상'
-                popup = f"<b>{name}</b><br>상태: {status}" if (is_dominant or is_secondary) else f"<b>{name}</b>"
+                popup = f"<b>{name}</b><br>상태: {status}" if (is_dominant or is_direct or is_secondary) else f"<b>{name}</b>"
                 # CP_Panama는 한국 오른쪽(+360°)에 기본 표시
                 lng = coord[1] + 360 if cp_id == 'CP_Panama' else coord[1]
                 markers_js.append(
@@ -4834,13 +4843,15 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                     )
             all_js = ' '.join(markers_js + routes_js)
             # ── 범례 ──
-            dominant_names = [_CP_NAMES.get(c,'') for c in [_dominant] if c in _CP_NAMES and c in _active_cps]
-            secondary_names = [_CP_NAMES.get(c,'') for c in _secondary_cps if c in _CP_NAMES]
+            # 2026-09-14: 범례도 마커 등급과 동일 — 직접 짚인 구간은 '주요', 연쇄만 '연쇄 영향'
+            _major_cps = ({_dominant} | _direct_cps) & set(_CP_NAMES) & _active_cps
+            dominant_names = sorted(_CP_NAMES.get(c, '') for c in _major_cps)
+            secondary_names = sorted(_CP_NAMES.get(c, '') for c in (_secondary_cps - _direct_cps) if c in _CP_NAMES)
             legend_parts = []
             if dominant_names:
-                legend_parts.append(f'<span style="color:#c0392b">\u25cf 주요:</span> {", ".join(dominant_names)}')
+                legend_parts.append(f'<span style="color:#c0392b">\u25cf 주요 교란:</span> {", ".join(dominant_names)}')
             if secondary_names:
-                legend_parts.append(f'<span style="color:#e67e22">\u25cf 부차:</span> {", ".join(secondary_names)}')
+                legend_parts.append(f'<span style="color:#e67e22">\u25cf 연쇄 영향:</span> {", ".join(secondary_names)}')
             legend_html = ' | '.join(legend_parts) if legend_parts else '현재 교란 없음'
             commodity_list = ', '.join(active_commodities) if active_commodities else '-'
             # 우회 경로 범례
