@@ -6765,8 +6765,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 55,
-      "delta": -46
+      "count": 56,
+      "delta": -47
     },
     {
       "id": "CF_Naphtha",
@@ -6797,13 +6797,6 @@
       "delta": -13
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 7,
-      "delta": 6
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -6823,6 +6816,13 @@
       "type": "선종",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": -4
     }
   ]
 }

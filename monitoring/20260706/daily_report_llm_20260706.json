@@ -2044,13 +2044,6 @@
       "delta": 2
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 0
-    },
-    {
       "id": "EVT_RedSea2023",
       "name": "홍해·후티 사태",
       "type": "위기 이벤트",
@@ -2084,6 +2077,13 @@
       "type": "우회 인프라",
       "count": 1,
       "delta": 1
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 1,
+      "delta": -1
     }
   ]
 }

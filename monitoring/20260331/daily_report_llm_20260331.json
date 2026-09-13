@@ -4329,13 +4329,6 @@
       "delta": -31
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 5,
-      "delta": -6
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -4369,6 +4362,13 @@
       "type": "품목",
       "count": 3,
       "delta": -9
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 1
     }
   ]
 }

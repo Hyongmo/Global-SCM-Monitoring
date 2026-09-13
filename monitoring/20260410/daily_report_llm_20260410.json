@@ -2997,7 +2997,7 @@
       "name": "원유",
       "type": "품목",
       "count": 70,
-      "delta": 5
+      "delta": 4
     },
     {
       "id": "CF_LNG",
@@ -3012,13 +3012,6 @@
       "type": "품목",
       "count": 8,
       "delta": 4
-    },
-    {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 1
     },
     {
       "id": "KP_Busan",

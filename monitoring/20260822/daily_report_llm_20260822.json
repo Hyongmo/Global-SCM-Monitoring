@@ -1774,18 +1774,18 @@
       "delta": -11
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": 3
-    },
-    {
       "id": "CF_LNG",
       "name": "LNG",
       "type": "품목",
       "count": 2,
       "delta": -1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
     },
     {
       "id": "VT_Reefer",

@@ -3250,8 +3250,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 123,
-      "delta": 51
+      "count": 124,
+      "delta": 52
     },
     {
       "id": "CP_Hormuz",
@@ -3266,13 +3266,6 @@
       "type": "위기 이벤트",
       "count": 13,
       "delta": 7
-    },
-    {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 12,
-      "delta": 8
     },
     {
       "id": "CF_LNG",
@@ -3313,6 +3306,13 @@
       "id": "KP_Busan",
       "name": "부산항",
       "type": "한국 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
       "count": 2,
       "delta": 2
     }

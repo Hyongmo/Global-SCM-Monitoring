@@ -2543,7 +2543,7 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 80,
+      "count": 81,
       "delta": 17
     },
     {
@@ -2589,18 +2589,18 @@
       "delta": 0
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 4,
-      "delta": 4
-    },
-    {
       "id": "EVT_Ukraine2022",
       "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
       "count": 4,
       "delta": 4
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
     },
     {
       "id": "CF_LNG",

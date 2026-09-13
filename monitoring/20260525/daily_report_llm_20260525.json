@@ -3085,13 +3085,6 @@
       "delta": 13
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 5,
-      "delta": 2
-    },
-    {
       "id": "VT_LNG",
       "name": "LNG선",
       "type": "선종",
@@ -3132,6 +3125,13 @@
       "type": "초크포인트",
       "count": 1,
       "delta": 1
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 1,
+      "delta": -3
     }
   ]
 }

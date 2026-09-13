@@ -2826,13 +2826,6 @@
       "delta": 3
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": -4
-    },
-    {
       "id": "POL_UreaStockpile",
       "name": "요소 전략비축",
       "type": "정책",
@@ -2859,6 +2852,13 @@
       "type": "정책",
       "count": 1,
       "delta": 0
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 1,
+      "delta": -4
     }
   ]
 }

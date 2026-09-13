@@ -2465,13 +2465,6 @@
       "delta": -5
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 4,
-      "delta": 0
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -2489,6 +2482,13 @@
       "id": "FP_Tubarao",
       "name": "Tubarao",
       "type": "해외 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "KP_Incheon",
+      "name": "인천항",
+      "type": "한국 항만",
       "count": 2,
       "delta": 2
     }

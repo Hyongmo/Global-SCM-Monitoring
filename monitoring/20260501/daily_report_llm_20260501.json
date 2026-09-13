@@ -2770,8 +2770,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 85,
-      "delta": -23
+      "count": 87,
+      "delta": -22
     },
     {
       "id": "CP_Hormuz",
@@ -2807,13 +2807,6 @@
       "type": "한국 항만",
       "count": 2,
       "delta": 2
-    },
-    {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 2,
-      "delta": -2
     },
     {
       "id": "CF_Urea",

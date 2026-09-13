@@ -3128,8 +3128,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 65,
-      "delta": -35
+      "count": 66,
+      "delta": -34
     },
     {
       "id": "CP_Hormuz",
@@ -3146,25 +3146,11 @@
       "delta": 4
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 4,
-      "delta": -3
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
       "count": 4,
       "delta": -4
-    },
-    {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 2,
-      "delta": 0
     },
     {
       "id": "CP_BabElMandeb",
@@ -3193,6 +3179,20 @@
       "type": "품목",
       "count": 1,
       "delta": -3
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

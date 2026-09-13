@@ -1680,25 +1680,11 @@
       "delta": -8
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 0
-    },
-    {
       "id": "CF_RareEarth",
       "name": "희토류",
       "type": "품목",
       "count": 2,
       "delta": 2
-    },
-    {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 2,
-      "delta": -4
     },
     {
       "id": "VT_LNG",
@@ -1724,6 +1710,13 @@
     {
       "id": "CF_Naphtha",
       "name": "나프타",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
       "type": "품목",
       "count": 1,
       "delta": 1

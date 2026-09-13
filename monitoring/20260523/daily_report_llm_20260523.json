@@ -2568,13 +2568,6 @@
       "delta": -4
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 7,
-      "delta": -4
-    },
-    {
       "id": "CF_LNG",
       "name": "LNG",
       "type": "품목",
@@ -2622,6 +2615,13 @@
       "type": "품목",
       "count": 1,
       "delta": -1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

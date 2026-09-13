@@ -3359,16 +3359,16 @@
       "delta": -1
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 2,
-      "delta": -1
-    },
-    {
       "id": "KP_Busan",
       "name": "부산항",
       "type": "한국 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
       "count": 1,
       "delta": 1
     }

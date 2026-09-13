@@ -18097,7 +18097,7 @@
       "name": "원유",
       "type": "품목",
       "count": 353,
-      "delta": 277
+      "delta": 276
     },
     {
       "id": "CF_Naphtha",
@@ -18128,25 +18128,11 @@
       "delta": -8
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 15,
-      "delta": 14
-    },
-    {
       "id": "CF_Urea",
       "name": "요소",
       "type": "품목",
       "count": 12,
       "delta": 9
-    },
-    {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 11,
-      "delta": 11
     },
     {
       "id": "KP_Ulsan",
@@ -18161,6 +18147,20 @@
       "type": "품목",
       "count": 7,
       "delta": 4
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 6,
+      "delta": 2
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 5,
+      "delta": -4
     }
   ]
 }

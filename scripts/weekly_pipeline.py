@@ -185,6 +185,31 @@ def build_entity_patterns(nodes):
         if len(kw) >= 2:
             patterns[kw.lower()] = (nid, name, ntype)
 
+    _SKIP_TOKENS = {
+        # 지리 용어
+        'strait', 'canal', 'channel', 'waterway', 'sea', 'ocean', 'gulf',
+        'bay', 'port', 'passage', 'route', 'waters', 'lane', 'basin',
+        # 제네릭 동사/명사 (단독 패턴 시 오매핑 위험)
+        'export', 'import', 'control', 'ban', 'restriction', 'crisis',
+        'trade', 'supply', 'demand', 'price', 'market', 'risk', 'impact',
+        'flow', 'policy', 'security', 'global', 'international',
+        # 2026-09-13 보강: 흔한 영단어 1토큰 오탐 차단
+        # (예: war→우크라이나, tanker→케미컬탱커, saudi/pipeline→East-West,
+        #  and→롯데건설, crude/brent→석탄. 고유 낱말(houthi, petroline 등)은 유지)
+        'and', 'the', 'for', 'with', 'from', 'new',
+        'war', 'attack', 'attacks', 'blockade', 'conflict', 'disruption',
+        'invasion', 'tension', 'tensions',
+        'shipping', 'reroute', 'energy', 'gas', 'oil', 'lng', 'strategic',
+        'petroleum', 'reserve', 'release', 'diversification',
+        'chemical', 'tanker', 'product', 'pipeline', 'saudi',
+        'east', 'west', 'red', 'black',
+        'european', 'container', 'goods', 'material', 'materials',
+        'japan', 'taiwan', 'korea', 'china', 'russia', 'iran',
+        'regulation', 'semiconductor',
+        'engineering', 'construction', 'group', 'holdings', 'corporation',
+        'corp', 'company', 'industries', 'industry', 'heavy', 'electronics',
+    }
+
     for nid, n in nodes.items():
         ntype = n.get("node_type", "")
         name  = n.get("name", "")
@@ -192,37 +217,18 @@ def build_entity_patterns(nodes):
 
         # 1) aliases (가장 우선: 명시적으로 정의된 키워드)
         for alias in n.get("aliases", []):
+            # 별칭도 차단 목록 적용 (예: 'Taiwan'→대만해협, 'semiconductor'→제조 오탐 방지)
+            if alias.lower() in _SKIP_TOKENS:
+                continue
             add(alias, nid, name, ntype)
 
         # 2) 영문 이름 전체 + 개별 토큰
         #    ⚠ 제네릭 지리 용어(strait, canal 등)는 단독 패턴 금지
         #      "Lombok Strait" → "strait" 단독 등록 시 모든 해협 기사에 오매칭
-        _SKIP_TOKENS = {
-            # 지리 용어
-            'strait', 'canal', 'channel', 'waterway', 'sea', 'ocean', 'gulf',
-            'bay', 'port', 'passage', 'route', 'waters', 'lane', 'basin',
-            # 제네릭 동사/명사 (단독 패턴 시 오매핑 위험)
-            'export', 'import', 'control', 'ban', 'restriction', 'crisis',
-            'trade', 'supply', 'demand', 'price', 'market', 'risk', 'impact',
-            'flow', 'policy', 'security', 'global', 'international',
-            # 2026-09-13 보강: 흔한 영단어 1토큰 오탐 차단
-            # (예: war→우크라이나, tanker→케미컬탱커, saudi/pipeline→East-West,
-            #  and→롯데건설, crude/brent→석탄. 고유 낱말(houthi, petroline 등)은 유지)
-            'and', 'the', 'for', 'with', 'from', 'new',
-            'war', 'attack', 'attacks', 'blockade', 'conflict', 'disruption',
-            'invasion', 'tension', 'tensions',
-            'shipping', 'reroute', 'energy', 'gas', 'oil', 'lng', 'strategic',
-            'petroleum', 'reserve', 'release', 'diversification',
-            'chemical', 'tanker', 'product', 'pipeline', 'saudi',
-            'east', 'west', 'red', 'black',
-            'european', 'container', 'goods', 'material', 'materials',
-            'engineering', 'construction', 'group', 'holdings', 'corporation',
-            'corp', 'company', 'industries', 'industry', 'heavy', 'electronics',
-        }
         if name_en:
             add(name_en, nid, name, ntype)
             for tok in name_en.split():
-                if len(tok) >= 3 and tok.lower() not in _SKIP_TOKENS:
+                if len(tok) >= 3 and not tok.isdigit() and tok.lower() not in _SKIP_TOKENS:
                     add(tok, nid, name, ntype)
 
         # 3) ID 접두사 제거 (CP_Hormuz → hormuz)
@@ -4956,6 +4962,9 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                 'HMM', '팬오션', '가스공사', '대한항공', 'CJ제일제당', '농심',
                 'SK이노베이션',
             }
+            # ── 공급망 요소별 기사량 (주간) — 전주 대비 변화 위에 배치 (2026-09-13)
+            #    kg_focus 없는 과거 주차는 미표시
+            html.append(render_kg_focus_block(s))
             changes = [
                 c for c in header.get('changes_from_prev', [])
                 if c.get('item', '') not in _IND_STOCK_NAMES
@@ -4977,8 +4986,6 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                     html.append(f'<li><span class="horizon">{esc(w.get("horizon",""))}</span> {clean_kg(w.get("point",""))}</li>')
                 html.append('</ul></div>')
             html.append('</div>')  # header-block
-            # ── 공급망 요소별 기사량 (주간) — kg_focus 없는 과거 주차는 미표시 ──
-            html.append(render_kg_focus_block(s))
             # 지표 패널
             html.append(render_indicators(indicators))
             # Part A

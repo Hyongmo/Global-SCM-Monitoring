@@ -2933,7 +2933,7 @@
       "name": "원유",
       "type": "품목",
       "count": 111,
-      "delta": 24
+      "delta": 23
     },
     {
       "id": "EVT_RedSea2023",
@@ -2978,18 +2978,11 @@
       "delta": 8
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 5,
-      "delta": 4
-    },
-    {
       "id": "CP_Taiwan",
       "name": "대만해협",
       "type": "초크포인트",
-      "count": 4,
-      "delta": 3
+      "count": 2,
+      "delta": 1
     },
     {
       "id": "CP_Panama",
@@ -2997,6 +2990,13 @@
       "type": "초크포인트",
       "count": 2,
       "delta": -1
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

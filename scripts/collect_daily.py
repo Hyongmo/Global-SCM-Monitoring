@@ -243,6 +243,8 @@ def build_entity_patterns(nodes):
         'chemical', 'tanker', 'product', 'pipeline', 'saudi',
         'east', 'west', 'red', 'black',
         'european', 'container', 'goods', 'material', 'materials',
+        'japan', 'taiwan', 'korea', 'china', 'russia', 'iran',
+        'regulation', 'semiconductor',
         'engineering', 'construction', 'group', 'holdings', 'corporation',
         'corp', 'company', 'industries', 'industry', 'heavy', 'electronics',
     }
@@ -251,11 +253,14 @@ def build_entity_patterns(nodes):
         name   = n.get("name", "")
         name_en = n.get("nameEn", "")
         for alias in n.get("aliases", []):
+            # 별칭도 차단 목록 적용 (예: 'Taiwan'→대만해협, 'semiconductor'→제조 오탐 방지)
+            if alias.lower() in _SKIP_TOKENS:
+                continue
             add(alias, nid, name, ntype)
         if name_en:
             add(name_en, nid, name, ntype)
             for tok in name_en.split():
-                if len(tok) >= 3 and tok.lower() not in _SKIP_TOKENS:
+                if len(tok) >= 3 and not tok.isdigit() and tok.lower() not in _SKIP_TOKENS:
                     add(tok, nid, name, ntype)
         short_id = nid.split("_", 1)[-1] if "_" in nid else nid
         if len(short_id) >= 3 and short_id.lower() not in _SKIP_TOKENS:

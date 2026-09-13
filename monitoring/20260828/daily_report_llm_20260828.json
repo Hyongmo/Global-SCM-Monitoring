@@ -1688,7 +1688,7 @@
       "name": "원유",
       "type": "품목",
       "count": 43,
-      "delta": -14
+      "delta": -15
     },
     {
       "id": "CP_Hormuz",
@@ -1726,13 +1726,6 @@
       "delta": 2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": -1
-    },
-    {
       "id": "CF_Wheat",
       "name": "밀",
       "type": "품목",
@@ -1752,6 +1745,13 @@
       "type": "품목",
       "count": 2,
       "delta": 1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

@@ -2511,13 +2511,6 @@
       "delta": 6
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 8,
-      "delta": 7
-    },
-    {
       "id": "POL_GrainReserve",
       "name": "곡물 비축 확대",
       "type": "정책",
@@ -2537,6 +2530,13 @@
       "type": "정책",
       "count": 5,
       "delta": 4
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 4,
+      "delta": 3
     }
   ]
 }

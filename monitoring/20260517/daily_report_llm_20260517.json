@@ -2291,14 +2291,7 @@
       "name": "원유",
       "type": "품목",
       "count": 31,
-      "delta": -41
-    },
-    {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 16,
-      "delta": 8
+      "delta": -43
     },
     {
       "id": "CF_LNG",
@@ -2329,16 +2322,16 @@
       "delta": 1
     },
     {
-      "id": "POL_GrainReserve",
-      "name": "곡물 비축 확대",
-      "type": "정책",
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
       "count": 1,
       "delta": 1
     },
     {
-      "id": "CF_Wheat",
-      "name": "밀",
-      "type": "품목",
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
       "count": 1,
       "delta": 1
     },

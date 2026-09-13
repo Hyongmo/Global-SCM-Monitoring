@@ -3643,7 +3643,7 @@
       "name": "원유",
       "type": "품목",
       "count": 101,
-      "delta": 74
+      "delta": 73
     },
     {
       "id": "CF_LNG",
@@ -3667,13 +3667,6 @@
       "delta": 3
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 4,
-      "delta": 4
-    },
-    {
       "id": "CF_Urea",
       "name": "요소",
       "type": "품목",
@@ -3695,11 +3688,18 @@
       "delta": 2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
       "delta": 2
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

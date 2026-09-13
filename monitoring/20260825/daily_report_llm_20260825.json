@@ -2855,7 +2855,7 @@
       "name": "원유",
       "type": "품목",
       "count": 78,
-      "delta": 46
+      "delta": 45
     },
     {
       "id": "CP_Hormuz",
@@ -2914,11 +2914,11 @@
       "delta": 1
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 3
+      "id": "KP_Incheon",
+      "name": "인천항",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

@@ -2595,18 +2595,18 @@
       "delta": 2
     },
     {
-      "id": "FP_RasTanura",
-      "name": "라스타누라",
-      "type": "해외 항만",
-      "count": 3,
-      "delta": -2
-    },
-    {
       "id": "FP_RasLaffan",
       "name": "라스라판",
       "type": "해외 항만",
       "count": 3,
       "delta": -3
+    },
+    {
+      "id": "FP_RasTanura",
+      "name": "라스타누라",
+      "type": "해외 항만",
+      "count": 3,
+      "delta": -2
     },
     {
       "id": "KP_Tongyeong",
@@ -2634,7 +2634,7 @@
       "name": "대만해협",
       "type": "초크포인트",
       "count": 1,
-      "delta": 0
+      "delta": 1
     }
   ]
 }

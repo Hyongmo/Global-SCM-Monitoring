@@ -2364,13 +2364,6 @@
       "delta": -9
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 5,
-      "delta": 1
-    },
-    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
@@ -2397,6 +2390,13 @@
       "type": "초크포인트",
       "count": 2,
       "delta": 2
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

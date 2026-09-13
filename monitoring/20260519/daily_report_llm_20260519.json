@@ -2890,13 +2890,6 @@
       "delta": -11
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 5,
-      "delta": 4
-    },
-    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
@@ -2937,6 +2930,13 @@
       "type": "품목",
       "count": 2,
       "delta": 1
+    },
+    {
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
+      "type": "선종",
+      "count": 1,
+      "delta": -1
     }
   ]
 }

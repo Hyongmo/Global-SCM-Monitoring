@@ -2495,18 +2495,18 @@
       "delta": 1
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 2,
-      "delta": -1
-    },
-    {
       "id": "KP_Busan",
       "name": "부산항",
       "type": "한국 항만",
       "count": 2,
       "delta": 1
+    },
+    {
+      "id": "FP_Qingdao",
+      "name": "칭다오",
+      "type": "해외 항만",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

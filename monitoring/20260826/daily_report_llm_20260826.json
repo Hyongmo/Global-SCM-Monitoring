@@ -2840,8 +2840,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 84,
-      "delta": 6
+      "count": 87,
+      "delta": 9
     },
     {
       "id": "BP_OmanLand",
@@ -2872,13 +2872,6 @@
       "delta": 8
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 7,
-      "delta": 4
-    },
-    {
       "id": "POL_GrainReserve",
       "name": "곡물 비축 확대",
       "type": "정책",
@@ -2898,6 +2891,13 @@
       "type": "한국 항만",
       "count": 4,
       "delta": 4
+    },
+    {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 4,
+      "delta": -8
     }
   ]
 }

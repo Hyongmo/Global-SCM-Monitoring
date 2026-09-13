@@ -2765,7 +2765,7 @@
       "name": "원유",
       "type": "품목",
       "count": 79,
-      "delta": 11
+      "delta": 10
     },
     {
       "id": "CP_Hormuz",
@@ -2817,18 +2817,18 @@
       "delta": 2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": 1
-    },
-    {
       "id": "FP_Indonesian",
       "name": "인도네시아 항만",
       "type": "해외 항만",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": -3
     }
   ]
 }

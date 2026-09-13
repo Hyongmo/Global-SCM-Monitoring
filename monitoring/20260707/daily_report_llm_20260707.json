@@ -1896,18 +1896,18 @@
       "delta": 1
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 0
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 2,
+      "delta": 2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": 3
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

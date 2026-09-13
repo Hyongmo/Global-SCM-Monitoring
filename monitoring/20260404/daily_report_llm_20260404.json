@@ -4265,13 +4265,6 @@
       "delta": 5
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 6,
-      "delta": 1
-    },
-    {
       "id": "VT_LNG",
       "name": "LNG선",
       "type": "선종",
@@ -4291,6 +4284,13 @@
       "type": "우회 인프라",
       "count": 2,
       "delta": 0
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

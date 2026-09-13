@@ -2260,13 +2260,6 @@
       "delta": -4
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": 3
-    },
-    {
       "id": "POL_GrainReserve",
       "name": "곡물 비축 확대",
       "type": "정책",
@@ -2286,6 +2279,13 @@
       "type": "초크포인트",
       "count": 2,
       "delta": 2
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 1,
+      "delta": -1
     }
   ]
 }

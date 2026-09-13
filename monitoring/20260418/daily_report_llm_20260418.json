@@ -3958,18 +3958,18 @@
       "delta": 2
     },
     {
-      "id": "POL_UreaStockpile",
-      "name": "요소 전략비축",
-      "type": "정책",
-      "count": 2,
-      "delta": 2
-    },
-    {
       "id": "CF_Urea",
       "name": "요소",
       "type": "품목",
       "count": 2,
       "delta": -2
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 2,
+      "delta": 2
     },
     {
       "id": "CF_LNG",

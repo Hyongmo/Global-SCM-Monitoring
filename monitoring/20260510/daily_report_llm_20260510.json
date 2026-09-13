@@ -3255,13 +3255,6 @@
       "delta": -2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 2,
-      "delta": 2
-    },
-    {
       "id": "KP_Ulsan",
       "name": "울산항",
       "type": "한국 항만",
@@ -3281,6 +3274,13 @@
       "type": "우회 인프라",
       "count": 1,
       "delta": -3
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

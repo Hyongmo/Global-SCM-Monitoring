@@ -2944,13 +2944,6 @@
       "delta": -26
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 6,
-      "delta": 3
-    },
-    {
       "id": "CF_Urea",
       "name": "요소",
       "type": "품목",
@@ -2979,11 +2972,11 @@
       "delta": -4
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
       "count": 4,
-      "delta": 4
+      "delta": 2
     },
     {
       "id": "POL_UreaStockpile",
@@ -2991,6 +2984,13 @@
       "type": "정책",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "CP_Malacca",
+      "name": "말라카 해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": -1
     }
   ]
 }

@@ -1843,13 +1843,6 @@
       "delta": 2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 2,
-      "delta": 1
-    },
-    {
       "id": "POL_GrainReserve",
       "name": "곡물 비축 확대",
       "type": "정책",
@@ -1867,6 +1860,13 @@
       "id": "KP_Gwangyang",
       "name": "광양항",
       "type": "한국 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "FP_Qingdao",
+      "name": "칭다오",
+      "type": "해외 항만",
       "count": 1,
       "delta": 1
     }

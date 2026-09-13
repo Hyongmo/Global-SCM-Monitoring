@@ -643,10 +643,15 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     # 2. 전주 대비 주요 변화
     # ══════════════════════════════════════════════════
+    # ── 공급망 요소별 기사량 (2026-09-13, W37 생성분부터) — 전주 대비 변화 위 ──
+    _sec = 2
+    if scenario.get('kg_focus') and scenario.get('week', '') >= KG_FOCUS_PDF_FROM_WEEK:
+        _draw_kg_focus(pdf, scenario, _sec)
+        _sec += 1
     changes = [c for c in header.get('changes_from_prev', [])
                if c.get('item', '') not in _STOCK_NAMES]
     if changes:
-        pdf._section_title(2, '전주 대비 주요 변화')
+        pdf._section_title(_sec, '전주 대비 주요 변화')
         # 테이블: 항목/변화/이전/현재만 (상세는 아래 본문으로)
         headers_chg = ['항목', '변화', '이전', '현재']
         widths_chg = [35, 15, 45, 45]
@@ -678,12 +683,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     # 3. 주요 지표
     # ══════════════════════════════════════════════════
-    # ── 공급망 요소별 기사량 (2026-09-13, W37 생성분부터) ──
-    _sec = 3
-    if scenario.get('kg_focus') and scenario.get('week', '') >= KG_FOCUS_PDF_FROM_WEEK:
-        _draw_kg_focus(pdf, scenario, _sec)
-        _sec += 1
-    pdf._section_title(_sec, '주요 지표')
+    pdf._section_title(_sec + 1, '주요 지표')
 
     # 지표를 그룹별로 분류
     ind_by_group = {}
@@ -744,7 +744,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     routes = scenario.get('part_a', {}).get('routes', [])
     if routes:
-        pdf._section_title(_sec + 1, '국제 → 한국 전파경로')
+        pdf._section_title(_sec + 2, '국제 → 한국 전파경로')
         for r in routes:
             status = r.get('status', '')
             commodity = clean_text(r.get('commodity', ''))
@@ -789,7 +789,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     matrix = scenario.get('part_d', {}).get('matrix', [])
     if matrix:
-        pdf._section_title(_sec + 2, '산업별 영향 매트릭스')
+        pdf._section_title(_sec + 3, '산업별 영향 매트릭스')
         headers_m = ['산업', '방향', '초기', '중기', '장기', '변화']
         widths_m = [30, 18, 18, 18, 18, 12]
         rows_m = []
@@ -830,7 +830,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     wps = header.get('watchpoints', [])
 
     if vulns or recs or wps:
-        pdf._section_title(_sec + 3, '취약점 진단 및 모니터링 권고')
+        pdf._section_title(_sec + 4, '취약점 진단 및 모니터링 권고')
 
         if wps:
             pdf._sub_heading('향후 주시 포인트')

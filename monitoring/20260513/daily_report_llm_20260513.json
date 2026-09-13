@@ -2712,7 +2712,7 @@
       "name": "원유",
       "type": "품목",
       "count": 56,
-      "delta": 6
+      "delta": 5
     },
     {
       "id": "CF_LNG",
@@ -2720,13 +2720,6 @@
       "type": "품목",
       "count": 6,
       "delta": 0
-    },
-    {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 4,
-      "delta": -4
     },
     {
       "id": "CF_Naphtha",
@@ -2769,6 +2762,13 @@
       "type": "선종",
       "count": 1,
       "delta": 1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

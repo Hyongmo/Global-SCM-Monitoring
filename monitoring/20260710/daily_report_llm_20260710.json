@@ -2160,23 +2160,9 @@
       "delta": -5
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 1
-    },
-    {
       "id": "CF_RareEarth",
       "name": "희토류",
       "type": "품목",
-      "count": 2,
-      "delta": -3
-    },
-    {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
       "count": 2,
       "delta": -3
     },
@@ -2200,6 +2186,20 @@
       "type": "품목",
       "count": 1,
       "delta": 1
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 1,
+      "delta": -1
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": -1
     }
   ]
 }

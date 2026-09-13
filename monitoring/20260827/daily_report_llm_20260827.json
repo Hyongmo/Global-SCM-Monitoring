@@ -2043,8 +2043,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 57,
-      "delta": -27
+      "count": 58,
+      "delta": -29
     },
     {
       "id": "BP_OmanLand",
@@ -2089,16 +2089,16 @@
       "delta": -2
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 4,
-      "delta": 3
-    },
-    {
       "id": "CP_Suez",
       "name": "수에즈 운하",
       "type": "초크포인트",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
       "count": 3,
       "delta": 3
     }

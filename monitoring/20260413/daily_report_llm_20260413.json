@@ -3867,13 +3867,6 @@
       "delta": 1
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 8,
-      "delta": -8
-    },
-    {
       "id": "CP_BabElMandeb",
       "name": "바브엘만데브 해협",
       "type": "초크포인트",
@@ -3886,13 +3879,6 @@
       "type": "초크포인트",
       "count": 3,
       "delta": 2
-    },
-    {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 3
     },
     {
       "id": "POL_SPR",
@@ -3912,6 +3898,20 @@
       "id": "FP_Vladivostok",
       "name": "블라디보스토크",
       "type": "해외 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
       "count": 1,
       "delta": 1
     }

@@ -2522,13 +2522,6 @@
       "delta": -1
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 4,
-      "delta": 2
-    },
-    {
       "id": "CP_BabElMandeb",
       "name": "바브엘만데브 해협",
       "type": "초크포인트",
@@ -2560,6 +2553,13 @@
       "id": "FP_Rotterdam",
       "name": "로테르담",
       "type": "해외 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
       "count": 1,
       "delta": 1
     }

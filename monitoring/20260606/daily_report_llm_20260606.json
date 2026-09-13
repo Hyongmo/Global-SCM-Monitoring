@@ -2519,18 +2519,18 @@
       "delta": -7
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 6,
-      "delta": 5
-    },
-    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
       "count": 5,
       "delta": 5
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": 4
     },
     {
       "id": "VT_Container",

@@ -3659,8 +3659,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 85,
-      "delta": -16
+      "count": 86,
+      "delta": -15
     },
     {
       "id": "CP_Hormuz",
@@ -3684,13 +3684,6 @@
       "delta": 7
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 6,
-      "delta": 2
-    },
-    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
@@ -3712,17 +3705,24 @@
       "delta": 0
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": 0
-    },
-    {
       "id": "EVT_Ukraine2022",
       "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
       "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 2,
       "delta": 2
     }
   ]

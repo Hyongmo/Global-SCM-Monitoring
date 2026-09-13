@@ -1416,13 +1416,6 @@
       "delta": 3
     },
     {
-      "id": "EVT_Japan2019",
-      "name": "2019 일본 반도체규제",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": 3
-    },
-    {
       "id": "KP_Ulsan",
       "name": "울산항",
       "type": "한국 항만",
@@ -1447,6 +1440,13 @@
       "id": "KP_Tongyeong",
       "name": "통영LNG기지",
       "type": "한국 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
       "count": 2,
       "delta": 2
     }

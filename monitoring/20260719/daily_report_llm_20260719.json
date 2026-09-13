@@ -2529,7 +2529,7 @@
       "name": "원유",
       "type": "품목",
       "count": 33,
-      "delta": -19
+      "delta": -20
     },
     {
       "id": "CP_Hormuz",
@@ -2574,13 +2574,6 @@
       "delta": 1
     },
     {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 1,
-      "delta": 1
-    },
-    {
       "id": "KP_Busan",
       "name": "부산항",
       "type": "한국 항만",
@@ -2591,6 +2584,13 @@
       "id": "FP_Qingdao",
       "name": "칭다오",
       "type": "해외 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
       "count": 1,
       "delta": 1
     }

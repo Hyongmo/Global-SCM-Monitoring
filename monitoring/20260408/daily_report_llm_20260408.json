@@ -4369,7 +4369,7 @@
       "name": "원유",
       "type": "품목",
       "count": 100,
-      "delta": 15
+      "delta": 14
     },
     {
       "id": "CF_LNG",
@@ -4391,13 +4391,6 @@
       "type": "품목",
       "count": 8,
       "delta": -7
-    },
-    {
-      "id": "CP_Taiwan",
-      "name": "대만해협",
-      "type": "초크포인트",
-      "count": 7,
-      "delta": 4
     },
     {
       "id": "BP_OmanLand",
@@ -4426,6 +4419,13 @@
       "type": "위기 이벤트",
       "count": 3,
       "delta": 0
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
     }
   ]
 }
