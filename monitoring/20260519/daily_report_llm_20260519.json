@@ -2872,15 +2872,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 101,
-      "delta": 28
+      "count": 107,
+      "delta": 29
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 43,
-      "delta": 41
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 44,
+      "delta": 42
     },
     {
       "id": "CP_Hormuz",
@@ -2890,38 +2890,10 @@
       "delta": -11
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 20,
-      "delta": -24
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 14,
-      "delta": -1
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 5,
-      "delta": -1
-    },
-    {
       "id": "EVT_Japan2019",
       "name": "2019 일본 반도체규제",
       "type": "위기 이벤트",
       "count": 5,
-      "delta": 4
-    },
-    {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 4,
       "delta": 4
     },
     {
@@ -2932,11 +2904,39 @@
       "delta": 1
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 3,
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 2,
       "delta": 2
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": -2
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

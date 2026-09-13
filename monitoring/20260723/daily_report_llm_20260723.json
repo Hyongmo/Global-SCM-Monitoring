@@ -2932,29 +2932,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 100,
-      "delta": 25
+      "count": 111,
+      "delta": 24
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 76,
-      "delta": 26
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 66,
-      "delta": 36
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 37,
-      "delta": -7
+      "delta": 27
     },
     {
       "id": "CP_Hormuz",
@@ -2964,27 +2950,6 @@
       "delta": -16
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 18,
-      "delta": -1
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 18,
-      "delta": -9
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 14,
-      "delta": 3
-    },
-    {
       "id": "CP_BabElMandeb",
       "name": "바브엘만데브 해협",
       "type": "초크포인트",
@@ -2992,11 +2957,46 @@
       "delta": 5
     },
     {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 9,
+      "delta": 3
+    },
+    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
       "count": 9,
       "delta": 6
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 9,
+      "delta": 8
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 5,
+      "delta": 4
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": 3
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": -1
     }
   ]
 }

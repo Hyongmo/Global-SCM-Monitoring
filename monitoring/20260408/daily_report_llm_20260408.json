@@ -4368,29 +4368,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 94,
-      "delta": 14
+      "count": 100,
+      "delta": 15
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 48,
-      "delta": -21
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 17,
+      "count": 8,
       "delta": 4
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 16,
-      "delta": 13
     },
     {
       "id": "CP_Panama",
@@ -4421,11 +4407,25 @@
       "delta": 4
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 5,
-      "delta": 3
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 4,
+      "delta": 0
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 4,
+      "delta": 1
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 0
     }
   ]
 }

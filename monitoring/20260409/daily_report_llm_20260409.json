@@ -3125,6 +3125,13 @@
   },
   "kg_focus": [
     {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 65,
+      "delta": -35
+    },
+    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -3132,39 +3139,11 @@
       "delta": -75
     },
     {
-      "id": "CF_CrudeOil",
-      "name": "원유",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 61,
-      "delta": -33
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 39,
-      "delta": -9
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 13,
-      "delta": -3
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 10,
-      "delta": 5
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 5,
-      "delta": -12
+      "count": 12,
+      "delta": 4
     },
     {
       "id": "CP_Taiwan",
@@ -3174,13 +3153,6 @@
       "delta": -3
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 4,
-      "delta": 1
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
@@ -3188,11 +3160,39 @@
       "delta": -4
     },
     {
-      "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
       "type": "위기 이벤트",
       "count": 2,
-      "delta": 2
+      "delta": 0
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "KP_Incheon",
+      "name": "인천항",
+      "type": "한국 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 1,
+      "delta": -3
     }
   ]
 }

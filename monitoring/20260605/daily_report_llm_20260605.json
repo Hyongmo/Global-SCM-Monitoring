@@ -2164,8 +2164,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 55,
-      "delta": 33
+      "count": 62,
+      "delta": 38
     },
     {
       "id": "CP_Hormuz",
@@ -2175,25 +2175,11 @@
       "delta": 4
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 16,
-      "delta": 13
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 13,
-      "delta": 4
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 12,
-      "delta": -12
+      "count": 15,
+      "delta": 5
     },
     {
       "id": "BP_OmanLand",
@@ -2201,13 +2187,6 @@
       "type": "우회 인프라",
       "count": 9,
       "delta": 7
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 7,
-      "delta": 4
     },
     {
       "id": "VT_Container",
@@ -2228,6 +2207,27 @@
       "name": "나프타",
       "type": "품목",
       "count": 4,
+      "delta": 2
+    },
+    {
+      "id": "KP_Daesan",
+      "name": "대산항",
+      "type": "한국 항만",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 2,
       "delta": 2
     }
   ]

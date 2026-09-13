@@ -2010,22 +2010,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 40,
-      "delta": -11
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 24,
-      "delta": -22
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 11,
-      "delta": 9
+      "count": 44,
+      "delta": -10
     },
     {
       "id": "BP_OmanLand",
@@ -2035,25 +2021,18 @@
       "delta": 4
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 8,
-      "delta": -1
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 10,
+      "delta": -15
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 7,
+      "count": 5,
       "delta": -4
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
-      "count": 4,
-      "delta": 0
     },
     {
       "id": "KP_Tongyeong",
@@ -2063,10 +2042,31 @@
       "delta": 4
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 3,
+      "delta": -4
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
       "type": "정책",
-      "count": 4,
+      "count": 3,
+      "delta": -12
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 2,
       "delta": -5
     }
   ]

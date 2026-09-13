@@ -3885,8 +3885,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 69,
-      "delta": 23
+      "count": 75,
+      "delta": 26
     },
     {
       "id": "CP_Hormuz",
@@ -3896,39 +3896,11 @@
       "delta": 12
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 58,
-      "delta": 7
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 13,
-      "delta": 5
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 12,
-      "delta": -4
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
       "count": 9,
-      "delta": 6
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 8,
-      "delta": 5
+      "delta": -6
     },
     {
       "id": "VT_Reefer",
@@ -3938,11 +3910,11 @@
       "delta": -4
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
       "count": 6,
-      "delta": -9
+      "delta": 3
     },
     {
       "id": "CP_Taiwan",
@@ -3950,6 +3922,34 @@
       "type": "초크포인트",
       "count": 6,
       "delta": 4
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 4,
+      "delta": 2
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

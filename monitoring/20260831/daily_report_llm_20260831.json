@@ -1833,11 +1833,11 @@
       "delta": 13
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 7,
-      "delta": 7
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 3,
+      "delta": 2
     },
     {
       "id": "VT_Container",
@@ -1845,13 +1845,6 @@
       "type": "선종",
       "count": 3,
       "delta": 2
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 3,
-      "delta": 3
     },
     {
       "id": "CP_Suez",
@@ -1885,6 +1878,13 @@
       "id": "CF_RareEarth",
       "name": "희토류",
       "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
       "count": 1,
       "delta": 1
     }

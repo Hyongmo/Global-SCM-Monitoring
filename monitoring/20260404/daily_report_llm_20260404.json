@@ -4230,25 +4230,18 @@
       "delta": 41
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 74,
-      "delta": 0
-    },
-    {
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 47,
-      "delta": -8
+      "count": 51,
+      "delta": -7
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 16,
-      "delta": 10
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 26,
+      "delta": 13
     },
     {
       "id": "VT_Reefer",
@@ -4265,20 +4258,6 @@
       "delta": 8
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 7,
-      "delta": -3
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
-      "count": 7,
-      "delta": 1
-    },
-    {
       "id": "CF_Meat",
       "name": "육류",
       "type": "품목",
@@ -4291,6 +4270,27 @@
       "type": "초크포인트",
       "count": 6,
       "delta": 1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 5,
+      "delta": -2
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 3,
+      "delta": -9
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": 0
     }
   ]
 }

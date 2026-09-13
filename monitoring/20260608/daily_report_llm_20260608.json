@@ -2497,15 +2497,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 43,
-      "delta": 15
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 28,
-      "delta": 5
+      "count": 44,
+      "delta": 16
     },
     {
       "id": "CP_Hormuz",
@@ -2516,31 +2509,17 @@
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
-      "count": 15,
-      "delta": 15
+      "count": 14,
+      "delta": 14
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 8,
-      "delta": 3
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
       "count": 6,
-      "delta": 1
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 5,
-      "delta": -2
+      "delta": -1
     },
     {
       "id": "CP_Taiwan",
@@ -2550,18 +2529,39 @@
       "delta": 2
     },
     {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
-      "count": 3,
-      "delta": 2
-    },
-    {
       "id": "CP_BabElMandeb",
       "name": "바브엘만데브 해협",
       "type": "초크포인트",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 1,
+      "delta": -1
+    },
+    {
+      "id": "FP_Rotterdam",
+      "name": "로테르담",
+      "type": "해외 항만",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

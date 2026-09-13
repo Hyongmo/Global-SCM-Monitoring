@@ -2469,6 +2469,13 @@
   },
   "kg_focus": [
     {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 67,
+      "delta": -2
+    },
+    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -2476,32 +2483,11 @@
       "delta": -6
     },
     {
-      "id": "CF_CrudeOil",
-      "name": "원유",
-      "type": "품목",
-      "count": 61,
-      "delta": -3
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 36,
-      "delta": 12
-    },
-    {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 18,
-      "delta": -3
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 12,
-      "delta": 7
+      "delta": -2
     },
     {
       "id": "BP_OmanLand",
@@ -2509,13 +2495,6 @@
       "type": "우회 인프라",
       "count": 12,
       "delta": 2
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 12,
-      "delta": -3
     },
     {
       "id": "VT_Reefer",
@@ -2537,6 +2516,27 @@
       "type": "초크포인트",
       "count": 8,
       "delta": 7
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 7,
+      "delta": 6
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 6,
+      "delta": 1
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 5,
+      "delta": 4
     }
   ]
 }

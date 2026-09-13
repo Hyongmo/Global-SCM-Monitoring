@@ -3698,39 +3698,18 @@
       "delta": 3
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 73,
-      "delta": 35
-    },
-    {
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 65,
-      "delta": 29
+      "count": 68,
+      "delta": 24
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 17,
-      "delta": 16
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 12,
-      "delta": 6
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
       "count": 9,
-      "delta": -4
+      "delta": -2
     },
     {
       "id": "VT_Reefer",
@@ -3743,22 +3722,43 @@
       "id": "POL_GrainReserve",
       "name": "곡물 비축 확대",
       "type": "정책",
-      "count": 7,
-      "delta": 5
+      "count": 5,
+      "delta": 3
     },
     {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
+      "id": "CF_IronOre",
+      "name": "철광석",
       "type": "품목",
-      "count": 6,
-      "delta": 4
+      "count": 4,
+      "delta": 3
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 6,
-      "delta": -2
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

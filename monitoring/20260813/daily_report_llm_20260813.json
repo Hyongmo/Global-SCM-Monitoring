@@ -2669,15 +2669,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 51,
-      "delta": -10
+      "count": 54,
+      "delta": -13
     },
     {
       "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
-      "count": 46,
-      "delta": 10
+      "count": 25,
+      "delta": 21
     },
     {
       "id": "POL_GrainReserve",
@@ -2687,32 +2687,11 @@
       "delta": 8
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 11,
-      "delta": -1
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 9,
-      "delta": -3
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
       "count": 9,
       "delta": 5
-    },
-    {
-      "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
-      "type": "위기 이벤트",
-      "count": 8,
-      "delta": -10
     },
     {
       "id": "FP_Novorossiysk",
@@ -2722,11 +2701,32 @@
       "delta": 7
     },
     {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 7,
+      "delta": -11
+    },
+    {
       "id": "CF_Wheat",
       "name": "밀",
       "type": "품목",
       "count": 7,
       "delta": 7
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 6,
+      "delta": -6
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

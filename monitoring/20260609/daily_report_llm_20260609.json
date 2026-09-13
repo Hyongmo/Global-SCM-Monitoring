@@ -2332,7 +2332,7 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 59,
+      "count": 60,
       "delta": 16
     },
     {
@@ -2343,13 +2343,6 @@
       "delta": 26
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 21,
-      "delta": 19
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -2357,32 +2350,18 @@
       "delta": 19
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 19,
-      "delta": -9
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
       "count": 8,
-      "delta": 0
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 7,
-      "delta": 1
+      "delta": 2
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 5,
-      "delta": -10
+      "delta": -9
     },
     {
       "id": "CP_Taiwan",
@@ -2397,6 +2376,27 @@
       "type": "선종",
       "count": 4,
       "delta": 4
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

@@ -864,14 +864,7 @@
       "name": "원유",
       "type": "품목",
       "count": 24,
-      "delta": -43
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 15,
-      "delta": -2
+      "delta": -44
     },
     {
       "id": "CP_Hormuz",
@@ -879,20 +872,6 @@
       "type": "초크포인트",
       "count": 13,
       "delta": -40
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 8,
-      "delta": -1
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 7,
-      "delta": -5
     },
     {
       "id": "BP_CapeRoute",
@@ -909,16 +888,16 @@
       "delta": -5
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 4,
-      "delta": -1
-    },
-    {
       "id": "CP_Taiwan",
       "name": "대만해협",
       "type": "초크포인트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
       "count": 2,
       "delta": 2
     },
@@ -928,6 +907,27 @@
       "type": "선종",
       "count": 1,
       "delta": 0
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 1,
+      "delta": -8
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

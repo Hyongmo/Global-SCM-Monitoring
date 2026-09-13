@@ -1895,13 +1895,6 @@
   },
   "kg_focus": [
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 17,
-      "delta": 11
-    },
-    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -1912,26 +1905,12 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 14,
+      "count": 15,
       "delta": -6
     },
     {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 11,
-      "delta": 8
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 6,
-      "delta": 6
-    },
-    {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 5,
       "delta": 3
@@ -1951,18 +1930,18 @@
       "delta": 2
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 1,
-      "delta": 0
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
       "count": 1,
-      "delta": -2
+      "delta": -23
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

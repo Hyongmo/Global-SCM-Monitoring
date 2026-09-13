@@ -2023,8 +2023,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 47,
-      "delta": 2
+      "count": 50,
+      "delta": 4
     },
     {
       "id": "CP_Hormuz",
@@ -2034,27 +2034,6 @@
       "delta": -47
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 12,
-      "delta": -8
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 9,
-      "delta": 3
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 5,
-      "delta": 1
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -2062,16 +2041,16 @@
       "delta": -10
     },
     {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 2,
+      "delta": -10
+    },
+    {
       "id": "EVT_Japan2019",
       "name": "2019 일본 반도체규제",
       "type": "위기 이벤트",
-      "count": 2,
-      "delta": 1
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
       "count": 2,
       "delta": 1
     },
@@ -2083,10 +2062,31 @@
       "delta": 2
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 2,
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 1,
       "delta": 0
     }
   ]

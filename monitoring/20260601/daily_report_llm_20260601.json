@@ -2146,8 +2146,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 42,
-      "delta": 21
+      "count": 43,
+      "delta": 22
     },
     {
       "id": "CP_Hormuz",
@@ -2157,18 +2157,11 @@
       "delta": -8
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 24,
-      "delta": 23
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 5,
-      "delta": -12
+      "delta": 3
     },
     {
       "id": "EVT_Japan2019",
@@ -2178,24 +2171,10 @@
       "delta": 5
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 4,
-      "delta": 2
-    },
-    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
       "count": 4,
-      "delta": 2
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 3,
       "delta": 2
     },
     {
@@ -2206,10 +2185,31 @@
       "delta": 2
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
       "count": 2,
+      "delta": 0
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 1,
       "delta": -2
     }
   ]

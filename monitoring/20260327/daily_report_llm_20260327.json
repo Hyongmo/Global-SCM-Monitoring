@@ -14227,13 +14227,6 @@
       "delta": 186
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 113,
-      "delta": -258
-    },
-    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -14244,43 +14237,29 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 88,
-      "delta": -195
+      "count": 101,
+      "delta": -206
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 37,
-      "delta": -41
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 19,
-      "delta": -8
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 18,
-      "delta": -30
+      "count": 44,
+      "delta": -50
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 8,
-      "delta": -1
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 20,
+      "delta": -9
     },
     {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
       "count": 7,
-      "delta": -13
+      "delta": 1
     },
     {
       "id": "KP_Busan",
@@ -14288,6 +14267,27 @@
       "type": "한국 항만",
       "count": 6,
       "delta": 5
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 4,
+      "delta": 1
+    },
+    {
+      "id": "EVT_COVID2020",
+      "name": "2020 COVID 컨테이너",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

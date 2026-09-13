@@ -2854,15 +2854,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 70,
-      "delta": 41
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 54,
-      "delta": 41
+      "count": 78,
+      "delta": 46
     },
     {
       "id": "CP_Hormuz",
@@ -2872,25 +2865,18 @@
       "delta": 32
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 19,
+      "delta": 16
+    },
+    {
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 15,
-      "delta": 4
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 13,
-      "delta": 11
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
       "count": 12,
-      "delta": 4
+      "delta": 8
     },
     {
       "id": "BP_OmanLand",
@@ -2898,13 +2884,6 @@
       "type": "우회 인프라",
       "count": 10,
       "delta": 10
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 8,
-      "delta": 0
     },
     {
       "id": "VT_Reefer",
@@ -2918,7 +2897,28 @@
       "name": "곡물 비축 확대",
       "type": "정책",
       "count": 5,
-      "delta": 4
+      "delta": 5
+    },
+    {
+      "id": "CF_Corn",
+      "name": "옥수수",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 3
     }
   ]
 }

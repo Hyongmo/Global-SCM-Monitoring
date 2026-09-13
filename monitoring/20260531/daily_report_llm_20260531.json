@@ -2020,21 +2020,7 @@
       "name": "원유",
       "type": "품목",
       "count": 21,
-      "delta": -13
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 17,
       "delta": -15
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 4,
-      "delta": 1
     },
     {
       "id": "CF_Naphtha",
@@ -2058,11 +2044,11 @@
       "delta": -2
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 2,
-      "delta": 1
+      "delta": -2
     },
     {
       "id": "VT_Reefer",
@@ -2072,11 +2058,25 @@
       "delta": 0
     },
     {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 2
+    },
+    {
       "id": "CP_Taiwan",
       "name": "대만해협",
       "type": "초크포인트",
       "count": 1,
       "delta": -2
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

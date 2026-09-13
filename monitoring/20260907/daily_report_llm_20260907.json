@@ -2564,22 +2564,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 58,
-      "delta": -15
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 34,
-      "delta": -2
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 19,
-      "delta": 8
+      "count": 63,
+      "delta": -16
     },
     {
       "id": "CP_Panama",
@@ -2589,18 +2575,11 @@
       "delta": 7
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 6,
-      "delta": 1
-    },
-    {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 6,
-      "delta": -5
+      "delta": -4
     },
     {
       "id": "VT_Reefer",
@@ -2617,11 +2596,32 @@
       "delta": 1
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 4,
-      "delta": 1
+      "delta": 0
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 4,
+      "delta": -13
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
     }
   ]
 }

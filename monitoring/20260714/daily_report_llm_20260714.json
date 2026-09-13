@@ -3430,57 +3430,22 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 58,
-      "delta": -5
+      "count": 62,
+      "delta": -10
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 28,
-      "delta": 2
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 16,
-      "delta": -1
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 9,
-      "delta": 7
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 8,
-      "delta": -9
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 8,
-      "delta": 3
+      "count": 6,
+      "delta": 1
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 6,
       "delta": 4
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 5,
-      "delta": 0
     },
     {
       "id": "CP_BabElMandeb",
@@ -3488,6 +3453,41 @@
       "type": "초크포인트",
       "count": 5,
       "delta": 5
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 4,
+      "delta": 2
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": -6
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": -1
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

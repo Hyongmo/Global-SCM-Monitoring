@@ -3453,15 +3453,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 81,
-      "delta": 52
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 42,
-      "delta": 15
+      "count": 85,
+      "delta": 55
     },
     {
       "id": "VT_Reefer",
@@ -3478,20 +3471,6 @@
       "delta": 14
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 16,
-      "delta": 4
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 13,
-      "delta": 8
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -3499,17 +3478,38 @@
       "delta": 8
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 5,
-      "delta": 4
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 7,
+      "delta": 5
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 4,
+      "id": "CP_Malacca",
+      "name": "말라카 해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": -6
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 1,
       "delta": 0
     }
   ]

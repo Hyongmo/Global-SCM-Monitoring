@@ -1850,28 +1850,14 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 45,
-      "delta": -49
+      "count": 47,
+      "delta": -56
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 18,
-      "delta": 15
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 17,
-      "delta": -2
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 17,
+      "count": 18,
       "delta": 7
     },
     {
@@ -1882,32 +1868,46 @@
       "delta": 16
     },
     {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 11,
-      "delta": 9
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 9,
-      "delta": -4
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 7,
-      "delta": 1
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
       "count": 6,
       "delta": 5
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 3
     }
   ]
 }

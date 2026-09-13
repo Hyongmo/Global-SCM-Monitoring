@@ -2625,22 +2625,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 46,
-      "delta": -6
+      "count": 53,
+      "delta": -2
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
-      "count": 25,
-      "delta": 20
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 22,
-      "delta": 13
+      "count": 24,
+      "delta": 19
     },
     {
       "id": "BP_OmanLand",
@@ -2650,39 +2643,46 @@
       "delta": 15
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 20,
-      "delta": 4
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 16,
-      "delta": 14
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 15,
-      "delta": 11
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 13,
-      "delta": 4
-    },
-    {
       "id": "BP_CapeRoute",
       "name": "희망봉 해상 우회 (Cape of Good Hope)",
       "type": "우회 인프라",
       "count": 8,
       "delta": 8
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 7,
+      "delta": 3
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": 3
+    },
+    {
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

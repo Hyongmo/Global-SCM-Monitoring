@@ -2355,29 +2355,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 70,
-      "delta": 36
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 27,
-      "delta": 15
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 26,
-      "delta": 13
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 22,
-      "delta": 12
+      "count": 79,
+      "delta": 40
     },
     {
       "id": "BP_OmanLand",
@@ -2387,18 +2366,18 @@
       "delta": 8
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 11,
-      "delta": 6
-    },
-    {
       "id": "CP_Panama",
       "name": "파나마 운하",
       "type": "초크포인트",
       "count": 3,
       "delta": 2
+    },
+    {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 3,
+      "delta": -2
     },
     {
       "id": "CP_Taiwan",
@@ -2413,6 +2392,27 @@
       "type": "선종",
       "count": 2,
       "delta": -1
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

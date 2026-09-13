@@ -3408,8 +3408,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 112,
-      "delta": 27
+      "count": 115,
+      "delta": 28
     },
     {
       "id": "CP_Hormuz",
@@ -3420,17 +3420,10 @@
     },
     {
       "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
-      "count": 53,
-      "delta": -7
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 12,
-      "delta": 9
+      "count": 15,
+      "delta": 10
     },
     {
       "id": "VT_LNG",
@@ -3440,11 +3433,11 @@
       "delta": 5
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 9,
-      "delta": -9
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 8,
+      "delta": -7
     },
     {
       "id": "VT_VLCC",
@@ -3473,6 +3466,13 @@
       "type": "해외 항만",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

@@ -2446,18 +2446,11 @@
   },
   "kg_focus": [
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 24,
-      "delta": 4
-    },
-    {
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 22,
-      "delta": -18
+      "count": 24,
+      "delta": -21
     },
     {
       "id": "CP_Hormuz",
@@ -2467,18 +2460,11 @@
       "delta": -4
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 9,
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 10,
       "delta": 6
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 4,
-      "delta": 1
     },
     {
       "id": "BP_CapeRoute",
@@ -2488,25 +2474,11 @@
       "delta": 3
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 3,
-      "delta": -1
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 3,
-      "delta": -7
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
       "count": 2,
-      "delta": -1
+      "delta": -2
     },
     {
       "id": "BP_OmanLand",
@@ -2514,6 +2486,27 @@
       "type": "우회 인프라",
       "count": 2,
       "delta": -1
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

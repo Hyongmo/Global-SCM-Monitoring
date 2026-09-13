@@ -2411,13 +2411,6 @@
   },
   "kg_focus": [
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 46,
-      "delta": 12
-    },
-    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -2428,7 +2421,7 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 20,
+      "count": 22,
       "delta": -28
     },
     {
@@ -2439,25 +2432,11 @@
       "delta": 4
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 5,
-      "delta": 3
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 5,
-      "delta": 3
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 4,
-      "delta": 0
+      "delta": -2
     },
     {
       "id": "BP_OmanLand",
@@ -2467,17 +2446,38 @@
       "delta": 3
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 3,
-      "delta": 0
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
       "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": -2
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 1,
       "delta": 0
     }
   ]

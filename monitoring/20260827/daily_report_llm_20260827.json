@@ -2043,22 +2043,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 54,
-      "delta": -24
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 44,
-      "delta": 4
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 18,
-      "delta": 5
+      "count": 57,
+      "delta": -27
     },
     {
       "id": "BP_OmanLand",
@@ -2068,11 +2054,11 @@
       "delta": -42
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 15,
-      "delta": 8
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 14,
+      "delta": 10
     },
     {
       "id": "CF_RareEarth",
@@ -2082,13 +2068,6 @@
       "delta": 9
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 10,
-      "delta": 8
-    },
-    {
       "id": "CF_Wheat",
       "name": "밀",
       "type": "품목",
@@ -2096,11 +2075,32 @@
       "delta": 6
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
       "count": 6,
-      "delta": -13
+      "delta": -9
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 4,
+      "delta": -2
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": 3
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 3
     }
   ]
 }

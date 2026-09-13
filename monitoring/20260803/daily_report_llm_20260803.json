@@ -2077,8 +2077,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 42,
-      "delta": 18
+      "count": 46,
+      "delta": 22
     },
     {
       "id": "CP_Hormuz",
@@ -2088,20 +2088,6 @@
       "delta": 20
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 14,
-      "delta": 7
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 14,
-      "delta": -1
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
@@ -2109,39 +2095,53 @@
       "delta": 5
     },
     {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 11,
-      "delta": 3
-    },
-    {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 10,
       "delta": 9
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 9,
-      "delta": 5
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 6,
-      "delta": 6
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
       "count": 4,
       "delta": 4
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

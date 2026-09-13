@@ -1659,6 +1659,13 @@
   },
   "kg_focus": [
     {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 13,
+      "delta": -88
+    },
+    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -1666,32 +1673,11 @@
       "delta": -49
     },
     {
-      "id": "CF_CrudeOil",
-      "name": "원유",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 9,
-      "delta": -87
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 8,
-      "delta": -13
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 4,
-      "delta": -6
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 4,
-      "delta": -14
+      "count": 5,
+      "delta": -8
     },
     {
       "id": "EVT_Japan2019",
@@ -1708,13 +1694,6 @@
       "delta": 2
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 2,
-      "delta": -2
-    },
-    {
       "id": "CP_Taiwan",
       "name": "대만해협",
       "type": "초크포인트",
@@ -1727,6 +1706,27 @@
       "type": "선종",
       "count": 1,
       "delta": -2
+    },
+    {
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

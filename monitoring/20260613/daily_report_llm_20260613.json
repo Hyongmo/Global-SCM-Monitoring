@@ -2496,14 +2496,7 @@
       "name": "원유",
       "type": "품목",
       "count": 20,
-      "delta": 11
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 20,
-      "delta": 12
+      "delta": 7
     },
     {
       "id": "BP_OmanLand",
@@ -2513,13 +2506,6 @@
       "delta": 19
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 12,
-      "delta": 11
-    },
-    {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
@@ -2527,30 +2513,37 @@
       "delta": 4
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 3,
-      "delta": -1
+      "delta": -2
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
       "type": "정책",
-      "count": 3,
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 1,
       "delta": 1
     },
     {
       "id": "POL_SPR",
       "name": "비축유 방출",
       "type": "정책",
-      "count": 3,
-      "delta": 2
+      "count": 1,
+      "delta": 1
     },
     {
-      "id": "POL_UreaStockpile",
-      "name": "요소 전략비축",
-      "type": "정책",
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
       "count": 1,
       "delta": 1
     }

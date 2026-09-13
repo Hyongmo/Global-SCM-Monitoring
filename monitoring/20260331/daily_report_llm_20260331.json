@@ -4301,18 +4301,11 @@
   },
   "kg_focus": [
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 124,
-      "delta": -81
-    },
-    {
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 114,
-      "delta": -194
+      "count": 122,
+      "delta": -231
     },
     {
       "id": "CP_Hormuz",
@@ -4322,20 +4315,6 @@
       "delta": -44
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 36,
-      "delta": -19
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 23,
-      "delta": -49
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
@@ -4343,18 +4322,11 @@
       "delta": -131
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 10,
-      "delta": -9
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 6,
-      "delta": -27
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 14,
+      "delta": -31
     },
     {
       "id": "EVT_Japan2019",
@@ -4369,6 +4341,34 @@
       "type": "우회 인프라",
       "count": 4,
       "delta": -2
+    },
+    {
+      "id": "CF_IronOre",
+      "name": "철광석",
+      "type": "품목",
+      "count": 4,
+      "delta": 2
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": -13
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 3,
+      "delta": -9
     }
   ]
 }

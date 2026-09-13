@@ -2871,8 +2871,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 68,
-      "delta": 10
+      "count": 75,
+      "delta": 13
     },
     {
       "id": "CP_Hormuz",
@@ -2883,31 +2883,10 @@
     },
     {
       "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
-      "count": 33,
-      "delta": 5
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 18,
-      "delta": 10
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
       "count": 8,
-      "delta": 0
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 7,
-      "delta": -9
+      "delta": 6
     },
     {
       "id": "VT_Reefer",
@@ -2917,18 +2896,11 @@
       "delta": 1
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 5,
-      "delta": 5
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 4,
-      "delta": -1
+      "delta": -2
     },
     {
       "id": "POL_UreaStockpile",
@@ -2936,6 +2908,34 @@
       "type": "정책",
       "count": 4,
       "delta": 4
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": -1
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 4,
+      "delta": 1
+    },
+    {
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 4,
+      "delta": 3
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": -3
     }
   ]
 }

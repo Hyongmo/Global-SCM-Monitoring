@@ -3040,36 +3040,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 43,
-      "delta": -12
+      "count": 44,
+      "delta": -21
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 15,
-      "delta": -10
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 13,
-      "delta": 11
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 11,
-      "delta": 1
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 9,
-      "delta": 4
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 12,
+      "delta": 2
     },
     {
       "id": "VT_LNG",
@@ -3079,25 +3058,46 @@
       "delta": 5
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 3,
-      "delta": -18
-    },
-    {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 3,
-      "delta": -3
-    },
-    {
       "id": "CF_RareEarth",
       "name": "희토류",
       "type": "품목",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": -7
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 1,
+      "delta": -1
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

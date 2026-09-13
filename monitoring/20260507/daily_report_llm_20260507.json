@@ -3080,39 +3080,18 @@
   },
   "kg_focus": [
     {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 87,
+      "delta": 19
+    },
+    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
       "count": 79,
       "delta": -65
-    },
-    {
-      "id": "CF_CrudeOil",
-      "name": "원유",
-      "type": "품목",
-      "count": 77,
-      "delta": 12
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 38,
-      "delta": -35
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 15,
-      "delta": 6
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 15,
-      "delta": -2
     },
     {
       "id": "CF_Naphtha",
@@ -3122,18 +3101,11 @@
       "delta": 13
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 12,
-      "delta": 6
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 11,
-      "delta": -1
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 10,
+      "delta": 1
     },
     {
       "id": "VT_Reefer",
@@ -3148,6 +3120,34 @@
       "type": "선종",
       "count": 6,
       "delta": 4
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 5,
+      "delta": 3
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": -1
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 2,
+      "delta": 0
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

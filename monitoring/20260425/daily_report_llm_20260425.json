@@ -3332,22 +3332,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 48,
-      "delta": -17
+      "count": 50,
+      "delta": -18
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 34,
-      "delta": -3
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 7,
-      "delta": -3
+      "count": 6,
+      "delta": -4
     },
     {
       "id": "CP_Malacca",
@@ -3357,11 +3350,11 @@
       "delta": 3
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 4,
-      "delta": -5
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 5,
+      "delta": 3
     },
     {
       "id": "VT_LNG",
@@ -3369,13 +3362,6 @@
       "type": "선종",
       "count": 4,
       "delta": -5
-    },
-    {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 3,
-      "delta": 0
     },
     {
       "id": "VT_Reefer",
@@ -3390,6 +3376,20 @@
       "type": "초크포인트",
       "count": 3,
       "delta": -2
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

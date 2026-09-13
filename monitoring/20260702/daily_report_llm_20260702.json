@@ -1463,7 +1463,7 @@
       "name": "원유",
       "type": "품목",
       "count": 9,
-      "delta": 0
+      "delta": -5
     },
     {
       "id": "CP_Hormuz",
@@ -1473,11 +1473,11 @@
       "delta": -12
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 4,
-      "delta": -1
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 5,
+      "delta": -2
     },
     {
       "id": "KP_Busan",
@@ -1501,13 +1501,6 @@
       "delta": 1
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 1,
-      "delta": -5
-    },
-    {
       "id": "KP_Ulsan",
       "name": "울산항",
       "type": "한국 항만",
@@ -1527,6 +1520,13 @@
       "type": "선종",
       "count": 1,
       "delta": 0
+    },
+    {
+      "id": "FP_Qingdao",
+      "name": "칭다오",
+      "type": "해외 항만",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

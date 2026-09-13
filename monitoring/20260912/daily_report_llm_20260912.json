@@ -3141,29 +3141,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 96,
-      "delta": -16
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 75,
-      "delta": 16
+      "count": 102,
+      "delta": -25
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 52,
-      "delta": -12
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 22,
-      "delta": -17
+      "delta": -11
     },
     {
       "id": "CP_Hormuz",
@@ -3173,13 +3159,6 @@
       "delta": -18
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 12,
-      "delta": -24
-    },
-    {
       "id": "CP_BabElMandeb",
       "name": "바브엘만데브 해협",
       "type": "초크포인트",
@@ -3187,18 +3166,11 @@
       "delta": -13
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 8,
-      "delta": -30
-    },
-    {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
-      "count": 5,
-      "delta": -13
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 7,
+      "delta": -5
     },
     {
       "id": "VT_Container",
@@ -3206,6 +3178,34 @@
       "type": "선종",
       "count": 4,
       "delta": 4
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": -2
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 0
+    },
+    {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 1,
+      "delta": -17
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

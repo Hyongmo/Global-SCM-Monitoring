@@ -3977,15 +3977,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 93,
+      "count": 96,
       "delta": 32
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 83,
-      "delta": 12
     },
     {
       "id": "CP_Hormuz",
@@ -3995,32 +3988,11 @@
       "delta": 19
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 12,
-      "delta": 2
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 5,
-      "delta": -4
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 5,
-      "delta": -2
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 4,
-      "delta": -3
+      "count": 8,
+      "delta": -7
     },
     {
       "id": "CF_Naphtha",
@@ -4042,6 +4014,34 @@
       "type": "한국 항만",
       "count": 2,
       "delta": 2
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": 0
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

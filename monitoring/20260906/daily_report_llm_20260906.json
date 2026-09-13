@@ -2764,8 +2764,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 73,
-      "delta": 8
+      "count": 79,
+      "delta": 11
     },
     {
       "id": "CP_Hormuz",
@@ -2776,57 +2776,57 @@
     },
     {
       "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
-      "count": 36,
+      "count": 17,
       "delta": 11
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 13,
-      "delta": -2
-    },
-    {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
-      "count": 11,
-      "delta": 1
+      "count": 10,
+      "delta": 2
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 11,
-      "delta": 5
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 5,
-      "delta": 3
-    },
-    {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
       "count": 4,
-      "delta": -1
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 4,
-      "delta": -3
+      "delta": 2
     },
     {
       "id": "VT_Reefer",
       "name": "냉장선(legacy)",
       "type": "선종",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "FP_Indonesian",
+      "name": "인도네시아 항만",
+      "type": "해외 항만",
       "count": 3,
       "delta": 3
     }

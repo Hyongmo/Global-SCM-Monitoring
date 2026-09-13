@@ -1439,7 +1439,7 @@
       "name": "원유",
       "type": "품목",
       "count": 10,
-      "delta": 2
+      "delta": -1
     },
     {
       "id": "BP_OmanLand",
@@ -1449,39 +1449,18 @@
       "delta": 7
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 9,
-      "delta": -5
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 7,
-      "delta": 6
+      "delta": 4
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 3,
       "delta": -9
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 3,
-      "delta": 1
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 3,
-      "delta": 0
     },
     {
       "id": "VT_LNG",
@@ -1496,6 +1475,13 @@
       "type": "선종",
       "count": 2,
       "delta": -13
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

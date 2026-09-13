@@ -2637,15 +2637,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 45,
-      "delta": 41
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 20,
-      "delta": 8
+      "count": 46,
+      "delta": 42
     },
     {
       "id": "BP_OmanLand",
@@ -2655,18 +2648,11 @@
       "delta": 13
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 10,
-      "delta": 9
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 6,
-      "delta": 6
+      "count": 12,
+      "delta": 11
     },
     {
       "id": "VT_Reefer",
@@ -2683,18 +2669,32 @@
       "delta": 4
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 4,
-      "delta": 0
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
       "type": "선종",
-      "count": 4,
-      "delta": -4
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 1,
+      "delta": -2
     }
   ]
 }

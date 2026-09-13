@@ -2442,7 +2442,7 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 50,
+      "count": 56,
       "delta": 1
     },
     {
@@ -2453,46 +2453,11 @@
       "delta": 4
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 25,
-      "delta": 0
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 16,
-      "delta": 13
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 13,
-      "delta": -2
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 9,
-      "delta": 5
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 9,
-      "delta": 4
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
-      "count": 7,
-      "delta": 6
+      "count": 18,
+      "delta": 14
     },
     {
       "id": "VT_Reefer",
@@ -2507,6 +2472,41 @@
       "type": "우회 인프라",
       "count": 4,
       "delta": -1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": -1
+    },
+    {
+      "id": "KP_Busan",
+      "name": "부산항",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

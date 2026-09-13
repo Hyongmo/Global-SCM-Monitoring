@@ -2715,8 +2715,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 64,
-      "delta": 48
+      "count": 68,
+      "delta": 52
     },
     {
       "id": "CP_Hormuz",
@@ -2726,16 +2726,9 @@
       "delta": 52
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 25,
-      "delta": 22
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 15,
       "delta": 14
     },
@@ -2745,27 +2738,6 @@
       "type": "선종",
       "count": 13,
       "delta": 13
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 11,
-      "delta": 10
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 4,
-      "delta": 4
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 2,
-      "delta": -2
     },
     {
       "id": "BP_OmanLand",
@@ -2778,6 +2750,34 @@
       "id": "BP_CapeRoute",
       "name": "희망봉 해상 우회 (Cape of Good Hope)",
       "type": "우회 인프라",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "FP_Qingdao",
+      "name": "칭다오",
+      "type": "해외 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 1,
+      "delta": -1
+    },
+    {
+      "id": "FP_USGulf",
+      "name": "미국 걸프",
+      "type": "해외 항만",
       "count": 1,
       "delta": 1
     }

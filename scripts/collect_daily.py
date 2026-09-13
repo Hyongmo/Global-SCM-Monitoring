@@ -232,6 +232,19 @@ def build_entity_patterns(nodes):
         'export', 'import', 'control', 'ban', 'restriction', 'crisis',
         'trade', 'supply', 'demand', 'price', 'market', 'risk', 'impact',
         'flow', 'policy', 'security', 'global', 'international',
+        # 2026-09-13 보강: 흔한 영단어 1토큰 오탐 차단
+        # (예: war→우크라이나, tanker→케미컬탱커, saudi/pipeline→East-West,
+        #  and→롯데건설, crude/brent→석탄. 고유 낱말(houthi, petroline 등)은 유지)
+        'and', 'the', 'for', 'with', 'from', 'new',
+        'war', 'attack', 'attacks', 'blockade', 'conflict', 'disruption',
+        'invasion', 'tension', 'tensions',
+        'shipping', 'reroute', 'energy', 'gas', 'oil', 'lng', 'strategic',
+        'petroleum', 'reserve', 'release', 'diversification',
+        'chemical', 'tanker', 'product', 'pipeline', 'saudi',
+        'east', 'west', 'red', 'black',
+        'european', 'container', 'goods', 'material', 'materials',
+        'engineering', 'construction', 'group', 'holdings', 'corporation',
+        'corp', 'company', 'industries', 'industry', 'heavy', 'electronics',
     }
     for nid, n in nodes.items():
         ntype  = n.get("node_type", "")
@@ -245,7 +258,7 @@ def build_entity_patterns(nodes):
                 if len(tok) >= 3 and tok.lower() not in _SKIP_TOKENS:
                     add(tok, nid, name, ntype)
         short_id = nid.split("_", 1)[-1] if "_" in nid else nid
-        if len(short_id) >= 3:
+        if len(short_id) >= 3 and short_id.lower() not in _SKIP_TOKENS:
             add(short_id, nid, name, ntype)
         if name and any("\uac00" <= c <= "\ud7a3" for c in name):
             add(name, nid, name, ntype)
@@ -254,16 +267,23 @@ def build_entity_patterns(nodes):
                 add(f"{short_id.lower()} {suffix}", nid, name, ntype)
                 add(f"strait of {short_id.lower()}", nid, name, ntype)
         if ntype == "commodity_flow":
-            cat = n.get("category", "")
+            # 2026-09-13 수정: 카테고리 일괄 부여 → 노드 지정.
+            # (기존엔 EnergyFlow 3개 노드가 crude 등 원유 어휘를 공유해
+            #  석탄이 원유 기사로 집계되었고, GasFlow 등 옛 카테고리명은
+            #  실제 KG에 없어 해당 어휘가 아예 안 붙고 있었음.
+            #  grain/soybean 은 해당 노드가 없어 제외)
             extra = {
-                "EnergyFlow":     ["crude oil", "petroleum", "brent", "wti", "crude"],
-                "GasFlow":        ["natural gas", "lng", "liquefied natural gas", "lpg"],
-                "ChemicalFlow":   ["naphtha", "petrochemical", "ethylene", "propylene"],
-                "MetalFlow":      ["iron ore", "steel", "coking coal", "copper"],
-                "GrainFlow":      ["wheat", "corn", "soybean", "grain", "maize"],
-                "FertilizerFlow": ["urea", "fertilizer", "ammonia", "adblue"],
-                "SemiMaterial":   ["hydrogen fluoride", "photoresist", "semiconductor material"],
-            }.get(cat, [])
+                "CF_CrudeOil":     ["crude oil", "petroleum", "brent", "wti", "crude", "oil"],
+                "CF_LNG":          ["natural gas", "lng", "liquefied natural gas", "lpg"],
+                "CF_Coal":         ["coking coal"],
+                "CF_Naphtha":      ["naphtha", "petrochemical", "ethylene", "propylene"],
+                "CF_IronOre":      ["iron ore", "steel", "copper"],
+                "CF_RareEarth":    ["rare earths"],
+                "CF_Wheat":        ["wheat"],
+                "CF_Corn":         ["corn", "maize"],
+                "CF_Urea":         ["urea", "fertilizer", "ammonia", "adblue"],
+                "CF_SemiMaterial": ["hydrogen fluoride", "photoresist", "semiconductor material"],
+            }.get(nid, [])
             for kw in extra:
                 add(kw, nid, name, ntype)
     return patterns

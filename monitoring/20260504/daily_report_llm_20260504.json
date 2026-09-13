@@ -4470,22 +4470,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 77,
+      "count": 80,
       "delta": -35
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 44,
-      "delta": -9
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 25,
-      "delta": 23
     },
     {
       "id": "VT_Reefer",
@@ -4495,25 +4481,11 @@
       "delta": 18
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 17,
-      "delta": 8
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 10,
-      "delta": -2
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 9,
-      "delta": 9
+      "count": 15,
+      "delta": 7
     },
     {
       "id": "KP_Ulsan",
@@ -4528,6 +4500,34 @@
       "type": "품목",
       "count": 5,
       "delta": 5
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "FP_Indonesian",
+      "name": "인도네시아 항만",
+      "type": "해외 항만",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "FP_Fujairah",
+      "name": "푸자이라",
+      "type": "해외 항만",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

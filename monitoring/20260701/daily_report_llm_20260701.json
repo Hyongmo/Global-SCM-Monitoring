@@ -1410,22 +1410,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 9,
-      "delta": -38
+      "count": 14,
+      "delta": -36
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 6,
-      "delta": -3
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 5,
-      "delta": 4
+      "count": 7,
+      "delta": 5
     },
     {
       "id": "VT_Container",

@@ -1763,28 +1763,7 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 14,
-      "delta": 0
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
-      "count": 6,
-      "delta": 3
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 6,
-      "delta": 5
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 5,
+      "count": 15,
       "delta": 0
     },
     {
@@ -1802,18 +1781,39 @@
       "delta": 3
     },
     {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 3,
-      "delta": 3
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 2,
+      "delta": -1
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
       "type": "선종",
-      "count": 3,
-      "delta": 3
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "POL_EthaneCracker",
+      "name": "에탄크래커 전환",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

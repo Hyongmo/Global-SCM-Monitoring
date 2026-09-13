@@ -2840,8 +2840,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 78,
-      "delta": 8
+      "count": 84,
+      "delta": 6
     },
     {
       "id": "BP_OmanLand",
@@ -2852,24 +2852,10 @@
     },
     {
       "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
-      "count": 40,
-      "delta": -14
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 19,
-      "delta": 4
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 13,
-      "delta": 1
+      "count": 15,
+      "delta": -4
     },
     {
       "id": "CP_Panama",
@@ -2883,21 +2869,35 @@
       "name": "옥수수",
       "type": "품목",
       "count": 11,
-      "delta": 9
+      "delta": 8
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
       "count": 7,
-      "delta": -6
+      "delta": 4
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
       "type": "정책",
-      "count": 7,
-      "delta": 5
+      "count": 6,
+      "delta": 1
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 6,
+      "delta": 6
+    },
+    {
+      "id": "KP_Busan",
+      "name": "부산항",
+      "type": "한국 항만",
+      "count": 4,
+      "delta": 4
     }
   ]
 }

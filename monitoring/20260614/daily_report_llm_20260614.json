@@ -1480,20 +1480,6 @@
       "delta": 2
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 4,
-      "delta": -8
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 3,
-      "delta": -17
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
@@ -1505,12 +1491,12 @@
       "name": "석탄",
       "type": "품목",
       "count": 1,
-      "delta": 0
+      "delta": 1
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 1,
       "delta": -2
     }

@@ -2191,8 +2191,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 38,
-      "delta": -17
+      "count": 42,
+      "delta": -19
     },
     {
       "id": "CP_Hormuz",
@@ -2202,39 +2202,18 @@
       "delta": -49
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 23,
-      "delta": -24
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 11,
-      "delta": 3
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 9,
-      "delta": 7
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 7,
-      "delta": -3
+      "count": 15,
+      "delta": -1
     },
     {
       "id": "POL_GrainReserve",
       "name": "곡물 비축 확대",
       "type": "정책",
       "count": 5,
-      "delta": 0
+      "delta": 1
     },
     {
       "id": "VT_Reefer",
@@ -2256,6 +2235,27 @@
       "type": "초크포인트",
       "count": 3,
       "delta": -24
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": -2
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": -3
     }
   ]
 }

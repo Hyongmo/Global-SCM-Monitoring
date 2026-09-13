@@ -2065,8 +2065,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 40,
-      "delta": -14
+      "count": 45,
+      "delta": -10
     },
     {
       "id": "CP_Hormuz",
@@ -2076,30 +2076,16 @@
       "delta": 9
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 20,
-      "delta": 6
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_Naphtha",
+      "name": "나프타",
       "type": "품목",
-      "count": 10,
-      "delta": 6
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
       "count": 4,
-      "delta": 3
+      "delta": 1
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 4,
       "delta": -8
     },
@@ -2111,25 +2097,39 @@
       "delta": 4
     },
     {
-      "id": "CF_Naphtha",
-      "name": "나프타",
-      "type": "품목",
-      "count": 3,
-      "delta": 0
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 3,
-      "delta": -9
-    },
-    {
       "id": "BP_OmanLand",
       "name": "오만 살랄라 육상 환적",
       "type": "우회 인프라",
       "count": 3,
       "delta": 3
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

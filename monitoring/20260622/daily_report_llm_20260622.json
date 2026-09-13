@@ -3008,8 +3008,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 122,
-      "delta": 105
+      "count": 131,
+      "delta": 112
     },
     {
       "id": "CP_Hormuz",
@@ -3019,18 +3019,11 @@
       "delta": 16
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 36,
-      "delta": 35
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 22,
-      "delta": 20
+      "count": 40,
+      "delta": 39
     },
     {
       "id": "FP_RasLaffan",
@@ -3038,20 +3031,6 @@
       "type": "해외 항만",
       "count": 18,
       "delta": 18
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 15,
-      "delta": 8
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 12,
-      "delta": 9
     },
     {
       "id": "KP_Tongyeong",
@@ -3068,11 +3047,32 @@
       "delta": 7
     },
     {
-      "id": "POL_SPR",
-      "name": "비축유 방출",
-      "type": "정책",
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
       "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "CF_Corn",
+      "name": "옥수수",
+      "type": "품목",
+      "count": 3,
       "delta": 3
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 2
     }
   ]
 }

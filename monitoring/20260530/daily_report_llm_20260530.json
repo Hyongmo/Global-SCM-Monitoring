@@ -2602,22 +2602,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 34,
-      "delta": -27
+      "count": 36,
+      "delta": -30
     },
     {
       "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "우크라이나 전쟁",
       "type": "위기 이벤트",
-      "count": 32,
-      "delta": 9
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
       "count": 5,
-      "delta": -7
+      "delta": 5
     },
     {
       "id": "BP_OmanLand",
@@ -2627,11 +2620,11 @@
       "delta": -2
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 3,
-      "delta": -3
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 4,
+      "delta": -1
     },
     {
       "id": "EVT_Japan2019",
@@ -2660,6 +2653,13 @@
       "type": "선종",
       "count": 2,
       "delta": 2
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
     }
   ]
 }

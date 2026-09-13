@@ -3588,43 +3588,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 59,
-      "delta": 6
+      "count": 66,
+      "delta": 8
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 54,
-      "delta": -13
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 13,
-      "delta": 2
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 7,
-      "delta": -1
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
       "count": 7,
-      "delta": -7
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 7,
-      "delta": 1
+      "delta": 3
     },
     {
       "id": "CF_Naphtha",
@@ -3641,10 +3613,38 @@
       "delta": 5
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 6,
+      "delta": 1
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 4,
+      "delta": -7
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
       "type": "정책",
-      "count": 5,
+      "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 3,
       "delta": 1
     }
   ]

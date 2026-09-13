@@ -2536,36 +2536,15 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 66,
-      "delta": -56
+      "count": 69,
+      "delta": -62
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 27,
-      "delta": 12
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 14,
-      "delta": -22
-    },
-    {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 8,
-      "delta": -4
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 8,
-      "delta": -14
+      "count": 20,
+      "delta": -20
     },
     {
       "id": "BP_CapeRoute",
@@ -2589,11 +2568,32 @@
       "delta": -9
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
       "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 1,
       "delta": 0
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 1,
+      "delta": -2
+    },
+    {
+      "id": "FP_Fujairah",
+      "name": "푸자이라",
+      "type": "해외 항만",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

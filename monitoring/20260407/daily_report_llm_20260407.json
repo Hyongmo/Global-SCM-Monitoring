@@ -3659,8 +3659,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 80,
-      "delta": -15
+      "count": 85,
+      "delta": -16
     },
     {
       "id": "CP_Hormuz",
@@ -3670,20 +3670,6 @@
       "delta": -34
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 69,
-      "delta": 0
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 21,
-      "delta": 13
-    },
-    {
       "id": "CF_Naphtha",
       "name": "나프타",
       "type": "품목",
@@ -3691,25 +3677,11 @@
       "delta": 1
     },
     {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 13,
-      "delta": -4
-    },
-    {
       "id": "CP_Panama",
       "name": "파나마 운하",
       "type": "초크포인트",
       "count": 7,
       "delta": 7
-    },
-    {
-      "id": "CF_EuroContainer",
-      "name": "유럽 컨테이너",
-      "type": "품목",
-      "count": 6,
-      "delta": 5
     },
     {
       "id": "EVT_Japan2019",
@@ -3724,6 +3696,34 @@
       "type": "선종",
       "count": 4,
       "delta": 0
+    },
+    {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 4,
+      "delta": -19
+    },
+    {
+      "id": "CF_Urea",
+      "name": "요소",
+      "type": "품목",
+      "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 2
     }
   ]
 }

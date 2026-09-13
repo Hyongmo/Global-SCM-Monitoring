@@ -205,6 +205,19 @@ def build_entity_patterns(nodes):
             'export', 'import', 'control', 'ban', 'restriction', 'crisis',
             'trade', 'supply', 'demand', 'price', 'market', 'risk', 'impact',
             'flow', 'policy', 'security', 'global', 'international',
+            # 2026-09-13 보강: 흔한 영단어 1토큰 오탐 차단
+            # (예: war→우크라이나, tanker→케미컬탱커, saudi/pipeline→East-West,
+            #  and→롯데건설, crude/brent→석탄. 고유 낱말(houthi, petroline 등)은 유지)
+            'and', 'the', 'for', 'with', 'from', 'new',
+            'war', 'attack', 'attacks', 'blockade', 'conflict', 'disruption',
+            'invasion', 'tension', 'tensions',
+            'shipping', 'reroute', 'energy', 'gas', 'oil', 'lng', 'strategic',
+            'petroleum', 'reserve', 'release', 'diversification',
+            'chemical', 'tanker', 'product', 'pipeline', 'saudi',
+            'east', 'west', 'red', 'black',
+            'european', 'container', 'goods', 'material', 'materials',
+            'engineering', 'construction', 'group', 'holdings', 'corporation',
+            'corp', 'company', 'industries', 'industry', 'heavy', 'electronics',
         }
         if name_en:
             add(name_en, nid, name, ntype)
@@ -214,7 +227,7 @@ def build_entity_patterns(nodes):
 
         # 3) ID 접두사 제거 (CP_Hormuz → hormuz)
         short_id = nid.split("_", 1)[-1] if "_" in nid else nid
-        if len(short_id) >= 3:
+        if len(short_id) >= 3 and short_id.lower() not in _SKIP_TOKENS:
             add(short_id, nid, name, ntype)
 
         # 4) 한글 이름 (2자 이상)
@@ -227,18 +240,25 @@ def build_entity_patterns(nodes):
                 add(f"{short_id.lower()} {suffix}", nid, name, ntype)
                 add(f"strait of {short_id.lower()}", nid, name, ntype)
 
-        # 6) 품목 카테고리별 추가 키워드 (동적 추출)
+        # 6) 품목 노드별 추가 키워드
         if ntype == "commodity_flow":
-            cat = n.get("category", "")
+            # 2026-09-13 수정: 카테고리 일괄 부여 → 노드 지정.
+            # (기존엔 EnergyFlow 3개 노드가 crude 등 원유 어휘를 공유해
+            #  석탄이 원유 기사로 집계되었고, GasFlow 등 옛 카테고리명은
+            #  실제 KG에 없어 해당 어휘가 아예 안 붙고 있었음.
+            #  grain/soybean 은 해당 노드가 없어 제외)
             extra = {
-                "EnergyFlow":     ["crude oil", "petroleum", "brent", "wti", "crude"],
-                "GasFlow":        ["natural gas", "lng", "liquefied natural gas", "lpg"],
-                "ChemicalFlow":   ["naphtha", "petrochemical", "ethylene", "propylene"],
-                "MetalFlow":      ["iron ore", "steel", "coking coal", "copper"],
-                "GrainFlow":      ["wheat", "corn", "soybean", "grain", "maize"],
-                "FertilizerFlow": ["urea", "fertilizer", "ammonia", "adblue"],
-                "SemiMaterial":   ["hydrogen fluoride", "photoresist", "semiconductor material"],
-            }.get(cat, [])
+                "CF_CrudeOil":     ["crude oil", "petroleum", "brent", "wti", "crude", "oil"],
+                "CF_LNG":          ["natural gas", "lng", "liquefied natural gas", "lpg"],
+                "CF_Coal":         ["coking coal"],
+                "CF_Naphtha":      ["naphtha", "petrochemical", "ethylene", "propylene"],
+                "CF_IronOre":      ["iron ore", "steel", "copper"],
+                "CF_RareEarth":    ["rare earths"],
+                "CF_Wheat":        ["wheat"],
+                "CF_Corn":         ["corn", "maize"],
+                "CF_Urea":         ["urea", "fertilizer", "ammonia", "adblue"],
+                "CF_SemiMaterial": ["hydrogen fluoride", "photoresist", "semiconductor material"],
+            }.get(nid, [])
             for kw in extra:
                 add(kw, nid, name, ntype)
 
@@ -3781,6 +3801,187 @@ def _has_fresher_articles(old_scenario, ref_date, week_tag):
     return False
 
 
+
+# ══════════════════════════════════════════════════════════════
+# 공급망 요소별 기사량 (주간) — 일간 브리핑과 동일 집계의 주 단위 합산
+# (2026-09-13 신설. collect_daily.py 의 _kg_entity_counts와 같은 규약:
+#  HIGH·MEDIUM 분류 기사 제목의 KG 매칭, 한 기사 안 중복 언급 1회,
+#  기업/한국영향/한국산업 노드 제외)
+# ══════════════════════════════════════════════════════════════
+_KG_FOCUS_EXCLUDE = {'korea_company', 'korea_impact', 'korea_sector'}
+_KG_TYPE_KO = {'chokepoint': '초크포인트', 'bypass_infrastructure': '우회 인프라',
+               'crisis_event': '위기 이벤트', 'commodity_flow': '품목', 'policy': '정책',
+               'vessel_type': '선종', 'foreign_port': '해외 항만', 'korea_port': '한국 항만'}
+_WD_KO = ['월', '화', '수', '목', '금', '토', '일']
+
+
+def _kgf_matched_ids(title, entity_patterns, _cache={}):
+    """kg_focus 집계용 제목 → KG 엔티티 (캐시). match_entities와 같은 규칙
+    (긴 패턴 우선, 단어 경계 매칭). 패턴은 프로세스 내 고정이므로 제목만 키로 캐시."""
+    hit = _cache.get(title)
+    if hit is None:
+        tl = str(title).lower()
+        ids = []
+        for pattern, (eid, _en, _et) in sorted(entity_patterns.items(), key=lambda x: -len(x[0])):
+            if eid not in ids and re.search(r"\b" + re.escape(pattern) + r"\b", tl):
+                ids.append(eid)
+        hit = tuple(ids)
+        _cache[title] = hit
+    return hit
+
+
+def _kgf_day_counts(day_tag, entity_patterns, nodes, _cache={}):
+    """하루치 분류 CSV(해외+국내, HIGH·MEDIUM)의 KG 요소별 언급 기사 수.
+    분류 CSV가 없는 날은 None."""
+    if day_tag in _cache:
+        return _cache[day_tag]
+    files = glob.glob(os.path.join('monitoring', day_tag,
+                                   f'*_mon_classified_daily_{day_tag}.csv'))
+    cnt = None
+    if files:
+        cnt = Counter()
+        for f in files:
+            try:
+                df = pd.read_csv(f)
+            except Exception:
+                continue
+            if 'title' not in df.columns:
+                continue
+            sub = df[df['relevance'].isin(['HIGH', 'MEDIUM'])] if 'relevance' in df.columns else df
+            for _t in sub['title']:
+                ids = {i for i in _kgf_matched_ids(str(_t), entity_patterns)
+                       if i in nodes and nodes[i].get('node_type') not in _KG_FOCUS_EXCLUDE}
+                for i in ids:
+                    cnt[i] += 1
+    _cache[day_tag] = cnt
+    return cnt
+
+
+def build_kg_weekly_focus(week_sunday_tag, entity_patterns, nodes, top_n=10, trend_n=5):
+    """주간(월~일) 합산 상위 top_n(전주 대비 증감) + 주중 일별 추이 상위 trend_n.
+    top_n=10·trend_n=5, 선정 기준=주간 합: 사용자 결정 (2026-09-13).
+    반환 {'rows': [...], 'trend': {'days': [...], 'series': [...]}} 또는 None."""
+    _sun = datetime.strptime(week_sunday_tag, '%Y%m%d').date()
+    days = [_sun - timedelta(days=6 - i) for i in range(7)]
+    tot, daily, n_cov = Counter(), [], 0
+    for d in days:
+        c = _kgf_day_counts(d.strftime('%Y%m%d'), entity_patterns, nodes)
+        daily.append(c or Counter())
+        if c is not None:
+            tot.update(c)
+            n_cov += 1
+    # 7일이 모두 있어야 '주간 합'으로 제시 (부분 주 왜곡 방지, 2026-09-13)
+    if n_cov < 7 or not tot:
+        return None
+    prev_tot, n_prev = Counter(), 0
+    for d in days:
+        c = _kgf_day_counts((d - timedelta(days=7)).strftime('%Y%m%d'), entity_patterns, nodes)
+        if c is not None:
+            prev_tot.update(c)
+            n_prev += 1
+    rows = []
+    for eid, v in tot.most_common(top_n):
+        nd = nodes.get(eid, {})
+        rows.append({'id': eid, 'name': nd.get('name', eid),
+                     'type': _KG_TYPE_KO.get(nd.get('node_type'), nd.get('node_type', '')),
+                     'count': int(v),
+                     # 전주도 7일 완전할 때만 증감 표시 (부분 주 대비 왜곡 방지)
+                     'delta': (int(v) - int(prev_tot.get(eid, 0))) if n_prev == 7 else None})
+    trend = {'days': [f"{d.month}/{d.day} ({_WD_KO[d.weekday()]})" for d in days], 'series': []}
+    for eid, _v in tot.most_common(trend_n):
+        nd = nodes.get(eid, {})
+        trend['series'].append({'id': eid, 'name': nd.get('name', eid),
+                                'type': _KG_TYPE_KO.get(nd.get('node_type'), ''),
+                                'counts': [int(dd.get(eid, 0)) for dd in daily]})
+    return {'rows': rows, 'trend': trend}
+
+
+def _kgf_esc(x):
+    return str(x).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+
+def _render_kg_trend_svg(trend):
+    """주중 일별 변화 — 정적 SVG 선 그래프 (JS 불필요, PDF 변환에도 안전)."""
+    days = trend.get('days') or []
+    series = trend.get('series') or []
+    if not days or not series or len(days) < 2:
+        return ''
+    COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4']
+    W, H, L, R, T, B = 760, 320, 44, 155, 14, 30
+    vmax = max((max(sr['counts']) for sr in series if sr['counts']), default=0) or 1
+    step = next((st for st in (1, 2, 5, 10, 20, 25, 50, 100, 200, 500, 1000) if vmax / st <= 4), 2000)
+    ymax = step * max(1, -(-vmax // step))
+    x = lambda i: L + i * (W - L - R) / (len(days) - 1)
+    y = lambda v: T + (H - T - B) * (1 - v / ymax)
+    g = []
+    v = 0
+    while v <= ymax:
+        g.append(f'<line x1="{L}" y1="{y(v):.1f}" x2="{W - R}" y2="{y(v):.1f}" stroke="#e4e3df" stroke-width="1"/>')
+        g.append(f'<text x="{L - 6}" y="{y(v) + 4:.1f}" text-anchor="end" font-size="11" fill="#8a897f">{v}</text>')
+        v += step
+    for i, dl in enumerate(days):
+        g.append(f'<text x="{x(i):.1f}" y="{H - 8}" text-anchor="middle" font-size="11" fill="#8a897f">{_kgf_esc(dl)}</text>')
+    ends = []
+    for si, sr in enumerate(series):
+        c = COLORS[si % len(COLORS)]
+        pts = ' '.join(f'{x(i):.1f},{y(v):.1f}' for i, v in enumerate(sr['counts']))
+        g.append(f'<polyline points="{pts}" fill="none" stroke="{c}" stroke-width="2" stroke-linejoin="round"/>')
+        for i, v in enumerate(sr['counts']):
+            g.append(f'<circle cx="{x(i):.1f}" cy="{y(v):.1f}" r="4" fill="{c}" stroke="#fff" stroke-width="2">'
+                     f'<title>{_kgf_esc(sr["name"])} · {_kgf_esc(days[i])} · {v}건</title></circle>')
+        ends.append([y(sr['counts'][-1]), sr['name'], sr['counts'][-1], c])
+    ends.sort(key=lambda e: e[0])
+    for k in range(1, len(ends)):
+        if ends[k][0] - ends[k - 1][0] < 15:
+            ends[k][0] = ends[k - 1][0] + 15
+    for ey, name, val, c in ends:
+        g.append(f'<text x="{W - R + 10}" y="{ey + 4:.1f}" font-size="11.5" font-weight="600" fill="{c}">'
+                 f'{_kgf_esc(name)} {val}</text>')
+    return (f'<svg viewBox="0 0 {W} {H}" style="width:100%;height:auto;display:block;margin-top:6px;" role="img">'
+            + ''.join(g) + '</svg>')
+
+
+def render_kg_focus_block(s):
+    """주간 리포트용 '공급망 요소별 기사량' 섹션 (스냅샷 막대 + 주중 일별 추이).
+    kg_focus 필드가 없는 과거 주차는 빈 문자열 반환 (게시본 불변 원칙)."""
+    kf = s.get('kg_focus') or {}
+    rows = kf.get('rows') or []
+    if not rows:
+        return ''
+    mx = max(r['count'] for r in rows) or 1
+    bars = []
+    for r in rows:
+        w = max(r['count'] / mx * 100, 2)
+        d = r.get('delta')
+        if d is None:
+            dtxt = ''
+        elif d > 0:
+            dtxt = f' <span style="color:#d03b3b;font-weight:600;">▲{d}</span>'
+        elif d < 0:
+            dtxt = f' <span style="color:#999;">▼{-d}</span>'
+        else:
+            dtxt = ' <span style="color:#999;">—</span>'
+        bars.append(
+            '<div style="display:grid;grid-template-columns:230px 1fr 110px;align-items:center;gap:10px;margin:6px 0;">'
+            '<div style="font-size:13px;text-align:right;">'
+            f'<span style="font-size:10.5px;color:#999;border:1px solid #ddd;border-radius:4px;'
+            f'padding:0 5px;margin-right:6px;">{_kgf_esc(r["type"])}</span>{_kgf_esc(r["name"])}</div>'
+            '<div style="background:#dce9f9;border-radius:4px;height:16px;">'
+            f'<div style="background:#2a78d6;width:{w:.1f}%;height:100%;border-radius:4px;min-width:3px;"></div></div>'
+            f'<div style="font-size:12.5px;color:#555;white-space:nowrap;">{r["count"]}건{dtxt}</div></div>')
+    svg = _render_kg_trend_svg(kf.get('trend') or {})
+    note = ('<p style="font-size:11px;color:#999;margin:10px 0 0;">'
+            '일간 브리핑과 동일 집계(HIGH·MEDIUM 기사 제목의 KG 매칭)의 주간 합산 · '
+            '▲▼ 전주 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>'
+            '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님</p>')
+    return ('<div class="kgf-block" style="background:#fff;border:1px solid #e3e6ea;border-radius:8px;'
+            'padding:14px 16px;margin:14px 0;">'
+            '<b>📊 공급망 요소별 기사량 (주간 상위 10)</b><div style="margin-top:8px;">'
+            + ''.join(bars) + '</div>'
+            + (f'<div style="margin-top:18px;"><b>📈 주중 일별 변화 (상위 5)</b>{svg}</div>' if svg else '')
+            + note + '</div>')
+
+
 def step7_generate_scenario(phaseA_df, indicator_weekly_df, tier_info, kg_data, week_tag):
     """LLM(Claude Sonnet) 기반 주간 시나리오 생성 + scenario_results.json 갱신 저장.
 
@@ -3841,6 +4042,16 @@ def step7_generate_scenario(phaseA_df, indicator_weekly_df, tier_info, kg_data, 
     result['week']       = week_label
     result['indicators'] = ind_snap
     result['_phaseA_week_tag'] = week_tag
+
+    # 공급망 요소별 기사량 (주간) — 일간 브리핑과 동일 집계 (2026-09-13)
+    try:
+        _y, _w = week_label.split('-W')
+        _sun_tag = datetime.fromisocalendar(int(_y), int(_w), 7).strftime('%Y%m%d')
+        result['kg_focus'] = build_kg_weekly_focus(_sun_tag, kg_data['entity_patterns'], kg_data['nodes'])
+        _kf_n = len((result['kg_focus'] or {}).get('rows', []))
+        print(f"  kg_focus(주간): {_kf_n}개 요소")
+    except Exception as _e:
+        print(f"  ⚠ kg_focus 집계 실패: {_e}")
 
     existing[week_label] = result
     merged = sorted(existing.values(), key=lambda x: x.get('week', ''))
@@ -4766,6 +4977,8 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                     html.append(f'<li><span class="horizon">{esc(w.get("horizon",""))}</span> {clean_kg(w.get("point",""))}</li>')
                 html.append('</ul></div>')
             html.append('</div>')  # header-block
+            # ── 공급망 요소별 기사량 (주간) — kg_focus 없는 과거 주차는 미표시 ──
+            html.append(render_kg_focus_block(s))
             # 지표 패널
             html.append(render_indicators(indicators))
             # Part A

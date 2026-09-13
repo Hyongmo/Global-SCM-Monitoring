@@ -2554,8 +2554,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 50,
-      "delta": -44
+      "count": 55,
+      "delta": -48
     },
     {
       "id": "CP_Hormuz",
@@ -2565,39 +2565,18 @@
       "delta": -43
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 29,
-      "delta": 10
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 20,
-      "delta": 5
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 9,
-      "delta": -16
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 9,
-      "delta": -10
+      "count": 21,
+      "delta": 6
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 7,
-      "delta": -3
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 8,
+      "delta": 3
     },
     {
       "id": "CP_Taiwan",
@@ -2619,6 +2598,27 @@
       "type": "초크포인트",
       "count": 2,
       "delta": 2
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": -1
     }
   ]
 }

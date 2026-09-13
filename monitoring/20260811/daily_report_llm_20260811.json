@@ -2356,6 +2356,13 @@
   },
   "kg_focus": [
     {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 69,
+      "delta": 33
+    },
+    {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
@@ -2363,32 +2370,11 @@
       "delta": -15
     },
     {
-      "id": "CF_CrudeOil",
-      "name": "원유",
-      "type": "품목",
-      "count": 64,
-      "delta": 30
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 24,
-      "delta": 14
-    },
-    {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
-      "count": 21,
+      "count": 20,
       "delta": 18
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 15,
-      "delta": 10
     },
     {
       "id": "BP_OmanLand",
@@ -2412,18 +2398,32 @@
       "delta": 4
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 5,
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 4,
       "delta": 2
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 5,
-      "delta": 2
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 2,
+      "delta": -3
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "BP_CapeRoute",
+      "name": "희망봉 해상 우회 (Cape of Good Hope)",
+      "type": "우회 인프라",
+      "count": 1,
+      "delta": 1
     }
   ]
 }

@@ -3342,60 +3342,25 @@
       "delta": 4
     },
     {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 67,
-      "delta": 66
-    },
-    {
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 58,
-      "delta": -10
+      "count": 61,
+      "delta": -14
     },
     {
       "id": "EVT_RedSea2023",
-      "name": "2023 Red Sea 후티",
-      "type": "위기 이벤트",
-      "count": 37,
-      "delta": 34
-    },
-    {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
+      "name": "홍해·후티 사태",
       "type": "위기 이벤트",
       "count": 30,
-      "delta": -3
+      "delta": 27
     },
     {
-      "id": "POL_ShippingReroute",
-      "name": "해운 우회경로 확보",
-      "type": "정책",
-      "count": 22,
-      "delta": 15
-    },
-    {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 14,
-      "delta": 10
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
-      "count": 13,
-      "delta": 5
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
+      "id": "CF_LNG",
+      "name": "LNG",
       "type": "품목",
-      "count": 8,
-      "delta": -10
+      "count": 15,
+      "delta": 11
     },
     {
       "id": "CP_BabElMandeb",
@@ -3403,6 +3368,41 @@
       "type": "초크포인트",
       "count": 7,
       "delta": 3
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 4,
+      "delta": -4
+    },
+    {
+      "id": "KP_Gwangyang",
+      "name": "광양항",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "POL_UreaStockpile",
+      "name": "요소 전략비축",
+      "type": "정책",
+      "count": 2,
+      "delta": -2
+    },
+    {
+      "id": "FP_Fujairah",
+      "name": "푸자이라",
+      "type": "해외 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "CP_Malacca",
+      "name": "말라카 해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 0
     }
   ]
 }

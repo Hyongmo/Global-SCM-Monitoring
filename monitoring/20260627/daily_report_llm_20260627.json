@@ -2577,15 +2577,8 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 13,
-      "delta": -22
-    },
-    {
-      "id": "CF_Coal",
-      "name": "석탄",
-      "type": "품목",
-      "count": 7,
-      "delta": -1
+      "count": 19,
+      "delta": -19
     },
     {
       "id": "VT_Reefer",
@@ -2595,25 +2588,11 @@
       "delta": -22
     },
     {
-      "id": "EVT_Ukraine2022",
-      "name": "2022 우크라이나",
-      "type": "위기 이벤트",
-      "count": 5,
-      "delta": -5
-    },
-    {
-      "id": "BP_SaudiEastWest",
-      "name": "사우디 East-West 파이프라인 (Petroline)",
-      "type": "우회 인프라",
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
       "count": 4,
-      "delta": -4
-    },
-    {
-      "id": "VT_ChemTanker",
-      "name": "케미컬탱커",
-      "type": "선종",
-      "count": 3,
-      "delta": 1
+      "delta": 2
     },
     {
       "id": "FP_RasTanura",
@@ -2630,11 +2609,32 @@
       "delta": -3
     },
     {
-      "id": "POL_LNGDiversify",
-      "name": "LNG 공급원 다변화",
-      "type": "정책",
-      "count": 3,
-      "delta": 1
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 0
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": -10
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 0
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 1,
+      "delta": 0
     }
   ]
 }
