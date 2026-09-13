@@ -3945,8 +3945,10 @@ def _render_kg_trend_svg(trend):
     for ey, name, val, c in ends:
         g.append(f'<text x="{W - R + 10}" y="{ey + 4:.1f}" font-size="12.5" font-weight="600" fill="{c}">'
                  f'{_kgf_esc(name)} {val}</text>')
-    return (f'<svg viewBox="0 0 {W} {H}" style="width:100%;height:auto;display:block;margin-top:6px;" role="img">'
-            + ''.join(g) + '</svg>')
+    # 모바일: 그림에 최소 폭(960px)을 주고 좌우 스크롤 — 글자가 읽을 수 없이 줄어드는 것 방지 (2026-09-14)
+    return ('<div style="overflow-x:auto;">'
+            f'<svg viewBox="0 0 {W} {H}" style="width:100%;min-width:960px;height:auto;display:block;margin-top:6px;" role="img">'
+            + ''.join(g) + '</svg></div>')
 
 
 def render_kg_focus_block(s):
@@ -3970,19 +3972,29 @@ def render_kg_focus_block(s):
         else:
             dtxt = ' <span style="color:#999;">—</span>'
         bars.append(
-            '<div style="display:grid;grid-template-columns:230px 1fr 110px;align-items:center;gap:10px;margin:6px 0;">'
-            '<div style="font-size:13px;text-align:right;">'
+            '<div class="kgf-row">'
+            '<div class="kgf-lab">'
             f'<span style="font-size:10.5px;color:#999;border:1px solid #ddd;border-radius:4px;'
             f'padding:0 5px;margin-right:6px;">{_kgf_esc(r["type"])}</span>{_kgf_esc(r["name"])}</div>'
-            '<div style="background:#dce9f9;border-radius:4px;height:16px;">'
+            '<div class="kgf-track" style="background:#dce9f9;border-radius:4px;height:16px;">'
             f'<div style="background:#2a78d6;width:{w:.1f}%;height:100%;border-radius:4px;min-width:3px;"></div></div>'
-            f'<div style="font-size:12.5px;color:#555;white-space:nowrap;">{r["count"]}건{dtxt}</div></div>')
+            f'<div class="kgf-val">{r["count"]}건{dtxt}</div></div>')
     svg = _render_kg_trend_svg(kf.get('trend') or {})
     note = ('<p style="font-size:11px;color:#999;margin:10px 0 0;">'
             '일간 브리핑과 동일 집계(HIGH·MEDIUM 기사 제목의 KG 매칭)의 주간 합산 · '
             '▲▼ 전주 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>'
             '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님</p>')
-    return ('<div class="kgf-block" style="background:#fff;border:1px solid #e3e6ea;border-radius:8px;'
+    _css = ('<style>'
+            '.kgf-row{display:grid;grid-template-columns:230px 1fr 110px;align-items:center;gap:10px;margin:6px 0;}'
+            '.kgf-lab{font-size:13px;text-align:right;}'
+            '.kgf-val{font-size:12.5px;color:#555;white-space:nowrap;}'
+            '@media (max-width:640px){'
+            '.kgf-row{grid-template-columns:1fr auto;grid-template-areas:"lab lab" "track val";row-gap:3px;}'
+            '.kgf-lab{grid-area:lab;text-align:left;}'
+            '.kgf-track{grid-area:track;}'
+            '.kgf-val{grid-area:val;}}'
+            '</style>')
+    return (_css + '<div class="kgf-block" style="background:#fff;border:1px solid #e3e6ea;border-radius:8px;'
             'padding:14px 16px;margin:14px 0;">'
             '<b>📊 공급망 요소별 기사량 (주간 상위 10)</b><div style="margin-top:8px;">'
             + ''.join(bars) + '</div>'

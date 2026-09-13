@@ -218,16 +218,15 @@ def _kg_focus_html(rows):
         else:
             dtxt = ' <span style="color:#999;">—</span>'
         out.append(
-            '<div style="display:grid; grid-template-columns:220px 1fr 96px;'
-            ' align-items:center; gap:10px; margin:6px 0;">'
-            '<div style="font-size:13px; text-align:right;">'
+            '<div class="kgf-row">'
+            '<div class="kgf-lab">'
             f'<span style="font-size:10.5px; color:#999; border:1px solid #ddd;'
             f' border-radius:4px; padding:0 5px; margin-right:6px;">{r["type"]}</span>'
             f'{r["name"]}</div>'
-            '<div style="background:#dce9f9; border-radius:4px; height:16px;">'
+            '<div class="kgf-track" style="background:#dce9f9; border-radius:4px; height:16px;">'
             f'<div style="background:#2a78d6; width:{w:.1f}%; height:100%;'
             ' border-radius:4px; min-width:3px;"></div></div>'
-            f'<div style="font-size:12.5px; color:#555; white-space:nowrap;">{r["count"]}건{dtxt}</div>'
+            f'<div class="kgf-val">{r["count"]}건{dtxt}</div>'
             '</div>')
     return (
         '<div class="section"><div class="section-title">📊 공급망 요소별 기사량</div>'
@@ -520,6 +519,16 @@ body {{ font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
   .tv-mini {{ height:150px; }}
 }}
 body{{-webkit-user-select:none;-ms-user-select:none;user-select:none;}}input,textarea{{-webkit-user-select:text;user-select:text;}}
+/* 공급망 요소별 기사량 — 모바일 대응 (2026-09-14) */
+.kgf-row {{ display:grid; grid-template-columns:220px 1fr 96px; align-items:center; gap:10px; margin:6px 0; }}
+.kgf-lab {{ font-size:13px; text-align:right; }}
+.kgf-val {{ font-size:12.5px; color:#555; white-space:nowrap; }}
+@media (max-width:640px) {{
+  .kgf-row {{ grid-template-columns:1fr auto; grid-template-areas:"lab lab" "track val"; row-gap:3px; }}
+  .kgf-lab {{ grid-area:lab; text-align:left; }}
+  .kgf-track {{ grid-area:track; }}
+  .kgf-val {{ grid-area:val; }}
+}}
 </style>
 </head>
 <body>
