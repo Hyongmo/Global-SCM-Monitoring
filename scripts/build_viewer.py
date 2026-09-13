@@ -68,7 +68,7 @@ for jf in (json_files[:MAX_DAYS] if MAX_DAYS > 0 else json_files):
             'sources':    raw.get('sources', {}),
             'ref_map':    raw.get('ref_map', {}),
             'collection_notice': raw.get('collection_notice'),   # 수집 결손 안내
-            'kg_focus': raw.get('kg_focus', []),                 # 기사가 집중된 위기 요소
+            'kg_focus': raw.get('kg_focus', []),                 # 공급망 요소별 기사량
         })
         print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
     except Exception as e:
@@ -201,7 +201,7 @@ def _tv_widget_html():
 
 
 def _kg_focus_html(rows):
-    """기사가 집중된 위기 요소 — 가로막대 (2026-09-13). JSON kg_focus 필드 렌더."""
+    """공급망 요소별 기사량 — 가로막대 (2026-09-13). JSON kg_focus 필드 렌더."""
     if not rows:
         return ''
     mx = max(r['count'] for r in rows) or 1
@@ -230,10 +230,10 @@ def _kg_focus_html(rows):
             f'<div style="font-size:12.5px; color:#555; white-space:nowrap;">{r["count"]}건{dtxt}</div>'
             '</div>')
     return (
-        '<div class="section"><div class="section-title">📊 기사가 집중된 위기 요소</div>'
+        '<div class="section"><div class="section-title">📊 공급망 요소별 기사량</div>'
         + ''.join(out) +
         '<p style="font-size:11px; color:#999; margin:8px 0 0;">KG 매칭 기준 상위 10 ·'
-        ' ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음</p></div>')
+        ' ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>검색된 기사에 한한 것으로 전세계 기사량 기반이 아님</p></div>')
 
 
 def _render_day(d, idx, is_latest=False):

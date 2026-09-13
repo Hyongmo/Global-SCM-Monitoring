@@ -1529,7 +1529,7 @@ REPORT_SYSTEM = """당신은 KMI(한국해양수산개발원) 해상 공급망 �
 
 
 
-# ── 기사가 집중된 위기 요소 (KG 매칭 기반, 2026-09-13) ──────────
+# ── 공급망 요소별 기사량 (KG 매칭 기반, 2026-09-13) ──────────
 #   "어제 기사가 무엇을 주로 다뤘나"를 KG 노드 단위로 집계한다.
 #   축은 카테고리가 아니라 KG — 위기가 옮겨가면 축이 자동으로 따라간다.
 #   기업 노드는 기업 특정 방지 원칙, 한국영향·한국산업은 사용자 결정으로 제외.
@@ -1820,7 +1820,7 @@ else:
         'sources':    sources,
         'ref_map':    ref_map,
         'collection_notice': COLLECTION_NOTICE,   # 수집 결손 안내 (없으면 None)
-        'kg_focus': _build_kg_focus(DATE_TAG),    # 기사가 집중된 위기 요소 (상위 10)
+        'kg_focus': _build_kg_focus(DATE_TAG),    # 공급망 요소별 기사량 (상위 10)
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)
@@ -1845,14 +1845,14 @@ else:
     if _kg_focus:
         L("---")
         L("")
-        L("## 📊 기사가 집중된 위기 요소 (상위 10)")
+        L("## 📊 공급망 요소별 기사량 (상위 10)")
         L("")
         for _r in _kg_focus:
             _d = _r.get('delta')
             _arrow = '' if _d is None else (f' (▲{_d})' if _d > 0 else (f' (▼{-_d})' if _d < 0 else ' (—)'))
             L(f"- [{_r['type']}] {_r['name']} — {_r['count']}건{_arrow}")
         L("")
-        L("> KG 매칭 기준 언급 기사 수 · ▲▼는 전일 대비 · 한 기사가 여러 요소를 언급할 수 있음")
+        L("> KG 매칭 기준 언급 기사 수 · ▲▼는 전일 대비 · 한 기사가 여러 요소를 언급할 수 있음 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님")
         L("")
     L("---")
     L("")
@@ -1914,7 +1914,7 @@ else:
         doc.add_paragraph(report_json.get('executive_summary', ''))
         if json_data.get('kg_focus'):
             doc.add_paragraph()
-            doc.add_heading('기사가 집중된 위기 요소 (상위 10)', level=2)
+            doc.add_heading('공급망 요소별 기사량 (상위 10)', level=2)
             _kf = json_data['kg_focus']
             _t = doc.add_table(rows=1 + len(_kf), cols=4); _t.style = 'Table Grid'
             for _j, _h in enumerate(['유형', '요소', '기사 수', '전일 대비']):
@@ -1925,6 +1925,9 @@ else:
                 _c[2].text = f"{_r['count']}건"
                 _d = _r.get('delta')
                 _c[3].text = '-' if _d is None else ('▲%d' % _d if _d > 0 else ('▼%d' % -_d if _d < 0 else '0'))
+            _np = doc.add_paragraph()
+            _nr = _np.add_run('※ KG 매칭 기준 · ▲▼는 전일 대비 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님')
+            _nr.font.size = Pt(9); _nr.font.color.rgb = RGBColor(0x80, 0x80, 0x80)
         doc.add_paragraph()
         doc.add_heading('카테고리별 분석', level=2)
         for cat in CAT_ORDER:

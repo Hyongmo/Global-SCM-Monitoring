@@ -223,7 +223,7 @@ subject = f'[KMI 글로벌 공급망 AI 일일 브리핑] {PUB_DATE} AI 브리�
 # summary 모드: 폭 제한 없음 / full·brief 모드: 960px
 _content_width = 'margin:0 auto; padding:20px 16px;'
 
-# ── 기사가 집중된 위기 요소 (2026-09-13) — 이메일 안전형 표 기반 막대 ──
+# ── 공급망 요소별 기사량 (2026-09-13) — 이메일 안전형 표 기반 막대 ──
 #   메일 클라이언트는 JS·호버가 안 되므로 표(table) 레이아웃으로 그린다.
 _kg_focus = data.get('kg_focus') or [] if 'data' in dir() else []
 kg_focus_html = ''
@@ -260,11 +260,11 @@ if _kg_focus:
             '</tr>')
     kg_focus_html = (
         f'<div {_SEC}>'
-        f'<div {_SEC_TITLE}>📊 기사가 집중된 위기 요소</div>'
+        f'<div {_SEC_TITLE}>📊 공급망 요소별 기사량</div>'
         '<table role="presentation" cellpadding="0" cellspacing="0"'
         f' style="width:100%; border-collapse:collapse;">{_kfrows}</table>'
         '<p style="font-size:11px; color:#999; margin:6px 0 0;">'
-        'KG 매칭 기준 상위 10 · ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음</p>'
+        'KG 매칭 기준 상위 10 · ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>검색된 기사에 한한 것으로 전세계 기사량 기반이 아님</p>'
         '</div>')
 
 # summary 모드: 주요기사 요약 + 뷰어 링크만 / brief·full: 전체 브리핑 포함
