@@ -418,6 +418,123 @@ class WeeklyReportPDF(FPDF):
         self.ln(3)
 
 
+
+# ══════════════════════════════════════════════════════════════
+# 공급망 요소별 기사량 (2026-09-13 신설)
+# 사용자 결정 (2026-09-13): PDF에는 2026-W37(9/14 월요일 생성분)부터만 반영
+# — 이미 게시된 과거 PDF는 재생성 시에도 이전 모습 그대로 유지
+# ══════════════════════════════════════════════════════════════
+KG_FOCUS_PDF_FROM_WEEK = '2026-W37'
+
+
+def _draw_kg_focus(pdf, scenario, sec_no):
+    """공급망 요소별 기사량: 주간 상위 10 가로막대 + 주중 일별 추이 선그래프.
+    HTML 리포트의 같은 섹션과 동일 데이터(scenario['kg_focus'])를 fpdf로 직접 그린다."""
+    kf = scenario.get('kg_focus') or {}
+    rows = kf.get('rows') or []
+    if not rows:
+        return
+    pdf._section_title(sec_no, '공급망 요소별 기사량')
+    L = pdf.l_margin
+    CW = pdf.w - pdf.l_margin - pdf.r_margin
+    mx = max(r['count'] for r in rows) or 1
+    lab_w, val_w, row_h = 62.0, 30.0, 5.6
+    bar_max = CW - lab_w - val_w - 4
+    if pdf.get_y() + row_h * len(rows) + 12 > pdf.h - 25:
+        pdf.add_page()
+    for r in rows:
+        y = pdf.get_y()
+        pdf.set_font('KR', '', 8.5)
+        pdf.set_text_color(60, 60, 60)
+        pdf.set_xy(L, y)
+        pdf.cell(lab_w, row_h, clean_text(f"[{r['type']}] {r['name']}")[:40], align='R')
+        bw = max(r['count'] / mx * bar_max, 1.5)
+        pdf.set_fill_color(42, 120, 214)
+        pdf.rect(L + lab_w + 2, y + 1.1, bw, row_h - 2.2, 'F')
+        d = r.get('delta')
+        if d is None:
+            dtxt, dc = '', (150, 150, 150)
+        elif d > 0:
+            dtxt, dc = f'▲{d}', (208, 59, 59)
+        elif d < 0:
+            dtxt, dc = f'▼{-d}', (150, 150, 150)
+        else:
+            dtxt, dc = '—', (150, 150, 150)
+        pdf.set_xy(L + lab_w + 2 + bw + 1.5, y)
+        pdf.set_text_color(80, 80, 80)
+        pdf.cell(11, row_h, f"{r['count']}건")
+        if dtxt:
+            pdf.set_xy(L + lab_w + 2 + bw + 13, y)
+            pdf.set_text_color(*dc)
+            pdf.cell(12, row_h, dtxt)
+        pdf.set_y(y + row_h)
+    trend = kf.get('trend') or {}
+    days = trend.get('days') or []
+    series = [sr for sr in (trend.get('series') or []) if sr.get('counts')]
+    if len(days) >= 2 and series:
+        ch_h = 55.0
+        if pdf.get_y() + ch_h + 22 > pdf.h - 25:
+            pdf.add_page()
+        pdf.set_y(pdf.get_y() + 3)
+        pdf.set_font('KR', 'B', 9.5)
+        pdf.set_text_color(40, 40, 40)
+        pdf.set_x(L)
+        pdf.cell(0, 6, '주중 일별 변화 (상위 5)')
+        y0 = pdf.get_y() + 8
+        plot_l, plot_r = L + 10, L + CW - 42
+        plot_w = plot_r - plot_l
+        vmax = max(max(sr['counts']) for sr in series) or 1
+        step = next((st for st in (1, 2, 5, 10, 20, 25, 50, 100, 200, 500, 1000)
+                     if vmax / st <= 4), 2000)
+        ymax = step * max(1, -(-vmax // step))
+        X = lambda i: plot_l + i * plot_w / (len(days) - 1)
+        Y = lambda v: y0 + ch_h * (1 - v / ymax)
+        pdf.set_line_width(0.2)
+        pdf.set_draw_color(228, 227, 223)
+        pdf.set_font('KR', '', 7)
+        pdf.set_text_color(138, 137, 127)
+        v = 0
+        while v <= ymax:
+            pdf.line(plot_l, Y(v), plot_r, Y(v))
+            pdf.set_xy(plot_l - 10, Y(v) - 1.5)
+            pdf.cell(8, 3, str(v), align='R')
+            v += step
+        for i, dl in enumerate(days):
+            pdf.set_xy(X(i) - 9, y0 + ch_h + 1.5)
+            pdf.cell(18, 3, dl, align='C')
+        COLORS = [(42, 120, 214), (235, 104, 52), (27, 175, 122), (237, 161, 0), (232, 123, 164)]
+        ends = []
+        pdf.set_line_width(0.5)
+        for si, sr in enumerate(series):
+            c = COLORS[si % len(COLORS)]
+            pdf.set_draw_color(*c)
+            for i in range(len(sr['counts']) - 1):
+                pdf.line(X(i), Y(sr['counts'][i]), X(i + 1), Y(sr['counts'][i + 1]))
+            pdf.set_fill_color(*c)
+            for i, vv in enumerate(sr['counts']):
+                pdf.ellipse(X(i) - 0.9, Y(vv) - 0.9, 1.8, 1.8, 'F')
+            ends.append([Y(sr['counts'][-1]), sr['name'], sr['counts'][-1], c])
+        ends.sort(key=lambda e: e[0])
+        for k in range(1, len(ends)):
+            if ends[k][0] - ends[k - 1][0] < 4:
+                ends[k][0] = ends[k - 1][0] + 4
+        pdf.set_font('KR', 'B', 7.5)
+        for ey, nm, vv, c in ends:
+            pdf.set_text_color(*c)
+            pdf.set_xy(plot_r + 2, ey - 1.7)
+            pdf.cell(40, 3.4, f'{clean_text(nm)} {vv}')
+        pdf.set_y(y0 + ch_h + 7)
+    pdf.set_x(L)
+    pdf.set_font('KR', '', 7)
+    pdf.set_text_color(150, 150, 150)
+    pdf.multi_cell(0, 3.4,
+        '일간 브리핑과 동일 집계(HIGH·MEDIUM 기사 제목의 KG 매칭)의 주간 합산 · '
+        '▲▼ 전주 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음 · '
+        '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님')
+    pdf.set_y(pdf.get_y() + 3)
+    pdf.set_text_color(0, 0, 0)
+
+
 def generate_pdf(scenario, font_reg, font_bold):
     """단일 주의 PDF 보고서 생성"""
 
@@ -561,7 +678,12 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     # 3. 주요 지표
     # ══════════════════════════════════════════════════
-    pdf._section_title(3, '주요 지표')
+    # ── 공급망 요소별 기사량 (2026-09-13, W37 생성분부터) ──
+    _sec = 3
+    if scenario.get('kg_focus') and scenario.get('week', '') >= KG_FOCUS_PDF_FROM_WEEK:
+        _draw_kg_focus(pdf, scenario, _sec)
+        _sec += 1
+    pdf._section_title(_sec, '주요 지표')
 
     # 지표를 그룹별로 분류
     ind_by_group = {}
@@ -622,7 +744,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     routes = scenario.get('part_a', {}).get('routes', [])
     if routes:
-        pdf._section_title(4, '국제 → 한국 전파경로')
+        pdf._section_title(_sec + 1, '국제 → 한국 전파경로')
         for r in routes:
             status = r.get('status', '')
             commodity = clean_text(r.get('commodity', ''))
@@ -667,7 +789,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     # ══════════════════════════════════════════════════
     matrix = scenario.get('part_d', {}).get('matrix', [])
     if matrix:
-        pdf._section_title(5, '산업별 영향 매트릭스')
+        pdf._section_title(_sec + 2, '산업별 영향 매트릭스')
         headers_m = ['산업', '방향', '초기', '중기', '장기', '변화']
         widths_m = [30, 18, 18, 18, 18, 12]
         rows_m = []
@@ -708,7 +830,7 @@ def generate_pdf(scenario, font_reg, font_bold):
     wps = header.get('watchpoints', [])
 
     if vulns or recs or wps:
-        pdf._section_title(6, '취약점 진단 및 모니터링 권고')
+        pdf._section_title(_sec + 3, '취약점 진단 및 모니터링 권고')
 
         if wps:
             pdf._sub_heading('향후 주시 포인트')
