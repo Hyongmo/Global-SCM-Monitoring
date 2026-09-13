@@ -4169,8 +4169,9 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
         }
         DIR_ICON = {'네거티브': '▼', '포지티브': '▲', '혼합': '◆', '안정': '●', '?': '?'}
         TIER_BG  = {1: '#27ae60', 2: '#2980b9', 3: '#e67e22', 4: '#c0392b'}
-        CHG_SYM  = {'↑': '🔺', '↓': '🔻', '☆': '⭐', '−': '—',
-                    '↑↑': '🔺🔺', '↓↓': '🔻🔻'}
+        # 2026-09-13: 이모지 대신 색 지정 화살표 — 상승 빨강, 하락 파랑 (사용자 결정)
+        CHG_SYM  = {'↑': '<span style="color:#d03b3b">▲</span>', '↓': '<span style="color:#2a78d6">▼</span>', '☆': '⭐', '−': '—',
+                    '↑↑': '<span style="color:#d03b3b">▲</span><span style="color:#d03b3b">▲</span>', '↓↓': '<span style="color:#2a78d6">▼</span><span style="color:#2a78d6">▼</span>'}
         GROUP_ORDER = [
             '글로벌 해운', '초크포인트', '공급망 스트레스', '에너지',
             '거시경제', '한국 해운', '한국 에너지', '한국 철강/소재',
