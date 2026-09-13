@@ -4355,5 +4355,77 @@
         "type": "dom"
       }
     ]
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 137,
+      "delta": 64
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 94,
+      "delta": 14
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 48,
+      "delta": -21
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 17,
+      "delta": 4
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 16,
+      "delta": 13
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 8,
+      "delta": 1
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 8,
+      "delta": -7
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 7,
+      "delta": 4
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 5,
+      "delta": 4
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 5,
+      "delta": 3
+    }
+  ]
 }

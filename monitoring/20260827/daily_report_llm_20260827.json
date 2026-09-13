@@ -2030,5 +2030,77 @@
       "type": "dom"
     }
   },
-  "collection_notice": "⚠ GDELT(영문 해외 기사) 수집이 정상 종료되지 않았습니다 (최후 안전망 60분 초과). 키워드 30/122개만 처리되어 해외 기사가 포함되지 않거나 부족합니다. 국내(네이버) 기사 기준으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다."
+  "collection_notice": "⚠ GDELT(영문 해외 기사) 수집이 정상 종료되지 않았습니다 (최후 안전망 60분 초과). 키워드 30/122개만 처리되어 해외 기사가 포함되지 않거나 부족합니다. 국내(네이버) 기사 기준으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다.",
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 70,
+      "delta": -47
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 54,
+      "delta": -24
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 44,
+      "delta": 4
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 18,
+      "delta": 5
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 16,
+      "delta": -42
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 15,
+      "delta": 8
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 11,
+      "delta": 9
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 10,
+      "delta": 8
+    },
+    {
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 9,
+      "delta": 6
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 6,
+      "delta": -13
+    }
+  ]
 }

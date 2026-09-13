@@ -2298,5 +2298,77 @@
       "url": "https://n.news.naver.com/mnews/article/448/0000632452?sid=104",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 103,
+      "delta": 0
+    },
+    {
+      "id": "BP_SaudiEastWest",
+      "name": "사우디 East-West 파이프라인 (Petroline)",
+      "type": "우회 인프라",
+      "count": 54,
+      "delta": 45
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 26,
+      "delta": -2
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 17,
+      "delta": -4
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 14,
+      "delta": -14
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 7,
+      "delta": 4
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "2023 Red Sea 후티",
+      "type": "위기 이벤트",
+      "count": 7,
+      "delta": 6
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 6,
+      "delta": -12
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 6,
+      "delta": 2
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 5,
+      "delta": 5
+    }
+  ]
 }

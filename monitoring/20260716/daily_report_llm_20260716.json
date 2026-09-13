@@ -3332,5 +3332,77 @@
       "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=847489",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 72,
+      "delta": 4
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 67,
+      "delta": 66
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 58,
+      "delta": -10
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "2023 Red Sea 후티",
+      "type": "위기 이벤트",
+      "count": 37,
+      "delta": 34
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 30,
+      "delta": -3
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 22,
+      "delta": 15
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 14,
+      "delta": 10
+    },
+    {
+      "id": "BP_SaudiEastWest",
+      "name": "사우디 East-West 파이프라인 (Petroline)",
+      "type": "우회 인프라",
+      "count": 13,
+      "delta": 5
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 8,
+      "delta": -10
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 7,
+      "delta": 3
+    }
+  ]
 }

@@ -4457,5 +4457,77 @@
       "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598870716304",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 279,
+      "delta": 212
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 77,
+      "delta": -35
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 44,
+      "delta": -9
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 25,
+      "delta": 23
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 23,
+      "delta": 18
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 17,
+      "delta": 8
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 10,
+      "delta": -2
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 9,
+      "delta": 9
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 5,
+      "delta": 3
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 5,
+      "delta": 5
+    }
+  ]
 }

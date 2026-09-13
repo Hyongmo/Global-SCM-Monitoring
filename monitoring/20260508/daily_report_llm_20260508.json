@@ -3142,5 +3142,77 @@
       "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=235308",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 81,
+      "delta": 4
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 48,
+      "delta": -31
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 30,
+      "delta": -8
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 14,
+      "delta": -1
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 12,
+      "delta": -3
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 9,
+      "delta": -3
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 6,
+      "delta": -5
+    },
+    {
+      "id": "CF_Naphtha",
+      "name": "나프타",
+      "type": "품목",
+      "count": 4,
+      "delta": -10
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": 1
+    },
+    {
+      "id": "CF_EuroContainer",
+      "name": "유럽 컨테이너",
+      "type": "품목",
+      "count": 2,
+      "delta": 1
+    }
+  ]
 }

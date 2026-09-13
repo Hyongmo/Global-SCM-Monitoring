@@ -1869,5 +1869,77 @@
       "url": "https://n.news.naver.com/mnews/article/001/0016253329?sid=104",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 86,
+      "delta": 32
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 15,
+      "delta": 15
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 14,
+      "delta": -10
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "2023 Red Sea 후티",
+      "type": "위기 이벤트",
+      "count": 12,
+      "delta": 10
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 8,
+      "delta": -32
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 4,
+      "delta": 1
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": -7
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 3,
+      "delta": -4
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 2,
+      "delta": -9
+    }
+  ]
 }

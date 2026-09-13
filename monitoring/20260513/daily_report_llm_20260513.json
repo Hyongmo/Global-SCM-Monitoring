@@ -2698,5 +2698,77 @@
       "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=266282",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 75,
+      "delta": 32
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 52,
+      "delta": 4
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 50,
+      "delta": 16
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 12,
+      "delta": 5
+    },
+    {
+      "id": "BP_SaudiEastWest",
+      "name": "사우디 East-West 파이프라인 (Petroline)",
+      "type": "우회 인프라",
+      "count": 8,
+      "delta": 5
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 7,
+      "delta": 2
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 6,
+      "delta": 5
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 5,
+      "delta": 0
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 4,
+      "delta": -1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": -4
+    }
+  ]
 }

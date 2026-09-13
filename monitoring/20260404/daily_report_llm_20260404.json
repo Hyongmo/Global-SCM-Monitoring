@@ -4220,5 +4220,77 @@
         "type": "dom"
       }
     ]
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 128,
+      "delta": 41
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 74,
+      "delta": 0
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 47,
+      "delta": -8
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 16,
+      "delta": 10
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 9,
+      "delta": 6
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 8,
+      "delta": 8
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 7,
+      "delta": -3
+    },
+    {
+      "id": "CF_EuroContainer",
+      "name": "유럽 컨테이너",
+      "type": "품목",
+      "count": 7,
+      "delta": 1
+    },
+    {
+      "id": "CF_Meat",
+      "name": "육류",
+      "type": "품목",
+      "count": 6,
+      "delta": 5
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 6,
+      "delta": 1
+    }
+  ]
 }

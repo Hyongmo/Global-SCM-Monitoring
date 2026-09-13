@@ -2591,5 +2591,77 @@
       "url": "https://n.news.naver.com/mnews/article/052/0002353767?sid=102",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 63,
+      "delta": 25
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 60,
+      "delta": 30
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 32,
+      "delta": 9
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 12,
+      "delta": 5
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 8,
+      "delta": 5
+    },
+    {
+      "id": "CF_EuroContainer",
+      "name": "유럽 컨테이너",
+      "type": "품목",
+      "count": 4,
+      "delta": 3
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "BP_SaudiEastWest",
+      "name": "사우디 East-West 파이프라인 (Petroline)",
+      "type": "우회 인프라",
+      "count": 3,
+      "delta": -6
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 1
+    }
+  ]
 }

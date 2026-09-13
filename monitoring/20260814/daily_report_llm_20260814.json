@@ -1997,5 +1997,77 @@
       "url": "https://www.agrinet.co.kr/news/articleView.html?idxno=406444",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 54,
+      "delta": -43
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 40,
+      "delta": -11
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 24,
+      "delta": -22
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 11,
+      "delta": 9
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 10,
+      "delta": 4
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 8,
+      "delta": -1
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 7,
+      "delta": -4
+    },
+    {
+      "id": "CF_EuroContainer",
+      "name": "유럽 컨테이너",
+      "type": "품목",
+      "count": 4,
+      "delta": 0
+    },
+    {
+      "id": "KP_Tongyeong",
+      "name": "통영LNG기지",
+      "type": "한국 항만",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 4,
+      "delta": -5
+    }
+  ]
 }

@@ -3093,5 +3093,77 @@
       "url": "https://n.news.naver.com/mnews/article/277/0005775288?sid=104",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 96,
+      "delta": 68
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 58,
+      "delta": 38
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 21,
+      "delta": 10
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 18,
+      "delta": 17
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 10,
+      "delta": 1
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 6,
+      "delta": 4
+    },
+    {
+      "id": "EVT_COVID2020",
+      "name": "2020 COVID 컨테이너",
+      "type": "위기 이벤트",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 4,
+      "delta": 1
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 4,
+      "delta": 4
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 3,
+      "delta": 2
+    }
+  ]
 }

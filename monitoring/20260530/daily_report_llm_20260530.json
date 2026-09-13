@@ -2589,5 +2589,77 @@
       "url": "http://www.thebigdata.co.kr/view.php?ud=2026052916280040710a47484cf8_23",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 54,
+      "delta": 7
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 34,
+      "delta": -27
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 32,
+      "delta": 9
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 5,
+      "delta": -7
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 4,
+      "delta": -2
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 3,
+      "delta": -3
+    },
+    {
+      "id": "EVT_Japan2019",
+      "name": "2019 일본 반도체규제",
+      "type": "위기 이벤트",
+      "count": 3,
+      "delta": 0
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "VT_Panamax",
+      "name": "Panamax (파나막스)",
+      "type": "선종",
+      "count": 2,
+      "delta": 2
+    }
+  ]
 }

@@ -3061,5 +3061,77 @@
       "url": "https://n.news.naver.com/mnews/article/662/0000095919?sid=102",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 62,
+      "delta": 42
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 50,
+      "delta": -7
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 26,
+      "delta": -1
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 15,
+      "delta": 9
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 15,
+      "delta": 14
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 7,
+      "delta": 5
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 5,
+      "delta": 2
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 5,
+      "delta": 2
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 2,
+      "delta": -1
+    },
+    {
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
+      "type": "선종",
+      "count": 2,
+      "delta": 2
+    }
+  ]
 }

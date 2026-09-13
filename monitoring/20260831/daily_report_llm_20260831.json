@@ -1816,5 +1816,77 @@
       "type": "dom"
     }
   },
-  "collection_notice": "⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다."
+  "collection_notice": "⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다.",
+  "kg_focus": [
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 39,
+      "delta": 39
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 20,
+      "delta": 13
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 7,
+      "delta": 7
+    },
+    {
+      "id": "VT_Container",
+      "name": "컨테이너선",
+      "type": "선종",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "CP_Suez",
+      "name": "수에즈 운하",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
+      "type": "선종",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "KP_Gwangyang",
+      "name": "광양항",
+      "type": "한국 항만",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 1,
+      "delta": 1
+    }
+  ]
 }

@@ -3222,5 +3222,77 @@
       "type": "dom"
     }
   },
-  "collection_notice": null
+  "collection_notice": null,
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 112,
+      "delta": 63
+    },
+    {
+      "id": "EVT_RedSea2023",
+      "name": "2023 Red Sea 후티",
+      "type": "위기 이벤트",
+      "count": 64,
+      "delta": 32
+    },
+    {
+      "id": "BP_SaudiEastWest",
+      "name": "사우디 East-West 파이프라인 (Petroline)",
+      "type": "우회 인프라",
+      "count": 59,
+      "delta": 41
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 39,
+      "delta": -6
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 38,
+      "delta": 21
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 36,
+      "delta": 0
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 30,
+      "delta": 5
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 24,
+      "delta": 12
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 18,
+      "delta": 8
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 15,
+      "delta": 7
+    }
+  ]
 }

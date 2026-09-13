@@ -2934,5 +2934,77 @@
       "url": "https://n.news.naver.com/mnews/article/001/0016042091?sid=101",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 65,
+      "delta": 6
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 49,
+      "delta": -59
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 37,
+      "delta": -17
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 10,
+      "delta": -3
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 9,
+      "delta": 6
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 9,
+      "delta": 4
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 9,
+      "delta": 2
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 7,
+      "delta": 0
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 5,
+      "delta": 3
+    },
+    {
+      "id": "CF_EuroContainer",
+      "name": "유럽 컨테이너",
+      "type": "품목",
+      "count": 5,
+      "delta": -2
+    }
+  ]
 }

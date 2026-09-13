@@ -2284,5 +2284,77 @@
       "type": "dom"
     }
   },
-  "collection_notice": "⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다."
+  "collection_notice": "⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다.",
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 50,
+      "delta": 30
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 29,
+      "delta": 22
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 20,
+      "delta": -19
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 11,
+      "delta": 11
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 9,
+      "delta": 6
+    },
+    {
+      "id": "CP_Taiwan",
+      "name": "대만해협",
+      "type": "초크포인트",
+      "count": 8,
+      "delta": 8
+    },
+    {
+      "id": "VT_ChemTanker",
+      "name": "케미컬탱커",
+      "type": "선종",
+      "count": 6,
+      "delta": 5
+    },
+    {
+      "id": "POL_GrainReserve",
+      "name": "곡물 비축 확대",
+      "type": "정책",
+      "count": 5,
+      "delta": 5
+    },
+    {
+      "id": "BP_SaudiEastWest",
+      "name": "사우디 East-West 파이프라인 (Petroline)",
+      "type": "우회 인프라",
+      "count": 5,
+      "delta": 5
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 4,
+      "delta": 4
+    }
+  ]
 }

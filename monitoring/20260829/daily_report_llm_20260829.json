@@ -2014,5 +2014,77 @@
       "type": "dom"
     }
   },
-  "collection_notice": "⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다."
+  "collection_notice": "⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다.",
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 61,
+      "delta": 19
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "2022 우크라이나",
+      "type": "위기 이벤트",
+      "count": 37,
+      "delta": 9
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 19,
+      "delta": -18
+    },
+    {
+      "id": "CP_Panama",
+      "name": "파나마 운하",
+      "type": "초크포인트",
+      "count": 4,
+      "delta": 1
+    },
+    {
+      "id": "POL_ShippingReroute",
+      "name": "해운 우회경로 확보",
+      "type": "정책",
+      "count": 3,
+      "delta": -4
+    },
+    {
+      "id": "CF_Coal",
+      "name": "석탄",
+      "type": "품목",
+      "count": 3,
+      "delta": -4
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선(legacy)",
+      "type": "선종",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CF_Wheat",
+      "name": "밀",
+      "type": "품목",
+      "count": 2,
+      "delta": -1
+    },
+    {
+      "id": "VT_LNG",
+      "name": "LNG선",
+      "type": "선종",
+      "count": 2,
+      "delta": 0
+    }
+  ]
 }

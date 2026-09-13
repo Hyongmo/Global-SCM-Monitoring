@@ -933,5 +933,49 @@
       "url": "https://n.news.naver.com/mnews/article/022/0004140376?sid=101",
       "type": "dom"
     }
-  }
+  },
+  "kg_focus": [
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 6,
+      "delta": -3
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 3,
+      "delta": -2
+    },
+    {
+      "id": "KP_Ulsan",
+      "name": "울산항",
+      "type": "한국 항만",
+      "count": 3,
+      "delta": 2
+    },
+    {
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
+      "type": "선종",
+      "count": 1,
+      "delta": 1
+    },
+    {
+      "id": "POL_LNGDiversify",
+      "name": "LNG 공급원 다변화",
+      "type": "정책",
+      "count": 1,
+      "delta": -3
+    },
+    {
+      "id": "FP_Qingdao",
+      "name": "칭다오",
+      "type": "해외 항만",
+      "count": 1,
+      "delta": 0
+    }
+  ]
 }

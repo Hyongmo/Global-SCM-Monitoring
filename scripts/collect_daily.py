@@ -19,6 +19,7 @@ import json, os, sys, hashlib, time, re, html, glob, requests, ssl, socket
 import pandas as pd
 import networkx as nx
 from collections import Counter
+from functools import lru_cache
 from datetime import datetime, timedelta, date
 from dateutil.parser import parse as dateparse
 from gdeltdoc import GdeltDoc, Filters
@@ -1528,6 +1529,72 @@ REPORT_SYSTEM = """당신은 KMI(한국해양수산개발원) 해상 공급망 �
 
 
 
+# ── 기사가 집중된 위기 요소 (KG 매칭 기반, 2026-09-13) ──────────
+#   "어제 기사가 무엇을 주로 다뤘나"를 KG 노드 단위로 집계한다.
+#   축은 카테고리가 아니라 KG — 위기가 옮겨가면 축이 자동으로 따라간다.
+#   기업 노드는 기업 특정 방지 원칙, 한국영향·한국산업은 사용자 결정으로 제외.
+_KG_FOCUS_EXCLUDE = {'korea_company', 'korea_impact', 'korea_sector'}
+_KG_TYPE_KO = {'chokepoint': '초크포인트', 'bypass_infrastructure': '우회 인프라',
+               'crisis_event': '위기 이벤트', 'commodity_flow': '품목', 'policy': '정책',
+               'vessel_type': '선종', 'foreign_port': '해외 항만', 'korea_port': '한국 항만'}
+
+
+@lru_cache(maxsize=None)
+def _match_title_for_focus(title):
+    """kg_focus 집계용 제목 → KG 엔티티 매칭 (캐시).
+    수집 파이프라인과 같은 함수(match_entities)·같은 KG를 사용해 로직을 하나로 유지."""
+    if not _entity_patterns or not title:
+        return ()
+    return tuple(match_entities(title, _entity_patterns, _kg_G, _kg_nodes)["matched_entities"])
+
+
+def _kg_entity_counts(date_tag):
+    """해당 일자 분류 CSV(해외+국내, HIGH·MEDIUM)의 KG 요소별 언급 기사 수.
+    한 기사 안의 중복 언급은 1회. 파일이 없으면 None (전일 비교 불가 표시용).
+    집계는 제목 재매칭(_match_title_for_focus)으로 통일한다 — 저장된 kg_entities
+    셀은 2026-08-22 이전엔 비어 있고, 초기 실험분(3/26·4/3)엔 구버전 매처의
+    오탐이 들어 있기 때문. 현행 수집분에서는 셀 기준 집계와 결과가 동일함을
+    2026-09-13에 9/11·9/12 전수 대조로 확인."""
+    files = glob.glob(os.path.join(MONITOR_DIR, date_tag,
+                                   f'*_mon_classified_daily_{date_tag}.csv'))
+    if not files:
+        return None
+    cnt = Counter()
+    for f in files:
+        try:
+            df = pd.read_csv(f)
+        except Exception:
+            continue
+        if 'title' not in df.columns:
+            continue
+        sub = df[df['relevance'].isin(['HIGH', 'MEDIUM'])] if 'relevance' in df.columns else df
+        for _title in sub['title']:
+            ids = set(_match_title_for_focus(str(_title)))
+            ids = {i for i in ids if i in _kg_nodes
+                   and _kg_nodes[i].get('node_type') not in _KG_FOCUS_EXCLUDE}
+            for i in ids:
+                cnt[i] += 1
+    return cnt
+
+
+def _build_kg_focus(date_tag, top_n=10):   # top_n=10: 사용자 결정 (2026-09-13)
+    """상위 top_n 위기 요소 + 전일 대비 변화. 전부 저장된 CSV·KG에서 도출."""
+    cur = _kg_entity_counts(date_tag)
+    if not cur:
+        return []
+    prev_tag = (datetime.strptime(date_tag, '%Y%m%d').date()
+                - timedelta(days=1)).strftime('%Y%m%d')
+    prev = _kg_entity_counts(prev_tag)
+    rows = []
+    for eid, v in cur.most_common(top_n):
+        nd = _kg_nodes.get(eid, {})
+        rows.append({'id': eid, 'name': nd.get('name', eid),
+                     'type': _KG_TYPE_KO.get(nd.get('node_type'), nd.get('node_type', '')),
+                     'count': int(v),
+                     'delta': (int(v) - int(prev.get(eid, 0))) if prev is not None else None})
+    return rows
+
+
 def _build_report_prompt(data):
     """LLM 호출용 통합 프롬프트 (categories + flow + changes 한 번에)"""
     td_fmt   = data['td_fmt']
@@ -1753,6 +1820,7 @@ else:
         'sources':    sources,
         'ref_map':    ref_map,
         'collection_notice': COLLECTION_NOTICE,   # 수집 결손 안내 (없으면 None)
+        'kg_focus': _build_kg_focus(DATE_TAG),    # 기사가 집중된 위기 요소 (상위 10)
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)
@@ -1773,6 +1841,19 @@ else:
     L("")
     L(report_json.get("executive_summary", ""))
     L("")
+    _kg_focus = json_data.get('kg_focus') or []
+    if _kg_focus:
+        L("---")
+        L("")
+        L("## 📊 기사가 집중된 위기 요소 (상위 10)")
+        L("")
+        for _r in _kg_focus:
+            _d = _r.get('delta')
+            _arrow = '' if _d is None else (f' (▲{_d})' if _d > 0 else (f' (▼{-_d})' if _d < 0 else ' (—)'))
+            L(f"- [{_r['type']}] {_r['name']} — {_r['count']}건{_arrow}")
+        L("")
+        L("> KG 매칭 기준 언급 기사 수 · ▲▼는 전일 대비 · 한 기사가 여러 요소를 언급할 수 있음")
+        L("")
     L("---")
     L("")
     L("## 카테고리별 분석")
@@ -1831,6 +1912,19 @@ else:
         doc.add_paragraph()
         doc.add_heading('오늘의 핵심', level=2)
         doc.add_paragraph(report_json.get('executive_summary', ''))
+        if json_data.get('kg_focus'):
+            doc.add_paragraph()
+            doc.add_heading('기사가 집중된 위기 요소 (상위 10)', level=2)
+            _kf = json_data['kg_focus']
+            _t = doc.add_table(rows=1 + len(_kf), cols=4); _t.style = 'Table Grid'
+            for _j, _h in enumerate(['유형', '요소', '기사 수', '전일 대비']):
+                _t.rows[0].cells[_j].text = _h
+            for _i, _r in enumerate(_kf, 1):
+                _c = _t.rows[_i].cells
+                _c[0].text = _r['type']; _c[1].text = _r['name']
+                _c[2].text = f"{_r['count']}건"
+                _d = _r.get('delta')
+                _c[3].text = '-' if _d is None else ('▲%d' % _d if _d > 0 else ('▼%d' % -_d if _d < 0 else '0'))
         doc.add_paragraph()
         doc.add_heading('카테고리별 분석', level=2)
         for cat in CAT_ORDER:

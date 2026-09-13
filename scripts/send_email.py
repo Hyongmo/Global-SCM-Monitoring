@@ -223,6 +223,50 @@ subject = f'[KMI 글로벌 공급망 AI 일일 브리핑] {PUB_DATE} AI 브리�
 # summary 모드: 폭 제한 없음 / full·brief 모드: 960px
 _content_width = 'margin:0 auto; padding:20px 16px;'
 
+# ── 기사가 집중된 위기 요소 (2026-09-13) — 이메일 안전형 표 기반 막대 ──
+#   메일 클라이언트는 JS·호버가 안 되므로 표(table) 레이아웃으로 그린다.
+_kg_focus = data.get('kg_focus') or [] if 'data' in dir() else []
+kg_focus_html = ''
+if _kg_focus:
+    _kfmax = max(r['count'] for r in _kg_focus) or 1
+    _kfrows = ''
+    for _r in _kg_focus:
+        _w = max(int(_r['count'] / _kfmax * 100), 2)
+        _d = _r.get('delta')
+        if _d is None:
+            _dtxt = ''
+        elif _d > 0:
+            _dtxt = f' <span style="color:#d03b3b; font-weight:600;">▲{_d}</span>'
+        elif _d < 0:
+            _dtxt = f' <span style="color:#999;">▼{-_d}</span>'
+        else:
+            _dtxt = ' <span style="color:#999;">—</span>'
+        _kfrows += (
+            '<tr>'
+            '<td style="padding:3px 8px 3px 0; font-size:12.5px; color:#2c3e50;'
+            ' text-align:right; white-space:nowrap;">'
+            f'<span style="font-size:10.5px; color:#999; border:1px solid #ddd;'
+            f' border-radius:3px; padding:0 4px; margin-right:5px;">{_r["type"]}</span>'
+            f'{_r["name"]}</td>'
+            '<td style="width:42%; padding:3px 0;">'
+            '<table role="presentation" cellpadding="0" cellspacing="0"'
+            ' style="width:100%; border-collapse:collapse;"><tr>'
+            f'<td style="width:{_w}%; background:#2a78d6; height:14px;'
+            ' border-radius:3px; font-size:0; line-height:0;">&nbsp;</td>'
+            '<td style="font-size:0; line-height:0;">&nbsp;</td>'
+            '</tr></table></td>'
+            f'<td style="padding:3px 0 3px 8px; font-size:12.5px; color:#555;'
+            f' white-space:nowrap;">{_r["count"]}건{_dtxt}</td>'
+            '</tr>')
+    kg_focus_html = (
+        f'<div {_SEC}>'
+        f'<div {_SEC_TITLE}>📊 기사가 집중된 위기 요소</div>'
+        '<table role="presentation" cellpadding="0" cellspacing="0"'
+        f' style="width:100%; border-collapse:collapse;">{_kfrows}</table>'
+        '<p style="font-size:11px; color:#999; margin:6px 0 0;">'
+        'KG 매칭 기준 상위 10 · ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음</p>'
+        '</div>')
+
 # summary 모드: 주요기사 요약 + 뷰어 링크만 / brief·full: 전체 브리핑 포함
 _body_sections = f"""
 <div {_SEC}>
@@ -231,6 +275,7 @@ _body_sections = f"""
     {summary}
   </p>
 </div>
+{kg_focus_html}
 """ if summary_mode else f"""
 <div {_SEC}>
   <div {_SEC_TITLE}>📌 주요기사 요약</div>
@@ -238,7 +283,7 @@ _body_sections = f"""
     {summary}
   </p>
 </div>
-
+{kg_focus_html}
 {briefing_html}
 """
 
