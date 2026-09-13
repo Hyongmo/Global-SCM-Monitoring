@@ -479,7 +479,7 @@ def _draw_kg_focus(pdf, scenario, sec_no):
         pdf.set_font('KR', 'B', 9.5)
         pdf.set_text_color(40, 40, 40)
         pdf.set_x(L)
-        pdf.cell(0, 6, '주중 일별 변화 (상위 5)')
+        pdf.cell(0, 6, '주중 일별 변화 (상위 7)')
         y0 = pdf.get_y() + 8
         plot_l, plot_r = L + 10, L + CW - 42
         plot_w = plot_r - plot_l
@@ -502,7 +502,8 @@ def _draw_kg_focus(pdf, scenario, sec_no):
         for i, dl in enumerate(days):
             pdf.set_xy(X(i) - 9, y0 + ch_h + 1.5)
             pdf.cell(18, 3, dl, align='C')
-        COLORS = [(42, 120, 214), (235, 104, 52), (27, 175, 122), (237, 161, 0), (232, 123, 164)]
+        COLORS = [(42, 120, 214), (235, 104, 52), (27, 175, 122), (237, 161, 0),
+                  (232, 123, 164), (138, 99, 210), (45, 157, 143)]
         ends = []
         pdf.set_line_width(0.5)
         for si, sr in enumerate(series):

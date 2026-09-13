@@ -3863,9 +3863,9 @@ def _kgf_day_counts(day_tag, entity_patterns, nodes, _cache={}):
     return cnt
 
 
-def build_kg_weekly_focus(week_sunday_tag, entity_patterns, nodes, top_n=10, trend_n=5):
+def build_kg_weekly_focus(week_sunday_tag, entity_patterns, nodes, top_n=10, trend_n=7):
     """주간(월~일) 합산 상위 top_n(전주 대비 증감) + 주중 일별 추이 상위 trend_n.
-    top_n=10·trend_n=5, 선정 기준=주간 합: 사용자 결정 (2026-09-13).
+    top_n=10·trend_n=7, 선정 기준=주간 합: 사용자 결정 (2026-09-13, 추이 7개로 확대).
     반환 {'rows': [...], 'trend': {'days': [...], 'series': [...]}} 또는 None."""
     _sun = datetime.strptime(week_sunday_tag, '%Y%m%d').date()
     days = [_sun - timedelta(days=6 - i) for i in range(7)]
@@ -3912,8 +3912,10 @@ def _render_kg_trend_svg(trend):
     series = trend.get('series') or []
     if not days or not series or len(days) < 2:
         return ''
-    COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4']
-    W, H, L, R, T, B = 760, 320, 44, 155, 14, 30
+    # 팔레트 7색: 색각 이상 분리도·채도 검증 통과 (2026-09-13, validate_palette)
+    COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#8a63d2', '#2d9d8f']
+    # 좌표계 폭 1200 ≈ 실제 표시 폭 → 글자가 본문 크기로 렌더됨 (2026-09-13)
+    W, H, L, R, T, B = 1200, 340, 50, 190, 14, 34
     vmax = max((max(sr['counts']) for sr in series if sr['counts']), default=0) or 1
     step = next((st for st in (1, 2, 5, 10, 20, 25, 50, 100, 200, 500, 1000) if vmax / st <= 4), 2000)
     ymax = step * max(1, -(-vmax // step))
@@ -3923,10 +3925,10 @@ def _render_kg_trend_svg(trend):
     v = 0
     while v <= ymax:
         g.append(f'<line x1="{L}" y1="{y(v):.1f}" x2="{W - R}" y2="{y(v):.1f}" stroke="#e4e3df" stroke-width="1"/>')
-        g.append(f'<text x="{L - 6}" y="{y(v) + 4:.1f}" text-anchor="end" font-size="11" fill="#8a897f">{v}</text>')
+        g.append(f'<text x="{L - 6}" y="{y(v) + 4:.1f}" text-anchor="end" font-size="12" fill="#8a897f">{v}</text>')
         v += step
     for i, dl in enumerate(days):
-        g.append(f'<text x="{x(i):.1f}" y="{H - 8}" text-anchor="middle" font-size="11" fill="#8a897f">{_kgf_esc(dl)}</text>')
+        g.append(f'<text x="{x(i):.1f}" y="{H - 10}" text-anchor="middle" font-size="12" fill="#8a897f">{_kgf_esc(dl)}</text>')
     ends = []
     for si, sr in enumerate(series):
         c = COLORS[si % len(COLORS)]
@@ -3938,10 +3940,10 @@ def _render_kg_trend_svg(trend):
         ends.append([y(sr['counts'][-1]), sr['name'], sr['counts'][-1], c])
     ends.sort(key=lambda e: e[0])
     for k in range(1, len(ends)):
-        if ends[k][0] - ends[k - 1][0] < 15:
-            ends[k][0] = ends[k - 1][0] + 15
+        if ends[k][0] - ends[k - 1][0] < 16:
+            ends[k][0] = ends[k - 1][0] + 16
     for ey, name, val, c in ends:
-        g.append(f'<text x="{W - R + 10}" y="{ey + 4:.1f}" font-size="11.5" font-weight="600" fill="{c}">'
+        g.append(f'<text x="{W - R + 10}" y="{ey + 4:.1f}" font-size="12.5" font-weight="600" fill="{c}">'
                  f'{_kgf_esc(name)} {val}</text>')
     return (f'<svg viewBox="0 0 {W} {H}" style="width:100%;height:auto;display:block;margin-top:6px;" role="img">'
             + ''.join(g) + '</svg>')
@@ -3984,7 +3986,7 @@ def render_kg_focus_block(s):
             'padding:14px 16px;margin:14px 0;">'
             '<b>📊 공급망 요소별 기사량 (주간 상위 10)</b><div style="margin-top:8px;">'
             + ''.join(bars) + '</div>'
-            + (f'<div style="margin-top:18px;"><b>📈 주중 일별 변화 (상위 5)</b>{svg}</div>' if svg else '')
+            + (f'<div style="margin-top:18px;"><b>📈 주중 일별 변화 (상위 7)</b>{svg}</div>' if svg else '')
             + note + '</div>')
 
 
