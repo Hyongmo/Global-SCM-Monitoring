@@ -4012,7 +4012,7 @@ def _render_kg_trend_svg(trend):
         g.append(f'<text x="{W - R + 10}" y="{ey + 4:.1f}" font-size="12.5" font-weight="600" fill="{c}">'
                  f'{_kgf_esc(name)} {val}</text>')
     # 모바일: 그림에 최소 폭(960px)을 주고 좌우 스크롤 — 글자가 읽을 수 없이 줄어드는 것 방지 (2026-09-14)
-    return ('<div style="overflow-x:auto;">'
+    return ('<div class="kgf-scroll" style="overflow-x:auto;">'
             f'<svg viewBox="0 0 {W} {H}" style="width:100%;min-width:960px;height:auto;display:block;margin-top:6px;" role="img">'
             + ''.join(g) + '</svg></div>')
 
@@ -5528,7 +5528,7 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
             '  </div>\n'
             '</div>\n'
             f'<script>{JS}\n{MAP_JS}</script>\n'
-            "<script>(function(){var a=document.querySelector('.main');if(!a)return;a.style.touchAction='pan-y';var startX=0,startValid=false,multiTouch=false;a.addEventListener('touchstart',function(e){startValid=false;var t=e.target;if(t.closest&&(t.closest('.map-section')||t.closest('.leaflet-control')))return;if(e.touches.length>1){multiTouch=true;return;}multiTouch=false;startX=e.changedTouches[0].clientX;startValid=true;},{passive:true});a.addEventListener('touchend',function(e){if(!startValid||multiTouch){multiTouch=false;return;}var t=e.target;if(t.closest&&(t.closest('.map-section')||t.closest('.leaflet-control'))){startValid=false;return;}if(e.touches.length>0)return;var dx=startX-e.changedTouches[0].clientX;if(Math.abs(dx)<50)return;startValid=false;var cur=document.querySelector('input[type=radio][hidden]:checked');if(!cur)return;var all=Array.from(document.querySelectorAll('input[type=radio][hidden][name=\"'+cur.name+'\"]'));var idx=all.indexOf(cur);var nxt=dx>0?idx+1:idx-1;if(nxt>=0&&nxt<all.length){var lbl=document.querySelector('label[for=\"'+all[nxt].id+'\"]');if(lbl){lbl.click();window.scrollTo(0,0);}}},{passive:true});}());</script>\n"
+            "<script>(function(){var a=document.querySelector('.main');if(!a)return;a.style.touchAction='pan-y';var startX=0,startValid=false,multiTouch=false;a.addEventListener('touchstart',function(e){startValid=false;var t=e.target;if(t.closest&&(t.closest('.map-section')||t.closest('.leaflet-control')||t.closest('.kgf-scroll')))return;if(e.touches.length>1){multiTouch=true;return;}multiTouch=false;startX=e.changedTouches[0].clientX;startValid=true;},{passive:true});a.addEventListener('touchend',function(e){if(!startValid||multiTouch){multiTouch=false;return;}var t=e.target;if(t.closest&&(t.closest('.map-section')||t.closest('.leaflet-control')||t.closest('.kgf-scroll'))){startValid=false;return;}if(e.touches.length>0)return;var dx=startX-e.changedTouches[0].clientX;if(Math.abs(dx)<50)return;startValid=false;var cur=document.querySelector('input[type=radio][hidden]:checked');if(!cur)return;var all=Array.from(document.querySelectorAll('input[type=radio][hidden][name=\"'+cur.name+'\"]'));var idx=all.indexOf(cur);var nxt=dx>0?idx+1:idx-1;if(nxt>=0&&nxt<all.length){var lbl=document.querySelector('label[for=\"'+all[nxt].id+'\"]');if(lbl){lbl.click();window.scrollTo(0,0);}}},{passive:true});}());</script>\n"
             "<script>document.addEventListener('contextmenu',function(e){e.preventDefault();});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&(e.key==='s'||e.key==='u')){e.preventDefault();}});</script>\n"
             f'<script>{_PDF_JS}</script>\n'
             '</body>\n</html>'
