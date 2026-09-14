@@ -4657,10 +4657,16 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
             for cp_id, kw in _CP_KEYWORDS.items():
                 if kw in _all_paths:
                     _active_cps.add(cp_id)
-            # 2026-09-14: 경로 본문에 직접 짚인 CP = '주요 교란'(빨강) 후보로 보관
-            #   (그간 dominant 하나만 빨강이라, W37처럼 복수 구간이 본격 위협일 때
-            #    바브엘만데브·수에즈가 부차(주황)로 보이던 문제의 수정 — 사용자 승인)
-            _direct_cps = set(_active_cps)
+            # 2026-09-14 v2: 직접 언급만으로는 '우회 경유' 언급까지 빨강이 되어(예: 2026-W10)
+            #   경로 구간(→ 단위) 안에서 교란 어휘와 함께 언급된 CP만 '주요 교란'으로 본다 (사용자 지적 반영)
+            _DISRUPT_WORDS = ('봉쇄', '차단', '통제', '공격', '피격', '급감', '중단', '폐쇄', '좌초', '마비')
+            _direct_cps = set()
+            for _r in routes:
+                for _seg in _r.get('path', '').split('→'):
+                    if any(_w in _seg for _w in _DISRUPT_WORDS):
+                        for cp_id, kw in _CP_KEYWORDS.items():
+                            if kw in _seg:
+                                _direct_cps.add(cp_id)
             # Layer 2: KG linkedTo 양방향 전파 (같은 수로 관문 — 어느 쪽 교란이든 전체 항로 차단)
             _propagated = set()
             for cp_id in list(_active_cps):
