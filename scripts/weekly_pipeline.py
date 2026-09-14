@@ -2709,6 +2709,7 @@ Signal(전체): Crisis {crisis_pct}% | Warning {warning_pct}% | 합산 {wc_pct}%
 {ind_changes_section}
 
 ⚠ 지표 수치 인용 규칙: 본문(situation_summary, part_d pathway 등)에서 지표 변동률(%)을 언급할 때 반드시 위 [주요 지표 변화]에 제공된 chg_pct 값을 그대로 사용할 것. 직접 계산하거나 반올림하지 말 것. 예: 위에 +168.1%로 제공되면 본문에서도 +168.1%로 표기.
+⚠ 지표 시점 규칙: [주요 지표 변화]의 각 지표에는 [기준일 MM-DD] 표시가 있다. 기준일이 이번 주 기사 수집기간 이전인 지표(예: 통항량)는 이번 주 사건·기사를 직접적인 감소/증가 원인으로 단정하지 말 것 — 중립적으로 서술하고 연관성은 '추가 확인 필요' 수준으로만 표현할 것. [월간] 표시가 있는 지표는 '전주 대비'가 아니라 전월 대비 변화로 서술할 것.
 
 [KG 컨텍스트]
 {kg_ctx}
@@ -3414,6 +3415,8 @@ def compute_ind_changes(snap, threshold=_IND_CHG_THRESHOLD):
         result[key] = {
             'name':       meta.get('name', key),
             'unit':       unit,
+            'data_date':  meta.get('data_date', ''),   # 2026-09-14: 시점 규칙용
+            'freq':       meta.get('freq', ''),
             'from_val':   round(prev_val, 2),
             'to_val':     round(val, 2),
             'from_str':   _fmt(prev_val, unit),
@@ -3434,10 +3437,15 @@ def _build_ind_changes_section(ind_changes_dict):
     ]
     for key, d in list(ind_changes_dict.items())[:15]:
         unit_str = f' {d["unit"]}' if d['unit'] else ''
+        _tags = ''
+        if d.get('data_date'):
+            _tags += f' [기준일 {str(d["data_date"])[5:]}]'
+        if d.get('freq') == 'monthly':
+            _tags += ' [월간]'
         lines.append(
             f'  {key}: {d["name"]}  '
             f'{d["from_str"]} → {d["to_str"]}{unit_str}  '
-            f'({d["chg_pct"]:+.1f}%)'
+            f'({d["chg_pct"]:+.1f}%){_tags}'
         )
     return '\n'.join(lines)
 
@@ -3713,6 +3721,22 @@ def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df
                 _u = f' {_d["unit"]}' if _d['unit'] else ''
                 _actual_pct = f'{_d["chg_pct"]:+.1f}%'
                 _detail_fixed = re.sub(r'[+-]\d+\.\d+%', _actual_pct, _detail)
+                # 2026-09-14: 시점·주기 주석 자동 부착 (김태한 위원 반복 지적의 구조적 대응)
+                #   LLM이 규칙을 지켰으면 중복 부착하지 않음
+                _qual = []
+                if _d.get('freq') == 'monthly' and '월간' not in _detail_fixed:
+                    _qual.append('월간 지표 — 전월 대비')
+                _ddate = str(_d.get('data_date') or '')
+                if _ddate and '기준일' not in _detail_fixed:
+                    try:
+                        _dd = pd.to_datetime(_ddate).date()
+                        _wk_start = (ref_date - pd.Timedelta(days=6)).date()
+                        if _dd < _wk_start:
+                            _qual.append(f'지표 기준일 {_dd.month}월 {_dd.day}일')
+                    except Exception:
+                        pass
+                if _qual:
+                    _detail_fixed = f"{_detail_fixed} ({' · '.join(_qual)})"
                 _filled.append({
                     'item':   _d['name'],
                     'change': _d['change_sym'],
