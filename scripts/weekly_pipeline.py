@@ -2700,6 +2700,7 @@ Signal(전체): Crisis {crisis_pct}% | Warning {warning_pct}% | 합산 {wc_pct}%
 
 {articles_section}
 
+⚠ 균형 서술 규칙: situation_summary에는 긴장 고조 사실뿐 아니라 [주요 기사 목록]에 담긴 당사국·관계국의 반박, 완화 조치, 정책 대응(공식 부인, 통항 재개 노력, 파병·기여 방안 검토 등)도 함께 반영하라.
 ⚠ 기사 인용 규칙: 위 [주요 기사 목록]의 [N] 번호를 situation_summary 본문에서 해당 사실 뒤에 [N] 형태로 삽입하라. 모든 문장에 인용이 필요하지는 않으나, 핵심 사건·수치·정책 변화에는 반드시 출처 기사 번호를 달 것. 인용은 situation_summary에만 적용하고 다른 필드(part_a, part_d 등)에는 [N]을 넣지 말 것.
 ⚠ 문장 분리 규칙: situation_summary에서 같은 날짜에 발생한 서로 다른 사건은 반드시 별도 문장으로 분리할 것. 하나의 문장에 무관한 사건 두 개를 합치지 말 것.
 ⚠ 날짜 귀속 규칙: [주요 기사 목록]에 표시된 날짜는 '보도일'이며 사건이 실제로 발생한 날이 아니다. 보도일을 발생일로 단정하지 말 것. 날짜를 언급할 때는 "8월 20일 보도에 따르면", "8월 20일 보도된 바에 따르면"처럼 보도 시점임이 드러나게 쓰거나, 기사 제목·요약에 발생일이 명시된 경우에만 발생일로 서술할 것.
@@ -3120,6 +3121,7 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
     sub = df[(df['date'] >= win_start) & (df['date'] < win_end)].copy()
     if len(sub) == 0:
         return '', {}
+    _win_all = sub.copy()   # 2026-09-14: 균형 쿼터용 — 경보 필터 이전의 전체 창
 
     if dominant_cluster:
         _has_rel = 'relevance' in sub.columns
@@ -3173,6 +3175,34 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
     _recent = _pick_prop(sub[sub['date'] >= recent_cutoff], max_articles // 2)
     _older  = _pick_prop(sub[sub['date'] <  recent_cutoff], max_articles - len(_recent))
     top = pd.concat([_older, _recent]).drop_duplicates().sort_values('date')
+
+    # 2026-09-14: 균형 쿼터 — 반박·완화·대응 성격 기사가 경보 필터(HIGH·Crisis/Warning)에서
+    #   구조적으로 탈락해 상황요약이 긴장 고조 쪽으로 기울던 문제의 보완 (조성진 위원 반복 지적).
+    #   어휘 목록은 실제 누락 사례(W37: CENTCOM rejects / reopening / not troop deployment)에서 도출.
+    _BALANCE_WORDS = ('reject', 'denies', 'deny', 'dismiss', 'rebut', 'reopen',
+                      'de-escalat', 'negotiat', 'ceasefire', 'diplomat', 'discussing',
+                      '반박', '부인', '일축', '재개', '완화', '협상', '회담', '검토')
+    _bal = _win_all[_win_all['date'] >= recent_cutoff].copy()
+    if 'relevance' in _bal.columns:
+        _bal = _bal[_bal['relevance'].isin(['HIGH', 'MEDIUM'])]
+    if 'language' in _bal.columns:   # 한·영 외 언어는 인용 활용도가 낮아 제외
+        _bal = _bal[_bal['language'].astype(str).str.lower().isin(['english', 'korean', 'ko', 'en'])]
+    if len(_bal) > 0:
+        _bt = (_bal['title'].astype(str) + ' ' +
+               _bal['event_summary'].astype(str) if 'event_summary' in _bal.columns
+               else _bal['title'].astype(str)).str.lower()
+        _bal = _bal[_bt.apply(lambda t: any(w in t for w in _BALANCE_WORDS))]
+        _bal = _bal[~_bal.index.isin(top.index)]
+        # 주 필터를 이미 통과할 수 있는 고경보 기사보다, 구조적으로 탈락하는
+        # 낮은 경보(Caution 등)의 반박·대응 기사를 우선 구제한다 (Normal은 소음이라 제외)
+        _bal = _bal[_bal['alert_level_1st'] != 'Normal']
+    if len(_bal) > 0:
+        _bal['_priority'] = _bal['alert_level_1st'].map(ALERT_PRIORITY).fillna(0)
+        _bal['_rel_high'] = (_bal.get('relevance', '') == 'HIGH').astype(int)
+        _bal = _bal.drop_duplicates(subset=['title']).sort_values(
+            ['_priority', '_rel_high', 'date'], ascending=[True, False, False]).head(5)
+        _bal = _bal.drop(columns=['_rel_high'])
+        top = pd.concat([top, _bal]).drop_duplicates().sort_values('date')
     lines = ['=== 주요 기사 목록 (situation_summary 인용 참고용) ===']
     lines.append(f'기간: {win_start.strftime("%Y-%m-%d")} ~ {win_end.strftime("%Y-%m-%d")}')
     lines.append('⚠ 각 기사에 [N] 번호가 부여되어 있습니다. situation_summary 서술 시 해당 기사를 근거로 쓸 때 [N] 형태로 인용하세요.')
@@ -3584,6 +3614,17 @@ def get_indicator_snapshot(ref_date, indicator_df, indicator_meta, prev_indicato
         return {}
 
 
+def _clean_internal_tokens(obj):
+    """LLM 출력에 새어 나온 KG 내부 변수명 표기를 읽는 표현으로 치환 (2026-09-14, 이화섭 위원 지적)."""
+    if isinstance(obj, str):
+        return re.sub(r'\(?\s*lagMin[Dd]ays\s*[:=]?\s*(\d+)\s*일?\s*\)?', r'(약 \1일 시차)', obj)
+    if isinstance(obj, list):
+        return [_clean_internal_tokens(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _clean_internal_tokens(v) for k, v in obj.items()}
+    return obj
+
+
 def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df, ref_date,
                               kg_data, cluster_ctx, indicator_df, indicator_meta):
     """LLM(Claude Sonnet) 호출로 주간 시나리오 생성. Tier 1도 LLM 경유(기사 요약 포함),
@@ -3750,6 +3791,7 @@ def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df
         if _filled:
             result['header']['changes_from_prev'] = _filled
 
+    result = _clean_internal_tokens(result)   # 내부 변수명 누출 치환 (2026-09-14)
     result['ref_map'] = _scenario_ref_map
     result['period']     = period
     result['week_label'] = week_label
