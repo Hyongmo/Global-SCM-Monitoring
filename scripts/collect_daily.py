@@ -1027,6 +1027,32 @@ else:
         requests.get = _orig_requests_get          # 네이버·LLM 호출은 TLS 검증 유지
     elapsed = time.time() - t0
 
+    # ── 평시 기준선 (2026-09-02 도입 · 2026-09-15 수집 종료 직후로 이동) ──
+    #   최근 4주 중 배너 없이 발행된 날들의 일별 수집량 최솟값.
+    #   조기 중단 배너 판정(_aborted 분기)과 원본 파일 대체 수집 발동
+    #   판정이 공유한다. 배너가 붙었던 날은 daily_report_llm JSON 의
+    #   collection_notice 로 식별해 기준 계산에서 자동 제외한다
+    #   → 장애일이 기준선을 오염시키지 않는다.
+    _baseline = None
+    _bl_since = TARGET_DATE - timedelta(weeks=4)
+    _normals = []
+    for _jp in glob.glob(os.path.join(MONITOR_DIR, '*', 'daily_report_llm_*.json')):
+        _jt = os.path.basename(_jp)[len('daily_report_llm_'):-len('.json')]
+        try:
+            _jd = datetime.strptime(_jt, '%Y%m%d').date()
+            if not (_bl_since <= _jd < TARGET_DATE):
+                continue
+            with open(_jp, encoding='utf-8') as _jf:
+                if json.load(_jf).get('collection_notice'):
+                    continue                 # 배너 붙었던 날은 기준에서 제외
+            _csvp = os.path.join(MONITOR_DIR, _jt, f'gdelt_mon_daily_{_jt}.csv')
+            if os.path.exists(_csvp):
+                _normals.append(len(pd.read_csv(_csvp, usecols=['url_hash'])))
+        except Exception:
+            continue
+    if _normals:
+        _baseline = min(_normals)
+
     if _aborted:
         _skipped = len(valid_keywords) - _done_kw
         _msg = (f'GDELT 수집 조기 중단 ({_aborted}) — '
@@ -1037,34 +1063,14 @@ else:
         if os.environ.get('GITHUB_ACTIONS') == 'true':
             print(f"::warning title=GDELT \uc218\uc9d1 \ubbf8\uc644\ub8cc::{_msg}")
         # 독자용 배너는 '결과'가 평소에 못 미칠 때만 붙인다 (2026-09-02).
-        #   기준선 = 최근 4주 중 배너 없이 발행된 날들의 일별 수집량 최솟값.
         #   "과소 반영되었을 수 있다"는 문구는 정상일에 관측된 적 없는 낮은
         #   수준일 때만 사실이 된다. (9/1 사례: 예산은 소진했으나 4,244건 —
         #   평시 중앙값의 3배 — 인데도 배너가 나갔다.)
-        #   배너가 붙었던 날은 daily_report_llm JSON 의 collection_notice 로
-        #   식별해 기준 계산에서 자동 제외한다 → 장애일이 기준선을 오염시키지
-        #   않는다. 비교할 정상일 이력이 없으면 안전하게 배너를 붙인다.
+        #   기준선(_baseline)은 수집 종료 직후(위)에서 계산해 두었다 —
+        #   원본 파일 대체 수집 발동 판정과 공유 (2026-09-15).
+        #   비교할 정상일 이력이 없으면 안전하게 배너를 붙인다.
         # 문구는 내부 사정(수집원 이름·중단 사유·키워드 수)을 노출하지 않는다.
         # 진단 정보는 위 _msg(로그·Actions 경고)에만 남긴다.
-        _baseline = None
-        _bl_since = TARGET_DATE - timedelta(weeks=4)
-        _normals = []
-        for _jp in glob.glob(os.path.join(MONITOR_DIR, '*', 'daily_report_llm_*.json')):
-            _jt = os.path.basename(_jp)[len('daily_report_llm_'):-len('.json')]
-            try:
-                _jd = datetime.strptime(_jt, '%Y%m%d').date()
-                if not (_bl_since <= _jd < TARGET_DATE):
-                    continue
-                with open(_jp, encoding='utf-8') as _jf:
-                    if json.load(_jf).get('collection_notice'):
-                        continue                 # 배너 붙었던 날은 기준에서 제외
-                _csvp = os.path.join(MONITOR_DIR, _jt, f'gdelt_mon_daily_{_jt}.csv')
-                if os.path.exists(_csvp):
-                    _normals.append(len(pd.read_csv(_csvp, usecols=['url_hash'])))
-            except Exception:
-                continue
-        if _normals:
-            _baseline = min(_normals)
 
         if _baseline is not None and len(gdelt_articles) >= _baseline:
             print(f"  배너 생략: 수집 {len(gdelt_articles)}건 ≥ "
@@ -1090,17 +1096,29 @@ else:
             print(f"::warning title=GDELT 실패 원인::{_first}")
     print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초, 키워드 {_done_kw}/{len(valid_keywords)})")
 
-    # ── 2026-09-15: 실패·미시도 키워드를 원본 파일 경로로 보충 (사용자 결정) ──
+    # ── 2026-09-15: 실패·미시도·0건 키워드를 원본 파일 경로로 보충 (사용자 결정) ──
     #   원본 파일은 전체를 받아 거르는 구조라 키워드 수와 무관하게 비용이 같다.
     #   따라서 전면 실패(0건)뿐 아니라 부분 실패도 실패분만 골라 보충한다.
     _failed_kws  = [e['keyword'] for e in gdelt_errors]
     _attempted   = {st['keyword'] for st in gdelt_stats}
     _skipped_kws = [k for k in valid_keywords if k not in _attempted]
-    _fb_kws = _failed_kws + _skipped_kws
+    # 2026-09-15 보완: "정상 응답이지만 결과 0건"으로 끝난 키워드도 보충 대상에
+    #   포함한다. (9/14 사례: 122개 중 61개는 RateLimitError로 실패했지만
+    #   나머지 61개는 응답 0건으로 '성공' 처리되어 보충에서 빠졌다.)
+    #   단, 이상 징후(실패·미시도가 있거나 수집량이 평시 기준선 미달)가
+    #   있을 때만 포함한다 — 평상시 희귀 키워드의 정당한 0건까지
+    #   보조 경로로 다시 긁는 오발동을 막는다.
+    _zero_kws = [st['keyword'] for st in gdelt_stats
+                 if st['raw'] == 0 and not st['error']]
+    _abnormal = (bool(gdelt_errors) or bool(_skipped_kws)
+                 or (_baseline is not None and len(gdelt_articles) < _baseline))
+    _fb_zero_kws = _zero_kws if _abnormal else []
+    _fb_kws = _failed_kws + _skipped_kws + _fb_zero_kws
     if _fb_kws:
         _fb_remain = GDELT_BUDGET_SEC - elapsed
         if _fb_remain > 60:
-            print(f"⚠ 미수집 키워드 {len(_fb_kws)}개(실패 {len(_failed_kws)}·미시도 {len(_skipped_kws)}) "
+            print(f"⚠ 미수집 키워드 {len(_fb_kws)}개(실패 {len(_failed_kws)}"
+                  f"·미시도 {len(_skipped_kws)}·응답 0건 {len(_fb_zero_kws)}개) "
                   f"— 원본 파일 대체 수집 (남은 예산 {_fb_remain/60:.0f}분)")
             _fb_articles = collect_gdelt_files_fallback(
                 _fb_kws, mon_kw_source, TARGET_DATE, _fb_remain,
