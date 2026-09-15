@@ -1100,7 +1100,6 @@ else:
     if _fb_kws:
         _fb_remain = GDELT_BUDGET_SEC - elapsed
         if _fb_remain > 60:
-            _was_zero = len(gdelt_articles) == 0
             print(f"⚠ 미수집 키워드 {len(_fb_kws)}개(실패 {len(_failed_kws)}·미시도 {len(_skipped_kws)}) "
                   f"— 원본 파일 대체 수집 (남은 예산 {_fb_remain/60:.0f}분)")
             _fb_articles = collect_gdelt_files_fallback(
@@ -1111,12 +1110,9 @@ else:
                 if os.environ.get('GITHUB_ACTIONS') == 'true':
                     print(f"::warning title=GDELT 대체 수집::미수집 키워드 {len(_fb_kws)}개 → "
                           f"원본 파일 경로로 {len(_fb_articles)}건 보충 (총 {len(gdelt_articles)}건)")
-                if _was_zero:
-                    # 전면 대체로 만들어진 날만 독자 안내 (제목 기반이라 그물이 성김)
-                    COLLECTION_NOTICE = (
-                        '이 브리핑의 해외 기사는 보조 수집 경로로 확보되었습니다. '
-                        '평소보다 해외 기사 수가 적을 수 있습니다.')
-                elif _aborted and COLLECTION_NOTICE and _baseline is not None \
+                # 2026-09-15 사용자 결정: 보조 경로 사용 자체는 독자에게 알리지 않는다
+                #   (수집 방법은 내부 사정 — 결손이 남은 경우에만 0건 결손 배너가 담당)
+                if _aborted and COLLECTION_NOTICE and _baseline is not None \
                         and len(gdelt_articles) >= _baseline:
                     # 조기 중단 배너가 붙었지만 보충으로 평시 수준을 회복한 경우 해제
                     print(f"  배너 해제: 보충 후 {len(gdelt_articles)}건 ≥ 기준선 {_baseline}건")
