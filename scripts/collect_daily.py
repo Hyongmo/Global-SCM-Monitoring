@@ -790,6 +790,76 @@ def save_classified(classify_df, classified_csv, daily_prefix, ckpt_file):
 # 2. GDELT 수집
 # ══════════════════════════════════════════════════════════════
 
+
+def collect_gdelt_files_fallback(keywords, kw_source, target_date, budget_sec,
+                                 seen_urls, collect_date_str):
+    """GDELT DOC API 전면 실패 시 보조 경로 (2026-09-15, 사용자 승인).
+    원본 15분 파일(data.gdeltproject.org)을 받아 제목을 키워드로 걸러
+    API 결과와 같은 형식의 기사 목록을 만든다.
+    - 원본 파일은 작업 공간에서 받는 즉시 버린다 — 저장소에는 걸러진 결과만 남음
+    - 제목 기준 매칭이라 본문까지 검색하는 API보다 적게 잡힐 수 있다
+    - 예산: 호출부가 넘겨준 남은 GDELT 예산 안에서만 동작
+    """
+    import zipfile, io as _io
+    _t0 = time.time()
+    _pats = [(kw, re.compile(r'\b' + re.escape(kw) + r'\b', re.I)) for kw in keywords]
+    _out, _ok, _fail = [], 0, 0
+    _d0 = datetime.combine(target_date, datetime.min.time())
+    _ts_list = [(_d0 + timedelta(minutes=15 * k)).strftime('%Y%m%d%H%M%S') for k in range(96)]
+    for _i, _ts in enumerate(_ts_list):
+        _remain = budget_sec - (time.time() - _t0)
+        if _remain <= 0:
+            print(f"  ⚠ 대체 수집 예산 소진 — 파일 {_i}/96 처리 후 중단")
+            break
+        try:
+            _r = requests.get(
+                f'http://data.gdeltproject.org/gdeltv2/{_ts}.gkg.csv.zip',
+                timeout=max(10, min(60, _remain / max(1, 96 - _i))))
+            if _r.status_code != 200:
+                _fail += 1
+                continue
+            _z = zipfile.ZipFile(_io.BytesIO(_r.content))
+            _raw = _z.read(_z.namelist()[0]).decode('utf-8', errors='replace')
+        except Exception:
+            _fail += 1
+            continue
+        _ok += 1
+        for _ln in _raw.split('\n'):
+            _p = _ln.find('<PAGE_TITLE>')
+            if _p < 0:
+                continue
+            _q = _ln.find('</PAGE_TITLE>', _p)
+            _title = _ln[_p + 12:_q].strip()
+            if len(_title) < 10:
+                continue
+            _mkw = None
+            for _kw, _rx in _pats:
+                if _rx.search(_title):
+                    _mkw = _kw
+                    break
+            if _mkw is None:
+                continue
+            _cols = _ln.split('\t')
+            if len(_cols) < 5 or not _cols[4].startswith('http'):
+                continue
+            _h = _make_hash(_cols[4])
+            if _h in seen_urls:
+                continue
+            seen_urls.add(_h)
+            _d14 = _cols[1]
+            _out.append({'url': _cols[4], 'url_hash': _h,
+                         'title': html.unescape(_title),
+                         'seendate': f'{_d14[:8]}T{_d14[8:14]}Z' if len(_d14) >= 14 else '',
+                         'domain': _cols[3], 'language': 'English', 'sourcecountry': '',
+                         'query_keyword': _mkw, 'query_group': kw_source.get(_mkw, ''),
+                         'collect_date': collect_date_str})
+        if (_i + 1) % 24 == 0:
+            print(f"  [대체 {_i + 1}/96] {len(_out)}건 …")
+    print(f"  대체 수집 결과: {len(_out)}건 "
+          f"(파일 성공 {_ok}/{_ok + _fail}, {time.time() - _t0:.0f}초)")
+    return _out
+
+
 # 수집 결손 표기용 — 리포트/메일에 그대로 노출된다 (조용한 결손 방지)
 COLLECTION_NOTICE = None
 
@@ -1019,6 +1089,47 @@ else:
             _first = gdelt_errors[0]['error'][:400].replace('\n', ' ')
             print(f"::warning title=GDELT 실패 원인::{_first}")
     print(f"✅ GDELT 수집 완료: {len(gdelt_articles)}건 ({elapsed:.0f}초, 키워드 {_done_kw}/{len(valid_keywords)})")
+
+    # ── 2026-09-15: 실패·미시도 키워드를 원본 파일 경로로 보충 (사용자 결정) ──
+    #   원본 파일은 전체를 받아 거르는 구조라 키워드 수와 무관하게 비용이 같다.
+    #   따라서 전면 실패(0건)뿐 아니라 부분 실패도 실패분만 골라 보충한다.
+    _failed_kws  = [e['keyword'] for e in gdelt_errors]
+    _attempted   = {st['keyword'] for st in gdelt_stats}
+    _skipped_kws = [k for k in valid_keywords if k not in _attempted]
+    _fb_kws = _failed_kws + _skipped_kws
+    if _fb_kws:
+        _fb_remain = GDELT_BUDGET_SEC - elapsed
+        if _fb_remain > 60:
+            _was_zero = len(gdelt_articles) == 0
+            print(f"⚠ 미수집 키워드 {len(_fb_kws)}개(실패 {len(_failed_kws)}·미시도 {len(_skipped_kws)}) "
+                  f"— 원본 파일 대체 수집 (남은 예산 {_fb_remain/60:.0f}분)")
+            _fb_articles = collect_gdelt_files_fallback(
+                _fb_kws, mon_kw_source, TARGET_DATE, _fb_remain,
+                seen_urls, str(TARGET_DATE))
+            if _fb_articles:
+                gdelt_articles.extend(_fb_articles)
+                if os.environ.get('GITHUB_ACTIONS') == 'true':
+                    print(f"::warning title=GDELT 대체 수집::미수집 키워드 {len(_fb_kws)}개 → "
+                          f"원본 파일 경로로 {len(_fb_articles)}건 보충 (총 {len(gdelt_articles)}건)")
+                if _was_zero:
+                    # 전면 대체로 만들어진 날만 독자 안내 (제목 기반이라 그물이 성김)
+                    COLLECTION_NOTICE = (
+                        '이 브리핑의 해외 기사는 보조 수집 경로로 확보되었습니다. '
+                        '평소보다 해외 기사 수가 적을 수 있습니다.')
+                elif _aborted and COLLECTION_NOTICE and _baseline is not None \
+                        and len(gdelt_articles) >= _baseline:
+                    # 조기 중단 배너가 붙었지만 보충으로 평시 수준을 회복한 경우 해제
+                    print(f"  배너 해제: 보충 후 {len(gdelt_articles)}건 ≥ 기준선 {_baseline}건")
+                    COLLECTION_NOTICE = None
+        else:
+            print(f"⚠ 미수집 키워드 {len(_fb_kws)}개 있으나 예산 소진 — 대체 수집 생략")
+    if len(gdelt_articles) == 0:
+        # 배너 맹점 보완 (2026-09-15): 예산 소진 여부와 무관하게 해외 0건이면 무조건 결손 배너
+        #   (9/15 사례: 전 키워드가 빨리 실패해 예산 미소진 → 기존 조건으로는 배너 미부착)
+        COLLECTION_NOTICE = (
+            '⚠ 영문 해외기사 수집이 정상적으로 종료되지 않았습니다. 국내기사 중심으로 '
+            '작성된 본 브리핑은 해외 동향이 과소 반영되었을 수 있습니다.')
+        print("  배너 표시: 해외 기사 0건 (전면 결손)")
 
     # Raw CSV 저장
     gdelt_raw_df = pd.DataFrame(gdelt_articles)
