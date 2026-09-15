@@ -1,92 +1,103 @@
 {
   "date": "2026-09-14",
   "date_key": "20260914",
-  "n_total": 2381,
-  "n_high": 268,
-  "n_med": 301,
-  "n_low": 395,
-  "n_none": 1417,
-  "n_intl": 384,
+  "n_total": 2806,
+  "n_high": 331,
+  "n_med": 378,
+  "n_low": 502,
+  "n_none": 1595,
+  "n_intl": 524,
   "n_dom": 185,
   "llm_result": {
-    "executive_summary": "호르무즈 해협에서 유조선 폭발 및 기뢰 피격 사건이 잇따르고[1][8][10] 이란이 통항 제재 선박을 77척으로 확대하면서[11][13][16] 해협 통항량이 한 자릿수로 급감했다[29][32][35]. 사우디아라비아의 동서 송유관이 드론 공격으로 수 주간 가동 중단될 전망이고[96][101][104] 후티 반군이 바브엘만데브 해협 인근 섬을 추가 장악하면서[12][14][17] 중동발 공급 교란이 '3중 봉쇄' 양상으로 심화됐다[63]. 브렌트유는 110달러를 돌파하며 한 달 새 23.71% 급등했고[59][71] 국제 유조선 운임은 하루 100만 달러를 넘어 사상 최고치를 기록했다[25][26]. 한국 선사 선박도 이란의 제재 명단에 포함된 것으로 보고되었으며[18] 국내 정유업계는 비중동산 원유 수입 시 운임 차액 지원 확대 방침을 긴급 논의했다[46].",
+    "executive_summary": "호르무즈 해협에서 유조선 폭발·기뢰 충돌 사고가 발생한 가운데 미국과 이란이 원인을 두고 상반된 주장을 펼치고 있으며[1][2][6][7], 이란은 통항 규정 위반 선박 제재 명단을 77척으로 확대해 한국 선사 선박도 포함된 것으로 확인됐다[18]. 사우디아라비아의 핵심 동서 송유관이 드론 공격으로 수 주간 가동 중단될 전망이며[102][108][110], 이로 인해 브렌트유는 108~110달러대로 급등했다[59][62][66][76]. 유조선 운임은 하루 100만 달러를 돌파하며 사상 최고 수준을 기록했고[27][28][30], 호르무즈 해협 통항량은 주말 기준 한 자릿수로 급감했다[32][36]. 후티 반군은 바브엘만데브 해협 인근 섬을 추가 장악하며 홍해 통제를 강화하고 있어[12][14][17] 중동발 공급망 교란이 복합적으로 심화되고 있다. 국내에서는 울산·여수항 원유 수입이 급증하고 정부가 비중동산 원유 수입 시 운임 차액 지원 확대를 추진하는 등 긴급 대응에 나섰다[49][51][53].",
     "categories": {
       "1_Security": {
-        "overseas": "이란 혁명수비대(IRGC)는 호르무즈 해협에서 유조선이 폭발했다고 발표했으나[1] 미국은 파나마 선적 유조선이 이란의 공격을 두 차례 받았다며 IRGC의 기뢰 주장을 공식 부인했다[4][5]. 이란은 수퍼탱커 EL GAIA를 포함한 선박들이 해협 인근 기뢰에 피격됐다고 주장했고[8][10] 이란은 미국 MQ-1 드론을 호르무즈 상공에서 격추했다고 밝혔다[7]. 후티 반군은 바브엘만데브 해협 인근 하니시 섬을 추가 점령하며 홍해 요충지 통제를 강화했고[12][17] 사우디아라비아 송유관에 대한 공격도 감행한 것으로 보고됐다[9]. 호주와 아시아 국가들의 호르무즈 해협 개방 공조 필요성이 제기됐다[6].",
-        "korea_impact": "이란은 호르무즈 통항 규정 위반 선박을 77척으로 확대하고 벌금·억류·몰수 조치를 예고했으며[11][13][16][20] 한국 선사 선박도 해당 명단에 포함된 것으로 보고됐다[18]. 호르무즈 회담이 연기되고 후티 공습이 지속되면서 브렌트유가 108달러대를 기록했다[15]. 이란이 협력 선박도 추가 제재 대상에 포함할 수 있다고 경고해[20] 한국 선사들의 중동 항로 운항 리스크가 높아진 것으로 보인다."
+        "overseas": "호르무즈 해협에서 유조선이 폭발하는 사고가 발생했으며, 이란 IRGC는 파나마 선적 수퍼탱커가 불법 항로에서 기뢰에 충돌했다고 주장한 반면[2][4], 미국 중부사령부(CENTCOM)는 드론 공격이라고 반박하며 이란의 기뢰 주장을 거부했다[6][7][10]. 이란은 호르무즈 통항 규정 위반 선박 제재 명단을 77척으로 확대하고 벌금·억류·몰수 조치를 예고했으며 협력 선박도 추가 가능하다고 밝혔다[11][13][16][20]. 후티 반군은 바브엘만데브 해협 주변 섬인 하니시를 추가 점령하며 홍해 요충지 통제를 강화하고 있고[12][14][17], 이는 BRICS 내 깊은 분열을 노출시키고 있다는 분석도 나왔다[9]. 호르무즈 회담이 연기된 가운데 후티의 공습 주장이 이어지며 브렌트유는 108달러대를 유지하고 있다[15].",
+        "korea_impact": "이란이 호르무즈 통항 규정 위반 선박 제재 명단을 77척으로 확대한 가운데 한국 선사 선박도 해당 명단에 포함된 것으로 확인됐다[18]. 이란은 벌금·억류·몰수 조치를 예고하고 협력 선박도 추가 가능하다고 밝혀 한국 선사의 운항 리스크가 높아진 상황이다[16][19][20]. 후티 반군의 홍해 요충지 추가 장악으로 사우디아라비아가 사면초가에 몰리고 있으며[14][17], 이는 한국의 중동산 원유 수입 경로에 복합적 위협 요인으로 작용하고 있다[15]."
       },
       "2_Safety": {
-        "overseas": "영국해사무역기구(UKMTO)는 주말 호르무즈에서 또 다른 선박이 피격됐다고 보고했으며 이란은 선원 1명이 사망했다고 밝혔다[21]. 멕시코 국영석유회사 페멕스(Pemex)는 멕시코만 파이프라인에서 발생한 원유 유출을 봉쇄했다[22].",
-        "korea_impact": "국내에서는 예인선 사고 실종자 수색이 13일째 이어지며 함선 17척이 야간 수색에 투입됐다[23][24]."
+        "overseas": "로스앤젤레스항에서 화물선에 실린 컨테이너 다수가 바다로 추락하는 사고가 발생했다[21][40]. 오만 해안 인근에서 MT EL Gaia 선박이 공격을 받아 인도가 이를 규탄했으며[22], 이란은 걸프 해역에서 상업 선박이 미국의 공격을 받아 1명이 사망하고 3명이 부상했다고 주장했다[23]. 인도네시아에서는 여객선 사고로 최소 6명이 사망하고 130명이 실종됐다[24].",
+        "korea_impact": "국내에서는 예인선 사고 발생 13일째 야간 수색이 계속되고 있으며 함선 17척이 투입된 상태다[25]. 티엔에스캐처호 실종자 수색도 13일째 야간 수색에 돌입했다[26]."
       },
       "3_Freight": {
-        "overseas": "호르무즈 해협 봉쇄 여파로 국제 유조선 운임이 하루 100만 달러를 돌파하며 사상 최고치를 기록했고[25][26][27] 관련 화물 펀드는 3,600% 수익률을 기록한 것으로 보고됐다[33]. 호르무즈 해협 통항 선박 수는 주말 기준 한 자릿수로 급감했으며[29][32] 10일 평균을 지속적으로 하회하는 것으로 나타났다[30][31]. CMA CGM은 10월 1일부터 동아시아발 미국행 운임을 대폭 인상할 예정이다[28].",
-        "korea_impact": "호르무즈 통항 급감과 사우디 대체 송유관 가동 중단이 겹치면서 원유 수송 경로가 더욱 제한됐다[35][36]. 부산발 컨테이너 운임은 4,696포인트를 기록하며 6주 연속 상승 후 보합권에 진입했다[37]."
+        "overseas": "호르무즈 해협 봉쇄 여파로 유조선 운임이 하루 100만 달러를 돌파하며 사상 최고 수준을 기록했고[27][28][30], 주말 기준 호르무즈 해협 통항 선박 수가 한 자릿수로 급감했다[32][36]. 호르무즈 해협 통항량은 10일 평균을 하회하는 수준이 지속되고 있으며[33][34][35], 러시아 흑해 원유 수출도 기록적 운임 비용으로 압박을 받고 있다[31]. WFP 사무총장은 해운 혼란으로 수단과 예멘에 식량·비료 공급이 차단되고 있다고 경고했다[29].",
+        "korea_impact": "부산발 컨테이너 운임은 4,696포인트를 기록하며 6주 연속 상승 후 보합권에 진입했다[39]. 호르무즈 통항 급감과 함께 사우디의 호르무즈 우회 750마일 송유관도 일시 폐쇄되어 대체 경로마저 막힌 상황이다[37][38]."
       },
       "4_PortCargo": {
-        "overseas": "오만산 원유가 호르무즈 우회 공급 안정성을 이유로 아시아 시장에서 가치가 상승하고 있다[38]. 호주 포트헤들랜드의 8월 철광석 수출은 전월 대비 5% 증가했다[43]. 우즈베키스탄은 한국 수출 지원을 위해 인천 허브를 개설했다[40].",
-        "korea_impact": "울산항의 호르무즈 우회 원유 입항이 급증했으며 홍해 불안으로 긴장이 지속되고 있다[44]. 산업통상자원부는 원유 90% 이상을 확보해 단기 영향이 제한적이라고 밝혔고[45] 정유업계는 비중동산 원유 수입 시 운임 차액 지원 확대를 긴급 논의했다[46]. 국내 원유 도입량은 7월 들어 큰 폭으로 증가했으며[47] 여수항 원유 수입단가는 25% 급등했다[48]. 석유협회는 중동발 위기에도 수급 대란은 없었다고 평가했다[49][50]."
+        "overseas": "포트헤들랜드의 철광석 수출이 8월 기준 전월 대비 5% 증가했다[48]. 싱가포르는 LNG FSRU를 확보해 천연가스 공급을 안정화하고 있으며[47], 연료유 재고는 순수입 급감에도 불구하고 증가했다[46]. 방글라데시는 가스 부족 해소를 위해 부유식 LNG 터미널 5기 건설을 계획하고 있으며[45], 우즈베키스탄은 한국 수출 지원을 위해 인천 허브를 개설했다[44].",
+        "korea_impact": "울산항의 호르무즈 우회 원유 입항이 급증하고 있으며 홍해 불안으로 긴장이 지속되고 있다[49]. 여수항 원유 수입단가는 25% 급등했으며 중동발 공급 불안이 원인으로 지목됐다[53]. 산업부는 원유 90% 이상을 확보해 단기 영향이 제한적이라고 밝혔으며[50], 정부는 정유사를 긴급 소집해 비중동산 원유 수입 시 운임 차액 지원 확대를 추진하고 있다[51]. 국내 원유 도입량은 7월 들어 큰 폭으로 증가했으며[52], 석유협회는 중동발 위기에도 수급 대란은 없었다고 평가했다[54][55]."
       },
       "5_EconFinance": {
-        "overseas": "사우디 송유관 공격과 호르무즈 교란이 겹치면서 브렌트유가 110달러를 돌파했고[59] WTI도 108달러를 넘어섰다[54][57]. 유가는 사우디 송유관 공격 소식에 하루 4% 이상 급등해 16주 최고치를 기록했으며[55][56] 송유관 복구에 수 주가 걸릴 것이라는 보도 이후 추가 상승했다[58]. 사우디 송유관 가동 중단이 글로벌 원유 공급 완충 여력 축소를 심화시키고 있다는 분석이 나왔다[100].",
-        "korea_impact": "글로벌 원유 공급이 4% 감소 위기에 처하면서 세계 경제가 격랑에 빠졌다는 분석이 제기됐고[62] 코스피는 '3중 봉쇄'에 따른 유가 급등으로 3일 연속 하락했다[63]. 뉴욕증시는 AI 속도조절론과 유가 급등이 겹치며 나스닥이 1.2% 하락했고[65][66] 10년물 국채금리는 5%를 돌파했다[64]. 달러화는 사우디 송유관 가동 중단발 유가 급등에 강세를 보였으며[70] 브렌트유는 한 달 새 23.71% 상승해 110.42달러를 기록했다[71]."
+        "overseas": "사우디 동서 송유관 가동 중단과 호르무즈 봉쇄 여파로 브렌트유가 110달러까지 급등했으며[66], 유가는 후티 공습과 사우디 송유관 폐쇄 이후 4% 이상 올라 16주 최고치를 기록했다[61][62][63]. 사우디 송유관 공격이 세계 원유 공급의 4%를 차단할 수 있다는 분석이 나왔고[110], 글로벌 원유 공급 완충 여력이 축소되고 있다는 경고도 제기됐다[104]. 오일 임원들은 호르무즈 봉쇄로 글로벌 연료 위기가 도래했다고 경고했다[5].",
+        "korea_impact": "브렌트유가 한 달 새 23.71% 상승해 110.42달러를 기록했으며[76], 호르무즈·홍해·사우디 송유관의 '3중 봉쇄'로 유가가 급등하면서 코스피가 3일 연속 하락했다[68]. 뉴욕증시에서는 AI 속도조절론과 유가 급등이 겹치며 나스닥이 1.2% 하락했고[70][71], 10년물 국채금리가 5%를 돌파했다[69]. 사우디 송유관 가동 중단발 유가 급등으로 미 달러화가 강세를 보였다[75]. 글로벌 원유 공급 4% 감소 위기로 세계 경제가 격랑에 빠져들고 있다는 분석이 나왔다[67]."
+      },
+      "6_Seafood": {
+        "overseas": "노르웨이 수산물위원회는 수출이 22% 감소했음에도 불구하고 베트남 연어 판매 성장에 낙관적 전망을 유지하고 있다[77].",
+        "korea_impact": ""
       },
       "7_Shipping": {
-        "overseas": "머스크와 하팍로이드는 홍해 리스크에도 불구하고 수에즈 운하 경유 서비스를 재개·확대하고 있다[74][76]. 호르무즈 해협 원유 수송은 일부 회복됐으나 중동 원유 수출 제약은 지속되고 있다[75]. 이란과 오만은 안전 해상 항로에 합의했다고 이란 외무부가 밝혔으며[79] 원유 수송선들이 전쟁으로 재편된 글로벌 해상 항로를 따라 우회 운항하고 있다[81]. LNG 해운 시장은 개선 조짐을 보이고 있다[80].",
-        "korea_impact": "삼성중공업은 LNG 운반선 4척과 원유 운반선 2척 등 총 6척, 12억 달러(약 1.6조 원) 규모를 수주했으며[82][83][85][86][87][88] 올해 상선 수주액이 이미 지난해 전체를 넘어섰다[86][87]. 국내 첫 북극항로 시범운항 선박인 팬스타 아크로호가 로테르담에 입항했고[84] 부산시는 북극항로를 도약 기회로 삼는 전략을 논의했다[91]. 조선 빅3 노사갈등이 격화되며 파업 수위가 높아지고 건조 현장에 긴장이 고조되고 있다[89]. 중국 수출 급증으로 자동차 운반선이 부족해지면서 차량 150만 대가 컨테이너로 수송되는 상황이 발생했다[90]."
+        "overseas": "머스크와 하팍로이드가 후티 위협에도 불구하고 수에즈 운하 복귀를 가속화하며 추가 서비스를 재개했다[81][83]. 호르무즈 해협 통항이 일부 회복되고 있으나 중동 원유 수출 제약은 지속되고 있으며[82], 오만산 원유가 호르무즈 우회 경로로 아시아 시장에서 가치가 높아지고 있다[78]. 로이드 레지스터·HHI·KSOE가 하이브리드 전기 LNG 운반선 설계 개발에 착수했으며[84][86], MOL은 세계 최초 풍력 보조 LNG 운반선을 명명했다[87]. 한국의 북극항로 활용 가능성에 대한 국제적 논의도 이어지고 있다[85].",
+        "korea_impact": "삼성중공업이 LNG 운반선 4척·원유 운반선 2척 등 총 6척, 1.6조 원(약 12억 달러) 규모를 수주하며 올해 상선 수주액이 이미 지난해 전체를 넘어섰다[88][89][91][92][93][94]. 국내 첫 북극항로 시범운항에 나선 팬스타 아크로호가 로테르담에 입항했으며[90], 부산에서는 북극항로를 부산 도약 기회로 활용하기 위한 타운홀 미팅이 개최됐다[97]. 조선 빅3에서는 노사 갈등이 격화되며 파업 수위가 높아지고 건조 현장에 긴장이 고조되고 있다[95]. 중국 수출 급증으로 자동차 운반선이 부족해지면서 차량 150만 대가 컨테이너로 운송되는 상황이 발생했다[96]."
       },
       "8_Logistics": {
         "overseas": "",
-        "korea_impact": "코트라는 중동발 물류난 돌파를 위해 수출기업 지원을 1.5배 확대하고 13개국 현지 점검 및 기업지원을 강화하기로 했다[92][95]. 이 대통령은 우즈베키스탄을 시작으로 중앙아시아 5개국과 정상외교를 추진하며 핵심광물 및 공급망 다변화를 논의했다[93][94]."
+        "korea_impact": "코트라는 중동발 물류난 돌파를 위해 수출기업 지원을 1.5배 확대하고 13개국 현지 점검 및 기업 지원을 강화하고 있다[98][101]. 이 대통령의 중앙아시아 5개국 정상외교를 계기로 핵심광물·공급망 다변화 및 한국 기업의 중앙아시아 진출 확대가 추진되고 있다[99][100]."
       },
       "10_OtherIndustry": {
-        "overseas": "후티 반군의 드론 공격을 받은 사우디아라비아 동서 송유관은 복구에 3~6주가 소요될 전망이며[96][101][104] 하루 700만 배럴 수송 능력을 가진 핵심 인프라가 수 주간 가동 중단될 것으로 보인다[110][111][112]. 사우디 송유관 폐쇄로 디젤 가격이 사상 최고치를 기록했다[104]. 세계식량계획(WFP) 사무총장은 해운 혼란으로 수단과 예멘에 대한 식량·비료 공급이 차단되고 있다고 경고했다[105].",
-        "korea_impact": "사우디 송유관 드론 피격으로 복구에 최대 6주가 걸릴 것으로 전망되면서[107][108][109] 브렌트유가 108달러를 기록했고[114] 국제유가 고공행진이 지속되고 있다[115]. 사우디 송유관 가동 중단으로 국내 원유 공급 차질 우려가 커지고 있다[106][113]."
+        "overseas": "사우디아라비아의 동서 핵심 송유관이 드론 공격을 받아 수 주에서 최대 수개월간 가동 중단될 전망이며[102][105][108][109][111], 이 송유관은 하루 700만 배럴을 처리하는 핵심 인프라다[116]. 해당 공격이 세계 원유 공급의 4%를 차단할 수 있다는 분석이 나왔고[110], 글로벌 원유 공급 완충 여력 축소 우려가 제기됐다[104]. 사우디 송유관 폐쇄의 글로벌 원유 흐름에 대한 영향이 광범위하게 분석되고 있다[103][107].",
+        "korea_impact": "드론 공격을 받은 사우디 핵심 송유관의 복구에 최대 5~6주가 소요될 것으로 전망되며[113][114], 이로 인해 브렌트유가 108달러대로 급등했다[120]. 사우디 송유관 가동 중단으로 국제 원유 공급이 급감하고 국제유가 고공행진이 지속되고 있다[121]. 정부와 정유업계는 적극적 원유 확보에 나서 석유제품 수급 대란은 없었다고 평가했으나[54][55], 여수항 원유 수입단가 25% 급등 등 비용 압박은 현실화되고 있다[53]."
       }
     },
     "flow": {
       "triggers": {
         "route": {
-          "overseas": "호르무즈 해협에서 유조선 폭발 및 기뢰 피격 사건이 잇따르고[1][8][10] UKMTO가 추가 선박 피격을 보고하면서[21] 해협 통항 선박 수가 한 자릿수로 급감했다[29][32]. 후티 반군이 바브엘만데브 해협 인근 하니시 섬을 추가 점령해 홍해 요충지 통제를 강화했고[12][17] 이란과 오만이 안전 항로에 합의했다는 보도가 나왔으나[79] 실질적 통항 회복은 제한적인 것으로 보인다[75].",
-          "korea_impact": "이란의 제재 선박 명단에 한국 선사 선박이 포함되면서[18] 한국의 중동 원유 수입 항로가 직접적 위협에 노출됐다. 울산항은 호르무즈 우회 원유 입항이 급증했고[44] 여수항 원유 수입단가는 25% 급등했다[48]. 사우디 대체 송유관마저 가동 중단되면서[36] 한국의 원유 수입 경로가 더욱 제한된 상황이다[35]."
+          "overseas": "호르무즈 해협에서 유조선 폭발 사고가 발생하고 통항량이 주말 기준 한 자릿수로 급감했으며[32][36], 이란은 통항 규정 위반 선박 제재 명단을 77척으로 확대했다[11][13]. 후티 반군은 바브엘만데브 해협 주변 하니시 섬을 추가 점령하며 홍해 통제를 강화하고 있고[12][17], 사우디의 호르무즈 우회 750마일 송유관도 일시 폐쇄됐다[38]. 머스크·하팍로이드는 후티 위협에도 수에즈 운하 복귀를 가속화하고 있으나[81][83], 중동 원유 수출 제약은 지속되고 있다[82].",
+          "korea_impact": "한국 선사 선박이 이란의 호르무즈 제재 77척 명단에 포함돼 억류·몰수 위험에 노출됐다[18]. 울산항은 호르무즈 우회 원유 입항이 급증하고 있으나 홍해 불안으로 긴장이 지속되고 있으며[49], 사우디 우회 송유관마저 폐쇄되면서 대체 경로가 동시에 차단된 상황이다[37][38]. 코트라는 중동발 물류난 돌파를 위해 수출기업 지원을 1.5배 확대하고 13개국 현지 점검에 나섰다[98][101]."
         },
         "source": {
-          "overseas": "사우디아라비아 동서 송유관이 드론 공격으로 수 주간 가동 중단될 전망이며[96][101][104] 하루 700만 배럴 수송 능력이 차단됐다[110]. 이란은 호르무즈 통항 제재 선박을 77척으로 확대하고 협력 선박도 추가 제재할 수 있다고 경고했다[13][20]. 후티 반군의 사우디 송유관 공격이 글로벌 공급에 추가 위협을 가하고 있다[9].",
-          "korea_impact": "산업통상자원부는 원유 90% 이상을 확보해 단기 영향이 제한적이라고 밝혔으나[45] 국내 원유 도입량은 7월 들어 큰 폭으로 증가하며 선제적 비축이 이뤄지고 있다[47]. 정유업계는 비중동산 원유 수입 시 운임 차액 지원 확대를 긴급 논의했고[46] 석유협회는 수급 대란은 없었다고 평가했다[49][50]."
+          "overseas": "사우디아라비아의 하루 700만 배럴 처리 핵심 동서 송유관이 드론 공격으로 수 주~수개월간 가동 중단될 전망이며[102][108][116], 이는 세계 원유 공급의 4%를 차단할 수 있다는 분석이 나왔다[110]. 이란의 호르무즈 제재 선박 명단 확대와 통항 급감으로 중동산 원유 수출이 복합적으로 제약되고 있으며[11][32], 오일 임원들은 글로벌 연료 위기가 도래했다고 경고했다[5]. 글로벌 원유 공급 완충 여력이 축소되고 있다는 경고도 제기됐다[104].",
+          "korea_impact": "산업부는 원유 90% 이상을 확보해 단기 영향이 제한적이라고 밝혔으나[50], 국내 원유 도입량은 7월 들어 큰 폭으로 증가했고[52] 여수항 원유 수입단가는 25% 급등했다[53]. 정부는 정유사를 긴급 소집해 비중동산 원유 수입 시 운임 차액 지원 확대를 추진하고 있으며[51], 석유협회는 수급 대란은 없었다고 평가했다[55]. 이 대통령의 중앙아시아 정상외교를 통해 핵심광물·공급망 다변화가 추진되고 있다[99][100]."
         },
         "logistics": {
-          "overseas": "호르무즈 봉쇄 여파로 국제 유조선 운임이 하루 100만 달러를 돌파하며 사상 최고치를 기록했고[25][26][27] 관련 화물 펀드는 3,600% 수익률을 기록했다[33]. CMA CGM은 10월 1일부터 동아시아발 미국행 운임을 대폭 인상할 예정이며[28] 머스크와 하팍로이드는 수에즈 운하 경유 서비스를 재개·확대하고 있다[74][76].",
-          "korea_impact": "부산발 컨테이너 운임은 4,696포인트를 기록하며 6주 상승 후 보합권에 진입했다[37]. 코트라는 중동발 물류난 대응을 위해 수출기업 지원을 1.5배 확대하고 13개국 현지 점검을 강화하기로 했다[92][95]. 삼성중공업은 LNG 운반선 및 원유 운반선 6척을 1.6조 원에 수주하며 올해 상선 수주액이 이미 지난해를 초과했다[86][87]."
+          "overseas": "유조선 운임이 하루 100만 달러를 돌파하며 사상 최고 수준을 기록했고[27][28][30], 러시아 흑해 원유 수출도 기록적 운임 비용으로 압박을 받고 있다[31]. 호르무즈 해협 통항량이 10일 평균을 지속적으로 하회하고 있으며[33][34][35], WFP는 해운 혼란으로 수단·예멘의 식량·비료 공급이 차단되고 있다고 경고했다[29].",
+          "korea_impact": "부산발 컨테이너 운임은 4,696포인트를 기록하며 6주 상승 후 보합권에 진입했다[39]. 삼성중공업은 LNG·원유 운반선 6척 1.6조 원을 수주하며 올해 상선 수주 목표를 이미 초과 달성했고[92][93], 중국 수출 급증으로 자동차 운반선 부족이 심화되고 있다[96]. 조선 빅3의 노사 갈등 격화로 건조 현장 긴장이 고조되고 있어 수주 이행 리스크가 부각되고 있다[95]."
         }
       },
       "domestic_impact": {
-        "경제·금융": "브렌트유가 한 달 새 23.71% 급등해 110.42달러를 기록했고[71] 코스피는 '3중 봉쇄'에 따른 유가 급등으로 3일 연속 하락했다[63]. 뉴욕증시는 AI 속도조절론과 유가 급등이 겹치며 나스닥이 1.2% 하락했고[65] 10년물 국채금리는 5%를 돌파했다[64]. 달러화 강세가 나타나면서[70] 원화 약세 압력이 가중될 가능성이 있다.",
-        "정유·화학": "여수항 원유 수입단가가 25% 급등했고[48] 정유업계는 비중동산 원유 수입 시 운임 차액 지원 확대를 긴급 논의했다[46]. 산업통상자원부는 원유 90% 이상을 확보해 단기 수급 영향이 제한적이라고 밝혔으며[45] 석유협회도 수급 대란은 없었다고 평가했다[49][50]. 국내 원유 도입량은 7월 들어 큰 폭으로 증가했다[47].",
-        "해운·물류": "삼성중공업은 LNG 운반선 4척과 원유 운반선 2척 등 6척을 1.6조 원에 수주하며 올해 상선 수주 목표를 이미 초과 달성했다[86][87][88]. 국내 첫 북극항로 시범운항 선박이 로테르담에 입항했고[84] 부산시는 북극항로 전략을 논의했다[91]. 조선 빅3 노사갈등이 격화되며 파업 수위가 높아지고 있어 건조 일정에 영향을 줄 가능성이 있다[89].",
-        "식품·농업": "세계식량계획(WFP) 사무총장은 해운 혼란으로 수단과 예멘에 대한 식량·비료 공급이 차단되고 있다고 경고했다[105]. 파키스탄 카이버파크툰크와(KP) 주의 밀 비축량이 18만9천 톤으로 감소했으며[39] 글로벌 밀 수입이 2026~27년 11% 감소할 것으로 전망됐다[42].",
-        "기타산업": "이 대통령은 중앙아시아 5개국과 정상외교를 추진하며 핵심광물 및 공급망 다변화를 논의했다[93][94]. 우즈베키스탄은 한국 수출 지원을 위해 인천 허브를 개설했다[40]."
+        "경제·금융": "브렌트유가 한 달 새 23.71% 상승해 110.42달러를 기록했으며[76], 호르무즈·홍해·사우디 송유관의 '3중 봉쇄'로 코스피가 3일 연속 하락했다[68]. 뉴욕증시에서 나스닥이 AI 속도조절론과 유가 급등 겹악재로 1.2% 하락했고[70], 10년물 국채금리가 5%를 돌파했다[69]. 사우디 송유관 가동 중단발 유가 급등으로 미 달러화가 강세를 보이며 원화 환율에도 영향을 줄 가능성이 있다[75].",
+        "정유·화학": "여수항 원유 수입단가가 25% 급등했으며[53], 정부는 정유사를 긴급 소집해 비중동산 원유 수입 시 운임 차액 지원 확대를 추진하고 있다[51]. 울산항의 호르무즈 우회 원유 입항이 급증하고 있으며[49], 국내 원유 도입량은 7월 들어 큰 폭으로 증가했다[52]. 석유협회와 정부는 수급 대란은 없었다고 평가했으나[54][55], 비용 압박은 현실화되고 있다.",
+        "해운·물류": "삼성중공업이 LNG 운반선 4척·원유 운반선 2척 등 6척 1.6조 원을 수주하며 올해 상선 수주액이 이미 지난해 전체를 넘어섰다[88][92][93]. 국내 첫 북극항로 시범운항 선박 팬스타 아크로호가 로테르담에 입항했으며[90], 부산에서는 북극항로 활용 전략 논의가 이루어졌다[97]. 조선 빅3의 노사 갈등이 격화되며 파업 수위가 높아지고 건조 현장에 긴장이 고조되고 있다[95]. 코트라는 중동발 물류난 대응을 위해 수출기업 지원을 1.5배 확대했다[98][101].",
+        "식품·농업": "WFP 사무총장은 해운 혼란으로 수단과 예멘의 식량·비료 공급이 차단되고 있다고 경고했다[29]. 노르웨이 수산물위원회는 수출이 22% 감소했음에도 베트남 연어 판매 성장에 낙관적 전망을 유지하고 있다[77].",
+        "기타산업": "중국 수출 급증으로 자동차 운반선이 부족해지면서 차량 150만 대가 컨테이너로 운송되는 상황이 발생했다[96]. 여수광양항만공사는 중국 닝보저우산항과 협력 방안을 논의했다[56]."
       }
     },
     "changes": {
       "new": [
-        "사우디아라비아 동서 송유관 드론 피격으로 수 주간 가동 중단 전망[96][101][104][110]",
-        "후티 반군의 홍해 요충지 하니시 섬 추가 점령으로 바브엘만데브 해협 통제 강화[12][17]",
-        "이란-오만 간 안전 해상 항로 합의 발표[79]",
-        "국제 유조선 운임 하루 100만 달러 돌파, 사상 최고치 기록[25][26]",
-        "한국 선사 선박이 이란의 호르무즈 제재 77척 명단에 포함[18]",
-        "브렌트유 110달러 돌파, 한 달 새 23.71% 급등[59][71]"
+        "호르무즈 해협에서 유조선 폭발 사고 발생, 미국과 이란이 드론 공격 vs 기뢰 충돌로 원인 상반 주장[1][2][6][7]",
+        "사우디아라비아 동서 핵심 송유관 드론 공격으로 수 주~수개월 가동 중단 전망[102][108][116]",
+        "유조선 운임 하루 100만 달러 돌파, 사상 최고 수준 기록[27][28][30]",
+        "이란 호르무즈 제재 선박 명단 77척으로 확대, 한국 선사 선박 포함 확인[18]",
+        "후티 반군 바브엘만데브 해협 인근 하니시 섬 추가 점령[12][17]",
+        "브렌트유 110달러 돌파, 한 달 새 23.71% 상승[66][76]",
+        "국내 첫 북극항로 시범운항 팬스타 아크로호 로테르담 입항[90]"
       ],
       "escalated": [
-        "이란의 호르무즈 통항 제재 선박 수가 77척으로 확대되고 협력 선박 추가 제재 경고[11][13][16][20]",
-        "호르무즈 해협 통항량이 한 자릿수로 급감하며 10일 평균 지속 하회[29][30][31][32]",
-        "호르무즈 해협 내 유조선 폭발·기뢰 피격 사건 추가 발생[1][8][10][21]",
-        "코스피 3일 연속 하락 및 뉴욕증시 나스닥 1.2% 하락 등 글로벌 금융시장 충격 심화[63][65]"
+        "호르무즈 해협 통항량 주말 기준 한 자릿수로 급감, 10일 평균 지속 하회[32][33][36]",
+        "사우디 호르무즈 우회 750마일 송유관도 일시 폐쇄로 대체 경로 동시 차단[37][38]",
+        "코스피 3일 연속 하락, 뉴욕증시 나스닥 1.2% 하락 등 글로벌 금융시장 동반 약세[68][70]",
+        "조선 빅3 노사 갈등 격화, 파업 수위 상승으로 건조 현장 긴장 고조[95]",
+        "여수항 원유 수입단가 25% 급등[53]"
       ],
       "resolved": []
     }
   },
   "sources": {
     "1_Security": [
+      {
+        "title": "Oil tanker erupts in flames after hitting Hormuz mine -  UPDATED",
+        "url": "https://news.az/news/oil-tanker-erupts-in-flames-after-hitting-hormuz-mine-updated",
+        "type": "intl"
+      },
       {
         "title": "Oil tanker has exploded in Strait of Hormuz, says Iran's IRGC",
         "url": "https://www.scmp.com/news/world/middle-east/article/3367515/oil-tanker-has-exploded-strait-hormuz-says-irans-irgc",
@@ -98,8 +109,18 @@
         "type": "intl"
       },
       {
+        "title": "Supertanker explodes after hitting mines on illegal route south of Hormuz: IRGC Navy",
+        "url": "https://www.presstv.co.uk/Detail/2026/09/14/776307/Supertanker-explodes-after-hitting-mines-on-illegal-route-south-of-Hormuz--IRGC-Navy",
+        "type": "intl"
+      },
+      {
         "title": "WSJ: Oil executives warn a global fuel crisis has arrived as Hormuz closure bites",
         "url": "https://investinglive.com/commodities/wsj-oil-executives-warn-a-global-fuel-crisis-has-arrived-as-hormuz-closure-bites/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil catch-up: Iran says tanker hit mine in Hormuz; Centcom says drone struck it instead",
+        "url": "https://investinglive.com/commodities/oil-catch-up-iran-says-tanker-hit-mine-in-hormuz-centcom-says-drone-struck-it-instead/",
         "type": "intl"
       },
       {
@@ -108,13 +129,48 @@
         "type": "intl"
       },
       {
+        "title": "Houthi rebels expand their threat to oil flow",
+        "url": "https://www.ironmountaindailynews.com/news/2026/09/houthi-rebels-expand-their-threat-to-oil-flow/",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi rebels' control of Red Sea oil chokepoint exposes deep divisions in Brics - 15-Sep-2026",
+        "url": "https://home.nzcity.co.nz/news/article.aspx?id=454060",
+        "type": "intl"
+      },
+      {
         "title": "U.S. Rejects Iran's Mine Claim as Hormuz Shipping Threat Remains Severe",
         "url": "https://gcaptain.com/u-s-rejects-irans-mine-claim-as-hormuz-shipping-threat-remains-severe/",
         "type": "intl"
       },
       {
-        "title": "Why Australia and Asia must unite on opening the Strait of Hormuz",
-        "url": "https://www.afr.com/policy/foreign-affairs/australia-should-mobilise-asian-partners-to-open-strait-of-hormuz-20260910-p60w1m",
+        "title": "Urgent: Iran's IRGC says oil tanker explodes after hitting naval mines in Hormuz Strait -- media-Xinhua",
+        "url": "https://english.news.cn/20260915/a87d2f5151e34934b696a97755a74b22/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC Commander Orchestrates Houthi Strategy to Target Bab al-Mandab Strait",
+        "url": "https://www.khabaragency.net/news252922.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran's IRGC says oil tanker explodes after hitting naval mines in Hormuz Strait-Xinhua",
+        "url": "https://english.news.cn/20260915/9f7ed8c8a5fe4fd988a3a3c5791faa88/c.html",
+        "type": "intl"
+      },
+      {
+        "title": "US rejects Iranian claim that tanker hit mine near Hormuz",
+        "url": "https://aa.com.tr/en/us-israel-iran-war/us-rejects-iranian-claim-that-tanker-hit-mine-near-hormuz/4057217",
+        "type": "intl"
+      },
+      {
+        "title": "What the closure of Saudi Arabia's East-West pipeline could mean for oil flows – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/business/2026/09/14/what-the-closure-of-saudi-arabias-east-west-pipeline-could-mean-for-oil-flows",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC says tanker hit sea mine near Hormuz, engulfed in flames",
+        "url": "https://en.apa.az/asia/irgc-says-tanker-hit-sea-mine-near-hormuz-engulfed-in-flames-524259",
         "type": "intl"
       },
       {
@@ -128,6 +184,16 @@
         "type": "intl"
       },
       {
+        "title": "Iran's IRGC says oil tanker explodes after hitting naval mines in Hormuz Strait",
+        "url": "http://www.bignewsnetwork.com/news/279306248/iran-irgc-says-oil-tanker-explodes-after-hitting-naval-mines-in-hormuz-strait",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says tanker hit naval mine near Hormuz, US calls claim false",
+        "url": "https://www.israelnationalnews.com/flashes/693520",
+        "type": "intl"
+      },
+      {
         "title": "Iran backed Houthi attack on Saudi pipeline threatens global supply",
         "url": "https://www.hometownregister.com/news/national/iran-backed-houthi-attack-on-saudi-pipeline-threatens-global-supply/article_472ca618-7973-5f9c-b152-1acee8e3c60f.html",
         "type": "intl"
@@ -138,8 +204,28 @@
         "type": "intl"
       },
       {
+        "title": "Oil tanker exploded after colliding with mines in Hormuz, Iran's Fars reports",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-908589",
+        "type": "intl"
+      },
+      {
+        "title": "WATCH:  Oil prices rise after attacks on key Middle East shipping routes",
+        "url": "https://kxly920.com/2026/09/14/watch-oil-prices-rise-after-attacks-on-key-middle-east-shipping-routes/",
+        "type": "intl"
+      },
+      {
+        "title": "Urgent: Iran's IRGC says oil tanker explodes after hitting naval mines in Hormuz Strait -- media",
+        "url": "http://www.bignewsnetwork.com/news/279306166/urgent-iran-irgc-says-oil-tanker-explodes-after-hitting-naval-mines-in-hormuz-strait-media",
+        "type": "intl"
+      },
+      {
         "title": "\"No help whatsoever\": Trump seeks reimbursement from nations for securing Strait of Hormuz",
         "url": "https://aninews.in/news/world/us/no-help-whatsoever-trump-seeks-reimbursement-from-nations-for-securing-strait-of-hormuz20260915011603/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia Seeks UK Military Support Against Houthi Offensive - Report",
+        "url": "https://www.i24news.tv/en/news/middle-east/the-gulf/artc-saudi-arabia-seeks-uk-military-support-against-houthi-offensive-report",
         "type": "intl"
       },
       {
@@ -148,8 +234,43 @@
         "type": "intl"
       },
       {
+        "title": "Houthi missiles and a mystery drone strike expose the cracks in Saudi Arabia's shield   – NaturalNews.com",
+        "url": "https://www.naturalnews.com/2026-09-14-houthi-missiles-and-a-mystery-drone-strike-expose-the-cracks-in-saudi-arabias-shield.html",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Crown Prince Meets CENTCOM Chief Amid Escalating Houthi Attacks",
+        "url": "https://redstate.com/wardclark/2026/09/14/saudi-crown-prince-meets-centcom-chief-amid-escalating-houthi-attacks-n2206910",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi rebels' rapid advance down Yemen's Red Sea coast threatens new front in Iran war",
+        "url": "https://news.wjct.org/national-news/2026-09-14/houthi-rebels-rapid-advance-down-yemens-red-sea-coast-threatens-new-front-in-iran-war",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia has shut a critical oil pipeline. Here's why it matters for the global oil market",
+        "url": "https://www.cnn.com/2026/09/14/economy/saudi-east-west-pipeline-shut-oil-market",
+        "type": "intl"
+      },
+      {
+        "title": "Why are Houthi attacks on Saudi Arabia escalating again",
+        "url": "https://news.az/news/why-are-houthi-attacks-on-saudi-arabia-escalating-again",
+        "type": "intl"
+      },
+      {
+        "title": "LIVE: Trump urges Ukraine to stop refinery strikes as diesel prices surge",
+        "url": "https://news.az/news/live-trump-urges-ukraine-to-stop-refinery-strikes-as-diesel-prices-surge",
+        "type": "intl"
+      },
+      {
         "title": "Houthi seizure of Mocha turns a major global shipping chokepoint into a refugee crossing",
         "url": "https://dmnews.com/dmn-houthi-seizure-of-mocha-turns-the-worlds-busiest-shipping-chokepoint-into-a-refugee-crossing/",
+        "type": "intl"
+      },
+      {
+        "title": "'No help whatsoever': Trump seeks reimbursement from nations for securing Strait of Hormuz",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/no-help-whatsoever-trump-seeks-reimbursement-from-nations-for-securing-strait-of-hormuz/articleshow/134245751.cms",
         "type": "intl"
       },
       {
@@ -163,6 +284,11 @@
         "type": "intl"
       },
       {
+        "title": "Vance says US in direct talks with Houthis after Red Sea island seizure",
+        "url": "https://aa.com.tr/en/us-israel-iran-war/vance-says-us-in-direct-talks-with-houthis-after-red-sea-island-seizure/4057050",
+        "type": "intl"
+      },
+      {
         "title": "Red Sea: Saudi pipeline struck out of service for weeks",
         "url": "https://www.bnnbloomberg.ca/markets/oil/2026/09/14/saudi-pipeline-hit-by-drones-will-be-out-of-service-for-weeks-further-restricting-oil-flow/",
         "type": "intl"
@@ -173,18 +299,23 @@
         "type": "intl"
       },
       {
+        "title": "What would Houthi control of Bab al-Mandeb mean for the region?",
+        "url": "https://www.middleeasteye.net/opinion/what-would-houthi-control-bab-al-mandeb-mean-region",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen's Houthi-led forces seize more key islands in southern Red Sea",
+        "url": "https://morningstaronline.co.uk/article/yemen-houthi-led-forces-seize-more-key-islands-southern-red-sea",
+        "type": "intl"
+      },
+      {
         "title": "New Attacks in Hormuz and Saudi Test Nerves as War's Spread Worsens Oil Disruption",
         "url": "https://gcaptain.com/new-attacks-in-hormuz-and-saudi-test-nerves-as-wars-spread-worsens-oil-disruption/",
         "type": "intl"
       },
       {
-        "title": "Oil tops $109 after Houthi strikes, Saudi pipeline shutdown",
-        "url": "https://www.al-monitor.com/originals/2026/09/oil-tops-109-after-houthi-strikes-saudi-pipeline-shutdown",
-        "type": "intl"
-      },
-      {
-        "title": "Trump says oil is flowing through Strait of Hormuz, warns other countries they will have to 'reimburse' US",
-        "url": "https://www.moneycontrol.com/world/trump-says-oil-is-flowing-through-strait-of-hormuz-warns-other-countries-they-will-have-to-reimburse-us-article-14029711.html",
+        "title": "Houthi rebels' control of Red Sea oil chokepoint exposes deep divisions in Brics",
+        "url": "https://theconversation.com/houthi-rebels-control-of-red-sea-oil-chokepoint-exposes-deep-divisions-in-brics-291576",
         "type": "intl"
       },
       {
@@ -193,13 +324,43 @@
         "type": "intl"
       },
       {
+        "title": "Talks between Iran and Gulf states to discuss Strait of Hormuz postponed",
+        "url": "https://www.kawc.org/npr-news/2026-09-14/talks-between-iran-and-gulf-states-to-discuss-strait-of-hormuz-postponed",
+        "type": "intl"
+      },
+      {
+        "title": "New wave of Houthi missile strikes in southern Saudi Arabia, claims Irans Press TV",
+        "url": "https://news.webindia123.com/news/Articles/World/20260914/4498535.html",
+        "type": "intl"
+      },
+      {
+        "title": "MBS meets US CENTCOM chief amid Houthi escalation",
+        "url": "https://www.samaa.tv/2087356782-saudi-crown-prince-us-centcom-chief-discuss-houthi-escalation",
+        "type": "intl"
+      },
+      {
         "title": "Strait of Hormuz talks postponed due to Yemen events, says Iran",
         "url": "https://www.aljazeera.com/news/2026/9/14/strait-of-hormuz-talks-postponed-due-to-yemen-events-says-iran",
         "type": "intl"
       },
       {
+        "title": "Why the Houthi advance towards Yemen's Marib, Taiz matters | Houthis News",
+        "url": "https://www.aljazeera.com/news/2026/9/14/why-the-houthi-advance-towards-yemens-marib-taiz-matters",
+        "type": "intl"
+      },
+      {
         "title": "Strait of Hormuz talks postponed due to Yemen events, says Iran  - Grenada Chronicle – Daily Grenada And Caribbean News",
         "url": "https://grenadachronicle.com/strait-of-hormuz-talks-postponed-due-to-yemen-events-says-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Satellite images show damage to Saudi fuel depot, military site after Houthi attacks",
+        "url": "https://aa.com.tr/en/middle-east/satellite-images-show-damage-to-saudi-fuel-depot-military-site-after-houthi-attacks/4056747",
+        "type": "intl"
+      },
+      {
+        "title": "Iran-Gulf talks delayed as Saudi Arabia counters Houthi attacks",
+        "url": "https://www.union-bulletin.com/news/world/iran-gulf-talks-delayed-as-saudi-arabia-counters-houthi-attacks/article_da82504a-0849-5ef7-b05c-089a0f44fa9e.html",
         "type": "intl"
       },
       {
@@ -210,6 +371,26 @@
       {
         "title": "Houthis Seize Mayun Island Near Bab el-Mandeb: Why It Matters For Red Sea Shipping",
         "url": "https://www.outlookindia.com/international/houthis-seize-mayun-island-near-bab-el-mandeb-why-it-matters-for-red-sea-shipping",
+        "type": "intl"
+      },
+      {
+        "title": "Red Sea: Yemen's Houthi rebels seize more islands",
+        "url": "https://www.bnnbloomberg.ca/markets/oil/2026/09/14/saudi-oil-pipeline-hit-in-strikes-will-be-mostly-out-of-service-for-several-weeks-for-repair/",
+        "type": "intl"
+      },
+      {
+        "title": "Shadow Man, IRGC flight and a secret meeting: Iran's hand in Houthi offensive revealed",
+        "url": "https://www.thenationalnews.com/news/mena/2026/09/14/shadow-man-irgc-flight-and-a-secret-meeting-irans-hand-in-houthi-offensive-revealed/",
+        "type": "intl"
+      },
+      {
+        "title": "Can fractured pro-government forces stop the Houthi advance in Yemen?",
+        "url": "https://www.middleeasteye.net/news/airstrikes-hit-houthi-targets-mocha-and-fierce-battles-are-ongoing-west-taiz",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia issues alerts following Houthi attacks, Iran denies involvement in war",
+        "url": "https://jordantimes.com/news/region/saudi-arabia-issues-alerts-following-houthi-attacks-iran-denies-involvement-in-war",
         "type": "intl"
       },
       {
@@ -228,6 +409,11 @@
         "type": "intl"
       },
       {
+        "title": "US Navy's sinking of Iranian tankers to hit China's oil supply: Report | MorungExpress",
+        "url": "https://morungexpress.com/us-navys-sinking-of-iranian-tankers-to-hit-chinas-oil-supply-report",
+        "type": "intl"
+      },
+      {
         "title": "Iran reports commercial vessel struck in Strait of Hormuz",
         "url": "https://krdo.com/news/national-world/cnn-world/2026/09/14/iran-reports-commercial-vessel-struck-in-strait-of-hormuz/",
         "type": "intl"
@@ -235,16 +421,6 @@
       {
         "title": "Dow Jones Top Energy Headlines at 7 AM ET: Oil Prices Rise as Saudi East-West Pipeline Attack Threatens Export Routes | Metlen ...",
         "url": "https://www.morningstar.com/news/dow-jones/202609142066/dow-jones-top-energy-headlines-at-7-am-et-oil-prices-rise-as-saudi-east-west-pipeline-attack-threatens-export-routes-metlen",
-        "type": "intl"
-      },
-      {
-        "title": "Iran claims it downed U.S. drone over Strait of Hormuz",
-        "url": "https://www.azernews.az/region/263836.html",
-        "type": "intl"
-      },
-      {
-        "title": "Oil rises again as Hormuz talks get postponed and Saudi pipeline shutdown deepens energy crisis",
-        "url": "https://investinglive.com/commodities/oil-rises-again-as-hormuz-talks-get-postponed-and-saudi-pipeline-shutdown-deepens-energy-crisis/",
         "type": "intl"
       },
       {
@@ -273,8 +449,18 @@
         "type": "intl"
       },
       {
+        "title": "Houthi Rebels Capture Key Islands in Southern Red Sea – Chennaionline",
+        "url": "https://www.chennaionline.com/news/houthi-rebels-capture-key-islands-in-southern-red-sea/",
+        "type": "intl"
+      },
+      {
         "title": "Yemen's Houthi rebels seize more key Red Sea islands in grip on shipping",
         "url": "https://www.wgauradio.com/news/world/yemens-houthi-rebels/J2VRSVZ2346DXDFFDK2A2VD2QE/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia Turns To Israel Amid Houthi Crisis As U.S. Considers Strikes Over Bab Al-Mandeb",
+        "url": "https://www.theyeshivaworld.com/news/israel-news/2597671/saudi-arabia-turns-to-israel-amid-houthi-crisis-as-u-s-considers-strikes-over-bab-al-mandeb.html",
         "type": "intl"
       },
       {
@@ -303,13 +489,13 @@
         "type": "intl"
       },
       {
-        "title": "Strait of Hormuz: Greek-operated tanker hit; crew evacuated",
-        "url": "https://www.inewsgr.com/3/Strait-of-Hormuz-Greek-operated-tanker-hit-crew-evacuated.htm",
+        "title": "From Mocha to Perim: How the Houthi offensive is reshaping the Red Sea",
+        "url": "https://news.az/news/from-mocha-to-perim-how-the-houthi-offensive-is-reshaping-the-red-sea",
         "type": "intl"
       },
       {
-        "title": "Iran's IRGC says advanced MQ-1 drone 'destroyed' over Strait of Hormuz",
-        "url": "https://aa.com.tr/en/middle-east/iran-s-irgc-says-advanced-mq-1-drone-destroyed-over-strait-of-hormuz/4056316",
+        "title": "Strait of Hormuz: Greek-operated tanker hit; crew evacuated",
+        "url": "https://www.inewsgr.com/3/Strait-of-Hormuz-Greek-operated-tanker-hit-crew-evacuated.htm",
         "type": "intl"
       },
       {
@@ -318,18 +504,8 @@
         "type": "intl"
       },
       {
-        "title": "Iran says Oman to host regional meeting on Hormuz shipping on Monday",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260911-azertac01.htm",
-        "type": "intl"
-      },
-      {
-        "title": "Oman says regional meeting on Strait of Hormuz postponed",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-irna02.htm",
-        "type": "intl"
-      },
-      {
-        "title": "One Reportedly Killed After Iranian Commercial Vessel Hit Near Qeshm",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-rferl03.htm",
+        "title": "150 civilians killed by Houthi fire since Sept. 3, Yemeni government says",
+        "url": "https://aa.com.tr/en/middle-east/150-civilians-killed-by-houthi-fire-since-sept-3-yemeni-government-says/4056487",
         "type": "intl"
       },
       {
@@ -338,13 +514,8 @@
         "type": "intl"
       },
       {
-        "title": "Gulf States, Iran Plan Talks On Hormuz Shipping Deal, FT Reports",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260911-rferl04.htm",
-        "type": "intl"
-      },
-      {
-        "title": "Muscat meeting to focus on new maritime arrangements in Strait of Hormuz: Araghchi",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-irna04.htm",
+        "title": "Civil Defense: Houthi Projectile Falls in Jazan's Al-Tuwal, Injures Two, Damages Mosque",
+        "url": "https://www.globalsecurity.org/wmd/library/news/saudi/2026/saudi-260912-spa02.htm",
         "type": "intl"
       },
       {
@@ -353,18 +524,13 @@
         "type": "intl"
       },
       {
-        "title": "Iran says 'US attack' on commercial vessel in Gulf kills 1, injures 3",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-azertac01.htm",
-        "type": "intl"
-      },
-      {
         "title": "Oman calls for alternative energy export routes as Strait of Hormuz disruption hits shipments",
         "url": "https://www.upstreamonline.com/energy-security/oman-calls-for-alternative-energy-export-routes-as-strait-of-hormuz-disruption-hits-shipments/2-1-2042950",
         "type": "intl"
       },
       {
-        "title": "Iran says Strait of Hormuz meeting postponed at request of regional states",
-        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-irna01.htm",
+        "title": "What Houthi Gains In Yemen Mean For The Iran War",
+        "url": "https://www.globalsecurity.org/military/library/news/2026/09/mil-260911-rferl01.htm",
         "type": "intl"
       },
       {
@@ -378,13 +544,13 @@
         "type": "intl"
       },
       {
-        "title": "Talks to between Iran and Gulf states to discuss Strait of Hormuz postponed",
-        "url": "https://www.spokanepublicradio.org/2026-09-14/talks-to-between-iran-and-gulf-states-to-discuss-strait-of-hormuz-postponed",
+        "title": "Gulf war simmers again: Houthi advance puts Saudi on edge",
+        "url": "https://www.rediff.com/news/report/gulf-war-simmers-again-houthi-advance-puts-saudi-on-edge/20260914.htm",
         "type": "intl"
       },
       {
-        "title": "Iran war: Satellite images show extent of damage to East-West pipeline",
-        "url": "https://www.cnbc.com/2026/09/14/iran-war-saudi-arabia-east-west-pipeline-oil.html",
+        "title": "Indian sailor missing after oil tanker attacked off Oman",
+        "url": "http://www.afghanistansun.com/news/279305308/indian-sailor-missing-after-oil-tanker-attacked-off-oman",
         "type": "intl"
       },
       {
@@ -398,8 +564,13 @@
         "type": "intl"
       },
       {
-        "title": "Iran War Updates: Oil prices jump to near 4-month high as Oman-Iran talks on Strait of Hormuz postponed",
-        "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-oil-strait-of-hormuz/",
+        "title": "Yemen's Houthi rebels seize more key islands in southern Red Sea",
+        "url": "https://www.northwichguardian.co.uk/news/national/26546808.yemens-houthi-rebels-seize-key-islands-southern-red-sea/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen's Houthi rebels seize more key islands in southern Red Sea | Clacton and Frinton Gazette",
+        "url": "https://www.clactonandfrintongazette.co.uk/news/national/26546808.yemens-houthi-rebels-seize-key-islands-southern-red-sea/",
         "type": "intl"
       },
       {
@@ -418,18 +589,48 @@
         "type": "intl"
       },
       {
+        "title": "UKMTO Reports Another Vessel Struck in Hormuz at the Weekend as Iran Says One Seafarer Killed",
+        "url": "https://shipandbunker.com/news/world/619789-ukmto-reports-another-vessel-struck-in-hormuz-at-the-weekend-as-iran-says-one-seafarer-killed",
+        "type": "intl"
+      },
+      {
         "title": "Yemen's Houthi rebels seize more key islands in southern Red Sea, tighten grip on shipping routes",
         "url": "https://www.yahoo.com/news/world/articles/yemens-houthi-rebels-seize-more-074722527.html",
         "type": "intl"
       },
       {
-        "title": "Oil prices up over 3% following new strikes on Saudi, Strait of Hormuz",
-        "url": "https://tribune.com.pk/story/2629201/oil-prices-up-over-3-following-new-strikes-on-saudi-strait-of-hormuz",
+        "title": "Oman Coast Vessel Attack: One Indian Missing, Confirms Ministry of External Affairs (MEA)",
+        "url": "https://idrw.org/oman-coast-vessel-attack-one-indian-missing-confirms-ministry-of-external-affairs-mea/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen conflict intensifies as Houthi attacks threaten Red Sea oil supplies",
+        "url": "https://www.business-standard.com/world-news/yemen-conflict-intensifies-as-houthi-attacks-threaten-red-sea-oil-supplies-126091400165_1.html",
         "type": "intl"
       },
       {
         "title": "Hormuz vessel traffic falls to single digits amid rising risks",
         "url": "https://news.az/news/hormuz-vessel-traffic-falls-to-single-digits-amid-rising-risks",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices jump more than 2pc after new strikes on Saudi, Strait of Hormuz",
+        "url": "https://dunyanews.tv/en/Business/972784-oil-prices-jump-more-than-2pc-after-new-strikes-on-saudi-strait-of-ho",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea, US to hold high-level defence talks amid Hormuz deployment consideration",
+        "url": "https://www.prokerala.com/news/articles/a1812010.html",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi drone attack: Saudi oil stocks could run dry within days if key pipeline remains shut",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/houthi-drone-attack-saudi-oil-stocks-could-run-dry-within-days-if-key-pipeline-remains-shut/articleshow/134233751.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Prices Surge as Houthi Attacks Deepen Hormuz Supply Fears",
+        "url": "http://www.econotimes.com/Oil-Prices-Surge-as-Houthi-Attacks-Deepen-Hormuz-Supply-Fears-1751946",
         "type": "intl"
       },
       {
@@ -453,13 +654,33 @@
         "type": "intl"
       },
       {
+        "title": "New wave of Houthi missile strikes in southern Saudi Arabia, claims Iran's Press TV",
+        "url": "https://aninews.in/news/world/middle-east/new-wave-of-houthi-missile-strikes-in-southern-saudi-arabia-claims-iran8217s-press-tv16020260914081934/",
+        "type": "intl"
+      },
+      {
+        "title": "India Condemns Attack on Commercial Vessel off Oman Coast; 13 Indians Rescued of 14 Onboard",
+        "url": "https://www.deccanchronicle.com/nation/india-condemns-attack-on-commercial-vessel-off-oman-coast-13-indians-rescued-of-14-onboard-1987333",
+        "type": "intl"
+      },
+      {
         "title": "Iranian media say 1 killed in ship strike on the Strait of Hormuz, and other Mideast developments",
         "url": "https://www.santafenewmexican.com/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_ead208fa-766b-5c72-8d1d-ac4fca27b82f.html",
         "type": "intl"
       },
       {
+        "title": "Meeting on Strait of Hormuz proposal postponed",
+        "url": "https://www.goulburnpost.com.au/story/9349395/meeting-on-strait-of-hormuz-proposal-postponed/",
+        "type": "intl"
+      },
+      {
         "title": "New attacks in Hormuz, Saudi test nerves as war's spread worsens oil disruption",
         "url": "https://www.koreatimes.co.kr/world/20260914/new-attacks-in-hormuz-saudi-test-nerves-as-wars-spread-worsens-oil-disruption",
+        "type": "intl"
+      },
+      {
+        "title": "Iran-Gulf talks without US participation on reopening the Strait of Hormuz postponed, Omani official says",
+        "url": "https://www.kten.com/news/politics/iran-gulf-talks-without-us-participation-on-reopening-the-strait-of-hormuz-postponed-omani-official/article_f3f2e0bc-f00d-57a3-a290-0791b948ba25.html",
         "type": "intl"
       },
       {
@@ -473,6 +694,11 @@
         "type": "intl"
       },
       {
+        "title": "South Koreans Protest Possible Military Deployment to Strait of Hormuz   – NaturalNews.com",
+        "url": "https://www.naturalnews.com/2026-09-13-south-koreans-protest-possible-military-deployment-hormuz.html",
+        "type": "intl"
+      },
+      {
         "title": "Strike on Iranian cargo ship in the Strait of Hormuz kills 1, Iranian media say",
         "url": "http://www.britainnews.net/news/279304844/strike-on-iranian-cargo-ship-in-the-strait-of-hormuz-kills-1-iranian-media-say",
         "type": "intl"
@@ -483,13 +709,23 @@
         "type": "intl"
       },
       {
+        "title": "Arab News | 13 civilians injured after Houthi attacks on Saudi cities",
+        "url": "https://www.arabnews.com/saudi-arabia/13-civilians-injured-after-houthi-attacks-on-saudi-cities-3001734",
+        "type": "intl"
+      },
+      {
         "title": "War on Iran threatens Persian Gulf states' $4 trillion commitments to US: Report",
         "url": "https://www.presstv.co.uk/Detail/2026/09/14/776305/Iran-war-Persian-Gulf-Arab-US-commitments-",
         "type": "intl"
       },
       {
-        "title": "Can Iran replace sea trade with land routes? | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/can-iran-replace-sea-trade-with-land-routes/",
+        "title": "Why Australia and Asia must unite on opening the Strait of Hormuz",
+        "url": "https://www.afr.com/policy/foreign-affairs/australia-should-mobilise-asian-partners-to-open-strait-of-hormuz-20260910-p60w1m",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi attacks expose gaps in Pakistan's defence pact with Saudi Arabia",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attacks-expose-gaps-pakistans-defence-pact-saudi-arabia",
         "type": "intl"
       },
       {
@@ -508,23 +744,8 @@
         "type": "intl"
       },
       {
-        "title": "What does the closure of Saudi-Arabia's East-West pipeline mean for gas prices?",
-        "url": "https://abcnews.com/Business/closure-saudi-arabias-east-west-pipeline-gas-prices/story?id=136419875",
-        "type": "intl"
-      },
-      {
-        "title": "Why Saudi Arabia's East-West pipeline matters for global oil  - Grenada Chronicle – Daily Grenada And Caribbean News",
-        "url": "https://grenadachronicle.com/why-saudi-arabias-east-west-pipeline-matters-for-global-oil/",
-        "type": "intl"
-      },
-      {
         "title": "Iran Expands Threats Against Shipping to P&I and Class Societies",
         "url": "https://maritime-executive.com/article/iran-expands-threats-against-shipping-to-p-i-and-class-societies",
-        "type": "intl"
-      },
-      {
-        "title": "'No help whatsoever': Trump seeks reimbursement from nations for securing Strait of Hormuz",
-        "url": "https://timesofindia.indiatimes.com/world/middle-east/no-help-whatsoever-trump-seeks-reimbursement-from-nations-for-securing-strait-of-hormuz/articleshow/134245751.cms",
         "type": "intl"
       },
       {
@@ -533,8 +754,23 @@
         "type": "intl"
       },
       {
-        "title": "IAWPA advocates joint security operations, intelligence sharing to eschew duplication, delayÂ Â",
-        "url": "https://blueprint.ng/iawpa-advocates-joint-security-operations-intelligence-sharing-to-eschew-duplication-delay/",
+        "title": "Gulf States Back Out of Iran's Strait Scheme as Houthi Attacks Continue",
+        "url": "https://www.breitbart.com/national-security/2026/09/14/gulf-states-back-out-irans-strait-scheme-as-houthi-attacks-continue/",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM chief meets Saudi Arabia's MBS amid Houthi gains in Yemen",
+        "url": "https://www.al-monitor.com/originals/2026/09/centcom-chief-meets-saudi-arabias-mbs-amid-houthi-gains-yemen",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says oil is flowing through Strait of Hormuz, warns other countries they will have to 'reimburse' US",
+        "url": "https://www.moneycontrol.com/world/trump-says-oil-is-flowing-through-strait-of-hormuz-warns-other-countries-they-will-have-to-reimburse-us-article-14029711.html",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Crown Prince Meets US Military Chief Amid Rising Houthi Threat",
+        "url": "https://pakobserver.net/saudi-crown-prince-meets-us-military-chief-amid-rising-houthi-threat/",
         "type": "intl"
       },
       {
@@ -548,8 +784,13 @@
         "type": "intl"
       },
       {
-        "title": "Talks between Iran and Gulf states to discuss Strait of Hormuz postponed",
-        "url": "https://www.kawc.org/npr-news/2026-09-14/talks-between-iran-and-gulf-states-to-discuss-strait-of-hormuz-postponed",
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, saying attacks are causing a shortage – Brandon Sun",
+        "url": "https://www.brandonsun.com/local/2026/09/13/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-saying-attacks-are-causing-a-shortage",
+        "type": "intl"
+      },
+      {
+        "title": "Why the Houthi advance towards Yemen's Marib, Taiz matters  - Dominican Republic Post – Caribbean News, Business, Travel & Culture",
+        "url": "https://dominicanrepublicpost.com/why-the-houthi-advance-towards-yemens-marib-taiz-matters/",
         "type": "intl"
       },
       {
@@ -558,23 +799,68 @@
         "type": "intl"
       },
       {
+        "title": "Ukraine Says It Destroyed Russian Vessel In First-Ever Naval Drone Battle",
+        "url": "https://www.rferl.org/a/ukraine-says-it-destroyed-russian-vessel-in-first-ever-naval-drone-battle/33853958.html",
+        "type": "intl"
+      },
+      {
         "title": "Persian Gulf states call off meeting with Iran as Houthis launch new attack on Saudi Arabia",
         "url": "https://www.cbc.ca/news/world/iran-war-yemen-houthis-saudi-arabia-9.7342898",
         "type": "intl"
       },
       {
-        "title": "Somalia seeks new shipping routes as regional tensions disrupt trade",
-        "url": "https://www.africanews.com/2026/09/14/somalia-seeks-new-shipping-routes-as-regional-tensions-disrupt-trade/",
+        "title": "Israel-Saudi ties unlikely to improve amid Houthi threat, expert warns",
+        "url": "http://www.jpost.com/middle-east/article-908541",
         "type": "intl"
       },
       {
-        "title": "US Navy's sinking of Iranian tankers to hit China's oil supply: Report | MorungExpress",
-        "url": "https://morungexpress.com/us-navys-sinking-of-iranian-tankers-to-hit-chinas-oil-supply-report",
+        "title": "More than 2,000 Yemenis flee to Djibouti after Houthi capture of key port city",
+        "url": "https://www.africanews.com/2026/09/14/more-than-2000-yemenis-flee-to-djibouti-after-houthi-capture-of-key-port-city/",
         "type": "intl"
       },
       {
-        "title": "India Condemns Attack on Vessel MT EL Gaia Off Oman Coast – Chennaionline",
-        "url": "https://www.chennaionline.com/news/india-condemns-attack-on-vessel-mt-el-gaia-off-oman-coast/",
+        "title": "Saudi crown prince, U.S. CENTCOM chief discuss developments after Houthi escalation",
+        "url": "https://www.thehindu.com/news/international/saudi-crown-prince-us-centcom-chief-discuss-developments-after-houthi-escalation/article71465862.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Militia Increases Fuel Prices by Up to 21 Percent in Controlled Territories",
+        "url": "https://www.khabaragency.net/news252903.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims it downed U.S. drone over Strait of Hormuz",
+        "url": "https://www.azernews.az/region/263836.html",
+        "type": "intl"
+      },
+      {
+        "title": "Iran, Oman agree on safe shipping routes, Foreign Ministry says",
+        "url": "https://www.azernews.az/region/263849.html",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi crown prince, US CENTCOM chief discuss developments after Houthi escalation",
+        "url": "https://www.freemalaysiatoday.com/category/world/2026/09/14/saudi-crown-prince-us-centcom-chief-discuss-developments-after-houthi-escalation",
+        "type": "intl"
+      },
+      {
+        "title": "New Houthi attack on Saudi as Gulf-Iran meeting ditched",
+        "url": "https://www.goulburnpost.com.au/story/9349395/new-houthi-attack-on-saudi-as-gulf-iran-meeting-ditched/",
+        "type": "intl"
+      },
+      {
+        "title": "Russia imports record fuel from India as Ukraine strikes hit refineries | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/russia-imports-record-fuel-from-india-as-ukraine-strikes-hit-refineries/",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan's Damage Control With Saudi After Backtracking On Houthi Fight",
+        "url": "https://www.cinaradio.com/2026/09/14/pakistans-damage-control-with-saudi-after-backtracking-on-houthi-fight/",
+        "type": "intl"
+      },
+      {
+        "title": "Indian Seafarer Missing After Gulf Tanker Attack, Days After PM Modi's BRICS Safety Proposal",
+        "url": "https://www.ibtimes.co.in/indian-seafarer-missing-after-gulf-tanker-attack-days-after-pm-modis-brics-safety-proposal-905891",
         "type": "intl"
       },
       {
@@ -583,8 +869,18 @@
         "type": "intl"
       },
       {
+        "title": "US Navy's sinking of Iranian tankers to hit China's oil supply: Report",
+        "url": "https://ianslive.in/us-navys-sinking-of-iranian-tankers-to-hit-chinas-oil-supply--20260914140303",
+        "type": "intl"
+      },
+      {
         "title": "Iraq seizes drone launch equipment linked to Saudi pipeline attack",
         "url": "https://www.sentinelassam.com/more-news/international/iraq-seizes-drone-launch-equipment-linked-to-saudi-pipeline-attack",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, citing a global shortage – KTBB News, Weather, Talk",
+        "url": "https://ktbb.com/post/?p=1541154",
         "type": "intl"
       },
       {
@@ -593,8 +889,33 @@
         "type": "intl"
       },
       {
+        "title": "Iran's IRGC says advanced MQ-1 drone 'destroyed' over Strait of Hormuz",
+        "url": "https://aa.com.tr/en/middle-east/iran-s-irgc-says-advanced-mq-1-drone-destroyed-over-strait-of-hormuz/4056316",
+        "type": "intl"
+      },
+      {
+        "title": "Houthis threaten attacks on Saudi military targets over Yemen blockade",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-threaten-attacks-saudi-military-targets-over-yemen-blockade",
+        "type": "intl"
+      },
+      {
         "title": "Iraq seizes drone-launching platform used for targeting Saudi oil pipeline",
         "url": "https://thechronicle.com.gh/iraq-seizes-drone-launching-platform-used-for-targeting-saudi-oil-pipeline/",
+        "type": "intl"
+      },
+      {
+        "title": "HRH the Crown Prince, Pakistani Prime Minister Discuss Regional De-escalation; Islamabad Condemns Houthi Attacks",
+        "url": "https://www.globalsecurity.org/wmd/library/news/saudi/2026/saudi-260913-spa01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Oman to host regional meeting on Hormuz shipping on Monday",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260911-azertac01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Oman says regional meeting on Strait of Hormuz postponed",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-irna02.htm",
         "type": "intl"
       },
       {
@@ -603,8 +924,28 @@
         "type": "intl"
       },
       {
-        "title": "Ukraine Imposed Sanctions on 20 Russian Shadow Fleet Vessels, Rostec Companies, and Propagandists",
-        "url": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/09/ukraine-260913-ukraine-president01.htm",
+        "title": "Gulf States, Iran Plan Talks On Hormuz Shipping Deal, FT Reports",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260911-rferl04.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Yemen issues cannot be resolved through blockade and military alliances",
+        "url": "https://www.globalsecurity.org/military/library/news/2026/09/mil-260911-irna01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Muscat meeting to focus on new maritime arrangements in Strait of Hormuz: Araghchi",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-irna04.htm",
+        "type": "intl"
+      },
+      {
+        "title": "China calls for restraint, dialogue, expresses 'concern' amid Houthi attacks on Saudi Arabia",
+        "url": "https://aa.com.tr/en/asia-pacific/china-calls-for-restraint-dialogue-expresses-concern-amid-houthi-attacks-on-saudi-arabia/4056407",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says Strait of Hormuz meeting postponed at request of regional states",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-irna01.htm",
         "type": "intl"
       },
       {
@@ -615,6 +956,26 @@
       {
         "title": "US Navy Acknowledges Iranian Strikes Seriously Damage Fifth Fleet Base in Bahrain",
         "url": "https://www.globalsecurity.org/military/library/news/2026/09/mil-260911-sputnik01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Trump urges Ukraine to halt strikes on Russian diesel, citing global shortage",
+        "url": "https://www.lancashiretelegraph.co.uk/news/national/26547118.trump-urges-ukraine-halt-strikes-russian-diesel-citing-global-shortage/",
+        "type": "intl"
+      },
+      {
+        "title": "Talks to between Iran and Gulf states to discuss Strait of Hormuz postponed",
+        "url": "https://www.spokanepublicradio.org/2026-09-14/talks-to-between-iran-and-gulf-states-to-discuss-strait-of-hormuz-postponed",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, citing global shortage",
+        "url": "https://www.naharnet.com/stories/en/322449-trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-citing-global-shortage",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war: Satellite images show extent of damage to East-West pipeline",
+        "url": "https://www.cnbc.com/2026/09/14/iran-war-saudi-arabia-east-west-pipeline-oil.html",
         "type": "intl"
       },
       {
@@ -633,8 +994,18 @@
         "type": "intl"
       },
       {
-        "title": "MEED | Egyptian contractor wins Oman fishery harbour deal",
-        "url": "https://www.meed.com:443/egyptian-contractor-wins-oman-fishery-harbour-deal",
+        "title": "Pakistan's balancing act with Saudi Arabia as pressure builds over Houthi attacks",
+        "url": "https://www.moneycontrol.com/world/pakistans-damage-control-sharif-reaches-out-to-saudi-arabia-after-houthi-remarks-article-14029201.html",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan in 'complete solidarity' with Saudi Arabia after Houthi attacks, Sharif dials crown prince Salman",
+        "url": "https://www.hindustantimes.com/world-news/pakistan-in-complete-solidarity-with-saudi-arabia-after-houthi-attacks-sharif-dials-crown-prince-salman-101789365980800.html",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi advance puts Gulf states under pressure to engage Iran",
+        "url": "https://www.middle-east-online.com/en/houthi-advance-puts-gulf-states-under-pressure-engage-iran",
         "type": "intl"
       },
       {
@@ -643,23 +1014,23 @@
         "type": "intl"
       },
       {
-        "title": "Oman Coast Vessel Attack: One Indian Missing, Confirms Ministry of External Affairs (MEA)",
-        "url": "https://idrw.org/oman-coast-vessel-attack-one-indian-missing-confirms-ministry-of-external-affairs-mea/",
+        "title": "Yemen's Tareq Saleh reshapes anti-Houthi forces with new unit",
+        "url": "https://www.middle-east-online.com/en/yemen%E2%80%99s-tareq-saleh-reshapes-anti-houthi-forces-new-unit",
         "type": "intl"
       },
       {
-        "title": "More Than a Pipeline Deal: Why Turkey and Iraq Are Betting on a New Energy Corridor – Alnas News",
-        "url": "https://alnas-news.com/more-than-a-pipeline-deal-why-turkey-and-iraq-are-betting-on-a-new-energy-corridor/",
-        "type": "intl"
-      },
-      {
-        "title": "South Korea, US to hold high-level defence talks amid Hormuz deployment consideration",
-        "url": "https://www.prokerala.com/news/articles/a1812010.html",
+        "title": "South Korea and Central Asian States Vow to Strengthen Supply Chain Cooperation",
+        "url": "https://www.newscentralasia.net/2026/09/14/south-korea-and-central-asian-states-vow-to-strengthen-supply-chain-cooperation/",
         "type": "intl"
       },
       {
         "title": "Oman postpones Iran-Gulf meeting on Strait of Hormuz",
         "url": "https://www.siasat.com/oman-postpones-iran-gulf-meeting-on-strait-of-hormuz-3541686/",
+        "type": "intl"
+      },
+      {
+        "title": "Over 500 Yemeni soldiers killed in Houthi west coast offensive",
+        "url": "https://www.siasat.com/over-500-yemeni-soldiers-killed-in-houthi-west-coast-offensive-3541708/",
         "type": "intl"
       },
       {
@@ -670,6 +1041,11 @@
       {
         "title": "Iran and Gulf Countries Delay Meeting on Strait of Hormuz – Chennaionline",
         "url": "https://www.chennaionline.com/news/iran-and-gulf-countries-delay-meeting-on-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Ukraine Wins \"World's First\" Unmanned-Vessel Naval Battle",
+        "url": "https://maritime-executive.com/article/ukraine-wins-world-s-first-unmanned-vessel-naval-battle",
         "type": "intl"
       },
       {
@@ -688,13 +1064,23 @@
         "type": "intl"
       },
       {
-        "title": "Oman postpones regional talks on Strait of Hormuz",
-        "url": "https://economictimes.indiatimes.com/news/international/world-news/oman-postpones-regional-talks-on-strait-of-hormuz-amid-regional-tensions/articleshow/134231602.cms",
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, citing a global shortage",
+        "url": "http://www.dailyadvance.com/news/world/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-citing-a-global-shortage/article_ec96a5af-f013-5abc-ba52-f9eaff3e59cb.html",
         "type": "intl"
       },
       {
-        "title": "India Condemns Attack on Commercial Vessel off Oman Coast; 13 Indians Rescued of 14 Onboard",
-        "url": "https://www.deccanchronicle.com/nation/india-condemns-attack-on-commercial-vessel-off-oman-coast-13-indians-rescued-of-14-onboard-1987333",
+        "title": "Arab News | Saudi Arabia issues, lifts alerts as Houthi attacks raise security fears",
+        "url": "https://www.arabnews.com/saudi-arabia/saudi-arabia-issues-lifts-alerts-as-houthi-attacks-raise-security-fears-3001619",
+        "type": "intl"
+      },
+      {
+        "title": "Global Crises, Capitalism and the Indian Economy: A Marxian Interpretation from the Great Depression to the Strait of Hormuz",
+        "url": "https://countercurrents.org/2026/09/global-crises-capitalism-and-the-indian-economy-a-marxian-interpretation-from-the-great-depression-to-the-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Oman postpones regional talks on Strait of Hormuz",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/oman-postpones-regional-talks-on-strait-of-hormuz-amid-regional-tensions/articleshow/134231602.cms",
         "type": "intl"
       },
       {
@@ -708,23 +1094,13 @@
         "type": "intl"
       },
       {
-        "title": "Meeting on Strait of Hormuz proposal postponed",
-        "url": "https://www.goulburnpost.com.au/story/9349395/meeting-on-strait-of-hormuz-proposal-postponed/",
-        "type": "intl"
-      },
-      {
-        "title": "Iran-Gulf talks without US participation on reopening the Strait of Hormuz postponed, Omani official says",
-        "url": "https://www.kten.com/news/politics/iran-gulf-talks-without-us-participation-on-reopening-the-strait-of-hormuz-postponed-omani-official/article_f3f2e0bc-f00d-57a3-a290-0791b948ba25.html",
+        "title": "Iraq says Saudi pipeline attack originated from its territory, and other Mideast news",
+        "url": "https://www.yahoo.com/news/world/articles/iraq-confirms-attacks-saudi-pipeline-065944052.html",
         "type": "intl"
       },
       {
         "title": "Tehran and Muscat delay talks, citing regional consensus need",
         "url": "https://www.aljazeera.com/news/2026/9/13/tehran-and-muscat-delay-talks-citing-regional-consensus-need",
-        "type": "intl"
-      },
-      {
-        "title": "South Koreans Protest Possible Military Deployment to Strait of Hormuz   – NaturalNews.com",
-        "url": "https://www.naturalnews.com/2026-09-13-south-koreans-protest-possible-military-deployment-hormuz.html",
         "type": "intl"
       },
       {
@@ -1040,13 +1416,23 @@
     ],
     "2_Safety": [
       {
-        "title": "UKMTO Reports Another Vessel Struck in Hormuz at the Weekend as Iran Says One Seafarer Killed",
-        "url": "https://shipandbunker.com/news/world/619789-ukmto-reports-another-vessel-struck-in-hormuz-at-the-weekend-as-iran-says-one-seafarer-killed",
+        "title": "Shipping containers fall off cargo ship in Port of LA",
+        "url": "https://nypost.com/2026/09/14/us-news/shipping-containers-fall-off-cargo-ship-in-port-of-la/",
         "type": "intl"
       },
       {
-        "title": "Pemex Contains Oil Leak from Gulf of Mexico Pipeline",
-        "url": "https://www.oedigital.com/news/542913-pemex-contains-oil-leak-from-gulf-of-mexico-pipeline",
+        "title": "India Condemns Attack on Vessel MT EL Gaia Off Oman Coast – Chennaionline",
+        "url": "https://www.chennaionline.com/news/india-condemns-attack-on-vessel-mt-el-gaia-off-oman-coast/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says 'US attack' on commercial vessel in Gulf kills 1, injures 3",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-azertac01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "At least 6 dead, 130 missing after Indonesia passenger vessel accident",
+        "url": "http://www.bruneinews.net/news/279305070/at-least-6-dead-130-missing-after-indonesia-passenger-vessel-accident",
         "type": "intl"
       },
       {
@@ -1072,13 +1458,18 @@
         "type": "intl"
       },
       {
+        "title": "Arab News | Sudan and Yemen starve as shipping turmoil chokes food and fertilizer supplies, says WFP chief",
+        "url": "https://www.arabnews.com/middle-east/sudan-and-yemen-starve-as-shipping-turmoil-chokes-food-and-fertilizer-supplies-says-wfp-chief-3001715",
+        "type": "intl"
+      },
+      {
         "title": "SHIPPING CRUNCH: Middle East War Sends Tanker Costs To Record Highs",
         "url": "https://www.theyeshivaworld.com/news/general/2597817/shipping-crunch-middle-east-war-sends-tanker-costs-to-record-highs.html",
         "type": "intl"
       },
       {
-        "title": "CMA CGM to implement major rate increases to US from East Asia on 1 October | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/cma-cgm-to-implement-major-rate-increases-to-us-from-east-asia-on-1-october/",
+        "title": "Record Freight Costs Squeeze Russia's Black Sea Crude Exports",
+        "url": "https://oilprice.com/Geopolitics/International/Record-Freight-Costs-Squeeze-Russias-Black-Sea-Crude-Exports.html",
         "type": "intl"
       },
       {
@@ -1089,6 +1480,11 @@
       {
         "title": "Hormuz shipping traffic remains below 10-day average at weekend, data shows | Ariana News",
         "url": "https://www.ariananews.af/hormuz-shipping-traffic-remains-below-10-day-average-at-weekend-data-shows/",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | Hormuz shipping traffic remains below 10-day average at weekend, data shows",
+        "url": "https://www.arabnews.com/middle-east/hormuz-shipping-traffic-remains-below-10-day-average-at-weekend-data-shows-3001632",
         "type": "intl"
       },
       {
@@ -1107,6 +1503,16 @@
         "type": "intl"
       },
       {
+        "title": "Tanker rates for India-bound tankers double as West Asia crisis deepens",
+        "url": "https://www.livemint.com/industry/energy/iran-war-impact-on-india-shipping-freight-rates-brent-crude-oil-prices-11789275277081.html",
+        "type": "intl"
+      },
+      {
+        "title": "Contributions from the Panama Canal to the State will Reach Almost 4 Billion Dollars to Support the 2027 Budget.",
+        "url": "https://newsroompanama.com/2026/09/14/contributions-from-the-panama-canal-to-the-state-will-reach-almost-4-billion-dollars-to-support-the-2027-budget/",
+        "type": "intl"
+      },
+      {
         "title": "Tanker Market To Gain Further Impetus From Rising Oil Output in America | Hellenic Shipping News Worldwide",
         "url": "https://www.hellenicshippingnews.com/tanker-market-to-gain-further-impetus-from-rising-oil-output-in-america/",
         "type": "intl"
@@ -1122,6 +1528,11 @@
         "type": "intl"
       },
       {
+        "title": "The Administration of the Ports of Balboa and Cristóbal is Ruled Out by the Panama Canal Authority.",
+        "url": "https://newsroompanama.com/2026/09/14/the-administration-of-the-ports-of-balboa-and-cristobal-is-ruled-out-by-the-panama-canal-authority/",
+        "type": "intl"
+      },
+      {
         "title": "Baltic Dry Index Falls for 3rd Session | Hellenic Shipping News Worldwide",
         "url": "https://www.hellenicshippingnews.com/baltic-dry-index-falls-for-3rd-session/",
         "type": "intl"
@@ -1132,8 +1543,13 @@
         "type": "intl"
       },
       {
-        "title": "Record Freight Costs Squeeze Russia's Black Sea Crude Exports",
-        "url": "https://oilprice.com/Geopolitics/International/Record-Freight-Costs-Squeeze-Russias-Black-Sea-Crude-Exports.html",
+        "title": "TISZA Government's Diesel Support Plan Leaves Freight Carriers Out",
+        "url": "https://hungarytoday.hu/tisza-governments-diesel-support-plan-leaves-freight-carriers-out/",
+        "type": "intl"
+      },
+      {
+        "title": "Swedish Club Warns Cape Horn Is No Simple Panama Canal Alternative",
+        "url": "https://gcaptain.com/swedish-club-warns-cape-horn-is-no-simple-panama-canal-alternative/",
         "type": "intl"
       },
       {
@@ -1152,13 +1568,28 @@
         "type": "intl"
       },
       {
-        "title": "Baltic Dry Index falls to 3445 down 62 points | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/baltic-dry-index-falls-to-3445-down-62-points/",
+        "title": "Boost to Guinea-China Iron Ore Trade",
+        "url": "https://www.portstrategy.com/news/bulk-handling/boost-to-guinea-china-iron-ore-trade/",
+        "type": "intl"
+      },
+      {
+        "title": "SLANA calls for urgent fix to Colombo terminal charges as NVOCC sector loses regional competitiveness",
+        "url": "https://www.ft.lk/shippingaviation/SLANA-calls-for-urgent-fix-to-Colombo-terminal-charges-as-NVOCC-sector-loses-regional-competitiveness/21-797193",
+        "type": "intl"
+      },
+      {
+        "title": "CMA CGM to implement major rate increases to US from East Asia on 1 October | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/cma-cgm-to-implement-major-rate-increases-to-us-from-east-asia-on-1-october/",
         "type": "intl"
       },
       {
         "title": "Intra Asia Container Index Rises Slighlty | Hellenic Shipping News Worldwide",
         "url": "https://www.hellenicshippingnews.com/intra-asia-container-index-rises-slighlty/",
+        "type": "intl"
+      },
+      {
+        "title": "AM Need to Know: OpenAI rules out 2026 IPO, tanker rates hit records & more (SPX:)",
+        "url": "https://seekingalpha.com/news/4642337-am-need-to-know-openai-rules-out-2026-ipo-tanker-rates-hit-records-more",
         "type": "intl"
       },
       {
@@ -1169,11 +1600,6 @@
       {
         "title": "Owners No Longer Fear Bunker Supply Shortage Despite Ongoing Hormuz Disruption",
         "url": "https://shipandbunker.com/news/world/791714-owners-no-longer-fear-bunker-supply-shortage-despite-ongoing-hormuz-disruption",
-        "type": "intl"
-      },
-      {
-        "title": "Arab News | Hormuz shipping traffic remains below 10-day average at weekend, data shows",
-        "url": "https://www.arabnews.com/middle-east/hormuz-shipping-traffic-remains-below-10-day-average-at-weekend-data-shows-3001632",
         "type": "intl"
       },
       {
@@ -1209,8 +1635,13 @@
     ],
     "4_PortCargo": [
       {
-        "title": "Oman crude gains Asia value as delivery security rises: industry sources | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/oman-crude-gains-asia-value-as-delivery-security-rises-industry-sources/",
+        "title": "Several shipping containers fall off cargo ship, plunge into water at Port of Los Angeles",
+        "url": "https://abc7.com/post/several-shipping-containers-fall-off-cargo-ship-plunge-water-port-los-angeles/19831081/",
+        "type": "intl"
+      },
+      {
+        "title": "Natural gas imports rise despite price surge",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/natural-gas-imports-rise-despite-price-surge/articleshow/134247108.cms",
         "type": "intl"
       },
       {
@@ -1219,8 +1650,18 @@
         "type": "intl"
       },
       {
+        "title": "Port Operator Comvex Set To Invest EUR63M In New Fertilizer Terminal",
+        "url": "http://www.zfenglish.com/capital-market/port-operator-comvex-set-to-invest-eur63m-in-new-fertilizer-terminal-23238399",
+        "type": "intl"
+      },
+      {
         "title": "Uzbekistan launches Incheon hub to support exports to South Korea",
         "url": "https://www.trend.az/casia/uzbekistan/4223742.html",
+        "type": "intl"
+      },
+      {
+        "title": "Bangladesh Plans Five Floating LNG Terminals to Ease Gas Shortage",
+        "url": "https://energybangla.com/bangladesh-plans-five-floating-lng-terminals-to-ease-gas-shortage/",
         "type": "intl"
       },
       {
@@ -1229,8 +1670,8 @@
         "type": "intl"
       },
       {
-        "title": "Wheat imports likely to fall 11% in 2026-27",
-        "url": "https://www.thedailystar.net/business/news/wheat-imports-likely-fall-11-2026-27-4272111",
+        "title": "Singapore secures LNG FSRU for natural gas supply",
+        "url": "https://sbr.com.sg/shipping-marine/news/singapore-secures-lng-fsru-natural-gas-supply",
         "type": "intl"
       },
       {
@@ -1281,8 +1722,8 @@
     ],
     "5_EconFinance": [
       {
-        "title": "WATCH:  Oil prices rise after attacks on key Middle East shipping routes",
-        "url": "https://kxly920.com/2026/09/14/watch-oil-prices-rise-after-attacks-on-key-middle-east-shipping-routes/",
+        "title": "Oil Climbs Amid Saudi Pipeline Halt",
+        "url": "https://www.rigzone.com/news/wire/oil_climbs_amid_saudi_pipeline_halt-14-sep-2026-184613-article/",
         "type": "intl"
       },
       {
@@ -1296,8 +1737,18 @@
         "type": "intl"
       },
       {
+        "title": "Morning Business Report: Oil prices rise after Saudi pipeline shutdown as Social Security faces funding shortfall",
+        "url": "https://www.41nbc.com/oil-prices-saudi-pipeline-social-security-funding-shortfall/",
+        "type": "intl"
+      },
+      {
         "title": "Oil prices soar over 4% to 16-week high after strikes on Saudi pipeline, ships in West Asia",
         "url": "https://www.hindustantimes.com/world-news/oil-prices-soar-over-4-per-cent-to-16-week-high-after-strikes-on-saudi-arabia-pipeline-ships-in-west-asia-101789404720812.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil tops $109 after Houthi strikes, Saudi pipeline shutdown",
+        "url": "https://www.al-monitor.com/originals/2026/09/oil-tops-109-after-houthi-strikes-saudi-pipeline-shutdown",
         "type": "intl"
       },
       {
@@ -1331,6 +1782,11 @@
         "type": "intl"
       },
       {
+        "title": "Diesel Hits New High of $6.23 as Trump Urges Ukraine to Halt Russian Refinery Attacks",
+        "url": "https://www.theepochtimes.com/us/diesel-hits-new-high-of-6-23-as-trump-urges-ukraine-to-halt-russian-refinery-attacks-6087097",
+        "type": "intl"
+      },
+      {
         "title": "Oil prices continue surge, rising 3% as attacks halt Saudi pipeline- Moneycontrol.com",
         "url": "https://www.moneycontrol.com/news/business/commodities/oil-prices-continue-surge-rising-3-as-attacks-halt-saudi-pipeline-14029597.html",
         "type": "intl"
@@ -1346,18 +1802,13 @@
         "type": "intl"
       },
       {
-        "title": "Talks between Iran and Gulf states postponed and Saudi shuts a key oil pipeline; crude benchmarks gain - Newsquawk US Market Open",
-        "url": "https://www.zerohedge.com/markets/talks-between-iran-and-gulf-states-postponed-and-saudi-shuts-key-oil-pipeline-crude",
-        "type": "intl"
-      },
-      {
-        "title": "Diesel pushes to new all-time high as oil prices jump after key Saudi pipeline is shut",
-        "url": "https://www.nbcnews.com/business/business-news/diesel-oil-prices-jump-saudi-pipeline-shut-hormuz-talks-postponed-iran-rcna597579",
-        "type": "intl"
-      },
-      {
         "title": "Brent crude surges above $108 as Israeli-US war on Iran shows no sign of ending",
         "url": "https://www.middleeasteye.net/live-blog/live-blog-update/brent-crude-surges-above-108-israeli-us-war-iran-shows-no-sign-ending",
+        "type": "intl"
+      },
+      {
+        "title": "Oman oil price spikes to $127.62 per barrel on supply fears",
+        "url": "https://timesofoman.com/article/176922-oman-oil-price-spikes-to-12762-per-barrel-on-supply-fears",
         "type": "intl"
       },
       {
@@ -1376,18 +1827,18 @@
         "type": "intl"
       },
       {
+        "title": "Oil rises again as Hormuz talks get postponed and Saudi pipeline shutdown deepens energy crisis",
+        "url": "https://investinglive.com/commodities/oil-rises-again-as-hormuz-talks-get-postponed-and-saudi-pipeline-shutdown-deepens-energy-crisis/",
+        "type": "intl"
+      },
+      {
+        "title": "Chris Beauchamp sees Brent crude jump after East-west Crude Oil Pipeline closure",
+        "url": "https://www.el-balad.com/17051490",
+        "type": "intl"
+      },
+      {
         "title": "Oil Rises More Than 2 percent Following Houthi Attacks on Saudi Arabia, Pipeline Shutdown",
         "url": "https://www.theepochtimes.com/world/oil-rises-more-than-2-percent-following-houthi-attacks-on-saudi-arabia-pipeline-shutdown-6087079",
-        "type": "intl"
-      },
-      {
-        "title": "Oil, gas and borrowing costs surge as fears over Middle East escalate | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/oil-gas-and-borrowing-costs-surge-as-fears-over-middle-east-escalate/",
-        "type": "intl"
-      },
-      {
-        "title": "Oil and gas prices climb after Saudi Arabia closes east-west pipeline",
-        "url": "https://www.aol.co.uk/articles/oil-gas-prices-climb-saudi-102232000.html",
         "type": "intl"
       },
       {
@@ -1441,8 +1892,28 @@
         "type": "intl"
       },
       {
+        "title": "Iran talks in Oman postponed, Houthis suffer losses in Yemen and oil price nears $108",
+        "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/09/14/iran-talks-in-oman-postponed-houthis-suffer-losses-in-yemen-and-oil-price-nears-108/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War Updates: Oil prices jump to near 4-month high as Oman-Iran talks on Strait of Hormuz postponed",
+        "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-oil-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
         "title": "Oil surges past $108 as Hormuz attack and Saudi pipeline shutdown rattle markets",
         "url": "https://finance.yahoo.com/energy/articles/oil-surges-past-107-hormuz-074057109.html",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices up over 3% following new strikes on Saudi, Strait of Hormuz",
+        "url": "https://tribune.com.pk/story/2629201/oil-prices-up-over-3-following-new-strikes-on-saudi-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Oil surges as Saudi pipeline closure fuels energy crisis",
+        "url": "https://news.az/news/oil-surges-as-saudi-pipeline-closure-fuels-energy-crisis",
         "type": "intl"
       },
       {
@@ -1456,8 +1927,8 @@
         "type": "intl"
       },
       {
-        "title": "Oil prices jump more than 2pc after new strikes on Saudi, Strait of Hormuz",
-        "url": "https://dunyanews.tv/en/Business/972784-oil-prices-jump-more-than-2pc-after-new-strikes-on-saudi-strait-of-ho",
+        "title": "Brent crude jumps above USD 107 amid rising Middle East tensions",
+        "url": "https://www.siasat.com/brent-crude-jumps-above-usd-107-amid-rising-middle-east-tensions-3541674/",
         "type": "intl"
       },
       {
@@ -1481,8 +1952,18 @@
         "type": "intl"
       },
       {
+        "title": "The Saudi Arabia pipeline attacks just redefined Middle East oil risk",
+        "url": "https://www.livemint.com/industry/energy/the-saudi-arabia-pipeline-attacks-just-redefined-middle-east-oil-risk-11789348847918.html",
+        "type": "intl"
+      },
+      {
         "title": "Oil prices jump over 2%: Brent tops $107 as fresh Saudi, Strait of Hormuz strikes fuel supply fears",
         "url": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-jump-over-2-brent-tops-107-as-fresh-saudi-strait-of-hormuz-strikes-fuel-supply-fears/articleshow/134230995.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Oil prices surge as Middle East tensions push Brent crude above $107",
+        "url": "https://www.moneycontrol.com/world/oil-prices-surge-as-middle-east-tensions-push-brent-crude-above-107-article-14029096.html",
         "type": "intl"
       },
       {
@@ -1501,18 +1982,63 @@
         "type": "intl"
       },
       {
+        "title": "US Data Centers To Burn More Natural Gas Than Most Nations",
+        "url": "https://www.zerohedge.com/energy/us-data-centers-burn-more-natural-gas-most-nations",
+        "type": "intl"
+      },
+      {
+        "title": "Trump-Iran war: Costco nearly doubles motor oil price and imposes purchase caps",
+        "url": "https://investinglive.com/commodities/trump-iran-war-costco-nearly-doubles-motor-oil-price-and-imposes-purchase-caps/",
+        "type": "intl"
+      },
+      {
         "title": "European gas spikes 5%; JERA chief warns on depleted reserves | Hellenic Shipping News Worldwide",
         "url": "https://www.hellenicshippingnews.com/european-gas-spikes-5-jera-chief-warns-on-depleted-reserves/",
         "type": "intl"
       },
       {
-        "title": "Natural gas imports rise despite price surge",
-        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/natural-gas-imports-rise-despite-price-surge/articleshow/134247108.cms",
+        "title": "China could lower crude oil stockholding requirement as supplies tighten: sources",
+        "url": "https://www.hellenicshippingnews.com/china-could-lower-crude-oil-stockholding-requirement-as-supplies-tighten-sources/",
         "type": "intl"
       },
       {
-        "title": "Morning Business Report: Oil prices rise after Saudi pipeline shutdown as Social Security faces funding shortfall",
-        "url": "https://www.41nbc.com/oil-prices-saudi-pipeline-social-security-funding-shortfall/",
+        "title": "Chinese chemical exports may reshape Asian trade flow amid US-Iran war | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/chinese-chemical-exports-may-reshape-asian-trade-flow-amid-us-iran-war/",
+        "type": "intl"
+      },
+      {
+        "title": "U.S. Dollar Advances Amid Fed Rate Hike Expectations, Fresh Crude Oil Supply Concerns",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-09/69577292-u-s-dollar-advances-amid-fed-rate-hike-expectations-fresh-crude-oil-supply-concerns-020.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Price Spike Strengthens Business Case for Replacing Polluting Diesel Trucks With Cleaner Alternatives, Especially RNG, Updated Energy Vision Report Finds",
+        "url": "https://www.prnewswire.com/news-releases/oil-price-spike-strengthens-business-case-for-replacing-polluting-diesel-trucks-with-cleaner-alternatives-especially-rng-updated-energy-vision-report-finds-302878078.html",
+        "type": "intl"
+      },
+      {
+        "title": "Costco Limits Motor Oil Sales Amid Shortage And Price Surge | NewsTalk WMEQ",
+        "url": "https://wmeq.iheart.com/content/2026-09-14-costco-limits-motor-oil-sales-amid-shortage-and-price-surge/",
+        "type": "intl"
+      },
+      {
+        "title": "Gold Tumbles Amid Increasing Fed Rate Hike Bets, Rising Crude Oil Prices",
+        "url": "https://www.rttnews.com/story.aspx?Id=3690792",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Price Starts Week at 102.26 Per Barrel, Diesel Hits $8.09 Average State Wide",
+        "url": "https://new.thepinetree.net/?p=204986",
+        "type": "intl"
+      },
+      {
+        "title": "U.S. Stocks Pulling Back Sharply As Crude Oil Prices Rebound",
+        "url": "https://www.rttnews.com/story.aspx?Id=3690770",
+        "type": "intl"
+      },
+      {
+        "title": "Crude Oil Futures Rebound After Friday's Drop",
+        "url": "https://www.rttnews.com/3690750/crude-oil-futures-rebound-after-friday-s-drop.aspx",
         "type": "intl"
       },
       {
@@ -1521,13 +2047,38 @@
         "type": "intl"
       },
       {
-        "title": "FOMC preview: Fed set to hike 25bp in recalibration move | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/fomc-preview-fed-set-to-hike-25bp-in-recalibration-move/",
+        "title": "Saudi pipeline closure may raise India's oil costs, expose supply risks",
+        "url": "https://www.business-standard.com/india-news/saudi-pipeline-closure-may-raise-india-s-oil-costs-expose-supply-risks-126091400813_1.html",
         "type": "intl"
       },
       {
-        "title": "FX Daily: Dollar's turn to get a monetary policy lift | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/fx-daily-dollars-turn-to-get-a-monetary-policy-lift/",
+        "title": "Trump blames Ukraine for global diesel shortage",
+        "url": "https://www.westhawaiitoday.com/2026/09/14/nation-world-news/trump-blames-ukraine-for-global-diesel-shortage/",
+        "type": "intl"
+      },
+      {
+        "title": "China's oil demand could falter as Saudi pipeline shutdown raises costs",
+        "url": "https://www.scmp.com/economy/article/3367467/chinas-oil-demand-could-falter-saudi-pipeline-shutdown-raises-costs",
+        "type": "intl"
+      },
+      {
+        "title": "S&P 500, Nasdaq fall on AI slowdown fears, oil price surge",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-fall-ai-134819710.html",
+        "type": "intl"
+      },
+      {
+        "title": "Asian Markets Weighed By AI Worries, Crude Oil Price Spike",
+        "url": "https://www.rttnews.com/story.aspx?Id=3690697",
+        "type": "intl"
+      },
+      {
+        "title": "Stock market outlook: Crude oil prices, US Fed's policy outlook among key factors to watch out for this week",
+        "url": "https://www.businesstoday.in/markets/stocks/story/stock-market-outlook-crude-oil-prices-us-feds-policy-outlook-among-key-factors-to-watch-out-for-this-week-555425-2026-09-14",
+        "type": "intl"
+      },
+      {
+        "title": "EIA Sees 2026 Oil Price Coming in $22 Higher Than Last Year",
+        "url": "https://www.rigzone.com/news/eia_sees_2026_oil_price_coming_in_22_higher_than_last_year-14-sep-2026-184606-article/",
         "type": "intl"
       },
       {
@@ -1536,28 +2087,13 @@
         "type": "intl"
       },
       {
-        "title": "Gold prices today, Monday, September 14, 2026: Gold sinks following new attacks on Saudi pipeline and more",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-september-14-2026-gold-sinks-following-new-attacks-on-saudi-pipeline-and-more-111825907.html",
-        "type": "intl"
-      },
-      {
-        "title": "Not all barrels are equal: Iran war creates sour crude shortfall | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/not-all-barrels-are-equal-iran-war-creates-sour-crude-shortfall/",
+        "title": "Oil, gas and borrowing costs surge as fears over Middle East escalate | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/oil-gas-and-borrowing-costs-surge-as-fears-over-middle-east-escalate/",
         "type": "intl"
       },
       {
         "title": "Oil's roundtrip back to $100. Why China could determine what happens next | Hellenic Shipping News Worldwide",
         "url": "https://www.hellenicshippingnews.com/oils-roundtrip-back-to-100-why-china-could-determine-what-happens-next/",
-        "type": "intl"
-      },
-      {
-        "title": "Gov't, Refiners Say Saudi Pipeline Closure Will Have Limited Impact on Crude Supply l KBS WORLD",
-        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204235",
-        "type": "intl"
-      },
-      {
-        "title": "UK Natgas Prices Rise Sharply as Middle East Tensions Persist | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/uk-natgas-prices-rise-sharply-as-middle-east-tensions-persist/",
         "type": "intl"
       },
       {
@@ -1571,18 +2107,33 @@
         "type": "intl"
       },
       {
-        "title": "Iron Ore Slides for Fourth Straight Session | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/iron-ore-slides-for-fourth-straight-session/",
+        "title": "KOSPI Falls More than 3% to 6,600 Range",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204242",
         "type": "intl"
       },
       {
-        "title": "US Navy's sinking of Iranian tankers to hit China's oil supply: Report",
-        "url": "https://ianslive.in/us-navys-sinking-of-iranian-tankers-to-hit-chinas-oil-supply--20260914140303",
+        "title": "Moody's: Oil price to remain in $90–110 range until end of year",
+        "url": "https://en.apa.az/finance/moodys-oil-price-to-remain-in-90-110-range-until-end-of-year-524148",
+        "type": "intl"
+      },
+      {
+        "title": "KOSPI falls below 6,700 on AI growth, oil, rate concerns",
+        "url": "https://www.koreatimes.co.kr/economy/20260914/kospi-falls-below-6700-on-ai-growth-oil-rate-concerns",
         "type": "intl"
       },
       {
         "title": "Grain Prices Fall After USDA Raises World Wheat Stocks",
         "url": "https://www.riotimesonline.com/grains-soy-corn-latam-monday-september-14-2026/",
+        "type": "intl"
+      },
+      {
+        "title": "Syria raises fuel prices by up to 40% amid higher import costs and refinery maintenance",
+        "url": "https://www.middleeastmonitor.com/20260914-syria-raises-fuel-prices-by-up-to-40-amid-higher-import-costs-and-refinery-maintenance/",
+        "type": "intl"
+      },
+      {
+        "title": "KOSPI Down 3.26% Monday",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204232",
         "type": "intl"
       },
       {
@@ -1596,8 +2147,8 @@
         "type": "intl"
       },
       {
-        "title": "Oil surges as Saudi pipeline closure fuels energy crisis",
-        "url": "https://news.az/news/oil-surges-as-saudi-pipeline-closure-fuels-energy-crisis",
+        "title": "Saudi pipeline shutdown to have limited impact on supply in short term",
+        "url": "https://www.prokerala.com/news/articles/a1811950.html",
         "type": "intl"
       },
       {
@@ -1606,13 +2157,18 @@
         "type": "intl"
       },
       {
-        "title": "Brent crude jumps above USD 107 amid rising Middle East tensions",
-        "url": "https://www.siasat.com/brent-crude-jumps-above-usd-107-amid-rising-middle-east-tensions-3541674/",
+        "title": "Brent crude price exceeds $107 per barrel",
+        "url": "https://en.apa.az/energy-and-industry/brent-crude-price-exceeds-107-per-barrel-524102",
         "type": "intl"
       },
       {
-        "title": "Brent crude price exceeds $107 per barrel",
-        "url": "https://en.apa.az/energy-and-industry/brent-crude-price-exceeds-107-per-barrel-524102",
+        "title": "Are oil price hikes putting a pre-election OCR increase back in play?",
+        "url": "https://www.rnz.co.nz/news/business/1370645/are-oil-price-hikes-putting-a-pre-election-ocr-increase-back-in-play",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Price Today: Brent Nears $108 on Supply Risks",
+        "url": "https://www.markets.com/news/oil-price-today-september-14-2026",
         "type": "intl"
       },
       {
@@ -1621,13 +2177,33 @@
         "type": "intl"
       },
       {
-        "title": "Oil prices surge as Middle East tensions push Brent crude above $107",
-        "url": "https://www.moneycontrol.com/world/oil-prices-surge-as-middle-east-tensions-push-brent-crude-above-107-article-14029096.html",
+        "title": "Oil Price Today (September 14): Crude oil jumps 3% to near $108/barrel as Middle East tensions escalate. What are analysts warning?",
+        "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-14-crude-oil-jumps-3-to-near-108/barrel-as-middle-east-tensions-escalate-what-are-analysts-warning/articleshow/134230842.cms",
         "type": "intl"
       },
       {
         "title": "Oil prices rise sharply as Middle East escalation risks disruption to supplies",
         "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-prices-rise-sharply-middle-east-escalation-risks-disruption-supplies",
+        "type": "intl"
+      },
+      {
+        "title": "Pak PM Sharif announces fuel relief measures amid oil price surge",
+        "url": "https://www.dailyexcelsior.com/pak-pm-sharif-announces-fuel-relief-measures-amid-oil-price-surge/",
+        "type": "intl"
+      },
+      {
+        "title": "More pressure for households as oil price rises",
+        "url": "https://www.abc.net.au/listen/programs/am/more-pressure-for-households-as-oil-price-rises/107075404",
+        "type": "intl"
+      },
+      {
+        "title": "The iron ore crash is here",
+        "url": "https://www.macrobusiness.com.au/2026/09/the-iron-ore-crash-is-here/",
+        "type": "intl"
+      },
+      {
+        "title": "'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
+        "url": "https://www.hellenicshippingnews.com/saved-the-day-how-china-helped-keep-the-lid-on-oil-price-surge-as-iran-war-disrupted-supplies/",
         "type": "intl"
       },
       {
@@ -1866,7 +2442,19 @@
         "type": "dom"
       }
     ],
+    "6_Seafood": [
+      {
+        "title": "Norwegian Seafood Council bullish on Vietnam salmon sales growth despite 22% export drop",
+        "url": "https://www.undercurrentnews.com/2026/09/14/norwegian-seafood-council-bullish-on-vietnam-salmon-sales-growth-despite-22-export-drop/",
+        "type": "intl"
+      }
+    ],
     "7_Shipping": [
+      {
+        "title": "Oman crude gains Asia value as delivery security rises: industry sources | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/oman-crude-gains-asia-value-as-delivery-security-rises-industry-sources/",
+        "type": "intl"
+      },
       {
         "title": "Shipping's Suez Comeback Gathers Steam Despite Houthi Advance",
         "url": "https://wwd.com/sourcing-journal/logistics/red-sea-return-cosco-oocl-houthis-bab-el-mandeb-suez-canal-strait-of-hormuz-1239231381/",
@@ -1893,8 +2481,8 @@
         "type": "intl"
       },
       {
-        "title": "Chinese chemical exports may reshape Asian trade flow amid US-Iran war | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/chinese-chemical-exports-may-reshape-asian-trade-flow-amid-us-iran-war/",
+        "title": "Lloyd's Register, HHI and KSOE to advance hybrid electric LNG carrier design | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/lloyds-register-hhi-and-ksoe-to-advance-hybrid-electric-lng-carrier-design/",
         "type": "intl"
       },
       {
@@ -1903,8 +2491,18 @@
         "type": "intl"
       },
       {
-        "title": "Iran, Oman agree on safe shipping routes, Foreign Ministry says",
-        "url": "https://www.azernews.az/region/263849.html",
+        "title": "LR And Partners Develop Hybrid Electric LNG Carrier",
+        "url": "https://www.marinelink.com/news/lr-partners-develop-hybrid-electric-lng-542921",
+        "type": "intl"
+      },
+      {
+        "title": "MOL names world's first wind-assisted LNG carrier",
+        "url": "https://www.motorship.com/news/wind-propulsion/mol-names-worlds-first-wind-assisted-lng-carrier/",
+        "type": "intl"
+      },
+      {
+        "title": "Somalia seeks new shipping routes as regional tensions disrupt trade",
+        "url": "https://www.africanews.com/2026/09/14/somalia-seeks-new-shipping-routes-as-regional-tensions-disrupt-trade/",
         "type": "intl"
       },
       {
@@ -1913,13 +2511,28 @@
         "type": "intl"
       },
       {
+        "title": "DP World welcomes Morten Maersk on maiden Jeddah call",
+        "url": "https://tradearabia.com:443/News/486177/DP-World-welcomes-Morten-Maersk-on-maiden-Jeddah-call",
+        "type": "intl"
+      },
+      {
         "title": "Oil takes the long way round as war reshapes global shipping",
         "url": "https://cyprus-mail.com/2026/09/14/oil-takes-the-long-way-round-as-war-reshapes-global-shipping",
         "type": "intl"
       },
       {
+        "title": "Cosco Shipping arm readies China IPO to capitalise on global shipbuilding wave",
+        "url": "https://www.scmp.com/economy/article/3367409/cosco-shipping-arm-readies-china-ipo-capitalise-global-shipbuilding-wave",
+        "type": "intl"
+      },
+      {
         "title": "Maersk plans to expand fleet as CEO sees new era for shipping",
         "url": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/maersk-plans-to-expand-fleet-as-ceo-sees-new-era-for-shipping/articleshow/134233291.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Samsung Heavy Wins $1.22 Billion LNG Carrier and Tanker Deal",
+        "url": "http://www.econotimes.com/Samsung-Heavy-Wins-122-Billion-LNG-Carrier-and-Tanker-Deal-1751951",
         "type": "intl"
       },
       {
@@ -2027,16 +2640,6 @@
         "type": "intl"
       },
       {
-        "title": "What the closure of Saudi Arabia's East-West pipeline could mean for oil flows – Winnipeg Free Press",
-        "url": "https://www.winnipegfreepress.com/business/2026/09/14/what-the-closure-of-saudi-arabias-east-west-pipeline-could-mean-for-oil-flows",
-        "type": "intl"
-      },
-      {
-        "title": "Oil Climbs Amid Saudi Pipeline Halt",
-        "url": "https://www.rigzone.com/news/wire/oil_climbs_amid_saudi_pipeline_halt-14-sep-2026-184613-article/",
-        "type": "intl"
-      },
-      {
         "title": "What the closure of Saudi Arabia's East-West pipeline could mean for oil flows",
         "url": "https://www.yahoo.com/news/world/articles/closure-saudi-arabias-east-west-211135850.html",
         "type": "intl"
@@ -2067,16 +2670,6 @@
         "type": "intl"
       },
       {
-        "title": "Arab News | Sudan and Yemen starve as shipping turmoil chokes food and fertilizer supplies, says WFP chief",
-        "url": "https://www.arabnews.com/middle-east/sudan-and-yemen-starve-as-shipping-turmoil-chokes-food-and-fertilizer-supplies-says-wfp-chief-3001715",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Arabia has shut a critical oil pipeline. Here's why it matters for the global oil market",
-        "url": "https://www.cnn.com/2026/09/14/economy/saudi-east-west-pipeline-shut-oil-market",
-        "type": "intl"
-      },
-      {
         "title": "Key Saudi oil pipeline struck by drones to be out for several weeks",
         "url": "https://www.dailysabah.com/business/economy/key-saudi-oil-pipeline-struck-by-drones-to-be-out-for-several-weeks",
         "type": "intl"
@@ -2092,13 +2685,23 @@
         "type": "intl"
       },
       {
-        "title": "Saudi pipeline damage raises global oil supply fears",
-        "url": "https://lestimes.com/?p=91516",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 104.9 WBUV",
+        "url": "https://newsradio1049.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 1400 WRAK",
-        "url": "https://wrak.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | PowerTalk 1460 AM & 101.1 FM",
+        "url": "https://powertalk1460.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News/Talk 1130 WISN",
+        "url": "https://newstalk1130.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi pipeline damage raises global oil supply fears",
+        "url": "https://lestimes.com/?p=91516",
         "type": "intl"
       },
       {
@@ -2109,11 +2712,6 @@
       {
         "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1000 KTOK",
         "url": "https://ktok.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1360 KKTX",
-        "url": "https://1360kktx.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
@@ -2167,6 +2765,21 @@
         "type": "intl"
       },
       {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1110 KFAB",
+        "url": "https://kfab.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 600 WMT",
+        "url": "https://600wmtradio.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 1450 WILM",
+        "url": "https://wilm.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
         "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 570 WKBN",
         "url": "https://570wkbn.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
@@ -2182,6 +2795,31 @@
         "type": "intl"
       },
       {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 101.9 Big WAAX",
+        "url": "https://1019bigwaax.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Middle East conflict: Asian refiners await clarity after Saudi pipeline shutdown",
+        "url": "https://www.channelnewsasia.com/watch/middle-east-conflict-asian-refiners-await-clarity-after-saudi-pipeline-shutdown-6383641",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 910 WLTP",
+        "url": "https://newsradio910wltp.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | Newsradio 600 KOGO",
+        "url": "https://kogo.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | WJBO Newsradio 1150 AM & 98.7 FM",
+        "url": "https://wjbo.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
         "title": "A crucial Saudi oil pipeline hit in strikes will be mostly out of service for several weeks for repairs, officials say",
         "url": "https://www.the-messenger.com/news/world/article_31dcc387-5a7f-5891-800f-c0f2a9ae5c00.html",
         "type": "intl"
@@ -2194,21 +2832,6 @@
       {
         "title": "The Saudi Pipeline Is Gone: Why the Global Energy Shock Just Got Far Worse   – NaturalNews.com",
         "url": "https://www.naturalnews.com/2026-09-14-saudi-pipeline-gone-global-energy-shock-worse.html",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Talk 99.5 WRNO",
-        "url": "https://wrno.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | Sports Radio 800 KXIC",
-        "url": "https://kxic.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio WKCY",
-        "url": "https://newsradiowkcy.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
@@ -2247,23 +2870,13 @@
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 690 KTSM",
-        "url": "https://ktsmradio.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Talk 550 KFYI",
-        "url": "https://kfyi.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
         "title": "Saudi oil pipeline hit in strikes will be mostly out of service for several weeks for repair",
         "url": "http://www.reflector.com/news/national/saudi-oil-pipeline-hit-in-strikes-will-be-mostly-out-of-service-for-several-weeks/article_9f0d08a2-3f98-576c-a8dd-fa5273a5d84b.html",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1450/1370 WKIP",
-        "url": "https://1450wkip.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Talks between Iran and Gulf states postponed and Saudi shuts a key oil pipeline; crude benchmarks gain - Newsquawk US Market Open",
+        "url": "https://www.zerohedge.com/markets/talks-between-iran-and-gulf-states-postponed-and-saudi-shuts-key-oil-pipeline-crude",
         "type": "intl"
       },
       {
@@ -2277,18 +2890,73 @@
         "type": "intl"
       },
       {
+        "title": "Diesel pushes to new all-time high as oil prices jump after key Saudi pipeline is shut",
+        "url": "https://www.nbcnews.com/business/business-news/diesel-oil-prices-jump-saudi-pipeline-shut-hormuz-talks-postponed-iran-rcna597579",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Talk 1090 WKBZ-AM",
+        "url": "https://newstalk1090.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NEWSRADIO 1040 WHO",
+        "url": "https://whoradio.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 560 WHYN",
+        "url": "https://whyn.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage",
+        "url": "https://wflanews.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | Twin Cities News Talk",
+        "url": "https://twincitiesnewstalk.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 570 WWNC",
+        "url": "https://wwnc.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 630 WLAP",
+        "url": "https://wlap.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran Denies Role In Saudi Pipeline Attack",
+        "url": "http://www.irishsun.com/news/279305535/iran-denies-role-in-saudi-pipeline-attack",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | Newsradio WTAM 1100",
+        "url": "https://wtam.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran War: Saudi Pipeline Out for at Least a Month, Further Stressing Energy Supplies; Trump + Israel Readying Post-Midterms Big Attack? Iran Weighing NPT Exit",
+        "url": "https://www.nakedcapitalism.com/2026/09/iran-war-saudi-pipeline-out-for-at-least-a-month-further-stressing-energy-supplies-trump-israel-readying-post-midterms-big-attack-iran-weighing-npt-exit.html",
+        "type": "intl"
+      },
+      {
         "title": "Saudi pipeline shutdown threatens oil exports to Europe and Asia as kingdom relies on stored supplies",
         "url": "https://www.euronews.com/2026/09/14/saudi-pipeline-shutdown-threatens-oil-exports-to-europe-and-asia-as-kingdom-relies-on-stor",
         "type": "intl"
       },
       {
-        "title": "Chris Beauchamp sees Brent crude jump after East-west Crude Oil Pipeline closure",
-        "url": "https://www.el-balad.com/17051490",
+        "title": "Satellite images show severe damage to Saudi oil pipeline",
+        "url": "https://www.siasat.com/satellite-images-show-severe-damage-to-saudi-oil-pipeline-3541813/",
         "type": "intl"
       },
       {
-        "title": "Satellite images show severe damage to Saudi oil pipeline",
-        "url": "https://www.siasat.com/satellite-images-show-severe-damage-to-saudi-oil-pipeline-3541813/",
+        "title": "Oil and gas prices climb after Saudi Arabia closes east-west pipeline",
+        "url": "https://www.aol.co.uk/articles/oil-gas-prices-climb-saudi-102232000.html",
         "type": "intl"
       },
       {
@@ -2342,13 +3010,8 @@
         "type": "intl"
       },
       {
-        "title": "Houthi drone attack: Saudi oil stocks could run dry within days if key pipeline remains shut",
-        "url": "https://timesofindia.indiatimes.com/world/middle-east/houthi-drone-attack-saudi-oil-stocks-could-run-dry-within-days-if-key-pipeline-remains-shut/articleshow/134233751.cms",
-        "type": "intl"
-      },
-      {
-        "title": "Oil shock fears back on radar as pipeline attack chokes supply",
-        "url": "https://www.theage.com.au/world/middle-east/oil-shock-fears-back-on-radar-as-pipeline-attack-chokes-supply-20260914-p60x01.html",
+        "title": "Saudi pipeline outage threatens 4 pct of global oil supply",
+        "url": "https://www.hurriyetdailynews.com/saudi-pipeline-outage-threatens-4-pct-of-global-oil-supply-226851",
         "type": "intl"
       },
       {
@@ -2377,11 +3040,6 @@
         "type": "intl"
       },
       {
-        "title": "The Saudi Arabia pipeline attacks just redefined Middle East oil risk",
-        "url": "https://www.livemint.com/industry/energy/the-saudi-arabia-pipeline-attacks-just-redefined-middle-east-oil-risk-11789348847918.html",
-        "type": "intl"
-      },
-      {
         "title": "Satellite images show extent of damage to major Saudi pipeline, amid global oil supply fears",
         "url": "https://www.theguardian.com/world/2026/sep/14/saudi-pipeline-drone-attack-houthis-global-oil-supply-prices",
         "type": "intl"
@@ -2397,6 +3055,11 @@
         "type": "intl"
       },
       {
+        "title": "Farmers Press USDA On Fertilizer Prices",
+        "url": "https://www.kmjnow.com/2026/09/14/farmers-press-usda-on-fertilizer-prices/",
+        "type": "intl"
+      },
+      {
         "title": "Burgum: Natural Gas Shortages Most Likely in State Blocking Pipelines",
         "url": "https://www.breitbart.com/politics/2026/09/14/burgum-natural-gas-shortages-most-likely-in-state-blocking-pipelines/",
         "type": "intl"
@@ -2407,23 +3070,33 @@
         "type": "intl"
       },
       {
-        "title": "What Whyalla's closure means for domestic steelmaking",
-        "url": "https://www.lithgowmercury.com.au/story/9350225/what-whyallas-closure-means-for-domestic-steelmaking/",
+        "title": "European Wheat Rises As Black Sea Disruptions Continue",
+        "url": "http://www.maritimeprofessional.com/news/european-wheat-rises-black-disruptions-422874",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 104.9 WBUV",
-        "url": "https://newsradio1049.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Africa's Biggest Oil Refinery Opens To Public Ownership, Sparking Excitement Among Retail Investors – The Yeshiva World",
+        "url": "https://www.theyeshivaworld.com/news/general/2597877/africas-biggest-oil-refinery-opens-to-public-ownership-sparking-excitement-among-retail-investors.html",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | PowerTalk 1460 AM & 101.1 FM",
-        "url": "https://powertalk1460.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "What does the closure of Saudi-Arabia's East-West pipeline mean for gas prices?",
+        "url": "https://abcnews.com/Business/closure-saudi-arabias-east-west-pipeline-gas-prices/story?id=136419875",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News/Talk 1130 WISN",
-        "url": "https://newstalk1130.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Why Saudi Arabia's East-West pipeline matters for global oil  - Grenada Chronicle – Daily Grenada And Caribbean News",
+        "url": "https://grenadachronicle.com/why-saudi-arabias-east-west-pipeline-matters-for-global-oil/",
+        "type": "intl"
+      },
+      {
+        "title": "Finland's only oil refinery shuts down for €400 million upgrade",
+        "url": "https://english.pravda.ru/news/business/168844-neste-porvoo-shutdown/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, says attacks are causing a shortage",
+        "url": "https://www.eldoradonews.com/news/2026/sep/14/trump-calls-on-ukraine-to-halt-strikes-on-russian/",
         "type": "intl"
       },
       {
@@ -2442,48 +3115,28 @@
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1110 KFAB",
-        "url": "https://kfab.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 1400 WRAK",
+        "url": "https://wrak.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 600 WMT",
-        "url": "https://600wmtradio.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1360 KKTX",
+        "url": "https://1360kktx.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 1450 WILM",
-        "url": "https://wilm.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Latvian fertilizer tariffs may increase costs for farmers",
+        "url": "https://www.freshplaza.com/north-america/article/9872752/latvian-fertilizer-tariffs-may-increase-costs-for-farmers/",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 101.9 Big WAAX",
-        "url": "https://1019bigwaax.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "During Iowa stop, USDA deputy urges farmers to anonymously report fertilizer woes",
+        "url": "https://kscj.com/2026/09/14/during-iowa-stop-usda-deputy-urges-farmers-to-anonymously-report-fertilizer-woes/",
         "type": "intl"
       },
       {
-        "title": "Middle East conflict: Asian refiners await clarity after Saudi pipeline shutdown",
-        "url": "https://www.channelnewsasia.com/watch/middle-east-conflict-asian-refiners-await-clarity-after-saudi-pipeline-shutdown-6383641",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 910 WLTP",
-        "url": "https://newsradio910wltp.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | Newsradio 600 KOGO",
-        "url": "https://kogo.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | WJBO Newsradio 1150 AM & 98.7 FM",
-        "url": "https://wjbo.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi pipeline closure may raise India's oil costs, expose supply risks",
-        "url": "https://www.business-standard.com/india-news/saudi-pipeline-closure-may-raise-india-s-oil-costs-expose-supply-risks-126091400813_1.html",
+        "title": "Higher Prices Improve 2027 Winter Wheat Planting Prospects",
+        "url": "https://www.rfdtv.com/higher-prices-improve-2027-winter-wheat-planting-prospects",
         "type": "intl"
       },
       {
@@ -2507,13 +3160,23 @@
         "type": "intl"
       },
       {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Talk 99.5 WRNO",
+        "url": "https://wrno.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
         "title": "Why Saudi Arabia's East-West pipeline matters for global oil | Oil and Gas News",
         "url": "https://www.aljazeera.com/news/2026/9/14/why-saudi-arabias-east-west-pipeline-matters-for-global-oil",
         "type": "intl"
       },
       {
-        "title": "China's oil demand could falter as Saudi pipeline shutdown raises costs",
-        "url": "https://www.scmp.com/economy/article/3367467/chinas-oil-demand-could-falter-saudi-pipeline-shutdown-raises-costs",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | Sports Radio 800 KXIC",
+        "url": "https://kxic.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio WKCY",
+        "url": "https://newsradiowkcy.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
@@ -2524,6 +3187,11 @@
       {
         "title": "Saudi Pipeline Photos Show Extensive Damage | KOA 850 AM & 94.1 FM",
         "url": "https://koacolorado.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, citing a global shortage - Boston News, Weather, Sports",
+        "url": "https://whdh.com/news/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-citing-a-global-shortage/",
         "type": "intl"
       },
       {
@@ -2562,18 +3230,38 @@
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Talk 1090 WKBZ-AM",
-        "url": "https://newstalk1090.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Pemex Contains Oil Leak from Gulf of Mexico Pipeline",
+        "url": "https://www.oedigital.com/news/542913-pemex-contains-oil-leak-from-gulf-of-mexico-pipeline",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NEWSRADIO 1040 WHO",
-        "url": "https://whoradio.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 690 KTSM",
+        "url": "https://ktsmradio.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 560 WHYN",
-        "url": "https://whyn.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Saudi Pipeline Photos Show Extensive Damage | News Talk 550 KFYI",
+        "url": "https://kfyi.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 1450/1370 WKIP",
+        "url": "https://1450wkip.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "type": "intl"
+      },
+      {
+        "title": "Africa's biggest oil refinery opens to public ownership",
+        "url": "https://www.bnnbloomberg.ca/markets/oil/2026/09/14/africas-biggest-oil-refinery-opens-to-public-ownership-sparking-excitement-among-retail-investors/",
+        "type": "intl"
+      },
+      {
+        "title": "Brics Grain Exchange: Opportunities, Challenges, and India's Role",
+        "url": "https://www.rediff.com/business/report/brics-grain-exchange-opportunities-challenges-and-indias-role/20260914.htm",
+        "type": "intl"
+      },
+      {
+        "title": "USDA seeks farmer input on fertilizer 'cartel' practices | Agriculture News",
+        "url": "http://www.thegazette.com/news/agriculture/usda-seeks-farmer-input-on-fertilizer-cartel-practices/article_eee17619-b7db-50fd-9e74-9d6ac20abc8d.html",
         "type": "intl"
       },
       {
@@ -2592,33 +3280,8 @@
         "type": "intl"
       },
       {
-        "title": "Saudi Pipeline Photos Show Extensive Damage",
-        "url": "https://wflanews.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | Twin Cities News Talk",
-        "url": "https://twincitiesnewstalk.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | News Radio 570 WWNC",
-        "url": "https://wwnc.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | NewsRadio 630 WLAP",
-        "url": "https://wlap.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
-        "type": "intl"
-      },
-      {
-        "title": "Iran Denies Role In Saudi Pipeline Attack",
-        "url": "http://www.irishsun.com/news/279305535/iran-denies-role-in-saudi-pipeline-attack",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi Pipeline Photos Show Extensive Damage | Newsradio WTAM 1100",
-        "url": "https://wtam.iheart.com/content/2026-09-14-saudi-pipeline-photos-show-extensive-damage/",
+        "title": "Africa's biggest oil refinery opens to public ownership, sparking excitement among retail investors – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/business/2026/09/14/africas-biggest-oil-refinery-opens-to-public-ownership-sparking-excitement-among-retail-investors",
         "type": "intl"
       },
       {
@@ -2627,23 +3290,38 @@
         "type": "intl"
       },
       {
-        "title": "Iran War: Saudi Pipeline Out for at Least a Month, Further Stressing Energy Supplies; Trump + Israel Readying Post-Midterms Big Attack? Iran Weighing NPT Exit",
-        "url": "https://www.nakedcapitalism.com/2026/09/iran-war-saudi-pipeline-out-for-at-least-a-month-further-stressing-energy-supplies-trump-israel-readying-post-midterms-big-attack-iran-weighing-npt-exit.html",
-        "type": "intl"
-      },
-      {
         "title": "Asian Refiners Seek Answers After Saudi Pipeline Shutdown",
         "url": "https://finance.yahoo.com/energy/articles/asian-refiners-seek-answers-saudi-103000239.html",
         "type": "intl"
       },
       {
-        "title": "Russia imports record fuel from India as Ukraine strikes hit refineries | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/russia-imports-record-fuel-from-india-as-ukraine-strikes-hit-refineries/",
+        "title": "Gold prices today, Monday, September 14, 2026: Gold sinks following new attacks on Saudi pipeline and more",
+        "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-september-14-2026-gold-sinks-following-new-attacks-on-saudi-pipeline-and-more-111825907.html",
         "type": "intl"
       },
       {
-        "title": "UAE's oil potential boosted by promising shale discovery | Hellenic Shipping News Worldwide",
-        "url": "https://www.hellenicshippingnews.com/uaes-oil-potential-boosted-by-promising-shale-discovery/",
+        "title": "Sulfur price spike raises concerns for U.S. fertilizer production",
+        "url": "https://littleapplepost.com/posts/b968119b-b921-4c9a-940a-11eb03030e59",
+        "type": "intl"
+      },
+      {
+        "title": "Not all barrels are equal: Iran war creates sour crude shortfall | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/not-all-barrels-are-equal-iran-war-creates-sour-crude-shortfall/",
+        "type": "intl"
+      },
+      {
+        "title": "Gov't, Refiners Say Saudi Pipeline Closure Will Have Limited Impact on Crude Supply l KBS WORLD",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204235",
+        "type": "intl"
+      },
+      {
+        "title": "Trump asks Ukraine to stop Russia refinery attacks as diesel surges",
+        "url": "https://www.cnbc.com/2026/09/14/trump-ukraine-russia-diesel-prices-oil.html",
+        "type": "intl"
+      },
+      {
+        "title": "Wheat imports likely to fall 11% in 2026-27",
+        "url": "https://www.thedailystar.net/business/news/wheat-imports-likely-fall-11-2026-27-4272111",
         "type": "intl"
       },
       {
@@ -2652,18 +3330,28 @@
         "type": "intl"
       },
       {
-        "title": "Saudi pipeline outage threatens 4 pct of global oil supply",
-        "url": "https://www.hurriyetdailynews.com/saudi-pipeline-outage-threatens-4-pct-of-global-oil-supply-226851",
-        "type": "intl"
-      },
-      {
-        "title": "Saudi pipeline shutdown to have limited impact on supply in short term",
-        "url": "https://www.prokerala.com/news/articles/a1811950.html",
-        "type": "intl"
-      },
-      {
         "title": "Saudi pipeline shutdown expected to have limited supply impact",
         "url": "https://www.siasat.com/saudi-pipeline-shutdown-expected-to-have-limited-supply-impact-3541680/",
+        "type": "intl"
+      },
+      {
+        "title": "Oil shock fears back on radar as pipeline attack chokes supply",
+        "url": "https://www.theage.com.au/world/middle-east/oil-shock-fears-back-on-radar-as-pipeline-attack-chokes-supply-20260914-p60x01.html",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, saying attacks causing a shortage",
+        "url": "https://www.krgv.com/news/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-saying-attacks-causing-a-shortage/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump says Ukraine's strikes on Russia are causing diesel shortage",
+        "url": "https://www.wsbradio.com/news/ukrainian-drones/JP4K76L7QY25NH45YTJZKAGLVQ/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Calls on Ukraine to Halt Strikes on Russian Diesel Fuel, Says Attacks Causing Shortage",
+        "url": "https://www.deccanchronicle.com/world/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-says-attacks-causing-shortage-1987339",
         "type": "intl"
       },
       {
@@ -2672,13 +3360,33 @@
         "type": "intl"
       },
       {
-        "title": "Iraq says Saudi pipeline attack originated from its territory, and other Mideast news",
-        "url": "https://www.yahoo.com/news/world/articles/iraq-confirms-attacks-saudi-pipeline-065944052.html",
+        "title": "Major US Retailer Rations Motor Oil Due To Severe Global Shortage",
+        "url": "https://carbuzz.com/costco-motor-oil-rationed-shortage/",
+        "type": "intl"
+      },
+      {
+        "title": "Trump calls on Ukraine to halt strikes on Russian diesel fuel, saying attacks are causing a shortage",
+        "url": "https://www.ksl.com:443/article/51623362/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-saying-attacks-are-causing-a-shortage",
+        "type": "intl"
+      },
+      {
+        "title": "2 killed, 50 injured in ammonia gas leak at fertilizer plant in S. Iraq",
+        "url": "http://www.iraqsun.com/news/279304830/2-killed-50-injured-in-ammonia-gas-leak-at-fertilizer-plant-in-s-iraq",
         "type": "intl"
       },
       {
         "title": "Saudi Pipeline Attack Threatens More Pain At Texas Pumps",
         "url": "https://www.klif.com/2026/09/13/saudi-pipeline-attack-threatens-more-pain-at-texas-pumps/",
+        "type": "intl"
+      },
+      {
+        "title": "Costly Phosphate? Homegrown Fertilizer Solution",
+        "url": "https://www.miragenews.com/costly-phosphate-homegrown-fertilizer-solution-1743307/",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | Trump calls on Ukraine to halt strikes on Russian diesel fuel, saying attacks are causing a shortage",
+        "url": "https://www.arabnews.com/world/trump-calls-on-ukraine-to-halt-strikes-on-russian-diesel-fuel-saying-attacks-are-causing-a-shortage-3001607",
         "type": "intl"
       },
       {
@@ -2950,53 +3658,53 @@
   },
   "ref_map": {
     "1": {
+      "title": "Oil tanker erupts in flames after hitting Hormuz mine -  UPDATED",
+      "url": "https://news.az/news/oil-tanker-erupts-in-flames-after-hitting-hormuz-mine-updated",
+      "type": "intl"
+    },
+    "2": {
       "title": "Oil tanker has exploded in Strait of Hormuz, says Iran's IRGC",
       "url": "https://www.scmp.com/news/world/middle-east/article/3367515/oil-tanker-has-exploded-strait-hormuz-says-irans-irgc",
       "type": "intl"
     },
-    "2": {
+    "3": {
       "title": "Global economy suffers Hormuz closure",
       "url": "https://www.presstv.co.uk/Detail/2026/09/14/776306/INTL-ECONOMY-SUFFERS-HORMUZ-CLOSURE",
       "type": "intl"
     },
-    "3": {
+    "4": {
+      "title": "Supertanker explodes after hitting mines on illegal route south of Hormuz: IRGC Navy",
+      "url": "https://www.presstv.co.uk/Detail/2026/09/14/776307/Supertanker-explodes-after-hitting-mines-on-illegal-route-south-of-Hormuz--IRGC-Navy",
+      "type": "intl"
+    },
+    "5": {
       "title": "WSJ: Oil executives warn a global fuel crisis has arrived as Hormuz closure bites",
       "url": "https://investinglive.com/commodities/wsj-oil-executives-warn-a-global-fuel-crisis-has-arrived-as-hormuz-closure-bites/",
       "type": "intl"
     },
-    "4": {
+    "6": {
+      "title": "Oil catch-up: Iran says tanker hit mine in Hormuz; Centcom says drone struck it instead",
+      "url": "https://investinglive.com/commodities/oil-catch-up-iran-says-tanker-hit-mine-in-hormuz-centcom-says-drone-struck-it-instead/",
+      "type": "intl"
+    },
+    "7": {
       "title": "'Vessel attacked by Iran twice': US rejects IRGC claim that Panama-flagged tanker hit naval mine in Hormuz",
       "url": "https://timesofindia.indiatimes.com/world/middle-east/vessel-attacked-by-iran-twice-us-rejects-irgc-claim-that-panama-flagged-tanker-hit-naval-mine/articleshow/134248017.cms",
       "type": "intl"
     },
-    "5": {
-      "title": "U.S. Rejects Iran's Mine Claim as Hormuz Shipping Threat Remains Severe",
-      "url": "https://gcaptain.com/u-s-rejects-irans-mine-claim-as-hormuz-shipping-threat-remains-severe/",
-      "type": "intl"
-    },
-    "6": {
-      "title": "Why Australia and Asia must unite on opening the Strait of Hormuz",
-      "url": "https://www.afr.com/policy/foreign-affairs/australia-should-mobilise-asian-partners-to-open-strait-of-hormuz-20260910-p60w1m",
-      "type": "intl"
-    },
-    "7": {
-      "title": "Iran Says It Shot Down Another US MQ-1 Drone Over the Strait of Hormuz",
-      "url": "https://news.antiwar.com/2026/09/14/iran-says-it-shot-down-another-us-mq-1-drone-over-the-strait-of-hormuz/",
-      "type": "intl"
-    },
     "8": {
-      "title": "Iran says oil tanker EL GAIA hit mines near Strait of Hormuz",
-      "url": "https://www.ynetnews.com/article/bydxo6syfl",
+      "title": "Houthi rebels expand their threat to oil flow",
+      "url": "https://www.ironmountaindailynews.com/news/2026/09/houthi-rebels-expand-their-threat-to-oil-flow/",
       "type": "intl"
     },
     "9": {
-      "title": "Iran backed Houthi attack on Saudi pipeline threatens global supply",
-      "url": "https://www.hometownregister.com/news/national/iran-backed-houthi-attack-on-saudi-pipeline-threatens-global-supply/article_472ca618-7973-5f9c-b152-1acee8e3c60f.html",
+      "title": "Houthi rebels' control of Red Sea oil chokepoint exposes deep divisions in Brics - 15-Sep-2026",
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=454060",
       "type": "intl"
     },
     "10": {
-      "title": "IRGC says supertanker on fire after hitting mines in Strait of Hormuz",
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-supertanker-fire-after-hitting-mines-strait-hormuz",
+      "title": "U.S. Rejects Iran's Mine Claim as Hormuz Shipping Threat Remains Severe",
+      "url": "https://gcaptain.com/u-s-rejects-irans-mine-claim-as-hormuz-shipping-threat-remains-severe/",
       "type": "intl"
     },
     "11": {
@@ -3050,476 +3758,506 @@
       "type": "dom"
     },
     "21": {
-      "title": "UKMTO Reports Another Vessel Struck in Hormuz at the Weekend as Iran Says One Seafarer Killed",
-      "url": "https://shipandbunker.com/news/world/619789-ukmto-reports-another-vessel-struck-in-hormuz-at-the-weekend-as-iran-says-one-seafarer-killed",
+      "title": "Shipping containers fall off cargo ship in Port of LA",
+      "url": "https://nypost.com/2026/09/14/us-news/shipping-containers-fall-off-cargo-ship-in-port-of-la/",
       "type": "intl"
     },
     "22": {
-      "title": "Pemex Contains Oil Leak from Gulf of Mexico Pipeline",
-      "url": "https://www.oedigital.com/news/542913-pemex-contains-oil-leak-from-gulf-of-mexico-pipeline",
+      "title": "India Condemns Attack on Vessel MT EL Gaia Off Oman Coast – Chennaionline",
+      "url": "https://www.chennaionline.com/news/india-condemns-attack-on-vessel-mt-el-gaia-off-oman-coast/",
       "type": "intl"
     },
     "23": {
+      "title": "Iran says 'US attack' on commercial vessel in Gulf kills 1, injures 3",
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260913-azertac01.htm",
+      "type": "intl"
+    },
+    "24": {
+      "title": "At least 6 dead, 130 missing after Indonesia passenger vessel accident",
+      "url": "http://www.bruneinews.net/news/279305070/at-least-6-dead-130-missing-after-indonesia-passenger-vessel-accident",
+      "type": "intl"
+    },
+    "25": {
       "title": "실종자 어디에, 예인선 사고 13일째 야간수색…함선 17척",
       "url": "https://n.news.naver.com/mnews/article/003/0014189610?sid=102",
       "type": "dom"
     },
-    "24": {
+    "26": {
       "title": "티엔에스캐처호 실종자 13일째 야간 수색 돌입",
       "url": "https://n.news.naver.com/mnews/article/082/0001398290?sid=102",
       "type": "dom"
     },
-    "25": {
+    "27": {
       "title": "Oil Tanker Rates Top $1 Million a Day as Hormuz War Squeezes Fleet",
       "url": "https://gcaptain.com/oil-tanker-rates-top-1-million-a-day-as-hormuz-war-squeezes-fleet/",
       "type": "intl"
     },
-    "26": {
+    "28": {
       "title": "Crude Tanker Rates Reach Record Levels | Hellenic Shipping News Worldwide",
       "url": "https://www.hellenicshippingnews.com/crude-tanker-rates-reach-record-levels/",
       "type": "intl"
     },
-    "27": {
-      "title": "SHIPPING CRUNCH: Middle East War Sends Tanker Costs To Record Highs",
-      "url": "https://www.theyeshivaworld.com/news/general/2597817/shipping-crunch-middle-east-war-sends-tanker-costs-to-record-highs.html",
-      "type": "intl"
-    },
-    "28": {
-      "title": "CMA CGM to implement major rate increases to US from East Asia on 1 October | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/cma-cgm-to-implement-major-rate-increases-to-us-from-east-asia-on-1-october/",
-      "type": "intl"
-    },
     "29": {
-      "title": "Hormuz Vessel Transits Fell to Single Digits Over the Weekend, Reuters Reports",
-      "url": "https://shipandbunker.com/news/emea/209522-hormuz-vessel-transits-fell-to-single-digits-over-the-weekend-reuters-reports",
-      "type": "intl"
-    },
-    "30": {
-      "title": "Hormuz shipping traffic remains below 10-day average at weekend, data shows | Ariana News",
-      "url": "https://www.ariananews.af/hormuz-shipping-traffic-remains-below-10-day-average-at-weekend-data-shows/",
-      "type": "intl"
-    },
-    "31": {
-      "title": "Hormuz Shipping Traffic Remains Below 10-day Average",
-      "url": "https://english.aawsat.com/world/5317959-hormuz-shipping-traffic-remains-below-10-day-average",
-      "type": "intl"
-    },
-    "32": {
-      "title": "Hormuz Vessel Traffic Drops to Single Digits",
-      "url": "http://www.econotimes.com/Hormuz-Vessel-Traffic-Drops-to-Single-Digits-1751955",
-      "type": "intl"
-    },
-    "33": {
-      "title": "Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
-      "url": "https://www.investmentwatchblog.com/up-3600-this-freight-fund-has-posted-the-biggest-gains-of-all-on-iran-war-oil-shock/",
-      "type": "intl"
-    },
-    "34": {
-      "title": "Tanker Market To Gain Further Impetus From Rising Oil Output in America | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/tanker-market-to-gain-further-impetus-from-rising-oil-output-in-america/",
-      "type": "intl"
-    },
-    "35": {
-      "title": "호르무즈 통항 급감…사우디 대체 송유관도 멈춰",
-      "url": "https://www.tokenpost.kr/news/breaking/407543",
-      "type": "dom"
-    },
-    "36": {
-      "title": "사우디, 호르무즈 우회 750마일 송유관 일시 폐쇄",
-      "url": "https://www.tokenpost.kr/news/breaking/407529",
-      "type": "dom"
-    },
-    "37": {
-      "title": "부산발 컨테이너 운임 4696p 기록…6주 상승 뒤 보합권 진입",
-      "url": "https://n.news.naver.com/mnews/article/119/0003132591?sid=101",
-      "type": "dom"
-    },
-    "38": {
-      "title": "Oman crude gains Asia value as delivery security rises: industry sources | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/oman-crude-gains-asia-value-as-delivery-security-rises-industry-sources/",
-      "type": "intl"
-    },
-    "39": {
-      "title": "KP wheat reserves drop to 189,000 tonnes amid supply concerns",
-      "url": "https://arynews.tv/kp-wheat-reserves-drop-to-189000-tonnes-amid-supply-concerns",
-      "type": "intl"
-    },
-    "40": {
-      "title": "Uzbekistan launches Incheon hub to support exports to South Korea",
-      "url": "https://www.trend.az/casia/uzbekistan/4223742.html",
-      "type": "intl"
-    },
-    "41": {
-      "title": "Singapore fuel oil stocks rise despite sharp decline in net imports | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/singapore-fuel-oil-stocks-rise-despite-sharp-decline-in-net-imports/",
-      "type": "intl"
-    },
-    "42": {
-      "title": "Wheat imports likely to fall 11% in 2026-27",
-      "url": "https://www.thedailystar.net/business/news/wheat-imports-likely-fall-11-2026-27-4272111",
-      "type": "intl"
-    },
-    "43": {
-      "title": "Port Hedland Iron Ore Exports Rose 5% in August | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/port-hedland-iron-ore-exports-rose-5-in-august/",
-      "type": "intl"
-    },
-    "44": {
-      "title": "울산항, 호르무즈 우회 원유 급증...홍해 불안에 긴장은 여전",
-      "url": "https://www.ulsanpress.net/news/articleView.html?idxno=583052",
-      "type": "dom"
-    },
-    "45": {
-      "title": "산업부 \"원유 90% 이상 확보… 단기 영향 제한적\"[사우디發 유가 불안]",
-      "url": "https://n.news.naver.com/mnews/article/014/0005575646?sid=101",
-      "type": "dom"
-    },
-    "46": {
-      "title": "정유사 긴급 소집…非중동산 원유 수입땐 운임 차액지원 확대",
-      "url": "https://n.news.naver.com/mnews/article/011/0004661739?sid=101",
-      "type": "dom"
-    },
-    "47": {
-      "title": "국내 원유 도입량 7월 들어 큰 폭 증가",
-      "url": "http://www.e2news.com/news/articleView.html?idxno=334183",
-      "type": "dom"
-    },
-    "48": {
-      "title": "여수항 원유 수입단가 25% 급등..중동발 공급 불안 원인",
-      "url": "https://ysmbc.co.kr/NewsArticle/1536945",
-      "type": "dom"
-    },
-    "49": {
-      "title": "\"정부·정유업계 적극적 원유 확보… 석유제품 수급대란은 없었다\"",
-      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203201",
-      "type": "dom"
-    },
-    "50": {
-      "title": "석유협회, 중동발 위기에도 '수급대란 없었다'",
-      "url": "http://www.e-platform.net/news/articleView.html?idxno=105320",
-      "type": "dom"
-    },
-    "51": {
-      "title": "여수광양항만공사, 중국 닝보저우산항과 협력방안 논의",
-      "url": "https://www.klnews.co.kr/news/articleView.html?idxno=322724",
-      "type": "dom"
-    },
-    "52": {
-      "title": "WATCH:  Oil prices rise after attacks on key Middle East shipping routes",
-      "url": "https://kxly920.com/2026/09/14/watch-oil-prices-rise-after-attacks-on-key-middle-east-shipping-routes/",
-      "type": "intl"
-    },
-    "53": {
-      "title": "Crude Oil Surges Amid Mounting Middle East Supply Disruption Concerns",
-      "url": "https://www.rttnews.com/3690803/crude-oil-surges-amid-mounting-middle-east-supply-disruption-concerns.aspx",
-      "type": "intl"
-    },
-    "54": {
-      "title": "Oil Prices Pass US$108 as Saudi Pipeline Halts",
-      "url": "https://www.riotimesonline.com/oil-prices-brent-saudi-pipeline-halt-2026/",
-      "type": "intl"
-    },
-    "55": {
-      "title": "Oil prices soar over 4% to 16-week high after strikes on Saudi pipeline, ships in West Asia",
-      "url": "https://www.hindustantimes.com/world-news/oil-prices-soar-over-4-per-cent-to-16-week-high-after-strikes-on-saudi-arabia-pipeline-ships-in-west-asia-101789404720812.html",
-      "type": "intl"
-    },
-    "56": {
-      "title": "Oil prices continue surge, rising 3% as attacks halt Saudi pipeline",
-      "url": "https://www.hydrocarbonprocessing.com/news/2026/09/oil-prices-continue-surge-rising-3-as-attacks-halt-saudi-pipeline/",
-      "type": "intl"
-    },
-    "57": {
-      "title": "Oil hits $108 after Saudi pipeline attacks and Hormuz disruption",
-      "url": "https://www.businessday.co.za/markets/2026-09-14-oil-hits-108-after-saudi-pipeline-attacks-and-hormuz-disruption/",
-      "type": "intl"
-    },
-    "58": {
-      "title": "Oil surges on report Saudi pipeline will take weeks to reopen",
-      "url": "https://www.thehindubusinessline.com/markets/commodities/oil-surges-on-report-saudi-pipeline-will-take-weeks-to-reopen/article71466154.ece",
-      "type": "intl"
-    },
-    "59": {
-      "title": "Brent Crude surges to $110 as Saudi pipeline shutdown deepens supply concerns",
-      "url": "https://www.prokerala.com/news/articles/a1812231.html",
-      "type": "intl"
-    },
-    "60": {
-      "title": "Brent crude hits $108 after East-west Pipeline Saudi Arabia shutdown",
-      "url": "https://www.el-balad.com/17051510",
-      "type": "intl"
-    },
-    "61": {
-      "title": "Brent Crude Price Surges To $108 As Hormuz Traffic Falls And Saudi Pipeline Shuts Down",
-      "url": "https://www.foreignpolicyjournal.com/2026/09/14/brent-crude-price-surges-to-108-as-hormuz-traffic-falls-and-saudi-pipeline-shuts-down/",
-      "type": "intl"
-    },
-    "62": {
-      "title": "글로벌 원유 공급 4% 감소 위기… 세계 경제 격랑속으로[사우디發 유가...",
-      "url": "https://n.news.naver.com/mnews/article/014/0005575647?sid=101",
-      "type": "dom"
-    },
-    "63": {
-      "title": "'3중 봉쇄'에 유가급등 … 코스피 3일연속 하락",
-      "url": "https://n.news.naver.com/mnews/article/009/0005735124?sid=101",
-      "type": "dom"
-    },
-    "64": {
-      "title": "[뉴욕증시]10년물 5% 돌파…나스닥 1%대 하락",
-      "url": "https://n.news.naver.com/mnews/article/277/0005816176?sid=104",
-      "type": "dom"
-    },
-    "65": {
-      "title": "뉴욕증시, AI 속도조절론·유가 급등 겹악재…나스닥 1.2%↓",
-      "url": "https://n.news.naver.com/mnews/article/014/0005575690?sid=101",
-      "type": "dom"
-    },
-    "66": {
-      "title": "美 증시, AI 감속 우려에 유가 급등…반도체주 일제히 하락",
-      "url": "https://n.news.naver.com/mnews/article/015/0005332275?sid=101",
-      "type": "dom"
-    },
-    "67": {
-      "title": "뉴욕증시, AI 개발 속도 조절론·유가 상승에 하락 출발",
-      "url": "https://n.news.naver.com/mnews/article/366/0001192329?sid=101",
-      "type": "dom"
-    },
-    "68": {
-      "title": "뉴욕증시, AI속도조절론·유가 상승에 하락 출발…나스닥 0.8%↓",
-      "url": "https://n.news.naver.com/mnews/article/003/0014189703?sid=104",
-      "type": "dom"
-    },
-    "69": {
-      "title": "뉴욕증시, AI 불안감·유가 상승에 하락 출발",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434790",
-      "type": "dom"
-    },
-    "70": {
-      "title": "미 달러화 강세…사우디 송유관 가동 중단發 유가 급등",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434789",
-      "type": "dom"
-    },
-    "71": {
-      "title": "브렌트유 110.42달러…한 달 새 23.71% 상승",
-      "url": "https://www.tokenpost.kr/news/economy/407693",
-      "type": "dom"
-    },
-    "72": {
-      "title": "Shipping's Suez Comeback Gathers Steam Despite Houthi Advance",
-      "url": "https://wwd.com/sourcing-journal/logistics/red-sea-return-cosco-oocl-houthis-bab-el-mandeb-suez-canal-strait-of-hormuz-1239231381/",
-      "type": "intl"
-    },
-    "73": {
-      "title": "Oil Is Moving Through the Strait of Hormuz Again, But Not as Much as Trump Says: Report",
-      "url": "https://www.ibtimes.com/oil-moving-through-strait-hormuz-again-not-much-trump-says-report-3807426",
-      "type": "intl"
-    },
-    "74": {
-      "title": "Maersk, Hapag-Lloyd Accelerate Return to Suez Despite Red Sea Risks",
-      "url": "https://gcaptain.com/maersk-hapag-lloyd-accelerate-return-to-suez-despite-red-sea-risks/",
-      "type": "intl"
-    },
-    "75": {
-      "title": "Hormuz Shipping Recovers, But Middle East Oil Export Constraints Persist",
-      "url": "https://www.outlookindia.com/international/hormuz-shipping-recovers-but-middle-east-oil-export-constraints-persist",
-      "type": "intl"
-    },
-    "76": {
-      "title": "Maersk, Hapag-Lloyd Resume Further Services Through Suez Canal",
-      "url": "https://english.aawsat.com/business/5318029-maersk-hapag-lloyd-resume-further-services-through-suez-canal",
-      "type": "intl"
-    },
-    "77": {
-      "title": "Chinese chemical exports may reshape Asian trade flow amid US-Iran war | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/chinese-chemical-exports-may-reshape-asian-trade-flow-amid-us-iran-war/",
-      "type": "intl"
-    },
-    "78": {
-      "title": "South Korea and Arctic Shipping: A Game Changer on Thin Ice?",
-      "url": "https://thediplomat.com/2026/09/south-korea-and-arctic-shipping-a-game-changer-on-thin-ice/",
-      "type": "intl"
-    },
-    "79": {
-      "title": "Iran, Oman agree on safe shipping routes, Foreign Ministry says",
-      "url": "https://www.azernews.az/region/263849.html",
-      "type": "intl"
-    },
-    "80": {
-      "title": "LNG Shipping Showing Signs of Improvement | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/lng-shipping-showing-signs-of-improvement/",
-      "type": "intl"
-    },
-    "81": {
-      "title": "Oil takes the long way round as war reshapes global shipping",
-      "url": "https://cyprus-mail.com/2026/09/14/oil-takes-the-long-way-round-as-war-reshapes-global-shipping",
-      "type": "intl"
-    },
-    "82": {
-      "title": "삼성중공업, LNG 운반선 4척·원유 운반선 2척 등 1.6조 수주",
-      "url": "http://www.econonews.co.kr/news/articleView.html?idxno=444312",
-      "type": "dom"
-    },
-    "83": {
-      "title": "[비즈투데이] 삼성중공업, LNG선 등 6척 12억 달러 수주",
-      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1537462",
-      "type": "dom"
-    },
-    "84": {
-      "title": "'국내 첫 북극항로 시범운항'…팬스타 아크로호, 로테르담 입항",
-      "url": "https://www.news2day.co.kr/article/20260914500206",
-      "type": "dom"
-    },
-    "85": {
-      "title": "삼성중공업, 대형 LNG운반선 등 1.6조원 수주",
-      "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=645476",
-      "type": "dom"
-    },
-    "86": {
-      "title": "삼성重, LNG선 등 1.6조 수주…상선 수주액 벌써 지난해 넘어",
-      "url": "https://www.econovill.com/news/articleView.html?idxno=750763",
-      "type": "dom"
-    },
-    "87": {
-      "title": "진격의 삼성重… 올해 상선 수주 목표 이미 초과 달성",
-      "url": "https://n.news.naver.com/mnews/article/014/0005575614?sid=101",
-      "type": "dom"
-    },
-    "88": {
-      "title": "삼성중공업, LNG·원유운반선 6척 수주 1.6조 규모…올해 상선 수주 지난...",
-      "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=239753",
-      "type": "dom"
-    },
-    "89": {
-      "title": "'조선 빅3' 노사갈등 격화…파업 수위 높아지며 건조 현장 ‘긴장’",
-      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260914010005299",
-      "type": "dom"
-    },
-    "90": {
-      "title": "중국 수출 폭주에 '자동차 운반선' 동났다..車 150만대가 컨테이너로",
-      "url": "https://n.news.naver.com/mnews/article/008/0005413575?sid=101",
-      "type": "dom"
-    },
-    "91": {
-      "title": "부산 첫 타운홀 미팅.. \"북극항로, 부산 도약 기회로\"",
-      "url": "https://busanmbc.co.kr/01_new/new01_view.asp?idx=289025",
-      "type": "dom"
-    },
-    "92": {
-      "title": "코트라, 중동發 물류난 돌파…수출기업 지원 1.5배 늘린다",
-      "url": "https://n.news.naver.com/mnews/article/011/0004661724?sid=101",
-      "type": "dom"
-    },
-    "93": {
-      "title": "우즈벡 시작 중앙아 5개국 정상외교…핵심광물·공급망 다변화",
-      "url": "https://n.news.naver.com/mnews/article/056/0012257093?sid=100",
-      "type": "dom"
-    },
-    "94": {
-      "title": "자원·기술·자본 묶는 李대통령…중앙亞 빗장 열고 韓기업 진출 넓힌다",
-      "url": "https://n.news.naver.com/mnews/article/030/0003466669?sid=100",
-      "type": "dom"
-    },
-    "95": {
-      "title": "중동 수출 물류 불안 지속…코트라, 13개국 현지 점검 및 기업지원 강화",
-      "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2302126",
-      "type": "dom"
-    },
-    "96": {
-      "title": "Saudi oil pipeline to remain offline for weeks after attack | Hellenic Shipping News Worldwide",
-      "url": "https://www.hellenicshippingnews.com/saudi-oil-pipeline-to-remain-offline-for-weeks-after-attack/",
-      "type": "intl"
-    },
-    "97": {
-      "title": "What the closure of Saudi Arabia's East-West pipeline could mean for oil flows – Winnipeg Free Press",
-      "url": "https://www.winnipegfreepress.com/business/2026/09/14/what-the-closure-of-saudi-arabias-east-west-pipeline-could-mean-for-oil-flows",
-      "type": "intl"
-    },
-    "98": {
-      "title": "Oil Climbs Amid Saudi Pipeline Halt",
-      "url": "https://www.rigzone.com/news/wire/oil_climbs_amid_saudi_pipeline_halt-14-sep-2026-184613-article/",
-      "type": "intl"
-    },
-    "99": {
-      "title": "What the closure of Saudi Arabia's East-West pipeline could mean for oil flows",
-      "url": "https://www.yahoo.com/news/world/articles/closure-saudi-arabias-east-west-211135850.html",
-      "type": "intl"
-    },
-    "100": {
-      "title": "Saudi pipeline shutdown exposes shrinking global oil-supply buffers",
-      "url": "https://www.al-monitor.com/originals/2026/09/saudi-pipeline-shutdown-exposes-shrinking-global-oil-supply-buffers",
-      "type": "intl"
-    },
-    "101": {
-      "title": "Saudi oil pipeline hit by drones will be out of service for weeks. Here's what that could mean",
-      "url": "https://www.firstalert4.com/2026/09/14/saudi-oil-pipeline-hit-by-drones-will-be-out-service-weeks-heres-what-that-could-mean/",
-      "type": "intl"
-    },
-    "102": {
-      "title": "Key Saudi oil pipeline out of action",
-      "url": "https://www.theage.com.au/world/key-saudi-oil-pipeline-out-of-action-20260915-p60xcc.html",
-      "type": "intl"
-    },
-    "103": {
-      "title": "Saudi Arabia has shut a critical oil pipeline. Here's why it matters for the global oil market - WSVN 7News | Miami News, Weather, Sports",
-      "url": "https://wsvn.com/news/us-world/saudi-arabia-has-shut-a-critical-oil-pipeline-heres-why-it-matters-for-the-global-oil-market/",
-      "type": "intl"
-    },
-    "104": {
-      "title": "Key Saudi Pipeline to Be Shut Down for Weeks as Diesel Prices Hit Record Highs",
-      "url": "https://truthout.org/articles/key-saudi-pipeline-to-be-shut-down-for-weeks-as-diesel-prices-hit-record-highs/",
-      "type": "intl"
-    },
-    "105": {
       "title": "Arab News | Sudan and Yemen starve as shipping turmoil chokes food and fertilizer supplies, says WFP chief",
       "url": "https://www.arabnews.com/middle-east/sudan-and-yemen-starve-as-shipping-turmoil-chokes-food-and-fertilizer-supplies-says-wfp-chief-3001715",
       "type": "intl"
     },
+    "30": {
+      "title": "SHIPPING CRUNCH: Middle East War Sends Tanker Costs To Record Highs",
+      "url": "https://www.theyeshivaworld.com/news/general/2597817/shipping-crunch-middle-east-war-sends-tanker-costs-to-record-highs.html",
+      "type": "intl"
+    },
+    "31": {
+      "title": "Record Freight Costs Squeeze Russia's Black Sea Crude Exports",
+      "url": "https://oilprice.com/Geopolitics/International/Record-Freight-Costs-Squeeze-Russias-Black-Sea-Crude-Exports.html",
+      "type": "intl"
+    },
+    "32": {
+      "title": "Hormuz Vessel Transits Fell to Single Digits Over the Weekend, Reuters Reports",
+      "url": "https://shipandbunker.com/news/emea/209522-hormuz-vessel-transits-fell-to-single-digits-over-the-weekend-reuters-reports",
+      "type": "intl"
+    },
+    "33": {
+      "title": "Hormuz shipping traffic remains below 10-day average at weekend, data shows | Ariana News",
+      "url": "https://www.ariananews.af/hormuz-shipping-traffic-remains-below-10-day-average-at-weekend-data-shows/",
+      "type": "intl"
+    },
+    "34": {
+      "title": "Arab News | Hormuz shipping traffic remains below 10-day average at weekend, data shows",
+      "url": "https://www.arabnews.com/middle-east/hormuz-shipping-traffic-remains-below-10-day-average-at-weekend-data-shows-3001632",
+      "type": "intl"
+    },
+    "35": {
+      "title": "Hormuz Shipping Traffic Remains Below 10-day Average",
+      "url": "https://english.aawsat.com/world/5317959-hormuz-shipping-traffic-remains-below-10-day-average",
+      "type": "intl"
+    },
+    "36": {
+      "title": "Hormuz Vessel Traffic Drops to Single Digits",
+      "url": "http://www.econotimes.com/Hormuz-Vessel-Traffic-Drops-to-Single-Digits-1751955",
+      "type": "intl"
+    },
+    "37": {
+      "title": "호르무즈 통항 급감…사우디 대체 송유관도 멈춰",
+      "url": "https://www.tokenpost.kr/news/breaking/407543",
+      "type": "dom"
+    },
+    "38": {
+      "title": "사우디, 호르무즈 우회 750마일 송유관 일시 폐쇄",
+      "url": "https://www.tokenpost.kr/news/breaking/407529",
+      "type": "dom"
+    },
+    "39": {
+      "title": "부산발 컨테이너 운임 4696p 기록…6주 상승 뒤 보합권 진입",
+      "url": "https://n.news.naver.com/mnews/article/119/0003132591?sid=101",
+      "type": "dom"
+    },
+    "40": {
+      "title": "Several shipping containers fall off cargo ship, plunge into water at Port of Los Angeles",
+      "url": "https://abc7.com/post/several-shipping-containers-fall-off-cargo-ship-plunge-water-port-los-angeles/19831081/",
+      "type": "intl"
+    },
+    "41": {
+      "title": "Natural gas imports rise despite price surge",
+      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/natural-gas-imports-rise-despite-price-surge/articleshow/134247108.cms",
+      "type": "intl"
+    },
+    "42": {
+      "title": "KP wheat reserves drop to 189,000 tonnes amid supply concerns",
+      "url": "https://arynews.tv/kp-wheat-reserves-drop-to-189000-tonnes-amid-supply-concerns",
+      "type": "intl"
+    },
+    "43": {
+      "title": "Port Operator Comvex Set To Invest EUR63M In New Fertilizer Terminal",
+      "url": "http://www.zfenglish.com/capital-market/port-operator-comvex-set-to-invest-eur63m-in-new-fertilizer-terminal-23238399",
+      "type": "intl"
+    },
+    "44": {
+      "title": "Uzbekistan launches Incheon hub to support exports to South Korea",
+      "url": "https://www.trend.az/casia/uzbekistan/4223742.html",
+      "type": "intl"
+    },
+    "45": {
+      "title": "Bangladesh Plans Five Floating LNG Terminals to Ease Gas Shortage",
+      "url": "https://energybangla.com/bangladesh-plans-five-floating-lng-terminals-to-ease-gas-shortage/",
+      "type": "intl"
+    },
+    "46": {
+      "title": "Singapore fuel oil stocks rise despite sharp decline in net imports | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/singapore-fuel-oil-stocks-rise-despite-sharp-decline-in-net-imports/",
+      "type": "intl"
+    },
+    "47": {
+      "title": "Singapore secures LNG FSRU for natural gas supply",
+      "url": "https://sbr.com.sg/shipping-marine/news/singapore-secures-lng-fsru-natural-gas-supply",
+      "type": "intl"
+    },
+    "48": {
+      "title": "Port Hedland Iron Ore Exports Rose 5% in August | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/port-hedland-iron-ore-exports-rose-5-in-august/",
+      "type": "intl"
+    },
+    "49": {
+      "title": "울산항, 호르무즈 우회 원유 급증...홍해 불안에 긴장은 여전",
+      "url": "https://www.ulsanpress.net/news/articleView.html?idxno=583052",
+      "type": "dom"
+    },
+    "50": {
+      "title": "산업부 \"원유 90% 이상 확보… 단기 영향 제한적\"[사우디發 유가 불안]",
+      "url": "https://n.news.naver.com/mnews/article/014/0005575646?sid=101",
+      "type": "dom"
+    },
+    "51": {
+      "title": "정유사 긴급 소집…非중동산 원유 수입땐 운임 차액지원 확대",
+      "url": "https://n.news.naver.com/mnews/article/011/0004661739?sid=101",
+      "type": "dom"
+    },
+    "52": {
+      "title": "국내 원유 도입량 7월 들어 큰 폭 증가",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334183",
+      "type": "dom"
+    },
+    "53": {
+      "title": "여수항 원유 수입단가 25% 급등..중동발 공급 불안 원인",
+      "url": "https://ysmbc.co.kr/NewsArticle/1536945",
+      "type": "dom"
+    },
+    "54": {
+      "title": "\"정부·정유업계 적극적 원유 확보… 석유제품 수급대란은 없었다\"",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203201",
+      "type": "dom"
+    },
+    "55": {
+      "title": "석유협회, 중동발 위기에도 '수급대란 없었다'",
+      "url": "http://www.e-platform.net/news/articleView.html?idxno=105320",
+      "type": "dom"
+    },
+    "56": {
+      "title": "여수광양항만공사, 중국 닝보저우산항과 협력방안 논의",
+      "url": "https://www.klnews.co.kr/news/articleView.html?idxno=322724",
+      "type": "dom"
+    },
+    "57": {
+      "title": "Oil Climbs Amid Saudi Pipeline Halt",
+      "url": "https://www.rigzone.com/news/wire/oil_climbs_amid_saudi_pipeline_halt-14-sep-2026-184613-article/",
+      "type": "intl"
+    },
+    "58": {
+      "title": "Crude Oil Surges Amid Mounting Middle East Supply Disruption Concerns",
+      "url": "https://www.rttnews.com/3690803/crude-oil-surges-amid-mounting-middle-east-supply-disruption-concerns.aspx",
+      "type": "intl"
+    },
+    "59": {
+      "title": "Oil Prices Pass US$108 as Saudi Pipeline Halts",
+      "url": "https://www.riotimesonline.com/oil-prices-brent-saudi-pipeline-halt-2026/",
+      "type": "intl"
+    },
+    "60": {
+      "title": "Morning Business Report: Oil prices rise after Saudi pipeline shutdown as Social Security faces funding shortfall",
+      "url": "https://www.41nbc.com/oil-prices-saudi-pipeline-social-security-funding-shortfall/",
+      "type": "intl"
+    },
+    "61": {
+      "title": "Oil prices soar over 4% to 16-week high after strikes on Saudi pipeline, ships in West Asia",
+      "url": "https://www.hindustantimes.com/world-news/oil-prices-soar-over-4-per-cent-to-16-week-high-after-strikes-on-saudi-arabia-pipeline-ships-in-west-asia-101789404720812.html",
+      "type": "intl"
+    },
+    "62": {
+      "title": "Oil tops $109 after Houthi strikes, Saudi pipeline shutdown",
+      "url": "https://www.al-monitor.com/originals/2026/09/oil-tops-109-after-houthi-strikes-saudi-pipeline-shutdown",
+      "type": "intl"
+    },
+    "63": {
+      "title": "Oil prices continue surge, rising 3% as attacks halt Saudi pipeline",
+      "url": "https://www.hydrocarbonprocessing.com/news/2026/09/oil-prices-continue-surge-rising-3-as-attacks-halt-saudi-pipeline/",
+      "type": "intl"
+    },
+    "64": {
+      "title": "Oil hits $108 after Saudi pipeline attacks and Hormuz disruption",
+      "url": "https://www.businessday.co.za/markets/2026-09-14-oil-hits-108-after-saudi-pipeline-attacks-and-hormuz-disruption/",
+      "type": "intl"
+    },
+    "65": {
+      "title": "Oil surges on report Saudi pipeline will take weeks to reopen",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/oil-surges-on-report-saudi-pipeline-will-take-weeks-to-reopen/article71466154.ece",
+      "type": "intl"
+    },
+    "66": {
+      "title": "Brent Crude surges to $110 as Saudi pipeline shutdown deepens supply concerns",
+      "url": "https://www.prokerala.com/news/articles/a1812231.html",
+      "type": "intl"
+    },
+    "67": {
+      "title": "글로벌 원유 공급 4% 감소 위기… 세계 경제 격랑속으로[사우디發 유가...",
+      "url": "https://n.news.naver.com/mnews/article/014/0005575647?sid=101",
+      "type": "dom"
+    },
+    "68": {
+      "title": "'3중 봉쇄'에 유가급등 … 코스피 3일연속 하락",
+      "url": "https://n.news.naver.com/mnews/article/009/0005735124?sid=101",
+      "type": "dom"
+    },
+    "69": {
+      "title": "[뉴욕증시]10년물 5% 돌파…나스닥 1%대 하락",
+      "url": "https://n.news.naver.com/mnews/article/277/0005816176?sid=104",
+      "type": "dom"
+    },
+    "70": {
+      "title": "뉴욕증시, AI 속도조절론·유가 급등 겹악재…나스닥 1.2%↓",
+      "url": "https://n.news.naver.com/mnews/article/014/0005575690?sid=101",
+      "type": "dom"
+    },
+    "71": {
+      "title": "美 증시, AI 감속 우려에 유가 급등…반도체주 일제히 하락",
+      "url": "https://n.news.naver.com/mnews/article/015/0005332275?sid=101",
+      "type": "dom"
+    },
+    "72": {
+      "title": "뉴욕증시, AI 개발 속도 조절론·유가 상승에 하락 출발",
+      "url": "https://n.news.naver.com/mnews/article/366/0001192329?sid=101",
+      "type": "dom"
+    },
+    "73": {
+      "title": "뉴욕증시, AI속도조절론·유가 상승에 하락 출발…나스닥 0.8%↓",
+      "url": "https://n.news.naver.com/mnews/article/003/0014189703?sid=104",
+      "type": "dom"
+    },
+    "74": {
+      "title": "뉴욕증시, AI 불안감·유가 상승에 하락 출발",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434790",
+      "type": "dom"
+    },
+    "75": {
+      "title": "미 달러화 강세…사우디 송유관 가동 중단發 유가 급등",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434789",
+      "type": "dom"
+    },
+    "76": {
+      "title": "브렌트유 110.42달러…한 달 새 23.71% 상승",
+      "url": "https://www.tokenpost.kr/news/economy/407693",
+      "type": "dom"
+    },
+    "77": {
+      "title": "Norwegian Seafood Council bullish on Vietnam salmon sales growth despite 22% export drop",
+      "url": "https://www.undercurrentnews.com/2026/09/14/norwegian-seafood-council-bullish-on-vietnam-salmon-sales-growth-despite-22-export-drop/",
+      "type": "intl"
+    },
+    "78": {
+      "title": "Oman crude gains Asia value as delivery security rises: industry sources | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/oman-crude-gains-asia-value-as-delivery-security-rises-industry-sources/",
+      "type": "intl"
+    },
+    "79": {
+      "title": "Shipping's Suez Comeback Gathers Steam Despite Houthi Advance",
+      "url": "https://wwd.com/sourcing-journal/logistics/red-sea-return-cosco-oocl-houthis-bab-el-mandeb-suez-canal-strait-of-hormuz-1239231381/",
+      "type": "intl"
+    },
+    "80": {
+      "title": "Oil Is Moving Through the Strait of Hormuz Again, But Not as Much as Trump Says: Report",
+      "url": "https://www.ibtimes.com/oil-moving-through-strait-hormuz-again-not-much-trump-says-report-3807426",
+      "type": "intl"
+    },
+    "81": {
+      "title": "Maersk, Hapag-Lloyd Accelerate Return to Suez Despite Red Sea Risks",
+      "url": "https://gcaptain.com/maersk-hapag-lloyd-accelerate-return-to-suez-despite-red-sea-risks/",
+      "type": "intl"
+    },
+    "82": {
+      "title": "Hormuz Shipping Recovers, But Middle East Oil Export Constraints Persist",
+      "url": "https://www.outlookindia.com/international/hormuz-shipping-recovers-but-middle-east-oil-export-constraints-persist",
+      "type": "intl"
+    },
+    "83": {
+      "title": "Maersk, Hapag-Lloyd Resume Further Services Through Suez Canal",
+      "url": "https://english.aawsat.com/business/5318029-maersk-hapag-lloyd-resume-further-services-through-suez-canal",
+      "type": "intl"
+    },
+    "84": {
+      "title": "Lloyd's Register, HHI and KSOE to advance hybrid electric LNG carrier design | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/lloyds-register-hhi-and-ksoe-to-advance-hybrid-electric-lng-carrier-design/",
+      "type": "intl"
+    },
+    "85": {
+      "title": "South Korea and Arctic Shipping: A Game Changer on Thin Ice?",
+      "url": "https://thediplomat.com/2026/09/south-korea-and-arctic-shipping-a-game-changer-on-thin-ice/",
+      "type": "intl"
+    },
+    "86": {
+      "title": "LR And Partners Develop Hybrid Electric LNG Carrier",
+      "url": "https://www.marinelink.com/news/lr-partners-develop-hybrid-electric-lng-542921",
+      "type": "intl"
+    },
+    "87": {
+      "title": "MOL names world's first wind-assisted LNG carrier",
+      "url": "https://www.motorship.com/news/wind-propulsion/mol-names-worlds-first-wind-assisted-lng-carrier/",
+      "type": "intl"
+    },
+    "88": {
+      "title": "삼성중공업, LNG 운반선 4척·원유 운반선 2척 등 1.6조 수주",
+      "url": "http://www.econonews.co.kr/news/articleView.html?idxno=444312",
+      "type": "dom"
+    },
+    "89": {
+      "title": "[비즈투데이] 삼성중공업, LNG선 등 6척 12억 달러 수주",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1537462",
+      "type": "dom"
+    },
+    "90": {
+      "title": "'국내 첫 북극항로 시범운항'…팬스타 아크로호, 로테르담 입항",
+      "url": "https://www.news2day.co.kr/article/20260914500206",
+      "type": "dom"
+    },
+    "91": {
+      "title": "삼성중공업, 대형 LNG운반선 등 1.6조원 수주",
+      "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=645476",
+      "type": "dom"
+    },
+    "92": {
+      "title": "삼성重, LNG선 등 1.6조 수주…상선 수주액 벌써 지난해 넘어",
+      "url": "https://www.econovill.com/news/articleView.html?idxno=750763",
+      "type": "dom"
+    },
+    "93": {
+      "title": "진격의 삼성重… 올해 상선 수주 목표 이미 초과 달성",
+      "url": "https://n.news.naver.com/mnews/article/014/0005575614?sid=101",
+      "type": "dom"
+    },
+    "94": {
+      "title": "삼성중공업, LNG·원유운반선 6척 수주 1.6조 규모…올해 상선 수주 지난...",
+      "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=239753",
+      "type": "dom"
+    },
+    "95": {
+      "title": "'조선 빅3' 노사갈등 격화…파업 수위 높아지며 건조 현장 ‘긴장’",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260914010005299",
+      "type": "dom"
+    },
+    "96": {
+      "title": "중국 수출 폭주에 '자동차 운반선' 동났다..車 150만대가 컨테이너로",
+      "url": "https://n.news.naver.com/mnews/article/008/0005413575?sid=101",
+      "type": "dom"
+    },
+    "97": {
+      "title": "부산 첫 타운홀 미팅.. \"북극항로, 부산 도약 기회로\"",
+      "url": "https://busanmbc.co.kr/01_new/new01_view.asp?idx=289025",
+      "type": "dom"
+    },
+    "98": {
+      "title": "코트라, 중동發 물류난 돌파…수출기업 지원 1.5배 늘린다",
+      "url": "https://n.news.naver.com/mnews/article/011/0004661724?sid=101",
+      "type": "dom"
+    },
+    "99": {
+      "title": "우즈벡 시작 중앙아 5개국 정상외교…핵심광물·공급망 다변화",
+      "url": "https://n.news.naver.com/mnews/article/056/0012257093?sid=100",
+      "type": "dom"
+    },
+    "100": {
+      "title": "자원·기술·자본 묶는 李대통령…중앙亞 빗장 열고 韓기업 진출 넓힌다",
+      "url": "https://n.news.naver.com/mnews/article/030/0003466669?sid=100",
+      "type": "dom"
+    },
+    "101": {
+      "title": "중동 수출 물류 불안 지속…코트라, 13개국 현지 점검 및 기업지원 강화",
+      "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2302126",
+      "type": "dom"
+    },
+    "102": {
+      "title": "Saudi oil pipeline to remain offline for weeks after attack | Hellenic Shipping News Worldwide",
+      "url": "https://www.hellenicshippingnews.com/saudi-oil-pipeline-to-remain-offline-for-weeks-after-attack/",
+      "type": "intl"
+    },
+    "103": {
+      "title": "What the closure of Saudi Arabia's East-West pipeline could mean for oil flows",
+      "url": "https://www.yahoo.com/news/world/articles/closure-saudi-arabias-east-west-211135850.html",
+      "type": "intl"
+    },
+    "104": {
+      "title": "Saudi pipeline shutdown exposes shrinking global oil-supply buffers",
+      "url": "https://www.al-monitor.com/originals/2026/09/saudi-pipeline-shutdown-exposes-shrinking-global-oil-supply-buffers",
+      "type": "intl"
+    },
+    "105": {
+      "title": "Saudi oil pipeline hit by drones will be out of service for weeks. Here's what that could mean",
+      "url": "https://www.firstalert4.com/2026/09/14/saudi-oil-pipeline-hit-by-drones-will-be-out-service-weeks-heres-what-that-could-mean/",
+      "type": "intl"
+    },
     "106": {
+      "title": "Key Saudi oil pipeline out of action",
+      "url": "https://www.theage.com.au/world/key-saudi-oil-pipeline-out-of-action-20260915-p60xcc.html",
+      "type": "intl"
+    },
+    "107": {
+      "title": "Saudi Arabia has shut a critical oil pipeline. Here's why it matters for the global oil market - WSVN 7News | Miami News, Weather, Sports",
+      "url": "https://wsvn.com/news/us-world/saudi-arabia-has-shut-a-critical-oil-pipeline-heres-why-it-matters-for-the-global-oil-market/",
+      "type": "intl"
+    },
+    "108": {
+      "title": "Key Saudi Pipeline to Be Shut Down for Weeks as Diesel Prices Hit Record Highs",
+      "url": "https://truthout.org/articles/key-saudi-pipeline-to-be-shut-down-for-weeks-as-diesel-prices-hit-record-highs/",
+      "type": "intl"
+    },
+    "109": {
+      "title": "Key Saudi oil pipeline struck by drones to be out for several weeks",
+      "url": "https://www.dailysabah.com/business/economy/key-saudi-oil-pipeline-struck-by-drones-to-be-out-for-several-weeks",
+      "type": "intl"
+    },
+    "110": {
+      "title": "Attack on Saudi Arabian pipeline may cut four percent of world's oil supply",
+      "url": "https://www.middleeasteye.net/news/attack-saudi-arabian-pipeline-may-cut-four-percent-worlds-oil-supply",
+      "type": "intl"
+    },
+    "111": {
+      "title": "Saudi Oil Pipeline Damaged in Houthi Attack may take Months to Repair: reports",
+      "url": "https://pakobserver.net/saudi-oil-pipeline-damaged-in-houthi-attack-may-take-months-to-repair-reports/",
+      "type": "intl"
+    },
+    "112": {
       "title": "\"드론 공격받은 사우디 송유관 몇주간 가동 중단 전망\"",
       "url": "https://n.news.naver.com/mnews/article/214/0001523923?sid=104",
       "type": "dom"
     },
-    "107": {
+    "113": {
       "title": "\"사우디 송유관 드론 피격… 복구에 최대 5주 걸릴 듯\"",
       "url": "https://www.newscj.com/news/articleView.html?idxno=3432677",
       "type": "dom"
     },
-    "108": {
+    "114": {
       "title": "'드론 피격' 사우디 핵심 송유관 파손…완전 복구까지 최대 6주",
       "url": "https://n.news.naver.com/mnews/article/421/0009169771?sid=104",
       "type": "dom"
     },
-    "109": {
+    "115": {
       "title": "“사우디 송유관, 드론 공격 받아 3~5주 동안 가동 중단 전망”",
       "url": "https://n.news.naver.com/mnews/article/020/0003748046?sid=104",
       "type": "dom"
     },
-    "110": {
+    "116": {
       "title": "'하루 700만 배럴' 사우디 핵심 송유관 피격…복구에 3~5주 전망",
       "url": "https://n.news.naver.com/mnews/article/437/0000511084?sid=104",
       "type": "dom"
     },
-    "111": {
+    "117": {
       "title": "AP \"드론 공격받은 사우디 송유관 수주간 가동 중단 전망\"",
       "url": "https://n.news.naver.com/mnews/article/079/0004189252?sid=104",
       "type": "dom"
     },
-    "112": {
+    "118": {
       "title": "\"무인기 공격에 사우디 송유관 몇 주 동안 가동 중단 전망\"",
       "url": "https://n.news.naver.com/mnews/article/052/0002407011?sid=104",
       "type": "dom"
     },
-    "113": {
+    "119": {
       "title": "드론 공격받은 사우디 송유관… “수 주간 가동 중단될 수도”",
       "url": "https://n.news.naver.com/mnews/article/366/0001192324?sid=104",
       "type": "dom"
     },
-    "114": {
+    "120": {
       "title": "사우디 송유관 폐쇄에 브렌트유 108달러",
       "url": "https://n.news.naver.com/mnews/article/014/0005575683?sid=101",
       "type": "dom"
     },
-    "115": {
+    "121": {
       "title": "사우디 송유관 가동 중단에 원유 공급 '뚝'…국제유가 고공행진",
       "url": "https://n.news.naver.com/mnews/article/448/0000639336?sid=104",
       "type": "dom"
@@ -3531,22 +4269,29 @@
       "id": "CF_CrudeOil",
       "name": "원유",
       "type": "품목",
-      "count": 164,
-      "delta": 118
+      "count": 204,
+      "delta": 158
     },
     {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "type": "초크포인트",
-      "count": 108,
-      "delta": 77
+      "count": 121,
+      "delta": 90
     },
     {
       "id": "EVT_RedSea2023",
       "name": "홍해·후티 사태",
       "type": "위기 이벤트",
-      "count": 27,
-      "delta": 13
+      "count": 81,
+      "delta": 67
+    },
+    {
+      "id": "BP_OmanLand",
+      "name": "오만 살랄라 육상 환적",
+      "type": "우회 인프라",
+      "count": 25,
+      "delta": 19
     },
     {
       "id": "BP_SaudiEastWest",
@@ -3556,46 +4301,39 @@
       "delta": 25
     },
     {
-      "id": "BP_OmanLand",
-      "name": "오만 살랄라 육상 환적",
-      "type": "우회 인프라",
-      "count": 23,
-      "delta": 17
-    },
-    {
-      "id": "VT_Reefer",
-      "name": "냉장선",
-      "type": "선종",
-      "count": 15,
-      "delta": 7
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 19,
+      "delta": 9
     },
     {
       "id": "CF_LNG",
       "name": "LNG",
       "type": "품목",
-      "count": 11,
-      "delta": 5
+      "count": 18,
+      "delta": 12
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선",
+      "type": "선종",
+      "count": 17,
+      "delta": 9
     },
     {
       "id": "CP_BabElMandeb",
       "name": "바브엘만데브 해협",
       "type": "초크포인트",
-      "count": 6,
-      "delta": 1
+      "count": 9,
+      "delta": 4
     },
     {
-      "id": "CP_Suez",
-      "name": "수에즈 운하",
-      "type": "초크포인트",
-      "count": 3,
-      "delta": 3
-    },
-    {
-      "id": "CF_Wheat",
-      "name": "밀",
+      "id": "CF_Urea",
+      "name": "요소",
       "type": "품목",
-      "count": 3,
-      "delta": 3
+      "count": 9,
+      "delta": 9
     }
   ]
 }
