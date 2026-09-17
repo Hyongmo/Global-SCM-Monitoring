@@ -536,6 +536,87 @@ def _draw_kg_focus(pdf, scenario, sec_no):
     pdf.set_text_color(0, 0, 0)
 
 
+
+MOMENTUM_PDF_FROM_WEEK = '2026-W38'   # 주요 지표변동 전망: 다음 주 생성분부터 (2026-09-17 사용자 결정)
+
+
+def _draw_momentum(pdf, scenario, sec_no):
+    """주요 지표변동 전망: 지표별 전망 + 근거 기사량 표.
+    HTML 리포트의 같은 섹션과 동일 데이터(scenario['momentum']['display'])를 fpdf로 직접 그린다."""
+    m = scenario.get('momentum') or {}
+    disp = m.get('display') or []
+    if not disp:
+        return
+    pdf._section_title(sec_no, '주요 지표변동 전망')
+    pdf.set_font('KR', '', 8.5)
+    pdf.set_text_color(*pdf.C_SUB_TEXT)
+    pdf.multi_cell(0, 4.2, '최근 기사 흐름을 근거로 향후 주요지표 방향 전망',
+                   new_x='LMARGIN', new_y='NEXT')
+    pdf.ln(1)
+    L = pdf.l_margin
+    CW = pdf.w - pdf.l_margin - pdf.r_margin
+    w1, w2 = 48.0, 78.0
+    w3 = CW - w1 - w2
+    if pdf.get_y() + 6 + len(disp) * 12 + 14 > pdf.h - 25:
+        pdf.add_page()
+    # 헤더 행
+    y = pdf.get_y()
+    pdf.set_fill_color(*pdf.C_TABLE_HDR)
+    pdf.rect(L, y, CW, 6, 'F')
+    pdf.set_text_color(*pdf.C_WHITE)
+    pdf.set_font('KR', 'B', 8.5)
+    for x, w, t in ((L, w1, '지표'), (L + w1, w2, '전망'), (L + w1 + w2, w3, '근거 (관련 기사량)')):
+        pdf.set_xy(x + 1.5, y + 1)
+        pdf.cell(w - 3, 4, t)
+    pdf.set_y(y + 6.8)
+    _ST = {'fired': ('상승 압력 — 향후 {a}~{b}주 내 상승 가능성', (194, 47, 47)),
+           'watch': ('주시 — 기사 급증 1주차, 지속되면 {a}~{b}주 내 상승 압력', (160, 111, 0)),
+           'quiet': ('안정 — 큰 변동 조짐 없음', (110, 105, 95))}
+    for r in disp:
+        y0 = pdf.get_y()
+        pdf.set_font('KR', 'B', 8.5)
+        pdf.set_text_color(*pdf.C_BODY_TEXT)
+        pdf.set_xy(L + 1.5, y0 + 0.8)
+        pdf.multi_cell(w1 - 3, 4.2, clean_text(r.get('ind_ko', '')))
+        ymax = pdf.get_y()
+        a, b = (r.get('window') or [1, 2])[:2]
+        t, c = _ST.get(r.get('state', 'quiet'), _ST['quiet'])
+        pdf.set_font('KR', '', 8.5)
+        pdf.set_text_color(*c)
+        pdf.set_xy(L + w1 + 1.5, y0 + 0.8)
+        pdf.multi_cell(w2 - 3, 4.2, clean_text(t.format(a=a, b=b)))
+        ymax = max(ymax, pdf.get_y())
+        yy = y0 + 0.8
+        for e in r.get('evidence', []):
+            med = f"평소 {e['med8']:.0f}건" if e.get('med8') is not None else '이력 집계 중'
+            surging = e.get('state') in ('watch', 'fired')
+            txt = f"{e.get('sig_ko', '')} {e.get('count', 0):,}건 ({med})" + (' 급증' if surging else ' — 평시')
+            pdf.set_font('KR', 'B' if surging else '', 8.5)
+            pdf.set_text_color(*((194, 47, 47) if surging else pdf.C_SUB_TEXT))
+            pdf.set_xy(L + w1 + w2 + 1.5, yy)
+            pdf.multi_cell(w3 - 3, 4.2, clean_text(txt))
+            yy = pdf.get_y()
+        ymax = max(ymax, yy)
+        pdf.set_draw_color(*pdf.C_BORDER)
+        pdf.line(L, ymax + 0.8, L + CW, ymax + 0.8)
+        pdf.set_y(ymax + 1.6)
+    for a_ in m.get('active', []):
+        chg = f"{a_['chg_pct']:+.1f}%" if a_.get('chg_pct') is not None else '변동 집계 전'
+        pdf.set_font('KR', '', 8)
+        pdf.set_text_color(*pdf.C_SUB_TEXT)
+        pdf.multi_cell(0, 4.0,
+                       clean_text(f"지난 {a_['fired_week']} 급증 때 낸 {a_['indicator']} 전망 진행 중 — "
+                                  f"기준일({a_['base_monday']}) 대비 {chg}, "
+                                  f"{a_['elapsed']}/{a_['window'][1]}주 경과."),
+                       new_x='LMARGIN', new_y='NEXT')
+    pdf.ln(0.5)
+    pdf.set_font('KR', '', 7.5)
+    pdf.set_text_color(150, 150, 150)
+    pdf.multi_cell(0, 3.8, '기사수의 변화가 지표에 선행하는 경향을 반영한 전망체계. '
+                           '확정적 전망은 아니며, 기사량은 검색된 기사에 한한 집계임.',
+                   new_x='LMARGIN', new_y='NEXT')
+    pdf.ln(2)
+
 def generate_pdf(scenario, font_reg, font_bold):
     """단일 주의 PDF 보고서 생성"""
 
@@ -648,6 +729,10 @@ def generate_pdf(scenario, font_reg, font_bold):
     _sec = 2
     if scenario.get('kg_focus') and scenario.get('week', '') >= KG_FOCUS_PDF_FROM_WEEK:
         _draw_kg_focus(pdf, scenario, _sec)
+        _sec += 1
+    # ── 주요 지표변동 전망 (2026-09-17, W38 생성분부터) ──
+    if scenario.get('momentum') and scenario.get('week', '') >= MOMENTUM_PDF_FROM_WEEK:
+        _draw_momentum(pdf, scenario, _sec)
         _sec += 1
     changes = [c for c in header.get('changes_from_prev', [])
                if c.get('item', '') not in _STOCK_NAMES]

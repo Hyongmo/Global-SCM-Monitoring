@@ -3,152 +3,464 @@
     "2026-W14": {
       "total_high": 2528,
       "hormuz": 575,
-      "redsea": 37
+      "redsea": 37,
+      "nd_CP_Panama": 11,
+      "nd_CP_Taiwan": 9,
+      "nd_CP_Hormuz": 575,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_IronOre": 9,
+      "nd_CP_Suez": 2,
+      "nd_CP_Malacca": 0,
+      "nd_CF_CrudeOil": 772,
+      "nd_EVT_RedSea2023": 21,
+      "nd_CP_BabElMandeb": 16,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_LNG": 124
     },
     "2026-W15": {
       "total_high": 1718,
       "hormuz": 802,
-      "redsea": 10
+      "redsea": 10,
+      "nd_CP_Panama": 16,
+      "nd_CP_Taiwan": 2,
+      "nd_CP_Hormuz": 802,
+      "nd_EVT_Suez2021": 2,
+      "nd_CF_IronOre": 1,
+      "nd_CP_Suez": 2,
+      "nd_CP_Malacca": 1,
+      "nd_CF_CrudeOil": 483,
+      "nd_EVT_RedSea2023": 4,
+      "nd_CP_BabElMandeb": 5,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_LNG": 75
     },
     "2026-W16": {
       "total_high": 1857,
       "hormuz": 903,
-      "redsea": 17
+      "redsea": 17,
+      "nd_CP_Panama": 8,
+      "nd_CP_Taiwan": 23,
+      "nd_CP_Hormuz": 903,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_IronOre": 0,
+      "nd_CP_Suez": 2,
+      "nd_CP_Malacca": 6,
+      "nd_CF_CrudeOil": 547,
+      "nd_EVT_RedSea2023": 6,
+      "nd_CP_BabElMandeb": 10,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_LNG": 34
     },
     "2026-W17": {
       "total_high": 1188,
       "hormuz": 493,
-      "redsea": 12
+      "redsea": 12,
+      "nd_CP_Panama": 13,
+      "nd_CP_Taiwan": 8,
+      "nd_CP_Hormuz": 493,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_IronOre": 10,
+      "nd_CP_Suez": 4,
+      "nd_CP_Malacca": 22,
+      "nd_CF_CrudeOil": 411,
+      "nd_EVT_RedSea2023": 6,
+      "nd_CP_BabElMandeb": 2,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_LNG": 43
     },
     "2026-W18": {
       "total_high": 895,
       "hormuz": 410,
-      "redsea": 1
+      "redsea": 1,
+      "nd_CP_Taiwan": 2,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Suez": 1,
+      "nd_CP_Malacca": 3,
+      "nd_CF_LNG": 106,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 5,
+      "nd_EVT_RedSea2023": 0,
+      "nd_CP_Panama": 19,
+      "nd_CF_CrudeOil": 665,
+      "nd_CP_Hormuz": 410
     },
     "2026-W19": {
       "total_high": 1725,
       "hormuz": 806,
-      "redsea": 8
+      "redsea": 8,
+      "nd_CP_Taiwan": 0,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Suez": 4,
+      "nd_CP_Malacca": 1,
+      "nd_CF_LNG": 79,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 5,
+      "nd_EVT_RedSea2023": 4,
+      "nd_CP_Panama": 3,
+      "nd_CF_CrudeOil": 466,
+      "nd_CP_Hormuz": 806
     },
     "2026-W20": {
       "total_high": 709,
       "hormuz": 397,
-      "redsea": 3
+      "redsea": 3,
+      "nd_CP_Taiwan": 3,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Suez": 2,
+      "nd_CP_Malacca": 0,
+      "nd_CF_LNG": 63,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 5,
+      "nd_EVT_RedSea2023": 1,
+      "nd_CP_Panama": 3,
+      "nd_CF_CrudeOil": 391,
+      "nd_CP_Hormuz": 397
     },
     "2026-W21": {
       "total_high": 693,
       "hormuz": 330,
-      "redsea": 4
+      "redsea": 4,
+      "nd_CP_Taiwan": 2,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Suez": 1,
+      "nd_CP_Malacca": 1,
+      "nd_CF_LNG": 72,
+      "nd_EVT_Suez2021": 1,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 2,
+      "nd_EVT_RedSea2023": 3,
+      "nd_CP_Panama": 5,
+      "nd_CF_CrudeOil": 401,
+      "nd_CP_Hormuz": 330
     },
     "2026-W22": {
       "total_high": 746,
       "hormuz": 327,
-      "redsea": 7
+      "redsea": 7,
+      "nd_CP_Taiwan": 4,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Suez": 2,
+      "nd_CP_Malacca": 3,
+      "nd_CF_LNG": 59,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 7,
+      "nd_EVT_RedSea2023": 5,
+      "nd_CP_Panama": 6,
+      "nd_CF_CrudeOil": 369,
+      "nd_CP_Hormuz": 327
     },
     "2026-W23": {
       "total_high": 549,
       "hormuz": 208,
-      "redsea": 6
+      "redsea": 6,
+      "nd_CP_Taiwan": 6,
+      "nd_CP_BabElMandeb": 2,
+      "nd_CP_Suez": 1,
+      "nd_CP_Malacca": 0,
+      "nd_CF_LNG": 61,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 2,
+      "nd_EVT_RedSea2023": 3,
+      "nd_CP_Panama": 4,
+      "nd_CF_CrudeOil": 280,
+      "nd_CP_Hormuz": 208
     },
     "2026-W24": {
       "total_high": 662,
       "hormuz": 195,
-      "redsea": 30
+      "redsea": 30,
+      "nd_CP_Taiwan": 3,
+      "nd_CP_BabElMandeb": 4,
+      "nd_CP_Suez": 7,
+      "nd_CP_Malacca": 0,
+      "nd_CF_LNG": 46,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 2,
+      "nd_EVT_RedSea2023": 19,
+      "nd_CP_Panama": 2,
+      "nd_CF_CrudeOil": 283,
+      "nd_CP_Hormuz": 195
     },
     "2026-W25": {
       "total_high": 926,
       "hormuz": 556,
-      "redsea": 1
+      "redsea": 1,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 55,
+      "nd_CP_Malacca": 0,
+      "nd_EVT_RedSea2023": 0,
+      "nd_CP_Suez": 1,
+      "nd_CF_CrudeOil": 374,
+      "nd_CF_IronOre": 2,
+      "nd_CP_Hormuz": 556,
+      "nd_CP_Panama": 1,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Taiwan": 0
     },
     "2026-W26": {
       "total_high": 1060,
       "hormuz": 535,
-      "redsea": 7
+      "redsea": 7,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 75,
+      "nd_CP_Malacca": 2,
+      "nd_EVT_RedSea2023": 6,
+      "nd_CP_Suez": 1,
+      "nd_CF_CrudeOil": 379,
+      "nd_CF_IronOre": 1,
+      "nd_CP_Hormuz": 535,
+      "nd_CP_Panama": 8,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Taiwan": 4
     },
     "2026-W27": {
       "total_high": 333,
       "hormuz": 155,
-      "redsea": 5
+      "redsea": 5,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 38,
+      "nd_CP_Malacca": 0,
+      "nd_EVT_RedSea2023": 4,
+      "nd_CP_Suez": 1,
+      "nd_CF_CrudeOil": 147,
+      "nd_CF_IronOre": 4,
+      "nd_CP_Hormuz": 155,
+      "nd_CP_Panama": 2,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Taiwan": 2
     },
     "2026-W28": {
       "total_high": 973,
       "hormuz": 530,
-      "redsea": 10
+      "redsea": 10,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 77,
+      "nd_CP_Malacca": 4,
+      "nd_EVT_RedSea2023": 7,
+      "nd_CP_Suez": 4,
+      "nd_CF_CrudeOil": 386,
+      "nd_CF_IronOre": 4,
+      "nd_CP_Hormuz": 530,
+      "nd_CP_Panama": 1,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Taiwan": 1
     },
     "2026-W29": {
       "total_high": 1492,
       "hormuz": 626,
-      "redsea": 88
+      "redsea": 88,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 34,
+      "nd_CP_Malacca": 3,
+      "nd_EVT_RedSea2023": 64,
+      "nd_CP_Suez": 2,
+      "nd_CF_CrudeOil": 406,
+      "nd_CF_IronOre": 1,
+      "nd_CP_Hormuz": 626,
+      "nd_CP_Panama": 3,
+      "nd_CP_BabElMandeb": 26,
+      "nd_CP_Taiwan": 0
     },
     "2026-W30": {
       "total_high": 952,
       "hormuz": 193,
-      "redsea": 246
+      "redsea": 246,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 64,
+      "nd_CP_Malacca": 0,
+      "nd_EVT_RedSea2023": 214,
+      "nd_CP_Suez": 9,
+      "nd_CF_CrudeOil": 524,
+      "nd_CF_IronOre": 0,
+      "nd_CP_Hormuz": 193,
+      "nd_CP_Panama": 6,
+      "nd_CP_BabElMandeb": 31,
+      "nd_CP_Taiwan": 3
     },
     "2026-W31": {
       "total_high": 599,
       "hormuz": 208,
-      "redsea": 129
+      "redsea": 129,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_LNG": 63,
+      "nd_CP_Malacca": 2,
+      "nd_EVT_RedSea2023": 101,
+      "nd_CP_Suez": 13,
+      "nd_CF_CrudeOil": 370,
+      "nd_CF_IronOre": 3,
+      "nd_CP_Hormuz": 208,
+      "nd_CP_Panama": 3,
+      "nd_CP_BabElMandeb": 25,
+      "nd_CP_Taiwan": 2
     },
     "2026-W32": {
       "total_high": 925,
       "hormuz": 613,
-      "redsea": 74
+      "redsea": 74,
+      "nd_CP_Panama": 3,
+      "nd_CP_BabElMandeb": 5,
+      "nd_CP_Malacca": 0,
+      "nd_CF_CrudeOil": 310,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 9,
+      "nd_CF_LNG": 43,
+      "nd_CP_Suez": 2,
+      "nd_CP_Taiwan": 1,
+      "nd_EVT_RedSea2023": 67,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Hormuz": 613
     },
     "2026-W33": {
       "total_high": 744,
       "hormuz": 485,
-      "redsea": 76
+      "redsea": 76,
+      "nd_CP_Panama": 19,
+      "nd_CP_BabElMandeb": 14,
+      "nd_CP_Malacca": 0,
+      "nd_CF_CrudeOil": 291,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 2,
+      "nd_CF_LNG": 35,
+      "nd_CP_Suez": 4,
+      "nd_CP_Taiwan": 1,
+      "nd_EVT_RedSea2023": 64,
+      "nd_EVT_Suez2021": 1,
+      "nd_CP_Hormuz": 485
     },
     "2026-W34": {
       "total_high": 487,
       "hormuz": 246,
-      "redsea": 14
+      "redsea": 14,
+      "nd_CP_Panama": 25,
+      "nd_CP_BabElMandeb": 1,
+      "nd_CP_Malacca": 0,
+      "nd_CF_CrudeOil": 266,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 6,
+      "nd_CF_LNG": 27,
+      "nd_CP_Suez": 5,
+      "nd_CP_Taiwan": 3,
+      "nd_EVT_RedSea2023": 8,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Hormuz": 246
     },
     "2026-W35": {
       "total_high": 424,
       "hormuz": 305,
-      "redsea": 15
+      "redsea": 15,
+      "nd_CP_Panama": 24,
+      "nd_CP_BabElMandeb": 0,
+      "nd_CP_Malacca": 4,
+      "nd_CF_CrudeOil": 367,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 6,
+      "nd_CF_LNG": 46,
+      "nd_CP_Suez": 3,
+      "nd_CP_Taiwan": 3,
+      "nd_EVT_RedSea2023": 12,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Hormuz": 305
     },
     "2026-W36": {
       "total_high": 653,
       "hormuz": 226,
-      "redsea": 42
+      "redsea": 42,
+      "nd_CP_Panama": 12,
+      "nd_CP_BabElMandeb": 10,
+      "nd_CP_Malacca": 0,
+      "nd_CF_CrudeOil": 382,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 8,
+      "nd_CF_LNG": 36,
+      "nd_CP_Suez": 4,
+      "nd_CP_Taiwan": 0,
+      "nd_EVT_RedSea2023": 32,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Hormuz": 226
     },
     "2026-W37": {
       "total_high": 1026,
       "hormuz": 252,
-      "redsea": 223
+      "redsea": 223,
+      "nd_CP_Panama": 15,
+      "nd_CP_BabElMandeb": 57,
+      "nd_CP_Malacca": 0,
+      "nd_CF_CrudeOil": 601,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_IronOre": 4,
+      "nd_CF_LNG": 51,
+      "nd_CP_Suez": 0,
+      "nd_CP_Taiwan": 1,
+      "nd_EVT_RedSea2023": 184,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Hormuz": 252
     }
   },
   "predictions": [
     {
-      "id": "2026-W29-total_oil-WTI",
-      "channel": "total_oil",
-      "label": "경보 총량 → 유가",
-      "indicator": "WTI",
-      "fired_week": "2026-W29",
-      "base_monday": "2026-07-20",
-      "base_value": 81.77999877929688,
+      "id": "2026-W24-kg:EVT_RedSea2023:Brent-Brent",
+      "channel": "kg:EVT_RedSea2023:Brent",
+      "label": "홍해·후티 사태 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W24",
+      "base_monday": "2026-06-15",
+      "base_value": 87.33000183105469,
       "window": [
         1,
-        2
+        1
       ],
-      "sigma_w": 0.06362842759876167,
-      "cp_col": null,
-      "signal_count": 1492,
-      "signal_z": 2.76,
-      "status": "hit",
+      "sigma_w": 0.05900774603847972,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 19,
+      "signal_z": 5.23,
+      "status": "miss",
       "result": {
-        "graded_monday": "2026-07-27",
-        "weeks": 1,
-        "peak_pct": 9.2
+        "graded_monday": "2026-06-22",
+        "peak_pct": -6.4
       }
     },
     {
-      "id": "2026-W29-total_oil-Brent",
-      "channel": "total_oil",
+      "id": "2026-W24-kg:EVT_RedSea2023:WTI-WTI",
+      "channel": "kg:EVT_RedSea2023:WTI",
+      "label": "홍해·후티 사태 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W24",
+      "base_monday": "2026-06-15",
+      "base_value": 84.87999725341797,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.06328468499007842,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 19,
+      "signal_z": 5.23,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-06-22",
+        "peak_pct": -8.4
+      }
+    },
+    {
+      "id": "2026-W29-total-Brent",
+      "channel": "total",
       "label": "경보 총량 → 유가",
+      "tier": "promoted",
       "indicator": "Brent",
       "fired_week": "2026-W29",
       "base_monday": "2026-07-20",
@@ -169,9 +481,130 @@
       }
     },
     {
+      "id": "2026-W29-total-WTI",
+      "channel": "total",
+      "label": "경보 총량 → 유가",
+      "tier": "promoted",
+      "indicator": "WTI",
+      "fired_week": "2026-W29",
+      "base_monday": "2026-07-20",
+      "base_value": 81.77999877929688,
+      "window": [
+        1,
+        2
+      ],
+      "sigma_w": 0.06362842759876167,
+      "cp_col": null,
+      "signal_count": 1492,
+      "signal_z": 2.76,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-07-27",
+        "weeks": 1,
+        "peak_pct": 9.2
+      }
+    },
+    {
+      "id": "2026-W29-kg:CP_BabElMandeb:Brent-Brent",
+      "channel": "kg:CP_BabElMandeb:Brent",
+      "label": "바브엘만데브 해협 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W29",
+      "base_monday": "2026-07-20",
+      "base_value": 88.0999984741211,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05948971981386681,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 26,
+      "signal_z": 26.0,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-07-27",
+        "weeks": 1,
+        "peak_pct": 9.9
+      }
+    },
+    {
+      "id": "2026-W29-kg:CP_BabElMandeb:WTI-WTI",
+      "channel": "kg:CP_BabElMandeb:WTI",
+      "label": "바브엘만데브 해협 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W29",
+      "base_monday": "2026-07-20",
+      "base_value": 81.77999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.06362842759876167,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 26,
+      "signal_z": 26.0,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-07-27",
+        "weeks": 1,
+        "peak_pct": 9.2
+      }
+    },
+    {
+      "id": "2026-W29-kg:EVT_RedSea2023:Brent-Brent",
+      "channel": "kg:EVT_RedSea2023:Brent",
+      "label": "홍해·후티 사태 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W29",
+      "base_monday": "2026-07-20",
+      "base_value": 88.0999984741211,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05948971981386681,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 64,
+      "signal_z": 26.75,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-07-27",
+        "weeks": 1,
+        "peak_pct": 9.9
+      }
+    },
+    {
+      "id": "2026-W29-kg:EVT_RedSea2023:WTI-WTI",
+      "channel": "kg:EVT_RedSea2023:WTI",
+      "label": "홍해·후티 사태 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W29",
+      "base_monday": "2026-07-20",
+      "base_value": 81.77999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.06362842759876167,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 64,
+      "signal_z": 26.75,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-07-27",
+        "weeks": 1,
+        "peak_pct": 9.2
+      }
+    },
+    {
       "id": "2026-W30-redsea_freight-SCFI",
       "channel": "redsea_freight",
       "label": "홍해 → 컨테이너 운임",
+      "tier": "promoted",
       "indicator": "SCFI",
       "fired_week": "2026-W30",
       "base_monday": "2026-07-27",
@@ -195,6 +628,7 @@
       "id": "2026-W30-redsea_freight-Harpex",
       "channel": "redsea_freight",
       "label": "홍해 → 컨테이너 운임",
+      "tier": "promoted",
       "indicator": "Harpex",
       "fired_week": "2026-W30",
       "base_monday": "2026-07-27",
@@ -212,6 +646,400 @@
         "graded_monday": "2026-09-07",
         "peak_pct": 4.4
       }
+    },
+    {
+      "id": "2026-W30-kg:CP_BabElMandeb:SCFI-SCFI",
+      "channel": "kg:CP_BabElMandeb:SCFI",
+      "label": "바브엘만데브 해협 → SCFI",
+      "tier": "shadow",
+      "indicator": "SCFI",
+      "fired_week": "2026-W30",
+      "base_monday": "2026-07-27",
+      "base_value": 3062.9524,
+      "window": [
+        4,
+        8
+      ],
+      "sigma_w": 0.05157751552040733,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 31,
+      "signal_z": 31.0,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-08-24",
+        "weeks": 4,
+        "peak_pct": 11.3
+      }
+    },
+    {
+      "id": "2026-W30-kg:CP_BabElMandeb:Harpex-Harpex",
+      "channel": "kg:CP_BabElMandeb:Harpex",
+      "label": "바브엘만데브 해협 → Harpex",
+      "tier": "shadow",
+      "indicator": "Harpex",
+      "fired_week": "2026-W30",
+      "base_monday": "2026-07-27",
+      "base_value": 2340.0,
+      "window": [
+        4,
+        8
+      ],
+      "sigma_w": 0.024977176080688265,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 31,
+      "signal_z": 31.0,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W30-kg:EVT_RedSea2023:SCFI-SCFI",
+      "channel": "kg:EVT_RedSea2023:SCFI",
+      "label": "홍해·후티 사태 → SCFI",
+      "tier": "shadow",
+      "indicator": "SCFI",
+      "fired_week": "2026-W30",
+      "base_monday": "2026-07-27",
+      "base_value": 3062.9524,
+      "window": [
+        4,
+        8
+      ],
+      "sigma_w": 0.05157751552040733,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 214,
+      "signal_z": 70.32,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-08-24",
+        "weeks": 4,
+        "peak_pct": 11.3
+      }
+    },
+    {
+      "id": "2026-W30-kg:EVT_RedSea2023:Harpex-Harpex",
+      "channel": "kg:EVT_RedSea2023:Harpex",
+      "label": "홍해·후티 사태 → Harpex",
+      "tier": "shadow",
+      "indicator": "Harpex",
+      "fired_week": "2026-W30",
+      "base_monday": "2026-07-27",
+      "base_value": 2340.0,
+      "window": [
+        4,
+        8
+      ],
+      "sigma_w": 0.024977176080688265,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 214,
+      "signal_z": 70.32,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W31-kg:CP_Suez:Brent-Brent",
+      "channel": "kg:CP_Suez:Brent",
+      "label": "수에즈 운하 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W31",
+      "base_monday": "2026-08-03",
+      "base_value": 90.12000274658205,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05963431604833626,
+      "cp_col": "CP_Suez",
+      "signal_count": 13,
+      "signal_z": 9.39,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-10",
+        "peak_pct": -6.5
+      }
+    },
+    {
+      "id": "2026-W31-kg:CP_Suez:WTI-WTI",
+      "channel": "kg:CP_Suez:WTI",
+      "label": "수에즈 운하 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W31",
+      "base_monday": "2026-08-03",
+      "base_value": 80.77999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.0638230781064469,
+      "cp_col": "CP_Suez",
+      "signal_count": 13,
+      "signal_z": 9.39,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-10",
+        "peak_pct": -2.6
+      }
+    },
+    {
+      "id": "2026-W31-kg:CP_BabElMandeb:Brent-Brent",
+      "channel": "kg:CP_BabElMandeb:Brent",
+      "label": "바브엘만데브 해협 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W31",
+      "base_monday": "2026-08-03",
+      "base_value": 90.12000274658205,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05963431604833626,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 25,
+      "signal_z": 16.19,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-10",
+        "peak_pct": -6.5
+      }
+    },
+    {
+      "id": "2026-W31-kg:CP_BabElMandeb:WTI-WTI",
+      "channel": "kg:CP_BabElMandeb:WTI",
+      "label": "바브엘만데브 해협 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W31",
+      "base_monday": "2026-08-03",
+      "base_value": 80.77999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.0638230781064469,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 25,
+      "signal_z": 16.19,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-10",
+        "peak_pct": -2.6
+      }
+    },
+    {
+      "id": "2026-W31-kg:EVT_RedSea2023:Brent-Brent",
+      "channel": "kg:EVT_RedSea2023:Brent",
+      "label": "홍해·후티 사태 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W31",
+      "base_monday": "2026-08-03",
+      "base_value": 90.12000274658205,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05963431604833626,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 101,
+      "signal_z": 12.75,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-10",
+        "peak_pct": -6.5
+      }
+    },
+    {
+      "id": "2026-W31-kg:EVT_RedSea2023:WTI-WTI",
+      "channel": "kg:EVT_RedSea2023:WTI",
+      "label": "홍해·후티 사태 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W31",
+      "base_monday": "2026-08-03",
+      "base_value": 80.77999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.0638230781064469,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 101,
+      "signal_z": 12.75,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-10",
+        "peak_pct": -2.6
+      }
+    },
+    {
+      "id": "2026-W33-kg:CP_BabElMandeb:Brent-Brent",
+      "channel": "kg:CP_BabElMandeb:Brent",
+      "label": "바브엘만데브 해협 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W33",
+      "base_monday": "2026-08-17",
+      "base_value": 88.54000091552734,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05962997847335674,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 14,
+      "signal_z": 3.1,
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-08-24",
+        "weeks": 1,
+        "peak_pct": 6.6
+      }
+    },
+    {
+      "id": "2026-W33-kg:CP_BabElMandeb:WTI-WTI",
+      "channel": "kg:CP_BabElMandeb:WTI",
+      "label": "바브엘만데브 해협 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W33",
+      "base_monday": "2026-08-17",
+      "base_value": 82.1500015258789,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.06371017626411242,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 14,
+      "signal_z": 3.1,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-08-24",
+        "peak_pct": 4.9
+      }
+    },
+    {
+      "id": "2026-W34-kg:CP_Panama:SCFI-SCFI",
+      "channel": "kg:CP_Panama:SCFI",
+      "label": "파나마 운하 → SCFI",
+      "tier": "shadow",
+      "indicator": "SCFI",
+      "fired_week": "2026-W34",
+      "base_monday": "2026-08-24",
+      "base_value": 3409.631,
+      "window": [
+        4,
+        8
+      ],
+      "sigma_w": 0.051384463103342215,
+      "cp_col": null,
+      "signal_count": 25,
+      "signal_z": 9.89,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W34-kg:CP_Panama:Harpex-Harpex",
+      "channel": "kg:CP_Panama:Harpex",
+      "label": "파나마 운하 → Harpex",
+      "tier": "shadow",
+      "indicator": "Harpex",
+      "fired_week": "2026-W34",
+      "base_monday": "2026-08-24",
+      "base_value": 2380.0,
+      "window": [
+        4,
+        8
+      ],
+      "sigma_w": 0.02485805781064576,
+      "cp_col": null,
+      "signal_count": 25,
+      "signal_z": 9.89,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W37-kg:CP_BabElMandeb:Brent-Brent",
+      "channel": "kg:CP_BabElMandeb:Brent",
+      "label": "바브엘만데브 해협 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W37",
+      "base_monday": "2026-09-14",
+      "base_value": 107.58999633789062,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05981784731200908,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 57,
+      "signal_z": 2.64,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W37-kg:CP_BabElMandeb:WTI-WTI",
+      "channel": "kg:CP_BabElMandeb:WTI",
+      "label": "바브엘만데브 해협 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W37",
+      "base_monday": "2026-09-14",
+      "base_value": 102.29000091552734,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.0637737319075872,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 57,
+      "signal_z": 2.64,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W37-kg:EVT_RedSea2023:Brent-Brent",
+      "channel": "kg:EVT_RedSea2023:Brent",
+      "label": "홍해·후티 사태 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W37",
+      "base_monday": "2026-09-14",
+      "base_value": 107.58999633789062,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05981784731200908,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 184,
+      "signal_z": 2.35,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W37-kg:EVT_RedSea2023:WTI-WTI",
+      "channel": "kg:EVT_RedSea2023:WTI",
+      "label": "홍해·후티 사태 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W37",
+      "base_monday": "2026-09-14",
+      "base_value": 102.29000091552734,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.0637737319075872,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 184,
+      "signal_z": 2.35,
+      "status": "pending",
+      "result": null
     }
-  ]
+  ],
+  "channel_tiers": {}
 }

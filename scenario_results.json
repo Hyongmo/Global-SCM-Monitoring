@@ -93832,10 +93832,21 @@
       "week": "2026-W14",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 2528,
           "med8": null,
           "z": null
@@ -93845,6 +93856,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 575,
           "med8": null,
           "z": null
@@ -93854,17 +93876,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 37,
           "med8": null,
           "z": null
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 575,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 37,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -94853,10 +94920,21 @@
       "week": "2026-W15",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1718,
           "med8": null,
           "z": null
@@ -94866,6 +94944,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 802,
           "med8": null,
           "z": null
@@ -94875,17 +94964,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 10,
           "med8": null,
           "z": null
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 802,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 10,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -95856,10 +95990,21 @@
       "week": "2026-W16",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1857,
           "med8": null,
           "z": null
@@ -95869,6 +96014,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 903,
           "med8": null,
           "z": null
@@ -95878,17 +96034,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 17,
           "med8": null,
           "z": null
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 903,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 17,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -96879,10 +97080,21 @@
       "week": "2026-W17",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1188,
           "med8": null,
           "z": null
@@ -96892,6 +97104,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 493,
           "med8": null,
           "z": null
@@ -96901,17 +97124,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 12,
           "med8": null,
           "z": null
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 493,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 12,
+              "med8": null,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -97924,10 +98192,21 @@
       "week": "2026-W18",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 895,
           "med8": 1787.5,
           "z": -1.8
@@ -97937,6 +98216,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 410,
           "med8": 688.5,
           "z": -1.22
@@ -97946,17 +98236,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 1,
           "med8": 14.5,
           "z": -2.6
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 410,
+              "med8": 688.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 1,
+              "med8": 14.5,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -99031,10 +99366,21 @@
       "week": "2026-W19",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1725,
           "med8": 1718.0,
           "z": 0.01
@@ -99044,6 +99390,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 806,
           "med8": 575.0,
           "z": 0.94
@@ -99053,17 +99410,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 8,
           "med8": 12.0,
           "z": -0.54
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 806,
+              "med8": 575.0,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 8,
+              "med8": 12.0,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -100204,10 +100606,21 @@
       "week": "2026-W20",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 709,
           "med8": 1721.5,
           "z": -2.04
@@ -100217,6 +100630,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 397,
           "med8": 688.5,
           "z": -1.26
@@ -100226,17 +100650,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 3,
           "med8": 11.0,
           "z": -1.2
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 397,
+              "med8": 688.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 3,
+              "med8": 11.0,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -101310,10 +101779,21 @@
       "week": "2026-W21",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 693,
           "med8": 1718.0,
           "z": -1.3
@@ -101323,6 +101803,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 330,
           "med8": 575.0,
           "z": -0.93
@@ -101332,17 +101823,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 4,
           "med8": 10.0,
           "z": -0.58
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 330,
+              "med8": 575.0,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 4,
+              "med8": 10.0,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -102429,10 +102965,21 @@
       "week": "2026-W22",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 746,
           "med8": 1453.0,
           "z": -0.99
@@ -102442,6 +102989,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 327,
           "med8": 534.0,
           "z": -0.82
@@ -102451,17 +103009,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 7,
           "med8": 9.0,
           "z": -0.25
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 327,
+              "med8": 534.0,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 7,
+              "med8": 9.0,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -103600,10 +104203,21 @@
       "week": "2026-W23",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 549,
           "med8": 1041.5,
           "z": -0.98
@@ -103613,6 +104227,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 208,
           "med8": 451.5,
           "z": -1.34
@@ -103622,17 +104247,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 6,
           "med8": 7.5,
           "z": -0.25
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 208,
+              "med8": 451.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 6,
+              "med8": 7.5,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -104753,10 +105423,21 @@
       "week": "2026-W24",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 662,
           "med8": 820.5,
           "z": -0.54
@@ -104766,6 +105447,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 195,
           "med8": 403.5,
           "z": -1.69
@@ -104775,17 +105467,90 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "watch",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 30,
           "med8": 6.5,
           "z": 5.28
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 195,
+              "med8": 403.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "watch",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 30,
+              "med8": 6.5,
+              "state": "watch"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
         "miss": 0,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 19,
+            "z": 5.23
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 19,
+            "z": 5.23
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "watch",
+            "count": 19,
+            "z": 5.23
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "watch",
+            "count": 19,
+            "z": 5.23
+          }
+        ]
       }
     }
   },
@@ -105868,10 +106633,21 @@
       "week": "2026-W25",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 926,
           "med8": 727.5,
           "z": 1.15
@@ -105881,6 +106657,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 556,
           "med8": 363.5,
           "z": 1.48
@@ -105890,17 +106677,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 1,
           "med8": 6.5,
           "z": -1.24
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 556,
+              "med8": 363.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 1,
+              "med8": 6.5,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
-        "miss": 0,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -107000,10 +107832,21 @@
       "week": "2026-W26",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1060,
           "med8": 727.5,
           "z": 1.93
@@ -107013,6 +107856,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 535,
           "med8": 363.5,
           "z": 1.15
@@ -107022,17 +107876,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 7,
           "med8": 5.0,
           "z": 0.54
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 535,
+              "med8": 363.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 7,
+              "med8": 5.0,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
-        "miss": 0,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -108146,10 +109045,21 @@
       "week": "2026-W27",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 333,
           "med8": 727.5,
           "z": -2.18
@@ -108159,6 +109069,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 155,
           "med8": 363.5,
           "z": -0.87
@@ -108168,17 +109089,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 5,
           "med8": 6.5,
           "z": -0.51
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 155,
+              "med8": 363.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 5,
+              "med8": 6.5,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
-        "miss": 0,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -109317,10 +110283,21 @@
       "week": "2026-W28",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 973,
           "med8": 701.0,
           "z": 1.86
@@ -109330,6 +110307,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 530,
           "med8": 328.5,
           "z": 1.07
@@ -109339,17 +110327,62 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 10,
           "med8": 5.5,
-          "z": 2.02
+          "z": 1.92
         }
       ],
       "active": [],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 530,
+              "med8": 328.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 10,
+              "med8": 5.5,
+              "state": "quiet"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
-        "miss": 0,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": []
       }
     }
   },
@@ -110451,10 +111484,21 @@
       "week": "2026-W29",
       "channels": [
         {
-          "key": "total_oil",
+          "key": "total",
           "label": "경보 총량 → 유가",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "fired",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1492,
           "med8": 719.5,
           "z": 2.76
@@ -110464,6 +111508,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 626,
           "med8": 328.5,
           "z": 1.31
@@ -110473,26 +111528,23 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "watch",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 88,
           "med8": 6.5,
           "z": 27.49
         }
       ],
       "active": [
-        {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "base_value": 81.77999877929688,
-          "base_monday": "2026-07-20",
-          "window": [
-            1,
-            2
-          ],
-          "elapsed": 0,
-          "chg_pct": null,
-          "need_pct": 9.4
-        },
         {
           "label": "경보 총량 → 유가",
           "indicator": "Brent",
@@ -110504,15 +111556,122 @@
             2
           ],
           "elapsed": 0,
-          "chg_pct": null,
-          "need_pct": 8.8
+          "chg_pct": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "base_value": 81.77999877929688,
+          "base_monday": "2026-07-20",
+          "window": [
+            1,
+            2
+          ],
+          "elapsed": 0,
+          "chg_pct": null
         }
       ],
-      "graded_recent": [],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "fired",
+          "window": [
+            1,
+            2
+          ],
+          "evidence": [
+            {
+              "sig_ko": "전체 경보 기사",
+              "count": 1492,
+              "med8": 719.5,
+              "state": "fired"
+            },
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 626,
+              "med8": 328.5,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "watch",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 88,
+              "med8": 6.5,
+              "state": "watch"
+            }
+          ]
+        }
+      ],
       "score": {
         "hit": 0,
-        "miss": 0,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "바브엘만데브 해협 → Brent",
+            "state": "fired",
+            "count": 26,
+            "z": 26.0
+          },
+          {
+            "label": "바브엘만데브 해협 → WTI",
+            "state": "fired",
+            "count": 26,
+            "z": 26.0
+          },
+          {
+            "label": "바브엘만데브 해협 → SCFI",
+            "state": "watch",
+            "count": 26,
+            "z": 26.0
+          },
+          {
+            "label": "바브엘만데브 해협 → Harpex",
+            "state": "watch",
+            "count": 26,
+            "z": 26.0
+          },
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 64,
+            "z": 26.75
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 64,
+            "z": 26.75
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "watch",
+            "count": 64,
+            "z": 26.75
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "watch",
+            "count": 64,
+            "z": 26.75
+          }
+        ]
       }
     }
   },
@@ -111627,10 +112786,21 @@
       "week": "2026-W30",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 952,
           "med8": 836.0,
           "z": 0.39
@@ -111640,6 +112810,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 193,
           "med8": 428.5,
           "z": -0.98
@@ -111649,6 +112830,17 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "fired",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 246,
           "med8": 7.0,
           "z": 64.48
@@ -111666,8 +112858,7 @@
             6
           ],
           "elapsed": 0,
-          "chg_pct": null,
-          "need_pct": 13.5
+          "chg_pct": null
         },
         {
           "label": "홍해 → 컨테이너 운임",
@@ -111680,32 +112871,100 @@
             6
           ],
           "elapsed": 0,
-          "chg_pct": null,
-          "need_pct": 6.3
+          "chg_pct": null
         }
       ],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 193,
+              "med8": 428.5,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "fired",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 246,
+              "med8": 7.0,
+              "state": "fired"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 2,
-        "miss": 0,
+        "hit": 6,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "바브엘만데브 해협 → Brent",
+            "state": "fired",
+            "count": 31,
+            "z": 31.0
+          },
+          {
+            "label": "바브엘만데브 해협 → WTI",
+            "state": "fired",
+            "count": 31,
+            "z": 31.0
+          },
+          {
+            "label": "바브엘만데브 해협 → SCFI",
+            "state": "fired",
+            "count": 31,
+            "z": 31.0
+          },
+          {
+            "label": "바브엘만데브 해협 → Harpex",
+            "state": "fired",
+            "count": 31,
+            "z": 31.0
+          },
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 214,
+            "z": 70.32
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 214,
+            "z": 70.32
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "fired",
+            "count": 214,
+            "z": 70.32
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "fired",
+            "count": 214,
+            "z": 70.32
+          }
+        ]
       }
     }
   },
@@ -112848,10 +114107,21 @@
       "week": "2026-W31",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 599,
           "med8": 939.0,
           "z": -1.15
@@ -112861,6 +114131,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 208,
           "med8": 369.0,
           "z": -0.62
@@ -112870,6 +114151,17 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "fired",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 129,
           "med8": 8.5,
           "z": 14.78
@@ -112887,8 +114179,7 @@
             6
           ],
           "elapsed": 1,
-          "chg_pct": 4.7,
-          "need_pct": 13.5
+          "chg_pct": 4.7
         },
         {
           "label": "홍해 → 컨테이너 운임",
@@ -112901,32 +114192,124 @@
             6
           ],
           "elapsed": 1,
-          "chg_pct": 0.1,
-          "need_pct": 6.3
+          "chg_pct": 0.1
         }
       ],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 208,
+              "med8": 369.0,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "fired",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 129,
+              "med8": 8.5,
+              "state": "fired"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 2,
-        "miss": 0,
+        "hit": 6,
+        "miss": 2,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "수에즈 운하 → Brent",
+            "state": "fired",
+            "count": 13,
+            "z": 9.39
+          },
+          {
+            "label": "수에즈 운하 → WTI",
+            "state": "fired",
+            "count": 13,
+            "z": 9.39
+          },
+          {
+            "label": "수에즈 운하 → SCFI",
+            "state": "watch",
+            "count": 13,
+            "z": 9.39
+          },
+          {
+            "label": "수에즈 운하 → Harpex",
+            "state": "watch",
+            "count": 13,
+            "z": 9.39
+          },
+          {
+            "label": "바브엘만데브 해협 → Brent",
+            "state": "fired",
+            "count": 25,
+            "z": 16.19
+          },
+          {
+            "label": "바브엘만데브 해협 → WTI",
+            "state": "fired",
+            "count": 25,
+            "z": 16.19
+          },
+          {
+            "label": "바브엘만데브 해협 → SCFI",
+            "state": "fired",
+            "count": 25,
+            "z": 16.19
+          },
+          {
+            "label": "바브엘만데브 해협 → Harpex",
+            "state": "fired",
+            "count": 25,
+            "z": 16.19
+          },
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 101,
+            "z": 12.75
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 101,
+            "z": 12.75
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "fired",
+            "count": 101,
+            "z": 12.75
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "fired",
+            "count": 101,
+            "z": 12.75
+          }
+        ]
       }
     }
   },
@@ -114072,10 +115455,21 @@
       "week": "2026-W32",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 925,
           "med8": 939.0,
           "z": -0.05
@@ -114085,6 +115479,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 613,
           "med8": 369.0,
           "z": 0.94
@@ -114094,6 +115499,17 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "fired",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 74,
           "med8": 20.0,
           "z": 2.14
@@ -114111,8 +115527,7 @@
             6
           ],
           "elapsed": 2,
-          "chg_pct": 7.0,
-          "need_pct": 13.5
+          "chg_pct": 7.0
         },
         {
           "label": "홍해 → 컨테이너 운임",
@@ -114125,32 +115540,76 @@
             6
           ],
           "elapsed": 2,
-          "chg_pct": 0.3,
-          "need_pct": 6.3
+          "chg_pct": 0.3
         }
       ],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 613,
+              "med8": 369.0,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "fired",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 74,
+              "med8": 20.0,
+              "state": "fired"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 2,
-        "miss": 0,
+        "hit": 6,
+        "miss": 8,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 67,
+            "z": 3.31
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 67,
+            "z": 3.31
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "fired",
+            "count": 67,
+            "z": 3.31
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "fired",
+            "count": 67,
+            "z": 3.31
+          }
+        ]
       }
     }
   },
@@ -115253,10 +116712,21 @@
       "week": "2026-W33",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 744,
           "med8": 939.0,
           "z": -1.7
@@ -115266,6 +116736,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 485,
           "med8": 532.5,
           "z": -0.37
@@ -115275,6 +116756,17 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 76,
           "med8": 42.0,
           "z": 0.59
@@ -115292,40 +116784,85 @@
             6
           ],
           "elapsed": 3,
-          "chg_pct": 0.3,
-          "need_pct": 6.3
+          "chg_pct": 0.3
         }
       ],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 485,
+              "med8": 532.5,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "SCFI",
-          "fired_week": "2026-W30",
-          "status": "hit",
-          "peak_pct": 9.5,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 76,
+              "med8": 42.0,
+              "state": "quiet"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 3,
-        "miss": 0,
+        "hit": 7,
+        "miss": 8,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "바브엘만데브 해협 → Brent",
+            "state": "fired",
+            "count": 14,
+            "z": 3.1
+          },
+          {
+            "label": "바브엘만데브 해협 → WTI",
+            "state": "fired",
+            "count": 14,
+            "z": 3.1
+          },
+          {
+            "label": "바브엘만데브 해협 → SCFI",
+            "state": "watch",
+            "count": 14,
+            "z": 3.1
+          },
+          {
+            "label": "바브엘만데브 해협 → Harpex",
+            "state": "watch",
+            "count": 14,
+            "z": 3.1
+          },
+          {
+            "label": "파나마 운하 → SCFI",
+            "state": "watch",
+            "count": 19,
+            "z": 7.19
+          },
+          {
+            "label": "파나마 운하 → Harpex",
+            "state": "watch",
+            "count": 19,
+            "z": 7.19
+          }
+        ]
       }
     }
   },
@@ -116448,10 +117985,21 @@
       "week": "2026-W34",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 487,
           "med8": 938.5,
           "z": -1.93
@@ -116461,6 +118009,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 246,
           "med8": 507.5,
           "z": -1.57
@@ -116470,6 +118029,17 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 14,
           "med8": 75.0,
           "z": -0.69
@@ -116487,40 +118057,61 @@
             6
           ],
           "elapsed": 4,
-          "chg_pct": 1.7,
-          "need_pct": 6.3
+          "chg_pct": 1.7
         }
       ],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 246,
+              "med8": 507.5,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "SCFI",
-          "fired_week": "2026-W30",
-          "status": "hit",
-          "peak_pct": 9.5,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 14,
+              "med8": 75.0,
+              "state": "quiet"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 3,
-        "miss": 0,
+        "hit": 10,
+        "miss": 9,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "파나마 운하 → SCFI",
+            "state": "fired",
+            "count": 25,
+            "z": 9.89
+          },
+          {
+            "label": "파나마 운하 → Harpex",
+            "state": "fired",
+            "count": 25,
+            "z": 9.89
+          }
+        ]
       }
     }
   },
@@ -117649,10 +119240,21 @@
       "week": "2026-W35",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 424,
           "med8": 834.5,
           "z": -1.48
@@ -117662,6 +119264,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 305,
           "med8": 365.5,
           "z": -0.24
@@ -117671,6 +119284,17 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 15,
           "med8": 75.0,
           "z": -0.7
@@ -117688,40 +119312,61 @@
             6
           ],
           "elapsed": 5,
-          "chg_pct": 3.1,
-          "need_pct": 6.3
+          "chg_pct": 3.1
         }
       ],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 305,
+              "med8": 365.5,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "SCFI",
-          "fired_week": "2026-W30",
-          "status": "hit",
-          "peak_pct": 9.5,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 15,
+              "med8": 75.0,
+              "state": "quiet"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 3,
-        "miss": 0,
+        "hit": 10,
+        "miss": 9,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "파나마 운하 → SCFI",
+            "state": "fired",
+            "count": 24,
+            "z": 9.44
+          },
+          {
+            "label": "파나마 운하 → Harpex",
+            "state": "fired",
+            "count": 24,
+            "z": 9.44
+          }
+        ]
       }
     }
   },
@@ -118860,10 +120505,21 @@
       "week": "2026-W36",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 653,
           "med8": 834.5,
           "z": -0.65
@@ -118873,6 +120529,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 226,
           "med8": 395.0,
           "z": -0.68
@@ -118882,50 +120549,75 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 42,
           "med8": 75.0,
           "z": -0.39
         }
       ],
       "active": [],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 226,
+              "med8": 395.0,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "SCFI",
-          "fired_week": "2026-W30",
-          "status": "hit",
-          "peak_pct": 9.5,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "Harpex",
-          "fired_week": "2026-W30",
-          "status": "miss",
-          "peak_pct": 4.4,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 42,
+              "med8": 75.0,
+              "state": "quiet"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 3,
-        "miss": 1,
+        "hit": 10,
+        "miss": 10,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "파나마 운하 → SCFI",
+            "state": "fired",
+            "count": 12,
+            "z": 2.02
+          },
+          {
+            "label": "파나마 운하 → Harpex",
+            "state": "fired",
+            "count": 12,
+            "z": 2.02
+          }
+        ]
       }
     }
   },
@@ -120055,10 +121747,21 @@
       "week": "2026-W37",
       "channels": [
         {
-          "key": "total_oil",
-          "label": "경보 총량 → 유가",
+          "key": "total",
+          "label": "경보 총량",
           "signal_desc": "주간 HIGH 경보 건수",
           "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 1026,
           "med8": 698.5,
           "z": 1.01
@@ -120068,6 +121771,17 @@
           "label": "호르무즈 → 유가",
           "signal_desc": "호르무즈 언급 기사 수(주간)",
           "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
           "count": 252,
           "med8": 275.5,
           "z": -0.21
@@ -120077,50 +121791,114 @@
           "label": "홍해 → 컨테이너 운임",
           "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
           "state": "watch",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
           "count": 223,
           "med8": 75.0,
           "z": 2.29
         }
       ],
       "active": [],
-      "graded_recent": [
+      "display": [
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "WTI",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.2,
-          "note": null
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 252,
+              "med8": 275.5,
+              "state": "quiet"
+            }
+          ]
         },
         {
-          "label": "경보 총량 → 유가",
-          "indicator": "Brent",
-          "fired_week": "2026-W29",
-          "status": "hit",
-          "peak_pct": 9.9,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "SCFI",
-          "fired_week": "2026-W30",
-          "status": "hit",
-          "peak_pct": 9.5,
-          "note": null
-        },
-        {
-          "label": "홍해 → 컨테이너 운임",
-          "indicator": "Harpex",
-          "fired_week": "2026-W30",
-          "status": "miss",
-          "peak_pct": 4.4,
-          "note": null
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "watch",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 223,
+              "med8": 75.0,
+              "state": "watch"
+            }
+          ]
         }
       ],
       "score": {
-        "hit": 3,
-        "miss": 1,
+        "hit": 10,
+        "miss": 10,
         "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 30,
+        "fired": [
+          {
+            "label": "바브엘만데브 해협 → Brent",
+            "state": "fired",
+            "count": 57,
+            "z": 2.64
+          },
+          {
+            "label": "바브엘만데브 해협 → WTI",
+            "state": "fired",
+            "count": 57,
+            "z": 2.64
+          },
+          {
+            "label": "바브엘만데브 해협 → SCFI",
+            "state": "watch",
+            "count": 57,
+            "z": 2.64
+          },
+          {
+            "label": "바브엘만데브 해협 → Harpex",
+            "state": "watch",
+            "count": 57,
+            "z": 2.64
+          },
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 184,
+            "z": 2.35
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 184,
+            "z": 2.35
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "watch",
+            "count": 184,
+            "z": 2.35
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "watch",
+            "count": 184,
+            "z": 2.35
+          }
+        ]
       }
     }
   }
