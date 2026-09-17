@@ -69,6 +69,7 @@ for jf in (json_files[:MAX_DAYS] if MAX_DAYS > 0 else json_files):
             'ref_map':    raw.get('ref_map', {}),
             'collection_notice': raw.get('collection_notice'),   # 수집 결손 안내
             'kg_focus': raw.get('kg_focus', []),                 # 공급망 요소별 기사량
+            'early_signal': raw.get('early_signal'),            # 주중 조기 신호 (급증 시에만)
         })
         print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
     except Exception as e:
@@ -200,6 +201,24 @@ def _tv_widget_html():
     )
 
 
+def _early_signal_html(sigs):
+    """주중 조기 신호 — 급증 진행 중일 때만 표시 (2026-09-17). 필드 없으면 빈 문자열."""
+    if not sigs:
+        return ''
+    _WD = ['월', '화', '수', '목', '금', '토', '일']
+    out = []
+    for e in sigs:
+        rng = '월요일' if e.get('weekday') == 1 else f"월~{_WD[e['weekday'] - 1]}"
+        w = e.get('window') or [1, 2]
+        out.append(
+            f'<div style="margin:10px 0; padding:9px 12px; background:#fdf3dd; '
+            f'border-left:3px solid #c98500; border-radius:4px; font-size:13px; color:#7a5500;">'
+            f'⚡ <b>주중 신호</b> — {e["label"]} 주중 누적 <b>{e["cum"]}건</b>, '
+            f'최근 8주 같은 기간({rng}) 중앙값 {e["med"]:.0f}건의 {e["ratio"]}배. '
+            f'이 흐름이 지속되면 {w[0]}~{w[1]}주 내 {e["target"]} 상승 압력으로 이어질 수 있음.</div>')
+    return ''.join(out)
+
+
 def _kg_focus_html(rows):
     """공급망 요소별 기사량 — 가로막대 (2026-09-13). JSON kg_focus 필드 렌더."""
     if not rows:
@@ -316,6 +335,7 @@ def _render_day(d, idx, is_latest=False):
       <p class="exec-text">{exec_s if exec_s else '<span class="empty">요약 없음</span>'}</p>
     </div>
     {_kg_focus_html(d.get('kg_focus') or [])}
+    {_early_signal_html(d.get('early_signal'))}
     <div class="section">
       <div class="section-title">🌐 공급망 이슈</div>
       {trig_html}

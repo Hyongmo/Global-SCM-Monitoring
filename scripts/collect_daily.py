@@ -1745,6 +1745,107 @@ def _build_kg_focus(date_tag, top_n=10):   # top_n=10: 사용자 결정 (2026-09
     return rows
 
 
+# ── 주중 조기 신호 (2026-09-17 사용자 결정) ──────────────────────
+#   주간 리포트의 '주요 지표변동 전망'은 월요일에야 발동하지만 신호는 일별
+#   기사량이라 급증은 주중에 이미 보인다 (실례: 2026-W37 홍해 급증은 목~금에
+#   뚜렷). 주중 누적이 주간 발동 페이스일 때만 일일 브리핑에 한 줄 표시한다
+#   — 평시에는 아무것도 표시하지 않음.
+#   판정 기준은 주간 전망과 동일 상수 (도출 근거는 weekly_pipeline.py 주석):
+#   강건 z>=2 (중앙값·MAD, 분산 하한 √중앙값) AND 누적>=중앙값 2배 AND 10건 초과.
+#   비교 구간 = '직전 8주의 같은 요일까지 누적' — 요일별 보도량 차이 자동 반영.
+EARLY_SIGNAL_FILE = os.path.join(MONITOR_DIR, 'daily_signals.json')
+_ES_GROUPS = {'hormuz': {'CP_Hormuz'},
+              'redsea': {'EVT_RedSea2023', 'CP_Suez', 'CP_BabElMandeb'}}
+# 표시 대상 신호와 (표기, 전파 지표, 시차 창) — 전파 창은 주간 전망과 동일
+# (유가 1~2주·운임 2~6주, 실측 도출). 전체 경보(total_high)는 이력에는
+# 저장하되 표시하지 않음 — 2026-09-17 사용자 지적: 구체적 지표 없는
+# "관련 지표 상승"은 독자에게 시사점이 없다.
+_ES_LABEL  = {'hormuz': ('호르무즈 관련 기사', '유가', (1, 2)),
+              'redsea': ('홍해 관련 기사', '컨테이너 운임', (2, 6))}
+_ES_Z, _ES_RATIO, _ES_MIN, _ES_WEEKS = 2.0, 2.0, 10, 8
+
+
+def _es_day_signals(date_tag):
+    """하루치 신호: HIGH 건수 + 그룹별(요소를 언급한) 기사 수(중복 없음).
+    분류 CSV 없으면 None. 제목 매칭은 kg_focus와 같은 캐시 함수를 재사용."""
+    files = glob.glob(os.path.join(MONITOR_DIR, date_tag,
+                                   f'*_mon_classified_daily_{date_tag}.csv'))
+    if not files:
+        return None
+    high = 0
+    g = {k: 0 for k in _ES_GROUPS}
+    for f in files:
+        try:
+            df = pd.read_csv(f)
+        except Exception:
+            continue
+        if 'relevance' in df.columns:
+            high += int((df['relevance'] == 'HIGH').sum())
+        if 'title' not in df.columns:
+            continue
+        sub = df[df['relevance'].isin(['HIGH', 'MEDIUM'])] if 'relevance' in df.columns else df
+        for _t in sub['title']:
+            ids = set(_match_title_for_focus(str(_t)))
+            for k, gid in _ES_GROUPS.items():
+                if ids & gid:
+                    g[k] += 1
+    return {'total_high': high, **g}
+
+
+def _es_check(date_tag):
+    """오늘 신호를 이력(daily_signals.json)에 기록하고, 주중 누적이 급증
+    페이스인 신호 목록 반환 (평시에는 빈 리스트). 이력 4주 미만이면 판정 안 함."""
+    sig_hist = {}
+    if os.path.exists(EARLY_SIGNAL_FILE):
+        try:
+            with open(EARLY_SIGNAL_FILE, encoding='utf-8') as f:
+                sig_hist = json.load(f)
+        except Exception:
+            sig_hist = {}
+    today = _es_day_signals(date_tag)
+    if today is None:
+        return []
+    sig_hist[date_tag] = today            # 같은 날 재실행은 덮어씀 (멱등)
+    with open(EARLY_SIGNAL_FILE, 'w', encoding='utf-8') as f:
+        json.dump(sig_hist, f, ensure_ascii=False, indent=1, sort_keys=True)
+
+    d = datetime.strptime(date_tag, '%Y%m%d').date()
+    k = d.isoweekday()                    # 1=월 .. 7=일
+
+    def _cum(monday):
+        tot = None
+        for i in range(k):
+            v = sig_hist.get((monday + timedelta(days=i)).strftime('%Y%m%d'))
+            if v is None:
+                return None               # 결손 주는 기준에서 제외
+            tot = dict(v) if tot is None else {x: tot[x] + v.get(x, 0) for x in tot}
+        return tot
+
+    this_mon = d - timedelta(days=k - 1)
+    cur = _cum(this_mon)
+    if cur is None:
+        return []
+    prevs = [c for w in range(1, _ES_WEEKS + 1)
+             if (c := _cum(this_mon - timedelta(weeks=w))) is not None]
+    if len(prevs) < 4:
+        return []
+    out = []
+    for key, (label, target, win) in _ES_LABEL.items():
+        vals = pd.Series([p[key] for p in prevs], dtype=float)
+        med = float(vals.median())
+        mad = float((vals - med).abs().median())
+        scale = max(1.4826 * mad, max(med, 1.0) ** 0.5)
+        cum = int(cur[key])
+        z = (cum - med) / scale
+        if cum <= _ES_MIN or (med > 0 and cum < _ES_RATIO * med) or z < _ES_Z:
+            continue
+        out.append({'signal': key, 'label': label, 'target': target,
+                    'window': list(win), 'cum': cum, 'med': round(med, 1),
+                    'ratio': round(cum / med, 1) if med > 0 else None,
+                    'weekday': k})
+    return out
+
+
 def _build_report_prompt(data):
     """LLM 호출용 통합 프롬프트 (categories + flow + changes 한 번에)"""
     td_fmt   = data['td_fmt']
@@ -1956,6 +2057,15 @@ else:
 
     # ── JSON 저장 (v3 notebook 동일 flat 구조) ──
     json_path = os.path.join(DAILY_DIR, f'daily_report_llm_{DATE_TAG}.json')
+    try:
+        _early_signal = _es_check(DATE_TAG)
+        if _early_signal:
+            for _e in _early_signal:
+                print(f"  ⚡ 주중 신호: {_e['label']} 누적 {_e['cum']}건 (중앙값 {_e['med']}의 {_e['ratio']}배)")
+    except Exception as _e:
+        print(f"  ⚠ 주중 신호 계산 실패: {_e}")
+        _early_signal = []
+
     json_data = {
         'date':     str(TARGET_DATE),
         'date_key': DATE_TAG,
@@ -1971,6 +2081,7 @@ else:
         'ref_map':    ref_map,
         'collection_notice': COLLECTION_NOTICE,   # 수집 결손 안내 (없으면 None)
         'kg_focus': _build_kg_focus(DATE_TAG),    # 공급망 요소별 기사량 (상위 10)
+        'early_signal': _early_signal or None,    # 주중 조기 신호 (급증 진행 중일 때만)
     }
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)
@@ -2003,6 +2114,16 @@ else:
             L(f"- [{_r['type']}] {_r['name']} — {_r['count']}건{_arrow}")
         L("")
         L("> KG 매칭 기준 언급 기사 수 · ▲▼는 전일 대비 · 한 기사가 여러 요소를 언급할 수 있음 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님")
+        L("")
+    _es_out = json_data.get('early_signal') or []
+    if _es_out:
+        _WD = ['월', '화', '수', '목', '금', '토', '일']
+        for _e in _es_out:
+            _rng = '월요일' if _e['weekday'] == 1 else f"월~{_WD[_e['weekday'] - 1]}"
+            _w = _e.get('window') or [1, 2]
+            L(f"> ⚡ **주중 신호** — {_e['label']} 주중 누적 {_e['cum']}건, "
+              f"최근 8주 같은 기간({_rng}) 중앙값 {_e['med']:.0f}건의 {_e['ratio']}배. "
+              f"이 흐름이 지속되면 {_w[0]}~{_w[1]}주 내 {_e['target']} 상승 압력으로 이어질 수 있음.")
         L("")
     L("---")
     L("")
@@ -2078,6 +2199,18 @@ else:
             _np = doc.add_paragraph()
             _nr = _np.add_run('※ KG 매칭 기준 · ▲▼는 전일 대비 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님')
             _nr.font.size = Pt(9); _nr.font.color.rgb = RGBColor(0x80, 0x80, 0x80)
+        if json_data.get('early_signal'):
+            _WD = ['월', '화', '수', '목', '금', '토', '일']
+            for _e in json_data['early_signal']:
+                _rng = '월요일' if _e['weekday'] == 1 else f"월~{_WD[_e['weekday'] - 1]}"
+                _p2 = doc.add_paragraph()
+                _w = _e.get('window') or [1, 2]
+                _r3 = _p2.add_run(
+                    f"⚡ 주중 신호 — {_e['label']} 주중 누적 {_e['cum']}건, "
+                    f"최근 8주 같은 기간({_rng}) 중앙값 {_e['med']:.0f}건의 {_e['ratio']}배. "
+                    f"이 흐름이 지속되면 {_w[0]}~{_w[1]}주 내 {_e['target']} 상승 압력으로 이어질 수 있음.")
+                _r3.font.bold = True
+                _r3.font.size = Pt(9.5); _r3.font.color.rgb = RGBColor(0xA0, 0x6F, 0x00)
         doc.add_paragraph()
         doc.add_heading('카테고리별 분석', level=2)
         for cat in CAT_ORDER:
