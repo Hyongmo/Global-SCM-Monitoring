@@ -93827,6 +93827,45 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W14",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 2528,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 575,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 37,
+          "med8": null,
+          "z": null
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -94809,6 +94848,45 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W15",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 1718,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 802,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 10,
+          "med8": null,
+          "z": null
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -95772,6 +95850,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W16",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 1857,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 903,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 17,
+          "med8": null,
+          "z": null
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -96756,6 +96873,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W17",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 1188,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 493,
+          "med8": null,
+          "z": null
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 12,
+          "med8": null,
+          "z": null
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -97762,6 +97918,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W18",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 895,
+          "med8": 1787.5,
+          "z": -1.8
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 410,
+          "med8": 688.5,
+          "z": -1.22
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 1,
+          "med8": 14.5,
+          "z": -2.6
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -98830,6 +99025,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W19",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 1725,
+          "med8": 1718.0,
+          "z": 0.01
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 806,
+          "med8": 575.0,
+          "z": 0.94
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 8,
+          "med8": 12.0,
+          "z": -0.54
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -99965,6 +100199,45 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W20",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 709,
+          "med8": 1721.5,
+          "z": -2.04
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 397,
+          "med8": 688.5,
+          "z": -1.26
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 3,
+          "med8": 11.0,
+          "z": -1.2
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -101031,6 +101304,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W21",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 693,
+          "med8": 1718.0,
+          "z": -1.3
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 330,
+          "med8": 575.0,
+          "z": -0.93
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 4,
+          "med8": 10.0,
+          "z": -0.58
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -102111,6 +102423,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W22",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 746,
+          "med8": 1453.0,
+          "z": -0.99
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 327,
+          "med8": 534.0,
+          "z": -0.82
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 7,
+          "med8": 9.0,
+          "z": -0.25
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -103244,6 +103595,45 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W23",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 549,
+          "med8": 1041.5,
+          "z": -0.98
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 208,
+          "med8": 451.5,
+          "z": -1.34
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 6,
+          "med8": 7.5,
+          "z": -0.25
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -104358,6 +104748,45 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W24",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 662,
+          "med8": 820.5,
+          "z": -0.54
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 195,
+          "med8": 403.5,
+          "z": -1.69
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "watch",
+          "count": 30,
+          "med8": 6.5,
+          "z": 5.28
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -105433,6 +105862,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W25",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 926,
+          "med8": 727.5,
+          "z": 1.15
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 556,
+          "med8": 363.5,
+          "z": 1.48
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 1,
+          "med8": 6.5,
+          "z": -1.24
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -106526,6 +106994,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W26",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 1060,
+          "med8": 727.5,
+          "z": 1.93
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 535,
+          "med8": 363.5,
+          "z": 1.15
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 7,
+          "med8": 5.0,
+          "z": 0.54
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -107633,6 +108140,45 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W27",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 333,
+          "med8": 727.5,
+          "z": -2.18
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 155,
+          "med8": 363.5,
+          "z": -0.87
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 5,
+          "med8": 6.5,
+          "z": -0.51
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -108766,6 +109312,45 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W28",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 973,
+          "med8": 701.0,
+          "z": 1.86
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 530,
+          "med8": 328.5,
+          "z": 1.07
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 10,
+          "med8": 5.5,
+          "z": 2.02
+        }
+      ],
+      "active": [],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -109860,6 +110445,74 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W29",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "fired",
+          "count": 1492,
+          "med8": 719.5,
+          "z": 2.76
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 626,
+          "med8": 328.5,
+          "z": 1.31
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "watch",
+          "count": 88,
+          "med8": 6.5,
+          "z": 27.49
+        }
+      ],
+      "active": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "base_value": 81.77999877929688,
+          "base_monday": "2026-07-20",
+          "window": [
+            1,
+            2
+          ],
+          "elapsed": 0,
+          "chg_pct": null,
+          "need_pct": 9.4
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "base_value": 88.0999984741211,
+          "base_monday": "2026-07-20",
+          "window": [
+            1,
+            2
+          ],
+          "elapsed": 0,
+          "chg_pct": null,
+          "need_pct": 8.8
+        }
+      ],
+      "graded_recent": [],
+      "score": {
+        "hit": 0,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -110968,6 +111621,91 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W30",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 952,
+          "med8": 836.0,
+          "z": 0.39
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 193,
+          "med8": 428.5,
+          "z": -0.98
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "fired",
+          "count": 246,
+          "med8": 7.0,
+          "z": 64.48
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "base_value": 3062.9524,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 0,
+          "chg_pct": null,
+          "need_pct": 13.5
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "base_value": 2340.0,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 0,
+          "chg_pct": null,
+          "need_pct": 6.3
+        }
+      ],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 2,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -112104,6 +112842,91 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W31",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 599,
+          "med8": 939.0,
+          "z": -1.15
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 208,
+          "med8": 369.0,
+          "z": -0.62
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "fired",
+          "count": 129,
+          "med8": 8.5,
+          "z": 14.78
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "base_value": 3062.9524,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 1,
+          "chg_pct": 4.7,
+          "need_pct": 13.5
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "base_value": 2340.0,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 1,
+          "chg_pct": 0.1,
+          "need_pct": 6.3
+        }
+      ],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 2,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -113244,6 +114067,91 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W32",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 925,
+          "med8": 939.0,
+          "z": -0.05
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 613,
+          "med8": 369.0,
+          "z": 0.94
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "fired",
+          "count": 74,
+          "med8": 20.0,
+          "z": 2.14
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "base_value": 3062.9524,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 2,
+          "chg_pct": 7.0,
+          "need_pct": 13.5
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "base_value": 2340.0,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 2,
+          "chg_pct": 0.3,
+          "need_pct": 6.3
+        }
+      ],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 2,
+        "miss": 0,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -114339,6 +115247,85 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W33",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 744,
+          "med8": 939.0,
+          "z": -1.7
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 485,
+          "med8": 532.5,
+          "z": -0.37
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 76,
+          "med8": 42.0,
+          "z": 0.59
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "base_value": 2340.0,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 3,
+          "chg_pct": 0.3,
+          "need_pct": 6.3
+        }
+      ],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "status": "hit",
+          "peak_pct": 9.5,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 3,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -115455,6 +116442,85 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W34",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 487,
+          "med8": 938.5,
+          "z": -1.93
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 246,
+          "med8": 507.5,
+          "z": -1.57
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 14,
+          "med8": 75.0,
+          "z": -0.69
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "base_value": 2340.0,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 4,
+          "chg_pct": 1.7,
+          "need_pct": 6.3
+        }
+      ],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "status": "hit",
+          "peak_pct": 9.5,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 3,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -116577,6 +117643,85 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W35",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 424,
+          "med8": 834.5,
+          "z": -1.48
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 305,
+          "med8": 365.5,
+          "z": -0.24
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 15,
+          "med8": 75.0,
+          "z": -0.7
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "base_value": 2340.0,
+          "base_monday": "2026-07-27",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 5,
+          "chg_pct": 3.1,
+          "need_pct": 6.3
+        }
+      ],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "status": "hit",
+          "peak_pct": 9.5,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 3,
+        "miss": 0,
+        "cancelled": 0
       }
     }
   },
@@ -117710,6 +118855,78 @@
           }
         ]
       }
+    },
+    "momentum": {
+      "week": "2026-W36",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 653,
+          "med8": 834.5,
+          "z": -0.65
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 226,
+          "med8": 395.0,
+          "z": -0.68
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 42,
+          "med8": 75.0,
+          "z": -0.39
+        }
+      ],
+      "active": [],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "status": "hit",
+          "peak_pct": 9.5,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "status": "miss",
+          "peak_pct": 4.4,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 3,
+        "miss": 1,
+        "cancelled": 0
+      }
     }
   },
   {
@@ -118832,6 +120049,78 @@
             ]
           }
         ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W37",
+      "channels": [
+        {
+          "key": "total_oil",
+          "label": "경보 총량 → 유가",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "count": 1026,
+          "med8": 698.5,
+          "z": 1.01
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "count": 252,
+          "med8": 275.5,
+          "z": -0.21
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "watch",
+          "count": 223,
+          "med8": 75.0,
+          "z": 2.29
+        }
+      ],
+      "active": [],
+      "graded_recent": [
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "WTI",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.2,
+          "note": null
+        },
+        {
+          "label": "경보 총량 → 유가",
+          "indicator": "Brent",
+          "fired_week": "2026-W29",
+          "status": "hit",
+          "peak_pct": 9.9,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W30",
+          "status": "hit",
+          "peak_pct": 9.5,
+          "note": null
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W30",
+          "status": "miss",
+          "peak_pct": 4.4,
+          "note": null
+        }
+      ],
+      "score": {
+        "hit": 3,
+        "miss": 1,
+        "cancelled": 0
       }
     }
   }

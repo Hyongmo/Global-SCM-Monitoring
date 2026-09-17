@@ -4068,6 +4068,363 @@ def render_kg_focus_block(s):
             + note + '</div>')
 
 
+# ═══════════════════════════════════════════════════════════════════
+#  경보 모멘텀 — 기사량 급증의 지표 전파 관측 (2026-09-17 사용자 결정)
+#  "위치가 채널을 정하고, 지속 기간이 전파 여부를 정한다"
+#  실측 근거 (본 프로젝트 축적 데이터, 2026-09-17 분석):
+#   · 유가 채널 시차 1~2주: 2026 호르무즈 국면 24주 — 주간 HIGH 경보 증가
+#     → 다음주 WTI r=+0.55(순열검정 p=.006), 경보 급증 상위 4주 전건에서
+#     다음주 WTI +4.3~+10.4% (평균 +7.3% vs 평시 -1.3%). 역방향(유가→기사)은
+#     무상관 → 선행 방향 비대칭 확인.
+#   · 운임 채널 시차 2~6주: 2023-12 실제 홍해 사태 — SCFI 1,011→2,206
+#     (+118%), 공격 개시 4~6주 후 정점. 같은 기간 Brent 무반응(79→78$).
+#   · 단발 무전파: 2021-03 에버기븐 좌초(6일) — SCFI·Brent 무반응,
+#     CP_Suez 통과량 399→139→490척 2주 내 V자 회복 → 지속성 조건 필요.
+# ═══════════════════════════════════════════════════════════════════
+MOMENTUM_LEDGER_FILE = BASE_DIR / 'momentum_ledger.json'
+MOMENTUM_Z_FIRE      = 2.0   # 발동 임계 z (통계 관례 2σ ≈ 상위 2.3%)
+MOMENTUM_BASE_WEEKS  = 8     # z 기준 창: 직전 8주 (국면 적응과 안정성 절충)
+MOMENTUM_CP_DROP     = 0.8   # 통과량 '뚜렷한 감소' = 발동 전 4주 평균의 80% 미만
+                             #   (CP 주간 통과량 변동계수 ~10% 실측 → 2σ 상당)
+MOMENTUM_MIN_RATIO   = 2.0   # 급증 최소 배율: 신호가 기준 중앙값의 2배 미만이면 급증 아님
+                             #   (저수준 잡음 오탐 방지 — 2026-W28 주간 10건이 z=2.0으로
+                             #    관찰 표시되는 사례를 백테스트에서 확인, 2026-09-17)
+MOMENTUM_CHANNELS = [
+    # window: 전파 관측 창(주) · persist: 발동에 필요한 연속 급증 주 수
+    {'key': 'total_oil', 'label': '경보 총량 → 유가',
+     'signal': 'total_high', 'signal_desc': '주간 HIGH 경보 건수',
+     'indicators': ['WTI', 'Brent'], 'window': (1, 2), 'persist': 1, 'cp_col': None},
+    {'key': 'hormuz_oil', 'label': '호르무즈 → 유가',
+     'signal': 'hormuz', 'signal_desc': '호르무즈 언급 기사 수(주간)',
+     'indicators': ['Brent', 'WTI'], 'window': (1, 2), 'persist': 1, 'cp_col': 'CP_Hormuz'},
+    {'key': 'redsea_freight', 'label': '홍해 → 컨테이너 운임',
+     'signal': 'redsea', 'signal_desc': '홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)',
+     'indicators': ['SCFI', 'Harpex'], 'window': (2, 6), 'persist': 2, 'cp_col': 'CP_Suez'},
+]
+_MOM_SIGNAL_IDS = {'hormuz': {'CP_Hormuz'},
+                   'redsea': {'EVT_RedSea2023', 'CP_Suez', 'CP_BabElMandeb'}}
+_MOM_STATE_KO = {'quiet': '평시', 'watch': '급증 관찰 (1주차)', 'fired': '발동'}
+
+
+def _mom_day_counts(day_tag, entity_patterns, _cache={}):
+    """하루치 분류 CSV(HIGH·MEDIUM)에서 신호별 집계.
+    total_high = HIGH 건수, 그 외 = 그룹 내 요소를 하나라도 언급한 기사 수(중복 없음).
+    CSV 없는 날은 None."""
+    if day_tag in _cache:
+        return _cache[day_tag]
+    files = glob.glob(os.path.join('monitoring', day_tag,
+                                   f'*_mon_classified_daily_{day_tag}.csv'))
+    res = None
+    if files:
+        high = 0
+        g = {k: 0 for k in _MOM_SIGNAL_IDS}
+        for f in files:
+            try:
+                df = pd.read_csv(f)
+            except Exception:
+                continue
+            if 'relevance' in df.columns:
+                high += int((df['relevance'] == 'HIGH').sum())
+            if 'title' not in df.columns:
+                continue
+            sub = df[df['relevance'].isin(['HIGH', 'MEDIUM'])] if 'relevance' in df.columns else df
+            for _t in sub['title']:
+                ids = set(_kgf_matched_ids(str(_t), entity_patterns))
+                for k, gid in _MOM_SIGNAL_IDS.items():
+                    if ids & gid:
+                        g[k] += 1
+        res = {'total_high': high, **g}
+    _cache[day_tag] = res
+    return res
+
+
+def _mom_week_signals(week_label, entity_patterns):
+    """주(월~일) 신호 합계. 7일 모두 있어야 값 반환(부분 주 왜곡 방지), 아니면 None."""
+    _y, _w = week_label.split('-W')
+    tot = None
+    for d in range(1, 8):
+        day = datetime.fromisocalendar(int(_y), int(_w), d)
+        c = _mom_day_counts(day.strftime('%Y%m%d'), entity_patterns)
+        if c is None:
+            return None
+        tot = dict(c) if tot is None else {k: tot[k] + c[k] for k in tot}
+    return tot
+
+
+def _mom_ind_val(indicator_df, col, monday):
+    """지표 주간 스냅샷 값 (없거나 NaN이면 None)."""
+    if col not in indicator_df.columns:
+        return None
+    try:
+        v = indicator_df.loc[pd.Timestamp(monday), col]
+    except KeyError:
+        return None
+    return None if pd.isna(v) else float(v)
+
+
+def _mom_sigma(indicator_df, col):
+    """지표 주간 로그 변화율의 표준편차 (2019~ 전 이력) — 적중 판정 눈금."""
+    s = pd.to_numeric(indicator_df[col], errors='coerce').dropna()
+    s = s[s > 0]
+    d = np.log(s).diff().dropna()
+    return float(d.std()) if len(d) >= 20 else None
+
+
+def _mom_z(hist, signal_key, week_label):
+    """week_label 주의 강건 z (기준 = 그 이전 MOMENTUM_BASE_WEEKS주, 최소 4주).
+
+    평균·표준편차 대신 중앙값·MAD(중앙값절대편차)를 쓴다 (2026-09-17 교체):
+    평균 기준은 직전 급증 주가 잣대를 부풀려 다음 급증 감지를 무디게 한다
+    — 2026-W37 홍해 42→223건(5배)이 z=1.82로 '평시' 처리된 실사례.
+    중앙값 기준으로는 같은 주가 z=2.29로 정상 감지되고, 기존 발동 주
+    (W29·W30)와 총량·호르무즈 채널 판정은 변하지 않음을 백테스트로 확인.
+    MAD=0(극히 안정)이면 표준편차로 폴백. 반환 (z, 기준 중앙값)."""
+    if week_label not in hist:
+        return None
+    prevs = [hist[w][signal_key] for w in sorted(hist) if w < week_label][-MOMENTUM_BASE_WEEKS:]
+    if len(prevs) < 4:
+        return None
+    med = float(np.median(prevs))
+    mad = float(np.median(np.abs(np.asarray(prevs, dtype=float) - med)))
+    scale = 1.4826 * mad          # 정규분포 기준 표준편차 상당으로 환산
+    if scale <= 0:
+        sd = float(np.std(prevs, ddof=1))
+        if sd <= 0:
+            return None
+        return (hist[week_label][signal_key] - med) / sd, med
+    return (hist[week_label][signal_key] - med) / scale, med
+
+
+def _mom_is_surge(hist, signal_key, week_label):
+    """급증 판정: 강건 z ≥ 임계 AND 신호 ≥ 기준 중앙값 × MOMENTUM_MIN_RATIO."""
+    zres = _mom_z(hist, signal_key, week_label)
+    if not zres:
+        return False
+    z, med = zres
+    cur = hist[week_label][signal_key]
+    if med > 0 and cur < MOMENTUM_MIN_RATIO * med:
+        return False
+    return z >= MOMENTUM_Z_FIRE
+
+
+def build_momentum(week_label, indicator_df, entity_patterns):
+    """경보 모멘텀 — 신호 갱신·발동 판정·원장 채점을 한 번에 수행.
+
+    반환: 리포트 표시에 필요한 dict (신호가 미완성인 주는 None).
+    부수효과: momentum_ledger.json 갱신 (같은 주 재실행은 멱등)."""
+    led = {'signal_history': {}, 'predictions': []}
+    if MOMENTUM_LEDGER_FILE.exists():
+        with open(MOMENTUM_LEDGER_FILE, encoding='utf-8') as f:
+            led = json.load(f)
+    hist = led['signal_history']
+
+    sig = _mom_week_signals(week_label, entity_patterns)
+    if sig is None:
+        return None
+    hist[week_label] = {k: int(v) for k, v in sig.items()}
+
+    _y, _w = week_label.split('-W')
+    ref_mon = datetime.fromisocalendar(int(_y), int(_w), 1) + timedelta(days=7)
+
+    # 시점 정합 (2026-09-17): 이 주 리포트 시점(ref_mon)까지의 지표만 사용.
+    #   매주 실시간 운영에서는 자연히 그렇게 되지만, 과거 주차를 소급 재구성할
+    #   때 미래 지표를 미리 보고 판정하는 look-ahead를 차단해 실운영과 동일한
+    #   원장이 재현되도록 한다.
+    indicator_df = indicator_df[indicator_df.index <= pd.Timestamp(ref_mon)]
+
+    # 같은 주 재실행 멱등성: 이번 주 발동분은 지우고 다시 판정
+    led['predictions'] = [p for p in led['predictions']
+                          if p.get('fired_week') != week_label]
+
+    # ── 채널별 상태 판정 ──
+    channels_out = []
+    prev_weeks = sorted(w for w in hist if w < week_label)
+    for ch in MOMENTUM_CHANNELS:
+        zres = _mom_z(hist, ch['signal'], week_label)
+        z, med = zres if zres else (None, None)
+        surge_now  = _mom_is_surge(hist, ch['signal'], week_label)
+        surge_prev = bool(prev_weeks) and _mom_is_surge(hist, ch['signal'], prev_weeks[-1])
+        state = 'quiet'
+        if surge_now:
+            state = 'watch' if (ch['persist'] >= 2 and not surge_prev) else 'fired'
+        channels_out.append({'key': ch['key'], 'label': ch['label'],
+                             'signal_desc': ch['signal_desc'], 'state': state,
+                             'count': int(sig[ch['signal']]),
+                             'med8': round(med, 1) if med is not None else None,
+                             'z': round(z, 2) if z is not None else None})
+        # 발동 → 관측 기록 생성 (해당 채널에 진행 중 관측이 없을 때만)
+        if state == 'fired':
+            has_pending = any(p['channel'] == ch['key'] and p['status'] == 'pending'
+                              for p in led['predictions'])
+            if not has_pending:
+                for ind_col in ch['indicators']:
+                    base = _mom_ind_val(indicator_df, ind_col, ref_mon)
+                    sg = _mom_sigma(indicator_df, ind_col)
+                    if base is None or sg is None:
+                        continue
+                    led['predictions'].append({
+                        'id': f"{week_label}-{ch['key']}-{ind_col}",
+                        'channel': ch['key'], 'label': ch['label'],
+                        'indicator': ind_col, 'fired_week': week_label,
+                        'base_monday': ref_mon.strftime('%Y-%m-%d'),
+                        'base_value': base, 'window': list(ch['window']),
+                        'sigma_w': sg, 'cp_col': ch['cp_col'],
+                        'signal_count': int(sig[ch['signal']]),
+                        'signal_z': round(z, 2),
+                        'status': 'pending', 'result': None})
+
+    # ── 진행 중 관측 채점 ──
+    for p in led['predictions']:
+        if p['status'] != 'pending':
+            continue
+        base_mon = pd.Timestamp(p['base_monday'])
+        a, b = p['window']
+        # 해제 규칙(에버기븐): 발동 시 통과량이 뚜렷이 줄었다가(전 4주 평균의
+        # 80% 미만) 2주 내 그 평균 이상으로 V자 회복 → 단발 교란으로 판정
+        if p.get('cp_col'):
+            pre = [_mom_ind_val(indicator_df, p['cp_col'], base_mon - pd.Timedelta(weeks=k))
+                   for k in range(1, 5)]
+            pre = [v for v in pre if v is not None]
+            v0 = _mom_ind_val(indicator_df, p['cp_col'], base_mon)
+            if pre and v0 is not None and v0 < MOMENTUM_CP_DROP * float(np.mean(pre)):
+                for k in (1, 2):
+                    vk = _mom_ind_val(indicator_df, p['cp_col'],
+                                      base_mon + pd.Timedelta(weeks=k))
+                    if vk is not None and vk >= float(np.mean(pre)):
+                        p['status'] = 'cancelled'
+                        p['result'] = {'graded_monday': str((base_mon + pd.Timedelta(weeks=k)).date()),
+                                       'note': f"통과량 {k}주 내 회복(단발 교란)"}
+                        break
+                if p['status'] == 'cancelled':
+                    continue
+        # 적중 판정: 창 내 어느 주든 누적 로그 변화 ≥ +σ_w·√경과주 → 적중
+        #   (σ_w = 그 지표의 주간 변동성 → 평시 잡음 크기만큼은 올라야 인정)
+        peak = None
+        hit_k = None
+        last_avail = 0
+        for k in range(1, b + 1):
+            v = _mom_ind_val(indicator_df, p['indicator'],
+                             base_mon + pd.Timedelta(weeks=k))
+            if v is None:
+                break
+            last_avail = k
+            chg = float(np.log(v / p['base_value']))
+            peak = chg if peak is None else max(peak, chg)
+            if k >= a and chg >= p['sigma_w'] * (k ** 0.5):
+                hit_k = k
+                break
+        if hit_k is not None:
+            p['status'] = 'hit'
+            p['result'] = {'graded_monday': str((base_mon + pd.Timedelta(weeks=hit_k)).date()),
+                           'weeks': hit_k, 'peak_pct': round((np.exp(peak) - 1) * 100, 1)}
+        elif last_avail >= b:
+            p['status'] = 'miss'
+            p['result'] = {'graded_monday': str((base_mon + pd.Timedelta(weeks=b)).date()),
+                           'peak_pct': round((np.exp(peak) - 1) * 100, 1) if peak is not None else None}
+        else:
+            p['_elapsed'] = last_avail
+            p['_chg_pct'] = round((np.exp(peak) - 1) * 100, 1) if peak is not None else None
+
+    # ── 표시용 요약 ──
+    active = []
+    for p in led['predictions']:
+        if p['status'] != 'pending':
+            continue
+        need = (np.exp(p['sigma_w'] * (p['window'][1] ** 0.5)) - 1) * 100
+        active.append({'label': p['label'], 'indicator': p['indicator'],
+                       'fired_week': p['fired_week'],
+                       'base_value': p['base_value'], 'base_monday': p['base_monday'],
+                       'window': p['window'], 'elapsed': p.pop('_elapsed', 0),
+                       'chg_pct': p.pop('_chg_pct', None), 'need_pct': round(need, 1)})
+    graded = [p for p in led['predictions'] if p['status'] in ('hit', 'miss', 'cancelled')]
+    graded_recent = [{'label': p['label'], 'indicator': p['indicator'],
+                      'fired_week': p['fired_week'], 'status': p['status'],
+                      'peak_pct': (p.get('result') or {}).get('peak_pct'),
+                      'note': (p.get('result') or {}).get('note')}
+                     for p in sorted(graded, key=lambda x: x['fired_week'])[-5:]]
+    score = {'hit': sum(1 for p in graded if p['status'] == 'hit'),
+             'miss': sum(1 for p in graded if p['status'] == 'miss'),
+             'cancelled': sum(1 for p in graded if p['status'] == 'cancelled')}
+
+    with open(MOMENTUM_LEDGER_FILE, 'w', encoding='utf-8') as f:
+        json.dump(led, f, ensure_ascii=False, indent=2)
+
+    return {'week': week_label, 'channels': channels_out, 'active': active,
+            'graded_recent': graded_recent, 'score': score}
+
+_MOM_IND_KO = {'total_oil': '유가 (WTI·Brent)',
+               'hormuz_oil': '유가 (Brent·WTI)',
+               'redsea_freight': '컨테이너 운임 (SCFI·Harpex)'}
+_MOM_SIG_KO = {'total_oil': '전체 경보 기사',
+               'hormuz_oil': '호르무즈 관련 기사',
+               'redsea_freight': '홍해 관련 기사'}
+
+
+def render_momentum_block(s):
+    """주요 지표변동 전망 섹션 HTML. momentum 필드가 없는 과거 주차는 빈
+    문자열 반환 (게시본 불변 원칙 — kg_focus와 동일).
+    2026-09-17 사용자 결정: 독자용 명칭 '주요 지표변동 전망', 판정 기록
+    표는 리포트에 내보내지 않음(원장 채점은 내부 점검용으로 유지)."""
+    m = s.get('momentum')
+    if not m:
+        return ''
+    cfg = {c['key']: c for c in MOMENTUM_CHANNELS}
+    h = ['<style>'
+         '.mom-wrap{margin:14px 0 6px;}'
+         '.mom-tbl{width:100%;border-collapse:collapse;font-size:13.5px;}'
+         '.mom-tbl th{font-size:12px;color:#8a897f;font-weight:600;text-align:left;'
+         'padding:4px 8px;border-bottom:1px solid #e4e3df;}'
+         '.mom-tbl td{padding:6px 8px;border-bottom:1px solid #efeeea;vertical-align:top;}'
+         '.mom-tag{display:inline-block;font-size:12px;font-weight:700;'
+         'border-radius:4px;padding:1px 7px;white-space:nowrap;margin-right:5px;}'
+         '.mom-calm{background:#f1f0ec;color:#6a695f;}'
+         '.mom-watch{background:#fdf3dd;color:#a06f00;}'
+         '.mom-up{background:#fdeaea;color:#c22f2f;}'
+         '.mom-note{color:#8a897f;font-size:12px;line-height:1.6;margin-top:10px;}'
+         '@media (max-width:640px){.mom-tbl{font-size:12.5px;}'
+         '.mom-tbl th,.mom-tbl td{padding:4px 5px;}}'
+         '</style>']
+    h.append('<div class="mom-wrap">')
+    h.append('<h2>🧭 주요 지표변동 전망</h2>')
+    h.append('<p style="font-size:13px;color:#52514e;margin:2px 0 8px;">'
+             '최근 기사 흐름을 근거로 향후 주요지표 방향 전망</p>')
+    h.append('<table class="mom-tbl"><tr><th>감시 대상</th><th>이번 주 기사량</th>'
+             '<th>평소 수준</th><th>전망</th></tr>')
+    for c in m.get('channels', []):
+        ch = cfg.get(c['key'], {})
+        a, b = ch.get('window', (1, 2))
+        ind_ko = _MOM_IND_KO.get(c['key'], '')
+        sig_ko = _MOM_SIG_KO.get(c['key'], c.get('signal_desc', ''))
+        med = f"주 {c['med8']:.0f}건 안팎" if c.get('med8') is not None else '집계 중'
+        if c['state'] == 'fired':
+            outlook = (f"<span class='mom-tag mom-up'>상승 압력</span>"
+                       f"향후 {a}~{b}주 내 {ind_ko} 상승 가능성")
+        elif c['state'] == 'watch':
+            outlook = (f"<span class='mom-tag mom-watch'>주시</span>"
+                       f"기사 급증 1주차 — 다음 주에도 이어지면 {a}~{b}주 내 "
+                       f"{ind_ko} 상승 압력")
+        else:
+            outlook = "<span class='mom-tag mom-calm'>안정</span>큰 변동 조짐 없음"
+        h.append(f"<tr><td><b>{_kgf_esc(sig_ko)}</b><br>"
+                 f"<span style='color:#8a897f;font-size:12px'>→ {_kgf_esc(ind_ko)}</span></td>"
+                 f"<td>{c['count']:,}건</td><td>{_kgf_esc(med)}</td>"
+                 f"<td>{outlook}</td></tr>")
+    h.append('</table>')
+    # 이전에 낸 전망의 경과 (진행 중인 것만, 문장으로)
+    for a_ in m.get('active', []):
+        chg = f"{a_['chg_pct']:+.1f}%" if a_.get('chg_pct') is not None else '변동 집계 전'
+        h.append(f"<p style='font-size:13px;color:#52514e;margin:8px 0 0;'>"
+                 f"지난 {_kgf_esc(a_['fired_week'])} 급증 때 낸 "
+                 f"{_kgf_esc(a_['indicator'])} 전망은 진행 중입니다 — "
+                 f"기준일({_kgf_esc(a_['base_monday'])}) 대비 {chg}, "
+                 f"{a_['elapsed']}/{a_['window'][1]}주 경과.</p>")
+    h.append('<p class="mom-note">'
+             '기사수의 변화가 지표에 선행하는 경향을 반영한 전망체계. '
+             '확정적 전망은 아니며, 기사량은 검색된 기사에 한한 집계임.</p>')
+    h.append('</div>')
+    return '\n'.join(h)
+
+
 def step7_generate_scenario(phaseA_df, indicator_weekly_df, tier_info, kg_data, week_tag):
     """LLM(Claude Sonnet) 기반 주간 시나리오 생성 + scenario_results.json 갱신 저장.
 
@@ -4138,6 +4495,18 @@ def step7_generate_scenario(phaseA_df, indicator_weekly_df, tier_info, kg_data, 
         print(f"  kg_focus(주간): {_kf_n}개 요소")
     except Exception as _e:
         print(f"  ⚠ kg_focus 집계 실패: {_e}")
+
+    # 경보 모멘텀 — 기사량 급증의 지표 전파 관측 (2026-09-17 사용자 결정)
+    try:
+        result['momentum'] = build_momentum(week_label, indicator_weekly_df,
+                                            kg_data['entity_patterns'])
+        if result['momentum']:
+            _mo = {c['label']: c['state'] for c in result['momentum']['channels']}
+            print(f"  momentum: {_mo}")
+        else:
+            print("  momentum: 주간 신호 미완성 → 미표시")
+    except Exception as _e:
+        print(f"  ⚠ momentum 계산 실패: {_e}")
 
     existing[week_label] = result
     merged = sorted(existing.values(), key=lambda x: x.get('week', ''))
@@ -5063,6 +5432,7 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
             # ── 공급망 요소별 기사량 (주간) — 전주 대비 변화 위에 배치 (2026-09-13)
             #    kg_focus 없는 과거 주차는 미표시
             html.append(render_kg_focus_block(s))
+            html.append(render_momentum_block(s))
             changes = [
                 c for c in header.get('changes_from_prev', [])
                 if c.get('item', '') not in _IND_STOCK_NAMES
