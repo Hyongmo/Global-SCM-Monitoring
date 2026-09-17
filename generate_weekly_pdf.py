@@ -547,7 +547,7 @@ def _draw_momentum(pdf, scenario, sec_no):
     disp = m.get('display') or []
     if not disp:
         return
-    pdf._section_title(sec_no, '주요 지표변동 전망')
+    pdf._section_title(sec_no, '주요지표 변동전망')
     pdf.set_font('KR', '', 8.5)
     pdf.set_text_color(*pdf.C_SUB_TEXT)
     pdf.multi_cell(0, 4.2, '최근 기사 흐름을 근거로 향후 주요지표 방향 전망',

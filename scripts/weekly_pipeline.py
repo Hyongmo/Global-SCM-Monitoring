@@ -4785,7 +4785,10 @@ def render_momentum_block(s):
     if not m:
         return ''
     h = ['<style>'
-         '.mom-wrap{margin:14px 0 6px;}'
+         # 카드·제목·각주 스타일은 kg_focus 블록과 동일하게 (2026-09-17 사용자
+         # 지적: 섹션 제목 크기가 주변 섹션과 달랐음 — h2 대신 <b>)
+         '.mom-wrap{background:#fff;border:1px solid #e3e6ea;border-radius:8px;'
+         'padding:14px 16px;margin:14px 0;}'
          '.mom-tbl{width:100%;border-collapse:collapse;font-size:13.5px;}'
          '.mom-tbl th{font-size:12px;color:#8a897f;font-weight:600;text-align:left;'
          'padding:4px 8px;border-bottom:1px solid #e4e3df;}'
@@ -4795,13 +4798,13 @@ def render_momentum_block(s):
          '.mom-calm{background:#f1f0ec;color:#6a695f;}'
          '.mom-watch{background:#fdf3dd;color:#a06f00;}'
          '.mom-up{background:#fdeaea;color:#c22f2f;}'
-         '.mom-note{color:#8a897f;font-size:12px;line-height:1.6;margin-top:10px;}'
+         '.mom-note{color:#999;font-size:11px;line-height:1.6;margin-top:10px;}'
          '@media (max-width:640px){.mom-tbl{font-size:12.5px;}'
          '.mom-tbl th,.mom-tbl td{padding:4px 5px;}}'
          '</style>']
     h.append('<div class="mom-wrap">')
-    h.append('<h2>🧭 주요 지표변동 전망</h2>')
-    h.append('<p style="font-size:13px;color:#52514e;margin:2px 0 8px;">'
+    h.append('<b>🧭 주요지표 변동전망</b>')
+    h.append('<p style="font-size:12px;color:#666;margin:4px 0 8px;">'
              '최근 기사 흐름을 근거로 향후 주요지표 방향 전망</p>')
     h.append('<table class="mom-tbl"><tr><th>지표</th><th>전망</th>'
              '<th>근거 (관련 기사량)</th></tr>')
