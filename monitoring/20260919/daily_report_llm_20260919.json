@@ -1,0 +1,2335 @@
+{
+  "date": "2026-09-19",
+  "date_key": "20260919",
+  "n_total": 1988,
+  "n_high": 109,
+  "n_med": 235,
+  "n_low": 287,
+  "n_none": 1357,
+  "n_intl": 152,
+  "n_dom": 192,
+  "llm_result": {
+    "executive_summary": "후티 반군이 사우디아라비아 수도 리야드를 탄도미사일로 공격해 리야드 공항 인근 아람코 연료탱크에 화재가 발생하고 사우디 역사상 첫 공습경보가 발령됐다[11][12][13][14]. 이에 사우디 아람코는 10월부터 유럽에 대한 원유 공급을 전면 중단하고 인도 정유사에 대한 공급도 중단했으며[64][65][76][77][78], 국제 원유 가격은 배럴당 100달러를 상회하고 아제르바이잔 아제리 라이트유는 122달러를 넘어섰다[38][39][43]. 미 CENTCOM은 호르무즈 해협 기뢰 제거 후 최근 수개월간 10억 배럴 이상의 원유 통과를 지원했으며 해협 통과 물동량이 6개월 만에 최고치를 기록했다고 밝혔으나[25][27][32][33], 이란은 여전히 해협 주도권을 보유하고 있다고 주장했다[8]. 국내에서는 국제유가 급등에도 불구하고 최고가격제 영향으로 주유소 기름값이 18주 연속 하락해 1800원대를 유지하고 있으며[50][51][52][53], LG화학 등 7개 석유화학사가 중동 위기를 틈탄 15조 원대 나프타 가격 담합 혐의로 수사를 받고 있다[79][80][81][82][83].",
+    "categories": {
+      "1_Security": {
+        "overseas": "후티 반군이 사우디아라비아 수도 리야드를 탄도미사일로 공격했으며, 사우디 연합군은 리야드 및 기타 도시를 향한 후티 미사일 다수를 요격했다고 밝혔다[1][2][6]. 후티 미사일 중 일부가 리야드 공항 인근 연료 저장소를 타격해 화재가 발생했다[9]. 미 CENTCOM 사령관은 호르무즈 해협을 개방·안전하게 유지하기 위해 노력 중이라고 밝혔으며[4], 이란 군 대변인은 미국의 주장에도 불구하고 이란이 호르무즈 해협의 주도권을 유지하고 있다고 반박했다[8]. 파키스탄은 군사 개입 가능성을 시사했으며 후티 지지자들이 소총을 들고 집결하는 등 분쟁이 확산될 조짐을 보이고 있다[19][20].",
+        "korea_impact": "사우디 수도 리야드에 대한 후티의 탄도미사일 공격과 첫 공습경보 발령 소식이 국내 주요 언론에 일제히 보도됐다[11][12][13][14][15]. 리야드 공항 인근 아람코 연료탱크 화재가 확인됐으며[16][17][18], 파키스탄의 군사 개입 시사 등 분쟁 확산 가능성이 국내에서도 주목받고 있다[19][20]."
+      },
+      "2_Safety": {
+        "overseas": "중국 선박이 보급 임무 중인 필리핀 선박을 들이받는 사건이 발생했다[21]. 유조선 한 척이 고장을 겪었으며 승무원들은 사이버 공격을 의심하고 있다[22]. 인도 외교부는 억류된 유니티 탱커 승무원 문제와 관련해 러시아 대사관과 정기적으로 접촉 중이라고 밝혔다[23].",
+        "korea_impact": "울산항에서 로딩마스터를 대상으로 위험물 안전역량 강화 교육이 실시됐다[24]."
+      },
+      "3_Freight": {
+        "overseas": "미 CENTCOM은 호르무즈 해협 기뢰 제거 후 미군이 10억 배럴 이상의 원유 통과를 지원했으며 해협 통과 물동량이 6개월 만에 최고치를 기록했다고 밝혔다[25][27][32][33][34]. 반면 UN은 호르무즈 해협 일일 선박 통과 횟수가 85회에서 5회로 급감했다고 보고했으며[31], 호르무즈 및 홍해 교란으로 글로벌 해운 비용이 사상 최고치로 급등했다[28][29]. 이란 전쟁 여파로 유조선 운임이 하루 100만 달러를 넘어섰으며[26], 후티의 얀부 항로 차단으로 파키스탄의 석유 공급에도 추가 충격이 가해지고 있다[30].",
+        "korea_impact": "VLCC 운임이 97만 달러에 달하며 홍해 우회로 인한 원유 운송비 상승이 보고됐다[35]."
+      },
+      "5_EconFinance": {
+        "overseas": "아제르바이잔 아제리 라이트유 가격이 배럴당 122달러를 상회했으며[38][39], 미국 디젤 가격은 갤런당 6.29달러로 사상 최고치를 기록했다[41]. 국제 원유 가격이 배럴당 100달러를 상회하며 미국 전국 휘발유 가격도 급등했다[43]. JPMorgan은 이란 전쟁이 시장 모델의 예측을 벗어나고 있다며 유가 전망을 포기했다[42][46]. 중국이 이란에 사우디 석유 시설에 대한 후티 공격을 제한해 달라고 요청하면서 유가가 일시 하락했으며[37], 이란의 석유 수입은 미국의 봉쇄에도 불구하고 2년 만에 최고치를 기록했다[44].",
+        "korea_impact": "트럼프 미국 대통령이 러시아산 원유 구매국에 100% 관세를 부과하는 새 대러 제재 법안에 서명했다[47]. 국제유가 급등에도 불구하고 국내 주유소 기름값은 최고가격제 영향으로 18주 연속 하락해 1800원대를 유지하고 있으며, 추석 연휴 고속도로에서는 100원 추가 인하가 적용된다[50][51][52][53][54][56]. 국내 디젤 가격 상승은 우크라이나 전쟁보다 중동 분쟁의 영향이 더 크다는 분석이 나왔으며, 이는 트럼프의 주장과 배치된다[49]. 이란 전쟁이 미국·일본·유럽의 동시 긴축 공포를 불러일으키고 있다는 분석도 제기됐다[55]."
+      },
+      "6_Seafood": {
+        "overseas": "엔화 약세 지속으로 해산물 기업들이 고가의 고등어 구매를 지속하기 어려울 것이라는 전망이 나왔다[57].",
+        "korea_impact": ""
+      },
+      "7_Shipping": {
+        "overseas": "미 CENTCOM은 미군이 호르무즈 해협을 통한 10억 배럴 원유 통과를 지원했으며 해협 통과 물동량이 6개월 만에 최고치를 기록했다고 밝혔다[58][59][60].",
+        "korea_impact": "미군의 호르무즈 해협 기뢰 제거로 항로가 개방됐다[61]. 팬오션은 기존 벌크선 중심에서 VLCC 및 LNG선을 활용한 에너지 수송 사업으로 사업 구조를 전환하고 있다[62]."
+      },
+      "8_Logistics": {
+        "overseas": "",
+        "korea_impact": "LX판토스가 미국에서 화물 분실과 관련해 하청업체를 상대로 손해배상 소송을 제기했다[63]."
+      },
+      "10_OtherIndustry": {
+        "overseas": "사우디 아람코는 핵심 송유관 피격 이후 인도 정유사에 대한 원유 공급을 중단했으며 대체 물량은 확보 가능하나 유가는 100달러를 상회하고 운임 비용도 상승할 것으로 전망됐다[64]. 아람코는 유럽에 대한 원유 공급도 중단했으며[65], 사우디 송유관 가동 중단이 글로벌 연료 부족을 심화시킬 수 있다는 우려가 제기됐다[66][67]. 사우디는 핵심 송유관 가동 중단 이후 현물 원유 판매 방식으로 전환했다[72]. 오만 시나스 항에 해양 연료 터미널 건설을 위한 FEED 계약이 체결됐다[69].",
+        "korea_impact": "사우디 아람코가 핵심 송유관 피격 직후 10월부터 유럽에 대한 원유 공급을 전면 중단한다고 발표했으며[76][77][78], 리야드 공항 인근 아람코 연료탱크 화재도 발생했다[74][75]. LG화학·애경케미칼·OCI·롯데정밀화학 등 7개 석유화학사가 중동 위기를 틈탄 나프타 수급 불안을 악용해 15조 원대 가격 담합을 한 혐의로 경찰 수사를 받고 있으며, 전·현직 임원 2명이 구속됐다[79][80][81][82][83]."
+      }
+    },
+    "flow": {
+      "triggers": {
+        "route": {
+          "overseas": "미 CENTCOM은 호르무즈 해협 기뢰 제거 후 미군이 10억 배럴 이상의 원유 통과를 지원했으며 해협 통과 물동량이 6개월 만에 최고치를 기록했다고 밝혔다[25][27][32][33]. 그러나 이란 군 대변인은 이란이 여전히 호르무즈 해협의 주도권을 보유하고 있다고 주장했으며[8], UN은 해협 일일 선박 통과 횟수가 85회에서 5회로 급감했다고 보고했다[31]. 홍해와 호르무즈 해협의 동시 교란으로 글로벌 해운 비용이 사상 최고치로 급등했다[28][29].",
+          "korea_impact": "미군의 호르무즈 해협 기뢰 제거로 항로가 개방됐으나[61], 이란이 해협 주도권을 주장하고 있어 한국의 중동산 원유 수입 항로의 안정성은 여전히 불확실한 상황으로 보인다[8]. VLCC 운임이 97만 달러에 달하며 홍해 우회로 인한 원유 운송비 상승이 지속되고 있다[35]."
+        },
+        "source": {
+          "overseas": "사우디 아람코는 핵심 송유관 피격 이후 인도 정유사 및 유럽에 대한 원유 공급을 중단했으며[64][65], 사우디는 현물 원유 판매 방식으로 전환했다[72]. 사우디 송유관 가동 중단이 글로벌 연료 부족을 심화시킬 수 있다는 우려가 제기됐다[66][67]. 이란의 석유 수입은 미국의 봉쇄에도 불구하고 2년 만에 최고치를 기록했다[44].",
+          "korea_impact": "사우디 아람코의 유럽 원유 공급 전면 중단 발표로 글로벌 원유 공급 불안이 심화되고 있으며[76][77][78], 트럼프 대통령이 러시아산 원유 구매국에 100% 관세를 부과하는 법안에 서명해 한국의 원유 공급원 다변화에 추가 제약이 생길 가능성이 있다[47]."
+        },
+        "logistics": {
+          "overseas": "이란 전쟁 여파로 유조선 운임이 하루 100만 달러를 넘어섰으며[26], 호르무즈 및 홍해 교란으로 글로벌 해운 비용이 사상 최고치로 급등했다[28][29]. 후티의 얀부 항로 차단으로 파키스탄의 석유 공급에도 추가 충격이 가해지고 있다[30].",
+          "korea_impact": "VLCC 운임이 97만 달러에 달하며 홍해 우회로 인한 원유 운송비 상승이 보고됐다[35]. 팬오션은 VLCC 및 LNG선을 활용한 에너지 수송 사업으로 전환하며 고운임 환경에 대응하고 있다[62]."
+        }
+      },
+      "domestic_impact": {
+        "경제·금융": "국제유가가 배럴당 100달러를 상회하는 상황에서도 국내 주유소 기름값은 최고가격제 영향으로 18주 연속 하락해 1800원대를 유지하고 있으며, 추석 연휴 고속도로에서는 100원 추가 인하가 적용된다[50][51][52][53][54][56]. 트럼프 대통령이 러시아산 원유 구매국에 100% 관세를 부과하는 새 대러 제재 법안에 서명했다[47]. 이란 전쟁이 미국·일본·유럽의 동시 긴축 공포를 불러일으키고 있다는 분석이 제기됐다[55].",
+        "정유·화학": "사우디 아람코의 핵심 송유관 피격 및 유럽·인도 공급 중단으로 글로벌 원유 공급 불안이 심화되고 있다[74][75][76][77][78]. LG화학·애경케미칼·OCI·롯데정밀화학 등 7개 석유화학사가 중동 위기를 틈탄 나프타 수급 불안을 악용해 15조 원대 가격 담합을 한 혐의로 경찰 수사를 받고 있으며, 전·현직 임원 2명이 구속됐다[79][80][81][82][83].",
+        "해운·물류": "팬오션이 VLCC 및 LNG선을 활용한 에너지 수송 사업으로 전환하고 있으며[62], VLCC 운임은 97만 달러에 달하고 있다[35]. LX판토스는 미국에서 화물 분실과 관련해 하청업체를 상대로 손해배상 소송을 제기했다[63].",
+        "식품·농업": "엔화 약세 지속으로 해산물 기업들이 고가의 고등어 구매를 지속하기 어려울 것이라는 전망이 나왔다[57].",
+        "기타산업": "사우디 수도 리야드에 대한 후티의 공격과 아람코 연료탱크 화재, 사우디의 유럽 원유 공급 중단 등 중동 에너지 인프라 교란이 심화되고 있어 한국 에너지 안보에 대한 주의가 필요한 상황으로 보인다[74][75][76][77][78]."
+      }
+    },
+    "changes": {
+      "new": [
+        "후티 반군이 사우디아라비아 수도 리야드를 탄도미사일로 공격해 리야드 공항 인근 아람코 연료탱크에 화재 발생 및 사우디 역사상 첫 공습경보 발령[11][12][13][14]",
+        "사우디 아람코, 핵심 송유관 피격 이후 10월부터 유럽 및 인도 정유사에 대한 원유 공급 전면 중단 발표[64][65][76][77][78]",
+        "LG화학 등 7개 석유화학사 15조 원대 나프타 가격 담합 혐의 수사 및 임원 2명 구속[79][80][81][82][83]",
+        "파키스탄, 분쟁에 대한 군사 개입 가능성 시사[19]",
+        "미국 디젤 가격 갤런당 6.29달러 사상 최고치 기록[41]"
+      ],
+      "escalated": [
+        "후티의 공격 범위가 사우디 수도 리야드까지 확대[1][2][3][9]",
+        "글로벌 해운 비용이 호르무즈 및 홍해 교란으로 사상 최고치로 급등[28][29]",
+        "유조선 운임이 하루 100만 달러를 상회하는 수준으로 상승[26]",
+        "아제르바이잔 아제리 라이트유 가격 배럴당 122달러 상회[38][39]",
+        "JPMorgan, 이란 전쟁이 시장 모델 예측을 벗어난다며 유가 전망 포기[42][46]"
+      ],
+      "resolved": [
+        "미군의 호르무즈 해협 기뢰 제거로 항로 개방 및 해협 통과 물동량 6개월 만에 최고치 기록[25][27][32][33][61]"
+      ]
+    }
+  },
+  "sources": {
+    "1_Security": [
+      {
+        "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile – Brandon Sun",
+        "url": "https://www.brandonsun.com/world/2026/09/19/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile",
+        "type": "intl"
+      },
+      {
+        "title": "Gulf, UN Condemnation of Houthi Attacks on Saudi Arabia",
+        "url": "https://english.aawsat.com/gulf/5320264-gulf-un-condemnation-houthi-attacks-saudi-arabia",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with ballistic missile",
+        "url": "https://www.thehindu.com/news/international/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-ballistic-missile/article71486051.ece",
+        "type": "intl"
+      },
+      {
+        "title": "US working to keep Strait of Hormuz open and secure: CENTCOM chief",
+        "url": "https://thefrontierpost.com/us-working-to-keep-strait-of-hormuz-open-and-secure-centcom-chief/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile – KSEV Radio",
+        "url": "https://ksevradio.com/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile/",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi missiles on Riyadh and other cities intercepted, Saudi coalition says",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-missiles-riyadh-and-other-cities-intercepted-saudi-coalition-says",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile – Winnipeg Free Press",
+        "url": "https://www.winnipegfreepress.com/world/2026/09/19/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile",
+        "type": "intl"
+      },
+      {
+        "title": "Iran retains initiative in Strait of Hormuz despite US claims: Armed Forces spokesman",
+        "url": "https://www.presstv.co.uk/Detail/2026/09/19/776629/Iran-CENTCOM-Shekarchi-Hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Missile Hits Riyadh Airport Fuel Depot as War Reaches Saudi Capital",
+        "url": "https://www.hngn.com/articles/273300/20260919/houthi-missile-hits-riyadh-airport-fuel-depot-war-reaches-saudi-capital.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen's Houthi rebels tried to attack with a ballistic missile",
+        "url": "https://www.wlwt.com/article/saudi-arabia-yemen-houthi-rebels-ballistic-missile/73804217",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Projectile Report Near Makkah: What We Know",
+        "url": "https://www.pakistantoday.com.pk/2026/09/19/a-nato-for-nato",
+        "type": "intl"
+      },
+      {
+        "title": "Turkey Ready to Aid Saudi Arabia Under Defence Pact as Houthi Attacks Escalate",
+        "url": "http://www.econotimes.com/Turkey-Ready-to-Aid-Saudi-Arabia-Under-Defence-Pact-as-Houthi-Attacks-Escalate-1752495",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | Mocha gripped by fear after Houthi takeover",
+        "url": "https://www.arabnews.com/middle-east/mocha-gripped-by-fear-after-houthi-takeover-3002363",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile",
+        "url": "https://krmg.com/2026/09/19/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemeni army says it stopped Houthi attack, killing 12",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-stopped-houthi-attack-killing-12",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Ballistic Missiles Hit Fuel Tanks Near Riyadh Airport In War First",
+        "url": "https://www.zerohedge.com/geopolitical/houthi-ballistic-missiles-strike-near-riyadh-airport-first-war",
+        "type": "intl"
+      },
+      {
+        "title": "Italian Eurofighter Typhoon Struck In Houthi Attack On Saudi Air Base",
+        "url": "https://theaviationist.com/2026/09/18/italian-eurofighter-hit-saudi-arabia/",
+        "type": "intl"
+      },
+      {
+        "title": "14-Country Maritime Defense Alliance Moves Closer To Deploying To Red Sea, Gulf Of Aden",
+        "url": "https://www.zerohedge.com/geopolitical/14-country-maritime-defense-alliance-moves-closer-deploying-red-sea-gulf-aden",
+        "type": "intl"
+      },
+      {
+        "title": "From Our Own Correspondent - Frank Gardner: Why Houthi Red Sea gains matter globally",
+        "url": "https://www.bbc.co.uk/sounds/play/curation/m001bm45/p0pbb50z",
+        "type": "intl"
+      },
+      {
+        "title": "Fuel depot near Saudi airport in Riyadh hit by air attacks after Iraqi militants, Yemeni Houthis strike pipeline",
+        "url": "https://humanevents.com/2026/09/19/fuel-depot-near-saudi-airport-in-riyadh-hit-by-air-attacks-after-iraqi-militants-yemeni-houthis-strike-pipeline",
+        "type": "intl"
+      },
+      {
+        "title": "Plume of smoke seen near Riyadh airport after Houthi threats",
+        "url": "https://www.lbc.co.uk/article/smoke-riyadh-airport-houthi-threats-5Hjdhg4_2/",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz Attacks Spill Oil into Persian Gulf",
+        "url": "https://en.tempo.co/read/2119925/strait-of-hormuz-attacks-spill-oil-into-persian-gulf",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM: US forces facilitate shipping of 1 billion oil barrels out of Strait of Hormuz",
+        "url": "https://www.jns.org/news/u-s-news/centcom-us-forces-facilitate-shipping-of-1-billion-oil-barrels-out-of-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi-Houthi conflict escalates with attack near Riyadh airport",
+        "url": "https://nypost.com/2026/09/19/world-news/saudi-houthi-conflict-escalates-with-attack-near-riyadh-airport/",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea's Hormuz dilemma reaches Washington as Cho meets Rubio",
+        "url": "https://jp.ibtimes.com/south-korea-hormuz-decision-104497",
+        "type": "intl"
+      },
+      {
+        "title": "Pak Deputy PM engages Araghchi on Safe Shipping, Energy Supplies amid Hormuz crisis",
+        "url": "https://en.dailypakistan.com.pk/19-Sep-2026/pak-deputy-pm-engages-araghchi-on-safe-shipping-energy-supplies-amid-hormuz-crisis",
+        "type": "intl"
+      },
+      {
+        "title": "Riyadh Airport rocked by explosions amid reported Houthi attacks",
+        "url": "https://en.dailypakistan.com.pk/19-Sep-2026/riyadh-airport-rocked-by-explosions-amid-reported-houthi-attacks",
+        "type": "intl"
+      },
+      {
+        "title": "Riyadh Airport attacked as Houthi Drone Strike sparks Flames near Fuel Tank",
+        "url": "https://pakobserver.net/riyadh-airport-attacked-as-houthi-drone-strike-sparks-flames-near-fuel-tank/",
+        "type": "intl"
+      },
+      {
+        "title": "UN Security Council Condemns Houthi Escalation and Threats to International Maritime Security",
+        "url": "https://www.khabaragency.net/news253118.html",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz disruptions lead to the worst threat to global trade in 80 years, says WTO chief",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/19/strait-of-hormuz-disruptions-lead-to-the-worst-threat-to-global-trade-in-80-years-says-wto-chief",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims strike on tanker; US reports casualties | The Arkansas Democrat-Gazette",
+        "url": "https://www.arkansasonline.com/news/2026/sep/19/iran-claims-strike-on-tanker-us-reports-casualties/",
+        "type": "intl"
+      },
+      {
+        "title": "Black smoke, flames seen near Riyadh airport; flights disrupted amid Houthi strikes",
+        "url": "https://www.moneycontrol.com/world/black-smoke-flames-seen-near-riyadh-airport-flights-disrupted-article-14033539.html",
+        "type": "intl"
+      },
+      {
+        "title": "Sirens sound in Saudi capital for first time since Houthi escalation: 'Clashes have i",
+        "url": "https://www.ynetnews.com/article/bkovzniyfl",
+        "type": "intl"
+      },
+      {
+        "title": "Trump confirms Houthi talks, says Iran war will end soon",
+        "url": "https://www.samaa.tv/2087357039-trump-confirms-talks-with-houthis-says-iran-war-will-end-soon",
+        "type": "intl"
+      },
+      {
+        "title": "Vessel attacked on Omani side of Strait of Hormuz, crew safe",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260918-azertac01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "IRGC Says It Struck Another Oil Tanker In Strait of Hormuz",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260918-rferl01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims oil tanker strike in Strait of Hormuz  - News Today",
+        "url": "https://newstodaynet.com/2026/09/19/iran-claims-oil-tanker-strike-in-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Rare Saudi air raid alerts issued in Riyadh amid Houthi attacks",
+        "url": "https://www.moneycontrol.com/world/rare-saudi-air-raid-alerts-issued-in-riyadh-amid-houthi-attacks-article-14033446.html",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan condemns Houthi attacks on merchant shipping in Bab al-Mandab, calls for de-escalation",
+        "url": "https://dunyanews.tv/en/Pakistan/973644-pakistan-condemns-houthi-attacks-on-merchant-shipping-in-bab-almandab",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea to contribute 'substantively' to Hormuz navigation efforts, top diplomat tells US counterpart",
+        "url": "https://aa.com.tr/en/asia-pacific/south-korea-to-contribute-substantively-to-hormuz-navigation-efforts-top-diplomat-tells-us-counterpart/4061753",
+        "type": "intl"
+      },
+      {
+        "title": "Trump Signs Russia-Iran Sanctions Law as Saudi Arabia on Alert Over Houthi Threat, Rising Gulf Tensions and Shipping Risks",
+        "url": "https://gulfnews.com/world/mena/trump-signs-russia-iran-sanctions-law-saudi-arabia-on-alert-amid-houthi-threat-1.500680223",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan condemns Houthi move to weaponise Bab-Al-Mandab, underscores solidarity with Saudi Arabia",
+        "url": "https://pakobserver.net/pakistan-condemns-houthi-move-to-weaponise-bab-al-mandab-underscores-solidarity-with-saudi-arabia/",
+        "type": "intl"
+      },
+      {
+        "title": "Arab, Regional Officials Condemn Houthi Attacks on Taif",
+        "url": "https://english.aawsat.com/gulf/5320021-arab-regional-officials-condemn-houthi-attacks-taif",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | UN Security Council condemns Houthi attacks on Saudi Arabia, backs Riyadh's right to self-defense",
+        "url": "https://www.arabnews.com/saudi-arabia/un-security-council-condemns-houthi-attacks-on-saudi-arabia-backs-riyadhs-right-to-self-defense-3002300",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul affirms intent to help US with Strait of Hormuz",
+        "url": "http://www.jpost.com/international/article-909090",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims it struck an oil tanker in the Strait of Hormuz, and other Mideast developments",
+        "url": "https://lancasteronline.com/news/world/iran-claims-it-struck-an-oil-tanker-in-the-strait-of-hormuz-and-other-mideast/article_677f5aa1-94c3-5ff8-b06e-14b29e790275.html",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Militia Imposes Heightened Security Measures Across Sanaa",
+        "url": "https://www.khabaragency.net/news253102.html",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Advance Puts Africa's Red Sea Economies at Risk",
+        "url": "https://www.africa.com/top-10-news/houthi-advance-puts-africas-red-sea-economies-at-risk",
+        "type": "intl"
+      },
+      {
+        "title": "Explosions Heard In Saudi Capital Riyadh As Air Defence Alerts Issued Amid Houthi Drone Threat",
+        "url": "https://www.freepressjournal.in/world/explosions-heard-in-saudi-capital-riyadh-as-air-defence-alerts-issued-amid-houthi-drone-threat",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul affirms US investment pledges, intent to help with Strait of Hormuz free passage",
+        "url": "https://economictimes.indiatimes.com/news/defence/seoul-affirms-us-investment-pledges-intent-to-help-with-strait-of-hormuz-free-passage/articleshow/134346503.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says struck oil tanker in Strait of Hormuz",
+        "url": "https://www.philstar.com/world/2026/09/19/2557386/iran-says-struck-oil-tanker-strait-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims it struck an oil tanker in the Strait of Hormuz",
+        "url": "https://economictimes.indiatimes.com/news/defence/iran-claims-it-struck-an-oil-tanker-in-the-strait-of-hormuz/articleshow/134346222.cms",
+        "type": "intl"
+      },
+      {
+        "title": "The Domino Effect: How Houthi Terror At Bab El-Mandeb Affects Us All",
+        "url": "https://www.i24news.tv/en/news/middle-east/artc-the-domino-effect-how-houthi-terror-at-bab-el-mandeb-affects-us-all",
+        "type": "intl"
+      },
+      {
+        "title": "Iran says it strikes an oil tanker, and other Mideast developments",
+        "url": "http://www.sitkasentinel.com/stories/iran-says-it-strikes-an-oil-tanker-and-other-mideast-developments,171842",
+        "type": "intl"
+      },
+      {
+        "title": "Iran claims it struck an oil tanker in the Strait of Hormuz, and other Middle East developments",
+        "url": "https://www.asiaone.com/world/iran-claims-it-struck-oil-tanker-strait-hormuz-and-other-middle-east-developments",
+        "type": "intl"
+      },
+      {
+        "title": "Report: China Pushes Iran to Rein In Houthis, Reopen Strait of Hormuz",
+        "url": "https://www.breitbart.com/middle-east/2026/09/18/report-china-pushes-iran-to-rein-in-houthis-reopen-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Africa's Red Sea States Face Growing Risks as Houthi Expand Their Reach",
+        "url": "https://maritime-executive.com/editorials/africa-s-red-sea-states-face-growing-risks-as-houthi-expand-their-reach",
+        "type": "intl"
+      },
+      {
+        "title": "Yemen: New Attacks by Houthi Include Likely War Crimes",
+        "url": "http://www.pakistantelegraph.com/news/279306550/yemen-new-attacks-by-houthi-include-likely-war-crimes",
+        "type": "intl"
+      },
+      {
+        "title": "Oil Tanker Hit by Projectile in Strait of Hormuz",
+        "url": "https://www.wmal.com/2026/09/18/oil-tanker-hit-by-projectile-in-strait-of-hormuz/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemeni Forces Battle Houthi Assaults On Strategic Heights Overlooking Bab Al-Mandab",
+        "url": "https://www.eurasiareview.com/19092026-yemeni-forces-battle-houthi-assaults-on-strategic-heights-overlooking-bab-al-mandab/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemeni forces target Houthi positions, destroy military vehicles in Marib",
+        "url": "https://sana.sy/en/middle-east/2343876/",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi Attacks Expose Iran's Desperation – HotAir",
+        "url": "https://hotair.com/headlines/2026/09/18/houthi-attacks-expose-irans-desperation-n3819079",
+        "type": "intl"
+      },
+      {
+        "title": "Seoul reaffirms to US its intent to contribute to restoring Strait of Hormuz free passage",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/seoul-reaffirms-us-its-intent-contribute-restoring-strait-hormuz-free",
+        "type": "intl"
+      },
+      {
+        "title": "Italy Scrambles Warships Toward Red Sea As Houthis Close In On Global Shipping Chokepoint",
+        "url": "https://dailycaller.com/2026/09/18/italy-warships-red-sea-houthis/",
+        "type": "intl"
+      },
+      {
+        "title": "Jordan condemns Houthi missile attack on Riyadh",
+        "url": "https://jordantimes.com/news/local/jordan-condemns-houthi-missile-attack-on-riyadh",
+        "type": "intl"
+      },
+      {
+        "title": "religious leaders condemn attempted Houthi drone attack",
+        "url": "https://www.pakistantoday.com.pk/2026/09/20/religious-leaders-vow-full-support-to-saudi-arabia-in-defence-of-haramain",
+        "type": "intl"
+      },
+      {
+        "title": "Oman, Germany discuss Strait of Hormuz and Red Sea navigation",
+        "url": "https://www.muscatdaily.com/2026/09/19/oman-germany-discuss-strait-of-hormuz-and-red-sea-navigation/",
+        "type": "intl"
+      },
+      {
+        "title": "Houthi rebels claim attacks on Saudi capital Riyadh",
+        "url": "https://www.crookwellgazette.com.au/story/9353532/houthi-rebels-claim-attacks-on-saudi-capital-riyadh/",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistani, Iranian foreign ministers talk energy supply, shipping safety",
+        "url": "https://thefrontierpost.com/pakistani-iranian-foreign-ministers-talk-energy-supply-shipping-safety/",
+        "type": "intl"
+      },
+      {
+        "title": "Flames, Black Smoke Seen Near Riyadh Airport Amid Major Flight Disruption",
+        "url": "https://www.outlookindia.com/international/flames-black-smoke-seen-near-riyadh-airport-amid-major-flight-disruption",
+        "type": "intl"
+      },
+      {
+        "title": "Chaos at Riyadh airport amid new Houthi threat",
+        "url": "http://www.bgnes.com/conflicts/chaos-at-riyadh-airport-amid-new-houthi-threat",
+        "type": "intl"
+      },
+      {
+        "title": "Zelensky's endgame, Houthi dominance, German decline: RT stories that shaped the week",
+        "url": "http://www.middleeaststar.com/news/279317086/zelensky-endgame-houthi-dominance-german-decline-rt-stories-that-shaped-the-week",
+        "type": "intl"
+      },
+      {
+        "title": "US CENTCOM commander reaffirms joint efforts to secure Strait of Hormuz navigation",
+        "url": "https://aninews.in/news/world/us/us-centcom-commander-reaffirms-joint-efforts-to-secure-strait-of-hormuz-navigation20260919201327/",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | Yemeni forces target Houthi positions and reinforcements in Marib",
+        "url": "https://www.arabnews.com/middle-east/yemeni-forces-target-houthi-positions-and-reinforcements-in-marib-3002344",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | Pakistani, Iranian foreign ministers talk energy supply, shipping safety",
+        "url": "https://www.arabnews.com/middle-east/pakistani-iranian-foreign-ministers-talk-energy-supply-shipping-safety-3002343",
+        "type": "intl"
+      },
+      {
+        "title": "Somali piracy rise tests China's long-running Gulf of Aden mission",
+        "url": "https://www.scmp.com/news/china/diplomacy/article/3368114/somali-piracy-rise-tests-chinas-long-running-gulf-aden-mission",
+        "type": "intl"
+      },
+      {
+        "title": "Egypt, US stress importance of ensuring freedom of navigation in Strait of Hormuz",
+        "url": "https://sana.sy/en/international/2344009/",
+        "type": "intl"
+      },
+      {
+        "title": "'We escaped barefoot': Yemen families flee fresh Houthi offensive",
+        "url": "https://www.dailysabah.com/world/mid-east/we-escaped-barefoot-yemen-families-flee-fresh-houthi-offensive",
+        "type": "intl"
+      },
+      {
+        "title": "RESOLUTION OF A PIRACY INCIDENT IN THE GULF OF ADEN",
+        "url": "https://eunavfor.eu/index.php/news/resolution-piracy-incident-gulf-aden",
+        "type": "intl"
+      },
+      {
+        "title": "Flames, huge plume of black smoke seen near Riyadh airport amid Houthi strikes",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/flames-huge-plume-of-black-smoke-seen-near-riyadh-airport-amid-houthi-strikes/articleshow/134352887.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan and Iran foreign ministers discuss regional stability and safe shipping",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-and-iran-foreign-ministers-discuss-regional-stability-and-safe",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz crisis: Why the world's energy system has not buckled yet   McKinsey explains",
+        "url": "https://www.businesstoday.in/world/story/strait-of-hormuz-crisis-why-the-worlds-energy-system-has-not-buckled-yet-mckinsey-explains-556620-2026-09-19",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea Rules Out Military Involvement in Iran War",
+        "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260918-rferl02.htm",
+        "type": "intl"
+      },
+      {
+        "title": "Media Monitor: WSJ Opinion Weighs Tariffs, Kyl's Legacy, Houthi Threat and AI's Future",
+        "url": "https://newsroomamerica.com/a/Zz4s9UY6C50VyoPygKLxOHMypHT/the_wall_street_journal_s_editorial_board_says_michigan_voters_oppose_trump_s_canada_trade_war_a_stance_it_argues_is_boosting_democrat_abdul_el_sayed_and_honors_the_late_sen_jon_kyl.html",
+        "type": "intl"
+      },
+      {
+        "title": "The OIC General Secretariat Condemns the Houthi Attacks on Makkah and the Madinah Region",
+        "url": "https://www.globalsecurity.org/wmd/library/news/saudi/2026/saudi-260915-oic01.htm",
+        "type": "intl"
+      },
+      {
+        "title": "AU Demands Red Sea De-escalation, Warning Houthi Strikes Threaten Littoral Economies, Global Trade",
+        "url": "https://www.thereporterethiopia.com/52908/",
+        "type": "intl"
+      },
+      {
+        "title": "Red Sea Realignment: Houthi Advancements At Bab El-Mandeb And The Strategic Gamble For The Horn Of Africa",
+        "url": "https://www.thereporterethiopia.com/52889/",
+        "type": "intl"
+      },
+      {
+        "title": "Cuba hit with another nationwide blackout amid US fuel blockade",
+        "url": "http://www.jamaicantimes.com/news/279316775/cuba-hit-with-another-nationwide-blackout-amid-us-fuel-blockade",
+        "type": "intl"
+      },
+      {
+        "title": "UN Security Council condemns Houthi attacks on Saudi Arabia",
+        "url": "https://aa.com.tr/en/world/un-security-council-condemns-houthi-attacks-on-saudi-arabia/4061682",
+        "type": "intl"
+      },
+      {
+        "title": "EIL in talks with Saudi Arabia, UAE for oil infra projects to bypass Strait of Hormuz",
+        "url": "https://www.thehindu.com/news/national/eil-in-talks-with-saudi-arabia-uae-for-oil-infra-projects-to-bypass-strait-of-hormuz/article71483977.ece",
+        "type": "intl"
+      },
+      {
+        "title": "Breaking: Trump Signs Russia Sanction Bill",
+        "url": "https://www.gulte.com/shorts/432480/breaking-trump-signs-russia-sanction-bill",
+        "type": "intl"
+      },
+      {
+        "title": "Donald Trump Signs Russia Sanctions Bill Targeting Oil Buyers, Shadow Fleet and Energy Sector",
+        "url": "https://gulfnews.com/world/americas/donald-trump-signs-russia-sanctions-bill-targeting-oil-buyers-and-shadow-fleet-1.500680138",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan condemns Houthi 'nefarious designs' to weaponize Bab-Al-Manda by attacking ships",
+        "url": "https://en.dailypakistan.com.pk/19-Sep-2026/pakistan-condemns-houthi-nefarious-designs-to-weaponize-bab-al-manda-by-attacking-ships",
+        "type": "intl"
+      },
+      {
+        "title": "EA-CEO Retort VideoCast: Saudi-Houthi Conflict Complicates Trump's Failing War on Iran",
+        "url": "https://eaworldview.com/2026/09/saudi-houthi-conflict-complicates-trumps-failing-war-on-iran/",
+        "type": "intl"
+      },
+      {
+        "title": "Cuba faces another nationwide blackout amid US fuel blockade",
+        "url": "https://www.dw.com/en/cuba-faces-another-nationwide-blackout-amid-us-fuel-blockade/a-79335396",
+        "type": "intl"
+      },
+      {
+        "title": "China Coast Guard vessel rams and damages Philippine boat on refueling mission",
+        "url": "https://nypost.com/2026/09/19/world-news/china-coast-guard-vessel-rams-and-damages-philippine-boat-on-refueling-mission/",
+        "type": "intl"
+      },
+      {
+        "title": "Yemeni warplanes strike Houthi positions east of Taiz city",
+        "url": "https://aa.com.tr/en/middle-east/yemeni-warplanes-strike-houthi-positions-east-of-taiz-city/4061662",
+        "type": "intl"
+      },
+      {
+        "title": "Shipping 'must not become targets of geopolitical tensions': India",
+        "url": "https://ianslive.in/shipping-must-not-become-targets-of-geopolitical-tensions-india--20260919065403",
+        "type": "intl"
+      },
+      {
+        "title": "South Korea, US discuss Seoul's role in Middle East, investment pact",
+        "url": "https://www.straitstimes.com/world/south-korea-us-discuss-seouls-role-in-middle-east-investment-pact",
+        "type": "intl"
+      },
+      {
+        "title": "사우디 수도서 미사일과 폭발음…후티 맹공에 첫 공습경보 발령",
+        "url": "https://n.news.naver.com/mnews/article/448/0000640328?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도 공습에 첫 경보...\"리야드 공항 인근 검은 연기\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409244?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 첫 공습 경보...\"리야드 공항 인근 연료탱크 불길\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409240?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도에 첫 공습경보… 리야드공항 인근 연료탱크서 화재",
+        "url": "https://n.news.naver.com/mnews/article/366/0001193400?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도까지 첫 화염…후티, 대규모 집회로 세 과시",
+        "url": "https://n.news.naver.com/mnews/article/056/0012260617?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 수도 리야드 공항 인근 연기 기둥\"...후티 공습 추정",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409222?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"사우디 수도 리야드 공항 인근서 화염\"...후티 공습 추정",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409217?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]후티 공세에 사우디 수도 리야드 첫 공습경보",
+        "url": "https://n.news.naver.com/mnews/article/079/0004191213?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도에도 첫 공습경보…파키스탄, 군사개입 시사",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969863?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디, 파키스탄 개입 시사…후티 지지자들 소총 들고 집결",
+        "url": "https://n.news.naver.com/mnews/article/437/0000511940?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 리야드 첫 공습 경보...\"폭발음 들려\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409183?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보] 사우디 수도 첫 공습경보·폭발음…후티 반군, 수도까지 공격한...",
+        "url": "https://n.news.naver.com/mnews/article/448/0000640298?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[김대호 인물] 빈살만(MBS) 사우디-후티 전면전",
+        "url": "https://www.g-enews.com/view.php?ud=202609160831144781906806b77b_1",
+        "type": "dom"
+      },
+      {
+        "title": "강훈식 비서실장, UAE 칼둔 회동…방산·AI 등 650억달러 협력 '실질 이...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005578247?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한미 국방협의체 \"전작권 전환 가속화 협력 강화\"… 호르무즈 현안도 논...",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3434112",
+        "type": "dom"
+      },
+      {
+        "title": "'적대적 공중 위협' 사우디 수도 긴장…폭발음 뒤 공항 인근 검은 연기",
+        "url": "https://n.news.naver.com/mnews/article/008/0005416157?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "조현 “호르무즈 기여 의지”…청와대도 “트럼프 요청 거절 아냐”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012260608?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "청와대 \"'중동 협조' 요청 거절 아냐\"…미 국무부 \"협력 중요성 거듭 강...",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969862?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한미외교장관 회담…\"호르무즈 해협 기여 의지 전달\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000907847?sid=161",
+        "type": "dom"
+      },
+      {
+        "title": "“미국에 죽음을”…테헤란서 최대 규모 반미 시위",
+        "url": "https://n.news.naver.com/mnews/article/449/0000361400?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 기여 밝힌 韓⋯美는 반도체·대미 투자에 집중",
+        "url": "https://n.news.naver.com/mnews/article/031/0001059921?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "\"실내 머물라\" 한밤중 사우디 수도 발칵…공습경보에 두 차례 폭발음",
+        "url": "https://n.news.naver.com/mnews/article/008/0005416138?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도, 첫 공습경보 발령…후티 공세 확대 후 처음",
+        "url": "https://n.news.naver.com/mnews/article/421/0009180366?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "청와대 \"이재명 대통령, 트럼프 호르무즈 파병 요청 거절 아냐\" 해명",
+        "url": "http://www.breaknews.com/1238024",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 \"대미투자 결실 노력\"…韓 \"호르무즈 기여 계속 소통\"",
+        "url": "https://www.tfmedia.co.kr/news/article.html?no=207338",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 기여 밝힌 韓…美, 반도체·대미투자 압박",
+        "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=365777",
+        "type": "dom"
+      },
+      {
+        "title": "“이 대통령, 파병 거절” NYT 보도에···청와대 “거절 아니며, 기여...",
+        "url": "https://n.news.naver.com/mnews/article/032/0003471444?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "청와대 \"이 대통령, 전쟁 개입 불가 원칙…트럼프 요청 거절 아냐\"",
+        "url": "https://n.news.naver.com/mnews/article/417/0001158789?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "NYT “韓, 트럼프 요청 거부”…靑 “거절 아냐, 실질적 기여 방안 검토...",
+        "url": "https://n.news.naver.com/mnews/article/123/0002390537?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "'전쟁 언제 끝나나'…美국방부 이란전쟁에 \"62조원 지출\"",
+        "url": "https://n.news.naver.com/mnews/article/018/0006372457?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[기자수첩] '파병 아니다'라는 설명, 이란에도 통할까",
+        "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2472486",
+        "type": "dom"
+      },
+      {
+        "title": "美 “한·미 외교장관회담서 호르무즈 협력 중요성 재차 강조”",
+        "url": "https://n.news.naver.com/mnews/article/022/0004160325?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교수장 7개월 만의 회동…3500억 달러 투자·호르무즈 파병 등 논...",
+        "url": "https://bizhankook.com/articles/us-sk-diplomatic-talks-investment-security.html",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 선 그은 韓…美는 '대미투자·반도체' 압박 카드 꺼냈다",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1724941",
+        "type": "dom"
+      },
+      {
+        "title": "한미외교장관 \"대미투자 결실 노력\"…미 \"투자 신속이행 중요\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001389603?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한·미 외교장관 \"투자 협상 노력\"…\"호르무즈 협력 강조\"",
+        "url": "https://n.news.naver.com/mnews/article/437/0000511915?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 회담…조현 “호르무즈 기여 계속 소통”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012260569?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 기본입장 전한 韓…미국은 통상·투자에 집중",
+        "url": "https://n.news.naver.com/mnews/article/001/0016322167?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관회담 기싸움...\"호르무즈 기여 의지\" vs \"신속하게 투자해...",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409112?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "청 “이 대통령, 트럼프 ‘중동 협조 요청’ 거절한 것 아니다”",
+        "url": "https://n.news.naver.com/mnews/article/028/0002823824?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"李대통령, 트럼프 중동 협조 요청 거절 아냐…기여방안 검토\"",
+        "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5064040",
+        "type": "dom"
+      },
+      {
+        "title": "\"대미투자 결실 노력\"‥호르무즈 파병 논의",
+        "url": "https://n.news.naver.com/mnews/article/214/0001524899?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"李대통령 '전쟁 파병 없다', 트럼프 요청 거절 아냐\"",
+        "url": "https://n.news.naver.com/mnews/article/586/0000138567?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "靑 “李대통령 ‘전쟁 개입 없다’는 입장, 트럼프 요청 거절 아냐”",
+        "url": "https://n.news.naver.com/mnews/article/025/0003552513?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"트럼프 중동 협조 요청 거절 아냐..전쟁 불개입 원칙하 기여 검토\"",
+        "url": "https://www.gobalnews.com/news/articleView.html?idxno=202811",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 \"정상합의 이행 소통···호르무즈 통항 회복 기여\"",
+        "url": "https://www.todaykorea.co.kr/news/articleView.html?idxno=406309",
+        "type": "dom"
+      },
+      {
+        "title": "靑, NYT '트럼프 요청 거부' 해석 반박…\"실질적 기여 방안 계속 검토\"",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4435752",
+        "type": "dom"
+      },
+      {
+        "title": "靑 “李대통령, 트럼프 요청 거절한 것 아냐”…NYT 보도 반박",
+        "url": "https://n.news.naver.com/mnews/article/366/0001193383?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"李대통령, 트럼프 호르무즈 파병 요청 거절 아냐\"...NYT 보도 정면 반...",
+        "url": "https://www.g-enews.com/view.php?ud=20260919111217400631a5c2dd38_1",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 리야드서 공습 경보 뒤 폭발음...후티 공세 후 처음",
+        "url": "https://n.news.naver.com/mnews/article/310/0000140148?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“파병 요구 없었다”지만…美 “호르무즈 협력 중요성 거듭 강조”",
+        "url": "https://n.news.naver.com/mnews/article/025/0003552509?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "조현 외교장관, 루비오와 회담…대미투자·호르무즈 협력 논의",
+        "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005924452",
+        "type": "dom"
+      },
+      {
+        "title": "이란 대통령 방미 앞두고…트럼프 \"이란 전멸 공격 중대기로\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000907747?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한미 국방당국 '전작권 전환' 가속화 합의…'호르무즈 파병'은 빠져",
+        "url": "https://n.news.naver.com/mnews/article/008/0005416098?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 \"대미투자 결실 노력…호르무즈 해협 통항 기여\" 교감",
+        "url": "https://www.hidomin.com/news/articleView.html?idxno=721830",
+        "type": "dom"
+      },
+      {
+        "title": "靑 “李대통령, 트럼프 중동 협조 요청에 거절 아냐…기여방안 검토할 ...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002699621?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "靑 “李, 트럼프 요청 거절한 것 아냐…중동 기여 방안 검토 중”",
+        "url": "https://n.news.naver.com/mnews/article/021/0002819951?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "조현 \"대미투자 좋은 결실 노력\"…미국은 '신속 이행' 강조",
+        "url": "https://n.news.naver.com/mnews/article/654/0000201483?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한미외교장관 회담…美측 '호르무즈 파병 구체적 요구 없어'(종합)",
+        "url": "https://n.news.naver.com/mnews/article/018/0006372404?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "靑 \"李대통령, 트럼프 중동 협조 요청 거절 아냐…전쟁 개입 없이 기여...",
+        "url": "https://n.news.naver.com/mnews/article/421/0009180026?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "이란, 테헤란서 30만명 규모 관제 집회…\"민간인 60만명 군사훈련 등록...",
+        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=393460",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 회담…조현 “대미투자 결실 노력, 호르무즈 기여 강조”",
+        "url": "https://www.kukinews.com/article/view/kuk202609190011",
+        "type": "dom"
+      },
+      {
+        "title": "한미외교 \"대미투자 결실 노력\"…호르무즈·북미대화 논의(종합2보)",
+        "url": "https://n.news.naver.com/mnews/article/421/0009180020?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "마크롱 “미·이란, 단기 내 호르무즈 합의 어려워”",
+        "url": "https://www.tokenpost.kr/news/breaking/410629",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 \"대미투자 결실 노력 … 호르무즈 해협 기여 소통\"",
+        "url": "https://www.newdaily.co.kr/site/data/html/2026/09/19/2026091900024.html",
+        "type": "dom"
+      },
+      {
+        "title": "조현 \"호르무즈 통항 기여 의지\"...\"한미, 대미 투자 결실 노력\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409083?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"호르무즈 통항 회복에 실질적 기여\"…한미 외교 수장, 현안 논의",
+        "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5064035",
+        "type": "dom"
+      },
+      {
+        "title": "호르무즈 파병 논란…참여연대 \"청해부대 변칙 운용 안 된다\"",
+        "url": "https://www.ngonews.kr/news/articleView.html?idxno=238742",
+        "type": "dom"
+      },
+      {
+        "title": "韓 “호르무즈 기여 계속 소통”…美 “대미투자 약속 이행 중요”",
+        "url": "https://n.news.naver.com/mnews/article/016/0002699610?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 회담…대미투자·호르무즈 협력 논의",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=866734",
+        "type": "dom"
+      },
+      {
+        "title": "조현, 루비오와 회담…\"호르무즈 해협 기여 의지\"",
+        "url": "https://n.news.naver.com/mnews/article/422/0000907713?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 \"대미투자 결실 노력, 호르무즈 해협 기여 소통\"",
+        "url": "https://n.news.naver.com/mnews/article/469/0000954949?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "조현, 美에 호르무즈 자유통항에 기여 설명...\"한미, 대미투자 결실 노...",
+        "url": "https://www.mediapen.com/news/view/1124736",
+        "type": "dom"
+      },
+      {
+        "title": "한미 외교장관 회담…대미투자 이행·호르무즈 협력 등 현안 논의",
+        "url": "https://n.news.naver.com/mnews/article/277/0005818690?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "미 재무부, 이란 가상자산 거래소 기습 제재...\"세탁 통로 전면 폐쇄\"",
+        "url": "http://coinreaders.com/259201",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 러시아·이란 제재법 서명…대이란 군사행동 검토",
+        "url": "https://www.tokenpost.kr/news/breaking/410775",
+        "type": "dom"
+      },
+      {
+        "title": "“끝날 듯 안 끝난다” 7개월째 미-이란 전쟁…‘K-기업’ 3대 수혜 분야...",
+        "url": "https://n.news.naver.com/mnews/article/016/0002699701?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "청와대 \"李, 트럼프 중동협조 거절 아냐…전쟁개입 없이 기여 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/014/0005578204?sid=100",
+        "type": "dom"
+      },
+      {
+        "title": "튀르키예, '서방 제재' 이란 멜라트은행 영업 인가 취소",
+        "url": "https://n.news.naver.com/mnews/article/421/0009180651?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "'美·EU 제재' 이란 멜라트은행, 튀르키예서 영업 면허 취소",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1724960",
+        "type": "dom"
+      },
+      {
+        "title": "튀르키예, 이란 멜라트은행 면허 취소…한국은행과도 소송 중",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969847?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "'미·EU 제재' 이란 멜라트은행, 튀르키예서 면허 취소",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409185?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디, 수도 리야드서 공습경보…공항 인근서 불길·연기 포착(종합)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014201741?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 리야드서 폭발음…주민들에 공습 경보",
+        "url": "https://n.news.naver.com/mnews/article/003/0014201425?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티-사우디 공방 격화…리야드 첫 공습경보에 폭발음",
+        "url": "https://n.news.naver.com/mnews/article/277/0005818742?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 리야드서 폭발음…공습 경보 발령 뒤 해제",
+        "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=88575",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 첫 공습경보…\"리야드 공항 인근 연료탱크서 불길\"(종합2보...",
+        "url": "https://n.news.naver.com/mnews/article/001/0016322856?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도까지 첫 공습한 듯…\"리야드공항 인근서 화염\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001389675?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티 공세에 리야드 첫 공습경보… 사우디와 충돌 수위 고조",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3434109",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도 첫 공습한 듯⋯리야드공항 인근서 불길",
+        "url": "https://n.news.naver.com/mnews/article/031/0001059931?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "‘중동 리스크 심화’ 사우디 수도 첫 공습경보…후티 공격 추정",
+        "url": "https://www.kukinews.com/article/view/kuk202609190034",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도 리야드까지 첫 공습한 듯…공방 격화일로",
+        "url": "https://n.news.naver.com/mnews/article/658/0000156088?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]사우디 수도 리야드에 폭발음 잇따라…공습경보 발령, 공항 인근...",
+        "url": "https://n.news.naver.com/mnews/article/021/0002819996?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 리야드 첫 공습경보…후티 공격 수위 높아져",
+        "url": "https://n.news.naver.com/mnews/article/656/0000187296?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도 첫 공습경보에 공항 인근 폭발음...후티 공세",
+        "url": "https://n.news.naver.com/mnews/article/660/0000117533?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 리야드공항 인근서 화염…후티 공격 추정",
+        "url": "https://n.news.naver.com/mnews/article/215/0001266561?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도까지 첫 공습한 듯‥\"리야드공항 인근서 화염\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001524932?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도 첫 공습한 듯…\"리야드공항 인근서 화염\"",
+        "url": "https://www.etoday.co.kr/news/view/2627516",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도까지 첫 공습한 듯…\"리야드공항 인근서 화염\"(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016322724?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[속보]“사우디 리야드 공항 인근서 불길·연기”<로이터>",
+        "url": "https://n.news.naver.com/mnews/article/016/0002699720?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 ‘수도’ 첫 공습경보 발령, 후티 공격 추정…전면전 번지나",
+        "url": "https://n.news.naver.com/mnews/article/025/0003552539?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티 공세 확대에··· 사우디 수도 리야드 첫 공습경보",
+        "url": "https://www.dkilbo.com/news/articleView.html?idxno=554884",
+        "type": "dom"
+      },
+      {
+        "title": "“폭발음 들리고 경보 발령하고”…수도까지 공습한 후티, 사우디 ‘발...",
+        "url": "https://n.news.naver.com/mnews/article/009/0005737644?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“사우디 수도 공습 경보 후 폭발음”···후티 반군 공세 강화",
+        "url": "https://n.news.naver.com/mnews/article/032/0003471449?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 거침없는 공세…사우디 수도까지 노렸다",
+        "url": "https://n.news.naver.com/mnews/article/011/0004663603?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 수도에 첫 공습경보 발령‥후티 공격 추정",
+        "url": "https://n.news.naver.com/mnews/article/214/0001524919?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티 공세에 사우디 수도 리야드 ‘첫 공습경보’…중동 전면전 위기 고...",
+        "url": "https://n.news.naver.com/mnews/article/119/0003134574?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티, 사우디 수도까지 첫 공습한 듯…\"경보 속 폭발음\"",
+        "url": "https://n.news.naver.com/mnews/article/055/0001389629?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "예멘 반군 후티, 사우디 수도에 첫 공습경보 발령… 전면전 위기 고조",
+        "url": "https://n.news.naver.com/mnews/article/469/0000954995?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "격화하는 후티 공세... 사우디 수도까지 첫 공습 경보",
+        "url": "https://n.news.naver.com/mnews/article/023/0003999401?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "후티 공세에 사우디 수도 리야드 첫 공습경보…전면전 우려",
+        "url": "https://n.news.naver.com/mnews/article/020/0003749446?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "정상회담 판 깨질까 봐?…美, 대만 대규모 무기판매 결정 연기 검토",
+        "url": "https://n.news.naver.com/mnews/article/029/0003048871?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "외신 \"미국, 대만 무기 판매 결정 연기 검토\"…시진핑 방미 대비?",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969826?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"美, 대만 무기판매 결정 연말로 연기 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/277/0005818739?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "\"미중정상회담 앞둔 美, 대만 무기판매 결정 연말로 연기 검토\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016322218?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "대규모 시위 벌어진 이란·예멘…파키스탄은 군사개입 시사",
+        "url": "https://n.news.naver.com/mnews/article/422/0000907809?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "해저 케이블·가스관 노린 위협 커지자 정부·방산업체 수중 무인체계 ...",
+        "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701879",
+        "type": "dom"
+      },
+      {
+        "title": "[동북아 정세 브리핑] 미중 정상회담 D-5…대만해협 압박 속 ‘관리된 긴...",
+        "url": "http://kor.theasian.asia/archives/415954",
+        "type": "dom"
+      }
+    ],
+    "2_Safety": [
+      {
+        "title": "Arab News | China vessel rams Philippine boat on refueling mission, coast guard says",
+        "url": "https://www.arabnews.com/world/china-vessel-rams-philippine-boat-on-refueling-mission-coast-guard-says-3002302",
+        "type": "intl"
+      },
+      {
+        "title": "Another Tanker Suffers Failure as Crew Suspect Cyber Attack",
+        "url": "https://www.claimsjournal.com/news/national/2026/09/19/340232.htm",
+        "type": "intl"
+      },
+      {
+        "title": "India in regular touch with Russian Embassy over crew of detained Unity tanker: MEA",
+        "url": "http://www.bignewsnetwork.com/news/279316312/india-in-regular-touch-with-russian-embassy-over-crew-of-detained-unity-tanker-mea",
+        "type": "intl"
+      },
+      {
+        "title": "울산항 해양안전벨트, 로딩마스터 대상 위험물 안전역량 강화 교육 실시",
+        "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1067767",
+        "type": "dom"
+      }
+    ],
+    "3_Freight": [
+      {
+        "title": "Strait of Hormuz Oil Shipments Hit Six-Month High as U.S. Clears Mines",
+        "url": "http://www.econotimes.com/Strait-of-Hormuz-Oil-Shipments-Hit-Six-Month-High-as-US-Clears-Mines-1752490",
+        "type": "intl"
+      },
+      {
+        "title": "Iran war sends oil tanker rates past $1 million a day: Who is paying the bill and who is making money?",
+        "url": "https://www.livemint.com/news/world/iran-war-sends-oil-tanker-rates-past-1-million-a-day-who-is-paying-the-bill-and-who-is-making-money-11789819050960.html",
+        "type": "intl"
+      },
+      {
+        "title": "US military says over 1B barrels of oil shipped through Strait of Hormuz under US blockade",
+        "url": "https://www.middleeastmonitor.com/20260919-us-military-says-over-1b-barrels-of-oil-shipped-through-strait-of-hormuz-under-us-blockade/",
+        "type": "intl"
+      },
+      {
+        "title": "Strait of Hormuz And Red Sea Disruptions Send Global Shipping Costs Soaring To Record Highs",
+        "url": "https://www.foreignpolicyjournal.com/2026/09/19/strait-of-hormuz-and-red-sea-disruptions-send-global-shipping-costs-soaring-to-record-highs/",
+        "type": "intl"
+      },
+      {
+        "title": "Global Shipping Costs Explode as Hormuz Disruptions Hit Key Trade Routes",
+        "url": "https://www.nakedcapitalism.com/2026/09/global-shipping-costs-explode-as-hormuz-disruptions-hit-key-trade-routes.html",
+        "type": "intl"
+      },
+      {
+        "title": "Pakistan's Oil Supply faces another Shock as Houthi Attacks shut Yanbu Route",
+        "url": "https://en.dailypakistan.com.pk/19-Sep-2026/pakistans-oil-supply-faces-another-shock-as-houthi-attacks-shut-yanbu-route",
+        "type": "intl"
+      },
+      {
+        "title": "UN: Daily ship transits through Strait of Hormuz fall from 85 to 5",
+        "url": "https://en.apa.az/corridors/un-daily-ship-transits-through-strait-of-hormuz-fall-from-85-to-5-525116",
+        "type": "intl"
+      },
+      {
+        "title": "US forces facilitated passage of 1bn barrels of crude oil through Strait of Hormuz: CENTCOM",
+        "url": "https://www.qatar-tribune.com/article/254701/latest-news/us-forces-facilitated-passage-of-1bn-barrels-of-crude-oil-through-strait-of-hormuz-centcom",
+        "type": "intl"
+      },
+      {
+        "title": "Oil shipments through Strait of Hormuz have hit six-month high: CENTCOM",
+        "url": "http://www.washingtonexaminer.com/news/world/4734876/oil-gas-shipments-strait-hormuz-hit-six-month-high-centcom/",
+        "type": "intl"
+      },
+      {
+        "title": "CENTCOM: More than 1B barrels of crude oil brought through the Strait of Hormuz in recent months",
+        "url": "https://www.oann.com/newsroom/centcom-more-than-1b-barrels-of-crude-oil-brought-through-the-strait-of-hormuz-in-recent-months/",
+        "type": "intl"
+      },
+      {
+        "title": "Hub Group (HUBG) Expects an Operating Loss. Can Pricing Catch Up with Freight Costs?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/hub-group-hubg-expects-operating-212854510.html",
+        "type": "intl"
+      },
+      {
+        "title": "Bahrain News: Costs of disruption to maritime routes highlighted",
+        "url": "https://www.gdnonline.com:443/Details/1406983",
+        "type": "intl"
+      },
+      {
+        "title": "How This Freight Cycle Could Last",
+        "url": "https://finance.yahoo.com/economy/articles/freight-cycle-could-last-171832534.html",
+        "type": "intl"
+      },
+      {
+        "title": "Avoid Costly Surprises_ Why Doha Terminal Handling Charges Matter in Qingdao to Hamad Port Ocean Freight Cost - 504777f3 的部落格",
+        "url": "https://blog.udn.com:443/504777f3/192530592",
+        "type": "intl"
+      },
+      {
+        "title": "VLCC 운임 97만달러, 홍해 우회에 원유 운송비 상승",
+        "url": "https://www.tokenpost.kr/news/economy/410797",
+        "type": "dom"
+      }
+    ],
+    "4_PortCargo": [
+      {
+        "title": "GRAIN ELEVATOR",
+        "url": "https://www.presentationministries.com/series/obob/obob-2026-9-19-en",
+        "type": "intl"
+      }
+    ],
+    "5_EconFinance": [
+      {
+        "title": "Oil slides after China asks Iran to limit Houthi attacks on Saudi oil facilities",
+        "url": "https://www.thedailystar.net/business/news/oil-slides-after-china-asks-iran-limit-houthi-attacks-saudi-oil-facilities-4276826",
+        "type": "intl"
+      },
+      {
+        "title": "Azerbaijan's Azeri Light oil price exceeds $122",
+        "url": "https://www.trend.az/azerbaijan/4225689.html",
+        "type": "intl"
+      },
+      {
+        "title": "Azeri Light oil price rises to $122.37 per barrel",
+        "url": "https://www.azernews.az/oil_and_gas/264107.html",
+        "type": "intl"
+      },
+      {
+        "title": "Fuel prices spike amid Strait of Hormuz turmoil | Midday News Bulletin 19 September 2026",
+        "url": "https://www.sbs.com.au/news/podcast-episode/fuel-prices-spike-amid-strait-of-hormuz-turmoil-midday-news-bulletin-19-september-2026/v1nip1dhh",
+        "type": "intl"
+      },
+      {
+        "title": "U.S. Diesel Hits Record $6.29 as Russia Refinery Strikes and Hormuz Disruptions Tighten Global Fuel Supply - FINCHANNELU.S. Diesel Price Hits $6.29: Ukraine Strikes, Russia and Hormuz Explained",
+        "url": "https://finchannel.com/u-s-diesel-hits-record-6-29-as-russia-refinery-strikes-and-hormuz-disruptions-tighten-global-fuel-supply/135483/energy/2026/09/",
+        "type": "intl"
+      },
+      {
+        "title": "JPMorgan abandons oil price forecast as Iran war defies market models",
+        "url": "https://weeklyblitz.net/2026/09/20/jpmorgan-abandons-oil-price-forecast-as-iran-war-defies-market-models/",
+        "type": "intl"
+      },
+      {
+        "title": "National Gas Prices Jump as Crude Oil Holds Above $100 - Clarksville Online - Clarksville News, Sports, Events and Information",
+        "url": "https://www.clarksvilleonline.com/2026/09/19/national-gas-prices-jump-as-crude-oil-holds-above-100/",
+        "type": "intl"
+      },
+      {
+        "title": "Iran's oil revenue hits two-year high despite US blockade",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-oil-revenue-hits-two-year-high-despite-us-blockade",
+        "type": "intl"
+      },
+      {
+        "title": "Stocks Mixed as Crude Oil Prices and Bond Yields Rise",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-mixed-crude-oil-prices-141253389.html",
+        "type": "intl"
+      },
+      {
+        "title": "JPMorgan struggles to forecast oil price as Iran war deepens Nigeria's petrol concerns",
+        "url": "https://www.premiumtimesng.com/business/business-news/910809-jpmorgan-struggles-to-forecast-oil-price-as-iran-war-deepens-nigerias-petrol-concerns.html",
+        "type": "intl"
+      },
+      {
+        "title": "Gold Gains Over 1% This Week As Cooling Crude Oil Prices Add Fresh Shine To Precious Metal",
+        "url": "https://www.freepressjournal.in/business/gold-gains-over-1-this-week-as-cooling-crude-oil-prices-add-fresh-shine-to-precious-metal",
+        "type": "intl"
+      },
+      {
+        "title": "Kuwaiti oil price falls more than $5 a barrel | The Peninsula Qatar",
+        "url": "http://thepeninsulaqatar.com/article/19/09/2026/kuwaiti-oil-price-falls-more-than-5-a-barrel",
+        "type": "intl"
+      },
+      {
+        "title": "Azerbaijani oil price exceeds $122",
+        "url": "https://en.apa.az/energy-and-industry/azerbaijani-oil-price-exceeds-122-525105",
+        "type": "intl"
+      },
+      {
+        "title": "China's Fuel Exports Surge as Global Diesel Shortage Deepens",
+        "url": "https://finance.yahoo.com/energy/articles/china-fuel-exports-surge-global-083000060.html",
+        "type": "intl"
+      },
+      {
+        "title": "Crude Oil Above $100: Can Saudi Arabia's export disruption trigger a new global energy shock?",
+        "url": "https://economictimes.indiatimes.com/markets/commodities/news/crude-oil-above-100-can-saudi-arabias-export-disruption-trigger-a-new-global-energy-shock/articleshow/134349488.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Stocks Settle Sharply Higher as Crude Oil and Bond Yields Fall",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-settle-sharply-higher-crude-203410332.html",
+        "type": "intl"
+      },
+      {
+        "title": "Gas prices continue to climb as crude oil remains high",
+        "url": "https://www.thedailyworld.com/2026/09/18/gas-prices-continue-to-climb-as-crude-oil-remains-high/",
+        "type": "intl"
+      },
+      {
+        "title": "트럼프, 새 대러 제재 법안 서명…\"러 원유 구매국 100% 관세\"",
+        "url": "https://n.news.naver.com/mnews/article/421/0009180455?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 동서 송유관 복구 추진등에 9월18 국제유가 하락",
+        "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228410",
+        "type": "dom"
+      },
+      {
+        "title": "디젤 가격 상승, 우크라전보다 중동분쟁 영향 커…트럼프 주장과 배치",
+        "url": "https://n.news.naver.com/mnews/article/293/0000090696?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 급등에도 주유소 기름값 18주째 하락…추석엔 100원 더 내린다",
+        "url": "https://www.g-enews.com/view.php?ud=202609191638052495e30fcb1ba8_1",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 뛰는데 최고가격은 또 동결...기름값 18주째 '나 홀로 하락'",
+        "url": "https://www.pennmike.com/news/articleView.html?idxno=128128",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락⋯최고가격제에 1800원대 유지",
+        "url": "https://n.news.naver.com/mnews/article/031/0001059908?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락…추석 연휴 고속도로 100원 추가 인하",
+        "url": "https://n.news.naver.com/mnews/article/119/0003134559?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 유지",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1724948",
+        "type": "dom"
+      },
+      {
+        "title": "“美·日·유럽 동시에 올렸다”…이란 전쟁이 부른 긴축 공포 [머니+]",
+        "url": "https://www.ekn.kr/web/view.php?key=20260919021196861",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 지속",
+        "url": "https://n.news.naver.com/mnews/article/032/0003471433?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 원유 공급 우려 완화되며 국제유가 3일째 하락…WTI 100달러",
+        "url": "https://n.news.naver.com/mnews/article/082/0001399045?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "휘발유 1858원·경유 1844원…주유소 기름값 18주째 하락",
+        "url": "https://n.news.naver.com/mnews/article/022/0004160322?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 10달러 급등했는데…국내 기름값 18주째 하락",
+        "url": "https://www.newsway.co.kr/news/view?ud=2026091912440065523",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락···최고가격제 동결에 1800원대 유지",
+        "url": "https://www.todaykorea.co.kr/news/articleView.html?idxno=406320",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1천800원대",
+        "url": "https://n.news.naver.com/mnews/article/374/0000533881?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락… 국제유가 상승에도 소폭 내려 1800원대",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3434028",
+        "type": "dom"
+      },
+      {
+        "title": "유가 상승에도 주유소 기름값 18주째 하락…1800원대 지속",
+        "url": "http://www.segyebiz.com/newsView/20260919503787?OutUrl=naver",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주 연속 하락…국제유가는 급등세",
+        "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005924457",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 사흘째 하락… 사우디 송유관 복구 기대",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3434024",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 사흘째 하락…WTI 100달러 초반대",
+        "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005924446",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 급등에도 주유소 기름값 18주째 하락...최고가격제 영향",
+        "url": "https://www.mediapen.com/news/view/1124760",
+        "type": "dom"
+      },
+      {
+        "title": "전국 주유소 기름값 18주째 하락…최고가격제 영향 1,800원대 지속",
+        "url": "https://n.news.naver.com/mnews/article/056/0012260550?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락…최고가격제 동결에 1,800원대 유지",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969796?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "전국 주유소 기름값, 최고가격제 영향에 1800원대...하락세는 18주째",
+        "url": "https://www.tfmedia.co.kr/news/article.html?no=207330",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 급등에도 주유소 기름값 18주째 하락…정부 최고가격제 영향",
+        "url": "https://www.youthdaily.co.kr/news/article.html?no=227357",
+        "type": "dom"
+      },
+      {
+        "title": "中, 美의 러산 석유 구매국 제재에 \"일방적 제재 반대…면밀 주시\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014201891?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 '러 수입국 100% 관세'에 中 발끈…\"필요한 모든 대응 나설 것\"",
+        "url": "https://n.news.naver.com/mnews/article/660/0000117552?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中, 美 '러시아 석유 구매국 제재법'에 \"일방적 제재 반대\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001524951?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 상승에도 국내 주유소 기름값 18주째 하락",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409111?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "최고가격제 영향에 전국 주유소 기름값 18주 연속 하락세",
+        "url": "https://www.viva100.com/article/20260919500163",
+        "type": "dom"
+      },
+      {
+        "title": "중동 불안 장기화에 최고가격제 6개월째…재정 부담 얼마나?",
+        "url": "https://n.news.naver.com/mnews/article/003/0014201039?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "美, 러 원유 수입국 100% 관세 추진... 인도 강력 반발",
+        "url": "https://www.g-enews.com/view.php?ud=202609181251434952fda4f5ab74_1",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가, 사우디 원유 공급 우려 완화에 사흘째 하락세",
+        "url": "https://n.news.naver.com/mnews/article/422/0000907707?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "석유 최고가격 4주 더 동결…유가 급등했지만 민생안정 방점",
+        "url": "https://www.tfmedia.co.kr/news/article.html?no=207329",
+        "type": "dom"
+      },
+      {
+        "title": "국제유가 다시 120弗인데…최고가격제 7개월째 지속, 가격은 ‘동결’[...",
+        "url": "https://n.news.naver.com/mnews/article/011/0004663554?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 러시아산 원유·천연가스 구매국에 최대 100% 관세 법안 서명",
+        "url": "https://www.tokenpost.kr/news/breaking/410591",
+        "type": "dom"
+      },
+      {
+        "title": "주유소 기름값 18주째 하락…정부, 석유 최고가격 동결",
+        "url": "https://n.news.naver.com/mnews/article/310/0000140142?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프, 대러 제재 확대 '그레이엄 법' 서명 발효(1보)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014200902?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "美 중간선거 앞두고 생활비 급등…모기지부터 기름값까지 다올라",
+        "url": "https://www.tfmedia.co.kr/news/article.html?no=207334",
+        "type": "dom"
+      },
+      {
+        "title": "PKC·LG화학 임원, '조 단위 담합' 혐의로 구속…나머지 6명 영장 기각",
+        "url": "https://www.cwn.kr/news/articleView.html?idxno=56888",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프·시진핑, 다음 주 정상회담…AI·관세·희토류 담판",
+        "url": "https://n.news.naver.com/mnews/article/629/0000535306?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "中경제수장 허리펑, 19∼23일 방미…미중정상회담 앞서 무역협상",
+        "url": "https://www.getnews.co.kr/news/articleView.html?idxno=881302",
+        "type": "dom"
+      },
+      {
+        "title": "트럼프·시진핑, 정상회담서 AI·관세 의제⋯만찬에 빅테크 거물들 집결",
+        "url": "https://n.news.naver.com/mnews/article/031/0001059914?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "미·중 정상회담 의제는…AI·관세 등 논의할 듯",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4435762",
+        "type": "dom"
+      },
+      {
+        "title": "중국차 美 빗장 열리나⋯시진핑 방미에 BYD·CATL·샤오미 경영진 동행 ...",
+        "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600580",
+        "type": "dom"
+      },
+      {
+        "title": "중국 경제수장 허리펑, 19∼23일 방미…미중정상회담 앞서 무역협상",
+        "url": "https://n.news.naver.com/mnews/article/055/0001389616?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "중, 미 '러시아 석유 구매국 제재법'에 \"일방적 제재 반대\"",
+        "url": "https://n.news.naver.com/mnews/article/052/0002409250?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "마크롱 佛대통령, G7 에너지 회의 소집…전략 비축유 방출 검토",
+        "url": "https://www.sentv.co.kr/article/view/sentv202609190013",
+        "type": "dom"
+      },
+      {
+        "title": "마크롱, G7 에너지 회의 연다…전략적 비축유 방출 논의",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969831?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "휘발유 가격 18주 연속 하락, 추석 연휴엔 더 싸진다?",
+        "url": "https://www.gokorea.kr/news/articleView.html?idxno=879099",
+        "type": "dom"
+      },
+      {
+        "title": "마크롱, G7 에너지 회의 소집…비축유 방출 논의",
+        "url": "https://n.news.naver.com/mnews/article/056/0012260463?sid=104",
+        "type": "dom"
+      }
+    ],
+    "6_Seafood": [
+      {
+        "title": "With the yen remaining weak, seafood companies will probably be unable to continue purchasing mackerel at such high prices.",
+        "url": "https://japantoday.com/category/quote-of-the-day/With-the-yen-remaining-weak-seafood-companies-will-probably-be-unable-to-continue-purchasing-mackerel-at-such-high-prices.",
+        "type": "intl"
+      }
+    ],
+    "7_Shipping": [
+      {
+        "title": "CENTCOM: US forces facilitated passage of 1 billion barrels of crude oil through Strait of Hormuz",
+        "url": "http://thepeninsulaqatar.com/article/19/09/2026/centcom-us-forces-facilitated-passage-of-1-billion-barrels-of-crude-oil-through-strait-of-hormuz",
+        "type": "intl"
+      },
+      {
+        "title": "Arab News | US military: Strait of Hormuz shipping traffic at 6-month high",
+        "url": "https://www.arabnews.com/middle-east/us-military-strait-of-hormuz-shipping-traffic-at-6-month-high-3002355",
+        "type": "intl"
+      },
+      {
+        "title": "US military says Strait of Hormuz shipping volumes hit six-month high",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-military-says-strait-hormuz-shipping-volumes-hit-six-month-high",
+        "type": "intl"
+      },
+      {
+        "title": "미군, 호르무즈 해협 기뢰 제거…항로 개방",
+        "url": "https://www.tokenpost.kr/news/breaking/410834",
+        "type": "dom"
+      },
+      {
+        "title": "팬오션, 벌크선사 맞아?…VLCC·LNG로 '에너지 수송' 대변신",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=488716",
+        "type": "dom"
+      }
+    ],
+    "8_Logistics": [
+      {
+        "title": "[Biz&Law] LX판토스, 美서 화물분실 손배소 제기…\"하청업체가 배송증명...",
+        "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=728125",
+        "type": "dom"
+      }
+    ],
+    "10_OtherIndustry": [
+      {
+        "title": "Saudi Aramco stops crude supplies to Indian refiners after pipeline attack; replacement barrels available, but oil is at over $100 and freight costs are set to rise",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/saudi-aramco-stops-crude-supplies-to-indian-refiners-after-pipeline-attack-replacement-barrels-available-but-oil-is-at-over-100-and-freight-costs-are-set-to-rise/articleshow/134356048.cms",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Aramco halts oil supplies to Europe after pipeline attack",
+        "url": "https://www.siasat.com/saudi-aramco-halts-oil-supplies-to-europe-after-pipeline-attack-3544749/",
+        "type": "intl"
+      },
+      {
+        "title": "Saudi Pipeline Outage Could Deepen the Global Fuel Crunch",
+        "url": "https://finance.yahoo.com/energy/articles/saudi-pipeline-outage-could-deepen-230000579.html",
+        "type": "intl"
+      },
+      {
+        "title": "A critical pipeline that helped cushion the Hormuz shock just shut: Here's what it reveals about corporate energy security",
+        "url": "https://finance.yahoo.com/energy/articles/critical-pipeline-helped-cushion-hormuz-181913939.html",
+        "type": "intl"
+      },
+      {
+        "title": "As fighting erupts in Yemen, global oil supply faces disruption",
+        "url": "https://www.2lt.com.au/as-fighting-erupts-in-yemen-global-oil-supply-faces-disruption/",
+        "type": "intl"
+      },
+      {
+        "title": "FEED contract awarded for marine fuels terminal at Oman's Shinas Port",
+        "url": "https://www.omanobserver.om/article/1196434/business/feed-contract-awarded-for-marine-fuels-terminal-at-omans-shinas-port",
+        "type": "intl"
+      },
+      {
+        "title": "Tanga set for major oil refinery",
+        "url": "https://dailynews.co.tz/tanga-set-for-major-oil-refinery/",
+        "type": "intl"
+      },
+      {
+        "title": "Dangote Refinery IPO opens for subscription",
+        "url": "https://punchng.com/dangote-petroleum-refinery-ipo-opens-for-subscription/",
+        "type": "intl"
+      },
+      {
+        "title": "Baystreet.ca - Saudi Arabia Pivots to Spot Oil Sales After Key Pipeline Goes Offline",
+        "url": "http://baystreet.ca/articles/commodities/123882/Saudi-Arabia-Pivots-to-Spot-Oil-Sales-After-Key-Pipeline-Goes-Offline",
+        "type": "intl"
+      },
+      {
+        "title": "Iron Ore Discovery & Bissell Sweeper | September 19",
+        "url": "https://www.wkar.org/podcast/michigan-minute/2026-09-19/iron-ore-discovery-bissell-sweeper-september-19",
+        "type": "intl"
+      },
+      {
+        "title": "The Refinery Kill Shot: How the Global Energy Choke Point Is Being Dismantled to Coll",
+        "url": "https://www.alipac.us/f9/refinery-kill-shot-how-global-energy-choke-point-being-dismantled-coll-441742/",
+        "type": "intl"
+      },
+      {
+        "title": "Cyprus must look beyond diesel and natural gas, says Damianou",
+        "url": "https://cyprus-mail.com/2026/09/19/cyprus-must-look-beyond-diesel-and-natural-gas-says-damianou",
+        "type": "intl"
+      },
+      {
+        "title": "Early Heat Waves Hit Wheat Yields Hardest But Boost Their Resilience To Subsequent Heat Waves",
+        "url": "https://www.eurasiareview.com/18092026-early-heat-waves-hit-wheat-yields-hardest-but-boost-their-resilience-to-subsequent-heat-waves/",
+        "type": "intl"
+      },
+      {
+        "title": "Russia Repurposes Training Missiles As Ukraine Faces Critical Patriot Shortage",
+        "url": "https://dailycaller.com/2026/09/18/russia-repurposing-training-missiles-ukraine-patriot-shortage/",
+        "type": "intl"
+      },
+      {
+        "title": "사우디 심장부 타격한 후티…리야드 첫 공습경보에 아람코 화재·유가 ...",
+        "url": "https://n.news.naver.com/mnews/article/014/0005578245?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 리야드 첫 공습경보…공항 인근 아람코 연료탱크 화재(종합)",
+        "url": "https://n.news.naver.com/mnews/article/421/0009180675?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "“다음달부터 기름 못 준다”…드론 맞은 사우디, 유럽에 공급 중단",
+        "url": "https://n.news.naver.com/mnews/article/018/0006372500?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 아람코, 10월 유럽에 원유 공급 전면 중단…핵심 송유관 공습에...",
+        "url": "https://n.news.naver.com/mnews/article/448/0000640294?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "아람코, 유럽에 10월 원유 공급 전면 중단...사우디 핵심 송유관 피격 직...",
+        "url": "https://n.news.naver.com/mnews/article/469/0000954966?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "'15조원대 담합' 석유업체 7곳…나프타 수급 불안 악용했나",
+        "url": "https://n.news.naver.com/mnews/article/437/0000511935?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "LG화학 등 7개사, '중동 위기 틈타 가격 조작' 15조 원대 석화 담합'…경...",
+        "url": "https://www.job-post.co.kr/news/articleView.html?idxno=228283",
+        "type": "dom"
+      },
+      {
+        "title": "'7개 기업 15조 규모 담합' 석유화학업체 전·현직 임원 2명 구속",
+        "url": "https://n.news.naver.com/mnews/article/057/0001969851?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "LG화학·애경케미칼·OCI·롯데정밀화학 ‘15조 담합’ 수사…임원 2명 ...",
+        "url": "https://www.g-enews.com/view.php?ud=202609191723029472e30fcb1ba8_1",
+        "type": "dom"
+      },
+      {
+        "title": "'15조원대 석화 담합' 첫 구속…OCI 대표 등 경영진 6명은 영장 기각",
+        "url": "https://n.news.naver.com/mnews/article/031/0001059915?sid=102",
+        "type": "dom"
+      },
+      {
+        "title": "‘조 단위 담합’ 석유화학업체 임원 2명 구속…6명은 영장 기각",
+        "url": "https://n.news.naver.com/mnews/article/032/0003471434?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "사우디 송유관 피격 여파…아람코, 유럽에 10월 원유 공급 중단",
+        "url": "https://n.news.naver.com/mnews/article/003/0014200816?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "[공시]한국가스공사, LNG캐나다 2단계 투자 의결",
+        "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=866757",
+        "type": "dom"
+      },
+      {
+        "title": "[이슈 : 글로벌 1, 2위 정제설비 보유 中·美, 석유 수출 금지하나?]",
+        "url": "http://www.e-platform.net/news/articleView.html?idxno=105561",
+        "type": "dom"
+      },
+      {
+        "title": "사우디, 수도 리야드서 공습경보…\"공항 인근 연료탱크서 불\"(종합 2보)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014201893?sid=104",
+        "type": "dom"
+      },
+      {
+        "title": "가스전부터 LNG까지 잇는다… 포스코인터내셔널 '에너지 큰 그림'",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=488687",
+        "type": "dom"
+      },
+      {
+        "title": "미·이란 갈등에 LNG 확보전 격화…유럽·아시아 ‘가스 쟁탈전’",
+        "url": "https://n.news.naver.com/mnews/article/011/0004663591?sid=101",
+        "type": "dom"
+      },
+      {
+        "title": "포스코인터, 美 셰일가스 8000억 베팅 '현금창출력' 관건",
+        "url": "https://n.news.naver.com/mnews/article/293/0000090697?sid=101",
+        "type": "dom"
+      }
+    ]
+  },
+  "ref_map": {
+    "1": {
+      "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile – Brandon Sun",
+      "url": "https://www.brandonsun.com/world/2026/09/19/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile",
+      "type": "intl"
+    },
+    "2": {
+      "title": "Gulf, UN Condemnation of Houthi Attacks on Saudi Arabia",
+      "url": "https://english.aawsat.com/gulf/5320264-gulf-un-condemnation-houthi-attacks-saudi-arabia",
+      "type": "intl"
+    },
+    "3": {
+      "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with ballistic missile",
+      "url": "https://www.thehindu.com/news/international/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-ballistic-missile/article71486051.ece",
+      "type": "intl"
+    },
+    "4": {
+      "title": "US working to keep Strait of Hormuz open and secure: CENTCOM chief",
+      "url": "https://thefrontierpost.com/us-working-to-keep-strait-of-hormuz-open-and-secure-centcom-chief/",
+      "type": "intl"
+    },
+    "5": {
+      "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile – KSEV Radio",
+      "url": "https://ksevradio.com/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile/",
+      "type": "intl"
+    },
+    "6": {
+      "title": "Houthi missiles on Riyadh and other cities intercepted, Saudi coalition says",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-missiles-riyadh-and-other-cities-intercepted-saudi-coalition-says",
+      "type": "intl"
+    },
+    "7": {
+      "title": "Saudi Arabia confirms Yemen's Houthi rebels tried to attack its capital with a ballistic missile – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/world/2026/09/19/saudi-arabia-confirms-yemens-houthi-rebels-tried-to-attack-its-capital-with-a-ballistic-missile",
+      "type": "intl"
+    },
+    "8": {
+      "title": "Iran retains initiative in Strait of Hormuz despite US claims: Armed Forces spokesman",
+      "url": "https://www.presstv.co.uk/Detail/2026/09/19/776629/Iran-CENTCOM-Shekarchi-Hormuz",
+      "type": "intl"
+    },
+    "9": {
+      "title": "Houthi Missile Hits Riyadh Airport Fuel Depot as War Reaches Saudi Capital",
+      "url": "https://www.hngn.com/articles/273300/20260919/houthi-missile-hits-riyadh-airport-fuel-depot-war-reaches-saudi-capital.htm",
+      "type": "intl"
+    },
+    "10": {
+      "title": "Yemen's Houthi rebels tried to attack with a ballistic missile",
+      "url": "https://www.wlwt.com/article/saudi-arabia-yemen-houthi-rebels-ballistic-missile/73804217",
+      "type": "intl"
+    },
+    "11": {
+      "title": "사우디 수도서 미사일과 폭발음…후티 맹공에 첫 공습경보 발령",
+      "url": "https://n.news.naver.com/mnews/article/448/0000640328?sid=104",
+      "type": "dom"
+    },
+    "12": {
+      "title": "후티, 사우디 수도 공습에 첫 경보...\"리야드 공항 인근 검은 연기\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002409244?sid=104",
+      "type": "dom"
+    },
+    "13": {
+      "title": "사우디 수도 첫 공습 경보...\"리야드 공항 인근 연료탱크 불길\"",
+      "url": "https://n.news.naver.com/mnews/article/052/0002409240?sid=104",
+      "type": "dom"
+    },
+    "14": {
+      "title": "사우디 수도에 첫 공습경보… 리야드공항 인근 연료탱크서 화재",
+      "url": "https://n.news.naver.com/mnews/article/366/0001193400?sid=104",
+      "type": "dom"
+    },
+    "15": {
+      "title": "사우디 수도까지 첫 화염…후티, 대규모 집회로 세 과시",
+      "url": "https://n.news.naver.com/mnews/article/056/0012260617?sid=104",
+      "type": "dom"
+    },
+    "16": {
+      "title": "\"사우디 수도 리야드 공항 인근 연기 기둥\"...후티 공습 추정",
+      "url": "https://n.news.naver.com/mnews/article/052/0002409222?sid=104",
+      "type": "dom"
+    },
+    "17": {
+      "title": "\"사우디 수도 리야드 공항 인근서 화염\"...후티 공습 추정",
+      "url": "https://n.news.naver.com/mnews/article/052/0002409217?sid=104",
+      "type": "dom"
+    },
+    "18": {
+      "title": "[속보]후티 공세에 사우디 수도 리야드 첫 공습경보",
+      "url": "https://n.news.naver.com/mnews/article/079/0004191213?sid=104",
+      "type": "dom"
+    },
+    "19": {
+      "title": "사우디 수도에도 첫 공습경보…파키스탄, 군사개입 시사",
+      "url": "https://n.news.naver.com/mnews/article/057/0001969863?sid=104",
+      "type": "dom"
+    },
+    "20": {
+      "title": "사우디, 파키스탄 개입 시사…후티 지지자들 소총 들고 집결",
+      "url": "https://n.news.naver.com/mnews/article/437/0000511940?sid=104",
+      "type": "dom"
+    },
+    "21": {
+      "title": "Arab News | China vessel rams Philippine boat on refueling mission, coast guard says",
+      "url": "https://www.arabnews.com/world/china-vessel-rams-philippine-boat-on-refueling-mission-coast-guard-says-3002302",
+      "type": "intl"
+    },
+    "22": {
+      "title": "Another Tanker Suffers Failure as Crew Suspect Cyber Attack",
+      "url": "https://www.claimsjournal.com/news/national/2026/09/19/340232.htm",
+      "type": "intl"
+    },
+    "23": {
+      "title": "India in regular touch with Russian Embassy over crew of detained Unity tanker: MEA",
+      "url": "http://www.bignewsnetwork.com/news/279316312/india-in-regular-touch-with-russian-embassy-over-crew-of-detained-unity-tanker-mea",
+      "type": "intl"
+    },
+    "24": {
+      "title": "울산항 해양안전벨트, 로딩마스터 대상 위험물 안전역량 강화 교육 실시",
+      "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1067767",
+      "type": "dom"
+    },
+    "25": {
+      "title": "Strait of Hormuz Oil Shipments Hit Six-Month High as U.S. Clears Mines",
+      "url": "http://www.econotimes.com/Strait-of-Hormuz-Oil-Shipments-Hit-Six-Month-High-as-US-Clears-Mines-1752490",
+      "type": "intl"
+    },
+    "26": {
+      "title": "Iran war sends oil tanker rates past $1 million a day: Who is paying the bill and who is making money?",
+      "url": "https://www.livemint.com/news/world/iran-war-sends-oil-tanker-rates-past-1-million-a-day-who-is-paying-the-bill-and-who-is-making-money-11789819050960.html",
+      "type": "intl"
+    },
+    "27": {
+      "title": "US military says over 1B barrels of oil shipped through Strait of Hormuz under US blockade",
+      "url": "https://www.middleeastmonitor.com/20260919-us-military-says-over-1b-barrels-of-oil-shipped-through-strait-of-hormuz-under-us-blockade/",
+      "type": "intl"
+    },
+    "28": {
+      "title": "Strait of Hormuz And Red Sea Disruptions Send Global Shipping Costs Soaring To Record Highs",
+      "url": "https://www.foreignpolicyjournal.com/2026/09/19/strait-of-hormuz-and-red-sea-disruptions-send-global-shipping-costs-soaring-to-record-highs/",
+      "type": "intl"
+    },
+    "29": {
+      "title": "Global Shipping Costs Explode as Hormuz Disruptions Hit Key Trade Routes",
+      "url": "https://www.nakedcapitalism.com/2026/09/global-shipping-costs-explode-as-hormuz-disruptions-hit-key-trade-routes.html",
+      "type": "intl"
+    },
+    "30": {
+      "title": "Pakistan's Oil Supply faces another Shock as Houthi Attacks shut Yanbu Route",
+      "url": "https://en.dailypakistan.com.pk/19-Sep-2026/pakistans-oil-supply-faces-another-shock-as-houthi-attacks-shut-yanbu-route",
+      "type": "intl"
+    },
+    "31": {
+      "title": "UN: Daily ship transits through Strait of Hormuz fall from 85 to 5",
+      "url": "https://en.apa.az/corridors/un-daily-ship-transits-through-strait-of-hormuz-fall-from-85-to-5-525116",
+      "type": "intl"
+    },
+    "32": {
+      "title": "US forces facilitated passage of 1bn barrels of crude oil through Strait of Hormuz: CENTCOM",
+      "url": "https://www.qatar-tribune.com/article/254701/latest-news/us-forces-facilitated-passage-of-1bn-barrels-of-crude-oil-through-strait-of-hormuz-centcom",
+      "type": "intl"
+    },
+    "33": {
+      "title": "Oil shipments through Strait of Hormuz have hit six-month high: CENTCOM",
+      "url": "http://www.washingtonexaminer.com/news/world/4734876/oil-gas-shipments-strait-hormuz-hit-six-month-high-centcom/",
+      "type": "intl"
+    },
+    "34": {
+      "title": "CENTCOM: More than 1B barrels of crude oil brought through the Strait of Hormuz in recent months",
+      "url": "https://www.oann.com/newsroom/centcom-more-than-1b-barrels-of-crude-oil-brought-through-the-strait-of-hormuz-in-recent-months/",
+      "type": "intl"
+    },
+    "35": {
+      "title": "VLCC 운임 97만달러, 홍해 우회에 원유 운송비 상승",
+      "url": "https://www.tokenpost.kr/news/economy/410797",
+      "type": "dom"
+    },
+    "36": {
+      "title": "GRAIN ELEVATOR",
+      "url": "https://www.presentationministries.com/series/obob/obob-2026-9-19-en",
+      "type": "intl"
+    },
+    "37": {
+      "title": "Oil slides after China asks Iran to limit Houthi attacks on Saudi oil facilities",
+      "url": "https://www.thedailystar.net/business/news/oil-slides-after-china-asks-iran-limit-houthi-attacks-saudi-oil-facilities-4276826",
+      "type": "intl"
+    },
+    "38": {
+      "title": "Azerbaijan's Azeri Light oil price exceeds $122",
+      "url": "https://www.trend.az/azerbaijan/4225689.html",
+      "type": "intl"
+    },
+    "39": {
+      "title": "Azeri Light oil price rises to $122.37 per barrel",
+      "url": "https://www.azernews.az/oil_and_gas/264107.html",
+      "type": "intl"
+    },
+    "40": {
+      "title": "Fuel prices spike amid Strait of Hormuz turmoil | Midday News Bulletin 19 September 2026",
+      "url": "https://www.sbs.com.au/news/podcast-episode/fuel-prices-spike-amid-strait-of-hormuz-turmoil-midday-news-bulletin-19-september-2026/v1nip1dhh",
+      "type": "intl"
+    },
+    "41": {
+      "title": "U.S. Diesel Hits Record $6.29 as Russia Refinery Strikes and Hormuz Disruptions Tighten Global Fuel Supply - FINCHANNELU.S. Diesel Price Hits $6.29: Ukraine Strikes, Russia and Hormuz Explained",
+      "url": "https://finchannel.com/u-s-diesel-hits-record-6-29-as-russia-refinery-strikes-and-hormuz-disruptions-tighten-global-fuel-supply/135483/energy/2026/09/",
+      "type": "intl"
+    },
+    "42": {
+      "title": "JPMorgan abandons oil price forecast as Iran war defies market models",
+      "url": "https://weeklyblitz.net/2026/09/20/jpmorgan-abandons-oil-price-forecast-as-iran-war-defies-market-models/",
+      "type": "intl"
+    },
+    "43": {
+      "title": "National Gas Prices Jump as Crude Oil Holds Above $100 - Clarksville Online - Clarksville News, Sports, Events and Information",
+      "url": "https://www.clarksvilleonline.com/2026/09/19/national-gas-prices-jump-as-crude-oil-holds-above-100/",
+      "type": "intl"
+    },
+    "44": {
+      "title": "Iran's oil revenue hits two-year high despite US blockade",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-oil-revenue-hits-two-year-high-despite-us-blockade",
+      "type": "intl"
+    },
+    "45": {
+      "title": "Stocks Mixed as Crude Oil Prices and Bond Yields Rise",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-mixed-crude-oil-prices-141253389.html",
+      "type": "intl"
+    },
+    "46": {
+      "title": "JPMorgan struggles to forecast oil price as Iran war deepens Nigeria's petrol concerns",
+      "url": "https://www.premiumtimesng.com/business/business-news/910809-jpmorgan-struggles-to-forecast-oil-price-as-iran-war-deepens-nigerias-petrol-concerns.html",
+      "type": "intl"
+    },
+    "47": {
+      "title": "트럼프, 새 대러 제재 법안 서명…\"러 원유 구매국 100% 관세\"",
+      "url": "https://n.news.naver.com/mnews/article/421/0009180455?sid=104",
+      "type": "dom"
+    },
+    "48": {
+      "title": "사우디 동서 송유관 복구 추진등에 9월18 국제유가 하락",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228410",
+      "type": "dom"
+    },
+    "49": {
+      "title": "디젤 가격 상승, 우크라전보다 중동분쟁 영향 커…트럼프 주장과 배치",
+      "url": "https://n.news.naver.com/mnews/article/293/0000090696?sid=101",
+      "type": "dom"
+    },
+    "50": {
+      "title": "국제유가 급등에도 주유소 기름값 18주째 하락…추석엔 100원 더 내린다",
+      "url": "https://www.g-enews.com/view.php?ud=202609191638052495e30fcb1ba8_1",
+      "type": "dom"
+    },
+    "51": {
+      "title": "국제유가 뛰는데 최고가격은 또 동결...기름값 18주째 '나 홀로 하락'",
+      "url": "https://www.pennmike.com/news/articleView.html?idxno=128128",
+      "type": "dom"
+    },
+    "52": {
+      "title": "주유소 기름값 18주째 하락⋯최고가격제에 1800원대 유지",
+      "url": "https://n.news.naver.com/mnews/article/031/0001059908?sid=101",
+      "type": "dom"
+    },
+    "53": {
+      "title": "주유소 기름값 18주째 하락…추석 연휴 고속도로 100원 추가 인하",
+      "url": "https://n.news.naver.com/mnews/article/119/0003134559?sid=101",
+      "type": "dom"
+    },
+    "54": {
+      "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 유지",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1724948",
+      "type": "dom"
+    },
+    "55": {
+      "title": "“美·日·유럽 동시에 올렸다”…이란 전쟁이 부른 긴축 공포 [머니+]",
+      "url": "https://www.ekn.kr/web/view.php?key=20260919021196861",
+      "type": "dom"
+    },
+    "56": {
+      "title": "주유소 기름값 18주째 하락…최고가격제 영향에 1800원대 지속",
+      "url": "https://n.news.naver.com/mnews/article/032/0003471433?sid=101",
+      "type": "dom"
+    },
+    "57": {
+      "title": "With the yen remaining weak, seafood companies will probably be unable to continue purchasing mackerel at such high prices.",
+      "url": "https://japantoday.com/category/quote-of-the-day/With-the-yen-remaining-weak-seafood-companies-will-probably-be-unable-to-continue-purchasing-mackerel-at-such-high-prices.",
+      "type": "intl"
+    },
+    "58": {
+      "title": "CENTCOM: US forces facilitated passage of 1 billion barrels of crude oil through Strait of Hormuz",
+      "url": "http://thepeninsulaqatar.com/article/19/09/2026/centcom-us-forces-facilitated-passage-of-1-billion-barrels-of-crude-oil-through-strait-of-hormuz",
+      "type": "intl"
+    },
+    "59": {
+      "title": "Arab News | US military: Strait of Hormuz shipping traffic at 6-month high",
+      "url": "https://www.arabnews.com/middle-east/us-military-strait-of-hormuz-shipping-traffic-at-6-month-high-3002355",
+      "type": "intl"
+    },
+    "60": {
+      "title": "US military says Strait of Hormuz shipping volumes hit six-month high",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-military-says-strait-hormuz-shipping-volumes-hit-six-month-high",
+      "type": "intl"
+    },
+    "61": {
+      "title": "미군, 호르무즈 해협 기뢰 제거…항로 개방",
+      "url": "https://www.tokenpost.kr/news/breaking/410834",
+      "type": "dom"
+    },
+    "62": {
+      "title": "팬오션, 벌크선사 맞아?…VLCC·LNG로 '에너지 수송' 대변신",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=488716",
+      "type": "dom"
+    },
+    "63": {
+      "title": "[Biz&Law] LX판토스, 美서 화물분실 손배소 제기…\"하청업체가 배송증명...",
+      "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=728125",
+      "type": "dom"
+    },
+    "64": {
+      "title": "Saudi Aramco stops crude supplies to Indian refiners after pipeline attack; replacement barrels available, but oil is at over $100 and freight costs are set to rise",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/saudi-aramco-stops-crude-supplies-to-indian-refiners-after-pipeline-attack-replacement-barrels-available-but-oil-is-at-over-100-and-freight-costs-are-set-to-rise/articleshow/134356048.cms",
+      "type": "intl"
+    },
+    "65": {
+      "title": "Saudi Aramco halts oil supplies to Europe after pipeline attack",
+      "url": "https://www.siasat.com/saudi-aramco-halts-oil-supplies-to-europe-after-pipeline-attack-3544749/",
+      "type": "intl"
+    },
+    "66": {
+      "title": "Saudi Pipeline Outage Could Deepen the Global Fuel Crunch",
+      "url": "https://finance.yahoo.com/energy/articles/saudi-pipeline-outage-could-deepen-230000579.html",
+      "type": "intl"
+    },
+    "67": {
+      "title": "A critical pipeline that helped cushion the Hormuz shock just shut: Here's what it reveals about corporate energy security",
+      "url": "https://finance.yahoo.com/energy/articles/critical-pipeline-helped-cushion-hormuz-181913939.html",
+      "type": "intl"
+    },
+    "68": {
+      "title": "As fighting erupts in Yemen, global oil supply faces disruption",
+      "url": "https://www.2lt.com.au/as-fighting-erupts-in-yemen-global-oil-supply-faces-disruption/",
+      "type": "intl"
+    },
+    "69": {
+      "title": "FEED contract awarded for marine fuels terminal at Oman's Shinas Port",
+      "url": "https://www.omanobserver.om/article/1196434/business/feed-contract-awarded-for-marine-fuels-terminal-at-omans-shinas-port",
+      "type": "intl"
+    },
+    "70": {
+      "title": "Tanga set for major oil refinery",
+      "url": "https://dailynews.co.tz/tanga-set-for-major-oil-refinery/",
+      "type": "intl"
+    },
+    "71": {
+      "title": "Dangote Refinery IPO opens for subscription",
+      "url": "https://punchng.com/dangote-petroleum-refinery-ipo-opens-for-subscription/",
+      "type": "intl"
+    },
+    "72": {
+      "title": "Baystreet.ca - Saudi Arabia Pivots to Spot Oil Sales After Key Pipeline Goes Offline",
+      "url": "http://baystreet.ca/articles/commodities/123882/Saudi-Arabia-Pivots-to-Spot-Oil-Sales-After-Key-Pipeline-Goes-Offline",
+      "type": "intl"
+    },
+    "73": {
+      "title": "Iron Ore Discovery & Bissell Sweeper | September 19",
+      "url": "https://www.wkar.org/podcast/michigan-minute/2026-09-19/iron-ore-discovery-bissell-sweeper-september-19",
+      "type": "intl"
+    },
+    "74": {
+      "title": "사우디 심장부 타격한 후티…리야드 첫 공습경보에 아람코 화재·유가 ...",
+      "url": "https://n.news.naver.com/mnews/article/014/0005578245?sid=104",
+      "type": "dom"
+    },
+    "75": {
+      "title": "사우디 리야드 첫 공습경보…공항 인근 아람코 연료탱크 화재(종합)",
+      "url": "https://n.news.naver.com/mnews/article/421/0009180675?sid=104",
+      "type": "dom"
+    },
+    "76": {
+      "title": "“다음달부터 기름 못 준다”…드론 맞은 사우디, 유럽에 공급 중단",
+      "url": "https://n.news.naver.com/mnews/article/018/0006372500?sid=101",
+      "type": "dom"
+    },
+    "77": {
+      "title": "사우디 아람코, 10월 유럽에 원유 공급 전면 중단…핵심 송유관 공습에...",
+      "url": "https://n.news.naver.com/mnews/article/448/0000640294?sid=104",
+      "type": "dom"
+    },
+    "78": {
+      "title": "아람코, 유럽에 10월 원유 공급 전면 중단...사우디 핵심 송유관 피격 직...",
+      "url": "https://n.news.naver.com/mnews/article/469/0000954966?sid=104",
+      "type": "dom"
+    },
+    "79": {
+      "title": "'15조원대 담합' 석유업체 7곳…나프타 수급 불안 악용했나",
+      "url": "https://n.news.naver.com/mnews/article/437/0000511935?sid=102",
+      "type": "dom"
+    },
+    "80": {
+      "title": "LG화학 등 7개사, '중동 위기 틈타 가격 조작' 15조 원대 석화 담합'…경...",
+      "url": "https://www.job-post.co.kr/news/articleView.html?idxno=228283",
+      "type": "dom"
+    },
+    "81": {
+      "title": "'7개 기업 15조 규모 담합' 석유화학업체 전·현직 임원 2명 구속",
+      "url": "https://n.news.naver.com/mnews/article/057/0001969851?sid=102",
+      "type": "dom"
+    },
+    "82": {
+      "title": "LG화학·애경케미칼·OCI·롯데정밀화학 ‘15조 담합’ 수사…임원 2명 ...",
+      "url": "https://www.g-enews.com/view.php?ud=202609191723029472e30fcb1ba8_1",
+      "type": "dom"
+    },
+    "83": {
+      "title": "'15조원대 석화 담합' 첫 구속…OCI 대표 등 경영진 6명은 영장 기각",
+      "url": "https://n.news.naver.com/mnews/article/031/0001059915?sid=102",
+      "type": "dom"
+    }
+  },
+  "collection_notice": null,
+  "kg_focus": [
+    {
+      "id": "EVT_RedSea2023",
+      "name": "홍해·후티 사태",
+      "type": "위기 이벤트",
+      "count": 61,
+      "delta": -12
+    },
+    {
+      "id": "CF_CrudeOil",
+      "name": "원유",
+      "type": "품목",
+      "count": 49,
+      "delta": -68
+    },
+    {
+      "id": "CP_Hormuz",
+      "name": "호르무즈 해협",
+      "type": "초크포인트",
+      "count": 45,
+      "delta": -39
+    },
+    {
+      "id": "CP_BabElMandeb",
+      "name": "바브엘만데브 해협",
+      "type": "초크포인트",
+      "count": 6,
+      "delta": -2
+    },
+    {
+      "id": "POL_SPR",
+      "name": "비축유 방출",
+      "type": "정책",
+      "count": 3,
+      "delta": 3
+    },
+    {
+      "id": "VT_Reefer",
+      "name": "냉장선",
+      "type": "선종",
+      "count": 3,
+      "delta": -3
+    },
+    {
+      "id": "VT_VLCC",
+      "name": "VLCC (초대형유조선)",
+      "type": "선종",
+      "count": 2,
+      "delta": 1
+    },
+    {
+      "id": "CF_RareEarth",
+      "name": "희토류",
+      "type": "품목",
+      "count": 2,
+      "delta": 2
+    },
+    {
+      "id": "CF_LNG",
+      "name": "LNG",
+      "type": "품목",
+      "count": 2,
+      "delta": -8
+    },
+    {
+      "id": "EVT_Ukraine2022",
+      "name": "우크라이나 전쟁",
+      "type": "위기 이벤트",
+      "count": 2,
+      "delta": -6
+    }
+  ],
+  "early_signal": [
+    {
+      "signal": "redsea",
+      "label": "홍해 관련 기사",
+      "target": "컨테이너 운임",
+      "window": [
+        2,
+        6
+      ],
+      "cum": 729,
+      "med": 69.5,
+      "ratio": 10.5,
+      "weekday": 6
+    }
+  ]
+}
