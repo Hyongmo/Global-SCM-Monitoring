@@ -2395,7 +2395,11 @@ def _build_cluster_context(kg_data):
         _has_rel = 'relevance' in sub.columns
         sub_high = sub[sub['relevance'] == 'HIGH'] if _has_rel else sub
 
-        for idx, (_, row) in enumerate(sub_high.iterrows()):
+        # 2026-09-21: 행 식별자는 순번(enumerate)이 아니라 sub의 index label을 기록한다.
+        #   순번은 sub_high(HIGH만 추린 표) 기준인데 꺼낼 때는 sub 기준으로 해석되어
+        #   (아래 sub.iloc[dom_idx]) 엉뚱한 옛 기사가 뽑혔고, W38에서 주요 위기 사건의
+        #   '이번 주 신규'가 0건으로 집계되는 결함이 있었다. get_key_articles와 같은 방식.
+        for idx, row in sub_high.iterrows():
             ents = extract_cluster_entities(row)
             alert = row.get('alert_level_1st', 'Normal')
             article_date = pd.Timestamp(row['date'])
@@ -2458,7 +2462,7 @@ def _build_cluster_context(kg_data):
 
         if dominant_cid:
             dom_idx = [a[2] for a in ent_articles.get(dominant_cid, [])]
-            dom_sub = sub.iloc[dom_idx]
+            dom_sub = sub.loc[dom_idx]   # index label 기준 (2026-09-21 교정)
             dom_comm = Counter()
             dom_sect = Counter()
             for val in dom_sub['affected_commodities'].dropna():
