@@ -69,6 +69,7 @@ for jf in (json_files[:MAX_DAYS] if MAX_DAYS > 0 else json_files):
             'ref_map':    raw.get('ref_map', {}),
             'collection_notice': raw.get('collection_notice'),   # 수집 결손 안내
             'kg_focus': raw.get('kg_focus', []),                 # 공급망 요소별 기사량
+            'kg_focus_notice': raw.get('kg_focus_notice'),       # 어휘 확장 안내 (2026-09-21, 확장 후 7일만)
             'early_signal': raw.get('early_signal'),            # 주중 조기 신호 (급증 시에만)
         })
         print(f"   ✓ {raw.get('date','?')}  (HIGH {raw.get('n_high',0)}, MED {raw.get('n_med',0)})")
@@ -219,8 +220,9 @@ def _early_signal_html(sigs):
     return ''.join(out)
 
 
-def _kg_focus_html(rows):
-    """공급망 요소별 기사량 — 가로막대 (2026-09-13). JSON kg_focus 필드 렌더."""
+def _kg_focus_html(rows, notice=None):
+    """공급망 요소별 기사량 — 가로막대 (2026-09-13). JSON kg_focus 필드 렌더.
+    notice: 어휘 확장 안내문(JSON kg_focus_notice, 있을 때만 표시)."""
     if not rows:
         return ''
     mx = max(r['count'] for r in rows) or 1
@@ -251,7 +253,8 @@ def _kg_focus_html(rows):
         '<div class="section"><div class="section-title">📊 공급망 요소별 기사량</div>'
         + ''.join(out) +
         '<p style="font-size:11px; color:#999; margin:8px 0 0;">KG 매칭 기준 상위 10 ·'
-        ' ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>검색된 기사에 한한 것으로 전세계 기사량 기반이 아님</p></div>')
+        ' ▲▼ 전일 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>검색된 기사에 한한 것으로 전세계 기사량 기반이 아님'
+        + (f'<br><b>※ {notice}</b>' if notice else '') + '</p></div>')
 
 
 def _render_day(d, idx, is_latest=False):
@@ -334,7 +337,7 @@ def _render_day(d, idx, is_latest=False):
       <div class="section-title">📌 주요기사 요약</div>
       <p class="exec-text">{exec_s if exec_s else '<span class="empty">요약 없음</span>'}</p>
     </div>
-    {_kg_focus_html(d.get('kg_focus') or [])}
+    {_kg_focus_html(d.get('kg_focus') or [], d.get('kg_focus_notice'))}
     {_early_signal_html(d.get('early_signal'))}
     <div class="section">
       <div class="section-title">🌐 공급망 이슈</div>

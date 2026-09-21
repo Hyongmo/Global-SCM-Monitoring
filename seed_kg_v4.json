@@ -4,8 +4,12 @@
     "created": "2026-03-24",
     "description": "온톨로지 v5 + 기업별 차별화 속성 + 우회 인프라 + lag 구조화",
     "ontologyVersion": "v5",
-    "totalNodes": 165,
-    "totalEdges": 263,
+    "totalNodes": 179,
+    "totalEdges": 292,
+    "vocabExpansion": {
+      "date": "2026-09-21",
+      "note": "국문 별칭·신규 노드(공급원 8·항만 2·초크포인트 1·사건 2·선종 1) 추가 — 요소별 기사량은 이 시점 전후 직접 비교 불가"
+    },
     "v4_changes": [
       "A: source 스키마 정규화 — 모든 노드/edge의 source를 객체형으로 통일",
       "B: transitsThrough edge 보강 — supply_chains chokepoints에서 자동 생성",
@@ -19,6 +23,7 @@
       "J: CF_Urea.exposureRate·cpExposure.CP_Hormuz 15→8 하향 (산술모순 해소: 중국 90%(KITA 2023) 기준 상한 10 초과. 중동 경유분 추정 5~8% 중간값). verificationStatus=corrected_estimate. 1차 K-stat 대조 전까지 잠정. CLAUDE.md 5-b 예외 사유 correctionNote에 기록. 세션 21 배치1",
       "K: CP 7개 baselineDailyTransits 재검증 (세션 21 배치2). Hormuz 80→120, Suez 50→72, BabElMandeb 45→68, Malacca 90→258(3배 과소 교정), Panama 40→36(과대 교정), Taiwan 200→240, Lombok 60→35(과대 교정). 모두 2차 인용 기반(IMF PortWatch/SCA/MPA/ACP/Lloyd 2차 인용), verificationStatus=secondary_citation 플래그 및 baselineDailyTransits_meta 필드 추가. 1차 대시보드 직접 접근(IMF PortWatch API, Lloyd 인텔리전스 DB) 차기 세션 필요",
       "L: feedsInto CF→KS edge 12건 weight 전수 재검증 (한국은행 2020 실측 IO표 직접투입계수 대조). 10건 PASS (CrudeOil/LNG/Coal/Naphtha/IronOre/Wheat/Corn/Urea/Meat/SemiMaterial) verificationStatus=verified_against_IO_2020. 2건 FAIL 교정: CF_RareEarth weight 0.0020→0.0002 (A(07,37)+A(07,42) 둘 다 0.0000으로 근거 없음, 통합중분류 IO표에서 희토류 분리 불가, verificationStatus=unsupported_by_IO_mid_class), CF_EuroContainer weight 0.0250→0.0059 (수상운송 Row54→제조업 27~44 합계, 컨테이너는 운송병목이라 IO 직접투입계수 대응 안됨, verificationStatus=unsupported_by_IO). 세션 21 Reality Check 배치3",
+      "N: 2026-09-21 KG 공백 분석 반영 — (1) 국문 별칭 일괄(CP 7·EVT_RedSea 4·CF 8노드·KS 3·BP 2·POL 1, 오탐 검사 통과분만) (2) 신규 노드: CP_BlackSea, FP_Kharg(Argus 92%), FP_Basra(석유공사 2026-07 수입 0), VT_Tanker, EVT_NamuHo2026, EVT_HormuzToll2026 (3) supply_source 유형 신설 8노드 + exportsVia/suppliesCommodity 무가중 엣지 (4) 9/13 세션에서 JSON 직접 수정했던 이름 9건 빌더 소급. research/KG_gap_analysis_20260921.md",
       "M: KC_ Company 노드 배치4-1 (Energy 4 + Material 5 = 9개) 검증. 교정 3건: KC_SKGas middleEastExposure 높음→낮음(한국 LPG 수입 중동 3% 미만, 미국 65%+), KC_SKENS 높음→낮음(호주/미국/인니 중심), KC_PoscoIntl 높음→보통(미얀마/알래스카 다변화). 보강 6건: KC_HanwhaSol/KC_Kumho/KC_KoreaZinc/KC_SKC/KC_OCI/KC_DonggukSteel에 ticker·port·용량 정량속성 추가. 전 건 verified=partial, source.verifiedAt=2026-04-12 세션22. 근거: SK가스→한국석유공사 LPG수입통계 2022, SK E&S→eng.sk.com/KED Global, 포스코인터→POSCO공식/EIA, 금호석유→Wikipedia/KITA, 고려아연→koreazinc.co.kr, OCI→oci.co.kr, 동국제강→GEM/Wikipedia",
       "N: KC_ Company 노드 배치4-2 (KS_Shipping 8개) 검증. 대폭수정 2건: KC_Hanjin middleEastExposure 중간→낮음(선박0척, 택배·육상물류회사, 한진해운2017파산과 별개), KC_HungA 높음→낮음(역내아시아 특화, 중동정기노선 미확인, 2019 컨테이너90% 장금상선 매각). 하향 1건: KC_CJLogistics 중간→낮음(순수포워더, 자사선無). 보강 5건: KC_HyundaiGlovis(PCC Top5, 28.4조), KC_KoreanAir(항공유원유69%중동, 두바이주7회, 16.1조), KC_LXPantos(미상장, 해상포워딩Top6, 두바이거점, 8.06조), KC_LotteLogistics(미상장, 국내물류중심, 3.57조), KC_Changkum(VLCC세계13-17%, Gulf Service항로, 3.4조). 전 건 verified=partial. 근거: 쉬핑뉴스넷/대한항공뉴스룸/파이낸셜뉴스/Argus Media/Yahoo Finance/Statista/KED Global/Korea Herald/SeaRates",
       "O: KC_ Company 노드 배치4-3 (KS_Manufacture 17개) 검증. ME상향 5건: KC_HDHanZo/KC_HDHeavy 낮음→중간(Saudi IMI JV 20%), KC_HanwhaAero 낮음→중간(Egypt K9 $1.7B), KC_HyundaiRotem 낮음→중간(Iraq K2 $6.5B 협상), KC_KAI 낮음→중간(Egypt FA-50 100대 최종협상). ME하향 1건: KC_LGDisplay 중간→낮음(간접영향만). 보강 11건: KC_Kia(107.45조)/KC_LGElec(87.73조)/KC_HyundaiMobis($41.6B captive76%)/KC_LGES(25.6조 배터리3위)/KC_SamsungSDI(16.59조)/KC_Doosan(16.23조 원전독점 Barakah)/KC_HanwhaOcean(10.78조 LNG200호)/KC_SamsungHeavy(9.9조 LNG84척)/KC_Hyosung(~7조 765kV1위)/KC_LSElec(4.55조 Iraq/Saudi)/KC_HyundaiWia($5.87B). 전 건 verified=partial. 근거: Yahoo Finance/Kia IR/LG Newsroom/S&P Global/LNG Prime/KED Global/Defence-Blog/Army Recognition/Doosan IR/Omdia",
@@ -49,9 +54,14 @@
       "nameEn": "Red Sea Houthi crisis",
       "aliases": [
         "Houthi",
+        "Houthis",
         "Red Sea",
         "Houthi attack",
-        "Red Sea crisis"
+        "Red Sea crisis",
+        "후티",
+        "홍해",
+        "예멘",
+        "Yemen"
       ],
       "disruptionType": [
         "경로교란",
@@ -224,13 +234,70 @@
         "_normalized": "v4"
       }
     },
+    "EVT_NamuHo2026": {
+      "id": "EVT_NamuHo2026",
+      "name": "HMM 나무호 피격·화재",
+      "nameEn": "HMM Namu incident",
+      "aliases": [
+        "나무호",
+        "Namu",
+        "HMM Namu",
+        "Hormuz Namu"
+      ],
+      "disruptionType": [
+        "해운교란"
+      ],
+      "severity": 3,
+      "startDate": "2026-05-04",
+      "affectsChokepoints": [
+        "CP_Hormuz"
+      ],
+      "affectsCommodities": [],
+      "note": "호르무즈 해협 내 한국 선사 HMM 나무호 화재·피격(美 이란 소행 추정), 두바이 예인. 한국 관점 핵심 사건. 코퍼스 340건, 첫 보도 2026-05-04(네이버 일일 수집)",
+      "source": {
+        "note": "자체 수집 코퍼스(네이버 뉴스, 2026-05-04~09-11 42일 언급). 정량 속성 없음",
+        "_normalized": "v4"
+      },
+      "node_type": "crisis_event",
+      "layer": "L1"
+    },
+    "EVT_HormuzToll2026": {
+      "id": "EVT_HormuzToll2026",
+      "name": "호르무즈 통항료·재개방 조건",
+      "nameEn": "Hormuz transit toll and reopening conditions",
+      "aliases": [
+        "통행료",
+        "통항료",
+        "수수료",
+        "Hormuz toll",
+        "transit toll",
+        "transit fee"
+      ],
+      "disruptionType": [
+        "경로교란"
+      ],
+      "severity": 3,
+      "startDate": "2026-03-26",
+      "affectsChokepoints": [
+        "CP_Hormuz"
+      ],
+      "affectsCommodities": [],
+      "note": "이란의 호르무즈 통항 유료화(수에즈식 통행료)·재개방 조건 제시 국면. 2026 봉쇄의 고유 양상. 코퍼스 447건(2026-07 93건 정점), 첫 보도 2026-03-26",
+      "source": {
+        "note": "자체 수집 코퍼스(GDELT·네이버, 2026-03-26~09-20 135일 언급). 정량 속성 없음",
+        "_normalized": "v4"
+      },
+      "node_type": "crisis_event",
+      "layer": "L1"
+    },
     "CP_Hormuz": {
       "id": "CP_Hormuz",
       "name": "호르무즈 해협",
       "nameEn": "Strait of Hormuz",
       "aliases": [
         "Hormuz",
-        "Persian Gulf strait"
+        "Persian Gulf strait",
+        "호르무즈"
       ],
       "region": "페르시아만",
       "widthKm": 33,
@@ -276,7 +343,8 @@
       "name": "수에즈 운하",
       "nameEn": "Suez Canal",
       "aliases": [
-        "Suez"
+        "Suez",
+        "수에즈"
       ],
       "region": "이집트",
       "baselineDailyTransits": 72,
@@ -313,7 +381,9 @@
       "aliases": [
         "Bab al-Mandab",
         "Bab el Mandeb",
-        "Red Sea strait"
+        "Red Sea strait",
+        "바브엘만데브",
+        "바브알만데브"
       ],
       "region": "홍해 입구",
       "widthKm": 26,
@@ -347,7 +417,8 @@
       "name": "말라카 해협",
       "nameEn": "Strait of Malacca",
       "aliases": [
-        "Malacca"
+        "Malacca",
+        "말라카"
       ],
       "region": "동남아",
       "baselineDailyTransits": 258,
@@ -381,7 +452,8 @@
       "name": "파나마 운하",
       "nameEn": "Panama Canal",
       "aliases": [
-        "Panama"
+        "Panama",
+        "파나마"
       ],
       "region": "중미",
       "baselineDailyTransits": 36,
@@ -414,7 +486,8 @@
       "name": "대만해협",
       "nameEn": "Taiwan Strait",
       "aliases": [
-        "Taiwan"
+        "Taiwan",
+        "대만해협"
       ],
       "region": "동아시아",
       "baselineDailyTransits": 240,
@@ -446,7 +519,8 @@
       "name": "롬복 해협",
       "nameEn": "Lombok Strait",
       "aliases": [
-        "Lombok"
+        "Lombok",
+        "롬복"
       ],
       "region": "인도네시아",
       "widthKm": 35,
@@ -465,6 +539,30 @@
       "status": "정상 운영",
       "source": {
         "note": "Clarkson Research, Vessel Transit Data; IMO GISIS",
+        "_normalized": "v4"
+      },
+      "asOf": {},
+      "node_type": "chokepoint",
+      "layer": "L2"
+    },
+    "CP_BlackSea": {
+      "id": "CP_BlackSea",
+      "name": "흑해",
+      "nameEn": "Black Sea",
+      "aliases": [
+        "Black Sea",
+        "흑해",
+        "Bosporus",
+        "Bosphorus",
+        "보스포루스",
+        "Turkish Straits"
+      ],
+      "region": "흑해·튀르키예 해협",
+      "riskLevel": 3,
+      "status": "2022 우크라이나 전쟁 이후 항행 위험·곡물회랑 불안정",
+      "note": "러시아·우크라이나 곡물·원유(노보로시스크 CPC) 수출 경로. 한국향 직접 노출률 미산정",
+      "source": {
+        "note": "2026-09-21 신설. 정량값 없음(verificationStatus=unverified)",
         "_normalized": "v4"
       },
       "asOf": {},
@@ -874,7 +972,9 @@
       "mainExports": [
         "원유"
       ],
-      "transitCPs": [],
+      "transitCPs": [
+        "CP_BlackSea"
+      ],
       "note": "흑해 원유 수출 터미널. 카자흐스탄산 CPC 원유 혼적. 한국향 경로 없음(유럽/지중해향)",
       "source": {
         "note": "EIA, Country Analysis: Russia, 2023",
@@ -920,6 +1020,71 @@
       "source": {
         "note": "Novatek Annual Report 2023; KGS 가스수입통계 2024",
         "_normalized": "v4"
+      },
+      "node_type": "foreign_port",
+      "layer": "L2"
+    },
+    "FP_Kharg": {
+      "id": "FP_Kharg",
+      "name": "하르그섬",
+      "nameEn": "Kharg Island",
+      "aliases": [
+        "Kharg",
+        "하르그",
+        "Kharg Island terminal"
+      ],
+      "country": "이란",
+      "region": "중동",
+      "mainExports": [
+        "원유"
+      ],
+      "transitCPs": [
+        "CP_Hormuz"
+      ],
+      "exportShare": 92,
+      "note": "이란 원유 수출의 약 92%(2023~25) 처리. 한국 직수입 없음(제재) → shipsTo 없음. 2026 봉쇄 국면의 공격·점거 위협 현장(코퍼스 229건)",
+      "source": {
+        "exportShare": "Argus Media, Explainer: Kharg Island, Iran oil export hub, 2026-03-27",
+        "_normalized": "v4"
+      },
+      "asOf": {
+        "exportShare": "2023-25"
+      },
+      "node_type": "foreign_port",
+      "layer": "L2"
+    },
+    "FP_Basra": {
+      "id": "FP_Basra",
+      "name": "바스라",
+      "nameEn": "Basra",
+      "aliases": [
+        "Basra",
+        "바스라",
+        "Basra Oil Terminal",
+        "Al Basrah"
+      ],
+      "country": "이라크",
+      "region": "중동",
+      "mainExports": [
+        "원유"
+      ],
+      "transitCPs": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "koreaImport": {
+        "value": 0,
+        "unit": "배럴/월",
+        "asOf": "2026-07",
+        "note": "2006-05 이후 20년 2개월 만에 0 — 수출항이 호르무즈 안쪽이라 봉쇄 이후 수출길 차단"
+      },
+      "note": "이라크 원유 수출항(호르무즈 안쪽). CF_CrudeOil sourceCountries의 이라크에 대응하는 항만 노드가 없던 공백 보완",
+      "source": {
+        "koreaImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용)",
+        "_normalized": "v4"
+      },
+      "asOf": {
+        "koreaImport": "2026-07"
       },
       "node_type": "foreign_port",
       "layer": "L2"
@@ -1063,6 +1228,26 @@
       "note": "현대 냉장물류 88%가 reefer container(컨테이너선). 전용냉장선 <20% (Drewry 2022)",
       "source": {
         "note": "Drewry, Reefer Shipping Market Review, 2022",
+        "_normalized": "v4"
+      },
+      "node_type": "vessel_type",
+      "layer": "L2"
+    },
+    "VT_Tanker": {
+      "id": "VT_Tanker",
+      "name": "유조선",
+      "nameEn": "oil tanker",
+      "aliases": [
+        "tanker",
+        "tankers",
+        "oil tanker",
+        "유조선"
+      ],
+      "cargo": "원유/석유제품",
+      "status": "aggregate",
+      "note": "VLCC·Aframax 등 유조선 일반 지칭. 기사 집계용 상위 개념",
+      "source": {
+        "note": "2026-09-21 신설(집계 전용)",
         "_normalized": "v4"
       },
       "node_type": "vessel_type",
@@ -1334,7 +1519,12 @@
       "nameEn": "Saudi East-West pipeline",
       "aliases": [
         "Petroline",
-        "Yanbu pipeline"
+        "Yanbu pipeline",
+        "송유관",
+        "Saudi pipeline",
+        "East-West pipeline",
+        "Yanbu",
+        "얀부"
       ],
       "bypassFor": [
         "CP_Hormuz"
@@ -1429,7 +1619,8 @@
       "name": "오만 살랄라 육상 환적",
       "nameEn": "Oman Salalah transshipment",
       "aliases": [
-        "Salalah"
+        "Salalah",
+        "살랄라"
       ],
       "bypassFor": [
         "CP_Hormuz"
@@ -1532,6 +1723,7 @@
       "foreignPorts": [
         "FP_RasTanura",
         "FP_MinaAhmadi",
+        "FP_Basra",
         "FP_USGulf"
       ],
       "koreaPorts": [
@@ -1552,6 +1744,9 @@
         "middleEastShare": "2026.01",
         "koreaImportDependency": "2024"
       },
+      "aliases": [
+        "원유"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 0,
@@ -1722,6 +1917,9 @@
         "koreaImportDependency": "2026.03.27",
         "stockDays": "2024"
       },
+      "aliases": [
+        "나프타"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 7,
@@ -1769,6 +1967,9 @@
       },
       "verificationStatus": "disputed",
       "disputeNote": "세션 21 Reality Check 배치1: cpExposure(CP_Lombok=42, CP_Malacca=30) 및 sourceCountries(호주 42%, 브라질 30%)가 KOTRA 2026 2차 인용과 불일치. KOTRA: 호주 60%+ (브라질과 4.5배 차이). 1차 출처(관세청 HS 26.01 K-stat/KIGAM 광물자원통계포털) 직접 접근 불가로 수치 수정 보류, 차기 세션에서 1차 대조 후 결정",
+      "aliases": [
+        "철광석"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 28,
@@ -1803,6 +2004,9 @@
         "note": "글로벌이코노믹, 2025.06; KIST 희토류연구센터",
         "_normalized": "v4"
       },
+      "aliases": [
+        "희토류"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 28,
@@ -1848,6 +2052,9 @@
       "verificationStatus": {
         "koreaImportDependency": "verified"
       },
+      "aliases": [
+        "밀"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 60,
@@ -1886,6 +2093,9 @@
         "sourceCountries": "관세청 수입통관 통계, 2024",
         "_normalized": "v4"
       },
+      "aliases": [
+        "옥수수"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 60,
@@ -1931,6 +2141,9 @@
       },
       "verificationStatus": "corrected_estimate",
       "correctionNote": "세션 21 Reality Check 배치1: cpExposure.CP_Hormuz 구값 15는 중국 90%(KITA 2023 2차 인용) 기준 산술 상한 10 초과로 모순. 남은 ~10% 안에서 호르무즈 경유국(카타르·UAE·사우디) 합계를 5~8%로 추정하여 중간값 8 적용. 1차 출처(관세청 K-stat HS 3102.10) 대조 전까지 잠정값. CLAUDE.md 5-b 예외: 1차 대조 미완료 상태의 수치 수정이므로 차기 세션 재검증 필수",
+      "aliases": [
+        "요소수"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 60,
@@ -2010,6 +2223,10 @@
         "note": "SEMI, 2024; 산업통상자원부 반도체 소재 국산화 현황",
         "_normalized": "v4"
       },
+      "aliases": [
+        "반도체 소재",
+        "반도체소재"
+      ],
       "node_type": "commodity_flow",
       "layer": "L3",
       "lagMinDays": 14,
@@ -2060,6 +2277,273 @@
       "lagMinDays": 28,
       "lagMaxDays": 56
     },
+    "SS_SaudiArabia": {
+      "id": "SS_SaudiArabia",
+      "name": "사우디 원유 공급원",
+      "nameEn": "Saudi Arabia crude supply",
+      "aliases": [
+        "Saudi Arabia",
+        "사우디아라비아",
+        "아람코",
+        "Aramco",
+        "Saudi Aramco"
+      ],
+      "country": "사우디",
+      "commodities": [
+        "CF_CrudeOil"
+      ],
+      "exportPorts": [
+        "FP_RasTanura"
+      ],
+      "transitCPs": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "koreaMonthlyImport": {
+        "value": 3071,
+        "unit": "만 배럴",
+        "asOf": "2026-07",
+        "yoy_pct": 7.6
+      },
+      "source": {
+        "koreaMonthlyImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용): 2026-07 국가별 원유 수입량",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_UAE": {
+      "id": "SS_UAE",
+      "name": "UAE 원유·나프타 공급원",
+      "nameEn": "UAE crude and naphtha supply",
+      "aliases": [
+        "UAE",
+        "아랍에미리트",
+        "United Arab Emirates",
+        "ADNOC",
+        "아부다비"
+      ],
+      "country": "UAE",
+      "commodities": [
+        "CF_CrudeOil",
+        "CF_Naphtha"
+      ],
+      "exportPorts": [
+        "FP_Fujairah"
+      ],
+      "transitCPs": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "koreaMonthlyImport": {
+        "value": 1428,
+        "unit": "만 배럴",
+        "asOf": "2026-07",
+        "yoy_pct": 17.5
+      },
+      "source": {
+        "koreaMonthlyImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용): 2026-07 국가별 원유 수입량",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_Kuwait": {
+      "id": "SS_Kuwait",
+      "name": "쿠웨이트 원유 공급원",
+      "nameEn": "Kuwait crude supply",
+      "aliases": [
+        "Kuwait",
+        "쿠웨이트",
+        "KPC",
+        "Kuwait Petroleum"
+      ],
+      "country": "쿠웨이트",
+      "commodities": [
+        "CF_CrudeOil"
+      ],
+      "exportPorts": [
+        "FP_MinaAhmadi"
+      ],
+      "transitCPs": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "koreaMonthlyImport": {
+        "value": 400,
+        "unit": "만 배럴",
+        "asOf": "2026-07",
+        "yoy_pct": -39.5
+      },
+      "source": {
+        "koreaMonthlyImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용): 2026-07 국가별 원유 수입량",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_Iraq": {
+      "id": "SS_Iraq",
+      "name": "이라크 원유 공급원",
+      "nameEn": "Iraq crude supply",
+      "aliases": [
+        "Iraq",
+        "이라크",
+        "Iraqi crude",
+        "SOMO"
+      ],
+      "country": "이라크",
+      "commodities": [
+        "CF_CrudeOil"
+      ],
+      "exportPorts": [
+        "FP_Basra"
+      ],
+      "transitCPs": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "koreaMonthlyImport": {
+        "value": 0,
+        "unit": "만 배럴",
+        "asOf": "2026-07",
+        "note": "2006-05 이후 20년 2개월 만에 0(봉쇄)"
+      },
+      "source": {
+        "koreaMonthlyImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용): 2026-07 국가별 원유 수입량",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_Oman": {
+      "id": "SS_Oman",
+      "name": "오만 원유 공급원",
+      "nameEn": "Oman crude supply",
+      "aliases": [
+        "Oman",
+        "오만",
+        "Omani crude"
+      ],
+      "country": "오만",
+      "commodities": [
+        "CF_CrudeOil"
+      ],
+      "exportPorts": [],
+      "transitCPs": [
+        "CP_Malacca"
+      ],
+      "koreaMonthlyImport": {
+        "value": 504,
+        "unit": "만 배럴",
+        "asOf": "2026-07"
+      },
+      "note": "호르무즈 바깥(아라비아해) 수출 — 봉쇄 시 대체 공급원·STS 환적 거점. 항만 노드(두큼·미나 알파할) 미등록",
+      "source": {
+        "koreaMonthlyImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용): 2026-07 국가별 원유 수입량",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_Iran": {
+      "id": "SS_Iran",
+      "name": "이란 원유 공급원",
+      "nameEn": "Iran crude supply",
+      "aliases": [
+        "Iranian oil",
+        "Iranian crude",
+        "이란산 원유",
+        "이란 원유",
+        "NIOC"
+      ],
+      "country": "이란",
+      "commodities": [
+        "CF_CrudeOil"
+      ],
+      "exportPorts": [
+        "FP_Kharg"
+      ],
+      "transitCPs": [
+        "CP_Hormuz"
+      ],
+      "note": "한국 직수입 없음(제재). 세계 공급 측 변수(하르그 92%)로만 연결",
+      "source": {
+        "note": "Argus Media 2026-03-27 (Kharg 92%)",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_Qatar": {
+      "id": "SS_Qatar",
+      "name": "카타르 LNG 공급원",
+      "nameEn": "Qatar LNG supply",
+      "aliases": [
+        "Qatar",
+        "QatarEnergy",
+        "Qatari LNG"
+      ],
+      "country": "카타르",
+      "commodities": [
+        "CF_LNG",
+        "CF_Naphtha"
+      ],
+      "exportPorts": [
+        "FP_RasLaffan"
+      ],
+      "transitCPs": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "note": "한국 LNG 도입 카타르산 14%(KOGAS 2024, CP_Hormuz 노드 참조)",
+      "source": {
+        "note": "CP_Hormuz.koreaLNGExposure 및 CF_LNG.sourceCountries 참조",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
+    "SS_USA": {
+      "id": "SS_USA",
+      "name": "미국 원유·LNG·곡물 공급원",
+      "nameEn": "United States energy and grain supply",
+      "aliases": [
+        "US crude",
+        "American crude",
+        "미국산 원유",
+        "US LNG",
+        "미국산 LNG",
+        "US grain"
+      ],
+      "country": "미국",
+      "commodities": [
+        "CF_CrudeOil",
+        "CF_LNG",
+        "CF_Wheat",
+        "CF_Corn"
+      ],
+      "exportPorts": [
+        "FP_USGulf"
+      ],
+      "transitCPs": [
+        "CP_Panama"
+      ],
+      "koreaMonthlyImport": {
+        "value": 1730,
+        "unit": "만 배럴",
+        "asOf": "2026-07",
+        "yoy_pct": 28.5,
+        "note": "원유 기준"
+      },
+      "note": "봉쇄 이후 비중동산 대체 공급원(비중동산 수입 전년比 +40%, 2026-07)",
+      "source": {
+        "koreaMonthlyImport": "한국석유공사 발표(한국경제 2026-08-30 보도 인용): 2026-07 국가별 원유 수입량",
+        "_normalized": "v4"
+      },
+      "node_type": "supply_source",
+      "layer": "L2"
+    },
     "KS_Energy": {
       "id": "KS_Energy",
       "name": "에너지",
@@ -2068,7 +2552,10 @@
         "refining",
         "petroleum",
         "oil refinery",
-        "power generation"
+        "power generation",
+        "정유",
+        "정유사",
+        "발전소"
       ],
       "valueChainPosition": "최상류",
       "propagationLag": "즉시~1주",
@@ -2102,7 +2589,8 @@
       "aliases": [
         "petrochemical",
         "steel",
-        "chemical industry"
+        "chemical industry",
+        "석유화학"
       ],
       "valueChainPosition": "상류~중류",
       "propagationLag": "1~4주",
@@ -2208,7 +2696,9 @@
       "aliases": [
         "shipping industry",
         "maritime logistics",
-        "freight"
+        "freight",
+        "해운",
+        "운임"
       ],
       "valueChainPosition": "전달 인프라",
       "propagationLag": "즉시",
@@ -4276,7 +4766,8 @@
       "nameEn": "Strategic Petroleum Reserve release",
       "aliases": [
         "SPR release",
-        "oil reserve"
+        "oil reserve",
+        "비축유"
       ],
       "authority": "산업부",
       "targetCommodity": "CF_CrudeOil",
@@ -4408,7 +4899,7 @@
       "from": "EVT_RedSea2023",
       "to": "CP_BabElMandeb",
       "relation": "disrupts",
-      "label": "2023 Red Sea 후티→CP_BabElMandeb",
+      "label": "홍해·후티 사태→CP_BabElMandeb",
       "source": {
         "note": "출처 미기재",
         "_normalized": "v4"
@@ -4418,7 +4909,7 @@
       "from": "EVT_RedSea2023",
       "to": "CP_Suez",
       "relation": "disrupts",
-      "label": "2023 Red Sea 후티→CP_Suez",
+      "label": "홍해·후티 사태→CP_Suez",
       "source": {
         "note": "출처 미기재",
         "_normalized": "v4"
@@ -4428,7 +4919,7 @@
       "from": "EVT_RedSea2023",
       "to": "CF_CrudeOil",
       "relation": "disruptsShipping",
-      "label": "2023 Red Sea 후티→CF_CrudeOil",
+      "label": "홍해·후티 사태→CF_CrudeOil",
       "disruptionRate": 20,
       "freightSurge": 150,
       "note": "수에즈→희망봉 우회. 항차 10~14일 증가",
@@ -4441,7 +4932,7 @@
       "from": "EVT_RedSea2023",
       "to": "CF_LNG",
       "relation": "disruptsShipping",
-      "label": "2023 Red Sea 후티→CF_LNG",
+      "label": "홍해·후티 사태→CF_LNG",
       "disruptionRate": 15,
       "freightSurge": 100,
       "source": {
@@ -4453,7 +4944,7 @@
       "from": "EVT_RedSea2023",
       "to": "CF_Wheat",
       "relation": "disruptsShipping",
-      "label": "2023 Red Sea 후티→CF_Wheat",
+      "label": "홍해·후티 사태→CF_Wheat",
       "disruptionRate": 15,
       "freightSurge": 80,
       "source": {
@@ -4465,7 +4956,7 @@
       "from": "EVT_RedSea2023",
       "to": "CF_EuroContainer",
       "relation": "disruptsShipping",
-      "label": "2023 Red Sea 후티→CF_EuroContainer",
+      "label": "홍해·후티 사태→CF_EuroContainer",
       "disruptionRate": 30,
       "freightSurge": 200,
       "note": "유럽-아시아 컨테이너 노선 직격. SCFI 200%+ 상승",
@@ -4478,7 +4969,7 @@
       "from": "EVT_RedSea2023",
       "to": "KS_Shipping",
       "relation": "benefitsShipping",
-      "label": "2023 Red Sea 후티→KS_Shipping (운임수혜)",
+      "label": "홍해·후티 사태→KS_Shipping (운임수혜)",
       "freightSurge": 200,
       "shockDirection": "positive",
       "lag": "즉시~2주",
@@ -4495,7 +4986,7 @@
       "from": "EVT_Suez2021",
       "to": "CP_Suez",
       "relation": "disrupts",
-      "label": "2021 수에즈 좌초→CP_Suez",
+      "label": "수에즈 좌초→CP_Suez",
       "source": {
         "note": "출처 미기재",
         "_normalized": "v4"
@@ -4505,7 +4996,7 @@
       "from": "EVT_Urea2021",
       "to": "CF_Urea",
       "relation": "cutsSupply",
-      "label": "2021 요소수 대란→CF_Urea",
+      "label": "요소수 대란→CF_Urea",
       "blockageRate": 97,
       "koreaImportDependency": 97,
       "dataSource": "관세청 수입통계 2021. 중국산 요소 수입비중 97%",
@@ -4519,7 +5010,7 @@
       "from": "EVT_Japan2019",
       "to": "CF_SemiMaterial",
       "relation": "cutsSupply",
-      "label": "2019 일본 반도체규제→CF_SemiMaterial",
+      "label": "일본 반도체 규제→CF_SemiMaterial",
       "blockageRate": 40,
       "koreaImportDependency": 60,
       "dataSource": "산업통상자원부 2019. 3품목(불화수소/포토레지스트/폴리이미드) 백색국가 제외",
@@ -4533,7 +5024,7 @@
       "from": "EVT_Ukraine2022",
       "to": "CF_Wheat",
       "relation": "cutsSupply",
-      "label": "2022 우크라이나→CF_Wheat",
+      "label": "우크라이나 전쟁→CF_Wheat",
       "blockageRate": 50,
       "koreaImportDependency": 5,
       "globalPriceEffect": 40,
@@ -4549,7 +5040,7 @@
       "from": "EVT_Ukraine2022",
       "to": "CF_Corn",
       "relation": "cutsSupply",
-      "label": "2022 우크라이나→CF_Corn",
+      "label": "우크라이나 전쟁→CF_Corn",
       "blockageRate": 50,
       "koreaImportDependency": 8,
       "globalPriceEffect": 30,
@@ -4565,7 +5056,7 @@
       "from": "EVT_Ukraine2022",
       "to": "CF_CrudeOil",
       "relation": "cutsSupply",
-      "label": "2022 우크라이나→CF_CrudeOil",
+      "label": "우크라이나 전쟁→CF_CrudeOil",
       "blockageRate": 30,
       "koreaImportDependency": 5,
       "globalPriceEffect": 60,
@@ -4581,7 +5072,7 @@
       "from": "EVT_Ukraine2022",
       "to": "KS_Shipping",
       "relation": "benefitsShipping",
-      "label": "2022 우크라이나→KS_Shipping (운임수혜)",
+      "label": "우크라이나 전쟁→KS_Shipping (운임수혜)",
       "freightSurge": 200,
       "shockDirection": "positive",
       "lag": "즉시~2주",
@@ -4598,7 +5089,7 @@
       "from": "EVT_COVID2020",
       "to": "CF_SemiMaterial",
       "relation": "disruptsShipping",
-      "label": "2020 COVID 컨테이너→CF_SemiMaterial",
+      "label": "COVID 컨테이너 대란→CF_SemiMaterial",
       "disruptionRate": 40,
       "freightSurge": 500,
       "note": "컨테이너 부족+항만적체. SCFI 40ft 기준 $10,000+ (평시 $2,000)",
@@ -4611,7 +5102,7 @@
       "from": "EVT_COVID2020",
       "to": "CF_RareEarth",
       "relation": "disruptsShipping",
-      "label": "2020 COVID 컨테이너→CF_RareEarth",
+      "label": "COVID 컨테이너 대란→CF_RareEarth",
       "disruptionRate": 30,
       "freightSurge": 500,
       "source": {
@@ -4623,7 +5114,7 @@
       "from": "EVT_COVID2020",
       "to": "CF_Urea",
       "relation": "disruptsShipping",
-      "label": "2020 COVID 컨테이너→CF_Urea",
+      "label": "COVID 컨테이너 대란→CF_Urea",
       "disruptionRate": 25,
       "freightSurge": 300,
       "source": {
@@ -4635,7 +5126,7 @@
       "from": "EVT_COVID2020",
       "to": "KS_Shipping",
       "relation": "benefitsShipping",
-      "label": "2020 COVID 컨테이너→KS_Shipping (운임수혜)",
+      "label": "COVID 컨테이너 대란→KS_Shipping (운임수혜)",
       "freightSurge": 500,
       "shockDirection": "positive",
       "lag": "즉시~4주",
@@ -4645,6 +5136,26 @@
       "lagMaxDays": 28,
       "source": {
         "dataSource": "미검증 (HMM 2021 연간보고서 기반 추정)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "EVT_NamuHo2026",
+      "to": "CP_Hormuz",
+      "relation": "disrupts",
+      "label": "HMM 나무호 피격·화재→CP_Hormuz",
+      "source": {
+        "note": "출처 미기재",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "EVT_HormuzToll2026",
+      "to": "CP_Hormuz",
+      "relation": "disrupts",
+      "label": "호르무즈 통항료·재개방 조건→CP_Hormuz",
+      "source": {
+        "note": "출처 미기재",
         "_normalized": "v4"
       }
     },
@@ -5440,6 +5951,58 @@
       }
     },
     {
+      "from": "FP_Novorossiysk",
+      "to": "CP_BlackSea",
+      "relation": "transitsThrough",
+      "source": {
+        "basis": "FP node transitCPs attribute",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "FP_Kharg",
+      "to": "CP_Hormuz",
+      "relation": "transitsThrough",
+      "source": {
+        "basis": "FP node transitCPs attribute",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "FP_Basra",
+      "to": "CP_Hormuz",
+      "relation": "transitsThrough",
+      "source": {
+        "basis": "FP node transitCPs attribute",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "FP_Basra",
+      "to": "CP_Malacca",
+      "relation": "transitsThrough",
+      "source": {
+        "basis": "FP node transitCPs attribute",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "FP_Basra",
+      "to": "KP_Ulsan",
+      "relation": "shipsTo",
+      "label": "이라크→울산 원유 (2026-09-21 추가; 봉쇄 이후 2026-07 수입 0 — 석유공사)",
+      "commodity": "CF_CrudeOil",
+      "vessel": "VT_VLCC",
+      "chokepoints": [
+        "CP_Hormuz",
+        "CP_Malacca"
+      ],
+      "source": {
+        "basis": "supply_chains 정의",
+        "_normalized": "v4"
+      }
+    },
+    {
       "from": "KP_Ulsan",
       "to": "KC_SKEnergy",
       "relation": "receivesCargoAt",
@@ -5826,7 +6389,7 @@
       "from": "BP_SaudiEastWest",
       "to": "CP_Hormuz",
       "relation": "bypasses",
-      "label": "사우디 East-West 파이프라인 (Petroline)→CP_Hormuz 우회",
+      "label": "사우디 East-West 파이프라인→CP_Hormuz 우회",
       "bypassCapacityPct": 9,
       "source": {
         "note": "출처 미기재",
@@ -5837,7 +6400,7 @@
       "from": "BP_CapeRoute",
       "to": "CP_Suez",
       "relation": "bypasses",
-      "label": "희망봉 해상 우회 (Cape of Good Hope)→CP_Suez 우회",
+      "label": "희망봉 해상 우회→CP_Suez 우회",
       "bypassCapacityPct": null,
       "source": {
         "note": "출처 미기재",
@@ -5848,7 +6411,7 @@
       "from": "BP_CapeRoute",
       "to": "CP_BabElMandeb",
       "relation": "bypasses",
-      "label": "희망봉 해상 우회 (Cape of Good Hope)→CP_BabElMandeb 우회",
+      "label": "희망봉 해상 우회→CP_BabElMandeb 우회",
       "bypassCapacityPct": null,
       "source": {
         "note": "출처 미기재",
@@ -6206,6 +6769,239 @@
       }
     },
     {
+      "from": "SS_SaudiArabia",
+      "to": "FP_RasTanura",
+      "relation": "exportsVia",
+      "label": "사우디 원유 공급원→FP_RasTanura",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_SaudiArabia",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "사우디 원유 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_UAE",
+      "to": "FP_Fujairah",
+      "relation": "exportsVia",
+      "label": "UAE 원유·나프타 공급원→FP_Fujairah",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_UAE",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "UAE 원유·나프타 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_UAE",
+      "to": "CF_Naphtha",
+      "relation": "suppliesCommodity",
+      "label": "UAE 원유·나프타 공급원→CF_Naphtha",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Kuwait",
+      "to": "FP_MinaAhmadi",
+      "relation": "exportsVia",
+      "label": "쿠웨이트 원유 공급원→FP_MinaAhmadi",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Kuwait",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "쿠웨이트 원유 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Iraq",
+      "to": "FP_Basra",
+      "relation": "exportsVia",
+      "label": "이라크 원유 공급원→FP_Basra",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Iraq",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "이라크 원유 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Oman",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "오만 원유 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Iran",
+      "to": "FP_Kharg",
+      "relation": "exportsVia",
+      "label": "이란 원유 공급원→FP_Kharg",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Iran",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "이란 원유 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Qatar",
+      "to": "FP_RasLaffan",
+      "relation": "exportsVia",
+      "label": "카타르 LNG 공급원→FP_RasLaffan",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Qatar",
+      "to": "CF_LNG",
+      "relation": "suppliesCommodity",
+      "label": "카타르 LNG 공급원→CF_LNG",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_Qatar",
+      "to": "CF_Naphtha",
+      "relation": "suppliesCommodity",
+      "label": "카타르 LNG 공급원→CF_Naphtha",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_USA",
+      "to": "FP_USGulf",
+      "relation": "exportsVia",
+      "label": "미국 원유·LNG·곡물 공급원→FP_USGulf",
+      "source": {
+        "basis": "supply_sources.exportPorts",
+        "note": "2026-09-21 신설",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_USA",
+      "to": "CF_CrudeOil",
+      "relation": "suppliesCommodity",
+      "label": "미국 원유·LNG·곡물 공급원→CF_CrudeOil",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_USA",
+      "to": "CF_LNG",
+      "relation": "suppliesCommodity",
+      "label": "미국 원유·LNG·곡물 공급원→CF_LNG",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_USA",
+      "to": "CF_Wheat",
+      "relation": "suppliesCommodity",
+      "label": "미국 원유·LNG·곡물 공급원→CF_Wheat",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "SS_USA",
+      "to": "CF_Corn",
+      "relation": "suppliesCommodity",
+      "label": "미국 원유·LNG·곡물 공급원→CF_Corn",
+      "weightStatus": "unweighted",
+      "source": {
+        "basis": "supply_sources.commodities",
+        "note": "2026-09-21 신설. 한국 수입 비중 가중치 미부여(총량 미확보)",
+        "_normalized": "v4"
+      }
+    },
+    {
       "from": "KS_Energy",
       "to": "KS_Material",
       "relation": "suppliesTo",
@@ -6236,6 +7032,24 @@
       "lagMaxDays": 0,
       "source": {
         "dataSource": "한국은행 2020 실측 산업연관표 직접투입계수",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "KS_Energy",
+      "to": "KS_FoodAgri",
+      "relation": "suppliesTo",
+      "label": "연료/전력→수산·식품가공",
+      "lag": "2~8주",
+      "weight": 0.035,
+      "note": "에너지 가격 급등→어선연료·냉장물류·식품가공 전력·포장재 원가 상승. IO 추정치, 미검증",
+      "dataSource": "산업연관표 추정 (식료품제조+수산업의 석유제품·전력·가스 직접투입계수 가중평균)",
+      "io_detail": "미검증 — A(16,08)+A(45,08)+A(46,08) 및 수산업 해당 행 확인 필요",
+      "verified": false,
+      "lagMinDays": 14,
+      "lagMaxDays": 56,
+      "source": {
+        "dataSource": "산업연관표 추정 (식료품제조+수산업의 석유제품·전력·가스 직접투입계수 가중평균)",
         "_normalized": "v4"
       }
     },
@@ -6487,6 +7301,24 @@
       "lagMaxDays": 28,
       "source": {
         "dataSource": "한국은행 2020 실측 산업연관표 직접투입계수",
+        "_normalized": "v4"
+      }
+    },
+    {
+      "from": "KS_Shipping",
+      "to": "KS_Construction",
+      "relation": "suppliesTo",
+      "label": "운임상승→건설자재 운송비",
+      "lag": "4~8주",
+      "weight": 0.012,
+      "note": "해운 운임 상승→철강·시멘트·중장비 등 중량 건설자재 운송비 증가→건설원가 상승. IO 추정치, 미검증",
+      "dataSource": "산업연관표 추정 (건설업의 운수·보관 직접투입계수)",
+      "io_detail": "미검증 — A(54,50) 수상운송→건물건설 확인 필요. 철강 등 수입건설자재 운임전가분 포함",
+      "verified": false,
+      "lagMinDays": 28,
+      "lagMaxDays": 56,
+      "source": {
+        "dataSource": "산업연관표 추정 (건설업의 운수·보관 직접투입계수)",
         "_normalized": "v4"
       }
     },

@@ -1779,16 +1779,15 @@ _DOMINANT_ELIGIBLE_PREFIXES = ('CP_', 'EVT_', 'CE_', 'EV_SCENARIO')
 _ALERT_ORDER = {'Normal': 0, 'Caution': 1, 'Warning': 2, 'Crisis': 3}
 
 # 지리적 초크포인트 (해협·운하·지역) — KG 경로 검증 대상
+# 2026-09-21: KG에 없는 구판 ID(CP_RedSea·CP_Kaohsiung·CP_Shanghai) 제거, CP_BlackSea는 KG에 정식 등록됨
 GEOGRAPHIC_CPS = {
     'CP_Hormuz', 'CP_Suez', 'CP_Panama', 'CP_Malacca',
-    'CP_Taiwan', 'CP_BabElMandeb', 'CP_RedSea', 'CP_BlackSea',
-    'CP_Kaohsiung', 'CP_Shanghai', 'CP_Lombok',
+    'CP_Taiwan', 'CP_BabElMandeb', 'CP_BlackSea', 'CP_Lombok',
 }
 
 # 클러스터 이벤트 → 원산지 국가 메타데이터
 KG_EVENT_METADATA = {
-    'CP_RussiaFuelExport': {'originCountry': '러시아'},
-    'CP_BlackSea':         {'originCountry': '러시아'},
+    'CP_BlackSea':         {'originCountry': '러시아'},   # 2026-09-21: 구판 CP_RussiaFuelExport 항목 제거
 }
 
 # 지정학적 trigger_location → CP 매핑
@@ -2334,6 +2333,7 @@ def _build_cluster_context(kg_data):
                         'CP_': 'chokepoint', 'CF_': 'commodity_flow',
                         'KS_': 'korea_sector', 'KC_': 'korea_company',
                         'RiskEvent_': 'crisis_event', 'EVT_': 'crisis_event',
+                        'SS_': 'supply_source',   # 2026-09-21 KG L2-6 공급원 유형 신설
                     }
                     for pfx, t in _PREFIX_TYPE.items():
                         if canonical.startswith(pfx):
@@ -3040,7 +3040,9 @@ def get_kg_context_brief(top_commodities, top_sectors, tier, G, nodes, max_nodes
                 if G.nodes[nb_node].get('node_type') != 'RiskEvent':
                     ctx_nodes.add(nb_node)
     for nid, d in nodes.items():
-        if d.get('node_type') == 'chokepoint':
+        # 2026-09-21: 공급원(supply_source)도 항상 포함 — 시나리오가 SOURCE 교란 경로를 KG 밖에서
+        #   지어내지 않고 SS_ 노드(exportsVia/suppliesCommodity)를 근거로 쓰게 한다
+        if d.get('node_type') in ('chokepoint', 'supply_source'):
             ctx_nodes.add(nid)
     max_nodes_by_tier = {1: 0, 2: 15, 3: 30, 4: max_nodes}
     limit = max_nodes_by_tier.get(tier, max_nodes)
@@ -3887,7 +3889,8 @@ def _has_fresher_articles(old_scenario, ref_date, week_tag):
 _KG_FOCUS_EXCLUDE = {'korea_company', 'korea_impact', 'korea_sector'}
 _KG_TYPE_KO = {'chokepoint': '초크포인트', 'bypass_infrastructure': '우회 인프라',
                'crisis_event': '위기 이벤트', 'commodity_flow': '품목', 'policy': '정책',
-               'vessel_type': '선종', 'foreign_port': '해외 항만', 'korea_port': '한국 항만'}
+               'vessel_type': '선종', 'foreign_port': '해외 항만', 'korea_port': '한국 항만',
+               'supply_source': '공급원'}   # 2026-09-21 신설 유형
 _WD_KO = ['월', '화', '수', '목', '금', '토', '일']
 
 
@@ -4021,6 +4024,22 @@ def _render_kg_trend_svg(trend):
             + ''.join(g) + '</svg></div>')
 
 
+def _kg_vocab_expansion_notice(week_label):
+    """KG metadata.vocabExpansion(빌더가 기록한 어휘 확장 시점)을 읽어, 확장 주와 그 다음 주에만
+    안내문을 돌려준다(2주 — 전주 대비 ▲▼가 어휘 확장분을 포함하는 기간). 하드코딩 대신 KG에서 도출."""
+    try:
+        with open(KG_FILE, encoding='utf-8') as _f:
+            _ve = (json.load(_f).get('metadata') or {}).get('vocabExpansion') or {}
+        _d = pd.Timestamp(_ve.get('date'))
+        _w0 = _d.strftime('%G-W%V'); _w1 = (_d + pd.Timedelta(weeks=1)).strftime('%G-W%V')
+        if week_label in (_w0, _w1):
+            return (f'{_d.strftime("%Y-%m-%d")}부터 집계 어휘를 확장했습니다({_ve.get("note", "")}). '
+                    f'이 주의 건수·전주 대비 변화는 어휘 확장분을 포함하므로 이전 주와 직접 비교할 수 없습니다.')
+    except Exception:
+        pass
+    return ''
+
+
 def render_kg_focus_block(s):
     """주간 리포트용 '공급망 요소별 기사량' 섹션 (스냅샷 막대 + 주중 일별 추이).
     kg_focus 필드가 없는 과거 주차는 빈 문자열 반환 (게시본 불변 원칙)."""
@@ -4028,6 +4047,7 @@ def render_kg_focus_block(s):
     rows = kf.get('rows') or []
     if not rows:
         return ''
+    _vocab_note = _kg_vocab_expansion_notice(s.get('week', ''))
     mx = max(r['count'] for r in rows) or 1
     bars = []
     for r in rows:
@@ -4053,7 +4073,8 @@ def render_kg_focus_block(s):
     note = ('<p style="font-size:11px;color:#999;margin:10px 0 0;">'
             '일간 브리핑과 동일 집계(HIGH·MEDIUM 기사 제목의 KG 매칭)의 주간 합산 · '
             '▲▼ 전주 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>'
-            '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님</p>')
+            '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님'
+            + (f'<br><b>※ {_vocab_note}</b>' if _vocab_note else '') + '</p>')
     _css = ('<style>'
             '.kgf-row{display:grid;grid-template-columns:230px 1fr 110px;align-items:center;gap:10px;margin:6px 0;}'
             '.kgf-lab{font-size:13px;text-align:right;}'
