@@ -4070,22 +4070,6 @@ def _render_kg_trend_svg(trend):
             + ''.join(g) + '</svg></div>')
 
 
-def _kg_vocab_expansion_notice(week_label):
-    """KG metadata.vocabExpansion(빌더가 기록한 어휘 확장 시점)을 읽어, 확장 주와 그 다음 주에만
-    안내문을 돌려준다(2주 — 전주 대비 ▲▼가 어휘 확장분을 포함하는 기간). 하드코딩 대신 KG에서 도출."""
-    try:
-        with open(KG_FILE, encoding='utf-8') as _f:
-            _ve = (json.load(_f).get('metadata') or {}).get('vocabExpansion') or {}
-        _d = pd.Timestamp(_ve.get('date'))
-        _w0 = _d.strftime('%G-W%V'); _w1 = (_d + pd.Timedelta(weeks=1)).strftime('%G-W%V')
-        if week_label in (_w0, _w1):
-            return (f'{_d.strftime("%Y-%m-%d")}부터 집계 어휘를 확장했습니다({_ve.get("note", "")}). '
-                    f'이 주의 건수·전주 대비 변화는 어휘 확장분을 포함하므로 이전 주와 직접 비교할 수 없습니다.')
-    except Exception:
-        pass
-    return ''
-
-
 def render_kg_focus_block(s):
     """주간 리포트용 '공급망 요소별 기사량' 섹션 (스냅샷 막대 + 주중 일별 추이).
     kg_focus 필드가 없는 과거 주차는 빈 문자열 반환 (게시본 불변 원칙)."""
@@ -4093,7 +4077,6 @@ def render_kg_focus_block(s):
     rows = kf.get('rows') or []
     if not rows:
         return ''
-    _vocab_note = _kg_vocab_expansion_notice(s.get('week', ''))
     mx = max(r['count'] for r in rows) or 1
     bars = []
     for r in rows:
@@ -4119,8 +4102,7 @@ def render_kg_focus_block(s):
     note = ('<p style="font-size:11px;color:#999;margin:10px 0 0;">'
             '일간 브리핑과 동일 집계(HIGH·MEDIUM 기사 제목의 KG 매칭)의 주간 합산 · '
             '▲▼ 전주 대비 변화 건수 · 한 기사가 여러 요소를 언급할 수 있음<br>'
-            '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님'
-            + (f'<br><b>※ {_vocab_note}</b>' if _vocab_note else '') + '</p>')
+            '검색된 기사에 한한 것으로 전세계 기사량 기반이 아님' + '</p>')
     _css = ('<style>'
             '.kgf-row{display:grid;grid-template-columns:230px 1fr 110px;align-items:center;gap:10px;margin:6px 0;}'
             '.kgf-lab{font-size:13px;text-align:right;}'

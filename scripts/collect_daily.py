@@ -1689,20 +1689,6 @@ _KG_TYPE_KO = {'chokepoint': '초크포인트', 'bypass_infrastructure': '우회
                'vessel_type': '선종', 'foreign_port': '해외 항만', 'korea_port': '한국 항만',
                'supply_source': '공급원'}   # 2026-09-21 신설 유형
 
-def _kg_vocab_expansion_notice(target_date):
-    """KG metadata.vocabExpansion(빌더 기록) 기준, 확장일부터 7일간만 안내문 반환 — ▲▼(전일 대비)가
-    어휘 확장분을 포함하는 기간. 하드코딩 대신 KG에서 도출."""
-    try:
-        _ve = (_kg_raw.get('metadata') or {}).get('vocabExpansion') or {}
-        _d0 = datetime.strptime(_ve['date'], '%Y-%m-%d').date()
-        _gap = (target_date - _d0).days
-        if 0 <= _gap <= 7:
-            return (f'{_d0.isoformat()}부터 집계 어휘를 확장했습니다({_ve.get("note", "")}). '
-                    f'이 기간의 건수·전일 대비 변화는 어휘 확장분을 포함하므로 이전과 직접 비교할 수 없습니다.')
-    except Exception:
-        pass
-    return None
-
 
 @lru_cache(maxsize=None)
 def _match_title_for_focus(title):
@@ -2096,7 +2082,6 @@ else:
         'ref_map':    ref_map,
         'collection_notice': COLLECTION_NOTICE,   # 수집 결손 안내 (없으면 None)
         'kg_focus': _build_kg_focus(DATE_TAG),    # 공급망 요소별 기사량 (상위 10)
-        'kg_focus_notice': _kg_vocab_expansion_notice(TARGET_DATE),   # 어휘 확장 안내 (확장 후 7일만, 없으면 None)
         'early_signal': _early_signal or None,    # 주중 조기 신호 (급증 진행 중일 때만)
     }
     with open(json_path, 'w', encoding='utf-8') as f:
@@ -2130,8 +2115,6 @@ else:
             L(f"- [{_r['type']}] {_r['name']} — {_r['count']}건{_arrow}")
         L("")
         L("> KG 매칭 기준 언급 기사 수 · ▲▼는 전일 대비 · 한 기사가 여러 요소를 언급할 수 있음 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님")
-        if json_data.get('kg_focus_notice'):
-            L(f"> ※ {json_data['kg_focus_notice']}")
         L("")
     _es_out = json_data.get('early_signal') or []
     if _es_out:
@@ -2215,8 +2198,7 @@ else:
                 _d = _r.get('delta')
                 _c[3].text = '-' if _d is None else ('▲%d' % _d if _d > 0 else ('▼%d' % -_d if _d < 0 else '0'))
             _np = doc.add_paragraph()
-            _nr = _np.add_run('※ KG 매칭 기준 · ▲▼는 전일 대비 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님'
-                              + (f"\n※ {json_data['kg_focus_notice']}" if json_data.get('kg_focus_notice') else ''))
+            _nr = _np.add_run('※ KG 매칭 기준 · ▲▼는 전일 대비 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님')
             _nr.font.size = Pt(9); _nr.font.color.rgb = RGBColor(0x80, 0x80, 0x80)
         if json_data.get('early_signal'):
             _WD = ['월', '화', '수', '목', '금', '토', '일']
