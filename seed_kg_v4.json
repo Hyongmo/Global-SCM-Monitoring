@@ -23,6 +23,7 @@
       "J: CF_Urea.exposureRate·cpExposure.CP_Hormuz 15→8 하향 (산술모순 해소: 중국 90%(KITA 2023) 기준 상한 10 초과. 중동 경유분 추정 5~8% 중간값). verificationStatus=corrected_estimate. 1차 K-stat 대조 전까지 잠정. CLAUDE.md 5-b 예외 사유 correctionNote에 기록. 세션 21 배치1",
       "K: CP 7개 baselineDailyTransits 재검증 (세션 21 배치2). Hormuz 80→120, Suez 50→72, BabElMandeb 45→68, Malacca 90→258(3배 과소 교정), Panama 40→36(과대 교정), Taiwan 200→240, Lombok 60→35(과대 교정). 모두 2차 인용 기반(IMF PortWatch/SCA/MPA/ACP/Lloyd 2차 인용), verificationStatus=secondary_citation 플래그 및 baselineDailyTransits_meta 필드 추가. 1차 대시보드 직접 접근(IMF PortWatch API, Lloyd 인텔리전스 DB) 차기 세션 필요",
       "L: feedsInto CF→KS edge 12건 weight 전수 재검증 (한국은행 2020 실측 IO표 직접투입계수 대조). 10건 PASS (CrudeOil/LNG/Coal/Naphtha/IronOre/Wheat/Corn/Urea/Meat/SemiMaterial) verificationStatus=verified_against_IO_2020. 2건 FAIL 교정: CF_RareEarth weight 0.0020→0.0002 (A(07,37)+A(07,42) 둘 다 0.0000으로 근거 없음, 통합중분류 IO표에서 희토류 분리 불가, verificationStatus=unsupported_by_IO_mid_class), CF_EuroContainer weight 0.0250→0.0059 (수상운송 Row54→제조업 27~44 합계, 컨테이너는 운송병목이라 IO 직접투입계수 대응 안됨, verificationStatus=unsupported_by_IO). 세션 21 Reality Check 배치3",
+      "O: 2026-09-27 설계 근거 v3 수치 반영 — CP_Hormuz.koreaLNGExposure 18→19, CF_LNG.exposureRate/cpExposure 보수값 14 폐기(19), CF_LNG.sourceCountries 2025, CF_Urea.sourceCountries 2025(차량용, 2차), CF_CrudeOil.sourceCountries 2024 비중 추가, CF_CrudeOil.crisisObservations 신설(기준값·관측값 분리 결정)",
       "N: 2026-09-21 KG 공백 분석 반영 — (1) 국문 별칭 일괄(CP 7·EVT_RedSea 4·CF 8노드·KS 3·BP 2·POL 1, 오탐 검사 통과분만) (2) 신규 노드: CP_BlackSea, FP_Kharg(Argus 92%), FP_Basra(석유공사 2026-07 수입 0), VT_Tanker, EVT_NamuHo2026, EVT_HormuzToll2026 (3) supply_source 유형 신설 8노드 + exportsVia/suppliesCommodity 무가중 엣지 (4) 9/13 세션에서 JSON 직접 수정했던 이름 9건 빌더 소급. research/KG_gap_analysis_20260921.md",
       "M: KC_ Company 노드 배치4-1 (Energy 4 + Material 5 = 9개) 검증. 교정 3건: KC_SKGas middleEastExposure 높음→낮음(한국 LPG 수입 중동 3% 미만, 미국 65%+), KC_SKENS 높음→낮음(호주/미국/인니 중심), KC_PoscoIntl 높음→보통(미얀마/알래스카 다변화). 보강 6건: KC_HanwhaSol/KC_Kumho/KC_KoreaZinc/KC_SKC/KC_OCI/KC_DonggukSteel에 ticker·port·용량 정량속성 추가. 전 건 verified=partial, source.verifiedAt=2026-04-12 세션22. 근거: SK가스→한국석유공사 LPG수입통계 2022, SK E&S→eng.sk.com/KED Global, 포스코인터→POSCO공식/EIA, 금호석유→Wikipedia/KITA, 고려아연→koreazinc.co.kr, OCI→oci.co.kr, 동국제강→GEM/Wikipedia",
       "N: KC_ Company 노드 배치4-2 (KS_Shipping 8개) 검증. 대폭수정 2건: KC_Hanjin middleEastExposure 중간→낮음(선박0척, 택배·육상물류회사, 한진해운2017파산과 별개), KC_HungA 높음→낮음(역내아시아 특화, 중동정기노선 미확인, 2019 컨테이너90% 장금상선 매각). 하향 1건: KC_CJLogistics 중간→낮음(순수포워더, 자사선無). 보강 5건: KC_HyundaiGlovis(PCC Top5, 28.4조), KC_KoreanAir(항공유원유69%중동, 두바이주7회, 16.1조), KC_LXPantos(미상장, 해상포워딩Top6, 두바이거점, 8.06조), KC_LotteLogistics(미상장, 국내물류중심, 3.57조), KC_Changkum(VLCC세계13-17%, Gulf Service항로, 3.4조). 전 건 verified=partial. 근거: 쉬핑뉴스넷/대한항공뉴스룸/파이낸셜뉴스/Argus Media/Yahoo Finance/Statista/KED Global/Korea Herald/SeaRates",
@@ -314,12 +315,11 @@
       "globalLNGShare": 20,
       "koreaOilExposure": 70,
       "koreaLNGExposure": {
-        "value": 18,
-        "basis": "카타르산(호르무즈 통과) 14% + 기타 중동 호르무즈 통과분 추정 ~4%",
-        "official_qatar_only": 14,
-        "source": "한국가스공사 보도자료 2026.03.27",
-        "verificationStatus": "partial",
-        "note": "공식 1차 자료로 재현되는 값은 카타르산 14%. 18%는 추정치 포함."
+        "value": 19,
+        "basis": "2025년 LNG 도입 중 카타르 14.9% + 오만 4.1% (호르무즈 통과분)",
+        "source": "에너지경제연구원 에너지브리프 2026.04 (에너지통계월보 2026.3)",
+        "verificationStatus": "verified",
+        "note": "2026-09-27 갱신(설계 근거 v3): 구값 18(2024 중간값)·보수값 14(카타르산만) 폐기"
       },
       "riskLevel": 5,
       "status": "2026.03 봉쇄 중",
@@ -327,12 +327,13 @@
         "globalOilShare": "EIA, World Oil Transit Chokepoints, 2023",
         "globalLNGShare": "EIA, World Oil Transit Chokepoints, 2023",
         "koreaOilExposure": "한국석유공사, 석유수급통계, 2024",
-        "koreaLNGExposure": "KOGAS LNG 도입실적 2024: 카타르산 14%, 중동 전체 15~20%. 중간값 18% 적용. 세션 47 검증",
+        "koreaLNGExposure": "에너지경제연구원 에너지브리프 2026.04: 2025년 카타르 14.9% + 오만 4.1% ≈ 19% (2026-09-27 갱신; 구 근거 KOGAS 2024 중간값 18)",
         "_normalized": "v4"
       },
       "asOf": {
         "globalOilShare": "2023",
         "koreaOilExposure": "2024",
+        "koreaLNGExposure": "2025",
         "status": "2026.03"
       },
       "node_type": "chokepoint",
@@ -1709,12 +1710,55 @@
         "CP_Malacca": 85
       },
       "sourceCountries": [
-        "사우디",
-        "UAE",
+        "사우디(32.2%)",
+        "미국(16.4%)",
+        "UAE(13.7%)",
         "쿠웨이트",
-        "이라크",
-        "미국"
+        "이라크"
       ],
+      "crisisObservations": {
+        "note": "봉쇄(2026-02-28) 이후 관측값 — 기준값 아님, 계산 미사용",
+        "items": [
+          {
+            "key": "middleEastShare",
+            "label": "중동산 원유 비중",
+            "unit": "%",
+            "series": [
+              {
+                "period": "2026-02",
+                "value": 69.5,
+                "source": "한국석유공사 (데일리안 2026-07-28)"
+              },
+              {
+                "period": "2026-06",
+                "value": 59.7,
+                "source": "한국석유공사 (데일리안 2026-07-28)"
+              },
+              {
+                "period": "2026-05~07",
+                "value": 48.5,
+                "status": "잠정·도입 예정분 포함",
+                "source": "산업통상부 브리핑 (아주경제 2026-05-26; 발표일상 6·7월분은 실적일 수 없음)"
+              }
+            ]
+          },
+          {
+            "key": "importByCountry",
+            "label": "국가별 원유 도입량",
+            "unit": "만 배럴",
+            "period": "2026-07",
+            "values": {
+              "사우디": 3071,
+              "미국": 1730,
+              "UAE": 1428,
+              "오만": 504,
+              "쿠웨이트": 400,
+              "이라크": 0
+            },
+            "source": "한국석유공사 (한국경제 2026-08-30)"
+          }
+        ]
+      },
       "transitCPs": [
         "CP_Hormuz",
         "CP_Malacca"
@@ -1737,12 +1781,14 @@
         "koreaImportDependency": "에너지경제연구원, 에너지통계연보, 2024",
         "middleEastShare": "한국석유공사, 석유수급통계, 2026.01",
         "exposureRate": "한국석유공사 + EIA 추정",
+        "sourceCountries": "국회입법조사처 2026 분석(에너지데일리 2026-09-04 인용), 2024년 기준. 쿠웨이트·이라크 비중 미확인",
         "note": "산업연구원, 호르무즈 봉쇄 영향분석, 2024",
         "_normalized": "v4"
       },
       "asOf": {
         "middleEastShare": "2026.01",
-        "koreaImportDependency": "2024"
+        "koreaImportDependency": "2024",
+        "sourceCountries": "2024"
       },
       "aliases": [
         "원유"
@@ -1760,24 +1806,25 @@
       "koreaImportDependency": 99,
       "exposureRate": {
         "value": 19,
-        "conservative": 14,
-        "note": "보수(카타르산 14%) vs 확장(중동 호르무즈 통과분 ~19%). 공식 재현값은 14%.",
-        "verificationStatus": "partial"
+        "note": "2025년 카타르 14.9% + 오만 4.1% (에너지경제연구원 2026.04). 2026-09-27 보수값 14 폐기",
+        "verificationStatus": "verified"
       },
       "cpExposure": {
         "CP_Hormuz": {
           "value": 19,
-          "conservative": 14,
-          "status": "partial"
+          "status": "verified"
         },
         "CP_Malacca": 40,
         "CP_Panama": 12
       },
       "sourceCountries": [
-        "호주(24.6%)",
-        "카타르(19.2%)",
-        "말레이시아(13.2%)",
-        "미국(12.2%)"
+        "호주(31.4%)",
+        "말레이시아(16.1%)",
+        "카타르(14.9%)",
+        "미국(9.4%)",
+        "러시아(5.3%)",
+        "인도네시아(4.4%)",
+        "오만(4.1%)"
       ],
       "transitCPs": [
         "CP_Hormuz",
@@ -1798,17 +1845,17 @@
       ],
       "propagationLag": "2~4주",
       "note": "봉쇄 시 전력·가스 생산비 +77.71% (산업연구원)",
-      "routeNote": "FP_USGulf→CP_Panama 경로 엣지 존재 (미국 LNG 12.2%). 호주/말레이시아는 태평양 직항",
+      "routeNote": "FP_USGulf→CP_Panama 경로 엣지 존재 (미국 LNG 9.4%, 2025). 호주/말레이시아는 태평양 직항",
       "source": {
         "koreaImportDependency": "한국가스공사, LNG 수입실적, 2024",
-        "exposureRate": "한국가스공사, LNG 도입선 비율, 2024",
-        "sourceCountries": "한국가스공사, 2024 (비율은 asOf 시점)",
+        "exposureRate": "에너지경제연구원 에너지브리프 2026.04 (2025년 카타르 14.9% + 오만 4.1%)",
+        "sourceCountries": "에너지경제연구원 에너지통계월보 2026.3 (에너지브리프 2026.04 인용), 2025년. 구값 2024: 호주 24.6·카타르 19.2·말레이 13.2·미국 12.2",
         "note": "산업연구원, 호르무즈 봉쇄 영향분석, 2024",
         "_normalized": "v4"
       },
       "asOf": {
-        "sourceCountries": "2024",
-        "exposureRate": "2024"
+        "sourceCountries": "2025",
+        "exposureRate": "2025"
       },
       "node_type": "commodity_flow",
       "layer": "L3",
@@ -2112,9 +2159,10 @@
         "CP_Hormuz": 8
       },
       "sourceCountries": [
-        "중국",
-        "인도네시아",
-        "카타르"
+        "중국(62.4%)",
+        "베트남(26.6%)",
+        "일본(5.8%)",
+        "카타르(3.0%)"
       ],
       "transitCPs": [
         "CP_Hormuz"
@@ -2129,15 +2177,17 @@
       ],
       "propagationLag": "2~6개월",
       "note": "2021 요소수 대란 선례(중국산 97.7%). 벌크/bags 운송 일반적. 천연가스 가격→비료 공장 가동 중단→요소 +40%+",
-      "routeNote": "카타르산 요소(~15%) 호르무즈 경유하나, 카타르 요소항(FP_RasLaffan 등) 엣지 미인코딩. 현재 엣지는 FP_Qingdao, FP_Indonesian만 존재 (초크포인트 경유 없음)",
+      "routeNote": "카타르산 요소(2025 차량용 3.0%) 호르무즈 경유하나, 카타르 요소항(FP_RasLaffan 등) 엣지 미인코딩. 현재 엣지는 FP_Qingdao, FP_Indonesian만 존재 (초크포인트 경유 없음)",
       "source": {
         "koreaImportDependency": "관세청, 2024",
         "exposureRate": "관세청 + KITA, 카타르산 비율 추정",
+        "sourceCountries": "상용차매거진 2026-07-22 — 2025년 차량용 요소 기준, 기사에 통계 출처 미기재(2차 인용). CF_Urea 전체(비료·산업용) 구성과 다를 수 있음. 2021 이후 정책 다변화에 따른 구조 변화로 기준값 갱신",
         "note": "Reuters, 2021; 관세청 수입통관 통계",
         "_normalized": "v4"
       },
       "asOf": {
-        "exposureRate": "2026-04-10 (세션 21 재산정)"
+        "exposureRate": "2026-04-10 (세션 21 재산정)",
+        "sourceCountries": "2025"
       },
       "verificationStatus": "corrected_estimate",
       "correctionNote": "세션 21 Reality Check 배치1: cpExposure.CP_Hormuz 구값 15는 중국 90%(KITA 2023 2차 인용) 기준 산술 상한 10 초과로 모순. 남은 ~10% 안에서 호르무즈 경유국(카타르·UAE·사우디) 합계를 5~8%로 추정하여 중간값 8 적용. 1차 출처(관세청 K-stat HS 3102.10) 대조 전까지 잠정값. CLAUDE.md 5-b 예외: 1차 대조 미완료 상태의 수치 수정이므로 차기 세션 재검증 필수",
@@ -5177,8 +5227,7 @@
       "label": "CP_Hormuz→LNG",
       "exposureRate": {
         "value": 19,
-        "conservative": 14,
-        "status": "partial"
+        "status": "verified"
       },
       "source": {
         "note": "출처 미기재",

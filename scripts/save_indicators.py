@@ -37,7 +37,7 @@ INDICATOR_META = {
     'Harpex':       {'unit': 'points', 'frequency': 'weekly'},
     'NAPMSDI':      {'unit': 'index',  'frequency': 'monthly'},
     'RWI_ISL_CTI':  {'unit': 'index',  'frequency': 'monthly'},
-    'GSCSI':        {'unit': 'index',  'frequency': 'monthly'},
+    'GSCSI':        {'unit': 'million_TEUs', 'frequency': 'monthly'},  # CLAUDE.md 0-c: 단위 million TEUs
 }
 
 def main():

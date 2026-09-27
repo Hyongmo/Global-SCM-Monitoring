@@ -3030,24 +3030,63 @@ def _build_indicator_meta(kg_raw):
     return INDICATOR_META
 
 
+def _format_crisis_observations(co):
+    """KG 노드의 crisisObservations(위기 관측값)를 모델 입력용 한 줄로 만든다.
+    items[].series → '라벨 기간 값단위(상태) → …', items[].values → '라벨(기간, 단위) 키 값·…'.
+    구조가 없거나 비면 빈 문자열."""
+    if not isinstance(co, dict):
+        return ''
+    parts = []
+    for it in co.get('items') or []:
+        label = it.get('label') or it.get('key', '')
+        unit = it.get('unit', '')
+        if it.get('series'):
+            seq = ' → '.join(
+                f"{p.get('period', '')} {p.get('value')}{unit}"
+                + (f"({p['status']})" if p.get('status') else '')
+                for p in it['series'])
+            parts.append(f"{label} {seq}")
+        elif it.get('values'):
+            vals = '·'.join(f"{k} {v}" for k, v in it['values'].items())
+            parts.append(f"{label}({it.get('period', '')}, {unit}) {vals}")
+    return '; '.join(parts)
+
+
 def get_kg_context_brief(top_commodities, top_sectors, tier, G, nodes, max_nodes=40):
     """KG 컨텍스트 구성: 관련 노드 + 구조적 전파 엣지 텍스트."""
-    ctx_nodes = set()
-    for nid in top_commodities + top_sectors:
+    # 2026-09-27 결함 수정(사용자 승인): 기존에는 후보 110~119개를 집합(set)에 모은 뒤
+    #   set(list(...)[:limit])로 잘라, 무엇이 남을지가 파이썬 문자열 해시 순서(실행마다 무작위)로
+    #   정해졌다. 요청된 주요 품목조차 빠져 원유 노드가 모델 입력에 들어갈 확률이 약 30%였다.
+    #   → 우선순위가 있는 순서 목록으로 모은 뒤 앞에서부터 한도까지 채운다(실행마다 동일한 결과).
+    #   우선순위: ① 요청된 주요 품목·섹터(신호 집계 순서 그대로) ② 초크포인트·공급원(2026-09-21 상시
+    #   포함 정책 유지, id 순) ③ ①의 이웃 노드를 아래 유형 순서, 같은 유형 안에서는 id 순으로.
+    #   유형 순서는 전파 경로 설명에 필요한 정도로 정한 설계 판단: 물자·섹터(전파 사슬) → 우회 인프라
+    #   (Part A 대안 경로) → 해외항만 → 위기 이벤트 → 정책 → 선종 → 한국항만 → 한국 영향 → 기업(74개로
+    #   가장 많고 개별 정보는 간략 입력에 불필요).
+    _NB_TYPE_ORDER = ['commodity_flow', 'korea_sector', 'bypass_infrastructure', 'foreign_port',
+                      'crisis_event', 'policy', 'vessel_type', 'korea_port', 'korea_impact',
+                      'korea_company']
+    ordered, seen = [], set()
+    def _push(nid):
+        if nid in G and nid not in seen:
+            seen.add(nid); ordered.append(nid)
+    for nid in top_commodities + top_sectors:                                  # ①
+        _push(nid)
+    for nid in sorted(n for n, d in nodes.items()                              # ②
+                      if d.get('node_type') in ('chokepoint', 'supply_source')):
+        _push(nid)
+    _nbs = set()
+    for nid in top_commodities + top_sectors:                                  # ③
         if nid in G:
-            ctx_nodes.add(nid)
             for nb_node in list(G.successors(nid)) + list(G.predecessors(nid)):
                 if G.nodes[nb_node].get('node_type') != 'RiskEvent':
-                    ctx_nodes.add(nb_node)
-    for nid, d in nodes.items():
-        # 2026-09-21: 공급원(supply_source)도 항상 포함 — 시나리오가 SOURCE 교란 경로를 KG 밖에서
-        #   지어내지 않고 SS_ 노드(exportsVia/suppliesCommodity)를 근거로 쓰게 한다
-        if d.get('node_type') in ('chokepoint', 'supply_source'):
-            ctx_nodes.add(nid)
+                    _nbs.add(nb_node)
+    _rank = {t: i for i, t in enumerate(_NB_TYPE_ORDER)}
+    for nid in sorted(_nbs, key=lambda n: (_rank.get(G.nodes[n].get('node_type'), len(_rank)), n)):
+        _push(nid)
     max_nodes_by_tier = {1: 0, 2: 15, 3: 30, 4: max_nodes}
     limit = max_nodes_by_tier.get(tier, max_nodes)
-    if len(ctx_nodes) > limit:
-        ctx_nodes = set(list(ctx_nodes)[:limit])
+    ctx_nodes = set(ordered[:limit])
     lines = ['=== KG 노드 ===']
     for nid in sorted(ctx_nodes):
         if nid not in G: continue
@@ -3068,6 +3107,13 @@ def get_kg_context_brief(top_commodities, top_sectors, tier, G, nodes, max_nodes
             cp_str = ', '.join(f"{cp}:{v}%" for cp, v in d['cpExposure'].items())
             attrs.append(f"CP별경유율=({cp_str})")
         lines.append(f"[{ntype}] {name} ({', '.join(attrs)})" if attrs else f"[{ntype}] {name}")
+        # 2026-09-27: 위기 관측값 병기 (설계 근거 v3 2.2절 '기준값·관측값 분리', 사용자 승인).
+        #   위 속성은 위기 전 기준값이다. 봉쇄 후 관측값(crisisObservations)은 계산에 쓰지 않되,
+        #   모델이 기준값을 현재 상태로 오인하지 않도록 '기준값 아님'을 붙여 함께 보여준다.
+        #   라벨·단위·기간·상태는 전부 KG 데이터에서 읽는다(하드코딩 없음).
+        _obs = _format_crisis_observations(d.get('crisisObservations'))
+        if _obs:
+            lines.append(f"    ※ 봉쇄 후 관측값(기준값 아님, 계산 미사용): {_obs}")
     lines.append('\n=== 공급망 전파 경로 (KG 구조) ===')
     _STRUCTURAL_RELATIONS = {'restrictsFlowOf', 'feedsInto', 'dependsOn',
                               'affectsChokepoint', 'suppliesTo', 'importsFrom'}
