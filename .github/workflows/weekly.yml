@@ -135,8 +135,10 @@ jobs:
           #    초안 검토는 Step 7의 검토 메일 첨부로만 이루어지고,
           #    공개 게시는 감수 완료 후 weekly_finalize.yml 이 담당한다.
           #    (러너 작업공간에는 HTML이 그대로 남아 있으므로 메일 발송에는 영향 없음)
+          # momentum_ledger.json: 지표변동 전망 원장 — 커밋하지 않으면 발동·채점 기록이 러너와 함께
+          #   사라져 다음 주에 진행 중 전망을 잃는다(2026-09-28 W38 누락 사례)
           git add indicator_weekly.csv indicator_weekly_dates.csv \
-                  cluster_registry_v2.json scenario_results.json \
+                  cluster_registry_v2.json scenario_results.json momentum_ledger.json \
                   news_scored_phaseA_v7_*.csv \
                   2>/dev/null || true
 

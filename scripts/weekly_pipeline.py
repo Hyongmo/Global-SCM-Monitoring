@@ -2714,7 +2714,7 @@ Signal(전체): Crisis {crisis_pct}% | Warning {warning_pct}% | 합산 {wc_pct}%
 {ind_changes_section}
 
 ⚠ 지표 수치 인용 규칙: 본문(situation_summary, part_d pathway 등)에서 지표 변동률(%)을 언급할 때 반드시 위 [주요 지표 변화]에 제공된 chg_pct 값을 그대로 사용할 것. 직접 계산하거나 반올림하지 말 것. 예: 위에 +168.1%로 제공되면 본문에서도 +168.1%로 표기.
-⚠ 지표 시점 규칙: [주요 지표 변화]의 각 지표에는 [기준일 MM-DD] 표시가 있다. 기준일이 이번 주 기사 수집기간 이전인 지표(예: 통항량)는 이번 주 사건·기사를 직접적인 감소/증가 원인으로 단정하지 말 것 — 중립적으로 서술하고 연관성은 '추가 확인 필요' 수준으로만 표현할 것. [월간] 표시가 있는 지표는 '전주 대비'가 아니라 전월 대비 변화로 서술할 것.
+⚠ 지표 시점 규칙: [주요 지표 변화]의 각 지표에는 [기준일 MM-DD] 표시가 있다. 기준일이 이번 주 기사 수집기간 이전인 지표(예: 통항량)는 changes_from_prev의 detail과 본문 어디에서도 이번 주 사건·기사를 변화 원인으로 쓰지 말 것. '봉쇄 심화 반영', '우회 물동량 흡수', '공격 위협 지속 반영'처럼 원인을 덧붙이는 표현도 금지한다. detail은 수치 변화와 기준일만 쓰고 '지표 기준일(M월 D일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음'으로 끝낼 것. 통항량 등 기준일이 기사 기간보다 앞선 지표는 part_a 경로·watchpoints·part_e 취약점·권고에서도 '현재 상황'의 근거 수치로 쓰지 말 것(통항량 자료는 약 1주 늦게 수신됨 — '일일·실시간 추적' 같은 표현도 금지). (2026-09-28: 김태한 위원 반복 지적 — 종전 '단정하지 말 것' 규칙으로는 원인 서술이 계속 붙었음) [월간] 표시가 있는 지표는 '전주 대비'가 아니라 전월 대비 변화로 서술할 것.
 
 [KG 컨텍스트]
 {kg_ctx}
@@ -2761,7 +2761,7 @@ shock>=15%=심각 | 5~15%=중요 | 1~5%=보통 | <1%=미약
     "crisis_level": "Normal|Caution|Warning|Crisis 중 하나",
     "situation_summary": "날짜 기반 서술형 요약 (Tier에 따라 1-4문단). [주요 기사 목록]의 [N] 번호를 활용하여 주요 사실에 출처를 [N] 형태로 인용할 것.",
     "changes_from_prev": [
-      {{"key": "지표키(아래 [주요 지표 변화] 목록에서 선택)", "detail": "변화 원인 한 문장 설명"}}
+      {{"key": "지표키(아래 [주요 지표 변화] 목록에서 선택)", "detail": "변화 원인 한 문장 설명 (기준일이 기사 기간 이전인 지표는 원인 없이 수치·기준일만 — 지표 시점 규칙)"}}
     ],
     "watchpoints": [
       {{"horizon": "초기(0-4주)|중기(4-12주)|장기(12주+)", "point": "주시 포인트"}}
@@ -3403,6 +3403,16 @@ def build_tier1_scenario(period, week_label, signal, prev_scenario):
     }
 
 
+def _ind_dp(v, unit):
+    """지표 표기·계산 자릿수 (2026-09-28): 값이 10 미만인 지표(천연가스 등)는 소수 3자리.
+    소수 2자리 반올림만으로 변동률이 0.1%p 달라졌다(W39 천연가스 2.882→3.117 원자료 +8.2% vs 2.88→3.12 표기 +8.3%,
+    김한나 위원 지적). 원화·척·% 단위는 종전 규칙 유지. 표기값끼리 계산해 재현성 유지(김태한 위원 8/24 원칙)."""
+    try:
+        return 3 if (unit not in ('KRW', '척', '%') and abs(float(v)) < 10) else 2
+    except Exception:
+        return 2
+
+
 def fmt_val_plain(v, unit):
     """지표 값을 LLM 프롬프트용 텍스트로 포맷 (HTML 없음)"""
     if v is None:
@@ -3411,6 +3421,8 @@ def fmt_val_plain(v, unit):
         fv = float(v)
         if fv != fv:
             return 'N/A'
+        if _ind_dp(fv, unit) == 3:
+            return f'{fv:,.3f} {unit}'
         if unit in ('pt', 'USD/bbl', 'KRW/USD', 'USD'):
             return f'{fv:,.1f} {unit}'
         elif unit == 'KRW':
@@ -3535,6 +3547,8 @@ def compute_ind_changes(snap, threshold=_IND_CHG_THRESHOLD):
             # "표기값으로 계산하면 다른 값이 나온다"는 지적이 반복되었다.
             # (2026-08-24 김태한 박사 WTI 82.2→86.1 = +4.7% vs 표기 +4.9%)
             # chg_pct 와 동일하게 소수 2자리로 맞춘다.
+            if _ind_dp(v, u) == 3:
+                return f'{v:,.3f}'
             if u in ('pt', 'USD/bbl', 'KRW/USD', 'USD'):
                 return f'{v:,.2f}'
             elif u == 'KRW':
@@ -3551,8 +3565,8 @@ def compute_ind_changes(snap, threshold=_IND_CHG_THRESHOLD):
             'unit':       unit,
             'data_date':  meta.get('data_date', ''),   # 2026-09-14: 시점 규칙용
             'freq':       meta.get('freq', ''),
-            'from_val':   round(prev_val, 2),
-            'to_val':     round(val, 2),
+            'from_val':   round(prev_val, _ind_dp(prev_val, unit)),
+            'to_val':     round(val, _ind_dp(val, unit)),
             'from_str':   _fmt(prev_val, unit),
             'to_str':     _fmt(val, unit),
             'chg_pct':    chg,
@@ -3601,26 +3615,26 @@ def get_daily_context(ref_date, monitor_dir=None, ref_map=None):
         return re.sub(r'\s*\[\d+\]', '', str(text)).strip() if text else text
 
     def _remap(text, daily_refs):
+        # 2026-09-28: 번호를 제자리에서 바꿈(종전: 항목 전체에서 앞 2개만 모아 끝에 붙임 → W39에서
+        #   '이란 당국·파르스 통신 부인' 문장에 부인 기사가 아닌 제안 기사가 인용되는 오류 발생).
+        #   같은 항목 안의 서로 다른 주장이 각자의 출처를 유지하도록 한다.
         if ref_map is None:
             return _strip_daily_refs(text)
-        out = []
-        for _n in re.findall(r'\[(\d+)\]', str(text)):
-            _r = daily_refs.get(_n) or {}
+
+        def _one(mo):
+            _r = daily_refs.get(mo.group(1)) or {}
             _u, _t = _r.get('url', ''), _r.get('title', '')
             if not (_u or _t):
-                continue
+                return ''
             if _u and _u in _url_num:
-                _k = _url_num[_u]
-            else:
-                _k = str(max([int(x) for x in ref_map] + [0]) + 1)
-                ref_map[_k] = {'title': str(_t)[:120], 'url': _u}
-                if _u:
-                    _url_num[_u] = _k
-            if _k not in out:
-                out.append(_k)
-            if len(out) >= 2:
-                break
-        return _strip_daily_refs(text) + ''.join(f'[{k}]' for k in out)
+                return f'[{_url_num[_u]}]'
+            _k = str(max([int(x) for x in ref_map] + [0]) + 1)
+            ref_map[_k] = {'title': str(_t)[:120], 'url': _u}
+            if _u:
+                _url_num[_u] = _k
+            return f'[{_k}]'
+        _s = re.sub(r'\[(\d+)\]', _one, str(text))
+        return re.sub(r'(\[\d+\])(?:\1)+', r'\1', _s).strip()   # 같은 번호 연속 중복 제거
 
     prev_sunday = ref_date - pd.Timedelta(days=1)
     week_start  = prev_sunday - pd.Timedelta(days=6)
@@ -3713,7 +3727,7 @@ def get_indicator_snapshot(ref_date, indicator_df, indicator_meta, prev_indicato
                 'unit':      meta['unit'],
                 'group':     meta['group'],
                 'dir':       meta['dir'],
-                'value':     round(float(cur_val), 2),
+                'value':     round(float(cur_val), _ind_dp(cur_val, meta['unit'])),
                 'chg_pct':   None,
                 'chg_dir':   'flat',
                 'freq':      _freq,
@@ -3724,6 +3738,13 @@ def get_indicator_snapshot(ref_date, indicator_df, indicator_meta, prev_indicato
                 _pv = prev_indicators[col].get('value')
                 if _pv is not None:
                     _prev_val = float(_pv)
+                    # 2026-09-28: 전주 발간값이 원자료를 소수 2자리로 반올림한 값이면 원자료로 대체 —
+                    #   소수 3자리 표기(_ind_dp) 전환 주에 반올림 잔차가 가짜 변동으로 나타나지 않게
+                    #   (예: GSCPI 1.0625 발간 1.06 → 이번 주 1.063이면 +0.3% 오표기)
+                    if prev_date is not None and col in indicator_df.columns:
+                        _raw = indicator_df.loc[prev_date, col]
+                        if pd.notna(_raw) and round(float(_raw), 2) == round(_prev_val, 2):
+                            _prev_val = float(_raw)
             elif prev_date is not None:
                 _prev_val = indicator_df.loc[prev_date, col]
                 if pd.isna(_prev_val):
@@ -3734,8 +3755,9 @@ def get_indicator_snapshot(ref_date, indicator_df, indicator_meta, prev_indicato
             #    예) GSCPI 원시 0.8047 vs 전주 저장값 0.80 → +0.6% (실제 변동 0%)
             #    (2026-08-24 김한나 박사 지적 — 2주 연속 동일 오류)
             if _prev_val is not None and _prev_val != 0:
-                _cur_disp  = round(float(cur_val), 2)
-                _prev_disp = round(float(_prev_val), 2)
+                _dp = _ind_dp(cur_val, meta['unit'])
+                _cur_disp  = round(float(cur_val), _dp)
+                _prev_disp = round(float(_prev_val), _dp)
                 if _prev_disp != 0:
                     chg = (_cur_disp - _prev_disp) / abs(_prev_disp) * 100
                     entry['chg_pct'] = round(chg, 1)
@@ -4652,6 +4674,16 @@ def _mom_binom_tail(n, k, p):
     return sum(comb(n, i) * p**i * (1-p)**(n-i) for i in range(k, n + 1))
 
 
+def _mom_vocab_sig(entity_patterns, signal_nodes):
+    """신호 집계 기준 서명 — 매칭 어휘(KG 별칭 패턴)·신호 그룹·감시 노드 정의의 해시.
+    원장 signal_history 각 주에 '_kg'로 저장해, 기준이 바뀌면 비교 구간을 다시 센다."""
+    import hashlib
+    _src = json.dumps([sorted((k, v[0]) for k, v in entity_patterns.items()),
+                       {k: sorted(v) for k, v in _MOM_SIGNAL_IDS.items()},
+                       sorted(signal_nodes)], ensure_ascii=False)
+    return hashlib.md5(_src.encode('utf-8')).hexdigest()[:12]
+
+
 def build_momentum(week_label, indicator_df, entity_patterns):
     """주요 지표변동 전망 — 신호 갱신·발동 판정·원장 채점·승격을 한 번에.
 
@@ -4672,10 +4704,29 @@ def build_momentum(week_label, indicator_df, entity_patterns):
     sig = _mom_week_signals(week_label, entity_patterns, signal_nodes)
     if sig is None:
         return None
-    hist[week_label] = {k: int(v) for k, v in sig.items()}
+    _vsig = _mom_vocab_sig(entity_patterns, signal_nodes)
+    hist[week_label] = {**{k: int(v) for k, v in sig.items()}, '_kg': _vsig}
 
     _y, _w = week_label.split('-W')
     ref_mon = datetime.fromisocalendar(int(_y), int(_w), 1) + timedelta(days=7)
+
+    # 2026-09-28: 비교 기준 일치 — z 계산에 쓰는 직전 주들(이번 주 기준 8주 + 직전 주 판정용 1주)이
+    #   다른 기준으로 집계됐거나 빠져 있으면 현행 기준으로 다시 센다. 9/21 어휘 확장 후 W39가
+    #   새 어휘 594·380건을 옛 어휘 평소 249·75건과 비교해 '급증'으로 잘못 판정된 사례,
+    #   원장 미커밋으로 W38이 빠져 기준에서 누락된 사례.
+    _this_mon = datetime.fromisocalendar(int(_y), int(_w), 1)
+    _n_re = 0
+    for _k in range(1, MOMENTUM_BASE_WEEKS + 2):
+        _wl = (_this_mon - timedelta(weeks=_k)).strftime('%G-W%V')
+        if hist.get(_wl, {}).get('_kg') == _vsig:
+            continue
+        _s = _mom_week_signals(_wl, entity_patterns, signal_nodes)
+        if _s is None:
+            continue
+        hist[_wl] = {**{k: int(v) for k, v in _s.items()}, '_kg': _vsig}
+        _n_re += 1
+    if _n_re:
+        print(f"  지표변동 전망: 비교 구간 {_n_re}주를 현행 집계 기준으로 다시 셈")
 
     # 시점 정합 (2026-09-17): 이 주 리포트 시점(ref_mon)까지의 지표만 사용.
     #   소급 재구성 시 미래 지표를 미리 보는 look-ahead를 차단해 실운영과
@@ -4913,6 +4964,21 @@ def build_momentum(week_label, indicator_df, entity_patterns):
                                  for e in shadow_fired]}}
 
 
+def _mom_row_carry(m, r):
+    """표 행(지표 계열)에 걸린 '이전 주 발동·진행 중' 전망 — 이번 주 신호가 평시여도
+    진행 중인 전망이 있으면 행에 드러낸다(2026-09-28 사용자 결정: W39 운임 행이 '안정'인데
+    아래 W38 상승 전망 진행 중으로 앞뒤가 안 맞게 읽힘). 없으면 None.
+    행 지표는 ind_ko 괄호 안(예: '컨테이너 운임 (SCFI·Harpex)')에서 읽는다 — PDF(노트북 셀 16)와 동일 규칙."""
+    _ind = str(r.get('ind_ko', ''))
+    _inds = set(_ind[_ind.find('(') + 1:_ind.rfind(')')].split('·')) if '(' in _ind else set()
+    _c = [a for a in m.get('active', [])
+          if a.get('indicator') in _inds and a.get('fired_week', '') < m.get('week', '')]
+    if not _c:
+        return None
+    a = min(_c, key=lambda x: x['fired_week'])
+    return {'fired_week': a['fired_week'], 'elapsed': a.get('elapsed', 0), 'b': a['window'][1]}
+
+
 def render_momentum_block(s):
     """주요 지표변동 전망 섹션 HTML. momentum 필드가 없는 과거 주차는 빈
     문자열 반환 (게시본 불변 원칙 — kg_focus와 동일).
@@ -4953,6 +5019,11 @@ def render_momentum_block(s):
         elif r['state'] == 'watch':
             outlook = (f"<span class='mom-tag mom-watch'>주시</span>"
                        f"기사 급증 1주차 — 지속되면 {a}~{b}주 내 상승 압력")
+        elif _mom_row_carry(m, r):
+            _cy = _mom_row_carry(m, r)
+            outlook = (f"<span class='mom-tag mom-up'>상승 압력</span>"
+                       f"{_kgf_esc(_cy['fired_week'])} 급증 때 낸 전망 진행 중 "
+                       f"({_cy['elapsed']}/{_cy['b']}주 경과)")
         else:
             outlook = "<span class='mom-tag mom-calm'>안정</span>큰 변동 조짐 없음"
         ev = []
@@ -4968,10 +5039,15 @@ def render_momentum_block(s):
         h.append(f"<tr><td><b>{_kgf_esc(r['ind_ko'])}</b></td>"
                  f"<td>{outlook}</td><td>{'<br>'.join(ev)}</td></tr>")
     h.append('</table>')
+    # 2026-09-28: 진행 줄은 이전 주에 낸 전망만 (이번 주 발동분은 위 표가 곧 전망).
+    #   종전엔 이번 주 전망까지 '지난 2026-W39 … 0/2주 경과'로 찍혔다(사용자 지적).
     for a_ in m.get('active', []):
-        chg = f"{a_['chg_pct']:+.1f}%" if a_.get('chg_pct') is not None else '변동 집계 전'
+        if a_.get('fired_week', '') >= m.get('week', ''):
+            continue
+        _c = round(a_['chg_pct'], 1) + 0.0 if a_.get('chg_pct') is not None else None   # -0.0 방지
+        chg = '변동 집계 전' if _c is None else ('0.0%' if _c == 0 else f"{_c:+.1f}%")
         h.append(f"<p style='font-size:13px;color:#52514e;margin:8px 0 0;'>"
-                 f"지난 {_kgf_esc(a_['fired_week'])} 급증 때 낸 "
+                 f"{_kgf_esc(a_['fired_week'])} 급증 때 낸 "
                  f"{_kgf_esc(a_['indicator'])} 전망은 진행 중입니다 — "
                  f"기준일({_kgf_esc(a_['base_monday'])}) 대비 {chg}, "
                  f"{a_['elapsed']}/{a_['window'][1]}주 경과.</p>")
@@ -5336,6 +5412,8 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                 fv = float(v)
                 if fv != fv:
                     return 'N/A'
+                if _ind_dp(fv, unit) == 3:
+                    return f'{fv:,.3f}'
                 if unit in ('pt', 'USD/bbl', 'KRW/USD', 'USD'):
                     return f'{fv:,.1f}'
                 elif unit == 'KRW':
