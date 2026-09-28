@@ -2416,32 +2416,5 @@
       "delta": 3
     }
   ],
-  "early_signal": [
-    {
-      "signal": "hormuz",
-      "label": "호르무즈 관련 기사",
-      "target": "유가",
-      "window": [
-        1,
-        2
-      ],
-      "cum": 594,
-      "med": 278.5,
-      "ratio": 2.1,
-      "weekday": 7
-    },
-    {
-      "signal": "redsea",
-      "label": "홍해 관련 기사",
-      "target": "컨테이너 운임",
-      "window": [
-        2,
-        6
-      ],
-      "cum": 380,
-      "med": 75.0,
-      "ratio": 5.1,
-      "weekday": 7
-    }
-  ]
+  "early_signal": null
 }

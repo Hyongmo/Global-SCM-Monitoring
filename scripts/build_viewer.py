@@ -202,7 +202,9 @@ def _tv_widget_html():
 
 
 def _early_signal_html(sigs):
-    """주중 조기 신호 — 급증 진행 중일 때만 표시 (2026-09-17). 필드 없으면 빈 문자열."""
+    """주중 조기 신호 — 급증 진행 중일 때만 표시 (2026-09-17). 필드 없으면 빈 문자열.
+    2026-09-28: 지난주 같은 기간 대비 방향 표시 (collect_daily._es_sentence 와 같은 규칙).
+    prev_week_cum 없는 과거 JSON은 종전 문장 그대로."""
     if not sigs:
         return ''
     _WD = ['월', '화', '수', '목', '금', '토', '일']
@@ -210,12 +212,20 @@ def _early_signal_html(sigs):
     for e in sigs:
         rng = '월요일' if e.get('weekday') == 1 else f"월~{_WD[e['weekday'] - 1]}"
         w = e.get('window') or [1, 2]
+        go = f'{w[0]}~{w[1]}주 내 {e["target"]} 상승 압력으로 이어질 수 있음.'
+        pw = e.get('prev_week_cum')
+        if pw is None:
+            tail = '이 흐름이 지속되면 ' + go
+        elif e['cum'] < pw:
+            tail = f'지난주 같은 기간({pw}건)보다 줄었으나 평시보다 높은 수준. 이 수준이 이어지면 ' + go
+        else:
+            tail = f'지난주 같은 기간({pw}건)보다 늘어남. 이 흐름이 지속되면 ' + go
         out.append(
             f'<div style="margin:10px 0; padding:9px 12px; background:#fdf3dd; '
             f'border-left:3px solid #c98500; border-radius:4px; font-size:13px; color:#7a5500;">'
             f'⚡ <b>주중 신호</b> — {e["label"]} 주중 누적 <b>{e["cum"]}건</b>, '
             f'최근 8주 같은 기간({rng}) 중앙값 {e["med"]:.0f}건의 {e["ratio"]}배. '
-            f'이 흐름이 지속되면 {w[0]}~{w[1]}주 내 {e["target"]} 상승 압력으로 이어질 수 있음.</div>')
+            f'{tail}</div>')
     return ''.join(out)
 
 

@@ -2705,7 +2705,7 @@ Signal(전체): Crisis {crisis_pct}% | Warning {warning_pct}% | 합산 {wc_pct}%
 {articles_section}
 
 ⚠ 균형 서술 규칙: situation_summary에는 긴장 고조 사실뿐 아니라 [주요 기사 목록]에 담긴 당사국·관계국의 반박, 완화 조치, 정책 대응(공식 부인, 통항 재개 노력, 파병·기여 방안 검토 등)도 함께 반영하라.
-⚠ 기사 인용 규칙: 위 [주요 기사 목록]의 [N] 번호를 situation_summary 본문에서 해당 사실 뒤에 [N] 형태로 삽입하라. 모든 문장에 인용이 필요하지는 않으나, 핵심 사건·수치·정책 변화에는 반드시 출처 기사 번호를 달 것. 인용은 situation_summary에만 적용하고 다른 필드(part_a, part_d 등)에는 [N]을 넣지 말 것.
+⚠ 기사 인용 규칙: 위 [주요 기사 목록]과 [이번 주 일별 모니터링 요약]의 [N] 번호를 situation_summary 본문에서 해당 사실 뒤에 [N] 형태로 삽입하라. 모든 문장에 인용이 필요하지는 않으나, 핵심 사건·수치·정책 변화에는 반드시 출처 기사 번호를 달 것. 인용은 situation_summary에만 적용하고 다른 필드(part_a, part_d 등)에는 [N]을 넣지 말 것.
 ⚠ 문장 분리 규칙: situation_summary에서 같은 날짜에 발생한 서로 다른 사건은 반드시 별도 문장으로 분리할 것. 하나의 문장에 무관한 사건 두 개를 합치지 말 것.
 ⚠ 날짜 귀속 규칙: [주요 기사 목록]에 표시된 날짜는 '보도일'이며 사건이 실제로 발생한 날이 아니다. 보도일을 발생일로 단정하지 말 것. 날짜를 언급할 때는 "8월 20일 보도에 따르면", "8월 20일 보도된 바에 따르면"처럼 보도 시점임이 드러나게 쓰거나, 기사 제목·요약에 발생일이 명시된 경우에만 발생일로 서술할 것.
 ⚠ 예고·위협 구분 규칙: 기사 태그의 THREAT 는 위협·예고·경고로서 아직 발생하지 않은 사안이다. THREAT 기사를 이미 일어난 사실로 서술하지 말 것("~했다" 금지 → "~하겠다고 예고했다/위협했다/경고했다"). 실제 발생한 교란으로 취급할 수 있는 것은 DISRUPTION 뿐이다.
@@ -2843,7 +2843,7 @@ TIER_GUIDANCE = {
         "⚠ 기사 범위 원칙: 이번 주 [주요 기사 목록]에 등장한 사건/초크포인트 범위 안에서만 서술하라.\n"
         "⚠ Part A 경로 분리: KG 초크포인트(호르무즈·파나마 등)와 비KG 뉴스 이벤트(러시아 수출금지 등)를 같은 path 안에 '→'로 이어 연결하지 말 것. 각각 별개의 route 항목으로 분리할 것. 잘못된 예: '호르무즈 해협 → 러시아 수출금지 → 유가 급등'.\n"
         "⚠ Part A KG 경로 준수: 각 commodity의 path에는 해당 commodity의 kg_basis에 명시된 초크포인트만 포함하라. KG에 연결되지 않은 초크포인트를 path에 임의로 추가하지 말 것. 잘못된 예: CF_EuroContainer(수에즈·바브엘만데브·말라카 경유)의 path에 파나마 운하를 대체항로로 서술. 파나마 교란이 다른 commodity에 간접 영향을 미치더라도 CF_EuroContainer의 path에 직접 포함해서는 안 됨.\n"
-        "- situation_summary: 1-2문장. 날짜 언급 불필요. 핵심 사건에 [N] 기사 인용을 달 것.\n"
+        "- situation_summary: 2-4문장(서로 다른 사건 수에 맞춤). 날짜 언급 불필요. 핵심 사건에 [N] 기사 인용을 달 것.\n"
         "- part_a: 핵심 경로 1-2개\n"
         "- part_b: 빈 배열\n"
                 "- part_d: 주요 산업 2-3개 (산업별 영향 방향, 심각도, 전파경로 포함)\n"
@@ -2876,7 +2876,9 @@ TIER_GUIDANCE = {
         "⚠ 기사 신선도 원칙: [위기 사건 현황]의 주요 위기 사건 '이번 주 신규'가 0건이면, "
         "해당 위기 사건의 과거 기사를 다시 열거하거나 현재형으로 재서술하지 말 것. "
         "대신 '○○ 위기가 지속되고 있으나 이번 주 추가 보도 없음' 수준으로 1문장만 언급하라.\n"
-        "- situation_summary: 3-4문단. "
+        "- situation_summary: 3-6문단(서로 다른 초크포인트·사건 수에 맞춤). "
+        "[주요 기사 목록]과 [이번 주 일별 모니터링 요약]에 나온 서로 다른 사건은 비중이 작더라도 빠짐없이 다룰 것"
+        "(비중이 작은 사건은 한두 문장으로). "
         "위의 [주요 기사 목록]에 있는 날짜(MM월 DD일)를 활용하여 서술하고, 핵심 사건·수치에 [N] 기사 인용을 달 것.\n"
         "단락 구성 원칙: 동일 초크포인트·사건에 관한 내용은 한 단락에 집약하라. "
         "서로 다른 초크포인트(예: 대만해협 vs 파나마 운하)는 별개 단락으로 분리하라. "
@@ -2923,7 +2925,9 @@ TIER_GUIDANCE = {
         "⚠ 기사 신선도 원칙: [위기 사건 현황]의 주요 위기 사건 '이번 주 신규'가 0건이면, "
         "해당 위기 사건의 과거 기사를 다시 열거하거나 현재형으로 재서술하지 말 것. "
         "대신 '○○ 위기가 지속되고 있으나 이번 주 추가 보도 없음' 수준으로 1문장만 언급하라.\n"
-        "- situation_summary: 3-4문단. "
+        "- situation_summary: 3-6문단(서로 다른 초크포인트·사건 수에 맞춤). "
+        "[주요 기사 목록]과 [이번 주 일별 모니터링 요약]에 나온 서로 다른 사건은 비중이 작더라도 빠짐없이 다룰 것"
+        "(비중이 작은 사건은 한두 문장으로). "
         "위의 [주요 기사 목록]에 있는 날짜(MM월 DD일)를 반드시 활용하여 서술하고, 핵심 사건·수치·정책 변화에 [N] 기사 인용을 달 것.\n"
         "단락 구성 원칙: 동일 초크포인트·사건에 관한 내용은 한 단락에 집약하라. "
         "서로 다른 초크포인트(예: 대만해협 vs 파나마 운하)는 별개 단락으로 분리하라. "
@@ -3162,11 +3166,45 @@ def _build_title_url_lookup():
     return lookup
 
 
+# ── 동일 사건 보도 묶기 (2026-09-28, 일일 collect_daily.py 와 같은 규칙) ──
+#   같은 사건을 여러 매체가 거의 같은 제목으로 보도하면 기사 목록 칸을 한 사건이
+#   독식해 다른 사건이 요약에서 빠졌다. 제목 글자쌍(2-gram) 겹침 계수가 기준 이상이면
+#   같은 보도로 묶고 대표 1건만 '동일 보도 N건'과 함께 넘긴다(대표와만 비교, 연쇄 병합 없음).
+_TITLE_SUFFIX_RE = re.compile(r'\s+(?:[-|–—]|:)\s+[^-|–—:]{2,40}$')   # " - 매체명" 등 꼬리표
+
+def _title_grams(t):
+    t = str(t)
+    for _ in range(2):
+        t = _TITLE_SUFFIX_RE.sub('', t)
+    t = re.sub(r'^\s*\[[^\]]{1,8}\]\s*', '', t)                      # [속보] 등 머리표
+    t = re.sub(r'[^0-9a-z가-힣]+', '', t.lower())
+    return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) > 1 else {t}
+
+def cluster_same_story(titles, thr=0.6):
+    """제목 목록 → 같은 보도 묶음 번호 목록 (입력 순서의 첫 기사가 대표)."""
+    reps, labels = [], []
+    for t in titles:
+        g = _title_grams(t)
+        best, best_s = -1, 0.0
+        for k, rg in enumerate(reps):
+            inter = len(g & rg)
+            if inter:
+                sc = inter / min(len(g), len(rg))
+                if sc > best_s:
+                    best, best_s = k, sc
+        if best_s >= thr:
+            labels.append(best)
+        else:
+            reps.append(g)
+            labels.append(len(reps) - 1)
+    return labels
+
+
 ALERT_PRIORITY = {'Crisis': 4, 'Warning': 3, 'Caution': 2, 'Normal': 1}
 
 
 def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cluster,
-                      extract_cluster_entities, title_url_lookup):
+                      extract_cluster_entities, title_url_lookup, cluster_names=None):
     """주요 기사 목록 추출 ([N] 인용용 ref_map 포함)."""
     win_end   = pd.Timestamp(ref_date)
     win_start = win_end - pd.Timedelta(weeks=window_weeks)
@@ -3196,6 +3234,17 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
             return '', {}
 
     sub['_priority'] = sub['alert_level_1st'].map(ALERT_PRIORITY).fillna(0)
+    # 2026-09-28: 보도일별 동일 보도 묶기 — 대표 1건만 남기고 묶음 크기(_n)·경보 가중 합(_psum)을 보존.
+    #   날짜를 넘어 묶지 않는 것은 같은 사건의 날짜별 전개(시간순 서술)를 지키기 위함.
+    _sub_day = sub['date'].dt.strftime('%Y-%m-%d')
+    _rep_parts = []
+    for _d in sorted(_sub_day.unique()):
+        _g = sub[_sub_day == _d].sort_values(['_priority', 'date'], ascending=[False, False]).copy()
+        _g['_story'] = cluster_same_story(_g['title'].astype(str).tolist())
+        _g['_psum'] = _g.groupby('_story')['_priority'].transform('sum')
+        _g['_n'] = _g.groupby('_story')['_story'].transform('size')
+        _rep_parts.append(_g.drop_duplicates('_story'))
+    sub = pd.concat(_rep_parts).drop(columns=['_story'])
     # V13: 일자별 신호량 비례 배분 선택 (노트북 v13과 동일).
     #   총순위 정렬 + 상위 N 방식은 입력이 쏠리면 반드시 한쪽이 독식한다
     #   (V11까지: 가장 오래된 날 독점 → V12: 가장 최신 날 독점, W36에서
@@ -3210,17 +3259,17 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
         if len(pool) <= n:
             return pool
         _day = pool['date'].dt.strftime('%Y-%m-%d')
-        _w = pool.groupby(_day)['_priority'].sum()
+        _w = pool.groupby(_day)['_psum'].sum()
         _alloc = (_w / _w.sum() * n).round().astype(int)
         _parts = []
         for _d, _k in _alloc.items():
             if _k > 0:
                 _parts.append(pool[_day == _d].sort_values(
-                    ['_priority', 'date'], ascending=[False, False]).head(int(_k)))
+                    ['_priority', '_n', 'date'], ascending=[False, False, False]).head(int(_k)))
         _out = pd.concat(_parts) if _parts else pool.head(0)
         if len(_out) < n:   # 반올림 잔여분은 전체 우선순위순으로 보충
             _rest = pool.drop(_out.index).sort_values(
-                ['_priority', 'date'], ascending=[False, False]).head(n - len(_out))
+                ['_priority', '_n', 'date'], ascending=[False, False, False]).head(n - len(_out))
             _out = pd.concat([_out, _rest])
         return _out.head(n)
 
@@ -3254,6 +3303,7 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
         _bal = _bal.drop_duplicates(subset=['title']).sort_values(
             ['_priority', '_rel_high', 'date'], ascending=[True, False, False]).head(5)
         _bal = _bal.drop(columns=['_rel_high'])
+        _bal['_n'] = 1
         top = pd.concat([top, _bal]).drop_duplicates().sort_values('date')
     lines = ['=== 주요 기사 목록 (situation_summary 인용 참고용) ===']
     lines.append(f'기간: {win_start.strftime("%Y-%m-%d")} ~ {win_end.strftime("%Y-%m-%d")}')
@@ -3279,7 +3329,8 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
         if dominant_cluster:
             _row_ents = extract_cluster_entities(row)
             _is_dom = any(cid == dominant_cluster for cid, _ in _row_ents)
-            _ctag = f'[dominant]' if _is_dom else '[기타]'
+            # 2026-09-28: 노트북과 동일하게 대표 사건 이름 표시 (종전 '[dominant]' — 모델이 중심 사건을 알 수 없었음)
+            _ctag = f'[{(cluster_names or {}).get(dominant_cluster, dominant_cluster)}]' if _is_dom else '[기타]'
         else:
             _ctag = ''
         _nk = _norm_title_key(title)
@@ -3290,7 +3341,8 @@ def get_key_articles(df, ref_date, window_weeks, tier, max_articles, dominant_cl
                     _url = _lk_v
                     break
         ref_map[str(ref_num)] = {'title': title, 'url': _url}
-        lines.append(f'[{ref_num}] {_ctag} {v5_tag} [{level}] 보도일 {date_str} {freshness}{trig_tag}  {title}')
+        _dup = f'  — 동일 보도 {int(row["_n"])}건' if pd.notna(row.get('_n')) and row.get('_n', 1) > 1 else ''
+        lines.append(f'[{ref_num}] {_ctag} {v5_tag} [{level}] 보도일 {date_str} {freshness}{trig_tag}  {title}{_dup}')
         summary = str(row.get('event_summary', '')).strip()
         if summary and summary not in ('', 'nan', 'None'):
             lines.append(f'  → {summary[:120]}')
@@ -3532,12 +3584,43 @@ def _build_ind_changes_section(ind_changes_dict):
     return '\n'.join(lines)
 
 
-def get_daily_context(ref_date, monitor_dir=None):
-    """이번 주 일별 모니터링 보고서에서 executive_summary + changes 추출."""
+def get_daily_context(ref_date, monitor_dir=None, ref_map=None):
+    """이번 주 일별 모니터링 보고서에서 executive_summary 첫 문장 + changes 추출.
+    2026-09-28: 신규·악화 각 3건 상한을 없애고 완화 항목도 포함(일일 리포트가 이미 걸러 둔
+    사건 목록을 주간 요약이 빠짐없이 보도록). ref_map(주간 [N] 목록)을 넘기면 각 항목의
+    일일 출처 기사(최대 2건)를 주간 번호로 옮겨 달아 인용할 수 있게 하고, 새 번호는 ref_map 에
+    추가한다(같은 URL이면 기존 번호 재사용). ref_map 이 None 이면 종전처럼 [N]을 지운다."""
     monitor_dir = monitor_dir or str(BASE_DIR / 'monitoring')
+    _url_num = {}
+    if ref_map is not None:
+        for _k, _v in ref_map.items():
+            if _v.get('url'):
+                _url_num.setdefault(_v['url'], _k)
 
     def _strip_daily_refs(text):
-        return re.sub(r'\[\d+\]', '', text).strip() if text else text
+        return re.sub(r'\s*\[\d+\]', '', str(text)).strip() if text else text
+
+    def _remap(text, daily_refs):
+        if ref_map is None:
+            return _strip_daily_refs(text)
+        out = []
+        for _n in re.findall(r'\[(\d+)\]', str(text)):
+            _r = daily_refs.get(_n) or {}
+            _u, _t = _r.get('url', ''), _r.get('title', '')
+            if not (_u or _t):
+                continue
+            if _u and _u in _url_num:
+                _k = _url_num[_u]
+            else:
+                _k = str(max([int(x) for x in ref_map] + [0]) + 1)
+                ref_map[_k] = {'title': str(_t)[:120], 'url': _u}
+                if _u:
+                    _url_num[_u] = _k
+            if _k not in out:
+                out.append(_k)
+            if len(out) >= 2:
+                break
+        return _strip_daily_refs(text) + ''.join(f'[{k}]' for k in out)
 
     prev_sunday = ref_date - pd.Timedelta(days=1)
     week_start  = prev_sunday - pd.Timedelta(days=6)
@@ -3554,23 +3637,21 @@ def get_daily_context(ref_date, monitor_dir=None):
         except Exception:
             continue
 
-        llm = rpt.get('llm_result', {})
+        llm = rpt.get('llm_result', {}) or {}
+        daily_refs = rpt.get('ref_map', {}) or {}
         summary = _strip_daily_refs(llm.get('executive_summary', '').strip())
-        changes = llm.get('changes', {})
-        new_items = [_strip_daily_refs(x.get('issue', x) if isinstance(x, dict) else str(x))
-                     for x in changes.get('new', [])[:3]]
-        esc_items = [_strip_daily_refs(x.get('issue', x) if isinstance(x, dict) else str(x))
-                     for x in changes.get('escalated', [])[:3]]
+        changes = llm.get('changes', {}) or {}
 
         day_lines = [f'▶ {d.strftime("%m/%d")}({["월","화","수","목","금","토","일"][d.weekday()]})']
         if summary:
             first_sent = summary.split('.')[0].strip()
             if first_sent:
                 day_lines.append(f'  요약: {first_sent}.')
-        if new_items:
-            day_lines.append(f'  신규: {", ".join(new_items)}')
-        if esc_items:
-            day_lines.append(f'  악화: {", ".join(esc_items)}')
+        for _key, _lab in (('new', '신규'), ('escalated', '악화'), ('resolved', '완화')):
+            for x in changes.get(_key, []) or []:
+                _txt = x.get('issue', x) if isinstance(x, dict) else x
+                if _txt:
+                    day_lines.append(f'  - {_lab}: {_remap(_txt, daily_refs)}')
         if len(day_lines) > 1:
             day_blocks.append('\n'.join(day_lines))
 
@@ -3706,16 +3787,19 @@ def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df
     articles_section = ''
     _scenario_ref_map = {}
     if df is not None and ref_date is not None:
-        max_arts = {1: 10, 2: 15, 3: 20, 4: 25}.get(tier, 15)
+        max_arts = {1: 15, 2: 30, 3: 50, 4: 70}.get(tier, 30)   # 2026-09-28 확대 (종전 10/15/20/25) — 동일 보도 묶기 후 대표 기사 기준
         title_url_lookup = _build_title_url_lookup()
         _arts_result = get_key_articles(df, ref_date, WINDOW_WEEKS, tier, max_arts,
                                           signal.get('dominant_cluster'),
                                           cluster_ctx['extract_cluster_entities'],
-                                          title_url_lookup)
+                                          title_url_lookup,
+                                          cluster_ctx['CANONICAL_ENTITY_NAMES'])
         if _arts_result:
             articles_section, _scenario_ref_map = _arts_result
 
-    daily_context_section = get_daily_context(ref_date) if ref_date is not None else ''
+    # 2026-09-28: 일일 사건 목록의 출처 기사를 주간 [N] 번호로 이어 붙임 (_scenario_ref_map 에 추가)
+    daily_context_section = (get_daily_context(ref_date, ref_map=_scenario_ref_map)
+                             if ref_date is not None else '')
 
     max_tokens_by_tier = {1: 4096, 2: 16384, 3: 16384, 4: 16384}
 

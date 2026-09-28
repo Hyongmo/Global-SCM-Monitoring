@@ -2362,19 +2362,5 @@
       "delta": 3
     }
   ],
-  "early_signal": [
-    {
-      "signal": "redsea",
-      "label": "홍해 관련 기사",
-      "target": "컨테이너 운임",
-      "window": [
-        2,
-        6
-      ],
-      "cum": 194,
-      "med": 36.0,
-      "ratio": 5.4,
-      "weekday": 3
-    }
-  ]
+  "early_signal": null
 }

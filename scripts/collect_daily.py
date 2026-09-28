@@ -1793,6 +1793,32 @@ def _es_day_signals(date_tag):
     return {'total_high': high, **g}
 
 
+def _es_vocab_sig():
+    """주중 신호 집계 기준 서명 — 매칭 어휘(KG 별칭 패턴)와 신호 그룹 정의의 해시.
+    이력의 각 날짜에 함께 저장해, 기준이 바뀌면 비교 구간을 현행 기준으로 재집계한다."""
+    _src = json.dumps([sorted((k, v[0]) for k, v in _entity_patterns.items()),
+                       {k: sorted(v) for k, v in _ES_GROUPS.items()}], ensure_ascii=False)
+    return hashlib.md5(_src.encode('utf-8')).hexdigest()[:12]
+
+
+def _es_sentence(e):
+    """주중 신호 한 줄 문장 (md·docx 공용, 뷰어는 build_viewer.py 동일 규칙).
+    2026-09-28: 지난주 같은 기간과 비교해 방향을 밝힘 — 정점 이후 감소 중에도
+    '이 흐름이 지속되면'으로 표시돼 증가로 읽히던 문제. prev_week_cum 없는 과거 JSON은 종전 문장."""
+    _WD = ['월', '화', '수', '목', '금', '토', '일']
+    _rng = '월요일' if e['weekday'] == 1 else f"월~{_WD[e['weekday'] - 1]}"
+    _w = e.get('window') or [1, 2]
+    _head = (f"{e['label']} 주중 누적 {e['cum']}건, "
+             f"최근 8주 같은 기간({_rng}) 중앙값 {e['med']:.0f}건의 {e['ratio']}배. ")
+    _go = f"{_w[0]}~{_w[1]}주 내 {e['target']} 상승 압력으로 이어질 수 있음."
+    _pw = e.get('prev_week_cum')
+    if _pw is None:
+        return _head + '이 흐름이 지속되면 ' + _go
+    if e['cum'] < _pw:
+        return _head + f"지난주 같은 기간({_pw}건)보다 줄었으나 평시보다 높은 수준. 이 수준이 이어지면 " + _go
+    return _head + f"지난주 같은 기간({_pw}건)보다 늘어남. 이 흐름이 지속되면 " + _go
+
+
 def _es_check(date_tag):
     """오늘 신호를 이력(daily_signals.json)에 기록하고, 주중 누적이 급증
     페이스인 신호 목록 반환 (평시에는 빈 리스트). 이력 4주 미만이면 판정 안 함."""
@@ -1806,12 +1832,34 @@ def _es_check(date_tag):
     today = _es_day_signals(date_tag)
     if today is None:
         return []
+    _sig = _es_vocab_sig()
+    today['_kg'] = _sig
     sig_hist[date_tag] = today            # 같은 날 재실행은 덮어씀 (멱등)
-    with open(EARLY_SIGNAL_FILE, 'w', encoding='utf-8') as f:
-        json.dump(sig_hist, f, ensure_ascii=False, indent=1, sort_keys=True)
 
     d = datetime.strptime(date_tag, '%Y%m%d').date()
     k = d.isoweekday()                    # 1=월 .. 7=일
+
+    # 2026-09-28: 비교 기준 일치 — 비교 구간(직전 8주~어제)의 이력이 다른 기준(KG 별칭·그룹)으로
+    #   집계돼 있으면 현행 기준으로 다시 센다. 9/21 어휘 확장 후 이번 주는 새 어휘, 지난 8주는
+    #   옛 어휘로 비교돼 배수가 약 2배 부풀었다(9/23~9/26은 기준을 맞추면 미발동).
+    _start = d - timedelta(days=k - 1) - timedelta(weeks=_ES_WEEKS)
+    _n_re = 0
+    for _dt in sorted(sig_hist):
+        if _dt == date_tag or sig_hist[_dt].get('_kg') == _sig:
+            continue
+        if not (_start <= datetime.strptime(_dt, '%Y%m%d').date() < d):
+            continue
+        _v = _es_day_signals(_dt)
+        if _v is None:
+            del sig_hist[_dt]             # 원자료 없음 → 결손 처리(옛 기준 값과 섞지 않음)
+        else:
+            _v['_kg'] = _sig
+            sig_hist[_dt] = _v
+        _n_re += 1
+    if _n_re:
+        print(f"  주중 신호 이력 {_n_re}일을 현행 집계 기준으로 다시 셈")
+    with open(EARLY_SIGNAL_FILE, 'w', encoding='utf-8') as f:
+        json.dump(sig_hist, f, ensure_ascii=False, indent=1, sort_keys=True)
 
     def _cum(monday):
         tot = None
@@ -1819,6 +1867,7 @@ def _es_check(date_tag):
             v = sig_hist.get((monday + timedelta(days=i)).strftime('%Y%m%d'))
             if v is None:
                 return None               # 결손 주는 기준에서 제외
+            v = {x: n for x, n in v.items() if x != '_kg'}   # 기준 서명은 합산 제외
             tot = dict(v) if tot is None else {x: tot[x] + v.get(x, 0) for x in tot}
         return tot
 
@@ -1830,6 +1879,7 @@ def _es_check(date_tag):
              if (c := _cum(this_mon - timedelta(weeks=w))) is not None]
     if len(prevs) < 4:
         return []
+    last_wk = _cum(this_mon - timedelta(weeks=1))   # 지난주 같은 기간 (방향 표시용)
     out = []
     for key, (label, target, win) in _ES_LABEL.items():
         vals = pd.Series([p[key] for p in prevs], dtype=float)
@@ -1843,8 +1893,49 @@ def _es_check(date_tag):
         out.append({'signal': key, 'label': label, 'target': target,
                     'window': list(win), 'cum': cum, 'med': round(med, 1),
                     'ratio': round(cum / med, 1) if med > 0 else None,
-                    'weekday': k})
+                    'weekday': k,
+                    'prev_week_cum': int(last_wk[key]) if last_wk else None})
     return out
+
+
+# ── 동일 사건 보도 묶기 (2026-09-28) ──
+#   같은 사건을 여러 매체가 거의 같은 제목으로 보도하면, 분야별 입력 칸을
+#   한 사건이 독식해 다른 사건이 요약에서 통째로 빠졌다(9/26: 해외 안보 10칸 중
+#   9칸이 '트럼프, 이란 재개방안 거부' — 후티의 사우디 공격 48건은 0칸).
+#   제목 글자쌍(2-gram) 겹침 계수가 기준 이상이면 같은 보도로 묶고, 대표 1건만
+#   '동일 보도 N건'과 함께 넘긴다. 대표와만 비교하므로 연쇄 병합은 없다.
+_TITLE_SUFFIX_RE = re.compile(r'\s+(?:[-|–—]|:)\s+[^-|–—:]{2,40}$')   # " - 매체명" 등 꼬리표
+
+def _title_grams(t):
+    t = str(t)
+    for _ in range(2):
+        t = _TITLE_SUFFIX_RE.sub('', t)
+    t = re.sub(r'^\s*\[[^\]]{1,8}\]\s*', '', t)                      # [속보] 등 머리표
+    t = re.sub(r'[^0-9a-z가-힣]+', '', t.lower())
+    return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) > 1 else {t}
+
+def cluster_same_story(titles, thr=0.6):
+    """제목 목록 → 같은 보도 묶음 번호 목록 (입력 순서의 첫 기사가 대표)."""
+    reps, labels = [], []
+    for t in titles:
+        g = _title_grams(t)
+        best, best_s = -1, 0.0
+        for k, rg in enumerate(reps):
+            inter = len(g & rg)
+            if inter:
+                sc = inter / min(len(g), len(rg))
+                if sc > best_s:
+                    best, best_s = k, sc
+        if best_s >= thr:
+            labels.append(best)
+        else:
+            reps.append(g)
+            labels.append(len(reps) - 1)
+    return labels
+
+def _story_slots(n_articles):
+    """분야·출처별 입력 칸 수 — 기사량에 비례(5건당 1칸), 최소 10·최대 40."""
+    return max(10, min(40, n_articles // 5))
 
 
 def _build_report_prompt(data):
@@ -1864,37 +1955,34 @@ def _build_report_prompt(data):
         if len(cat_hm) == 0:
             continue
         active_cats.append(cat)
-        intl_rows = cat_hm[cat_hm['source_type'] == 'international'].head(10)
-        dom_rows  = cat_hm[cat_hm['source_type'] == 'domestic'].head(10)
         h = len(cat_hm[cat_hm['relevance'] == 'HIGH'])
         m = len(cat_hm[cat_hm['relevance'] == 'MEDIUM'])
         articles_block += f"\n[{CAT_KR[cat]}] HIGH:{h} MEDIUM:{m}\n"
-        if len(intl_rows) > 0:
-            articles_block += f"  해외({len(intl_rows)}건):\n"
-            for _, r in intl_rows.iterrows():
+        for _stype, _label, _rtype in (('international', '해외', 'intl'), ('domestic', '국내', 'dom')):
+            _rows = cat_hm[cat_hm['source_type'] == _stype].reset_index(drop=True)
+            if len(_rows) == 0:
+                continue
+            # 동일 보도 묶기 → 보도 건수 많은 사건부터 칸 배정 (묶음 내 대표 = HIGH 우선·최신순 첫 기사)
+            _rows['_story'] = cluster_same_story(_rows['title'].astype(str).tolist())
+            _size = _rows['_story'].value_counts()
+            _reps = _rows.drop_duplicates('_story').copy()
+            _reps['_n'] = _reps['_story'].map(_size)
+            _reps['_ord'] = range(len(_reps))
+            _reps = _reps.sort_values(['_n', '_ord'], ascending=[False, True])
+            _pick = _reps.head(_story_slots(len(_rows)))
+            articles_block += (f"  {_label}({len(_rows)}건 · 서로 다른 보도 {len(_reps)}개 중 "
+                               f"{len(_pick)}개):\n")
+            for _, r in _pick.iterrows():
                 _topic = r.get('topic', '')
                 _country = r.get('sourcecountry', '')
                 _meta = f' [{_topic}]' if _topic else ''
-                if _country: _meta += f' ({_country})'
+                if _country and pd.notna(_country): _meta += f' ({_country})'   # 국가 결측(GDELT)은 생략
+                if r['_n'] > 1: _meta += f' — 동일 보도 {int(r["_n"])}건'
                 articles_block += f"    [{ref_counter}] {r['title']}{_meta}\n"
                 ref_map[str(ref_counter)] = {
                     'title': str(r['title']),
                     'url':   str(r.get('url', '')) if pd.notna(r.get('url', '')) else '',
-                    'type':  'intl',
-                }
-                ref_counter += 1
-        if len(dom_rows) > 0:
-            articles_block += f"  국내({len(dom_rows)}건):\n"
-            for _, r in dom_rows.iterrows():
-                _topic = r.get('topic', '')
-                _country = r.get('sourcecountry', '')
-                _meta = f' [{_topic}]' if _topic else ''
-                if _country: _meta += f' ({_country})'
-                articles_block += f"    [{ref_counter}] {r['title']}{_meta}\n"
-                ref_map[str(ref_counter)] = {
-                    'title': str(r['title']),
-                    'url':   str(r.get('url', '')) if pd.notna(r.get('url', '')) else '',
-                    'type':  'dom',
+                    'type':  _rtype,
                 }
                 ref_counter += 1
 
@@ -1910,12 +1998,12 @@ HIGH+MEDIUM 기사: 총 {len(hm)}건 (해외 {len(hm_intl)}건 / 국내 {len(hm_
 인용 규칙: 각 문장/주장마다 근거가 되는 기사 1~3건의 번호를 [N] 형식으로 붙일 것. 여러 기사면 [3][7] 식으로 나열.
 
 {{
-  "executive_summary": "오늘의 핵심 동향 4~6문장. 가장 중요한 변화·위험 신호 중심. 구체적 수치·고유명사·지표명 활용. 같은 맥락의 정보는 묶어서 서술.",
+  "executive_summary": "오늘의 핵심 동향. 분량은 기사 목록에 나온 서로 다른 주요 사건 수에 맞춤(사건이 적으면 3~4문장, 많으면 10문장 안팎). 보도 건수가 많은 사건부터, 가장 중요한 변화·위험 신호 중심. 구체적 수치·고유명사·지표명 활용. 같은 맥락의 정보는 묶어서 서술.",
 
   "categories": {{
     "<카테고리코드>": {{
-      "overseas": "해외 상황 3~5문장. 국제 기사 기반, 지금 무슨 일이 벌어지고 있는지. 없으면 빈 문자열.",
-      "korea_impact": "국내 영향 3~5문장. 국내 기사 기반 사실 서술. 해당 뉴스가 호르무즈와 무관하더라도 그 자체로 의미 있으면 서술. 호르무즈 연관이 기사에 명시되지 않았으면 연결하지 말 것. 국내 기사 없으면 빈 문자열."
+      "overseas": "해외 상황. 해당 분야 해외 기사 목록의 서로 다른 사건을 빠짐없이 다루되 분량은 사건 수에 맞춤(보통 3~8문장). 국제 기사 기반, 지금 무슨 일이 벌어지고 있는지. 없으면 빈 문자열.",
+      "korea_impact": "국내 영향. 해당 분야 국내 기사 목록의 서로 다른 사건을 빠짐없이 다루되 분량은 사건 수에 맞춤(보통 3~8문장). 국내 기사 기반 사실 서술. 해당 뉴스가 호르무즈와 무관하더라도 그 자체로 의미 있으면 서술. 호르무즈 연관이 기사에 명시되지 않았으면 연결하지 말 것. 국내 기사 없으면 빈 문자열."
     }}
   }},
 
@@ -1951,6 +2039,8 @@ HIGH+MEDIUM 기사: 총 {len(hm)}건 (해외 {len(hm_intl)}건 / 국내 {len(hm_
 - 한국 경제·산업 시사점 반드시 포함
 - **품질 필터**: 기사 제목만으로 구체적 사실(누가·무엇을·왜·얼마나)을 파악할 수 없는 카테고리는 해당 카테고리를 통째로 생략하라. "구체적 원인은 불분명", "기사 제목에서 특정하기 어려운 상황" 같은 애매한 서술은 절대 포함하지 말 것. 정보가 부족하면 해당 카테고리의 overseas/korea_impact를 빈 문자열로 두라.
 - **독립성 원칙**: 각 카테고리 뉴스는 호르무즈 위기와 무관하게 독립적 가치를 가진다. 호르무즈와의 관계가 기사에 명시되지 않은 한, "호르무즈와의 연관성은 불분명하나", "직접 연관인지 특정하기 어려우나" 류의 서술을 절대 쓰지 말 것. 해양안전 뉴스는 해양안전 뉴스로서 보도하라.
+- **포괄 원칙**: 기사 목록의 서로 다른 사건은 보도 건수가 적더라도 executive_summary·categories 중 적어도 한 곳에서 다룰 것. '동일 보도 N건'은 같은 사건을 여러 매체가 보도한 건수이므로 사건의 비중을 판단하는 데 활용하되, 건수가 적은 사건을 누락하지 말 것
+- **역할 분담**: 같은 사건을 여러 필드에서 같은 문장으로 되풀이하지 말 것. executive_summary는 요지, categories는 경위·수치, flow는 파급 경로 관점으로 서술
 - JSON 외 다른 텍스트 출력 금지"""
 
     return prompt, active_cats, ref_map
@@ -2118,13 +2208,8 @@ else:
         L("")
     _es_out = json_data.get('early_signal') or []
     if _es_out:
-        _WD = ['월', '화', '수', '목', '금', '토', '일']
         for _e in _es_out:
-            _rng = '월요일' if _e['weekday'] == 1 else f"월~{_WD[_e['weekday'] - 1]}"
-            _w = _e.get('window') or [1, 2]
-            L(f"> ⚡ **주중 신호** — {_e['label']} 주중 누적 {_e['cum']}건, "
-              f"최근 8주 같은 기간({_rng}) 중앙값 {_e['med']:.0f}건의 {_e['ratio']}배. "
-              f"이 흐름이 지속되면 {_w[0]}~{_w[1]}주 내 {_e['target']} 상승 압력으로 이어질 수 있음.")
+            L(f"> ⚡ **주중 신호** — {_es_sentence(_e)}")
         L("")
     L("---")
     L("")
@@ -2201,15 +2286,9 @@ else:
             _nr = _np.add_run('※ KG 매칭 기준 · ▲▼는 전일 대비 · 검색된 기사에 한한 것으로 전세계 기사량 기반이 아님')
             _nr.font.size = Pt(9); _nr.font.color.rgb = RGBColor(0x80, 0x80, 0x80)
         if json_data.get('early_signal'):
-            _WD = ['월', '화', '수', '목', '금', '토', '일']
             for _e in json_data['early_signal']:
-                _rng = '월요일' if _e['weekday'] == 1 else f"월~{_WD[_e['weekday'] - 1]}"
                 _p2 = doc.add_paragraph()
-                _w = _e.get('window') or [1, 2]
-                _r3 = _p2.add_run(
-                    f"⚡ 주중 신호 — {_e['label']} 주중 누적 {_e['cum']}건, "
-                    f"최근 8주 같은 기간({_rng}) 중앙값 {_e['med']:.0f}건의 {_e['ratio']}배. "
-                    f"이 흐름이 지속되면 {_w[0]}~{_w[1]}주 내 {_e['target']} 상승 압력으로 이어질 수 있음.")
+                _r3 = _p2.add_run(f"⚡ 주중 신호 — {_es_sentence(_e)}")
                 _r3.font.bold = True
                 _r3.font.size = Pt(9.5); _r3.font.color.rgb = RGBColor(0xA0, 0x6F, 0x00)
         doc.add_paragraph()
