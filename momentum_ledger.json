@@ -474,6 +474,26 @@
       "nd_CP_Panama": 6,
       "nd_CF_IronOre": 10,
       "_kg": "81ebe4ffa0cb"
+    },
+    "2026-W40": {
+      "total_high": 577,
+      "hormuz": 318,
+      "redsea": 263,
+      "nd_CF_CrudeOil": 351,
+      "nd_CP_BabElMandeb": 7,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_HormuzToll2026": 56,
+      "nd_EVT_RedSea2023": 255,
+      "nd_CP_Panama": 10,
+      "nd_CP_Taiwan": 1,
+      "nd_CP_Suez": 6,
+      "nd_CF_LNG": 216,
+      "nd_CP_Malacca": 0,
+      "nd_CF_IronOre": 13,
+      "nd_EVT_Suez2021": 0,
+      "nd_EVT_NamuHo2026": 13,
+      "nd_CP_Hormuz": 318,
+      "_kg": "81ebe4ffa0cb"
     }
   },
   "predictions": [
@@ -1268,8 +1288,11 @@
       "cp_col": "CP_Hormuz",
       "signal_count": 11,
       "signal_z": 5.38,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-05",
+        "peak_pct": 3.8
+      }
     },
     {
       "id": "2026-W39-kg:EVT_NamuHo2026:WTI-WTI",
@@ -1288,8 +1311,11 @@
       "cp_col": "CP_Hormuz",
       "signal_count": 11,
       "signal_z": 5.38,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-05",
+        "peak_pct": -2.8
+      }
     },
     {
       "id": "2026-W39-kg:EVT_HormuzToll2026:Brent-Brent",
@@ -1308,8 +1334,11 @@
       "cp_col": "CP_Hormuz",
       "signal_count": 106,
       "signal_z": 2.74,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-05",
+        "peak_pct": 3.8
+      }
     },
     {
       "id": "2026-W39-kg:EVT_HormuzToll2026:WTI-WTI",
@@ -1328,6 +1357,29 @@
       "cp_col": "CP_Hormuz",
       "signal_count": 106,
       "signal_z": 2.74,
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-05",
+        "peak_pct": -2.8
+      }
+    },
+    {
+      "id": "2026-W40-kg:EVT_NamuHo2026:NatGas-NatGas",
+      "channel": "kg:EVT_NamuHo2026:NatGas",
+      "label": "HMM 나무호 피격·화재 → NatGas",
+      "tier": "shadow",
+      "indicator": "NatGas",
+      "fired_week": "2026-W40",
+      "base_monday": "2026-10-05",
+      "base_value": 3.010999917984009,
+      "window": [
+        2,
+        4
+      ],
+      "sigma_w": 0.0921560698265944,
+      "cp_col": "CP_Hormuz",
+      "signal_count": 13,
+      "signal_z": 3.37,
       "status": "pending",
       "result": null
     }
