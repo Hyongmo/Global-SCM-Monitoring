@@ -128,6 +128,13 @@ MAX_RETRIES    = 2
 #         (잡 360분 = GitHub 잡 최대치. 실측 뒷단계 소요는 13분 10초 — run #171)
 #   목적: 어떤 상황에서도 네이버 수집과 리포트 생성이 반드시 완료되게 한다.
 GDELT_BUDGET_MIN = int(os.environ.get('GDELT_BUDGET_MIN', 150))   # GDELT 단계 총 예산(분)
+# (2026-10-12 사용자 결정) 앞쪽 키워드 시험 판정.
+#   10/3 이후 검색 API가 거의 매일 0건인데도 122개 키워드를 모두 기다리느라
+#   GDELT 단계에서 1시간 넘게 허비했다. 수집 순서상 맨 앞(위기 연결·최근 산출량 상위)
+#   키워드 N개를 먼저 물어보고, 전부 0건·실패면 그날은 API가 멈춘 것으로 보고
+#   나머지를 건너뛰어 곧바로 원본 파일 대체 수집으로 넘어간다.
+#   하나라도 결과가 나오면 기존과 똑같이 진행 — API가 복구되면 자동으로 원래 방식.
+GDELT_PROBE_N = int(os.environ.get('GDELT_PROBE_N', 5))
 # (2026-08-31) '10분 무성공 중단' 폐지 — GDELT가 느리지만 살아있던 날(성공률 ~1/4,
 #   성공 호출도 ~50초)에는 10분 무성공이 정상적으로 발생해, 예산 150분 중 19분만
 #   쓰고 115개 키워드를 버렸다. 완전히 죽은 경우는 다른 장치가 잡는다:
@@ -953,6 +960,7 @@ else:
     _old_sock_timeout = _socket.getdefaulttimeout()
 
     _aborted = None          # 조기 중단 사유
+    _api_down = False        # 시험 판정 결과: 검색 API 정지 (2026-10-12)
     _done_kw = 0
     _max_ok_call = 0.0       # 이번 실행에서 성공한 호출이 걸린 최장 시간(초)
 
@@ -1018,6 +1026,17 @@ else:
         gdelt_stats.append({'keyword': keyword, 'query_group': qgroup,
                             'raw': n_raw, 'new': n_new, 'error': err or ''})
         _done_kw += 1
+
+        # ── 시험 판정 (2026-10-12): 앞쪽 N개가 모두 0건·실패면 API 정지로 판단 ──
+        if _done_kw == GDELT_PROBE_N and len(gdelt_articles) == 0:
+            _api_down = True
+            _pm = (f'검색 API 시험 판정: 앞쪽 키워드 {GDELT_PROBE_N}개 모두 0건·실패 '
+                   f'({time.time() - t0:.0f}초) — API 정지로 판단, 나머지 '
+                   f'{len(valid_keywords) - _done_kw}개는 건너뛰고 원본 파일 대체 수집으로 전환')
+            print(f"  \u26a0 {_pm}")
+            if os.environ.get('GITHUB_ACTIONS') == 'true':
+                print(f"::warning title=GDELT 검색 API 정지 판정::{_pm}")
+            break
 
         if (idx + 1) % 20 == 0:
             print(f"  [{idx+1}/{len(valid_keywords)}] {len(gdelt_articles)}건 수집 중...")
