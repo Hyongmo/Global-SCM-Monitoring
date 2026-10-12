@@ -2715,7 +2715,7 @@ Signal(전체): Crisis {crisis_pct}% | Warning {warning_pct}% | 합산 {wc_pct}%
 {ind_changes_section}
 
 ⚠ 지표 수치 인용 규칙: 본문(situation_summary, part_d pathway 등)에서 지표 변동률(%)을 언급할 때 반드시 위 [주요 지표 변화]에 제공된 chg_pct 값을 그대로 사용할 것. 직접 계산하거나 반올림하지 말 것. 예: 위에 +168.1%로 제공되면 본문에서도 +168.1%로 표기.
-⚠ 지표 시점 규칙: [주요 지표 변화]의 각 지표에는 [기준일 MM-DD] 표시가 있다. 기준일이 이번 주 기사 수집기간 이전인 지표(예: 통항량)는 changes_from_prev의 detail과 본문 어디에서도 이번 주 사건·기사를 변화 원인으로 쓰지 말 것. '봉쇄 심화 반영', '우회 물동량 흡수', '공격 위협 지속 반영'처럼 원인을 덧붙이는 표현도 금지한다. detail은 수치 변화와 기준일만 쓰고 '지표 기준일(M월 D일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음'으로 끝낼 것. 통항량 등 기준일이 기사 기간보다 앞선 지표는 part_a 경로·watchpoints·part_e 취약점·권고에서도 '현재 상황'의 근거 수치로 쓰지 말 것(통항량 자료는 약 1주 늦게 수신됨 — '일일·실시간 추적' 같은 표현도 금지). (2026-09-28: 김태한 위원 반복 지적 — 종전 '단정하지 말 것' 규칙으로는 원인 서술이 계속 붙었음) [월간] 표시가 있는 지표는 '전주 대비'가 아니라 전월 대비 변화로 서술할 것.
+⚠ 지표 시점 규칙: [주요 지표 변화]의 각 지표에는 [기준일 MM-DD · 기사 기간 이전] 또는 [기준일 MM-DD · 기사 기간 내], 월간 지표는 [N월분 월간] 표시가 있다. 기사 기간 안/밖은 이미 계산되어 있으니 날짜를 직접 비교하지 말고 이 표시를 그대로 따를 것. [기사 기간 이전] 표시가 있는 지표(예: 통항량)는 changes_from_prev의 detail과 본문 어디에서도 이번 주 사건·기사를 변화 원인으로 쓰지 말 것. '봉쇄 심화 반영', '우회 물동량 흡수', '공격 위협 지속 반영'처럼 원인을 덧붙이는 표현도 금지한다. detail은 수치 변화와 기준일만 쓰고 '지표 기준일(M월 D일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음'으로 끝낼 것. 이 끝맺음 문장은 [기사 기간 이전] 지표에만 쓰고, [기사 기간 내] 지표에는 붙이지 말 것(2026-10-12 W41: 기간 안의 BDI·KOSPI 등 7개에 붙어 감수 지적). 통항량 등 기준일이 기사 기간보다 앞선 지표는 part_a 경로·watchpoints·part_e 취약점·권고에서도 '현재 상황'의 근거 수치로 쓰지 말 것(통항량 자료는 약 1주 늦게 수신됨 — '일일·실시간 추적' 같은 표현도 금지). (2026-09-28: 김태한 위원 반복 지적 — 종전 '단정하지 말 것' 규칙으로는 원인 서술이 계속 붙었음) [N월분 월간] 표시가 있는 지표는 '전주 대비'가 아니라 전월 대비 변화로 서술하고, 날짜('9월 1일 기준' 등) 대신 'N월 지표(전월 대비)'로 쓰며, 이번 주 사건과의 인과는 판단하지 않을 것. σ 단위 지표(GSCPI 등 표준화 지수)는 변동률(%)이 아니라 위에 제공된 차이값을 '포인트'로 쓸 것(예: '1.063에서 1.284로 0.221포인트 상승') — 본문·권고 포함. 'σp' 표기는 쓰지 말 것.
 
 [KG 컨텍스트]
 {kg_ctx}
@@ -3577,7 +3577,15 @@ def compute_ind_changes(snap, threshold=_IND_CHG_THRESHOLD):
     return dict(sorted(result.items(), key=lambda x: abs(x[1]['chg_pct']), reverse=True))
 
 
-def _build_ind_changes_section(ind_changes_dict):
+def _ind_chg_str(d):
+    """변화 표기 — σ 단위(표준화 지수, GSCPI 등)는 % 대신 차이값을 '포인트'로.
+    2026-10-12 W41 김태한 위원 지적(표준화 지수에 증감률 부적절) → 사용자 결정 '0.221포인트 상승'."""
+    if d.get('unit') == 'σ' and d.get('from_val') is not None and d.get('to_val') is not None:
+        return f'{d["to_val"] - d["from_val"]:+.3f}포인트'
+    return f'{d["chg_pct"]:+.1f}%'
+
+
+def _build_ind_changes_section(ind_changes_dict, wk_start=None):
     if not ind_changes_dict:
         return '[주요 지표 변화] 없음 (임계값 미달)'
     lines = [
@@ -3586,15 +3594,25 @@ def _build_ind_changes_section(ind_changes_dict):
     ]
     for key, d in list(ind_changes_dict.items())[:15]:
         unit_str = f' {d["unit"]}' if d['unit'] else ''
+        # 2026-10-12 (W41 김태한 위원 — 기사 기간 안의 지표에 '기사 기간 이전' 오표기):
+        #   기사 기간 안/밖 판정을 LLM의 날짜 비교에 맡기지 않고 코드가 계산해 표시한다.
+        #   월간 지표는 날짜(9월 1일 등) 대신 'N월분'으로, σ 단위는 % 대신 차이값(포인트)으로 제공.
         _tags = ''
-        if d.get('data_date'):
-            _tags += f' [기준일 {str(d["data_date"])[5:]}]'
+        try:
+            _dd = pd.to_datetime(d['data_date']).date() if d.get('data_date') else None
+        except Exception:
+            _dd = None
         if d.get('freq') == 'monthly':
-            _tags += ' [월간]'
+            _tags += f' [{_dd.month}월분 월간]' if _dd else ' [월간]'
+        elif _dd:
+            _tags += f' [기준일 {str(d["data_date"])[5:10]}'
+            if wk_start is not None:
+                _tags += ' · 기사 기간 이전' if _dd < wk_start else ' · 기사 기간 내'
+            _tags += ']'
         lines.append(
             f'  {key}: {d["name"]}  '
             f'{d["from_str"]} → {d["to_str"]}{unit_str}  '
-            f'({d["chg_pct"]:+.1f}%){_tags}'
+            f'({_ind_chg_str(d)}){_tags}'
         )
     return '\n'.join(lines)
 
@@ -3805,7 +3823,9 @@ def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df
     indicator_section = format_indicators_for_llm(ind_snap_prompt, top_sectors_set, indicator_meta, G,
                                                    confirmed_cluster_ids=confirmed_cluster_ids_set)
     ind_changes_dict    = compute_ind_changes(ind_snap_prompt)
-    ind_changes_section = _build_ind_changes_section(ind_changes_dict)
+    ind_changes_section = _build_ind_changes_section(
+        ind_changes_dict,
+        wk_start=(pd.to_datetime(ref_date) - pd.Timedelta(days=6)).date() if ref_date is not None else None)
 
     articles_section = ''
     _scenario_ref_map = {}
@@ -3919,15 +3939,26 @@ def generate_weekly_scenario(period, week_label, tier, signal, prev_scenario, df
             if _key in ind_changes_dict:
                 _d = ind_changes_dict[_key]
                 _u = f' {_d["unit"]}' if _d['unit'] else ''
-                _actual_pct = f'{_d["chg_pct"]:+.1f}%'
-                _detail_fixed = re.sub(r'[+-]\d+\.\d+%', _actual_pct, _detail)
+                import re as _re
+                _actual_pct = _ind_chg_str(_d)
+                _detail_fixed = _re.sub(r'[+-]\d+\.\d+%', _actual_pct, _detail)
+                # 2026-10-12 (W41): 기사 기간 안의 지표에 붙은 '기사 기간 이전' 끝맺음 자동 제거
+                try:
+                    _dd0 = pd.to_datetime(str(_d.get('data_date') or '')).date()
+                    if (_d.get('freq') != 'monthly'
+                            and _dd0 >= (pd.to_datetime(ref_date) - pd.Timedelta(days=6)).date()):
+                        _detail_fixed = _re.sub(
+                            r'\s*지표 기준일\([^)]*\)이 이번 주 기사 기간 이전이어서[^.]*\.?',
+                            '', _detail_fixed).strip()
+                except Exception:
+                    pass
                 # 2026-09-14: 시점·주기 주석 자동 부착 (김태한 위원 반복 지적의 구조적 대응)
                 #   LLM이 규칙을 지켰으면 중복 부착하지 않음
                 _qual = []
                 if _d.get('freq') == 'monthly' and '월간' not in _detail_fixed:
                     _qual.append('월간 지표 — 전월 대비')
                 _ddate = str(_d.get('data_date') or '')
-                if _ddate and '기준일' not in _detail_fixed:
+                if _ddate and '기준일' not in _detail_fixed and _d.get('freq') != 'monthly':
                     try:
                         _dd = pd.to_datetime(_ddate).date()
                         _wk_start = (ref_date - pd.Timedelta(days=6)).date()
@@ -5520,6 +5551,12 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                     arrow = chg_arrow(cdir)
                     val_str = fmt_val(value, unit)
                     chg_str = f'{chg:+.1f}%' if (chg is not None and chg == chg) else ''
+                    # 2026-10-12 (W41 김태한 위원·사용자 결정): σ 단위(표준화 지수)는 % 대신 차이값(포인트)
+                    if unit == 'σ' and value is not None and meta.get('prev_value') is not None:
+                        try:
+                            chg_str = f"{float(value) - float(meta['prev_value']):+.3f}"
+                        except Exception:
+                            pass
                     unit_span = f'<span class="ind-unit">{esc(unit)}</span>' if unit else ''
                     # 날짜 라벨 생성
                     _freq = meta.get('freq', '')
