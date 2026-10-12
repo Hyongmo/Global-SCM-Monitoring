@@ -127568,5 +127568,2259 @@
         ]
       }
     }
+  },
+  {
+    "period": "2026-W41 (2026-10-12)",
+    "tier": 4,
+    "tier_label": "위기",
+    "header": {
+      "period": "2026-W41 (2026-10-12)",
+      "crisis_level": "Crisis",
+      "situation_summary": "이번 주 호르무즈 해협에서는 유조선 공격이 전쟁 발발 이후 주간 기준 최고 수준으로 급증하는 한편, 미국이 이란의 재개방 조건을 거부하면서 협상이 교착 상태를 유지하는 등 긴장 고조와 외교적 교착이 동시에 진행됐다[54][75]. 10월 5일 보도에 따르면 이란은 호르무즈 개방 7가지 조건을 공식화하며 봉쇄 지속 의지를 재확인했고[38], 같은 날 유조선 7척이 피격되고 IRGC 경고에 회항하는 사례가 발생했다[40]. 10월 6일에는 파나마 선적 선박이 피격돼 인도인 11명을 포함한 12명이 부상했으며[44], 미국 해군 봉쇄 하에 항로를 우회한 상업 선박이 130척으로 증가했다[118]. 10월 7일 IRGC 고문은 호르무즈 우회 항로를 '곧 차단하겠다'고 경고했고[49], 같은 날 유조선 공격이 역대 최고 수준으로 급증했다는 보도가 나왔다[48]. 10월 8일에는 호르무즈 통과 선박 수가 2개월 이상 최저 수준으로 감소했으며[53], 수퍼탱커 운임이 8배 이상 급등했다[165]. 10월 9일 이란 혁명수비대는 LPG 운반선을 타격하고 '항로 위반 선박은 해협 밖에서도 처벌하겠다'고 경고 범위를 확대했다[60]. 10월 10일에는 호르무즈 해협에서 유조선이 해상 기뢰에 충돌해 폭발하는 사고가 발생했고[67], 10월 11일에는 미군이 봉쇄 돌파 시도 선박에 발포·무력화하자 이란이 수퍼탱커에 화재를 일으키며 맞대응했다[72]. 이란은 미국의 재개방 조건 답변을 '불충분하다'고 선언하며 협상 교착을 공식화했다[75]. 한편 VLCC 스팟 운임은 하루 80만 5,000달러의 기록적 수준에 도달했고[234], 브렌트유는 배럴당 103달러대를 유지했다.",
+      "changes_from_prev": [
+        {
+          "item": "GSCPI",
+          "change": "↑",
+          "from": "1.063 σ",
+          "to": "1.284 σ",
+          "detail": "전월(9월 30일 기준) 대비 1.063σ에서 1.284σ로 +20.8% 상승. 지표 기준일(9월 30일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음. (월간 지표 — 전월 대비)"
+        },
+        {
+          "item": "호르무즈",
+          "change": "↓",
+          "from": "22 척",
+          "to": "19 척",
+          "detail": "기준일(10월 4일) 호르무즈 글로벌 통과 선박 수 22척에서 19척으로 -13.6% 감소. 지표 기준일(10월 4일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "바브엘만데브",
+          "change": "↑",
+          "from": "190 척",
+          "to": "207 척",
+          "detail": "기준일(10월 4일) 바브엘만데브 글로벌 통과 선박 수 190척에서 207척으로 +8.9% 증가. 지표 기준일(10월 4일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "수에즈",
+          "change": "↑",
+          "from": "280 척",
+          "to": "302 척",
+          "detail": "기준일(10월 4일) 수에즈 글로벌 통과 선박 수 280척에서 302척으로 +7.9% 증가. 지표 기준일(10월 4일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "BDI",
+          "change": "↓",
+          "from": "3,148.00 pt",
+          "to": "2,917.00 pt",
+          "detail": "기준일(10월 9일) BDI 3,148pt에서 2,917pt로 -7.3% 하락. 지표 기준일(10월 9일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "GSCSI",
+          "change": "↓",
+          "from": "2.870 M TEU",
+          "to": "2.680 M TEU",
+          "detail": "전월(9월 1일 기준) 대비 2.870M TEU에서 2.680M TEU로 -6.6% 감소. 지표 기준일(9월 1일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음. (월간 지표 — 전월 대비)"
+        },
+        {
+          "item": "화학ETF",
+          "change": "↓",
+          "from": "12,495 KRW",
+          "to": "11,800 KRW",
+          "detail": "기준일(10월 8일) 화학 관련 지수 12,495원에서 11,800원으로 -5.6% 하락. 지표 기준일(10월 8일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "천연가스",
+          "change": "↑",
+          "from": "3.011 USD/MMBtu",
+          "to": "3.173 USD/MMBtu",
+          "detail": "기준일(10월 11일) 천연가스 가격 3.011달러/MMBtu에서 3.173달러/MMBtu로 +5.4% 상승. 지표 기준일(10월 11일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "KOSPI",
+          "change": "↓",
+          "from": "7,003.74 pt",
+          "to": "6,625.93 pt",
+          "detail": "기준일(10월 8일) KOSPI 7,003.74pt에서 6,625.93pt로 -5.4% 하락. 지표 기준일(10월 8일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "건설ETF",
+          "change": "↓",
+          "from": "6,705 KRW",
+          "to": "6,415 KRW",
+          "detail": "기준일(10월 8일) 건설 관련 지수 6,705원에서 6,415원으로 -4.3% 하락. 지표 기준일(10월 8일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "VIX",
+          "change": "↓",
+          "from": "15.31 pt",
+          "to": "14.84 pt",
+          "detail": "기준일(10월 9일) VIX 15.31pt에서 14.84pt로 -3.1% 하락. 지표 기준일(10월 9일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        },
+        {
+          "item": "원/달러",
+          "change": "↓",
+          "from": "1,361 KRW",
+          "to": "1,343 KRW",
+          "detail": "기준일(10월 9일) 원/달러 환율 1,361원에서 1,343원으로 -1.3% 하락(원화 소폭 강세). 지표 기준일(10월 9일)이 이번 주 기사 기간 이전이어서 이번 주 사건과의 인과는 판단하지 않음."
+        }
+      ],
+      "watchpoints": [
+        {
+          "horizon": "초기(0-4주)",
+          "point": "이란의 호르무즈 우회 항로 추가 차단 실행 여부 및 미군의 봉쇄 돌파 작전 확대 여부 — IRGC가 해협 밖 선박 처벌 경고를 실행에 옮길 경우 유조선 운항 가능 구역이 급격히 축소되어 원유·LNG 수입 차질이 심화될 수 있음"
+        },
+        {
+          "horizon": "초기(0-4주)",
+          "point": "후티 반군의 사우디 에너지 시설·공항 추가 공격 및 사우디 대규모 반격 작전 전개 — 사우디 연합군이 후티 목표물 136개를 파괴하는 대규모 작전을 실시했으나 후티가 추가 공습을 예고한 상황으로, 사우디 원유 수출 인프라 피해 가능성을 주시해야 함"
+        },
+        {
+          "horizon": "중기(4-12주)",
+          "point": "이란-미국 재개방 협상 교착 장기화 시 카타르 LNG 불가항력 선언 연장 여부 — 카타르 에너지가 LNG 불가항력 선언을 최소 1개월 추가 연장한 상황에서 협상이 타결되지 않으면 국내 LNG 수급 차질이 중기로 이어질 수 있음"
+        },
+        {
+          "horizon": "장기(12주+)",
+          "point": "미국의 이란 대규모 군사작전 실행 여부 및 중동 전선 확대 — 미 국방부가 중부사령부에 대규모 군사작전 준비를 지시했다는 보도가 나온 가운데, 실제 군사 충돌이 발생할 경우 호르무즈 봉쇄가 장기화되어 한국의 에너지 수입 구조 전반에 구조적 변화가 불가피해질 수 있음"
+        }
+      ]
+    },
+    "part_a": {
+      "routes": [
+        {
+          "commodity": "원유",
+          "status": "활성",
+          "path": "호르무즈 해협(유조선 공격 전시 최고·기뢰 폭발·통과 선박 감소) → 중동산 원유 공급 차질(즉시) → 브렌트유 103달러대·수퍼탱커 운임 8배 급등(1-2주) → 국내 정유사 조달 비용 급증·수입선 다변화 가속(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> 원유 --[feedsInto]--> 에너지(w=0.5022)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "LNG",
+          "status": "활성",
+          "path": "호르무즈 해협(봉쇄 지속·LPG 운반선 타격) → 카타르 LNG 불가항력 선언 연장·공급 차질 → 천연가스 가격 +5.4% 상승(1-2주) → 국내 가스 수급 불안·발전 비용 상승(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> LNG --[feedsInto]--> 에너지(w=0.5412)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "나프타",
+          "status": "활성",
+          "path": "호르무즈 해협(통과 선박 감소·공격 지속) → 중동산 나프타 공급 차질 → 나프타 가격 상승 압력(1-2주) → 국내 석유화학 업체 원가 부담 증가·화학 관련 지수 -5.6%(2-4주)",
+          "kg_basis": "호르무즈 해협 --[restrictsFlowOf]--> 나프타 --[feedsInto]--> 소재/화학(w=0.2832)",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        },
+        {
+          "commodity": "원유(사우디 파이프라인 SOURCE)",
+          "status": "활성",
+          "path": "후티 반군의 사우디 정유시설·공항 공격 지속(리야드 공항 사망 12명·부상 300명 이상) → 사우디 에너지 인프라 피해 위험 → 사우디산 원유 수출 차질 우려(1-2주) → 한국 수입선 추가 다변화 필요(2-4주)",
+          "kg_basis": "사우디 원유 공급원 --[suppliesTo]--> 원유 --[feedsInto]--> 에너지",
+          "disruption_type": "SOURCE",
+          "is_new": false
+        },
+        {
+          "commodity": "유럽 컨테이너",
+          "status": "활성",
+          "path": "수에즈 운하(통과 선박 +7.9% 증가·우회 물동량 일부 흡수) → 운임 할증료 추가 인상 압력 → 컨테이너 운임 변동성 지속(1-2주) → 국내 수출입 물류 비용 상승(2-4주)",
+          "kg_basis": "수에즈 운하 --[restrictsFlowOf]--> 유럽 컨테이너; 바브엘만데브 해협 --[restrictsFlowOf]--> 유럽 컨테이너",
+          "disruption_type": "ROUTE",
+          "is_new": false
+        }
+      ]
+    },
+    "part_b": {
+      "cascades": [
+        {
+          "name": "에너지 → 소재/화학 → 제조/조립",
+          "steps": [
+            {
+              "from": "에너지(KS_Energy)",
+              "to": "소재/화학(KS_Material)",
+              "mechanism": "원유·나프타 가격 급등으로 석유화학 원료 조달 비용 상승, 화학 관련 지수 -5.6% 하락 반영",
+              "lag": "1-2주"
+            },
+            {
+              "from": "소재/화학(KS_Material)",
+              "to": "제조/조립(KS_Manufacture)",
+              "mechanism": "석유화학 소재 가격 상승이 자동차·전자 등 제조업 원가에 전가, 자동차 관련 지수 -2.9% 하락 반영",
+              "lag": "2-4주"
+            }
+          ],
+          "is_new": false
+        },
+        {
+          "name": "에너지 → 식량/식품",
+          "steps": [
+            {
+              "from": "에너지(KS_Energy)",
+              "to": "식량/식품(KS_FoodAgri)",
+              "mechanism": "벙커유·운임 급등으로 냉장물류·수산가공·양식장 운영비 상승, 국제 곡물가격 1년 새 17.2% 급등과 맞물려 식품 생산단가 압박 심화",
+              "lag": "4-8주"
+            }
+          ],
+          "is_new": false
+        },
+        {
+          "name": "에너지 → 건설/인프라",
+          "steps": [
+            {
+              "from": "에너지(KS_Energy)",
+              "to": "건설/인프라(KS_Construction)",
+              "mechanism": "유가 급등으로 건설 장비 연료비·아스팔트 등 석유계 자재 가격 상승, 건설 관련 지수 -4.3% 하락 반영",
+              "lag": "4-8주"
+            }
+          ],
+          "is_new": false
+        }
+      ]
+    },
+    "part_d": {
+      "matrix": [
+        {
+          "sector": "에너지(KS_Energy)",
+          "direction": "혼합",
+          "initial": "심각",
+          "mid": "심각",
+          "long": "중요",
+          "pathway": "호르무즈 해협 봉쇄 지속으로 중동산 원유·LNG 공급 차질이 이어지는 가운데, 브렌트유 103달러대 유지 및 천연가스 가격 +5.4% 상승으로 에너지 조달 비용이 급증하고 있음. 국내 정유사는 수입선을 미주·러시아 등으로 다변화하고 있으나 운임 급등(수퍼탱커 8배)으로 비용 부담이 상쇄되지 않음. 국내 유류할증료 11월 21.1% 인상 예정으로 소비자 전가 압력도 확대. 한국 정부 비축유 약 200일 분량 보유로 단기 수급 위기는 완충 가능하나 중기 이상 봉쇄 지속 시 조달 구조 재편 필요.",
+          "change": "↑"
+        },
+        {
+          "sector": "해운/물류(KS_Shipping)",
+          "direction": "혼합",
+          "initial": "심각",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "VLCC 스팟 운임이 하루 80만 5,000달러의 기록적 수준에 도달하고 유조선 선장 월 10만 달러 전쟁위험 프리미엄이 제시되는 등 운임 급등이 지속됨. 국내 해운사는 수에즈 우회 항로 운용을 18회째 성공적으로 이어가고 있으나 항로 연장에 따른 연료비·운항비 부담이 증가함. 머스크 등 글로벌 선사의 긴급 연료 할증료 추가 인상이 국내 수출입 기업 물류비에 전가될 위험이 있음. BDI는 -7.3% 하락하여 벌크 시장은 상대적으로 약세를 보임.",
+          "change": "−"
+        },
+        {
+          "sector": "소재/화학(KS_Material)",
+          "direction": "네거티브",
+          "initial": "심각",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "호르무즈 해협 봉쇄로 중동산 나프타 공급 차질이 지속되어 석유화학 원료 조달 비용이 상승하고 있음. 화학 관련 지수가 -5.6% 하락하며 시장 심리가 악화됨. 국내 석유화학 업체의 원가 부담이 증가하는 가운데, 일부 업체는 가동 재개를 통해 생산 정상화를 시도하고 있으나 원료 가격 상승 압력이 지속됨.",
+          "change": "−"
+        },
+        {
+          "sector": "건설/인프라(KS_Construction)",
+          "direction": "혼합",
+          "initial": "심각",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "유가 급등으로 건설 장비 연료비 및 아스팔트·합성수지 등 석유계 자재 가격이 상승하고 있음. 건설 관련 지수가 -4.3% 하락하며 시장 심리가 위축됨. 사우디·중동 지역 건설 프로젝트 현장 인근까지 후티 공습 피해가 확대되어 현지 진출 건설사의 안전 리스크도 증가하고 있음. 한국-이집트 전략적 동반자 관계 격상 및 CEPA 협상 개시는 중장기 건설 수주 다변화 기회 요인으로 작용할 수 있음.",
+          "change": "↓"
+        },
+        {
+          "sector": "식량/식품(KS_FoodAgri)",
+          "direction": "네거티브",
+          "initial": "중요",
+          "mid": "중요",
+          "long": "보통",
+          "pathway": "국제 곡물가격이 1년 새 17.2% 급등하고 대두값이 1,300센트에 육박하는 등 식량 원자재 가격 상승 압력이 심화됨. 벙커유·운임 급등으로 냉장물류·수산가공·양식장 운영비가 상승하여 수산물 수출입 기업의 물류비 부담이 증가하고 있음. 흑해 드론 공격 확대로 러시아·우크라이나산 곡물 수송 차질 위험도 지속됨. 에너지 비용 상승이 식품 생산단계 전반에 전가되어 소비자 물가 상승 압력이 중기까지 이어질 전망.",
+          "change": "↑"
+        },
+        {
+          "sector": "제조/조립(KS_Manufacture)",
+          "direction": "네거티브",
+          "initial": "중요",
+          "mid": "보통",
+          "long": "보통",
+          "pathway": "석유화학 소재 가격 상승이 자동차·전자 등 제조업 원가에 전가되고 있으며, 자동차 관련 지수가 -2.9% 하락함. 희토류 등 핵심광물 공급망 다변화를 위한 한국-멕시코 협의체 신설 합의는 중장기 리스크 완화 요인으로 작용할 수 있음. 반도체 소재 등 대만해협 경유 품목은 현재 주 기사에서 추가 교란 보도가 없어 직접 영향은 제한적.",
+          "change": "↓"
+        },
+        {
+          "sector": "금융/외환(KS_Finance)",
+          "direction": "혼합",
+          "initial": "중요",
+          "mid": "보통",
+          "long": "미약",
+          "pathway": "KOSPI가 -5.4% 하락하며 시장 심리가 크게 악화됨. 미국 10년물 국채금리가 5.36%를 돌파해 24년 만에 최고치를 기록하고 영국 장기 국채 금리도 수십 년 만의 최고치를 기록하는 등 글로벌 금리 상승 압력이 국내 금융시장에 영향을 미치고 있음. 원/달러 환율은 -1.3% 하락(원화 소폭 강세)하여 수입 물가 상승 압력을 일부 완충하고 있음. VIX는 -3.1% 하락하여 글로벌 공포 지수는 다소 안정된 모습.",
+          "change": "↓"
+        }
+      ]
+    },
+    "part_e": {
+      "vulnerabilities": [
+        "호르무즈 해협 봉쇄 장기화에 따른 중동산 원유·LNG 의존도 취약성: 한국의 원유 수입 중 호르무즈 경유 비중이 약 70%에 달하며, 이란이 미국의 재개방 조건 답변을 '불충분'하다고 선언하며 협상이 교착된 상황에서 봉쇄가 장기화될 경우 수입선 다변화 속도가 수요를 따라가지 못할 위험이 있음. 카타르 LNG 불가항력 선언이 추가 연장될 경우 LNG 수급 차질이 중기로 이어질 수 있음.",
+        "후티 반군의 사우디 에너지 인프라 공격 확대에 따른 공급원 취약성: 후티가 리야드 국제공항(사망 12명·부상 300명 이상)과 사우디 정유시설을 집중 타격하고 추가 공습을 예고한 상황에서, 한국 기업 진출 지역 인근(라빅 등)까지 피해가 확대되고 있음. 사우디산 원유 수입 비중이 5년 만에 30% 아래로 하락했으나 여전히 주요 공급원으로서 인프라 피해 시 조달 차질이 발생할 수 있음.",
+        "해운 운임 급등에 따른 수산업·식품업 물류비 취약성: VLCC 스팟 운임이 하루 80만 5,000달러에 달하고 유조선 선장 전쟁위험 프리미엄이 월 10만 달러 수준으로 상승하면서 벙커유 비용도 동반 상승하고 있음. 냉장물류·수산가공·양식장 운영비 상승이 수산물 수출입 기업의 경쟁력을 약화시키고, 국제 곡물가격 17.2% 급등과 맞물려 식품 생산단가 압박이 중기까지 지속될 위험이 있음."
+      ],
+      "monitoring_recommendations": [
+        "호르무즈 해협 통과 선박 수 및 유조선 공격 빈도 주간 추적: 이란의 우회 항로 추가 차단 실행 여부와 미군의 봉쇄 돌파 작전 확대 여부를 모니터링하고, 브렌트유 가격(현재 103.8달러/배럴)이 110달러를 상회할 경우 비축유 방출 계획 점검 및 수입선 다변화 가속화 조치를 검토할 것",
+        "카타르 LNG 불가항력 선언 연장 여부 및 대체 LNG 공급원 확보 현황 점검: 호르무즈 협상 교착이 지속되는 상황에서 미국·호주·동남아 등 비중동 LNG 공급원 계약 현황과 천연가스 가격(현재 3.173달러/MMBtu, +5.4%) 추이를 주간 단위로 추적하고, 공급 차질 심화 시 LNG 공급원 다변화 정책 실행 일정을 앞당길 것",
+        "사우디 에너지 인프라 피해 현황 및 한국 기업 현지 안전 상황 모니터링: 후티의 사우디 정유시설·공항 추가 공격 가능성이 높은 상황에서 현지 진출 건설사·에너지 기업의 안전 대피 계획 점검과 함께, 사우디산 원유 수출 차질 발생 시 대체 조달 계획(UAE·오만·미국산 등)의 실행 가능성을 사전 검토할 것",
+        "수산업·식품업 물류비 부담 지표 추적: 벙커유 가격 및 냉장 컨테이너 운임 추이를 모니터링하고, 국제 곡물가격(대두 1,300센트 육박, 1년 새 +17.2%) 상승이 국내 식품 소비자 물가에 전가되는 속도를 추적하여 곡물 비축 확대 정책 발동 시점을 검토할 것",
+        "GSCPI 및 KOSPI 추이 연계 모니터링: GSCPI가 전월 대비 +20.8% 상승하고 KOSPI가 -5.4% 하락한 상황에서, 글로벌 공급망 압력 지수와 국내 금융시장 심리 간 연계성을 주간 단위로 추적하고 미국 국채금리(5.36%, 24년 만에 최고치) 추가 상승이 원/달러 환율 및 수입 물가에 미치는 영향을 점검할 것"
+      ]
+    },
+    "overall_severity": "심각",
+    "overall_direction": "네거티브",
+    "alert_level": "Crisis",
+    "ref_map": {
+      "1": {
+        "title": "Trump Rejects Iran Seven - Day Hormuz Plan as Tehran Refuses to Back Down",
+        "url": "https://www.hngn.com/articles/273378/20260927/trump-rejects-irans-seven-day-hormuz-plan-tehran-refuses-back-down.htm"
+      },
+      "2": {
+        "title": "Trump rejects Iran plan to reopen Hormuz , Tehran says diplomacy only route",
+        "url": "https://tradearabia.com:443/News/486839/Trump-rejects-Iran-plan-to-reopen-Hormuz-Tehran-says-diplomacy-only-route"
+      },
+      "3": {
+        "title": "US - Iran tensions : US underwater drone seized in Strait of Hormuz , claim Iran Revolutionary Guards",
+        "url": "https://economictimes.indiatimes.com/news/international/us/us-underwater-drone-seized-in-strait-of-hormuz-claim-irans-revolutionary-guards/articleshow/134519887.cms"
+      },
+      "4": {
+        "title": "Saudi FM calls for Strait of Hormuz to return to pre - Feb 28 status",
+        "url": "https://www.prokerala.com/news/articles/a1817244.html"
+      },
+      "5": {
+        "title": "Trump Rejects Deal To Reopen Strait Of Hormuz. Iran Says It Will Wait For Confirmation.",
+        "url": "https://www.ibtimes.com/trump-rejects-deal-reopen-strait-hormuz-iran-says-it-will-wait-confirmation-3807940"
+      },
+      "6": {
+        "title": "Trump Rejects Iran Hormuz Peace Proposal As War Threatens Global Oil Flows",
+        "url": "https://naija247news.com/trump-rejects-irans-hormuz-peace-proposal-as-war-threatens-global-oil-flows/"
+      },
+      "7": {
+        "title": "Iran 'seizes US submarine drone' in Strait of Hormuz as sources say no peace talks planned",
+        "url": "https://www.aol.co.uk/articles/iran-seizes-us-submarine-drone-220400000.html"
+      },
+      "8": {
+        "title": "카타르 에너지, LNG 불가항력 선언 최소 1달 더 연장",
+        "url": "https://n.news.naver.com/mnews/article/421/0009196202?sid=104"
+      },
+      "9": {
+        "title": "Oil prices surge after Trump rejects Iran's plan to reopen Strait of Hormuz | Oil and Gas News",
+        "url": "https://www.aljazeera.com/economy/2026/9/28/oil-prices-surge-after-trump-rejects-irans-plan-to-reopen-strait-of-hormuz"
+      },
+      "10": {
+        "title": "Oil rises as Iran - US remain divided on ceasefire terms , keeping Strait of Hormuz reopening uncertain",
+        "url": "https://www.hindustantimes.com/world-news/oil-rises-as-iran-us-remain-divided-on-ceasefire-terms-keeping-strait-of-hormuz-reopening-uncertain-101790602841026.html"
+      },
+      "11": {
+        "title": "Report : US Marines Injured by Iranian Attack on Ship in the Strait of Hormuz",
+        "url": "https://news.antiwar.com/2026/09/28/report-us-marines-injured-by-iranian-attack-on-ship-in-the-strait-of-hormuz/"
+      },
+      "12": {
+        "title": "Trump rejects Iranian proposal to re-open Strait of Hormuz",
+        "url": "https://news.crossmap.com/2026/09/28/trump-rejects-iranian-proposal-to-re-open-strait-of-hormuz/"
+      },
+      "13": {
+        "title": "Arab News | Iran threatens new strikes as it awaits US response to Hormuz plan",
+        "url": "https://www.arabnews.com/middle-east/iran-threatens-new-strikes-as-it-awaits-us-response-to-hormuz-plan-3003671"
+      },
+      "14": {
+        "title": "Vessel catches fire after projectile strike in Strait of Hormuz",
+        "url": "https://article.wn.com/view/2026/09/29/Vessel_catches_fire_after_projectile_strike_in_Strait_of_Hor/"
+      },
+      "15": {
+        "title": "Two More Vessels Reportedly Hit in Strait of Hormuz",
+        "url": "https://shipandbunker.com/news/emea/340846-two-more-vessels-reportedly-hit-in-strait-of-hormuz"
+      },
+      "16": {
+        "title": "Iran IRGC says it attacks ships daily in Strait of Hormuz",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-it-attacks-ships-daily-strait-hormuz"
+      },
+      "17": {
+        "title": "블룸버그 \"이란 9월 원유 선적 제로(0)… 미 해상 봉쇄로 심각한 타격\"",
+        "url": "https://www.newspim.com/news/view/20261001001427"
+      },
+      "18": {
+        "title": "PRESSURE ON IRAN : U . S . Sends Carrier And Marines As Tehran Loses Grip On Strait Of Hormuz",
+        "url": "https://www.theyeshivaworld.com/news/israel-news/2604579/pressure-on-iran-u-s-sends-carrier-and-marines-as-tehran-loses-grip-on-strait-of-hormuz.html"
+      },
+      "19": {
+        "title": "Oil supertanker hit in Hormuz : Iranian media",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-supertanker-hit-hormuz-iranian-media"
+      },
+      "20": {
+        "title": "Report: Tanker hit in Strait of Hormuz, fire breaks out on board",
+        "url": "https://www.israelnationalnews.com/flashes/694610"
+      },
+      "21": {
+        "title": "Iran war live: US moves 2,000 Marines to Middle East, tanker hit in Hormuz  - Grenada Chronicle – Daily Grenada And Cari",
+        "url": "https://www.okaz.com.sa/economy/na/2267488"
+      },
+      "22": {
+        "title": "Another Tanker Struck & Damaged By Iran In Strait Of Hormuz",
+        "url": "http://www.zerohedge.com/geopolitical/us-sends-patriot-batteries-defend-critical-gulf-energy-assets-trump-weighs-renewed"
+      },
+      "23": {
+        "title": "\"사우디-예멘 정부군, 후티 대공세 준비…최대 10만명 동원\"",
+        "url": "https://n.news.naver.com/mnews/article/001/0016355589?sid=104"
+      },
+      "24": {
+        "title": "\"호르무즈 해협 인근서 유조선 1척 미상 발사체에 피격···선원 전원 무...",
+        "url": "https://n.news.naver.com/mnews/article/657/0000055929?sid=104"
+      },
+      "25": {
+        "title": "사우디·예멘 정부군, 후티에 대규모 반격 준비…美는 참전 거부",
+        "url": "https://n.news.naver.com/mnews/article/003/0014232279?sid=104"
+      },
+      "26": {
+        "title": "Saudi Arabia plans Houthi offensive to retake Bab el-Mandeb",
+        "url": "https://www.siasat.com/saudi-arabia-plans-houthi-offensive-to-retake-bab-el-mandeb-3551859/"
+      },
+      "27": {
+        "title": "India says 5 citizens rescued after Kuwait-flagged tanker hit by projectile in Hormuz Strait",
+        "url": "https://aa.com.tr/en/asia-pacific/india-says-5-citizens-rescued-after-kuwait-flagged-tanker-hit-by-projectile-in-hormuz-strait/4077033"
+      },
+      "28": {
+        "title": "이란 “호르무즈 해협 재개방 없다”…미국 답변에도 기존 조건 고수",
+        "url": "https://n.news.naver.com/mnews/article/011/0004668125?sid=104"
+      },
+      "29": {
+        "title": "이란 \"호르무즈 재개방 없어\"…미국 답변받고 기존 입장 고수",
+        "url": "https://n.news.naver.com/mnews/article/422/0000912498?sid=104"
+      },
+      "30": {
+        "title": "이란 \"조건 충족 전엔 호르무즈 재개방 안해\"…미국 답변에 재 확인",
+        "url": "https://n.news.naver.com/mnews/article/057/0001971962?sid=104"
+      },
+      "31": {
+        "title": "Hegseth calls U.S. blockade of Strait of Hormuz \"ironclad\"",
+        "url": "https://arynews.tv/news/liveblog/iran-war-2026-live-updates-trump-us-israel?update=04-Oct-2026-09-55-00"
+      },
+      "32": {
+        "title": "Oil tankers attacked in Strait of Hormuz, says UK agency",
+        "url": "https://www.manilatimes.net/2026/10/04/world/americas-emea/oil-tankers-attacked-in-strait-of-hormuz-says-uk-agency/2438390"
+      },
+      "33": {
+        "title": "Reports of explosions in the Strait of Hormuz",
+        "url": "https://www.israelnationalnews.com/flashes/694744"
+      },
+      "34": {
+        "title": "Arab News | Al-Alimi announces launch of military operations against Houthi militia",
+        "url": "https://www.arabnews.com/middle-east/al-alimi-announces-launch-of-military-operations-against-houthi-militia-3004567"
+      },
+      "35": {
+        "title": "Iran says Strait of Hormuz will stay closed until U.S. meets 7 conditions",
+        "url": "https://seekingalpha.com/news/4650041-iran-says-strait-of-hormuz-will-stay-closed-until-u-s-meets-7-conditions"
+      },
+      "36": {
+        "title": "중동 원유수출 회복세에 '찬물'…이란 호르무즈 공격 다시 증가(종합)",
+        "url": "https://n.news.naver.com/mnews/article/001/0016358264?sid=104"
+      },
+      "37": {
+        "title": "후티에 반격 나선 예멘군, 바브엘만데브 해협 확보 주장",
+        "url": "https://n.news.naver.com/mnews/article/214/0001527234?sid=104"
+      },
+      "38": {
+        "title": "Iran Says Strait of Hormuz Will Remain Closed",
+        "url": "https://www.democracynow.org/2026/10/5/headlines/iran_says_strait_of_hormuz_will_remain_closed"
+      },
+      "39": {
+        "title": "Tanker turns back in Hormuz after IRGC warning",
+        "url": "https://www.siasat.com/tanker-turns-back-in-hormuz-after-irgc-warning-3552886/"
+      },
+      "40": {
+        "title": "7 Oil Tankers Attacked In Strait Of Hormuz, As U.S. Official Admits Iran's Targeting Abilities Keep Improving",
+        "url": "https://www.jalopnik.com/2277511/strait-hormuz-u-s-official-admits-iran-targeting-abilities/"
+      },
+      "41": {
+        "title": "후티, 사우디 공항·정유시설 공습…韓기업 인근 라빅도 피격",
+        "url": "https://n.news.naver.com/mnews/article/079/0004196180?sid=104"
+      },
+      "42": {
+        "title": "India calls for \"immediate cessation of attacks\" after strike on commercial vessel in Strait of Hormuz injures 12 of 17 ",
+        "url": "https://www.okaz.com.sa/economy/na/2267488"
+      },
+      "43": {
+        "title": "Rebounding oil exports through Strait of Hormuz are vulnerable to stepped-up Iranian tanker attacks",
+        "url": "https://www.hellenicshippingnews.com/rebounding-oil-exports-through-strait-of-hormuz-are-vulnerable-to-stepped-up-iranian-tanker-attacks/"
+      },
+      "44": {
+        "title": "Oman Ship Attack: 11 Indians Among 12 Injured After Panama-Flagged Vessel Is Hit While Crossing Strait of Hormuz",
+        "url": "https://www.newsx.com/india/oman-ship-attack-11-indians-among-12-injured-after-panama-flagged-vessel-is-hit-while-crossing-strait-of-hormuz-280327/"
+      },
+      "45": {
+        "title": "미 국무 “이란, 호르무즈 통제력 완전 상실…원유수송 전쟁 전 수준”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012269498?sid=104"
+      },
+      "46": {
+        "title": "Houthi/Saudi/Yemen conflict",
+        "url": "https://politicaldog101.com/tag/houthi-saudi-yemen-conflict/"
+      },
+      "47": {
+        "title": "Hormuz tanker attacks accelerate as oil flows recover",
+        "url": "https://thearabianpost.com/hormuz-tanker-attacks-accelerate-as-oil-flows-recover/"
+      },
+      "48": {
+        "title": "Oil Tanker Attacks In Strait Of Hormuz Reach Highest",
+        "url": "https://www.marinelink.com/news/oil-tanker-attacks-strait-hormuz-reach-543539"
+      },
+      "49": {
+        "title": "Strait of Hormuz remains 'closed', illegal routes to be blocked soon: IRGC advisor",
+        "url": "https://www.presstv.co.uk/Detail/2026/10/07/777845/Strait-of-Hormuz-closed-illegal-routes-to-be-blocked--IRGC-%20class=column-beyond-headlines-h-p"
+      },
+      "50": {
+        "title": "Tanker attacks surge in Hormuz as Gulf oil exports rise",
+        "url": "https://news.az/news/tanker-attacks-surge-in-hormuz-as-gulf-oil-exports-rise"
+      },
+      "51": {
+        "title": "Iranian official says 'illegal routes' in Strait of Hormuz to soon be blocked",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/iranian-official-says-illegal-routes-in-strait-of-hormuz-to-soon-be-blocked/articleshow/134777492.cms"
+      },
+      "52": {
+        "title": "US military retreat and the deepening crisis in the Strait of Hormuz",
+        "url": "https://www.bankingnews.gr/diethni/articles/904068/us-military-retreat-and-the-deepening-crisis-in-the-strait-of-hormuz"
+      },
+      "53": {
+        "title": "Ship Transits Through Strait of Hormuz Fall to Lowest Level in More Than Two Months, Data Shows",
+        "url": "https://www.islamicinvitationturkey.com/ship-transits-through-strait-of-hormuz-fall-to-lowest-level-in-more-than-two-months-data-shows/"
+      },
+      "54": {
+        "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began",
+        "url": "https://www.haaretz.com/middle-east-news/2026-10-08/ty-article/tanker-attacks-in-strait-of-hormuz-hit-record-weekly-high-since-war-began/000001a1-1bf9-dd2b-a3ef-9bfdf7130000"
+      },
+      "55": {
+        "title": "국제유가, 미국의 이란 공격 가능성 및 중동 유조선 피격에 급등",
+        "url": "http://www.segyebiz.com/newsView/20261009503177?OutUrl=naver"
+      },
+      "56": {
+        "title": "Iran Strikes LPG Tanker In Strait Of Hormuz, As Houthis Reportedly Mine Bab al-Mandab",
+        "url": "http://www.zerohedge.com/energy/iran-goes-offensive-strikes-lpg-tanker-strait-hormuz-threatens-punishment-all-violators-oil"
+      },
+      "57": {
+        "title": "Iran claims strike on LPG tanker taking 'illegal route' through Hormuz",
+        "url": "https://www.livemint.com/news/world/iran-says-it-hit-lpg-tanker-taking-illegal-route-through-hormuz-what-we-know-about-nv-sunshine-and-ship-fire-off-uae-11791561482963.html"
+      },
+      "58": {
+        "title": "Tanker attacks in Strait of Hormuz surge to wartime high",
+        "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html"
+      },
+      "59": {
+        "title": "Iran says LPG carrier struck, catches fire while crossing Strait of Hormuz via 'illegal' route – Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20261009-iran-says-lpg-carrier-struck-catches-fire-while-crossing-strait-of-hormuz-via-illegal-route/"
+      },
+      "60": {
+        "title": "'Not limited to Hormuz': IRGC strikes LPG carrier, warns of wider action against violators",
+        "url": "https://www.presstv.co.uk/Detail/2026/10/09/777957/Iran-IRGC-Navy-Hormuz"
+      },
+      "61": {
+        "title": "푸틴에 SOS 트럼프 “러 경유 세계 공급 합의”···대러 제제 풀리나",
+        "url": "https://n.news.naver.com/mnews/article/033/0000052627?sid=104"
+      },
+      "62": {
+        "title": "트럼프 \"푸틴과 성공적 협의\"…러시아 경유 시장 공급",
+        "url": "https://n.news.naver.com/mnews/article/657/0000056136?sid=104"
+      },
+      "63": {
+        "title": "트럼프 “푸틴과 러 경유 공급 합의”…중간선거 전 제재 완화",
+        "url": "https://n.news.naver.com/mnews/article/032/0003475425?sid=104"
+      },
+      "64": {
+        "title": "사우디 \"후티 겨냥 대규모 작전 수행…군사목표물 136개 파괴\"",
+        "url": "https://n.news.naver.com/mnews/article/057/0001972724?sid=104"
+      },
+      "65": {
+        "title": "War Breaks in Tigray, Brazil Holds Elections, Houthi/Ansar Allah Attacks Hit a Saudi Airport",
+        "url": "https://www.thenation.com/podcast/world/amprest-100926/"
+      },
+      "66": {
+        "title": "Shipping companies offering captains $US100k a month to transit Strait of Hormuz",
+        "url": "https://www.abc.net.au/news/2026-10-11/sailors-offered-bonuses-to-cross-strait-of-hormuz-in-iran-war/107248044"
+      },
+      "67": {
+        "title": "Oil tanker explodes after hitting naval mine in Strait of Hormuz",
+        "url": "http://www.jpost.com/middle-east/iran-news/article-911241"
+      },
+      "68": {
+        "title": "호르무즈서 유조선 발사체에 피격…선원들은 무사",
+        "url": "https://n.news.naver.com/mnews/article/055/0001394619?sid=104"
+      },
+      "69": {
+        "title": "독일, 미국의 러시아산 디젤 제재 완화에도 대러 제재 유지 선언",
+        "url": "https://www.g-enews.com/view.php?ud=2026101122285313502bd56fbc3c_1"
+      },
+      "70": {
+        "title": "EU “러 압박 완화할 때 아냐”…대러 제재 유지·확대 방침",
+        "url": "https://n.news.naver.com/mnews/article/032/0003475593?sid=104"
+      },
+      "71": {
+        "title": "사우디 공항 피격 12명 사망·3백여 명 부상…후티, 추가 공습 예고",
+        "url": "https://n.news.naver.com/mnews/article/056/0012271402?sid=104"
+      },
+      "72": {
+        "title": "US warplane knocks out ship breaching Iran blockade as tankers burn in Hormuz",
+        "url": "https://www.thenationalnews.com/news/gulf/2026/10/11/us-warplane-knocks-out-ship-breaching-iran-blockade-as-tankers-burn-in-hormuz/"
+      },
+      "73": {
+        "title": "Saudis Vow Retaliation After Deadly Airport Strike As Houthi Threat Puts Gulf On Edge",
+        "url": "https://www.zerohedge.com/geopolitical/saudis-vow-retaliation-after-deadly-airport-strike-houthi-threat-puts-gulf-edge"
+      },
+      "74": {
+        "title": "Super Oil Tanker Catches Fire After Striking Sea Mine in Strait of Hormuz",
+        "url": "https://www.islamicinvitationturkey.com/super-oil-tanker-catches-fire-after-striking-sea-mine-in-strait-of-hormuz/"
+      },
+      "75": {
+        "title": "Iran says US response to conditions for reopening Strait of Hormuz 'insufficient' – Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20261011-iran-says-us-response-to-conditions-for-reopening-strait-of-hormuz-insufficient/"
+      },
+      "76": {
+        "title": "Iran's Oil Minister Resigns as U.S. Blockade Chokes Crude Exports",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Irans-Oil-Minister-Resigns-as-US-Blockade-Chokes-Crude-Exports.html"
+      },
+      "77": {
+        "title": "Turkey and Pakistan to deploy troops to Saudi Arabia over houthi attacks",
+        "url": "http://www.bgnes.com/politics/turkey-and-pakistan-to-deploy-troops-to-saudi-arabia-over-houthi-attacks"
+      },
+      "78": {
+        "title": "Mecca pact invoked amid Houthi attacks: Trkiye, Pakistan agree to",
+        "url": "http://www.vietnamtribune.com/news/279353810/mecca-pact-invoked-amid-houthi-attacks-trkiye-pakistan-agree-to-swiftly-deploy-forces-military-capabilities-in-saudi-arabia"
+      },
+      "79": {
+        "title": "Saudi-backed Yemeni forces seize Bab el-Mandeb Strait from Houthi rebels",
+        "url": "https://www.independent.co.uk/news/world/middle-east/yemei-saudi-arabia-houthis-dhubab-b3061412.html"
+      },
+      "80": {
+        "title": "Yemeni Forces Retake Mokha from Houthi Militias",
+        "url": "https://www.alsahwa-yemen.net/en/p-96184"
+      },
+      "81": {
+        "title": "Massive Fires Along Saudi Oil Export Pipeline, Regional Outlet Says",
+        "url": "http://www.zerohedge.com/energy/saudi-east-west-pipeline-hit-new-attack-still-flowing-normal"
+      },
+      "82": {
+        "title": "Five Russian hospitals locked down after plague lab death while Saudi oil pipeline is hit near Khurais",
+        "url": "https://www.investmentwatchblog.com/five-russian-hospitals-locked-down-after-plague-lab-death-while-saudi-oil-pipeline-is-hit-near-khurais/"
+      },
+      "83": {
+        "title": "Saudi's East-West oil pipeline pumping halted after new attack",
+        "url": "https://www.freemalaysiatoday.com/category/world/2026/10/05/saudi-s-east-west-oil-pipeline-pumping-halted-after-new-attack"
+      },
+      "84": {
+        "title": "Bangladeshi national killed in Houthi missile attack on Saudi Aramco facility",
+        "url": "https://aninews.in/news/world/asia/bangladeshi-national-killed-in-houthi-missile-attack-on-saudi-aramco-facility20261005224635/"
+      },
+      "85": {
+        "title": "Three remaining Pakistani crew members of hijacked tanker rescued: Dar",
+        "url": "https://www.radio.gov.pk/05-10-2026/three-remaining-pakistani-crew-members-of-hijacked-tanker-rescued-dar"
+      },
+      "86": {
+        "title": "Hackers Breached Propulsion System of US-Bound Oil Tanker",
+        "url": "https://www.insurancejournal.com/news/national/2026/10/05/887853.htm"
+      },
+      "87": {
+        "title": "Singapore joins Panama Canal neutrality agreement",
+        "url": "https://www.straitstimes.com/singapore/singapore-to-join-international-agreement-on-neutrality-of-the-panama-canal"
+      },
+      "88": {
+        "title": "Panama Canal to add transit slot on 15 Oct, immediately raise draft restrictions to 49 feet",
+        "url": "https://www.hellenicshippingnews.com/panama-canal-to-add-transit-slot-on-15-oct-immediately-raise-draft-restrictions-to-49-feet/"
+      },
+      "89": {
+        "title": "Intercontinental Exchange Launches New VLCC Tanker And Container Freight Contracts",
+        "url": "https://www.rttnews.com/3696612/intercontinental-exchange-launches-new-vlcc-tanker-and-container-freight-contracts.aspx"
+      },
+      "90": {
+        "title": "Rhine water levels fall to new record low, stalling fuel logistics | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/rhine-water-levels-fall-to-new-record-low-stalling-fuel-logistics/"
+      },
+      "91": {
+        "title": "Aramco CEO says global oil stocks are 'scarily thin' amid Hormuz risks | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/aramco-ceo-says-global-oil-stocks-are-scarily-thin-amid-hormuz-risks/"
+      },
+      "92": {
+        "title": "Hormuz tanker attacks mount, putting oil flows at risk",
+        "url": "https://www.al-monitor.com/originals/2026/10/hormuz-tanker-attacks-mount-putting-oil-flows-risk"
+      },
+      "93": {
+        "title": "호르무즈 다시 옥죄는 이란…“7가지 조건 충족돼야 개방”",
+        "url": "https://n.news.naver.com/mnews/article/028/0002826120?sid=104"
+      },
+      "94": {
+        "title": "As Iran War Drags On, Trump Plans to Send Third Aircraft Carrier and Thousands More Troops to Middle East",
+        "url": "https://alaska-native-news.com/as-iran-war-drags-on-trump-plans-to-send-third-aircraft-carrier-and-thousands-more-troops-to-middle-east/86540/"
+      },
+      "95": {
+        "title": "Zelenskyy says Russian drones hit a vessel carrying corn in Black Sea, 2 dead",
+        "url": "https://www.the-messenger.com/news/world/article_dd012b0b-41d1-532a-ad16-075794c3e369.html"
+      },
+      "96": {
+        "title": "Two Killed After Grain Ship Sinks Off Romania - Novinite.com",
+        "url": "https://www.novinite.com/articles/240896/Two+Killed+After+Grain+Ship+Sinks+Off+Romania"
+      },
+      "97": {
+        "title": "Drone hits Turkish grain ship in Black Sea, 2 killed",
+        "url": "https://en.interfax.com.ua/news/general/1214579.html"
+      },
+      "98": {
+        "title": "사우디산 원유 비중 29.9%… 중동 의존도도 역대 최저권",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3437948"
+      },
+      "99": {
+        "title": "사우디 원유 수입 비중 5년 만에 30% 아래로",
+        "url": "https://n.news.naver.com/mnews/article/082/0001401133?sid=101"
+      },
+      "100": {
+        "title": "사우디서 원유 싣고 수에즈 우회…호르무즈 봉쇄 후 18번째 수송 성공",
+        "url": "http://www.segyebiz.com/newsView/20261005506087?OutUrl=naver"
+      },
+      "101": {
+        "title": "홍해 통한 18번째 원유 수송…우리 선박 수에즈운하 통과",
+        "url": "https://www.viva100.com/article/20261005500293"
+      },
+      "102": {
+        "title": "Trump threatens to 'double' South Korea's costs if it delays Alaska LNG deal",
+        "url": "https://www.moneycontrol.com/world/trump-threatens-to-double-south-korea-s-costs-if-it-delays-alaska-lng-deal-article-14044420.html"
+      },
+      "103": {
+        "title": "12 sailors hurt after attack on LR2 tanker near Hormuz -  UPDATED",
+        "url": "https://news.az/news/12-sailors-hurt-after-attack-on-lr2-tanker-near-hormuz-updated"
+      },
+      "104": {
+        "title": "India calls for \"immediate cessation of attacks\" after strike on commercial vessel in Strait of Hormuz injures 12 of 17 ",
+        "url": "https://news.webindia123.com/news/Articles/World/20261006/4507789.html"
+      },
+      "105": {
+        "title": "불가리아 총리, \"상선 2척 배타적 경제수역에서 드론 공격 받아\" (1보)",
+        "url": "https://n.news.naver.com/mnews/article/003/0014236559?sid=104"
+      },
+      "106": {
+        "title": "흑해 선박 2척 또 드론 피격...불가리아 연안에서 1척 침몰",
+        "url": "https://n.news.naver.com/mnews/article/052/0002415399?sid=104"
+      },
+      "107": {
+        "title": "하루 만에 또 흑해 선박 피격…상선 2척 중 1척 침몰",
+        "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000071364"
+      },
+      "108": {
+        "title": "Ukrainian Drone Attack: Ukrainian droneattack sets fire to oil tanker carrying 23 Indians off Russia's Black Sea coast",
+        "url": "https://timesofindia.indiatimes.com/world/europe/ukrainian-drone-attack-sets-fire-to-oil-tanker-carrying-23-indians-off-russias-black-sea-coast/articleshow/134750275.cms"
+      },
+      "109": {
+        "title": "Massive Smoke Plume As Tanker Erupts In Flames, Spills Oil Off Russia's Sochi Coast",
+        "url": "https://www.zerohedge.com/geopolitical/massive-smoke-plume-tanker-erupts-flames-spills-oil-russias-sochi-coast"
+      },
+      "110": {
+        "title": "Russian oil tanker 'blows up' covering holiday hotspot in plumes of smoke",
+        "url": "https://metro.co.uk/2026/10/06/russian-oil-tanker-blows-up-covering-holiday-hotspot-plumes-smoke-29686196/"
+      },
+      "111": {
+        "title": "The $1 Million Tanker Was Just The Start: Every Crude Freight Index Hits Record High As Hormuz \"Works\" Too Well",
+        "url": "http://www.zerohedge.com/markets/1-million-tanker-was-just-start-every-crude-freight-index-hits-record-high-hormuz-works-too"
+      },
+      "112": {
+        "title": "Oil: Hormuz tanker captains offered about $100,000 a month as crews weigh war risk",
+        "url": "https://investinglive.com/commodities/oil-hormuz-tanker-captains-offered-about-100-000-a-month-as-crews-weigh-war-risk/"
+      },
+      "113": {
+        "title": "Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+        "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/"
+      },
+      "114": {
+        "title": "미 부통령 “알래스카 LNG 사업, 한국과 세부 조율 남아”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012268665?sid=104"
+      },
+      "115": {
+        "title": "밴스 \"알래스카 LNG, 한국과 조율해야\"…트럼프와 온도 차",
+        "url": "https://n.news.naver.com/mnews/article/057/0001972240?sid=104"
+      },
+      "116": {
+        "title": "中 석유제품 수출 중단… 韓정유사 반사이익 얻나",
+        "url": "https://www.ulsanpress.net/news/articleView.html?idxno=584256"
+      },
+      "117": {
+        "title": "“한국에 돈 갚을게, 대신 6개월 후에”…‘수천억 미지급’ 이라크, 빚...",
+        "url": "https://n.news.naver.com/mnews/article/081/0003686536?sid=104"
+      },
+      "118": {
+        "title": "US says 130th commercial vessel redirected during Iran blockade",
+        "url": "https://aa.com.tr/en/us-israel-iran-war/us-says-130th-commercial-vessel-redirected-during-iran-blockade/4079092"
+      },
+      "119": {
+        "title": "50 Iranian Tanker Logjam Unfolds As US Naval Blockade Starves Tehran Of Oil Revenue",
+        "url": "http://www.zerohedge.com/geopolitical/50-iranian-tanker-logjam-unfolds-us-naval-blockade-starves-tehran-oil-revenue"
+      },
+      "120": {
+        "title": "Reports that Hormuz crude flows near 76% of prewar levels. Diesel shortage persists.",
+        "url": "https://investinglive.com/commodities/reports-that-hormuz-crude-flows-near-76-of-prewar-levels-diesel-shortage-persists/"
+      },
+      "121": {
+        "title": "우크라, '한국의 러 석유공급' 보도에 \"제재와 극명 대비\"",
+        "url": "https://n.news.naver.com/mnews/article/214/0001527514?sid=104"
+      },
+      "122": {
+        "title": "英가디언 \"러 8월 석유수입 31% 韓서 출항…제재 선박으로 환적\" 비판",
+        "url": "https://n.news.naver.com/mnews/article/003/0014236549?sid=104"
+      },
+      "123": {
+        "title": "울산 원유 수입선 변화,중동↓·미주↑",
+        "url": "https://www.ubc.co.kr/news/28262/"
+      },
+      "124": {
+        "title": "사우디산 줄고 UAE산만 늘었다…韓 원유 조달, ‘항로’가 비용 변수",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261006010001554"
+      },
+      "125": {
+        "title": "US EIA hikes oil price forecasts again as Iran war drains global stockpile",
+        "url": "https://www.aol.com/articles/us-eia-hikes-oil-price-160310000.html"
+      },
+      "126": {
+        "title": "The EIA Just Raised Its Oil Price Forecast for the Fourth Quarter. It Now Expects Brent to be Above $100.",
+        "url": "https://www.ibtimes.com/eia-just-raised-its-oil-price-forecast-fourth-quarter-it-now-expects-brent-above-100-3808311"
+      },
+      "127": {
+        "title": "Baystreet.ca - Saudi Arabia Restarts Red Sea Crude Oil Loadings",
+        "url": "https://baystreet.ca/articles/commodities/124214/Saudi-Arabia-Restarts-Red-Sea-Crude-Oil-Loadings"
+      },
+      "128": {
+        "title": "Saudi East-West oil pipeline is said to be flowing as normal",
+        "url": "https://www.businesstimes.com.sg/companies-markets/energy-commodities/saudi-east-west-oil-pipeline-said-be-flowing-normal"
+      },
+      "129": {
+        "title": "예멘 국영통신 “정부군, 홍해 항구 모카 장악” 보도",
+        "url": "https://www.tokenpost.kr/news/breaking/418815"
+      },
+      "130": {
+        "title": "IRGC 총사령관 고문 \"호르무즈 불법 경로 곧 차단될 것\"",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438206"
+      },
+      "131": {
+        "title": "Tanker hit by multiple projectiles off northern Qatar, casualties reported",
+        "url": "http://www.theuknews.com/news/279358290/tanker-hit-by-multiple-projectiles-off-northern-qatar-casualties-reported"
+      },
+      "132": {
+        "title": "Report: Several injured in attack on tanker north of Qatar",
+        "url": "https://www.israelnationalnews.com/flashes/694948"
+      },
+      "133": {
+        "title": "Naval drone hits oil tanker off Sochi, triggering major fire",
+        "url": "https://georgiatoday.ge/naval-drone-hits-oil-tanker-off-sochi-triggering-major-fire/"
+      },
+      "134": {
+        "title": "Cyprus-linked tanker ablaze off Sochi after Black Sea drone attack",
+        "url": "https://cyprus-mail.com/2026/10/07/cyprus-linked-tanker-ablaze-off-sochi-after-black-sea-drone-attack"
+      },
+      "135": {
+        "title": "Ukraine drone attack triggers huge tanker fire off Russia's Sochi",
+        "url": "https://dunyanews.tv/en/World/976522-ukraine-drone-attack-triggers-huge-tanker-fire-off-russias-sochi"
+      },
+      "136": {
+        "title": "SK에너지·HD현대오일뱅크 '44조원대 유가 담합' 혐의... 공정위 심의 개...",
+        "url": "http://www.newslock.co.kr/news/articleView.html?idxno=137603"
+      },
+      "137": {
+        "title": "전쟁 틈타 44조대 담합 의혹…SK에너지·HD현대오일뱅크 심판대에",
+        "url": "https://n.news.naver.com/mnews/article/422/0000913487?sid=161"
+      },
+      "138": {
+        "title": "공정위, 44조 '유가 담합' 정유사 제재 착수",
+        "url": "https://n.news.naver.com/mnews/article/015/0005340228?sid=101"
+      },
+      "139": {
+        "title": "한·멕시코, 원유·핵심광물 공급망 협의체 신설",
+        "url": "http://www.newsmaker.or.kr/news/articleView.html?idxno=183803"
+      },
+      "140": {
+        "title": "US EIA raises Q4 oil price forecast to USD 105 amid Middle East supply risks, diesel market tightness",
+        "url": "https://aninews.in/news/business/us-eia-raises-q4-oil-price-forecast-to-usd-105-amid-middle-east-supply-risks-diesel-market-tightness20261007144929/"
+      },
+      "141": {
+        "title": "美 10년물 국채금리 5.36% 돌파…24년 만에 최고",
+        "url": "https://n.news.naver.com/mnews/article/215/0001268498?sid=104"
+      },
+      "142": {
+        "title": "3 killed, 36 injured in Houthi attacks on Abha, King Khalid airports: Saudi GACA",
+        "url": "https://aninews.in/news/world/asia/3-killed-36-injured-in-houthi-attacks-on-abha-king-khalid-airports-saudi-gaca20261008040012/"
+      },
+      "143": {
+        "title": "Attacks on Saudi airports claimed by Houthi rebels kill 3 people, officials say",
+        "url": "https://santamariatimes.com/ap/international/attacks-on-saudi-airports-claimed-by-houthi-rebels-kill-3-people-officials-say/article_1d70c6f2-d5fa-5d4e-a00f-3b16eafb5e1b.html"
+      },
+      "144": {
+        "title": "후티, 사우디 본토 공습…韓기업 진출 지역까지 피해",
+        "url": "https://n.news.naver.com/mnews/article/011/0004669145?sid=104"
+      },
+      "145": {
+        "title": "韓기업 중동숙소 인근까지 후티 공습",
+        "url": "https://n.news.naver.com/mnews/article/009/0005745494?sid=104"
+      },
+      "146": {
+        "title": "거센 반격 후티, 사우디 공항·정유시설 타격…한국 기업 인근도 피격",
+        "url": "https://n.news.naver.com/mnews/article/056/0012269530?sid=104"
+      },
+      "147": {
+        "title": "\"선장 월급 6배 뛰어\"…호르무즈 운임 급등",
+        "url": "https://n.news.naver.com/mnews/article/015/0005340273?sid=104"
+      },
+      "148": {
+        "title": "월급 6배 뛰었다…'죽음의 해협' 건너는 유조선 선원들",
+        "url": "https://www.ajunews.com/view/20261007150042068"
+      },
+      "149": {
+        "title": "Brent crude oil price rises above $101 on US hurricane threat, Houthi attacks",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/brent-crude-rises-above-101-on-us-hurricane-threat-houthi-attacks/article71554273.ece"
+      },
+      "150": {
+        "title": "'비축유 곳간'도 비었다...세계 상업용 재고 60억배럴 밑으로",
+        "url": "https://n.news.naver.com/mnews/article/025/0003556386?sid=101"
+      },
+      "151": {
+        "title": "11월 국내선 유류할증료 다시 21.1% 급등…여행객 부담 해외여행까지 이...",
+        "url": "https://www.travie.com/news/articleView.html?idxno=56075"
+      },
+      "152": {
+        "title": "[미국 이란 전쟁] 美국방부, 중부사령부에 이란 대규모 작전 준비 지시",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242089"
+      },
+      "153": {
+        "title": "트럼프 \"이란과 합의 더는 원치 않아\"…美, 대규모 폭격 검토",
+        "url": "https://www.newspim.com/news/view/20261008001369"
+      },
+      "154": {
+        "title": "Brent crude tops $105 as Trump weighs resuming 'major combat operations' in Iran",
+        "url": "https://www.aol.co.uk/articles/oil-prices-climbing-concerns-escalating-063551000.html"
+      },
+      "155": {
+        "title": "이란, 호르무즈 해협 재개방안 며칠 내 답변 예고",
+        "url": "https://www.tokenpost.kr/news/breaking/419928"
+      },
+      "156": {
+        "title": "Iraq devalues currency as Iran war disrupts oil shipping routes",
+        "url": "https://www.naharnet.com/stories/en/322961-iraq-devalues-currency-as-iran-war-disrupts-oil-shipping-routes"
+      },
+      "157": {
+        "title": "李대통령, 이집트 대통령과 정상회담…\"양국 '전략적 동반자 관계'로 격...",
+        "url": "https://www.goodkyung.com/news/articleView.html?idxno=292198"
+      },
+      "158": {
+        "title": "한-이집트 정상, 전략적 동반자 관계 격상 합의. 중동 평화와 안정 회복...",
+        "url": "https://www.voakorea.com/a/korean-peninsula-10-08-26/8209062.html"
+      },
+      "159": {
+        "title": "한·이집트 CEPA 협상 개시…“국방·방산 협력 확대”",
+        "url": "https://n.news.naver.com/mnews/article/056/0012270351?sid=100"
+      },
+      "160": {
+        "title": "South Korea recalls ambassador to Ukraine over Prisoner of War transfer row",
+        "url": "https://www.abc.net.au/news/2026-10-09/south-korea-recalls-ambassador-to-ukraine/107245422"
+      },
+      "161": {
+        "title": "South Korea Recalls Envoy to Ukraine After Being Accused of Shipping Fuel to Russia",
+        "url": "https://www.breitbart.com/asia/2026/10/08/south-korea-recalls-envoy-to-ukraine-after-being-accused-of-shipping-fuel-to-russia/"
+      },
+      "162": {
+        "title": "South Korea to recall Ukraine envoy in diplomatic row over POWs",
+        "url": "https://www.aljazeera.com/news/2026/10/8/south-korea-recalls-envoy-to-kyiv-over-diplomatic-row-with-ukraine"
+      },
+      "163": {
+        "title": "북극항로 시범운항 성공·HMM 부산 시대 개막…13일 연쇄 축하 행사",
+        "url": "https://n.news.naver.com/mnews/article/082/0001401786?sid=101"
+      },
+      "164": {
+        "title": "롯데정밀화학, 국내 첫 발전용 그린암모니아 1500t 공급",
+        "url": "https://n.news.naver.com/mnews/article/011/0004669577?sid=101"
+      },
+      "165": {
+        "title": "Hormuz Crisis Sends Oil Shipping Costs Soaring. Supertanker Rates Have Jumped More Than Eightfold.",
+        "url": "https://www.ibtimes.com/hormuz-crisis-sends-oil-shipping-costs-soaring-supertanker-rates-have-jumped-more-eightfold-3808355"
+      },
+      "166": {
+        "title": "코스피, 삼성전자 역대 최대 실적에도 2%대 급락···6600선 후퇴",
+        "url": "http://www.finomy.com/news/articleView.html?idxno=263245"
+      },
+      "167": {
+        "title": "(2nd LD) Seoul shares down for 3rd day amid inflation worries",
+        "url": "https://n.news.naver.com/mnews/article/001/0016366668?sid=104"
+      },
+      "168": {
+        "title": "미 국채금리 24년 만에 최고…월가 '연말 4.75% vs 5% 이상' 엇갈려",
+        "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=302356"
+      },
+      "169": {
+        "title": "IEA, 비축유 1억배럴 공급 앞당긴다…디젤 부족에 긴급 대응",
+        "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=507821"
+      },
+      "170": {
+        "title": "IEA \"비축경유 방출 속도낼 것\"",
+        "url": "https://n.news.naver.com/mnews/article/009/0005746136?sid=104"
+      },
+      "171": {
+        "title": "Maersk raises emergency fuel surcharge due to Middle East conflict",
+        "url": "https://www.omanobserver.om/article/1197436/business/energy/maersk-raises-emergency-fuel-surcharge-due-to-middle-east-conflict"
+      },
+      "172": {
+        "title": "The US has made progress in reopening the Strait of Hormuz, but the Iran war is far from over",
+        "url": "https://www.yankton.net/news/national_ap/article_f9547869-9b08-5b78-b934-4c1e1abcd9b8.html"
+      },
+      "173": {
+        "title": "이란 혁명수비대, 호르무즈 밖 위반 선박도 처벌 예고",
+        "url": "https://www.tokenpost.kr/news/breaking/420495"
+      },
+      "174": {
+        "title": "Saudi Authorities Say 3 Killed In Houthi-Claimed Attacks On Riyadh Airport – 710am KURV",
+        "url": "https://www.kurv.com/saudi-authorities-say-3-killed-in-houthi-claimed-attacks-on-riyadh-airport/"
+      },
+      "175": {
+        "title": "Bahrain News: ACT OF COWARDICE: Global Condemnation Follows Houthi Attacks on Saudi Arabia's King Khalid Airport",
+        "url": "https://www.gdnonline.com:443/Details/1409186"
+      },
+      "176": {
+        "title": "사우디 리야드 공항 피격에 사우디아항공 기장 등 3명 사망",
+        "url": "https://n.news.naver.com/mnews/article/448/0000644021?sid=104"
+      },
+      "177": {
+        "title": "Vessel struck by projectile off UAE coast, fire extinguished: UKMTO",
+        "url": "https://article.wn.com/view/2026/10/09/Vessel_struck_by_projectile_off_UAE_coast_fire_extinguished_/"
+      },
+      "178": {
+        "title": "US Sanctions 17 Vessels Linked To Iran's Shadow Fleet",
+        "url": "http://www.europesun.com/news/279361857/us-sanctions-17-vessels-linked-to-iran-shadow-fleet"
+      },
+      "179": {
+        "title": "美, 이란 '그림자 선단' 동시 제재…선박 22척·법인 27개 타격",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438478"
+      },
+      "180": {
+        "title": "트럼프 \"11월 3일 중간선거 전까지 이란 공격 안 할 것\"",
+        "url": "https://n.news.naver.com/mnews/article/448/0000644024?sid=104"
+      },
+      "181": {
+        "title": "트럼프 \"중간선거 전 이란 공격 안 해…해상 봉쇄는 유지\"",
+        "url": "https://www.ajunews.com/view/20261009155335735"
+      },
+      "182": {
+        "title": "Terrifying moment sport broadcasters flee on live TV as huge 7.7 magnitude earthquake strikes near Panama Canal",
+        "url": "https://www.the-sun.com/news/17122388/"
+      },
+      "183": {
+        "title": "Powerful quake hits Panama, damages homes; canal operations normal",
+        "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/09/strong-8-0-magnitude-earthquake-felt-in-panama-usgs"
+      },
+      "184": {
+        "title": "HMM 플래티넘호, 마다가스카르 인근서 화재 발생",
+        "url": "https://www.kpinews.kr/newsView/1065617632492240"
+      },
+      "185": {
+        "title": "‘44조 원대 기름값 담합 의혹’ 제재 착수…SK에너지·현대오일뱅크 엇...",
+        "url": "https://ilyo.co.kr/?ac=article_view&entry_id=513095"
+      },
+      "186": {
+        "title": "'44조 기름값 담합' 파장에…SK에너지, 공정위 발표 하루 만에 고개 숙였...",
+        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613598"
+      },
+      "187": {
+        "title": "Brent Holds Above $100 as Hormuz Tanker Traffic Hits Two-Month Low",
+        "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Holds-Above-100-as-Hormuz-Tanker-Traffic-Hits-Two-Month-Low.html"
+      },
+      "188": {
+        "title": "브렌트유 102.83달러…호르무즈 유조선 통행 두 달 최저",
+        "url": "https://www.tokenpost.kr/news/breaking/420346"
+      },
+      "189": {
+        "title": "Front Month ICE Brent Crude Rose 2.42% This Week to Settle at $104.72 — Data Talk",
+        "url": "https://www.morningstar.com/news/dow-jones/202610096010/front-month-ice-brent-crude-rose-242-this-week-to-settle-at-10472-data-talk"
+      },
+      "190": {
+        "title": "중동발 공급 불안에 국제유가 급등…브렌트유 104달러 돌파",
+        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129958"
+      },
+      "191": {
+        "title": "호르무즈 막히자 치솟는 곡물값⋯내년 식탁 물가 비상",
+        "url": "https://www.viva100.com/article/20261009500028"
+      },
+      "192": {
+        "title": "대두값 1300센트 육박…호르무즈 봉쇄가 밥상물가 흔든다",
+        "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493966"
+      },
+      "193": {
+        "title": "국제 곡물값 1년 새 17.2% 급등…먹거리 물가 ‘비상’",
+        "url": "https://n.news.naver.com/mnews/article/020/0003753891?sid=101"
+      },
+      "194": {
+        "title": "Houthi attacks put Saudi energy sites on alert, disrupt air travel",
+        "url": "https://www.middle-east-online.com/en/houthi-attacks-put-saudi-energy-sites-alert-disrupt-air-travel"
+      },
+      "195": {
+        "title": "Airlines cancel Riyadh flights after Houthi attack",
+        "url": "https://www.straitstimes.com/world/middle-east/airlines-cancel-flights-to-riyadh-after-houthi-airport-attack-sia-delays-route-launch"
+      },
+      "196": {
+        "title": "원유 200만 배럴 운임 8000만달러…아시아 정유사 대체 조달 검토",
+        "url": "https://www.tokenpost.kr/news/economy/420462"
+      },
+      "197": {
+        "title": "Record $80,000,000 Shipping Bills Are Pricing American Oil Out Of Asia",
+        "url": "https://dailycaller.com/2026/10/09/us-crude-exports-asia-tanker-rates-vlcc-freight-cosmo-oil-trafigura-max-pyziur/"
+      },
+      "198": {
+        "title": "국내선 유류할증료 다음 달 21% 오른다",
+        "url": "https://jejumbc.com/NewsArticle/866601"
+      },
+      "199": {
+        "title": "Saudi Arabia reopens Riyadh airport after Houthi attack kills three  - Grenada Chronicle – Daily Grenada And Caribbean N",
+        "url": "https://grenadachronicle.com/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three/"
+      },
+      "200": {
+        "title": "IRGC Chief Says No Outside Power Has Right to Threaten or Interfere in Strait of Hormuz, Persian Gulf",
+        "url": "https://www.islamicinvitationturkey.com/irgc-chief-says-no-outside-power-has-right-to-threaten-or-interfere-in-strait-of-hormuz-persian-gulf/"
+      },
+      "201": {
+        "title": "Iranian Regime Strikes Vessel, Threatens to Pursue Ships Out of Strait of Hormuz",
+        "url": "https://pjmedia.com/catherinesalgado/2026/10/10/iranian-regime-strikes-vessel-threatens-to-pursue-ships-out-of-strait-of-hormuz-n4958184"
+      },
+      "202": {
+        "title": "Houthi strike on Riyadh airport kills 12, injures over 300",
+        "url": "http://www.hongkongherald.com/news/279364748/houthi-strike-on-riyadh-airport-kills-12-injures-over-300"
+      },
+      "203": {
+        "title": "Riyadh's International Airport Suspends All Operations After Mass Casualty Houthi Missile Barrage",
+        "url": "https://www.zerohedge.com/geopolitical/mass-casualties-reported-new-houthi-missile-barrage-riyadhs-international-airport"
+      },
+      "204": {
+        "title": "트럼프, 러시아산 경유 480만t 공급 합의…대러 제재 일부 완화",
+        "url": "https://www.sentv.co.kr/article/view/sentv202610100019"
+      },
+      "205": {
+        "title": "美, 러시아산 디젤유 거래 제재 완화…\"국내 공급난 해소·유가 안정 목...",
+        "url": "https://www.the-today.com/news/articleView.html?idxno=91479"
+      },
+      "206": {
+        "title": "Drones Strike Rostov Oil Terminal, Igniting Major Fire",
+        "url": "https://www.kyivpost.com/post/86663"
+      },
+      "207": {
+        "title": "Ukraine strikes oil terminal, railway bridge and two vessels in Rostov region",
+        "url": "https://en.apa.az/europe/ukraine-strikes-oil-terminal-railway-bridge-and-two-vessels-in-rostov-region-529272"
+      },
+      "208": {
+        "title": "파나마 남서부서 규모 7.7 강진 발생…공항 폐쇄·지하철 운행 중단",
+        "url": "https://www.mediapen.com/news/view/1129042"
+      },
+      "209": {
+        "title": "파나마 덮친 규모 7.7 강진…쓰나미 경보에 공항·지하철 멈춰",
+        "url": "https://n.news.naver.com/mnews/article/654/0000204575?sid=104"
+      },
+      "210": {
+        "title": "한-우크라 '경유 갈등' 최고조...주우크라 韓대사 국내 소환 완료",
+        "url": "https://n.news.naver.com/mnews/article/014/0005587178?sid=100"
+      },
+      "211": {
+        "title": "All 22 Indian Seafarers Safe After Drone Attack On Panama-Flagged Crude Oil Tanker At Sharjah Anchorage",
+        "url": "https://www.freepressjournal.in/india/all-22-indian-seafarers-safe-after-drone-attack-on-panama-flagged-crude-oil-tanker-at-sharjah-anchorage"
+      },
+      "212": {
+        "title": "Saudi-led coalition destroys 136 Houthi targets in 'large-scale operation'",
+        "url": "https://article.wn.com/view/2026/10/10/saudiled_coalition_destroys_136_houthi_targets_in_aposlarges/"
+      },
+      "213": {
+        "title": "사우디 \"후티 겨냥 대규모 작전…136개 군사목표물 파괴\"",
+        "url": "https://n.news.naver.com/mnews/article/003/0014244455?sid=104"
+      },
+      "214": {
+        "title": "Ukraine's refinery strikes are hitting Russia's fuel exports. Russian diesel exports collapse to a 10-year low. Could re",
+        "url": "https://www.investmentwatchblog.com/ukraines-refinery-strikes-are-hitting-russias-fuel-exports-russian-diesel-exports-collapse-to-a-10-year-low-could-refinery-strikes-trigger-a-global-fuel-price-shock/"
+      },
+      "215": {
+        "title": "British long-term borrowing costs hit fresh multi-decade high on oil price surge",
+        "url": "https://cyprus-mail.com/2026/10/10/british-long-term-borrowing-costs-hit-fresh-multi-decade-high-on-oil-price-surge"
+      },
+      "216": {
+        "title": "Fire extinguished on vessel hit off UAE coast, UKMTO says",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/fire-extinguished-vessel-hit-uae-coast-ukmto-says"
+      },
+      "217": {
+        "title": "UPDATE | Normalcy returns at Kingston Freeport Terminal after strike",
+        "url": "https://jamaica-gleaner.com/article/news/20261010/update-normalcy-returns-kingston-freeport-terminal-after-strike"
+      },
+      "218": {
+        "title": "‘불의 고리’ 파나마 7.7 강진…쓰나미 경보는 해제, 사망자 없어",
+        "url": "https://n.news.naver.com/mnews/article/016/0002707475?sid=104"
+      },
+      "219": {
+        "title": "World condemns Houthi strike on Riyadh airport that killed 13, including Indian",
+        "url": "https://article.wn.com/view/2026/10/11/World_condemns_Houthi_strike_on_Riyadh_airport_that_killed_1/"
+      },
+      "220": {
+        "title": "Saudi Arabia's Riyadh airport hit by another Houthi strike day after fatal attack",
+        "url": "https://calgarysun.com/news/saudi-arabia-riyadh-airport-second-houthi-strike/wcm/283d20d7-9d72-485a-8d6e-c8814ccc4b34"
+      },
+      "221": {
+        "title": "Fresh strike hits Riyadh airport, fire breaks out at Terminal 4",
+        "url": "https://www.siasat.com/fresh-strike-hits-riyadh-airport-fire-breaks-out-at-terminal-4-3556092/"
+      },
+      "222": {
+        "title": "US forces disable cargo ship breaching Iran blockade in Gulf of Oman",
+        "url": "https://article.wn.com/view/2026/10/11/US_forces_disable_cargo_ship_breaching_Iran_blockade_in_Gulf/"
+      },
+      "223": {
+        "title": "US military says it fired at cargo vessel trying to run Iran blockade",
+        "url": "https://www.omanobserver.om/article/1197575/world/region/us-military-says-it-fired-at-cargo-vessel-trying-to-run-iran-blockade"
+      },
+      "224": {
+        "title": "U.S. Hits Chinese-Owned Freighter, Claiming it Ran Blockade on Iran",
+        "url": "https://maritime-executive.com/article/u-s-claims-to-have-hit-chinese-owned-freighter-that-ran-blockade-on-iran"
+      },
+      "225": {
+        "title": "Iran sets supertanker ablaze after US takes out ship breaking blockade",
+        "url": "https://nypost.com/2026/10/11/world-news/iran-sets-supertanker-ablaze-after-us-takes-out-ship-breaking-blockade/"
+      },
+      "226": {
+        "title": "사우디 전역 '출국권고'…조현, 중동 재외국민 대책 점검",
+        "url": "https://n.news.naver.com/mnews/article/629/0000540905?sid=100"
+      },
+      "227": {
+        "title": "사우디 전역에 '출국 권고'...외교부, 여행경보 3단계로 상향",
+        "url": "https://n.news.naver.com/mnews/article/119/0003141479?sid=100"
+      },
+      "228": {
+        "title": "북극항로 시범운항 마친 '팬스타 아크로호'",
+        "url": "https://n.news.naver.com/mnews/article/421/0009220589?sid=102"
+      },
+      "229": {
+        "title": "북극항로 왕복 성공, 시범운항 선박 50일 만에 부산 도착",
+        "url": "https://news.knn.co.kr/news/article/193049"
+      },
+      "230": {
+        "title": "Russia partially lifts diesel export ban after Putin-Trump deal to supply US, global markets",
+        "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/russia-partially-lifts-diesel-export-ban-after-putin-trump-deal-to-supply-us-global-markets/articleshow/134863909.cms"
+      },
+      "231": {
+        "title": "트럼프, 푸틴 손잡고 ‘경유딜’… 대러 제재 무력화",
+        "url": "https://n.news.naver.com/mnews/article/022/0004165715?sid=104"
+      },
+      "232": {
+        "title": "Two Indian seafares missing after drone attack on tanker in Oman",
+        "url": "https://www.lbc.co.uk/article/two-indian-seafares-missing-after-drone-attack-5HjdjkX_2/"
+      },
+      "233": {
+        "title": "Two Indian Seafarers Missing After Drone Attack on Vessel in Strait of Hormuz",
+        "url": "https://gulfnews.com/world/asia/india/two-indian-seafarers-missing-after-vessel-hit-by-drone-in-strait-of-hormuz-1.500706843"
+      },
+      "234": {
+        "title": "Global VLCC Spot Earnings Rise To $805,000/Day | Hellenic Shipping News Worldwide",
+        "url": "https://www.hellenicshippingnews.com/global-vlcc-spot-earnings-rise-to-805000-day/"
+      },
+      "235": {
+        "title": "10년 쓴 유조선, 새 선박보다 비싸",
+        "url": "https://n.news.naver.com/mnews/article/009/0005746862?sid=101"
+      },
+      "236": {
+        "title": "[단독] “10년 된 중고가격이 수백억 더 비싸”…품귀대란 일어난 유조...",
+        "url": "https://n.news.naver.com/mnews/article/009/0005746806?sid=101"
+      },
+      "237": {
+        "title": "HOUTHI TERROR THREAT: Saudi Airports Declared Targets Following Deadly Riyadh Attack",
+        "url": "https://www.theyeshivaworld.com/news/israel-news/2608198/houthi-terror-threat-saudi-airports-declared-targets-following-deadly-riyadh-attack.html"
+      },
+      "238": {
+        "title": "사우디 “리야드 공항 운영 잠정 중단” …후티군, 공항·정유시설 집중...",
+        "url": "https://n.news.naver.com/mnews/article/029/0003052280?sid=104"
+      },
+      "239": {
+        "title": "Strait of Hormuz: After more oil left the Gulf, Iran tries to regain its stranglehold on shipping",
+        "url": "https://cyprusnews.eu/cnn-kosmos/strait-of-hormuz-after-more-oil-left-the-gulf-iran-tries-to-regain-its-stranglehold-on-shipping/"
+      },
+      "240": {
+        "title": "Saudi Arabia extends airport closure and moves Riyadh schools online as attack threats continue",
+        "url": "https://www.2news.com/news/world/saudi-arabia-extends-airport-closure-and-moves-riyadh-schools-online-as-attack-threats-continue/article_2f94d65c-a6f7-53c3-8ac5-fac646b88450.html"
+      },
+      "241": {
+        "title": "Record $500,000 oil tanker rates push up Dutch fuel prices",
+        "url": "https://nltimes.nl/2026/10/11/record-500000-oil-tanker-rates-push-dutch-fuel-prices"
+      },
+      "242": {
+        "title": "Crude oil futures brace for volatility amid geopolitical uncertainties: Analysts",
+        "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-brace-for-volatility-amid-geopolitical-uncertainties-analysts/article71571069.ece"
+      },
+      "243": {
+        "title": "Brent crude reportedly at $104.28 as Ukraine's role in oil-price surge is disputed · Digg",
+        "url": "https://digg.com/world-business/4pvidpko"
+      },
+      "244": {
+        "title": "All 22 Indian crew rescued after vessel incident off UAE coast",
+        "url": "https://article.wn.com/view/2026/10/11/All_22_Indian_crew_rescued_after_vessel_incident_off_UAE_coa/"
+      },
+      "245": {
+        "title": "UAE guard rescues 22 from burning oil tanker | The Arkansas Democrat-Gazette",
+        "url": "https://www.arkansasonline.com/news/2026/oct/11/uae-guard-rescues-22-from-burning-oil-tanker/"
+      },
+      "246": {
+        "title": "Three Indians rescued from Black Sea vessel attack depart Romania for India",
+        "url": "http://www.thailandnews.net/news/279364827/three-indians-rescued-from-black-sea-vessel-attack-depart-romania-for-india"
+      },
+      "247": {
+        "title": "LG화학, 중동전쟁으로 멈췄던 여수NCC 2공장 가동 재개",
+        "url": "https://ysmbc.co.kr/NewsArticle/1540438"
+      }
+    },
+    "week_label": "2026-W41",
+    "signal": {
+      "n_articles": 9603,
+      "crisis_pct": 11.7,
+      "warning_pct": 45.4,
+      "warning_crisis_pct": 57.1,
+      "trend": "stable",
+      "dominant_cluster": "CP_Hormuz",
+      "dominant_display": "호르무즈 해협",
+      "dominant_crisis_pct": 38.1,
+      "confirmed_clusters": [
+        "CP_Panama",
+        "CP_Hormuz",
+        "CP_Malacca",
+        "CP_Taiwan",
+        "CP_Suez",
+        "EVT_Ukraine2022",
+        "CP_BabElMandeb",
+        "EVT_COVID2020",
+        "CP_BlackSea",
+        "EVT_RedSea2023",
+        "EVT_HormuzToll2026",
+        "EVT_NamuHo2026"
+      ],
+      "candidate_clusters": []
+    },
+    "week": "2026-W41",
+    "indicators": {
+      "SCFI": {
+        "name": "SCFI",
+        "full": "상하이 컨테이너 운임지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "up_bad",
+        "value": 3664.11,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-09",
+        "prev_value": 3662.3
+      },
+      "BDI": {
+        "name": "BDI",
+        "full": "발틱건화물지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "up_bad",
+        "value": 2917.0,
+        "chg_pct": -7.3,
+        "chg_dir": "down",
+        "freq": "daily",
+        "data_date": "2026-10-09",
+        "prev_value": 3148.0
+      },
+      "Harpex": {
+        "name": "Harpex",
+        "full": "컨테이너 용선료 지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "up_bad",
+        "value": 2468.0,
+        "chg_pct": 0.5,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-09",
+        "prev_value": 2456.0
+      },
+      "GSCSI": {
+        "name": "GSCSI",
+        "full": "글로벌 해상 컨테이너 물동량",
+        "unit": "M TEU",
+        "group": "글로벌 해운",
+        "dir": "neutral",
+        "value": 2.68,
+        "chg_pct": -6.6,
+        "chg_dir": "down",
+        "freq": "monthly",
+        "data_date": "2026-09-01",
+        "prev_value": 2.87
+      },
+      "RWI_ISL_CTI": {
+        "name": "RWI/ISL CTI",
+        "full": "컨테이너 처리량 지수",
+        "unit": "pt",
+        "group": "글로벌 해운",
+        "dir": "neutral",
+        "value": 141.9,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-08-01",
+        "prev_value": 141.9
+      },
+      "GSCPI": {
+        "name": "GSCPI",
+        "full": "글로벌 공급망 압력지수",
+        "unit": "σ",
+        "group": "공급망 스트레스",
+        "dir": "up_bad",
+        "value": 1.284,
+        "chg_pct": 20.8,
+        "chg_dir": "up",
+        "freq": "monthly",
+        "data_date": "2026-09-30",
+        "prev_value": 1.063
+      },
+      "NAPMSDI": {
+        "name": "NAPMSDI",
+        "full": "ISM 납기지연지수",
+        "unit": "pt",
+        "group": "공급망 스트레스",
+        "dir": "up_bad",
+        "value": 59.0,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-09-01",
+        "prev_value": 59.0
+      },
+      "GPR": {
+        "name": "GPR",
+        "full": "지정학적 위험지수",
+        "unit": "pt",
+        "group": "공급망 스트레스",
+        "dir": "up_bad",
+        "value": 146.21,
+        "chg_pct": 0.0,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-09-01",
+        "prev_value": 146.21
+      },
+      "CP_Hormuz": {
+        "name": "호르무즈",
+        "full": "호르무즈 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 19.0,
+        "chg_pct": -13.6,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-04",
+        "prev_value": 22.0
+      },
+      "CP_Suez": {
+        "name": "수에즈",
+        "full": "수에즈 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 302.0,
+        "chg_pct": 7.9,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-04",
+        "prev_value": 280.0
+      },
+      "CP_BabElMandeb": {
+        "name": "바브엘만데브",
+        "full": "바브엘만데브 선박통과",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 207.0,
+        "chg_pct": 8.9,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-04",
+        "prev_value": 190.0
+      },
+      "CP_Malacca": {
+        "name": "말라카",
+        "full": "말라카 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 1584.0,
+        "chg_pct": 3.9,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-04",
+        "prev_value": 1525.0
+      },
+      "CP_Taiwan": {
+        "name": "대만해협",
+        "full": "대만해협 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 1631.0,
+        "chg_pct": 0.3,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-04",
+        "prev_value": 1626.0
+      },
+      "CP_Korea": {
+        "name": "한국해협",
+        "full": "한국해협 선박통과 (주간)",
+        "unit": "척",
+        "group": "초크포인트",
+        "dir": "down_bad",
+        "value": 1510.0,
+        "chg_pct": 3.1,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-04",
+        "prev_value": 1464.0
+      },
+      "Brent": {
+        "name": "브렌트유",
+        "full": "브렌트유 선물",
+        "unit": "USD/bbl",
+        "group": "에너지",
+        "dir": "up_bad",
+        "value": 103.82,
+        "chg_pct": 1.2,
+        "chg_dir": "up",
+        "freq": "nan",
+        "data_date": "2026-10-11",
+        "prev_value": 102.54
+      },
+      "WTI": {
+        "name": "WTI",
+        "full": "WTI 원유 선물",
+        "unit": "USD/bbl",
+        "group": "에너지",
+        "dir": "up_bad",
+        "value": 91.03,
+        "chg_pct": 0.1,
+        "chg_dir": "flat",
+        "freq": "nan",
+        "data_date": "2026-10-11",
+        "prev_value": 90.98
+      },
+      "NatGas": {
+        "name": "천연가스",
+        "full": "천연가스 선물",
+        "unit": "USD/MMBtu",
+        "group": "에너지",
+        "dir": "up_bad",
+        "value": 3.173,
+        "chg_pct": 5.4,
+        "chg_dir": "up",
+        "freq": "daily",
+        "data_date": "2026-10-11",
+        "prev_value": 3.011
+      },
+      "Gold": {
+        "name": "금",
+        "full": "금 현물 (GLD ETF)",
+        "unit": "USD",
+        "group": "거시경제",
+        "dir": "neutral",
+        "value": 384.58,
+        "chg_pct": 1.2,
+        "chg_dir": "up",
+        "freq": "daily",
+        "data_date": "2026-10-09",
+        "prev_value": 380.14
+      },
+      "KOSPI": {
+        "name": "KOSPI",
+        "full": "KOSPI 지수",
+        "unit": "pt",
+        "group": "거시경제",
+        "dir": "down_bad",
+        "value": 6625.93,
+        "chg_pct": -5.4,
+        "chg_dir": "down",
+        "freq": "nan",
+        "data_date": "2026-10-08",
+        "prev_value": 7003.74
+      },
+      "KRWUSD": {
+        "name": "원/달러",
+        "full": "원달러 환율",
+        "unit": "KRW",
+        "group": "거시경제",
+        "dir": "up_bad",
+        "value": 1342.99,
+        "chg_pct": -1.3,
+        "chg_dir": "down",
+        "freq": "daily",
+        "data_date": "2026-10-09",
+        "prev_value": 1360.59
+      },
+      "USD_Index": {
+        "name": "달러지수",
+        "full": "달러 인덱스 (UUP ETF)",
+        "unit": "USD",
+        "group": "거시경제",
+        "dir": "up_bad",
+        "value": 29.02,
+        "chg_pct": 0.4,
+        "chg_dir": "flat",
+        "freq": "daily",
+        "data_date": "2026-10-09",
+        "prev_value": 28.89
+      },
+      "KR_ExportVol": {
+        "name": "수출량",
+        "full": "한국 수출량 지수",
+        "unit": "USD",
+        "group": "거시경제",
+        "dir": "down_bad",
+        "value": 121050081928.0,
+        "chg_pct": 0.1,
+        "chg_dir": "flat",
+        "freq": "monthly",
+        "data_date": "2026-09-01",
+        "prev_value": 120943824928.0
+      },
+      "VIX": {
+        "name": "VIX",
+        "full": "공포지수",
+        "unit": "pt",
+        "group": "거시경제",
+        "dir": "up_bad",
+        "value": 14.84,
+        "chg_pct": -3.1,
+        "chg_dir": "down",
+        "freq": "nan",
+        "data_date": "2026-10-09",
+        "prev_value": 15.31
+      },
+      "SK이노베이션": {
+        "name": "SK이노",
+        "full": "SK이노베이션",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 160900.0,
+        "chg_pct": 4.5,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 154000.0
+      },
+      "S_Oil": {
+        "name": "S-Oil",
+        "full": "S-Oil",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 168700.0,
+        "chg_pct": 1.5,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 166200.0
+      },
+      "롯데케미칼": {
+        "name": "롯데케미칼",
+        "full": "롯데케미칼",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 59600.0,
+        "chg_pct": -2.3,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 61000.0
+      },
+      "LG화학": {
+        "name": "LG화학",
+        "full": "LG화학",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 286500.0,
+        "chg_pct": 9.1,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 262500.0
+      },
+      "한화솔루션": {
+        "name": "한화솔루션",
+        "full": "한화솔루션",
+        "unit": "KRW",
+        "group": "한국 정유/화학",
+        "dir": "neutral",
+        "value": 36000.0,
+        "chg_pct": -0.3,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 36100.0
+      },
+      "HMM": {
+        "name": "HMM",
+        "full": "HMM (컨테이너)",
+        "unit": "KRW",
+        "group": "한국 해운",
+        "dir": "neutral",
+        "value": 20800.0,
+        "chg_pct": -3.3,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 21500.0
+      },
+      "팬오션": {
+        "name": "팬오션",
+        "full": "팬오션 (벌크)",
+        "unit": "KRW",
+        "group": "한국 해운",
+        "dir": "neutral",
+        "value": 6030.0,
+        "chg_pct": -3.4,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 6240.0
+      },
+      "한국가스공사": {
+        "name": "가스공사",
+        "full": "한국가스공사",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 36100.0,
+        "chg_pct": 0.3,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 36000.0
+      },
+      "대한항공": {
+        "name": "대한항공",
+        "full": "대한항공",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 30700.0,
+        "chg_pct": 0.3,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 30600.0
+      },
+      "CJ제일제당": {
+        "name": "CJ제일제당",
+        "full": "CJ제일제당",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 183700.0,
+        "chg_pct": 2.5,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 179300.0
+      },
+      "농심": {
+        "name": "농심",
+        "full": "농심",
+        "unit": "KRW",
+        "group": "한국 에너지/식품",
+        "dir": "neutral",
+        "value": 397500.0,
+        "chg_pct": -1.6,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 404000.0
+      },
+      "에너지화학ETF": {
+        "name": "에너지화학ETF",
+        "full": "에너지화학ETF (117460.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 14695.0,
+        "chg_pct": 0.4,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 14635.0
+      },
+      "화학ETF": {
+        "name": "화학ETF",
+        "full": "화학ETF (227550.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 11800.0,
+        "chg_pct": -5.6,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 12495.0
+      },
+      "반도체ETF": {
+        "name": "반도체ETF",
+        "full": "반도체ETF (266410.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 9480.0,
+        "chg_pct": 0.9,
+        "chg_dir": "up",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 9400.0
+      },
+      "자동차ETF": {
+        "name": "자동차ETF",
+        "full": "자동차ETF (091180.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 24855.0,
+        "chg_pct": -2.9,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 25600.0
+      },
+      "농산물종합": {
+        "name": "농산물종합",
+        "full": "농산물종합 (DBA)",
+        "unit": "USD",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 28.33,
+        "chg_pct": 0.4,
+        "chg_dir": "flat",
+        "freq": "weekly",
+        "data_date": "2026-10-09",
+        "prev_value": 28.21
+      },
+      "밀": {
+        "name": "밀",
+        "full": "밀 (WEAT)",
+        "unit": "USD",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 24.41,
+        "chg_pct": -1.4,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-09",
+        "prev_value": 24.75
+      },
+      "건설ETF": {
+        "name": "건설ETF",
+        "full": "건설ETF (117700.KS)",
+        "unit": "KRW",
+        "group": "한국 산업 ETF",
+        "dir": "neutral",
+        "value": 6415.0,
+        "chg_pct": -4.3,
+        "chg_dir": "down",
+        "freq": "weekly",
+        "data_date": "2026-10-08",
+        "prev_value": 6705.0
+      }
+    },
+    "_phaseA_week_tag": "20261011",
+    "kg_focus": {
+      "rows": [
+        {
+          "id": "EVT_RedSea2023",
+          "name": "홍해·후티 사태",
+          "type": "위기 이벤트",
+          "count": 690,
+          "delta": 435
+        },
+        {
+          "id": "CF_CrudeOil",
+          "name": "원유",
+          "type": "품목",
+          "count": 412,
+          "delta": 61
+        },
+        {
+          "id": "CP_Hormuz",
+          "name": "호르무즈 해협",
+          "type": "초크포인트",
+          "count": 309,
+          "delta": -9
+        },
+        {
+          "id": "SS_SaudiArabia",
+          "name": "사우디 원유 공급원",
+          "type": "공급원",
+          "count": 160,
+          "delta": 94
+        },
+        {
+          "id": "SS_Iran",
+          "name": "이란 원유 공급원",
+          "type": "공급원",
+          "count": 117,
+          "delta": 28
+        },
+        {
+          "id": "VT_Tanker",
+          "name": "유조선",
+          "type": "선종",
+          "count": 107,
+          "delta": 59
+        },
+        {
+          "id": "CF_LNG",
+          "name": "LNG",
+          "type": "품목",
+          "count": 104,
+          "delta": -112
+        },
+        {
+          "id": "EVT_Ukraine2022",
+          "name": "우크라이나 전쟁",
+          "type": "위기 이벤트",
+          "count": 82,
+          "delta": 1
+        },
+        {
+          "id": "VT_Reefer",
+          "name": "냉장선",
+          "type": "선종",
+          "count": 75,
+          "delta": 52
+        },
+        {
+          "id": "CP_BlackSea",
+          "name": "흑해",
+          "type": "초크포인트",
+          "count": 62,
+          "delta": 56
+        }
+      ],
+      "trend": {
+        "days": [
+          "10/5 (월)",
+          "10/6 (화)",
+          "10/7 (수)",
+          "10/8 (목)",
+          "10/9 (금)",
+          "10/10 (토)",
+          "10/11 (일)"
+        ],
+        "series": [
+          {
+            "id": "EVT_RedSea2023",
+            "name": "홍해·후티 사태",
+            "type": "위기 이벤트",
+            "counts": [
+              82,
+              27,
+              95,
+              11,
+              136,
+              82,
+              257
+            ]
+          },
+          {
+            "id": "CF_CrudeOil",
+            "name": "원유",
+            "type": "품목",
+            "counts": [
+              84,
+              68,
+              102,
+              57,
+              49,
+              25,
+              27
+            ]
+          },
+          {
+            "id": "CP_Hormuz",
+            "name": "호르무즈 해협",
+            "type": "초크포인트",
+            "counts": [
+              58,
+              53,
+              57,
+              47,
+              42,
+              20,
+              32
+            ]
+          },
+          {
+            "id": "SS_SaudiArabia",
+            "name": "사우디 원유 공급원",
+            "type": "공급원",
+            "counts": [
+              24,
+              9,
+              22,
+              1,
+              38,
+              11,
+              55
+            ]
+          },
+          {
+            "id": "SS_Iran",
+            "name": "이란 원유 공급원",
+            "type": "공급원",
+            "counts": [
+              26,
+              19,
+              23,
+              15,
+              20,
+              1,
+              13
+            ]
+          },
+          {
+            "id": "VT_Tanker",
+            "name": "유조선",
+            "type": "선종",
+            "counts": [
+              17,
+              14,
+              31,
+              8,
+              12,
+              5,
+              20
+            ]
+          },
+          {
+            "id": "CF_LNG",
+            "name": "LNG",
+            "type": "품목",
+            "counts": [
+              21,
+              25,
+              12,
+              15,
+              19,
+              3,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    "momentum": {
+      "week": "2026-W41",
+      "channels": [
+        {
+          "key": "total",
+          "label": "경보 총량",
+          "signal_desc": "주간 HIGH 경보 건수",
+          "state": "quiet",
+          "sig_ko": "전체 경보 기사",
+          "ind_ko": "급증 출처에 따라 배정",
+          "inds": [
+            "WTI",
+            "Brent"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
+          "count": 1000,
+          "med8": 698.5,
+          "z": 0.96
+        },
+        {
+          "key": "hormuz_oil",
+          "label": "호르무즈 → 유가",
+          "signal_desc": "호르무즈 언급 기사 수(주간)",
+          "state": "quiet",
+          "sig_ko": "호르무즈 관련 기사",
+          "ind_ko": "유가 (Brent·WTI)",
+          "inds": [
+            "Brent",
+            "WTI"
+          ],
+          "window": [
+            1,
+            2
+          ],
+          "tier": "promoted",
+          "count": 309,
+          "med8": 448.5,
+          "z": -0.9
+        },
+        {
+          "key": "redsea_freight",
+          "label": "홍해 → 컨테이너 운임",
+          "signal_desc": "홍해(수에즈·바브엘만데브·후티) 언급 기사 수(주간)",
+          "state": "watch",
+          "sig_ko": "홍해 관련 기사",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "inds": [
+            "SCFI",
+            "Harpex"
+          ],
+          "window": [
+            2,
+            6
+          ],
+          "tier": "promoted",
+          "count": 707,
+          "med8": 206.0,
+          "z": 2.19
+        },
+        {
+          "key": "kg:CP_BabElMandeb:Brent",
+          "label": "바브엘만데브 해협 → Brent",
+          "signal_desc": "바브엘만데브 해협 언급 기사 수(주간)",
+          "state": "quiet",
+          "sig_ko": "바브엘만데브 해협 관련 기사",
+          "ind_ko": "유가 (Brent)",
+          "inds": [
+            "Brent"
+          ],
+          "window": [
+            1,
+            1
+          ],
+          "tier": "promoted",
+          "count": 25,
+          "med8": 14.0,
+          "z": 1.06
+        }
+      ],
+      "active": [
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "SCFI",
+          "fired_week": "2026-W38",
+          "base_value": 3687.8274,
+          "base_monday": "2026-09-21",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 3,
+          "chg_pct": -0.0
+        },
+        {
+          "label": "홍해 → 컨테이너 운임",
+          "indicator": "Harpex",
+          "fired_week": "2026-W38",
+          "base_value": 2450.0,
+          "base_monday": "2026-09-21",
+          "window": [
+            2,
+            6
+          ],
+          "elapsed": 3,
+          "chg_pct": 0.7
+        }
+      ],
+      "display": [
+        {
+          "family": "oil",
+          "ind_ko": "유가 (Brent·WTI)",
+          "state": "quiet",
+          "window": null,
+          "evidence": [
+            {
+              "sig_ko": "호르무즈 관련 기사",
+              "count": 309,
+              "med8": 448.5,
+              "state": "quiet"
+            },
+            {
+              "sig_ko": "바브엘만데브 해협 관련 기사",
+              "count": 25,
+              "med8": 14.0,
+              "state": "quiet"
+            }
+          ]
+        },
+        {
+          "family": "container",
+          "ind_ko": "컨테이너 운임 (SCFI·Harpex)",
+          "state": "watch",
+          "window": [
+            2,
+            6
+          ],
+          "evidence": [
+            {
+              "sig_ko": "홍해 관련 기사",
+              "count": 707,
+              "med8": 206.0,
+              "state": "watch"
+            }
+          ]
+        }
+      ],
+      "score": {
+        "hit": 10,
+        "miss": 22,
+        "cancelled": 0
+      },
+      "promotions": [],
+      "shadow": {
+        "n_channels": 35,
+        "fired": [
+          {
+            "label": "수에즈 운하 → Brent",
+            "state": "fired",
+            "count": 13,
+            "z": 2.36
+          },
+          {
+            "label": "수에즈 운하 → WTI",
+            "state": "fired",
+            "count": 13,
+            "z": 2.36
+          },
+          {
+            "label": "수에즈 운하 → SCFI",
+            "state": "watch",
+            "count": 13,
+            "z": 2.36
+          },
+          {
+            "label": "수에즈 운하 → Harpex",
+            "state": "watch",
+            "count": 13,
+            "z": 2.36
+          },
+          {
+            "label": "파나마 운하 → SCFI",
+            "state": "watch",
+            "count": 43,
+            "z": 2.26
+          },
+          {
+            "label": "파나마 운하 → Harpex",
+            "state": "watch",
+            "count": 43,
+            "z": 2.26
+          },
+          {
+            "label": "홍해·후티 사태 → Brent",
+            "state": "fired",
+            "count": 690,
+            "z": 2.17
+          },
+          {
+            "label": "홍해·후티 사태 → WTI",
+            "state": "fired",
+            "count": 690,
+            "z": 2.17
+          },
+          {
+            "label": "홍해·후티 사태 → SCFI",
+            "state": "watch",
+            "count": 690,
+            "z": 2.17
+          },
+          {
+            "label": "홍해·후티 사태 → Harpex",
+            "state": "watch",
+            "count": 690,
+            "z": 2.17
+          },
+          {
+            "label": "LNG → NatGas",
+            "state": "fired",
+            "count": 104,
+            "z": 2.42
+          }
+        ]
+      }
+    }
   }
 ]

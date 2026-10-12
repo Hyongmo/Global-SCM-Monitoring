@@ -494,6 +494,26 @@
       "nd_EVT_NamuHo2026": 13,
       "nd_CP_Hormuz": 318,
       "_kg": "81ebe4ffa0cb"
+    },
+    "2026-W41": {
+      "total_high": 1000,
+      "hormuz": 309,
+      "redsea": 707,
+      "nd_CP_Malacca": 1,
+      "nd_EVT_Suez2021": 0,
+      "nd_CF_EuroContainer": 0,
+      "nd_CP_Taiwan": 3,
+      "nd_CF_CrudeOil": 412,
+      "nd_CP_Suez": 13,
+      "nd_EVT_NamuHo2026": 5,
+      "nd_CF_IronOre": 13,
+      "nd_EVT_HormuzToll2026": 31,
+      "nd_CF_LNG": 104,
+      "nd_EVT_RedSea2023": 690,
+      "nd_CP_BabElMandeb": 25,
+      "nd_CP_Panama": 43,
+      "nd_CP_Hormuz": 309,
+      "_kg": "81ebe4ffa0cb"
     }
   },
   "predictions": [
@@ -1380,6 +1400,106 @@
       "cp_col": "CP_Hormuz",
       "signal_count": 13,
       "signal_z": 3.37,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W41-kg:CP_Suez:Brent-Brent",
+      "channel": "kg:CP_Suez:Brent",
+      "label": "수에즈 운하 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W41",
+      "base_monday": "2026-10-12",
+      "base_value": 103.81999969482422,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05968677940617014,
+      "cp_col": "CP_Suez",
+      "signal_count": 13,
+      "signal_z": 2.36,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W41-kg:CP_Suez:WTI-WTI",
+      "channel": "kg:CP_Suez:WTI",
+      "label": "수에즈 운하 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W41",
+      "base_monday": "2026-10-12",
+      "base_value": 91.02999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.06357188504053228,
+      "cp_col": "CP_Suez",
+      "signal_count": 13,
+      "signal_z": 2.36,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W41-kg:EVT_RedSea2023:Brent-Brent",
+      "channel": "kg:EVT_RedSea2023:Brent",
+      "label": "홍해·후티 사태 → Brent",
+      "tier": "shadow",
+      "indicator": "Brent",
+      "fired_week": "2026-W41",
+      "base_monday": "2026-10-12",
+      "base_value": 103.81999969482422,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.05968677940617014,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 690,
+      "signal_z": 2.17,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W41-kg:EVT_RedSea2023:WTI-WTI",
+      "channel": "kg:EVT_RedSea2023:WTI",
+      "label": "홍해·후티 사태 → WTI",
+      "tier": "shadow",
+      "indicator": "WTI",
+      "fired_week": "2026-W41",
+      "base_monday": "2026-10-12",
+      "base_value": 91.02999877929688,
+      "window": [
+        1,
+        1
+      ],
+      "sigma_w": 0.06357188504053228,
+      "cp_col": "CP_BabElMandeb",
+      "signal_count": 690,
+      "signal_z": 2.17,
+      "status": "pending",
+      "result": null
+    },
+    {
+      "id": "2026-W41-kg:CF_LNG:NatGas-NatGas",
+      "channel": "kg:CF_LNG:NatGas",
+      "label": "LNG → NatGas",
+      "tier": "shadow",
+      "indicator": "NatGas",
+      "fired_week": "2026-W41",
+      "base_monday": "2026-10-12",
+      "base_value": 3.1730000972747803,
+      "window": [
+        2,
+        4
+      ],
+      "sigma_w": 0.09207881181187426,
+      "cp_col": null,
+      "signal_count": 104,
+      "signal_z": 2.42,
       "status": "pending",
       "result": null
     }
