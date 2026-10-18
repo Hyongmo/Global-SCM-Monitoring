@@ -514,6 +514,26 @@
       "nd_CP_Panama": 43,
       "nd_CP_Hormuz": 309,
       "_kg": "81ebe4ffa0cb"
+    },
+    "2026-W42": {
+      "total_high": 1081,
+      "hormuz": 342,
+      "redsea": 911,
+      "nd_CF_EuroContainer": 0,
+      "nd_CP_Suez": 5,
+      "nd_CP_BabElMandeb": 4,
+      "nd_CF_LNG": 101,
+      "nd_EVT_HormuzToll2026": 33,
+      "nd_CP_Malacca": 1,
+      "nd_CP_Taiwan": 1,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Panama": 5,
+      "nd_EVT_RedSea2023": 904,
+      "nd_CF_CrudeOil": 450,
+      "nd_CF_IronOre": 18,
+      "nd_CP_Hormuz": 342,
+      "nd_EVT_NamuHo2026": 13,
+      "_kg": "81ebe4ffa0cb"
     }
   },
   "predictions": [
@@ -1050,8 +1070,11 @@
       "cp_col": null,
       "signal_count": 25,
       "signal_z": 9.89,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "peak_pct": 8.2
+      }
     },
     {
       "id": "2026-W34-kg:CP_Panama:Harpex-Harpex",
@@ -1070,8 +1093,11 @@
       "cp_col": null,
       "signal_count": 25,
       "signal_z": 9.89,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "peak_pct": 3.7
+      }
     },
     {
       "id": "2026-W37-kg:CP_BabElMandeb:Brent-Brent",
@@ -1400,8 +1426,11 @@
       "cp_col": "CP_Hormuz",
       "signal_count": 13,
       "signal_z": 3.37,
-      "status": "pending",
-      "result": null
+      "status": "cancelled",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "note": "통과량 2주 내 회복(단발 교란)"
+      }
     },
     {
       "id": "2026-W41-kg:CP_Suez:Brent-Brent",
@@ -1420,8 +1449,11 @@
       "cp_col": "CP_Suez",
       "signal_count": 13,
       "signal_z": 2.36,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "peak_pct": 5.8
+      }
     },
     {
       "id": "2026-W41-kg:CP_Suez:WTI-WTI",
@@ -1440,8 +1472,12 @@
       "cp_col": "CP_Suez",
       "signal_count": 13,
       "signal_z": 2.36,
-      "status": "pending",
-      "result": null
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "weeks": 1,
+        "peak_pct": 8.8
+      }
     },
     {
       "id": "2026-W41-kg:EVT_RedSea2023:Brent-Brent",
@@ -1460,8 +1496,11 @@
       "cp_col": "CP_BabElMandeb",
       "signal_count": 690,
       "signal_z": 2.17,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "peak_pct": 5.8
+      }
     },
     {
       "id": "2026-W41-kg:EVT_RedSea2023:WTI-WTI",
@@ -1480,8 +1519,12 @@
       "cp_col": "CP_BabElMandeb",
       "signal_count": 690,
       "signal_z": 2.17,
-      "status": "pending",
-      "result": null
+      "status": "hit",
+      "result": {
+        "graded_monday": "2026-10-19",
+        "weeks": 1,
+        "peak_pct": 8.8
+      }
     },
     {
       "id": "2026-W41-kg:CF_LNG:NatGas-NatGas",
@@ -1511,6 +1554,13 @@
       "graded": 4,
       "hits": 2,
       "base_rate": 0.109
+    },
+    "kg:EVT_RedSea2023:WTI": {
+      "tier": "promoted",
+      "promoted_week": "2026-W42",
+      "graded": 5,
+      "hits": 2,
+      "base_rate": 0.111
     }
   }
 }
