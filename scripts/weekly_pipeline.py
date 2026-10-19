@@ -1200,6 +1200,11 @@ def yf_weekly(ticker, start, end, idx, dates_dict=None, col_name=None):
         raw = yf.download(ticker, start=start, end=end, progress=False, auto_adjust=True)
         if isinstance(raw.columns, pd.MultiIndex):
             raw.columns = raw.columns.get_level_values(0)
+        # 2026-10-19 (W42 김태한 위원 — 유가·환율 기준일이 일요일로 표시):
+        #   선물·환율은 일요일 저녁에 다음 주 거래가 시작돼 일요일 날짜의 장중 값이 잡혔다
+        #   (W42 WTI 99.02 = 일요일 장중값, 금요일 종가 101.41). 주말 날짜 행은 버리고 평일 종가만 쓴다.
+        if len(raw) > 0:
+            raw = raw[raw.index.dayofweek < 5]
         if 'Close' in raw.columns and len(raw) > 0:
             vals = raw['Close'].resample('W-MON', closed='left', label='right').last().reindex(idx).ffill()
             if dates_dict is not None and col_name:
@@ -2983,11 +2988,11 @@ def _build_indicator_meta(kg_raw):
         'Brent':      {'name':'브렌트유',  'full':'브렌트유 선물',           'unit':'USD/bbl', 'group':'에너지','dir':'up_bad',  'freq':'daily'},
         'WTI':        {'name':'WTI',      'full':'WTI 원유 선물',           'unit':'USD/bbl', 'group':'에너지','dir':'up_bad',  'freq':'daily'},
         'NatGas':     {'name':'천연가스',  'full':'천연가스 선물',           'unit':'USD/MMBtu','group':'에너지','dir':'up_bad', 'freq':'daily'},
-        'Gold':       {'name':'금',        'full':'금 현물 (GLD ETF)',        'unit':'USD',     'group':'거시경제','dir':'neutral','freq':'daily',
+        'Gold':       {'name':'금 ETF',    'full':'금 ETF (GLD)',        'unit':'USD',     'group':'거시경제','dir':'neutral','freq':'daily',
                       'sector_ids':[],'sector_keywords':['금','귀금속','안전자산']},
         'KOSPI':      {'name':'KOSPI',    'full':'KOSPI 지수',              'unit':'pt',      'group':'거시경제','dir':'down_bad','freq':'daily'},
         'KRWUSD':     {'name':'원/달러',   'full':'원달러 환율',             'unit':'KRW',     'group':'거시경제','dir':'up_bad',  'freq':'daily'},
-        'USD_Index':  {'name':'달러지수',  'full':'달러 인덱스 (UUP ETF)',    'unit':'USD',     'group':'거시경제','dir':'up_bad',  'freq':'daily',
+        'USD_Index':  {'name':'달러 ETF',  'full':'달러 ETF (UUP)',    'unit':'USD',     'group':'거시경제','dir':'up_bad',  'freq':'daily',
                       'sector_ids':['KS_Energy','KS_Material','KS_FoodAgri','KS_Manufacture'],
                       'sector_keywords':['달러','환율','원자재']},
         'KR_ExportVol':{'name':'수출량',  'full':'한국 수출량 지수',         'unit':'USD',      'group':'거시경제','dir':'down_bad','freq':'monthly'},
@@ -3026,8 +3031,10 @@ def _build_indicator_meta(kg_raw):
             _kws = _nd.get('sectorKeywords', [])
             for _etf_name, _ticker in _nd.get('etfTickers', {}).items():
                 _is_kr = _ticker.endswith('.KS')
+                # 2026-10-19 (W42 김태한 위원): 해외 ETF(DBA·WEAT 등)는 실제 지수·현물이 아니라 ETF 가격임을 이름에 표시
+                _disp = _etf_name if (_is_kr or 'ETF' in _etf_name) else f'{_etf_name} ETF'
                 INDICATOR_META[_etf_name] = {
-                    'name': _etf_name, 'full': f'{_etf_name} ({_ticker})',
+                    'name': _disp, 'full': f'{_disp} ({_ticker})',
                     'unit': 'KRW' if _is_kr else 'USD',
                     'group': '한국 산업 ETF', 'dir': 'neutral',
                     'sector_ids': [_nid], 'sector_keywords': _kws,
@@ -5446,10 +5453,11 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                     return 'N/A'
                 if _ind_dp(fv, unit) == 3:
                     return f'{fv:,.3f}'
+                # 2026-10-19 (김한나 박사 반복 지적 대응): 표 숫자로 주간 변동률을 재계산해도 일치하도록 소수 2자리
                 if unit in ('pt', 'USD/bbl', 'KRW/USD', 'USD'):
-                    return f'{fv:,.1f}'
+                    return f'{fv:,.2f}'
                 elif unit == 'KRW':
-                    return f'{fv:,.0f}'
+                    return f'{fv:,.0f}' if fv == int(fv) else f'{fv:,.2f}'   # 원/달러 등 소수 있는 값만 2자리
                 elif unit == '%':
                     return f'{fv:.2f}'
                 elif unit == 'σ':
@@ -6196,7 +6204,7 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                         f'<td>{sev_badge(row.get("initial","?"))}</td>'
                         f'<td>{sev_badge(row.get("mid","?"))}</td>'
                         f'<td>{sev_badge(row.get("long","?"))}</td>'
-                        f'<td class="pathway">{_pw_html}</td>'
+                        f'<td class="pathway">{_linkify_refs(_pw_html, _ref_map)}</td>'
                         f'<td class="change-col">{chg_sym(row.get("change",""))}</td>'
                         '</tr>'
                     )
@@ -6210,12 +6218,12 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                 if vulns:
                     html.append('<b>공급망 취약점 진단</b><ul>')
                     for v in vulns:
-                        html.append(f'<li>{esc(v)}</li>')
+                        html.append(f'<li>{_linkify_refs(esc(v), _ref_map)}</li>')
                     html.append('</ul>')
                 if recs:
                     html.append('<b>모니터링 권고</b><ul>')
                     for r in recs:
-                        html.append(f'<li>{esc(r)}</li>')
+                        html.append(f'<li>{_linkify_refs(esc(r), _ref_map)}</li>')
                     html.append('</ul>')
                 html.append('</div>')
             return '\n'.join(html)

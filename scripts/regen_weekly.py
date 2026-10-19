@@ -596,13 +596,14 @@ def _run_html_generation():
 
                     return 'N/A'
 
+                # 2026-10-19 (김한나 박사 반복 지적 대응): 표 숫자로 주간 변동률을 재계산해도 일치하도록 소수 2자리
                 if unit in ('pt', 'USD/bbl', 'KRW/USD', 'USD'):
 
-                    return f'{fv:,.1f}'
+                    return f'{fv:,.2f}'
 
                 elif unit == 'KRW':
 
-                    return f'{fv:,.0f}'
+                    return f'{fv:,.0f}' if fv == int(fv) else f'{fv:,.2f}'   # 원/달러 등 소수 있는 값만 2자리
 
                 elif unit == '%':
 
@@ -1996,7 +1997,7 @@ def _run_html_generation():
 
                         f'<td>{sev_badge(row.get("long","?"))}</td>'
 
-                        f'<td class="pathway">{_pw_html}</td>'
+                        f'<td class="pathway">{_linkify_refs(_pw_html, _ref_map)}</td>'
 
                         f'<td class="change-col">{chg_sym(row.get("change",""))}</td>'
 
@@ -2026,7 +2027,7 @@ def _run_html_generation():
 
                     for v in vulns:
 
-                        html.append(f'<li>{esc(v)}</li>')
+                        html.append(f'<li>{_linkify_refs(esc(v), _ref_map)}</li>')
 
                     html.append('</ul>')
 
@@ -2038,7 +2039,7 @@ def _run_html_generation():
 
                     for r in recs:
 
-                        html.append(f'<li>{esc(r)}</li>')
+                        html.append(f'<li>{_linkify_refs(esc(r), _ref_map)}</li>')
 
                     html.append('</ul>')
 
@@ -3388,8 +3389,8 @@ def _run_pdf_generation(target_scenario):
                 if isinstance(val, (int, float)):
                     if val != val:  # NaN
                         val = 'N/A'
-                    elif abs(val) >= 1000:
-                        val = f'{val:,.1f}'
+                    elif abs(val) >= 1000:   # 2026-10-19 (김한나 박사 반복 지적 대응): 표 숫자로 주간 변동률을 재계산해도 일치하도록 소수 2자리
+                        val = f'{val:,.0f}' if val == int(val) else f'{val:,.2f}'
                     else:
                         val = f'{val:.2f}'
                 chg = it.get('chg_pct', '')
