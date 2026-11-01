@@ -554,6 +554,26 @@
       "nd_CF_LNG": 79,
       "nd_CP_Malacca": 1,
       "_kg": "81ebe4ffa0cb"
+    },
+    "2026-W44": {
+      "total_high": 619,
+      "hormuz": 316,
+      "redsea": 306,
+      "nd_EVT_Suez2021": 0,
+      "nd_CP_Taiwan": 1,
+      "nd_CP_Hormuz": 316,
+      "nd_CP_Suez": 4,
+      "nd_CF_EuroContainer": 0,
+      "nd_CF_LNG": 90,
+      "nd_CP_BabElMandeb": 2,
+      "nd_EVT_RedSea2023": 301,
+      "nd_CP_Panama": 7,
+      "nd_CF_CrudeOil": 373,
+      "nd_CF_IronOre": 20,
+      "nd_EVT_HormuzToll2026": 32,
+      "nd_EVT_NamuHo2026": 13,
+      "nd_CP_Malacca": 3,
+      "_kg": "81ebe4ffa0cb"
     }
   },
   "predictions": [
@@ -1228,8 +1248,11 @@
       "cp_col": "CP_Suez",
       "signal_count": 1029,
       "signal_z": 5.93,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-11-02",
+        "peak_pct": -0.0
+      }
     },
     {
       "id": "2026-W38-redsea_freight-Harpex",
@@ -1248,8 +1271,11 @@
       "cp_col": "CP_Suez",
       "signal_count": 1029,
       "signal_z": 5.93,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-11-02",
+        "peak_pct": 5.5
+      }
     },
     {
       "id": "2026-W38-kg:CP_BabElMandeb:SCFI-SCFI",
