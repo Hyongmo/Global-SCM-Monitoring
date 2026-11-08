@@ -574,6 +574,26 @@
       "nd_EVT_NamuHo2026": 13,
       "nd_CP_Malacca": 3,
       "_kg": "81ebe4ffa0cb"
+    },
+    "2026-W45": {
+      "total_high": 591,
+      "hormuz": 300,
+      "redsea": 229,
+      "nd_CP_Hormuz": 300,
+      "nd_EVT_Suez2021": 0,
+      "nd_EVT_RedSea2023": 225,
+      "nd_EVT_HormuzToll2026": 27,
+      "nd_CF_LNG": 77,
+      "nd_CF_IronOre": 16,
+      "nd_CP_Malacca": 0,
+      "nd_CP_Suez": 6,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_NamuHo2026": 6,
+      "nd_CF_CrudeOil": 248,
+      "nd_CP_Taiwan": 3,
+      "nd_CP_BabElMandeb": 4,
+      "nd_CP_Panama": 6,
+      "_kg": "81ebe4ffa0cb"
     }
   },
   "predictions": [
@@ -1589,8 +1609,11 @@
       "cp_col": null,
       "signal_count": 104,
       "signal_z": 2.42,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-11-09",
+        "peak_pct": -1.8
+      }
     }
   ],
   "channel_tiers": {
