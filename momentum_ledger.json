@@ -594,6 +594,26 @@
       "nd_CP_BabElMandeb": 4,
       "nd_CP_Panama": 6,
       "_kg": "81ebe4ffa0cb"
+    },
+    "2026-W46": {
+      "total_high": 468,
+      "hormuz": 291,
+      "redsea": 111,
+      "nd_CP_Panama": 3,
+      "nd_EVT_Suez2021": 0,
+      "nd_EVT_NamuHo2026": 7,
+      "nd_CP_Suez": 5,
+      "nd_CF_EuroContainer": 0,
+      "nd_EVT_RedSea2023": 106,
+      "nd_CP_Taiwan": 3,
+      "nd_CF_LNG": 92,
+      "nd_CF_CrudeOil": 347,
+      "nd_CF_IronOre": 21,
+      "nd_CP_BabElMandeb": 1,
+      "nd_CP_Hormuz": 291,
+      "nd_EVT_HormuzToll2026": 25,
+      "nd_CP_Malacca": 1,
+      "_kg": "81ebe4ffa0cb"
     }
   },
   "predictions": [
@@ -1314,8 +1334,11 @@
       "cp_col": "CP_BabElMandeb",
       "signal_count": 57,
       "signal_z": 2.57,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-11-16",
+        "peak_pct": -0.0
+      }
     },
     {
       "id": "2026-W38-kg:EVT_RedSea2023:SCFI-SCFI",
@@ -1334,8 +1357,11 @@
       "cp_col": "CP_BabElMandeb",
       "signal_count": 1002,
       "signal_z": 6.21,
-      "status": "pending",
-      "result": null
+      "status": "miss",
+      "result": {
+        "graded_monday": "2026-11-16",
+        "peak_pct": -0.0
+      }
     },
     {
       "id": "2026-W38-kg:CF_CrudeOil:Brent-Brent",
