@@ -3460,7 +3460,7 @@ def format_indicators_for_llm(snapshot, top_sectors, indicator_meta, G, threshol
 
     for kid, val in snapshot.items():
         meta = indicator_meta.get(kid, {})
-        chg  = val.get('chg_pct')
+        chg  = None if val.get('revision') else val.get('chg_pct')   # 통계 수정분 제외 (2026-11-16)
         v_str = fmt_val_plain(val.get('value'), val.get('unit', ''))
         chg_str = f'{chg:+.1f}%' if chg is not None else ''
         ddir = meta.get('dir', 'neutral')
@@ -3485,7 +3485,7 @@ def format_indicators_for_llm(snapshot, top_sectors, indicator_meta, G, threshol
         meta = indicator_meta.get(kid, {})
         if not meta.get('always_report'):
             continue
-        chg  = val.get('chg_pct')
+        chg  = None if val.get('revision') else val.get('chg_pct')   # 통계 수정분 제외 (2026-11-16)
         v_str = fmt_val_plain(val.get('value'), val.get('unit', ''))
         chg_str = f'{chg:+.1f}%' if chg is not None else ''
         ddir = meta.get('dir', 'neutral')
@@ -3536,6 +3536,8 @@ def compute_ind_changes(snap, threshold=_IND_CHG_THRESHOLD):
     result = {}
     for key, meta in snap.items():
         if meta.get('group') in _INDIVIDUAL_STOCK_GROUPS:
+            continue
+        if meta.get('revision'):      # 같은 기준월 통계 수정분은 전주 대비 변화가 아님 (2026-11-16)
             continue
         chg = meta.get('chg_pct')
         val = meta.get('value')
@@ -3789,6 +3791,13 @@ def get_indicator_snapshot(ref_date, indicator_df, indicator_meta, prev_indicato
                     entry['chg_pct'] = round(chg, 1)
                     entry['chg_dir'] = 'up' if chg > 0.5 else ('down' if chg < -0.5 else 'flat')
                     entry['prev_value'] = _prev_disp
+                    # 2026-11-16 (W46 김태한 위원): 같은 기준월 통계가 수정만 된 경우(예: 10월 수출액 수정 발표)는
+                    #   전주 대비 변화가 아니므로 '통계 수정'으로 표시하고 변화 목록·모델 입력에서 뺀다
+                    if (prev_indicators and col in prev_indicators and entry.get('data_date')
+                            and str(prev_indicators[col].get('data_date', ''))[:10] == str(entry['data_date'])[:10]
+                            and _cur_disp != _prev_disp):
+                        entry['revision'] = True
+                        entry['chg_dir'] = 'flat'
             snapshot[col] = entry
         return snapshot
     except Exception:
@@ -5565,6 +5574,8 @@ def step8_generate_html(scenario_json, week_tag, kg_data):
                             chg_str = f"{float(value) - float(meta['prev_value']):+.3f}"
                         except Exception:
                             pass
+                    if meta.get('revision'):      # 같은 기준월 통계 수정 (2026-11-16)
+                        chg_str = '통계 수정'
                     unit_span = f'<span class="ind-unit">{esc(unit)}</span>' if unit else ''
                     # 날짜 라벨 생성
                     _freq = meta.get('freq', '')
